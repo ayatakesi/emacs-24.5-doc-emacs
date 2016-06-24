@@ -3,48 +3,47 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-11-29 18:50+0900\n"
+"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: chapter
 #: indent.texi.orig:5 indent.texi.orig:6
 #, no-wrap
 msgid "Indentation"
-msgstr ""
+msgstr "Indentation"
 
 #. type: cindex
 #: indent.texi.orig:7
 #, no-wrap
 msgid "indentation"
-msgstr ""
+msgstr "indentation"
 
 #. type: cindex
 #: indent.texi.orig:8
 #, no-wrap
 msgid "tabs"
-msgstr ""
+msgstr "tabs"
 
 #. type: cindex
 #: indent.texi.orig:9
 #, no-wrap
 msgid "columns (indentation)"
-msgstr ""
+msgstr "columns (indentation)"
 
 #. type: cindex
 #: indent.texi.orig:11
 #, no-wrap
 msgid "whitespace character"
-msgstr ""
+msgstr "whitespace character"
 
 #. type: Plain text
 #: indent.texi.orig:18
@@ -55,19 +54,19 @@ msgid ""
 "common to Text mode and related modes, as well as programming language "
 "modes.  @xref{Program Indent}, for additional documentation about indenting "
 "in programming modes."
-msgstr ""
+msgstr "@dfn{インデント(Indentation)}とは、@dfn{空白文字}(スペースやタブ文字)を行のテキストの先頭に挿入したり調整することを指します。このチャプターでは、インデントコマンドと、Textモードやそれに関連するモード、同様にプログラミング言語のモードでの一般的なオプションを記します。プログラミング用のモードでのインデントに関する追加のドキュメントは、@ref{Program Indent}を参照してください。"
 
 #. type: findex
 #: indent.texi.orig:19
 #, no-wrap
 msgid "indent-for-tab-command"
-msgstr ""
+msgstr "indent-for-tab-command"
 
 #. type: kindex
 #: indent.texi.orig:20
 #, no-wrap
 msgid "TAB @r{(indentation)}"
-msgstr ""
+msgstr "TAB @r{(indentation)}"
 
 #. type: Plain text
 #: indent.texi.orig:25
@@ -76,13 +75,13 @@ msgid ""
 "modes, this runs the command @code{indent-for-tab-command}.  (In C and "
 "related modes, @key{TAB} runs the command @code{c-indent-line-or-region}, "
 "which behaves similarly)."
-msgstr ""
+msgstr "インデントを行うもっとも簡単な方法は、@key{TAB}キーです。ほとんどのメジャーモードでは、これによりコマンド@code{indent-for-tab-command}が実行されます(Cおよびそれに関連するモードでは、@key{TAB}は同じように振る舞うコマンド@code{c-indent-line-or-region}を実行します)。"
 
 #. type: item
 #: indent.texi.orig:27
 #, no-wrap
 msgid "TAB"
-msgstr ""
+msgstr "TAB"
 
 #. type: table
 #: indent.texi.orig:31
@@ -90,7 +89,7 @@ msgid ""
 "Insert whitespace, or indent the current line, in a mode-appropriate way "
 "(@code{indent-for-tab-command}).  If the region is active, indent all the "
 "lines within it."
-msgstr ""
+msgstr "空白文字を挿入、またはモードに適した方法でカレント行をインデントします(@code{indent-for-tab-command})。リージョンがアクティブのときは、リージョンのすべての行をインデントします。"
 
 #. type: Plain text
 #: indent.texi.orig:42
@@ -104,7 +103,7 @@ msgid ""
 "is active (@pxref{Using Region}), @key{TAB} acts specially: it indents each "
 "line in the region so that its first non-whitespace character is aligned "
 "with the preceding line."
-msgstr ""
+msgstr "@key{TAB}の正確な動作は、メジャーモードに依存します。Textモードおよびそれに関連するモードでは、@key{TAB}は通常、空白とタブ文字を組み合わせたものを挿入して、ポイントを次のタブストップに進めます。このために、先行する行の最初の空白以外の文字の位置は、追加のタブストップとして扱われるので、@key{TAB}を使って先行する行にポイントを``揃える''ことができます。リージョンがアクティブ(@ref{Using Region}を参照してください)な場合、@key{TAB}は特別な動作をします。これはリージョンの各行をインデントするので、各行の最初の空白以外の文字は、先行する行に揃えられます。"
 
 #. type: Plain text
 #: indent.texi.orig:48
@@ -114,77 +113,77 @@ msgid ""
 "active, all the lines in the region are indented this way.  If point was "
 "initially within the current line's indentation, it is repositioned to the "
 "first non-whitespace character on the line."
-msgstr ""
+msgstr "プログラミング関連のモードでは、@key{TAB}はコードのカレント行にたいして、前の行のコードの意味を理解してインデントします。リージョンがアクティブな場合、リージョンのすべての行はこの方法でインデントされます。ポイントが最初にカレント行のインデント領域にあった場合、その行の最初の空白以外の文字に再配置されます。"
 
 #. type: Plain text
 #: indent.texi.orig:51
 msgid ""
 "If you just want to insert a tab character in the buffer, type @kbd{C-q "
 "@key{TAB}} (@pxref{Inserting Text})."
-msgstr ""
+msgstr "単にタブ文字をバッファーに挿入したいときは、@kbd{C-q @key{TAB}}とタイプします(@ref{Inserting Text}を参照してください)。"
 
 #. type: section
 #: indent.texi.orig:57 indent.texi.orig:59 indent.texi.orig:60
 #, no-wrap
 msgid "Indentation Commands"
-msgstr ""
+msgstr "Indentation Commands"
 
 #. type: menuentry
 #: indent.texi.orig:57
 msgid "More commands for performing indentation."
-msgstr ""
+msgstr "インデントを処理するほかのコマンド。"
 
 #. type: section
 #: indent.texi.orig:57 indent.texi.orig:147 indent.texi.orig:148
 #, no-wrap
 msgid "Tab Stops"
-msgstr ""
+msgstr "Tab Stops"
 
 #. type: menuentry
 #: indent.texi.orig:57
 msgid "Stop points for indentation in Text modes."
-msgstr ""
+msgstr "Textモードのインデントのストップポイント。"
 
 #. type: node
 #: indent.texi.orig:57 indent.texi.orig:200
 #, no-wrap
 msgid "Just Spaces"
-msgstr ""
+msgstr "Just Spaces"
 
 #. type: menuentry
 #: indent.texi.orig:57
 msgid "Using only space characters for indentation."
-msgstr ""
+msgstr "インデントにスペース文字だけを使用する。"
 
 #. type: node
 #: indent.texi.orig:57 indent.texi.orig:234
 #, no-wrap
 msgid "Indent Convenience"
-msgstr ""
+msgstr "Indent Convenience"
 
 #. type: menuentry
 #: indent.texi.orig:57
 msgid "Optional indentation features."
-msgstr ""
+msgstr "インデントのオプション機能。"
 
 #. type: Plain text
 #: indent.texi.orig:65
 msgid ""
 "Apart from the @key{TAB} (@code{indent-for-tab-command}) command, Emacs "
 "provides a variety of commands to perform indentation in other ways."
-msgstr ""
+msgstr "@key{TAB} (@code{indent-for-tab-command})コマンドとは別に、Emacsは他の方法でインデントを処理する、さまざまなコマンドを提供します。"
 
 #. type: kindex
 #: indent.texi.orig:67 indent.texi.orig:68
 #, no-wrap
 msgid "C-M-o"
-msgstr ""
+msgstr "C-M-o"
 
 #. type: findex
 #: indent.texi.orig:69
 #, no-wrap
 msgid "split-line"
-msgstr ""
+msgstr "split-line"
 
 #. type: table
 #: indent.texi.orig:75
@@ -193,19 +192,19 @@ msgid ""
 "after point becomes a new line, indented to the same column where point is "
 "located.  This command first moves point forward over any spaces and tabs.  "
 "Afterward, point is positioned before the inserted newline."
-msgstr ""
+msgstr "カレント行をポイント位置で分割します(@code{split-line})。その行のポイントの後にあるテキストは新しい行となり、ポイントがあった位置と同じ列にインデントされます。このコマンドは、最初にポイントを複数のスペースまたはタブを飛び越えて移動させます。その後、ポイントは挿入された行の前に配されます。"
 
 #. type: item
 #: indent.texi.orig:76 indent.texi.orig:78
 #, no-wrap
 msgid "M-m"
-msgstr ""
+msgstr "M-m"
 
 #. type: findex
 #: indent.texi.orig:77
 #, no-wrap
 msgid "back-to-indentation"
-msgstr ""
+msgstr "back-to-indentation"
 
 #. type: table
 #: indent.texi.orig:82
@@ -213,60 +212,60 @@ msgid ""
 "Move (forward or back) to the first non-whitespace character on the current "
 "line (@code{back-to-indentation}).  If there are no non-whitespace "
 "characters on the line, move to the end of the line."
-msgstr ""
+msgstr "カレント行の最初の空白以外の文字に移動(前方または後方)します(@code{back-to-indentation})。その行に空白文字しかない場合は、その行の行末に移動します。"
 
 #. type: kindex
 #: indent.texi.orig:83 indent.texi.orig:84
 #, no-wrap
 msgid "M-i"
-msgstr ""
+msgstr "M-i"
 
 #. type: findex
 #: indent.texi.orig:85
 #, no-wrap
 msgid "tab-to-tab-stop"
-msgstr ""
+msgstr "tab-to-tab-stop"
 
 #. type: table
 #: indent.texi.orig:88
 msgid ""
-"Indent whitespace at point, up to the next tab stop "
-"(@code{tab-to-tab-stop}).  @xref{Tab Stops}."
-msgstr ""
+"Indent whitespace at point, up to the next tab stop (@code{tab-to-tab-"
+"stop}).  @xref{Tab Stops}."
+msgstr "ポイント位置の空白文字を次のタブストップまでインデントします(@code{tab-to-tab-stop})。@ref{Tab Stops}を参照してください。"
 
 #. type: findex
 #: indent.texi.orig:89
 #, no-wrap
 msgid "indent-relative"
-msgstr ""
+msgstr "indent-relative"
 
 #. type: item
 #: indent.texi.orig:90
 #, no-wrap
 msgid "M-x indent-relative"
-msgstr ""
+msgstr "M-x indent-relative"
 
 #. type: table
 #: indent.texi.orig:96
 msgid ""
-"Insert whitespace at point, until point is aligned with the first "
-"non-whitespace character on the previous line (actually, the last non-blank "
-"line).  If point is already farther right than that, run "
-"@code{tab-to-tab-stop} instead---unless called with a numeric argument, in "
-"which case do nothing."
-msgstr ""
+"Insert whitespace at point, until point is aligned with the first non-"
+"whitespace character on the previous line (actually, the last non-blank "
+"line).  If point is already farther right than that, run @code{tab-to-tab-"
+"stop} instead---unless called with a numeric argument, in which case do "
+"nothing."
+msgstr "ポイントが前の行(実際には最後の空行以外の行)の、最初の空白以外の文字に揃うように、ポイント位置に空白文字を挿入します。ポイントがすでにその位置より右にある場合は、かわりに@code{tab-to-tab-stop}を実行します --- ただし数引数を指定した場合は何もしません。"
 
 #. type: kindex
 #: indent.texi.orig:97 indent.texi.orig:98
 #, no-wrap
 msgid "M-^"
-msgstr ""
+msgstr "M-^"
 
 #. type: findex
 #: indent.texi.orig:99
 #, no-wrap
 msgid "delete-indentation"
-msgstr ""
+msgstr "delete-indentation"
 
 #. type: table
 #: indent.texi.orig:104
@@ -274,7 +273,7 @@ msgid ""
 "Merge the previous and the current line (@code{delete-indentation}).  This "
 "``joins'' the two lines cleanly, by replacing any indentation at the front "
 "of the current line, together with the line boundary, with a single space."
-msgstr ""
+msgstr "前の行とカレント行をマージします(@code{delete-indentation})。このコマンドはカレント行の前にある任意のインデントと、行の境界を1つのスペースで置き換えて、2つの行を明解に``結合''します。"
 
 #. type: table
 #: indent.texi.orig:108
@@ -282,71 +281,71 @@ msgid ""
 "As a special case (useful for Lisp code), the single space is omitted if the "
 "characters to be joined are consecutive opening and closing parentheses, or "
 "if the junction follows another newline."
-msgstr ""
+msgstr "特別なケースとして、結合された文字が連続する開きカッコまたは閉じカッコの場合、または他の改行が続く場合、1つのスペースは省略されます(Lispコードにたいして有用)。"
 
 #. type: table
 #: indent.texi.orig:111
 msgid ""
 "If there is a fill prefix, @kbd{M-^} deletes the fill prefix if it appears "
 "after the newline that is deleted.  @xref{Fill Prefix}."
-msgstr ""
+msgstr "fillプレフィクスが存在して、それが改行の後ろにあった場合、@kbd{M-^}はfillプレフィクスを削除します。@ref{Fill Prefix}を参照してください。"
 
 #. type: kindex
 #: indent.texi.orig:112 indent.texi.orig:113
 #, no-wrap
 msgid "C-M-\\"
-msgstr ""
+msgstr "C-M-\\"
 
 #. type: findex
 #: indent.texi.orig:114
 #, no-wrap
 msgid "indent-region"
-msgstr ""
+msgstr "indent-region"
 
 #. type: table
 #: indent.texi.orig:117
 msgid ""
 "Indent all the lines in the region, as though you had typed @key{TAB} at the "
 "beginning of each line (@code{indent-region})."
-msgstr ""
+msgstr "リージョンのすべての行にたいして、各行の先頭で@key{TAB}をタイプしたかのようにインデントします(@code{indent-region})。"
 
 #. type: table
 #: indent.texi.orig:120
 msgid ""
 "If a numeric argument is supplied, indent every line in the region to that "
 "column number."
-msgstr ""
+msgstr "数引数が与えられた場合、その列番号までリージョンのすべての行をインデントします。"
 
 #. type: item
 #: indent.texi.orig:121
 #, no-wrap
 msgid "C-x @key{TAB}"
-msgstr ""
+msgstr "C-x @key{TAB}"
 
 #. type: kindex
 #: indent.texi.orig:122
 #, no-wrap
 msgid "C-x TAB"
-msgstr ""
+msgstr "C-x TAB"
 
 #. type: findex
 #: indent.texi.orig:123
 #, no-wrap
 msgid "indent-rigidly"
-msgstr ""
+msgstr "indent-rigidly"
 
 #. type: cindex
 #: indent.texi.orig:124
 #, no-wrap
 msgid "remove indentation"
-msgstr ""
+msgstr "remove indentation"
 
 #. type: table
 #: indent.texi.orig:127
 msgid ""
 "This command is used to change the indentation of all lines that begin in "
 "the region, moving the affected lines as a ``rigid'' unit."
-msgstr ""
+msgstr "このコマンドは、リージョン内で開始されるすべての行のインデントを変更するのに使用されます。インデントの変更は、影響を受ける行を``厳格な(rigid)''単位として移動することにより行われます。"
 
 #. type: table
 #: indent.texi.orig:135
@@ -354,11 +353,11 @@ msgid ""
 "If called with no argument, the command activates a transient mode for "
 "adjusting the indentation of the affected lines interactively.  While this "
 "transient mode is active, typing @key{LEFT} or @key{RIGHT} indents leftward "
-"and rightward, respectively, by one space.  You can also type "
-"@kbd{S-@key{LEFT}} or @kbd{S-@key{RIGHT}} to indent leftward or rightward to "
-"the next tab stop (@pxref{Tab Stops}).  Typing any other key disables the "
+"and rightward, respectively, by one space.  You can also type @kbd{S-"
+"@key{LEFT}} or @kbd{S-@key{RIGHT}} to indent leftward or rightward to the "
+"next tab stop (@pxref{Tab Stops}).  Typing any other key disables the "
 "transient mode, and resumes normal editing."
-msgstr ""
+msgstr "引数を指定しないで呼び出されたとき、このコマンドは影響を受ける行のインデントを対話的に調整するために、transientモードをアクティブにします。transientモードがアクティブの間は、@key{LEFT}または@key{RIGHT}により、スペース1文字単位で左または右にインデントします。@kbd{S-@key{LEFT}}または@kbd{S-@key{RIGHT}}とタイプすることにより、タブストップ単位で左または右にインデントすることもできます。他のキーをタイプするとtransientモードは無効になり、通常の編集を再開します。"
 
 #. type: table
 #: indent.texi.orig:141
@@ -367,25 +366,25 @@ msgid ""
 "forward by @var{n} spaces (without enabling the transient mode).  Negative "
 "values of @var{n} indent backward, so you can remove all indentation from "
 "the lines in the region using a large negative argument, like this:"
-msgstr ""
+msgstr "プレフィクス引数@var{n}を指定して呼び出すと、このコマンドは行を@var{n}個のスペースでインデントします(transientモードは有効になりません)。@var{n}に値を与えると後方にインデントするので、リージョン内の行のすべてのインデントを除去したいときは、以下のように充分に大きい負の引数を与えます。"
 
 #. type: smallexample
 #: indent.texi.orig:144
 #, no-wrap
 msgid "C-u -999 C-x @key{TAB}\n"
-msgstr ""
+msgstr "C-u -999 C-x @key{TAB}\n"
 
 #. type: cindex
 #: indent.texi.orig:149
 #, no-wrap
 msgid "tab stops"
-msgstr ""
+msgstr "tab stops"
 
 #. type: vindex
 #: indent.texi.orig:151
 #, no-wrap
 msgid "tab-stop-list"
-msgstr ""
+msgstr "tab-stop-list"
 
 #. type: Plain text
 #: indent.texi.orig:161
@@ -399,28 +398,28 @@ msgid ""
 "(in increasing order) at which to place tab stops.  Emacs extends the list "
 "forever by repeating the difference between the last and next-to-last "
 "elements."
-msgstr ""
+msgstr "Emacsは、特定の列番号が@dfn{タブストップ}になるよう定義しています。これらはTextモードおよびそれに関連するモードで、@key{TAB}および@kbd{M-i}のようなコマンドにより、空白文字が挿入されるときのストップポイントとして使用されます。変数@code{tab-stop-list}は、これらの位置を制御します。デフォルト値は@code{nil}で、これはタブストップが8列ごとという意味です。値には、タブストップの列番号を、0基準の列番号のリスト(昇順)で指定することもできます。Emacsは最後の要素と、その1つ前の要素の差分を繰り返すことにより、リストを無限に拡張します。"
 
 #. type: findex
 #: indent.texi.orig:162
 #, no-wrap
 msgid "edit-tab-stops"
-msgstr ""
+msgstr "edit-tab-stops"
 
 #. type: kindex
 #: indent.texi.orig:163
 #, no-wrap
 msgid "C-c C-c @r{(Edit Tab Stops)}"
-msgstr ""
+msgstr "C-c C-c @r{(Edit Tab Stops)}"
 
 #. type: Plain text
 #: indent.texi.orig:168
 msgid ""
 "Instead of customizing the variable @code{tab-stop-list} directly, a "
-"convenient way to view and set tab stops is via the command @kbd{M-x "
-"edit-tab-stops}.  This switches to a buffer containing a description of the "
-"tab stop settings, which looks like this:"
-msgstr ""
+"convenient way to view and set tab stops is via the command @kbd{M-x edit-"
+"tab-stops}.  This switches to a buffer containing a description of the tab "
+"stop settings, which looks like this:"
+msgstr "変数@code{tab-stop-list}を直接カスタマイズするかわりに、コマンド@kbd{M-x edit-tab-stops}を通じて、タブストップを視認しながらセットする便利な方法があります。このコマンドは、以下のようなタブストップの説明を含んだバッファーに切り替えます。"
 
 #. type: example
 #: indent.texi.orig:174
@@ -431,6 +430,10 @@ msgid ""
 "0123456789012345678901234567890123456789012345678\n"
 "To install changes, type C-c C-c\n"
 msgstr ""
+"        :       :       :       :       :       :\n"
+"0         1         2         3         4\n"
+"0123456789012345678901234567890123456789012345678\n"
+"To install changes, type C-c C-c\n"
 
 #. type: Plain text
 #: indent.texi.orig:181
@@ -439,7 +442,7 @@ msgid ""
 "two lines are present just to indicate where the colons are.  If the value "
 "of @code{tab-stop-list} is @code{nil}, as it is by default, no colons are "
 "displayed initially."
-msgstr ""
+msgstr "最初の行は各タブストップ位置にコロンを示します。その後の2行はコロンが示す位置を表示します。@code{tab-stop-list}の値が@code{nil}(デフォルト)の場合、最初はコロンが表示されません。"
 
 #. type: Plain text
 #: indent.texi.orig:194
@@ -455,7 +458,7 @@ msgid ""
 "settings apply only to that buffer.  To save the tab stop settings for "
 "future Emacs sessions, use the Customize interface to save the value of "
 "@code{tab-stop-list} (@pxref{Easy Customization})."
-msgstr ""
+msgstr "異なるタブストップを置きたい列に、コロンを配して指定するために、このバッファーを編集できます。このバッファーはOverwriteモードを使用します(@ref{Minor Modes}を参照してください)。Emacsは、最後に明示した2つのストップの差分を繰り返すことにより、タブストップのリストを無限に拡張することを思い出してください。編集が終わったら、新しいタブストップを有効にするために、@kbd{C-c C-c}とタイプします。通常、新しいタブストップのセッティングは、すべてのバッファーに適用されます。しかし@kbd{M-x edit-tab-stops}を呼び出したバッファーにたいして、ローカルな変数@code{tab-stop-list}を作成していた場合(@ref{Locals}を参照してください)、新しいタブストップのセッティングは、そのバッファーだけに適用されます。将来のEmacsセッションのためにタブストップのセッティングを保存するには、Customizeインターフェースを使用して@code{tab-stop-list}の値を保存します(@ref{Easy Customization}を参照してください)。"
 
 #. type: Plain text
 #: indent.texi.orig:199
@@ -464,19 +467,19 @@ msgid ""
 "how tab characters are displayed in the buffer.  Tab characters are always "
 "displayed as empty spaces extending to the next @dfn{display tab stop}.  "
 "@xref{Text Display}."
-msgstr ""
+msgstr "このセクションで議論したタブストップは、バッファーでタブ文字が表示される方法には影響しないことに注意してください。タブ文字は常に次の@dfn{タブストップ表示(display tab stop)}まで拡張される、空のスペースとして表示されます。@ref{Text Display}を参照してください。"
 
 #. type: section
 #: indent.texi.orig:201
 #, no-wrap
 msgid "Tabs vs. Spaces"
-msgstr ""
+msgstr "Tabs vs. Spaces"
 
 #. type: vindex
 #: indent.texi.orig:203
 #, no-wrap
 msgid "tab-width"
-msgstr ""
+msgstr "tab-width"
 
 #. type: Plain text
 #: indent.texi.orig:210
@@ -486,13 +489,13 @@ msgid ""
 "characters are displayed as a stretch of empty space extending to the next "
 "@dfn{display tab stop}.  By default, there is one display tab stop every "
 "@code{tab-width} columns (the default is 8).  @xref{Text Display}."
-msgstr ""
+msgstr "インデントコマンドは通常、スペース文字とタブ文字を最適にミックスした文字列を挿入(または削除)することにより、望む列に行を揃えます。タブ文字は次の@dfn{タブストップ表示(display tab stop)}まで伸長された、空のスペースとして表示されます。デフォルトでは、@code{tab-width}列ごと(デフォルトは8)に、1つのタブストップ表示があります。@ref{Text Display}を参照してください。"
 
 #. type: vindex
 #: indent.texi.orig:211
 #, no-wrap
 msgid "indent-tabs-mode"
-msgstr ""
+msgstr "indent-tabs-mode"
 
 #. type: Plain text
 #: indent.texi.orig:217
@@ -502,7 +505,7 @@ msgid ""
 "@xref{Locals}, for information about setting buffer-local variables.  Note, "
 "however, that @kbd{C-q @key{TAB}} always inserts a tab character, regardless "
 "of the value of @code{indent-tabs-mode}."
-msgstr ""
+msgstr "もし望むなら、すべてのインデントをスペースだけで行うこともできます。これを要求するには、バッファーローカルな変数@code{indent-tabs-mode}を@code{nil}にセットします。バッファーローカルな変数についての情報は、@ref{Locals}を参照してください。しかし@kbd{C-q @key{TAB}}は、@code{indent-tabs-mode}の値とは無関係に、常にタブ文字を挿入することに注意してください。"
 
 #. type: Plain text
 #: indent.texi.orig:225
@@ -513,19 +516,19 @@ msgid ""
 "can make sure that your file always looks the same.  If you only care about "
 "how it looks within Emacs, another way to tackle this problem is to set the "
 "@code{tab-width} variable in a file-local variable (@pxref{File Variables})."
-msgstr ""
+msgstr "@code{indent-tabs-mode}を@code{nil}にセットする1つの理由は、すべてのエディターがタブ文字を同じ方法で表示するわけではないという理由です。Emacsユーザーも同様で、彼らはカスタマイズされた@code{tab-width}により、異なる値をもつかもしれません。スペースだけを使うことにより、ファイルが常に同じように見えることを保証できます。Emacsでどのように見えるかだけに関心がある場合、この問題に取り組む他の方法は、ファイルローカルな変数@code{tab-width}をセットする方法です(@ref{File Variables}を参照してください)。"
 
 #. type: findex
 #: indent.texi.orig:226
 #, no-wrap
 msgid "tabify"
-msgstr ""
+msgstr "tabify"
 
 #. type: findex
 #: indent.texi.orig:227
 #, no-wrap
 msgid "untabify"
-msgstr ""
+msgstr "untabify"
 
 #. type: Plain text
 #: indent.texi.orig:233
@@ -535,19 +538,19 @@ msgid ""
 "the region for sequences of spaces, and converts sequences of at least two "
 "spaces to tabs if that can be done without changing indentation.  @kbd{M-x "
 "untabify} changes all tabs in the region to appropriate numbers of spaces."
-msgstr ""
+msgstr "空白以外の文字の列を常に保ちながら、スペースをタブに、またはその逆の変換を行うコマンドも存在します。@kbd{M-x tabify}は、リージョンの連続するスペースをスキャンして、インデントを変更せずに、少なくとも2文字の連続するスペースをタブに変換します。@kbd{M-x untabify}は、リージョンのすべてのタブを適正な数のスペースに変更します。"
 
 #. type: section
 #: indent.texi.orig:235
 #, no-wrap
 msgid "Convenience Features for Indentation"
-msgstr ""
+msgstr "Convenience Features for Indentation"
 
 #. type: vindex
 #: indent.texi.orig:237
 #, no-wrap
 msgid "tab-always-indent"
-msgstr ""
+msgstr "tab-always-indent"
 
 #. type: Plain text
 #: indent.texi.orig:247
@@ -560,25 +563,25 @@ msgid ""
 "point (@pxref{Symbol Completion}).  If the value is @code{nil}, then "
 "@key{TAB} indents the current line only if point is at the left margin or in "
 "the line's indentation; otherwise, it inserts a tab character."
-msgstr ""
+msgstr "変数@code{tab-always-indent}は、@key{TAB} (@code{indent-for-tab-command})コマンドの動作を微調整します。デフォルト値は@code{t}で、これは@ref{Indentation}で説明した動作を与えます。値をシンボル@code{complete}に変更すると、@key{TAB}は最初にカレント行のインデントを試みます、すでにその行がインデントされている場合、このコマンドはポイント位置のテキストの補完を試みます(@ref{Symbol Completion}を参照してください)。値が@code{nil}の場合、@key{TAB}はポイントが行の左端かインデント位置にあるときだけインデントを行い、それ以外はタブ文字を挿入します。"
 
 #. type: cindex
 #: indent.texi.orig:248
 #, no-wrap
 msgid "Electric Indent mode"
-msgstr ""
+msgstr "Electric Indent mode"
 
 #. type: cindex
 #: indent.texi.orig:249
 #, no-wrap
 msgid "mode, Electric Indent"
-msgstr ""
+msgstr "mode, Electric Indent"
 
 #. type: findex
 #: indent.texi.orig:250
 #, no-wrap
 msgid "electric-indent-mode"
-msgstr ""
+msgstr "electric-indent-mode"
 
 #. type: Plain text
 #: indent.texi.orig:255
@@ -587,4 +590,4 @@ msgid ""
 "line after every @key{RET} you type.  This mode is enabled by default.  To "
 "toggle this minor mode, type @kbd{M-x electric-indent-mode}.  To toggle the "
 "mode in a single buffer, use @kbd{M-x electric-indent-local-mode}."
-msgstr ""
+msgstr "Electric Indentモードはグローバルなマイナーモードで、これは@key{RET}をタイプしたあと自動的にインデントを行います。このモードはデフォルトで有効です。このマイナーモードを切り替えるには、@kbd{M-x electric-indent-mode}とタイプします。1つのバッファーにたいしてモードを切り替えるには、@kbd{M-x electric-indent-local-mode}を使用してください。"
