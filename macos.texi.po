@@ -3,48 +3,47 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2016-03-08 00:25+0900\n"
+"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
 #: macos.texi.orig:4
 #, no-wrap
 msgid "Mac OS / GNUstep"
-msgstr ""
+msgstr "Mac OS / GNUstep"
 
 #. type: appendix
 #: macos.texi.orig:5
 #, no-wrap
 msgid "Emacs and Mac OS / GNUstep"
-msgstr ""
+msgstr "Emacs and Mac OS / GNUstep"
 
 #. type: cindex
 #: macos.texi.orig:6
 #, no-wrap
 msgid "Mac OS X"
-msgstr ""
+msgstr "Mac OS X"
 
 #. type: cindex
 #: macos.texi.orig:7
 #, no-wrap
 msgid "Macintosh"
-msgstr ""
+msgstr "Macintosh"
 
 #. type: cindex
 #: macos.texi.orig:8
 #, no-wrap
 msgid "GNUstep"
-msgstr ""
+msgstr "GNUstep"
 
 #. type: Plain text
 #: macos.texi.orig:16
@@ -55,7 +54,7 @@ msgid ""
 "without window system support, with X11, or with the Cocoa interface; this "
 "section only applies to the Cocoa build.  This does not support versions of "
 "Mac OS X earlier than 10.4."
-msgstr ""
+msgstr "このセクションでは、GNU/Linuxまたはその他のオペレーティングシステムでGNUstepライブラリーとともにビルドされたEmacs、またはMAC OS XでネイティブウィンドウシステムのサポートつきでビルドされたEmacsを使用する際の特性を説明します。Mac OS Xでは、Emacsはウィンドウシステムサポートなし/あり、X11、Cocoaインターフェースのいずれかでビルドできます。このセクションはCocoaビルドだけに適合します。これは、Mac OS Xのバージョン10.4以前はサポートしません。"
 
 #. type: Plain text
 #: macos.texi.orig:26
@@ -69,57 +68,57 @@ msgid ""
 "system: GNUstep, which is free software.  As of this writing, Emacs GNUstep "
 "support is alpha status (@pxref{GNUstep Support}), but we hope to improve it "
 "in the future."
-msgstr ""
+msgstr "さまざまな歴史的、技術的な理由により、Emacsは内部的に``Cocoa''や``Mac OS X''ではなく、@samp{Nextstep}という用語を使用します。たとえばこのセクションで説明するほとんどのコマンドや変数は@samp{ns-}で始まりますが、これは@samp{Nextstep}を短縮したものです。NeXTstepは1980年代にNeXT Incからリリースされたアプリケーションインターフェースで、Cocoaはそれの直系の子孫です。Cocoaとは別に、他にもNeXTstepスタイルのシステムのGNUstepがあり、これはフリーソフトウェアです。これを記述している時点で、EmacsのGNUstepサポートはアルファ状態(@ref{GNUstep Support}を参照してください)ですが、わたしたちは、将来これを改善したいと望んでいます。"
 
 #. type: node
 #: macos.texi.orig:32 macos.texi.orig:34
 #, no-wrap
 msgid "Mac / GNUstep Basics"
-msgstr ""
+msgstr "Mac / GNUstep Basics"
 
 #. type: menuentry
 #: macos.texi.orig:32
 msgid "Basic Emacs usage under GNUstep or Mac OS."
-msgstr ""
+msgstr "GNUstepまたはMac OSでのEmacsの基本的な使用方法。"
 
 #. type: section
 #: macos.texi.orig:32 macos.texi.orig:90 macos.texi.orig:91
 #, no-wrap
 msgid "Mac / GNUstep Customization"
-msgstr ""
+msgstr "Mac / GNUstep Customization"
 
 #. type: menuentry
 #: macos.texi.orig:32
 msgid "Customizations under GNUstep or Mac OS."
-msgstr ""
+msgstr "GNUstepまたはMac OSでのカスタマイズ。"
 
 #. type: node
 #: macos.texi.orig:32 macos.texi.orig:130
 #, no-wrap
 msgid "Mac / GNUstep Events"
-msgstr ""
+msgstr "Mac / GNUstep Events"
 
 #. type: menuentry
 #: macos.texi.orig:32
 msgid "How window system events are handled."
-msgstr ""
+msgstr "ウィンドウシステムイベントが処理される方法。"
 
 #. type: section
 #: macos.texi.orig:32 macos.texi.orig:207 macos.texi.orig:208
 #, no-wrap
 msgid "GNUstep Support"
-msgstr ""
+msgstr "GNUstep Support"
 
 #. type: menuentry
 #: macos.texi.orig:32
 msgid "Details on status of GNUstep support."
-msgstr ""
+msgstr "GNUstepサポート状態の詳細。"
 
 #. type: section
 #: macos.texi.orig:35
 #, no-wrap
 msgid "Basic Emacs usage under Mac OS and GNUstep"
-msgstr ""
+msgstr "Basic Emacs usage under Mac OS and GNUstep"
 
 #. type: Plain text
 #: macos.texi.orig:42
@@ -129,19 +128,19 @@ msgid ""
 "of key bindings using this modifier key that mimic other Mac / GNUstep "
 "applications (@pxref{Mac / GNUstep Events}).  You can change these bindings "
 "in the usual way (@pxref{Key Bindings})."
-msgstr ""
+msgstr "デフォルトでは、キー@key{alt}と@key{option}は、@key{Meta}と同じです。Macの@key{Cmd}キーは@key{Super}と同じで、Emacsは他のMac/GNUstepアプリケーション(@ref{Mac / GNUstep Events}を参照してください)を模倣するこれらの修飾キーを使用した、一連のキーバインドを提供します。これらのキーバインドは通常の方法で変更できます(@ref{Key Bindings}を参照してください)。"
 
 #. type: vindex
 #: macos.texi.orig:43
 #, no-wrap
 msgid "ns-alternate-modifier"
-msgstr ""
+msgstr "ns-alternate-modifier"
 
 #. type: vindex
 #: macos.texi.orig:44
 #, no-wrap
 msgid "ns-right-alternate-modifier"
-msgstr ""
+msgstr "ns-right-alternate-modifier"
 
 #. type: Plain text
 #: macos.texi.orig:53
@@ -153,7 +152,7 @@ msgid ""
 "like the corresponding modifier keys; a value to @code{left} means be the "
 "same key as @code{ns-alternate-modifier}; a value of @code{none} tells Emacs "
 "to ignore them."
-msgstr ""
+msgstr "変数@code{ns-right-alternate-modifier}は、右の@key{alt}と@key{option}キーの動作を制御します。変数の値が@code{left}(デフォルト)の場合、これらのキーは左側のキーと同じように動作します。値が@code{control}、@code{meta}、@code{alt}、@code{super}、@code{hyper}の場合、これらのキーはその値に対応する修飾キーのように動作します。値@code{left}は、@code{ns-alternate-modifier}と同じキーであることを意味します。値@code{none}は、Emacsにこれらを無視するよう指示します。"
 
 #. type: Plain text
 #: macos.texi.orig:59
@@ -163,7 +162,7 @@ msgid ""
 "changing the default face, as @kbd{S-Mouse-1} normally does (@pxref{Text "
 "Scale}).  This change makes Emacs behave more like other Mac / GNUstep "
 "applications."
-msgstr ""
+msgstr "@kbd{S-Mouse-1}は@kbd{Mouse-3}と同様に、クリックした位置にリージョンを調整します(@code{mouse-save-then-kill})。@kbd{S-Mouse-1}が通常行なうように、デフォルトフェイスを変更するためのポップアップメニュー(@ref{Text Scale}を参照してください)は表示しません。この変更は、Emacsが他のMac/GNUstepアプリケーションと同じように動作させるためです。"
 
 #. type: Plain text
 #: macos.texi.orig:65
@@ -172,7 +171,7 @@ msgid ""
 "@kbd{Cmd-S} bindings, Emacs uses graphical file dialogs to read file names.  "
 "However, if you use the regular Emacs key sequences, such as @kbd{C-x C-f}, "
 "Emacs uses the minibuffer to read file names."
-msgstr ""
+msgstr "メニューを使用してファイルを開いたり保存するときや、@kbd{Cmd-o}や@kbd{Cmd-S}といったキーバインドを使用する場合、Emacsはファイル名の読み取りにグラフィカルなファイルダイアログを使用します。しかし@kbd{C-x C-f}のような標準のEmacsのキーシーケンスを使用する場合、Emacsはミニバッファーを使用してファイル名を読み取ります。"
 
 #. type: Plain text
 #: macos.texi.orig:72
@@ -182,13 +181,13 @@ msgid ""
 "primary selection; otherwise, Emacs will use the ``clipboard'' selection.  "
 "Likewise, @kbd{Cmd-y} (instead of @kbd{C-y})  yanks from the X primary "
 "selection instead of the kill-ring or clipboard."
-msgstr ""
+msgstr "GNUstepでは、X-windows環境においてテキストをXのプライマリー選択(primary selection)に転送するために、@kbd{C-w}や@kbd{M-w}のかわりに、@kbd{Cmd-c}を使用する必要があります。そうでない場合、Emacsは``クリップボード''選択を使用します。同様に(@kbd{C-y}のかわりに)@kbd{Cmd-y}は、killリングやクリップボードではなく、Xのプライマリー選択からyankします。"
 
 #. type: subsection
 #: macos.texi.orig:74
 #, no-wrap
 msgid "Grabbing environment variables"
-msgstr ""
+msgstr "Grabbing environment variables"
 
 #. type: Plain text
 #: macos.texi.orig:85
@@ -200,7 +199,7 @@ msgid ""
 "not a descendant of any shell, so its environment variables haven't been "
 "set, which often causes the subprocesses it launches to behave differently "
 "than they would when launched from the shell."
-msgstr ""
+msgstr "latexやmanのような、Emacsの下で実行される多くのプログラムは、環境変数のセッティングに依存します。Emacsがシェルから起動された場合、自動的にこれらの環境変数を継承し、Emacsのサブプロセスもそれらを継承します。しかしEmacsがFinderから起動された場合は、シェルの子プロセスではないので、環境変数はセットされません。これによりサブプロセスの振る舞いが、シェルから実行したときと異なることが起こり得ます。"
 
 #. type: Plain text
 #: macos.texi.orig:89
@@ -208,7 +207,7 @@ msgid ""
 "For the PATH and MANPATH variables, a system-wide method of setting PATH is "
 "recommended on Mac OS X 10.5 and later, using the @file{/etc/paths} files "
 "and the @file{/etc/paths.d} directory."
-msgstr ""
+msgstr "変数PATHおよびMANPATHにたいしては、MAC OS X10.5以降ではPATHをセットするシステムワイドな手法は、@file{/etc/paths}ファイルと@file{/etc/paths.d}ディレクトリーを使用することが推奨されています。"
 
 #. type: Plain text
 #: macos.texi.orig:97
@@ -217,22 +216,22 @@ msgid ""
 "port.  For example, they affect things such as the modifier keys and the "
 "fullscreen behavior.  To see all such options, use @kbd{M-x customize-group "
 "@key{RET} ns @key{RET}}."
-msgstr ""
+msgstr "多くはありませんが、Nextstepポートに特有のカスタマイズオプションがいくつかあります。たとえば修飾キーやフルスクリーン動作に影響するオプションです。そのようなオプションをすべて閲覧するには、@kbd{M-x customize-group @key{RET} ns @key{RET}}を使用します。"
 
 #. type: subsection
 #: macos.texi.orig:98
 #, no-wrap
 msgid "Font and Color Panels"
-msgstr ""
+msgstr "Font and Color Panels"
 
 #. type: Plain text
 #: macos.texi.orig:104
 msgid ""
 "The standard Mac / GNUstep font and color panels are accessible via Lisp "
-"commands.  The Font Panel may be accessed with @kbd{M-x "
-"ns-popup-font-panel}.  It will set the default font in the frame most "
-"recently used or clicked on."
-msgstr ""
+"commands.  The Font Panel may be accessed with @kbd{M-x ns-popup-font-"
+"panel}.  It will set the default font in the frame most recently used or "
+"clicked on."
+msgstr "標準のMac/GNUstepのフォントパネルとカラーパネルには、Lispコマンドを通じてアクセスできます。フォントパネルにアクセスするには、@kbd{M-x ns-popup-font-panel}を使用します。これは一番最近使用された、またはクリックされたフレームの、デフォルトフォントをセットします。"
 
 #. type: Plain text
 #: macos.texi.orig:113
@@ -242,20 +241,20 @@ msgid ""
 "will alter the foreground color.  Shift dragging will alter the background "
 "color.  To discard the settings, create a new frame and close the altered "
 "one."
-msgstr ""
+msgstr "@kbd{M-x ns-popup-color-panel}でカラーパネルを起動して、変更したいEmacsフェイスの上にカラーをドラッグできます。通常のドラッグではフォアグラウンドカラーを変更します。シフトを押しながらドラッグした場合は、バックグラウンドを変更します。カラーのセットを破棄したい場合は、新しいフレームを作成して、変更したフレームを閉じてください。"
 
 #. type: Plain text
 #: macos.texi.orig:119
 msgid ""
-"Useful in this context is the listing of all faces obtained by @kbd{M-x "
-"list-faces-display}."
-msgstr ""
+"Useful in this context is the listing of all faces obtained by @kbd{M-x list-"
+"faces-display}."
+msgstr "このコンテキストで有用なのは、@kbd{M-x list-faces-display}によりすべてのフェイスのリストを取得することです。"
 
 #. type: cindex
 #: macos.texi.orig:120
 #, no-wrap
 msgid "Core Text, on Mac OS X"
-msgstr ""
+msgstr "Core Text, on Mac OS X"
 
 #. type: Plain text
 #: macos.texi.orig:124
@@ -263,19 +262,19 @@ msgid ""
 "In Mac OS X 10.5 and later, Emacs uses a Core Text based font backend by "
 "default.  If you prefer the older font style, enter the following at the "
 "command-line before starting Emacs:"
-msgstr ""
+msgstr "Mac OS X 10.5以降では、EmacsはデフォルトでCore Textベースのフォントバックエンドを使用します。古いフォントスタイルにしたい場合は、Emacsを起動する前に、以下のコマンドラインを入力します:"
 
 #. type: example
 #: macos.texi.orig:127
 #, no-wrap
 msgid "% defaults write org.gnu.Emacs FontBackend ns\n"
-msgstr ""
+msgstr "% defaults write org.gnu.Emacs FontBackend ns\n"
 
 #. type: section
 #: macos.texi.orig:131
 #, no-wrap
 msgid "Windowing System Events under Mac OS / GNUstep"
-msgstr ""
+msgstr "Windowing System Events under Mac OS / GNUstep"
 
 #. type: Plain text
 #: macos.texi.orig:138
@@ -285,19 +284,19 @@ msgid ""
 "correspond to any sequence of keystrokes.  Under Emacs, these ``key'' events "
 "can be bound to functions just like ordinary keystrokes.  Here is a list of "
 "these events."
-msgstr ""
+msgstr "Nextstepアプリケーションは、Xでは同等なものがない、特別なイベントを受け取ります。これらは、対応するキーストロークのシーケンスとしてではなく、特別に定義された``キー''として送られます。Emacsでは、これらの``キー''イベントを、通常のキーストロークのように、関数にバインドできます。以下はこのようなイベントのリストです。"
 
 #. type: item
 #: macos.texi.orig:140
 #, no-wrap
 msgid "ns-open-file"
-msgstr ""
+msgstr "ns-open-file"
 
 #. type: vindex
 #: macos.texi.orig:141
 #, no-wrap
 msgid "ns-pop-up-frames"
-msgstr ""
+msgstr "ns-pop-up-frames"
 
 #. type: table
 #: macos.texi.orig:149
@@ -308,7 +307,7 @@ msgid ""
 "a new frame and visiting the file in that frame (@code{ns-find-file}).  As "
 "an exception, if the selected buffer is the @file{*scratch*} buffer, Emacs "
 "visits the file in the selected frame."
-msgstr ""
+msgstr "このイベントは、他のNextstepアプリケーションがEmacsにファイルを開くよう要求したときに発生します。これの典型的な理由としては、ユーザーがFinderアプリケーションでファイルをダブルクリックしたときなどです。デフォルトでは、Emacsはこのイベントにたいして、新しいフレームを開いて、そのフレームでファイルをvisitして応答します(@code{ns-find-file})。例外として、選択されたバッファーが@file{*scratch*}バッファーの場合、Emacsは選択されたフレームでファイルをvisitします。"
 
 #. type: table
 #: macos.texi.orig:155
@@ -318,27 +317,27 @@ msgid ""
 "what we have just described.  A value of @code{t} means to always visit the "
 "file in a new frame.  A value of @code{nil} means to always visit the file "
 "in an existing frame."
-msgstr ""
+msgstr "Emacsが@code{ns-open-file}イベントにたいしてどのように応答するかは、@code{ns-pop-up-frames}を変更することにより、変えることができます。デフォルト値は@samp{fresh}で、これは上で説明したとおりの動作を行ないます。値@code{t}は、ファイルを常に新しいフレームでvisitすることを意味します。値@code{nil}は、ファイルを常に既存のフレームでvisitすることを意味します。"
 
 #. type: item
 #: macos.texi.orig:156
 #, no-wrap
 msgid "ns-open-temp-file"
-msgstr ""
+msgstr "ns-open-temp-file"
 
 #. type: table
 #: macos.texi.orig:160
 msgid ""
 "This event occurs when another application requests that Emacs open a "
-"temporary file.  By default, this is handled by just generating a "
-"@code{ns-open-file} event, the results of which are described above."
-msgstr ""
+"temporary file.  By default, this is handled by just generating a @code{ns-"
+"open-file} event, the results of which are described above."
+msgstr "このイベントは、他のアプリケーションがEmacsに一時ファイルを開くように要求したとき発生します。デフォルトでは、単に@code{ns-open-file}イベントを生成することにより処理され、結果は上で説明したとおりになります。"
 
 #. type: item
 #: macos.texi.orig:161
 #, no-wrap
 msgid "ns-open-file-line"
-msgstr ""
+msgstr "ns-open-file-line"
 
 #. type: table
 #: macos.texi.orig:166
@@ -347,13 +346,13 @@ msgid ""
 "particular file, but also a particular line or sequence of lines in the "
 "file.  Emacs handles this by visiting that file and highlighting the "
 "requested line (@code{ns-open-file-select-line})."
-msgstr ""
+msgstr "ProjectBuilderやgdbのようないくつかのアプリケーションは、特定のファイルだけではなく、そのファイルの特定の行、または一連の行を要求します。Emacsはそのファイルをvisitして要求された行をハイライトすることにより、これを処理します(@code{ns-open-file-select-line})。"
 
 #. type: item
 #: macos.texi.orig:167
 #, no-wrap
 msgid "ns-drag-file"
-msgstr ""
+msgstr "ns-drag-file"
 
 #. type: table
 #: macos.texi.orig:173
@@ -362,31 +361,31 @@ msgid ""
 "Emacs frame.  The default behavior is to insert the contents of all the "
 "dragged files into the current buffer (@code{ns-insert-files}).  The list of "
 "dragged files is stored in the variable @code{ns-input-file}."
-msgstr ""
+msgstr "このイベントは、ユーザーが他のアプリケーションから、Emacsフレームにファイルをドラッグしたとき発生します。デフォルトの動作は、カレントバッファーにドラッグされたファイルのすべての内容を挿入します(@code{ns-insert-files})。ドラッグされたファイルのリストは、変数@code{ns-input-file}に格納されます。"
 
 #. type: item
 #: macos.texi.orig:174
 #, no-wrap
 msgid "ns-drag-color"
-msgstr ""
+msgstr "ns-drag-color"
 
 #. type: table
 #: macos.texi.orig:182
 msgid ""
 "This event occurs when a user drags a color from the color well (or some "
 "other source) into an Emacs frame.  The default behavior is to alter the "
-"foreground color of the area the color was dragged onto "
-"(@code{ns-set-foreground-at-mouse}).  If this event is issued with a "
-"@key{Shift} modifier, Emacs changes the background color instead "
-"(@code{ns-set-background-at-mouse}).  The name of the dragged color is "
-"stored in the variable @code{ns-input-color}."
-msgstr ""
+"foreground color of the area the color was dragged onto (@code{ns-set-"
+"foreground-at-mouse}).  If this event is issued with a @key{Shift} modifier, "
+"Emacs changes the background color instead (@code{ns-set-background-at-"
+"mouse}).  The name of the dragged color is stored in the variable @code{ns-"
+"input-color}."
+msgstr "このイベントは、ユーザーがcolor well(または他のソース)からカラーをドラッグしたとき発生します。デフォルトの動作では、その領域のフォアグラウンドカラーを、ドラッグされたカラーに変更します(@code{ns-set-foreground-at-mouse})。このイベントが@key{Shift}修飾キーとともに発行された場合、Emacsはかわりにバックグラウンドカラーを変更します(@code{ns-set-background-at-mouse})。ドラッグされたカラーの名前は、変数@code{ns-input-color}に格納されます。"
 
 #. type: item
 #: macos.texi.orig:183
 #, no-wrap
 msgid "ns-change-font"
-msgstr ""
+msgstr "ns-change-font"
 
 #. type: table
 #: macos.texi.orig:190
@@ -394,15 +393,15 @@ msgid ""
 "This event occurs when the user selects a font in a Nextstep font panel "
 "(which can be opened with @kbd{Cmd-t}).  The default behavior is to adjust "
 "the font of the selected frame (@code{ns-respond-to-changefont}).  The name "
-"and size of the selected font are stored in the variables "
-"@code{ns-input-font} and @code{ns-input-fontsize}, respectively."
-msgstr ""
+"and size of the selected font are stored in the variables @code{ns-input-"
+"font} and @code{ns-input-fontsize}, respectively."
+msgstr "このイベントは、ユーザーがNextstep font panel(これは@kbd{Cmd-t}で開くことができます)でフォントを選択したとき発生します。デフォルトの動作は、選択されたフレームのフォントを変更します(@code{ns-respond-to-changefont})。選択されたフォントの名前とサイズは、変数@code{ns-input-font}と@code{ns-input-fontsize}に格納されます。"
 
 #. type: item
 #: macos.texi.orig:191
 #, no-wrap
 msgid "ns-power-off"
-msgstr ""
+msgstr "ns-power-off"
 
 #. type: table
 #: macos.texi.orig:195
@@ -410,7 +409,7 @@ msgid ""
 "This event occurs when the user logs out and Emacs is still running, or when "
 "`Quit Emacs' is chosen from the application menu.  The default behavior is "
 "to save all file-visiting buffers."
-msgstr ""
+msgstr "このイベントは、ユーザーがEmacsを実行中にログアウトしたとき、またはアプリケーションメニューから`Quit Emacs'を選択したとき発生します。デフォルトの動作は、ファイルをvisitしているすべてのバッファーを保存します。"
 
 #. type: Plain text
 #: macos.texi.orig:206
@@ -423,23 +422,23 @@ msgid ""
 "You can also use the Lisp function @code{ns-perform-service} to pass "
 "arbitrary strings to arbitrary services and receive the results back.  Note "
 "that you may need to restart Emacs to access newly-available services."
-msgstr ""
+msgstr "Emacsはユーザーに、@samp{ns-service-}で始まりサービス名で終わるコマンドを通じて、Nextstepサービスを使用することも可能にします。@kbd{M-x ns-service-@key{TAB}}とタイプして、これらのコマンドをリストを見ることができます。これらの関数は、マークされたテキストを処理(結果でそれを置き換える)したり、文字列を引数として結果を文字列で返します。Lisp関数@code{ns-perform-service}を使用して、任意の文字列を任意のサービスに渡して、結果を受けとることもできます。新たに利用可能になったサービスにアクセスするには、Emacsの再起動が必要なことに注意してください。"
 
 #. type: Plain text
 #: macos.texi.orig:212
 msgid ""
 "Emacs can be built and run under GNUstep, but there are still issues to be "
 "addressed.  Interested developers should contact"
-msgstr ""
+msgstr "EmacsはGNUstepの下でビルドして実行することができますが、解決すべき問題が残っています。興味のある開発者は、"
 
 #. type: ifnothtml
 #: macos.texi.orig:214
 msgid "@email{emacs-devel@@gnu.org}."
-msgstr ""
+msgstr "@email{emacs-devel@@gnu.org}に連絡してください。"
 
 #. type: ifhtml
 #: macos.texi.orig:218
 msgid ""
 "@url{http://lists.gnu.org/mailman/listinfo/emacs-devel, the emacs-devel "
 "mailing list}."
-msgstr ""
+msgstr "@url{http://lists.gnu.org/mailman/listinfo/emacs-devel, emacs-develメーリングリスト}に連絡してください。"
