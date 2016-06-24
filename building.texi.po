@@ -3,48 +3,47 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-12-23 21:36+0900\n"
+"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
 #: building.texi.orig:5
 #, no-wrap
 msgid "Building"
-msgstr ""
+msgstr "Building"
 
 #. type: chapter
 #: building.texi.orig:6
 #, no-wrap
 msgid "Compiling and Testing Programs"
-msgstr ""
+msgstr "Compiling and Testing Programs"
 
 #. type: cindex
 #: building.texi.orig:7
 #, no-wrap
 msgid "building programs"
-msgstr ""
+msgstr "building programs"
 
 #. type: cindex
 #: building.texi.orig:8
 #, no-wrap
 msgid "program building"
-msgstr ""
+msgstr "program building"
 
 #. type: cindex
 #: building.texi.orig:9
 #, no-wrap
 msgid "running Lisp functions"
-msgstr ""
+msgstr "running Lisp functions"
 
 #. type: Plain text
 #: building.texi.orig:14
@@ -52,157 +51,157 @@ msgid ""
 "The previous chapter discusses the Emacs commands that are useful for making "
 "changes in programs.  This chapter deals with commands that assist in the "
 "process of compiling and testing programs."
-msgstr ""
+msgstr "前のチャプターでは、プログラムを変更するのに便利なEmacsコマンドについて議論しました。このチャプターでは、プログラムのコンパイルとテストに役立つコマンドを扱います。"
 
 #. type: node
 #: building.texi.orig:31 building.texi.orig:33
 #, no-wrap
 msgid "Compilation"
-msgstr ""
+msgstr "Compilation"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "Compiling programs in languages other than Lisp (C, Pascal, etc.)."
-msgstr ""
+msgstr "Lisp以外の言語(C、Pascal、など)のプログラムのコンパイル。"
 
 #. type: section
 #: building.texi.orig:31 building.texi.orig:133 building.texi.orig:134
 #, no-wrap
 msgid "Compilation Mode"
-msgstr ""
+msgstr "Compilation Mode"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "The mode for visiting compiler errors."
-msgstr ""
+msgstr "コンパイラーのエラーをvisitするモード。"
 
 #. type: node
 #: building.texi.orig:31 building.texi.orig:275
 #, no-wrap
 msgid "Compilation Shell"
-msgstr ""
+msgstr "Compilation Shell"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "Customizing your shell properly for use in the compilation buffer."
-msgstr ""
+msgstr "compilationバッファーで使えるように、シェルを適切にカスタマイズする。"
 
 #. type: node
 #: building.texi.orig:31 building.texi.orig:331
 #, no-wrap
 msgid "Grep Searching"
-msgstr ""
+msgstr "Grep Searching"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "Searching with grep."
-msgstr ""
+msgstr "grepによる検索。"
 
 #. type: node
 #: building.texi.orig:31 building.texi.orig:416
 #, no-wrap
 msgid "Flymake"
-msgstr ""
+msgstr "Flymake"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "Finding syntax errors on the fly."
-msgstr ""
+msgstr "オンザフライでの構文エラーの検索。"
 
 #. type: node
 #: building.texi.orig:31 building.texi.orig:446
 #, no-wrap
 msgid "Debuggers"
-msgstr ""
+msgstr "Debuggers"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "Running symbolic debuggers for non-Lisp programs."
-msgstr ""
+msgstr "非Lispプログラムのための、シンボルデバッガーの実行。"
 
 #. type: node
 #: building.texi.orig:31 building.texi.orig:1289
 #, no-wrap
 msgid "Executing Lisp"
-msgstr ""
+msgstr "Executing Lisp"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid ""
 "Various modes for editing Lisp programs, with different facilities for "
 "running the Lisp programs."
-msgstr ""
+msgstr "Lispプログラムを編集するためのさまざまなモードと、Lispプログラムを実行する異なる機能。"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "Libraries: Lisp Libraries"
-msgstr ""
+msgstr "Libraries: Lisp Libraries"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "How Lisp programs are loaded into Emacs."
-msgstr ""
+msgstr "LispプログラムがEmacsにロードされる方法。"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "Eval: Lisp Eval"
-msgstr ""
+msgstr "Eval: Lisp Eval"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "Executing a single Lisp expression in Emacs."
-msgstr ""
+msgstr "Emacsで1つのLisp式を実行する。"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "Interaction: Lisp Interaction"
-msgstr ""
+msgstr "Interaction: Lisp Interaction"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "Executing Lisp in an Emacs buffer."
-msgstr ""
+msgstr "EmacsバッファーでLispを実行する。"
 
 #. type: node
 #: building.texi.orig:31 building.texi.orig:1563
 #, no-wrap
 msgid "External Lisp"
-msgstr ""
+msgstr "External Lisp"
 
 #. type: menuentry
 #: building.texi.orig:31
 msgid "Communicating through Emacs with a separate Lisp."
-msgstr ""
+msgstr "Emacsを通じて別のLispと通信する。"
 
 #. type: section
 #: building.texi.orig:34
 #, no-wrap
 msgid "Running Compilations under Emacs"
-msgstr ""
+msgstr "Running Compilations under Emacs"
 
 #. type: cindex
 #: building.texi.orig:35
 #, no-wrap
 msgid "inferior process"
-msgstr ""
+msgstr "inferior process"
 
 #. type: cindex
 #: building.texi.orig:36
 #, no-wrap
 msgid "make"
-msgstr ""
+msgstr "make"
 
 #. type: cindex
 #: building.texi.orig:37
 #, no-wrap
 msgid "compilation errors"
-msgstr ""
+msgstr "compilation errors"
 
 #. type: cindex
 #: building.texi.orig:38
 #, no-wrap
 msgid "error log"
-msgstr ""
+msgstr "error log"
 
 #. type: Plain text
 #: building.texi.orig:43
@@ -210,50 +209,50 @@ msgid ""
 "Emacs can run compilers for languages such as C and Fortran, feeding the "
 "compilation log into an Emacs buffer.  It can also parse the error messages "
 "and show you where the errors occurred."
-msgstr ""
+msgstr "Emacsは、CやFortranのような言語のためのコンパイラーを実行でき、コンパイルログをEmacsのバッファーに取り込むことができます。エラーメッセージを解析して、エラーが発生した場所を示すこともできます。"
 
 #. type: item
 #: building.texi.orig:45
 #, no-wrap
 msgid "M-x compile"
-msgstr ""
+msgstr "M-x compile"
 
 #. type: table
 #: building.texi.orig:48
 msgid ""
 "Run a compiler asynchronously under Emacs, with error messages going to the "
 "@file{*compilation*} buffer."
-msgstr ""
+msgstr "Emacs下で非同期にコンパイラーを実行し、エラーメッセージは@file{*compilation*}バッファーに送られます。"
 
 #. type: item
 #: building.texi.orig:48
 #, no-wrap
 msgid "M-x recompile"
-msgstr ""
+msgstr "M-x recompile"
 
 #. type: table
 #: building.texi.orig:51
 msgid ""
-"Invoke a compiler with the same command as in the last invocation of "
-"@kbd{M-x compile}."
-msgstr ""
+"Invoke a compiler with the same command as in the last invocation of @kbd{M-"
+"x compile}."
+msgstr "最後に呼び出した@kbd{M-x compile}と同じコマンドで、コンパイラーを呼び出します。"
 
 #. type: item
 #: building.texi.orig:51
 #, no-wrap
 msgid "M-x kill-compilation"
-msgstr ""
+msgstr "M-x kill-compilation"
 
 #. type: table
 #: building.texi.orig:53
 msgid "Kill the running compilation subprocess."
-msgstr ""
+msgstr "サブプロセスで実行されているコンパイルをkillします。"
 
 #. type: findex
 #: building.texi.orig:55
 #, no-wrap
 msgid "compile"
-msgstr ""
+msgstr "compile"
 
 #. type: Plain text
 #: building.texi.orig:63
@@ -265,13 +264,13 @@ msgid ""
 "current buffer's default directory is used as the working directory for the "
 "execution of the command; normally, therefore, compilation takes place in "
 "this directory."
-msgstr ""
+msgstr "@code{make}、または他のコンパイルコマンドを実行するには、@kbd{M-x compile}とタイプします。これはミニバッファーを使用してシェルのコマンドラインを読み取り、シェルをEmacsのサブプロセス(または@dfn{下位プロセス(inferior process)})として、そのコマンドを実行します。出力は@file{*compilation*}という名前のバッファーに挿入されます。カレントバッファーのデフォルトディレクトリーが、コマンドを実行する作業ディレクトリーとして使用されます。したがって、通常はそのディレクトリーでコンパイルが行われます。"
 
 #. type: vindex
 #: building.texi.orig:64
 #, no-wrap
 msgid "compile-command"
-msgstr ""
+msgstr "compile-command"
 
 #. type: Plain text
 #: building.texi.orig:74
@@ -279,12 +278,12 @@ msgid ""
 "The default compilation command is @samp{make -k}, which is usually correct "
 "for programs compiled using the @command{make} utility (the @samp{-k} flag "
 "tells @command{make} to continue compiling as much as possible after an "
-"error).  @xref{Top,, Make, make, GNU Make Manual}.  If you have done "
-"@kbd{M-x compile} before, the command that you specified is automatically "
-"stored in the variable @code{compile-command}; this is used as the default "
-"the next time you type @kbd{M-x compile}.  A file can also specify a "
-"file-local value for @code{compile-command} (@pxref{File Variables})."
-msgstr ""
+"error).  @xref{Top,, Make, make, GNU Make Manual}.  If you have done @kbd{M-"
+"x compile} before, the command that you specified is automatically stored in "
+"the variable @code{compile-command}; this is used as the default the next "
+"time you type @kbd{M-x compile}.  A file can also specify a file-local value "
+"for @code{compile-command} (@pxref{File Variables})."
+msgstr "デフォルトのコンパイルコマンドは@samp{make -k}で、これは@command{make}ユーティリティーを使ってコンパイルするプログラムにたいして通常正しいコマンドです(@samp{-k}フラグは@command{make}に、エラー後も可能な限りコンパイルを継続するよう指示します)。@ref{Top,, Make, make, GNU Make Manual}を参照してください。前に@kbd{M-x compile}を実行している場合、それに指定したコマンドは自動的に変数@code{compile-command}に格納されます。これは、次に@kbd{M-x compile}とタイプしたときのデフォルトとなります。ファイルのファイルローカルな値で@code{compile-command}を指定することもできます(@ref{File Variables}を参照してください)。"
 
 #. type: Plain text
 #: building.texi.orig:85
@@ -298,7 +297,7 @@ msgid ""
 "reason, the mode line of the @file{*compilation*} buffer changes to say "
 "@samp{exit} (followed by the exit code: @samp{[0]} for a normal exit), or "
 "@samp{signal} (if a signal terminated the process)."
-msgstr ""
+msgstr "コンパイルを開始すると、他のウィンドウで@file{*compilation*}バッファーが表示されますが、そのウィンドウは選択されません。コンパイルが実行中は、@file{*compilation*}バッファーのメジャーモードインジケーターに@samp{run}という単語が表示され、単語@samp{Compiling}がすべてのモードラインに表示されます。コンパイル実行中、常に@file{*compilation*}バッファーを表示している必要はありません。表示されていなくてもコンパイルは継続します。何らかの理由によりコンパイルが終了したときは、@file{*compilation*}バッファーのモードラインが@samp{exit}(その後に終了コード。@samp{[0]}の場合は通常終了)、または@samp{signal}(何らかのシグナルがプロセスを終了させた場合)に変化します。"
 
 #. type: Plain text
 #: building.texi.orig:92
@@ -308,35 +307,35 @@ msgid ""
 "point is at the end, new compilation output is inserted above point, which "
 "remains at the end.  Otherwise, point remains fixed while compilation output "
 "is added at the end of the buffer."
-msgstr ""
+msgstr "コンパイルの経過を見たいときは、バッファー@file{*compilation*}に切り替えて、ポイントをバッファーの最後に移動します。ポイントが最後にある場合、コンパイル出力はポイント位置に挿入されるので、ポイントは最後に留まります。そうでない場合は、バッファーの最後にコンパイル出力が追加される間も、ポイント位置は固定されたままです。"
 
 #. type: cindex
 #: building.texi.orig:93
 #, no-wrap
 msgid "compilation buffer, keeping point at end"
-msgstr ""
+msgstr "compilation buffer, keeping point at end"
 
 #. type: vindex
 #: building.texi.orig:94
 #, no-wrap
 msgid "compilation-scroll-output"
-msgstr ""
+msgstr "compilation-scroll-output"
 
 #. type: Plain text
 #: building.texi.orig:101
 msgid ""
-"If you change the variable @code{compilation-scroll-output} to a "
-"non-@code{nil} value, the @file{*compilation*} buffer scrolls automatically "
-"to follow the output.  If the value is @code{first-error}, scrolling stops "
-"when the first error appears, leaving point at that error.  For any other "
-"non-@code{nil} value, scrolling continues until there is no more output."
-msgstr ""
+"If you change the variable @code{compilation-scroll-output} to a non-"
+"@code{nil} value, the @file{*compilation*} buffer scrolls automatically to "
+"follow the output.  If the value is @code{first-error}, scrolling stops when "
+"the first error appears, leaving point at that error.  For any other non-"
+"@code{nil} value, scrolling continues until there is no more output."
+msgstr "変数@code{compilation-scroll-output}を非@code{nil}値に変更した場合、@file{*compilation*}バッファーは出力に追随して自動的にスクロールします。値が@code{first-error}の場合は、最初のエラーが出現した箇所でスクロールがストップし、ポイントはエラー箇所に留まります。その他の任意の非@code{nil}値の場合は、出力がなくなるまでスクロールが継続されます。"
 
 #. type: findex
 #: building.texi.orig:102
 #, no-wrap
 msgid "recompile"
-msgstr ""
+msgstr "recompile"
 
 #. type: Plain text
 #: building.texi.orig:109
@@ -346,19 +345,19 @@ msgid ""
 "@kbd{M-x compile}.  It also reuses the @file{*compilation*} buffer and "
 "starts the compilation in its default directory, which is the directory in "
 "which the previous compilation was started."
-msgstr ""
+msgstr "最後にコンパイルしたのと同じコマンドで再実行するには、@kbd{M-x recompile}とタイプします。これは最後に呼び出した@kbd{M-x compile}からコンパイルコマンドを再利用します。これは@file{*compilation*}バッファーも再利用し、コンパイルもそのバッファーのデフォルトディレクトリー、つまり前にコンパイルが開始されたのと同じディレクトリーで行われます。"
 
 #. type: findex
 #: building.texi.orig:110
 #, no-wrap
 msgid "kill-compilation"
-msgstr ""
+msgstr "kill-compilation"
 
 #. type: vindex
 #: building.texi.orig:111
 #, no-wrap
 msgid "compilation-always-kill"
-msgstr ""
+msgstr "compilation-always-kill"
 
 #. type: Plain text
 #: building.texi.orig:120
@@ -367,10 +366,10 @@ msgid ""
 "@file{*compilation*}, as the buffer can only handle one compilation at any "
 "time.  However, @kbd{M-x compile} asks for confirmation before actually "
 "killing a compilation that is running; to always automatically kill the "
-"compilation without asking, change the variable "
-"@code{compilation-always-kill} to @code{t}.  You can also kill a compilation "
-"process with the command @kbd{M-x kill-compilation}."
-msgstr ""
+"compilation without asking, change the variable @code{compilation-always-"
+"kill} to @code{t}.  You can also kill a compilation process with the command "
+"@kbd{M-x kill-compilation}."
+msgstr "新しいコンパイルの開始は、すでに@file{*compilation*}で実行中のコンパイルをkillします。これは、そのバッファーが1度に1つのコンパイルしか処理できないからです。しかし実行中のコマンドを実際にkillする前に、@kbd{M-x compile}は確認を求めます。常に確認なしで自動的にコンパイルをkillするには、変数@code{compilation-always-kill}を@code{t}に変更します。コマンド@kbd{M-x kill-compilation}で、コンパイルプロセスをkillすることもできます。"
 
 #. type: Plain text
 #: building.texi.orig:125
@@ -379,13 +378,13 @@ msgid ""
 "@file{*compilation*} buffer (perhaps using @code{rename-uniquely}; "
 "@pxref{Misc Buffer}), then switch buffers and start the other compilation.  "
 "This will create a new @file{*compilation*} buffer."
-msgstr ""
+msgstr "1度に2つのコンパイルを実行するには、最初に1つを開始してから(多分@code{rename-uniquely}を使用して。@ref{Misc Buffer}を参照してください)@file{*compilation*}、バッファーをリネームして、それからバッファーを切り替えて他のコンパイルを開始します。これにより新しい@file{*compilation*}バッファーが作成されます。"
 
 #. type: vindex
 #: building.texi.orig:126
 #, no-wrap
 msgid "compilation-environment"
-msgstr ""
+msgstr "compilation-environment"
 
 #. type: Plain text
 #: building.texi.orig:132
@@ -395,25 +394,25 @@ msgid ""
 "variable settings; each element should be a string of the form "
 "@code{\"@var{envvarname}=@var{value}\"}.  These environment variable "
 "settings override the usual ones."
-msgstr ""
+msgstr "コンパイルコマンドに渡される環境は、変数@code{compilation-environment}で制御できます。この変数の値は環境変数のセッティングのリストで、各要素は文字列@code{\"@var{envvarname}=@var{value}\"}の形式です。これらの環境変数のセッティングは、通常の値をオーバーライドします。"
 
 #. type: cindex
 #: building.texi.orig:136
 #, no-wrap
 msgid "Compilation mode"
-msgstr ""
+msgstr "Compilation mode"
 
 #. type: cindex
 #: building.texi.orig:137
 #, no-wrap
 msgid "mode, Compilation"
-msgstr ""
+msgstr "mode, Compilation"
 
 #. type: cindex
 #: building.texi.orig:138
 #, no-wrap
 msgid "locus"
-msgstr ""
+msgstr "locus"
 
 #. type: Plain text
 #: building.texi.orig:145
@@ -424,19 +423,19 @@ msgid ""
 "(@pxref{Mouse References}), to visit the @dfn{locus} of the error message in "
 "a separate window.  The locus is the specific position in a file where that "
 "error occurred."
-msgstr ""
+msgstr "@file{*compilation*}バッファーは、Compilationモードと呼ばれるメジャーモードを使用します。Compilationモードは、バッファーのエラーメッセージをハイパーリンクに変換します。ポイントをそこに移動して@key{RET}をタイプするか、マウスでクリック(@ref{Mouse References}を参照してください)すると、別のウィンドウでエラーメッセージの@dfn{locus}をvisitします。locusとは、エラーが発生したファイルの特定の位置を意味します。"
 
 #. type: findex
 #: building.texi.orig:146
 #, no-wrap
 msgid "compile-goto-error"
-msgstr ""
+msgstr "compile-goto-error"
 
 #. type: vindex
 #: building.texi.orig:147
 #, no-wrap
 msgid "compilation-auto-jump-to-first-error"
-msgstr ""
+msgstr "compilation-auto-jump-to-first-error"
 
 #. type: Plain text
 #: building.texi.orig:152
@@ -444,7 +443,7 @@ msgid ""
 "If you change the variable @code{compilation-auto-jump-to-first-error} to a "
 "non-@code{nil} value, Emacs automatically visits the locus of the first "
 "error message that appears in the @file{*compilation*} buffer."
-msgstr ""
+msgstr "変数@code{compilation-auto-jump-to-first-error}を非@code{nil}値に変更した場合、Emacsは、@file{*compilation*}バッファーに表れる最初のエラーメッセージのlocusを自動的にvisitします。"
 
 #. type: Plain text
 #: building.texi.orig:157
@@ -452,126 +451,126 @@ msgid ""
 "Compilation mode provides the following additional commands.  These commands "
 "can also be used in @file{*grep*} buffers, where the hyperlinks are search "
 "matches rather than error messages (@pxref{Grep Searching})."
-msgstr ""
+msgstr "Compilationモードは、以下の追加のコマンドを提供します。これらのコマンドは@file{*grep*}バッファーでも使用できます。このバッファーではエラーメッセージのかわりに、検索にたいするマッチにハイパーリンクが設定されます(@ref{Grep Searching}を参照してください)。"
 
 #. type: kindex
 #: building.texi.orig:159 building.texi.orig:184
 #, no-wrap
 msgid "M-g M-n"
-msgstr ""
+msgstr "M-g M-n"
 
 #. type: kindex
 #: building.texi.orig:160 building.texi.orig:185
 #, no-wrap
 msgid "M-g n"
-msgstr ""
+msgstr "M-g n"
 
 #. type: kindex
 #: building.texi.orig:161 building.texi.orig:186
 #, no-wrap
 msgid "C-x `"
-msgstr ""
+msgstr "C-x `"
 
 #. type: table
 #: building.texi.orig:163
 msgid "Visit the locus of the next error message or match (@code{next-error})."
-msgstr ""
+msgstr "次のエラーメッセージ(またはマッチ)のlocusをvisitします(@code{next-error})。"
 
 #. type: item
 #: building.texi.orig:163
 #, no-wrap
 msgid "M-g M-p"
-msgstr ""
+msgstr "M-g M-p"
 
 #. type: itemx
 #: building.texi.orig:164
 #, no-wrap
 msgid "M-g p"
-msgstr ""
+msgstr "M-g p"
 
 #. type: table
 #: building.texi.orig:167
 msgid ""
-"Visit the locus of the previous error message or match "
-"(@code{previous-error})."
-msgstr ""
+"Visit the locus of the previous error message or match (@code{previous-"
+"error})."
+msgstr "前のエラーメッセージ(またはマッチ)のlocusをvisitします(@code{previous-error})。"
 
 #. type: item
 #: building.texi.orig:167
 #, no-wrap
 msgid "M-n"
-msgstr ""
+msgstr "M-n"
 
 #. type: table
 #: building.texi.orig:170
 msgid ""
 "Move point to the next error message or match, without visiting its locus "
 "(@code{compilation-next-error})."
-msgstr ""
+msgstr "locusをvisitせずに、ポイントを次のエラーメッセージ(またはマッチ)に移動します(@code{compilation-next-error})。"
 
 #. type: item
 #: building.texi.orig:170
 #, no-wrap
 msgid "M-p"
-msgstr ""
+msgstr "M-p"
 
 #. type: table
 #: building.texi.orig:173
 msgid ""
 "Move point to the previous error message or match, without visiting its "
 "locus (@code{compilation-previous-error})."
-msgstr ""
+msgstr "locusをvisitせずに、ポイントを前のエラーメッセージ(またはマッチ)に移動します(@code{compilation-previous-error})。"
 
 #. type: item
 #: building.texi.orig:173
 #, no-wrap
 msgid "M-@}"
-msgstr ""
+msgstr "M-@}"
 
 #. type: table
 #: building.texi.orig:176
 msgid ""
 "Move point to the next error message or match occurring in a different file "
 "(@code{compilation-next-file})."
-msgstr ""
+msgstr "他のファイルで発生した次のエラーメッセージ(またはマッチ)にポイントを移動します(@code{compilation-next-file})。"
 
 #. type: item
 #: building.texi.orig:176
 #, no-wrap
 msgid "M-@{"
-msgstr ""
+msgstr "M-@{"
 
 #. type: table
 #: building.texi.orig:179
 msgid ""
 "Move point to the previous error message or match occurring in a different "
 "file (@code{compilation-previous-file})."
-msgstr ""
+msgstr "他のファイルで発生した前のエラーメッセージ(またはマッチ)にポイントを移動します(@code{compilation-previous-file})。"
 
 #. type: item
 #: building.texi.orig:179 building.texi.orig:726
 #, no-wrap
 msgid "C-c C-f"
-msgstr ""
+msgstr "C-c C-f"
 
 #. type: table
 #: building.texi.orig:182
 msgid ""
 "Toggle Next Error Follow minor mode, which makes cursor motion in the "
 "compilation buffer produce automatic source display."
-msgstr ""
+msgstr "Next Error Followマイナーモードに切り替えます。これはcompilationバッファーでのカーソル移動にしたがって、ソースを自動的に表示するモードです。"
 
 #. type: findex
 #: building.texi.orig:187
 #, no-wrap
 msgid "next-error"
-msgstr ""
+msgstr "next-error"
 
 #. type: vindex
 #: building.texi.orig:188
 #, no-wrap
 msgid "next-error-highlight"
-msgstr ""
+msgstr "next-error-highlight"
 
 #. type: Plain text
 #: building.texi.orig:200
@@ -586,14 +585,14 @@ msgid ""
 "from there.  When @w{@kbd{C-x `}} finds no more error messages to visit, it "
 "signals an error.  @w{@kbd{C-u C-x `}} starts again from the beginning of "
 "the compilation buffer, and visits the first locus."
-msgstr ""
+msgstr "順番にエラーをvisitするには、@w{@kbd{C-x `}} (@code{next-error})とタイプするか、これと等価な@kbd{M-g M-n}または@kbd{M-g n}とタイプします。このコマンドはCompilationモードのバッファーだけでなく、任意のバッファーから呼び出すことができます。コンパイル後に最初に呼び出すときは、最初のエラーメッセージのlocusをvisitします。連続した@w{@kbd{C-x `}}は、同じ方法で次のエラーをvisitします。@file{*compilation*}バッファーから@key{RET}またはマウスクリックで特定のエラーをvisitした場合、@w{@kbd{C-x `}}はそのエラーの次のエラーからvisitしていきます。これ以上visitするエラーメッセージがない場合、@w{@kbd{C-x `}}はエラーをシグナルします。@w{@kbd{C-u C-x `}}はcompilationバッファーの先頭から再開して、最初のlocusをvisitします。"
 
 #. type: Plain text
 #: building.texi.orig:203
 msgid ""
 "@kbd{M-g M-p} or @kbd{M-g p} (@code{previous-error}) iterates through errors "
 "in the opposite direction."
-msgstr ""
+msgstr "@kbd{M-g M-p}または@kbd{M-g p} (@code{previous-error})は、反対方向にエラーを巡回します。"
 
 #. type: Plain text
 #: building.texi.orig:216
@@ -605,17 +604,17 @@ msgid ""
 "Search}).  If you are already in a buffer containing error messages or "
 "matches, those are the ones that are iterated through; otherwise, Emacs "
 "looks for a buffer containing error messages or matches amongst the windows "
-"of the selected frame, then for one that @code{next-error} or "
-"@code{previous-error} previously iterated through, and finally amongst all "
-"other buffers.  If the buffer chosen for iterating through is not currently "
-"displayed in a window, it will be displayed."
-msgstr ""
+"of the selected frame, then for one that @code{next-error} or @code{previous-"
+"error} previously iterated through, and finally amongst all other buffers.  "
+"If the buffer chosen for iterating through is not currently displayed in a "
+"window, it will be displayed."
+msgstr "コマンド@code{next-error}および@code{previous-error}は、バッファー@file{*compilation*}または@file{*grep*}にリストされたエラー(またはマッチ)だけに作用されるわけではありません。これらのコマンドは@kbd{M-x occur} (@ref{Other Repeating Search}を参照してください)のようなコマンドで生成されたエラー(またはマッチ)を巡回する方法も知っています。すでにエラーメッセージ(またはマッチ)を含むバッファーにいる場合、それらは巡回できるものの1つです。そうでない場合、Emacsは選択されたフレームのウィンドウの中でエラーメッセージ(またはマッチ)を含むバッファー、そして@code{next-error}または@code{previous-error}が前に巡回したバッファー、そして最後はすべての他のバッファーの中からバッファーを探します。巡回するために選択されたバッファーが現在ウィンドウに表示されていなければ、そのバッファーが表示されます。"
 
 #. type: vindex
 #: building.texi.orig:217
 #, no-wrap
 msgid "compilation-skip-threshold"
-msgstr ""
+msgstr "compilation-skip-threshold"
 
 #. type: Plain text
 #: building.texi.orig:224
@@ -625,7 +624,7 @@ msgid ""
 "controls this.  The default value, 1, means to skip anything less important "
 "than a warning.  A value of 2 means to skip anything less important than an "
 "error, while 0 means not to skip any messages."
-msgstr ""
+msgstr "デフォルトでは、コマンド@code{next-error}および@code{previous-error}は、重要でないメッセージはスキップします。変数@code{compilation-skip-threshold}が、これを制御します。デフォルト値は1で、これは警告(warning)より重要でないメッセージをスキップします。2の場合、エラー(error)より重要でないものをスキップし、0はメッセージをスキップしません。"
 
 #. type: Plain text
 #: building.texi.orig:228
@@ -633,13 +632,13 @@ msgid ""
 "When Emacs visits the locus of an error message, it momentarily highlights "
 "the relevant source line.  The duration of this highlight is determined by "
 "the variable @code{next-error-highlight}."
-msgstr ""
+msgstr "Emacsがエラーメッセージのlocusをvisitしているとき、関連するソース行が一時的にハイライトされます。このハイライトの持続時間は、変数@code{next-error-highlight}により決定されます。"
 
 #. type: vindex
 #: building.texi.orig:229
 #, no-wrap
 msgid "compilation-context-lines"
-msgstr ""
+msgstr "compilation-context-lines"
 
 #. type: Plain text
 #: building.texi.orig:240
@@ -653,19 +652,19 @@ msgid ""
 "scroll the window so that the current error message is @var{n} lines from "
 "the top, whether or not there is a fringe; the default value, @code{nil}, "
 "gives the behavior described above."
-msgstr ""
+msgstr "@file{*compilation*}バッファーが左フリンジ(@ref{Fringes}を参照してください)のあるウィンドウで表示されている場合、locusをvisitするコマンドはカレントエラーメッセージを指す矢印をフリンジに配します。テキスト端末のように、左フリンジがないウィンドウの場合、これらのコマンドは、カレントメッセージがウィンドウの一番上にくるようにウィンドウをスクロールします。変数@code{compilation-context-lines}を整数値@var{n}に変更した場合、これらのコマンドは、フリンジの有無に関わらずメッセージがウィンドウの上から@var{n}行目にくるようにウィンドウをスクロールします。デフォルト値の@code{nil}では上述したように振る舞います。"
 
 #. type: vindex
 #: building.texi.orig:241
 #, no-wrap
 msgid "compilation-error-regexp-alist"
-msgstr ""
+msgstr "compilation-error-regexp-alist"
 
 #. type: vindex
 #: building.texi.orig:242
 #, no-wrap
 msgid "grep-regexp-alist"
-msgstr ""
+msgstr "grep-regexp-alist"
 
 #. type: Plain text
 #: building.texi.orig:248
@@ -675,31 +674,31 @@ msgid ""
 "formats and tells Emacs how to extract the locus from each.  A similar "
 "variable, @code{grep-regexp-alist}, tells Emacs how to parse output from a "
 "@code{grep} command (@pxref{Grep Searching})."
-msgstr ""
+msgstr "コンパイラーからのメッセージを解析するために、Compilationモードは変数@code{compilation-error-regexp-alist}を使用します。これはさまざまなエラーメッセージのフォーマットをリストし、それらからlocusを抽出する方法をEmacsに指示します。同じような変数@code{grep-regexp-alist}は、@code{grep}コマンド(@ref{Grep Searching}を参照してください)の出力を解析する方法を指示します。"
 
 #. type: findex
 #: building.texi.orig:249
 #, no-wrap
 msgid "compilation-next-error"
-msgstr ""
+msgstr "compilation-next-error"
 
 #. type: findex
 #: building.texi.orig:250
 #, no-wrap
 msgid "compilation-previous-error"
-msgstr ""
+msgstr "compilation-previous-error"
 
 #. type: findex
 #: building.texi.orig:251
 #, no-wrap
 msgid "compilation-next-file"
-msgstr ""
+msgstr "compilation-next-file"
 
 #. type: findex
 #: building.texi.orig:252
 #, no-wrap
 msgid "compilation-previous-file"
-msgstr ""
+msgstr "compilation-previous-file"
 
 #. type: Plain text
 #: building.texi.orig:259
@@ -710,19 +709,19 @@ msgid ""
 "message; and @kbd{M-@{} (@code{compilation-next-file})  and @kbd{M-@}} "
 "(@code{compilation-previous-file}) to move to the next or previous error "
 "message for a different source file."
-msgstr ""
+msgstr "Compilationモードは、スクリーン単位でスクロールを行うために、キー@key{SPC}および@key{DEL}も定義します。@kbd{M-n} (@code{compilation-next-error})および@kbd{M-p} (@code{compilation-previous-error})は、次または前のエラーメッセージに移動します。@kbd{M-@{} (@code{compilation-next-file})および@kbd{M-@}} (@code{compilation-previous-file})は、違うソースファイルの、次または前のエラーメッセージに移動します。"
 
 #. type: cindex
 #: building.texi.orig:260
 #, no-wrap
 msgid "Next Error Follow mode"
-msgstr ""
+msgstr "Next Error Follow mode"
 
 #. type: findex
 #: building.texi.orig:261
 #, no-wrap
 msgid "next-error-follow-minor-mode"
-msgstr ""
+msgstr "next-error-follow-minor-mode"
 
 #. type: Plain text
 #: building.texi.orig:266
@@ -731,24 +730,24 @@ msgid ""
 "mode, ordinary cursor motion in the compilation buffer automatically updates "
 "the source buffer, i.e., moving the cursor over an error message causes the "
 "locus of that error to be displayed."
-msgstr ""
+msgstr "@kbd{C-c C-f}とタイプして、Next Error Followモードに切り替えることができます。このマイナーモードでは、compilationバッファーでの通常のカーソル移動により、自動的にソースを表示するバッファーが更新されます。たとえばカーソルをエラーメッセージに移動すると、そのエラーにたいするlocusが表示されます。"
 
 #. type: Plain text
 #: building.texi.orig:274
 msgid ""
 "The features of Compilation mode are also available in a minor mode called "
 "Compilation Minor mode.  This lets you parse error messages in any buffer, "
-"not just a normal compilation output buffer.  Type @kbd{M-x "
-"compilation-minor-mode} to enable the minor mode.  For instance, in an "
-"Rlogin buffer (@pxref{Remote Host}), Compilation minor mode automatically "
-"accesses remote source files by FTP (@pxref{File Names})."
-msgstr ""
+"not just a normal compilation output buffer.  Type @kbd{M-x compilation-"
+"minor-mode} to enable the minor mode.  For instance, in an Rlogin buffer "
+"(@pxref{Remote Host}), Compilation minor mode automatically accesses remote "
+"source files by FTP (@pxref{File Names})."
+msgstr "Compilationモードの機能は、Compilation Minorモード呼ばれるマイナーモードでも利用可能です。これは通常のコンパイル出力のバッファーだけでなく、任意のバッファーのエラーメッセージを解析します。@kbd{M-x compilation-minor-mode}とタイプすることにより、このマイナーモードが有効になります。たとえばRloginバッファー(@ref{Remote Host}を参照してください)では、Compilation minorモードはリモートのソースファイルに、FTPを通じて自動的にアクセスします(@ref{File Names}を参照してください)。"
 
 #. type: section
 #: building.texi.orig:276
 #, no-wrap
 msgid "Subshells for Compilation"
-msgstr ""
+msgstr "Subshells for Compilation"
 
 #. type: Plain text
 #: building.texi.orig:288
@@ -762,7 +761,7 @@ msgid ""
 "may be named @file{.bashrc}, @file{.profile}, @file{.cshrc}, @file{.shrc}, "
 "etc., depending on what shell you use.)  The shell init file should set the "
 "prompt only if there already is a prompt.  Here's how to do it in bash:"
-msgstr ""
+msgstr "@kbd{M-x compile}コマンドは、コンパイルコマンドを実行するためにシェルを使いますが、オプションで非対話的なシェルを指定します。これは、シェルがプロンプトなしで開始されることを意味します。@file{*compilation*}バッファーで、通常のシェルプロンプトの見映えがよくない場合、それはシェルの初期化ファイルで、無条件にプロンプトをセットするという間違いを犯していることを意味します(この初期化ファイルは使用しているシェルに応じて@file{.bashrc}、@file{.profile}、@file{.cshrc}、@file{.shrc}などの名前がついています)。シェルの初期化ファイルでは、プロンプトがすでにあるときだけプロンプトをセットするべきです。これをbashで行うには、以下のようにします:"
 
 #. type: example
 #: building.texi.orig:293
@@ -772,17 +771,20 @@ msgid ""
 "then PS1=@dots{}\n"
 "fi\n"
 msgstr ""
+"if [ \"$@{PS1+set@}\" = set ]\n"
+"then PS1=@dots{}\n"
+"fi\n"
 
 #. type: Plain text
 #: building.texi.orig:297
 msgid "And here's how to do it in csh:"
-msgstr ""
+msgstr "cshで行うには以下のようにします:"
 
 #. type: example
 #: building.texi.orig:300
 #, no-wrap
 msgid "if ($?prompt) set prompt = @dots{}\n"
-msgstr ""
+msgstr "if ($?prompt) set prompt = @dots{}\n"
 
 #. type: Plain text
 #: building.texi.orig:308
@@ -793,7 +795,7 @@ msgid ""
 "in Emacs.  To avoid this problem, make the main compilation process wait for "
 "its subprocesses to finish.  In a shell script, you can do this using "
 "@samp{$!} and @samp{wait}, like this:"
-msgstr ""
+msgstr "Emacsは、コンパイラープロセスが非同期なサブプロセスで実行されることを要求しません。もしこれを行う場合、メインのコンパイラープロセスが終了した後で、サブプロセスがまだ実行中のときは、Emacsはこれらをkillするか、それらの出力はEmacsには到達しません。この問題を避けるには、メインのコンパイルプロセスが、それのサブプロセスの終了までwaitするようにします。シェルスクリプトでは、以下のように@samp{$!}と@samp{wait}を使用して、これを行うことができます:"
 
 #. type: example
 #: building.texi.orig:313
@@ -803,6 +805,9 @@ msgid ""
 "echo first message\n"
 "wait $pid                     # @r{Wait for subprocess}\n"
 msgstr ""
+"(sleep 10; echo 2nd)& pid=$!  # @r{サブプロセスのpidを記録}\n"
+"echo first message\n"
+"wait $pid                     # @r{サブプロセスのwait}\n"
 
 #. type: Plain text
 #: building.texi.orig:319
@@ -810,13 +815,13 @@ msgid ""
 "If the background process does not output to the compilation buffer, so you "
 "only need to prevent it from being killed when the main compilation process "
 "terminates, this is sufficient:"
-msgstr ""
+msgstr "バックグラウンドのプロセスがcompilationバッファーに何も出力せず、メインのコンパイルプロセスが終了したときに、これらがkillされるのを防ぐことだけが必要な場合は、以下で充分です:"
 
 #. type: example
 #: building.texi.orig:322
 #, no-wrap
 msgid "nohup @var{command}; sleep 1\n"
-msgstr ""
+msgstr "nohup @var{command}; sleep 1\n"
 
 #. type: ifnottex
 #: building.texi.orig:329
@@ -825,13 +830,13 @@ msgid ""
 "supported, so @kbd{M-x compile} runs the compilation command synchronously "
 "(i.e., you must wait until the command finishes before you can do anything "
 "else in Emacs).  @xref{MS-DOS}."
-msgstr ""
+msgstr "MS-DOS``オペレーティングシステム''では、非同期なサブプロセスはサポートされていないので、@kbd{M-x compile}はコンパイルコマンドを同期実行します(たとえばEmacsで他のことを行うには、コマンドが終了するまで待たなければなりません)。@ref{MS-DOS}を参照してください。"
 
 #. type: section
 #: building.texi.orig:332
 #, no-wrap
 msgid "Searching with Grep under Emacs"
-msgstr ""
+msgstr "Searching with Grep under Emacs"
 
 #. type: Plain text
 #: building.texi.orig:340
@@ -841,79 +846,79 @@ msgid ""
 "on which matches were found.  This works by treating the matches reported by "
 "@command{grep} as if they were ``errors''.  The output buffer uses Grep "
 "mode, which is a variant of Compilation mode (@pxref{Compilation Mode})."
-msgstr ""
+msgstr "Emacsからコンパイラーを実行して、コンパイルエラーの行をvisitできるように、@command{grep}を実行して見つかったマッチの行をvisitすることもできます。これは@command{grep}が報告するマッチを、``エラー''のように扱うことで機能します。出力バッファーはGrepモードを使用します。これはCompilationモードの変種です(@ref{Compilation Mode}を参照してください)。"
 
 #. type: item
 #: building.texi.orig:342
 #, no-wrap
 msgid "M-x grep"
-msgstr ""
+msgstr "M-x grep"
 
 #. type: itemx
 #: building.texi.orig:343
 #, no-wrap
 msgid "M-x lgrep"
-msgstr ""
+msgstr "M-x lgrep"
 
 #. type: table
 #: building.texi.orig:346
 msgid ""
 "Run @command{grep} asynchronously under Emacs, listing matching lines in the "
 "buffer named @file{*grep*}."
-msgstr ""
+msgstr "Emacs下で@command{grep}を非同期で実行し、@file{*grep*}という名前のバッファーにマッチした行をリストします。"
 
 #. type: item
 #: building.texi.orig:346
 #, no-wrap
 msgid "M-x grep-find"
-msgstr ""
+msgstr "M-x grep-find"
 
 #. type: itemx
 #: building.texi.orig:347
 #, no-wrap
 msgid "M-x find-grep"
-msgstr ""
+msgstr "M-x find-grep"
 
 #. type: itemx
 #: building.texi.orig:348
 #, no-wrap
 msgid "M-x rgrep"
-msgstr ""
+msgstr "M-x rgrep"
 
 #. type: table
 #: building.texi.orig:351
 msgid ""
 "Run @command{grep} via @code{find}, and collect output in the @file{*grep*} "
 "buffer."
-msgstr ""
+msgstr "@code{find}を通じて@command{grep}を実行し、出力を@file{*grep*}バッファーに収集します。"
 
 #. type: item
 #: building.texi.orig:351
 #, no-wrap
 msgid "M-x zrgrep"
-msgstr ""
+msgstr "M-x zrgrep"
 
 #. type: table
 #: building.texi.orig:353
 msgid "Run @code{zgrep} and collect output in the @file{*grep*} buffer."
-msgstr ""
+msgstr "@code{zgrep}を実行して、出力を@file{*grep*}バッファーに収集します。"
 
 #. type: item
 #: building.texi.orig:353
 #, no-wrap
 msgid "M-x kill-grep"
-msgstr ""
+msgstr "M-x kill-grep"
 
 #. type: table
 #: building.texi.orig:355
 msgid "Kill the running @command{grep} subprocess."
-msgstr ""
+msgstr "実行中の@command{grep}サブプロセスをkillします。"
 
 #. type: findex
 #: building.texi.orig:357
 #, no-wrap
 msgid "grep"
-msgstr ""
+msgstr "grep"
 
 #. type: Plain text
 #: building.texi.orig:366
@@ -925,7 +930,7 @@ msgid ""
 "by file names, which may use wildcards.  If you specify a prefix argument "
 "for @kbd{M-x grep}, it finds the tag (@pxref{Tags}) in the buffer around "
 "point, and puts that into the default @command{grep} command."
-msgstr ""
+msgstr "@command{grep}を実行するには、@kbd{M-x grep}とタイプしてから、どのように@command{grep}を実行するかを指定するコマンドラインを入力します。これは通常、@command{grep}を実行するとき与える引数と同じです。@command{grep}スタイルのregexp(通常、シェルのスペシャル文字をクォートするためシングルクォートで囲む)の後に、ファイル名(ワイルドカードも使用できる)を続けます。@kbd{M-x grep}にプレフィクス引数を指定した場合、バッファーのポイント位置周辺のtag(@ref{Tags}を参照してください)を探して、それを@command{grep}コマンドのデフォルトにします。"
 
 #. type: Plain text
 #: building.texi.orig:370
@@ -933,13 +938,13 @@ msgid ""
 "Your command need not simply run @command{grep}; you can use any shell "
 "command that produces output in the same format.  For instance, you can "
 "chain @command{grep} commands, like this:"
-msgstr ""
+msgstr "指定するコマンドは、単純に@command{grep}を実行するものである必要はありません。同じフォーマットで出力を生成するシェルコマンドを使用することができます。たとえば、以下のように、@command{grep}コマンドを連結することができます:"
 
 #. type: example
 #: building.texi.orig:373
 #, no-wrap
 msgid "grep -nH -e foo *.el | grep bar | grep toto\n"
-msgstr ""
+msgstr "grep -nH -e foo *.el | grep bar | grep toto\n"
 
 #. type: Plain text
 #: building.texi.orig:378
@@ -947,7 +952,7 @@ msgid ""
 "The output from @command{grep} goes in the @file{*grep*} buffer.  You can "
 "find the corresponding lines in the original files using @w{@kbd{C-x `}}, "
 "@key{RET}, and so forth, just like compilation errors."
-msgstr ""
+msgstr "@command{grep}コマンドの出力は、@file{*grep*}バッファーに送られます。オリジナルのファイルの対応する行は、コンパイルエラーと同様、@w{@kbd{C-x `}}、@key{RET}などで見つけることができます。"
 
 #. type: Plain text
 #: building.texi.orig:384
@@ -957,19 +962,19 @@ msgid ""
 "feature by setting @code{grep-highlight-matches} to @code{t}.  When "
 "displaying a match in the source buffer, the exact match will be "
 "highlighted, instead of the entire source line."
-msgstr ""
+msgstr "マッチをハイライトするために、その周囲に特別なマーカーを出力する@samp{--color}オプションを指定できるgrepプログラムもあります。この機能を使うには、@code{grep-highlight-matches}を@code{t}にセットします。これによりソースバッファーのマッチを表示するとき、ソース行全体ではなく、正確なマッチだけがハイライトされます。"
 
 #. type: findex
 #: building.texi.orig:385
 #, no-wrap
 msgid "grep-find"
-msgstr ""
+msgstr "grep-find"
 
 #. type: findex
 #: building.texi.orig:386
 #, no-wrap
 msgid "find-grep"
-msgstr ""
+msgstr "find-grep"
 
 #. type: Plain text
 #: building.texi.orig:392
@@ -979,53 +984,53 @@ msgid ""
 "the command---one that runs both @code{find} and @command{grep}, so as to "
 "search every file in a directory tree.  See also the @code{find-grep-dired} "
 "command, in @ref{Dired and Find}."
-msgstr ""
+msgstr "コマンド@kbd{M-x grep-find}(@kbd{M-x find-grep}でも利用可能)は、@kbd{M-x grep}と似ていますが、コマンドにたいして提供される初期のデフォルトが異なります --- このデフォルトは@code{find}と@command{grep}の両方を実行するもので、これによりディレクトリーツリーの各ファイルを検索できます。@ref{Dired and Find}の@code{find-grep-dired}コマンドも参照してください。"
 
 #. type: findex
 #: building.texi.orig:393
 #, no-wrap
 msgid "lgrep"
-msgstr ""
+msgstr "lgrep"
 
 #. type: findex
 #: building.texi.orig:394
 #, no-wrap
 msgid "rgrep"
-msgstr ""
+msgstr "rgrep"
 
 #. type: findex
 #: building.texi.orig:395
 #, no-wrap
 msgid "zrgrep"
-msgstr ""
+msgstr "zrgrep"
 
 #. type: Plain text
 #: building.texi.orig:404
 msgid ""
 "The commands @kbd{M-x lgrep} (local grep) and @kbd{M-x rgrep} (recursive "
-"grep) are more user-friendly versions of @command{grep} and "
-"@code{grep-find}, which prompt separately for the regular expression to "
-"match, the files to search, and the base directory for the search.  Case "
-"sensitivity of the search is controlled by the current value of "
-"@code{case-fold-search}.  The command @kbd{M-x zrgrep} is similar to "
-"@kbd{M-x rgrep}, but it calls @command{zgrep} instead of @command{grep} to "
-"search the contents of gzipped files."
-msgstr ""
+"grep) are more user-friendly versions of @command{grep} and @code{grep-"
+"find}, which prompt separately for the regular expression to match, the "
+"files to search, and the base directory for the search.  Case sensitivity of "
+"the search is controlled by the current value of @code{case-fold-search}.  "
+"The command @kbd{M-x zrgrep} is similar to @kbd{M-x rgrep}, but it calls "
+"@command{zgrep} instead of @command{grep} to search the contents of gzipped "
+"files."
+msgstr "コマンド@kbd{M-x lgrep} (local grep)および@kbd{M-x rgrep} (recursive grep)は、@command{grep}および@code{grep-find}のユーザーフレンドリーなバージョンで、これらはマッチにたいする正規表現、検索するファイル、検索の基準となるディレクトリーを個別に尋ねます。検索での大文字小文字の区別は、@code{case-fold-search}の値で制御されます。コマンド@kbd{M-x zrgrep}は@kbd{M-x rgrep}と似ていますが、これは@command{grep}のかわりに@command{zgrep}を呼び出し、gzipされたファイルの内容を検索します。"
 
 #. type: Plain text
 #: building.texi.orig:409
 msgid ""
-"These commands build the shell commands based on the variables "
-"@code{grep-template} (for @code{lgrep}) and @code{grep-find-template} (for "
+"These commands build the shell commands based on the variables @code{grep-"
+"template} (for @code{lgrep}) and @code{grep-find-template} (for "
 "@code{rgrep}).  The files to search can use aliases defined in the variable "
 "@code{grep-files-aliases}."
-msgstr ""
+msgstr "これらのコマンドは、変数@code{grep-template}(@code{lgrep}用)、および@code{grep-find-template}(@code{rgrep}用)にもとづいてシェルコマンドを構築します。検索するファイルには、変数@code{grep-files-aliases}で定義されたエイリアスを使用できます。"
 
 #. type: vindex
 #: building.texi.orig:410
 #, no-wrap
 msgid "grep-find-ignored-directories"
-msgstr ""
+msgstr "grep-find-ignored-directories"
 
 #. type: Plain text
 #: building.texi.orig:415
@@ -1033,19 +1038,19 @@ msgid ""
 "Directories listed in the variable @code{grep-find-ignored-directories} are "
 "automatically skipped by @kbd{M-x rgrep}.  The default value includes the "
 "data directories used by various version control systems."
-msgstr ""
+msgstr "変数@code{grep-find-ignored-directories}にリストされたディレクトリーは、@kbd{M-x rgrep}の検索で自動的にスキップされます。デフォルト値には、さまざまなバージョンコントロールシステムで使用されるデータディレクトリーが含まれます。"
 
 #. type: section
 #: building.texi.orig:417
 #, no-wrap
 msgid "Finding Syntax Errors On The Fly"
-msgstr ""
+msgstr "Finding Syntax Errors On The Fly"
 
 #. type: cindex
 #: building.texi.orig:418
 #, no-wrap
 msgid "checking syntax"
-msgstr ""
+msgstr "checking syntax"
 
 #. type: Plain text
 #: building.texi.orig:431
@@ -1061,7 +1066,7 @@ msgid ""
 "language; for example, for C/C++ files this is usually the C compiler.  "
 "Flymake can also use build tools such as @code{make} for checking "
 "complicated projects."
-msgstr ""
+msgstr "FlymakeモードはC、C++、Perl、HTML、@TeX{}/@LaTeX{}を含む、多くのプログラミング言語およびマークアップ言語の構文チェックを、オンザフライ(on-the-fly)で処理するマイナーモードです。これは通常の人間の言語にたいしてスペルチェックを処理する、Flyspellモード(@ref{Spelling}を参照してください)と、その方法において類似しています。Flymakeモードはファイルの編集にしたがい、そのバッファーの一時的なコピーを使用して、適切な構文チェックツールをバックグラウンドで実行します。それからエラーメッセージと警告メッセージを解析して、そのバッファーの間違った行をハイライトします。使用される構文チェックツールは、言語に依存します。たとえば通常、C/C++ファイルの場合は、Cコンパイラーです。Flymakeは、複雑なプロジェクトにたいしてのチェックでは、@code{make}のようなビルドツールを使うこともできます。"
 
 #. type: Plain text
 #: building.texi.orig:437
@@ -1070,82 +1075,82 @@ msgid ""
 "errors that it finds by using @kbd{M-x flymake-goto-next-error} and @kbd{M-x "
 "flymake-goto-prev-error}.  To display any error messages associated with the "
 "current line, type @kbd{M-x flymake-display-err-menu-for-current-line}."
-msgstr ""
+msgstr "Flymakeモードを有効にするには、@kbd{M-x flymake-mode}とタイプします。@kbd{M-x flymake-goto-next-error}および@kbd{M-x flymake-goto-prev-error}を使用して、これが見つけたエラーにジャンプすることができます。カレント行に関連するエラーメッセージを表示するには、@kbd{M-x flymake-display-err-menu-for-current-line}とタイプしてください。"
 
 #. type: Plain text
 #: building.texi.orig:439
 msgid "For more details about using Flymake,"
-msgstr ""
+msgstr "Flymakeの使用についての詳細は、"
 
 #. type: ifnottex
 #: building.texi.orig:441
 msgid "see @ref{Top, Flymake, Flymake, flymake, The Flymake Manual}."
-msgstr ""
+msgstr "@ref{Top, Flymake, Flymake, flymake, The Flymake Manual}を参照してください。"
 
 #. type: iftex
 #: building.texi.orig:444
 msgid "see the Flymake Info manual, which is distributed with Emacs."
-msgstr ""
+msgstr "Emacsとともに配布されているFlymake Info manualを参照してください。"
 
 #. type: section
 #: building.texi.orig:447
 #, no-wrap
 msgid "Running Debuggers Under Emacs"
-msgstr ""
+msgstr "Running Debuggers Under Emacs"
 
 #. type: cindex
 #: building.texi.orig:448
 #, no-wrap
 msgid "debuggers"
-msgstr ""
+msgstr "debuggers"
 
 #. type: cindex
 #: building.texi.orig:449
 #, no-wrap
 msgid "GUD library"
-msgstr ""
+msgstr "GUD library"
 
 #. type: cindex
 #: building.texi.orig:450
 #, no-wrap
 msgid "GDB"
-msgstr ""
+msgstr "GDB"
 
 #. type: cindex
 #: building.texi.orig:451
 #, no-wrap
 msgid "DBX"
-msgstr ""
+msgstr "DBX"
 
 #. type: cindex
 #: building.texi.orig:452
 #, no-wrap
 msgid "SDB"
-msgstr ""
+msgstr "SDB"
 
 #. type: cindex
 #: building.texi.orig:453
 #, no-wrap
 msgid "XDB"
-msgstr ""
+msgstr "XDB"
 
 #. type: cindex
 #: building.texi.orig:454
 #, no-wrap
 msgid "Perldb"
-msgstr ""
+msgstr "Perldb"
 
 #. type: cindex
 #: building.texi.orig:455
 #, no-wrap
 msgid "JDB"
-msgstr ""
+msgstr "JDB"
 
 #. type: cindex
 #: building.texi.orig:456
 #, no-wrap
 msgid "PDB"
-msgstr ""
+msgstr "PDB"
 
 #. type: Plain text
 #: building.texi.orig:462
@@ -1154,98 +1159,97 @@ msgid ""
 "wide variety of symbolic debuggers.  It can run the GNU Debugger (GDB), as "
 "well as DBX, SDB, XDB, Perl's debugging mode, the Python debugger PDB, and "
 "the Java Debugger JDB."
-msgstr ""
+msgstr "GUD(Grand Unified Debugger)ライブラリーは、広範なシンボリックデバッガーにたいするEmacsのインターフェースを提供します。これはGNUデバッガー(GDB)、同様にDBX、SDB、XDB、Paerlのデバッグモード、PythonデバッガーのPDB、JavaデバッガーのJDBを実行することができます。"
 
 #. type: Plain text
 #: building.texi.orig:466
 msgid ""
 "Emacs provides a special interface to GDB, which uses extra Emacs windows to "
 "display the state of the debugged program.  @xref{GDB Graphical Interface}."
-msgstr ""
+msgstr "EmacsはGDBにたいする特別なインターフェースを提供します。これはデバッグされているプログラムの状態を表示する追加のEmacsウィンドウを使用します。@ref{GDB Graphical Interface}を参照してください。"
 
 #. type: Plain text
 #: building.texi.orig:470
 msgid ""
 "Emacs also has a built-in debugger for Emacs Lisp programs.  "
-"@xref{Debugging,, The Lisp Debugger, elisp, the Emacs Lisp Reference "
-"Manual}."
-msgstr ""
+"@xref{Debugging,, The Lisp Debugger, elisp, the Emacs Lisp Reference Manual}."
+msgstr "Emacsは、Emacs Lispプログラムにたいするビルトインのデバッガーももっています。@ref{Debugging,, The Lisp Debugger, elisp, the Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: subsection
 #: building.texi.orig:478 building.texi.orig:480 building.texi.orig:481
 #, no-wrap
 msgid "Starting GUD"
-msgstr ""
+msgstr "Starting GUD"
 
 #. type: menuentry
 #: building.texi.orig:478
 msgid "How to start a debugger subprocess."
-msgstr ""
+msgstr "デバッガーサブプロセスを開始する方法。"
 
 #. type: subsection
 #: building.texi.orig:478 building.texi.orig:545 building.texi.orig:546
 #, no-wrap
 msgid "Debugger Operation"
-msgstr ""
+msgstr "Debugger Operation"
 
 #. type: menuentry
 #: building.texi.orig:478
 msgid "Connection between the debugger and source buffers."
-msgstr ""
+msgstr "デバッガーとソースバッファーの関係。"
 
 #. type: subsection
 #: building.texi.orig:478 building.texi.orig:614 building.texi.orig:615
 #, no-wrap
 msgid "Commands of GUD"
-msgstr ""
+msgstr "Commands of GUD"
 
 #. type: menuentry
 #: building.texi.orig:478
 msgid "Key bindings for common commands."
-msgstr ""
+msgstr "一般的なコマンドのキーバインディング。"
 
 #. type: subsection
 #: building.texi.orig:478 building.texi.orig:762 building.texi.orig:763
 #, no-wrap
 msgid "GUD Customization"
-msgstr ""
+msgstr "GUD Customization"
 
 #. type: menuentry
 #: building.texi.orig:478
 msgid "Defining your own commands for GUD."
-msgstr ""
+msgstr "GUDにたいして独自のコマンドを定義する。"
 
 #. type: subsection
 #: building.texi.orig:478 building.texi.orig:835 building.texi.orig:836
 #, no-wrap
 msgid "GDB Graphical Interface"
-msgstr ""
+msgstr "GDB Graphical Interface"
 
 #. type: menuentry
 #: building.texi.orig:478
 msgid ""
 "An enhanced mode that uses GDB features to implement a graphical debugging "
 "environment."
-msgstr ""
+msgstr "GDB機能を使用して、グラフィカルなデバッグ環境を実装する拡張モード。"
 
 #. type: Plain text
 #: building.texi.orig:485
 msgid ""
 "There are several commands for starting a debugger subprocess, each "
 "corresponding to a particular debugger program."
-msgstr ""
+msgstr "デバッガーサブプロセスを開始する複数のコマンドがあり、それらは特定のデバッガープログラムに対応しています。"
 
 #. type: item
 #: building.texi.orig:487
 #, no-wrap
 msgid "M-x gdb"
-msgstr ""
+msgstr "M-x gdb"
 
 #. type: findex
 #: building.texi.orig:488
 #, no-wrap
 msgid "gdb"
-msgstr ""
+msgstr "gdb"
 
 #. type: table
 #: building.texi.orig:492
@@ -1253,19 +1257,19 @@ msgid ""
 "Run GDB as a subprocess, and interact with it via an IDE-like Emacs "
 "interface.  @xref{GDB Graphical Interface}, for more information about this "
 "command."
-msgstr ""
+msgstr "GDBをサブプロセスとして実行し、IDE-likeなEmacsインターフェースを通じてやりとりをします。このコマンドに間する詳細は、@ref{GDB Graphical Interface}を参照してください。"
 
 #. type: item
 #: building.texi.orig:493
 #, no-wrap
 msgid "M-x gud-gdb"
-msgstr ""
+msgstr "M-x gud-gdb"
 
 #. type: findex
 #: building.texi.orig:494
 #, no-wrap
 msgid "gud-gdb"
-msgstr ""
+msgstr "gud-gdb"
 
 #. type: table
 #: building.texi.orig:498
@@ -1273,120 +1277,121 @@ msgid ""
 "Run GDB, using a GUD interaction buffer for input and output to the GDB "
 "subprocess (@pxref{Debugger Operation}).  If such a buffer already exists, "
 "switch to it; otherwise, create the buffer and switch to it."
-msgstr ""
+msgstr "GDBサブプロセスとの入出力に、GUD interactionバッファーを使用してGDBを実行します((@ref{Debugger Operation}を参照してください))。そのようなバッファーがすでに存在している場合はそのバッファーに切り替え、存在しない場合はバッファーを作成して切り替えます。"
 
 #. type: table
 #: building.texi.orig:501
-msgid "The other commands in this list do the same, for other debugger programs."
-msgstr ""
+msgid ""
+"The other commands in this list do the same, for other debugger programs."
+msgstr "ここにリストされている他のコマンドは、他のデバッガープログラムにたいして同じことを行います。"
 
 #. type: item
 #: building.texi.orig:502
 #, no-wrap
 msgid "M-x perldb"
-msgstr ""
+msgstr "M-x perldb"
 
 #. type: findex
 #: building.texi.orig:503
 #, no-wrap
 msgid "perldb"
-msgstr ""
+msgstr "perldb"
 
 #. type: table
 #: building.texi.orig:505
 msgid "Run the Perl interpreter in debug mode."
-msgstr ""
+msgstr "Perlインタープリターをデバッグモードで実行します。"
 
 #. type: item
 #: building.texi.orig:506
 #, no-wrap
 msgid "M-x jdb"
-msgstr ""
+msgstr "M-x jdb"
 
 #. type: findex
 #: building.texi.orig:507
 #, no-wrap
 msgid "jdb"
-msgstr ""
+msgstr "jdb"
 
 #. type: table
 #: building.texi.orig:509
 msgid "Run the Java debugger."
-msgstr ""
+msgstr "Javaデバッガーを実行します。"
 
 #. type: item
 #: building.texi.orig:510
 #, no-wrap
 msgid "M-x pdb"
-msgstr ""
+msgstr "M-x pdb"
 
 #. type: findex
 #: building.texi.orig:511
 #, no-wrap
 msgid "pdb"
-msgstr ""
+msgstr "pdb"
 
 #. type: table
 #: building.texi.orig:513
 msgid "Run the Python debugger."
-msgstr ""
+msgstr "Pythonデバッガーを実行します。"
 
 #. type: item
 #: building.texi.orig:514
 #, no-wrap
 msgid "M-x dbx"
-msgstr ""
+msgstr "M-x dbx"
 
 #. type: findex
 #: building.texi.orig:515
 #, no-wrap
 msgid "dbx"
-msgstr ""
+msgstr "dbx"
 
 #. type: table
 #: building.texi.orig:517
 msgid "Run the DBX debugger."
-msgstr ""
+msgstr "DBXデバッガーを実行します。"
 
 #. type: item
 #: building.texi.orig:518
 #, no-wrap
 msgid "M-x xdb"
-msgstr ""
+msgstr "M-x xdb"
 
 #. type: findex
 #: building.texi.orig:519
 #, no-wrap
 msgid "xdb"
-msgstr ""
+msgstr "xdb"
 
 #. type: vindex
 #: building.texi.orig:520
 #, no-wrap
 msgid "gud-xdb-directories"
-msgstr ""
+msgstr "gud-xdb-directories"
 
 #. type: table
 #: building.texi.orig:522
 msgid "Run the XDB debugger."
-msgstr ""
+msgstr "XDBデバッガーを実行します。"
 
 #. type: item
 #: building.texi.orig:523
 #, no-wrap
 msgid "M-x sdb"
-msgstr ""
+msgstr "M-x sdb"
 
 #. type: findex
 #: building.texi.orig:524
 #, no-wrap
 msgid "sdb"
-msgstr ""
+msgstr "sdb"
 
 #. type: table
 #: building.texi.orig:526
 msgid "Run the SDB debugger."
-msgstr ""
+msgstr "SDBデバッガーを実行します。"
 
 #. type: Plain text
 #: building.texi.orig:535
@@ -1398,13 +1403,13 @@ msgid ""
 "variables are not allowed in this command line.  Emacs assumes that the "
 "first command argument which does not start with a @samp{-} is the "
 "executable file name."
-msgstr ""
+msgstr "これらの各コマンドは、ミニバッファーを使ってデバッガーを呼び出すコマンドラインを読み取ります。ミニバッファーの初期内容は、デバッガーの標準的な実行ファイル名とオプションで、デバッグしたいと推測される実行ファイル名の場合もあります。シェルのワイルドカードと変数は、このコマンドラインでは使用できません。Emacsは@samp{-}で始まらない最初のコマンド引数を、実行ファイル名とみなします。"
 
 #. type: cindex
 #: building.texi.orig:536
 #, no-wrap
 msgid "remote host, debugging on"
-msgstr ""
+msgstr "remote host, debugging on"
 
 #. type: Plain text
 #: building.texi.orig:544
@@ -1415,13 +1420,13 @@ msgid ""
 "separate from GDB's remote debugging feature, where the program and the "
 "debugger run on different machines (@pxref{Remote Debugging,, Debugging "
 "Remote Programs, gdb, The GNU debugger})."
-msgstr ""
+msgstr "Trampは、同じリモートホスト上のデバッガーとプログラムによる、リモートデバッグ機能を提供します。詳細については、@ref{Running a debugger on a remote host,,, tramp, The Tramp Manual}を参照してください。これはGDBのリモートデバッグ機能とは別の物です、なぜなら、プログラムとデバッガーは違うマシンで実行されるからです(@ref{Remote Debugging,, Debugging Remote Programs, gdb, The GNU debugger}を参照してください)。"
 
 #. type: cindex
 #: building.texi.orig:547
 #, no-wrap
 msgid "GUD interaction buffer"
-msgstr ""
+msgstr "GUD interaction buffer"
 
 #. type: Plain text
 #: building.texi.orig:553
@@ -1430,17 +1435,17 @@ msgid ""
 "text commands to a debugger subprocess, and record its output.  This is the "
 "basic interface for interacting with a debugger, used by @kbd{M-x gud-gdb} "
 "and other commands listed in"
-msgstr ""
+msgstr "@dfn{GUD interactionバッファー}は、デバッガーサブプロセスにテキストコマンドを送ったり、それの出力を記録するのに使用されるEmacsバッファーです。これは@kbd{M-x gud-gdb}や、"
 
 #. type: iftex
 #: building.texi.orig:555
 msgid "the preceding section."
-msgstr ""
+msgstr "前のセクションにリストされた他のコマンドで使用される、デバッガーとやりとりするための基本的なインターフェースです。"
 
 #. type: ifnottex
 #: building.texi.orig:558
 msgid "@ref{Starting GUD}."
-msgstr ""
+msgstr "@ref{Starting GUD}にリストされた他のコマンドで使用される、デバッガーとやりとりするための基本的なインターフェースです。"
 
 #. type: Plain text
 #: building.texi.orig:562
@@ -1448,7 +1453,7 @@ msgid ""
 "The @kbd{M-x gdb} command extends this interface with additional specialized "
 "buffers for controlling breakpoints, stack frames, and other aspects of the "
 "debugger state (@pxref{GDB Graphical Interface})."
-msgstr ""
+msgstr "@kbd{M-x gdb}コマンドは、ブレークポイント、スタックフレーム、その他のデバッガーの状態の様相を制御する、追加の特別なバッファーにより、この機能を拡張します(@ref{GDB Graphical Interface}を参照してください)。"
 
 #. type: Plain text
 #: building.texi.orig:568
@@ -1457,22 +1462,22 @@ msgid ""
 "commands defined by Shell mode are available (@pxref{Shell Mode}).  "
 "Completion is available for most debugger commands (@pxref{Completion}), and "
 "you can use the usual Shell mode history commands to repeat them."
-msgstr ""
+msgstr "GUD interactionはShellモードの変種を使用するので、Shellモードで定義されたEmacsコマンドが利用可能です(@ref{Shell Mode}を参照してください)。ほとんどのデバッガーコマンドにたいして補完(@ref{Completion}を参照してください)が利用可能で、それらを繰り返すのに、通常のShellモードのヒストリーコマンドを使うことができます。"
 
 #. type: iftex
 #: building.texi.orig:570
 msgid "See the next section"
-msgstr ""
+msgstr "GUD interactionバッファーで使用できる特別なコマンドについては、次のセクション"
 
 #. type: ifnottex
 #: building.texi.orig:573
 msgid "@xref{Commands of GUD},"
-msgstr ""
+msgstr "GUD interactionバッファーで使用できる特別なコマンドについては、@ref{Commands of GUD}"
 
 #. type: Plain text
 #: building.texi.orig:575
 msgid "for special commands that can be used in the GUD interaction buffer."
-msgstr ""
+msgstr "を参照してください。"
 
 #. type: Plain text
 #: building.texi.orig:586
@@ -1486,31 +1491,31 @@ msgid ""
 "positioning, as Emacs has no way to figure out which edited source line "
 "corresponds to the line reported by the debugger subprocess.  To update this "
 "information, you typically have to recompile and restart the program."
-msgstr ""
+msgstr "プログラムをデバッグすると、Emacsは関連するソースファイルをEmacsバッファーにvisitして、カレント実行行には左フリンジに矢印が表示されます(テキスト端末では最初の2列に@samp{=>}の矢印が表示されます)。そのようなバッファーでのポイントの移動は、矢印を移動しません。これらのソースファイルの編集はできますが、行の挿入や削除により矢印の位置は失われることに注意してください。なぜならEmacsには編集されたソース行が、デバッガーサブプロセスから報告されるどの行に対応するか、知る手立てがないからです。この情報を更新するには通常、プログラムのリコンパイルと再実行が必要です。"
 
 #. type: cindex
 #: building.texi.orig:587
 #, no-wrap
 msgid "GUD Tooltip mode"
-msgstr ""
+msgstr "GUD Tooltip mode"
 
 #. type: cindex
 #: building.texi.orig:588
 #, no-wrap
 msgid "mode, GUD Tooltip"
-msgstr ""
+msgstr "mode, GUD Tooltip"
 
 #. type: findex
 #: building.texi.orig:589
 #, no-wrap
 msgid "gud-tooltip-mode"
-msgstr ""
+msgstr "gud-tooltip-mode"
 
 #. type: vindex
 #: building.texi.orig:590
 #, no-wrap
 msgid "gud-tooltip-echo-area"
-msgstr ""
+msgstr "gud-tooltip-echo-area"
 
 #. type: Plain text
 #: building.texi.orig:605
@@ -1523,11 +1528,11 @@ msgid ""
 "an expression by dragging the mouse over it, then leave the mouse in the "
 "marked area to have the value of the expression displayed in a tooltip.  The "
 "GUD Tooltip mode takes effect in the GUD interaction buffer, and in all "
-"source buffers with major modes listed in the variable "
-"@code{gud-tooltip-modes}.  If the variable @code{gud-tooltip-echo-area} is "
-"non-@code{nil}, or if you turned off the tooltip mode, values are shown in "
-"the echo area instead of a tooltip."
-msgstr ""
+"source buffers with major modes listed in the variable @code{gud-tooltip-"
+"modes}.  If the variable @code{gud-tooltip-echo-area} is non-@code{nil}, or "
+"if you turned off the tooltip mode, values are shown in the echo area "
+"instead of a tooltip."
+msgstr "GUD Tooltipモードは、GUDにツールチップサポートを追加するグローバルなマイナーモードです。このモードに切り替えるには、@kbd{M-x gud-tooltip-mode}とタイプします。このモードはデフォルトで無効になっています。有効にした場合、変数、関数、マクロ(@dfn{識別子}として総称される)にマウスを移動すると、それらの値がツールチップで表示されます(@ref{Tooltips}を参照してください)。かわりにマウスをドラッグして識別子または式をマークしてから、マウスをマークした領域から離すと、式の値がツールチップに表示されます。GUD Tooltipモードは、GUD interactionバッファー、および@code{gud-tooltip-modes}にリストされたメジャーモードの、すべてのソースバッファーで効果があります。変数@code{gud-tooltip-echo-area}が非@code{nil}の場合、またはツールチップモードがオフの場合は、ツールチップではなくエコーエリアに値が表示されます。"
 
 #. type: Plain text
 #: building.texi.orig:613
@@ -1539,25 +1544,25 @@ msgid ""
 "problem does not occur, as there is special code to avoid side-effects; "
 "furthermore, you can display macro definitions associated with an identifier "
 "when the program is not executing."
-msgstr ""
+msgstr "@kbd{M-x gud-gdb}でGUD Tooltipモードを使用する場合、GDBにより表示される式の値は、マクロを展開する場合があり、これはデバッグされているプログラムに副作用をもたらすかもしれません。この理由により、@code{gud-gdb}ではツールチップの使用は無効になっています。@kbd{M-x gdb}インターフェースを使用する場合、この問題は発生しません。なぜなら副作用を避ける特別なコードがあるからです。さらにプログラムが実行されていないときに、識別子に関連付けられたマクロの定義を表示することもできます。"
 
 #. type: Plain text
 #: building.texi.orig:619
 msgid ""
 "GUD provides commands for setting and clearing breakpoints, selecting stack "
 "frames, and stepping through the program."
-msgstr ""
+msgstr "GUDはブレークポイントのセットとクリアー、スタックフレームの選択、プログラムのステップ実行のためのコマンドを提供します。"
 
 #. type: kindex
 #: building.texi.orig:621 building.texi.orig:622
 #, no-wrap
 msgid "C-x C-a C-b"
-msgstr ""
+msgstr "C-x C-a C-b"
 
 #. type: table
 #: building.texi.orig:624
 msgid "Set a breakpoint on the source line that point is on."
-msgstr ""
+msgstr "ポイントのあるソース行にブレークポイントをセットします。"
 
 #. type: Plain text
 #: building.texi.orig:631
@@ -1566,13 +1571,13 @@ msgid ""
 "debugger breakpoint on the current source line.  This command is available "
 "only after starting GUD@.  If you call it in a buffer that is not associated "
 "with any debugger subprocess, it signals a error."
-msgstr ""
+msgstr "ソースバッファーから@kbd{C-x C-a C-b} (@code{gud-break})が呼び出された場合、カレントソース行にデバッガーのブレークポイントをセットします。このコマンドはGUDを開始した後だけ利用可能です。デバッガーサブプロセスに関連付けられていないバッファーで呼び出すと、エラーをシグナルします。"
 
 #. type: kindex
 #: building.texi.orig:632
 #, no-wrap
 msgid "C-x C-a @r{(GUD)}"
-msgstr ""
+msgstr "C-x C-a @r{(GUD)}"
 
 #. type: Plain text
 #: building.texi.orig:639
@@ -1582,185 +1587,184 @@ msgid ""
 "are available only in the GUD interaction buffer, while those starting with "
 "@kbd{C-x C-a} are available globally.  Some of these commands are also "
 "available via the tool bar; some are not supported by certain debuggers."
-msgstr ""
+msgstr "以下のコマンドは、GUD interactionバッファーとグローバルの両方で利用可能ですが、キーバインドが異なります。キーが@kbd{C-c}で始まるものはGUD interactionバッファーだけで利用可能で、@kbd{C-x C-a}で始まるものはグローバルに利用可能です。コマンドのいくつかはツールバーを通じても利用可能です。また、特定のデバッガーではサポートされないものもあります。"
 
 #. type: item
 #: building.texi.orig:641
 #, no-wrap
 msgid "C-c C-l"
-msgstr ""
+msgstr "C-c C-l"
 
 #. type: kindex
 #: building.texi.orig:642
 #, no-wrap
 msgid "C-c C-l @r{(GUD)}"
-msgstr ""
+msgstr "C-c C-l @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:643
 #, no-wrap
 msgid "C-x C-a C-l"
-msgstr ""
+msgstr "C-x C-a C-l"
 
 #. type: findex
 #: building.texi.orig:644
 #, no-wrap
 msgid "gud-refresh"
-msgstr ""
+msgstr "gud-refresh"
 
 #. type: table
 #: building.texi.orig:647
 msgid ""
 "Display, in another window, the last source line referred to in the GUD "
 "interaction buffer (@code{gud-refresh})."
-msgstr ""
+msgstr "GUD interactionバッファーで参照される最後のソース行を、別のウィンドウに表示します(@code{gud-refresh})。"
 
 #. type: item
 #: building.texi.orig:648
 #, no-wrap
 msgid "C-c C-s"
-msgstr ""
+msgstr "C-c C-s"
 
 #. type: kindex
 #: building.texi.orig:649
 #, no-wrap
 msgid "C-c C-s @r{(GUD)}"
-msgstr ""
+msgstr "C-c C-s @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:650
 #, no-wrap
 msgid "C-x C-a C-s"
-msgstr ""
+msgstr "C-x C-a C-s"
 
 #. type: findex
 #: building.texi.orig:651
 #, no-wrap
 msgid "gud-step"
-msgstr ""
+msgstr "gud-step"
 
 #. type: table
 #: building.texi.orig:655
 msgid ""
 "Execute the next single line of code (@code{gud-step}).  If the line "
-"contains a function call, execution stops after entering the called "
-"function."
-msgstr ""
+"contains a function call, execution stops after entering the called function."
+msgstr "次の1行を実行します(@code{gud-step})。その行が関数呼び出しを含む場合、関数呼び出しに入った後に実行をストップします。"
 
 #. type: item
 #: building.texi.orig:656
 #, no-wrap
 msgid "C-c C-n"
-msgstr ""
+msgstr "C-c C-n"
 
 #. type: kindex
 #: building.texi.orig:657
 #, no-wrap
 msgid "C-c C-n @r{(GUD)}"
-msgstr ""
+msgstr "C-c C-n @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:658
 #, no-wrap
 msgid "C-x C-a C-n"
-msgstr ""
+msgstr "C-x C-a C-n"
 
 #. type: findex
 #: building.texi.orig:659
 #, no-wrap
 msgid "gud-next"
-msgstr ""
+msgstr "gud-next"
 
 #. type: table
 #: building.texi.orig:662
 msgid ""
 "Execute the next single line of code, stepping across function calls without "
 "stopping inside the functions (@code{gud-next})."
-msgstr ""
+msgstr "次の1行を実行します(@code{gud-next})。その行が関数呼び出しを含む場合、関数の中でストップせずに関数をステップオーバーします。"
 
 #. type: item
 #: building.texi.orig:663
 #, no-wrap
 msgid "C-c C-i"
-msgstr ""
+msgstr "C-c C-i"
 
 #. type: kindex
 #: building.texi.orig:664
 #, no-wrap
 msgid "C-c C-i @r{(GUD)}"
-msgstr ""
+msgstr "C-c C-i @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:665
 #, no-wrap
 msgid "C-x C-a C-i"
-msgstr ""
+msgstr "C-x C-a C-i"
 
 #. type: findex
 #: building.texi.orig:666
 #, no-wrap
 msgid "gud-stepi"
-msgstr ""
+msgstr "gud-stepi"
 
 #. type: table
 #: building.texi.orig:668
 msgid "Execute a single machine instruction (@code{gud-stepi})."
-msgstr ""
+msgstr "機械語の1命令を実行します(@code{gud-stepi})。"
 
 #. type: item
 #: building.texi.orig:669
 #, no-wrap
 msgid "C-c C-p"
-msgstr ""
+msgstr "C-c C-p"
 
 #. type: kindex
 #: building.texi.orig:670
 #, no-wrap
 msgid "C-c C-p @r{(GUD)}"
-msgstr ""
+msgstr "C-c C-p @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:671
 #, no-wrap
 msgid "C-x C-a C-p"
-msgstr ""
+msgstr "C-x C-a C-p"
 
 #. type: findex
 #: building.texi.orig:672
 #, no-wrap
 msgid "gud-print"
-msgstr ""
+msgstr "gud-print"
 
 #. type: table
 #: building.texi.orig:676
 msgid ""
 "Evaluate the expression at point (@code{gud-print}).  If Emacs does not "
 "print the exact expression that you want, mark it as a region first."
-msgstr ""
+msgstr "ポイント位置の式を評価します(@code{gud-print})。表示したい正確な式をEmacsが表示しない場合、最初に式をリージョンとしてマークします。"
 
 #. type: item
 #: building.texi.orig:678
 #, no-wrap
 msgid "C-c C-r"
-msgstr ""
+msgstr "C-c C-r"
 
 #. type: kindex
 #: building.texi.orig:679
 #, no-wrap
 msgid "C-c C-r @r{(GUD)}"
-msgstr ""
+msgstr "C-c C-r @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:680
 #, no-wrap
 msgid "C-x C-a C-r"
-msgstr ""
+msgstr "C-x C-a C-r"
 
 #. type: findex
 #: building.texi.orig:681
 #, no-wrap
 msgid "gud-cont"
-msgstr ""
+msgstr "gud-cont"
 
 #. type: table
 #: building.texi.orig:685
@@ -1768,157 +1772,157 @@ msgid ""
 "Continue execution without specifying any stopping point.  The program will "
 "run until it hits a breakpoint, terminates, or gets a signal that the "
 "debugger is checking for (@code{gud-cont})."
-msgstr ""
+msgstr "停止位置を指定せずに実行を継続します。プログラムは、ブレークポイントに達する、プログラム終了、またはデバッガーがチェックしているシグナルを受けとるまで実行を続けます。"
 
 #. type: item
 #: building.texi.orig:687
 #, no-wrap
 msgid "C-c C-d"
-msgstr ""
+msgstr "C-c C-d"
 
 #. type: kindex
 #: building.texi.orig:688
 #, no-wrap
 msgid "C-c C-d @r{(GUD)}"
-msgstr ""
+msgstr "C-c C-d @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:689
 #, no-wrap
 msgid "C-x C-a C-d"
-msgstr ""
+msgstr "C-x C-a C-d"
 
 #. type: findex
 #: building.texi.orig:690
 #, no-wrap
 msgid "gud-remove"
-msgstr ""
+msgstr "gud-remove"
 
 #. type: table
 #: building.texi.orig:694
 msgid ""
-"Delete the breakpoint(s) on the current source line, if any "
-"(@code{gud-remove}).  If you use this command in the GUD interaction buffer, "
-"it applies to the line where the program last stopped."
-msgstr ""
+"Delete the breakpoint(s) on the current source line, if any (@code{gud-"
+"remove}).  If you use this command in the GUD interaction buffer, it applies "
+"to the line where the program last stopped."
+msgstr "カレントソース行にブレークポイントがある場合、ブレークポイントを削除します。GUD interactionバッファーでこのコマンドを使用する場合、プログラムが最後に停止した位置に適用されます。"
 
 #. type: item
 #: building.texi.orig:695
 #, no-wrap
 msgid "C-c C-t"
-msgstr ""
+msgstr "C-c C-t"
 
 #. type: kindex
 #: building.texi.orig:696
 #, no-wrap
 msgid "C-c C-t @r{(GUD)}"
-msgstr ""
+msgstr "C-c C-t @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:697
 #, no-wrap
 msgid "C-x C-a C-t"
-msgstr ""
+msgstr "C-x C-a C-t"
 
 #. type: findex
 #: building.texi.orig:698
 #, no-wrap
 msgid "gud-tbreak"
-msgstr ""
+msgstr "gud-tbreak"
 
 #. type: table
 #: building.texi.orig:702
 msgid ""
-"Set a temporary breakpoint on the current source line, if any "
-"(@code{gud-tbreak}).  If you use this command in the GUD interaction buffer, "
-"it applies to the line where the program last stopped."
-msgstr ""
+"Set a temporary breakpoint on the current source line, if any (@code{gud-"
+"tbreak}).  If you use this command in the GUD interaction buffer, it applies "
+"to the line where the program last stopped."
+msgstr "カレントソース行に、一時的なブレークポイントをセットします(@code{gud-tbreak})。GUD interactionバッファーでこのコマンドを使用した場合、プログラムが最後に停止した位置に適用されます。"
 
 #. type: item
 #: building.texi.orig:703
 #, no-wrap
 msgid "C-c <"
-msgstr ""
+msgstr "C-c <"
 
 #. type: kindex
 #: building.texi.orig:704
 #, no-wrap
 msgid "C-c < @r{(GUD)}"
-msgstr ""
+msgstr "C-c < @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:705
 #, no-wrap
 msgid "C-x C-a <"
-msgstr ""
+msgstr "C-x C-a <"
 
 #. type: findex
 #: building.texi.orig:706
 #, no-wrap
 msgid "gud-up"
-msgstr ""
+msgstr "gud-up"
 
 #. type: table
 #: building.texi.orig:709
 msgid ""
 "Select the next enclosing stack frame (@code{gud-up}).  This is equivalent "
 "to the GDB command @samp{up}."
-msgstr ""
+msgstr "次の外側のスタックフレームを選択します(@code{gud-up})。これはGDBコマンドの@samp{up}と等価です。"
 
 #. type: item
 #: building.texi.orig:710
 #, no-wrap
 msgid "C-c >"
-msgstr ""
+msgstr "C-c >"
 
 #. type: kindex
 #: building.texi.orig:711
 #, no-wrap
 msgid "C-c > @r{(GUD)}"
-msgstr ""
+msgstr "C-c > @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:712
 #, no-wrap
 msgid "C-x C-a >"
-msgstr ""
+msgstr "C-x C-a >"
 
 #. type: findex
 #: building.texi.orig:713
 #, no-wrap
 msgid "gud-down"
-msgstr ""
+msgstr "gud-down"
 
 #. type: table
 #: building.texi.orig:716
 msgid ""
 "Select the next inner stack frame (@code{gud-down}).  This is equivalent to "
 "the GDB command @samp{down}."
-msgstr ""
+msgstr "次の内側のスタックフレームを選択します(@code{gud-down})。これはGDBコマンドの@samp{down}と等価です。"
 
 #. type: item
 #: building.texi.orig:717
 #, no-wrap
 msgid "C-c C-u"
-msgstr ""
+msgstr "C-c C-u"
 
 #. type: kindex
 #: building.texi.orig:718
 #, no-wrap
 msgid "C-c C-u @r{(GUD)}"
-msgstr ""
+msgstr "C-c C-u @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:719
 #, no-wrap
 msgid "C-x C-a C-u"
-msgstr ""
+msgstr "C-x C-a C-u"
 
 #. type: findex
 #: building.texi.orig:720
 #, no-wrap
 msgid "gud-until"
-msgstr ""
+msgstr "gud-until"
 
 #. type: table
 #: building.texi.orig:725
@@ -1926,55 +1930,55 @@ msgid ""
 "Continue execution to the current line (@code{gud-until}).  The program will "
 "run until it hits a breakpoint, terminates, gets a signal that the debugger "
 "is checking for, or reaches the line on which the cursor currently sits."
-msgstr ""
+msgstr "カレント行まで実行を継続します(@code{gud-until})。プログラムは、ブレークポイントに達する、プログラム終了、またはデバッガーがチェックしているシグナルを受けとる、またはカーソルがある行に到達するまで実行を続けます。"
 
 #. type: kindex
 #: building.texi.orig:727
 #, no-wrap
 msgid "C-c C-f @r{(GUD)}"
-msgstr ""
+msgstr "C-c C-f @r{(GUD)}"
 
 #. type: itemx
 #: building.texi.orig:728
 #, no-wrap
 msgid "C-x C-a C-f"
-msgstr ""
+msgstr "C-x C-a C-f"
 
 #. type: findex
 #: building.texi.orig:729
 #, no-wrap
 msgid "gud-finish"
-msgstr ""
+msgstr "gud-finish"
 
 #. type: table
 #: building.texi.orig:732
 msgid ""
 "Run the program until the selected stack frame returns or stops for some "
 "other reason (@code{gud-finish})."
-msgstr ""
+msgstr "選択されたフレームがリターンするか、他の理由により停止するまでプログラムを実行します(@code{gud-finish})。"
 
 #. type: Plain text
 #: building.texi.orig:735
 msgid "If you are using GDB, these additional key bindings are available:"
-msgstr ""
+msgstr "GDBを使用している場合、追加のキーバインディングが利用可能です:"
 
 #. type: item
 #: building.texi.orig:737
 #, no-wrap
 msgid "C-x C-a C-j"
-msgstr ""
+msgstr "C-x C-a C-j"
 
 #. type: kindex
 #: building.texi.orig:738
 #, no-wrap
 msgid "C-x C-a C-j @r{(GUD)}"
-msgstr ""
+msgstr "C-x C-a C-j @r{(GUD)}"
 
 #. type: findex
 #: building.texi.orig:739
 #, no-wrap
 msgid "gud-jump"
-msgstr ""
+msgstr "gud-jump"
 
 #. type: table
 #: building.texi.orig:747
@@ -1985,39 +1989,39 @@ msgid ""
 "execution line is in a different function from the previously one, GDB "
 "prompts for confirmation since the results may be bizarre.  See the GDB "
 "manual entry regarding @code{jump} for details."
-msgstr ""
+msgstr "ソースバッファーだけで有用です。@code{gud-jump}はプログラムの実行箇所をカレント行に転送します。別の言い方をすると、プログラムが次に実行するのは、このコマンドを与えた位置になります。新しく実行される行が前の関数とは異なる場合、多分奇妙な結果になるので、GDBは確認を求めます。詳細は、GDBマニュアルのエントリー@code{jump}を参照してください。"
 
 #. type: key{#1}
 #: building.texi.orig:748
 #, no-wrap
 msgid "TAB"
-msgstr ""
+msgstr "TAB"
 
 #. type: kindex
 #: building.texi.orig:749
 #, no-wrap
 msgid "TAB @r{(GUD)}"
-msgstr ""
+msgstr "TAB @r{(GUD)}"
 
 #. type: findex
 #: building.texi.orig:750
 #, no-wrap
 msgid "gud-gdb-complete-command"
-msgstr ""
+msgstr "gud-gdb-complete-command"
 
 #. type: table
 #: building.texi.orig:753
 msgid ""
 "With GDB, complete a symbol name (@code{gud-gdb-complete-command}).  This "
 "key is available only in the GUD interaction buffer."
-msgstr ""
+msgstr "GDBの場合、シンボル名を補完します(@code{gud-gdb-complete-command})。このキーはGUD interactionバッファーだけで利用可能です。"
 
 #. type: Plain text
 #: building.texi.orig:757
 msgid ""
 "These commands interpret a numeric argument as a repeat count, when that "
 "makes sense."
-msgstr ""
+msgstr "これらのコマンドは、それが意味がある場合には、数引数を繰り返し回数と解釈します。"
 
 #. type: Plain text
 #: building.texi.orig:761
@@ -2025,60 +2029,59 @@ msgid ""
 "Because @key{TAB} serves as a completion command, you can't use it to enter "
 "a tab as input to the program you are debugging with GDB@.  Instead, type "
 "@kbd{C-q @key{TAB}} to enter a tab."
-msgstr ""
+msgstr "@key{TAB}は補完コマンドに割り当てられているので、GDBでデバッグしているプログラムへのタブの入力には使えません。タブの入力には@kbd{C-q @key{TAB}}とタイプしてください。"
 
 #. type: vindex
 #: building.texi.orig:765
 #, no-wrap
 msgid "gdb-mode-hook"
-msgstr ""
+msgstr "gdb-mode-hook"
 
 #. type: vindex
 #: building.texi.orig:766
 #, no-wrap
 msgid "dbx-mode-hook"
-msgstr ""
+msgstr "dbx-mode-hook"
 
 #. type: vindex
 #: building.texi.orig:767
 #, no-wrap
 msgid "sdb-mode-hook"
-msgstr ""
+msgstr "sdb-mode-hook"
 
 #. type: vindex
 #: building.texi.orig:768
 #, no-wrap
 msgid "xdb-mode-hook"
-msgstr ""
+msgstr "xdb-mode-hook"
 
 #. type: vindex
 #: building.texi.orig:769
 #, no-wrap
 msgid "perldb-mode-hook"
-msgstr ""
+msgstr "perldb-mode-hook"
 
 #. type: vindex
 #: building.texi.orig:770
 #, no-wrap
 msgid "pdb-mode-hook"
-msgstr ""
+msgstr "pdb-mode-hook"
 
 #. type: vindex
 #: building.texi.orig:771
 #, no-wrap
 msgid "jdb-mode-hook"
-msgstr ""
+msgstr "jdb-mode-hook"
 
 #. type: Plain text
 #: building.texi.orig:778
 msgid ""
 "On startup, GUD runs one of the following hooks: @code{gdb-mode-hook}, if "
-"you are using GDB; @code{dbx-mode-hook}, if you are using DBX; "
-"@code{sdb-mode-hook}, if you are using SDB; @code{xdb-mode-hook}, if you are "
-"using XDB; @code{perldb-mode-hook}, for Perl debugging mode; "
-"@code{pdb-mode-hook}, for PDB; @code{jdb-mode-hook}, for JDB@.  "
-"@xref{Hooks}."
-msgstr ""
+"you are using GDB; @code{dbx-mode-hook}, if you are using DBX; @code{sdb-"
+"mode-hook}, if you are using SDB; @code{xdb-mode-hook}, if you are using "
+"XDB; @code{perldb-mode-hook}, for Perl debugging mode; @code{pdb-mode-hook}, "
+"for PDB; @code{jdb-mode-hook}, for JDB@.  @xref{Hooks}."
+msgstr "起動時にGUDは以下のフックの1つを実行します:@*GDBを使用している場合は@code{gdb-mode-hook}、@*DBXを使用している場合は@code{dbx-mode-hook}、@*SDBを使用している場合は@code{sdb-mode-hook}、@*XDBを使用している場合は@code{xdb-mode-hook}、@*Perlのデバッグモードを使用している場合は@code{perldb-mode-hook}、@*PDBを使用している場合は@code{pdb-mode-hook}、@*JDBを使用している場合は@code{jdb-mode-hook}を実行します。@*@ref{Hooks}を参照してください。"
 
 #. type: Plain text
 #: building.texi.orig:783
@@ -2087,19 +2090,19 @@ msgid ""
 "Lisp Reference Manual}) provides a convenient way to define an Emacs command "
 "that sends a particular command string to the debugger, and set up a key "
 "binding for in the GUD interaction buffer:"
-msgstr ""
+msgstr "Lispマクロ@code{gud-def}(@ref{Defining Macros,,, elisp, the Emacs Lisp Reference Manual}を参照してください)は、デバッガーに特定のコマンド文字列を送るEmacsコマンドを定義して、GUD interactionバッファーで、それにたいするキーバインドをセットアップする便利な方法を提供します:"
 
 #. type: findex
 #: building.texi.orig:784
 #, no-wrap
 msgid "gud-def"
-msgstr ""
+msgstr "gud-def"
 
 #. type: example
 #: building.texi.orig:787
 #, no-wrap
 msgid "(gud-def @var{function} @var{cmdstring} @var{binding} @var{docstring})\n"
-msgstr ""
+msgstr "(gud-def @var{function} @var{cmdstring} @var{binding} @var{docstring})\n"
 
 #. type: Plain text
 #: building.texi.orig:795
@@ -2110,20 +2113,20 @@ msgid ""
 "buffer.  If @var{binding} is non-@code{nil}, @code{gud-def} also binds the "
 "command to @kbd{C-c @var{binding}} in the GUD buffer's mode and to @kbd{C-x "
 "C-a @var{binding}} generally."
-msgstr ""
+msgstr "これはデバッガープロセスに@var{cmdstring}を送る、ドキュメント文字列が@var{docstring}の、@var{function}という名前のコマンドを定義します。コマンド@var{function}を、任意のバッファーで使用できます。@var{binding}が非@code{nil}の場合、@code{gud-def}はそのコマンドを、GUDバッファーのモードでは@kbd{C-c @var{binding}}、グローバルには@kbd{C-x C-a @var{binding}}にバインドします。"
 
 #. type: Plain text
 #: building.texi.orig:799
 msgid ""
 "The command string @var{cmdstring} may contain certain @samp{%}-sequences "
 "that stand for data to be filled in at the time @var{function} is called:"
-msgstr ""
+msgstr "コマンド文字列@var{cmdstring}には、@var{function}が呼び出されたときに書き込まれるデータのための、特定の@samp{%}シーケンスを含めることができます:"
 
 #. type: item
 #: building.texi.orig:801
 #, no-wrap
 msgid "%f"
-msgstr ""
+msgstr "%f"
 
 #. type: table
 #: building.texi.orig:805
@@ -2131,13 +2134,13 @@ msgid ""
 "The name of the current source file.  If the current buffer is the GUD "
 "buffer, then the ``current source file'' is the file that the program "
 "stopped in."
-msgstr ""
+msgstr "カレントソースファイルの名前です。カレントバッファーがGUDバッファーの場合、``カレントソースファイル''はプログラムがストップしているファイルです。"
 
 #. type: item
 #: building.texi.orig:806
 #, no-wrap
 msgid "%l"
-msgstr ""
+msgstr "%l"
 
 #. type: table
 #: building.texi.orig:810
@@ -2145,38 +2148,37 @@ msgid ""
 "The number of the current source line.  If the current buffer is the GUD "
 "buffer, then the ``current source line'' is the line that the program "
 "stopped in."
-msgstr ""
+msgstr "カレントソース行の番号です。カレントバッファーがGUDバッファーの場合、``カレントソース行''はプログラムがストップしている行です。"
 
 #. type: item
 #: building.texi.orig:811
 #, no-wrap
 msgid "%e"
-msgstr ""
+msgstr "%e"
 
 #. type: table
 #: building.texi.orig:815
 msgid ""
 "In transient-mark-mode the text in the region, if it is active.  Otherwise "
-"the text of the C lvalue or function-call expression at or adjacent to "
-"point."
-msgstr ""
+"the text of the C lvalue or function-call expression at or adjacent to point."
+msgstr "transient-mark-modeでは、リージョンがアクティブの場合はリージョンのテキストです。そうでない場合、ポイント位置またはそれに隣接する位置にあるCのlvalue(左辺値)、または関数呼び出し式です。"
 
 #. type: item
 #: building.texi.orig:816
 #, no-wrap
 msgid "%a"
-msgstr ""
+msgstr "%a"
 
 #. type: table
 #: building.texi.orig:818
 msgid "The text of the hexadecimal address at or adjacent to point."
-msgstr ""
+msgstr "ポイント位置またはそれに隣接する位置にある、16進アドレスのテキストです。"
 
 #. type: item
 #: building.texi.orig:819
 #, no-wrap
 msgid "%p"
-msgstr ""
+msgstr "%p"
 
 #. type: table
 #: building.texi.orig:823
@@ -2184,38 +2186,38 @@ msgid ""
 "The numeric argument of the called function, as a decimal number.  If the "
 "command is used without a numeric argument, @samp{%p} stands for the empty "
 "string."
-msgstr ""
+msgstr "呼び出された関数の数引数の10進数です。コマンドに数引数が指定されなかった場合、@samp{%p}は空文字列になります。"
 
 #. type: table
 #: building.texi.orig:826
 msgid ""
 "If you don't use @samp{%p} in the command string, the command you define "
 "ignores any numeric argument."
-msgstr ""
+msgstr "コマンド文字列に@samp{%p}を使用しない場合、定義したコマンドは数引数を無視します。"
 
 #. type: item
 #: building.texi.orig:827
 #, no-wrap
 msgid "%d"
-msgstr ""
+msgstr "%d"
 
 #. type: table
 #: building.texi.orig:829
 msgid "The name of the directory of the current source file."
-msgstr ""
+msgstr "カレントソースファイルのディレクトリー名です。"
 
 #. type: item
 #: building.texi.orig:830
 #, no-wrap
 msgid "%c"
-msgstr ""
+msgstr "%c"
 
 #. type: table
 #: building.texi.orig:833
 msgid ""
 "Fully qualified class name derived from the expression surrounding point "
 "(jdb only)."
-msgstr ""
+msgstr "ポイントを取り囲む式から派生された、完全に記述されたされたclass名(fully qualified class name)です(jdbのみ)。"
 
 #. type: Plain text
 #: building.texi.orig:843
@@ -2225,13 +2227,13 @@ msgid ""
 "aspects of the debugger state.  It also provides additional ways to control "
 "the debugging session with the mouse, such as clicking in the fringe of a "
 "source buffer to set a breakpoint there."
-msgstr ""
+msgstr "コマンド@kbd{M-x gdb}はブレークポイント、スタックフレーム、その他のデバッグ状態の様相を制御するために特化したバッファーで、IDE-likeなインターフェースでGDBを開始します。これは、たとえばマウスソースバッファーのフリンジをクリックすることにより、そこにブレークポイントをセットするなどの、マウスによりデバッグセッションを制御する追加の方法も提供します。"
 
 #. type: vindex
 #: building.texi.orig:844
 #, no-wrap
 msgid "gud-gdb-command-name"
-msgstr ""
+msgstr "gud-gdb-command-name"
 
 #. type: Plain text
 #: building.texi.orig:850
@@ -2240,7 +2242,7 @@ msgid ""
 "additional features, use @kbd{M-x gud-gdb} (@pxref{Starting GUD}).  You must "
 "use this if you want to debug multiple programs within one Emacs session, as "
 "that is currently unsupported by @kbd{M-x gdb}."
-msgstr ""
+msgstr "これらの追加機能を使わずにGUD interactionバッファーのインターフェースだけを使ってGDBを実行するには、@kbd{M-x gud-gdb} (@ref{Starting GUD}を参照してください)を使用します。これは、(現在のところ@kbd{M-x gdb}ではサポートされていない)1つのEmacsセッションで複数のプログラムをデバッグしたいときだけ使用しなければなりません。"
 
 #. type: Plain text
 #: building.texi.orig:854
@@ -2248,125 +2250,124 @@ msgid ""
 "Internally, @kbd{M-x gdb} informs GDB that its ``screen size'' is unlimited; "
 "for correct operation, you must not change GDB's screen height and width "
 "values during the debugging session."
-msgstr ""
+msgstr "内部的には、@kbd{M-x gdb}はGDBにたいして``スクリーンサイズ''に制限がないと告げます。正しい操作のために、デバッグセッションの間はGDBのスクリーンの高さと幅の値を変更してはいけません。"
 
 #. type: subsubsection
 #: building.texi.orig:865 building.texi.orig:867 building.texi.orig:868
 #, no-wrap
 msgid "GDB User Interface Layout"
-msgstr ""
+msgstr "GDB User Interface Layout"
 
 #. type: menuentry
 #: building.texi.orig:865
 msgid "Control the number of displayed buffers."
-msgstr ""
+msgstr "複数表示されたバッファーの制御。"
 
 #. type: subsubsection
 #: building.texi.orig:865 building.texi.orig:919 building.texi.orig:920
 #, no-wrap
 msgid "Source Buffers"
-msgstr ""
+msgstr "Source Buffers"
 
 #. type: menuentry
 #: building.texi.orig:865
 msgid "Use the mouse in the fringe/margin to control your program."
-msgstr ""
+msgstr "プログラムを制御するためにフリンジ・余白でマウスを使う。"
 
 #. type: subsubsection
 #: building.texi.orig:865 building.texi.orig:961 building.texi.orig:962
 #, no-wrap
 msgid "Breakpoints Buffer"
-msgstr ""
+msgstr "Breakpoints Buffer"
 
 #. type: menuentry
 #: building.texi.orig:865
 msgid "A breakpoint control panel."
-msgstr ""
+msgstr "ブレークポイントのコントロールパネル。"
 
 #. type: subsubsection
 #: building.texi.orig:865 building.texi.orig:1001 building.texi.orig:1002
 #, no-wrap
 msgid "Threads Buffer"
-msgstr ""
+msgstr "Threads Buffer"
 
 #. type: menuentry
 #: building.texi.orig:865
 msgid "Displays your threads."
-msgstr ""
+msgstr "スレッドの表示。"
 
 #. type: subsubsection
 #: building.texi.orig:865 building.texi.orig:1077 building.texi.orig:1078
 #, no-wrap
 msgid "Stack Buffer"
-msgstr ""
+msgstr "Stack Buffer"
 
 #. type: menuentry
 #: building.texi.orig:865
 msgid "Select a frame from the call stack."
-msgstr ""
+msgstr "callスタックからのフレームの選択。"
 
 #. type: subsubsection
 #: building.texi.orig:865 building.texi.orig:1099 building.texi.orig:1100
 #, no-wrap
 msgid "Other GDB Buffers"
-msgstr ""
+msgstr "Other GDB Buffers"
 
 #. type: menuentry
 #: building.texi.orig:865
 msgid "Other buffers for controlling the GDB state."
-msgstr ""
+msgstr "GDBの状態を制御するその他のバッファー。"
 
 #. type: subsubsection
 #: building.texi.orig:865 building.texi.orig:1144 building.texi.orig:1145
 #, no-wrap
 msgid "Watch Expressions"
-msgstr ""
+msgstr "Watch Expressions"
 
 #. type: menuentry
 #: building.texi.orig:865
 msgid "Monitor variable values in the speedbar."
-msgstr ""
+msgstr "speedbarで変数の値をモニターする。"
 
 #. type: subsubsection
 #: building.texi.orig:865 building.texi.orig:1211 building.texi.orig:1212
 #, no-wrap
 msgid "Multithreaded Debugging"
-msgstr ""
+msgstr "Multithreaded Debugging"
 
 #. type: menuentry
 #: building.texi.orig:865
 msgid "Debugging programs with several threads."
-msgstr ""
+msgstr "複数スレッドのプログラムのデバッグ。"
 
 #. type: cindex
 #: building.texi.orig:869
 #, no-wrap
 msgid "GDB User Interface layout"
-msgstr ""
+msgstr "GDB User Interface layout"
 
 #. type: findex
 #: building.texi.orig:871 building.texi.orig:895
 #, no-wrap
 msgid "gdb-many-windows"
-msgstr ""
+msgstr "gdb-many-windows"
 
 #. type: Plain text
 #: building.texi.orig:878
 msgid ""
-"If the variable @code{gdb-many-windows} is @code{nil} (the default), "
-"@kbd{M-x gdb} normally displays only the GUD interaction buffer.  However, "
-"if the variable @code{gdb-show-main} is also non-@code{nil}, it starts with "
-"two windows: one displaying the GUD interaction buffer, and the other "
-"showing the source for the @code{main} function of the program you are "
-"debugging."
-msgstr ""
+"If the variable @code{gdb-many-windows} is @code{nil} (the default), @kbd{M-"
+"x gdb} normally displays only the GUD interaction buffer.  However, if the "
+"variable @code{gdb-show-main} is also non-@code{nil}, it starts with two "
+"windows: one displaying the GUD interaction buffer, and the other showing "
+"the source for the @code{main} function of the program you are debugging."
+msgstr "変数@code{gdb-many-windows}が@code{nil}(デフォルト)の場合、@kbd{M-x gdb}は通常GUD interactionバッファーだけを表示します。しかし@code{gdb-show-main}が非@code{nil}の場合、2つのウィンドウで開始します。その場合、1つはGUD interactionバッファーを表示して、もう一方はデバッグするプログラムの@code{main}関数のソースを表示します。"
 
 #. type: Plain text
 #: building.texi.orig:881
 msgid ""
 "If @code{gdb-many-windows} is non-@code{nil}, then @kbd{M-x gdb} displays "
 "the following frame layout:"
-msgstr ""
+msgstr "@code{gdb-many-windows}が非@code{nil}の場合、@kbd{M-x gdb}は以下のフレームレイアウトを表示します。"
 
 #. type: group
 #: building.texi.orig:891
@@ -2380,12 +2381,19 @@ msgid ""
 "|   Stack buffer                 |   Breakpoints/Threads buffer   |\n"
 "+--------------------------------+--------------------------------+\n"
 msgstr ""
+"+--------------------------------+--------------------------------+\n"
+"|   GUD interaction buffer       |   Locals/Registers buffer      |\n"
+"|--------------------------------+--------------------------------+\n"
+"|   Primary Source buffer        |   I/O buffer for debugged pgm  |\n"
+"|--------------------------------+--------------------------------+\n"
+"|   Stack buffer                 |   Breakpoints/Threads buffer   |\n"
+"+--------------------------------+--------------------------------+\n"
 
 #. type: findex
 #: building.texi.orig:894
 #, no-wrap
 msgid "gdb-restore-windows"
-msgstr ""
+msgstr "gdb-restore-windows"
 
 #. type: Plain text
 #: building.texi.orig:900
@@ -2394,19 +2402,19 @@ msgid ""
 "layout by typing @kbd{M-x gdb-restore-windows}.  To toggle between the many "
 "windows layout and a simple layout with just the GUD interaction buffer and "
 "a source file, type @kbd{M-x gdb-many-windows}."
-msgstr ""
+msgstr "ウィンドウのレイアウトを変更した場合、@kbd{M-x gdb-restore-windows}とタイプして``複数ウィンドウ''のレイアウトをリストアできます。複数ウィンドウレイアウトと、GUD interactionバッファーとソースファイルだけの単純なレイアウトを切り替えるには、@kbd{M-x gdb-many-windows}とタイプしてください。"
 
 #. type: Plain text
 #: building.texi.orig:908
 msgid ""
 "You may also specify additional GDB-related buffers to display, either in "
 "the same frame or a different one.  Select the buffers you want by typing "
-"@code{M-x gdb-display-@var{buffertype}-buffer} or @code{M-x "
-"gdb-frame-@var{buffertype}-buffer}, where @var{buffertype} is the relevant "
-"buffer type, such as @samp{breakpoints}.  You can do the same with the menu "
-"bar, with the @samp{GDB-Windows} and @samp{GDB-Frames} sub-menus of the "
+"@code{M-x gdb-display-@var{buffertype}-buffer} or @code{M-x gdb-frame-"
+"@var{buffertype}-buffer}, where @var{buffertype} is the relevant buffer "
+"type, such as @samp{breakpoints}.  You can do the same with the menu bar, "
+"with the @samp{GDB-Windows} and @samp{GDB-Frames} sub-menus of the "
 "@samp{GUD} menu."
-msgstr ""
+msgstr "同じフレームまたは異なるフレームに、GDBに関連した追加のバッファーを表示するように指定できます。@code{M-x gdb-display-@var{buffertype}-buffer}または@code{M-x gdb-frame-@var{buffertype}-buffer}とタイプして、望むバッファーを選択します。ここで@var{buffertype}は@samp{breakpoints}のような、該当するバッファータイプです。@samp{GUD}メニューの、サブメニュー@samp{GDB-Windows}または@samp{GDB-Frames}により、メニューバーから同じことができます。"
 
 #. type: Plain text
 #: building.texi.orig:918
@@ -2419,57 +2427,57 @@ msgid ""
 "buffer has the advantage of keeping the shell history as well as GDB's "
 "breakpoints.  You do need to check that the breakpoints in recently edited "
 "source files are still in the right places."
-msgstr ""
+msgstr "デバッグを終えたら@kbd{C-x k}でGUD interactionバッファーをkillすれば、このセッションでの関連するすべてのバッファーをkillできます。しかしEmacsでソースコードの編集とリコンパイル終えて、さらにデバッグを続けたいときは、これを行う必要はありません。実行を再開すると、GDBは自動的に新しい実行ファイルを見つけます。GUD interactionバッファーを残しておけば、シェルヒストリー、同様にGDBブレークポイントを残すことができる利点があります。最近編集したソースファイルのブレークポイントが、正しい場所にあるかチェックする必要があります。"
 
 #. type: cindex
 #: building.texi.orig:921
 #, no-wrap
 msgid "fringes, for debugging"
-msgstr ""
+msgstr "fringes, for debugging"
 
 #. type: item
 #: building.texi.orig:924
 #, no-wrap
 msgid "@kbd{Mouse-1} (in fringe)"
-msgstr ""
+msgstr "@kbd{Mouse-1} (in fringe)"
 
 #. type: table
 #: building.texi.orig:926
 msgid "Set or clear a breakpoint on that line."
-msgstr ""
+msgstr "その行にブレークポイントをセットまたはクリアーします。"
 
 #. type: item
 #: building.texi.orig:927
 #, no-wrap
 msgid "@kbd{C-Mouse-1} (in fringe)"
-msgstr ""
+msgstr "@kbd{C-Mouse-1} (in fringe)"
 
 #. type: table
 #: building.texi.orig:929
 msgid "Enable or disable a breakpoint on that line."
-msgstr ""
+msgstr "その行のブレークポイントを有効または無効にします。"
 
 #. type: item
 #: building.texi.orig:930
 #, no-wrap
 msgid "@kbd{Mouse-3} (in fringe)"
-msgstr ""
+msgstr "@kbd{Mouse-3} (in fringe)"
 
 #. type: table
 #: building.texi.orig:932
 msgid "Continue execution to that line."
-msgstr ""
+msgstr "その行まで実行を継続します。"
 
 #. type: item
 #: building.texi.orig:933
 #, no-wrap
 msgid "@kbd{C-Mouse-3} (in fringe)"
-msgstr ""
+msgstr "@kbd{C-Mouse-3} (in fringe)"
 
 #. type: table
 #: building.texi.orig:935
 msgid "Jump to that line."
-msgstr ""
+msgstr "その行にジャンプします。"
 
 #. type: Plain text
 #: building.texi.orig:943
@@ -2480,7 +2488,7 @@ msgid ""
 "exists there, the click removes it.  A @kbd{C-Mouse-1} click enables or "
 "disables an existing breakpoint; a breakpoint that is disabled, but not "
 "unset, is indicated by a gray dot."
-msgstr ""
+msgstr "グラフィカルなディスプレーでは、sourceバッファーのフリンジを@kbd{Mouse-1}でクリックして、その行にブレークポイントをセットできます(@ref{Fringes}を参照してください)。クリックした場所に赤いドットが表示されます。すでにそこにブレークポイントが存在する場合、クリックでそれを削除します。既存のブレークポイントを@kbd{C-Mouse-1}でクリックすることにより、有効または無効にします。クリアーされておらず無効になったブレークポイントは、グレイのドットで示されます。"
 
 #. type: Plain text
 #: building.texi.orig:948
@@ -2489,7 +2497,7 @@ msgid ""
 "indicated with a @samp{B} character in the left margin of the window.  "
 "Disabled breakpoints are indicated with @samp{b}.  (The margin is only "
 "displayed if a breakpoint is present.)"
-msgstr ""
+msgstr "テキスト端末またはフリンジが無効な場合、有効なブレークポイントはウィンドウの左端に、@samp{B}という文字で示されます。無効なブレークポイントは@samp{b}で示されます(余白はブレークポイントがあるときだけ表示されます)。"
 
 #. type: Plain text
 #: building.texi.orig:960
@@ -2499,12 +2507,12 @@ msgid ""
 "indicates the current execution line of a higher-level frame.  If you drag "
 "the arrow in the fringe with @kbd{Mouse-1}, that causes execution to advance "
 "to the line where you release the button.  Alternatively, you can click "
-"@kbd{Mouse-3} in the fringe to advance to that line.  You can click "
-"@kbd{C-Mouse-3} in the fringe to jump to that line without executing the "
+"@kbd{Mouse-3} in the fringe to advance to that line.  You can click @kbd{C-"
+"Mouse-3} in the fringe to jump to that line without executing the "
 "intermediate lines.  This command allows you to go backwards, which can be "
 "useful for running through code that has already executed, in order to "
 "examine its execution in more detail."
-msgstr ""
+msgstr "sourceバッファーの左フリンジの塗りつぶされた矢印は、デバッグされているプログラムがストップした最内フレームの行を示します。中抜きの矢印はより高いレベルのフレームの現在実行されている行を示します。フリンジの矢印を@kbd{Mouse-1}でドラッグすると、ボタンを離した行まで実行が進みます。かわりにフリンジを@kbd{Mouse-3}でクリックすることにより、その行まで実行を進めることができます。フリンジを@kbd{C-Mouse-3}でクリックすることにより、間にある行を実行せずに、その行にジャンプできます。このコマンドは後方へもジャンプできるので、すでに実行中のコードの実行の詳細を調べるのに便利です。"
 
 #. type: Plain text
 #: building.texi.orig:968
@@ -2513,25 +2521,25 @@ msgid ""
 "catchpoints in the debugger session.  @xref{Breakpoints,,, gdb, The GNU "
 "debugger}.  It provides the following commands, which mostly apply to the "
 "@dfn{current breakpoint} (the breakpoint which point is on):"
-msgstr ""
+msgstr "GDB Breakpointsバッファーは、デバッガーセッションのブレークポイント(breakpoint)、ウォッチポイント(watchpoint)、キャッチポイント(catchpoint)を表示します。@ref{Breakpoints,,, gdb, The GNU debugger}を参照してください。これは以下のコマンドを提供します。これらのコマンドのほとんどは@dfn{カレントブレークポイント}(ポイントのあるブレークポイント)に適用されます。"
 
 #. type: key{#1}
 #: building.texi.orig:970
 #, no-wrap
 msgid "SPC"
-msgstr ""
+msgstr "SPC"
 
 #. type: kindex
 #: building.texi.orig:971
 #, no-wrap
 msgid "SPC @r{(GDB Breakpoints buffer)}"
-msgstr ""
+msgstr "SPC @r{(GDB Breakpoints buffer)}"
 
 #. type: findex
 #: building.texi.orig:972
 #, no-wrap
 msgid "gdb-toggle-breakpoint"
-msgstr ""
+msgstr "gdb-toggle-breakpoint"
 
 #. type: table
 #: building.texi.orig:977
@@ -2540,78 +2548,78 @@ msgid ""
 "graphical display, this changes the color of the dot in the fringe of the "
 "source buffer at that line.  The dot is red when the breakpoint is enabled, "
 "and gray when it is disabled."
-msgstr ""
+msgstr "カレントブレークポイントを有効または無効にします(@code{gdb-toggle-breakpoint})。グラフィカルなディスプレーでは、これはsourceバッファーのフリンジのドットのカラーを変更します。ドットのカラーは、ブレークポイントが有効なときは赤、無効なときはグレーです。"
 
 #. type: item
 #: building.texi.orig:978
 #, no-wrap
 msgid "D"
-msgstr ""
+msgstr "D"
 
 #. type: kindex
 #: building.texi.orig:979
 #, no-wrap
 msgid "D @r{(GDB Breakpoints buffer)}"
-msgstr ""
+msgstr "D @r{(GDB Breakpoints buffer)}"
 
 #. type: findex
 #: building.texi.orig:980
 #, no-wrap
 msgid "gdb-delete-breakpoint"
-msgstr ""
+msgstr "gdb-delete-breakpoint"
 
 #. type: table
 #: building.texi.orig:982
 msgid "Delete the current breakpoint (@code{gdb-delete-breakpoint})."
-msgstr ""
+msgstr "カレントブレークポイントを削除します(@code{gdb-delete-breakpoint})。"
 
 #. type: key{#1}
 #: building.texi.orig:983
 #, no-wrap
 msgid "RET"
-msgstr ""
+msgstr "RET"
 
 #. type: kindex
 #: building.texi.orig:984
 #, no-wrap
 msgid "RET @r{(GDB Breakpoints buffer)}"
-msgstr ""
+msgstr "RET @r{(GDB Breakpoints buffer)}"
 
 #. type: findex
 #: building.texi.orig:985
 #, no-wrap
 msgid "gdb-goto-breakpoint"
-msgstr ""
+msgstr "gdb-goto-breakpoint"
 
 #. type: table
 #: building.texi.orig:988
 msgid ""
-"Visit the source line for the current breakpoint "
-"(@code{gdb-goto-breakpoint})."
-msgstr ""
+"Visit the source line for the current breakpoint (@code{gdb-goto-"
+"breakpoint})."
+msgstr "カレントブレークポイントのソース行をvisitします(@code{gdb-goto-breakpoint})。"
 
 #. type: item
 #: building.texi.orig:989
 #, no-wrap
 msgid "Mouse-2"
-msgstr ""
+msgstr "Mouse-2"
 
 #. type: kindex
 #: building.texi.orig:990
 #, no-wrap
 msgid "Mouse-2 @r{(GDB Breakpoints buffer)}"
-msgstr ""
+msgstr "Mouse-2 @r{(GDB Breakpoints buffer)}"
 
 #. type: table
 #: building.texi.orig:992
 msgid "Visit the source line for the breakpoint you click on."
-msgstr ""
+msgstr "クリックしたブレークポイントのソース行をvisitします。"
 
 #. type: vindex
 #: building.texi.orig:994
 #, no-wrap
 msgid "gdb-show-threads-by-default"
-msgstr ""
+msgstr "gdb-show-threads-by-default"
 
 #. type: Plain text
 #: building.texi.orig:1000
@@ -2621,13 +2629,13 @@ msgid ""
 "other click with @kbd{Mouse-1} on the relevant button in the header line.  "
 "If @code{gdb-show-threads-by-default} is non-@code{nil}, the GDB Threads "
 "buffer is the one shown by default."
-msgstr ""
+msgstr "@code{gdb-many-windows}が非@code{nil}の場合、GDB Breakpointsバッファーは、GDB Threadsバッファーとウィンドウを共有します。一方から他方へ切り替えるには、ヘッダー行の関連するボタンを@kbd{Mouse-1}でクリックします。@code{gdb-show-threads-by-default}が非@code{nil}の場合、GDB Threadsバッファーがデフォルトとして表示されます。"
 
 #. type: findex
 #: building.texi.orig:1004
 #, no-wrap
 msgid "gdb-select-thread"
-msgstr ""
+msgstr "gdb-select-thread"
 
 #. type: Plain text
 #: building.texi.orig:1011
@@ -2638,172 +2646,172 @@ msgid ""
 "@key{RET} (@code{gdb-select-thread}), or click on it with @kbd{Mouse-2}.  "
 "This also displays the associated source buffer, and updates the contents of "
 "the other GDB buffers."
-msgstr ""
+msgstr "GDB Threadsバッファーは、デバッグされているプログラムのスレッドのサマリーを表示します。@ref{Threads, Threads, Debugging programs with multiple threads, gdb, The GNU debugger}を参照してください。スレッドを選択するには、ポイントをそこに移動して@key{RET} (@code{gdb-select-thread})を押すか、それを@kbd{Mouse-2}でクリックします。これにより、それに関連するsourceバッファーが表示され、他のGDBバッファーの内容も更新されます。"
 
 #. type: Plain text
 #: building.texi.orig:1014
 msgid ""
 "You can customize variables under @code{gdb-buffers} group to select fields "
 "included in GDB Threads buffer."
-msgstr ""
+msgstr "GDB Threadsバッファーに含まれる項目を選択するために、@code{gdb-buffers}グループ配下の変数をカスタマイズできます。"
 
 #. type: vindex
 #: building.texi.orig:1016 building.texi.orig:1017
 #, no-wrap
 msgid "gdb-thread-buffer-verbose-names"
-msgstr ""
+msgstr "gdb-thread-buffer-verbose-names"
 
 #. type: table
 #: building.texi.orig:1019
 msgid "Show long thread names like @samp{Thread 0x4e2ab70 (LWP 1983)}."
-msgstr ""
+msgstr "@samp{Thread 0x4e2ab70 (LWP 1983)}のような長いスレッド名を表示します。"
 
 #. type: vindex
 #: building.texi.orig:1020 building.texi.orig:1021
 #, no-wrap
 msgid "gdb-thread-buffer-arguments"
-msgstr ""
+msgstr "gdb-thread-buffer-arguments"
 
 #. type: table
 #: building.texi.orig:1023
 msgid "Show arguments of thread top frames."
-msgstr ""
+msgstr "スレッドのトップフレームの引数を表示します。"
 
 #. type: vindex
 #: building.texi.orig:1024 building.texi.orig:1025
 #, no-wrap
 msgid "gdb-thread-buffer-locations"
-msgstr ""
+msgstr "gdb-thread-buffer-locations"
 
 #. type: table
 #: building.texi.orig:1027
 msgid "Show file information or library names."
-msgstr ""
+msgstr "ファイル情報またはライブラリー名を表示します。"
 
 #. type: vindex
 #: building.texi.orig:1028 building.texi.orig:1029
 #, no-wrap
 msgid "gdb-thread-buffer-addresses"
-msgstr ""
+msgstr "gdb-thread-buffer-addresses"
 
 #. type: table
 #: building.texi.orig:1031
 msgid "Show addresses for thread frames in threads buffer."
-msgstr ""
+msgstr "threadバッファーのスレッドフレームのアドレスを表示します。"
 
 #. type: Plain text
 #: building.texi.orig:1035
 msgid ""
 "To view information for several threads simultaneously, use the following "
 "commands from the GDB Threads buffer."
-msgstr ""
+msgstr "複数のスレッドの情報を同時に閲覧するには、GDB Threadsバッファーの以下のコマンドを使用します。"
 
 #. type: item
 #: building.texi.orig:1037
 #, no-wrap
 msgid "d"
-msgstr ""
+msgstr "d"
 
 #. type: kindex
 #: building.texi.orig:1038
 #, no-wrap
 msgid "d @r{(GDB threads buffer)}"
-msgstr ""
+msgstr "d @r{(GDB threads buffer)}"
 
 #. type: findex
 #: building.texi.orig:1039
 #, no-wrap
 msgid "gdb-display-disassembly-for-thread"
-msgstr ""
+msgstr "gdb-display-disassembly-for-thread"
 
 #. type: table
 #: building.texi.orig:1042
 msgid ""
-"Display disassembly buffer for the thread at current line "
-"(@code{gdb-display-disassembly-for-thread})."
-msgstr ""
+"Display disassembly buffer for the thread at current line (@code{gdb-display-"
+"disassembly-for-thread})."
+msgstr "カレント行のスレッドのdisassemblyバッファーを表示します(@code{gdb-display-disassembly-for-thread})。"
 
 #. type: item
 #: building.texi.orig:1043
 #, no-wrap
 msgid "f"
-msgstr ""
+msgstr "f"
 
 #. type: kindex
 #: building.texi.orig:1044
 #, no-wrap
 msgid "f @r{(GDB threads buffer)}"
-msgstr ""
+msgstr "f @r{(GDB threads buffer)}"
 
 #. type: findex
 #: building.texi.orig:1045
 #, no-wrap
 msgid "gdb-display-stack-for-thread"
-msgstr ""
+msgstr "gdb-display-stack-for-thread"
 
 #. type: table
 #: building.texi.orig:1048
 msgid ""
-"Display the GDB Stack buffer for the thread at current line "
-"(@code{gdb-display-stack-for-thread})."
-msgstr ""
+"Display the GDB Stack buffer for the thread at current line (@code{gdb-"
+"display-stack-for-thread})."
+msgstr "カレント行のスレッドのGDB Stackバッファーを表示します(@code{gdb-display-stack-for-thread})。"
 
 #. type: item
 #: building.texi.orig:1049
 #, no-wrap
 msgid "l"
-msgstr ""
+msgstr "l"
 
 #. type: kindex
 #: building.texi.orig:1050
 #, no-wrap
 msgid "l @r{(GDB threads buffer)}"
-msgstr ""
+msgstr "l @r{(GDB threads buffer)}"
 
 #. type: findex
 #: building.texi.orig:1051
 #, no-wrap
 msgid "gdb-display-locals-for-thread"
-msgstr ""
+msgstr "gdb-display-locals-for-thread"
 
 #. type: table
 #: building.texi.orig:1054
 msgid ""
-"Display the GDB Locals buffer for the thread at current line "
-"(@code{gdb-display-locals-for-thread})."
-msgstr ""
+"Display the GDB Locals buffer for the thread at current line (@code{gdb-"
+"display-locals-for-thread})."
+msgstr "カレント行のスレッドのGDB Localsバッファーを表示します(@code{gdb-display-locals-for-thread})。"
 
 #. type: item
 #: building.texi.orig:1055
 #, no-wrap
 msgid "r"
-msgstr ""
+msgstr "r"
 
 #. type: kindex
 #: building.texi.orig:1056
 #, no-wrap
 msgid "r @r{(GDB threads buffer)}"
-msgstr ""
+msgstr "r @r{(GDB threads buffer)}"
 
 #. type: findex
 #: building.texi.orig:1057
 #, no-wrap
 msgid "gdb-display-registers-for-thread"
-msgstr ""
+msgstr "gdb-display-registers-for-thread"
 
 #. type: table
 #: building.texi.orig:1060
 msgid ""
-"Display the GDB Registers buffer for the thread at current line "
-"(@code{gdb-display-registers-for-thread})."
-msgstr ""
+"Display the GDB Registers buffer for the thread at current line (@code{gdb-"
+"display-registers-for-thread})."
+msgstr "カレント行のスレッドのGDB Registersバッファーを表示します(@code{gdb-display-registers-for-thread})。"
 
 #. type: Plain text
 #: building.texi.orig:1065
 msgid ""
 "Their upper-case counterparts, @kbd{D}, @kbd{F} ,@kbd{L} and @kbd{R}, "
 "display the corresponding buffer in a new frame."
-msgstr ""
+msgstr "これらのコマンドの大文字@kbd{D}、@kbd{F}、@kbd{L}、@kbd{R}は、対応するバッファーを新しいフレームに表示します。"
 
 #. type: Plain text
 #: building.texi.orig:1072
@@ -2813,7 +2821,7 @@ msgid ""
 "debug your program.  The mode indicator for each GDB buffer shows the number "
 "of thread it is showing information about.  The thread number is also "
 "included in the buffer name of bound buffers."
-msgstr ""
+msgstr "特定のスレッドについての情報を表示するバッファーを作成した場合、それはそのスレッドにバインドされて、プログラムをデバッグする間、情報を表示し続けます。各GDBバッファーのモードインジケーターは、情報が表示されているスレッドの番号が表示されます。スレッドの番号はバインドされたバッファーのバッファー名にも含まれます。"
 
 #. type: Plain text
 #: building.texi.orig:1076
@@ -2821,7 +2829,7 @@ msgid ""
 "Further commands are available in the GDB Threads buffer which depend on the "
 "mode of GDB that is used for controlling execution of your program.  "
 "@xref{Multithreaded Debugging}."
-msgstr ""
+msgstr "GDB Threadsバッファーでは、さらに他のコマンドも利用可能で、それはプログラムの実行を制御するのに使われるGDBのモードに依存します。@ref{Multithreaded Debugging}を参照してください。"
 
 #. type: Plain text
 #: building.texi.orig:1084
@@ -2829,13 +2837,13 @@ msgid ""
 "The GDB Stack buffer displays a @dfn{call stack}, with one line for each of "
 "the nested subroutine calls (@dfn{stack frames}) in the debugger session.  "
 "@xref{Backtrace,, Backtraces, gdb, The GNU debugger}."
-msgstr ""
+msgstr "GDB Stackバッファーは、@dfn{コールスタック(call stack)}を表示します。これは、1行がデバッガーセッションでのネストされたサブルーチン呼び出し(@dfn{stack frames: スタックフレーム})にそれぞれ対応します。@ref{Backtrace,, Backtraces, gdb, The GNU debugger}を参照してください。"
 
 #. type: findex
 #: building.texi.orig:1085
 #, no-wrap
 msgid "gdb-frames-select"
-msgstr ""
+msgstr "gdb-frames-select"
 
 #. type: Plain text
 #: building.texi.orig:1092
@@ -2845,23 +2853,23 @@ msgid ""
 "stack frame is displayed in reverse contrast.  To select a stack frame, move "
 "point in its line and type @key{RET} (@code{gdb-frames-select}), or click "
 "@kbd{Mouse-2} on it.  Doing so also updates the Locals buffer"
-msgstr ""
+msgstr "グラフィカルなディスプレーでは、選択されたスタックフレームは、フリンジの矢印で示されます。テキスト端末、またはフリンジが無効な場合、選択されたスタックフレームは反転して表示されます。スタックフレームを選択するには、ポイントをその行に移動して@key{RET} (@code{gdb-frames-select})とタイプするか、それを@kbd{Mouse-2}でクリックします。これを行うことにより、Localsバッファーも更新されます"
 
 #. type: ifnottex
 #: building.texi.orig:1094
 msgid "(@pxref{Other GDB Buffers})."
-msgstr ""
+msgstr "(@ref{Other GDB Buffers}を参照してください)。"
 
 #. type: iftex
 #: building.texi.orig:1097
 msgid "(described in the next section)."
-msgstr ""
+msgstr "(次のセクションで説明します)。"
 
 #. type: item
 #: building.texi.orig:1103
 #, no-wrap
 msgid "Locals Buffer"
-msgstr ""
+msgstr "Localsバッファー"
 
 #. type: table
 #: building.texi.orig:1108
@@ -2870,7 +2878,7 @@ msgid ""
 "simple data types (@pxref{Frame Info, Frame Info, Information on a frame, "
 "gdb, The GNU debugger}).  Press @key{RET} or click @kbd{Mouse-2} on the "
 "value if you want to edit it."
-msgstr ""
+msgstr "このバッファーは、カレントフレームのローカル変数の値を、簡単なデータ型で表示します(@ref{Frame Info, Frame Info, Information on a frame, gdb, The GNU debugger}を参照してください)。値を編集したいときは、そこで@key{RET}を押すか、@kbd{Mouse-2}でクリックしてください。"
 
 #. type: table
 #: building.texi.orig:1114
@@ -2880,19 +2888,19 @@ msgid ""
 "with a @kbd{Mouse-2} click.  With earlier versions of GDB, use @key{RET} or "
 "@kbd{Mouse-2} on the type description (@samp{[struct/union]} or "
 "@samp{[array]}).  @xref{Watch Expressions}."
-msgstr ""
+msgstr "配列と構造体については、その型だけが表示されます。GDB 6.4以降では、ポイント位置で@key{RET}をタイプ、または@kbd{Mouse-2}でクリックすることにより、ローカル変数の値を調べることができます。それより前のバージョンのGDBでは、型の説明(@samp{[struct/union]}または@samp{[array]})にたいして、@key{RET}または@kbd{Mouse-2}を使用します。@ref{Watch Expressions}を参照してください。"
 
 #. type: item
 #: building.texi.orig:1115
 #, no-wrap
 msgid "Registers Buffer"
-msgstr ""
+msgstr "Registersバッファー"
 
 #. type: findex
 #: building.texi.orig:1116
 #, no-wrap
 msgid "toggle-gdb-all-registers"
-msgstr ""
+msgstr "toggle-gdb-all-registers"
 
 #. type: table
 #: building.texi.orig:1122
@@ -2901,13 +2909,13 @@ msgid ""
 "gdb, The GNU debugger}).  Press @key{RET} or click @kbd{Mouse-2} on a "
 "register if you want to edit its value.  With GDB 6.4 or later, recently "
 "changed register values display with @code{font-lock-warning-face}."
-msgstr ""
+msgstr "このバッファーは、レジスターに保持されている値を表示します(@ref{Registers,,, gdb, The GNU debugger}を参照してください)。値を編集したいときは、そのレジスターで@key{RET}を押すか、@kbd{Mouse-2}をクリックします。GDB6.4以降では、最近変化したレジスター値は、@code{font-lock-warning-face}で表示されます。"
 
 #. type: item
 #: building.texi.orig:1123
 #, no-wrap
 msgid "Assembler Buffer"
-msgstr ""
+msgstr "Assemblerバッファー"
 
 #. type: table
 #: building.texi.orig:1128
@@ -2915,13 +2923,13 @@ msgid ""
 "The assembler buffer displays the current frame as machine code.  An arrow "
 "points to the current instruction, and you can set and remove breakpoints as "
 "in a source buffer.  Breakpoint icons also appear in the fringe or margin."
-msgstr ""
+msgstr "assemblerバッファーは、カレントフレームをマシン語コードで表示します。矢印はカレント命令を指し、sourceバッファーのようにブレークポイントのセットと削除ができます。ブレークポイントのアイコンも、フリンジまたは余白に表示されます。"
 
 #. type: item
 #: building.texi.orig:1129
 #, no-wrap
 msgid "Memory Buffer"
-msgstr ""
+msgstr "Memoryバッファー"
 
 #. type: table
 #: building.texi.orig:1137
@@ -2933,34 +2941,34 @@ msgid ""
 "Alternatively, use @kbd{S} or @kbd{N} respectively.  Click @kbd{Mouse-3} on "
 "the header line to select the display format or unit size for these data "
 "items."
-msgstr ""
+msgstr "memoryバッファーは、プログラムのメモリーセクションを調べるためのバッファーです(@ref{Memory, Memory, Examining memory, gdb, The GNU debugger}を参照してください)。ヘッダー行の適切な箇所を@kbd{Mouse-1}でクリックすることにより、そのバッファーが表示するメモリーの開始アドレス、またはデータアイテムの数が変化します(または@kbd{S}および@kbd{N}を使用)。ヘッダー行を@kbd{Mouse-3}でクリックすることにより、データアイテムのフォーマット、またはユニットサイズのどちらを表示するか選択します。"
 
 #. type: Plain text
 #: building.texi.orig:1143
 msgid ""
 "When @code{gdb-many-windows} is non-@code{nil}, the locals buffer shares its "
-"window with the registers buffer, just like breakpoints and threads "
-"buffers. To switch from one to the other, click with @kbd{Mouse-1} on the "
-"relevant button in the header line."
-msgstr ""
+"window with the registers buffer, just like breakpoints and threads buffers. "
+"To switch from one to the other, click with @kbd{Mouse-1} on the relevant "
+"button in the header line."
+msgstr "@code{gdb-many-windows}が非@code{nil}の場合、breakpointsバッファーとthreadsバッファーがウィンドウを共有するように、localsバッファーとregistersバッファーもウィンドウを共有します。一方から他方へ切り替えるには、ヘッダー行の関連するボタンを@kbd{Mouse-1}でクリックしてください。"
 
 #. type: cindex
 #: building.texi.orig:1146
 #, no-wrap
 msgid "Watching expressions in GDB"
-msgstr ""
+msgstr "Watching expressions in GDB"
 
 #. type: findex
 #: building.texi.orig:1148
 #, no-wrap
 msgid "gud-watch"
-msgstr ""
+msgstr "gud-watch"
 
 #. type: kindex
 #: building.texi.orig:1149
 #, no-wrap
 msgid "C-x C-a C-w @r{(GUD)}"
-msgstr ""
+msgstr "C-x C-a C-w @r{(GUD)}"
 
 #. type: Plain text
 #: building.texi.orig:1155
@@ -2969,7 +2977,7 @@ msgid ""
 "point into the variable name and click on the watch icon in the tool bar "
 "(@code{gud-watch}) or type @kbd{C-x C-a C-w}.  If you specify a prefix "
 "argument, you can enter the variable name in the minibuffer."
-msgstr ""
+msgstr "プログラムを停止するたびに、変数がどのように変化するか見たいときは、ポイントを変数名に移動して、ツールバーのウォッチアイコンをクリック(@code{gud-watch})するか、@kbd{C-x C-a C-w}とタイプします。プレフィクス引数を指定した場合、変数名をミニバッファーで入力することができます。"
 
 #. type: Plain text
 #: building.texi.orig:1165
@@ -2982,7 +2990,7 @@ msgid ""
 "and just the name and type otherwise.  Root expressions also display the "
 "frame address as a tooltip to help identify the frame in which they were "
 "defined."
-msgstr ""
+msgstr "各ウォッチ式は、speedbarに表示されます(@ref{Speedbar}を参照してください)。配列や、構造体、共有体のような複雑なデータ型はツリー形式で表示されます。ツリーの子ノード、および単純なデータ型では、式の名前とその値が表示され、speedbarフレームが選択されたときは型がツールチップで表示されます。それより高いレベルでは名前、型、ポインターのアドレス値、そうでない場合は名前と型だけが表示されます。ルート式では、それらがどこで定義されているかを識別するために、ツールチップでフレームアドレスも表示されます"
 
 #. type: Plain text
 #: building.texi.orig:1171
@@ -2991,53 +2999,53 @@ msgid ""
 "@key{SPC} on the tag to the left of the expression.  Emacs asks for "
 "confirmation before expanding the expression if its number of immediate "
 "children exceeds the value of the variable @code{gdb-max-children}."
-msgstr ""
+msgstr "複雑なデータ型を展開または折り畳むには、式の左のタグを@kbd{Mouse-2}をクリックするか@key{SPC}を押します。式の子にあたるデータの数が、変数@code{gdb-max-children}の値を超える場合、Emacsは式を展開する前に確認を求めます。"
 
 #. type: kindex
 #: building.texi.orig:1172
 #, no-wrap
 msgid "D @r{(GDB speedbar)}"
-msgstr ""
+msgstr "D @r{(GDB speedbar)}"
 
 #. type: findex
 #: building.texi.orig:1173
 #, no-wrap
 msgid "gdb-var-delete"
-msgstr ""
+msgstr "gdb-var-delete"
 
 #. type: Plain text
 #: building.texi.orig:1176
 msgid ""
 "To delete a complex watch expression, move point to the root expression in "
 "the speedbar and type @kbd{D} (@code{gdb-var-delete})."
-msgstr ""
+msgstr "複雑なウォッチ式を削除するには、speedbarのルート式にポイントを移動して、@kbd{D} (@code{gdb-var-delete})とタイプしてください。"
 
 #. type: kindex
 #: building.texi.orig:1177
 #, no-wrap
 msgid "RET @r{(GDB speedbar)}"
-msgstr ""
+msgstr "RET @r{(GDB speedbar)}"
 
 #. type: findex
 #: building.texi.orig:1178
 #, no-wrap
 msgid "gdb-edit-value"
-msgstr ""
+msgstr "gdb-edit-value"
 
 #. type: Plain text
 #: building.texi.orig:1183
 msgid ""
 "To edit a variable with a simple data type, or a simple element of a complex "
-"data type, move point there in the speedbar and type @key{RET} "
-"(@code{gdb-edit-value}).  Or you can click @kbd{Mouse-2} on a value to edit "
-"it.  Either way, this reads the new value using the minibuffer."
-msgstr ""
+"data type, move point there in the speedbar and type @key{RET} (@code{gdb-"
+"edit-value}).  Or you can click @kbd{Mouse-2} on a value to edit it.  Either "
+"way, this reads the new value using the minibuffer."
+msgstr "単純なデータ型の変数、または複雑なデータ型の単純な要素を編集するには、speedbarのその箇所にポイントを移動して、@key{RET} (@code{gdb-edit-value})とタイプするか、値を@kbd{Mouse-2}でクリックして、それを編集します。どちらの方法も、ミニバッファーを使って新しい値を読み取ります。"
 
 #. type: vindex
 #: building.texi.orig:1184
 #, no-wrap
 msgid "gdb-show-changed-values"
-msgstr ""
+msgstr "gdb-show-changed-values"
 
 #. type: Plain text
 #: building.texi.orig:1191
@@ -3047,13 +3055,13 @@ msgid ""
 "values that have recently changed and @code{shadow} face to make variables "
 "which have gone out of scope less noticeable.  When a variable goes out of "
 "scope you can't edit its value."
-msgstr ""
+msgstr "変数@code{gdb-show-changed-values}を非@code{nil}値(デフォルト)にセットした場合、Emacsは最近変化した値を@code{font-lock-warning-face}でハイライトし、スコープから外れた変数は目立たない@code{shadow}フェイスで表示します。変数がスコープから外れた場合、値を変更することはできません。"
 
 #. type: vindex
 #: building.texi.orig:1192
 #, no-wrap
 msgid "gdb-delete-out-of-scope"
-msgstr ""
+msgstr "gdb-delete-out-of-scope"
 
 #. type: Plain text
 #: building.texi.orig:1198
@@ -3063,13 +3071,13 @@ msgid ""
 "of scope.  Sometimes, when re-entering the same function, it may be useful "
 "to set this value to @code{nil} so that you don't need to recreate the watch "
 "expression."
-msgstr ""
+msgstr "変数@code{gdb-delete-out-of-scope}が非@code{nil}(デフォルト)の場合、Emacsはスコープから外れたときウォッチ式を自動的に削除します。この変数を@code{nil}にしておけば、同じ関数に再入したとき、新たにウォッチ式を作成しなくてよいので便利かもしれません。"
 
 #. type: vindex
 #: building.texi.orig:1199
 #, no-wrap
 msgid "gdb-use-colon-colon-notation"
-msgstr ""
+msgstr "gdb-use-colon-colon-notation"
 
 #. type: Plain text
 #: building.texi.orig:1204
@@ -3078,13 +3086,13 @@ msgid ""
 "uses the @samp{@var{function}::@var{variable}} format.  This allows the user "
 "to display watch expressions which share the same variable name.  The "
 "default value is @code{nil}."
-msgstr ""
+msgstr "変数@code{gdb-use-colon-colon-notation}が非@code{nil}の場合、Emacsは@samp{@var{function}::@var{variable}}というフォーマットを使います。これにより同じ変数名を共有するウォッチ式を表示することができます。デフォルト値は@code{nil}です。"
 
 #. type: vindex
 #: building.texi.orig:1205
 #, no-wrap
 msgid "gdb-speedbar-auto-raise"
-msgstr ""
+msgstr "gdb-speedbar-auto-raise"
 
 #. type: Plain text
 #: building.texi.orig:1210
@@ -3092,19 +3100,19 @@ msgid ""
 "To automatically raise the speedbar every time the display of watch "
 "expressions updates, set @code{gdb-speedbar-auto-raise} to non-@code{nil}.  "
 "This can be useful if you are debugging with a full screen Emacs frame."
-msgstr ""
+msgstr "ウォッチ式の表示が更新されるたびに、自動的にspeedbarを前に表示するには、@code{gdb-speedbar-auto-raise}を非@code{nil}にセットします。これはEmacsフレームを全画面表示にしてデバッグしているとき便利です。"
 
 #. type: cindex
 #: building.texi.orig:1213
 #, no-wrap
 msgid "Multithreaded debugging in GDB"
-msgstr ""
+msgstr "Multithreaded debugging in GDB"
 
 #. type: cindex
 #: building.texi.orig:1214
 #, no-wrap
 msgid "Non-stop debugging in GDB"
-msgstr ""
+msgstr "Non-stop debugging in GDB"
 
 #. type: Plain text
 #: building.texi.orig:1225
@@ -3114,17 +3122,16 @@ msgid ""
 "executing.  @xref{All-Stop Mode, , All-Stop Mode, gdb, The GNU debugger}.  "
 "For some multi-threaded targets, GDB supports a further mode of operation, "
 "called @dfn{non-stop mode}, in which you can examine stopped program threads "
-"in the debugger while other threads continue to execute freely.  "
-"@xref{Non-Stop Mode, , Non-Stop Mode, gdb, The GNU debugger}.  Versions of "
-"GDB prior to 7.0 do not support non-stop mode, and it does not work on all "
-"targets."
-msgstr ""
+"in the debugger while other threads continue to execute freely.  @xref{Non-"
+"Stop Mode, , Non-Stop Mode, gdb, The GNU debugger}.  Versions of GDB prior "
+"to 7.0 do not support non-stop mode, and it does not work on all targets."
+msgstr "GDBの@dfn{all-stop mode}では、プログラムが停止すると、すべてのスレッドの実行が停止します。同様に、プログラムを再開すると、すべてのスレッドが実行を開始します。@ref{All-Stop Mode, , All-Stop Mode, gdb, The GNU debugger}を参照してください。マルチスレッド化されたいくつかのターゲットにたいして、GDBはこれを超える操作のためのモードをサポートします。これは@dfn{non-stop mode}と呼ばれ、他のスレッドが自由に実行を継続している間に、デバッガーで停止したプログラムのスレッドを調べることができます。@ref{Non-Stop Mode, , Non-Stop Mode, gdb, The GNU debugger}を参照してください。GDBのバージョン7.0以前では、non-stop modeはサポートされておらず、すべてのターゲットにたいしては機能しません。"
 
 #. type: vindex
 #: building.texi.orig:1226
 #, no-wrap
 msgid "gdb-non-stop-setting"
-msgstr ""
+msgstr "gdb-non-stop-setting"
 
 #. type: Plain text
 #: building.texi.orig:1234
@@ -3135,69 +3142,68 @@ msgid ""
 "@code{nil}, or if non-stop mode is unavailable, Emacs runs GDB in all-stop "
 "mode.  The variable takes effect when Emacs begins a debugging session; if "
 "you change its value, you should restart any active debugging session."
-msgstr ""
+msgstr "変数@code{gdb-non-stop-setting}は、EmacsがGDBをall-stop modeとnon-stop modeのどちらで実行するかを決定します。デフォルトは@code{t}で、これは利用可能な場合はnon-stop modeを使うことを意味します。値を@code{nil}に変更した場合、またはnon-stop modeが利用不可の場合、EmacsはGDBをall-stop modeで実行します。この変数はEmacsがデバッグセッションを開始したときに効果をもちます。値を変更した場合、アクティブなデバッグセッションを再起動する必要があります。"
 
 #. type: vindex
 #: building.texi.orig:1235
 #, no-wrap
 msgid "gdb-switch-when-another-stopped"
-msgstr ""
+msgstr "gdb-switch-when-another-stopped"
 
 #. type: Plain text
 #: building.texi.orig:1240
 msgid ""
 "When a thread stops in non-stop mode, Emacs usually switches to that "
 "thread.  If you don't want Emacs to do this switch if another stopped thread "
-"is already selected, change the variable "
-"@code{gdb-switch-when-another-stopped} to @code{nil}."
-msgstr ""
+"is already selected, change the variable @code{gdb-switch-when-another-"
+"stopped} to @code{nil}."
+msgstr "non-stop modeモードでスレッドが停止すると、通常Emacsはそのスレッドに切り替えます。すでに選択したスレッドから停止した他のスレッドへの切り替えを行わないようにするには、変数@code{gdb-switch-when-another-stopped}を@code{nil}に変更してください。"
 
 #. type: vindex
 #: building.texi.orig:1241
 #, no-wrap
 msgid "gdb-switch-reasons"
-msgstr ""
+msgstr "gdb-switch-reasons"
 
 #. type: Plain text
 #: building.texi.orig:1246
 msgid ""
 "Emacs can decide whether or not to switch to the stopped thread depending on "
-"the reason which caused the stop.  Customize the variable "
-"@code{gdb-switch-reasons} to select the stop reasons which will cause a "
-"thread switch."
-msgstr ""
+"the reason which caused the stop.  Customize the variable @code{gdb-switch-"
+"reasons} to select the stop reasons which will cause a thread switch."
+msgstr "Emacsが停止したスレッドに切り替えるかどうかの決定は、そのスレッドが停止した理由に依存します。変数@code{gdb-switch-reasons}をカスタマイズすることにより、スレッドの切り替えを行う停止理由を選択できます。"
 
 #. type: vindex
 #: building.texi.orig:1247
 #, no-wrap
 msgid "gdb-stopped-functions"
-msgstr ""
+msgstr "gdb-stopped-functions"
 
 #. type: Plain text
 #: building.texi.orig:1250
 msgid ""
 "The variable @code{gdb-stopped-functions} allows you to execute your "
 "functions whenever some thread stops."
-msgstr ""
+msgstr "変数@code{gdb-stopped-functions}には、あるスレッドが停止したときに実行する関数を指定できます。"
 
 #. type: Plain text
 #: building.texi.orig:1253
 msgid ""
 "In non-stop mode, you can switch between different modes for GUD execution "
 "control commands."
-msgstr ""
+msgstr "non-stop modeでは、GUDの実行制御コマンドのための異なるモードを切り替えることができます。"
 
 #. type: vindex
 #: building.texi.orig:1254
 #, no-wrap
 msgid "gdb-gud-control-all-threads"
-msgstr ""
+msgstr "gdb-gud-control-all-threads"
 
 #. type: item
 #: building.texi.orig:1256
 #, no-wrap
 msgid "Non-stop/A"
-msgstr ""
+msgstr "Non-stop/A"
 
 #. type: table
 #: building.texi.orig:1265
@@ -3208,13 +3214,13 @@ msgid ""
 "and @code{gud-cont}, respectively.  The @samp{Go} button is shown on the "
 "toolbar when at least one thread is stopped, whereas @samp{Stop} button is "
 "shown when at least one thread is running."
-msgstr ""
+msgstr "@code{gdb-gud-control-all-threads}が@code{t}(デフォルト)の場合、中断および継続のためのコマンドはすべてのスレッドに適用されるので、@code{gud-stop-subjob}または@code{gud-cont}の1コマンドで、すべてのスレッドを停止または継続できます。少なくとも1つのスレッドが停止している場合、ツールバーに@samp{Go}ボタンが表示されます。また、少なくとも1つのスレッドが実行中の場合、@samp{Stop}ボタンが表示されます。"
 
 #. type: item
 #: building.texi.orig:1266
 #, no-wrap
 msgid "Non-stop/T"
-msgstr ""
+msgstr "Non-stop/T"
 
 #. type: table
 #: building.texi.orig:1272
@@ -3222,19 +3228,19 @@ msgid ""
 "When @code{gdb-gud-control-all-threads} is @code{nil}, only the current "
 "thread is stopped/continued.  @samp{Go} and @samp{Stop} buttons on the GUD "
 "toolbar are shown depending on the state of current thread."
-msgstr ""
+msgstr "@code{gdb-gud-control-all-threads}が@code{nil}の場合、カレントスレッドだけを停止または継続します。GUDツールバーの@samp{Go}および@samp{Stop}のボタンの表示は、カレントスレッドの状態に依存します。"
 
 #. type: Plain text
 #: building.texi.orig:1276
 msgid ""
 "You can change the current value of @code{gdb-gud-control-all-threads} from "
 "the tool bar or from @samp{GUD->GDB-MI} menu."
-msgstr ""
+msgstr "@code{gdb-gud-control-all-threads}のカレント値は、ツールバーまたは@samp{GUD->GDB-MI}メニューで変更できます。"
 
 #. type: Plain text
 #: building.texi.orig:1278
 msgid "Stepping commands always apply to the current thread."
-msgstr ""
+msgstr "ステップコマンドは常にカレントスレッドに適用されます。"
 
 #. type: Plain text
 #: building.texi.orig:1283
@@ -3243,22 +3249,21 @@ msgid ""
 "them.  Hitting @kbd{i} in threads buffer interrupts thread under point, "
 "@kbd{c} continues it, @kbd{s} steps through.  More such commands may be "
 "added in the future."
-msgstr ""
+msgstr "non-stop modeでは、スレッドを選択せずにスレッドを中断または継続できます。threadsバッファーで、ポイント位置のスレッドにたいして@kbd{i}をタイプすると中断、@kbd{c}で継続、@kbd{s}でステップ実行します。今後さらにそのようなコマンドが追加されるかもしれません。"
 
 #. type: Plain text
 #: building.texi.orig:1288
 msgid ""
 "Note that when you interrupt a thread, it stops with the @samp{signal "
-"received} reason.  If that reason is included in your "
-"@code{gdb-switch-reasons} (it is by default), Emacs will switch to that "
-"thread."
-msgstr ""
+"received} reason.  If that reason is included in your @code{gdb-switch-"
+"reasons} (it is by default), Emacs will switch to that thread."
+msgstr "スレッドを中断した場合、停止理由は@samp{signal received}になることに注意してください。この理由が@code{gdb-switch-reasons}に含まれている場合(デフォルトでは含まれています)、Emacsはそのスレッドに切り替えます。"
 
 #. type: section
 #: building.texi.orig:1290
 #, no-wrap
 msgid "Executing Lisp Expressions"
-msgstr ""
+msgstr "Executing Lisp Expressions"
 
 #. type: Plain text
 #: building.texi.orig:1296
@@ -3266,26 +3271,26 @@ msgid ""
 "Emacs has major modes for several variants of Lisp.  They use the same "
 "editing commands as other programming language modes (@pxref{Programs}).  In "
 "addition, they provide special commands for executing Lisp expressions."
-msgstr ""
+msgstr "Emacsには、Lispのいくつかの変種のためのメジャーモードがあります。これらは他のプログラミング言語のモードと同じ編集コマンドを使用します(@ref{Programs}を参照してください)。それに加えて、Lisp式を実行するための特別なコマンドを提供します。"
 
 #. type: cindex
 #: building.texi.orig:1298 building.texi.orig:1427
 #, no-wrap
 msgid "Emacs Lisp mode"
-msgstr ""
+msgstr "Emacs Lispモード"
 
 #. type: table
 #: building.texi.orig:1301
 msgid ""
 "The mode for editing Emacs Lisp source files.  It defines @kbd{C-M-x} to "
 "evaluate the current top-level Lisp expression.  @xref{Lisp Eval}."
-msgstr ""
+msgstr "Emacs Lispのソースファイルを編集するためのモードです。このモードはカレントのトップレベルのLisp式を評価する@kbd{C-M-x}を定義します。@ref{Lisp Eval}を参照してください。"
 
 #. type: item
 #: building.texi.orig:1302
 #, no-wrap
 msgid "Lisp Interaction mode"
-msgstr ""
+msgstr "Lisp Interactionモード"
 
 #. type: table
 #: building.texi.orig:1306
@@ -3293,13 +3298,13 @@ msgid ""
 "The mode for an interactive Emacs Lisp session.  It defines @kbd{C-j} to "
 "evaluate the expression before point and insert its value in the buffer.  "
 "@xref{Lisp Interaction}."
-msgstr ""
+msgstr "Emacs Lispとの対話的なセッションのためのモードです。このモードはポイントの前の式を評価して、その値をバッファーに挿入する@kbd{C-j}を定義します。@ref{Lisp Interaction}を参照してください。"
 
 #. type: cindex
 #: building.texi.orig:1307 building.texi.orig:1565
 #, no-wrap
 msgid "Lisp mode"
-msgstr ""
+msgstr "Lispモード"
 
 #. type: table
 #: building.texi.orig:1311
@@ -3307,84 +3312,84 @@ msgid ""
 "The mode for editing source files of programs that run in Lisps other than "
 "Emacs Lisp.  It defines @kbd{C-M-x} to evaluate the current top-level "
 "expression in an external Lisp.  @xref{External Lisp}."
-msgstr ""
+msgstr "Emacs Lispではない、他のLispを実行するプログラムのソースファイルを編集するためのモードです。このモードは、カレントのトップレベルの式を外部のLispで評価する@kbd{C-M-x}を定義します。@ref{External Lisp}を参照してください。"
 
 #. type: item
 #: building.texi.orig:1312
 #, no-wrap
 msgid "Inferior Lisp mode"
-msgstr ""
+msgstr "Inferior Lispモード"
 
 #. type: table
 #: building.texi.orig:1315
 msgid ""
 "The mode for an interactive session with an external Lisp which is being run "
 "as a subprocess (or @dfn{inferior process}) of Emacs."
-msgstr ""
+msgstr "Emacsのサブプロセス(または@dfn{inferior process: 下位プロセス})として実行される外部Lispと、対話的にセッションするためのモードです。"
 
 #. type: ifnottex
 #: building.texi.orig:1317
 msgid "@xref{External Lisp}."
-msgstr ""
+msgstr "@ref{External Lisp}を参照してください。"
 
 #. type: cindex
 #: building.texi.orig:1319 building.texi.orig:1606
 #, no-wrap
 msgid "Scheme mode"
-msgstr ""
+msgstr "Schemeモード"
 
 #. type: table
 #: building.texi.orig:1321
 msgid "Like Lisp mode, but for Scheme programs."
-msgstr ""
+msgstr "Lispモードと同様ですが、Schemeプログラムのためのモードです。"
 
 #. type: item
 #: building.texi.orig:1322
 #, no-wrap
 msgid "Inferior Scheme mode"
-msgstr ""
+msgstr "Inferior Schemeモード"
 
 #. type: table
 #: building.texi.orig:1324
 msgid "Like Inferior Lisp mode, but for Scheme."
-msgstr ""
+msgstr "Inferior Lispモードと同様ですが、Schemeのためのモードです。"
 
 #. type: node
 #: building.texi.orig:1326
 #, no-wrap
 msgid "Lisp Libraries"
-msgstr ""
+msgstr "Lisp Libraries"
 
 #. type: section
 #: building.texi.orig:1327
 #, no-wrap
 msgid "Libraries of Lisp Code for Emacs"
-msgstr ""
+msgstr "Libraries of Lisp Code for Emacs"
 
 #. type: cindex
 #: building.texi.orig:1328
 #, no-wrap
 msgid "libraries"
-msgstr ""
+msgstr "libraries"
 
 #. type: cindex
 #: building.texi.orig:1329
 #, no-wrap
 msgid "loading Lisp code"
-msgstr ""
+msgstr "loading Lisp code"
 
 #. type: Plain text
 #: building.texi.orig:1333
 msgid ""
-"Emacs Lisp code is stored in files whose names conventionally end in "
-"@file{.el}.  Such files are automatically visited in Emacs Lisp mode."
-msgstr ""
+"Emacs Lisp code is stored in files whose names conventionally end in @file{."
+"el}.  Such files are automatically visited in Emacs Lisp mode."
+msgstr "Emacs Lispのコードは、慣習として@file{.el}で終わる名前のファイルに保存されます。このようなファイルは、自動的にEmacs Lispモードでvisitされます。"
 
 #. type: cindex
 #: building.texi.orig:1334
 #, no-wrap
 msgid "byte code"
-msgstr ""
+msgstr "byte code"
 
 #. type: Plain text
 #: building.texi.orig:1341
@@ -3394,13 +3399,13 @@ msgid ""
 "goes in a separate file whose name ends in @samp{.elc}.  For example, the "
 "compiled code for @file{foo.el} goes in @file{foo.elc}.  @xref{Byte "
 "Compilation,, Byte Compilation, elisp, the Emacs Lisp Reference Manual}."
-msgstr ""
+msgstr "Emacs Lispのコードは、loadが速く省スペースで、実行も速いバイトコードにコンパイルできます。慣習により、コンパイルされたEmacs Lispのコードは@samp{.elc}で終わる名前の別のファイルに保存されます。たとえば、@file{foo.el}をコンパイルしたコードは@file{foo.elc}になります。@ref{Byte Compilation,, Byte Compilation, elisp, the Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: findex
 #: building.texi.orig:1342
 #, no-wrap
 msgid "load-file"
-msgstr ""
+msgstr "load-file"
 
 #. type: Plain text
 #: building.texi.orig:1348
@@ -3408,33 +3413,32 @@ msgid ""
 "To @dfn{load} an Emacs Lisp file, type @kbd{M-x load-file}.  This command "
 "reads a file name using the minibuffer, and executes the contents of that "
 "file as Emacs Lisp code.  It is not necessary to visit the file first; this "
-"command reads the file directly from disk, not from an existing Emacs "
-"buffer."
-msgstr ""
+"command reads the file directly from disk, not from an existing Emacs buffer."
+msgstr "Emacs Lispファイルを@dfn{ロード(load)}するには、@kbd{M-x load-file}とタイプします。このコマンドはミニバッファーを使ってファイル名を読み取り、そのファイル内容をEmacs Lispコードとして実行します。最初にファイルをvisitしておく必要はありません。このコマンドは、既存のEmacsバッファーからではなく、ディスクからファイルを直接読み込みます。"
 
 #. type: findex
 #: building.texi.orig:1349
 #, no-wrap
 msgid "load"
-msgstr ""
+msgstr "load"
 
 #. type: findex
 #: building.texi.orig:1350
 #, no-wrap
 msgid "load-library"
-msgstr ""
+msgstr "load-library"
 
 #. type: vindex
 #: building.texi.orig:1351
 #, no-wrap
 msgid "load-prefer-newer"
-msgstr ""
+msgstr "load-prefer-newer"
 
 #. type: cindex
 #: building.texi.orig:1352
 #, no-wrap
 msgid "load path for Emacs Lisp"
-msgstr ""
+msgstr "load path for Emacs Lisp"
 
 #. type: Plain text
 #: building.texi.orig:1372
@@ -3453,10 +3457,10 @@ msgid ""
 "changes to the @file{.el} file and forgot to recompile it, but loads the "
 "@file{.elc} file anyway.  (Due to this behavior, you can save unfinished "
 "edits to Emacs Lisp source files, and not recompile until your changes are "
-"ready for use.)  If you set the option @code{load-prefer-newer} to a "
-"non-@code{nil} value, however, then rather than the procedure described "
-"above, Emacs loads whichever version of the file is newest."
-msgstr ""
+"ready for use.)  If you set the option @code{load-prefer-newer} to a non-"
+"@code{nil} value, however, then rather than the procedure described above, "
+"Emacs loads whichever version of the file is newest."
+msgstr "Emacs Lispファイルが、Emacs Lispの@dfn{ロードパス(load path: 以下で定義)}にインストールされている場合、@kbd{M-x load-file}ではなく@kbd{M-x load-library}とタイプしてロードできます。@kbd{M-x load-library}コマンドは、ファイル名ではなく@dfn{ライブラリー名(library name)}の入力を求めます。これはEmacs Lispのロードパスの各ディレクトリーを検索して、そのライブラリー名にマッチするファイルを見つけようと試みます。ライブラリー名が@samp{@var{foo}}の場合、ファイル名@file{@var{foo}.elc}、@file{@var{foo}.el}、@file{@var{foo}}を見つけようと試みます。デフォルトの動作では、最初に見つかったファイルをロードします。このコマンドは@file{.el}より@file{.elc}を優先します。それはコンパイルされたファイルの方が、ロードと実行が速いからです。@file{@var{lib}.el}が@file{@var{lib}.elc}より新しい場合、警告を発します。この場合、誰かが@file{.el}を変更したもののリコンパイルを忘れたようだが、ともかく@file{.elc}をロードする、という警告です(この振る舞いにより、編集が終わっておらず、まだリコンパイルする準備ができていないEmacs Lispのソースファイルを保存することができます)。しかしオプション@code{load-prefer-newer}を非@code{nil}値にセットした場合、上記の手順ではなく、Emacsは新しいファイルのバージョンをロードします。"
 
 #. type: Plain text
 #: building.texi.orig:1377
@@ -3465,13 +3469,13 @@ msgid ""
 "function.  This is similar to @code{load-library}, but is lower-level and "
 "accepts additional arguments.  @xref{How Programs Do Loading,,, elisp, the "
 "Emacs Lisp Reference Manual}."
-msgstr ""
+msgstr "Emacs Lispプログラムは通常、@code{load}関数を使用してEmacs Lispファイルをロードします。これは@code{load-library}と似ていますが、より低レベルで追加の引数を指定できます。@ref{How Programs Do Loading,,, elisp, the Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: vindex
 #: building.texi.orig:1378
 #, no-wrap
 msgid "load-path"
-msgstr ""
+msgstr "load-path"
 
 #. type: Plain text
 #: building.texi.orig:1389
@@ -3485,7 +3489,7 @@ msgid ""
 "almost always a bad idea to use this.  (If you find yourself wishing that "
 "@code{nil} were in the list, most likely what you really want is to use "
 "@kbd{M-x load-file}.)"
-msgstr ""
+msgstr "Emacs Lispのロードパスは、変数@code{load-path}により指定されます。この変数の値は、ディレクトリー名(文字列)のリストです。これらのディレクトリーは、@kbd{M-x load-library}コマンド、低レベルの@code{load}関数、その他のEmacs Lispライブラリーを探すEmacs関数により、指定された順に検索されます。@code{load-path}のリストの要素には、特別な値@code{nil}も指定できます。これはカレントのデフォルトディレクトリーを意味しますが、これを使うのは大抵間違っています(リストに@code{nil}を含めたいと思うとき、大抵の場合は、本当に望んでいるのは@kbd{M-x load-file}を使用することです)。"
 
 #. type: Plain text
 #: building.texi.orig:1397
@@ -3497,19 +3501,19 @@ msgid ""
 "via the Customize interface (@pxref{Easy Customization}), but you can add a "
 "directory to it by putting a line like this in your init file (@pxref{Init "
 "File}):"
-msgstr ""
+msgstr "@code{load-path}のデフォルト値は、Emacs自身がLispコードを格納するディレクトリーのリストです。他のディレクトリーに独自のライブラリーがある場合、ロードパスにそのディレクトリーを追加できます。このマニュアルで説明されている他の大半の変数とは異なり、@code{load-path}はCustomizeインターフェース(@ref{Easy Customization}を参照してください)を通じての変更はできません。しかしinitファイルに以下のような行を記述して、ディレクトリーを追加できます(@ref{Init File}を参照してください):"
 
 #. type: example
 #: building.texi.orig:1400
 #, no-wrap
 msgid "(add-to-list 'load-path \"/path/to/my/lisp/library\")\n"
-msgstr ""
+msgstr "(add-to-list 'load-path \"/path/to/my/lisp/library\")\n"
 
 #. type: cindex
 #: building.texi.orig:1402
 #, no-wrap
 msgid "autoload"
-msgstr ""
+msgstr "autoload"
 
 #. type: Plain text
 #: building.texi.orig:1409
@@ -3520,13 +3524,13 @@ msgid ""
 "automatically loads the @code{compile} library first.  In contrast, the "
 "command @kbd{M-x recompile} is not autoloaded, so it is unavailable until "
 "you load the @code{compile} library."
-msgstr ""
+msgstr "いくつかのコマンドは、@dfn{自動ロード(autoload)}されます。これらを実行するとき、Emacsは最初に関連するライブラリーを自動的にロードします。たとえば@kbd{M-x compile}コマンド(@ref{Compilation}を参照してください)は、自動ロードされます。これを呼び出した場合、Emacsは最初に、自動的に@code{compile}ライブラリーをロードします。対照的にコマンド@kbd{M-x recompile}は、自動ロードされません。そのため、このコマンドは@code{compile}ライブラリーをロードするまで利用できません。"
 
 #. type: vindex
 #: building.texi.orig:1410
 #, no-wrap
 msgid "help-enable-auto-load"
-msgstr ""
+msgstr "help-enable-auto-load"
 
 #. type: Plain text
 #: building.texi.orig:1417
@@ -3535,21 +3539,20 @@ msgid ""
 "autoloaded command (@pxref{Name Help}), if the documentation refers to other "
 "functions and variables in its library (loading the library lets Emacs "
 "properly set up the hyperlinks in the @file{*Help*} buffer).  To disable "
-"this feature, change the variable @code{help-enable-auto-load} to "
-"@code{nil}."
-msgstr ""
+"this feature, change the variable @code{help-enable-auto-load} to @code{nil}."
+msgstr "自動的なロードは、自動ロードされたコマンドのドキュメントを探すとき(@ref{Name Help}を参照してください)にも発生します。それは、ドキュメントがライブラリーの他の関数や変数を参照する場合です(ライブラリーのロードにより@file{*Help*}バッファーのハイパーリンクが適切にセットアップされます)。この機能を無効にするには、変数@code{help-enable-auto-load}を@code{nil}に変更してください。"
 
 #. type: vindex
 #: building.texi.orig:1418
 #, no-wrap
 msgid "load-dangerous-libraries"
-msgstr ""
+msgstr "load-dangerous-libraries"
 
 #. type: cindex
 #: building.texi.orig:1419
 #, no-wrap
 msgid "Lisp files byte-compiled by XEmacs"
-msgstr ""
+msgstr "Lisp files byte-compiled by XEmacs"
 
 #. type: Plain text
 #: building.texi.orig:1424
@@ -3558,44 +3561,44 @@ msgid ""
 "with XEmacs, a modified versions of Emacs---they can cause Emacs to crash.  "
 "Set the variable @code{load-dangerous-libraries} to @code{t} if you want to "
 "try loading them."
-msgstr ""
+msgstr "デフォルトではEmacsは、XEmacs ---Emacsの変更されたバージョン --- でコンパイルされたコンパイル済みのLispファイルのロードを拒絶します。なぜならそれはEmacsのクラッシュをさせるからです。これらのロードを試みる場合は、変数@code{load-dangerous-libraries}に@code{t}をセットしてください。"
 
 #. type: node
 #: building.texi.orig:1425
 #, no-wrap
 msgid "Lisp Eval"
-msgstr ""
+msgstr "Lisp Eval"
 
 #. type: section
 #: building.texi.orig:1426
 #, no-wrap
 msgid "Evaluating Emacs Lisp Expressions"
-msgstr ""
+msgstr "Evaluating Emacs Lisp Expressions"
 
 #. type: cindex
 #: building.texi.orig:1428
 #, no-wrap
 msgid "mode, Emacs Lisp"
-msgstr ""
+msgstr "mode, Emacs Lisp"
 
 #. type: cindex
 #: building.texi.orig:1429
 #, no-wrap
 msgid "evaluation, Emacs Lisp"
-msgstr ""
+msgstr "evaluation, Emacs Lisp"
 
 #. type: findex
 #: building.texi.orig:1431
 #, no-wrap
 msgid "emacs-lisp-mode"
-msgstr ""
+msgstr "emacs-lisp-mode"
 
 #. type: Plain text
 #: building.texi.orig:1434
 msgid ""
 "Emacs Lisp mode is the major mode for editing Emacs Lisp.  Its mode command "
 "is @kbd{M-x emacs-lisp-mode}."
-msgstr ""
+msgstr "Emacs LispモードはEmacs Lispを編集するためのメジャーモードです。これのモードコマンドは@kbd{M-x emacs-lisp-mode}です。"
 
 #. type: Plain text
 #: building.texi.orig:1441
@@ -3606,86 +3609,86 @@ msgid ""
 "evaluate the function definition to make it take effect for subsequent "
 "function calls.  These commands are also available globally, and can be used "
 "outside Emacs Lisp mode."
-msgstr ""
+msgstr "Emacsは、Emacs Lisp式を評価するためのコマンドをいくつか提供します。記述しているEmacs Lispコードをテストするために、これらのコマンドをEmacs Lispモードで使用できます。たとえば、関数を書き換えた後、以降の関数呼び出しでそれを有効にするために、関数定義を評価します。これらのコマンドはグローバルに利用可能で、Emacs Lispモード以外でも使用できます。"
 
 #. type: kindex
 #: building.texi.orig:1443 building.texi.orig:1465
 #, no-wrap
 msgid "M-:"
-msgstr ""
+msgstr "M-:"
 
 #. type: table
 #: building.texi.orig:1446
 msgid ""
 "Read a single Emacs Lisp expression in the minibuffer, evaluate it, and "
 "print the value in the echo area (@code{eval-expression})."
-msgstr ""
+msgstr "1つのEmacs Lisp式をミニバッファーで読み取り、それを評価して、値をエコーエリアに出力します(@code{eval-expression})。"
 
 #. type: kindex
 #: building.texi.orig:1446 building.texi.orig:1474
 #, no-wrap
 msgid "C-x C-e"
-msgstr ""
+msgstr "C-x C-e"
 
 #. type: table
 #: building.texi.orig:1449
 msgid ""
 "Evaluate the Emacs Lisp expression before point, and print the value in the "
 "echo area (@code{eval-last-sexp})."
-msgstr ""
+msgstr "ポイントの前のEmacs Lisp式を評価して、値をエコーエリアに出力します(@code{eval-last-sexp})。"
 
 #. type: item
 #: building.texi.orig:1449
 #, no-wrap
 msgid "@kbd{C-M-x} @r{(in Emacs Lisp mode)}"
-msgstr ""
+msgstr "@kbd{C-M-x} @r{(Emacs Lispモード)}"
 
 #. type: kbd{#1}
 #: building.texi.orig:1450
 #, no-wrap
 msgid "M-x eval-defun"
-msgstr ""
+msgstr "M-x eval-defun"
 
 #. type: table
 #: building.texi.orig:1453
 msgid ""
 "Evaluate the defun containing or after point, and print the value in the "
 "echo area (@code{eval-defun})."
-msgstr ""
+msgstr "ポイントの後またはポイントを含むdefunを評価して、値をエコーエリアに出力します(@code{eval-defun})。"
 
 #. type: kbd{#1}
 #: building.texi.orig:1453
 #, no-wrap
 msgid "M-x eval-region"
-msgstr ""
+msgstr "M-x eval-region"
 
 #. type: table
 #: building.texi.orig:1455
 msgid "Evaluate all the Emacs Lisp expressions in the region."
-msgstr ""
+msgstr "リージョンのすべてのEmacs Lisp式を評価します。"
 
 #. type: kbd{#1}
 #: building.texi.orig:1455
 #, no-wrap
 msgid "M-x eval-buffer"
-msgstr ""
+msgstr "M-x eval-buffer"
 
 #. type: table
 #: building.texi.orig:1457
 msgid "Evaluate all the Emacs Lisp expressions in the buffer."
-msgstr ""
+msgstr "バッファーのすべてのEmacs Lisp式を評価します。"
 
 #. type: kindex
 #: building.texi.orig:1462
 #, no-wrap
 msgid "M-@key{colon}"
-msgstr ""
+msgstr "M-@key{colon}"
 
 #. type: findex
 #: building.texi.orig:1467
 #, no-wrap
 msgid "eval-expression"
-msgstr ""
+msgstr "eval-expression"
 
 #. type: Plain text
 #: building.texi.orig:1473
@@ -3694,13 +3697,13 @@ msgid ""
 "and evaluates it.  (Before evaluating the expression, the current buffer "
 "switches back to the buffer that was current when you typed @kbd{M-:}, not "
 "the minibuffer into which you typed the expression.)"
-msgstr ""
+msgstr "@kbd{M-:} (@code{eval-expression})は、ミニバッファーを使って式を読み取り、それを評価します(式を評価する前に、カレントバッファーは、式をタイプするためのミニバッファーではなく、@kbd{M-:}をタイプしたときカレントだったバッファーに切り替わります)。"
 
 #. type: findex
 #: building.texi.orig:1475
 #, no-wrap
 msgid "eval-last-sexp"
-msgstr ""
+msgstr "eval-last-sexp"
 
 #. type: Plain text
 #: building.texi.orig:1481
@@ -3708,9 +3711,8 @@ msgid ""
 "The command @kbd{C-x C-e} (@code{eval-last-sexp}) evaluates the Emacs Lisp "
 "expression preceding point in the buffer, and displays the value in the echo "
 "area.  When the result of an evaluation is an integer, it is displayed "
-"together with the value in other formats (octal, hexadecimal, and "
-"character)."
-msgstr ""
+"together with the value in other formats (octal, hexadecimal, and character)."
+msgstr "コマンド@kbd{C-x C-e} (@code{eval-last-sexp})は、そのバッファーのポイントの前にあるEmacs Lisp式を評価して、その値をエコーエリアに表示します。評価した結果が整数のときは、他のフォーマット(8進、16進、文字)も一緒に値を表示します。"
 
 #. type: Plain text
 #: building.texi.orig:1490
@@ -3720,21 +3722,21 @@ msgid ""
 "echo area.  If the prefix argument is zero, any integer output is inserted "
 "together with its value in other formats (octal, hexadecimal, and "
 "character).  Such a prefix argument also prevents abbreviation of the output "
-"according to the variables @code{eval-expression-print-level} and "
-"@code{eval-expression-print-length} (see below)."
-msgstr ""
+"according to the variables @code{eval-expression-print-level} and @code{eval-"
+"expression-print-length} (see below)."
+msgstr "@kbd{M-:}および@kbd{C-x C-e}にプレフィクス引数を与えた場合、値をエコーエリアに表示するのではなく、カレントバッファーのポイント位置に値を挿入します。プレフィクス引数が0の場合、整数出力は他のフォーマット(8進、16進、文字)と一緒に挿入されます。プレフィクス引数は、@code{eval-expression-print-level}および@code{eval-expression-print-length}にしたがった出力の省略も防ぎます(以下参照)。"
 
 #. type: kindex
 #: building.texi.orig:1491
 #, no-wrap
 msgid "C-M-x @r{(Emacs Lisp mode)}"
-msgstr ""
+msgstr "C-M-x @r{(Emacs Lisp mode)}"
 
 #. type: findex
 #: building.texi.orig:1492
 #, no-wrap
 msgid "eval-defun"
-msgstr ""
+msgstr "eval-defun"
 
 #. type: Plain text
 #: building.texi.orig:1506
@@ -3751,7 +3753,7 @@ msgid ""
 "programs.  @code{defcustom} and @code{defface} expressions are treated "
 "similarly.  Note that the other commands documented in this section do not "
 "have this special feature."
-msgstr ""
+msgstr "@code{eval-defun}コマンドは、Emacs Lispモードでは@kbd{C-M-x}にバインドされています。これはポイントを含む、またはポイントの後ろのトップレベルのLisp式を評価して、値をエコーエリアに出力します。このコンテキストでは、トップレベルの式は``defun''として参照されますが、実際の@code{defun}(関数定義)である必要はありません。このコマンドは@code{defvar}式を特別に扱います。通常、@code{defvar}式を評価しても、それが定義する変数がすでに値をもっている場合は、何も起こりません。しかし、このコマンドは無条件に@code{defvar}で指定された初期値に変数をリセットします。これはEmacs Lispプログラムをデバッグするとき便利です。式@code{defcustom}および@code{defface}も同様に扱われます。このセクションで説明している他のコマンドは、この特別な機能をもっていません。"
 
 #. type: Plain text
 #: building.texi.orig:1510
@@ -3759,19 +3761,19 @@ msgid ""
 "With a prefix argument, @kbd{C-M-x} instruments the function definition for "
 "Edebug, the Emacs Lisp Debugger.  @xref{Instrumenting, Instrumenting for "
 "Edebug,, elisp, the Emacs Lisp Reference Manual}."
-msgstr ""
+msgstr "プレフィクス引数を指定すると、@kbd{C-M-x}はEmacs LispデバッガーのEdebugのために関数定義をインストルメント(instrument: 処置)します。@ref{Instrumenting, Instrumenting for Edebug,, elisp, the Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: findex
 #: building.texi.orig:1511
 #, no-wrap
 msgid "eval-region"
-msgstr ""
+msgstr "eval-region"
 
 #. type: findex
 #: building.texi.orig:1512
 #, no-wrap
 msgid "eval-buffer"
-msgstr ""
+msgstr "eval-buffer"
 
 #. type: Plain text
 #: building.texi.orig:1516
@@ -3779,55 +3781,55 @@ msgid ""
 "The command @kbd{M-x eval-region} parses the text of the region as one or "
 "more Lisp expressions, evaluating them one by one.  @kbd{M-x eval-buffer} is "
 "similar but evaluates the entire buffer."
-msgstr ""
+msgstr "コマンド@kbd{M-x eval-region}は、リージョンのテキストを1つ以上のLisp式として解析して、それらを1つずつ評価します。@kbd{M-x eval-buffer}も同様ですが、これはバッファー全体を評価します。"
 
 #. type: vindex
 #: building.texi.orig:1517
 #, no-wrap
 msgid "eval-expression-print-level"
-msgstr ""
+msgstr "eval-expression-print-level"
 
 #. type: vindex
 #: building.texi.orig:1518
 #, no-wrap
 msgid "eval-expression-print-length"
-msgstr ""
+msgstr "eval-expression-print-length"
 
 #. type: vindex
 #: building.texi.orig:1519
 #, no-wrap
 msgid "eval-expression-debug-on-error"
-msgstr ""
+msgstr "eval-expression-debug-on-error"
 
 #. type: Plain text
 #: building.texi.orig:1528
 msgid ""
-"The options @code{eval-expression-print-level} and "
-"@code{eval-expression-print-length} control the maximum depth and length of "
-"lists to print in the result of the evaluation commands before abbreviating "
-"them.  Supplying a zero prefix argument to @code{eval-expression} or "
-"@code{eval-last-sexp} causes lists to be printed in full.  "
-"@code{eval-expression-debug-on-error} controls whether evaluation errors "
-"invoke the debugger when these commands are used; its default is @code{t}."
-msgstr ""
+"The options @code{eval-expression-print-level} and @code{eval-expression-"
+"print-length} control the maximum depth and length of lists to print in the "
+"result of the evaluation commands before abbreviating them.  Supplying a "
+"zero prefix argument to @code{eval-expression} or @code{eval-last-sexp} "
+"causes lists to be printed in full.  @code{eval-expression-debug-on-error} "
+"controls whether evaluation errors invoke the debugger when these commands "
+"are used; its default is @code{t}."
+msgstr "オプション@code{eval-expression-print-level}および@code{eval-expression-print-length}は、評価コマンドが結果を出力する前に省略する、リストの最大の深さと長さを制御します。@code{eval-expression}または@code{eval-last-sexp}にプレフィクス引数0を指定すると、リストはすべて出力されます。@code{eval-expression-debug-on-error}は、これらのコマンドが使用されるとき、評価エラーによりデバッガーを呼び出すかを制御します、デフォルトは@code{t}です。"
 
 #. type: node
 #: building.texi.orig:1529
 #, no-wrap
 msgid "Lisp Interaction"
-msgstr ""
+msgstr "Lisp Interaction"
 
 #. type: section
 #: building.texi.orig:1530
 #, no-wrap
 msgid "Lisp Interaction Buffers"
-msgstr ""
+msgstr "Lisp Interaction Buffers"
 
 #. type: findex
 #: building.texi.orig:1532
 #, no-wrap
 msgid "lisp-interaction-mode"
-msgstr ""
+msgstr "lisp-interaction-mode"
 
 #. type: Plain text
 #: building.texi.orig:1537
@@ -3836,19 +3838,19 @@ msgid ""
 "provided for evaluating Emacs Lisp expressions interactively.  Its major "
 "mode is Lisp Interaction mode.  You can also enable Lisp Interaction mode by "
 "typing @kbd{M-x lisp-interaction-mode}."
-msgstr ""
+msgstr "Emacsを開始したとき、@file{*scratch*}という名前のバッファーが含まれます、これはEmacs Lisp式の対話的な評価を提供します。このバッファーのメジャーモードは、Lisp Interactionモードです。@kbd{M-x lisp-interaction-mode}とタイプしても、Lisp Interactionモードを有効にできます。"
 
 #. type: findex
 #: building.texi.orig:1538
 #, no-wrap
 msgid "eval-print-last-sexp"
-msgstr ""
+msgstr "eval-print-last-sexp"
 
 #. type: kindex
 #: building.texi.orig:1539
 #, no-wrap
 msgid "C-j @r{(Lisp Interaction mode)}"
-msgstr ""
+msgstr "C-j @r{(Lisp Interaction mode)}"
 
 #. type: Plain text
 #: building.texi.orig:1547
@@ -3859,13 +3861,13 @@ msgid ""
 "the buffer followed by @kbd{C-j} after each expression, the buffer records a "
 "transcript of the evaluated expressions and their values.  All other "
 "commands in Lisp Interaction mode are the same as in Emacs Lisp mode."
-msgstr ""
+msgstr "@file{*scratch*}バッファー、およびその他のLisp Interactionモードのバッファーでは、@kbd{C-j} (@code{eval-print-last-sexp})はポイントの前のLisp式を評価して、値をポイント位置に挿入します。したがってバッファーに式をタイプするたび、その後ろで@kbd{C-j}をタイプすることにより、そのバッファーは式の評価とその値を記録した写しになります。その他すべてのLisp Interactionモードのコマンドは、Emacs Lispモードと同じです。"
 
 #. type: vindex
 #: building.texi.orig:1548
 #, no-wrap
 msgid "initial-scratch-message"
-msgstr ""
+msgstr "initial-scratch-message"
 
 #. type: Plain text
 #: building.texi.orig:1554
@@ -3874,13 +3876,13 @@ msgid ""
 "form of a Lisp comment, that explains what it is for.  This message is "
 "controlled by the variable @code{initial-scratch-message}, which should be "
 "either a string, or @code{nil} (which means to suppress the message)."
-msgstr ""
+msgstr "起動時には、@file{*scratch*}バッファーは、それが何かを説明するLispコメント形式の短いメッセージを含んでいます。このメッセージは変数@code{initial-scratch-message}により制御され、値は文字列または@code{nil}(メッセージを抑止するという意味)です。"
 
 #. type: findex
 #: building.texi.orig:1555
 #, no-wrap
 msgid "ielm"
-msgstr ""
+msgstr "ielm"
 
 #. type: Plain text
 #: building.texi.orig:1562
@@ -3890,52 +3892,52 @@ msgid ""
 "mode (@pxref{Shell Mode}) for evaluating Emacs Lisp expressions.  Type "
 "@kbd{M-x ielm} to create an @file{*ielm*} buffer which uses this mode.  For "
 "more information, see that command's documentation."
-msgstr ""
+msgstr "Emacs Lisp式を対話的に評価する別の方法は、Inferior Emacs Lispモードを使う方法です。これはEmacs Lisp式の評価にShellモード(@ref{Shell Mode}を参照してください)に似たインターフェースを提供します。@kbd{M-x ielm}とタイプすることにより、このモードを使用する@file{*ielm*}というバッファーが作成されます。詳細は、コマンドのドキュメントを参照してください。"
 
 #. type: section
 #: building.texi.orig:1564
 #, no-wrap
 msgid "Running an External Lisp"
-msgstr ""
+msgstr "Running an External Lisp"
 
 #. type: cindex
 #: building.texi.orig:1566
 #, no-wrap
 msgid "mode, Lisp"
-msgstr ""
+msgstr "mode, Lisp"
 
 #. type: cindex
 #: building.texi.orig:1567
 #, no-wrap
 msgid "Common Lisp"
-msgstr ""
+msgstr "Common Lisp"
 
 #. type: Plain text
 #: building.texi.orig:1573
 msgid ""
 "Lisp mode is the major mode for editing programs written in general-purpose "
-"Lisp dialects, such as Common Lisp.  Its mode command is @kbd{M-x "
-"lisp-mode}.  Emacs uses Lisp mode automatically for files whose names end in "
+"Lisp dialects, such as Common Lisp.  Its mode command is @kbd{M-x lisp-"
+"mode}.  Emacs uses Lisp mode automatically for files whose names end in "
 "@file{.l}, @file{.lsp}, or @file{.lisp}."
-msgstr ""
+msgstr "Lispモードは、Common Lispのような一般用途のためのLisp方言で記述されたプログラムを記述するためのメジャーモードです。これのモードコマンドは@kbd{M-x lisp-mode}です。Emacsは名前が@file{.l}、@file{.lsp}、@file{.lisp}で終わるファイルにたいして、自動的にLispモードを使用します。"
 
 #. type: findex
 #: building.texi.orig:1574
 #, no-wrap
 msgid "run-lisp"
-msgstr ""
+msgstr "run-lisp"
 
 #. type: vindex
 #: building.texi.orig:1575
 #, no-wrap
 msgid "inferior-lisp-program"
-msgstr ""
+msgstr "inferior-lisp-program"
 
 #. type: kindex
 #: building.texi.orig:1576
 #, no-wrap
 msgid "C-x C-z"
-msgstr ""
+msgstr "C-x C-z"
 
 #. type: Plain text
 #: building.texi.orig:1584
@@ -3945,9 +3947,9 @@ msgid ""
 "external Lisp session, type @kbd{M-x run-lisp}.  This runs the program named "
 "@command{lisp}, and sets it up so that both input and output go through an "
 "Emacs buffer named @file{*inferior-lisp*}.  To change the name of the Lisp "
-"program run by @kbd{M-x run-lisp}, change the variable "
-"@code{inferior-lisp-program}."
-msgstr ""
+"program run by @kbd{M-x run-lisp}, change the variable @code{inferior-lisp-"
+"program}."
+msgstr "外部LispセッションをEmacsのサブプロセス、または@dfn{下位プロセス(inferior process)}として実行して、式を評価するために渡すことができます。外部Lispセッションを開始するには、@kbd{M-x run-lisp}とタイプします。これは@command{lisp}という名前のプログラムを実行して、@file{*inferior-lisp*}という名前のEmacsバッファーを通じて入出力を行うようにセットアップします。@kbd{M-x run-lisp}で実行されるLispプログラムの名前を変更するには、変数@code{inferior-lisp-program}を変更してください。"
 
 #. type: Plain text
 #: building.texi.orig:1591
@@ -3957,19 +3959,19 @@ msgid ""
 "Mode}).  To send input to the Lisp session, go to the end of the "
 "@file{*lisp*} buffer and type the input, followed by @key{RET}.  Terminal "
 "output from the Lisp session is automatically inserted in the buffer."
-msgstr ""
+msgstr "@file{*lisp*}バッファーのためのメジャーモードはInferior Lispモードで、これはLispモードの性質とShellモード(@ref{Shell Mode}を参照してください)の性質をあわせ持っています。Lispセッションに入力を送るには、@file{*lisp*}バッファーの最後に移動して、入力をタイプしてから@key{RET}をタイプします。Lispセッションからの端末出力は、自動的にそのバッファーに挿入されます。"
 
 #. type: kindex
 #: building.texi.orig:1592
 #, no-wrap
 msgid "C-M-x @r{(Lisp mode)}"
-msgstr ""
+msgstr "C-M-x @r{(Lisp mode)}"
 
 #. type: findex
 #: building.texi.orig:1593
 #, no-wrap
 msgid "lisp-eval-defun"
-msgstr ""
+msgstr "lisp-eval-defun"
 
 #. type: Plain text
 #: building.texi.orig:1603
@@ -3982,31 +3984,31 @@ msgid ""
 "effect of @kbd{C-M-x} in Lisp mode is thus very similar to its effect in "
 "Emacs Lisp mode (@pxref{Lisp Eval}), except that the expression is sent to a "
 "different Lisp environment instead of being evaluated in Emacs."
-msgstr ""
+msgstr "LispプログラムをLispモードで編集する場合、@kbd{C-M-x} (@code{lisp-eval-defun})とタイプして、Lispモードのバッファーから、@kbd{M-x run-lisp}で開始したLispセッションに式を送ることができます。送信される式はポイント位置、またはポイントの後ろのトップレベルのLisp式です。結果となる値は通常どおり、@file{*inferior-lisp*}バッファーに送られます。Lispモードでの@kbd{C-M-x}の効果は、それが評価されるEmacsに送られるのではなく、異なるLisp環境に送られる点を除けば、Emacs Lispモード(@ref{Lisp Eval}を参照してください)での効果とよく似ていることに注意してください。"
 
 #. type: findex
 #: building.texi.orig:1604
 #, no-wrap
 msgid "scheme-mode"
-msgstr ""
+msgstr "scheme-mode"
 
 #. type: findex
 #: building.texi.orig:1605
 #, no-wrap
 msgid "run-scheme"
-msgstr ""
+msgstr "run-scheme"
 
 #. type: cindex
 #: building.texi.orig:1607
 #, no-wrap
 msgid "mode, Scheme"
-msgstr ""
+msgstr "mode, Scheme"
 
 #. type: kindex
 #: building.texi.orig:1608
 #, no-wrap
 msgid "C-M-x @r{(Scheme mode)}"
-msgstr ""
+msgstr "C-M-x @r{(Scheme mode)}"
 
 #. type: Plain text
 #: building.texi.orig:1614
@@ -4017,4 +4019,4 @@ msgid ""
 "You can initiate a Scheme session by typing @kbd{M-x run-scheme} (the buffer "
 "for interacting with Scheme is named @file{*scheme*}), and send expressions "
 "to it by typing @kbd{C-M-x}."
-msgstr ""
+msgstr "Schemeコードを編集して、式をSchemeサブプロセスに送る機能は、よく似ています。Schemeソースファイルは、Schemeモードで編集されます。このモードは@kbd{M-x scheme-mode}で明示的に有効にできます。@kbd{M-x run-scheme}とタイプすることにより、Schemeセッションを開始し、@kbd{C-M-x}とタイプして式の送ることができます(Schemeと対話するためのバッファーは、@file{*scheme*}という名前です)。"
