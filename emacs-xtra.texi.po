@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2016-05-17 00:54+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-06-25 02:34+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -29,7 +29,7 @@ msgstr "このマニュアルは、Emacsの特別な機能について説明し�
 #. type: copying
 #: emacs-xtra.texi.orig:15
 msgid "Copyright @copyright{} 2004--2015 Free Software Foundation, Inc."
-msgstr "Copyright @copyright{} 2004--2015 Free Software Foundation, Inc."
+msgstr "@w{Copyright @copyright{} 2015--2016 Ayanokoji Takesi <ayanokoji.takesi@@gmail.com>}@*Copyright @copyright{} 2004--2015 Free Software Foundation, Inc."
 
 #. type: quotation
 #: emacs-xtra.texi.orig:23
