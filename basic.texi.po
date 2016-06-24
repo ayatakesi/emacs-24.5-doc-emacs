@@ -3,182 +3,181 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-09-25 00:02+0900\n"
+"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
 #: basic.texi.orig:5
 #, no-wrap
 msgid "Basic"
-msgstr ""
+msgstr "Basic"
 
 #. type: chapter
 #: basic.texi.orig:6
 #, no-wrap
 msgid "Basic Editing Commands"
-msgstr ""
+msgstr "Basic Editing Commands"
 
 #. type: kindex
 #: basic.texi.orig:8
 #, no-wrap
 msgid "C-h t"
-msgstr ""
+msgstr "C-h t"
 
 #. type: findex
 #: basic.texi.orig:9
 #, no-wrap
 msgid "help-with-tutorial"
-msgstr ""
+msgstr "help-with-tutorial"
 
 #. type: Plain text
 #: basic.texi.orig:14
 msgid ""
 "Here we explain the basics of how to enter text, make corrections, and save "
 "the text in a file.  If this material is new to you, we suggest you first "
-"run the Emacs learn-by-doing tutorial, by typing @kbd{C-h t} "
-"(@code{help-with-tutorial})."
-msgstr ""
+"run the Emacs learn-by-doing tutorial, by typing @kbd{C-h t} (@code{help-"
+"with-tutorial})."
+msgstr "ここではテキストの入力、修正、ファイルへの保存といった基本操作について説明します。これらに接するのが初めてなら、learn-by-doing(行ってみることで学ぶ)形式のチュートリアルをやってみることを提案します。チュートリアルを行うには@kbd{C-h t} (@code{help-with-tutorial})とタイプしてください。"
 
 #. type: section
 #: basic.texi.orig:29 basic.texi.orig:31 basic.texi.orig:32
 #, no-wrap
 msgid "Inserting Text"
-msgstr ""
+msgstr "Inserting Text"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "Inserting text by simply typing it."
-msgstr ""
+msgstr "単純に入力してテキストを挿入する。"
 
 #. type: node
 #: basic.texi.orig:29 basic.texi.orig:130
 #, no-wrap
 msgid "Moving Point"
-msgstr ""
+msgstr "Moving Point"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "Moving the cursor to the place where you want to change something."
-msgstr ""
+msgstr "何か修正したい場所にカーソルを移動する。"
 
 #. type: node
 #: basic.texi.orig:29 basic.texi.orig:361
 #, no-wrap
 msgid "Erasing"
-msgstr ""
+msgstr "Erasing"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "Deleting and killing text."
-msgstr ""
+msgstr "テキストの削除とkill。"
 
 #. type: node
 #: basic.texi.orig:29 basic.texi.orig:424
 #, no-wrap
 msgid "Basic Undo"
-msgstr ""
+msgstr "Basic Undo"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "Undoing recent changes in the text."
-msgstr ""
+msgstr "テキストの最近の変更を取り消す。"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "Files: Basic Files"
-msgstr ""
+msgstr "Files: Basic Files"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "Visiting, creating, and saving files."
-msgstr ""
+msgstr "ファイルの読み込み、作成、保存。"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "Help: Basic Help"
-msgstr ""
+msgstr "Help: Basic Help"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "Asking what a character does."
-msgstr ""
+msgstr "文字が何を行うか尋ねる。"
 
 #. type: section
 #: basic.texi.orig:29 basic.texi.orig:505 basic.texi.orig:506
 #, no-wrap
 msgid "Blank Lines"
-msgstr ""
+msgstr "Blank Lines"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "Making and deleting blank lines."
-msgstr ""
+msgstr "空行の作成と削除"
 
 #. type: section
 #: basic.texi.orig:29 basic.texi.orig:546 basic.texi.orig:547
 #, no-wrap
 msgid "Continuation Lines"
-msgstr ""
+msgstr "Continuation Lines"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "How Emacs displays lines too wide for the screen."
-msgstr ""
+msgstr "Emacsがスクリーンに収まりきれない行を表示する方法。"
 
 #. type: node
 #: basic.texi.orig:29 basic.texi.orig:596
 #, no-wrap
 msgid "Position Info"
-msgstr ""
+msgstr "Position Info"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "What line, row, or column is point on?"
-msgstr ""
+msgstr "ポイントのある場所の行と列は何か?"
 
 #. type: node
 #: basic.texi.orig:29 basic.texi.orig:694
 #, no-wrap
 msgid "Arguments"
-msgstr ""
+msgstr "Arguments"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "Numeric arguments for repeating a command N times."
-msgstr ""
+msgstr "コマンドをN回繰り返すための数引数。"
 
 #. type: node
 #: basic.texi.orig:29 basic.texi.orig:801
 #, no-wrap
 msgid "Repeating"
-msgstr ""
+msgstr "Repeating"
 
 #. type: menuentry
 #: basic.texi.orig:29
 msgid "Repeating the previous command quickly."
-msgstr ""
+msgstr "素早く前のコマンドを繰り返す。"
 
 #. type: cindex
 #: basic.texi.orig:34
 #, no-wrap
 msgid "insertion"
-msgstr ""
+msgstr "insertion"
 
 #. type: cindex
 #: basic.texi.orig:35
 #, no-wrap
 msgid "graphic characters"
-msgstr ""
+msgstr "graphic characters"
 
 #. type: Plain text
 #: basic.texi.orig:41
@@ -187,25 +186,25 @@ msgid ""
 "@samp{B}, @samp{3}, and @samp{=}) by typing the associated key.  This adds "
 "the character to the buffer at point.  Insertion moves point forward, so "
 "that point remains just after the inserted text.  @xref{Point}."
-msgstr ""
+msgstr "普通の@dfn{グラフィック文字(graphic character)}(例 @samp{a}、@samp{B}、@samp{3}、@samp{=})は、対応するキーをタイプして挿入することができます。これによりバッファーのポイント位置に文字が追加されます。挿入によりポイントは前方に移動するので、ポイントは挿入された文字の直後になります。@ref{Point}を参照してください。"
 
 #. type: kindex
 #: basic.texi.orig:42
 #, no-wrap
 msgid "RET"
-msgstr ""
+msgstr "RET"
 
 #. type: kindex
 #: basic.texi.orig:43
 #, no-wrap
 msgid "C-j"
-msgstr ""
+msgstr "C-j"
 
 #. type: cindex
 #: basic.texi.orig:44
 #, no-wrap
 msgid "newline"
-msgstr ""
+msgstr "newline"
 
 #. type: Plain text
 #: basic.texi.orig:57
@@ -220,7 +219,7 @@ msgid ""
 "the auto-indentation, you can either disable Electric Indent mode "
 "(@pxref{Indent Convenience}) or type @kbd{C-j}, which inserts just a "
 "newline, without any auto-indentation."
-msgstr ""
+msgstr "行を終了して新しい行を開始するには@key{RET}(@code{newline})を入力します(キーボードで@key{RET}キーは、@key{Return}や@key{Enter}というラベルがついているかもしれませんが、このマニュアルでは@key{RET}と呼ぶことにします)。このコマンドは改行文字をバッファーに挿入してから、メジャーモードに基づきインデント(@ref{Indentation}を参照してください)を行います。ポイントが行末にある場合には、新しく空行を作成してから新しい行をインデントします。もしポイントが行の途中にある場合、行はその位置で分割されます。自動インデントをオフにするには、Electric Indentモード(@ref{Indent Convenience}を参照してください)を無効にするか、自動インデントを行わず改行だけを挿入する@kbd{C-j}を入力します。"
 
 #. type: Plain text
 #: basic.texi.orig:64
@@ -231,25 +230,25 @@ msgid ""
 "(@pxref{Filling}).  The minor mode called Overwrite mode causes inserted "
 "characters to replace (overwrite) existing text, instead of shoving it to "
 "the right.  @xref{Minor Modes}."
-msgstr ""
+msgstr "マニュアルの後ろで説明しますが、@dfn{マイナーモード(minor modes)}を利用することにより、Emacsが挿入を処理する方法を変更できます。たとえばAuto Fillモードというマイナーモードは行が長くなりすぎたとき自動的に行を分割します(@pxref{Filling})。Overwrite modeというマイナーモードは、既存の文字を右方に押しやるかわりに、既存の文字を置き換え(上書き)ます。@ref{Minor Modes}を参照してください。"
 
 #. type: cindex
 #: basic.texi.orig:65
 #, no-wrap
 msgid "quoting"
-msgstr ""
+msgstr "quoting"
 
 #. type: kindex
 #: basic.texi.orig:66
 #, no-wrap
 msgid "C-q"
-msgstr ""
+msgstr "C-q"
 
 #. type: findex
 #: basic.texi.orig:67
 #, no-wrap
 msgid "quoted-insert"
-msgstr ""
+msgstr "quoted-insert"
 
 #. type: Plain text
 #: basic.texi.orig:74
@@ -259,15 +258,15 @@ msgid ""
 "@key{DEL} runs the command @code{delete-backward-char} by default (some "
 "modes bind it to a different command); it does not insert a literal "
 "@samp{DEL} character (@acronym{ASCII} character code 127)."
-msgstr ""
+msgstr "対応するキーを押して挿入できるのはグラフィック文字だけです。他のキーは編集コマンドとして動作し、文字自体の挿入はしません。たとえば、デフォルトでは@key{DEL}は、コマンド@code{delete-backward-char}を実行します(違うコマンドにバインドされているモードもあります)。このキーはリテラルの@samp{DEL}(@acronym{ASCII}の文字コード127)を入力する訳ではありません。"
 
 #. type: Plain text
 #: basic.texi.orig:78
 msgid ""
 "To insert a non-graphic character, or a character that your keyboard does "
-"not support, first @dfn{quote} it by typing @kbd{C-q} "
-"(@code{quoted-insert}).  There are two ways to use @kbd{C-q}:"
-msgstr ""
+"not support, first @dfn{quote} it by typing @kbd{C-q} (@code{quoted-"
+"insert}).  There are two ways to use @kbd{C-q}:"
+msgstr "非グラフィック文字や、キーボードがサポートしていない文字を挿入するには、最初に@kbd{C-q} (@code{quoted-insert})で文字を@dfn{クォート(quote)}します。@kbd{C-q}の使い方は2つあります:"
 
 #. type: itemize
 #: basic.texi.orig:84
@@ -275,7 +274,7 @@ msgid ""
 "@kbd{C-q} followed by any non-graphic character (even @kbd{C-g})  inserts "
 "that character.  For instance, @kbd{C-q @key{DEL}} inserts a literal "
 "@samp{DEL} character."
-msgstr ""
+msgstr "@kbd{C-q}に続けて非グラフィック文字(@kbd{C-g}でさえも)をタイプすると、その文字が挿入されます。たとえば@kbd{C-q @key{DEL}}は、リテラルの@samp{DEL}文字を挿入します。"
 
 #. type: itemize
 #: basic.texi.orig:93
@@ -286,7 +285,7 @@ msgid ""
 "@key{RET}, that @key{RET} serves only to terminate the sequence.  Any other "
 "non-digit terminates the sequence and then acts as normal input---thus, "
 "@kbd{C-q 1 0 1 B} inserts @samp{AB}."
-msgstr ""
+msgstr "@kbd{C-q}に続けて8進文字のシーケンスを入力すると、8進の文字コードに対応する文字が挿入されます。任意の8進数字を使うことができます。非8進数字により入力は終了します。もし終了文字が@key{RET}の場合、@key{RET}は入力の終了だけに用いられます。他の非8進文字は入力を終了させてから、通常の入力として扱われます。つまり@kbd{C-q 1 0 1 B}は@samp{AB}を挿入します。"
 
 #. type: itemize
 #: basic.texi.orig:97
@@ -294,66 +293,66 @@ msgid ""
 "The use of octal sequences is disabled in ordinary non-binary Overwrite "
 "mode, to give you a convenient way to insert a digit instead of overwriting "
 "with it."
-msgstr ""
+msgstr "8進数字での入力は、通常の非バイナリーのOverwriteモードでは無効になっています。それにより上書きすることなく数字を挿入する便利な方法が提供されます。"
 
 #. type: vindex
 #: basic.texi.orig:99
 #, no-wrap
 msgid "read-quoted-char-radix"
-msgstr ""
+msgstr "read-quoted-char-radix"
 
 #. type: Plain text
 #: basic.texi.orig:105
 msgid ""
-"To use decimal or hexadecimal instead of octal, set the variable "
-"@code{read-quoted-char-radix} to 10 or 16.  If the radix is 16, the letters "
-"@kbd{a} to @kbd{f} serve as part of a character code, just like digits.  "
-"Case is ignored."
-msgstr ""
+"To use decimal or hexadecimal instead of octal, set the variable @code{read-"
+"quoted-char-radix} to 10 or 16.  If the radix is 16, the letters @kbd{a} to "
+"@kbd{f} serve as part of a character code, just like digits.  Case is "
+"ignored."
+msgstr "8進のかわりに10進や16進を使うには、変数@code{read-quoted-char-radix}に、10や16をセットします。もし基数が16の場合、@kbd{a}から@kbd{f}は文字コードの一部として扱われます。大文字小文字は区別されません。"
 
 #. type: findex
 #: basic.texi.orig:106
 #, no-wrap
 msgid "insert-char"
-msgstr ""
+msgstr "insert-char"
 
 #. type: kindex
 #: basic.texi.orig:107
 #, no-wrap
 msgid "C-x 8 RET"
-msgstr ""
+msgstr "C-x 8 RET"
 
 #. type: cindex
 #: basic.texi.orig:108
 #, no-wrap
 msgid "Unicode characters, inserting"
-msgstr ""
+msgstr "Unicode characters, inserting"
 
 #. type: cindex
 #: basic.texi.orig:109
 #, no-wrap
 msgid "insert Unicode character"
-msgstr ""
+msgstr "insert Unicode character"
 
 #. type: cindex
 #: basic.texi.orig:110
 #, no-wrap
 msgid "characters, inserting by name or code-point"
-msgstr ""
+msgstr "characters, inserting by name or code-point"
 
 #. type: Plain text
 #: basic.texi.orig:121
 msgid ""
-"Alternatively, you can use the command @kbd{C-x 8 @key{RET}} "
-"(@code{insert-char}).  This prompts for the Unicode name or code-point of a "
-"character, using the minibuffer.  If you enter a name, the command provides "
-"completion (@pxref{Completion}).  If you enter a code-point, it should be as "
-"a hexadecimal number (the convention for Unicode), or a number with a "
+"Alternatively, you can use the command @kbd{C-x 8 @key{RET}} (@code{insert-"
+"char}).  This prompts for the Unicode name or code-point of a character, "
+"using the minibuffer.  If you enter a name, the command provides completion "
+"(@pxref{Completion}).  If you enter a code-point, it should be as a "
+"hexadecimal number (the convention for Unicode), or a number with a "
 "specified radix, e.g., @code{#o23072} (octal); @xref{Integer Basics,,, "
 "elisp, The Emacs Lisp Reference Manual}.  The command then inserts the "
 "corresponding character into the buffer.  For example, both of the following "
 "insert the infinity sign (Unicode code-point @code{U+221E}):"
-msgstr ""
+msgstr "かわりにコマンド@kbd{C-x 8 @key{RET}} (@code{insert-char})を使うこともできます。これはミニバッファーを使って、Unicode名かコードポイント(code-point)の入力を求めます。もし名前を入力する時、コマンドが補完機能を提供します(@ref{Completion}を参照してください)。コードポイントを入力する場合、それは16進(Unicodeの規約による)、または指定した基数の数字(例 @code{#o23072} (octal); @ref{Integer Basics,,, elisp, The Emacs Lisp Reference Manual}を参照してください)であるべきです。このコマンドは対応する文字をバッファーに挿入します。たとえば以下の2つはどちらも無限記号(infinity sign: Unicode code-point @code{U+221E})を挿入します。"
 
 #. type: example
 #: basic.texi.orig:125
@@ -362,49 +361,51 @@ msgid ""
 "@kbd{C-x 8 @key{RET} infinity @key{RET}}\n"
 "@kbd{C-x 8 @key{RET} 221e @key{RET}}\n"
 msgstr ""
+"@kbd{C-x 8 @key{RET} infinity @key{RET}}\n"
+"@kbd{C-x 8 @key{RET} 221e @key{RET}}\n"
 
 #. type: Plain text
 #: basic.texi.orig:129
 msgid ""
 "A numeric argument to @kbd{C-q} or @kbd{C-x 8 @key{RET}} specifies how many "
 "copies of the character to insert (@pxref{Arguments})."
-msgstr ""
+msgstr "@kbd{C-q}または@kbd{C-x 8 @key{RET}}への数引数は、文字のコピーを何個挿入するかを指定します(@ref{Arguments}を参照してください)。"
 
 #. type: section
 #: basic.texi.orig:131
 #, no-wrap
 msgid "Changing the Location of Point"
-msgstr ""
+msgstr "Changing the Location of Point"
 
 #. type: cindex
 #: basic.texi.orig:133
 #, no-wrap
 msgid "arrow keys"
-msgstr ""
+msgstr "arrow keys"
 
 #. type: cindex
 #: basic.texi.orig:134
 #, no-wrap
 msgid "moving point"
-msgstr ""
+msgstr "moving point"
 
 #. type: cindex
 #: basic.texi.orig:135
 #, no-wrap
 msgid "movement"
-msgstr ""
+msgstr "movement"
 
 #. type: cindex
 #: basic.texi.orig:136
 #, no-wrap
 msgid "cursor motion"
-msgstr ""
+msgstr "cursor motion"
 
 #. type: cindex
 #: basic.texi.orig:137
 #, no-wrap
 msgid "moving the cursor"
-msgstr ""
+msgstr "moving the cursor"
 
 #. type: Plain text
 #: basic.texi.orig:147
@@ -417,7 +418,7 @@ msgid ""
 "find that it is slower to use the arrow keys than the control keys, because "
 "you need to move your hand to the area of the keyboard where those keys are "
 "located."
-msgstr ""
+msgstr "文字の挿入以上のことを行うには、ポイントを移動する方法について知る必要があります(@ref{Point}を参照してください)。キーボードのコマンド@kbd{C-f}、@kbd{C-b}、@kbd{C-n}、@kbd{C-p}は、それぞれ右・左・下・上にポイントを移動します。ほとんどのキーボードにある矢印キー --- @key{RIGHT}、@key{LEFT}、@key{DOWN}、@key{UP}でもポイントを移動できます。しかし多くのEmacsユーザーは矢印キーより、コントロールキーのほうが速いと考えています。なぜなら矢印キーを押すためにそれらが配置されている領域に手を動かす必要があるからです。"
 
 #. type: Plain text
 #: basic.texi.orig:151
@@ -425,48 +426,48 @@ msgid ""
 "You can also click the left mouse button to move point to the position "
 "clicked.  Emacs also provides a variety of additional keyboard commands that "
 "move point in more sophisticated ways."
-msgstr ""
+msgstr "ポイントを移動したい場所でマウスの左ボタンをクリックしてもポイントを移動できます。Emacsは、さらに洗練された方法でポイントを移動する、さまざまなキーボードコマンドを提供します。"
 
 #. type: kindex
 #: basic.texi.orig:154 basic.texi.orig:155
 #, no-wrap
 msgid "C-f"
-msgstr ""
+msgstr "C-f"
 
 #. type: findex
 #: basic.texi.orig:156
 #, no-wrap
 msgid "forward-char"
-msgstr ""
+msgstr "forward-char"
 
 #. type: table
 #: basic.texi.orig:158
 msgid "Move forward one character (@code{forward-char})."
-msgstr ""
+msgstr "1文字前方(forward)に移動します (@code{forward-char})。"
 
 #. type: kindex
 #: basic.texi.orig:159 basic.texi.orig:160
 #, no-wrap
 msgid "RIGHT"
-msgstr ""
+msgstr "RIGHT"
 
 #. type: findex
 #: basic.texi.orig:161
 #, no-wrap
 msgid "right-char"
-msgstr ""
+msgstr "right-char"
 
 #. type: vindex
 #: basic.texi.orig:162
 #, no-wrap
 msgid "visual-order-cursor-movement"
-msgstr ""
+msgstr "visual-order-cursor-movement"
 
 #. type: cindex
 #: basic.texi.orig:163
 #, no-wrap
 msgid "cursor, visual-order motion"
-msgstr ""
+msgstr "cursor, visual-order motion"
 
 #. type: table
 #: basic.texi.orig:173
@@ -474,70 +475,70 @@ msgid ""
 "This command (@code{right-char}) behaves like @kbd{C-f}, with one exception: "
 "when editing right-to-left scripts such as Arabic, it instead moves "
 "@emph{backward} if the current paragraph is a right-to-left paragraph.  "
-"@xref{Bidirectional Editing}.  If @code{visual-order-cursor-movement} is "
-"non-@code{nil}, this command moves to the character that is to the right of "
-"the current screen position, moving to the next or previous screen line as "
+"@xref{Bidirectional Editing}.  If @code{visual-order-cursor-movement} is non-"
+"@code{nil}, this command moves to the character that is to the right of the "
+"current screen position, moving to the next or previous screen line as "
 "appropriate.  Note that this might potentially move point many buffer "
 "positions away, depending on the surrounding bidirectional context."
-msgstr ""
+msgstr "このコマンド(@code{right-char})は、@kbd{C-f}と同じように振る舞いますが1つ例外があります。もしアラビア語のようにright-to-left(右から左に記述する)な文書を編集する場合、現在のパラグラフが右から左で記述するパラグラフなら、@emph{後方}に移動することになるのです。@ref{Bidirectional Editing}を参照してください。もし@code{visual-order-cursor-movement}が非@code{nil}の場合、このコマンドは現在のスクリーン位置の右の文字に移動し、前または次のスクリーン行に適切に移動します。これはその場所の双方向コンテキストに依存するので、多くのバッファーのポイントがあいまいになる可能性があることに注意してください。"
 
 #. type: kindex
 #: basic.texi.orig:174 basic.texi.orig:175
 #, no-wrap
 msgid "C-b"
-msgstr ""
+msgstr "C-b"
 
 #. type: findex
 #: basic.texi.orig:176
 #, no-wrap
 msgid "backward-char"
-msgstr ""
+msgstr "backward-char"
 
 #. type: table
 #: basic.texi.orig:178
 msgid "Move backward one character (@code{backward-char})."
-msgstr ""
+msgstr "1文字後方(backward)に移動します (@code{backward-char})。"
 
 #. type: kindex
 #: basic.texi.orig:179 basic.texi.orig:180
 #, no-wrap
 msgid "LEFT"
-msgstr ""
+msgstr "LEFT"
 
 #. type: findex
 #: basic.texi.orig:181
 #, no-wrap
 msgid "left-char"
-msgstr ""
+msgstr "left-char"
 
 #. type: table
 #: basic.texi.orig:188
 msgid ""
 "This command (@code{left-char}) behaves like @kbd{C-b}, except it moves "
 "@emph{forward} if the current paragraph is right-to-left.  "
-"@xref{Bidirectional Editing}.  If @code{visual-order-cursor-movement} is "
-"non-@code{nil}, this command moves to the character that is to the left of "
-"the current screen position, moving to the previous or next screen line as "
+"@xref{Bidirectional Editing}.  If @code{visual-order-cursor-movement} is non-"
+"@code{nil}, this command moves to the character that is to the left of the "
+"current screen position, moving to the previous or next screen line as "
 "appropriate."
-msgstr ""
+msgstr "このコマンド(@code{left-char})は、@kbd{C-b}と同じように振る舞いますが1つ例外があります。もしアラビア語のようにright-to-leftの文書を編集する場合、現在のパラグラフが右から左で記述するパラグラフなら、@emph{前方}に移動することになるのです。@ref{Bidirectional Editing}を参照してください。もし@code{visual-order-cursor-movement}が非@code{nil}の場合、このコマンドは現在のスクリーン位置の左の文字に移動し、前または次のスクリーン行に適切に移動します。"
 
 #. type: kindex
 #: basic.texi.orig:189 basic.texi.orig:191
 #, no-wrap
 msgid "C-n"
-msgstr ""
+msgstr "C-n"
 
 #. type: kindex
 #: basic.texi.orig:190 basic.texi.orig:192
 #, no-wrap
 msgid "DOWN"
-msgstr ""
+msgstr "DOWN"
 
 #. type: findex
 #: basic.texi.orig:193
 #, no-wrap
 msgid "next-line"
-msgstr ""
+msgstr "next-line"
 
 #. type: table
 #: basic.texi.orig:197
@@ -545,137 +546,137 @@ msgid ""
 "Move down one screen line (@code{next-line}).  This command attempts to keep "
 "the horizontal position unchanged, so if you start in the middle of one "
 "line, you move to the middle of the next."
-msgstr ""
+msgstr "スクリーンに表示された行で1行下に移動します(@code{next-line})。このコマンドは横方向の位置を変更しないよう試みます。そのため行の途中でコマンドを開始すると、次の行の途中に移動することになります。"
 
 #. type: kindex
 #: basic.texi.orig:198 basic.texi.orig:200
 #, no-wrap
 msgid "C-p"
-msgstr ""
+msgstr "C-p"
 
 #. type: kindex
 #: basic.texi.orig:199 basic.texi.orig:201
 #, no-wrap
 msgid "UP"
-msgstr ""
+msgstr "UP"
 
 #. type: findex
 #: basic.texi.orig:202
 #, no-wrap
 msgid "previous-line"
-msgstr ""
+msgstr "previous-line"
 
 #. type: table
 #: basic.texi.orig:205
 msgid ""
 "Move up one screen line (@code{previous-line}).  This command preserves "
 "position within the line, like @kbd{C-n}."
-msgstr ""
+msgstr "スクリーンに表示された行で1行上に移動します(@code{previous-line})。このコマンドは@kbd{C-n}と同様、行内の位置を保ちます。"
 
 #. type: kindex
 #: basic.texi.orig:206 basic.texi.orig:208
 #, no-wrap
 msgid "C-a"
-msgstr ""
+msgstr "C-a"
 
 #. type: key{#1}
 #: basic.texi.orig:207
 #, no-wrap
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 #. type: kindex
 #: basic.texi.orig:209
 #, no-wrap
 msgid "HOME key"
-msgstr ""
+msgstr "HOME key"
 
 #. type: findex
 #: basic.texi.orig:210
 #, no-wrap
 msgid "move-beginning-of-line"
-msgstr ""
+msgstr "move-beginning-of-line"
 
 #. type: table
 #: basic.texi.orig:212
 msgid "Move to the beginning of the line (@code{move-beginning-of-line})."
-msgstr ""
+msgstr "行の先頭に移動します(@code{move-beginning-of-line})。"
 
 #. type: kindex
 #: basic.texi.orig:213 basic.texi.orig:215
 #, no-wrap
 msgid "C-e"
-msgstr ""
+msgstr "C-e"
 
 #. type: key{#1}
 #: basic.texi.orig:214
 #, no-wrap
 msgid "End"
-msgstr ""
+msgstr "End"
 
 #. type: kindex
 #: basic.texi.orig:216
 #, no-wrap
 msgid "END key"
-msgstr ""
+msgstr "END key"
 
 #. type: findex
 #: basic.texi.orig:217
 #, no-wrap
 msgid "move-end-of-line"
-msgstr ""
+msgstr "move-end-of-line"
 
 #. type: table
 #: basic.texi.orig:219
 msgid "Move to the end of the line (@code{move-end-of-line})."
-msgstr ""
+msgstr "行の最後に移動します(@code{move-end-of-line})。"
 
 #. type: kindex
 #: basic.texi.orig:220 basic.texi.orig:221
 #, no-wrap
 msgid "M-f"
-msgstr ""
+msgstr "M-f"
 
 #. type: findex
 #: basic.texi.orig:222
 #, no-wrap
 msgid "forward-word"
-msgstr ""
+msgstr "forward-word"
 
 #. type: table
 #: basic.texi.orig:224
 msgid "Move forward one word (@code{forward-word})."
-msgstr ""
+msgstr "1単語前方に移動します(@code{forward-word})。"
 
 #. type: item
 #: basic.texi.orig:225
 #, no-wrap
 msgid "C-@key{RIGHT}"
-msgstr ""
+msgstr "C-@key{RIGHT}"
 
 #. type: itemx
 #: basic.texi.orig:226
 #, no-wrap
 msgid "M-@key{RIGHT}"
-msgstr ""
+msgstr "M-@key{RIGHT}"
 
 #. type: kindex
 #: basic.texi.orig:227
 #, no-wrap
 msgid "C-RIGHT"
-msgstr ""
+msgstr "C-RIGHT"
 
 #. type: kindex
 #: basic.texi.orig:228
 #, no-wrap
 msgid "M-RIGHT"
-msgstr ""
+msgstr "M-RIGHT"
 
 #. type: findex
 #: basic.texi.orig:229
 #, no-wrap
 msgid "right-word"
-msgstr ""
+msgstr "right-word"
 
 #. type: table
 #: basic.texi.orig:233
@@ -683,54 +684,54 @@ msgid ""
 "This command (@code{right-word}) behaves like @kbd{M-f}, except it moves "
 "@emph{backward} by one word if the current paragraph is right-to-left.  "
 "@xref{Bidirectional Editing}."
-msgstr ""
+msgstr "このコマンド(@code{right-word})は@kbd{M-f}と同様に振る舞います。例外は現在のパラグラフがright-to-leftの場合、1語@emph{後方}に移動することになります。@ref{Bidirectional Editing}を参照してください。"
 
 #. type: kindex
 #: basic.texi.orig:234 basic.texi.orig:235
 #, no-wrap
 msgid "M-b"
-msgstr ""
+msgstr "M-b"
 
 #. type: findex
 #: basic.texi.orig:236
 #, no-wrap
 msgid "backward-word"
-msgstr ""
+msgstr "backward-word"
 
 #. type: table
 #: basic.texi.orig:238
 msgid "Move backward one word (@code{backward-word})."
-msgstr ""
+msgstr "1単語後方に移動します(@code{backward-word})。"
 
 #. type: item
 #: basic.texi.orig:239
 #, no-wrap
 msgid "C-@key{LEFT}"
-msgstr ""
+msgstr "C-@key{LEFT}"
 
 #. type: itemx
 #: basic.texi.orig:240
 #, no-wrap
 msgid "M-@key{LEFT}"
-msgstr ""
+msgstr "M-@key{LEFT}"
 
 #. type: kindex
 #: basic.texi.orig:241
 #, no-wrap
 msgid "C-LEFT"
-msgstr ""
+msgstr "C-LEFT"
 
 #. type: kindex
 #: basic.texi.orig:242
 #, no-wrap
 msgid "M-LEFT"
-msgstr ""
+msgstr "M-LEFT"
 
 #. type: findex
 #: basic.texi.orig:243
 #, no-wrap
 msgid "left-word"
-msgstr ""
+msgstr "left-word"
 
 #. type: table
 #: basic.texi.orig:247
@@ -738,29 +739,29 @@ msgid ""
 "This command (@code{left-word}) behaves like @kbd{M-b}, except it moves "
 "@emph{forward} by one word if the current paragraph is right-to-left.  "
 "@xref{Bidirectional Editing}."
-msgstr ""
+msgstr "このコマンド(@code{left-word})は@kbd{M-b}と同様に振る舞います。例外は現在のパラグラフがright-to-leftの場合、1語@emph{前方}に移動することになります。@ref{Bidirectional Editing}を参照してください。"
 
 #. type: kindex
 #: basic.texi.orig:248 basic.texi.orig:249
 #, no-wrap
 msgid "M-r"
-msgstr ""
+msgstr "M-r"
 
 #. type: findex
 #: basic.texi.orig:250
 #, no-wrap
 msgid "move-to-window-line-top-bottom"
-msgstr ""
+msgstr "move-to-window-line-top-bottom"
 
 #. type: table
 #: basic.texi.orig:256
 msgid ""
 "Without moving the text on the screen, reposition point on the left margin "
 "of the center-most text line of the window; on subsequent consecutive "
-"invocations, move point to the left margin of the top-most line, the "
-"bottom-most line, and so forth, in cyclic order "
-"(@code{move-to-window-line-top-bottom})."
-msgstr ""
+"invocations, move point to the left margin of the top-most line, the bottom-"
+"most line, and so forth, in cyclic order (@code{move-to-window-line-top-"
+"bottom})."
+msgstr "スクリーン上のテキストを移動させることなく、ポイントの位置をウィンドウ上で中央にもっとも近いテキスト行の左端に移動します。連続して呼び出すと、最上行の左端、最下行の左端へと循環的にポイントを移動します(@code{move-to-window-line-top-bottom})。"
 
 #. type: table
 #: basic.texi.orig:262
@@ -769,130 +770,130 @@ msgid ""
 "downward from the top of the window (zero means the top line).  A negative "
 "argument counts lines up from the bottom (@minus{}1 means the bottom line).  "
 "@xref{Arguments}, for more information on numeric arguments."
-msgstr ""
+msgstr "数引数はスクリーンの行の何行目にポイントを移動するか指定します。数値はウィンドウの最上行から数えた行数です(0は最上行を意味します)。負の引数は最下行から数えた行数です(@minus{}1は最下行を意味します。数引数については詳細は、@ref{Arguments}を参照してください。"
 
 #. type: kindex
 #: basic.texi.orig:263 basic.texi.orig:264
 #, no-wrap
 msgid "M-<"
-msgstr ""
+msgstr "M-<"
 
 #. type: findex
 #: basic.texi.orig:265
 #, no-wrap
 msgid "beginning-of-buffer"
-msgstr ""
+msgstr "beginning-of-buffer"
 
 #. type: table
 #: basic.texi.orig:268
 msgid ""
 "Move to the top of the buffer (@code{beginning-of-buffer}).  With numeric "
 "argument @var{n}, move to @var{n}/10 of the way from the top."
-msgstr ""
+msgstr "バッファーの先頭に移動します(@code{beginning-of-buffer})。数引数@var{n}が与えられた場合、最上行から@var{n}/10に移動します。"
 
 #. type: kindex
 #: basic.texi.orig:269 basic.texi.orig:270
 #, no-wrap
 msgid "M->"
-msgstr ""
+msgstr "M->"
 
 #. type: findex
 #: basic.texi.orig:271
 #, no-wrap
 msgid "end-of-buffer"
-msgstr ""
+msgstr "end-of-buffer"
 
 #. type: table
 #: basic.texi.orig:273
 msgid "Move to the end of the buffer (@code{end-of-buffer})."
-msgstr ""
+msgstr "バッファーの最後に移動します(@code{end-of-buffer})。"
 
 #. type: item
 #: basic.texi.orig:274
 #, no-wrap
 msgid "C-v"
-msgstr ""
+msgstr "C-v"
 
 #. type: key{#1}
 #: basic.texi.orig:275
 #, no-wrap
 msgid "PageDown"
-msgstr ""
+msgstr "PageDown"
 
 #. type: key{#1}
 #: basic.texi.orig:276
 #, no-wrap
 msgid "next"
-msgstr ""
+msgstr "next"
 
 #. type: table
 #: basic.texi.orig:279
 msgid ""
 "Scroll the display one screen forward, and move point onscreen if necessary "
 "(@code{scroll-up-command}).  @xref{Scrolling}."
-msgstr ""
+msgstr "画面を1画面前方にスクロールします。もし必要ならポイントをスクリーン上の位置に移動します(@code{scroll-up-command})。@ref{Scrolling}を参照してください。"
 
 #. type: item
 #: basic.texi.orig:280
 #, no-wrap
 msgid "M-v"
-msgstr ""
+msgstr "M-v"
 
 #. type: key{#1}
 #: basic.texi.orig:281
 #, no-wrap
 msgid "PageUp"
-msgstr ""
+msgstr "PageUp"
 
 #. type: key{#1}
 #: basic.texi.orig:282
 #, no-wrap
 msgid "prior"
-msgstr ""
+msgstr "prior"
 
 #. type: table
 #: basic.texi.orig:285
 msgid ""
 "Scroll one screen backward, and move point onscreen if necessary "
 "(@code{scroll-down-command}).  @xref{Scrolling}."
-msgstr ""
+msgstr "画面を1画面後方にスクロールします。もし必要ならポイントをスクリーン上の位置に移動します(@code{scroll-down-command})。@ref{Scrolling}を参照してください。"
 
 #. type: kindex
 #: basic.texi.orig:286 basic.texi.orig:287
 #, no-wrap
 msgid "M-g c"
-msgstr ""
+msgstr "M-g c"
 
 #. type: findex
 #: basic.texi.orig:288
 #, no-wrap
 msgid "goto-char"
-msgstr ""
+msgstr "goto-char"
 
 #. type: table
 #: basic.texi.orig:291
 msgid ""
 "Read a number @var{n} and move point to buffer position @var{n}.  Position 1 "
 "is the beginning of the buffer."
-msgstr ""
+msgstr "数値@var{n}を読み取り、ポイントをバッファー位置@var{n}に移動します。1を指定するとバッファーの先頭に移動します。"
 
 #. type: kindex
 #: basic.texi.orig:292 basic.texi.orig:294
 #, no-wrap
 msgid "M-g M-g"
-msgstr ""
+msgstr "M-g M-g"
 
 #. type: kindex
 #: basic.texi.orig:293 basic.texi.orig:295
 #, no-wrap
 msgid "M-g g"
-msgstr ""
+msgstr "M-g g"
 
 #. type: findex
 #: basic.texi.orig:296
 #, no-wrap
 msgid "goto-line"
-msgstr ""
+msgstr "goto-line"
 
 #. type: table
 #: basic.texi.orig:304
@@ -903,25 +904,25 @@ msgid ""
 "type @key{RET} in the minibuffer to use it.  You can also specify @var{n} by "
 "giving @kbd{M-g M-g} a numeric prefix argument.  @xref{Select Buffer}, for "
 "the behavior of @kbd{M-g M-g} when you give it a plain prefix argument."
-msgstr ""
+msgstr "数値@var{n}を読み、ポイントをバッファーの先頭から@var{n}行目に移動します。行に1を指定するとバッファーの先頭に移動します。もしポイントがバッファーの数字の上または直後にある場合、その数が@var{n}のデフォルトになります。ミニバッファーで単に@key{RET}を押すと、その数が使われます。数値のプレフィクス引数で@var{n}を指定して@kbd{M-g M-g}に与えることもできます。単にプレフィクス引数を与えた場合の@kbd{M-g M-g}の動作については、@ref{Select Buffer}を参照してください。"
 
 #. type: item
 #: basic.texi.orig:305
 #, no-wrap
 msgid "M-g @key{TAB}"
-msgstr ""
+msgstr "M-g @key{TAB}"
 
 #. type: kindex
 #: basic.texi.orig:306
 #, no-wrap
 msgid "M-g TAB"
-msgstr ""
+msgstr "M-g TAB"
 
 #. type: findex
 #: basic.texi.orig:307
 #, no-wrap
 msgid "move-to-column"
-msgstr ""
+msgstr "move-to-column"
 
 #. type: table
 #: basic.texi.orig:311
@@ -929,19 +930,19 @@ msgid ""
 "Read a number @var{n} and move to column @var{n} in the current line.  "
 "Column 0 is the leftmost column.  If called with a prefix argument, move to "
 "the column number specified by the argument's numeric value."
-msgstr ""
+msgstr "数値@var{n}を読み取り、現在行の@var{n}列目に移動します。列0は最左列です。プレフィクス引数とともに呼び出された場合、引数で指定された数の列に移動します。"
 
 #. type: kindex
 #: basic.texi.orig:312 basic.texi.orig:313
 #, no-wrap
 msgid "C-x C-n"
-msgstr ""
+msgstr "C-x C-n"
 
 #. type: findex
 #: basic.texi.orig:314
 #, no-wrap
 msgid "set-goal-column"
-msgstr ""
+msgstr "set-goal-column"
 
 #. type: table
 #: basic.texi.orig:320
@@ -951,26 +952,26 @@ msgid ""
 "column is in effect, those commands always try to move to this column, or as "
 "close as possible to it, after moving vertically.  The goal column remains "
 "in effect until canceled."
-msgstr ""
+msgstr "現在ポイントがある列を@kbd{C-n}や@kbd{C-p}の@dfn{半恒久的な目標列(semipermanent goal column)}として使用します。目標列が有効な場合、これらのコマンドで垂直に移動すると、その列もしくはできる限り近い列に移動しようと試みます。目標列はキャンセルされるまで有効です。"
 
 #. type: item
 #: basic.texi.orig:321
 #, no-wrap
 msgid "C-u C-x C-n"
-msgstr ""
+msgstr "C-u C-x C-n"
 
 #. type: table
 #: basic.texi.orig:324
 msgid ""
 "Cancel the goal column.  Henceforth, @kbd{C-n} and @kbd{C-p} try to preserve "
 "the horizontal position, as usual."
-msgstr ""
+msgstr "目標列をキャンセルします。それ以降の@kbd{C-n}や@kbd{C-p}は通常どおり水平位置を保とうと試みます。"
 
 #. type: vindex
 #: basic.texi.orig:326
 #, no-wrap
 msgid "line-move-visual"
-msgstr ""
+msgstr "line-move-visual"
 
 #. type: Plain text
 #: basic.texi.orig:338
@@ -985,24 +986,24 @@ msgid ""
 "then skips over the additional screen lines.  For details, see "
 "@ref{Continuation Lines}.  @xref{Variables}, for how to set variables such "
 "as @code{line-move-visual}."
-msgstr ""
+msgstr "バッファーのテキストがウィンドウの幅より長い場合、通常Emacsは2行以上の@dfn{スクリーン行(screen lines)}で表示します。便宜上、@kbd{C-n}と@kbd{C-p}そして@kbd{@key{down}}と@kbd{@key{up}}も、同様にスクリーン行にしたがってポイントを移動します。これらのコマンドを@dfn{論理行(logical lines)}(たとえばバッファーのテキスト行)にしたがって移動させるには、@code{line-move-visual}に@code{nil}をセットします。そうすると論理行が複数のスクリーン行となるような場合、カーソルは追加されたスクリーン行をスキップします。詳細は@ref{Continuation Lines}を参照してください。@code{line-move-visual}などの変数をセットする方法については、@ref{Variables}を参照してください。"
 
 #. type: Plain text
 #: basic.texi.orig:346
 msgid ""
 "Unlike @kbd{C-n} and @kbd{C-p}, most of the Emacs commands that work on "
-"lines work on @emph{logical} lines.  For instance, @kbd{C-a} "
-"(@code{move-beginning-of-line}) and @kbd{C-e} (@code{move-end-of-line}) "
-"respectively move to the beginning and end of the logical line.  Whenever we "
-"encounter commands that work on screen lines, such as @kbd{C-n} and "
-"@kbd{C-p}, we will point these out."
-msgstr ""
+"lines work on @emph{logical} lines.  For instance, @kbd{C-a} (@code{move-"
+"beginning-of-line}) and @kbd{C-e} (@code{move-end-of-line}) respectively "
+"move to the beginning and end of the logical line.  Whenever we encounter "
+"commands that work on screen lines, such as @kbd{C-n} and @kbd{C-p}, we will "
+"point these out."
+msgstr "@kbd{C-n}や@kbd{C-p}と異なり、ほとんどのEmacsコマンドは@emph{論理的}な行に作用します。たとえば@kbd{C-a} (@code{move-beginning-of-line})や@kbd{C-e} (@code{move-end-of-line})は、論理行の先頭もしくは最後に移動します。@kbd{C-n}や@kbd{C-p}のようにスクリーン行に作用するコマンドの場合、わたしたちはそれを示すようにします。"
 
 #. type: vindex
 #: basic.texi.orig:347
 #, no-wrap
 msgid "track-eol"
-msgstr ""
+msgstr "track-eol"
 
 #. type: Plain text
 #: basic.texi.orig:353
@@ -1011,123 +1012,123 @@ msgid ""
 "@code{track-eol} to a non-@code{nil} value.  Then @kbd{C-n} and @kbd{C-p}, "
 "when starting at the end of the logical line, move to the end of the next "
 "logical line.  Normally, @code{track-eol} is @code{nil}."
-msgstr ""
+msgstr "@code{line-move-visual}が@code{nil}の場合、変数@code{track-eol}にも非@code{nil}値をセットできます。そうすると論理行の行末で@kbd{C-n}や@kbd{C-p}を開始すると、次の論理行の行末に移動します。通常@code{track-eol}は@code{nil}です。"
 
 #. type: vindex
 #: basic.texi.orig:354
 #, no-wrap
 msgid "next-line-add-newlines"
-msgstr ""
+msgstr "next-line-add-newlines"
 
 #. type: Plain text
 #: basic.texi.orig:360
 msgid ""
 "@kbd{C-n} normally stops at the end of the buffer when you use it on the "
-"last line in the buffer.  However, if you set the variable "
-"@code{next-line-add-newlines} to a non-@code{nil} value, @kbd{C-n} on the "
-"last line of a buffer creates an additional line at the end and moves down "
-"into it."
-msgstr ""
+"last line in the buffer.  However, if you set the variable @code{next-line-"
+"add-newlines} to a non-@code{nil} value, @kbd{C-n} on the last line of a "
+"buffer creates an additional line at the end and moves down into it."
+msgstr "通常@kbd{C-n}をバッファーの最後の行で使用した場合、バッファーの最後でストップします。しかし変数@code{next-line-add-newlines}に非@code{nil}値をセットした場合、バッファーの最後の行で@kbd{C-n}を押すと、行を追加してその行に移動します。"
 
 #. type: section
 #: basic.texi.orig:362
 #, no-wrap
 msgid "Erasing Text"
-msgstr ""
+msgstr "Erasing Text"
 
 #. type: cindex
 #: basic.texi.orig:363
 #, no-wrap
 msgid "killing characters and lines"
-msgstr ""
+msgstr "killing characters and lines"
 
 #. type: cindex
 #: basic.texi.orig:364
 #, no-wrap
 msgid "deleting characters and lines"
-msgstr ""
+msgstr "deleting characters and lines"
 
 #. type: cindex
 #: basic.texi.orig:365
 #, no-wrap
 msgid "erasing characters and lines"
-msgstr ""
+msgstr "erasing characters and lines"
 
 #. type: key{#1}
 #: basic.texi.orig:368
 #, no-wrap
 msgid "DEL"
-msgstr ""
+msgstr "DEL"
 
 #. type: key{#1}
 #: basic.texi.orig:369
 #, no-wrap
 msgid "BACKSPACE"
-msgstr ""
+msgstr "BACKSPACE"
 
 #. type: table
 #: basic.texi.orig:372
 msgid ""
 "Delete the character before point, or the region if it is active "
 "(@code{delete-backward-char})."
-msgstr ""
+msgstr "ポイントの前の文字、またはリージョンがアクティブのときはリージョンを削除します(@code{delete-backward-char})。"
 
 #. type: key{#1}
 #: basic.texi.orig:373
 #, no-wrap
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #. type: table
 #: basic.texi.orig:376
 msgid ""
 "Delete the character after point, or the region if it is active "
 "(@code{delete-forward-char})."
-msgstr ""
+msgstr "ポイントの後の文字、またはリージョンがアクティブのときはリージョンを削除します(@code{delete-forward-char})。"
 
 #. type: item
 #: basic.texi.orig:377
 #, no-wrap
 msgid "C-d"
-msgstr ""
+msgstr "C-d"
 
 #. type: table
 #: basic.texi.orig:379
 msgid "Delete the character after point (@code{delete-char})."
-msgstr ""
+msgstr "ポイントの後ろの文字を削除します(@code{delete-char})。"
 
 #. type: item
 #: basic.texi.orig:380
 #, no-wrap
 msgid "C-k"
-msgstr ""
+msgstr "C-k"
 
 #. type: table
 #: basic.texi.orig:382
 msgid "Kill to the end of the line (@code{kill-line})."
-msgstr ""
+msgstr "行末までkillします(@code{kill-line})。"
 
 #. type: item
 #: basic.texi.orig:382
 #, no-wrap
 msgid "M-d"
-msgstr ""
+msgstr "M-d"
 
 #. type: table
 #: basic.texi.orig:384
 msgid "Kill forward to the end of the next word (@code{kill-word})."
-msgstr ""
+msgstr "次の単語(word)の末尾までを前方にkillします(@code{kill-word})。"
 
 #. type: item
 #: basic.texi.orig:384
 #, no-wrap
 msgid "M-@key{DEL}"
-msgstr ""
+msgstr "M-@key{DEL}"
 
 #. type: table
 #: basic.texi.orig:387
-msgid "Kill back to the beginning of the previous word (@code{backward-kill-word})."
-msgstr ""
+msgid ""
+"Kill back to the beginning of the previous word (@code{backward-kill-word})."
+msgstr "前の単語の先頭までを後方にkillします(@code{backward-kill-word})。"
 
 #. type: Plain text
 #: basic.texi.orig:393
@@ -1136,14 +1137,14 @@ msgid ""
 "character before point, moving the cursor and the characters after it "
 "backwards.  If point was at the beginning of a line, this deletes the "
 "preceding newline, joining this line to the previous one."
-msgstr ""
+msgstr "コマンド@kbd{@key{DEL}} (@code{delete-backward-char})は、ポイントの前の文字を削除して、カーソルと後ろの文字を後方に移動します。ポイントが行の先頭にある場合、前の改行を削除して、その行を前の行と連結します。"
 
 #. type: Plain text
 #: basic.texi.orig:396
 msgid ""
 "If, however, the region is active, @kbd{@key{DEL}} instead deletes the text "
 "in the region.  @xref{Mark}, for a description of the region."
-msgstr ""
+msgstr "しかしリージョンがアクティブのとき、@kbd{@key{DEL}}はリージョンのテキストを削除します。リージョンの説明は、@ref{Mark}を参照してください。"
 
 #. type: Plain text
 #: basic.texi.orig:402
@@ -1153,7 +1154,7 @@ msgid ""
 "@key{Delete} key; we will discuss @key{Delete} momentarily.)  On some text "
 "terminals, Emacs may not recognize the @key{DEL} key properly.  @xref{DEL "
 "Does Not Delete}, if you encounter this problem."
-msgstr ""
+msgstr "ほとんどのキーボードでは、@key{DEL}には@key{BACKSPACE}というラベルがついていますが、このマニュアルでは@key{DEL}と呼ぶことにします(@key{DEL}を@key{Delete}と混同しないでください。@key{Delete}についてはこの後で議論します)。いくつかのテキスト端末では、Emacsは@key{DEL}を正しく認識しません。もしこの問題に遭遇したときには、@ref{DEL Does Not Delete}を参照してください。"
 
 #. type: Plain text
 #: basic.texi.orig:408
@@ -1163,21 +1164,21 @@ msgid ""
 "character under the cursor.  If point was at the end of a line, this joins "
 "the following line onto this one.  Like @kbd{@key{DEL}}, it deletes the text "
 "in the region if the region is active (@pxref{Mark})."
-msgstr ""
+msgstr "コマンド@key{Delete} (@code{delete-forward-char})は、``反対方向''に削除します。これはポイントの後ろの文字、たとえばカーソルの下の文字を削除します。ポイントが行末にある場合は、その行を次の行と連結します。@kbd{@key{DEL}}と同様、リージョンがアクティブのときはリージョンのテキストを削除します(@ref{Mark}を参照してください)。"
 
 #. type: Plain text
 #: basic.texi.orig:412
 msgid ""
 "@kbd{C-d} (@code{delete-char}) deletes the character after point, similar to "
 "@key{Delete}, but regardless of whether the region is active."
-msgstr ""
+msgstr "@kbd{C-d} (@code{delete-char})は、@key{Delete}と同じようにポイントの後ろの文字を削除しますが、リージョンがアクティブかどうかは関係ありません。"
 
 #. type: Plain text
 #: basic.texi.orig:415
 msgid ""
 "@xref{Deletion}, for more detailed information about the above deletion "
 "commands."
-msgstr ""
+msgstr "上述した削除コマンドについての詳細な情報は、@ref{Deletion}を参照してください。"
 
 #. type: Plain text
 #: basic.texi.orig:420
@@ -1186,48 +1187,49 @@ msgid ""
 "@kbd{C-k} at the beginning or middle of a line, it kills all the text up to "
 "the end of the line.  If you type @kbd{C-k} at the end of a line, it joins "
 "that line with the following line."
-msgstr ""
+msgstr "@kbd{C-k} (@code{kill-line})は行を一度に消去(kill)します。もし行頭または行の途中で@kbd{C-k}とタイプすると、行末までのすべてのテキストをkillします。行末で@kbd{C-k}とタイプすると、その行を次の行と連結します。"
 
 #. type: Plain text
 #: basic.texi.orig:423
-msgid "@xref{Killing}, for more information about @kbd{C-k} and related commands."
-msgstr ""
+msgid ""
+"@xref{Killing}, for more information about @kbd{C-k} and related commands."
+msgstr "@kbd{C-k}と関連するコマンドについては、@ref{Killing}を参照してください。"
 
 #. type: section
 #: basic.texi.orig:425
 #, no-wrap
 msgid "Undoing Changes"
-msgstr ""
+msgstr "Undoing Changes"
 
 #. type: item
 #: basic.texi.orig:428
 #, no-wrap
 msgid "C-/"
-msgstr ""
+msgstr "C-/"
 
 #. type: table
 #: basic.texi.orig:431
 msgid ""
 "Undo one entry of the undo records---usually, one command worth "
 "(@code{undo})."
-msgstr ""
+msgstr "undoレコードにあるエントリーをundoします。通常1つのコマンドを元に戻す(@code{undo})ことに相当します。"
 
 #. type: item
 #: basic.texi.orig:432
 #, no-wrap
 msgid "C-x u"
-msgstr ""
+msgstr "C-x u"
 
 #. type: itemx
 #: basic.texi.orig:433
 #, no-wrap
 msgid "C-_"
-msgstr ""
+msgstr "C-_"
 
 #. type: table
 #: basic.texi.orig:435
 msgid "The same."
-msgstr ""
+msgstr "同じです。"
 
 #. type: Plain text
 #: basic.texi.orig:443
@@ -1238,7 +1240,7 @@ msgid ""
 "undoes the last change, moving point back to where it was before the "
 "change.  The undo command applies only to changes in the buffer; you can't "
 "use it to undo cursor motion."
-msgstr ""
+msgstr "Emacsはバッファー内のテキストに行われた変更のリストを記録しているので、最近の変更はundoできます。これは@kbd{C-/}(および@kbd{C-x u}と@kbd{C-_})にバインドされているコマンド@code{undo}を使って行われます。通常このコマンドは最後の変更をundoして、ポイントを変更前の位置に移動します。undoコマンドはバッファーへの変更のみに適用されるので、カーソルの動きをundoすることはできません。"
 
 #. type: Plain text
 #: basic.texi.orig:447
@@ -1246,7 +1248,7 @@ msgid ""
 "Although each editing command usually makes a separate entry in the undo "
 "records, very simple commands may be grouped together.  Sometimes, an entry "
 "may cover just part of a complex command."
-msgstr ""
+msgstr "個々の編集コマンドは、通常undoレコードの個別のエントリーとなりますが、とても単純なコマンドはグループ化される場合があります。1つのエントリーが、実は複雑なコマンドのほんの一部の場合もあります。"
 
 #. type: Plain text
 #: basic.texi.orig:452
@@ -1255,53 +1257,53 @@ msgid ""
 "earlier change, back to the limit of the undo information available.  If all "
 "recorded changes have already been undone, the undo command displays an "
 "error message and does nothing."
-msgstr ""
+msgstr "もし@kbd{C-/}(またはそれの別名コマンド)を繰り返すと、undoされた箇所はさらにundoされ、初期の変更もundoされ、ついには利用可能なundo情報の限界に達します。もし記録された変更がすべてundoされている場合、undoコマンドはエラーメッセージを表示して、何も行いません。"
 
 #. type: Plain text
 #: basic.texi.orig:454
 msgid "To learn more about the @code{undo} command, see @ref{Undo}."
-msgstr ""
+msgstr "@code{undo}コマンドについてさらに学ぶには、@ref{Undo}を参照してください。"
 
 #. type: node
 #: basic.texi.orig:455
 #, no-wrap
 msgid "Basic Files"
-msgstr ""
+msgstr "Basic Files"
 
 #. type: section
 #: basic.texi.orig:456
 #, no-wrap
 msgid "Files"
-msgstr ""
+msgstr "Files"
 
 #. type: Plain text
 #: basic.texi.orig:461
 msgid ""
 "Text that you insert in an Emacs buffer lasts only as long as the Emacs "
 "session.  To keep any text permanently, you must put it in a @dfn{file}."
-msgstr ""
+msgstr "Emacsのバッファーに挿入したテキストは、Emacsのセッションの間だけ存在します。テキストを永続化させるためには、それを@dfn{ファイル(file)}に保存しなければなりません。"
 
 #. type: Plain text
 #: basic.texi.orig:464
 msgid ""
 "Suppose there is a file named @file{test.emacs} in your home directory.  To "
 "begin editing this file in Emacs, type"
-msgstr ""
+msgstr "ホームディレクトリーに、@file{test.emacs}という名前のファイルがあるとしましょう。このファイルをEmacsで編集するには、以下を入力します"
 
 #. type: example
 #: basic.texi.orig:467
 #, no-wrap
 msgid "C-x C-f test.emacs @key{RET}\n"
-msgstr ""
+msgstr "C-x C-f test.emacs @key{RET}\n"
 
 #. type: Plain text
 #: basic.texi.orig:474
 msgid ""
-"Here the file name is given as an @dfn{argument} to the command @kbd{C-x "
-"C-f} (@code{find-file}).  That command uses the @dfn{minibuffer} to read the "
+"Here the file name is given as an @dfn{argument} to the command @kbd{C-x C-"
+"f} (@code{find-file}).  That command uses the @dfn{minibuffer} to read the "
 "argument, and you type @key{RET} to terminate the argument "
 "(@pxref{Minibuffer})."
-msgstr ""
+msgstr "ここでファイル名は、コマンド@kbd{C-x C-f} (@code{find-file})に与えられる、@dfn{引数(argument)}です。このコマンドは引数を読み取るために@dfn{ミニバッファー(minibuffer)}を使い、@key{RET}は引数を終端させます(@ref{Minibuffer}を参照してください)。"
 
 #. type: Plain text
 #: basic.texi.orig:483
@@ -1313,7 +1315,7 @@ msgid ""
 "altered buffer contents back into the file @file{test.emacs}, making them "
 "permanent.  Until you save, the changed text exists only inside Emacs, and "
 "the file @file{test.emacs} is unaltered."
-msgstr ""
+msgstr "このコマンドに従うために、Emacsはそのファイルを@dfn{visit(訪問)}します: すなわちバッファーを作成し、ファイル内容をバッファーにコピーし、編集のためにバッファーを表示します。テキストを変更したら、@kbd{C-x C-s} (@code{save-buffer})と入力することにより、ファイルを@dfn{保存(save)}できます。これにより変更されたバッファー内容は、@file{test.emacs}に書き戻され永続化されます。保存するまでは、テキストへの変更はEmacs内部にだけ存在し、ファイル@file{test.emacs}は変更されません。"
 
 #. type: Plain text
 #: basic.texi.orig:488
@@ -1322,38 +1324,38 @@ msgid ""
 "existed.  This creates an empty buffer, in which you can insert the text you "
 "want to put in the file.  Emacs actually creates the file the first time you "
 "save this buffer with @kbd{C-x C-s}."
-msgstr ""
+msgstr "ファイルを作成するには、すでにファイルが存在するかのように@kbd{C-x C-f}でファイルをvisitするだけです。これはファイルに書き込みたいテキストを入力できる、空のバッファーを作成します。最初にこのバッファーを@kbd{C-x C-s}で保存するとき、Emacsは実際にファイルを作成します。"
 
 #. type: Plain text
 #: basic.texi.orig:490
 msgid "To learn more about using files in Emacs, see @ref{Files}."
-msgstr ""
+msgstr "Emacsでファイルを使うことについてさらに学ぶには、@ref{Files}を参照してください。"
 
 #. type: node
 #: basic.texi.orig:491
 #, no-wrap
 msgid "Basic Help"
-msgstr ""
+msgstr "Basic Help"
 
 #. type: section
 #: basic.texi.orig:492
 #, no-wrap
 msgid "Help"
-msgstr ""
+msgstr "Help"
 
 #. type: cindex
 #: basic.texi.orig:494
 #, no-wrap
 msgid "getting help with keys"
-msgstr ""
+msgstr "getting help with keys"
 
 #. type: Plain text
 #: basic.texi.orig:498
 msgid ""
 "If you forget what a key does, you can find out by typing @kbd{C-h k} "
-"(@code{describe-key}), followed by the key of interest; for example, "
-"@kbd{C-h k C-n} tells you what @kbd{C-n} does."
-msgstr ""
+"(@code{describe-key}), followed by the key of interest; for example, @kbd{C-"
+"h k C-n} tells you what @kbd{C-n} does."
+msgstr "もしキーが何をするか忘れた場合、@kbd{C-h k} (@code{describe-key})と入力して、それに続けて関心のあるキーを入力します。たとえば@kbd{C-h k C-n}は、@kbd{C-n}が何をするか表示します。"
 
 #. type: Plain text
 #: basic.texi.orig:502
@@ -1361,73 +1363,73 @@ msgid ""
 "The prefix key @kbd{C-h} stands for ``help''.  The key @key{F1} serves as an "
 "alias for @kbd{C-h}.  Apart from @kbd{C-h k}, there are many other help "
 "commands providing different kinds of help."
-msgstr ""
+msgstr "プレフィクスキー@kbd{C-h}は``ヘルプ(help)''が由来です。@key{F1}キーは@kbd{C-h}の別名です。@kbd{C-h k}以外にも、異なる種類のヘルプを提供する多くのヘルプコマンドがあります。"
 
 #. type: Plain text
 #: basic.texi.orig:504
 msgid "@xref{Help}, for details."
-msgstr ""
+msgstr "詳細については、@ref{Help}を参照してください。"
 
 #. type: cindex
 #: basic.texi.orig:508
 #, no-wrap
 msgid "inserting blank lines"
-msgstr ""
+msgstr "inserting blank lines"
 
 #. type: cindex
 #: basic.texi.orig:509
 #, no-wrap
 msgid "deleting blank lines"
-msgstr ""
+msgstr "deleting blank lines"
 
 #. type: Plain text
 #: basic.texi.orig:512
 msgid ""
 "Here are special commands and techniques for inserting and deleting blank "
 "lines."
-msgstr ""
+msgstr "空行を挿入したり削除するための、特別なコマンドとテクニックがあります。"
 
 #. type: kindex
 #: basic.texi.orig:514 basic.texi.orig:521
 #, no-wrap
 msgid "C-o"
-msgstr ""
+msgstr "C-o"
 
 #. type: table
 #: basic.texi.orig:516
 msgid "Insert a blank line after the cursor (@code{open-line})."
-msgstr ""
+msgstr "カーソルの後ろに空行を挿入します(@code{open-line})。"
 
 #. type: kindex
 #: basic.texi.orig:516 basic.texi.orig:522
 #, no-wrap
 msgid "C-x C-o"
-msgstr ""
+msgstr "C-x C-o"
 
 #. type: table
 #: basic.texi.orig:519
 msgid ""
-"Delete all but one of many consecutive blank lines "
-"(@code{delete-blank-lines})."
-msgstr ""
+"Delete all but one of many consecutive blank lines (@code{delete-blank-"
+"lines})."
+msgstr "連続する空行を、1行残してすべて削除します(@code{delete-blank-lines})。"
 
 #. type: cindex
 #: basic.texi.orig:523
 #, no-wrap
 msgid "blank lines"
-msgstr ""
+msgstr "blank lines"
 
 #. type: findex
 #: basic.texi.orig:524
 #, no-wrap
 msgid "open-line"
-msgstr ""
+msgstr "open-line"
 
 #. type: findex
 #: basic.texi.orig:525
 #, no-wrap
 msgid "delete-blank-lines"
-msgstr ""
+msgstr "delete-blank-lines"
 
 #. type: Plain text
 #: basic.texi.orig:532
@@ -1438,7 +1440,7 @@ msgid ""
 "using the key @kbd{C-o} (@code{open-line}), which inserts a newline after "
 "point but leaves point in front of the newline.  After @kbd{C-o}, type the "
 "text for the new line."
-msgstr ""
+msgstr "これまで@kbd{@key{RET}} (@code{newline})が、どうやってテキストの新しい行を開始するのか見てきました。しかし最初に空行を作ってからテキストを挿入するほうが、何を行っているのかわかりやすいでしょう。これはキー@kbd{C-o} (@code{open-line})を使えば、簡単に行うことができます。これはポイントの後ろに改行を挿入し、ポイントを改行の前に維持します。@kbd{C-o}の後に新しい行のためのテキストを入力します。"
 
 #. type: Plain text
 #: basic.texi.orig:538
@@ -1448,41 +1450,41 @@ msgid ""
 "@xref{Arguments}, for how.  If you have a fill prefix, the @kbd{C-o} command "
 "inserts the fill prefix on the new line, if typed at the beginning of a "
 "line.  @xref{Fill Prefix}."
-msgstr ""
+msgstr "複数の空行は@kbd{C-o}を数回入力するか、何個の空行を作るのかを数引数で与えれば作れます。方法については、@ref{Arguments}を参照してください。もしフィルプレフィクスがあって、行頭で@kbd{C-o}が入力された場合、新しい行にフィルプレフィクスを挿入します。@ref{Fill Prefix}を参照してください。"
 
 #. type: Plain text
 #: basic.texi.orig:545
 msgid ""
-"The easy way to get rid of extra blank lines is with the command @kbd{C-x "
-"C-o} (@code{delete-blank-lines}).  If point lies within a run of several "
-"blank lines, @kbd{C-x C-o} deletes all but one of them.  If point is on a "
-"single blank line, @kbd{C-x C-o} deletes it.  If point is on a nonblank "
-"line, @kbd{C-x C-o} deletes all following blank lines, if any exists."
-msgstr ""
+"The easy way to get rid of extra blank lines is with the command @kbd{C-x C-"
+"o} (@code{delete-blank-lines}).  If point lies within a run of several blank "
+"lines, @kbd{C-x C-o} deletes all but one of them.  If point is on a single "
+"blank line, @kbd{C-x C-o} deletes it.  If point is on a nonblank line, "
+"@kbd{C-x C-o} deletes all following blank lines, if any exists."
+msgstr "余分な空行を取り除く簡単な方法は、@kbd{C-x C-o} (@code{delete-blank-lines})です。連続する空行の中にポイントがあるとき、@kbd{C-x C-o}は1行残してすべての空行を削除します。ポイントが単独の空行にある場合、@kbd{C-x C-o}はその空行を削除します。ポイントが空でない行にある場合、@kbd{C-x C-o}は、後続する空行があれば、それらすべてを削除します。"
 
 #. type: cindex
 #: basic.texi.orig:549
 #, no-wrap
 msgid "continuation line"
-msgstr ""
+msgstr "continuation line"
 
 #. type: cindex
 #: basic.texi.orig:550
 #, no-wrap
 msgid "wrapping"
-msgstr ""
+msgstr "wrapping"
 
 #. type: cindex
 #: basic.texi.orig:551
 #, no-wrap
 msgid "line wrapping"
-msgstr ""
+msgstr "line wrapping"
 
 #. type: cindex
 #: basic.texi.orig:552
 #, no-wrap
 msgid "fringes, and continuation lines"
-msgstr ""
+msgstr "fringes, and continuation lines"
 
 #. type: Plain text
 #: basic.texi.orig:561
@@ -1494,7 +1496,7 @@ msgid ""
 "Emacs indicates line wrapping with small bent arrows in the left and right "
 "window fringes.  On a text terminal, Emacs indicates line wrapping by "
 "displaying a @samp{\\} character at the right margin."
-msgstr ""
+msgstr "バッファー内のテキストの行 --- @dfn{論理行(logical line)} --- がウィンドウに収まらないほど長い場合、Emacsがそれを2行以上の@dfn{スクリーン行(screen lines)}で表示するときがあります。これは@dfn{行の折り返し(line wrapping)}または@dfn{継続(continuation)}と呼ばれ、論理行は@dfn{継続された行(continued line)}と呼ばれます。グラフィカルなディスプレーでは、Emacsは行の折り返しをウィンドウの左右のフリンジ(fringes、縁)の小さな曲矢印で示します。テキスト端末では、Emacsは右の余白に@samp{\\}を表示して行の折り返しを示します。"
 
 #. type: Plain text
 #: basic.texi.orig:567
@@ -1504,19 +1506,19 @@ msgid ""
 "(@code{next-line}) and @kbd{C-p} (@code{previous-line}) are special "
 "exceptions: they move point down and up, respectively, by one screen line "
 "(@pxref{Moving Point})."
-msgstr ""
+msgstr "ほとんどのコマンドは、スクリーン行ではなく論理行にたいして作用します。たとえば@kbd{C-k}は論理行をkillします。前に説明したように、@kbd{C-n} (@code{next-line})と@kbd{C-p} (@code{previous-line})は特別な例外です。これらはスクリーン行にたいしてポイントを上下に移動させます(@ref{Moving Point}を参照してください)。"
 
 #. type: cindex
 #: basic.texi.orig:568
 #, no-wrap
 msgid "truncation"
-msgstr ""
+msgstr "truncation"
 
 #. type: cindex
 #: basic.texi.orig:569
 #, no-wrap
 msgid "line truncation, and fringes"
-msgstr ""
+msgstr "line truncation, and fringes"
 
 #. type: Plain text
 #: basic.texi.orig:577
@@ -1527,7 +1529,7 @@ msgid ""
 "displayed.  On a graphical display, a truncated line is indicated by a small "
 "straight arrow in the right fringe; on a text terminal, it is indicated by a "
 "@samp{$} character in the right margin.  @xref{Line Truncation}."
-msgstr ""
+msgstr "Emacsはオプションで長い論理行を継続するかわりに、@dfn{切り詰める(truncate)}ことができます。これは論理行が1つのスクリーン行を占めることを意味します。もし論理行がウィンドウ幅より長い場合、行の残りは表示されません。グラフィカルなディスプレーでは切り詰められた行は、右フリンジの小さな直矢印で示されます。テキスト端末では右余白の@samp{$}で示されます。@ref{Line Truncation}を参照してください。"
 
 #. type: Plain text
 #: basic.texi.orig:584
@@ -1538,13 +1540,13 @@ msgid ""
 "long, by inserting newlines.  If you prefer, you can make Emacs insert a "
 "newline automatically when a line gets too long, by using Auto Fill mode.  "
 "@xref{Filling}."
-msgstr ""
+msgstr "デフォルトでは継続行はウィンドウの右端で折り返されます。折り返しが単語の途中で発生すると、継続された行は読むのが難しくなります。普通の解決策は、行が長くなりすぎる前に改行を挿入することです。もしお好みなら、行が長くなりすぎたときにEmacsが自動的に改行を挿入するように、Auto Fillモードを使うことができます。@ref{Filling}を参照してください。"
 
 #. type: cindex
 #: basic.texi.orig:585
 #, no-wrap
 msgid "word wrap"
-msgstr ""
+msgstr "word wrap"
 
 #. type: Plain text
 #: basic.texi.orig:595
@@ -1557,56 +1559,56 @@ msgid ""
 "right window edge.  Visual Line mode also redefines editing commands such as "
 "@code{C-a}, @code{C-n}, and @code{C-k} to operate on screen lines rather "
 "than logical lines.  @xref{Visual Line Mode}."
-msgstr ""
+msgstr "多くの長い論理行を含むファイルを編集する必要があり、それらすべてを改行で分割するのが実用的でない場合があります。そのようなケースでは@dfn{単語折り返し(word wrapping)}が有効なVisual Lineモードを使うことができます。これは長い行を正確にウィンドウの右端で折り返すのではなく、ウィンドウの右端に一番近い単語境界(スペースやタブなど)で折り返します。Visual Lineモードでは、@code{C-a}、@code{C-n}、@code{C-k}などの編集コマンドも、論理行ではなくスクリーン行を処理するように再定義されます。@ref{Visual Line Mode}を参照してください。"
 
 #. type: section
 #: basic.texi.orig:597
 #, no-wrap
 msgid "Cursor Position Information"
-msgstr ""
+msgstr "Cursor Position Information"
 
 #. type: Plain text
 #: basic.texi.orig:601
 msgid ""
 "Here are commands to get information about the size and position of parts of "
 "the buffer, and to count words and lines."
-msgstr ""
+msgstr "バッファーのある部分にたいしてサイズや位置、単語数や行数についての情報を得るためのコマンドがあります。"
 
 #. type: item
 #: basic.texi.orig:603
 #, no-wrap
 msgid "M-x what-line"
-msgstr ""
+msgstr "M-x what-line"
 
 #. type: table
 #: basic.texi.orig:605
 msgid "Display the line number of point."
-msgstr ""
+msgstr "ポイントの行番号を表示します。"
 
 #. type: item
 #: basic.texi.orig:605
 #, no-wrap
 msgid "M-x line-number-mode"
-msgstr ""
+msgstr "M-x line-number-mode"
 
 #. type: itemx
 #: basic.texi.orig:606
 #, no-wrap
 msgid "M-x column-number-mode"
-msgstr ""
+msgstr "M-x column-number-mode"
 
 #. type: table
 #: basic.texi.orig:609
 msgid ""
 "Toggle automatic display of the current line number or column number.  "
 "@xref{Optional Mode Line}."
-msgstr ""
+msgstr "現在の行番号および列番号の自動表示を切り替えます。@ref{Optional Mode Line}を参照してください。"
 
 #. type: kindex
 #: basic.texi.orig:610 basic.texi.orig:644
 #, no-wrap
 msgid "M-="
-msgstr ""
+msgstr "M-="
 
 #. type: table
 #: basic.texi.orig:614
@@ -1614,13 +1616,13 @@ msgid ""
 "Display the number of lines, words, and characters that are present in the "
 "region (@code{count-words-region}).  @xref{Mark}, for information about the "
 "region."
-msgstr ""
+msgstr "現在のリージョンの行数、単語数、文字数を表示します(@code{count-words-region})。リージョンについては、@ref{Mark}を参照してください。"
 
 #. type: item
 #: basic.texi.orig:615
 #, no-wrap
 msgid "M-x count-words"
-msgstr ""
+msgstr "M-x count-words"
 
 #. type: table
 #: basic.texi.orig:619
@@ -1628,74 +1630,75 @@ msgid ""
 "Display the number of lines, words, and characters that are present in the "
 "buffer.  If the region is active (@pxref{Mark}), display the numbers for the "
 "region instead."
-msgstr ""
+msgstr "現在のバッファーの行数、単語数、文字数を表示します。リージョン(@ref{Mark}を参照してください)がアクティブのときは、かわりにリージョンの数字を表示します。"
 
 #. type: kindex
 #: basic.texi.orig:620 basic.texi.orig:657
 #, no-wrap
 msgid "C-x ="
-msgstr ""
+msgstr "C-x ="
 
 #. type: table
 #: basic.texi.orig:623
 msgid ""
 "Display the character code of character after point, character position of "
 "point, and column of point (@code{what-cursor-position})."
-msgstr ""
+msgstr "ポイントの後ろの文字の文字コード、ポイントの文字位置、ポイントの列位置を表示します(@code{what-cursor-position})。"
 
 #. type: item
 #: basic.texi.orig:623
 #, no-wrap
 msgid "M-x hl-line-mode"
-msgstr ""
+msgstr "M-x hl-line-mode"
 
 #. type: table
 #: basic.texi.orig:626
-msgid "Enable or disable highlighting of the current line.  @xref{Cursor Display}."
-msgstr ""
+msgid ""
+"Enable or disable highlighting of the current line.  @xref{Cursor Display}."
+msgstr "現在行のハイライト表示を有効または無効にします。@ref{Cursor Display}を参照してください。"
 
 #. type: item
 #: basic.texi.orig:626
 #, no-wrap
 msgid "M-x size-indication-mode"
-msgstr ""
+msgstr "M-x size-indication-mode"
 
 #. type: table
 #: basic.texi.orig:629
 msgid ""
 "Toggle automatic display of the size of the buffer.  @xref{Optional Mode "
 "Line}."
-msgstr ""
+msgstr "バッファーのサイズの自動表示を切り替えます。@ref{Optional Mode Line}を参照してください。"
 
 #. type: findex
 #: basic.texi.orig:631
 #, no-wrap
 msgid "what-line"
-msgstr ""
+msgstr "what-line"
 
 #. type: cindex
 #: basic.texi.orig:632
 #, no-wrap
 msgid "line number commands"
-msgstr ""
+msgstr "line number commands"
 
 #. type: cindex
 #: basic.texi.orig:633
 #, no-wrap
 msgid "location of point"
-msgstr ""
+msgstr "location of point"
 
 #. type: cindex
 #: basic.texi.orig:634
 #, no-wrap
 msgid "cursor location"
-msgstr ""
+msgstr "cursor location"
 
 #. type: cindex
 #: basic.texi.orig:635
 #, no-wrap
 msgid "point location"
-msgstr ""
+msgstr "point location"
 
 #. type: Plain text
 #: basic.texi.orig:643
@@ -1707,13 +1710,13 @@ msgid ""
 "(@pxref{Narrowing}).  By contrast, @code{what-line} displays both the line "
 "number relative to the narrowed region and the line number relative to the "
 "whole buffer."
-msgstr ""
+msgstr "@kbd{M-x what-line}は、エコーエリアに現在の行番号を表示します。通常このコマンドは不必要です。なぜならモードラインに現在の行番号が、すでに表示されているからです (@ref{Mode Line}を参照してください)。しかしバッファーがナロー(narrow: 制限)されている場合、モードラインはアクセスできる範囲についての行番号しか表示しません(@ref{Narrowing}を参照してください)。それにくらべて@code{what-line}は、制限されたリージョンとバッファー全体、両方の行番号を表示します。"
 
 #. type: findex
 #: basic.texi.orig:645
 #, no-wrap
 msgid "count-words-region"
-msgstr ""
+msgstr "count-words-region"
 
 #. type: Plain text
 #: basic.texi.orig:651
@@ -1722,13 +1725,13 @@ msgid ""
 "number of lines, words, and characters in the region (@pxref{Mark}, for an "
 "explanation of the region).  With a prefix argument, @kbd{C-u M-=}, the "
 "command displays a count for the entire buffer."
-msgstr ""
+msgstr "@kbd{M-=} (@code{count-words-region})はリージョン内の行数、単語数、文字数を報告するメッセージを表示します(リージョンについての説明は、@ref{Mark}を参照してください)。プレフィクス引数@kbd{C-u M-=}を指定すると、このコマンドはバッファー全体の数字を表示します。"
 
 #. type: findex
 #: basic.texi.orig:652
 #, no-wrap
 msgid "count-words"
-msgstr ""
+msgstr "count-words"
 
 #. type: Plain text
 #: basic.texi.orig:656
@@ -1736,13 +1739,13 @@ msgid ""
 "The command @kbd{M-x count-words} does the same job, but with a different "
 "calling convention.  It displays a count for the region if the region is "
 "active, and for the buffer otherwise."
-msgstr ""
+msgstr "@kbd{M-x count-words}は同じことを行いますが、呼び出し規約が異なります。もしリージョンがアクティブの場合はリージョン、そうでない場合はバッファーの数字を表示します。"
 
 #. type: findex
 #: basic.texi.orig:658
 #, no-wrap
 msgid "what-cursor-position"
-msgstr ""
+msgstr "what-cursor-position"
 
 #. type: Plain text
 #: basic.texi.orig:663
@@ -1750,13 +1753,13 @@ msgid ""
 "The command @kbd{C-x =} (@code{what-cursor-position}) shows information "
 "about the current cursor position and the buffer contents at that position.  "
 "It displays a line in the echo area that looks like this:"
-msgstr ""
+msgstr "コマンド@kbd{C-x =} (@code{what-cursor-position})は現在のカーソル位置と、その位置にあるバッファー内容についての情報を表示します。エコーエリアには、以下のような行が表示されます:"
 
 #. type: smallexample
 #: basic.texi.orig:666
 #, no-wrap
 msgid "Char: c (99, #o143, #x63) point=28062 of 36168 (78%) column=53\n"
-msgstr ""
+msgstr "Char: c (99, #o143, #x63) point=28062 of 36168 (78%) column=53\n"
 
 #. type: Plain text
 #: basic.texi.orig:679
@@ -1771,7 +1774,7 @@ msgid ""
 "number in parenthesis expresses the position as a percentage of the total.  "
 "After @samp{column=} is the horizontal position of point, in columns "
 "counting from the left edge of the window."
-msgstr ""
+msgstr "@samp{Char:}には、バッファー中のそのポイントにある文字が表示されます。カッコ内にはその文字に対応する文字コードが10進、8進、16進で表示されます。@kbd{C-x =}が文字の情報について表示する方法については、@ref{International Chars}を参照してください。@samp{point=}はポイント位置を文字数(バッファーの最初の文字は1、次の文字は2、...)で表示します。その後ろの数字ではバッファー内の文字数の合計が表示され、カッコ内にはその位置が全体から見て何パーセントの位置なのかが表示されます。@samp{column=}にはポイントの水平位置、すなわちウィンドウの左端から数えて何番目の列かが表示されます。"
 
 #. type: Plain text
 #: basic.texi.orig:684
@@ -1780,13 +1783,13 @@ msgid ""
 "and the end temporarily inaccessible, @kbd{C-x =} displays additional text "
 "describing the currently accessible range.  For example, it might display "
 "this:"
-msgstr ""
+msgstr "もしバッファーがナローされている場合、最初と最後の部分のテキストが一時的にアクセス不能になります。@kbd{C-x =}は現在アクセス可能な範囲についての追加説明を表示します。たとえば以下のように表示します:"
 
 #. type: smallexample
 #: basic.texi.orig:687
 #, no-wrap
 msgid "Char: C (67, #o103, #x43) point=252 of 889 (28%) <231-599> column=0\n"
-msgstr ""
+msgstr "Char: C (67, #o103, #x43) point=252 of 889 (28%) <231-599> column=0\n"
 
 #. type: Plain text
 #: basic.texi.orig:693
@@ -1794,31 +1797,31 @@ msgid ""
 "where the two extra numbers give the smallest and largest character position "
 "that point is allowed to assume.  The characters between those two positions "
 "are the accessible ones.  @xref{Narrowing}."
-msgstr ""
+msgstr "ここで、新たに追加された2つの数字が、ポイントを設定できる文字位置の下限と上限を示します。これら2つの位置のあいだの文字が参照可能な文字です。@ref{Narrowing}を参照してください。"
 
 #. type: section
 #: basic.texi.orig:695
 #, no-wrap
 msgid "Numeric Arguments"
-msgstr ""
+msgstr "Numeric Arguments"
 
 #. type: cindex
 #: basic.texi.orig:696
 #, no-wrap
 msgid "numeric arguments"
-msgstr ""
+msgstr "numeric arguments"
 
 #. type: cindex
 #: basic.texi.orig:697
 #, no-wrap
 msgid "prefix arguments"
-msgstr ""
+msgstr "prefix arguments"
 
 #. type: cindex
 #: basic.texi.orig:698
 #, no-wrap
 msgid "arguments to commands"
-msgstr ""
+msgstr "arguments to commands"
 
 #. type: Plain text
 #: basic.texi.orig:709
@@ -1831,66 +1834,66 @@ msgid ""
 "of one.  With these commands, no argument is equivalent to an argument of "
 "one, and negative arguments cause them to move or act in the opposite "
 "direction."
-msgstr ""
+msgstr "数学や計算機の用語では、引数(argument)という単語は、``関数や操作に与えるデータ''を意味します。Emacsのコマンドには、数引数(numeric argument)(プレフィクス引数(prefix argument)とも呼ぶ)を指定できるものがあります。引数を反復回数として解釈するコマンドもあります。たとえば、引数10を@kbd{C-f}に指定すると、カーソルを通常の1文字ではなく、10文字分前向きに移動します。これらのコマンドでは、引数を指定しないと引数1を指定したのと同等になります。この種のコマンドの多くでは、負の引数を指定すると、逆向きの移動や逆の操作を指示することになります。"
 
 #. type: kindex
 #: basic.texi.orig:710
 #, no-wrap
 msgid "M-1"
-msgstr ""
+msgstr "M-1"
 
 #. type: kindex
 #: basic.texi.orig:711
 #, no-wrap
 msgid "M-@t{-}"
-msgstr ""
+msgstr "M-@t{-}"
 
 #. type: findex
 #: basic.texi.orig:712
 #, no-wrap
 msgid "digit-argument"
-msgstr ""
+msgstr "digit-argument"
 
 #. type: findex
 #: basic.texi.orig:713
 #, no-wrap
 msgid "negative-argument"
-msgstr ""
+msgstr "negative-argument"
 
 #. type: Plain text
 #: basic.texi.orig:717
 msgid ""
 "The easiest way to specify a numeric argument is to type a digit and/or a "
 "minus sign while holding down the @key{META} key.  For example,"
-msgstr ""
+msgstr "数引数を指定するもっとも簡単な方法は、@key{META}キーを押しながら数字またはマイナス記号(と数字)を入力する方法です。以下はその例です:"
 
 #. type: example
 #: basic.texi.orig:720
 #, no-wrap
 msgid "M-5 C-n\n"
-msgstr ""
+msgstr "M-5 C-n\n"
 
 #. type: Plain text
 #: basic.texi.orig:727
 msgid ""
 "moves down five lines.  The keys @kbd{M-1}, @kbd{M-2}, and so on, as well as "
-"@kbd{M--}, are bound to commands (@code{digit-argument} and "
-"@code{negative-argument}) that set up an argument for the next command.  "
-"@kbd{M--} without digits normally means @minus{}1."
-msgstr ""
+"@kbd{M--}, are bound to commands (@code{digit-argument} and @code{negative-"
+"argument}) that set up an argument for the next command.  @kbd{M--} without "
+"digits normally means @minus{}1."
+msgstr "これは５行下に移動します。キー@kbd{M-1}、@kbd{M-2}、...、同様に@kbd{M--}は、次のコマンドへの引数をセットアップするコマンド、(@code{digit-argument}と@code{negative-argument})にバインドされています。数字をともなわない@kbd{M--}は、通常@minus{}1を意味します。"
 
 #. type: Plain text
 #: basic.texi.orig:731
 msgid ""
 "If you enter more than one digit, you need not hold down the @key{META} key "
 "for the second and subsequent digits.  Thus, to move down fifty lines, type"
-msgstr ""
+msgstr "2桁以上の数字を入力したい場合、2文字目以降の数字を入力するときに@key{META}を押しつづける必要はありません。つまり50行下に移動するときは、以下のように入力します:"
 
 #. type: example
 #: basic.texi.orig:734
 #, no-wrap
 msgid "M-5 0 C-n\n"
-msgstr ""
+msgstr "M-5 0 C-n\n"
 
 #. type: Plain text
 #: basic.texi.orig:740
@@ -1898,7 +1901,7 @@ msgid ""
 "Note that this @emph{does not} insert five copies of @samp{0} and move down "
 "one line, as you might expect---the @samp{0} is treated as part of the "
 "prefix argument."
-msgstr ""
+msgstr "これは、(あなたが期待するように)@samp{0}を5つコピーして挿入してから1行下がるのでは@emph{ない}ことに注意してください。@samp{0}はプレフィクス引数の一部として扱われます。"
 
 #. type: Plain text
 #: basic.texi.orig:746
@@ -1908,19 +1911,19 @@ msgid ""
 "keystroke begins the command that you want to execute.  Note that this "
 "meaning of @kbd{C-u} applies only to this case.  For the usual role of "
 "@kbd{C-u}, see below.)"
-msgstr ""
+msgstr "(@samp{0}を5つコピーして挿入するときは、@kbd{M-5 C-u 0}と入力します。ここで@kbd{C-u}はプレフィクス引数を``終端させる''ので、次のキー入力はあなたが実行したいコマンドです。ここでの@kbd{C-u}の意味はこのケースだけに適用される使い方です。@kbd{C-u}の通常の役割については以下を参照してください。)"
 
 #. type: kindex
 #: basic.texi.orig:747
 #, no-wrap
 msgid "C-u"
-msgstr ""
+msgstr "C-u"
 
 #. type: findex
 #: basic.texi.orig:748
 #, no-wrap
 msgid "universal-argument"
-msgstr ""
+msgstr "universal-argument"
 
 #. type: Plain text
 #: basic.texi.orig:754
@@ -1929,7 +1932,7 @@ msgid ""
 "numeric argument is to type @kbd{C-u} (@code{universal-argument}) followed "
 "by some digits, or (for a negative argument) a minus sign followed by "
 "digits.  A minus sign without digits normally means @minus{}1."
-msgstr ""
+msgstr "数引数を指定する別の方法として、@kbd{M-1}、@kbd{M-2}、...と入力するかわりに、@kbd{C-u} (@code{universal-argument})のあとに数字(負の引数の場合はマイナス記号と数字)を入力する方法があります。通常、数字をともなわないマイナス記号は@minus{}1を意味します。"
 
 #. type: Plain text
 #: basic.texi.orig:762
@@ -1940,7 +1943,7 @@ msgid ""
 "useful combinations are @kbd{C-u C-n}, @kbd{C-u C-u C-n} (move down a good "
 "fraction of a screen), @kbd{C-u C-u C-o} (make ``a lot'' of blank lines), "
 "and @kbd{C-u C-k} (kill four lines)."
-msgstr ""
+msgstr "単独の@kbd{C-u}は、``4倍''という特別な意味をもち、次のコマンドの引数を4倍にします。@kbd{C-u C-u}は16倍です。つまり@kbd{C-u C-u C-f}は16文字前方に移動します。その他に便利な使い方としては@kbd{C-u C-n}、@kbd{C-u C-u C-n}(適当な割り合いで画面を下に移動する)や、@kbd{C-u C-u C-o}(空行を``たくさん''作る)、@kbd{C-u C-k}(4行削除する)、などがあります。"
 
 #. type: Plain text
 #: basic.texi.orig:771
@@ -1952,7 +1955,7 @@ msgid ""
 "specifies an argument of 641.  You can separate the argument from the digit "
 "to insert with another @kbd{C-u}; for example, @kbd{C-u 6 4 C-u 1} does "
 "insert 64 copies of the character @samp{1}."
-msgstr ""
+msgstr "自分自身を挿入する文字の前に数引数を使えば、指定した分のコピーを挿入できます。これは挿入したい文字が数字でないときは簡単です。たとえば@kbd{C-u 6 4 a}は、@samp{a}を64個コピーして挿入します。しかし数字を挿入したいときは、これではうまくいきません。@kbd{C-u 6 4 1}は引数に641を指定することになってしまいます。このようなときは引数と挿入したい数字を分けるために、他の@kbd{C-u}を使うことができます。たとえば@kbd{C-u 6 4 C-u 1}とすれば、これは@samp{1}を64個コピーして挿入します。"
 
 #. type: Plain text
 #: basic.texi.orig:778
@@ -1962,7 +1965,7 @@ msgid ""
 "argument, it justifies the text as well.  (@xref{Filling}, for more "
 "information on @kbd{M-q}.)  For these commands, it is enough to specify the "
 "argument with a single @kbd{C-u}."
-msgstr ""
+msgstr "引数の有無は確認しても、その値は無視するコマンドもあります。たとえばコマンド@kbd{M-q} (@code{fill-paragraph})は、1行に収まるようできるだけテキストをフィルしますが、引数をともなうと、余分なスペースを挿入してテキストが正確に1行の最大幅を使うよう均等に割り付けてフィルします(@kbd{M-q}については、@ref{Filling}を参照してください)。このようなコマンドは、引数として単に@kbd{C-u}を指定するだけで充分です。"
 
 #. type: Plain text
 #: basic.texi.orig:788
@@ -1974,9 +1977,9 @@ msgid ""
 "special: it kills the text up to the next newline, or, if point is right at "
 "the end of the line, it kills the newline itself.  Thus, two @kbd{C-k} "
 "commands with no arguments can kill a nonblank line, just like @kbd{C-k} "
-"with an argument of one.  (@xref{Killing}, for more information on "
-"@kbd{C-k}.)"
-msgstr ""
+"with an argument of one.  (@xref{Killing}, for more information on @kbd{C-"
+"k}.)"
+msgstr "引数の値を繰り返しの回数として使いますが、引数がないときは特別な処理を行うコマンドもあります。たとえばコマンド@kbd{C-k} (@code{kill-line})に引数@var{n}を指定すると、これは行末の改行も含めて@var{n}行をkillします。しかし引数を指定しないで@kbd{C-k}した場合、ポイントから改行までのテキストをkillするか、ポイントが行末にある場合は改行をkillします。つまりコマンド@kbd{C-k}を引数なしで2回呼び出すと、@kbd{C-k}に引数1を指定したのと同様、空でない行をkillできます(@kbd{C-k}についての情報は、@ref{Killing}を参照してください)。"
 
 #. type: Plain text
 #: basic.texi.orig:795
@@ -1986,50 +1989,49 @@ msgid ""
 "differently from an argument of @minus{}1.  These unusual cases are "
 "described when they come up; they exist to make an individual command more "
 "convenient, and they are documented in that command's documentation string."
-msgstr ""
+msgstr "いくつかのコマンドは、@kbd{C-u}だけの引数を通常の引数とは異なるものとして扱います。また、マイナス記号のみの引数を、@minus{}1とは区別するコマンドもあります。これらの例外については、必要になったときに説明します。これらの例外は、それぞれのコマンドを使いやすくするためにあり、コマンドのドキュメント文字列に記載されています。"
 
 #. type: Plain text
 #: basic.texi.orig:800
 msgid ""
 "We use the term @dfn{prefix argument} to emphasize that you type such "
 "arguments before the command, and to distinguish them from minibuffer "
-"arguments (@pxref{Minibuffer}), which are entered after invoking the "
-"command."
-msgstr ""
+"arguments (@pxref{Minibuffer}), which are entered after invoking the command."
+msgstr "コマンドの前に引数を入力するという点を強調するために、そしてコマンドが呼び出されてから入力されるミニバッファー引数(@ref{Minibuffer}を参照してください)と区別するために、わたしたちは@dfn{プレフィクス引数(prefix argument)}という言葉を使います。"
 
 #. type: section
 #: basic.texi.orig:802
 #, no-wrap
 msgid "Repeating a Command"
-msgstr ""
+msgstr "Repeating a Command"
 
 #. type: cindex
 #: basic.texi.orig:803
 #, no-wrap
 msgid "repeating a command"
-msgstr ""
+msgstr "repeating a command"
 
 #. type: Plain text
 #: basic.texi.orig:811
 msgid ""
-"Many simple commands, such as those invoked with a single key or with "
-"@kbd{M-x @var{command-name} @key{RET}}, can be repeated by invoking them "
-"with a numeric argument that serves as a repeat count (@pxref{Arguments}).  "
+"Many simple commands, such as those invoked with a single key or with @kbd{M-"
+"x @var{command-name} @key{RET}}, can be repeated by invoking them with a "
+"numeric argument that serves as a repeat count (@pxref{Arguments}).  "
 "However, if the command you want to repeat prompts for input, or uses a "
 "numeric argument in another way, that method won't work."
-msgstr ""
+msgstr "単純なキーで呼び出されるものや、@kbd{M-x @var{command-name} @key{RET}}で実行できるような多くのコマンドは、数引数で繰り返し回数(@ref{Arguments}を参照してください)を与えることで、その回数だけ繰り返すことができます。しかし、入力を求めるものや数引数を別の目的に使うコマンドでは、この方法はうまくいきません。"
 
 #. type: kindex
 #: basic.texi.orig:812
 #, no-wrap
 msgid "C-x z"
-msgstr ""
+msgstr "C-x z"
 
 #. type: findex
 #: basic.texi.orig:813
 #, no-wrap
 msgid "repeat"
-msgstr ""
+msgstr "repeat"
 
 #. type: Plain text
 #: basic.texi.orig:818
@@ -2038,7 +2040,7 @@ msgid ""
 "Emacs command many times.  This command repeats the previous Emacs command, "
 "whatever that was.  Repeating a command uses the same arguments that were "
 "used before; it does not read new arguments each time."
-msgstr ""
+msgstr "コマンド@kbd{C-x z} (@code{repeat})は、Emacsコマンドを何回も反復する別の方法です。このコマンドは、直前のEmacsコマンドが何であっても、それを繰り返します。繰り返されるコマンドは、まえと同じ引数を使います。毎回新たに引数を読み取ることはしません。"
 
 #. type: Plain text
 #: basic.texi.orig:822
@@ -2046,7 +2048,7 @@ msgid ""
 "To repeat the command more than once, type additional @kbd{z}'s: each "
 "@kbd{z} repeats the command one more time.  Repetition ends when you type a "
 "character other than @kbd{z}, or press a mouse button."
-msgstr ""
+msgstr "コマンドを2回以上繰り返すには@kbd{z}を追加して入力します。1つの@kbd{z}でコマンドを1回繰り返します。@kbd{z}以外の文字を入力するか、マウスボタンを押すと繰り返しを終了します。"
 
 #. type: Plain text
 #: basic.texi.orig:827
@@ -2056,4 +2058,4 @@ msgid ""
 "to delete a total of 80 characters, by typing @kbd{C-x z z z}.  The first "
 "@kbd{C-x z} repeats the command once, and each subsequent @kbd{z} repeats it "
 "once again."
-msgstr ""
+msgstr "たとえば、20文字削除するために@kbd{C-u 2 0 C-d}と入力したとしましょう。@kbd{C-x z z z}と入力すれば、(引数を含めて)削除コマンドをさらに3回繰り返し、全部で80文字削除できます。始めの@kbd{C-x z}でコマンドを1回繰り返し、そのあとのそれぞれの@kbd{z}で1回ずつ繰り返します。"
