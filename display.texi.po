@@ -3,30 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-10-15 20:34+0900\n"
+"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
 #: display.texi.orig:6
 #, no-wrap
 msgid "Display"
-msgstr ""
+msgstr "Display"
 
 #. type: chapter
 #: display.texi.orig:7
 #, no-wrap
 msgid "Controlling the Display"
-msgstr ""
+msgstr "Controlling the Display"
 
 #. type: Plain text
 #: display.texi.orig:13
@@ -35,268 +34,268 @@ msgid ""
 "a part of it.  This chapter describes commands and variables that let you "
 "specify which part of the text you want to see, and how the text is "
 "displayed."
-msgstr ""
+msgstr "ウィンドウに入りきらない大きなバッファーでは、Emacsはその一部しか表示できません。このチャプターでは、見たい部分のテキストを指定するコマンドや変数と、どのようにしてテキストが表示されるかを説明します。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:42 display.texi.orig:43
 #, no-wrap
 msgid "Scrolling"
-msgstr ""
+msgstr "Scrolling"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Commands to move text up and down in a window."
-msgstr ""
+msgstr "ウィンドウのテキストを上下に移動させるコマンド。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:143 display.texi.orig:144
 #, no-wrap
 msgid "Recentering"
-msgstr ""
+msgstr "Recentering"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "A scroll command that centers the current line."
-msgstr ""
+msgstr "カレント行を中央にするスクロールコマンド。"
 
 #. type: node
 #: display.texi.orig:40 display.texi.orig:213
 #, no-wrap
 msgid "Auto Scrolling"
-msgstr ""
+msgstr "Auto Scrolling"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Redisplay scrolls text automatically when needed."
-msgstr ""
+msgstr "必要なときテキストをスクロールして再表示する。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:282 display.texi.orig:283
 #, no-wrap
 msgid "Horizontal Scrolling"
-msgstr ""
+msgstr "Horizontal Scrolling"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Moving text left and right in a window."
-msgstr ""
+msgstr "ウィンドウの左右にテキストを移動させる。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:353 display.texi.orig:354
 #, no-wrap
 msgid "Narrowing"
-msgstr ""
+msgstr "Narrowing"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Restricting display and editing to a portion of the buffer."
-msgstr ""
+msgstr "表示を制限してバッファーの一部を編集する。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:419 display.texi.orig:420
 #, no-wrap
 msgid "View Mode"
-msgstr ""
+msgstr "View Mode"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Viewing read-only buffers."
-msgstr ""
+msgstr "読み取り専用バッファーの表示。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:449 display.texi.orig:450
 #, no-wrap
 msgid "Follow Mode"
-msgstr ""
+msgstr "Follow Mode"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Follow mode lets two windows scroll as one."
-msgstr ""
+msgstr "Followモードで2つのウィンドウを1つとしてスクロールさせる。"
 
 #. type: node
 #: display.texi.orig:40 display.texi.orig:471
 #, no-wrap
 msgid "Faces"
-msgstr ""
+msgstr "Faces"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "How to change the display style using faces."
-msgstr ""
+msgstr "フェイスを使って表示スタイルを変更する方法。"
 
 #. type: node
 #: display.texi.orig:40 display.texi.orig:531
 #, no-wrap
 msgid "Colors"
-msgstr ""
+msgstr "Colors"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Specifying colors for faces."
-msgstr ""
+msgstr "フェイスのカラーを指定する。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:579 display.texi.orig:580
 #, no-wrap
 msgid "Standard Faces"
-msgstr ""
+msgstr "Standard Faces"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "The main predefined faces."
-msgstr ""
+msgstr "主要な既定のフェイス。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:738 display.texi.orig:739
 #, no-wrap
 msgid "Text Scale"
-msgstr ""
+msgstr "Text Scale"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Increasing or decreasing text size in a buffer."
-msgstr ""
+msgstr "バッファーのテキストサイズの拡大と縮小。"
 
 #. type: node
 #: display.texi.orig:40 display.texi.orig:783
 #, no-wrap
 msgid "Font Lock"
-msgstr ""
+msgstr "Font Lock"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Minor mode for syntactic highlighting using faces."
-msgstr ""
+msgstr "フェイスを使って文法をハイライトするマイナーモード。"
 
 #. type: node
 #: display.texi.orig:40 display.texi.orig:901
 #, no-wrap
 msgid "Highlight Interactively"
-msgstr ""
+msgstr "Highlight Interactively"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Tell Emacs what text to highlight."
-msgstr ""
+msgstr "Emacsにハイライトするテキストを指示する。"
 
 #. type: node
 #: display.texi.orig:40 display.texi.orig:1043
 #, no-wrap
 msgid "Fringes"
-msgstr ""
+msgstr "Fringes"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Enabling or disabling window fringes."
-msgstr ""
+msgstr "ウィンドウフリンジの有効と無効。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:1085 display.texi.orig:1086
 #, no-wrap
 msgid "Displaying Boundaries"
-msgstr ""
+msgstr "Displaying Boundaries"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Displaying top and bottom of the buffer."
-msgstr ""
+msgstr "バッファーの先頭と最後を表示する。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:1114 display.texi.orig:1115
 #, no-wrap
 msgid "Useless Whitespace"
-msgstr ""
+msgstr "Useless Whitespace"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Showing possibly spurious trailing whitespace."
-msgstr ""
+msgstr "行末の不要な空白文字の表示。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:1210 display.texi.orig:1211
 #, no-wrap
 msgid "Selective Display"
-msgstr ""
+msgstr "Selective Display"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Hiding lines with lots of indentation."
-msgstr ""
+msgstr "インデントの大きな行を隠す。"
 
 #. type: node
 #: display.texi.orig:40 display.texi.orig:1248
 #, no-wrap
 msgid "Optional Mode Line"
-msgstr ""
+msgstr "Optional Mode Line"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Optional mode line display features."
-msgstr ""
+msgstr "モードラインの表示機能のオプション。"
 
 #. type: node
 #: display.texi.orig:40 display.texi.orig:1391
 #, no-wrap
 msgid "Text Display"
-msgstr ""
+msgstr "Text Display"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "How text characters are normally displayed."
-msgstr ""
+msgstr "テキスト文字が通常表示される方法。"
 
 #. type: node
 #: display.texi.orig:40 display.texi.orig:1467
 #, no-wrap
 msgid "Cursor Display"
-msgstr ""
+msgstr "Cursor Display"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Features for displaying the cursor."
-msgstr ""
+msgstr "カーソル表示の機能。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:1545 display.texi.orig:1546
 #, no-wrap
 msgid "Line Truncation"
-msgstr ""
+msgstr "Line Truncation"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid ""
 "Truncating lines to fit the screen width instead of continuing them to "
 "multiple screen lines."
-msgstr ""
+msgstr "複数のスクリーン行で継続表示させずにスクリーン幅に行を切り詰める。"
 
 #. type: section
 #: display.texi.orig:40 display.texi.orig:1575 display.texi.orig:1576
 #, no-wrap
 msgid "Visual Line Mode"
-msgstr ""
+msgstr "Visual Line Mode"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Word wrap and screen line-based editing."
-msgstr ""
+msgstr "単語の折り返しとスクリーン行にもとづく編集。"
 
 #. type: node
 #: display.texi.orig:40 display.texi.orig:1624
 #, no-wrap
 msgid "Display Custom"
-msgstr ""
+msgstr "Display Custom"
 
 #. type: menuentry
 #: display.texi.orig:40
 msgid "Information on variables for customizing display."
-msgstr ""
+msgstr "ディスプレーをカスタマイズする変数の情報。"
 
 #. type: cindex
 #: display.texi.orig:44
 #, no-wrap
 msgid "scrolling"
-msgstr ""
+msgstr "scrolling"
 
 #. type: Plain text
 #: display.texi.orig:49
@@ -304,7 +303,7 @@ msgid ""
 "If a window is too small to display all the text in its buffer, it displays "
 "only a portion of it.  @dfn{Scrolling} commands change which portion of the "
 "buffer is displayed."
-msgstr ""
+msgstr "ウィンドウがバッファーのすべてのテキストを表示するには小さい場合、その一部だけが表示されます。@dfn{スクロール}コマンドは、バッファーで表示される部分を変更します。"
 
 #. type: Plain text
 #: display.texi.orig:55
@@ -313,7 +312,7 @@ msgid ""
 "in the window; equivalently, it moves the buffer text upwards relative to "
 "the window.  Scrolling ``backward'' or ``down'' displays an earlier portion "
 "of the buffer, and moves the text downwards relative to the window."
-msgstr ""
+msgstr "``前方(forward)''または``上(up)''へのスクロールは、ウィンドウに表示される部分を先に進めます。これはウィンドウに表示されるバッファーのテキストを、上に移動させるのと同じです。``後方(backward)''または``下(down)''へのスクロールは、ウィンドウに表示される部分を前に戻します。これはウィンドウに表示されるバッファーのテキストを下に移動させます。"
 
 #. type: Plain text
 #: display.texi.orig:62
@@ -324,7 +323,7 @@ msgid ""
 "meaning of ``scrolling up'' and ``scrolling down'' became widespread.  "
 "Hence, the strange result that @key{PageDown} scrolls ``up'' in the Emacs "
 "sense."
-msgstr ""
+msgstr "Emacsでの``up''と``down''は、ウィンドウでテキストが移動する方向に基づいており、テキストにたいしてウィンドウが移動する方向では@emph{ありません}。この用語は現在の``scrolling up''や``scrolling down''が広まる前に、Emacsで採用されました。そのため@key{PageDown}は、Emacs的には``上(up)''にスクロールするという、奇妙な結果となりました。"
 
 #. type: Plain text
 #: display.texi.orig:67
@@ -333,65 +332,65 @@ msgid ""
 "move point past the bottom or top of the window, scrolling occurs "
 "automatically to bring it back onscreen (@pxref{Auto Scrolling}).  You can "
 "also scroll explicitly with these commands:"
-msgstr ""
+msgstr "ウィンドウに表示されているバッファー部分には、常にポイントが含まれています。もしウィンドウの下端か上端を越えてポイントを移動させると、ポイントを画面に表示させるために自動的にスクロールが発生します(@ref{Auto Scrolling}を参照してください)。以下のコマンドで明示的にスクロールができます:"
 
 #. type: kindex
 #: display.texi.orig:69 display.texi.orig:79
 #, no-wrap
 msgid "C-v"
-msgstr ""
+msgstr "C-v"
 
 #. type: kindex
 #: display.texi.orig:70 display.texi.orig:81
 #, no-wrap
 msgid "next"
-msgstr ""
+msgstr "next"
 
 #. type: kindex
 #: display.texi.orig:71 display.texi.orig:83
 #, no-wrap
 msgid "PageDown"
-msgstr ""
+msgstr "PageDown"
 
 #. type: table
 #: display.texi.orig:73
 msgid "Scroll forward by nearly a full window (@code{scroll-up-command})."
-msgstr ""
+msgstr "ウィンドウのほぼ全画面分、前方にスクロールします(@code{scroll-up-command})。"
 
 #. type: kindex
 #: display.texi.orig:73 display.texi.orig:80
 #, no-wrap
 msgid "M-v"
-msgstr ""
+msgstr "M-v"
 
 #. type: kindex
 #: display.texi.orig:74 display.texi.orig:82
 #, no-wrap
 msgid "prior"
-msgstr ""
+msgstr "prior"
 
 #. type: kindex
 #: display.texi.orig:75 display.texi.orig:84
 #, no-wrap
 msgid "PageUp"
-msgstr ""
+msgstr "PageUp"
 
 #. type: table
 #: display.texi.orig:77
 msgid "Scroll backward (@code{scroll-down-command})."
-msgstr ""
+msgstr "後方にスクロールします(@code{scroll-down-command})。"
 
 #. type: findex
 #: display.texi.orig:85
 #, no-wrap
 msgid "scroll-up-command"
-msgstr ""
+msgstr "scroll-up-command"
 
 #. type: findex
 #: display.texi.orig:86
 #, no-wrap
 msgid "scroll-down-command"
-msgstr ""
+msgstr "scroll-down-command"
 
 #. type: Plain text
 #: display.texi.orig:93
@@ -402,20 +401,20 @@ msgid ""
 "visible.  If point was in the text that scrolled off the top, it ends up on "
 "the window's new topmost line.  The @key{next} (or @key{PageDown}) key is "
 "equivalent to @kbd{C-v}."
-msgstr ""
+msgstr "@kbd{C-v} (@code{scroll-up-command})は、ウィンドウ全体の高さに近い量、前方にスクロールします。これにより下端の2行が上端になるようスクロールして、それに続く表示されていなかった行を表示します。ポイントが上端より上になってしまう場合、ウィンドウの新たな上端の行に移動します。The @key{next}(または@key{PageDown})は、@kbd{C-v}と同じです。"
 
 #. type: Plain text
 #: display.texi.orig:97
 msgid ""
 "@kbd{M-v} (@code{scroll-down-command}) scrolls backward in a similar way.  "
 "The @key{prior} (or @key{PageUp}) key is equivalent to @kbd{M-v}."
-msgstr ""
+msgstr "@kbd{M-v} (@code{scroll-down-command})は、同様の方法で後方にスクロールします。@key{prior}(または@key{PageUp})は、@kbd{M-v}と同じです。"
 
 #. type: vindex
 #: display.texi.orig:98
 #, no-wrap
 msgid "next-screen-context-lines"
-msgstr ""
+msgstr "next-screen-context-lines"
 
 #. type: Plain text
 #: display.texi.orig:105
@@ -426,36 +425,35 @@ msgid ""
 "scroll by @var{n} lines; Emacs attempts to leave point unchanged, so that "
 "the text and point move up or down together.  @kbd{C-v} with a negative "
 "argument is like @kbd{M-v} and vice versa."
-msgstr ""
+msgstr "スクロールコマンドでオーバーラップして表示される行数は、変数@code{next-screen-context-lines}で制御され、デフォルトは2です。数引数@var{n}を与えたときは、@var{n}行スクロールします。Emacsはポイントを変更しないよう試みるので、テキストとポイントは一緒に上または下に動きます。@kbd{C-v}に負の引数を与えると、@kbd{M-v}のように反対方向へスクロールします。"
 
 #. type: vindex
 #: display.texi.orig:106
 #, no-wrap
 msgid "scroll-error-top-bottom"
-msgstr ""
+msgstr "scroll-error-top-bottom"
 
 #. type: Plain text
 #: display.texi.orig:113
 msgid ""
 "By default, these commands signal an error (by beeping or flashing the "
 "screen) if no more scrolling is possible, because the window has reached the "
-"beginning or end of the buffer.  If you change the variable "
-"@code{scroll-error-top-bottom} to @code{t}, the command moves point to the "
-"farthest possible position.  If point is already there, the command signals "
-"an error."
-msgstr ""
+"beginning or end of the buffer.  If you change the variable @code{scroll-"
+"error-top-bottom} to @code{t}, the command moves point to the farthest "
+"possible position.  If point is already there, the command signals an error."
+msgstr "デフォルトでは、ウィンドウがバッファーの先頭または最後に到達していて、これ以上スクロールできない場合、これらのコマンドは(beep音をならしたり画面をフラッシュして)エラーをシグナルします。変数@code{scroll-error-top-bottom}を@code{t}に変更すると、コマンドは可能な限り、つまりバッファーの先頭の文字または最後の文字にポイントを移動します。ポイントがすでにそこにあるときは、エラーをシグナルします。"
 
 #. type: vindex
 #: display.texi.orig:114
 #, no-wrap
 msgid "scroll-preserve-screen-position"
-msgstr ""
+msgstr "scroll-preserve-screen-position"
 
 #. type: cindex
 #: display.texi.orig:115
 #, no-wrap
 msgid "@code{scroll-command} property"
-msgstr ""
+msgstr "@code{scroll-command} property"
 
 #. type: Plain text
 #: display.texi.orig:129
@@ -472,31 +470,31 @@ msgid ""
 "as scrolling with the mouse wheel (@pxref{Mouse Commands}); in general, it "
 "affects any command that has a non-@code{nil} @code{scroll-command} "
 "property.  @xref{Property Lists,,, elisp, The Emacs Lisp Reference Manual}."
-msgstr ""
+msgstr "スクロールしたとき、ポイントが同じスクリーン位置に留まることを好むユーザーもいます。そうすれば同じスクリーンにスクロールして戻ったとき、ポイントが元の位置にあると便利だからです。この動作は変数@code{scroll-preserve-screen-position}を通じて利用可能です。変数の値が@code{t}のとき、スクロールコマンドによりポイントがウィンドウの外にでるような場合、Emacsはポイントを先頭行または最終行に移動させるのではなく、同じスクリーン位置にポイントを調整して、カーソルを維持します。その他の非@code{nil}値の場合、Emacsはスクロールコマンドによりポイントがウィンドウに残っている場合にも、この方法でポイントを調整します。この変数はこのセクションで説明するすべてのスクロールコマンド、同様にマウスホイールによるスクロール(@ref{Mouse Commands}を参照してください)に影響を与えます。一般的にいうと、この変数は@code{scroll-command}プロパティが非@code{nil}のコマンドに影響を及ぼします。@ref{Property Lists,,, elisp, The Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: vindex
 #: display.texi.orig:130
 #, no-wrap
 msgid "scroll-up"
-msgstr ""
+msgstr "scroll-up"
 
 #. type: vindex
 #: display.texi.orig:131
 #, no-wrap
 msgid "scroll-down"
-msgstr ""
+msgstr "scroll-down"
 
 #. type: findex
 #: display.texi.orig:132
 #, no-wrap
 msgid "scroll-up-line"
-msgstr ""
+msgstr "scroll-up-line"
 
 #. type: findex
 #: display.texi.orig:133
 #, no-wrap
 msgid "scroll-down-line"
-msgstr ""
+msgstr "scroll-down-line"
 
 #. type: Plain text
 #: display.texi.orig:142
@@ -504,17 +502,17 @@ msgid ""
 "The commands @kbd{M-x scroll-up} and @kbd{M-x scroll-down} behave similarly "
 "to @code{scroll-up-command} and @code{scroll-down-command}, except they do "
 "not obey @code{scroll-error-top-bottom}.  Prior to Emacs 24, these were the "
-"default commands for scrolling up and down.  The commands @kbd{M-x "
-"scroll-up-line} and @kbd{M-x scroll-down-line} scroll the current window by "
-"one line at a time.  If you intend to use any of these commands, you might "
-"want to give them key bindings (@pxref{Init Rebinding})."
-msgstr ""
+"default commands for scrolling up and down.  The commands @kbd{M-x scroll-up-"
+"line} and @kbd{M-x scroll-down-line} scroll the current window by one line "
+"at a time.  If you intend to use any of these commands, you might want to "
+"give them key bindings (@pxref{Init Rebinding})."
+msgstr "コマンド@kbd{M-x scroll-up}および@kbd{M-x scroll-down}は、@code{scroll-up-command}および@code{scroll-down-command}と同様に動作しますが、@code{scroll-error-top-bottom}を考慮しません。これらのコマンドは、Emacs 24以前ではスクロールアップおよびスクロールダウンのためのデフォルトでした。コマンド@kbd{M-x scroll-up-line}および@kbd{M-x scroll-down-line}は、現在のウィンドウを1行スクロールさせます。もしこれらのコマンドを使う場合は、それにキーバインドを割り当てたくなるでしょう(@ref{Init Rebinding}を参照してください)。"
 
 #. type: kindex
 #: display.texi.orig:147 display.texi.orig:162
 #, no-wrap
 msgid "C-l"
-msgstr ""
+msgstr "C-l"
 
 #. type: table
 #: display.texi.orig:152
@@ -523,39 +521,39 @@ msgid ""
 "on subsequent consecutive invocations, make the current line the top line, "
 "the bottom line, and so on in cyclic order.  Possibly redisplay the screen "
 "too (@code{recenter-top-bottom})."
-msgstr ""
+msgstr "選択されているウィンドウで、現在行が中央になるようスクロールします。連続して呼び出すと、次は現在行が上端になり、その次は現在行が下端に、という順番で循環します。画面の再描画が行われる可能性があります(@code{recenter-top-bottom})。"
 
 #. type: item
 #: display.texi.orig:153
 #, no-wrap
 msgid "M-x recenter"
-msgstr ""
+msgstr "M-x recenter"
 
 #. type: table
 #: display.texi.orig:156
 msgid ""
 "Scroll the selected window so the current line is the center-most text "
 "line.  Possibly redisplay the screen too."
-msgstr ""
+msgstr "選択されているウィンドウで、現在行が中央になるようにスクロールします。画面の再描画が行われる可能性があります。"
 
 #. type: kindex
 #: display.texi.orig:157 display.texi.orig:206
 #, no-wrap
 msgid "C-M-l"
-msgstr ""
+msgstr "C-M-l"
 
 #. type: table
 #: display.texi.orig:160
 msgid ""
 "Scroll heuristically to bring useful information onto the screen "
 "(@code{reposition-window})."
-msgstr ""
+msgstr "有用な情報が表示されるよう、発見的な手法でスクロールします(@code{reposition-window})。"
 
 #. type: findex
 #: display.texi.orig:163
 #, no-wrap
 msgid "recenter-top-bottom"
-msgstr ""
+msgstr "recenter-top-bottom"
 
 #. type: Plain text
 #: display.texi.orig:168
@@ -563,7 +561,7 @@ msgid ""
 "The @kbd{C-l} (@code{recenter-top-bottom}) command @dfn{recenters} the "
 "selected window, scrolling it so that the current screen line is exactly in "
 "the center of the window, or as close to the center as possible."
-msgstr ""
+msgstr "@kbd{C-l} (@code{recenter-top-bottom})コマンドは、選択されたウィンドウにたいして@dfn{センタリング(recenters)}をします。これにより現在のスクリーン行がウィンドウの中央、または中央に一番近い行になります。"
 
 #. type: Plain text
 #: display.texi.orig:173
@@ -572,13 +570,13 @@ msgid ""
 "point is on the topmost screen line.  Typing a third @kbd{C-l} scrolls the "
 "window so that point is on the bottom-most screen line.  Each successive "
 "@kbd{C-l} cycles through these three positions."
-msgstr ""
+msgstr "(@kbd{C-l C-l})のように@kbd{C-l}を2回タイプすると、ポイントのある行が上端になるようにスクロールします。@kbd{C-l}を3回タイプするとポイントのある行が下端になるようにスクロールします。連続して@kbd{C-l}をタイプすることにより、上記の3つの位置を循環してスクロールできます。"
 
 #. type: vindex
 #: display.texi.orig:174
 #, no-wrap
 msgid "recenter-positions"
-msgstr ""
+msgstr "recenter-positions"
 
 #. type: Plain text
 #: display.texi.orig:186
@@ -589,11 +587,11 @@ msgid ""
 "to move the line to the specified screen line, while a floating-point number "
 "between 0.0 and 1.0 specifies a percentage of the screen space from the top "
 "of the window.  The default, @code{(middle top bottom)}, is the cycling "
-"order described above.  Furthermore, if you change the variable "
-"@code{scroll-margin} to a non-zero value @var{n}, @kbd{C-l} always leaves at "
-"least @var{n} screen lines between point and the top or bottom of the window "
+"order described above.  Furthermore, if you change the variable @code{scroll-"
+"margin} to a non-zero value @var{n}, @kbd{C-l} always leaves at least "
+"@var{n} screen lines between point and the top or bottom of the window "
 "(@pxref{Auto Scrolling})."
-msgstr ""
+msgstr "リスト変数@code{recenter-positions}をカスタマイズすることにより、循環する順序を変更できます。リスト要素にはシンボル@code{top}、@code{middle}、@code{bottom}または数値を指定します。数値に整数を指定すると、現在行が指定したスクリーン行になるようスクロールします。数値に0.0から1.0の浮動小数点数は、ウィンドウの上端から現在行までを割合で指定します。デフォルトは@code{(middle top bottom)}で、これは上述した循環順序です。さらに変数@code{scroll-margin}を、0以外の値@var{n}に変更すると、@kbd{C-l}は常にウィンドウの上端または下端からスクリーン行で、@var{n}行を残してスクロールします(@ref{Auto Scrolling}を参照してください)。"
 
 #. type: Plain text
 #: display.texi.orig:194
@@ -602,16 +600,15 @@ msgid ""
 "@kbd{C-u C-l}, simply recenters point.  A positive argument @var{n} puts "
 "point @var{n} lines down from the top of the window.  An argument of zero "
 "puts point on the topmost line.  A negative argument @var{-n} puts point "
-"@var{n} lines from the bottom of the window.  When given an argument, "
-"@kbd{C-l} does not clear the screen or cycle through different screen "
-"positions."
-msgstr ""
+"@var{n} lines from the bottom of the window.  When given an argument, @kbd{C-"
+"l} does not clear the screen or cycle through different screen positions."
+msgstr "@kbd{C-l}にプレフィクス引数を指定することもできます。@kbd{C-u C-l}のようにプレフィクス引数だけを指定すると、単にポイントのある行を中央にします。正の引数@var{n}は、ポイントのある行がウィンドウの上端から@var{n}行目になるようにスクロールします。0を指定すると、ポイントのある行が上端になるようにスクロールします。負の引数@var{-n}は、ポイントのある行がウィンドウの下端から@var{n}行目になるようにスクロールします。引数を与えたときは、@kbd{C-l}は画面をクリアーせず、異なるスクリーン位置への循環もしません。"
 
 #. type: vindex
 #: display.texi.orig:195
 #, no-wrap
 msgid "recenter-redisplay"
-msgstr ""
+msgstr "recenter-redisplay"
 
 #. type: Plain text
 #: display.texi.orig:201
@@ -621,26 +618,26 @@ msgid ""
 "value @code{tty} (the default) says to do this on text-terminal frames "
 "only.  Redisplaying is useful in case the screen becomes garbled for any "
 "reason (@pxref{Screen Garbled})."
-msgstr ""
+msgstr "変数@code{recenter-redisplay}が非@code{nil}値の場合、@kbd{C-l}はスクリーンのクリアーと再描画を行います。特別な値@code{tty}(デフォルト)は、これをテキスト端末上のフレームだけに限定します。再描画はスクリーンが何らかの理由により文字化けしてしまったときなどに便利です(@ref{Screen Garbled}を参照してください)。"
 
 #. type: findex
 #: display.texi.orig:202
 #, no-wrap
 msgid "recenter"
-msgstr ""
+msgstr "recenter"
 
 #. type: Plain text
 #: display.texi.orig:205
 msgid ""
-"The more primitive command @kbd{M-x recenter} behaves like "
-"@code{recenter-top-bottom}, but does not cycle among screen positions."
-msgstr ""
+"The more primitive command @kbd{M-x recenter} behaves like @code{recenter-"
+"top-bottom}, but does not cycle among screen positions."
+msgstr "より原始的なコマンド@kbd{M-x recenter}は、@code{recenter-top-bottom}と同じように振る舞いますが、スクリーン位置を循環しません。"
 
 #. type: findex
 #: display.texi.orig:207
 #, no-wrap
 msgid "reposition-window"
-msgstr ""
+msgstr "reposition-window"
 
 #. type: Plain text
 #: display.texi.orig:212
@@ -649,19 +646,19 @@ msgid ""
 "heuristically in a way designed to get useful information onto the screen.  "
 "For example, in a Lisp file, this command tries to get the entire current "
 "defun onto the screen if possible."
-msgstr ""
+msgstr "@kbd{C-M-l} (@code{reposition-window})は、有用な情報がスクリーンに表示されるように、現在のウィンドウを発見的な手法によりスクロールします。たとえばLispファイルの場合、このコマンドは可能な限り現在のdefun全体がスクリーン上に表示されるよう試みます。"
 
 #. type: section
 #: display.texi.orig:214
 #, no-wrap
 msgid "Automatic Scrolling"
-msgstr ""
+msgstr "Automatic Scrolling"
 
 #. type: cindex
 #: display.texi.orig:216
 #, no-wrap
 msgid "automatic scrolling"
-msgstr ""
+msgstr "automatic scrolling"
 
 #. type: Plain text
 #: display.texi.orig:221
@@ -669,13 +666,13 @@ msgid ""
 "Emacs performs @dfn{automatic scrolling} when point moves out of the visible "
 "portion of the text.  Normally, automatic scrolling centers point vertically "
 "in the window, but there are several ways to alter this behavior."
-msgstr ""
+msgstr "ポイントが表示されているテキスト部分から外に移動すると、Emacsは@dfn{自動スクロール(automatic scrolling)}の処理を行います。通常自動スクロールは、ウィンドウの垂直方向の中央にポイントをセンタリングしますが、この振る舞いを変えるいくつかの方法があります。"
 
 #. type: vindex
 #: display.texi.orig:222
 #, no-wrap
 msgid "scroll-conservatively"
-msgstr ""
+msgstr "scroll-conservatively"
 
 #. type: Plain text
 #: display.texi.orig:234
@@ -690,13 +687,13 @@ msgid ""
 "into view, either at the top or bottom of the window depending on the scroll "
 "direction.  By default, @code{scroll-conservatively} is@tie{}0, which means "
 "to always center point in the window."
-msgstr ""
+msgstr "@code{scroll-conservatively}に小さい数字@var{n}をセットすると、ポイントが少し(@var{n}行以下)スクリーンの外に出たら、Emacsはポイントがスクリーンに表示されるのに充分なだけスクロールします。これでもしポイントの表示に失敗した場合、Emacsはそのウィンドウの中央にポイント行が表示されるのに充分なだけのスクロールをします。@code{scroll-conservatively}に大きな数字(100より大)も数字をセットすると、どれだけポイントを移動させようと、自動スクロールはポイント行を中央にセンタリングしなくなります。Emacsはポイントが表示されるように常にテキストをスクロールします。ウィンドウの上端または下端かはスクロールの方向に依存します。デフォルトでは@code{scroll-conservatively}は@tie{}0で、これは常にポイント行がウィンドウの中央にセンタリングされることを意味します。"
 
 #. type: vindex
 #: display.texi.orig:235
 #, no-wrap
 msgid "scroll-step"
-msgstr ""
+msgstr "scroll-step"
 
 #. type: Plain text
 #: display.texi.orig:242
@@ -707,25 +704,25 @@ msgid ""
 "number of lines fails to bring point back into view, point is centered "
 "instead.  The default value is zero, which (by default) causes point to "
 "always be centered after scrolling."
-msgstr ""
+msgstr "自動スクロールを制御する他の方法は、変数@code{scroll-step}をカスタマイズすることです。この変数の値はポイントがスクリーンから外れたとき、何行を自動スクロールさせるかを決定します。その行数スクロールしてもポイントが表示されない場合、かわりにポイント行が中央にきます。デフォルト値は0で、スクロール後は常にポイント行が中央にきます。"
 
 #. type: cindex
 #: display.texi.orig:243
 #, no-wrap
 msgid "aggressive scrolling"
-msgstr ""
+msgstr "aggressive scrolling"
 
 #. type: vindex
 #: display.texi.orig:244
 #, no-wrap
 msgid "scroll-up-aggressively"
-msgstr ""
+msgstr "scroll-up-aggressively"
 
 #. type: vindex
 #: display.texi.orig:245
 #, no-wrap
 msgid "scroll-down-aggressively"
-msgstr ""
+msgstr "scroll-down-aggressively"
 
 #. type: Plain text
 #: display.texi.orig:257
@@ -740,7 +737,7 @@ msgid ""
 "from the bottom window edge.  Thus, larger @var{f} means more aggressive "
 "scrolling: more new text is brought into view.  The default value, "
 "@code{nil}, is equivalent to 0.5."
-msgstr ""
+msgstr "自動コントロールを制御する3番目の方法は、変数@code{scroll-up-aggressively}と@code{scroll-down-aggressively}をカスタマイズすることで、これは直接スクロール後のポイントの垂直位置を指定します。@code{scroll-up-aggressively}の値には、@code{nil}(デフォルト)、または0から1までの浮動小数点数@var{f}を指定します。ポイントがウィンドウの下端を越えたとき(たとえば前方にスクロールしたとき)、Emacsはウィンドウの高さとウィンドウの下端からポイント行までの割合が、@var{f}になるようスクロールします。つまり@var{f}を大きくするとより積極的(aggressive)、つまり新しいテキストがより多く表示されることを意味します。デフォルト値@code{nil}は0.5と同じです。"
 
 #. type: Plain text
 #: display.texi.orig:263
@@ -749,7 +746,7 @@ msgid ""
 "bottom window edge (i.e., scrolling backward).  The value specifies how far "
 "point should be from the top margin of the window after scrolling.  Thus, as "
 "with @code{scroll-up-aggressively}, a larger value is more aggressive."
-msgstr ""
+msgstr "同様に@code{scroll-down-aggressively}は、ポイントがウィンドウの上端を越えたとき(たとえば後方にスクロールしたとき)の振る舞いを設定します。値にはスクロール後のウィンドウの上端からポイント行までのマージンを指定します。つまり@code{scroll-up-aggressively}を大きくすると、より積極的になります。"
 
 #. type: Plain text
 #: display.texi.orig:272
@@ -758,16 +755,16 @@ msgid ""
 "and @code{scroll-up-aggressively} / @code{scroll-down-aggressively} control "
 "automatic scrolling in contradictory ways.  Therefore, you should pick no "
 "more than one of these methods to customize automatic scrolling.  In case "
-"you customize multiple variables, the order of priority is: "
-"@code{scroll-conservatively}, then @code{scroll-step}, and finally "
-"@code{scroll-up-aggressively} / @code{scroll-down-aggressively}."
-msgstr ""
+"you customize multiple variables, the order of priority is: @code{scroll-"
+"conservatively}, then @code{scroll-step}, and finally @code{scroll-up-"
+"aggressively} / @code{scroll-down-aggressively}."
+msgstr "変数@code{scroll-conservatively}、@code{scroll-step}、および@code{scroll-up-aggressively}と@code{scroll-down-aggressively}は、互いに矛盾する方法で自動スクロールを制御します。したがって自動スクロールをカスタマイズする場合は、2つ以上の手法を選ぶべきではありません。もし2つ以上の変数をカスタマイズする場合は、@code{scroll-conservatively}、次に@code{scroll-step}、そして最後に@code{scroll-up-aggressively}と@code{scroll-down-aggressively}という優先順でカスタマイズしてください。"
 
 #. type: vindex
 #: display.texi.orig:273
 #, no-wrap
 msgid "scroll-margin"
-msgstr ""
+msgstr "scroll-margin"
 
 #. type: Plain text
 #: display.texi.orig:281
@@ -778,19 +775,19 @@ msgid ""
 "bottom margins).  Its value is a number of screen lines; if point comes "
 "within that many lines of the top or bottom of the window, Emacs performs "
 "automatic scrolling.  By default, @code{scroll-margin} is 0."
-msgstr ""
+msgstr "変数@code{scroll-margin}は(たとえscroll-up-aggressivelyやscroll-down-aggressivelyに、上端または下端からのマージンがウィンドウにたいして占める割合より大きくなるような@var{f}を指定していても)、ポイントがウィンドウの上端または下端にどれだけ近づけるかを制限します。変数の値にはスクリーン行の行数です。もしポイントがウィンドウの上端または下端から指定した行数の位置にくると、Emacsは自動的にスクロールします。デフォルトでは@code{scroll-margin}は0です。"
 
 #. type: cindex
 #: display.texi.orig:284
 #, no-wrap
 msgid "horizontal scrolling"
-msgstr ""
+msgstr "horizontal scrolling"
 
 #. type: vindex
 #: display.texi.orig:286
 #, no-wrap
 msgid "auto-hscroll-mode"
-msgstr ""
+msgstr "auto-hscroll-mode"
 
 #. type: Plain text
 #: display.texi.orig:298
@@ -805,13 +802,13 @@ msgid ""
 "@code{nil}.  Note that when the automatic horizontal scrolling is turned "
 "off, if point moves off the edge of the screen, the cursor disappears to "
 "indicate that.  (On text terminals, the cursor is left at the edge instead.)"
-msgstr ""
+msgstr "@dfn{水平スクロール(Horizontal scrolling)}は、ウィンドウの行を右方向に移動させます。そのため左端の近くのテキストは表示されなくなります。ウィンドウのテキストが水平スクロールされると、テキスト行は折り返されるのではなく、切り詰め(truncated)られます。ウィンドウが切り詰められた行を表示しているとき、ポイントがスクリーンの左端か右端を越えて移動すると、Emacsは自動的に水平スクロールを行います。自動的な水平スクロールを無効にするには、変数@code{auto-hscroll-mode}に@code{nil}をセットしてください。また自動的な水平スクロールがオフになっている場合、ポイントがスクリーンの端を越えると、それを知らせるためにカーソルが表示されなくなることに注意してください(テキスト端末の場合カーソルは端に残されます)。"
 
 #. type: vindex
 #: display.texi.orig:299
 #, no-wrap
 msgid "hscroll-margin"
-msgstr ""
+msgstr "hscroll-margin"
 
 #. type: Plain text
 #: display.texi.orig:305
@@ -820,13 +817,13 @@ msgid ""
 "window's left and right edges before automatic scrolling occurs.  It is "
 "measured in columns.  For example, if the value is 5, then moving point "
 "within 5 columns of an edge causes horizontal scrolling away from that edge."
-msgstr ""
+msgstr "変数@code{hscroll-margin}は、自動的なスクロールが起こる前に、ポイントがウィンドウの左端または右端に、どれだけ近づけるかを制御します。変数の値は列数で指定します。たとえば変数の値が5のときは、端から5列目にポイントが移動すると、水平スクロールが発生します。"
 
 #. type: vindex
 #: display.texi.orig:306
 #, no-wrap
 msgid "hscroll-step"
-msgstr ""
+msgstr "hscroll-step"
 
 #. type: Plain text
 #: display.texi.orig:313
@@ -836,48 +833,48 @@ msgid ""
 "means to center point horizontally within the window.  A positive integer "
 "value specifies the number of columns to scroll by.  A floating-point number "
 "specifies the fraction of the window's width to scroll by."
-msgstr ""
+msgstr "変数@code{hscroll-step}はmポイントが端に近づきすぎたときに、何列スクロールするかを決定します。デフォルト値の0は、ポイントがウィンドウの中央になるようにスクロールされることを意味します。正の整数はスクロールされる列数を指定します。浮動小数点数は、スクロールされる量を、ウィンドウの幅にたいする割合で指定します。"
 
 #. type: Plain text
 #: display.texi.orig:316
 msgid ""
 "You can also perform explicit horizontal scrolling with the following "
 "commands:"
-msgstr ""
+msgstr "以下のコマンドで明示的に水平スクロールすることもできます:"
 
 #. type: kindex
 #: display.texi.orig:318 display.texi.orig:324
 #, no-wrap
 msgid "C-x <"
-msgstr ""
+msgstr "C-x <"
 
 #. type: table
 #: display.texi.orig:320
 msgid "Scroll text in current window to the left (@code{scroll-left})."
-msgstr ""
+msgstr "現在のウィンドウのテキストを左にスクロールします(@code{scroll-left})。"
 
 #. type: kindex
 #: display.texi.orig:320 display.texi.orig:325
 #, no-wrap
 msgid "C-x >"
-msgstr ""
+msgstr "C-x >"
 
 #. type: table
 #: display.texi.orig:322
 msgid "Scroll to the right (@code{scroll-right})."
-msgstr ""
+msgstr "右にスクロールします(@code{scroll-right})。"
 
 #. type: findex
 #: display.texi.orig:326
 #, no-wrap
 msgid "scroll-left"
-msgstr ""
+msgstr "scroll-left"
 
 #. type: findex
 #: display.texi.orig:327
 #, no-wrap
 msgid "scroll-right"
-msgstr ""
+msgstr "scroll-right"
 
 #. type: Plain text
 #: display.texi.orig:333
@@ -886,7 +883,7 @@ msgid ""
 "left by the full width of the window, less two columns.  (In other words, "
 "the text in the window moves left relative to the window.)  With a numeric "
 "argument @var{n}, it scrolls by @var{n} columns."
-msgstr ""
+msgstr "@kbd{C-x <} (@code{scroll-left})は選択された、ウィンドウをウィンドウ幅から2列少ない列数、左にスクロール(いいかえればウィンドウのテキストは左に移動)します。数引数@var{n}を指定すると、@var{n}列スクロールします。"
 
 #. type: Plain text
 #: display.texi.orig:340
@@ -896,7 +893,7 @@ msgid ""
 "point moves back to the displayed portion of the text.  This is independent "
 "of the current setting of @code{auto-hscroll-mode}, which, for text scrolled "
 "to the left, only affects the behavior at the right edge of the window."
-msgstr ""
+msgstr "テキストが左にスクロールされて、ポイントがウィンドウの左端を越えると、ポイントが表示されているテキストに戻るまで、カーソルはフリーズします。これは@code{auto-hscroll-mode}の設定とは独立しています(これはテキストを左にスクロールするときのウィンドウの右端での振る舞いだけに影響します)。"
 
 #. type: Plain text
 #: display.texi.orig:347
@@ -907,7 +904,7 @@ msgid ""
 "do so has no effect.  This means that you don't have to calculate the "
 "argument precisely for @w{@kbd{C-x >}}; any sufficiently large argument will "
 "restore the normal display."
-msgstr ""
+msgstr "@kbd{C-x >} (@code{scroll-right})は、同様に右にスクロールします。ウィンドウが通常の表示(行の先頭がウィンドウの左端に表示されている状態)のときは、それ以上スクロールできないので何も起こりません。これは@w{@kbd{C-x >}}の引数を正確に計算する必要がないことを意味します。充分に大きな引数を与えれば、通常の表示が復元されます。"
 
 #. type: Plain text
 #: display.texi.orig:352
@@ -916,31 +913,31 @@ msgid ""
 "bound for automatic horizontal scrolling.  Automatic scrolling will continue "
 "to scroll the window, but never farther to the right than the amount you "
 "previously set by @code{scroll-left}."
-msgstr ""
+msgstr "これらのコマンドでウィンドウを水平方向にスクロールすると、自動水平スクロールの下限値がセットされます。自動スクロールはウィンドウのスクロールを続けますが、前に@code{scroll-left}にセットされた値を越えて右にスクロールできなくなります。"
 
 #. type: cindex
 #: display.texi.orig:355
 #, no-wrap
 msgid "widening"
-msgstr ""
+msgstr "widening"
 
 #. type: cindex
 #: display.texi.orig:356
 #, no-wrap
 msgid "restriction"
-msgstr ""
+msgstr "restriction"
 
 #. type: cindex
 #: display.texi.orig:357
 #, no-wrap
 msgid "narrowing"
-msgstr ""
+msgstr "narrowing"
 
 #. type: cindex
 #: display.texi.orig:358
 #, no-wrap
 msgid "accessible portion"
-msgstr ""
+msgstr "accessible portion"
 
 #. type: Plain text
 #: display.texi.orig:366
@@ -951,7 +948,7 @@ msgid ""
 "the entire buffer once again accessible, is called @dfn{widening}.  The "
 "bounds of narrowing in effect in a buffer are called the buffer's "
 "@dfn{restriction}."
-msgstr ""
+msgstr "@dfn{ナローイング(Narrowing)}とはバッファーのある範囲にフォーカスを置き、他の部分を一時的にアクセス不能にすることを意味します。扱うことのできる範囲のことを、@dfn{アクセス可能範囲(accessible portion)}と呼びます。ナローイングを取り消すと。バッファー全体に再びアクセスできるようになります。これを@dfn{ワイドニング(widening)}と呼びます。バッファーにたいして、ナローイングにより境界を設けることを、バッファーの@dfn{制限(restriction)}と呼びます。"
 
 #. type: Plain text
 #: display.texi.orig:370
@@ -959,51 +956,51 @@ msgid ""
 "Narrowing can make it easier to concentrate on a single subroutine or "
 "paragraph by eliminating clutter.  It can also be used to limit the range of "
 "operation of a replace command or repeating keyboard macro."
-msgstr ""
+msgstr "ナローイングにより、他の部分に気を取られずに、1つのサブルーチンやパラグラフに集中することが容易になります。ナローイングは、置換コマンドやキーボードマクロの繰り返しにより操作される範囲を制限するためにも使われます。"
 
 #. type: kindex
 #: display.texi.orig:372 display.texi.orig:389
 #, no-wrap
 msgid "C-x n n"
-msgstr ""
+msgstr "C-x n n"
 
 #. type: table
 #: display.texi.orig:374
 msgid "Narrow down to between point and mark (@code{narrow-to-region})."
-msgstr ""
+msgstr "ポイントとマークの間にナローイングします(@code{narrow-to-region})。"
 
 #. type: kindex
 #: display.texi.orig:374 display.texi.orig:405
 #, no-wrap
 msgid "C-x n w"
-msgstr ""
+msgstr "C-x n w"
 
 #. type: table
 #: display.texi.orig:376
 msgid "Widen to make the entire buffer accessible again (@code{widen})."
-msgstr ""
+msgstr "バッファー全体をワイドニングして、再びアクセス可能にします(@code{widen})。"
 
 #. type: kindex
 #: display.texi.orig:376 display.texi.orig:396
 #, no-wrap
 msgid "C-x n p"
-msgstr ""
+msgstr "C-x n p"
 
 #. type: table
 #: display.texi.orig:378
 msgid "Narrow down to the current page (@code{narrow-to-page})."
-msgstr ""
+msgstr "現在のページにナローイングします(@code{narrow-to-page})。"
 
 #. type: kindex
 #: display.texi.orig:378 display.texi.orig:398
 #, no-wrap
 msgid "C-x n d"
-msgstr ""
+msgstr "C-x n d"
 
 #. type: table
 #: display.texi.orig:380
 msgid "Narrow down to the current defun (@code{narrow-to-defun})."
-msgstr ""
+msgstr "現在のdefunにナローイングします(@code{narrow-to-defun})。"
 
 #. type: Plain text
 #: display.texi.orig:388
@@ -1014,13 +1011,13 @@ msgid ""
 "way.  However, it is not gone, and if you save the file all the inaccessible "
 "text will be saved.  The word @samp{Narrow} appears in the mode line "
 "whenever narrowing is in effect."
-msgstr ""
+msgstr "バッファーをナローイングしているときは、表示されている範囲がすべてです。残りの部分を見ることはできず、移動もできず(移動コマンドによりアクセス可能範囲の外に移動することはできません)、変更もできません。しかし残りの部分がなくなったわけではないので、ファイルを保存するとアクセス不能範囲のテキストもすべて保存されます。ナローイングが有効なときは、モードラインに@samp{Narrow}という単語が表示されます。"
 
 #. type: findex
 #: display.texi.orig:390
 #, no-wrap
 msgid "narrow-to-region"
-msgstr ""
+msgstr "narrow-to-region"
 
 #. type: Plain text
 #: display.texi.orig:395
@@ -1029,19 +1026,19 @@ msgid ""
 "It sets the current buffer's restrictions so that the text in the current "
 "region remains accessible, but all text before the region or after the "
 "region is inaccessible.  Point and mark do not change."
-msgstr ""
+msgstr "主要なナローイングコマンドは、@kbd{C-x n n} (@code{narrow-to-region})です。これは現在のバッファーを制限するので、現在のリージョンだけがアクセス可能になり、リージョンの前後のすべてのテキストはアクセス不能になります。ポイントとマークは変化しません。"
 
 #. type: findex
 #: display.texi.orig:397
 #, no-wrap
 msgid "narrow-to-page"
-msgstr ""
+msgstr "narrow-to-page"
 
 #. type: findex
 #: display.texi.orig:399
 #, no-wrap
 msgid "narrow-to-defun"
-msgstr ""
+msgstr "narrow-to-defun"
 
 #. type: Plain text
 #: display.texi.orig:404
@@ -1050,27 +1047,27 @@ msgid ""
 "the current page.  @xref{Pages}, for the definition of a page.  @kbd{C-x n "
 "d} (@code{narrow-to-defun}) narrows down to the defun containing point "
 "(@pxref{Defuns})."
-msgstr ""
+msgstr "かわりに@kbd{C-x n p} (@code{narrow-to-page})を使うと、現在のページにナローイングされます。ページの定義については、@ref{Pages}を参照してください。@kbd{C-x n d} (@code{narrow-to-defun})は、ポイントを含むdefunにナローイングします(@ref{Defuns}を参照してください)。"
 
 #. type: findex
 #: display.texi.orig:406
 #, no-wrap
 msgid "widen"
-msgstr ""
+msgstr "widen"
 
 #. type: Plain text
 #: display.texi.orig:409
 msgid ""
 "The way to cancel narrowing is to widen with @kbd{C-x n w} (@code{widen}).  "
 "This makes all text in the buffer accessible again."
-msgstr ""
+msgstr "ナローイングを取り消す方法は、@kbd{C-x n w} (@code{widen})です。これにより再びバッファーのテキストすべてにアクセス可能になります。"
 
 #. type: Plain text
 #: display.texi.orig:412
 msgid ""
 "You can get information on what part of the buffer you are narrowed down to "
 "using the @kbd{C-x =} command.  @xref{Position Info}."
-msgstr ""
+msgstr "バッファーのどの範囲にナローイングされているかは、@kbd{C-x =}コマンドを使って情報を得ることができます。@ref{Position Info}を参照してください。"
 
 #. type: Plain text
 #: display.texi.orig:418
@@ -1080,37 +1077,37 @@ msgid ""
 "this command asks for confirmation and gives you the option of enabling it; "
 "if you enable the command, confirmation will no longer be required for it.  "
 "@xref{Disabling}."
-msgstr ""
+msgstr "ナローイングは、それを理解していないユーザーを容易に混乱させるので、通常@code{narrow-to-region}コマンドは無効になっています。このコマンドを使おうとすると、Emacsは確認を求め、有効にするオプションを提供します。このコマンドを有効にすると、それ以降は確認を求められなくなります。@ref{Disabling}を参照してください。"
 
 #. type: cindex
 #: display.texi.orig:421
 #, no-wrap
 msgid "View mode"
-msgstr ""
+msgstr "View mode"
 
 #. type: cindex
 #: display.texi.orig:422
 #, no-wrap
 msgid "mode, View"
-msgstr ""
+msgstr "mode, View"
 
 #. type: kindex
 #: display.texi.orig:424
 #, no-wrap
 msgid "s @r{(View mode)}"
-msgstr ""
+msgstr "s @r{(View mode)}"
 
 #. type: kindex
 #: display.texi.orig:425
 #, no-wrap
 msgid "SPC @r{(View mode)}"
-msgstr ""
+msgstr "SPC @r{(View mode)}"
 
 #. type: kindex
 #: display.texi.orig:426
 #, no-wrap
 msgid "DEL @r{(View mode)}"
-msgstr ""
+msgstr "DEL @r{(View mode)}"
 
 #. type: Plain text
 #: display.texi.orig:433
@@ -1121,31 +1118,31 @@ msgid ""
 "motion commands, you can type @key{SPC} to scroll forward one windowful, "
 "@kbd{S-@key{SPC}} or @key{DEL} to scroll backward, and @kbd{s} to start an "
 "incremental search."
-msgstr ""
+msgstr "Viewモードは、バッファーをスクリーン上でスキャンするためのマイナーモードです。このモードは、バッファーを変更せずにスクロールする、便利なコマンドを提供します。Emacsのカーソル移動コマンドとは別に、@key{SPC}で前方にスクロール、@kbd{S-@key{SPC}}または@key{DEL}で後方にスクロール、@kbd{s}でインクリメンタルサーチができます。"
 
 #. type: kindex
 #: display.texi.orig:434
 #, no-wrap
 msgid "q @r{(View mode)}"
-msgstr ""
+msgstr "q @r{(View mode)}"
 
 #. type: kindex
 #: display.texi.orig:435
 #, no-wrap
 msgid "e @r{(View mode)}"
-msgstr ""
+msgstr "e @r{(View mode)}"
 
 #. type: findex
 #: display.texi.orig:436
 #, no-wrap
 msgid "View-quit"
-msgstr ""
+msgstr "View-quit"
 
 #. type: findex
 #: display.texi.orig:437
 #, no-wrap
 msgid "View-exit"
-msgstr ""
+msgstr "View-exit"
 
 #. type: Plain text
 #: display.texi.orig:442
@@ -1154,19 +1151,19 @@ msgid ""
 "the buffer and position before View mode was enabled.  Typing @kbd{e} "
 "(@code{View-exit}) disables View mode, keeping the current buffer and "
 "position."
-msgstr ""
+msgstr "@kbd{q} (@code{View-quit})とタイプするとViewモードが無効になり、Viewモードが有効になる前のパッファーの位置に戻ります。@kbd{e} (@code{View-exit})とタイプするとViewモードが無効になり、現在のバッファーと位置は維持されます。"
 
 #. type: findex
 #: display.texi.orig:443
 #, no-wrap
 msgid "view-buffer"
-msgstr ""
+msgstr "view-buffer"
 
 #. type: findex
 #: display.texi.orig:444
 #, no-wrap
 msgid "view-file"
-msgstr ""
+msgstr "view-file"
 
 #. type: Plain text
 #: display.texi.orig:448
@@ -1174,37 +1171,37 @@ msgid ""
 "@kbd{M-x view-buffer} prompts for an existing Emacs buffer, switches to it, "
 "and enables View mode.  @kbd{M-x view-file} prompts for a file and visits it "
 "with View mode enabled."
-msgstr ""
+msgstr "@kbd{M-x view-buffer}は、既存のEmacsバッファー名を入力として求め、そのバッファーに切り替えてViewモードを有効にします。@kbd{M-x view-file}はファイル名を入力として求め、そのファイルをvisitしてViewモードを有効にします。"
 
 #. type: cindex
 #: display.texi.orig:451
 #, no-wrap
 msgid "Follow mode"
-msgstr ""
+msgstr "Follow mode"
 
 #. type: cindex
 #: display.texi.orig:452
 #, no-wrap
 msgid "mode, Follow"
-msgstr ""
+msgstr "mode, Follow"
 
 #. type: findex
 #: display.texi.orig:453
 #, no-wrap
 msgid "follow-mode"
-msgstr ""
+msgstr "follow-mode"
 
 #. type: cindex
 #: display.texi.orig:454
 #, no-wrap
 msgid "windows, synchronizing"
-msgstr ""
+msgstr "windows, synchronizing"
 
 #. type: cindex
 #: display.texi.orig:455
 #, no-wrap
 msgid "synchronizing windows"
-msgstr ""
+msgstr "synchronizing windows"
 
 #. type: Plain text
 #: display.texi.orig:463
@@ -1215,7 +1212,7 @@ msgid ""
 "windows using @kbd{C-x 3}, and then type @kbd{M-x follow-mode}.  From then "
 "on, you can edit the buffer in either of the two windows, or scroll either "
 "one; the other window follows it."
-msgstr ""
+msgstr "@dfn{Followモード}は、同じバッファーを表示する2つのウィンドウを、1つの``仮想ウィンドウ''としてスクロールするマイナーモードです。Followモードを使うには、ウィンドウが1つだけのフレームを選択して、それを@kbd{C-x 3}を使って縦に並べて2分割してから、@kbd{M-x follow-mode}とタイプします。それ以降はバッファーをどちらのウィンドウでも編集でき、どちらかのウィンドウをスクロールすると、他方のウィンドウも追従してスクロールします。"
 
 #. type: Plain text
 #: display.texi.orig:468
@@ -1223,24 +1220,24 @@ msgid ""
 "In Follow mode, if you move point outside the portion visible in one window "
 "and into the portion visible in the other window, that selects the other "
 "window---again, treating the two as if they were parts of one large window."
-msgstr ""
+msgstr "Followモードでは、一方のウィンドウで表示されている部分の外にポイントを移動して、もう一方のウィンドウで表示されている部分にポイントを移動させると、そのウィンドウが選択されます。つまり2つのウィンドウを1つの大きなウィンドウとして扱えるのです。"
 
 #. type: Plain text
 #: display.texi.orig:470
 msgid "To turn off Follow mode, type @kbd{M-x follow-mode} a second time."
-msgstr ""
+msgstr "Followモードをオフにするには、もう一度@kbd{M-x follow-mode}とタイプしてください。"
 
 #. type: section
 #: display.texi.orig:472
 #, no-wrap
 msgid "Text Faces"
-msgstr ""
+msgstr "Text Faces"
 
 #. type: cindex
 #: display.texi.orig:473
 #, no-wrap
 msgid "faces"
-msgstr ""
+msgstr "faces"
 
 #. type: Plain text
 #: display.texi.orig:481
@@ -1251,13 +1248,13 @@ msgid ""
 "overlining.  Most major modes assign faces to the text automatically, via "
 "Font Lock mode.  @xref{Font Lock}, for more information about how these "
 "faces are assigned."
-msgstr ""
+msgstr "Emacsは@dfn{フェイス(faces)}と呼ばれる仕組みを通じて、テキストをいくつかの異なるスタイルで表示できます。フェイスにはfont(フォント)、height(高さ)、weight(太さ)、slant(傾き)、foreground(前景)およびbackground(背景)、underline(アンダーライン)、overline(オーバーライン)などの様々な@dfn{フェイス属性(face attributes)}を指定できます。ほとんどのメジャーモードはFont Lockモードを通じて、テキストに自動的にフェイスを割り当てます。これらのフェイスを割り当てる方法については、@ref{Font Lock}を参照してください。"
 
 #. type: findex
 #: display.texi.orig:482
 #, no-wrap
 msgid "list-faces-display"
-msgstr ""
+msgstr "list-faces-display"
 
 #. type: Plain text
 #: display.texi.orig:487
@@ -1266,13 +1263,13 @@ msgid ""
 "@kbd{M-x list-faces-display}.  With a prefix argument, this prompts for a "
 "regular expression, and displays only faces with names matching that regular "
 "expression (@pxref{Regexps})."
-msgstr ""
+msgstr "現在定義されているフェイスと、それがどのような外観なのかを見るには、@kbd{M-x list-faces-display}とタイプします。プレフィクス引数を指定すると、このコマンドは正規表現の入力を求め、その正規表現にマッチするフェイスだけを表示します(@ref{Regexps}を参照してください)。"
 
 #. type: vindex
 #: display.texi.orig:488
 #, no-wrap
 msgid "frame-background-mode"
-msgstr ""
+msgstr "frame-background-mode"
 
 #. type: Plain text
 #: display.texi.orig:502
@@ -1284,24 +1281,23 @@ msgid ""
 "are different on light and dark frame backgrounds, for reasons of "
 "legibility.  By default, Emacs automatically chooses which set of face "
 "attributes to display on each frame, based on the frame's current background "
-"color.  However, you can override this by giving the variable "
-"@code{frame-background-mode} a non-@code{nil} value.  A value of @code{dark} "
-"makes Emacs treat all frames as if they have a dark background, whereas a "
-"value of @code{light} makes it treat all frames as if they have a light "
-"background."
-msgstr ""
+"color.  However, you can override this by giving the variable @code{frame-"
+"background-mode} a non-@code{nil} value.  A value of @code{dark} makes Emacs "
+"treat all frames as if they have a dark background, whereas a value of "
+"@code{light} makes it treat all frames as if they have a light background."
+msgstr "あるフェイスが、フレームが異なると違って見えるのことがあり得ます。たとえばいくつかのテキスト端末ではすべてのフェース属性、特に特にfont、height、widthはサポートされておらず、指定できるcolorも限られているものがあります。加えて、ほとんどのEmacsフェースは視認性をよくするために、フレームのバックグラウンドが明るい(light)か暗い(dark)かで属性が異なります。デフォルトでは、Emacsはフレームの現在のバックグラウンドカラーに基づいて、表示するフェイスの属性を自動的に選択します。しかし変数@code{frame-background-mode}に非@code{nil}値を与えると、これをオーバーライドできます。値@code{dark}ではすべてのフレームの背景色が暗い色であるかのように処理し、値@code{light}ではすべてのフレームの背景色が明るい色であるかのように処理させることができます。"
 
 #. type: cindex
 #: display.texi.orig:503
 #, no-wrap
 msgid "background color"
-msgstr ""
+msgstr "background color"
 
 #. type: cindex
 #: display.texi.orig:504
 #, no-wrap
 msgid "default face"
-msgstr ""
+msgstr "default face"
 
 #. type: Plain text
 #: display.texi.orig:508
@@ -1309,7 +1305,7 @@ msgid ""
 "You can customize a face to alter its attributes, and save those "
 "customizations for future Emacs sessions.  @xref{Face Customization}, for "
 "details."
-msgstr ""
+msgstr "フェイスの属性を変えてフェイスをカスタマイズして、将来のEmacsセッション用にカスタマイズ結果を保存することができます。詳細については、@ref{Face Customization}を参照してください。"
 
 #. type: Plain text
 #: display.texi.orig:512
@@ -1317,13 +1313,13 @@ msgid ""
 "The @code{default} face is the default for displaying text, and all of its "
 "attributes are specified.  Its background color is also used as the frame's "
 "background color.  @xref{Colors}."
-msgstr ""
+msgstr "@code{default}フェイスはテキストを表示するデフォルトのフェイスで、そのすべての属性は指定されています。バックグラウンドカラーは、フレームのバックグラウンドカラーとしても使用されます。@ref{Colors}を参照してください。"
 
 #. type: cindex
 #: display.texi.orig:513 display.texi.orig:1480
 #, no-wrap
 msgid "cursor face"
-msgstr ""
+msgstr "cursor face"
 
 #. type: Plain text
 #: display.texi.orig:521
@@ -1334,14 +1330,14 @@ msgid ""
 "under the cursor is taken from the background color of the underlying text.  "
 "On text terminals, the appearance of the text cursor is determined by the "
 "terminal, not by the @code{cursor} face."
-msgstr ""
+msgstr "他の特別なフェイスとしては、@code{cursor}フェイスがあります。グラフィカルなディスプレーでは、このフェイスのバックグラウンドカラーは、テキストカーソルを描画するのに使用されます。このフェイスで効果があるのはこの属性だけです。カーソルの下のテキストのフォアグラウンドカラーには、そのテキストのバックグラウンドカラーが使われます。テキスト端末でのテキストカーソルの外観は、@code{cursor}フェイスではなく端末により決定されます。"
 
 #. type: Plain text
 #: display.texi.orig:524
 msgid ""
 "You can also use X resources to specify attributes of any particular face.  "
 "@xref{Resources}."
-msgstr ""
+msgstr "特定のフェイスの属性を指定するのにXのリソースを使うこともできます。@ref{Resources}を参照してください。"
 
 #. type: Plain text
 #: display.texi.orig:530
@@ -1350,25 +1346,25 @@ msgid ""
 "particularly indentation commands, do not account for variable character "
 "display widths.  Therefore, we recommend not using variable-width fonts for "
 "most faces, particularly those assigned by Font Lock mode."
-msgstr ""
+msgstr "Emacsは可変幅フォント(variable-width fonts)を表示できますが、いくつかのコマンド、特にインデントを行うコマンドは、可変幅の文字幅の表示をうまく処理できません。そのため、ほとんどのフェイスにたいして可変幅フォントを使わないこと、特にそれがFont Lockモードに割り当てられている場合は、使わないことを推奨します。"
 
 #. type: section
 #: display.texi.orig:532
 #, no-wrap
 msgid "Colors for Faces"
-msgstr ""
+msgstr "Colors for Faces"
 
 #. type: cindex
 #: display.texi.orig:533
 #, no-wrap
 msgid "color name"
-msgstr ""
+msgstr "color name"
 
 #. type: cindex
 #: display.texi.orig:534
 #, no-wrap
 msgid "RGB triplet"
-msgstr ""
+msgstr "RGB triplet"
 
 #. type: Plain text
 #: display.texi.orig:540
@@ -1377,35 +1373,34 @@ msgid ""
 "color for a face---for instance, when customizing the face (@pxref{Face "
 "Customization})---you can use either a @dfn{color name} or an @dfn{RGB "
 "triplet}."
-msgstr ""
+msgstr "フェイスには、さまざまなフォアグラウンドカラーとバックグラウンドカラーをもたせることができます。フェイスにカラーを指定するとき、たとえばフェイスをカスタマイズ(@ref{Face Customization}を参照してください)するときは、@dfn{カラーネーム(color name)}か、@dfn{RGBトリプレット(RGB triplet)}で指定することができます。"
 
 #. type: findex
 #: display.texi.orig:541
 #, no-wrap
 msgid "list-colors-display"
-msgstr ""
+msgstr "list-colors-display"
 
 #. type: vindex
 #: display.texi.orig:542
 #, no-wrap
 msgid "list-colors-sort"
-msgstr ""
+msgstr "list-colors-sort"
 
 #. type: Plain text
 #: display.texi.orig:554
 msgid ""
 "A color name is a pre-defined name, such as @samp{dark orange} or "
-"@samp{medium sea green}.  To view a list of color names, type @kbd{M-x "
-"list-colors-display}.  To control the order in which colors are shown, "
-"customize @code{list-colors-sort}.  If you run this command on a graphical "
-"display, it shows the full range of color names known to Emacs (these are "
-"the standard X11 color names, defined in X's @file{rgb.txt} file).  If you "
-"run the command on a text terminal, it shows only a small subset of colors "
-"that can be safely displayed on such terminals.  However, Emacs understands "
-"X11 color names even on text terminals; if a face is given a color specified "
-"by an X11 color name, it is displayed using the closest-matching terminal "
-"color."
-msgstr ""
+"@samp{medium sea green}.  To view a list of color names, type @kbd{M-x list-"
+"colors-display}.  To control the order in which colors are shown, customize "
+"@code{list-colors-sort}.  If you run this command on a graphical display, it "
+"shows the full range of color names known to Emacs (these are the standard "
+"X11 color names, defined in X's @file{rgb.txt} file).  If you run the "
+"command on a text terminal, it shows only a small subset of colors that can "
+"be safely displayed on such terminals.  However, Emacs understands X11 color "
+"names even on text terminals; if a face is given a color specified by an X11 "
+"color name, it is displayed using the closest-matching terminal color."
+msgstr "カラーネームとは、@samp{dark orange}や@samp{medium sea green}のような、事前に定義された名前です。カラーネームの一覧を見るには、@kbd{M-x list-colors-display}とタイプします。表示されるカラーの順番を制御するには、@code{list-colors-sort}をカスタマイズします。このコマンドをグラフィカルなディスプレーで実行すると、Emacsで既知のカラーネームのすべてが表示されます(これらは標準のX11のカラーネームで、Xの@file{rgb.txt}で定義されています)。コマンドをテキスト端末で実行すると、端末で安全に表示することができる一部のカラーだけが表示されます。フェイスには、さまざまなフォアグラウンドカラーとバックグラウンドカラーを持たせることができます。しかしEmacsは、テキスト端末でもX11のカラーネームを理解できます。もしフェイスにX11のカラーネームが指定されている場合、最も近い端末の色で表示されます。"
 
 #. type: Plain text
 #: display.texi.orig:561
@@ -1415,7 +1410,7 @@ msgid ""
 "intensity, one to four digits long (usually two digits are used).  The "
 "components must have the same number of digits.  For hexadecimal values A to "
 "F, either upper or lower case are acceptable."
-msgstr ""
+msgstr "RGBトリプレットは、@samp{#RRGGBB}という形式の文字列で指定します。R、G、Bの各コンポーネントは、そのそのコンポーネントに関連する色の強度を、1桁から4桁(通常は2桁)の16進数で指定します。各コンポーネントは同じ桁数でなければなりません。16進数のAからFは、大文字小文字を区別しません。"
 
 #. type: Plain text
 #: display.texi.orig:565
@@ -1423,25 +1418,25 @@ msgid ""
 "The @kbd{M-x list-colors-display} command also shows the equivalent RGB "
 "triplet for each named color.  For instance, @samp{medium sea green} is "
 "equivalent to @samp{#3CB371}."
-msgstr ""
+msgstr "@kbd{M-x list-colors-display}は、カラーネームと、それに相当するRGBトリプレットを表示します。たとえば@samp{medium sea green}は@samp{#3CB371}と同じです。"
 
 #. type: cindex
 #: display.texi.orig:566
 #, no-wrap
 msgid "face colors, setting"
-msgstr ""
+msgstr "face colors, setting"
 
 #. type: findex
 #: display.texi.orig:567
 #, no-wrap
 msgid "set-face-foreground"
-msgstr ""
+msgstr "set-face-foreground"
 
 #. type: findex
 #: display.texi.orig:568
 #, no-wrap
 msgid "set-face-background"
-msgstr ""
+msgstr "set-face-background"
 
 #. type: Plain text
 #: display.texi.orig:578
@@ -1454,83 +1449,83 @@ msgid ""
 "unlike using the customization buffer or X resources.  You can also use "
 "frame parameters to set foreground and background colors for a specific "
 "frame; @xref{Frame Parameters}."
-msgstr ""
+msgstr "@kbd{M-x set-face-foreground}と@kbd{M-x set-face-background}で、フェイスのフォアグラウンドとバックグラウンドのカラーを変更できます。これらのコマンドは、ミニバッファーでフェイス名とカラーの入力を求め(補完機能あり)、指定したカラーをフェイスにセットします。フェイスのカラーは全フレームに影響しますが、カスタマイズバッファーやXリソースを使うのとは異なり、将来のEmacsセッションには引き継がれません。フレームパラメーターを使って、特定のフレームのフォアグラウンドとバックグラウンドのカラーをセットすることもできます。@ref{Frame Parameters}を参照してください。"
 
 #. type: cindex
 #: display.texi.orig:581
 #, no-wrap
 msgid "standard faces"
-msgstr ""
+msgstr "standard faces"
 
 #. type: Plain text
 #: display.texi.orig:585
 msgid ""
 "Here are the standard faces for specifying text appearance.  You can apply "
 "them to specific text when you want the effects they produce."
-msgstr ""
+msgstr "以下はテキストの外見を指定する標準フェイスです。これらのフェイスの効果が欲しい場合は、特定のテキストに適用することができます。"
 
 #. type: item
 #: display.texi.orig:587
 #, no-wrap
 msgid "default"
-msgstr ""
+msgstr "default"
 
 #. type: table
 #: display.texi.orig:590
 msgid ""
 "This face is used for ordinary text that doesn't specify any face.  Its "
 "background color is used as the frame's background color."
-msgstr ""
+msgstr "このフェイスは特定のフェイスをもたない普通のテキストに使われます。フェイスのバックグラウンドカラーは、フレームのバックグラウンドカラーとして使用されます。"
 
 #. type: item
 #: display.texi.orig:590
 #, no-wrap
 msgid "bold"
-msgstr ""
+msgstr "bold"
 
 #. type: table
 #: display.texi.orig:592
 msgid "This face uses a bold variant of the default font."
-msgstr ""
+msgstr "このフェイスは、デフォルトフォントのbold(太字)バージョンです。"
 
 #. type: item
 #: display.texi.orig:592
 #, no-wrap
 msgid "italic"
-msgstr ""
+msgstr "italic"
 
 #. type: table
 #: display.texi.orig:594
 msgid "This face uses an italic variant of the default font."
-msgstr ""
+msgstr "このフェイスはデフォルトフォントのitalic(斜体)バージョンです。"
 
 #. type: item
 #: display.texi.orig:594
 #, no-wrap
 msgid "bold-italic"
-msgstr ""
+msgstr "bold-italic"
 
 #. type: table
 #: display.texi.orig:596
 msgid "This face uses a bold italic variant of the default font."
-msgstr ""
+msgstr "このフェイスはデフォルトフォントのbold italic(太字斜体)バージョンです。"
 
 #. type: item
 #: display.texi.orig:596
 #, no-wrap
 msgid "underline"
-msgstr ""
+msgstr "underline"
 
 #. type: table
 #: display.texi.orig:598
 msgid "This face underlines text."
-msgstr ""
+msgstr "このフェイスはunderline(下線)のテキストです。"
 
 #. type: item
 #: display.texi.orig:598
 #, no-wrap
 msgid "fixed-pitch"
-msgstr ""
+msgstr "fixed-pitch"
 
 #. type: table
 #: display.texi.orig:602
@@ -1538,36 +1533,36 @@ msgid ""
 "This face forces use of a fixed-width font.  It's reasonable to customize "
 "this face to use a different fixed-width font, if you like, but you should "
 "not make it a variable-width font."
-msgstr ""
+msgstr "このフェイスはfixed-width font(固定幅フォント)の使用を強制します。もし望むなら、このフェイスから他の固定幅フォントにカスタマイズするのは妥当ですが、可変幅フォントにするべきではありません。"
 
 #. type: cindex
 #: display.texi.orig:602
 #, no-wrap
 msgid "variable-pitch face"
-msgstr ""
+msgstr "variable-pitch face"
 
 #. type: item
 #: display.texi.orig:603
 #, no-wrap
 msgid "variable-pitch"
-msgstr ""
+msgstr "variable-pitch"
 
 #. type: table
 #: display.texi.orig:605
 msgid "This face forces use of a variable-width font."
-msgstr ""
+msgstr "このフェイスはvariable-width font(可変幅フォント)の使用を強制します。"
 
 #. type: cindex
 #: display.texi.orig:605
 #, no-wrap
 msgid "shadow face"
-msgstr ""
+msgstr "shadow face"
 
 #. type: item
 #: display.texi.orig:606
 #, no-wrap
 msgid "shadow"
-msgstr ""
+msgstr "shadow"
 
 #. type: table
 #: display.texi.orig:610
@@ -1575,7 +1570,7 @@ msgid ""
 "This face is used for making the text less noticeable than the surrounding "
 "ordinary text.  Usually this can be achieved by using shades of gray in "
 "contrast with either black or white default foreground color."
-msgstr ""
+msgstr "このフェースはまわりのテキストに比べて、そのテキストを目立たなくします。通常これはデフォルトの黒または白のフォアグラウンドカラーではなく、グレーが使われます。"
 
 #. type: Plain text
 #: display.texi.orig:615
@@ -1583,65 +1578,65 @@ msgid ""
 "Here's an incomplete list of faces used to highlight parts of the text "
 "temporarily for specific purposes.  (Many other modes define their own faces "
 "for this purpose.)"
-msgstr ""
+msgstr "以下は特別な目的のために、一時的にテキストの一部をハイライトするのに使われるフェイスの、不完全なリストです(他にも多くのモードが、そのモードの目的のために、独自のフェイスを定義しています)。"
 
 #. type: item
 #: display.texi.orig:617
 #, no-wrap
 msgid "highlight"
-msgstr ""
+msgstr "highlight"
 
 #. type: table
 #: display.texi.orig:620
 msgid ""
 "This face is used for text highlighting in various contexts, such as when "
 "the mouse cursor is moved over a hyperlink."
-msgstr ""
+msgstr "このフェイスはさまざまなコンテキスト、たとえばハイパーリンク上をマウスカーソルが通過したときなどに、テキストをハイライトするのに使われます。"
 
 #. type: item
 #: display.texi.orig:620
 #, no-wrap
 msgid "isearch"
-msgstr ""
+msgstr "isearch"
 
 #. type: table
 #: display.texi.orig:623
 msgid ""
 "This face is used to highlight the current Isearch match (@pxref{Incremental "
 "Search})."
-msgstr ""
+msgstr "このフェイスは、現在のIsearch(インクリメンタル検索)のマッチをハイライトするのに使われます(@ref{Incremental Search}を参照してください)。"
 
 #. type: item
 #: display.texi.orig:623
 #, no-wrap
 msgid "query-replace"
-msgstr ""
+msgstr "query-replace"
 
 #. type: table
 #: display.texi.orig:626
 msgid ""
 "This face is used to highlight the current Query Replace match "
 "(@pxref{Replace})."
-msgstr ""
+msgstr "このフェイスは、現在の問い合わせ置換(Query Replace)のマッチをハイライトするのに使われます(@ref{Replace}を参照してください)。"
 
 #. type: item
 #: display.texi.orig:626
 #, no-wrap
 msgid "lazy-highlight"
-msgstr ""
+msgstr "lazy-highlight"
 
 #. type: table
 #: display.texi.orig:629
 msgid ""
 "This face is used to highlight ``lazy matches'' for Isearch and Query "
 "Replace (matches other than the current one)."
-msgstr ""
+msgstr "このフェイスは、Isearchおよび問い合わせ置換で、``カレントのマッチ(現在カーソルがあるマッチ)以外のマッチ(lazy matches)''をハイライトするのに使われます。"
 
 #. type: item
 #: display.texi.orig:629
 #, no-wrap
 msgid "region"
-msgstr ""
+msgstr "region"
 
 #. type: table
 #: display.texi.orig:633
@@ -1649,26 +1644,26 @@ msgid ""
 "This face is used for displaying an active region (@pxref{Mark}).  When "
 "Emacs is built with GTK support, its colors are taken from the current GTK "
 "theme."
-msgstr ""
+msgstr "このフェイスは、アクティブなリージョンを表示するのに使われます(@ref{Mark}を参照してください)。EmacsをGTKサポートつきでビルドした場合、カラーは現在のGTKのテーマから提供されます。"
 
 #. type: item
 #: display.texi.orig:633
 #, no-wrap
 msgid "secondary-selection"
-msgstr ""
+msgstr "secondary-selection"
 
 #. type: table
 #: display.texi.orig:636
 msgid ""
 "This face is used for displaying a secondary X selection (@pxref{Secondary "
 "Selection})."
-msgstr ""
+msgstr "このフェイスは、Xのセカンダリー選択(secondary X selection)を表示するのに使われます(@ref{Secondary Selection}を参照してください)。"
 
 #. type: item
 #: display.texi.orig:636
 #, no-wrap
 msgid "trailing-whitespace"
-msgstr ""
+msgstr "trailing-whitespace"
 
 #. type: table
 #: display.texi.orig:640
@@ -1676,56 +1671,55 @@ msgid ""
 "The face for highlighting excess spaces and tabs at the end of a line when "
 "@code{show-trailing-whitespace} is non-@code{nil} (@pxref{Useless "
 "Whitespace})."
-msgstr ""
+msgstr "このフェイスは、@code{show-trailing-whitespace}は非@code{nil}のとき、行末の余分なスペースやタブをハイライトするためのものです(@ref{Useless Whitespace}を参照してください)。"
 
 #. type: item
 #: display.texi.orig:640
 #, no-wrap
 msgid "escape-glyph"
-msgstr ""
+msgstr "escape-glyph"
 
 #. type: table
 #: display.texi.orig:643
 msgid ""
 "The face for displaying control characters and escape sequences (@pxref{Text "
 "Display})."
-msgstr ""
+msgstr "このフェイスは、制御文字やエスケープシーケンスを表示するためのものです(@ref{Text Display}を参照してください)。"
 
 #. type: item
 #: display.texi.orig:643
 #, no-wrap
 msgid "nobreak-space"
-msgstr ""
+msgstr "nobreak-space"
 
 #. type: table
 #: display.texi.orig:646
 msgid ""
-"The face for displaying ``no-break'' space characters (@pxref{Text "
-"Display})."
-msgstr ""
+"The face for displaying ``no-break'' space characters (@pxref{Text Display})."
+msgstr "このフェイスは、``no-break''スペース文字を表示するためのものです(@ref{Text Display}を参照してください)。"
 
 #. type: Plain text
 #: display.texi.orig:650
 msgid "The following faces control the appearance of parts of the Emacs frame:"
-msgstr ""
+msgstr "以下のフェイスは、Emacsフレームの一部の外見を制御します:"
 
 #. type: item
 #: display.texi.orig:652
 #, no-wrap
 msgid "mode-line"
-msgstr ""
+msgstr "mode-line"
 
 #. type: cindex
 #: display.texi.orig:653
 #, no-wrap
 msgid "mode-line face"
-msgstr ""
+msgstr "mode-line face"
 
 #. type: cindex
 #: display.texi.orig:654
 #, no-wrap
 msgid "faces for mode lines"
-msgstr ""
+msgstr "faces for mode lines"
 
 #. type: table
 #: display.texi.orig:659
@@ -1734,40 +1728,40 @@ msgid ""
 "for menu bars when toolkit menus are not used.  By default, it's drawn with "
 "shadows for a ``raised'' effect on graphical displays, and drawn as the "
 "inverse of the default face on non-windowed terminals."
-msgstr ""
+msgstr "このフェイスは、現在選択されているウィンドウのモードラインと、ツールキットメニューが使われていないときのメニューバーに使われます。デフォルトでは、グラフィカルなウィンドウでは``raised''効果をだすため影つきで描画され、非ウィンドウの端末ではデフォルトのフェイスを反転して描画されます。"
 
 #. type: item
 #: display.texi.orig:659
 #, no-wrap
 msgid "mode-line-inactive"
-msgstr ""
+msgstr "mode-line-inactive"
 
 #. type: cindex
 #: display.texi.orig:660
 #, no-wrap
 msgid "mode-line-inactive face"
-msgstr ""
+msgstr "mode-line-inactive face"
 
 #. type: table
 #: display.texi.orig:665
 msgid ""
 "Like @code{mode-line}, but used for mode lines of the windows other than the "
-"selected one (if @code{mode-line-in-non-selected-windows} is "
-"non-@code{nil}).  This face inherits from @code{mode-line}, so changes in "
-"that face affect mode lines in all windows."
-msgstr ""
+"selected one (if @code{mode-line-in-non-selected-windows} is non-"
+"@code{nil}).  This face inherits from @code{mode-line}, so changes in that "
+"face affect mode lines in all windows."
+msgstr "@code{mode-line}と似ていますが、選択されていないウィンドウのモードラインに使われます(@code{mode-line-in-non-selected-windows}が非@code{nil}のとき)。このフェイスは@code{mode-line}を継承するので、フェイスを変更するとすべてのウィンドウのモードラインが影響を受けます。"
 
 #. type: item
 #: display.texi.orig:665
 #, no-wrap
 msgid "mode-line-highlight"
-msgstr ""
+msgstr "mode-line-highlight"
 
 #. type: cindex
 #: display.texi.orig:666
 #, no-wrap
 msgid "mode-line-highlight face"
-msgstr ""
+msgstr "mode-line-highlight face"
 
 #. type: table
 #: display.texi.orig:670
@@ -1775,36 +1769,36 @@ msgid ""
 "Like @code{highlight}, but used for mouse-sensitive portions of text on mode "
 "lines.  Such portions of text typically pop up tooltips (@pxref{Tooltips}) "
 "when the mouse pointer hovers above them."
-msgstr ""
+msgstr "@code{highlight}と似ていますが、モードライン上でマウスセンシティブ(マウスに感応する)なテキスト範囲に使われます。通常このようなテキスト範囲は上にマウスポインターがくると、ツールチップ(@ref{Tooltips}を参照してください)をポップアップします。"
 
 #. type: item
 #: display.texi.orig:670
 #, no-wrap
 msgid "mode-line-buffer-id"
-msgstr ""
+msgstr "mode-line-buffer-id"
 
 #. type: cindex
 #: display.texi.orig:671
 #, no-wrap
 msgid "mode-line-buffer-id face"
-msgstr ""
+msgstr "mode-line-buffer-id face"
 
 #. type: table
 #: display.texi.orig:673
 msgid "This face is used for buffer identification parts in the mode line."
-msgstr ""
+msgstr "このフェイスは、モードライン上でバッファーを識別する部分に使われます。"
 
 #. type: item
 #: display.texi.orig:673
 #, no-wrap
 msgid "header-line"
-msgstr ""
+msgstr "header-line"
 
 #. type: cindex
 #: display.texi.orig:674
 #, no-wrap
 msgid "header-line face"
-msgstr ""
+msgstr "header-line face"
 
 #. type: table
 #: display.texi.orig:679
@@ -1813,66 +1807,64 @@ msgid ""
 "top of a window just as the mode line appears at the bottom.  Most windows "
 "do not have a header line---only some special modes, such Info mode, create "
 "one."
-msgstr ""
+msgstr "@code{mode-line}と似ていますが、ウィンドウのヘッダーラインのためのものです。モードラインがウィンドウの一番下に表示されるように、ヘッダーラインはウィンドウの一番上に表示されます。ほとんどのウィンドウはヘッダーラインを持ちません。Infoモードのような特別なモードだけがヘッダーラインを持ちます。"
 
 #. type: item
 #: display.texi.orig:679
 #, no-wrap
 msgid "vertical-border"
-msgstr ""
+msgstr "vertical-border"
 
 #. type: cindex
 #: display.texi.orig:680
 #, no-wrap
 msgid "vertical-border face"
-msgstr ""
+msgstr "vertical-border face"
 
 #. type: table
 #: display.texi.orig:683
 msgid ""
-"This face is used for the vertical divider between windows on text "
-"terminals."
-msgstr ""
+"This face is used for the vertical divider between windows on text terminals."
+msgstr "このフェイスは、テキスト端末上でウィンドウを縦に分割するとき使われます。"
 
 #. type: item
 #: display.texi.orig:683
 #, no-wrap
 msgid "minibuffer-prompt"
-msgstr ""
+msgstr "minibuffer-prompt"
 
 #. type: cindex
 #: display.texi.orig:684
 #, no-wrap
 msgid "@code{minibuffer-prompt} face"
-msgstr ""
+msgstr "@code{minibuffer-prompt} face"
 
 #. type: vindex
 #: display.texi.orig:685
 #, no-wrap
 msgid "minibuffer-prompt-properties"
-msgstr ""
+msgstr "minibuffer-prompt-properties"
 
 #. type: table
 #: display.texi.orig:691
 msgid ""
 "This face is used for the prompt strings displayed in the minibuffer.  By "
-"default, Emacs automatically adds this face to the value of "
-"@code{minibuffer-prompt-properties}, which is a list of text properties used "
-"to display the prompt text.  (This variable takes effect when you enter the "
-"minibuffer.)"
-msgstr ""
+"default, Emacs automatically adds this face to the value of @code{minibuffer-"
+"prompt-properties}, which is a list of text properties used to display the "
+"prompt text.  (This variable takes effect when you enter the minibuffer.)"
+msgstr "このフェイスは、ミニバッファーで入力を求めるプロンプトのテキストに使われます。デフォルトでは、Emacsは自動的にプロンプトのテキストの、テキストプロパティのリスト@code{minibuffer-prompt-properties}に、このフェイスを追加します(この変数はミニバッファーに入ったときに効果をあらわします)。"
 
 #. type: item
 #: display.texi.orig:691
 #, no-wrap
 msgid "fringe"
-msgstr ""
+msgstr "fringe"
 
 #. type: cindex
 #: display.texi.orig:692
 #, no-wrap
 msgid "@code{fringe} face"
-msgstr ""
+msgstr "@code{fringe} face"
 
 #. type: table
 #: display.texi.orig:697
@@ -1880,26 +1872,26 @@ msgid ""
 "The face for the fringes to the left and right of windows on graphic "
 "displays.  (The fringes are the narrow portions of the Emacs frame between "
 "the text area and the window's right and left borders.)  @xref{Fringes}."
-msgstr ""
+msgstr "グラフィカルなウィンドウでの、左右のフリンジのためのフェイスです(フリンジはEmacsフレームで、テキストエリアとウィンドウの左右の境界線の間にある、狭い領域です)。@ref{Fringes}を参照してください。"
 
 #. type: item
 #: display.texi.orig:697
 #, no-wrap
 msgid "cursor"
-msgstr ""
+msgstr "cursor"
 
 #. type: table
 #: display.texi.orig:700
 msgid ""
 "The @code{:background} attribute of this face specifies the color of the "
 "text cursor.  @xref{Cursor Display}."
-msgstr ""
+msgstr "このフェイスの@code{:background}属性は、テキストカーソルのカラーを指定します。@ref{Cursor Display}を参照してください。"
 
 #. type: item
 #: display.texi.orig:700
 #, no-wrap
 msgid "tooltip"
-msgstr ""
+msgstr "tooltip"
 
 #. type: table
 #: display.texi.orig:704
@@ -1907,18 +1899,18 @@ msgid ""
 "This face is used for tooltip text.  By default, if Emacs is built with GTK "
 "support, tooltips are drawn via GTK and this face has no effect.  "
 "@xref{Tooltips}."
-msgstr ""
+msgstr "このフェイスは、ツールチップのテキストに使われます。デフォルトでは、EmacsがGTKサポートつきでビルドされた場合、ツールチップはGTKを通じて描画されるので、このフェイスは効果がありません。@ref{Tooltips}を参照してください。"
 
 #. type: item
 #: display.texi.orig:704
 #, no-wrap
 msgid "mouse"
-msgstr ""
+msgstr "mouse"
 
 #. type: table
 #: display.texi.orig:706
 msgid "This face determines the color of the mouse pointer."
-msgstr ""
+msgstr "このファイスは、マウスポインターのカラーを決定します。"
 
 #. type: Plain text
 #: display.texi.orig:712
@@ -1927,145 +1919,145 @@ msgid ""
 "frame, but only on text terminals, or when Emacs is built on X with no "
 "toolkit support.  (For all other cases, the appearance of the respective "
 "frame elements is determined by system-wide settings.)"
-msgstr ""
+msgstr "以下のフェイスは、Emacsフレームの一部の外見を制御するときと同様ですが、テキスト端末またはEmacsをXサポートつき(ただしツールキットサポートなし)でビルドしたときだけ使われます(それ以外の場合、フレームの対応する各要素は広義なシステム設定により決定されます)。"
 
 #. type: item
 #: display.texi.orig:714
 #, no-wrap
 msgid "scroll-bar"
-msgstr ""
+msgstr "scroll-bar"
 
 #. type: table
 #: display.texi.orig:717
 msgid ""
 "This face determines the visual appearance of the scroll bar.  @xref{Scroll "
 "Bars}."
-msgstr ""
+msgstr "このフェイスは、スクロールバーの外見を決定します。@ref{Scroll Bars}を参照してください。"
 
 #. type: item
 #: display.texi.orig:717
 #, no-wrap
 msgid "tool-bar"
-msgstr ""
+msgstr "tool-bar"
 
 #. type: table
 #: display.texi.orig:719
 msgid "This face determines the color of tool bar icons.  @xref{Tool Bars}."
-msgstr ""
+msgstr "このフェイスは、ツールバーのアイコンのカラーを決定します。@ref{Tool Bars}を参照してください。"
 
 #. type: item
 #: display.texi.orig:719
 #, no-wrap
 msgid "menu"
-msgstr ""
+msgstr "menu"
 
 #. type: cindex
 #: display.texi.orig:720
 #, no-wrap
 msgid "menu bar appearance"
-msgstr ""
+msgstr "menu bar appearance"
 
 #. type: cindex
 #: display.texi.orig:721
 #, no-wrap
 msgid "@code{menu} face, no effect if customized"
-msgstr ""
+msgstr "@code{menu} face, no effect if customized"
 
 #. type: cindex
 #: display.texi.orig:722
 #, no-wrap
 msgid "customization of @code{menu} face"
-msgstr ""
+msgstr "customization of @code{menu} face"
 
 #. type: table
 #: display.texi.orig:725
 msgid ""
-"This face determines the colors and font of Emacs's menus.  @xref{Menu "
-"Bars}."
-msgstr ""
+"This face determines the colors and font of Emacs's menus.  @xref{Menu Bars}."
+msgstr "このフェイスはEmacsメニューのカラーとフォントを決定します。@ref{Menu Bars}を参照してください。"
 
 #. type: item
 #: display.texi.orig:725
 #, no-wrap
 msgid "tty-menu-enabled-face"
-msgstr ""
+msgstr "tty-menu-enabled-face"
 
 #. type: cindex
 #: display.texi.orig:726
 #, no-wrap
 msgid "faces for text-mode menus"
-msgstr ""
+msgstr "faces for text-mode menus"
 
 #. type: cindex
 #: display.texi.orig:727
 #, no-wrap
 msgid "TTY menu faces"
-msgstr ""
+msgstr "TTY menu faces"
 
 #. type: table
 #: display.texi.orig:730
 msgid "This face is used to display enabled menu items on text-mode terminals."
-msgstr ""
+msgstr "このフェイスは、テキスト端末で利用可能なメニューアイテムを表示するのに使われます。"
 
 #. type: item
 #: display.texi.orig:730
 #, no-wrap
 msgid "tty-menu-disabled-face"
-msgstr ""
+msgstr "tty-menu-disabled-face"
 
 #. type: table
 #: display.texi.orig:733
-msgid "This face is used to display disabled menu items on text-mode terminals."
-msgstr ""
+msgid ""
+"This face is used to display disabled menu items on text-mode terminals."
+msgstr "このフェイスは、テキスト端末で利用不可なメニューアイテムを表示するのに使われます。"
 
 #. type: item
 #: display.texi.orig:733
 #, no-wrap
 msgid "tty-menu-selected-face"
-msgstr ""
+msgstr "tty-menu-selected-face"
 
 #. type: table
 #: display.texi.orig:736
 msgid ""
 "This face is used to display on text-mode terminals the menu item that would "
 "be selected if you click a mouse or press @key{RET}."
-msgstr ""
+msgstr "このフェイスは、テキスト端末でマウスをクリックするか、@key{RET}を押せば選択できるメニューアイテムを表示するのに使われます。"
 
 #. type: cindex
 #: display.texi.orig:741
 #, no-wrap
 msgid "adjust buffer face height"
-msgstr ""
+msgstr "adjust buffer face height"
 
 #. type: findex
 #: display.texi.orig:742
 #, no-wrap
 msgid "text-scale-adjust"
-msgstr ""
+msgstr "text-scale-adjust"
 
 #. type: kindex
 #: display.texi.orig:743
 #, no-wrap
 msgid "C-x C-+"
-msgstr ""
+msgstr "C-x C-+"
 
 #. type: kindex
 #: display.texi.orig:744
 #, no-wrap
 msgid "C-x C--"
-msgstr ""
+msgstr "C-x C--"
 
 #. type: kindex
 #: display.texi.orig:745
 #, no-wrap
 msgid "C-x C-="
-msgstr ""
+msgstr "C-x C-="
 
 #. type: kindex
 #: display.texi.orig:746
 #, no-wrap
 msgid "C-x C-0"
-msgstr ""
+msgstr "C-x C-0"
 
 #. type: Plain text
 #: display.texi.orig:753
@@ -2075,42 +2067,42 @@ msgid ""
 "restore the default (global) face height, type @kbd{C-x C-0}.  These keys "
 "are all bound to the same command, @code{text-scale-adjust}, which looks at "
 "the last key typed to determine which action to take."
-msgstr ""
+msgstr "現在のバッファーのデフォルトフェイスを大きくするには、@kbd{C-x C-+}または@kbd{C-x C-=}をタイプします。小さくするには、@kbd{C-x C--}をタイプします。デフォルトのフェースの大きさ(グローバル)に復元するには、@kbd{C-x C-0}とタイプします。これらのキーは、すべて同じコマンド@code{text-scale-adjust}にバインドされており、このコマンドは最後のキーを判断して動作を決定します。"
 
 #. type: Plain text
 #: display.texi.orig:761
 msgid ""
-"The final key of these commands may be repeated without the leading "
-"@kbd{C-x}.  For instance, @kbd{C-x C-= C-= C-=} increases the face height by "
-"three steps.  Each step scales the text height by a factor of 1.2; to change "
-"this factor, customize the variable @code{text-scale-mode-step}.  A numeric "
+"The final key of these commands may be repeated without the leading @kbd{C-"
+"x}.  For instance, @kbd{C-x C-= C-= C-=} increases the face height by three "
+"steps.  Each step scales the text height by a factor of 1.2; to change this "
+"factor, customize the variable @code{text-scale-mode-step}.  A numeric "
 "argument of 0 to the @code{text-scale-adjust} command restores the default "
 "height, the same as typing @kbd{C-x C-0}."
-msgstr ""
+msgstr "これらのコマンドの最後のキーは、@kbd{C-x}を前置せずに繰り返すことができます。たとえば@kbd{C-x C-= C-= C-=}は、フェイスの大きさを3段階に大きくします。各ステップで大きくなる倍率は1.2です。この倍率を変更するには、変数@code{text-scale-mode-step}をカスタマイズします。@code{text-scale-adjust}コマンドに数引数0を指定すると、@kbd{C-x C-0}とタイプしたのと同様に、デフォルトの大きさに復元します。"
 
 #. type: cindex
 #: display.texi.orig:762
 #, no-wrap
 msgid "increase buffer face height"
-msgstr ""
+msgstr "increase buffer face height"
 
 #. type: findex
 #: display.texi.orig:763
 #, no-wrap
 msgid "text-scale-increase"
-msgstr ""
+msgstr "text-scale-increase"
 
 #. type: cindex
 #: display.texi.orig:764
 #, no-wrap
 msgid "decrease buffer face height"
-msgstr ""
+msgstr "decrease buffer face height"
 
 #. type: findex
 #: display.texi.orig:765
 #, no-wrap
 msgid "text-scale-decrease"
-msgstr ""
+msgstr "text-scale-decrease"
 
 #. type: Plain text
 #: display.texi.orig:771
@@ -2119,58 +2111,57 @@ msgid ""
 "increase or decrease the height of the default face, just like @kbd{C-x C-+} "
 "and @kbd{C-x C--} respectively.  You may find it convenient to bind to these "
 "commands, rather than @code{text-scale-adjust}."
-msgstr ""
+msgstr "コマンド@code{text-scale-increase}および@code{text-scale-decrease}は、@kbd{C-x C-+}および@kbd{C-x C--}と同様、デフォルトフェイスを大きくまたは小さくします。キーをバインドする場合、これらのコマンドは、@code{text-scale-adjust}より便利でしょう。"
 
 #. type: cindex
 #: display.texi.orig:772
 #, no-wrap
 msgid "set buffer face height"
-msgstr ""
+msgstr "set buffer face height"
 
 #. type: findex
 #: display.texi.orig:773
 #, no-wrap
 msgid "text-scale-set"
-msgstr ""
+msgstr "text-scale-set"
 
 #. type: Plain text
 #: display.texi.orig:777
 msgid ""
 "The command @code{text-scale-set} scales the height of the default face in "
 "the current buffer to an absolute level specified by its prefix argument."
-msgstr ""
+msgstr "コマンド@code{text-scale-set}は、数引数で現在のバッファーのデフォルトフェイスの大きさを、絶対倍率で指定します。"
 
 #. type: findex
 #: display.texi.orig:778
 #, no-wrap
 msgid "text-scale-mode"
-msgstr ""
+msgstr "text-scale-mode"
 
 #. type: Plain text
 #: display.texi.orig:782
 msgid ""
-"The above commands automatically enable the minor mode "
-"@code{text-scale-mode} if the current font scaling is other than 1, and "
-"disable it otherwise."
-msgstr ""
+"The above commands automatically enable the minor mode @code{text-scale-"
+"mode} if the current font scaling is other than 1, and disable it otherwise."
+msgstr "上記のコマンドは、現在のフォント倍率が1以外のときは、自動的にマイナーモード@code{text-scale-mode}を有効にし、そうでない場合は無効にします。"
 
 #. type: cindex
 #: display.texi.orig:784 display.texi.orig:785
 #, no-wrap
 msgid "Font Lock mode"
-msgstr ""
+msgstr "Font Lock mode"
 
 #. type: cindex
 #: display.texi.orig:786
 #, no-wrap
 msgid "mode, Font Lock"
-msgstr ""
+msgstr "mode, Font Lock"
 
 #. type: cindex
 #: display.texi.orig:787
 #, no-wrap
 msgid "syntax highlighting and coloring"
-msgstr ""
+msgstr "syntax highlighting and coloring"
 
 #. type: Plain text
 #: display.texi.orig:794
@@ -2180,13 +2171,13 @@ msgid ""
 "major mode tells Font Lock mode which text to fontify; for instance, "
 "programming language modes fontify syntactically relevant constructs like "
 "comments, strings, and function names."
-msgstr ""
+msgstr "Font Lockモードはマイナーモードで、常に特定のバッファーにローカルで、バッファーのテキストにフェイスを割り当てます(または@dfn{フォント表示化(fontifies)します})。各バッファーのメジャーモードは、Font Lockモードにどのテキストをフォント表示可するか指示します。たとえばプログラム言語のモードは、コメントや文字列、関数名のような、構文に関連する構成をフォント表示化します。"
 
 #. type: findex
 #: display.texi.orig:795
 #, no-wrap
 msgid "font-lock-mode"
-msgstr ""
+msgstr "font-lock-mode"
 
 #. type: Plain text
 #: display.texi.orig:800
@@ -2194,13 +2185,13 @@ msgid ""
 "Font Lock mode is enabled by default.  To toggle it in the current buffer, "
 "type @kbd{M-x font-lock-mode}.  A positive numeric argument unconditionally "
 "enables Font Lock mode, and a negative or zero argument disables it."
-msgstr ""
+msgstr "Font Lockモードはデフォルトで有効です。現在のバッファーでこれを切り替えるには、@kbd{M-x font-lock-mode}とタイプします。正の数引数は無条件にFont Lockモードを有効にし、負または0の数引数を指定すると無効になります。"
 
 #. type: vindex
 #: display.texi.orig:801 display.texi.orig:802
 #, no-wrap
 msgid "global-font-lock-mode"
-msgstr ""
+msgstr "global-font-lock-mode"
 
 #. type: Plain text
 #: display.texi.orig:807
@@ -2209,13 +2200,13 @@ msgid ""
 "buffers.  To impose this setting for future Emacs sessions, customize the "
 "variable @code{global-font-lock-mode} (@pxref{Easy Customization}), or add "
 "the following line to your init file:"
-msgstr ""
+msgstr "@kbd{M-x global-font-lock-mode}とタイプすると、すべてのバッファーでFont Lockモードを切り替えます。このセッティングを将来のEmacsセッションに引き継ぐには、変数@code{global-font-lock-mode}をカスタマイズ(@ref{Easy Customization}を参照してください)するか、以下の行をinitファイルに追加します。"
 
 #. type: example
 #: display.texi.orig:810
 #, no-wrap
 msgid "(global-font-lock-mode 0)\n"
-msgstr ""
+msgstr "(global-font-lock-mode 0)\n"
 
 #. type: Plain text
 #: display.texi.orig:817
@@ -2224,13 +2215,13 @@ msgid ""
 "for specific major modes by adding the function @code{font-lock-mode} to the "
 "mode hooks (@pxref{Hooks}).  For example, to enable Font Lock mode for "
 "editing C files, you can do this:"
-msgstr ""
+msgstr "Global Font Lockモードを無効にしていたとしても、モードフック(mode hooks)に関数を追加することにより、特定のメジャーモードでFont Lockモードを有効にできます。たとえばCファイルの編集でFont Lockモードを有効にするには、以下のように記述します:"
 
 #. type: example
 #: display.texi.orig:820
 #, no-wrap
 msgid "(add-hook 'c-mode-hook 'font-lock-mode)\n"
-msgstr ""
+msgstr "(add-hook 'c-mode-hook 'font-lock-mode)\n"
 
 #. type: Plain text
 #: display.texi.orig:828
@@ -2241,13 +2232,13 @@ msgid ""
 "@key{RET} font-lock-faces @key{RET}}.  You can then use that customization "
 "buffer to customize the appearance of these faces.  @xref{Face "
 "Customization}."
-msgstr ""
+msgstr "Font Lockモードは、@code{font-lock-string-face}、@code{font-lock-comment-face}のような、いくつかの特別な名前のフェイスを使って処理を行います。これらすべてを簡単に探す方法には、@kbd{M-x customize-group @key{RET} font-lock-faces @key{RET}}を使います。それからカスタマイズバッファーでそれらのフェイスの外見をカスタマイズできます。@ref{Face Customization}を参照してください。"
 
 #. type: vindex
 #: display.texi.orig:829
 #, no-wrap
 msgid "font-lock-maximum-decoration"
-msgstr ""
+msgstr "font-lock-maximum-decoration"
 
 #. type: Plain text
 #: display.texi.orig:838
@@ -2259,37 +2250,37 @@ msgid ""
 "@code{t}, meaning ``as high as possible'' (the default).  You can also "
 "specify different numbers for particular major modes; for example, to use "
 "level 1 for C/C++ modes, and the default level otherwise, use the value"
-msgstr ""
+msgstr "変数@code{font-lock-maximum-decoration}をカスタマイズして、Font Lockモードで適用されるフォント表示化のレベルを変更できます。値には数字を指定します(1は最小限のフォント表示化で、3という高いレベルのモードもあります)。@code{t}は``可能な限り高く''という意味です(デフォルト)。特定のモードに異なる数字を指定することもできます。たとえばC/C++モードにはレベル1を指定して、他のモードにはデフォルトのレベルを適用するには、以下の値を使います:"
 
 #. type: example
 #: display.texi.orig:841
 #, no-wrap
 msgid "'((c-mode . 1) (c++-mode . 1)))\n"
-msgstr ""
+msgstr "'((c-mode . 1) (c++-mode . 1)))\n"
 
 #. type: vindex
 #: display.texi.orig:843
 #, no-wrap
 msgid "font-lock-beginning-of-syntax-function"
-msgstr ""
+msgstr "font-lock-beginning-of-syntax-function"
 
 #. type: cindex
 #: display.texi.orig:844
 #, no-wrap
 msgid "incorrect fontification"
-msgstr ""
+msgstr "incorrect fontification"
 
 #. type: cindex
 #: display.texi.orig:845
 #, no-wrap
 msgid "parenthesis in column zero and fontification"
-msgstr ""
+msgstr "parenthesis in column zero and fontification"
 
 #. type: cindex
 #: display.texi.orig:846
 #, no-wrap
 msgid "brace in column zero and fontification"
-msgstr ""
+msgstr "brace in column zero and fontification"
 
 #. type: Plain text
 #: display.texi.orig:855
@@ -2302,13 +2293,13 @@ msgid ""
 "Therefore, you should avoid placing an open-parenthesis or open-brace in the "
 "leftmost column, if it is inside a string or comment.  @xref{Left Margin "
 "Paren}, for details."
-msgstr ""
+msgstr "コメントと文字列のフォント表示化(または``構文的''なフォント表示化)は、バッファーのテキストの構文構造の解析に依存します。速度向上のため、Lispモードを含めたいくつかのモードでは、特別な慣習に依存しています。たとえば一番左の列の開きカッコ(open-parenthesis)または開き大カッコ(open-brace)は常にdefunの開始であり、すなわち常に文字列またはコメントの外部にあるとみなす、というように解析します。したがって文字列やコメントの中で、一番左の列に開きカッコや開き大カッコを記述するのは避けるべきです。詳細については、@ref{Left Margin Paren}を参照してください。"
 
 #. type: cindex
 #: display.texi.orig:856
 #, no-wrap
 msgid "slow display during scrolling"
-msgstr ""
+msgstr "slow display during scrolling"
 
 #. type: Plain text
 #: display.texi.orig:868
@@ -2316,31 +2307,29 @@ msgid ""
 "The variable @code{font-lock-beginning-of-syntax-function}, which is always "
 "buffer-local, specifies how Font Lock mode can find a position guaranteed to "
 "be outside any comment or string.  In modes which use the leftmost column "
-"parenthesis convention, the default value of the variable is "
-"@code{beginning-of-defun}---that tells Font Lock mode to use the "
-"convention.  If you set this variable to @code{nil}, Font Lock no longer "
-"relies on the convention.  This avoids incorrect results, but the price is "
-"that, in some cases, fontification for a changed text must rescan buffer "
-"text from the beginning of the buffer.  This can considerably slow down "
-"redisplay while scrolling, particularly if you are close to the end of a "
-"large buffer."
-msgstr ""
+"parenthesis convention, the default value of the variable is @code{beginning-"
+"of-defun}---that tells Font Lock mode to use the convention.  If you set "
+"this variable to @code{nil}, Font Lock no longer relies on the convention.  "
+"This avoids incorrect results, but the price is that, in some cases, "
+"fontification for a changed text must rescan buffer text from the beginning "
+"of the buffer.  This can considerably slow down redisplay while scrolling, "
+"particularly if you are close to the end of a large buffer."
+msgstr "常にバッファーローカルな変数@code{font-lock-beginning-of-syntax-function}は、Font Lockモードがコメント、もしくは文字列の外であることが保証される位置を探す方法を指定します。それが最左列がカッコであるという慣習をもつモードでは、変数のデフォルト値は@code{beginning-of-defun}で、Font Lockモードがその慣習にしたがうよう指定します。この変数に@code{nil}をセットすると、Font Lockモードはもはや慣習には依存しなくなります。これでまちがった結果を避けられますが、その代償はとして、変更したテキストをフォント表示化するに、バッファのテキストをバッファの先頭から再走査しなければならない場合もあります。これはスクロールに相当な速度低下を招きかねず、大きなバッファーの最後に近い位置では、それが特に顕著になります。"
 
 #. type: findex
 #: display.texi.orig:869
 #, no-wrap
 msgid "font-lock-add-keywords"
-msgstr ""
+msgstr "font-lock-add-keywords"
 
 #. type: Plain text
 #: display.texi.orig:875
 msgid ""
 "Font Lock highlighting patterns already exist for most modes, but you may "
-"want to fontify additional patterns.  You can use the function "
-"@code{font-lock-add-keywords}, to add your own highlighting patterns for a "
-"particular mode.  For example, to highlight @samp{FIXME:} words in C "
-"comments, use this:"
-msgstr ""
+"want to fontify additional patterns.  You can use the function @code{font-"
+"lock-add-keywords}, to add your own highlighting patterns for a particular "
+"mode.  For example, to highlight @samp{FIXME:} words in C comments, use this:"
+msgstr "Font Lockは、ほとんどのモードで既存のパターンをハイライトしますが、追加のパターンをフォント表示化したいときもあるでしょう。特定のモードでハイライトするパターンを追加するには、関数@code{font-lock-add-keywords}を使うことができます。たとえばCコメント中の@samp{FIXME:}という単語をハイライトするには、以下を使います:"
 
 #. type: example
 #: display.texi.orig:882
@@ -2352,12 +2341,17 @@ msgid ""
 "            '((\"\\\\<\\\\(FIXME\\\\):\" 1\n"
 "               font-lock-warning-face t)))))\n"
 msgstr ""
+"(add-hook 'c-mode-hook\n"
+"          (lambda ()\n"
+"           (font-lock-add-keywords nil\n"
+"            '((\"\\\\<\\\\(FIXME\\\\):\" 1\n"
+"               font-lock-warning-face t)))))\n"
 
 #. type: findex
 #: display.texi.orig:884
 #, no-wrap
 msgid "font-lock-remove-keywords"
-msgstr ""
+msgstr "font-lock-remove-keywords"
 
 #. type: Plain text
 #: display.texi.orig:889
@@ -2365,19 +2359,19 @@ msgid ""
 "To remove keywords from the font-lock highlighting patterns, use the "
 "function @code{font-lock-remove-keywords}.  @xref{Search-based "
 "Fontification,,, elisp, The Emacs Lisp Reference Manual}."
-msgstr ""
+msgstr "font-lockのハイライトパターンからキーワードを削除するには、関数@code{font-lock-remove-keywords}を使います。@ref{Search-based Fontification,,, elisp, The Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: cindex
 #: display.texi.orig:890
 #, no-wrap
 msgid "just-in-time (JIT) font-lock"
-msgstr ""
+msgstr "just-in-time (JIT) font-lock"
 
 #. type: cindex
 #: display.texi.orig:891
 #, no-wrap
 msgid "background syntax highlighting"
-msgstr ""
+msgstr "background syntax highlighting"
 
 #. type: Plain text
 #: display.texi.orig:900
@@ -2390,58 +2384,58 @@ msgid ""
 "behaves, including telling it to perform fontification while idle, by "
 "customizing variables in the customization group @samp{jit-lock}.  "
 "@xref{Specific Customization}."
-msgstr ""
+msgstr "大きなバッファーのフォント表示化には、長い時間を要することもあります。ファイルをvisitしたとき大きな遅延を避けるには、Emacsが最初はバッファーの表示された部分だけをフォント表示化するようにします。バッファーをスクロールすると、新たに表示される部分がフォント表示化されます。このタイプのFont Lockは、@dfn{Just-In-Time}(または@dfn{JIT}) Lockと呼ばれます。カスタマイズグループ@samp{jit-lock}の値をカスタマイズすることにより、アイドル状態のときにフォント表示可を行うことも含めて、JIT Lockがどのように振る舞うか制御できます。@ref{Specific Customization}を参照してください。"
 
 #. type: section
 #: display.texi.orig:902
 #, no-wrap
 msgid "Interactive Highlighting"
-msgstr ""
+msgstr "Interactive Highlighting"
 
 #. type: cindex
 #: display.texi.orig:903
 #, no-wrap
 msgid "highlighting by matching"
-msgstr ""
+msgstr "highlighting by matching"
 
 #. type: cindex
 #: display.texi.orig:904
 #, no-wrap
 msgid "interactive highlighting"
-msgstr ""
+msgstr "interactive highlighting"
 
 #. type: cindex
 #: display.texi.orig:905
 #, no-wrap
 msgid "Highlight Changes mode"
-msgstr ""
+msgstr "Highlight Changes mode"
 
 #. type: findex
 #: display.texi.orig:907
 #, no-wrap
 msgid "highlight-changes-mode"
-msgstr ""
+msgstr "highlight-changes-mode"
 
 #. type: Plain text
 #: display.texi.orig:912
 msgid ""
 "Highlight Changes mode is a minor mode that @dfn{highlights} the parts of "
 "the buffer that were changed most recently, by giving that text a different "
-"face.  To enable or disable Highlight Changes mode, use @kbd{M-x "
-"highlight-changes-mode}."
-msgstr ""
+"face.  To enable or disable Highlight Changes mode, use @kbd{M-x highlight-"
+"changes-mode}."
+msgstr "Highlight Changesモードは、最近変更されたバッファー部分のテキストに、異なるフェイスを与えることにより@dfn{ハイライト}するマイナーモードです。Highlight Changesモードを有効または無効にするには、@kbd{M-x highlight-changes-mode}を使います。"
 
 #. type: cindex
 #: display.texi.orig:913
 #, no-wrap
 msgid "Hi Lock mode"
-msgstr ""
+msgstr "Hi Lock mode"
 
 #. type: findex
 #: display.texi.orig:914
 #, no-wrap
 msgid "hi-lock-mode"
-msgstr ""
+msgstr "hi-lock-mode"
 
 #. type: Plain text
 #: display.texi.orig:923
@@ -2450,11 +2444,11 @@ msgid ""
 "expressions you specify.  For example, you can use it to highlight all the "
 "references to a certain variable in a program source file, highlight certain "
 "parts in a voluminous output of some program, or highlight certain names in "
-"an article.  To enable or disable Hi Lock mode, use the command @kbd{M-x "
-"hi-lock-mode}.  To enable Hi Lock mode for all buffers, use @kbd{M-x "
-"global-hi-lock-mode} or place @code{(global-hi-lock-mode 1)} in your "
-"@file{.emacs} file."
-msgstr ""
+"an article.  To enable or disable Hi Lock mode, use the command @kbd{M-x hi-"
+"lock-mode}.  To enable Hi Lock mode for all buffers, use @kbd{M-x global-hi-"
+"lock-mode} or place @code{(global-hi-lock-mode 1)} in your @file{.emacs} "
+"file."
+msgstr "Hi Lockモードは、指定した正規表現にマッチするテキストをハイライトする、マイナーモードです。たとえば、プログラムのソースファイルで、特定の変数へのすべての参照をハイライトしたり、何らかのプログラムの大量の出力の一部をハイライトしたり、記事中の特定の名前をハイライトするために使用できます。Hi Lockモードを有効または無効にするには、コマンド@kbd{M-x hi-lock-mode}を使います。すべてのバッファーでHi Lockモードを有効にするには、@kbd{M-x global-hi-lock-mode}を使うか、@file{.emacs}ファイルに@code{(global-hi-lock-mode 1)}と記述してください。"
 
 #. type: Plain text
 #: display.texi.orig:927
@@ -2462,37 +2456,37 @@ msgid ""
 "Hi Lock mode works like Font Lock mode (@pxref{Font Lock}), except that you "
 "specify explicitly the regular expressions to highlight.  You control them "
 "with these commands:"
-msgstr ""
+msgstr "Hi LockモードはFont Lockモード(@ref{Font Lock}を参照してください)と同じように動作しますが、ハイライトするパターンを明示的に正規表現で指定します。これらは以下のコマンドで制御できます:"
 
 #. type: item
 #: display.texi.orig:929
 #, no-wrap
 msgid "M-s h r @var{regexp} @key{RET} @var{face} @key{RET}"
-msgstr ""
+msgstr "M-s h r @var{regexp} @key{RET} @var{face} @key{RET}"
 
 #. type: itemx
 #: display.texi.orig:930
 #, no-wrap
 msgid "C-x w h @var{regexp} @key{RET} @var{face} @key{RET}"
-msgstr ""
+msgstr "C-x w h @var{regexp} @key{RET} @var{face} @key{RET}"
 
 #. type: kindex
 #: display.texi.orig:931
 #, no-wrap
 msgid "M-s h r"
-msgstr ""
+msgstr "M-s h r"
 
 #. type: kindex
 #: display.texi.orig:932
 #, no-wrap
 msgid "C-x w h"
-msgstr ""
+msgstr "C-x w h"
 
 #. type: findex
 #: display.texi.orig:933
 #, no-wrap
 msgid "highlight-regexp"
-msgstr ""
+msgstr "highlight-regexp"
 
 #. type: table
 #: display.texi.orig:942
@@ -2505,13 +2499,13 @@ msgid ""
 "provides several of its own and these are pre-loaded into a list of default "
 "values.  While being prompted for a face use @kbd{M-n} and @kbd{M-p} to "
 "cycle through them."
-msgstr ""
+msgstr "@var{regexp}にマッチするテキストを、フェイス@var{face}を使ってハイライトします(@code{highlight-regexp})。ハイライトはバッファーがロードされている限り残ります。たとえば単語``whim''をデフォルトのフェイス(黄色いバックグラウンドカラー)でハイライトするには、@kbd{M-s h r whim @key{RET} @key{RET}}とタイプします。ハイライトには任意のフェイスを使うことができますが、Hi Lockモードはモード自身でいくつかのフェイスを提供しており、それらはデフォルト値のリストに事前ロードされています。フェイスの入力プロンプトで@kbd{M-n}と@kbd{M-p}を使うことにより、それらを巡回することができます。"
 
 #. type: vindex
 #: display.texi.orig:943
 #, no-wrap
 msgid "hi-lock-auto-select-face"
-msgstr ""
+msgstr "hi-lock-auto-select-face"
 
 #. type: table
 #: display.texi.orig:948
@@ -2519,49 +2513,49 @@ msgid ""
 "Setting the option @code{hi-lock-auto-select-face} to a non-@code{nil} value "
 "causes this command (and other Hi Lock commands that read faces)  to "
 "automatically choose the next face from the default list without prompting."
-msgstr ""
+msgstr "オプション@code{hi-lock-auto-select-face}に非@code{nil}値をセットすることにより、このコマンド(およびその他のフェイスを読みとるHi Lockコマンド)は、入力を求めることなく、デフォルト値のリストから次のフェイスを自動的に選択します。"
 
 #. type: table
 #: display.texi.orig:951
 msgid ""
 "You can use this command multiple times, specifying various regular "
 "expressions to highlight in different ways."
-msgstr ""
+msgstr "このコマンドを複数回使用して、さまざまな正規表現を指定し、それぞれを異なる方法でハイライトできます。"
 
 #. type: item
 #: display.texi.orig:952
 #, no-wrap
 msgid "M-s h u @var{regexp} @key{RET}"
-msgstr ""
+msgstr "M-s h u @var{regexp} @key{RET}"
 
 #. type: itemx
 #: display.texi.orig:953
 #, no-wrap
 msgid "C-x w r @var{regexp} @key{RET}"
-msgstr ""
+msgstr "C-x w r @var{regexp} @key{RET}"
 
 #. type: kindex
 #: display.texi.orig:954
 #, no-wrap
 msgid "M-s h u"
-msgstr ""
+msgstr "M-s h u"
 
 #. type: kindex
 #: display.texi.orig:955
 #, no-wrap
 msgid "C-x w r"
-msgstr ""
+msgstr "C-x w r"
 
 #. type: findex
 #: display.texi.orig:956
 #, no-wrap
 msgid "unhighlight-regexp"
-msgstr ""
+msgstr "unhighlight-regexp"
 
 #. type: table
 #: display.texi.orig:958
 msgid "Unhighlight @var{regexp} (@code{unhighlight-regexp})."
-msgstr ""
+msgstr "@var{regexp}のハイライトを解除します(@code{unhighlight-regexp})。"
 
 #. type: table
 #: display.texi.orig:967
@@ -2573,162 +2567,162 @@ msgid ""
 "expression.  (You can also type the expression by hand, with completion.)  "
 "When the expression you want to unhighlight appears in the minibuffer, press "
 "@kbd{@key{RET}} to exit the minibuffer and unhighlight it."
-msgstr ""
+msgstr "メニューから呼び出した場合、ハイライト解除する正規表現をリストから選択します。キーボードから呼び出した場合は、ミニバッファーを使います。一番最近追加された正規表現を表示し、@kbd{M-n}を使って次に古い正規表現、@kbd{M-p}で次に新しい正規表現を表示できます(手入力もでき、その場合は補完機能つきです)。ハイライト解除したい正規表現がミニバッファーに表示されたら、@kbd{@key{RET}}を押してミニバッファーを抜けだし、ハイライトを解除できます。"
 
 #. type: item
 #: display.texi.orig:968
 #, no-wrap
 msgid "M-s h l @var{regexp} @key{RET} @var{face} @key{RET}"
-msgstr ""
+msgstr "M-s h l @var{regexp} @key{RET} @var{face} @key{RET}"
 
 #. type: itemx
 #: display.texi.orig:969
 #, no-wrap
 msgid "C-x w l @var{regexp} @key{RET} @var{face} @key{RET}"
-msgstr ""
+msgstr "C-x w l @var{regexp} @key{RET} @var{face} @key{RET}"
 
 #. type: kindex
 #: display.texi.orig:970
 #, no-wrap
 msgid "M-s h l"
-msgstr ""
+msgstr "M-s h l"
 
 #. type: kindex
 #: display.texi.orig:971
 #, no-wrap
 msgid "C-x w l"
-msgstr ""
+msgstr "C-x w l"
 
 #. type: findex
 #: display.texi.orig:972
 #, no-wrap
 msgid "highlight-lines-matching-regexp"
-msgstr ""
+msgstr "highlight-lines-matching-regexp"
 
 #. type: cindex
 #: display.texi.orig:973
 #, no-wrap
 msgid "lines, highlighting"
-msgstr ""
+msgstr "lines, highlighting"
 
 #. type: cindex
 #: display.texi.orig:974
 #, no-wrap
 msgid "highlighting lines of text"
-msgstr ""
+msgstr "highlighting lines of text"
 
 #. type: table
 #: display.texi.orig:977
 msgid ""
 "Highlight entire lines containing a match for @var{regexp}, using face "
 "@var{face} (@code{highlight-lines-matching-regexp})."
-msgstr ""
+msgstr "@var{regexp}とのマッチを含む行全体を、フェイス@var{face}を使ってハイライトします(@code{highlight-lines-matching-regexp})。"
 
 #. type: item
 #: display.texi.orig:978
 #, no-wrap
 msgid "M-s h p @var{phrase} @key{RET} @var{face} @key{RET}"
-msgstr ""
+msgstr "M-s h p @var{phrase} @key{RET} @var{face} @key{RET}"
 
 #. type: itemx
 #: display.texi.orig:979
 #, no-wrap
 msgid "C-x w p @var{phrase} @key{RET} @var{face} @key{RET}"
-msgstr ""
+msgstr "C-x w p @var{phrase} @key{RET} @var{face} @key{RET}"
 
 #. type: kindex
 #: display.texi.orig:980
 #, no-wrap
 msgid "M-s h p"
-msgstr ""
+msgstr "M-s h p"
 
 #. type: kindex
 #: display.texi.orig:981
 #, no-wrap
 msgid "C-x w p"
-msgstr ""
+msgstr "C-x w p"
 
 #. type: findex
 #: display.texi.orig:982
 #, no-wrap
 msgid "highlight-phrase"
-msgstr ""
+msgstr "highlight-phrase"
 
 #. type: cindex
 #: display.texi.orig:983
 #, no-wrap
 msgid "phrase, highlighting"
-msgstr ""
+msgstr "phrase, highlighting"
 
 #. type: cindex
 #: display.texi.orig:984
 #, no-wrap
 msgid "highlighting phrase"
-msgstr ""
+msgstr "highlighting phrase"
 
 #. type: table
 #: display.texi.orig:989
 msgid ""
-"Highlight matches of @var{phrase}, using face @var{face} "
-"(@code{highlight-phrase}).  @var{phrase} can be any regexp, but spaces will "
-"be replaced by matches to whitespace and initial lower-case letters will "
-"become case insensitive."
-msgstr ""
+"Highlight matches of @var{phrase}, using face @var{face} (@code{highlight-"
+"phrase}).  @var{phrase} can be any regexp, but spaces will be replaced by "
+"matches to whitespace and initial lower-case letters will become case "
+"insensitive."
+msgstr "@var{phrase}にマッチするフレーズを、フェイス@var{face}でハイライトします(@code{highlight-phrase})。@var{phrase}には正規表現を指定できますが、スペースは空白文字にマッチする正規表現に置き換えられます。また、先頭に小文字を使用することにより、大文字小文字を区別しなくなります。"
 
 #. type: kindex
 #: display.texi.orig:990 display.texi.orig:992
 #, no-wrap
 msgid "M-s h ."
-msgstr ""
+msgstr "M-s h ."
 
 #. type: kindex
 #: display.texi.orig:991 display.texi.orig:993
 #, no-wrap
 msgid "C-x w ."
-msgstr ""
+msgstr "C-x w ."
 
 #. type: findex
 #: display.texi.orig:994
 #, no-wrap
 msgid "highlight-symbol-at-point"
-msgstr ""
+msgstr "highlight-symbol-at-point"
 
 #. type: cindex
 #: display.texi.orig:995
 #, no-wrap
 msgid "symbol, highlighting"
-msgstr ""
+msgstr "symbol, highlighting"
 
 #. type: cindex
 #: display.texi.orig:996
 #, no-wrap
 msgid "highlighting symbol at point"
-msgstr ""
+msgstr "highlighting symbol at point"
 
 #. type: table
 #: display.texi.orig:999
 msgid ""
 "Highlight the symbol found near point, using the next available face "
 "(@code{highlight-symbol-at-point})."
-msgstr ""
+msgstr "ポイントの近くで見つかったシンボルを、次に利用可能なフェイスでハイライトします(@code{highlight-symbol-at-point})。"
 
 #. type: kindex
 #: display.texi.orig:1000 display.texi.orig:1002
 #, no-wrap
 msgid "M-s h w"
-msgstr ""
+msgstr "M-s h w"
 
 #. type: kindex
 #: display.texi.orig:1001 display.texi.orig:1003
 #, no-wrap
 msgid "C-x w b"
-msgstr ""
+msgstr "C-x w b"
 
 #. type: findex
 #: display.texi.orig:1004
 #, no-wrap
 msgid "hi-lock-write-interactive-patterns"
-msgstr ""
+msgstr "hi-lock-write-interactive-patterns"
 
 #. type: table
 #: display.texi.orig:1009
@@ -2737,7 +2731,7 @@ msgid ""
 "point, with comment delimiters to prevent them from changing your program.  "
 "(This key binding runs the @code{hi-lock-write-interactive-patterns} "
 "command.)"
-msgstr ""
+msgstr "現在ハイライトを行っている正規表現/フェイスのペアを、バッファーのポイント位置に挿入します。挿入はプログラムを変更してしまわないように、コメント文字列でコメント化されます(このキーバインドは@code{hi-lock-write-interactive-patterns}コマンドを実行します)。"
 
 #. type: table
 #: display.texi.orig:1013
@@ -2745,43 +2739,42 @@ msgid ""
 "These patterns are extracted from the comments, if appropriate, if you "
 "invoke @kbd{M-x hi-lock-find-patterns}, or if you visit the file while Hi "
 "Lock mode is enabled (since that runs @code{hi-lock-find-patterns})."
-msgstr ""
+msgstr "これらのパターンは、コメントからも逆抽出されます。それは、コメントに記述されたテキストが適正で、@kbd{M-x hi-lock-find-patterns}を呼び出した、あるいはHi Lockモードが有効なときファイルをvisit(これは@code{hi-lock-find-patterns}を実行します)したときです。"
 
 #. type: kindex
 #: display.texi.orig:1014 display.texi.orig:1016
 #, no-wrap
 msgid "M-s h f"
-msgstr ""
+msgstr "M-s h f"
 
 #. type: kindex
 #: display.texi.orig:1015 display.texi.orig:1017
 #, no-wrap
 msgid "C-x w i"
-msgstr ""
+msgstr "C-x w i"
 
 #. type: findex
 #: display.texi.orig:1018
 #, no-wrap
 msgid "hi-lock-find-patterns"
-msgstr ""
+msgstr "hi-lock-find-patterns"
 
 #. type: table
 #: display.texi.orig:1026
 msgid ""
-"Extract regexp/face pairs from comments in the current buffer "
-"(@code{hi-lock-find-patterns}).  Thus, you can enter patterns interactively "
-"with @code{highlight-regexp}, store them into the file with "
-"@code{hi-lock-write-interactive-patterns}, edit them (perhaps including "
-"different faces for different parenthesized parts of the match), and finally "
-"use this command (@code{hi-lock-find-patterns}) to have Hi Lock highlight "
-"the edited patterns."
-msgstr ""
+"Extract regexp/face pairs from comments in the current buffer (@code{hi-lock-"
+"find-patterns}).  Thus, you can enter patterns interactively with "
+"@code{highlight-regexp}, store them into the file with @code{hi-lock-write-"
+"interactive-patterns}, edit them (perhaps including different faces for "
+"different parenthesized parts of the match), and finally use this command "
+"(@code{hi-lock-find-patterns}) to have Hi Lock highlight the edited patterns."
+msgstr "正規表現/フェイスのペアを、現在のバッファーのコメントから抽出します(@code{hi-lock-find-patterns})。これらのコマンドを使えば、@code{highlight-regexp}でパターンを対話的に入力、@code{hi-lock-write-interactive-patterns}でそれをファイルに保存、それらを編集(あるマッチのフェイスを別のフェイスにしたり)、そして最後にこのコマンド(@code{hi-lock-find-patterns})で編集済みのパターンを、Hi Lockのハイライトに適用することができます。"
 
 #. type: vindex
 #: display.texi.orig:1027
 #, no-wrap
 msgid "hi-lock-file-patterns-policy"
-msgstr ""
+msgstr "hi-lock-file-patterns-policy"
 
 #. type: table
 #: display.texi.orig:1037
@@ -2789,56 +2782,55 @@ msgid ""
 "The variable @code{hi-lock-file-patterns-policy} controls whether Hi Lock "
 "mode should automatically extract and highlight patterns found in a file "
 "when it is visited.  Its value can be @code{nil} (never highlight), "
-"@code{ask} (query the user), or a function.  If it is a function, "
-"@code{hi-lock-find-patterns} calls it with the patterns as argument; if the "
-"function returns non-@code{nil}, the patterns are used.  The default is "
-"@code{ask}.  Note that patterns are always highlighted if you call "
-"@code{hi-lock-find-patterns} directly, regardless of the value of this "
-"variable."
-msgstr ""
+"@code{ask} (query the user), or a function.  If it is a function, @code{hi-"
+"lock-find-patterns} calls it with the patterns as argument; if the function "
+"returns non-@code{nil}, the patterns are used.  The default is @code{ask}.  "
+"Note that patterns are always highlighted if you call @code{hi-lock-find-"
+"patterns} directly, regardless of the value of this variable."
+msgstr "変数@code{hi-lock-file-patterns-policy}はファイルをvisitしたとき、Hi Lockモードがパターンを探して、それを自動的に抽出するべきかを制御します。値には@code{nil}(ハイライトしない)、@code{ask}(ユーザーに尋ねる)、または関数を指定します。関数の場合、@code{hi-lock-find-patterns}はパターンを引数としてその関数を呼び出します。関数が非@code{nil}を返した場合、パターンを使用します。デフォルトは@code{ask}です。直接@code{hi-lock-find-patterns}を呼び出した場合、この変数の値に関係なく、常にパターンはハイライトされることに注意してください。"
 
 #. type: vindex
 #: display.texi.orig:1038
 #, no-wrap
 msgid "hi-lock-exclude-modes"
-msgstr ""
+msgstr "hi-lock-exclude-modes"
 
 #. type: table
 #: display.texi.orig:1041
 msgid ""
 "Also, @code{hi-lock-find-patterns} does nothing if the current major mode's "
 "symbol is a member of the list @code{hi-lock-exclude-modes}."
-msgstr ""
+msgstr "現在のメジャーモードのシンボルが、リスト@code{hi-lock-exclude-modes}のメンバーの場合、@code{hi-lock-find-patterns}は何もしません。"
 
 #. type: section
 #: display.texi.orig:1044
 #, no-wrap
 msgid "Window Fringes"
-msgstr ""
+msgstr "Window Fringes"
 
 #. type: cindex
 #: display.texi.orig:1045
 #, no-wrap
 msgid "fringes"
-msgstr ""
+msgstr "fringes"
 
 #. type: findex
 #: display.texi.orig:1047
 #, no-wrap
 msgid "set-fringe-style"
-msgstr ""
+msgstr "set-fringe-style"
 
 #. type: findex
 #: display.texi.orig:1048
 #, no-wrap
 msgid "fringe-mode"
-msgstr ""
+msgstr "fringe-mode"
 
 #. type: vindex
 #: display.texi.orig:1049
 #, no-wrap
 msgid "fringe-mode @r{(variable)}"
-msgstr ""
+msgstr "fringe-mode @r{(variable)}"
 
 #. type: Plain text
 #: display.texi.orig:1058
@@ -2850,7 +2842,7 @@ msgid ""
 "affects fringes in all frames; to modify fringes on the selected frame only, "
 "use @kbd{M-x set-fringe-style}.  You can make your changes to the fringes "
 "permanent by customizing the variable @code{fringe-mode}."
-msgstr ""
+msgstr "グラフィカルなディスプレーでは、通常Emacsの各ウィンドウの左右の端に、狭い@dfn{フリンジ(fringes: 縁、へり)}があります。フリンジは、ウィンドウのテキストに関する情報を提供するシンボルの表示に使用されます。@kbd{M-x fringe-mode}とタイプしてフリンジを無効にしたり、幅を変更できます。このコマンドは全フレームのフリンジに影響します。選択されたフレームのフリンジだけを変更するには、@kbd{M-x set-fringe-style}を使います。変数@code{fringe-mode}をカスタマイズして、フリンジへの変更を永続化できます。"
 
 #. type: Plain text
 #: display.texi.orig:1068
@@ -2863,7 +2855,7 @@ msgid ""
 "indicating that ``this is not the real end''.  If the line's direction is "
 "right-to-left (@pxref{Bidirectional Editing}), the meanings of the curving "
 "arrows in the fringes are swapped."
-msgstr ""
+msgstr "フリンジのもっとも一般的な使われかたは、継続行の表示です(@ref{Continuation Lines}を参照してください)。テキストの1行が複数のスクリーン行に分割されるとき、最初の行を除いた各行の左フリンジには曲矢印が表示され、その行の先頭が``実際の行頭ではない''ことを示します。そして、最後の行を除いた各行の右フリンジにも曲矢印が表示され、その行の最後が``実際の行末ではない''ことを示します。行の方向が右から左(@ref{Bidirectional Editing}を参照してください)の場合、フリンジの曲矢印の意味は逆になります。"
 
 #. type: Plain text
 #: display.texi.orig:1073
@@ -2872,7 +2864,7 @@ msgid ""
 "``there's more text on this line which is scrolled horizontally out of "
 "view''.  Clicking the mouse on one of the arrows scrolls the display "
 "horizontally in the direction of the arrow."
-msgstr ""
+msgstr "行が切り詰められているときは水平方向の直矢印を表示して、``この行には水平スクロールしなければ見ることのできないテキストがある''ことを示します。矢印の上でマウスをクリックすれば、矢印の指す方向に水平スクロールします。"
 
 #. type: Plain text
 #: display.texi.orig:1077
@@ -2880,13 +2872,13 @@ msgid ""
 "The fringes can also indicate other things, such as buffer boundaries "
 "(@pxref{Displaying Boundaries}), and where a program you are debugging is "
 "executing (@pxref{Debuggers})."
-msgstr ""
+msgstr "フリンジはバッファーの境界(@ref{Displaying Boundaries}を参照してください)や、デバッグ(@ref{Debuggers}を参照してください)しているプログラムが実行中であることを示すためにも使われます。"
 
 #. type: vindex
 #: display.texi.orig:1078
 #, no-wrap
 msgid "overflow-newline-into-fringe"
-msgstr ""
+msgstr "overflow-newline-into-fringe"
 
 #. type: Plain text
 #: display.texi.orig:1084
@@ -2896,13 +2888,13 @@ msgid ""
 "disable this, change the variable @code{overflow-newline-into-fringe} to "
 "@code{nil}; this causes Emacs to continue or truncate lines that are exactly "
 "as wide as the window."
-msgstr ""
+msgstr "現在の行がウィンドウの幅と正確に一致して、ポイントがその行の行末にある場合、フリンジにはカーソルが描画されます。これを無効にするには、変数@code{overflow-newline-into-fringe}を@code{nil}に変更します。これによりEmacsはウィンドウ幅と同じ長さの行にたいしても、継続または切り詰めを行います。"
 
 #. type: vindex
 #: display.texi.orig:1088
 #, no-wrap
 msgid "indicate-buffer-boundaries"
-msgstr ""
+msgstr "indicate-buffer-boundaries"
 
 #. type: Plain text
 #: display.texi.orig:1094
@@ -2911,7 +2903,7 @@ msgid ""
 "fringes.  If you enable this feature, the first line and the last line are "
 "marked with angle images in the fringes.  This can be combined with up and "
 "down arrow images which say whether it is possible to scroll the window."
-msgstr ""
+msgstr "グラフィカルなディスプレーでは、Emacsはバッファーのバウンダリー(boundary: 境界)を、フリンジに表示することもできます。この機能を有効にすると、最初の行と最後の行ではフリンジに、かぎカッコが表示されます。上矢印または下矢印の場合、それはウィンドウをその方向に、もっとスクロールできることを示します。"
 
 #. type: Plain text
 #: display.texi.orig:1099
@@ -2920,7 +2912,7 @@ msgid ""
 "buffer boundaries and window scrolling is indicated in the fringes.  If the "
 "value is @code{left} or @code{right}, both angle and arrow bitmaps are "
 "displayed in the left or right fringe, respectively."
-msgstr ""
+msgstr "バッファーローカルな変数@code{indicate-buffer-boundaries}は、バッファーのバウンダリーととウィンドウのスクロールが、フリンジでどのように表示されるかを制御します。値が@code{left}(または@code{right})の場合、かぎカッコと矢印のビットマップは、左フリンジ(または右フリンジ)に表示されます。"
 
 #. type: Plain text
 #: display.texi.orig:1107
@@ -2932,7 +2924,7 @@ msgid ""
 "indicators not present in the alist.  The @var{position} is one of "
 "@code{left}, @code{right}, or @code{nil} which specifies not to show this "
 "indicator."
-msgstr ""
+msgstr "値がalist(association list: 連想リスト)の場合、各要素の@code{(@var{indicator} .  @var{position})}で、標識(indicator)の位置(position)を指定します。@var{indicator}には@code{top}、@code{bottom}、@code{up}、@code{down}、または@code{t}(指定されていない標識のデフォルト位置)を指定します。@var{position}には@code{left}、@code{right}、または@code{nil}(標識を表示しない)を指定します。"
 
 #. type: Plain text
 #: display.texi.orig:1113
@@ -2941,25 +2933,25 @@ msgid ""
 "in left fringe, the bottom angle bitmap in right fringe, and both arrow "
 "bitmaps in right fringe.  To show just the angle bitmaps in the left fringe, "
 "but no arrow bitmaps, use @code{((top .  left)  (bottom . left))}."
-msgstr ""
+msgstr "たとえば@code{((top . left) (t . right))}は、最上行の左フリンジにかぎカッコを表示し、右フリンジには最下行のかぎカッコとスクロール矢印を表示します。左フリンジにかぎカッコだけを表示させる場合は、@code{((top .  left)  (bottom . left))}を使います。"
 
 #. type: cindex
 #: display.texi.orig:1117
 #, no-wrap
 msgid "trailing whitespace"
-msgstr ""
+msgstr "trailing whitespace"
 
 #. type: cindex
 #: display.texi.orig:1118
 #, no-wrap
 msgid "whitespace, trailing"
-msgstr ""
+msgstr "whitespace, trailing"
 
 #. type: vindex
 #: display.texi.orig:1119
 #, no-wrap
 msgid "show-trailing-whitespace"
-msgstr ""
+msgstr "show-trailing-whitespace"
 
 #. type: Plain text
 #: display.texi.orig:1124
@@ -2967,22 +2959,22 @@ msgid ""
 "It is easy to leave unnecessary spaces at the end of a line, or empty lines "
 "at the end of a buffer, without realizing it.  In most cases, this "
 "@dfn{trailing whitespace} has no effect, but sometimes it can be a nuisance."
-msgstr ""
+msgstr "意識せずに不必要なスペースを行末に残してしまったり、バッファーの最後に空行を残してしまうことはよくあります。ほとんどの場合、そのような@dfn{行末の空白文字(trailing whitespace)}は何の影響も及ぼしませんが、厄介物になる場合もあります。"
 
 #. type: cindex
 #: display.texi.orig:1125
 #, no-wrap
 msgid "trailing-whitespace face"
-msgstr ""
+msgstr "trailing-whitespace face"
 
 #. type: Plain text
 #: display.texi.orig:1130
 msgid ""
 "You can make trailing whitespace at the end of a line visible by setting the "
 "buffer-local variable @code{show-trailing-whitespace} to @code{t}.  Then "
-"Emacs displays trailing whitespace, using the face "
-"@code{trailing-whitespace}."
-msgstr ""
+"Emacs displays trailing whitespace, using the face @code{trailing-"
+"whitespace}."
+msgstr "バッファーローカルな変数@code{show-trailing-whitespace}を@code{t}にセットすることにより、行末の空白文字を可視化できます。これによりEmacsはフェイス@code{trailing-whitespace}で、行末の空白文字を表示します。"
 
 #. type: Plain text
 #: display.texi.orig:1137
@@ -2992,19 +2984,19 @@ msgid ""
 "nonetheless, but displaying it specially in that case looks ugly while you "
 "are typing in new text.  In this special case, the location of point is "
 "enough to show you that the spaces are present."
-msgstr ""
+msgstr "この機能は行末に空白文字を含む行の、行末にポイントがあるときは適用されません。厳密にいえば、これも``行末の空白文字''なのですが、それを特別に表示してしまうと、新しいテキストをタイプするとき面倒です。このような特別なケースでは、ポイントの位置に表示されるカーソルより、空白文字があることが自明だからです。"
 
 #. type: findex
 #: display.texi.orig:1138
 #, no-wrap
 msgid "delete-trailing-whitespace"
-msgstr ""
+msgstr "delete-trailing-whitespace"
 
 #. type: vindex
 #: display.texi.orig:1139
 #, no-wrap
 msgid "delete-trailing-lines"
-msgstr ""
+msgstr "delete-trailing-lines"
 
 #. type: Plain text
 #: display.texi.orig:1146
@@ -3015,25 +3007,25 @@ msgid ""
 "latter, change the variable @code{delete-trailing-lines} to @code{nil}.  If "
 "the region is active, the command instead deletes extra spaces at the end of "
 "each line in the region."
-msgstr ""
+msgstr "@kbd{M-x delete-trailing-whitespace}とタイプすると、すべての行末の空白文字を削除します。このコマンドは、バッファー内の各行の行末にあるすべての余分なスペースと、バッファーの最後にある空行を削除します。バッファー内の空行を削除しない場合は、変数@code{delete-trailing-lines}を@code{nil}に変更してください。リージョンがアクティブのときは、リージョン内の各行の行末の余分なスペースを削除します。"
 
 #. type: vindex
 #: display.texi.orig:1147
 #, no-wrap
 msgid "indicate-empty-lines"
-msgstr ""
+msgstr "indicate-empty-lines"
 
 #. type: cindex
 #: display.texi.orig:1148
 #, no-wrap
 msgid "unused lines"
-msgstr ""
+msgstr "unused lines"
 
 #. type: cindex
 #: display.texi.orig:1149
 #, no-wrap
 msgid "fringes, and unused line indication"
-msgstr ""
+msgstr "fringes, and unused line indication"
 
 #. type: Plain text
 #: display.texi.orig:1159
@@ -3042,35 +3034,35 @@ msgid ""
 "window with a small image in the left fringe (@pxref{Fringes}).  The image "
 "appears for screen lines that do not correspond to any buffer text, so blank "
 "lines at the end of the buffer stand out because they lack this image.  To "
-"enable this feature, set the buffer-local variable "
-"@code{indicate-empty-lines} to a non-@code{nil} value.  You can enable or "
-"disable this feature for all new buffers by setting the default value of "
-"this variable, e.g., @code{(setq-default indicate-empty-lines t)}."
-msgstr ""
+"enable this feature, set the buffer-local variable @code{indicate-empty-"
+"lines} to a non-@code{nil} value.  You can enable or disable this feature "
+"for all new buffers by setting the default value of this variable, e.g., "
+"@code{(setq-default indicate-empty-lines t)}."
+msgstr "グラフィカルなディスプレーでは、Emacsはウィンドウの最後の使われていない行の左フリンジに小さなイメージを表示して、それを示すことができます。このイメージはバッファーのテキストが何も含まれていないスクリーン行に表示されるので、バッファーの最後にある空行は、このイメージが表示されないことで見分けることができます。この機能を有効にするにはバッファーローカルな変数@code{indicate-empty-lines}に非@code{nil}値をセットします。すべての新しいバッファーでこの機能を有効または無効にするには、この変数のデフォルト値をセットします(例 @code{(setq-default indicate-empty-lines t)})"
 
 #. type: cindex
 #: display.texi.orig:1160
 #, no-wrap
 msgid "Whitespace mode"
-msgstr ""
+msgstr "Whitespace mode"
 
 #. type: cindex
 #: display.texi.orig:1161
 #, no-wrap
 msgid "mode, Whitespace"
-msgstr ""
+msgstr "mode, Whitespace"
 
 #. type: findex
 #: display.texi.orig:1162
 #, no-wrap
 msgid "whitespace-mode"
-msgstr ""
+msgstr "whitespace-mode"
 
 #. type: vindex
 #: display.texi.orig:1163
 #, no-wrap
 msgid "whitespace-style"
-msgstr ""
+msgstr "whitespace-style"
 
 #. type: Plain text
 #: display.texi.orig:1172
@@ -3082,13 +3074,13 @@ msgid ""
 "visualized are determined by the list variable @code{whitespace-style}.  "
 "Here is a partial list of possible elements (see the variable's "
 "documentation for the full list):"
-msgstr ""
+msgstr "Whitespaceモードはバッファーローカルなマイナーモードで、バッファー内にある多くの種類の空白文字を``視覚化''します。これは空白文字を特別なフェイスで描画するか、特別なグリフで表示することにより行われます。このモードを切り替えるには、@kbd{M-x whitespace-mode}とタイプします。視覚化される空白文字の種類は、リスト変数@code{whitespace-style}により決定されます。以下はリストに指定できる要素の一部です(完全なリストは変数のドキュメントを参照してください)。"
 
 #. type: item
 #: display.texi.orig:1174
 #, no-wrap
 msgid "face"
-msgstr ""
+msgstr "face"
 
 #. type: table
 #: display.texi.orig:1179
@@ -3097,156 +3089,156 @@ msgid ""
 "special meaning: if it is absent from the list, none of the other "
 "visualizations take effect except @code{space-mark}, @code{tab-mark}, and "
 "@code{newline-mark}."
-msgstr ""
+msgstr "特別なフェイスを使った視覚化をすべて有効にします。この要素には特別な意味があります。もしこれがリストに含まれていない場合、@code{space-mark}、@code{tab-mark}、@code{newline-mark}を除く他の視覚化は効果がなくなります。"
 
 #. type: item
 #: display.texi.orig:1180
 #, no-wrap
 msgid "trailing"
-msgstr ""
+msgstr "trailing"
 
 #. type: table
 #: display.texi.orig:1182
 msgid "Highlight trailing whitespace."
-msgstr ""
+msgstr "行末の空白文字をハイライトします。"
 
 #. type: item
 #: display.texi.orig:1183
 #, no-wrap
 msgid "tabs"
-msgstr ""
+msgstr "tabs"
 
 #. type: table
 #: display.texi.orig:1185
 msgid "Highlight tab characters."
-msgstr ""
+msgstr "タブ文字をハイライトします。"
 
 #. type: item
 #: display.texi.orig:1186
 #, no-wrap
 msgid "spaces"
-msgstr ""
+msgstr "spaces"
 
 #. type: table
 #: display.texi.orig:1188
 msgid "Highlight space and non-breaking space characters."
-msgstr ""
+msgstr "スペースおよびnon-breaking space文字をハイライトします。"
 
 #. type: item
 #: display.texi.orig:1189
 #, no-wrap
 msgid "lines"
-msgstr ""
+msgstr "lines"
 
 #. type: vindex
 #: display.texi.orig:1190
 #, no-wrap
 msgid "whitespace-line-column"
-msgstr ""
+msgstr "whitespace-line-column"
 
 #. type: table
 #: display.texi.orig:1193
 msgid ""
 "Highlight lines longer than 80 columns.  To change the column limit, "
 "customize the variable @code{whitespace-line-column}."
-msgstr ""
+msgstr "80列以上の行をハイライトします。列の上限を変更するには、変数@code{whitespace-line-column}をカスタマイズします。"
 
 #. type: item
 #: display.texi.orig:1194
 #, no-wrap
 msgid "newline"
-msgstr ""
+msgstr "newline"
 
 #. type: table
 #: display.texi.orig:1196
 msgid "Highlight newlines."
-msgstr ""
+msgstr "改行をハイライトします。"
 
 #. type: item
 #: display.texi.orig:1197
 #, no-wrap
 msgid "empty"
-msgstr ""
+msgstr "empty"
 
 #. type: table
 #: display.texi.orig:1199
 msgid "Highlight empty lines."
-msgstr ""
+msgstr "空行をハイライトします。"
 
 #. type: item
 #: display.texi.orig:1200
 #, no-wrap
 msgid "space-mark"
-msgstr ""
+msgstr "space-mark"
 
 #. type: table
 #: display.texi.orig:1202
 msgid "Draw space and non-breaking characters with a special glyph."
-msgstr ""
+msgstr "スペースとnon-breaking文字を特別なグリフで描画します。"
 
 #. type: item
 #: display.texi.orig:1203
 #, no-wrap
 msgid "tab-mark"
-msgstr ""
+msgstr "tab-mark"
 
 #. type: table
 #: display.texi.orig:1205
 msgid "Draw tab characters with a special glyph."
-msgstr ""
+msgstr "タブ文字を特別なグリフで描画します。"
 
 #. type: item
 #: display.texi.orig:1206
 #, no-wrap
 msgid "newline-mark"
-msgstr ""
+msgstr "newline-mark"
 
 #. type: table
 #: display.texi.orig:1208
 msgid "Draw newline characters with a special glyph."
-msgstr ""
+msgstr "改行文字を特別なグリフで描画します。"
 
 #. type: cindex
 #: display.texi.orig:1212
 #, no-wrap
 msgid "selective display"
-msgstr ""
+msgstr "selective display"
 
 #. type: findex
 #: display.texi.orig:1213
 #, no-wrap
 msgid "set-selective-display"
-msgstr ""
+msgstr "set-selective-display"
 
 #. type: kindex
 #: display.texi.orig:1214
 #, no-wrap
 msgid "C-x $"
-msgstr ""
+msgstr "C-x $"
 
 #. type: Plain text
 #: display.texi.orig:1219
 msgid ""
 "Emacs has the ability to hide lines indented more than a given number of "
 "columns.  You can use this to get an overview of a part of a program."
-msgstr ""
+msgstr "Emacsには、与えられたレベルより多くインデントされた行を隠す機能があります。これをプログラムの概要を理解するのに使うことができます。"
 
 #. type: Plain text
 #: display.texi.orig:1226
 msgid ""
-"To hide lines in the current buffer, type @kbd{C-x $} "
-"(@code{set-selective-display}) with a numeric argument @var{n}.  Then lines "
-"with at least @var{n} columns of indentation disappear from the screen.  The "
-"only indication of their presence is that three dots (@samp{@dots{}}) appear "
-"at the end of each visible line that is followed by one or more hidden ones."
-msgstr ""
+"To hide lines in the current buffer, type @kbd{C-x $} (@code{set-selective-"
+"display}) with a numeric argument @var{n}.  Then lines with at least @var{n} "
+"columns of indentation disappear from the screen.  The only indication of "
+"their presence is that three dots (@samp{@dots{}}) appear at the end of each "
+"visible line that is followed by one or more hidden ones."
+msgstr "現在のバッファーの行を隠すには、数引数@var{n}を指定して@kbd{C-x $} (@code{set-selective-display})をタイプします。すると少なくとも@var{n}列のインデントをもつ行は、スクリーンに表示されなくなります。隠された行の存在を示すのは、表示されている行末に表示された3つのドット(@samp{@dots{}})だけで、これは1行以上の行が後に隠されていることを意味します。"
 
 #. type: Plain text
 #: display.texi.orig:1229
 msgid ""
 "The commands @kbd{C-n} and @kbd{C-p} move across the hidden lines as if they "
 "were not there."
-msgstr ""
+msgstr "コマンド@kbd{C-n}および@kbd{C-p}は、隠された行が存在しないかのように、隠された行をスキップして移動します。"
 
 #. type: Plain text
 #: display.texi.orig:1236
@@ -3256,18 +3248,18 @@ msgid ""
 "When this happens, the cursor appears at the end of the previous line, after "
 "the three dots.  If point is at the end of the visible line, before the "
 "newline that ends it, the cursor appears before the three dots."
-msgstr ""
+msgstr "隠された行は依然としてバッファーに存在し、ほとんどの編集コマンドはそれらを見ることができるので、隠されな行にポイントを移動することもありえます。これが起こるとカーソルは前の行の最後、つまり3つのドットの後ろに表示されます。ポイントが表示されている行の行末、つまり改行の前にある場合、カーソルは3つのドットの前に表示されます。"
 
 #. type: Plain text
 #: display.texi.orig:1238
 msgid "To make all lines visible again, type @kbd{C-x $} with no argument."
-msgstr ""
+msgstr "隠された行のすべてを再び表示するには、引数を指定せずに@kbd{C-x $}とタイプしてください。"
 
 #. type: vindex
 #: display.texi.orig:1239
 #, no-wrap
 msgid "selective-display-ellipses"
-msgstr ""
+msgstr "selective-display-ellipses"
 
 #. type: Plain text
 #: display.texi.orig:1244
@@ -3276,38 +3268,38 @@ msgid ""
 "three dots do not appear at the end of a line that precedes hidden lines.  "
 "Then there is no visible indication of the hidden lines.  This variable "
 "becomes local automatically when set."
-msgstr ""
+msgstr "変数@code{selective-display-ellipses}に@code{nil}をセットすると、隠された行があることを示す3つのドットは表示されなくなり、隠された行があることを示す視覚的な表示はなくなります。変数がセットされると、それは自動的にローカルになります。"
 
 #. type: Plain text
 #: display.texi.orig:1247
 msgid ""
 "See also @ref{Outline Mode} for another way to hide part of the text in a "
 "buffer."
-msgstr ""
+msgstr "バッファーのテキストの一部を隠す他の方法については、@ref{Outline Mode}を参照してください。"
 
 #. type: section
 #: display.texi.orig:1249
 #, no-wrap
 msgid "Optional Mode Line Features"
-msgstr ""
+msgstr "Optional Mode Line Features"
 
 #. type: cindex
 #: display.texi.orig:1251
 #, no-wrap
 msgid "buffer size display"
-msgstr ""
+msgstr "buffer size display"
 
 #. type: cindex
 #: display.texi.orig:1252
 #, no-wrap
 msgid "display of buffer size"
-msgstr ""
+msgstr "display of buffer size"
 
 #. type: findex
 #: display.texi.orig:1253
 #, no-wrap
 msgid "size-indication-mode"
-msgstr ""
+msgstr "size-indication-mode"
 
 #. type: Plain text
 #: display.texi.orig:1259
@@ -3317,13 +3309,13 @@ msgid ""
 "by typing @kbd{M-x size-indication-mode} to turn on Size Indication mode.  "
 "The size will be displayed immediately following the buffer percentage like "
 "this:"
-msgstr ""
+msgstr "バッファーのパーセント表示@var{pos}は、ウィンドウの上端がバッファーのどの場所にあるかを100分率で示します。@kbd{M-x size-indication-mode}とタイプしてSize Indicationモードをオンにすることにより、バッファーのサイズを追加で表示できます。サイズは以下のようにパーセント表示のすぐ後に表示されます:"
 
 #. type: example
 #: display.texi.orig:1262
 #, no-wrap
 msgid "@var{pos} of @var{size}\n"
-msgstr ""
+msgstr "@var{pos} of @var{size}\n"
 
 #. type: Plain text
 #: display.texi.orig:1268
@@ -3331,25 +3323,25 @@ msgid ""
 "Here @var{size} is the human readable representation of the number of "
 "characters in the buffer, which means that @samp{k} for 10^3, @samp{M} for "
 "10^6, @samp{G} for 10^9, etc., are used to abbreviate."
-msgstr ""
+msgstr "@var{size}は、バッファーの文字数を人間が理解しやすい形式(@samp{k}は10^3、@samp{M}は10^6、@samp{G}は10^9などの短縮形が使用されます)で表示します。"
 
 #. type: cindex
 #: display.texi.orig:1269
 #, no-wrap
 msgid "line number display"
-msgstr ""
+msgstr "line number display"
 
 #. type: cindex
 #: display.texi.orig:1270
 #, no-wrap
 msgid "display of line number"
-msgstr ""
+msgstr "display of line number"
 
 #. type: findex
 #: display.texi.orig:1271
 #, no-wrap
 msgid "line-number-mode"
-msgstr ""
+msgstr "line-number-mode"
 
 #. type: Plain text
 #: display.texi.orig:1277
@@ -3357,27 +3349,26 @@ msgid ""
 "The current line number of point appears in the mode line when Line Number "
 "mode is enabled.  Use the command @kbd{M-x line-number-mode} to turn this "
 "mode on and off; normally it is on.  The line number appears after the "
-"buffer percentage @var{pos}, with the letter @samp{L} to indicate what it "
-"is."
-msgstr ""
+"buffer percentage @var{pos}, with the letter @samp{L} to indicate what it is."
+msgstr "Line Numberモードが有効なとき、ポイント位置の現在の行番号はモードラインに表示されます。@kbd{M-x line-number-mode}コマンドを使って、Line Numberモードのオンとオフを切り替えることができます(通常はオンです)。行番号はそれが何であるかを示す文字@samp{L}とともに、バッファーのパーセント表示@var{pos}の後ろに表示されます。"
 
 #. type: cindex
 #: display.texi.orig:1278
 #, no-wrap
 msgid "Column Number mode"
-msgstr ""
+msgstr "Column Number mode"
 
 #. type: cindex
 #: display.texi.orig:1279
 #, no-wrap
 msgid "mode, Column Number"
-msgstr ""
+msgstr "mode, Column Number"
 
 #. type: findex
 #: display.texi.orig:1280
 #, no-wrap
 msgid "column-number-mode"
-msgstr ""
+msgstr "column-number-mode"
 
 #. type: Plain text
 #: display.texi.orig:1288
@@ -3389,13 +3380,13 @@ msgid ""
 "number first, rather than with @samp{L} and @samp{C}.  For example: "
 "@samp{(561,2)}.  @xref{Minor Modes}, for more information about minor modes "
 "and about how to use these commands."
-msgstr ""
+msgstr "同様に、@kbd{M-x column-number-mode}でColumn numberモードをオンにすることにより、現在の列番号を表示できます。列番号は文字@samp{C}で示されます。しかし両方のモードが有効になっているときは、行番号と列番号は@samp{L}や@samp{C}ではなく、@samp{(561,2)}のようにカッコつきで表示されます。マイナーモードとこれらのコマンドの使い方については、@ref{Minor Modes}を参照してください。"
 
 #. type: cindex
 #: display.texi.orig:1289
 #, no-wrap
 msgid "narrowing, and line number display"
-msgstr ""
+msgstr "narrowing, and line number display"
 
 #. type: Plain text
 #: display.texi.orig:1295
@@ -3404,29 +3395,28 @@ msgid ""
 "number is relative to the accessible portion of the buffer.  Thus, it isn't "
 "suitable as an argument to @code{goto-line}.  (Use @code{what-line} command "
 "to see the line number relative to the whole file.)"
-msgstr ""
+msgstr "ナローイング(@ref{Narrowing}を参照してください)によりバッファーを制限している場合、アクセスできる部分にもとづいた行番号が表示されます。そのため、これは@code{goto-line}の引数として使用するには適しません(ファイル全体にたいする行番号を見るには、@code{what-line}コマンドを使います)。"
 
 #. type: vindex
 #: display.texi.orig:1296
 #, no-wrap
 msgid "line-number-display-limit"
-msgstr ""
+msgstr "line-number-display-limit"
 
 #. type: Plain text
 #: display.texi.orig:1302
 msgid ""
-"If the buffer is very large (larger than the value of "
-"@code{line-number-display-limit}), Emacs won't compute the line number, "
-"because that would be too slow; therefore, the line number won't appear on "
-"the mode-line.  To remove this limit, set @code{line-number-display-limit} "
-"to @code{nil}."
-msgstr ""
+"If the buffer is very large (larger than the value of @code{line-number-"
+"display-limit}), Emacs won't compute the line number, because that would be "
+"too slow; therefore, the line number won't appear on the mode-line.  To "
+"remove this limit, set @code{line-number-display-limit} to @code{nil}."
+msgstr "バッファーが非常に大きい場合(@code{line-number-display-limit}の値より大)、速度が遅くなるのでEmacsは行番号を計算しません。そのためモードラインに行番号は表示されません。この制限を取り除くには、@code{line-number-display-limit}に@code{nil}をセットします。"
 
 #. type: vindex
 #: display.texi.orig:1303
 #, no-wrap
 msgid "line-number-display-limit-width"
-msgstr ""
+msgstr "line-number-display-limit-width"
 
 #. type: Plain text
 #: display.texi.orig:1309
@@ -3434,21 +3424,20 @@ msgid ""
 "Line-number computation can also be slow if the lines in the buffer are too "
 "long.  For this reason, Emacs doesn't display line numbers if the average "
 "width, in characters, of lines near point is larger than the value of "
-"@code{line-number-display-limit-width}.  The default value is 200 "
-"characters."
-msgstr ""
+"@code{line-number-display-limit-width}.  The default value is 200 characters."
+msgstr "バッファーの行が長いときも、行番号の計算が遅くなります。この理由により、Emacsはポイントの近くの行の幅の平均文字数が、@code{line-number-display-limit-width}より大きいときは、行番号を表示しません。デフォルト値は200文字です。"
 
 #. type: findex
 #: display.texi.orig:1310
 #, no-wrap
 msgid "display-time"
-msgstr ""
+msgstr "display-time"
 
 #. type: cindex
 #: display.texi.orig:1311
 #, no-wrap
 msgid "time (on mode line)"
-msgstr ""
+msgstr "time (on mode line)"
 
 #. type: Plain text
 #: display.texi.orig:1316
@@ -3457,19 +3446,19 @@ msgid ""
 "enable this feature, type @kbd{M-x display-time} or customize the option "
 "@code{display-time-mode}.  The information added to the mode line looks like "
 "this:"
-msgstr ""
+msgstr "Emacsはオプションで、時刻とシステムロードを、すべてのモードラインで表示できます。この機能を有効にするには、@kbd{M-x display-time}とタイプするか、オプション@code{display-time-mode}をカスタマイズします。モードラインに追加される情報は以下のような形式です:"
 
 #. type: example
 #: display.texi.orig:1319
 #, no-wrap
 msgid "@var{hh}:@var{mm}pm @var{l.ll}\n"
-msgstr ""
+msgstr "@var{hh}:@var{mm}pm @var{l.ll}\n"
 
 #. type: vindex
 #: display.texi.orig:1322
 #, no-wrap
 msgid "display-time-24hr-format"
-msgstr ""
+msgstr "display-time-24hr-format"
 
 #. type: Plain text
 #: display.texi.orig:1330
@@ -3479,39 +3468,39 @@ msgid ""
 "last few minutes, of processes in the whole system that were either running "
 "or ready to run (i.e., were waiting for an available processor).  (Some "
 "fields may be missing if your operating system cannot support them.)  If you "
-"prefer time display in 24-hour format, set the variable "
-"@code{display-time-24hr-format} to @code{t}."
-msgstr ""
+"prefer time display in 24-hour format, set the variable @code{display-"
+"time-24hr-format} to @code{t}."
+msgstr "ここで@var{hh}と@var{mm}は時間と分で、後ろに@samp{am}と@samp{pm}がつきます。@var{l.ll}は、過去数分間における、システム全体で実行中または実行準備ができている(例: 利用可能なプロセッサー待ち)プロセスの平均数です(オペレーティングシステムがサポートしないフィールドは表示されません)。時刻を24時間表示にしたいときは、変数@code{display-time-24hr-format}に@code{t}をセットしてください。"
 
 #. type: cindex
 #: display.texi.orig:1331
 #, no-wrap
 msgid "mail (on mode line)"
-msgstr ""
+msgstr "mail (on mode line)"
 
 #. type: vindex
 #: display.texi.orig:1332
 #, no-wrap
 msgid "display-time-use-mail-icon"
-msgstr ""
+msgstr "display-time-use-mail-icon"
 
 #. type: vindex
 #: display.texi.orig:1333
 #, no-wrap
 msgid "display-time-mail-face"
-msgstr ""
+msgstr "display-time-mail-face"
 
 #. type: vindex
 #: display.texi.orig:1334
 #, no-wrap
 msgid "display-time-mail-file"
-msgstr ""
+msgstr "display-time-mail-file"
 
 #. type: vindex
 #: display.texi.orig:1335
 #, no-wrap
 msgid "display-time-mail-directory"
-msgstr ""
+msgstr "display-time-mail-directory"
 
 #. type: Plain text
 #: display.texi.orig:1346
@@ -3519,31 +3508,31 @@ msgid ""
 "The word @samp{Mail} appears after the load level if there is mail for you "
 "that you have not read yet.  On graphical displays, you can use an icon "
 "instead of @samp{Mail} by customizing @code{display-time-use-mail-icon}; "
-"this may save some space on the mode line.  You can customize "
-"@code{display-time-mail-face} to make the mail indicator prominent.  Use "
-"@code{display-time-mail-file} to specify the mail file to check, or set "
-"@code{display-time-mail-directory} to specify the directory to check for "
-"incoming mail (any nonempty regular file in the directory is considered as "
-"``newly arrived mail'')."
-msgstr ""
+"this may save some space on the mode line.  You can customize @code{display-"
+"time-mail-face} to make the mail indicator prominent.  Use @code{display-"
+"time-mail-file} to specify the mail file to check, or set @code{display-time-"
+"mail-directory} to specify the directory to check for incoming mail (any "
+"nonempty regular file in the directory is considered as ``newly arrived "
+"mail'')."
+msgstr "もし未読メールがある場合、ロードレベルの後ろに@samp{Mail}という単語が表示されます。グラフィカルなディスプレーでは、@code{display-time-use-mail-icon}をカスタマイズすることにより、@samp{Mail}のかわりにアイコンを使うことができます。これによりモードラインのスペースが多少節約できます。@code{display-time-mail-face}をカスタマイズして、メールの表示を目立たせることができます。@code{display-time-mail-file}を使ってチェックするメールファイルを指定したり、@code{display-time-mail-directory}で受信メールのディレクトリーを指定できます(ディレクトリー内の空でない普通のファイルは、``新しい受信メール''と判断されます)。"
 
 #. type: cindex
 #: display.texi.orig:1347
 #, no-wrap
 msgid "battery status (on mode line)"
-msgstr ""
+msgstr "battery status (on mode line)"
 
 #. type: vindex
 #: display.texi.orig:1348 display.texi.orig:1349
 #, no-wrap
 msgid "display-battery-mode"
-msgstr ""
+msgstr "display-battery-mode"
 
 #. type: vindex
 #: display.texi.orig:1350
 #, no-wrap
 msgid "battery-mode-line-format"
-msgstr ""
+msgstr "battery-mode-line-format"
 
 #. type: Plain text
 #: display.texi.orig:1359
@@ -3555,25 +3544,25 @@ msgid ""
 "displayed; the exact mode-line message depends on the operating system, and "
 "it usually shows the current battery charge as a percentage of the total "
 "charge."
-msgstr ""
+msgstr "Emacsをラップトップコンピューターで実行している場合、コマンド@code{display-battery-mode}を使うか、変数@code{display-battery-mode}をカスタマイズすることにより、モードラインにバッテリー充電状況を表示できます。変数@code{battery-mode-line-format}は、バッテリーの充電状況の表示方法を決定します。モードラインに表示されるメッセージの正確さはオペレーティングシステムに依存しており、通常はバッテリーの充電トータルにたいする現在のバッテリー充電率が表示されます。"
 
 #. type: cindex
 #: display.texi.orig:1360
 #, no-wrap
 msgid "mode line, 3D appearance"
-msgstr ""
+msgstr "mode line, 3D appearance"
 
 #. type: cindex
 #: display.texi.orig:1361
 #, no-wrap
 msgid "attributes of mode line, changing"
-msgstr ""
+msgstr "attributes of mode line, changing"
 
 #. type: cindex
 #: display.texi.orig:1362
 #, no-wrap
 msgid "non-integral number of lines in a window"
-msgstr ""
+msgstr "non-integral number of lines in a window"
 
 #. type: Plain text
 #: display.texi.orig:1367
@@ -3582,13 +3571,13 @@ msgid ""
 "like this effect, you can disable it by customizing the @code{mode-line} "
 "face and setting its @code{box} attribute to @code{nil}.  @xref{Face "
 "Customization}."
-msgstr ""
+msgstr "グラフィカルなディスプレーでは、モードラインは立体的に描画されます。この効果が気に入らない場合は、@code{mode-line}フェイスをカスタマイズして、@code{box}属性に@code{nil}をセットすることにより無効にできます。@ref{Face Customization}を参照してください。"
 
 #. type: cindex
 #: display.texi.orig:1368
 #, no-wrap
 msgid "non-selected windows, mode line appearance"
-msgstr ""
+msgstr "non-selected windows, mode line appearance"
 
 #. type: Plain text
 #: display.texi.orig:1376
@@ -3600,13 +3589,13 @@ msgid ""
 "window from which you activated the minibuffer has its mode line displayed "
 "using @code{mode-line}; as a result, ordinary entry to the minibuffer does "
 "not change any mode lines."
-msgstr ""
+msgstr "デフォルトでは、選択されていないウィンドウのモードラインは、@code{mode-line-inactive}と呼ばれる、別のフェイスで表示されます。選択されたウィンドウのモードラインだけが、@code{mode-line}フェイスで表示されます。これにより、どのウィンドウが選択されているかがわかりやすくなります。モードラインがないミニバッファーが選択されているときは、ミニバッファーをアクティブにしたウィンドウのモードラインが、@code{mode-line}で表示されます。結果として通常のミニバッファーの使用では、モードラインは変化しません。"
 
 #. type: vindex
 #: display.texi.orig:1377
 #, no-wrap
 msgid "mode-line-in-non-selected-windows"
-msgstr ""
+msgstr "mode-line-in-non-selected-windows"
 
 #. type: Plain text
 #: display.texi.orig:1381
@@ -3614,58 +3603,58 @@ msgid ""
 "You can disable use of @code{mode-line-inactive} by setting variable "
 "@code{mode-line-in-non-selected-windows} to @code{nil}; then all mode lines "
 "are displayed in the @code{mode-line} face."
-msgstr ""
+msgstr "変数@code{mode-line-in-non-selected-windows}を@code{nil}にセットすることにより、@code{mode-line-inactive}の使用を無効にできます。これによりすべてのモードラインが、@code{mode-line}フェイスで表示されます。"
 
 #. type: vindex
 #: display.texi.orig:1382
 #, no-wrap
 msgid "eol-mnemonic-unix"
-msgstr ""
+msgstr "eol-mnemonic-unix"
 
 #. type: vindex
 #: display.texi.orig:1383
 #, no-wrap
 msgid "eol-mnemonic-dos"
-msgstr ""
+msgstr "eol-mnemonic-dos"
 
 #. type: vindex
 #: display.texi.orig:1384
 #, no-wrap
 msgid "eol-mnemonic-mac"
-msgstr ""
+msgstr "eol-mnemonic-mac"
 
 #. type: vindex
 #: display.texi.orig:1385
 #, no-wrap
 msgid "eol-mnemonic-undecided"
-msgstr ""
+msgstr "eol-mnemonic-undecided"
 
 #. type: Plain text
 #: display.texi.orig:1390
 msgid ""
 "You can customize the mode line display for each of the end-of-line formats "
-"by setting each of the variables @code{eol-mnemonic-unix}, "
-"@code{eol-mnemonic-dos}, @code{eol-mnemonic-mac}, and "
-"@code{eol-mnemonic-undecided} to the strings you prefer."
-msgstr ""
+"by setting each of the variables @code{eol-mnemonic-unix}, @code{eol-"
+"mnemonic-dos}, @code{eol-mnemonic-mac}, and @code{eol-mnemonic-undecided} to "
+"the strings you prefer."
+msgstr "モードラインに表示される改行フォーマットは、変数@code{eol-mnemonic-unix}、@code{eol-mnemonic-dos}、@code{eol-mnemonic-mac}、および@code{eol-mnemonic-undecided}をセットすることにより、カスタマイズできます。"
 
 #. type: section
 #: display.texi.orig:1392
 #, no-wrap
 msgid "How Text Is Displayed"
-msgstr ""
+msgstr "How Text Is Displayed"
 
 #. type: cindex
 #: display.texi.orig:1393
 #, no-wrap
 msgid "characters (in text)"
-msgstr ""
+msgstr "characters (in text)"
 
 #. type: cindex
 #: display.texi.orig:1394
 #, no-wrap
 msgid "printing character"
-msgstr ""
+msgstr "printing character"
 
 #. type: Plain text
 #: display.texi.orig:1400
@@ -3674,19 +3663,19 @@ msgid ""
 "they are displayed literally on the screen.  Printing characters include "
 "@acronym{ASCII} numbers, letters, and punctuation characters, as well as "
 "many non-@acronym{ASCII} characters."
-msgstr ""
+msgstr "ほとんどの文字は、@dfn{印字文字(printing characters)}です。これらの文字がバッファーに存在すると、スクリーンにそのまま表示されます。印字文字には@acronym{ASCII}の数字、文字、区切り文字、同様に多くの非@acronym{ASCII}文字が含まれます。"
 
 #. type: vindex
 #: display.texi.orig:1401
 #, no-wrap
 msgid "tab-width"
-msgstr ""
+msgstr "tab-width"
 
 #. type: cindex
 #: display.texi.orig:1402
 #, no-wrap
 msgid "control characters on display"
-msgstr ""
+msgstr "control characters on display"
 
 #. type: Plain text
 #: display.texi.orig:1413
@@ -3700,29 +3689,29 @@ msgid ""
 "which must have an integer value between 1 and 1000, inclusive.  Note that "
 "how the tab character in the buffer is displayed has nothing to do with the "
 "definition of @key{TAB} as a command."
-msgstr ""
+msgstr "@acronym{ASCII}文字セットには、印字されない@dfn{制御文字(control characters)}が含まれます。その中でも特別に表示されるものが2つあります。1つ目は改行文字(Unicodeのコードポイント@code{U+000A})で、新しい行を開始するのに表示されます。2つ目はタブ文字(@code{U+0009})で、次のタブストップ(通常は8文字ごと)までをスペースで表示します。タブを何文字のスペースで表示するかは、バッファーローカルな変数@code{tab-width}で制御され、1から1000の整数で指定しなければなりません。バッファーのタブ文字がどのように表示されるかは、コマンドとしての@key{TAB}の定義には関係ないことに注意してください。"
 
 #. type: Plain text
 #: display.texi.orig:1419
 msgid ""
-"Other @acronym{ASCII} control characters, whose codes are below "
-"@code{U+0020} (octal 40, decimal 32), are displayed as a caret (@samp{^}) "
-"followed by the non-control version of the character, with the "
-"@code{escape-glyph} face.  For instance, the @samp{control-A} character, "
-"@code{U+0001}, is displayed as @samp{^A}."
-msgstr ""
+"Other @acronym{ASCII} control characters, whose codes are below @code{U"
+"+0020} (octal 40, decimal 32), are displayed as a caret (@samp{^}) followed "
+"by the non-control version of the character, with the @code{escape-glyph} "
+"face.  For instance, the @samp{control-A} character, @code{U+0001}, is "
+"displayed as @samp{^A}."
+msgstr "他の@acronym{ASCII}制御文字としては、@code{U+0020}(8進の40、10進の32)より下のコードがあり、それらはカレット(@samp{^})と、その後ろに非制御文字バージョンの文字を続けて、@code{escape-glyph}フェイスで表示されます。たとえば文字@samp{control-A}(@code{U+0001})は、@samp{^A}と表示されます。"
 
 #. type: cindex
 #: display.texi.orig:1420
 #, no-wrap
 msgid "octal escapes"
-msgstr ""
+msgstr "octal escapes"
 
 #. type: vindex
 #: display.texi.orig:1421
 #, no-wrap
 msgid "ctl-arrow"
-msgstr ""
+msgstr "ctl-arrow"
 
 #. type: Plain text
 #: display.texi.orig:1429
@@ -3733,61 +3722,60 @@ msgid ""
 "230) is displayed as @samp{\\230}.  If you change the buffer-local variable "
 "@code{ctl-arrow} to @code{nil}, the @acronym{ASCII} control characters are "
 "also displayed as octal escape sequences instead of caret escape sequences."
-msgstr ""
+msgstr "コード@code{U+0080}(8進の200)から@code{U+009F}(8進の237)までのrawバイトは、@code{escape-glyph}フェイスにより、@dfn{8進エスケープシーケンス(octal escape sequences)}で表示されます。たとえば文字コード@code{U+0098}(8進の230)は、@samp{\\230}と表示されます。バッファーローカルな変数@code{ctl-arrow}を@code{nil}に変更すると、@acronym{ASCII}制御文字も、カレットエスケープシーケンスではなく、8進エスケープシーケンスで表示されます。"
 
 #. type: vindex
 #: display.texi.orig:1430
 #, no-wrap
 msgid "nobreak-char-display"
-msgstr ""
+msgstr "nobreak-char-display"
 
 #. type: cindex
 #: display.texi.orig:1431
 #, no-wrap
 msgid "non-breaking space"
-msgstr ""
+msgstr "non-breaking space"
 
 #. type: cindex
 #: display.texi.orig:1432
 #, no-wrap
 msgid "non-breaking hyphen"
-msgstr ""
+msgstr "non-breaking hyphen"
 
 #. type: cindex
 #: display.texi.orig:1433
 #, no-wrap
 msgid "soft hyphen"
-msgstr ""
+msgstr "soft hyphen"
 
 #. type: cindex
 #: display.texi.orig:1434
 #, no-wrap
 msgid "escape-glyph face"
-msgstr ""
+msgstr "escape-glyph face"
 
 #. type: cindex
 #: display.texi.orig:1435
 #, no-wrap
 msgid "nobreak-space face"
-msgstr ""
+msgstr "nobreak-space face"
 
 #. type: Plain text
 #: display.texi.orig:1450
 msgid ""
 "Some non-@acronym{ASCII} characters have the same appearance as an "
 "@acronym{ASCII} space or hyphen (minus) character.  Such characters can "
-"cause problems if they are entered into a buffer without your realization, "
-"e.g., by yanking; for instance, source code compilers typically do not treat "
+"cause problems if they are entered into a buffer without your realization, e."
+"g., by yanking; for instance, source code compilers typically do not treat "
 "non-@acronym{ASCII} spaces as whitespace characters.  To deal with this "
 "problem, Emacs displays such characters specially: it displays @code{U+00A0} "
-"(no-break space) with the @code{nobreak-space} face, and it displays "
-"@code{U+00AD} (soft hyphen), @code{U+2010} (hyphen), and @code{U+2011} "
-"(non-breaking hyphen) with the @code{escape-glyph} face.  To disable this, "
-"change the variable @code{nobreak-char-display} to @code{nil}.  If you give "
-"this variable a non-@code{nil} and non-@code{t} value, Emacs instead "
-"displays such characters as a highlighted backslash followed by a space or "
-"hyphen."
-msgstr ""
+"(no-break space) with the @code{nobreak-space} face, and it displays @code{U"
+"+00AD} (soft hyphen), @code{U+2010} (hyphen), and @code{U+2011} (non-"
+"breaking hyphen) with the @code{escape-glyph} face.  To disable this, change "
+"the variable @code{nobreak-char-display} to @code{nil}.  If you give this "
+"variable a non-@code{nil} and non-@code{t} value, Emacs instead displays "
+"such characters as a highlighted backslash followed by a space or hyphen."
+msgstr "非@acronym{ASCII}文字の中には、@acronym{ASCII}のスペースやハイフン(マイナス記号)と同じ外観を持つものがあります。そのような文字は、意識せずにバッファーに入力されたとき(たとえばyankなどで)、問題となることがあります。たとえばソースコードコンパイラーは通常、非@acronym{ASCII}のスペースを、空白文字として扱いません。この問題に対処するため、Emacsはそのような文字を特別な方法(@code{U+00A0}(no-break space)は@code{nobreak-space}フェイス、@code{U+00AD}(soft hyphen)、@code{U+2010}(hyphen)、@code{U+2011} (non-breaking hyphen)は@code{escape-glyph}フェイス)で表示します。これを無効にするには、変数@code{nobreak-char-display}を@code{nil}に変更します。この変数に非@code{nil}かつ非@code{t}の値を与えると、Emacsはハイライトされたバックスラッシュの後に、スペースまたはハイフンを表示します。"
 
 #. type: Plain text
 #: display.texi.orig:1454
@@ -3795,19 +3783,19 @@ msgid ""
 "You can customize the way any particular character code is displayed by "
 "means of a display table.  @xref{Display Tables,, Display Tables, elisp, The "
 "Emacs Lisp Reference Manual}."
-msgstr ""
+msgstr "特定の文字コードの表示のカスタマイズは、ディスプレーテーブル(display table)によって行われます。@ref{Display Tables,, Display Tables, elisp, The Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: cindex
 #: display.texi.orig:1455
 #, no-wrap
 msgid "glyphless characters"
-msgstr ""
+msgstr "glyphless characters"
 
 #. type: cindex
 #: display.texi.orig:1456
 #, no-wrap
 msgid "characters with no font glyphs"
-msgstr ""
+msgstr "characters with no font glyphs"
 
 #. type: Plain text
 #: display.texi.orig:1466
@@ -3820,25 +3808,25 @@ msgid ""
 "signs.  You can control the display method by customizing the variable "
 "@code{glyphless-char-display-control}.  @xref{Glyphless Chars,, Glyphless "
 "Character Display, elisp, The Emacs Lisp Reference Manual}, for details."
-msgstr ""
+msgstr "グラフィカルなディスプレーでは、Emacsが利用可能なフォントにグリフがない文字がいくつかあります。これらの@dfn{グリフがない文字(glyphless characters)}は、通常16進文字を含むボックスで表示されます。テキスト端末では、端末エンコーディング(@ref{Terminal Coding}を参照してください)で表示できない文字は、通常クエスチョン記号で表示されます。表示方法は、変数@code{glyphless-char-display-control}で制御できます。詳細は、@ref{Glyphless Chars,, Glyphless Character Display, elisp, The Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: section
 #: display.texi.orig:1468
 #, no-wrap
 msgid "Displaying the Cursor"
-msgstr ""
+msgstr "Displaying the Cursor"
 
 #. type: cindex
 #: display.texi.orig:1469
 #, no-wrap
 msgid "text cursor"
-msgstr ""
+msgstr "text cursor"
 
 #. type: vindex
 #: display.texi.orig:1471
 #, no-wrap
 msgid "visible-cursor"
-msgstr ""
+msgstr "visible-cursor"
 
 #. type: Plain text
 #: display.texi.orig:1479
@@ -3849,13 +3837,13 @@ msgid ""
 "cursor.  By default, Emacs uses the very visible cursor, and switches to it "
 "when you start or resume Emacs.  If the variable @code{visible-cursor} is "
 "@code{nil} when Emacs starts or resumes, it uses the normal cursor."
-msgstr ""
+msgstr "テキスト端末では、カーソルの外見は端末により制御され、大部分はEmacsの制御が及びません。いくつかの端末は、``普通の''固定的なカーソルと、``目立つ''点滅カーソルの2種類を提供します。デフォルトではEmacsは目立つカーソルを使い、Emacsを開始または再開したときは、そのカーソルに切り替えます。変数@code{visible-cursor}が@code{nil}の場合、Emacsを開始または再開したとき、普通のカーソルを使います。"
 
 #. type: vindex
 #: display.texi.orig:1481
 #, no-wrap
 msgid "cursor-type"
-msgstr ""
+msgstr "cursor-type"
 
 #. type: Plain text
 #: display.texi.orig:1493
@@ -3870,37 +3858,37 @@ msgid ""
 "@code{(bar . @var{n})} (a vertical bar @var{n} pixels wide), @code{hbar} (a "
 "horizontal bar), @code{(hbar . @var{n})} (a horizontal bar @var{n} pixels "
 "tall), or @code{nil} (no cursor at all)."
-msgstr ""
+msgstr "グラフィカルなディスプレーでは、より多くのテキストカーソルのプロパティを変更できます。カラーを変えるには、フェイス@code{cursor}の、属性@code{:background}を変更します(このフェイスの他の属性には、何を指定しても効果はありません。カーソルの下にあるテキストはフレームのバックグラウンドカラーを使って描画されます)。外見を変更するには、バッファーローカルな変数@code{cursor-type}をカスタマイズします。有効な値は、@code{box}(デフォルト)、@code{hollow}(中抜きのボックス)、@code{bar}(垂直のバー)、@code{(bar . @var{n})}(幅が@var{n}ピクセルの垂直バー), @code{hbar}(水平バー)、@code{(hbar . @var{n})}(高さが@var{n}ピクセルの水平バー)、または@code{nil}(カーソルなし)です。"
 
 #. type: vindex
 #: display.texi.orig:1494 display.texi.orig:1497
 #, no-wrap
 msgid "blink-cursor-mode"
-msgstr ""
+msgstr "blink-cursor-mode"
 
 #. type: cindex
 #: display.texi.orig:1495
 #, no-wrap
 msgid "cursor, blinking"
-msgstr ""
+msgstr "cursor, blinking"
 
 #. type: cindex
 #: display.texi.orig:1496
 #, no-wrap
 msgid "blinking cursor"
-msgstr ""
+msgstr "blinking cursor"
 
 #. type: vindex
 #: display.texi.orig:1498
 #, no-wrap
 msgid "blink-cursor-blinks"
-msgstr ""
+msgstr "blink-cursor-blinks"
 
 #. type: vindex
 #: display.texi.orig:1499
 #, no-wrap
 msgid "blink-cursor-alist"
-msgstr ""
+msgstr "blink-cursor-alist"
 
 #. type: Plain text
 #: display.texi.orig:1508
@@ -3910,40 +3898,39 @@ msgid ""
 "customize the variable @code{blink-cursor-blinks} to control that: its value "
 "says how many times to blink without input before stopping.  Setting that "
 "variable to a zero or negative value will make the cursor blink forever.  To "
-"disable cursor blinking altogether, change the variable "
-"@code{blink-cursor-mode} to @code{nil} (@pxref{Easy Customization}), or add "
-"the line"
-msgstr ""
+"disable cursor blinking altogether, change the variable @code{blink-cursor-"
+"mode} to @code{nil} (@pxref{Easy Customization}), or add the line"
+msgstr "デフォルトでは、カーソルは10回点滅する間にEmacsに何も入力がないと、点滅をストップします。そして何らかの入力イベントがあると、また0からカウントを再開します。変数@code{blink-cursor-blinks}をカスタマイズして、これを制御できます。変数の値には、何の入力もないとき点滅をストップする点滅回数を指定します。変数に0または負の値をセットすると、カーソルはずっと点滅したままになります。カーソルの点滅を無効にするには、変数@code{blink-cursor-mode}を@code{nil}に変更するか(@ref{Easy Customization}を参照してください)、initファイルに以下の行を追加します:"
 
 #. type: lisp
 #: display.texi.orig:1511
 #, no-wrap
 msgid "  (blink-cursor-mode 0)\n"
-msgstr ""
+msgstr "  (blink-cursor-mode 0)\n"
 
 #. type: Plain text
 #: display.texi.orig:1521
 msgid ""
 "to your init file.  Alternatively, you can change how the cursor looks when "
-"it ``blinks off'' by customizing the list variable "
-"@code{blink-cursor-alist}.  Each element in the list should have the form "
-"@code{(@var{on-type} . @var{off-type})}; this means that if the cursor is "
-"displayed as @var{on-type} when it blinks on (where @var{on-type} is one of "
-"the cursor types described above), then it is displayed as @var{off-type} "
-"when it blinks off."
-msgstr ""
+"it ``blinks off'' by customizing the list variable @code{blink-cursor-"
+"alist}.  Each element in the list should have the form @code{(@var{on-"
+"type} . @var{off-type})}; this means that if the cursor is displayed as "
+"@var{on-type} when it blinks on (where @var{on-type} is one of the cursor "
+"types described above), then it is displayed as @var{off-type} when it "
+"blinks off."
+msgstr "リスト変数@code{blink-cursor-alist}をカスタマイズして、カーソルが\"点滅をストップしたとき\"、どのように見えるかを変更できます。リストの各要素は、@code{(@var{on-type} . @var{off-type})}という形式を指定します。@var{on-type}には、点滅しているときのカーソルを指定します(@var{on-type}には、上で説明したカーソルタイプを指定します)。そして@var{off-type}には、点滅していないときのカーソルを指定します。"
 
 #. type: vindex
 #: display.texi.orig:1522
 #, no-wrap
 msgid "x-stretch-cursor"
-msgstr ""
+msgstr "x-stretch-cursor"
 
 #. type: cindex
 #: display.texi.orig:1523
 #, no-wrap
 msgid "wide block cursor"
-msgstr ""
+msgstr "wide block cursor"
 
 #. type: Plain text
 #: display.texi.orig:1529
@@ -3951,48 +3938,48 @@ msgid ""
 "Some characters, such as tab characters, are ``extra wide''.  When the "
 "cursor is positioned over such a character, it is normally drawn with the "
 "default character width.  You can make the cursor stretch to cover wide "
-"characters, by changing the variable @code{x-stretch-cursor} to a "
-"non-@code{nil} value."
-msgstr ""
+"characters, by changing the variable @code{x-stretch-cursor} to a non-"
+"@code{nil} value."
+msgstr "タブ文字のように``特別に幅が広い''文字もあります。そのような文字上にカーソルがあるとき、通常はデフォルトの文字幅で描画されます。カーソルを文字幅に伸ばすには、変数@code{x-stretch-cursor}を非@code{nil}値に変更してください。"
 
 #. type: cindex
 #: display.texi.orig:1530
 #, no-wrap
 msgid "cursor in non-selected windows"
-msgstr ""
+msgstr "cursor in non-selected windows"
 
 #. type: vindex
 #: display.texi.orig:1531
 #, no-wrap
 msgid "cursor-in-non-selected-windows"
-msgstr ""
+msgstr "cursor-in-non-selected-windows"
 
 #. type: Plain text
 #: display.texi.orig:1536
 msgid ""
 "The cursor normally appears in non-selected windows as a non-blinking hollow "
 "box.  (For a bar cursor, it instead appears as a thinner bar.)  To turn off "
-"cursors in non-selected windows, change the variable "
-"@code{cursor-in-non-selected-windows} to @code{nil}."
-msgstr ""
+"cursors in non-selected windows, change the variable @code{cursor-in-non-"
+"selected-windows} to @code{nil}."
+msgstr "選択されていないウィンドウのカーソルは、通常点滅していない中抜きのボックスで表示されます(カーソルにバーを使っている場合、より細いバーで表示されます)。選択されていないウィンドウでカーソルを非表示にするには、変数@code{cursor-in-non-selected-windows}を@code{nil}に変更してください。"
 
 #. type: findex
 #: display.texi.orig:1537
 #, no-wrap
 msgid "hl-line-mode"
-msgstr ""
+msgstr "hl-line-mode"
 
 #. type: findex
 #: display.texi.orig:1538
 #, no-wrap
 msgid "global-hl-line-mode"
-msgstr ""
+msgstr "global-hl-line-mode"
 
 #. type: cindex
 #: display.texi.orig:1539
 #, no-wrap
 msgid "highlight current line"
-msgstr ""
+msgstr "highlight current line"
 
 #. type: Plain text
 #: display.texi.orig:1544
@@ -4001,19 +3988,19 @@ msgid ""
 "that highlights the line containing point.  Use @kbd{M-x hl-line-mode} to "
 "enable or disable it in the current buffer.  @kbd{M-x global-hl-line-mode} "
 "enables or disables the same mode globally."
-msgstr ""
+msgstr "カーソルをよりはっきりと表示させるために、HL Lineモードを使用できます。このモードでは、ポイントを含む行がハイライトされます。現在のバッファーで有効または無効にするには、@kbd{M-x hl-line-mode}を使います。このモードをグローバルに有効または無効にするには、@kbd{M-x global-hl-line-mode}を使用してください。"
 
 #. type: cindex
 #: display.texi.orig:1548
 #, no-wrap
 msgid "truncation"
-msgstr ""
+msgstr "truncation"
 
 #. type: cindex
 #: display.texi.orig:1549
 #, no-wrap
 msgid "line truncation, and fringes"
-msgstr ""
+msgstr "line truncation, and fringes"
 
 #. type: Plain text
 #: display.texi.orig:1557
@@ -4024,19 +4011,19 @@ msgid ""
 "On graphical displays, a small straight arrow in the fringe indicates "
 "truncation at either end of the line.  On text terminals, this is indicated "
 "with @samp{$} signs in the leftmost and/or rightmost columns."
-msgstr ""
+msgstr "Emacsは行を継続(@ref{Continuation Lines}を参照してください)するかわりに、長い行を@dfn{切り詰めて}表示できます。これは、スクリーンやウィンドウの幅より長い行は、全体が表示されないことを意味します。グラフィカルなディスプレーでは、行が切り詰められている場合、フリンジに小さな直矢印が表示されます。テキスト端末では、左端または右端の列に@samp{$}が表示されます。"
 
 #. type: vindex
 #: display.texi.orig:1558
 #, no-wrap
 msgid "truncate-lines"
-msgstr ""
+msgstr "truncate-lines"
 
 #. type: findex
 #: display.texi.orig:1559
 #, no-wrap
 msgid "toggle-truncate-lines"
-msgstr ""
+msgstr "toggle-truncate-lines"
 
 #. type: Plain text
 #: display.texi.orig:1569
@@ -4046,30 +4033,30 @@ msgid ""
 "buffer with the command @kbd{M-x toggle-truncate-lines}.  This works by "
 "locally changing the variable @code{truncate-lines}.  If that variable is "
 "non-@code{nil}, long lines are truncated; if it is @code{nil}, they are "
-"continued onto multiple screen lines.  Setting the variable "
-"@code{truncate-lines} in any way makes it local to the current buffer; until "
-"that time, the default value, which is normally @code{nil}, is in effect."
-msgstr ""
+"continued onto multiple screen lines.  Setting the variable @code{truncate-"
+"lines} in any way makes it local to the current buffer; until that time, the "
+"default value, which is normally @code{nil}, is in effect."
+msgstr "水平スクロールは、自動的に行の切り詰めを引き起こします(@ref{Horizontal Scrolling}を参照してください)。特定のバッファーにたいして行の切り詰めを明示的に有効にするには、コマンド@kbd{M-x toggle-truncate-lines}を使います。これは変数@code{truncate-lines}をローカルに変更することで機能します。値が非@code{nil}のときは、長い行は切り詰められ、@code{nil}のときは複数のスクリーン行に分けられます。変数@code{truncate-lines}をセットすると、現在のバッファーにローカルに適用されます。値を変更するまでは、デフォルト値(@code{nil})が使われます。"
 
 #. type: vindex
 #: display.texi.orig:1570
 #, no-wrap
 msgid "truncate-partial-width-windows"
-msgstr ""
+msgstr "truncate-partial-width-windows"
 
 #. type: Plain text
 #: display.texi.orig:1574
 msgid ""
 "If a split window becomes too narrow, Emacs may automatically enable line "
-"truncation.  @xref{Split Window}, for the variable "
-"@code{truncate-partial-width-windows} which controls this."
-msgstr ""
+"truncation.  @xref{Split Window}, for the variable @code{truncate-partial-"
+"width-windows} which controls this."
+msgstr "ウィンドウを分割して狭くなりすぎたとき、Emacsは自動的に行の切り詰めを有効にします。これを制御する変数@code{truncate-partial-width-windows}については、@ref{Split Window}を参照してください。"
 
 #. type: cindex
 #: display.texi.orig:1578
 #, no-wrap
 msgid "word wrap"
-msgstr ""
+msgstr "word wrap"
 
 #. type: Plain text
 #: display.texi.orig:1585
@@ -4079,31 +4066,31 @@ msgid ""
 "lines, like in ordinary line continuation.  However, Emacs attempts to wrap "
 "the line at word boundaries near the right window edge.  This makes the text "
 "easier to read, as wrapping does not occur in the middle of words."
-msgstr ""
+msgstr "このモードでは、通常の行継続の代わりに、@dfn{単語での折り返し}が使われます。通常の行継続のように、長い論理行は2行以上のスクリーン行に分割されます。しかしEmacsはウィンドウの右端の近くの、単語の境界で折り返すよう試みます。これは単語の途中で折り返さないことにより、可読性を高めるためです。"
 
 #. type: cindex
 #: display.texi.orig:1586
 #, no-wrap
 msgid "mode, Visual Line"
-msgstr ""
+msgstr "mode, Visual Line"
 
 #. type: cindex
 #: display.texi.orig:1587
 #, no-wrap
 msgid "Visual Line mode"
-msgstr ""
+msgstr "Visual Line mode"
 
 #. type: findex
 #: display.texi.orig:1588
 #, no-wrap
 msgid "visual-line-mode"
-msgstr ""
+msgstr "visual-line-mode"
 
 #. type: findex
 #: display.texi.orig:1589
 #, no-wrap
 msgid "global-visual-line-mode"
-msgstr ""
+msgstr "global-visual-line-mode"
 
 #. type: Plain text
 #: display.texi.orig:1599
@@ -4114,33 +4101,33 @@ msgid ""
 "using the menu bar: in the Options menu, select the @samp{Line Wrapping in "
 "this Buffer} submenu, followed by the @samp{Word Wrap (Visual Line Mode)} "
 "menu item.  While Visual Line mode is enabled, the mode-line shows the "
-"string @samp{wrap} in the mode display.  The command @kbd{M-x "
-"global-visual-line-mode} toggles Visual Line mode in all buffers."
-msgstr ""
+"string @samp{wrap} in the mode display.  The command @kbd{M-x global-visual-"
+"line-mode} toggles Visual Line mode in all buffers."
+msgstr "単語での折り返しは、オプションのマイナーモードである、Visual Lineモードで有効になります。現在のバッファーでVisual Lineモードの有効と無効を切り替えるには、@kbd{M-x visual-line-mode}とタイプします。メニューバーからVisual Lineモードを有効にすることもできます(Optionsメニューから、サブメニュー@samp{Line Wrapping in this Buffer}の、メニューアイテム@samp{Word Wrap (Visual Line Mode)}を選択します)。Visual Lineモードが有効なときは、モードラインのモード表示に@samp{wrap}という文字が表示されます。コマンド@kbd{M-x global-visual-line-mode}は、全バッファーのVisual Lineモードを切り替えます。"
 
 #. type: findex
 #: display.texi.orig:1600
 #, no-wrap
 msgid "beginning-of-visual-line"
-msgstr ""
+msgstr "beginning-of-visual-line"
 
 #. type: findex
 #: display.texi.orig:1601
 #, no-wrap
 msgid "end-of-visual-line"
-msgstr ""
+msgstr "end-of-visual-line"
 
 #. type: findex
 #: display.texi.orig:1602
 #, no-wrap
 msgid "next-logical-line"
-msgstr ""
+msgstr "next-logical-line"
 
 #. type: findex
 #: display.texi.orig:1603
 #, no-wrap
 msgid "previous-logical-line"
-msgstr ""
+msgstr "previous-logical-line"
 
 #. type: Plain text
 #: display.texi.orig:1610
@@ -4150,7 +4137,7 @@ msgid ""
 "beginning of the screen line, @kbd{C-e} (@code{end-of-visual-line}) moves to "
 "the end of the screen line, and @kbd{C-k} (@code{kill-visual-line}) kills "
 "text to the end of the screen line."
-msgstr ""
+msgstr "Visual Lineモードでは、いくつかのコマンドは論理行ではなくスクリーン行に作用します。@kbd{C-a} (@code{beginning-of-visual-line})はスクリーン行の先頭に移動し、@kbd{C-e} (@code{end-of-visual-line})はスクリーン行の最後に移動、@kbd{C-k} (@code{kill-visual-line})はテキストをスクリーン行の最後までkillします。"
 
 #. type: Plain text
 #: display.texi.orig:1617
@@ -4160,7 +4147,7 @@ msgid ""
 "and the previous logical line respectively, regardless of whether Visual "
 "Line mode is enabled.  If you use these commands frequently, it may be "
 "convenient to assign key bindings to them.  @xref{Init Rebinding}."
-msgstr ""
+msgstr "論理行単位で移動するには、コマンド@kbd{M-x next-logical-line}または@kbd{M-x previous-logical-line}を使います。これらのコマンドはVisual Lineモードが有効であるかにかかわらず、次または前の論理行に移動します。これらのコマンドを頻繁に使う場合は、キーを割り当てると便利でしょう。@ref{Init Rebinding}を参照してください。"
 
 #. type: Plain text
 #: display.texi.orig:1623
@@ -4168,28 +4155,28 @@ msgid ""
 "By default, word-wrapped lines do not display fringe indicators.  Visual "
 "Line mode is often used to edit files that contain many long logical lines, "
 "so having a fringe indicator for each wrapped line would be visually "
-"distracting.  You can change this by customizing the variable "
-"@code{visual-line-fringe-indicators}."
-msgstr ""
+"distracting.  You can change this by customizing the variable @code{visual-"
+"line-fringe-indicators}."
+msgstr "デフォルトでは、単語の折り返し表示はフリンジに表示されません。Visual Lineモードは、長い論理行を含むファイルを編集するときに使われる場合があり、折り返し行すべてにフリンジの表示をすると見にくくなるためです。これを変更するには、変数@code{visual-line-fringe-indicators}をカスタマイズしてください。"
 
 #. type: section
 #: display.texi.orig:1625
 #, no-wrap
 msgid "Customization of Display"
-msgstr ""
+msgstr "Customization of Display"
 
 #. type: Plain text
 #: display.texi.orig:1629
 msgid ""
 "This section describes variables that control miscellaneous aspects of the "
 "appearance of the Emacs screen.  Beginning users can skip it."
-msgstr ""
+msgstr "このセクションでは、Emacsスクリーンの外観を制御するさまざまな変数を説明します。初心者はスキップして構いません。"
 
 #. type: vindex
 #: display.texi.orig:1630
 #, no-wrap
 msgid "visible-bell"
-msgstr ""
+msgstr "visible-bell"
 
 #. type: Plain text
 #: display.texi.orig:1635
@@ -4198,13 +4185,13 @@ msgid ""
 "make the whole screen blink when it would normally make an audible bell "
 "sound.  This variable has no effect if your terminal does not have a way to "
 "make the screen blink."
-msgstr ""
+msgstr "変数@code{visible-bell}が非@code{nil}の場合、Emacsは通常ベルサウンドを鳴らす場面で、スクリーン全体を点滅するよう試みます。端末がスクリーンを点滅させる方法を持たないとき、この変数は効果がありません。"
 
 #. type: vindex
 #: display.texi.orig:1636
 #, no-wrap
 msgid "echo-keystrokes"
-msgstr ""
+msgstr "echo-keystrokes"
 
 #. type: Plain text
 #: display.texi.orig:1641
@@ -4213,70 +4200,70 @@ msgid ""
 "keys; its value is the number of seconds of pause required to cause echoing "
 "to start, or zero, meaning don't echo at all.  The value takes effect when "
 "there is something to echo.  @xref{Echo Area}."
-msgstr ""
+msgstr "変数@code{echo-keystrokes}は、複数文字キーのエコー表示を制御します。値にはエコーが開始されるまでの秒数を指定します。0の場合、エコーされません。何かエコーされるべきものがあるときは、この変数の値が効果をもちます。@ref{Echo Area}を参照してください。"
 
 #. type: cindex
 #: display.texi.orig:1642
 #, no-wrap
 msgid "mouse pointer"
-msgstr ""
+msgstr "mouse pointer"
 
 #. type: cindex
 #: display.texi.orig:1643
 #, no-wrap
 msgid "hourglass pointer display"
-msgstr ""
+msgstr "hourglass pointer display"
 
 #. type: vindex
 #: display.texi.orig:1644
 #, no-wrap
 msgid "display-hourglass"
-msgstr ""
+msgstr "display-hourglass"
 
 #. type: vindex
 #: display.texi.orig:1645
 #, no-wrap
 msgid "hourglass-delay"
-msgstr ""
+msgstr "hourglass-delay"
 
 #. type: Plain text
 #: display.texi.orig:1651
 msgid ""
 "On graphical displays, Emacs displays the mouse pointer as an hourglass if "
-"Emacs is busy.  To disable this feature, set the variable "
-"@code{display-hourglass} to @code{nil}.  The variable @code{hourglass-delay} "
-"determines the number of seconds of ``busy time'' before the hourglass is "
-"shown; the default is 1."
-msgstr ""
+"Emacs is busy.  To disable this feature, set the variable @code{display-"
+"hourglass} to @code{nil}.  The variable @code{hourglass-delay} determines "
+"the number of seconds of ``busy time'' before the hourglass is shown; the "
+"default is 1."
+msgstr "グラフィカルなディスプレーでは、Emacsはビジーのときにマウスポインターを砂時計で表示します。この機能を無効にするには、変数@code{display-hourglass}に@code{nil}をセットします。変数@code{hourglass-delay}は砂時計が表示されるまでの``busy time''を、秒数で指定します。デフォルトは1です。"
 
 #. type: vindex
 #: display.texi.orig:1652
 #, no-wrap
 msgid "make-pointer-invisible"
-msgstr ""
+msgstr "make-pointer-invisible"
 
 #. type: Plain text
 #: display.texi.orig:1659
 msgid ""
 "If the mouse pointer lies inside an Emacs frame, Emacs makes it invisible "
 "each time you type a character to insert text, to prevent it from obscuring "
-"the text.  (To be precise, the hiding occurs when you type a "
-"``self-inserting'' character.  @xref{Inserting Text}.)  Moving the mouse "
-"pointer makes it visible again.  To disable this feature, set the variable "
+"the text.  (To be precise, the hiding occurs when you type a ``self-"
+"inserting'' character.  @xref{Inserting Text}.)  Moving the mouse pointer "
+"makes it visible again.  To disable this feature, set the variable "
 "@code{make-pointer-invisible} to @code{nil}."
-msgstr ""
+msgstr "マウスポインターがEmacsのフレーム内にある場合、文字をタイプしてテキストを挿入するまでの間、テキストを隠さないよう、Emacsはマウスポインターを非表示にします(正確に言うとマウスポインターの非表示は、``自己挿入的な(self-inserting)''文字をタイプしたときです。@ref{Inserting Text}を参照してください)。マウスポインターを動かすと、再び表示されます。この機能を無効にするには、変数@code{make-pointer-invisible}に@code{nil}をセットしてください。"
 
 #. type: vindex
 #: display.texi.orig:1660
 #, no-wrap
 msgid "underline-minimum-offset"
-msgstr ""
+msgstr "underline-minimum-offset"
 
 #. type: vindex
 #: display.texi.orig:1661
 #, no-wrap
 msgid "x-underline-at-descent-line"
-msgstr ""
+msgstr "x-underline-at-descent-line"
 
 #. type: Plain text
 #: display.texi.orig:1672
@@ -4290,13 +4277,13 @@ msgid ""
 "underlined text.  The default is @code{nil}, which means to draw it at the "
 "baseline level of the font; if you change it to @code{nil}, Emacs draws the "
 "underline at the same height as the font's descent line."
-msgstr ""
+msgstr "グラフィカルなディスプレーでは、変数@code{underline-minimum-offset}は、アンダーラインされたテキストの、アンダーラインから文字の基底線までの最小距離を、ピクセルで決定します。デフォルトでは値は1です。この変数を増加させると、特定のフォントにおいて、アンダーラインされたテキストの可読性が向上します(しかしEmacsは、カレント行にはアンダーラインを描画しません)。変数@code{x-underline-at-descent-line}は、テキストにアンダーラインを引く方法を決定します。デフォルトは@code{nil}で、これはフォントの基底線と同じレベルに描画されることを意味します。非@code{nil}に変更すると、Emacsはフォントが同じ大きさになるよう、アンダーラインを少し下に描画します。"
 
 #. type: vindex
 #: display.texi.orig:1673
 #, no-wrap
 msgid "overline-margin"
-msgstr ""
+msgstr "overline-margin"
 
 #. type: Plain text
 #: display.texi.orig:1677
@@ -4304,19 +4291,19 @@ msgid ""
 "The variable @code{overline-margin} specifies the vertical position of an "
 "overline above the text, including the height of the overline itself, in "
 "pixels; the default is 2."
-msgstr ""
+msgstr "変数@code{overline-margin}は、テキストの上のオーバーラインの垂直位置を、オーバーライン自身の高さも含めて、ピクセルで指定します。デフォルトは2です。"
 
 #. type: findex
 #: display.texi.orig:1678
 #, no-wrap
 msgid "tty-suppress-bold-inverse-default-colors"
-msgstr ""
+msgstr "tty-suppress-bold-inverse-default-colors"
 
 #. type: Plain text
 #: display.texi.orig:1682
 msgid ""
 "On some text terminals, bold face and inverse video together result in text "
-"that is hard to read.  Call the function "
-"@code{tty-suppress-bold-inverse-default-colors} with a non-@code{nil} "
-"argument to suppress the effect of bold-face in this case."
-msgstr ""
+"that is hard to read.  Call the function @code{tty-suppress-bold-inverse-"
+"default-colors} with a non-@code{nil} argument to suppress the effect of "
+"bold-face in this case."
+msgstr "テキスト端末には、bold(太字)かつ反転されたテキストが読みにくいものがあります。関数@code{tty-suppress-bold-inverse-default-colors}に、引数非@code{nil}を与えて呼び出すと、このような場合のbold-faceの効果を抑制します。"
