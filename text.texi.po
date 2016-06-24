@@ -1,0 +1,7247 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: node
+#: text.texi.orig:5
+#, no-wrap
+msgid "Text"
+msgstr ""
+
+#. type: chapter
+#: text.texi.orig:6
+#, no-wrap
+msgid "Commands for Human Languages"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:7
+#, no-wrap
+msgid "text"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:8
+#, no-wrap
+msgid "manipulating text"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:19
+msgid ""
+"This chapter describes Emacs commands that act on @dfn{text}, by which we "
+"mean sequences of characters in a human language (as opposed to, say, a "
+"computer programming language).  These commands act in ways that take into "
+"account the syntactic and stylistic conventions of human languages: "
+"conventions involving words, sentences, paragraphs, and capital letters.  "
+"There are also commands for @dfn{filling}, which means rearranging the lines "
+"of a paragraph to be approximately equal in length.  These commands, while "
+"intended primarily for editing text, are also often useful for editing "
+"programs."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:27
+msgid ""
+"Emacs has several major modes for editing human-language text.  If the file "
+"contains ordinary text, use Text mode, which customizes Emacs in small ways "
+"for the syntactic conventions of text.  Outline mode provides special "
+"commands for operating on text with an outline structure.  Org mode extends "
+"Outline mode and turn Emacs into a full-fledged organizer: you can manage "
+"TODO lists, store notes and publish them in many formats."
+msgstr ""
+
+#. type: iftex
+#: text.texi.orig:30
+msgid "@xref{Outline Mode}."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:32 text.texi.orig:1920
+#, no-wrap
+msgid "nXML mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:33
+#, no-wrap
+msgid "mode, XML"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:34 text.texi.orig:1921
+#, no-wrap
+msgid "mode, nXML"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:35 text.texi.orig:1922
+#, no-wrap
+msgid "nxml-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:39
+msgid ""
+"Emacs has other major modes for text which contains ``embedded'' commands, "
+"such as @TeX{} and @LaTeX{} (@pxref{TeX Mode}); HTML and SGML (@pxref{HTML "
+"Mode}); XML"
+msgstr ""
+
+#. type: ifinfo
+#: text.texi.orig:41
+msgid "(@pxref{Top,The nXML Mode Manual,,nxml-mode, nXML Mode});"
+msgstr ""
+
+#. type: ifnotinfo
+#: text.texi.orig:44
+msgid "(see the nXML mode Info manual, which is distributed with Emacs);"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:46
+msgid "and Groff and Nroff (@pxref{Nroff Mode})."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:47
+#, no-wrap
+msgid "ASCII art"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:51
+msgid ""
+"If you need to edit pictures made out of text characters (commonly referred "
+"to as ``ASCII art''), use Picture mode, a special major mode for editing "
+"such pictures."
+msgstr ""
+
+#. type: iftex
+#: text.texi.orig:53
+msgid "@xref{Picture Mode,,, emacs-xtra, Specialized Emacs Features}."
+msgstr ""
+
+#. type: ifnottex
+#: text.texi.orig:56
+msgid "@xref{Picture Mode}."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:59
+#, no-wrap
+msgid "skeletons"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:60
+#, no-wrap
+msgid "templates"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:61
+#, no-wrap
+msgid "autotyping"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:62
+#, no-wrap
+msgid "automatic typing"
+msgstr ""
+
+#. type: ifinfo
+#: text.texi.orig:65
+msgid ""
+"The ``automatic typing'' features may be useful when writing text.  "
+"@inforef{Top,The Autotype Manual,autotype}."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:83 text.texi.orig:85 text.texi.orig:86
+#, no-wrap
+msgid "Words"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Moving over and killing words."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:83 text.texi.orig:173 text.texi.orig:174
+#, no-wrap
+msgid "Sentences"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Moving over and killing sentences."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:83 text.texi.orig:256 text.texi.orig:257
+#, no-wrap
+msgid "Paragraphs"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Moving over paragraphs."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:83 text.texi.orig:326 text.texi.orig:327
+#, no-wrap
+msgid "Pages"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Moving over pages."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:83 text.texi.orig:407
+#, no-wrap
+msgid "Filling"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Filling or justifying text."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:83 text.texi.orig:733
+#, no-wrap
+msgid "Case"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Changing the case of text."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:83 text.texi.orig:799 text.texi.orig:800
+#, no-wrap
+msgid "Text Mode"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "The major modes for editing text files."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:83 text.texi.orig:860 text.texi.orig:861
+#, no-wrap
+msgid "Outline Mode"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Editing outlines."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:83 text.texi.orig:1265 text.texi.orig:1266
+#, no-wrap
+msgid "Org Mode"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "The Emacs organizer."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:83 text.texi.orig:1412
+#, no-wrap
+msgid "TeX Mode"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Editing TeX and LaTeX files."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:83 text.texi.orig:1823
+#, no-wrap
+msgid "HTML Mode"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Editing HTML and SGML files."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:83 text.texi.orig:1953 text.texi.orig:1954
+#, no-wrap
+msgid "Nroff Mode"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Editing input to the nroff formatter."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:83 text.texi.orig:1998 text.texi.orig:1999
+#, no-wrap
+msgid "Enriched Text"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Editing text \"enriched\" with fonts, colors, etc."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:83 text.texi.orig:2326
+#, no-wrap
+msgid "Text Based Tables"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Commands for editing text-based tables."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:83 text.texi.orig:2732
+#, no-wrap
+msgid "Two-Column"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:83
+msgid "Splitting text columns into separate windows."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:87
+#, no-wrap
+msgid "words"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:88
+#, no-wrap
+msgid "Meta commands and words"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:92
+msgid "Emacs defines several commands for moving over or operating on words:"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:94 text.texi.orig:113
+#, no-wrap
+msgid "M-f"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:96
+msgid "Move forward over a word (@code{forward-word})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:96 text.texi.orig:114
+#, no-wrap
+msgid "M-b"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:98
+msgid "Move backward over a word (@code{backward-word})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:98 text.texi.orig:127
+#, no-wrap
+msgid "M-d"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:100
+msgid "Kill up to the end of a word (@code{kill-word})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:100
+#, no-wrap
+msgid "M-@key{DEL}"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:102
+msgid "Kill back to the beginning of a word (@code{backward-kill-word})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:102 text.texi.orig:157
+#, no-wrap
+msgid "M-@@"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:104
+msgid "Mark the end of the next word (@code{mark-word})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:104
+#, no-wrap
+msgid "M-t"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:107
+msgid "Transpose two words or drag a word across others (@code{transpose-words})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:112
+msgid ""
+"Notice how these keys form a series that parallels the character-based "
+"@kbd{C-f}, @kbd{C-b}, @kbd{C-d}, @key{DEL} and @kbd{C-t}.  @kbd{M-@@} is "
+"cognate to @kbd{C-@@}, which is an alias for @kbd{C-@key{SPC}}."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:115
+#, no-wrap
+msgid "forward-word"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:116
+#, no-wrap
+msgid "backward-word"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:126
+msgid ""
+"The commands @kbd{M-f} (@code{forward-word}) and @kbd{M-b} "
+"(@code{backward-word}) move forward and backward over words.  These "
+"@key{META}-based key sequences are analogous to the key sequences @kbd{C-f} "
+"and @kbd{C-b}, which move over single characters.  The analogy extends to "
+"numeric arguments, which serve as repeat counts.  @kbd{M-f} with a negative "
+"argument moves backward, and @kbd{M-b} with a negative argument moves "
+"forward.  Forward motion stops right after the last letter of the word, "
+"while backward motion stops right before the first letter."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:128
+#, no-wrap
+msgid "kill-word"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:137
+msgid ""
+"@kbd{M-d} (@code{kill-word}) kills the word after point.  To be precise, it "
+"kills everything from point to the place @kbd{M-f} would move to.  Thus, if "
+"point is in the middle of a word, @kbd{M-d} kills just the part after "
+"point.  If some punctuation comes between point and the next word, it is "
+"killed along with the word.  (If you wish to kill only the next word but not "
+"the punctuation before it, simply do @kbd{M-f} to get the end, and kill the "
+"word backwards with @kbd{M-@key{DEL}}.)  @kbd{M-d} takes arguments just like "
+"@kbd{M-f}."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:138
+#, no-wrap
+msgid "backward-kill-word"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:139
+#, no-wrap
+msgid "M-DEL"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:146
+msgid ""
+"@kbd{M-@key{DEL}} (@code{backward-kill-word}) kills the word before point.  "
+"It kills everything from point back to where @kbd{M-b} would move to.  For "
+"instance, if point is after the space in @w{@samp{FOO, BAR}}, it kills "
+"@w{@samp{FOO, }}.  If you wish to kill just @samp{FOO}, and not the comma "
+"and the space, use @kbd{M-b M-d} instead of @kbd{M-@key{DEL}}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:156
+msgid ""
+"@kbd{M-t} (@code{transpose-words}) exchanges the word before or containing "
+"point with the following word.  The delimiter characters between the words "
+"do not move.  For example, @w{@samp{FOO, BAR}} transposes into @w{@samp{BAR, "
+"FOO}} rather than @samp{@w{BAR FOO,}}.  @xref{Transpose}, for more on "
+"transposition."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:158
+#, no-wrap
+msgid "mark-word"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:163
+msgid ""
+"To operate on words with an operation which acts on the region, use the "
+"command @kbd{M-@@} (@code{mark-word}).  This command sets the mark where "
+"@kbd{M-f} would move to.  @xref{Marking Objects}, for more information about "
+"this command."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:168
+msgid ""
+"The word commands' understanding of word boundaries is controlled by the "
+"syntax table.  Any character can, for example, be declared to be a word "
+"delimiter.  @xref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp "
+"Reference Manual}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:172
+msgid ""
+"In addition, see @ref{Position Info} for the @kbd{M-=} "
+"(@code{count-words-region}) and @kbd{M-x count-words} commands, which count "
+"and report the number of words in the region or buffer."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:175
+#, no-wrap
+msgid "sentences"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:176
+#, no-wrap
+msgid "manipulating sentences"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:180
+msgid ""
+"The Emacs commands for manipulating sentences and paragraphs are mostly on "
+"Meta keys, like the word-handling commands."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:182 text.texi.orig:192
+#, no-wrap
+msgid "M-a"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:184
+msgid "Move back to the beginning of the sentence (@code{backward-sentence})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:184 text.texi.orig:193
+#, no-wrap
+msgid "M-e"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:186
+msgid "Move forward to the end of the sentence (@code{forward-sentence})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:186 text.texi.orig:208
+#, no-wrap
+msgid "M-k"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:188
+msgid "Kill forward to the end of the sentence (@code{kill-sentence})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:188
+#, no-wrap
+msgid "C-x @key{DEL}"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:190
+msgid "Kill back to the beginning of the sentence (@code{backward-kill-sentence})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:194
+#, no-wrap
+msgid "backward-sentence"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:195
+#, no-wrap
+msgid "forward-sentence"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:202
+msgid ""
+"The commands @kbd{M-a} (@code{backward-sentence}) and @kbd{M-e} "
+"(@code{forward-sentence}) move to the beginning and end of the current "
+"sentence, respectively.  Their bindings were chosen to resemble @kbd{C-a} "
+"and @kbd{C-e}, which move to the beginning and end of a line.  Unlike them, "
+"@kbd{M-a} and @kbd{M-e} move over successive sentences if repeated."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:207
+msgid ""
+"Moving backward over a sentence places point just before the first character "
+"of the sentence; moving forward places point right after the punctuation "
+"that ends the sentence.  Neither one moves over the whitespace at the "
+"sentence boundary."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:209
+#, no-wrap
+msgid "kill-sentence"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:216
+msgid ""
+"Just as @kbd{C-a} and @kbd{C-e} have a kill command, @kbd{C-k}, to go with "
+"them, @kbd{M-a} and @kbd{M-e} have a corresponding kill command: @kbd{M-k} "
+"(@code{kill-sentence}) kills from point to the end of the sentence.  With a "
+"positive numeric argument @var{n}, it kills the next @var{n} sentences; with "
+"a negative argument @minus{}@var{n}, it kills back to the beginning of the "
+"@var{n}th preceding sentence."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:217
+#, no-wrap
+msgid "C-x DEL"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:218
+#, no-wrap
+msgid "backward-kill-sentence"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:221
+msgid ""
+"The @kbd{C-x @key{DEL}} (@code{backward-kill-sentence}) kills back to the "
+"beginning of a sentence."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:231
+msgid ""
+"The sentence commands assume that you follow the American typist's "
+"convention of putting two spaces at the end of a sentence.  That is, a "
+"sentence ends wherever there is a @samp{.}, @samp{?} or @samp{!} followed by "
+"the end of a line or two spaces, with any number of @samp{)}, @samp{]}, "
+"@samp{'}, or @samp{\"} characters allowed in between.  A sentence also "
+"begins or ends wherever a paragraph begins or ends.  It is useful to follow "
+"this convention, because it allows the Emacs sentence commands to "
+"distinguish between periods that end a sentence and periods that indicate "
+"abbreviations."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:232
+#, no-wrap
+msgid "sentence-end-double-space"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:241
+msgid ""
+"If you want to use just one space between sentences, you can set the "
+"variable @code{sentence-end-double-space} to @code{nil} to make the sentence "
+"commands stop for single spaces.  However, this has a drawback: there is no "
+"way to distinguish between periods that end sentences and those that "
+"indicate abbreviations.  For convenient and reliable editing, we therefore "
+"recommend you follow the two-space convention.  The variable "
+"@code{sentence-end-double-space} also affects filling (@pxref{Fill "
+"Commands})."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:242
+#, no-wrap
+msgid "sentence-end"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:250
+msgid ""
+"The variable @code{sentence-end} controls how to recognize the end of a "
+"sentence.  If non-@code{nil}, its value should be a regular expression, "
+"which is used to match the last few characters of a sentence, together with "
+"the whitespace following the sentence (@pxref{Regexps}).  If the value is "
+"@code{nil}, the default, then Emacs computes sentence ends according to "
+"various criteria such as the value of @code{sentence-end-double-space}."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:251
+#, no-wrap
+msgid "sentence-end-without-period"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:255
+msgid ""
+"Some languages, such as Thai, do not use periods to indicate the end of a "
+"sentence.  Set the variable @code{sentence-end-without-period} to @code{t} "
+"in such cases."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:258
+#, no-wrap
+msgid "paragraphs"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:259
+#, no-wrap
+msgid "manipulating paragraphs"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:262
+msgid "The Emacs commands for manipulating paragraphs are also on Meta keys."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:264 text.texi.orig:272
+#, no-wrap
+msgid "M-@{"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:266
+msgid "Move back to previous paragraph beginning (@code{backward-paragraph})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:266 text.texi.orig:273
+#, no-wrap
+msgid "M-@}"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:268
+msgid "Move forward to next paragraph end (@code{forward-paragraph})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:268 text.texi.orig:282
+#, no-wrap
+msgid "M-h"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:270
+msgid "Put point and mark around this or next paragraph (@code{mark-paragraph})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:274
+#, no-wrap
+msgid "backward-paragraph"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:275
+#, no-wrap
+msgid "forward-paragraph"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:281
+msgid ""
+"@kbd{M-@{} (@code{backward-paragraph}) moves to the beginning of the current "
+"or previous paragraph (see below for the definition of a paragraph).  "
+"@kbd{M-@}} (@code{forward-paragraph}) moves to the end of the current or "
+"next paragraph.  If there is a blank line before the paragraph, @kbd{M-@{} "
+"moves to the blank line."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:283
+#, no-wrap
+msgid "mark-paragraph"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:295
+msgid ""
+"When you wish to operate on a paragraph, type @kbd{M-h} "
+"(@code{mark-paragraph}) to set the region around it.  For example, @kbd{M-h "
+"C-w} kills the paragraph around or after point.  @kbd{M-h} puts point at the "
+"beginning and mark at the end of the paragraph point was in.  If point is "
+"between paragraphs (in a run of blank lines, or at a boundary), @kbd{M-h} "
+"sets the region around the paragraph following point.  If there are blank "
+"lines preceding the first line of the paragraph, one of these blank lines is "
+"included in the region.  If the region is already active, the command sets "
+"the mark without changing point, and each subsequent @kbd{M-h} further "
+"advances the mark by one paragraph."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:304
+msgid ""
+"The definition of a paragraph depends on the major mode.  In Fundamental "
+"mode, as well as Text mode and related modes, a paragraph is separated each "
+"neighboring paragraph another by one or more @dfn{blank lines}---lines that "
+"are either empty, or consist solely of space, tab and/or formfeed "
+"characters.  In programming language modes, paragraphs are usually defined "
+"in a similar way, so that you can use the paragraph commands even though "
+"there are no paragraphs as such in a program."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:308
+msgid ""
+"Note that an indented line is @emph{not} itself a paragraph break in Text "
+"mode.  If you want indented lines to separate paragraphs, use "
+"Paragraph-Indent Text mode instead.  @xref{Text Mode}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:311
+msgid ""
+"If you set a fill prefix, then paragraphs are delimited by all lines which "
+"don't start with the fill prefix.  @xref{Filling}."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:312
+#, no-wrap
+msgid "paragraph-start"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:313
+#, no-wrap
+msgid "paragraph-separate"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:325
+msgid ""
+"The precise definition of a paragraph boundary is controlled by the "
+"variables @code{paragraph-separate} and @code{paragraph-start}.  The value "
+"of @code{paragraph-start} is a regular expression that should match lines "
+"that either start or separate paragraphs (@pxref{Regexps}).  The value of "
+"@code{paragraph-separate} is another regular expression that should match "
+"lines that separate paragraphs without being part of any paragraph (for "
+"example, blank lines).  Lines that start a new paragraph and are contained "
+"in it must match only @code{paragraph-start}, not "
+"@code{paragraph-separate}.  For example, in Fundamental mode, "
+"@code{paragraph-start} is @w{@code{\"\\f\\\\|[ \\t]*$\"}}, and "
+"@code{paragraph-separate} is @w{@code{\"[ \\t\\f]*$\"}}."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:329
+#, no-wrap
+msgid "pages"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:330
+#, no-wrap
+msgid "formfeed character"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:340
+msgid ""
+"Within some text files, text is divided into @dfn{pages} delimited by the "
+"@dfn{formfeed character} (@acronym{ASCII} code 12, also denoted as "
+"@samp{control-L}), which is displayed in Emacs as the escape sequence "
+"@samp{^L} (@pxref{Text Display}).  Traditionally, when such text files are "
+"printed to hardcopy, each formfeed character forces a page break.  Most "
+"Emacs commands treat it just like any other character, so you can insert it "
+"with @kbd{C-q C-l}, delete it with @key{DEL}, etc.  In addition, Emacs "
+"provides commands to move over pages and operate on them."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:342
+#, no-wrap
+msgid "M-x what-page"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:344
+msgid "Display the page number of point, and the line number within that page."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:344 text.texi.orig:358
+#, no-wrap
+msgid "C-x ["
+msgstr ""
+
+#. type: table
+#: text.texi.orig:346
+msgid "Move point to previous page boundary (@code{backward-page})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:346 text.texi.orig:359
+#, no-wrap
+msgid "C-x ]"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:348
+msgid "Move point to next page boundary (@code{forward-page})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:348 text.texi.orig:368
+#, no-wrap
+msgid "C-x C-p"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:350
+msgid "Put point and mark around this page (or another page) (@code{mark-page})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:350 text.texi.orig:385
+#, no-wrap
+msgid "C-x l"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:352
+msgid "Count the lines in this page (@code{count-lines-page})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:354
+#, no-wrap
+msgid "what-page"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:357
+msgid ""
+"@kbd{M-x what-page} counts pages from the beginning of the file, and counts "
+"lines within the page, showing both numbers in the echo area."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:360
+#, no-wrap
+msgid "forward-page"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:361
+#, no-wrap
+msgid "backward-page"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:367
+msgid ""
+"The @kbd{C-x [} (@code{backward-page}) command moves point to immediately "
+"after the previous page delimiter.  If point is already right after a page "
+"delimiter, it skips that one and stops at the previous one.  A numeric "
+"argument serves as a repeat count.  The @kbd{C-x ]} (@code{forward-page})  "
+"command moves forward past the next page delimiter."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:369
+#, no-wrap
+msgid "mark-page"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:374
+msgid ""
+"The @kbd{C-x C-p} command (@code{mark-page}) puts point at the beginning of "
+"the current page (after that page delimiter at the front), and the mark at "
+"the end of the page (after the page delimiter at the end)."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:380
+msgid ""
+"@kbd{C-x C-p C-w} is a handy way to kill a page to move it elsewhere.  If "
+"you move to another page delimiter with @kbd{C-x [} and @kbd{C-x ]}, then "
+"yank the killed page, all the pages will be properly delimited once again.  "
+"The reason @kbd{C-x C-p} includes only the following page delimiter in the "
+"region is to ensure that."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:384
+msgid ""
+"A numeric argument to @kbd{C-x C-p} specifies which page to go to, relative "
+"to the current one.  Zero means the current page, one the next page, and "
+"@minus{}1 the previous one."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:386
+#, no-wrap
+msgid "count-lines-page"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:391
+msgid ""
+"The @kbd{C-x l} command (@code{count-lines-page}) is good for deciding where "
+"to break a page in two.  It displays in the echo area the total number of "
+"lines in the current page, and then divides it up into those preceding the "
+"current line and those following, as in"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:394
+#, no-wrap
+msgid "Page has 96 (72+25) lines\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:399
+msgid ""
+"Notice that the sum is off by one; this is correct if point is not at the "
+"beginning of a line."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:400
+#, no-wrap
+msgid "page-delimiter"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:406
+msgid ""
+"The variable @code{page-delimiter} controls where pages begin.  Its value is "
+"a regular expression that matches the beginning of a line that separates "
+"pages (@pxref{Regexps}).  The normal value of this variable is "
+"@code{\"^\\f\"}, which matches a formfeed character at the beginning of a "
+"line."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:408
+#, no-wrap
+msgid "Filling Text"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:409
+#, no-wrap
+msgid "filling text"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:416
+msgid ""
+"@dfn{Filling} text means breaking it up into lines that fit a specified "
+"width.  Emacs does filling in two ways.  In Auto Fill mode, inserting text "
+"with self-inserting characters also automatically fills it.  There are also "
+"explicit fill commands that you can use when editing text."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:422 text.texi.orig:424
+#, no-wrap
+msgid "Auto Fill"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:422
+msgid "Auto Fill mode breaks long lines automatically."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:422 text.texi.orig:479
+#, no-wrap
+msgid "Fill Commands"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:422
+msgid "Commands to refill paragraphs and center lines."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:422 text.texi.orig:571
+#, no-wrap
+msgid "Fill Prefix"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:422
+msgid "Filling paragraphs that are indented or in a comment, etc."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:422 text.texi.orig:667
+#, no-wrap
+msgid "Adaptive Fill"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:422
+msgid "How Emacs can determine the fill prefix automatically."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:425
+#, no-wrap
+msgid "Auto Fill Mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:426
+#, no-wrap
+msgid "Auto Fill mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:427
+#, no-wrap
+msgid "mode, Auto Fill"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:432
+msgid ""
+"@dfn{Auto Fill} mode is a buffer-local minor mode (@pxref{Minor Modes}) in "
+"which lines are broken automatically when they become too wide.  Breaking "
+"happens only when you type a @key{SPC} or @key{RET}."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:434
+#, no-wrap
+msgid "M-x auto-fill-mode"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:436
+msgid "Enable or disable Auto Fill mode."
+msgstr ""
+
+#. type: key{#1}
+#: text.texi.orig:436
+#, no-wrap
+msgid "SPC"
+msgstr ""
+
+#. type: key{#1}
+#: text.texi.orig:437
+#, no-wrap
+msgid "RET"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:439
+msgid "In Auto Fill mode, break lines when appropriate."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:441
+#, no-wrap
+msgid "auto-fill-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:451
+msgid ""
+"The mode command @kbd{M-x auto-fill-mode} toggles Auto Fill mode in the "
+"current buffer.  With a positive numeric argument, it enables Auto Fill "
+"mode, and with a negative argument it disables it.  If @code{auto-fill-mode} "
+"is called from Lisp with an omitted or @code{nil} argument, it enables Auto "
+"Fill mode.  To enable Auto Fill mode automatically in certain major modes, "
+"add @code{auto-fill-mode} to the mode hooks (@pxref{Major Modes}).  When "
+"Auto Fill mode is enabled, the mode indicator @samp{Fill} appears in the "
+"mode line (@pxref{Mode Line})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:458
+msgid ""
+"Auto Fill mode breaks lines automatically at spaces whenever they get longer "
+"than the desired width.  This line breaking occurs only when you type "
+"@key{SPC} or @key{RET}.  If you wish to insert a space or newline without "
+"permitting line-breaking, type @kbd{C-q @key{SPC}} or @kbd{C-q C-j} "
+"respectively.  Also, @kbd{C-o} inserts a newline without line breaking."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:467
+msgid ""
+"When Auto Fill mode breaks a line, it tries to obey the @dfn{adaptive fill "
+"prefix}: if a fill prefix can be deduced from the first and/or second line "
+"of the current paragraph, it is inserted into the new line (@pxref{Adaptive "
+"Fill}).  Otherwise the new line is indented, as though you had typed "
+"@key{TAB} on it (@pxref{Indentation}).  In a programming language mode, if a "
+"line is broken in the middle of a comment, the comment is split by inserting "
+"new comment delimiters as appropriate."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:472
+msgid ""
+"Auto Fill mode does not refill entire paragraphs; it breaks lines but does "
+"not merge lines.  Therefore, editing in the middle of a paragraph can result "
+"in a paragraph that is not correctly filled.  To fill it, call the explicit "
+"fill commands"
+msgstr ""
+
+#. type: iftex
+#: text.texi.orig:474
+msgid "described in the next section."
+msgstr ""
+
+#. type: ifnottex
+#: text.texi.orig:477
+msgid "(@pxref{Fill Commands})."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:480
+#, no-wrap
+msgid "Explicit Fill Commands"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:483 text.texi.orig:495 text.texi.orig:584
+#, no-wrap
+msgid "M-q"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:485
+msgid "Fill current paragraph (@code{fill-paragraph})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:485 text.texi.orig:526
+#, no-wrap
+msgid "C-x f"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:487
+msgid "Set the fill column (@code{set-fill-column})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:487
+#, no-wrap
+msgid "M-x fill-region"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:489
+msgid "Fill each paragraph in the region (@code{fill-region})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:489
+#, no-wrap
+msgid "M-x fill-region-as-paragraph"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:491
+msgid "Fill the region, considering it as one paragraph."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:491
+#, no-wrap
+msgid "M-o M-s"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:493
+msgid "Center a line."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:496
+#, no-wrap
+msgid "fill-paragraph"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:502
+msgid ""
+"The command @kbd{M-q} (@code{fill-paragraph}) @dfn{fills} the current "
+"paragraph.  It redistributes the line breaks within the paragraph, and "
+"deletes any excess space and tab characters occurring within the paragraph, "
+"in such a way that the lines end up fitting within a certain maximum width."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:503
+#, no-wrap
+msgid "fill-region"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:509
+msgid ""
+"Normally, @kbd{M-q} acts on the paragraph where point is, but if point is "
+"between paragraphs, it acts on the paragraph after point.  If the region is "
+"active, it acts instead on the text in the region.  You can also call "
+"@kbd{M-x fill-region} to specifically fill the text in the region."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:510
+#, no-wrap
+msgid "fill-region-as-paragraph"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:517
+msgid ""
+"@kbd{M-q} and @code{fill-region} use the usual Emacs criteria for finding "
+"paragraph boundaries (@pxref{Paragraphs}).  For more control, you can use "
+"@kbd{M-x fill-region-as-paragraph}, which refills everything between point "
+"and mark as a single paragraph.  This command deletes any blank lines within "
+"the region, so separate blocks of text end up combined into one block."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:518
+#, no-wrap
+msgid "justification"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:524
+msgid ""
+"A numeric argument to @kbd{M-q} tells it to @dfn{justify} the text as well "
+"as filling it.  This means that extra spaces are inserted to make the right "
+"margin line up exactly at the fill column.  To remove the extra spaces, use "
+"@kbd{M-q} with no argument.  (Likewise for @code{fill-region}.)"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:525
+#, no-wrap
+msgid "fill-column"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:527
+#, no-wrap
+msgid "set-fill-column"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:535
+msgid ""
+"The maximum line width for filling is specified by the buffer-local variable "
+"@code{fill-column}.  The default value (@pxref{Locals}) is 70.  The easiest "
+"way to set @code{fill-column} in the current buffer is to use the command "
+"@kbd{C-x f} (@code{set-fill-column}).  With a numeric argument, it uses that "
+"as the new fill column.  With just @kbd{C-u} as argument, it sets "
+"@code{fill-column} to the current horizontal position of point."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:536
+#, no-wrap
+msgid "M-o M-s @r{(Text mode)}"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:537
+#, no-wrap
+msgid "centering"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:538
+#, no-wrap
+msgid "center-line"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:544
+msgid ""
+"The command @kbd{M-o M-s} (@code{center-line}) centers the current line "
+"within the current fill column.  With an argument @var{n}, it centers "
+"@var{n} lines individually and moves past them.  This binding is made by "
+"Text mode and is available only in that and related modes (@pxref{Text "
+"Mode})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:554
+msgid ""
+"By default, Emacs considers a period followed by two spaces or by a newline "
+"as the end of a sentence; a period followed by just one space indicates an "
+"abbreviation, not the end of a sentence.  Accordingly, the fill commands "
+"will not break a line after a period followed by just one space.  If you set "
+"the variable @code{sentence-end-double-space} to @code{nil}, the fill "
+"commands will break a line after a period followed by one space, and put "
+"just one space after each period.  @xref{Sentences}, for other effects and "
+"possible drawbacks of this."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:555
+#, no-wrap
+msgid "colon-double-space"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:558
+msgid ""
+"If the variable @code{colon-double-space} is non-@code{nil}, the fill "
+"commands put two spaces after a colon."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:559
+#, no-wrap
+msgid "fill-nobreak-predicate"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:570
+msgid ""
+"To specify additional conditions where line-breaking is not allowed, "
+"customize the abnormal hook variable @code{fill-nobreak-predicate} "
+"(@pxref{Hooks}).  Each function in this hook is called with no arguments, "
+"with point positioned where Emacs is considering breaking a line.  If a "
+"function returns a non-@code{nil} value, Emacs will not break the line "
+"there.  Functions you can use there include: "
+"@code{fill-single-word-nobreak-p} (don't break after the first word of a "
+"sentence or before the last); @code{fill-single-char-nobreak-p} (don't break "
+"after a one-letter word); and @code{fill-french-nobreak-p} (don't break "
+"after @samp{(} or before @samp{)}, @samp{:} or @samp{?})."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:572
+#, no-wrap
+msgid "The Fill Prefix"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:574
+#, no-wrap
+msgid "fill prefix"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:580
+msgid ""
+"The @dfn{fill prefix} feature allows paragraphs to be filled so that each "
+"line starts with a special string of characters (such as a sequence of "
+"spaces, giving an indented paragraph).  You can specify a fill prefix "
+"explicitly; otherwise, Emacs tries to deduce one automatically "
+"(@pxref{Adaptive Fill})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:582 text.texi.orig:594
+#, no-wrap
+msgid "C-x ."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:584
+msgid "Set the fill prefix (@code{set-fill-prefix})."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:586
+msgid "Fill a paragraph using current fill prefix (@code{fill-paragraph})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:586
+#, no-wrap
+msgid "M-x fill-individual-paragraphs"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:589
+msgid ""
+"Fill the region, considering each change of indentation as starting a new "
+"paragraph."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:589
+#, no-wrap
+msgid "M-x fill-nonuniform-paragraphs"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:592
+msgid ""
+"Fill the region, considering only paragraph-separator lines as starting a "
+"new paragraph."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:595
+#, no-wrap
+msgid "set-fill-prefix"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:601
+msgid ""
+"To specify a fill prefix for the current buffer, move to a line that starts "
+"with the desired prefix, put point at the end of the prefix, and type "
+"@w{@kbd{C-x .}}@: (@code{set-fill-prefix}).  (That's a period after the "
+"@kbd{C-x}.)  To turn off the fill prefix, specify an empty prefix: type "
+"@w{@kbd{C-x .}}@: with point at the beginning of a line."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:612
+msgid ""
+"When a fill prefix is in effect, the fill commands remove the fill prefix "
+"from each line of the paragraph before filling, and insert it on each line "
+"after filling.  (The beginning of the first line of the paragraph is left "
+"unchanged, since often that is intentionally different.)  Auto Fill mode "
+"also inserts the fill prefix automatically when it makes a new line "
+"(@pxref{Auto Fill}).  The @kbd{C-o} command inserts the fill prefix on new "
+"lines it creates, when you use it at the beginning of a line (@pxref{Blank "
+"Lines}).  Conversely, the command @kbd{M-^} deletes the prefix (if it "
+"occurs) after the newline that it deletes (@pxref{Indentation})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:615
+msgid ""
+"For example, if @code{fill-column} is 40 and you set the fill prefix to "
+"@samp{;; }, then @kbd{M-q} in the following text"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:620
+#, no-wrap
+msgid ""
+";; This is an\n"
+";; example of a paragraph\n"
+";; inside a Lisp-style comment.\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:624
+msgid "produces this:"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:628
+#, no-wrap
+msgid ""
+";; This is an example of a paragraph\n"
+";; inside a Lisp-style comment.\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:637
+msgid ""
+"Lines that do not start with the fill prefix are considered to start "
+"paragraphs, both in @kbd{M-q} and the paragraph commands; this gives good "
+"results for paragraphs with hanging indentation (every line indented except "
+"the first one).  Lines which are blank or indented once the prefix is "
+"removed also separate or start paragraphs; this is what you want if you are "
+"writing multi-paragraph comments with a comment delimiter on each line."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:638
+#, no-wrap
+msgid "fill-individual-paragraphs"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:646
+msgid ""
+"You can use @kbd{M-x fill-individual-paragraphs} to set the fill prefix for "
+"each paragraph automatically.  This command divides the region into "
+"paragraphs, treating every change in the amount of indentation as the start "
+"of a new paragraph, and fills each of these paragraphs.  Thus, all the lines "
+"in one ``paragraph'' have the same amount of indentation.  That indentation "
+"serves as the fill prefix for that paragraph."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:647
+#, no-wrap
+msgid "fill-nonuniform-paragraphs"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:656
+msgid ""
+"@kbd{M-x fill-nonuniform-paragraphs} is a similar command that divides the "
+"region into paragraphs in a different way.  It considers only "
+"paragraph-separating lines (as defined by @code{paragraph-separate}) as "
+"starting a new paragraph.  Since this means that the lines of one paragraph "
+"may have different amounts of indentation, the fill prefix used is the "
+"smallest amount of indentation of any of the lines of the paragraph.  This "
+"gives good results with styles that indent a paragraph's first line more or "
+"less that the rest of the paragraph."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:657
+#, no-wrap
+msgid "fill-prefix"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:662
+msgid ""
+"The fill prefix is stored in the variable @code{fill-prefix}.  Its value is "
+"a string, or @code{nil} when there is no fill prefix.  This is a per-buffer "
+"variable; altering the variable affects only the current buffer, but there "
+"is a default value which you can change as well.  @xref{Locals}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:666
+msgid ""
+"The @code{indentation} text property provides another way to control the "
+"amount of indentation paragraphs receive.  @xref{Enriched Indentation}."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:668
+#, no-wrap
+msgid "Adaptive Filling"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:670
+#, no-wrap
+msgid "adaptive filling"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:675
+msgid ""
+"The fill commands can deduce the proper fill prefix for a paragraph "
+"automatically in certain cases: either whitespace or certain punctuation "
+"characters at the beginning of a line are propagated to all lines of the "
+"paragraph."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:679
+msgid ""
+"If the paragraph has two or more lines, the fill prefix is taken from the "
+"paragraph's second line, but only if it appears on the first line as well."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:683
+msgid ""
+"If a paragraph has just one line, fill commands @emph{may} take a prefix "
+"from that line.  The decision is complicated because there are three "
+"reasonable things to do in such a case:"
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:687
+msgid "Use the first line's prefix on all the lines of the paragraph."
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:692
+msgid ""
+"Indent subsequent lines with whitespace, so that they line up under the text "
+"that follows the prefix on the first line, but don't actually copy the "
+"prefix from the first line."
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:695
+msgid "Don't do anything special with the second and following lines."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:700
+msgid ""
+"All three of these styles of formatting are commonly used.  So the fill "
+"commands try to determine what you would like, based on the prefix that "
+"appears and on the major mode.  Here is how."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:701
+#, no-wrap
+msgid "adaptive-fill-first-line-regexp"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:707
+msgid ""
+"If the prefix found on the first line matches "
+"@code{adaptive-fill-first-line-regexp}, or if it appears to be a "
+"comment-starting sequence (this depends on the major mode), then the prefix "
+"found is used for filling the paragraph, provided it would not act as a "
+"paragraph starter on subsequent lines."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:712
+msgid ""
+"Otherwise, the prefix found is converted to an equivalent number of spaces, "
+"and those spaces are used as the fill prefix for the rest of the lines, "
+"provided they would not act as a paragraph starter on subsequent lines."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:716
+msgid ""
+"In Text mode, and other modes where only blank lines and page delimiters "
+"separate paragraphs, the prefix chosen by adaptive filling never acts as a "
+"paragraph starter, so it can always be used for filling."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:717
+#, no-wrap
+msgid "adaptive-fill-mode"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:718
+#, no-wrap
+msgid "adaptive-fill-regexp"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:724
+msgid ""
+"The variable @code{adaptive-fill-regexp} determines what kinds of line "
+"beginnings can serve as a fill prefix: any characters at the start of the "
+"line that match this regular expression are used.  If you set the variable "
+"@code{adaptive-fill-mode} to @code{nil}, the fill prefix is never chosen "
+"automatically."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:725
+#, no-wrap
+msgid "adaptive-fill-function"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:732
+msgid ""
+"You can specify more complex ways of choosing a fill prefix automatically by "
+"setting the variable @code{adaptive-fill-function} to a function.  This "
+"function is called with point after the left margin of a line, and it should "
+"return the appropriate fill prefix based on that line.  If it returns "
+"@code{nil}, @code{adaptive-fill-regexp} gets a chance to find a prefix."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:734
+#, no-wrap
+msgid "Case Conversion Commands"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:735
+#, no-wrap
+msgid "case conversion"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:739
+msgid ""
+"Emacs has commands for converting either a single word or any arbitrary "
+"range of text to upper case or to lower case."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:741 text.texi.orig:753
+#, no-wrap
+msgid "M-l"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:743
+msgid "Convert following word to lower case (@code{downcase-word})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:743 text.texi.orig:754
+#, no-wrap
+msgid "M-u"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:745
+msgid "Convert following word to upper case (@code{upcase-word})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:745 text.texi.orig:755
+#, no-wrap
+msgid "M-c"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:747
+msgid "Capitalize the following word (@code{capitalize-word})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:747 text.texi.orig:784
+#, no-wrap
+msgid "C-x C-l"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:749
+msgid "Convert region to lower case (@code{downcase-region})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:749 text.texi.orig:785
+#, no-wrap
+msgid "C-x C-u"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:751
+msgid "Convert region to upper case (@code{upcase-region})."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:756
+#, no-wrap
+msgid "words, case conversion"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:757
+#, no-wrap
+msgid "converting text to upper or lower case"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:758
+#, no-wrap
+msgid "capitalizing words"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:759
+#, no-wrap
+msgid "downcase-word"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:760
+#, no-wrap
+msgid "upcase-word"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:761
+#, no-wrap
+msgid "capitalize-word"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:772
+msgid ""
+"@kbd{M-l} (@code{downcase-word}) converts the word after point to lower "
+"case, moving past it.  Thus, repeating @kbd{M-l} converts successive words.  "
+"@kbd{M-u} (@code{upcase-word}) converts to all capitals instead, while "
+"@kbd{M-c} (@code{capitalize-word}) puts the first letter of the word into "
+"upper case and the rest into lower case.  All these commands convert several "
+"words at once if given an argument.  They are especially convenient for "
+"converting a large amount of text from all upper case to mixed case, because "
+"you can move through the text using @kbd{M-l}, @kbd{M-u} or @kbd{M-c} on "
+"each word as appropriate, occasionally using @kbd{M-f} instead to skip a "
+"word."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:777
+msgid ""
+"When given a negative argument, the word case conversion commands apply to "
+"the appropriate number of words before point, but do not move point.  This "
+"is convenient when you have just typed a word in the wrong case: you can "
+"give the case conversion command and continue typing."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:783
+msgid ""
+"If a word case conversion command is given in the middle of a word, it "
+"applies only to the part of the word which follows point.  (This is "
+"comparable to what @kbd{M-d} (@code{kill-word}) does.)  With a negative "
+"argument, case conversion applies only to the part of the word before point."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:786
+#, no-wrap
+msgid "downcase-region"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:787
+#, no-wrap
+msgid "upcase-region"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:792
+msgid ""
+"The other case conversion commands are @kbd{C-x C-u} (@code{upcase-region}) "
+"and @kbd{C-x C-l} (@code{downcase-region}), which convert everything between "
+"point and mark to the specified case.  Point and mark do not move."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:798
+msgid ""
+"The region case conversion commands @code{upcase-region} and "
+"@code{downcase-region} are normally disabled.  This means that they ask for "
+"confirmation if you try to use them.  When you confirm, you may enable the "
+"command, which means it will not ask for confirmation again.  "
+"@xref{Disabling}."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:801
+#, no-wrap
+msgid "Text mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:802
+#, no-wrap
+msgid "mode, Text"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:803
+#, no-wrap
+msgid "text-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:809
+msgid ""
+"Text mode is a major mode for editing files of text in a human language.  "
+"Files which have names ending in the extension @file{.txt} are usually "
+"opened in Text mode (@pxref{Choosing Modes}).  To explicitly switch to Text "
+"mode, type @kbd{M-x text-mode}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:814
+msgid ""
+"In Text mode, only blank lines and page delimiters separate paragraphs.  As "
+"a result, paragraphs can be indented, and adaptive filling determines what "
+"indentation to use when filling a paragraph.  @xref{Adaptive Fill}."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:815
+#, no-wrap
+msgid "TAB @r{(Text mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:819
+msgid ""
+"In Text mode, the @key{TAB} (@code{indent-for-tab-command}) command usually "
+"inserts whitespace up to the next tab stop, instead of indenting the current "
+"line.  @xref{Indentation}, for details."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:827
+msgid ""
+"Text mode turns off the features concerned with comments except when you "
+"explicitly invoke them.  It changes the syntax table so that single-quotes "
+"are considered part of words (e.g., @samp{don't} is considered one word).  "
+"However, if a word starts with a single-quote, it is treated as a prefix for "
+"the purposes of capitalization (e.g., @kbd{M-c} converts @samp{'hello'} into "
+"@samp{'Hello'}, as expected)."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:828
+#, no-wrap
+msgid "Paragraph-Indent Text mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:829
+#, no-wrap
+msgid "mode, Paragraph-Indent Text"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:830
+#, no-wrap
+msgid "paragraph-indent-text-mode"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:831
+#, no-wrap
+msgid "paragraph-indent-minor-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:841
+msgid ""
+"If you indent the first lines of paragraphs, then you should use "
+"Paragraph-Indent Text mode (@kbd{M-x paragraph-indent-text-mode})  rather "
+"than Text mode.  In that mode, you do not need to have blank lines between "
+"paragraphs, because the first-line indentation is sufficient to start a "
+"paragraph; however paragraphs in which every line is indented are not "
+"supported.  Use @kbd{M-x paragraph-indent-minor-mode} to enable an "
+"equivalent minor mode for situations where you shouldn't change the major "
+"mode---in mail composition, for instance."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:842
+#, no-wrap
+msgid "M-TAB @r{(Text mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:849
+msgid ""
+"Text mode binds @kbd{M-@key{TAB}} to @code{ispell-complete-word}.  This "
+"command performs completion of the partial word in the buffer before point, "
+"using the spelling dictionary as the space of possible words.  "
+"@xref{Spelling}.  If your window manager defines @kbd{M-@key{TAB}} to switch "
+"windows, you can type @kbd{@key{ESC} @key{TAB}} or @kbd{C-M-i} instead."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:850
+#, no-wrap
+msgid "text-mode-hook"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:853
+msgid ""
+"Entering Text mode runs the mode hook @code{text-mode-hook} (@pxref{Major "
+"Modes})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:859
+msgid ""
+"The following sections describe several major modes that are @dfn{derived} "
+"from Text mode.  These derivatives share most of the features of Text mode "
+"described above.  In particular, derivatives of Text mode run "
+"@code{text-mode-hook} prior to running their own mode hooks."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:862
+#, no-wrap
+msgid "Outline mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:863
+#, no-wrap
+msgid "mode, Outline"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:864
+#, no-wrap
+msgid "invisible lines"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:866
+#, no-wrap
+msgid "outline-mode"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:867
+#, no-wrap
+msgid "outline-minor-mode"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:868
+#, no-wrap
+msgid "outline-minor-mode-prefix"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:869
+#, no-wrap
+msgid "outline-mode-hook"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:878
+msgid ""
+"Outline mode is a major mode derived from Text mode, which is specialized "
+"for editing outlines.  It provides commands to navigate between entries in "
+"the outline structure, and commands to make parts of a buffer temporarily "
+"invisible, so that the outline structure may be more easily viewed.  Type "
+"@kbd{M-x outline-mode} to switch to Outline mode.  Entering Outline mode "
+"runs the hook @code{text-mode-hook} followed by the hook "
+"@code{outline-mode-hook} (@pxref{Hooks})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:884
+msgid ""
+"When you use an Outline mode command to make a line invisible "
+"(@pxref{Outline Visibility}), the line disappears from the screen.  An "
+"ellipsis (three periods in a row) is displayed at the end of the previous "
+"visible line, to indicate the hidden text.  Multiple consecutive invisible "
+"lines produce just one ellipsis."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:890
+msgid ""
+"Editing commands that operate on lines, such as @kbd{C-n} and @kbd{C-p}, "
+"treat the text of the invisible line as part of the previous visible line.  "
+"Killing the ellipsis at the end of a visible line really kills all the "
+"following invisible text associated with the ellipsis."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:897
+msgid ""
+"Outline minor mode is a buffer-local minor mode which provides the same "
+"commands as the major mode, Outline mode, but can be used in conjunction "
+"with other major modes.  You can type @kbd{M-x outline-minor-mode} to toggle "
+"Outline minor mode in the current buffer, or use a file-local variable "
+"setting to enable it in a specific file (@pxref{File Variables})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:898
+#, no-wrap
+msgid "C-c @@ @r{(Outline minor mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:904
+msgid ""
+"The major mode, Outline mode, provides special key bindings on the @kbd{C-c} "
+"prefix.  Outline minor mode provides similar bindings with @kbd{C-c @@} as "
+"the prefix; this is to reduce the conflicts with the major mode's special "
+"commands.  (The variable @code{outline-minor-mode-prefix} controls the "
+"prefix used.)"
+msgstr ""
+
+#. type: node
+#: text.texi.orig:911 text.texi.orig:913
+#, no-wrap
+msgid "Outline Format"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:911
+msgid "What the text of an outline looks like."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:911 text.texi.orig:980
+#, no-wrap
+msgid "Outline Motion"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:911
+msgid "Special commands for moving through outlines."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:911 text.texi.orig:1025
+#, no-wrap
+msgid "Outline Visibility"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:911
+msgid "Commands to control what is visible."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:911 text.texi.orig:1140
+#, no-wrap
+msgid "Outline Views"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:911
+msgid "Outlines and multiple views."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:911 text.texi.orig:1160
+#, no-wrap
+msgid "Foldout"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:911
+msgid "Folding means zooming in on outlines."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:914
+#, no-wrap
+msgid "Format of Outlines"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:916
+#, no-wrap
+msgid "heading lines (Outline mode)"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:917
+#, no-wrap
+msgid "body lines (Outline mode)"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:927
+msgid ""
+"Outline mode assumes that the lines in the buffer are of two types: "
+"@dfn{heading lines} and @dfn{body lines}.  A heading line represents a topic "
+"in the outline.  Heading lines start with one or more asterisk (@samp{*}) "
+"characters; the number of asterisks determines the depth of the heading in "
+"the outline structure.  Thus, a heading line with one @samp{*} is a major "
+"topic; all the heading lines with two @samp{*}s between it and the next "
+"one-@samp{*} heading are its subtopics; and so on.  Any line that is not a "
+"heading line is a body line.  Body lines belong with the preceding heading "
+"line.  Here is an example:"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:932
+#, no-wrap
+msgid ""
+"* Food\n"
+"This is the body,\n"
+"which says something about the topic of food.\n"
+"\n"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:935
+#, no-wrap
+msgid ""
+"** Delicious Food\n"
+"This is the body of the second-level header.\n"
+"\n"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:940
+#, no-wrap
+msgid ""
+"** Distasteful Food\n"
+"This could have\n"
+"a body too, with\n"
+"several lines.\n"
+"\n"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:942
+#, no-wrap
+msgid ""
+"*** Dormitory Food\n"
+"\n"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:945
+#, no-wrap
+msgid ""
+"* Shelter\n"
+"Another first-level topic with its header line.\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:950
+msgid ""
+"A heading line together with all following body lines is called collectively "
+"an @dfn{entry}.  A heading line together with all following deeper heading "
+"lines and their body lines is called a @dfn{subtree}."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:951
+#, no-wrap
+msgid "outline-regexp"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:958
+msgid ""
+"You can customize the criterion for distinguishing heading lines by setting "
+"the variable @code{outline-regexp}.  (The recommended ways to do this are in "
+"a major mode function or with a file local variable.)  Any line whose "
+"beginning has a match for this regexp is considered a heading line.  Matches "
+"that start within a line (not at the left margin) do not count."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:971
+msgid ""
+"The length of the matching text determines the level of the heading; longer "
+"matches make a more deeply nested level.  Thus, for example, if a text "
+"formatter has commands @samp{@@chapter}, @samp{@@section} and "
+"@samp{@@subsection} to divide the document into chapters and sections, you "
+"could make those lines count as heading lines by setting "
+"@code{outline-regexp} to @samp{\"@@chap\\\\|@@\\\\(sub\\\\)*section\"}.  "
+"Note the trick: the two words @samp{chapter} and @samp{section} are equally "
+"long, but by defining the regexp to match only @samp{chap} we ensure that "
+"the length of the text matched on a chapter heading is shorter, so that "
+"Outline mode will know that sections are contained in chapters.  This works "
+"as long as no other command starts with @samp{@@chap}."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:972
+#, no-wrap
+msgid "outline-level"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:979
+msgid ""
+"You can explicitly specify a rule for calculating the level of a heading "
+"line by setting the variable @code{outline-level}.  The value of "
+"@code{outline-level} should be a function that takes no arguments and "
+"returns the level of the current heading.  The recommended ways to set this "
+"variable are in a major mode command or with a file local variable."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:981
+#, no-wrap
+msgid "Outline Motion Commands"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:985
+msgid ""
+"Outline mode provides special motion commands that move backward and forward "
+"to heading lines."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:987 text.texi.orig:1837
+#, no-wrap
+msgid "C-c C-n"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:990
+msgid ""
+"Move point to the next visible heading line "
+"(@code{outline-next-visible-heading})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:990 text.texi.orig:1632
+#, no-wrap
+msgid "C-c C-p"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:993
+msgid ""
+"Move point to the previous visible heading line "
+"(@code{outline-previous-visible-heading})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:993 text.texi.orig:1625 text.texi.orig:1863
+#, no-wrap
+msgid "C-c C-f"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:996
+msgid ""
+"Move point to the next visible heading line at the same level as the one "
+"point is on (@code{outline-forward-same-level})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:996 text.texi.orig:1620 text.texi.orig:1870
+#, no-wrap
+msgid "C-c C-b"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:999
+msgid ""
+"Move point to the previous visible heading line at the same level "
+"(@code{outline-backward-same-level})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:999
+#, no-wrap
+msgid "C-c C-u"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1002
+msgid ""
+"Move point up to a lower-level (more inclusive) visible heading line "
+"(@code{outline-up-heading})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1004
+#, no-wrap
+msgid "outline-next-visible-heading"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1005
+#, no-wrap
+msgid "outline-previous-visible-heading"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1006
+#, no-wrap
+msgid "C-c C-n @r{(Outline mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1007
+#, no-wrap
+msgid "C-c C-p @r{(Outline mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1012
+msgid ""
+"@kbd{C-c C-n} (@code{outline-next-visible-heading}) moves down to the next "
+"heading line.  @kbd{C-c C-p} (@code{outline-previous-visible-heading}) moves "
+"similarly backward.  Both accept numeric arguments as repeat counts."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1013
+#, no-wrap
+msgid "outline-up-heading"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1014
+#, no-wrap
+msgid "outline-forward-same-level"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1015
+#, no-wrap
+msgid "outline-backward-same-level"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1016
+#, no-wrap
+msgid "C-c C-f @r{(Outline mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1017
+#, no-wrap
+msgid "C-c C-b @r{(Outline mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1018
+#, no-wrap
+msgid "C-c C-u @r{(Outline mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1024
+msgid ""
+"@kbd{C-c C-f} (@code{outline-forward-same-level}) and @kbd{C-c C-b} "
+"(@code{outline-backward-same-level}) move from one heading line to another "
+"visible heading at the same depth in the outline.  @kbd{C-c C-u} "
+"(@code{outline-up-heading}) moves backward to another heading that is less "
+"deeply nested."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:1026
+#, no-wrap
+msgid "Outline Visibility Commands"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1032
+msgid ""
+"Outline mode provides several commands for temporarily hiding or revealing "
+"parts of the buffer, based on the outline structure.  These commands are not "
+"undoable; their effects are simply not recorded by the undo mechanism, so "
+"you can undo right past them (@pxref{Undo})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1037
+msgid ""
+"Many of these commands act on the ``current'' heading line.  If point is on "
+"a heading line, that is the current heading line; if point is on a body "
+"line, the current heading line is the nearest preceding header line."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1039 text.texi.orig:1643
+#, no-wrap
+msgid "C-c C-c"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1041
+msgid "Make the current heading line's body invisible (@code{hide-entry})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1041 text.texi.orig:1580
+#, no-wrap
+msgid "C-c C-e"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1043
+msgid "Make the current heading line's body visible (@code{show-entry})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1043 text.texi.orig:1878
+#, no-wrap
+msgid "C-c C-d"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1046
+msgid ""
+"Make everything under the current heading invisible, not including the "
+"heading itself (@code{hide-subtree})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1046
+#, no-wrap
+msgid "C-c C-s"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1049
+msgid ""
+"Make everything under the current heading visible, including body, "
+"subheadings, and their bodies (@code{show-subtree})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1049 text.texi.orig:1638
+#, no-wrap
+msgid "C-c C-l"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1052
+msgid ""
+"Make the body of the current heading line, and of all its subheadings, "
+"invisible (@code{hide-leaves})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1052 text.texi.orig:1641
+#, no-wrap
+msgid "C-c C-k"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1055
+msgid ""
+"Make all subheadings of the current heading line, at all levels, visible "
+"(@code{show-branches})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1055
+#, no-wrap
+msgid "C-c C-i"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1058
+msgid ""
+"Make immediate subheadings (one level down) of the current heading line "
+"visible (@code{show-children})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1058 text.texi.orig:1843
+#, no-wrap
+msgid "C-c C-t"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1060
+msgid "Make all body lines in the buffer invisible (@code{hide-body})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1060 text.texi.orig:1857
+#, no-wrap
+msgid "C-c C-a"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1062
+msgid "Make all lines in the buffer visible (@code{show-all})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1062
+#, no-wrap
+msgid "C-c C-q"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1065
+msgid ""
+"Hide everything except the top @var{n} levels of heading lines "
+"(@code{hide-sublevels})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1065 text.texi.orig:1577
+#, no-wrap
+msgid "C-c C-o"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1069
+msgid ""
+"Hide everything except for the heading or body that point is in, plus the "
+"headings leading up from there to the top level of the outline "
+"(@code{hide-other})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1071
+#, no-wrap
+msgid "hide-entry"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1072
+#, no-wrap
+msgid "show-entry"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1073
+#, no-wrap
+msgid "C-c C-c @r{(Outline mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1074
+#, no-wrap
+msgid "C-c C-e @r{(Outline mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1079
+msgid ""
+"The simplest of these commands are @kbd{C-c C-c} (@code{hide-entry}), which "
+"hides the body lines directly following the current heading line, and "
+"@kbd{C-c C-e} (@code{show-entry}), which reveals them.  Subheadings and "
+"their bodies are not affected."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1080
+#, no-wrap
+msgid "hide-subtree"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1081
+#, no-wrap
+msgid "show-subtree"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1082
+#, no-wrap
+msgid "C-c C-s @r{(Outline mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1083
+#, no-wrap
+msgid "C-c C-d @r{(Outline mode)}"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1084
+#, no-wrap
+msgid "subtree (Outline mode)"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1089
+msgid ""
+"The commands @kbd{C-c C-d} (@code{hide-subtree}) and @kbd{C-c C-s} "
+"(@code{show-subtree}) are more powerful.  They apply to the current heading "
+"line's @dfn{subtree}: its body, all of its subheadings, both direct and "
+"indirect, and all of their bodies."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1090
+#, no-wrap
+msgid "hide-leaves"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1091
+#, no-wrap
+msgid "show-branches"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1092
+#, no-wrap
+msgid "show-children"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1093
+#, no-wrap
+msgid "C-c C-l @r{(Outline mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1094
+#, no-wrap
+msgid "C-c C-k @r{(Outline mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1095
+#, no-wrap
+msgid "C-c C-i @r{(Outline mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1103
+msgid ""
+"The command @kbd{C-c C-l} (@code{hide-leaves}) hides the body of the current "
+"heading line as well as all the bodies in its subtree; the subheadings "
+"themselves are left visible.  The command @kbd{C-c C-k} "
+"(@code{show-branches}) reveals the subheadings, if they had previously been "
+"hidden (e.g., by @kbd{C-c C-d}).  The command @kbd{C-c C-i} "
+"(@code{show-children}) is a weaker version of this; it reveals just the "
+"direct subheadings, i.e., those one level down."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1104
+#, no-wrap
+msgid "hide-other"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1105
+#, no-wrap
+msgid "C-c C-o @r{(Outline mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1110
+msgid ""
+"The command @kbd{C-c C-o} (@code{hide-other}) hides everything except the "
+"entry that point is in, plus its parents (the headers leading up from there "
+"to top level in the outline) and the top level headings."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1111
+#, no-wrap
+msgid "hide-body"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1112
+#, no-wrap
+msgid "show-all"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1113
+#, no-wrap
+msgid "C-c C-t @r{(Outline mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1114
+#, no-wrap
+msgid "C-c C-a @r{(Outline mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1115
+#, no-wrap
+msgid "hide-sublevels"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1116
+#, no-wrap
+msgid "C-c C-q @r{(Outline mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1126
+msgid ""
+"The remaining commands affect the whole buffer.  @kbd{C-c C-t} "
+"(@code{hide-body}) makes all body lines invisible, so that you see just the "
+"outline structure (as a special exception, it will not hide lines at the top "
+"of the file, preceding the first header line, even though these are "
+"technically body lines).  @kbd{C-c C-a} (@code{show-all}) makes all lines "
+"visible.  @kbd{C-c C-q} (@code{hide-sublevels}) hides all but the top level "
+"headings; with a numeric argument @var{n}, it hides everything except the "
+"top @var{n} levels of heading lines."
+msgstr ""
+
+#. type: anchor{#1}
+#: text.texi.orig:1128
+msgid "Outline Search"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1128
+#, no-wrap
+msgid "reveal-mode"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1129
+#, no-wrap
+msgid "search-invisible"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1139
+msgid ""
+"When incremental search finds text that is hidden by Outline mode, it makes "
+"that part of the buffer visible.  If you exit the search at that position, "
+"the text remains visible.  To toggle whether or not an active incremental "
+"search can match hidden text, type @kbd{M-s i}.  To change the default for "
+"future searches, customize the option @code{search-invisible}.  (This option "
+"also affects how @code{query-replace} and related functions treat hidden "
+"text, @pxref{Query Replace}.)  You can also automatically make text visible "
+"as you navigate in it by using Reveal mode (@kbd{M-x reveal-mode}), a "
+"buffer-local minor mode."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:1141
+#, no-wrap
+msgid "Viewing One Outline in Multiple Views"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1143
+#, no-wrap
+msgid "multiple views of outline"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1144
+#, no-wrap
+msgid "views of an outline"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1145
+#, no-wrap
+msgid "outline with multiple views"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1146
+#, no-wrap
+msgid "indirect buffers and outlines"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1152
+msgid ""
+"You can display two views of a single outline at the same time, in different "
+"windows.  To do this, you must create an indirect buffer using @kbd{M-x "
+"make-indirect-buffer}.  The first argument of this command is the existing "
+"outline buffer name, and its second argument is the name to use for the new "
+"indirect buffer.  @xref{Indirect Buffers}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1159
+msgid ""
+"Once the indirect buffer exists, you can display it in a window in the "
+"normal fashion, with @kbd{C-x 4 b} or other Emacs commands.  The Outline "
+"mode commands to show and hide parts of the text operate on each buffer "
+"independently; as a result, each buffer can have its own view.  If you want "
+"more than two views on the same outline, create additional indirect buffers."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:1161
+#, no-wrap
+msgid "Folding Editing"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1163
+#, no-wrap
+msgid "folding editing"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1168
+msgid ""
+"The Foldout package extends Outline mode and Outline minor mode with "
+"``folding'' commands.  The idea of folding is that you zoom in on a nested "
+"portion of the outline, while hiding its relatives at higher levels."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1173
+msgid ""
+"Consider an Outline mode buffer with all the text and subheadings under "
+"level-1 headings hidden.  To look at what is hidden under one of these "
+"headings, you could use @kbd{C-c C-e} (@kbd{M-x show-entry}) to expose the "
+"body, or @kbd{C-c C-i} to expose the child (level-2) headings."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1174
+#, no-wrap
+msgid "C-c C-z"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1175
+#, no-wrap
+msgid "foldout-zoom-subtree"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1184
+msgid ""
+"With Foldout, you use @kbd{C-c C-z} (@kbd{M-x foldout-zoom-subtree}).  This "
+"exposes the body and child subheadings, and narrows the buffer so that only "
+"the @w{level-1} heading, the body and the level-2 headings are visible.  Now "
+"to look under one of the level-2 headings, position the cursor on it and use "
+"@kbd{C-c C-z} again.  This exposes the level-2 body and its level-3 child "
+"subheadings and narrows the buffer again.  Zooming in on successive "
+"subheadings can be done as much as you like.  A string in the mode line "
+"shows how deep you've gone."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1192
+msgid ""
+"When zooming in on a heading, to see only the child subheadings specify a "
+"numeric argument: @kbd{C-u C-c C-z}.  The number of levels of children can "
+"be specified too (compare @kbd{M-x show-children}), e.g., @kbd{M-2 C-c C-z} "
+"exposes two levels of child subheadings.  Alternatively, the body can be "
+"specified with a negative argument: @kbd{M-- C-c C-z}.  The whole subtree "
+"can be expanded, similarly to @kbd{C-c C-s} (@kbd{M-x show-subtree}), by "
+"specifying a zero argument: @kbd{M-0 C-c C-z}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1198
+msgid ""
+"While you're zoomed in, you can still use Outline mode's exposure and hiding "
+"functions without disturbing Foldout.  Also, since the buffer is narrowed, "
+"``global'' editing actions will only affect text under the zoomed-in "
+"heading.  This is useful for restricting changes to a particular chapter or "
+"section of your document."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1199
+#, no-wrap
+msgid "C-c C-x"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1200
+#, no-wrap
+msgid "foldout-exit-fold"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1206
+msgid ""
+"To unzoom (exit) a fold, use @kbd{C-c C-x} (@kbd{M-x foldout-exit-fold}).  "
+"This hides all the text and subheadings under the top-level heading and "
+"returns you to the previous view of the buffer.  Specifying a numeric "
+"argument exits that many levels of folds.  Specifying a zero argument exits "
+"all folds."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1210
+msgid ""
+"To cancel the narrowing of a fold without hiding the text and subheadings, "
+"specify a negative argument.  For example, @kbd{M--2 C-c C-x} exits two "
+"folds and leaves the text and subheadings exposed."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1213
+msgid ""
+"Foldout mode also provides mouse commands for entering and exiting folds, "
+"and for showing and hiding text:"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1215
+#, no-wrap
+msgid "@kbd{C-M-Mouse-1} zooms in on the heading clicked on"
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:1219 text.texi.orig:1230
+msgid "single click: expose body."
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:1221 text.texi.orig:1232
+msgid "double click: expose subheadings."
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:1223 text.texi.orig:1234
+msgid "triple click: expose body and subheadings."
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:1225 text.texi.orig:1236
+msgid "quad click: expose entire subtree."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1226
+#, no-wrap
+msgid "@kbd{C-M-Mouse-2} exposes text under the heading clicked on"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1237
+#, no-wrap
+msgid "@kbd{C-M-Mouse-3} hides text under the heading clicked on or exits fold"
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:1241
+msgid "single click: hide subtree."
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:1243
+msgid "double click: exit fold and hide text."
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:1245
+msgid "triple click: exit fold without hiding text."
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:1247
+msgid "quad click: exit all folds and hide text."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1251
+#, no-wrap
+msgid "foldout-mouse-modifiers"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1256
+msgid ""
+"You can specify different modifier keys (instead of "
+"@kbd{@key{Ctrl}-@key{META}-}) by setting @code{foldout-mouse-modifiers}; but "
+"if you have already loaded the @file{foldout.el} library, you must reload it "
+"in order for this to take effect."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1260
+msgid ""
+"To use the Foldout package, you can type @kbd{M-x load-library @key{RET} "
+"foldout @key{RET}}; or you can arrange for to do that automatically by "
+"putting the following in your init file:"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:1263
+#, no-wrap
+msgid "(eval-after-load \"outline\" '(require 'foldout))\n"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1267
+#, no-wrap
+msgid "organizer"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1268
+#, no-wrap
+msgid "planner"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1269
+#, no-wrap
+msgid "Org mode"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1270
+#, no-wrap
+msgid "mode, Org"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1272
+#, no-wrap
+msgid "org-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1277
+msgid ""
+"Org mode is a variant of Outline mode for using Emacs as an organizer and/or "
+"authoring system.  Files with names ending in the extension @file{.org} are "
+"opened in Org mode (@pxref{Choosing Modes}).  To explicitly switch to Org "
+"mode, type @kbd{M-x org-mode}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1282
+msgid ""
+"In Org mode, as in Outline mode, each entry has a heading line that starts "
+"with one or more @samp{*} characters.  @xref{Outline Format}.  In addition, "
+"any line that begins with the @samp{#} character is treated as a comment."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1283
+#, no-wrap
+msgid "TAB @r{(Org Mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1284
+#, no-wrap
+msgid "org-cycle"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1293
+msgid ""
+"Org mode provides commands for easily viewing and manipulating the outline "
+"structure.  The simplest of these commands is @key{TAB} (@code{org-cycle}).  "
+"If invoked on a heading line, it cycles through the different visibility "
+"states of the subtree: (i) showing only that heading line, (ii) showing only "
+"the heading line and the heading lines of its direct children, if any, and "
+"(iii) showing the entire subtree.  If invoked in a body line, the global "
+"binding for @key{TAB} is executed."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1294
+#, no-wrap
+msgid "S-TAB @r{(Org Mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1295
+#, no-wrap
+msgid "org-shifttab"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1300
+msgid ""
+"Typing @kbd{S-@key{TAB}} (@code{org-shifttab}) anywhere in an Org mode "
+"buffer cycles the visibility of the entire outline structure, between (i) "
+"showing only top-level heading lines, (ii) showing all heading lines but no "
+"body lines, and (iii) showing everything."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1301
+#, no-wrap
+msgid "M-<up> @r{(Org Mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1302
+#, no-wrap
+msgid "M-<down> @r{(Org Mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1303
+#, no-wrap
+msgid "M-<left> @r{(Org Mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1304
+#, no-wrap
+msgid "M-<right> @r{(Org Mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1305
+#, no-wrap
+msgid "org-metaup"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1306
+#, no-wrap
+msgid "org-metadown"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1307
+#, no-wrap
+msgid "org-metaleft"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1308
+#, no-wrap
+msgid "org-metaright"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1316
+msgid ""
+"You can move an entire entry up or down in the buffer, including its body "
+"lines and subtree (if any), by typing @kbd{M-<up>} (@code{org-metaup}) or "
+"@kbd{M-<down>} (@code{org-metadown}) on the heading line.  Similarly, you "
+"can promote or demote a heading line with @kbd{M-<left>} "
+"(@code{org-metaleft}) and @kbd{M-<right>} (@code{org-metaright}).  These "
+"commands execute their global bindings if invoked on a body line."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1320
+msgid ""
+"The following subsections give basic instructions for using Org mode as an "
+"organizer and as an authoring system.  For details, @pxref{Top, The Org Mode "
+"Manual, Introduction, org, The Org Manual}."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:1324 text.texi.orig:1326
+#, no-wrap
+msgid "Org Organizer"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:1324
+msgid "Managing TODO lists and agendas."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:1324 text.texi.orig:1372
+#, no-wrap
+msgid "Org Authoring"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:1324
+msgid "Exporting Org buffers to various formats."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:1327
+#, no-wrap
+msgid "Org as an organizer"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1328
+#, no-wrap
+msgid "TODO item"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1329
+#, no-wrap
+msgid "Org agenda"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1331
+#, no-wrap
+msgid "C-c C-t @r{(Org Mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1332
+#, no-wrap
+msgid "org-todo"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1333
+#, no-wrap
+msgid "org-todo-keywords"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1340
+msgid ""
+"You can tag an Org entry as a @dfn{TODO} item by typing @kbd{C-c C-t} "
+"(@code{org-todo}) anywhere in the entry.  This adds the keyword @samp{TODO} "
+"to the heading line.  Typing @kbd{C-c C-t} again switches the keyword to "
+"@samp{DONE}; another @kbd{C-c C-t} removes the keyword entirely, and so "
+"forth.  You can customize the keywords used by @kbd{C-c C-t} via the "
+"variable @code{org-todo-keywords}."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1341
+#, no-wrap
+msgid "C-c C-s @r{(Org Mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1342
+#, no-wrap
+msgid "C-c C-d @r{(Org Mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1343
+#, no-wrap
+msgid "org-schedule"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1344
+#, no-wrap
+msgid "org-deadline"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1352
+msgid ""
+"Apart from marking an entry as TODO, you can attach a date to it, by typing "
+"@kbd{C-c C-s} (@code{org-schedule}) in the entry.  This prompts for a date "
+"by popping up the Emacs Calendar (@pxref{Calendar/Diary}), and then adds the "
+"tag @samp{SCHEDULED}, together with the selected date, beneath the heading "
+"line.  The command @kbd{C-c C-d} (@code{org-deadline}) has the same effect, "
+"except that it uses the tag @code{DEADLINE}."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1353
+#, no-wrap
+msgid "C-c [ @r{(Org Mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1354
+#, no-wrap
+msgid "org-agenda-file-to-front"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1355
+#, no-wrap
+msgid "org-agenda-files"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1362
+msgid ""
+"Once you have some TODO items planned in an Org file, you can add that file "
+"to the list of @dfn{agenda files} by typing @kbd{C-c [} "
+"(@code{org-agenda-file-to-front}).  Org mode is designed to let you easily "
+"maintain multiple agenda files, e.g., for organizing different aspects of "
+"your life.  The list of agenda files is stored in the variable "
+"@code{org-agenda-files}."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1363
+#, no-wrap
+msgid "org-agenda"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1368
+msgid ""
+"To view items coming from your agenda files, type @kbd{M-x org-agenda}.  "
+"This command prompts for what you want to see: a list of things to do this "
+"week, a list of TODO items with specific keywords, etc."
+msgstr ""
+
+#. type: ifnottex
+#: text.texi.orig:1370
+msgid "@xref{Agenda Views,,,org, The Org Manual}, for details."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:1373
+#, no-wrap
+msgid "Org as an authoring system"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1374
+#, no-wrap
+msgid "Org exporting"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1376
+#, no-wrap
+msgid "org-export"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1377
+#, no-wrap
+msgid "C-c C-e @r{(Org mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1384
+msgid ""
+"You may want to format your Org notes nicely and to prepare them for export "
+"and publication.  To export the current buffer, type @kbd{C-c C-e} "
+"(@code{org-export}) anywhere in an Org buffer.  This command prompts for an "
+"export format; currently supported formats include HTML, @LaTeX{}, "
+"OpenDocument (@file{.odt}), and PDF@.  Some formats, such as PDF, require "
+"certain system tools to be installed."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1385
+#, no-wrap
+msgid "org-publish-project-alist"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1390
+msgid ""
+"To export several files at once to a specific directory, either locally or "
+"over the network, you must define a list of projects through the variable "
+"@code{org-publish-project-alist}.  See its documentation for details."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1393
+msgid ""
+"Org supports a simple markup scheme for applying text formatting to exported "
+"documents:"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:1399
+#, no-wrap
+msgid ""
+"- This text is /emphasized/\n"
+"- This text is *in bold*\n"
+"- This text is _underlined_\n"
+"- This text uses =a teletype font=\n"
+"\n"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:1403
+#, no-wrap
+msgid ""
+"#+begin_quote\n"
+"``This is a quote.''\n"
+"#+end_quote\n"
+"\n"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:1407
+#, no-wrap
+msgid ""
+"#+begin_example\n"
+"This is an example.\n"
+"#+end_example\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1411
+msgid ""
+"For further details, @ref{Exporting,,,org, The Org Manual}, and "
+"@ref{Publishing,,,org, The Org Manual}."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:1413
+#, no-wrap
+msgid "@TeX{} Mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1414
+#, no-wrap
+msgid "@TeX{} mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1415
+#, no-wrap
+msgid "@LaTeX{} mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1416
+#, no-wrap
+msgid "Sli@TeX{} mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1417
+#, no-wrap
+msgid "Doc@TeX{} mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1418
+#, no-wrap
+msgid "mode, @TeX{}"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1419
+#, no-wrap
+msgid "mode, @LaTeX{}"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1420
+#, no-wrap
+msgid "mode, Sli@TeX{}"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1421
+#, no-wrap
+msgid "mode, Doc@TeX{}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1422
+#, no-wrap
+msgid "tex-mode"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1423
+#, no-wrap
+msgid "plain-tex-mode"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1424
+#, no-wrap
+msgid "latex-mode"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1425
+#, no-wrap
+msgid "slitex-mode"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1426
+#, no-wrap
+msgid "doctex-mode"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1427
+#, no-wrap
+msgid "bibtex-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1438
+msgid ""
+"Emacs provides special major modes for editing files written in @TeX{} and "
+"its related formats.  @TeX{} is a powerful text formatter written by Donald "
+"Knuth; like GNU Emacs, it is free software.  @LaTeX{} is a simplified input "
+"format for @TeX{}, implemented using @TeX{} macros.  Doc@TeX{} is a special "
+"file format in which the @LaTeX{} sources are written, combining sources "
+"with documentation.  Sli@TeX{} is an obsolete special form of "
+"@LaTeX{}.@footnote{It has been replaced by the @samp{slides} document class, "
+"which comes with @LaTeX{}.}"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1439
+#, no-wrap
+msgid "tex-default-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1452
+msgid ""
+"@TeX{} mode has four variants: Plain @TeX{} mode, @LaTeX{} mode, Doc@TeX{} "
+"mode, and Sli@TeX{} mode.  These distinct major modes differ only slightly, "
+"and are designed for editing the four different formats.  Emacs selects the "
+"appropriate mode by looking at the contents of the buffer.  (This is done by "
+"the @code{tex-mode} command, which is normally called automatically when you "
+"visit a @TeX{}-like file.  @xref{Choosing Modes}.)  If the contents are "
+"insufficient to determine this, Emacs chooses the mode specified by the "
+"variable @code{tex-default-mode}; its default value is @code{latex-mode}.  "
+"If Emacs does not guess right, you can select the correct variant of @TeX{} "
+"mode using the command @kbd{M-x plain-tex-mode}, @kbd{M-x latex-mode}, "
+"@kbd{M-x slitex-mode}, or @kbd{doctex-mode}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1456
+msgid ""
+"The following sections document the features of @TeX{} mode and its "
+"variants.  There are several other @TeX{}-related Emacs packages, which are "
+"not documented in this manual:"
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:1463
+msgid ""
+"Bib@TeX{} mode is a major mode for Bib@TeX{} files, which are commonly used "
+"for keeping bibliographic references for @LaTeX{} documents.  For more "
+"information, see the documentation string for the command "
+"@code{bibtex-mode}."
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:1467
+msgid ""
+"The Ref@TeX{} package provides a minor mode which can be used with @LaTeX{} "
+"mode to manage bibliographic references."
+msgstr ""
+
+#. type: ifinfo
+#: text.texi.orig:1469
+msgid "@xref{Top,The Ref@TeX{} Manual,,reftex}."
+msgstr ""
+
+#. type: ifnotinfo
+#: text.texi.orig:1473
+msgid ""
+"For more information, see the Ref@TeX{} Info manual, which is distributed "
+"with Emacs."
+msgstr ""
+
+#. type: itemize
+#: text.texi.orig:1482
+msgid ""
+"The AUC@TeX{} package provides more advanced features for editing @TeX{} and "
+"its related formats, including the ability to preview @TeX{} equations "
+"within Emacs buffers.  Unlike Bib@TeX{} mode and the Ref@TeX{} package, "
+"AUC@TeX{} is not distributed with Emacs by default.  It can be downloaded "
+"via the Package Menu (@pxref{Packages}); once installed, see"
+msgstr ""
+
+#. type: ifinfo
+#: text.texi.orig:1484
+msgid "@ref{Top,The AUC@TeX{} Manual,,auctex}."
+msgstr ""
+
+#. type: ifnotinfo
+#: text.texi.orig:1487
+msgid "the AUC@TeX{} manual, which is included with the package."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:1495 text.texi.orig:1497
+#, no-wrap
+msgid "TeX Editing"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:1495
+msgid "Special commands for editing in TeX mode."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:1495 text.texi.orig:1570
+#, no-wrap
+msgid "LaTeX Editing"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:1495
+msgid "Additional commands for LaTeX input files."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:1495 text.texi.orig:1612
+#, no-wrap
+msgid "TeX Print"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:1495
+msgid "Commands for printing part of a file with TeX."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:1495 text.texi.orig:1799
+#, no-wrap
+msgid "TeX Misc"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:1495
+msgid "Customization of TeX mode, and related features."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:1498
+#, no-wrap
+msgid "@TeX{} Editing Commands"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1501
+#, no-wrap
+msgid "\""
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1504
+msgid ""
+"Insert, according to context, either @samp{``} or @samp{\"} or @samp{''} "
+"(@code{tex-insert-quote})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1504
+#, no-wrap
+msgid "C-j"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1508
+msgid ""
+"Insert a paragraph break (two newlines) and check the previous paragraph for "
+"unbalanced braces or dollar signs (@code{tex-terminate-paragraph})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1508
+#, no-wrap
+msgid "M-x tex-validate-region"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1510
+msgid "Check each paragraph in the region for unbalanced braces or dollar signs."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1510
+#, no-wrap
+msgid "C-c @{"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1512
+msgid ""
+"Insert @samp{@{@}} and position point between them "
+"(@code{tex-insert-braces})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1512
+#, no-wrap
+msgid "C-c @}"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1514
+msgid "Move forward past the next unmatched close brace (@code{up-list})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1516
+#, no-wrap
+msgid "tex-insert-quote"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1517
+#, no-wrap
+msgid "\" @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1523
+msgid ""
+"In @TeX{}, the character @samp{\"} is not normally used; instead, quotations "
+"begin with @samp{``} and end with @samp{''}.  @TeX{} mode therefore binds "
+"the @kbd{\"} key to the @code{tex-insert-quote} command.  This inserts "
+"@samp{``} after whitespace or an open brace, @samp{\"} after a backslash, "
+"and @samp{''} after any other character."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1529
+msgid ""
+"As a special exception, if you type @kbd{\"} when the text before point is "
+"either @samp{``} or @samp{''}, Emacs replaces that preceding text with a "
+"single @samp{\"} character.  You can therefore type @kbd{\"\"} to insert "
+"@samp{\"}, should you ever need to do so.  (You can also use @kbd{C-q \"} to "
+"insert this character.)"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1539
+msgid ""
+"In @TeX{} mode, @samp{$} has a special syntax code which attempts to "
+"understand the way @TeX{} math mode delimiters match.  When you insert a "
+"@samp{$} that is meant to exit math mode, the position of the matching "
+"@samp{$} that entered math mode is displayed for a second.  This is the same "
+"feature that displays the open brace that matches a close brace that is "
+"inserted.  However, there is no way to tell whether a @samp{$} enters math "
+"mode or leaves it; so when you insert a @samp{$} that enters math mode, the "
+"previous @samp{$} position is shown as if it were a match, even though they "
+"are actually unrelated."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1540
+#, no-wrap
+msgid "tex-insert-braces"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1541
+#, no-wrap
+msgid "C-c @{ @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1542
+#, no-wrap
+msgid "up-list"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1543
+#, no-wrap
+msgid "C-c @} @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1550
+msgid ""
+"@TeX{} uses braces as delimiters that must match.  Some users prefer to keep "
+"braces balanced at all times, rather than inserting them singly.  Use "
+"@kbd{C-c @{} (@code{tex-insert-braces}) to insert a pair of braces.  It "
+"leaves point between the two braces so you can insert the text that belongs "
+"inside.  Afterward, use the command @kbd{C-c @}} (@code{up-list}) to move "
+"forward past the close brace."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1551
+#, no-wrap
+msgid "tex-validate-region"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1552
+#, no-wrap
+msgid "tex-terminate-paragraph"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1553
+#, no-wrap
+msgid "C-j @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1562
+msgid ""
+"There are two commands for checking the matching of braces.  @kbd{C-j} "
+"(@code{tex-terminate-paragraph}) checks the paragraph before point, and "
+"inserts two newlines to start a new paragraph.  It outputs a message in the "
+"echo area if any mismatch is found.  @kbd{M-x tex-validate-region} checks a "
+"region, paragraph by paragraph.  The errors are listed in an @file{*Occur*} "
+"buffer; you can use the usual Occur mode commands in that buffer, such as "
+"@kbd{C-c C-c}, to visit a particular mismatch (@pxref{Other Repeating "
+"Search})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1569
+msgid ""
+"Note that Emacs commands count square brackets and parentheses in @TeX{} "
+"mode, not just braces.  This is not strictly correct for the purpose of "
+"checking @TeX{} syntax.  However, parentheses and square brackets are likely "
+"to be used in text as matching delimiters, and it is useful for the various "
+"motion commands and automatic match display to work with them."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:1571
+#, no-wrap
+msgid "@LaTeX{} Editing Commands"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1575
+msgid "@LaTeX{} mode provides a few extra features not applicable to plain @TeX{}:"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1580
+msgid ""
+"Insert @samp{\\begin} and @samp{\\end} for @LaTeX{} block and position point "
+"on a line between them (@code{tex-latex-block})."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1583
+msgid ""
+"Close the innermost @LaTeX{} block not yet closed "
+"(@code{tex-close-latex-block})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1585
+#, no-wrap
+msgid "tex-latex-block"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1586
+#, no-wrap
+msgid "C-c C-o @r{(@LaTeX{} mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1592
+msgid ""
+"In @LaTeX{} input, @samp{\\begin} and @samp{\\end} tags are used to group "
+"blocks of text.  To insert a block, type @kbd{C-c C-o} "
+"(@code{tex-latex-block}).  This prompts for a block type, and inserts the "
+"appropriate matching @samp{\\begin} and @samp{\\end} tags, leaving a blank "
+"line between the two and moving point there."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1593
+#, no-wrap
+msgid "latex-block-names"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1599
+msgid ""
+"When entering the block type argument to @kbd{C-c C-o}, you can use the "
+"usual completion commands (@pxref{Completion}).  The default completion list "
+"contains the standard @LaTeX{} block types.  If you want additional block "
+"types for completion, customize the list variable @code{latex-block-names}."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1600
+#, no-wrap
+msgid "tex-close-latex-block"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1601
+#, no-wrap
+msgid "C-c C-e @r{(@LaTeX{} mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1602
+#, no-wrap
+msgid "latex-electric-env-pair-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1611
+msgid ""
+"In @LaTeX{} input, @samp{\\begin} and @samp{\\end} tags must balance.  You "
+"can use @kbd{C-c C-e} (@code{tex-close-latex-block}) to insert an "
+"@samp{\\end} tag which matches the last unmatched @samp{\\begin}.  It also "
+"indents the @samp{\\end} to match the corresponding @samp{\\begin}, and "
+"inserts a newline after the @samp{\\end} tag if point is at the beginning of "
+"a line.  The minor mode @code{latex-electric-env-pair-mode} automatically "
+"inserts an @samp{\\end} or @samp{\\begin} tag for you when you type the "
+"corresponding one."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:1613
+#, no-wrap
+msgid "@TeX{} Printing Commands"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1618
+msgid ""
+"You can invoke @TeX{} as an subprocess of Emacs, supplying either the entire "
+"contents of the buffer or just part of it (e.g., one chapter of a larger "
+"document)."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1622
+msgid "Invoke @TeX{} on the entire current buffer (@code{tex-buffer})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1622
+#, no-wrap
+msgid "C-c C-r"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1625
+msgid ""
+"Invoke @TeX{} on the current region, together with the buffer's header "
+"(@code{tex-region})."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1627
+msgid "Invoke @TeX{} on the current file (@code{tex-file})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1628 text.texi.orig:1907
+#, no-wrap
+msgid "C-c C-v"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1631
+msgid ""
+"Preview the output from the last @kbd{C-c C-r}, @kbd{C-c C-b}, or @kbd{C-c "
+"C-f} command (@code{tex-view})."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1635
+msgid ""
+"Print the output from the last @kbd{C-c C-b}, @kbd{C-c C-r}, or @kbd{C-c "
+"C-f} command (@code{tex-print})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1636 text.texi.orig:1913
+#, no-wrap
+msgid "C-c @key{TAB}"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1638
+msgid "Invoke Bib@TeX{} on the current file (@code{tex-bibtex-file})."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1641
+msgid ""
+"Recenter the window showing output from @TeX{} so that the last line can be "
+"seen (@code{tex-recenter-output-buffer})."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1643
+msgid "Kill the @TeX{} subprocess (@code{tex-kill-job})."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1646
+msgid ""
+"Invoke some other compilation command on the entire current buffer "
+"(@code{tex-compile})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1648
+#, no-wrap
+msgid "tex-buffer"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1649
+#, no-wrap
+msgid "C-c C-b @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1650
+#, no-wrap
+msgid "tex-view"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1651
+#, no-wrap
+msgid "C-c C-v @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1652
+#, no-wrap
+msgid "tex-print"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1653
+#, no-wrap
+msgid "C-c C-p @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1660
+msgid ""
+"To pass the current buffer through @TeX{}, type @kbd{C-c C-b} "
+"(@code{tex-buffer}).  The formatted output goes in a temporary file, "
+"normally a @file{.dvi} file.  Afterwards, you can type @kbd{C-c C-v} "
+"(@code{tex-view}) to launch an external program, such as @command{xdvi}, to "
+"view this output file.  You can also type @kbd{C-c C-p} (@code{tex-print}) "
+"to print a hardcopy of the output file."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1661
+#, no-wrap
+msgid "@env{TEXINPUTS} environment variable"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1662
+#, no-wrap
+msgid "tex-directory"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1672
+msgid ""
+"By default, @kbd{C-c C-b} runs @TeX{} in the current directory.  The output "
+"of @TeX{} also goes in this directory.  To run @TeX{} in a different "
+"directory, change the variable @code{tex-directory} to the desired directory "
+"name.  If your environment variable @env{TEXINPUTS} contains relative "
+"directory names, or if your files contains @samp{\\input} commands with "
+"relative file names, then @code{tex-directory} @emph{must} be @code{\".\"} "
+"or you will get the wrong results.  Otherwise, it is safe to specify some "
+"other directory, such as @code{\"/tmp\"}."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1673
+#, no-wrap
+msgid "tex-run-command"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1674
+#, no-wrap
+msgid "latex-run-command"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1675
+#, no-wrap
+msgid "tex-dvi-view-command"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1676
+#, no-wrap
+msgid "tex-dvi-print-command"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1686
+msgid ""
+"The buffer's @TeX{} variant determines what shell command @kbd{C-c C-b} "
+"actually runs.  In Plain @TeX{} mode, it is specified by the variable "
+"@code{tex-run-command}, which defaults to @code{\"tex\"}.  In @LaTeX{} mode, "
+"it is specified by @code{latex-run-command}, which defaults to "
+"@code{\"latex\"}.  The shell command that @kbd{C-c C-v} runs to view the "
+"@file{.dvi} output is determined by the variable "
+"@code{tex-dvi-view-command}, regardless of the @TeX{} variant.  The shell "
+"command that @kbd{C-c C-p} runs to print the output is determined by the "
+"variable @code{tex-dvi-print-command}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1695
+msgid ""
+"Normally, Emacs automatically appends the output file name to the shell "
+"command strings described in the preceding paragraph.  For example, if "
+"@code{tex-dvi-view-command} is @code{\"xdvi\"}, @kbd{C-c C-v} runs "
+"@command{xdvi @var{output-file-name}}.  In some cases, however, the file "
+"name needs to be embedded in the command, e.g., if you need to provide the "
+"file name as an argument to one command whose output is piped to another.  "
+"You can specify where to put the file name with @samp{*} in the command "
+"string.  For example,"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:1698
+#, no-wrap
+msgid "(setq tex-dvi-print-command \"dvips -f * | lpr\")\n"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1700
+#, no-wrap
+msgid "tex-kill-job"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1701
+#, no-wrap
+msgid "C-c C-k @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1702
+#, no-wrap
+msgid "tex-recenter-output-buffer"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1703
+#, no-wrap
+msgid "C-c C-l @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1710
+msgid ""
+"The terminal output from @TeX{}, including any error messages, appears in a "
+"buffer called @file{*tex-shell*}.  If @TeX{} gets an error, you can switch "
+"to this buffer and feed it input (this works as in Shell mode; "
+"@pxref{Interactive Shell}).  Without switching to this buffer you can scroll "
+"it so that its last line is visible by typing @kbd{C-c C-l}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1714
+msgid ""
+"Type @kbd{C-c C-k} (@code{tex-kill-job}) to kill the @TeX{} process if you "
+"see that its output is no longer useful.  Using @kbd{C-c C-b} or @kbd{C-c "
+"C-r} also kills any @TeX{} process still running."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1715
+#, no-wrap
+msgid "tex-region"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1716
+#, no-wrap
+msgid "C-c C-r @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1725
+msgid ""
+"You can also pass an arbitrary region through @TeX{} by typing @kbd{C-c C-r} "
+"(@code{tex-region}).  This is tricky, however, because most files of @TeX{} "
+"input contain commands at the beginning to set parameters and define macros, "
+"without which no later part of the file will format correctly.  To solve "
+"this problem, @kbd{C-c C-r} allows you to designate a part of the file as "
+"containing essential commands; it is included before the specified region as "
+"part of the input to @TeX{}.  The designated part of the file is called the "
+"@dfn{header}."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1726
+#, no-wrap
+msgid "header (@TeX{} mode)"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1734
+msgid ""
+"To indicate the bounds of the header in Plain @TeX{} mode, you insert two "
+"special strings in the file.  Insert @samp{%**start of header} before the "
+"header, and @samp{%**end of header} after it.  Each string must appear "
+"entirely on one line, but there may be other text on the line before or "
+"after.  The lines containing the two strings are included in the header.  If "
+"@samp{%**start of header} does not appear within the first 100 lines of the "
+"buffer, @kbd{C-c C-r} assumes that there is no header."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1739
+msgid ""
+"In @LaTeX{} mode, the header begins with @samp{\\documentclass} or "
+"@samp{\\documentstyle} and ends with @samp{\\begin@{document@}}.  These are "
+"commands that @LaTeX{} requires you to use in any case, so nothing special "
+"needs to be done to identify the header."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1740
+#, no-wrap
+msgid "tex-file"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1741
+#, no-wrap
+msgid "C-c C-f @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1747
+msgid ""
+"The commands (@code{tex-buffer}) and (@code{tex-region}) do all of their "
+"work in a temporary directory, and do not have available any of the "
+"auxiliary files needed by @TeX{} for cross-references; these commands are "
+"generally not suitable for running the final copy in which all of the "
+"cross-references need to be correct."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1753
+msgid ""
+"When you want the auxiliary files for cross references, use @kbd{C-c C-f} "
+"(@code{tex-file}) which runs @TeX{} on the current buffer's file, in that "
+"file's directory.  Before running @TeX{}, it offers to save any modified "
+"buffers.  Generally, you need to use (@code{tex-file}) twice to get the "
+"cross-references right."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1754
+#, no-wrap
+msgid "tex-start-options"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1757
+msgid ""
+"The value of the variable @code{tex-start-options} specifies options for the "
+"@TeX{} run."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1758
+#, no-wrap
+msgid "tex-start-commands"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1763
+msgid ""
+"The value of the variable @code{tex-start-commands} specifies @TeX{} "
+"commands for starting @TeX{}.  The default value causes @TeX{} to run in "
+"nonstop mode.  To run @TeX{} interactively, set the variable to @code{\"\"}."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1764
+#, no-wrap
+msgid "tex-main-file"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1771
+msgid ""
+"Large @TeX{} documents are often split into several files---one main file, "
+"plus subfiles.  Running @TeX{} on a subfile typically does not work; you "
+"have to run it on the main file.  In order to make @code{tex-file} useful "
+"when you are editing a subfile, you can set the variable "
+"@code{tex-main-file} to the name of the main file.  Then @code{tex-file} "
+"runs @TeX{} on that file."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1775
+msgid ""
+"The most convenient way to use @code{tex-main-file} is to specify it in a "
+"local variable list in each of the subfiles.  @xref{File Variables}."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1776
+#, no-wrap
+msgid "tex-bibtex-file"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1777
+#, no-wrap
+msgid "C-c TAB @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1778
+#, no-wrap
+msgid "tex-bibtex-command"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1789
+msgid ""
+"For @LaTeX{} files, you can use Bib@TeX{} to process the auxiliary file for "
+"the current buffer's file.  Bib@TeX{} looks up bibliographic citations in a "
+"data base and prepares the cited references for the bibliography section.  "
+"The command @kbd{C-c @key{TAB}} (@code{tex-bibtex-file}) runs the shell "
+"command (@code{tex-bibtex-command}) to produce a @samp{.bbl} file for the "
+"current buffer's file.  Generally, you need to do @kbd{C-c C-f} "
+"(@code{tex-file}) once to generate the @samp{.aux} file, then do @kbd{C-c "
+"@key{TAB}} (@code{tex-bibtex-file}), and then repeat @kbd{C-c C-f} "
+"(@code{tex-file}) twice more to get the cross-references correct."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1790
+#, no-wrap
+msgid "tex-compile"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1791
+#, no-wrap
+msgid "C-c C-c @r{(@TeX{} mode)}"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1798
+msgid ""
+"To invoke some other compilation program on the current @TeX{} buffer, type "
+"@kbd{C-c C-c} (@code{tex-compile}).  This command knows how to pass "
+"arguments to many common programs, including @file{pdflatex}, @file{yap}, "
+"@file{xdvi}, and @file{dvips}.  You can select your desired compilation "
+"program using the standard completion keys (@pxref{Completion})."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:1800
+#, no-wrap
+msgid "@TeX{} Mode Miscellany"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1802
+#, no-wrap
+msgid "tex-shell-hook"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1803
+#, no-wrap
+msgid "tex-mode-hook"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1804
+#, no-wrap
+msgid "latex-mode-hook"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1805
+#, no-wrap
+msgid "slitex-mode-hook"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1806
+#, no-wrap
+msgid "plain-tex-mode-hook"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1812
+msgid ""
+"Entering any variant of @TeX{} mode runs the hooks @code{text-mode-hook} and "
+"@code{tex-mode-hook}.  Then it runs either @code{plain-tex-mode-hook}, "
+"@code{latex-mode-hook}, or @code{slitex-mode-hook}, whichever is "
+"appropriate.  Starting the @TeX{} shell runs the hook "
+"@code{tex-shell-hook}.  @xref{Hooks}."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1813
+#, no-wrap
+msgid "iso-iso2tex"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1814
+#, no-wrap
+msgid "iso-tex2iso"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1815
+#, no-wrap
+msgid "iso-iso2gtex"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1816
+#, no-wrap
+msgid "iso-gtex2iso"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1817
+#, no-wrap
+msgid "Latin-1 @TeX{} encoding"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1818
+#, no-wrap
+msgid "@TeX{} encoding"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1822
+msgid ""
+"The commands @kbd{M-x iso-iso2tex}, @kbd{M-x iso-tex2iso}, @kbd{M-x "
+"iso-iso2gtex} and @kbd{M-x iso-gtex2iso} can be used to convert between "
+"Latin-1 encoded files and @TeX{}-encoded equivalents."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:1824
+#, no-wrap
+msgid "SGML and HTML Modes"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1825
+#, no-wrap
+msgid "SGML mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1826
+#, no-wrap
+msgid "HTML mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1827
+#, no-wrap
+msgid "mode, SGML"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1828
+#, no-wrap
+msgid "mode, HTML"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1829
+#, no-wrap
+msgid "sgml-mode"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1830
+#, no-wrap
+msgid "html-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1835
+msgid ""
+"The major modes for SGML and HTML provide indentation support and commands "
+"for operating on tags.  HTML mode is a slightly customized variant of SGML "
+"mode."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1838
+#, no-wrap
+msgid "C-c C-n @r{(SGML mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1839
+#, no-wrap
+msgid "sgml-name-char"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1842
+msgid ""
+"Interactively specify a special character and insert the SGML "
+"@samp{&}-command for that character (@code{sgml-name-char})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1844
+#, no-wrap
+msgid "C-c C-t @r{(SGML mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1845
+#, no-wrap
+msgid "sgml-tag"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1850
+msgid ""
+"Interactively specify a tag and its attributes (@code{sgml-tag}).  This "
+"command asks you for a tag name and for the attribute values, then inserts "
+"both the opening tag and the closing tag, leaving point between them."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1856
+msgid ""
+"With a prefix argument @var{n}, the command puts the tag around the @var{n} "
+"words already present in the buffer after point.  Whenever a region is "
+"active, it puts the tag around the region (when Transient Mark mode is off, "
+"it does this when a numeric argument of @minus{}1 is supplied.)"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1858
+#, no-wrap
+msgid "C-c C-a @r{(SGML mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1859
+#, no-wrap
+msgid "sgml-attributes"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1862
+msgid ""
+"Interactively insert attribute values for the current tag "
+"(@code{sgml-attributes})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1864
+#, no-wrap
+msgid "C-c C-f @r{(SGML mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1865
+#, no-wrap
+msgid "sgml-skip-tag-forward"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1869
+msgid ""
+"Skip across a balanced tag group (which extends from an opening tag through "
+"its corresponding closing tag) (@code{sgml-skip-tag-forward}).  A numeric "
+"argument acts as a repeat count."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1871
+#, no-wrap
+msgid "C-c C-b @r{(SGML mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1872
+#, no-wrap
+msgid "sgml-skip-tag-backward"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1877
+msgid ""
+"Skip backward across a balanced tag group (which extends from an opening tag "
+"through its corresponding closing tag)  (@code{sgml-skip-tag-backward}).  A "
+"numeric argument acts as a repeat count."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1879
+#, no-wrap
+msgid "C-c C-d @r{(SGML mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1880
+#, no-wrap
+msgid "sgml-delete-tag"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1885
+msgid ""
+"Delete the tag at or after point, and delete the matching tag too "
+"(@code{sgml-delete-tag}).  If the tag at or after point is an opening tag, "
+"delete the closing tag too; if it is a closing tag, delete the opening tag "
+"too."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1886
+#, no-wrap
+msgid "C-c ? @var{tag} @key{RET}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1887
+#, no-wrap
+msgid "C-c ? @r{(SGML mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1888
+#, no-wrap
+msgid "sgml-tag-help"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1892
+msgid ""
+"Display a description of the meaning of tag @var{tag} "
+"(@code{sgml-tag-help}).  If the argument @var{tag} is empty, describe the "
+"tag at point."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1893
+#, no-wrap
+msgid "C-c /"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1894
+#, no-wrap
+msgid "C-c / @r{(SGML mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1895
+#, no-wrap
+msgid "sgml-close-tag"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1899
+msgid ""
+"Insert a close tag for the innermost unterminated tag "
+"(@code{sgml-close-tag}).  If called within a tag or a comment, close it "
+"instead of inserting a close tag."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1900
+#, no-wrap
+msgid "C-c 8"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1901
+#, no-wrap
+msgid "C-c 8 @r{(SGML mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1902
+#, no-wrap
+msgid "sgml-name-8bit-mode"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1906
+msgid ""
+"Toggle a minor mode in which Latin-1 characters insert the corresponding "
+"SGML commands that stand for them, instead of the characters themselves "
+"(@code{sgml-name-8bit-mode})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1908
+#, no-wrap
+msgid "C-c C-v @r{(SGML mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1909
+#, no-wrap
+msgid "sgml-validate"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1912
+msgid ""
+"Run a shell command (which you must specify) to validate the current buffer "
+"as SGML (@code{sgml-validate})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1914
+#, no-wrap
+msgid "C-c TAB @r{(SGML mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1915
+#, no-wrap
+msgid "sgml-tags-invisible"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1918
+msgid ""
+"Toggle the visibility of existing tags in the buffer.  This can be used as a "
+"cheap preview (@code{sgml-tags-invisible})."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1923
+#, no-wrap
+msgid "XML schema"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1935
+msgid ""
+"The major mode for editing XML documents is called nXML mode.  This is a "
+"powerful major mode that can recognize many existing XML schema and use them "
+"to provide completion of XML elements via @kbd{M-@key{TAB}}, as well as "
+"``on-the-fly'' XML validation with error highlighting.  To enable nXML mode "
+"in an existing buffer, type @kbd{M-x nxml-mode}, or, equivalently, @kbd{M-x "
+"xml-mode}.  Emacs uses nXML mode for files which have the extension "
+"@file{.xml}.  For XHTML files, which have the extension @file{.xhtml}, Emacs "
+"uses HTML mode by default; you can make it use nXML mode by customizing the "
+"variable @code{auto-mode-alist} (@pxref{Choosing Modes})."
+msgstr ""
+
+#. type: ifinfo
+#: text.texi.orig:1938
+msgid ""
+"nXML mode is described in its own manual: @xref{Top, nXML Mode,,nxml-mode, "
+"nXML Mode}."
+msgstr ""
+
+#. type: ifnotinfo
+#: text.texi.orig:1942
+msgid "nXML mode is described in an Info manual, which is distributed with Emacs."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1944
+#, no-wrap
+msgid "sgml-xml-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1952
+msgid ""
+"You may choose to use the less powerful SGML mode for editing XML, since XML "
+"is a strict subset of SGML@.  To enable SGML mode in an existing buffer, "
+"type @kbd{M-x sgml-mode}.  On enabling SGML mode, Emacs examines the buffer "
+"to determine whether it is XML; if so, it sets the variable "
+"@code{sgml-xml-mode} to a non-@code{nil} value.  This causes SGML mode's tag "
+"insertion commands, described above, to always insert explicit closing tags "
+"as well."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:1956
+#, no-wrap
+msgid "nroff"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1957
+#, no-wrap
+msgid "nroff-mode"
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:1958
+#, no-wrap
+msgid "nroff-mode-hook"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1964
+msgid ""
+"Nroff mode, a major mode derived from Text mode, is specialized for editing "
+"nroff files (e.g., Unix man pages).  Type @kbd{M-x nroff-mode} to enter this "
+"mode.  Entering Nroff mode runs the hook @code{text-mode-hook}, then "
+"@code{nroff-mode-hook} (@pxref{Hooks})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1968
+msgid ""
+"In Nroff mode, nroff command lines are treated as paragraph separators, "
+"pages are separated by @samp{.bp} commands, and comments start with "
+"backslash-doublequote.  It also defines these commands:"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1969
+#, no-wrap
+msgid "forward-text-line"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1970
+#, no-wrap
+msgid "backward-text-line"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1971
+#, no-wrap
+msgid "count-text-lines"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1972
+#, no-wrap
+msgid "M-n @r{(Nroff mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1973
+#, no-wrap
+msgid "M-p @r{(Nroff mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:1974
+#, no-wrap
+msgid "M-? @r{(Nroff mode)}"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1976
+#, no-wrap
+msgid "M-n"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1979
+msgid ""
+"Move to the beginning of the next line that isn't an nroff command "
+"(@code{forward-text-line}).  An argument is a repeat count."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1979
+#, no-wrap
+msgid "M-p"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1981
+msgid "Like @kbd{M-n} but move up (@code{backward-text-line})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:1981
+#, no-wrap
+msgid "M-?"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:1984
+msgid ""
+"Displays in the echo area the number of text lines (lines that are not nroff "
+"commands) in the region (@code{count-text-lines})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:1986
+#, no-wrap
+msgid "electric-nroff-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1993
+msgid ""
+"Electric Nroff mode is a buffer-local minor mode that can be used with Nroff "
+"mode.  To toggle this minor mode, type @kbd{M-x electric-nroff-mode} "
+"(@pxref{Minor Modes}).  When the mode is on, each time you type @key{RET} to "
+"end a line containing an nroff command that opens a kind of grouping, the "
+"nroff command to close that grouping is automatically inserted on the "
+"following line."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:1997
+msgid ""
+"If you use Outline minor mode with Nroff mode (@pxref{Outline Mode}), "
+"heading lines are lines of the form @samp{.H} followed by a number (the "
+"header level)."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2000
+#, no-wrap
+msgid "Enriched mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2001
+#, no-wrap
+msgid "mode, Enriched"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2002
+#, no-wrap
+msgid "enriched text"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2003
+#, no-wrap
+msgid "WYSIWYG"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2004
+#, no-wrap
+msgid "word processing"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2005
+#, no-wrap
+msgid "text/enriched MIME format"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2013
+msgid ""
+"Enriched mode is a minor mode for editing formatted text files in a WYSIWYG "
+"(``what you see is what you get'') fashion.  When Enriched mode is enabled, "
+"you can apply various formatting properties to the text in the buffer, such "
+"as fonts and colors; upon saving the buffer, those properties are saved "
+"together with the text, using the MIME @samp{text/enriched} file format."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2020
+msgid ""
+"Enriched mode is typically used with Text mode (@pxref{Text Mode}).  It is "
+"@emph{not} compatible with Font Lock mode, which is used by many major "
+"modes, including most programming language modes, for syntax highlighting "
+"(@pxref{Font Lock}).  Unlike Enriched mode, Font Lock mode assigns text "
+"properties automatically, based on the current buffer contents; those "
+"properties are not saved to disk."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2023
+msgid ""
+"The file @file{enriched.txt} in Emacs's @code{data-directory} serves as an "
+"example of the features of Enriched mode."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2033 text.texi.orig:2035 text.texi.orig:2036
+#, no-wrap
+msgid "Enriched Mode"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2033
+msgid "Entering and exiting Enriched mode."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2033 text.texi.orig:2077 text.texi.orig:2078
+#, no-wrap
+msgid "Hard and Soft Newlines"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2033
+msgid "There are two different kinds of newlines."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:2033 text.texi.orig:2105
+#, no-wrap
+msgid "Editing Format Info"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2033
+msgid "How to edit text properties."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:2033 text.texi.orig:2147
+#, no-wrap
+msgid "Enriched Faces"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2033
+msgid "Bold, italic, underline, etc."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:2033 text.texi.orig:2214
+#, no-wrap
+msgid "Enriched Indentation"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2033
+msgid "Changing the left and right margins."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:2033 text.texi.orig:2265
+#, no-wrap
+msgid "Enriched Justification"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2033
+msgid "Centering, setting text flush with the left or right margin, etc."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:2033 text.texi.orig:2314
+#, no-wrap
+msgid "Enriched Properties"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2033
+msgid "The \"special\" text properties submenu."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2044
+msgid ""
+"Enriched mode is a buffer-local minor mode (@pxref{Minor Modes}).  When you "
+"visit a file that has been saved in the @samp{text/enriched} format, Emacs "
+"automatically enables Enriched mode, and applies the formatting information "
+"in the file to the buffer text.  When you save a buffer with Enriched mode "
+"enabled, it is saved using the @samp{text/enriched} format, including the "
+"formatting information."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2045
+#, no-wrap
+msgid "enriched-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2054
+msgid ""
+"To create a new file of formatted text, visit the nonexistent file and type "
+"@kbd{M-x enriched-mode}.  This command actually toggles Enriched mode.  With "
+"a prefix argument, it enables Enriched mode if the argument is positive, and "
+"disables Enriched mode otherwise.  If you disable Enriched mode, Emacs no "
+"longer saves the buffer using the @samp{text/enriched} format; any "
+"formatting properties that have been added to the buffer remain in the "
+"buffer, but they are not saved to disk."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:2055
+#, no-wrap
+msgid "enriched-translations"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2059
+msgid ""
+"Enriched mode does not save all Emacs text properties, only those specified "
+"in the variable @code{enriched-translations}.  These include properties for "
+"fonts, colors, indentation, and justification."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2060
+#, no-wrap
+msgid "format-decode-buffer"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2066
+msgid ""
+"If you visit a file and Emacs fails to recognize that it is in the "
+"@samp{text/enriched} format, type @kbd{M-x format-decode-buffer}.  This "
+"command prompts for a file format, and re-reads the file in that format.  "
+"Specifying the @samp{text/enriched} format automatically enables Enriched "
+"mode."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2070
+msgid ""
+"To view a @samp{text/enriched} file in raw form (as plain text with markup "
+"tags rather than formatted text), use @kbd{M-x find-file-literally} "
+"(@pxref{Visiting})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2076
+msgid ""
+"@xref{Format Conversion,, Format Conversion, elisp, the Emacs Lisp Reference "
+"Manual}, for details of how Emacs recognizes and converts file formats like "
+"@samp{text/enriched}.  @xref{Text Properties,,, elisp, the Emacs Lisp "
+"Reference Manual}, for more information about text properties."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2079
+#, no-wrap
+msgid "hard newline"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2080
+#, no-wrap
+msgid "soft newline"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2081
+#, no-wrap
+msgid "newlines, hard and soft"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2083
+#, no-wrap
+msgid "use-hard-newlines"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2088
+msgid ""
+"In Enriched mode, Emacs distinguishes between two different kinds of "
+"newlines, @dfn{hard} newlines and @dfn{soft} newlines.  You can also enable "
+"or disable this feature in other buffers, by typing @kbd{M-x "
+"use-hard-newlines}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2095
+msgid ""
+"Hard newlines are used to separate paragraphs, or anywhere there needs to be "
+"a line break regardless of how the text is filled; soft newlines are used "
+"for filling.  The @key{RET} (@code{newline}) and @kbd{C-o} "
+"(@code{open-line}) commands insert hard newlines.  The fill commands, "
+"including Auto Fill (@pxref{Auto Fill}), insert only soft newlines and "
+"delete only soft newlines, leaving hard newlines alone."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2104
+msgid ""
+"Thus, when editing with Enriched mode, you should not use @key{RET} or "
+"@kbd{C-o} to break lines in the middle of filled paragraphs.  Use Auto Fill "
+"mode or explicit fill commands (@pxref{Fill Commands})  instead.  Use "
+"@key{RET} or @kbd{C-o} where line breaks should always remain, such as in "
+"tables and lists.  For such lines, you may also want to set the "
+"justification style to @code{unfilled} (@pxref{Enriched Justification})."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2106
+#, no-wrap
+msgid "Editing Format Information"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2114
+msgid ""
+"The easiest way to alter properties is with the @samp{Text Properties} "
+"menu.  You can get to this menu from the @samp{Edit} menu in the menu bar "
+"(@pxref{Menu Bar}), or with @kbd{C-Mouse-2} (@pxref{Menu Mouse Clicks}).  "
+"Some of the commands in the @samp{Text Properties} menu are listed below "
+"(you can also invoke them with @kbd{M-x}):"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2116
+#, no-wrap
+msgid "facemenu-remove-face-props"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2117
+#, no-wrap
+msgid "Remove Face Properties"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2120
+msgid "Remove face properties from the region (@code{facemenu-remove-face-props})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2121
+#, no-wrap
+msgid "facemenu-remove-all"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2122
+#, no-wrap
+msgid "Remove Text Properties"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2125
+msgid ""
+"Remove all text properties from the region, including face properties "
+"(@code{facemenu-remove-all})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2126
+#, no-wrap
+msgid "describe-text-properties"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2127
+#, no-wrap
+msgid "text properties of characters"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2128
+#, no-wrap
+msgid "overlays at character position"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2129
+#, no-wrap
+msgid "widgets at buffer position"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2130
+#, no-wrap
+msgid "buttons at buffer position"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2131
+#, no-wrap
+msgid "Describe Properties"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2134
+msgid ""
+"List all text properties and other information about the character following "
+"point (@code{describe-text-properties})."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2135
+#, no-wrap
+msgid "Display Faces"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2138
+msgid "Display a list of defined faces (@code{list-faces-display}).  @xref{Faces}."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2139
+#, no-wrap
+msgid "Display Colors"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2142
+msgid ""
+"Display a list of defined colors (@code{list-colors-display}).  "
+"@xref{Colors}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2146
+msgid "The other menu entries are described in the following sections."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2148
+#, no-wrap
+msgid "Faces in Enriched Text"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2155
+msgid ""
+"The following commands can be used to add or remove faces (@pxref{Faces}).  "
+"Each applies to the text in the region if the mark is active, and to the "
+"next self-inserting character if the mark is inactive.  With a prefix "
+"argument, each command applies to the next self-inserting character even if "
+"the region is active."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2157
+#, no-wrap
+msgid "M-o d @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2158
+#, no-wrap
+msgid "facemenu-set-default"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2159
+#, no-wrap
+msgid "M-o d"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2161
+msgid "Remove all @code{face} properties (@code{facemenu-set-default})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2162
+#, no-wrap
+msgid "M-o b @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2163
+#, no-wrap
+msgid "facemenu-set-bold"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2164
+#, no-wrap
+msgid "M-o b"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2166
+msgid "Apply the @code{bold} face (@code{facemenu-set-bold})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2167
+#, no-wrap
+msgid "M-o i @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2168
+#, no-wrap
+msgid "facemenu-set-italic"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2169
+#, no-wrap
+msgid "M-o i"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2171
+msgid "Apply the @code{italic} face (@code{facemenu-set-italic})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2172
+#, no-wrap
+msgid "M-o l @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2173
+#, no-wrap
+msgid "facemenu-set-bold-italic"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2174
+#, no-wrap
+msgid "M-o l"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2176
+msgid "Apply the @code{bold-italic} face (@code{facemenu-set-bold-italic})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2177
+#, no-wrap
+msgid "M-o u @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2178
+#, no-wrap
+msgid "facemenu-set-underline"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2179
+#, no-wrap
+msgid "M-o u"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2181
+msgid "Apply the @code{underline} face (@code{facemenu-set-underline})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2182
+#, no-wrap
+msgid "M-o o @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2183
+#, no-wrap
+msgid "facemenu-set-face"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2184
+#, no-wrap
+msgid "M-o o @var{face} @key{RET}"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2186
+msgid "Apply the face @var{face} (@code{facemenu-set-face})."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2187
+#, no-wrap
+msgid "facemenu-set-foreground"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2188
+#, no-wrap
+msgid "M-x facemenu-set-foreground"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2191
+msgid "Prompt for a color (@pxref{Colors}), and apply it as a foreground color."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2192
+#, no-wrap
+msgid "facemenu-set-background"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2193
+#, no-wrap
+msgid "M-x facemenu-set-background"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2195
+msgid "Prompt for a color, and apply it as a background color."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2199
+msgid "These command are also available via the Text Properties menu."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2206
+msgid ""
+"A self-inserting character normally inherits the face properties (and most "
+"other text properties) from the preceding character in the buffer.  If you "
+"use one of the above commands to specify the face for the next "
+"self-inserting character, that character will not inherit the faces "
+"properties from the preceding character, but it will still inherit other "
+"text properties."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2213
+msgid ""
+"Enriched mode defines two additional faces: @code{excerpt} and "
+"@code{fixed}.  These correspond to codes used in the text/enriched file "
+"format.  The @code{excerpt} face is intended for quotations; by default, it "
+"appears the same as @code{italic}.  The @code{fixed} face specifies "
+"fixed-width text; by default, it appears the same as @code{bold}."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2215
+#, no-wrap
+msgid "Indentation in Enriched Text"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2221
+msgid ""
+"In Enriched mode, you can specify different amounts of indentation for the "
+"right or left margin of a paragraph or a part of a paragraph.  These margins "
+"also affect fill commands such as @kbd{M-q} (@pxref{Filling})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2224
+msgid ""
+"The Indentation submenu of Text Properties offers commands for specifying "
+"indentation:"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2226
+#, no-wrap
+msgid "C-x TAB @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2227
+#, no-wrap
+msgid "increase-left-margin"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2228
+#, no-wrap
+msgid "Indent More"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2233
+msgid ""
+"Indent the region by 4 columns (@code{increase-left-margin}).  In Enriched "
+"mode, this command is also available on @kbd{C-x @key{TAB}}; if you supply a "
+"numeric argument, that says how many columns to add to the margin (a "
+"negative argument reduces the number of columns)."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2234
+#, no-wrap
+msgid "Indent Less"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2236
+msgid "Remove 4 columns of indentation from the region."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2237
+#, no-wrap
+msgid "Indent Right More"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2239
+msgid "Make the text narrower by indenting 4 columns at the right margin."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2240
+#, no-wrap
+msgid "Indent Right Less"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2242
+msgid "Remove 4 columns of indentation from the right margin."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:2244
+#, no-wrap
+msgid "standard-indent"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2249
+msgid ""
+"The variable @code{standard-indent} specifies how many columns these "
+"commands should add to or subtract from the indentation.  The default value "
+"is 4.  The default right margin for Enriched mode is controlled by the "
+"variable @code{fill-column}, as usual."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2250
+#, no-wrap
+msgid "C-c [ @r{(Enriched mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2251
+#, no-wrap
+msgid "C-c ] @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2252
+#, no-wrap
+msgid "set-left-margin"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2253
+#, no-wrap
+msgid "set-right-margin"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2258
+msgid ""
+"You can also type @kbd{C-c [} (@code{set-left-margin}) and @kbd{C-c ]} "
+"(@code{set-right-margin}) to set the left and right margins.  You can "
+"specify the margin width with a numeric argument; otherwise these commands "
+"prompt for a value via the minibuffer."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2264
+msgid ""
+"The fill prefix, if any, works in addition to the specified paragraph "
+"indentation: @kbd{C-x .} does not include the specified indentation's "
+"whitespace in the new value for the fill prefix, and the fill commands look "
+"for the fill prefix after the indentation on each line.  @xref{Fill Prefix}."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2266
+#, no-wrap
+msgid "Justification in Enriched Text"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2267
+#, no-wrap
+msgid "justification style"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2273
+msgid ""
+"In Enriched mode, you can use the following commands to specify various "
+"@dfn{justification styles} for filling.  These commands apply to the "
+"paragraph containing point, or, if the region is active, to all paragraphs "
+"overlapping the region."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2275
+#, no-wrap
+msgid "M-j l @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2276
+#, no-wrap
+msgid "set-justification-left"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2277
+#, no-wrap
+msgid "M-j l"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2279
+msgid "Align lines to the left margin (@code{set-justification-left})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2280
+#, no-wrap
+msgid "M-j r @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2281
+#, no-wrap
+msgid "set-justification-right"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2282
+#, no-wrap
+msgid "M-j r"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2284
+msgid "Align lines to the right margin (@code{set-justification-right})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2285
+#, no-wrap
+msgid "M-j b @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2286
+#, no-wrap
+msgid "set-justification-full"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2287
+#, no-wrap
+msgid "M-j b"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2290
+msgid ""
+"Align lines to both margins, inserting spaces in the middle of the line to "
+"achieve this (@code{set-justification-full})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2291
+#, no-wrap
+msgid "M-j c @r{(Enriched mode)}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2292
+#, no-wrap
+msgid "M-S @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2293
+#, no-wrap
+msgid "set-justification-center"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2294
+#, no-wrap
+msgid "M-j c"
+msgstr ""
+
+#. type: itemx
+#: text.texi.orig:2295
+#, no-wrap
+msgid "M-S"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2297
+msgid "Center lines between the margins (@code{set-justification-center})."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2298
+#, no-wrap
+msgid "M-j u @r{(Enriched mode)}"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2299
+#, no-wrap
+msgid "set-justification-none"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2300
+#, no-wrap
+msgid "M-j u"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2304
+msgid ""
+"Turn off filling entirely (@code{set-justification-none}).  The fill "
+"commands do nothing on text with this setting.  You can, however, still "
+"indent the left margin."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:2306
+#, no-wrap
+msgid "default-justification"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2313
+msgid ""
+"You can also specify justification styles using the Justification submenu in "
+"the Text Properties menu.  The default justification style is specified by "
+"the per-buffer variable @code{default-justification}.  Its value should be "
+"one of the symbols @code{left}, @code{right}, @code{full}, @code{center}, or "
+"@code{none}; their meanings correspond to the commands above."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2315
+#, no-wrap
+msgid "Setting Other Text Properties"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2323
+msgid ""
+"The Special Properties submenu of Text Properties has entries for adding or "
+"removing three other text properties: @code{read-only}, (which disallows "
+"alteration of the text), @code{invisible} (which hides text), and "
+"@code{intangible} (which disallows moving point within the text).  The "
+"@samp{Remove Special} menu item removes all of these special properties from "
+"the text in the region."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2325
+msgid "The @code{invisible} and @code{intangible} properties are not saved."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:2327
+#, no-wrap
+msgid "Editing Text-based Tables"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2328
+#, no-wrap
+msgid "table mode"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2329
+#, no-wrap
+msgid "text-based tables"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2333
+msgid ""
+"The @code{table} package provides commands to easily edit text-based "
+"tables.  Here is an example of what such a table looks like:"
+msgstr ""
+
+#. type: group
+#: text.texi.orig:2347
+#, no-wrap
+msgid ""
+"+-----------------+--------------------------------+-----------------+\n"
+"|     Command     |          Description           |   Key Binding   |\n"
+"+-----------------+--------------------------------+-----------------+\n"
+"|  forward-char   |Move point right N characters   |       C-f       |\n"
+"|                 |(left if N is negative).        |                 |\n"
+"|                 |                                |                 |\n"
+"+-----------------+--------------------------------+-----------------+\n"
+"|  backward-char  |Move point left N characters    |       C-b       |\n"
+"|                 |(right if N is negative).       |                 |\n"
+"|                 |                                |                 |\n"
+"+-----------------+--------------------------------+-----------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2355
+msgid ""
+"When Emacs recognizes such a stretch of text as a table (@pxref{Table "
+"Recognition}), editing the contents of each table cell will automatically "
+"resize the table, whenever the contents become too large to fit in the "
+"cell.  You can use the commands defined in the following sections for "
+"navigating and editing the table layout."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2356
+#, no-wrap
+msgid "table-fixed-width-mode"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2359
+msgid ""
+"Type @kbd{M-x table-fixed-width-mode} to toggle the automatic table resizing "
+"feature."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:2369 text.texi.orig:2371
+#, no-wrap
+msgid "Table Definition"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2369
+msgid "What is a text based table."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:2369 text.texi.orig:2424
+#, no-wrap
+msgid "Table Creation"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2369
+msgid "How to create a table."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2369 text.texi.orig:2448 text.texi.orig:2449
+#, no-wrap
+msgid "Table Recognition"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2369
+msgid "How to activate and deactivate tables."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:2369 text.texi.orig:2494
+#, no-wrap
+msgid "Cell Commands"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2369
+msgid "Cell-oriented commands in a table."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2369 text.texi.orig:2551 text.texi.orig:2552
+#, no-wrap
+msgid "Cell Justification"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2369
+msgid "Justifying cell contents."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2369 text.texi.orig:2584 text.texi.orig:2585
+#, no-wrap
+msgid "Table Rows and Columns"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2369
+msgid "Inserting and deleting rows and columns."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:2369 text.texi.orig:2611
+#, no-wrap
+msgid "Table Conversion"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2369
+msgid "Converting between plain text and tables."
+msgstr ""
+
+#. type: node
+#: text.texi.orig:2369 text.texi.orig:2700
+#, no-wrap
+msgid "Table Misc"
+msgstr ""
+
+#. type: menuentry
+#: text.texi.orig:2369
+msgid "Table miscellany."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2372
+#, no-wrap
+msgid "What is a Text-based Table?"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2373
+#, no-wrap
+msgid "cells, for text-based tables"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2379
+msgid ""
+"A @dfn{table} consists of a rectangular text area which is divided into "
+"@dfn{cells}.  Each cell must be at least one character wide and one "
+"character high, not counting its border lines.  A cell can be subdivided "
+"into more cells, but they cannot overlap."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2382
+msgid ""
+"Cell border lines are drawn with three special characters, specified by the "
+"following variables:"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2384 text.texi.orig:2385
+#, no-wrap
+msgid "table-cell-vertical-char"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2387
+msgid "The character used for vertical lines.  The default is @samp{|}."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2388 text.texi.orig:2389
+#, no-wrap
+msgid "table-cell-horizontal-chars"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2391
+msgid "The characters used for horizontal lines.  The default is @samp{\"-=\"}."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2392 text.texi.orig:2393
+#, no-wrap
+msgid "table-cell-intersection-char"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2396
+msgid ""
+"The character used for the intersection of horizontal and vertical lines.  "
+"The default is @samp{+}."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2400
+msgid "The following are examples of @emph{invalid} tables:"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:2410
+#, no-wrap
+msgid ""
+"   +-----+       +--+    +-++--+\n"
+"   |     |       |  |    | ||  |\n"
+"   |     |       |  |    | ||  |\n"
+"   +--+  |    +--+--+    +-++--+\n"
+"   |  |  |    |  |  |    +-++--+\n"
+"   |  |  |    |  |  |    | ||  |\n"
+"   +--+--+    +--+--+    +-++--+\n"
+"      a          b          c\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2414
+msgid "From left to right:"
+msgstr ""
+
+#. type: enumerate
+#: text.texi.orig:2418
+msgid "Overlapped cells or non-rectangular cells are not allowed."
+msgstr ""
+
+#. type: enumerate
+#: text.texi.orig:2420
+msgid "The border must be rectangular."
+msgstr ""
+
+#. type: enumerate
+#: text.texi.orig:2422
+msgid "Cells must have a minimum width/height of one character."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2425
+#, no-wrap
+msgid "Creating a Table"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2426
+#, no-wrap
+msgid "create a text-based table"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2427
+#, no-wrap
+msgid "table creation"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2429
+#, no-wrap
+msgid "table-insert"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2440
+msgid ""
+"To create a text-based table from scratch, type @kbd{M-x table-insert}.  "
+"This command prompts for the number of table columns, the number of table "
+"rows, cell width and cell height.  The cell width and cell height do not "
+"include the cell borders; each can be specified as a single integer (which "
+"means each cell is given the same width/height), or as a sequence of "
+"integers separated by spaces or commas (which specify the width/height of "
+"the individual table columns/rows, counting from left to right for table "
+"columns and from top to bottom for table rows).  The specified table is then "
+"inserted at point."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2447
+msgid ""
+"The table inserted by @kbd{M-x table-insert} contains special text "
+"properties, which tell Emacs to treat it specially as a text-based table.  "
+"If you save the buffer to a file and visit it again later, those properties "
+"are lost, and the table appears to Emacs as an ordinary piece of text.  See "
+"the next section, for how to convert it back into a table."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2450
+#, no-wrap
+msgid "table recognition"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2452
+#, no-wrap
+msgid "table-recognize"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2453
+#, no-wrap
+msgid "table-unrecognize"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2462
+msgid ""
+"Existing text-based tables in a buffer, which lack the special text "
+"properties applied by @kbd{M-x table-insert}, are not treated specially as "
+"tables.  To apply those text properties, type @kbd{M-x table-recognize}.  "
+"This command scans the current buffer, @dfn{recognizes} valid table cells, "
+"and applies the relevant text properties.  Conversely, type @kbd{M-x "
+"table-unrecognize} to @dfn{unrecognize} all tables in the current buffer, "
+"removing the special text properties and converting tables back to plain "
+"text."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2465
+msgid ""
+"You can also use the following commands to selectively recognize or "
+"unrecognize tables:"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2467
+#, no-wrap
+msgid "table-recognize-region"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2468
+#, no-wrap
+msgid "M-x table-recognize-region"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2470
+msgid "Recognize tables within the current region."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2471
+#, no-wrap
+msgid "table-unrecognize-region"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2472
+#, no-wrap
+msgid "M-x table-unrecognize-region"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2474
+msgid "Unrecognize tables within the current region."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2475
+#, no-wrap
+msgid "table-recognize-table"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2476
+#, no-wrap
+msgid "M-x table-recognize-table"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2478
+msgid "Recognize the table at point and activate it."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2479
+#, no-wrap
+msgid "table-unrecognize-table"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2480
+#, no-wrap
+msgid "M-x table-unrecognize-table"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2482
+msgid "Deactivate the table at point."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2483
+#, no-wrap
+msgid "table-recognize-cell"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2484
+#, no-wrap
+msgid "M-x table-recognize-cell"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2486
+msgid "Recognize the cell at point and activate it."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2487
+#, no-wrap
+msgid "table-unrecognize-cell"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2488
+#, no-wrap
+msgid "M-x table-unrecognize-cell"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2490
+msgid "Deactivate the cell at point."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2493
+msgid "@xref{Table Conversion}, for another way to recognize a table."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2495
+#, no-wrap
+msgid "Commands for Table Cells"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2497
+#, no-wrap
+msgid "table-forward-cell"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2498
+#, no-wrap
+msgid "table-backward-cell"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2505
+msgid ""
+"The commands @kbd{M-x table-forward-cell} and @kbd{M-x table-backward-cell} "
+"move point from the current cell to an adjacent cell.  The order is cyclic: "
+"when point is in the last cell of a table, @kbd{M-x table-forward-cell} "
+"moves to the first cell.  Likewise, when point is on the first cell, "
+"@kbd{M-x table-backward-cell} moves to the last cell."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2506
+#, no-wrap
+msgid "table-span-cell"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2511
+msgid ""
+"@kbd{M-x table-span-cell} prompts for a direction---right, left, above, or "
+"below---and merges the current cell with the adjacent cell in that "
+"direction.  This command signals an error if the merge would result in an "
+"illegitimate cell layout."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2512
+#, no-wrap
+msgid "table-split-cell"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2513
+#, no-wrap
+msgid "table-split-cell-vertically"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2514
+#, no-wrap
+msgid "table-split-cell-horizontally"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2515
+#, no-wrap
+msgid "text-based tables, splitting cells"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2516
+#, no-wrap
+msgid "splitting table cells"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2528
+msgid ""
+"@kbd{M-x table-split-cell} splits the current cell vertically or "
+"horizontally, prompting for the direction with the minibuffer.  To split in "
+"a specific direction, use @kbd{M-x table-split-cell-vertically} and @kbd{M-x "
+"table-split-cell-horizontally}.  When splitting vertically, the old cell "
+"contents are automatically split between the two new cells.  When splitting "
+"horizontally, you are prompted for how to divide the cell contents, if the "
+"cell is non-empty; the options are @samp{split} (divide the contents at "
+"point), @samp{left} (put all the contents in the left cell), and "
+"@samp{right} (put all the contents in the right cell)."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2532
+msgid ""
+"The following commands enlarge or shrink a cell.  By default, they resize by "
+"one row or column; if a numeric argument is supplied, that specifies the "
+"number of rows or columns to resize by."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2534
+#, no-wrap
+msgid "table-heighten-cell"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2535
+#, no-wrap
+msgid "M-x table-heighten-cell"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2537
+msgid "Enlarge the current cell vertically."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2538
+#, no-wrap
+msgid "table-shorten-cell"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2539
+#, no-wrap
+msgid "M-x table-shorten-cell"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2541
+msgid "Shrink the current cell vertically."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2542
+#, no-wrap
+msgid "table-widen-cell"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2543
+#, no-wrap
+msgid "M-x table-widen-cell"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2545
+msgid "Enlarge the current cell horizontally."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2546
+#, no-wrap
+msgid "table-narrow-cell"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2547
+#, no-wrap
+msgid "M-x table-narrow-cell"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2549
+msgid "Shrink the current cell horizontally."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2553
+#, no-wrap
+msgid "justification in text-based tables"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2559
+msgid ""
+"The command @kbd{M-x table-justify} imposes @dfn{justification} on one or "
+"more cells in a text-based table.  Justification determines how the text in "
+"the cell is aligned, relative to the edges of the cell.  Each cell in a "
+"table can be separately justified."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2560
+#, no-wrap
+msgid "table-justify"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2568
+msgid ""
+"@kbd{M-x table-justify} first prompts for what to justify; the options are "
+"@samp{cell} (just the current cell), @samp{column} (all cells in the current "
+"table column) and @samp{row} (all cells in the current table row).  The "
+"command then prompts for the justification style; the options are "
+"@code{left}, @code{center}, @code{right}, @code{top}, @code{middle}, "
+"@code{bottom}, or @code{none} (meaning no vertical justification)."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2574
+msgid ""
+"Horizontal and vertical justification styles are specified independently, "
+"and both types can be in effect simultaneously; for instance, you can call "
+"@kbd{M-x table-justify} twice, once to specify @code{right} justification "
+"and once to specify @code{bottom} justification, to align the contents of a "
+"cell to the bottom right."
+msgstr ""
+
+#. type: vindex
+#: text.texi.orig:2575
+#, no-wrap
+msgid "table-detect-cell-alignment"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2583
+msgid ""
+"The justification style is stored in the buffer as a text property, and is "
+"lost when you kill the buffer or exit Emacs.  However, the table recognition "
+"commands, such as @kbd{M-x table-recognize} (@pxref{Table Recognition}), "
+"attempt to determine and re-apply each cell's justification style, by "
+"examining its contents.  To disable this feature, change the variable "
+"@code{table-detect-cell-alignment} to @code{nil}."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2586
+#, no-wrap
+msgid "inserting rows and columns in text-based tables"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2588
+#, no-wrap
+msgid "table-insert-row"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2595
+msgid ""
+"@kbd{M-x table-insert-row} inserts a row of cells before the current table "
+"row.  The current row, together with point, is pushed down past the new "
+"row.  To insert a row after the last row at the bottom of a table, invoke "
+"this command with point below the table, just below the bottom edge.  You "
+"can insert more than one row at a time by using a numeric prefix argument."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2598
+#, no-wrap
+msgid "table-insert-column"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2604
+msgid ""
+"Similarly, @kbd{M-x table-insert-column} inserts a column of cells to the "
+"left of the current table column.  To insert a column to the right side of "
+"the rightmost column, invoke this command with point to the right of the "
+"rightmost column, outside the table.  A numeric prefix argument specifies "
+"the number of columns to insert."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2605
+#, no-wrap
+msgid "deleting rows and column in text-based tables"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2610
+msgid ""
+"@kbd{M-x table-delete-column} deletes the column of cells at point.  "
+"Similarly, @kbd{M-x table-delete-row} deletes the row of cells at point.  A "
+"numeric prefix argument to either command specifies the number of columns or "
+"rows to delete."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2612
+#, no-wrap
+msgid "Converting Between Plain Text and Tables"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2613
+#, no-wrap
+msgid "text to table"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2614
+#, no-wrap
+msgid "table to text"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2616
+#, no-wrap
+msgid "table-capture"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2622
+msgid ""
+"The command @kbd{M-x table-capture} captures plain text in a region and "
+"turns it into a table.  Unlike @kbd{M-x table-recognize} (@pxref{Table "
+"Recognition}), the original text does not need to have a table appearance; "
+"it only needs to have a logical table-like structure."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2625
+msgid ""
+"For example, suppose we have the following numbers, which are divided into "
+"three lines and separated horizontally by commas:"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:2630
+#, no-wrap
+msgid ""
+"1, 2, 3, 4\n"
+"5, 6, 7, 8\n"
+", 9, 10\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2634
+msgid "Invoking @kbd{M-x table-capture} on that text produces this table:"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:2643
+#, no-wrap
+msgid ""
+"+-----+-----+-----+-----+\n"
+"|1    |2    |3    |4    |\n"
+"+-----+-----+-----+-----+\n"
+"|5    |6    |7    |8    |\n"
+"+-----+-----+-----+-----+\n"
+"|     |9    |10   |     |\n"
+"+-----+-----+-----+-----+\n"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2645
+#, no-wrap
+msgid "table-release"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2648
+msgid ""
+"@kbd{M-x table-release} does the opposite: it converts a table back to plain "
+"text, removing its cell borders."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2652
+msgid ""
+"One application of this pair of commands is to edit a text in layout.  Look "
+"at the following three paragraphs (the latter two are indented with header "
+"lines):"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:2656
+#, no-wrap
+msgid ""
+"table-capture is a powerful command.\n"
+"Here are some things it can do:\n"
+"\n"
+msgstr ""
+
+#. type: example
+#: text.texi.orig:2660
+#, no-wrap
+msgid ""
+"Parse Cell Items   Using row and column delimiter regexps,\n"
+"                   it parses the specified text area and\n"
+"                   extracts cell items into a table.\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2666
+msgid ""
+"Applying @code{table-capture} to a region containing the above text, with "
+"empty strings for the column and row delimiter regexps, creates a table with "
+"a single cell like the following one."
+msgstr ""
+
+#. type: group
+#: text.texi.orig:2677
+#, no-wrap
+msgid ""
+"+----------------------------------------------------------+\n"
+"|table-capture is a powerful command.                      |\n"
+"|Here are some things it can do:                           |\n"
+"|                                                          |\n"
+"|Parse Cell Items   Using row and column delimiter regexps,|\n"
+"|                   it parses the specified text area and  |\n"
+"|                   extracts cell items into a table.      |\n"
+"+----------------------------------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2683
+msgid ""
+"We can then use the cell splitting commands (@pxref{Cell Commands}) to "
+"subdivide the table so that each paragraph occupies a cell:"
+msgstr ""
+
+#. type: smallexample
+#: text.texi.orig:2693
+#, no-wrap
+msgid ""
+"+----------------------------------------------------------+\n"
+"|table-capture is a powerful command.                      |\n"
+"|Here are some things it can do:                           |\n"
+"+-----------------+----------------------------------------+\n"
+"|Parse Cell Items | Using row and column delimiter regexps,|\n"
+"|                 | it parses the specified text area and  |\n"
+"|                 | extracts cell items into a table.      |\n"
+"+-----------------+----------------------------------------+\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2699
+msgid ""
+"Each cell can now be edited independently without affecting the layout of "
+"other cells.  When finished, we can invoke @kbd{M-x table-release} to "
+"convert the table back to plain text."
+msgstr ""
+
+#. type: subsection
+#: text.texi.orig:2701
+#, no-wrap
+msgid "Table Miscellany"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2703
+#, no-wrap
+msgid "table dimensions"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2704
+#, no-wrap
+msgid "table-query-dimension"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2707
+msgid ""
+"The command @code{table-query-dimension} reports the layout of the table and "
+"table cell at point.  Here is an example of its output:"
+msgstr ""
+
+#. type: smallexample
+#: text.texi.orig:2710
+#, no-wrap
+msgid "Cell: (21w, 6h), Table: (67w, 16h), Dim: (2c, 3r), Total Cells: 5\n"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2716
+msgid ""
+"This indicates that the current cell is 21 characters wide and 6 lines high, "
+"the table is 67 characters wide and 16 lines high with 2 columns and 3 rows, "
+"and a total of 5 cells."
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2717
+#, no-wrap
+msgid "table-insert-sequence"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2721
+msgid ""
+"@kbd{M-x table-insert-sequence} inserts a string into each cell.  Each "
+"string is a part of a sequence i.e., a series of increasing integer numbers."
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2722
+#, no-wrap
+msgid "table for HTML and LaTeX"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2723
+#, no-wrap
+msgid "table-generate-source"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2731
+msgid ""
+"@kbd{M-x table-generate-source} generates a table formatted for a specific "
+"markup language.  It asks for a language (which must be one of @code{html}, "
+"@code{latex}, or @code{cals}), a destination buffer in which to put the "
+"result, and a table caption, and then inserts the generated table into the "
+"specified buffer.  The default destination buffer is "
+"@code{table.@var{lang}}, where @var{lang} is the language you specified."
+msgstr ""
+
+#. type: section
+#: text.texi.orig:2733
+#, no-wrap
+msgid "Two-Column Editing"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2734
+#, no-wrap
+msgid "two-column editing"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2735
+#, no-wrap
+msgid "splitting columns"
+msgstr ""
+
+#. type: cindex
+#: text.texi.orig:2736
+#, no-wrap
+msgid "columns, splitting"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2741
+msgid ""
+"Two-column mode lets you conveniently edit two side-by-side columns of "
+"text.  It uses two side-by-side windows, each showing its own buffer.  There "
+"are three ways to enter two-column mode:"
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2743
+#, no-wrap
+msgid "@kbd{@key{F2} 2} or @kbd{C-x 6 2}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2744
+#, no-wrap
+msgid "F2 2"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2745
+#, no-wrap
+msgid "C-x 6 2"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2746
+#, no-wrap
+msgid "2C-two-columns"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2752
+msgid ""
+"Enter two-column mode with the current buffer on the left, and on the right, "
+"a buffer whose name is based on the current buffer's name "
+"(@code{2C-two-columns}).  If the right-hand buffer doesn't already exist, it "
+"starts out empty; the current buffer's contents are not changed."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2755
+msgid ""
+"This command is appropriate when the current buffer is empty or contains "
+"just one column and you want to add another column."
+msgstr ""
+
+#. type: item
+#: text.texi.orig:2756
+#, no-wrap
+msgid "@kbd{@key{F2} s} or @kbd{C-x 6 s}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2757
+#, no-wrap
+msgid "F2 s"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2758
+#, no-wrap
+msgid "C-x 6 s"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2759
+#, no-wrap
+msgid "2C-split"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2766
+msgid ""
+"Split the current buffer, which contains two-column text, into two buffers, "
+"and display them side by side (@code{2C-split}).  The current buffer becomes "
+"the left-hand buffer, but the text in the right-hand column is moved into "
+"the right-hand buffer.  The current column specifies the split point.  "
+"Splitting starts with the current line and continues to the end of the "
+"buffer."
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2769
+msgid ""
+"This command is appropriate when you have a buffer that already contains "
+"two-column text, and you wish to separate the columns temporarily."
+msgstr ""
+
+#. type: kbd{#1}
+#: text.texi.orig:2770
+#, no-wrap
+msgid "@key{F2} b @var{buffer} @key{RET}"
+msgstr ""
+
+#. type: kbd{#1}
+#: text.texi.orig:2771
+#, no-wrap
+msgid "C-x 6 b @var{buffer} @key{RET}"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2772
+#, no-wrap
+msgid "F2 b"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2773
+#, no-wrap
+msgid "C-x 6 b"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2774
+#, no-wrap
+msgid "2C-associate-buffer"
+msgstr ""
+
+#. type: table
+#: text.texi.orig:2778
+msgid ""
+"Enter two-column mode using the current buffer as the left-hand buffer, and "
+"using buffer @var{buffer} as the right-hand buffer "
+"(@code{2C-associate-buffer})."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2786
+msgid ""
+"@kbd{@key{F2} s} or @kbd{C-x 6 s} looks for a column separator, which is a "
+"string that appears on each line between the two columns.  You can specify "
+"the width of the separator with a numeric argument to @kbd{@key{F2} s}; that "
+"many characters, before point, constitute the separator string.  By default, "
+"the width is 1, so the column separator is the character before point."
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2795
+msgid ""
+"When a line has the separator at the proper place, @kbd{@key{F2} s} puts the "
+"text after the separator into the right-hand buffer, and deletes the "
+"separator.  Lines that don't have the column separator at the proper place "
+"remain unsplit; they stay in the left-hand buffer, and the right-hand buffer "
+"gets an empty line to correspond.  (This is the way to write a line that "
+"``spans both columns while in two-column mode'': write it in the left-hand "
+"buffer, and put an empty line in the right-hand buffer.)"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2796
+#, no-wrap
+msgid "F2 RET"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2797
+#, no-wrap
+msgid "C-x 6 RET"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2798
+#, no-wrap
+msgid "2C-newline"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2803
+msgid ""
+"The command @kbd{C-x 6 @key{RET}} or @kbd{@key{F2} @key{RET}} "
+"(@code{2C-newline}) inserts a newline in each of the two buffers at "
+"corresponding positions.  This is the easiest way to add a new line to the "
+"two-column text while editing it in split buffers."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2804
+#, no-wrap
+msgid "F2 1"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2805
+#, no-wrap
+msgid "C-x 6 1"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2806
+#, no-wrap
+msgid "2C-merge"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2811
+msgid ""
+"When you have edited both buffers as you wish, merge them with @kbd{@key{F2} "
+"1} or @kbd{C-x 6 1} (@code{2C-merge}).  This copies the text from the "
+"right-hand buffer as a second column in the other buffer.  To go back to "
+"two-column editing, use @kbd{@key{F2} s}."
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2812
+#, no-wrap
+msgid "F2 d"
+msgstr ""
+
+#. type: kindex
+#: text.texi.orig:2813
+#, no-wrap
+msgid "C-x 6 d"
+msgstr ""
+
+#. type: findex
+#: text.texi.orig:2814
+#, no-wrap
+msgid "2C-dissociate"
+msgstr ""
+
+#. type: Plain text
+#: text.texi.orig:2818
+msgid ""
+"Use @kbd{@key{F2} d} or @kbd{C-x 6 d} to dissociate the two buffers, leaving "
+"each as it stands (@code{2C-dissociate}).  If the other buffer, the one not "
+"current when you type @kbd{@key{F2} d}, is empty, @kbd{@key{F2} d} kills it."
+msgstr ""

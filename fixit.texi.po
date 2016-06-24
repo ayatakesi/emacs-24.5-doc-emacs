@@ -1,0 +1,1060 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: node
+#: fixit.texi.orig:5
+#, no-wrap
+msgid "Fixit"
+msgstr ""
+
+#. type: chapter
+#: fixit.texi.orig:6
+#, no-wrap
+msgid "Commands for Fixing Typos"
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:7
+#, no-wrap
+msgid "typos, fixing"
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:8
+#, no-wrap
+msgid "mistakes, correcting"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:18
+msgid ""
+"In this chapter we describe commands that are useful when you catch a "
+"mistake while editing.  The most fundamental of these commands is the undo "
+"command @kbd{C-/} (also bound to @kbd{C-x u} and @kbd{C-_}).  This undoes a "
+"single command, or a part of a command (as in the case of "
+"@code{query-replace}), or several consecutive character insertions.  "
+"Consecutive repetitions of @kbd{C-/} undo earlier and earlier changes, back "
+"to the limit of the undo information available."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:22
+msgid ""
+"Aside from the commands described here, you can erase text using deletion "
+"commands such as @key{DEL} (@code{delete-backward-char}).  These were "
+"described earlier in this manual.  @xref{Erasing}."
+msgstr ""
+
+#. type: section
+#: fixit.texi.orig:28 fixit.texi.orig:30 fixit.texi.orig:31
+#, no-wrap
+msgid "Undo"
+msgstr ""
+
+#. type: menuentry
+#: fixit.texi.orig:28
+msgid "The Undo commands."
+msgstr ""
+
+#. type: node
+#: fixit.texi.orig:28 fixit.texi.orig:136
+#, no-wrap
+msgid "Transpose"
+msgstr ""
+
+#. type: menuentry
+#: fixit.texi.orig:28
+msgid "Exchanging two characters, words, lines, lists..."
+msgstr ""
+
+#. type: node
+#: fixit.texi.orig:28 fixit.texi.orig:200
+#, no-wrap
+msgid "Fixing Case"
+msgstr ""
+
+#. type: menuentry
+#: fixit.texi.orig:28
+msgid "Correcting case of last word entered."
+msgstr ""
+
+#. type: node
+#: fixit.texi.orig:28 fixit.texi.orig:221
+#, no-wrap
+msgid "Spelling"
+msgstr ""
+
+#. type: menuentry
+#: fixit.texi.orig:28
+msgid "Apply spelling checker to a word, or a whole file."
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:32 fixit.texi.orig:55
+#, no-wrap
+msgid "undo"
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:33
+#, no-wrap
+msgid "changes, undoing"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:44
+msgid ""
+"The @dfn{undo} command reverses recent changes in the buffer's text.  Each "
+"buffer records changes individually, and the undo command always applies to "
+"the current buffer.  You can undo all the changes in a buffer for as far "
+"back as the buffer's records go.  Usually, each editing command makes a "
+"separate entry in the undo records, but some commands such as "
+"@code{query-replace} divide their changes into multiple entries for "
+"flexibility in undoing.  Consecutive character insertion commands are "
+"usually grouped together into a single undo record, to make undoing less "
+"tedious."
+msgstr ""
+
+#. type: kindex
+#: fixit.texi.orig:46 fixit.texi.orig:54
+#, no-wrap
+msgid "C-/"
+msgstr ""
+
+#. type: kindex
+#: fixit.texi.orig:47 fixit.texi.orig:52
+#, no-wrap
+msgid "C-x u"
+msgstr ""
+
+#. type: kindex
+#: fixit.texi.orig:48 fixit.texi.orig:53
+#, no-wrap
+msgid "C-_"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:50
+msgid "Undo one entry in the current buffer's undo records (@code{undo})."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:66
+msgid ""
+"To begin to undo, type @kbd{C-/} (or its aliases, @kbd{C-_} or @kbd{C-x "
+"u})@footnote{Aside from @kbd{C-/}, the @code{undo} command is also bound to "
+"@kbd{C-x u} because that is more straightforward for beginners to remember: "
+"@samp{u} stands for ``undo''.  It is also bound to @kbd{C-_} because typing "
+"@kbd{C-/} on some text terminals actually enters @kbd{C-_}.}.  This undoes "
+"the most recent change in the buffer, and moves point back to where it was "
+"before that change.  Consecutive repetitions of @kbd{C-/} (or its aliases) "
+"undo earlier and earlier changes in the current buffer.  If all the recorded "
+"changes have already been undone, the undo command signals an error."
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:67
+#, no-wrap
+msgid "redo"
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:68
+#, no-wrap
+msgid "undo-only"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:76
+msgid ""
+"Any command other than an undo command breaks the sequence of undo "
+"commands.  Starting from that moment, the entire sequence of undo commands "
+"that you have just performed are themselves placed into the undo record, as "
+"a single set of changes.  Therefore, to re-apply changes you have undone, "
+"type @kbd{C-f} or any other command that harmlessly breaks the sequence of "
+"undoing; then type @kbd{C-/} to undo the undo command."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:80
+msgid ""
+"Alternatively, if you want to resume undoing, without redoing previous undo "
+"commands, use @kbd{M-x undo-only}.  This is like @code{undo}, but will not "
+"redo changes you have just undone."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:91
+msgid ""
+"If you notice that a buffer has been modified accidentally, the easiest way "
+"to recover is to type @kbd{C-/} repeatedly until the stars disappear from "
+"the front of the mode line (@pxref{Mode Line}).  Whenever an undo command "
+"makes the stars disappear from the mode line, it means that the buffer "
+"contents are the same as they were when the file was last read in or saved.  "
+"If you do not remember whether you changed the buffer deliberately, type "
+"@kbd{C-/} once.  When you see the last change you made undone, you will see "
+"whether it was an intentional change.  If it was an accident, leave it "
+"undone.  If it was deliberate, redo the change as described above."
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:92
+#, no-wrap
+msgid "selective undo"
+msgstr ""
+
+#. type: kindex
+#: fixit.texi.orig:93
+#, no-wrap
+msgid "C-u C-/"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:103
+msgid ""
+"When there is an active region, any use of @code{undo} performs "
+"@dfn{selective undo}: it undoes the most recent change within the region, "
+"instead of the entire buffer.  However, when Transient Mark mode is off "
+"(@pxref{Disabled Transient Mark}), @kbd{C-/} always operates on the entire "
+"buffer, ignoring the region.  In this case, you can perform selective undo "
+"by supplying a prefix argument to the @code{undo} command: @kbd{C-u C-/}.  "
+"To undo further changes in the same region, repeat the @code{undo} command "
+"(no prefix argument is needed)."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:107
+msgid ""
+"Some specialized buffers do not make undo records.  Buffers whose names "
+"start with spaces never do; these buffers are used internally by Emacs to "
+"hold text that users don't normally look at or edit."
+msgstr ""
+
+#. type: vindex
+#: fixit.texi.orig:108
+#, no-wrap
+msgid "undo-limit"
+msgstr ""
+
+#. type: vindex
+#: fixit.texi.orig:109
+#, no-wrap
+msgid "undo-strong-limit"
+msgstr ""
+
+#. type: vindex
+#: fixit.texi.orig:110
+#, no-wrap
+msgid "undo-outer-limit"
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:111
+#, no-wrap
+msgid "undo limit"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:117
+msgid ""
+"When the undo information for a buffer becomes too large, Emacs discards the "
+"oldest records from time to time (during @dfn{garbage collection}).  You can "
+"specify how much undo information to keep by setting the variables "
+"@code{undo-limit}, @code{undo-strong-limit}, and @code{undo-outer-limit}.  "
+"Their values are expressed in bytes."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:125
+msgid ""
+"The variable @code{undo-limit} sets a soft limit: Emacs keeps undo data for "
+"enough commands to reach this size, and perhaps exceed it, but does not keep "
+"data for any earlier commands beyond that.  Its default value is 80000.  The "
+"variable @code{undo-strong-limit} sets a stricter limit: any previous "
+"command (though not the most recent one)  that pushes the size past this "
+"amount is forgotten.  The default value of @code{undo-strong-limit} is "
+"120000."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:135
+msgid ""
+"Regardless of the values of those variables, the most recent change is never "
+"discarded unless it gets bigger than @code{undo-outer-limit} (normally "
+"12,000,000).  At that point, Emacs discards the undo data and warns you "
+"about it.  This is the only situation in which you cannot undo the last "
+"command.  If this happens, you can increase the value of "
+"@code{undo-outer-limit} to make it even less likely to happen in the "
+"future.  But if you didn't expect the command to create such large undo "
+"data, then it is probably a bug and you should report it.  @xref{Bugs,, "
+"Reporting Bugs}."
+msgstr ""
+
+#. type: section
+#: fixit.texi.orig:137
+#, no-wrap
+msgid "Transposing Text"
+msgstr ""
+
+#. type: kindex
+#: fixit.texi.orig:140 fixit.texi.orig:150
+#, no-wrap
+msgid "C-t"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:142
+msgid "Transpose two characters (@code{transpose-chars})."
+msgstr ""
+
+#. type: kindex
+#: fixit.texi.orig:142 fixit.texi.orig:167
+#, no-wrap
+msgid "M-t"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:144
+msgid "Transpose two words (@code{transpose-words})."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:144
+#, no-wrap
+msgid "C-M-t"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:146
+msgid "Transpose two balanced expressions (@code{transpose-sexps})."
+msgstr ""
+
+#. type: kindex
+#: fixit.texi.orig:146 fixit.texi.orig:165
+#, no-wrap
+msgid "C-x C-t"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:148
+msgid "Transpose two lines (@code{transpose-lines})."
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:151
+#, no-wrap
+msgid "transpose-chars"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:164
+msgid ""
+"The common error of transposing two characters can be fixed, when they are "
+"adjacent, with the @kbd{C-t} command (@code{transpose-chars}).  Normally, "
+"@kbd{C-t} transposes the two characters on either side of point.  When given "
+"at the end of a line, rather than transposing the last character of the line "
+"with the newline, which would be useless, @kbd{C-t} transposes the last two "
+"characters on the line.  So, if you catch your transposition error right "
+"away, you can fix it with just a @kbd{C-t}.  If you don't catch it so fast, "
+"you must move the cursor back between the two transposed characters before "
+"you type @kbd{C-t}.  If you transposed a space with the last character of "
+"the word before it, the word motion commands are a good way of getting "
+"there.  Otherwise, a reverse search (@kbd{C-r})  is often the best way.  "
+"@xref{Search}."
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:166
+#, no-wrap
+msgid "transpose-lines"
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:168
+#, no-wrap
+msgid "transpose-words"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:179
+msgid ""
+"@kbd{M-t} transposes the word before point with the word after point "
+"(@code{transpose-words}).  It moves point forward over a word, dragging the "
+"word preceding or containing point forward as well.  The punctuation "
+"characters between the words do not move.  For example, @w{@samp{FOO, BAR}} "
+"transposes into @w{@samp{BAR, FOO}} rather than @samp{@w{BAR FOO,}}."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:184
+msgid ""
+"@kbd{C-M-t} (@code{transpose-sexps}) is a similar command for transposing "
+"two expressions (@pxref{Expressions}), and @kbd{C-x C-t} "
+"(@code{transpose-lines}) exchanges lines.  They work like @kbd{M-t} except "
+"as regards what units of text they transpose."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:194
+msgid ""
+"A numeric argument to a transpose command serves as a repeat count: it tells "
+"the transpose command to move the character (word, expression, line)  before "
+"or containing point across several other characters (words, expressions, "
+"lines).  For example, @kbd{C-u 3 C-t} moves the character before point "
+"forward across three other characters.  It would change "
+"@samp{f@point{}oobar} into @samp{oobf@point{}ar}.  This is equivalent to "
+"repeating @kbd{C-t} three times.  @kbd{C-u - 4 M-t} moves the word before "
+"point backward across four words.  @kbd{C-u - C-M-t} would cancel the effect "
+"of plain @kbd{C-M-t}."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:199
+msgid ""
+"A numeric argument of zero is assigned a special meaning (because otherwise "
+"a command with a repeat count of zero would do nothing): to transpose the "
+"character (word, expression, line) ending after point with the one ending "
+"after the mark."
+msgstr ""
+
+#. type: section
+#: fixit.texi.orig:201
+#, no-wrap
+msgid "Case Conversion"
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:204
+#, no-wrap
+msgid "M-- M-l"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:206
+msgid "Convert last word to lower case.  Note @kbd{Meta--} is Meta-minus."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:206
+#, no-wrap
+msgid "M-- M-u"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:208
+msgid "Convert last word to all upper case."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:208
+#, no-wrap
+msgid "M-- M-c"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:210
+msgid "Convert last word to lower case with capital initial."
+msgstr ""
+
+#. type: kindex
+#: fixit.texi.orig:212
+#, no-wrap
+msgid "M-@t{-} M-l"
+msgstr ""
+
+#. type: kindex
+#: fixit.texi.orig:213
+#, no-wrap
+msgid "M-@t{-} M-u"
+msgstr ""
+
+#. type: kindex
+#: fixit.texi.orig:214
+#, no-wrap
+msgid "M-@t{-} M-c"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:220
+msgid ""
+"A very common error is to type words in the wrong case.  Because of this, "
+"the word case-conversion commands @kbd{M-l}, @kbd{M-u} and @kbd{M-c} have a "
+"special feature when used with a negative argument: they do not move the "
+"cursor.  As soon as you see you have mistyped the last word, you can simply "
+"case-convert it and go on typing.  @xref{Case}."
+msgstr ""
+
+#. type: section
+#: fixit.texi.orig:222
+#, no-wrap
+msgid "Checking and Correcting Spelling"
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:223
+#, no-wrap
+msgid "spelling, checking and correcting"
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:224
+#, no-wrap
+msgid "checking spelling"
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:225
+#, no-wrap
+msgid "correcting spelling"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:232
+msgid ""
+"This section describes the commands to check the spelling of a single word "
+"or of a portion of a buffer.  These commands only work if the spelling "
+"checker program Aspell, Ispell or Hunspell is installed.  These programs are "
+"not part of Emacs, but one of them is usually installed in GNU/Linux and "
+"other free operating systems."
+msgstr ""
+
+#. type: ifnottex
+#: fixit.texi.orig:234
+msgid "@xref{Top, Aspell,, aspell, The Aspell Manual}."
+msgstr ""
+
+#. type: kindex
+#: fixit.texi.orig:237 fixit.texi.orig:264
+#, no-wrap
+msgid "M-$"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:240
+msgid ""
+"Check and correct spelling of the word at point (@code{ispell-word}).  If "
+"the region is active, do it for all words in the region instead."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:240
+#, no-wrap
+msgid "M-x ispell"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:243
+msgid ""
+"Check and correct spelling of all words in the buffer.  If the region is "
+"active, do it for all words in the region instead."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:243
+#, no-wrap
+msgid "M-x ispell-buffer"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:245
+msgid "Check and correct spelling in the buffer."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:245
+#, no-wrap
+msgid "M-x ispell-region"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:247
+msgid "Check and correct spelling in the region."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:247
+#, no-wrap
+msgid "M-x ispell-message"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:250
+msgid ""
+"Check and correct spelling in a draft mail message, excluding cited "
+"material."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:250
+#, no-wrap
+msgid "M-x ispell-change-dictionary @key{RET} @var{dict} @key{RET}"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:252
+msgid ""
+"Restart the Aspell/Ispell/Hunspell process, using @var{dict} as the "
+"dictionary."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:252
+#, no-wrap
+msgid "M-x ispell-kill-ispell"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:254
+msgid "Kill the Aspell/Ispell/Hunspell subprocess."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:254
+#, no-wrap
+msgid "M-@key{TAB}"
+msgstr ""
+
+#. type: itemx
+#: fixit.texi.orig:255
+#, no-wrap
+msgid "@key{ESC} @key{TAB}"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:258
+msgid ""
+"Complete the word before point based on the spelling dictionary "
+"(@code{ispell-complete-word})."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:258
+#, no-wrap
+msgid "M-x flyspell-mode"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:260
+msgid "Enable Flyspell mode, which highlights all misspelled words."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:260
+#, no-wrap
+msgid "M-x flyspell-prog-mode"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:262
+msgid "Enable Flyspell mode for comments and strings only."
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:265
+#, no-wrap
+msgid "ispell-word"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:272
+msgid ""
+"To check the spelling of the word around or before point, and optionally "
+"correct it as well, type @kbd{M-$} (@code{ispell-word}).  If a region is "
+"active, @kbd{M-$} checks the spelling of all words within the region.  "
+"@xref{Mark}.  (When Transient Mark mode is off, @kbd{M-$} always acts on the "
+"word around or before point, ignoring the region; @pxref{Disabled Transient "
+"Mark}.)"
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:273
+#, no-wrap
+msgid "ispell"
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:274
+#, no-wrap
+msgid "ispell-buffer"
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:275
+#, no-wrap
+msgid "ispell-region"
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:276
+#, no-wrap
+msgid "spell-checking the active region"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:285
+msgid ""
+"Similarly, the command @kbd{M-x ispell} performs spell-checking in the "
+"region if one is active, or in the entire buffer otherwise.  The commands "
+"@kbd{M-x ispell-buffer} and @kbd{M-x ispell-region} explicitly perform "
+"spell-checking on the entire buffer or the region respectively.  To check "
+"spelling in an email message you are writing, use @kbd{M-x ispell-message}; "
+"that command checks the whole buffer, except for material that is indented "
+"or appears to be cited from other messages.  @xref{Sending Mail}."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:291
+msgid ""
+"When one of these commands encounters what appears to be an incorrect word, "
+"it asks you what to do.  It usually displays a list of numbered "
+"``near-misses''---words that are close to the incorrect word.  Then you must "
+"type a single-character response.  Here are the valid responses:"
+msgstr ""
+
+#. type: var{#1}
+#: fixit.texi.orig:293
+#, no-wrap
+msgid "digit"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:297
+msgid ""
+"Replace the word, just this time, with one of the displayed near-misses.  "
+"Each near-miss is listed with a digit; type that digit to select it."
+msgstr ""
+
+#. type: key{#1}
+#: fixit.texi.orig:298
+#, no-wrap
+msgid "SPC"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:301
+msgid ""
+"Skip this word---continue to consider it incorrect, but don't change it "
+"here."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:302
+#, no-wrap
+msgid "r @var{new} @key{RET}"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:305
+msgid ""
+"Replace the word, just this time, with @var{new}.  (The replacement string "
+"will be rescanned for more spelling errors.)"
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:306
+#, no-wrap
+msgid "R @var{new} @key{RET}"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:310
+msgid ""
+"Replace the word with @var{new}, and do a @code{query-replace} so you can "
+"replace it elsewhere in the buffer if you wish.  (The replacements will be "
+"rescanned for more spelling errors.)"
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:311
+#, no-wrap
+msgid "a"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:314
+msgid ""
+"Accept the incorrect word---treat it as correct, but only in this editing "
+"session."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:315
+#, no-wrap
+msgid "A"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:318
+msgid ""
+"Accept the incorrect word---treat it as correct, but only in this editing "
+"session and for this buffer."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:319
+#, no-wrap
+msgid "i"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:322
+msgid ""
+"Insert this word in your private dictionary file so that Aspell or Ispell or "
+"Hunspell will consider it correct from now on, even in future sessions."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:323
+#, no-wrap
+msgid "m"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:326
+msgid "Like @kbd{i}, but you can also specify dictionary completion information."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:327
+#, no-wrap
+msgid "u"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:330
+msgid ""
+"Insert the lower-case version of this word in your private dic@-tion@-ary "
+"file."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:331
+#, no-wrap
+msgid "l @var{word} @key{RET}"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:336
+msgid ""
+"Look in the dictionary for words that match @var{word}.  These words become "
+"the new list of ``near-misses''; you can select one of them as the "
+"replacement by typing a digit.  You can use @samp{*} in @var{word} as a "
+"wildcard."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:337
+#, no-wrap
+msgid "C-g"
+msgstr ""
+
+#. type: itemx
+#: fixit.texi.orig:338
+#, no-wrap
+msgid "X"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:342
+msgid ""
+"Quit interactive spell checking, leaving point at the word that was being "
+"checked.  You can restart checking again afterward with @kbd{C-u M-$}."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:343
+#, no-wrap
+msgid "x"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:346
+msgid ""
+"Quit interactive spell checking and move point back to where it was when you "
+"started spell checking."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:347
+#, no-wrap
+msgid "q"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:349
+msgid "Quit interactive spell checking and kill the spell-checker subprocess."
+msgstr ""
+
+#. type: item
+#: fixit.texi.orig:350
+#, no-wrap
+msgid "?"
+msgstr ""
+
+#. type: table
+#: fixit.texi.orig:352
+msgid "Show the list of options."
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:354
+#, no-wrap
+msgid "ispell-complete-word"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:362
+msgid ""
+"In Text mode and related modes, @kbd{M-@key{TAB}} "
+"(@code{ispell-complete-word}) performs in-buffer completion based on "
+"spelling correction.  Insert the beginning of a word, and then type "
+"@kbd{M-@key{TAB}}; this shows a list of completions.  (If your window "
+"manager intercepts @kbd{M-@key{TAB}}, type @kbd{@key{ESC} @key{TAB}} or "
+"@kbd{C-M-i}.)  Each completion is listed with a digit or character; type "
+"that digit or character to choose it."
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:363
+#, no-wrap
+msgid "@code{ispell} program"
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:364
+#, no-wrap
+msgid "ispell-kill-ispell"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:371
+msgid ""
+"Once started, the Aspell or Ispell or Hunspell subprocess continues to run, "
+"waiting for something to do, so that subsequent spell checking commands "
+"complete more quickly.  If you want to get rid of the process, use @kbd{M-x "
+"ispell-kill-ispell}.  This is not usually necessary, since the process uses "
+"no processor time except when you do spelling correction."
+msgstr ""
+
+#. type: vindex
+#: fixit.texi.orig:372
+#, no-wrap
+msgid "ispell-dictionary"
+msgstr ""
+
+#. type: vindex
+#: fixit.texi.orig:373
+#, no-wrap
+msgid "ispell-local-dictionary"
+msgstr ""
+
+#. type: vindex
+#: fixit.texi.orig:374
+#, no-wrap
+msgid "ispell-personal-dictionary"
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:375
+#, no-wrap
+msgid "ispell-change-dictionary"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:388
+msgid ""
+"Ispell, Aspell and Hunspell look up spelling in two dictionaries: the "
+"standard dictionary and your personal dictionary.  The standard dictionary "
+"is specified by the variable @code{ispell-local-dictionary} or, if that is "
+"@code{nil}, by the variable @code{ispell-dictionary}.  If both are "
+"@code{nil}, the spelling program's default dictionary is used.  The command "
+"@kbd{M-x ispell-change-dictionary} sets the standard dictionary for the "
+"buffer and then restarts the subprocess, so that it will use a different "
+"standard dictionary.  Your personal dictionary is specified by the variable "
+"@code{ispell-personal-dictionary}.  If that is @code{nil}, the spelling "
+"program looks for a personal dictionary in a default location."
+msgstr ""
+
+#. type: vindex
+#: fixit.texi.orig:389
+#, no-wrap
+msgid "ispell-complete-word-dict"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:395
+msgid ""
+"A separate dictionary is used for word completion.  The variable "
+"@code{ispell-complete-word-dict} specifies the file name of this "
+"dictionary.  The completion dictionary must be different because it cannot "
+"use root and affix information.  For some languages, there is a spell "
+"checking dictionary but no word completion dictionary."
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:396
+#, no-wrap
+msgid "Flyspell mode"
+msgstr ""
+
+#. type: cindex
+#: fixit.texi.orig:397
+#, no-wrap
+msgid "mode, Flyspell"
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:398
+#, no-wrap
+msgid "flyspell-mode"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:405
+msgid ""
+"Flyspell mode is a minor mode that performs automatic spell checking as you "
+"type.  When it finds a word that it does not recognize, it highlights that "
+"word.  Type @kbd{M-x flyspell-mode} to toggle Flyspell mode in the current "
+"buffer.  To enable Flyspell mode in all text mode buffers, add "
+"@code{flyspell-mode} to @code{text-mode-hook}.  @xref{Hooks}."
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:410
+msgid ""
+"When Flyspell mode highlights a word as misspelled, you can click on it with "
+"@kbd{Mouse-2} to display a menu of possible corrections and actions.  You "
+"can also correct the word by editing it manually in any way you like."
+msgstr ""
+
+#. type: findex
+#: fixit.texi.orig:411
+#, no-wrap
+msgid "flyspell-prog-mode"
+msgstr ""
+
+#. type: Plain text
+#: fixit.texi.orig:417
+msgid ""
+"Flyspell Prog mode works just like ordinary Flyspell mode, except that it "
+"only checks words in comments and string constants.  This feature is useful "
+"for editing programs.  Type @kbd{M-x flyspell-prog-mode} to enable or "
+"disable this mode in the current buffer.  To enable this mode in all "
+"programming mode buffers, add @code{flyspell-prog-mode} to "
+"@code{prog-mode-hook} (@pxref{Hooks})."
+msgstr ""

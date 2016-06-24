@@ -1,0 +1,342 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: chapter
+#: entering.texi.orig:6
+#, no-wrap
+msgid "Entering and Exiting Emacs"
+msgstr ""
+
+#. type: iftex
+#: entering.texi.orig:9
+msgid "This chapter explains how to enter Emacs, and how to exit it."
+msgstr ""
+
+#. type: ifnottex
+#: entering.texi.orig:13
+msgid "@raisesections"
+msgstr ""
+
+#. type: section
+#: entering.texi.orig:15 entering.texi.orig:16
+#, no-wrap
+msgid "Entering Emacs"
+msgstr ""
+
+#. type: cindex
+#: entering.texi.orig:17
+#, no-wrap
+msgid "entering Emacs"
+msgstr ""
+
+#. type: cindex
+#: entering.texi.orig:18
+#, no-wrap
+msgid "starting Emacs"
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:25
+msgid ""
+"The usual way to invoke Emacs is with the shell command @command{emacs}.  "
+"From a terminal window running in the X Window System, you can run Emacs in "
+"the background with @command{emacs &}; this way, Emacs won't tie up the "
+"terminal window, so you can use it to run other shell commands."
+msgstr ""
+
+#. type: cindex
+#: entering.texi.orig:26
+#, no-wrap
+msgid "startup screen"
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:35
+msgid ""
+"When Emacs starts up, the initial frame displays a special buffer named "
+"@samp{*GNU Emacs*}.  This @dfn{startup screen} contains information about "
+"Emacs and @dfn{links} to common tasks that are useful for beginning users.  "
+"For instance, activating the @samp{Emacs Tutorial} link opens the Emacs "
+"tutorial; this does the same thing as the command @kbd{C-h t} "
+"(@code{help-with-tutorial}).  To activate a link, either move point onto it "
+"and type @kbd{@key{RET}}, or click on it with @kbd{mouse-1} (the left mouse "
+"button)."
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:44
+msgid ""
+"Using a command line argument, you can tell Emacs to visit one or more files "
+"as soon as it starts up.  For example, @command{emacs foo.txt} starts Emacs "
+"with a buffer displaying the contents of the file @samp{foo.txt}.  This "
+"feature exists mainly for compatibility with other editors, which are "
+"designed to be launched from the shell for short editing sessions.  If you "
+"call Emacs this way, the initial frame is split into two windows---one "
+"showing the specified file, and the other showing the startup screen.  "
+"@xref{Windows}."
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:53
+msgid ""
+"Generally, it is unnecessary and wasteful to start Emacs afresh each time "
+"you want to edit a file.  The recommended way to use Emacs is to start it "
+"just once, just after you log in, and do all your editing in the same Emacs "
+"session.  @xref{Files}, for information on visiting more than one file.  If "
+"you use Emacs this way, the Emacs session accumulates valuable context, such "
+"as the kill ring, registers, undo history, and mark ring data, which "
+"together make editing more convenient.  These features are described later "
+"in the manual."
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:57
+msgid ""
+"To edit a file from another program while Emacs is running, you can use the "
+"@command{emacsclient} helper program to open a file in the existing Emacs "
+"session.  @xref{Emacs Server}."
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:61
+msgid ""
+"Emacs accepts other command line arguments that tell it to load certain Lisp "
+"files, where to put the initial frame, and so forth.  @xref{Emacs "
+"Invocation}."
+msgstr ""
+
+#. type: vindex
+#: entering.texi.orig:62
+#, no-wrap
+msgid "inhibit-startup-screen"
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:75
+msgid ""
+"If the variable @code{inhibit-startup-screen} is non-@code{nil}, Emacs does "
+"not display the startup screen.  In that case, if one or more files were "
+"specified on the command line, Emacs simply displays those files; otherwise, "
+"it displays a buffer named @file{*scratch*}, which can be used to evaluate "
+"Emacs Lisp expressions interactively.  @xref{Lisp Interaction}.  You can set "
+"the variable @code{inhibit-startup-screen} using the Customize facility "
+"(@pxref{Easy Customization}), or by editing your initialization file "
+"(@pxref{Init File}).@footnote{Setting @code{inhibit-startup-screen} in "
+"@file{site-start.el} doesn't work, because the startup screen is set up "
+"before reading @file{site-start.el}.  @xref{Init File}, for information "
+"about @file{site-start.el}.}"
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:81
+msgid ""
+"You can also force Emacs to display a file or directory at startup by "
+"setting the variable @code{initial-buffer-choice} to a string naming that "
+"file or directory.  The value of @code{initial-buffer-choice} may also be a "
+"function (of no arguments)  that should return a buffer which is then "
+"displayed."
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:90
+msgid ""
+"If @code{initial-buffer-choice} is non-@code{nil}, then if you specify any "
+"files on the command line, Emacs still visits them, but does not display "
+"them initially."
+msgstr ""
+
+#. type: node
+#: entering.texi.orig:91
+#, no-wrap
+msgid "Exiting"
+msgstr ""
+
+#. type: section
+#: entering.texi.orig:92
+#, no-wrap
+msgid "Exiting Emacs"
+msgstr ""
+
+#. type: cindex
+#: entering.texi.orig:93
+#, no-wrap
+msgid "exiting"
+msgstr ""
+
+#. type: cindex
+#: entering.texi.orig:94
+#, no-wrap
+msgid "killing Emacs"
+msgstr ""
+
+#. type: cindex
+#: entering.texi.orig:95
+#, no-wrap
+msgid "leaving Emacs"
+msgstr ""
+
+#. type: cindex
+#: entering.texi.orig:96
+#, no-wrap
+msgid "quitting Emacs"
+msgstr ""
+
+#. type: kindex
+#: entering.texi.orig:99 entering.texi.orig:106
+#, no-wrap
+msgid "C-x C-c"
+msgstr ""
+
+#. type: table
+#: entering.texi.orig:101
+msgid "Kill Emacs (@code{save-buffers-kill-terminal})."
+msgstr ""
+
+#. type: kindex
+#: entering.texi.orig:101 entering.texi.orig:140
+#, no-wrap
+msgid "C-z"
+msgstr ""
+
+#. type: table
+#: entering.texi.orig:104
+msgid ""
+"On a text terminal, suspend Emacs; on a graphical display, ``minimize'' the "
+"selected frame (@code{suspend-emacs})."
+msgstr ""
+
+#. type: findex
+#: entering.texi.orig:107
+#, no-wrap
+msgid "save-buffers-kill-terminal"
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:117
+msgid ""
+"@dfn{Killing} Emacs means terminating the Emacs program.  To do this, type "
+"@kbd{C-x C-c} (@code{save-buffers-kill-terminal}).  A two-character key "
+"sequence is used to make it harder to type by accident.  If there are any "
+"modified file-visiting buffers when you type @kbd{C-x C-c}, Emacs first "
+"offers to save these buffers.  If you do not save them all, it asks for "
+"confirmation again, since the unsaved changes will be lost.  Emacs also asks "
+"for confirmation if any subprocesses are still running, since killing Emacs "
+"will also kill the subprocesses (@pxref{Shell})."
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:121
+msgid ""
+"@kbd{C-x C-c} behaves specially if you are using Emacs as a server.  If you "
+"type it from a ``client frame'', it closes the client connection.  "
+"@xref{Emacs Server}."
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:126
+msgid ""
+"Emacs can, optionally, record certain session information when you kill it, "
+"such as the files you were visiting at the time.  This information is then "
+"available the next time you start Emacs.  @xref{Saving Emacs Sessions}."
+msgstr ""
+
+#. type: vindex
+#: entering.texi.orig:127
+#, no-wrap
+msgid "confirm-kill-emacs"
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:135
+msgid ""
+"If the value of the variable @code{confirm-kill-emacs} is non-@code{nil}, "
+"@kbd{C-x C-c} assumes that its value is a predicate function, and calls that "
+"function.  If the result of the function call is non-@code{nil}, the session "
+"is killed, otherwise Emacs continues to run.  One convenient function to use "
+"as the value of @code{confirm-kill-emacs} is the function "
+"@code{yes-or-no-p}.  The default value of @code{confirm-kill-emacs} is "
+"@code{nil}."
+msgstr ""
+
+#. type: findex
+#: entering.texi.orig:136
+#, no-wrap
+msgid "kill-emacs"
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:139
+msgid ""
+"To kill Emacs without being prompted about saving, type @kbd{M-x "
+"kill-emacs}."
+msgstr ""
+
+#. type: findex
+#: entering.texi.orig:141
+#, no-wrap
+msgid "suspend-frame"
+msgstr ""
+
+#. type: cindex
+#: entering.texi.orig:142
+#, no-wrap
+msgid "minimizing"
+msgstr ""
+
+#. type: cindex
+#: entering.texi.orig:143
+#, no-wrap
+msgid "iconifying"
+msgstr ""
+
+#. type: cindex
+#: entering.texi.orig:144
+#, no-wrap
+msgid "suspending"
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:153
+msgid ""
+"@kbd{C-z} runs the command @code{suspend-frame}.  On a graphical display, "
+"this command @dfn{minimizes} (or @dfn{iconifies}) the selected Emacs frame, "
+"hiding it in a way that lets you bring it back later (exactly how this "
+"hiding occurs depends on the window system).  On a text terminal, the "
+"@kbd{C-z} command @dfn{suspends} Emacs, stopping the program temporarily and "
+"returning control to the parent process (usually a shell); in most shells, "
+"you can resume Emacs after suspending it with the shell command "
+"@command{%emacs}."
+msgstr ""
+
+#. type: Plain text
+#: entering.texi.orig:162
+msgid ""
+"Text terminals usually listen for certain special characters whose meaning "
+"is to kill or suspend the program you are running.  @b{This terminal feature "
+"is turned off while you are in Emacs.} The meanings of @kbd{C-z} and "
+"@kbd{C-x C-c} as keys in Emacs were inspired by the use of @kbd{C-z} and "
+"@kbd{C-c} on several operating systems as the characters for stopping or "
+"killing a program, but that is their only relationship with the operating "
+"system.  You can customize these keys to run any commands of your choice "
+"(@pxref{Keymaps})."
+msgstr ""
+
+#. type: ifnottex
+#: entering.texi.orig:165
+msgid "@lowersections"
+msgstr ""

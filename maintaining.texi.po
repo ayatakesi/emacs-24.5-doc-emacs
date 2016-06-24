@@ -1,0 +1,5086 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: node
+#: maintaining.texi.orig:5
+#, no-wrap
+msgid "Maintaining"
+msgstr ""
+
+#. type: chapter
+#: maintaining.texi.orig:6
+#, no-wrap
+msgid "Maintaining Large Programs"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:13
+msgid ""
+"This chapter describes Emacs features for maintaining large programs.  If "
+"you are maintaining a large Lisp program, then in addition to the features "
+"described here, you may find the @file{ERT} (``Emacs Lisp Regression "
+"Testing'') library useful (@pxref{Top,,ERT,ert, Emacs Lisp Regression "
+"Testing})."
+msgstr ""
+
+#. type: section
+#: maintaining.texi.orig:20 maintaining.texi.orig:25 maintaining.texi.orig:26
+#, no-wrap
+msgid "Version Control"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:20
+msgid "Using version control systems."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:20 maintaining.texi.orig:1471
+#, no-wrap
+msgid "Change Log"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:20
+msgid "Maintaining a change history for your program."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:20 maintaining.texi.orig:1601
+#, no-wrap
+msgid "Tags"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:20
+msgid ""
+"Go directly to any function in your program in one command.  Tags remembers "
+"which file it is in."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:20 maintaining.texi.orig:2339
+#, no-wrap
+msgid "EDE"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:20
+msgid "An integrated development environment for Emacs."
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:22
+msgid "* Emerge:: A convenient way of merging two versions of a program."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:27
+#, no-wrap
+msgid "version control"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:33
+msgid ""
+"A @dfn{version control system} is a program that can record multiple "
+"versions of a source file, storing information such as the creation time of "
+"each version, who made it, and a description of what was changed."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:39
+msgid ""
+"The Emacs version control interface is called @dfn{VC}@.  VC commands work "
+"with several different version control systems; currently, it supports GNU "
+"Arch, Bazaar, CVS, Git, Mercurial, Monotone, RCS, SCCS/CSSC, and "
+"Subversion.  Of these, the GNU project distributes CVS, Arch, RCS, and "
+"Bazaar."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:43
+msgid ""
+"VC is enabled automatically whenever you visit a file governed by a version "
+"control system.  To disable VC entirely, set the customizable variable "
+"@code{vc-handled-backends} to @code{nil}"
+msgstr ""
+
+#. type: iftex
+#: maintaining.texi.orig:45
+msgid "(@pxref{Customizing VC,,,emacs-xtra, Specialized Emacs Features})."
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:48
+msgid "(@pxref{Customizing VC})."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:62 maintaining.texi.orig:68
+#, no-wrap
+msgid "Introduction to VC"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:62
+msgid "How version control works in general."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:62 maintaining.texi.orig:368
+#, no-wrap
+msgid "VC Mode Line"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:62
+msgid "How the mode line shows version control status."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:62 maintaining.texi.orig:411
+#, no-wrap
+msgid "Basic VC Editing"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:62
+msgid "How to edit a file under version control."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:62 maintaining.texi.orig:588
+#, no-wrap
+msgid "Log Buffer"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:62
+msgid "Features available in log entry buffers."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:62 maintaining.texi.orig:673
+#, no-wrap
+msgid "Registering"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:62
+msgid "Putting a file under version control."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:62 maintaining.texi.orig:720
+#, no-wrap
+msgid "Old Revisions"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:62
+msgid "Examining and comparing old versions."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:62 maintaining.texi.orig:887 maintaining.texi.orig:888
+#, no-wrap
+msgid "VC Change Log"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:62
+msgid "Viewing the VC Change Log."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:62 maintaining.texi.orig:1008
+#, no-wrap
+msgid "VC Undo"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:62
+msgid "Canceling changes before or after committing."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:62 maintaining.texi.orig:1037
+#, no-wrap
+msgid "VC Ignore"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:62
+msgid "Ignore files under version control system."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:62 maintaining.texi.orig:1056 maintaining.texi.orig:1057
+#, no-wrap
+msgid "VC Directory Mode"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:62
+msgid "Listing files managed by version control."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:62 maintaining.texi.orig:1286
+#, no-wrap
+msgid "Branches"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:62
+msgid "Multiple lines of development."
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:65
+msgid ""
+"* Miscellaneous VC:: Various other commands and features of VC.  * "
+"Customizing VC:: Variables that change VC's behavior."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:69
+#, no-wrap
+msgid "Introduction to Version Control"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:75
+msgid ""
+"VC allows you to use a version control system from within Emacs, integrating "
+"the version control operations smoothly with editing.  It provides a uniform "
+"interface for common operations in many version control operations."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:79
+msgid ""
+"Some uncommon or intricate version control operations, such as altering "
+"repository settings, are not supported in VC@.  You should perform such "
+"tasks outside Emacs, e.g., via the command line."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:84
+msgid ""
+"This section provides a general overview of version control, and describes "
+"the version control systems that VC supports.  You can skip this section if "
+"you are already familiar with the version control system you want to use."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:93 maintaining.texi.orig:95
+#, no-wrap
+msgid "Why Version Control?"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:93
+msgid "Understanding the problems it addresses."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:93 maintaining.texi.orig:119
+#, no-wrap
+msgid "Version Control Systems"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:93
+msgid "Supported version control back-end systems."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:93 maintaining.texi.orig:196
+#, no-wrap
+msgid "VCS Concepts"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:93
+msgid "Words and concepts related to version control."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:93 maintaining.texi.orig:233
+#, no-wrap
+msgid "VCS Merging"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:93
+msgid "How file conflicts are handled."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:93 maintaining.texi.orig:280
+#, no-wrap
+msgid "VCS Changesets"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:93
+msgid "How changes are grouped."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:93 maintaining.texi.orig:298
+#, no-wrap
+msgid "VCS Repositories"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:93
+msgid "Where version control repositories are stored."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:93 maintaining.texi.orig:322 maintaining.texi.orig:323
+#, no-wrap
+msgid "Types of Log File"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:93
+msgid "The VCS log in contrast to the ChangeLog."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:96
+#, no-wrap
+msgid "Understanding the problems it addresses"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:100
+msgid "Version control systems provide you with three important capabilities:"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:105
+msgid ""
+"@dfn{Reversibility}: the ability to back up to a previous state if you "
+"discover that some modification you did was a mistake or a bad idea."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:110
+msgid ""
+"@dfn{Concurrency}: the ability to have many people modifying the same "
+"collection of files knowing that conflicting modifications can be detected "
+"and resolved."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:117
+msgid ""
+"@dfn{History}: the ability to attach historical data to your data, such as "
+"explanatory comments about the intention behind each change to it.  Even for "
+"a programmer working solo, change histories are an important aid to memory; "
+"for a multi-person project, they are a vitally important form of "
+"communication among developers."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:120
+#, no-wrap
+msgid "Supported Version Control Systems"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:122
+#, no-wrap
+msgid "back end (version control)"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:125
+msgid ""
+"VC currently works with many different version control systems, which it "
+"refers to as @dfn{back ends}:"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:128
+#, no-wrap
+msgid "SCCS"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:135
+msgid ""
+"SCCS was the first version control system ever built, and was long ago "
+"superseded by more advanced ones.  VC compensates for certain features "
+"missing in SCCS (e.g., tag names for releases) by implementing them itself.  "
+"Other VC features, such as multiple branches, are simply unavailable.  Since "
+"SCCS is non-free, we recommend avoiding it."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:136
+#, no-wrap
+msgid "CSSC"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:141
+msgid ""
+"CSSC is a free replacement for SCCS@.  You should use CSSC only if, for some "
+"reason, you cannot use a more recent and better-designed version control "
+"system."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:142
+#, no-wrap
+msgid "RCS"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:148
+msgid ""
+"RCS is the free version control system around which VC was initially built.  "
+"It is relatively primitive: it cannot be used over the network, and works at "
+"the level of individual files.  Almost everything you can do with RCS can be "
+"done through VC."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:149
+#, no-wrap
+msgid "CVS"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:157
+msgid ""
+"CVS is the free version control system that was, until recently (circa "
+"2008), used by the majority of free software projects.  Nowadays, it is "
+"slowly being superseded by newer systems.  CVS allows concurrent multi-user "
+"development either locally or over the network.  Unlike newer systems, it "
+"lacks support for atomic commits and file moving/renaming.  VC supports all "
+"basic editing operations under CVS."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:158
+#, no-wrap
+msgid "SVN"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:159
+#, no-wrap
+msgid "Subversion"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:165
+msgid ""
+"Subversion (svn) is a free version control system designed to be similar to "
+"CVS but without its problems (e.g., it supports atomic commits of filesets, "
+"and versioning of directories, symbolic links, meta-data, renames, copies, "
+"and deletes)."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:166
+#, no-wrap
+msgid "GNU Arch"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:167
+#, no-wrap
+msgid "Arch"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:173
+msgid ""
+"GNU Arch is one of the earliest @dfn{decentralized} version control systems "
+"(the other being Monotone).  @xref{VCS Concepts}, for a description of "
+"decentralized version control systems.  It is no longer under active "
+"development, and has been deprecated in favor of Bazaar."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:174
+#, no-wrap
+msgid "git"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:180
+msgid ""
+"Git is a decentralized version control system originally invented by Linus "
+"Torvalds to support development of Linux (his kernel).  VC supports many "
+"common Git operations, but others, such as repository syncing, must be done "
+"from the command line."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:181
+#, no-wrap
+msgid "hg"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:182
+#, no-wrap
+msgid "Mercurial"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:187
+msgid ""
+"Mercurial (hg) is a decentralized version control system broadly resembling "
+"Git.  VC supports most Mercurial commands, with the exception of repository "
+"sync operations."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:188
+#, no-wrap
+msgid "bzr"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:189
+#, no-wrap
+msgid "Bazaar"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:194
+msgid ""
+"Bazaar (bzr) is a decentralized version control system that supports both "
+"repository-based and decentralized versioning.  VC supports most basic "
+"editing operations under Bazaar."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:197
+#, no-wrap
+msgid "Concepts of Version Control"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:199
+#, no-wrap
+msgid "repository"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:200
+#, no-wrap
+msgid "registered file"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:207
+msgid ""
+"When a file is under version control, we say that it is @dfn{registered} in "
+"the version control system.  The system has a @dfn{repository} which stores "
+"both the file's present state and its change history---enough to reconstruct "
+"the current version or any earlier version.  The repository also contains "
+"other information, such as @dfn{log entries} that describe the changes made "
+"to each file."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:208
+#, no-wrap
+msgid "work file"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:209
+#, no-wrap
+msgid "checking out files"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:215
+msgid ""
+"The copy of a version-controlled file that you actually edit is called the "
+"@dfn{work file}.  You can change each work file as you would an ordinary "
+"file.  After you are done with a set of changes, you may @dfn{commit} (or "
+"@dfn{check in}) the changes; this records the changes in the repository, "
+"along with a descriptive log entry."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:216
+#, no-wrap
+msgid "working tree"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:218
+msgid "A directory tree of work files is called a @dfn{working tree}."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:219
+#, no-wrap
+msgid "revision"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:220
+#, no-wrap
+msgid "revision ID"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:226
+msgid ""
+"Each commit creates a new @dfn{revision} in the repository.  The version "
+"control system keeps track of all past revisions and the changes that were "
+"made in each revision.  Each revision is named by a @dfn{revision ID}, whose "
+"format depends on the version control system; in the simplest case, it is "
+"just an integer."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:232
+msgid ""
+"To go beyond these basic concepts, you will need to understand three aspects "
+"in which version control systems differ.  As explained in the next three "
+"sections, they can be lock-based or merge-based; file-based or "
+"changeset-based; and centralized or decentralized.  VC handles all these "
+"modes of operation, but it cannot hide the differences."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:234
+#, no-wrap
+msgid "Merge-based vs lock-based Version Control"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:239
+msgid ""
+"A version control system typically has some mechanism to coordinate between "
+"users who want to change the same file.  There are two ways to do this: "
+"merging and locking."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:240
+#, no-wrap
+msgid "merging-based version"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:245
+msgid ""
+"In a version control system that uses merging, each user may modify a work "
+"file at any time.  The system lets you @dfn{merge} your work file, which may "
+"contain changes that have not been committed, with the latest changes that "
+"others have committed."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:246
+#, no-wrap
+msgid "locking-based version"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:256
+msgid ""
+"Older version control systems use a @dfn{locking} scheme instead.  Here, "
+"work files are normally read-only.  To edit a file, you ask the version "
+"control system to make it writable for you by @dfn{locking} it; only one "
+"user can lock a given file at any given time.  This procedure is analogous "
+"to, but different from, the locking that Emacs uses to detect simultaneous "
+"editing of ordinary files (@pxref{Interlocking}).  When you commit your "
+"changes, that unlocks the file, and the work file becomes read-only again.  "
+"Other users may then lock the file to make their own changes."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:267
+msgid ""
+"Both locking and merging systems can have problems when multiple users try "
+"to modify the same file at the same time.  Locking systems have @dfn{lock "
+"conflicts}; a user may try to check a file out and be unable to because it "
+"is locked.  In merging systems, @dfn{merge conflicts} happen when you commit "
+"a change to a file that conflicts with a change committed by someone else "
+"after your checkout.  Both kinds of conflict have to be resolved by human "
+"judgment and communication.  Experience has shown that merging is superior "
+"to locking, both in convenience to developers and in minimizing the number "
+"and severity of conflicts that actually occur."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:273
+msgid ""
+"SCCS always uses locking.  RCS is lock-based by default but can be told to "
+"operate in a merging style.  CVS and Subversion are merge-based by default "
+"but can be told to operate in a locking mode.  Decentralized version control "
+"systems, such as GNU Arch, Git, and Mercurial, are exclusively "
+"merging-based."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:279
+msgid ""
+"VC mode supports both locking and merging version control.  The terms "
+"``commit'' and ``update'' are used in newer version control systems; older "
+"lock-based systems use the terms ``check in'' and ``check out''.  VC hides "
+"the differences between them as much as possible."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:281
+#, no-wrap
+msgid "Changeset-based vs File-based Version Control"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:283
+#, no-wrap
+msgid "file-based version control"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:291
+msgid ""
+"On SCCS, RCS, CVS, and other early version control systems, version control "
+"operations are @dfn{file-based}: each file has its own comment and revision "
+"history separate from that of all other files.  Newer systems, beginning "
+"with Subversion, are @dfn{changeset-based}: a commit may include changes to "
+"several files, and the entire set of changes is handled as a unit.  Any "
+"comment associated with the change does not belong to a single file, but to "
+"the changeset itself."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:292
+#, no-wrap
+msgid "changeset-based version control"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:297
+msgid ""
+"Changeset-based version control is more flexible and powerful than "
+"file-based version control; usually, when a change to multiple files has to "
+"be reversed, it's good to be able to easily identify and remove all of it."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:299
+#, no-wrap
+msgid "Decentralized vs Centralized Repositories"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:301
+#, no-wrap
+msgid "centralized version control"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:302
+#, no-wrap
+msgid "decentralized version control"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:303
+#, no-wrap
+msgid "distributed version control"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:309
+msgid ""
+"Early version control systems were designed around a @dfn{centralized} model "
+"in which each project has only one repository used by all developers.  SCCS, "
+"RCS, CVS, and Subversion share this kind of model.  One of its drawbacks is "
+"that the repository is a choke point for reliability and efficiency."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:317
+msgid ""
+"GNU Arch pioneered the concept of @dfn{distributed} or @dfn{decentralized} "
+"version control, later implemented in Git, Mercurial, and Bazaar.  A project "
+"may have several different repositories, and these systems support a sort of "
+"super-merge between repositories that tries to reconcile their change "
+"histories.  In effect, there is one repository for each developer, and "
+"repository merges take the place of commit operations."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:321
+msgid ""
+"VC helps you manage the traffic between your personal workfiles and a "
+"repository.  Whether the repository is a single master, or one of a network "
+"of peer repositories, is not something VC has to care about."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:324
+#, no-wrap
+msgid "types of log file"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:325
+#, no-wrap
+msgid "log File, types of"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:326
+#, no-wrap
+msgid "version control log"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:333
+msgid ""
+"Projects that use a version control system can have two types of log for "
+"changes.  One is the log maintained by the version control system: each time "
+"you commit a change, you fill out a @dfn{log entry} for the change "
+"(@pxref{Log Buffer}).  This is called the @dfn{version control log}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:341
+msgid ""
+"The other kind of log is the file @file{ChangeLog} (@pxref{Change Log}).  It "
+"provides a chronological record of all changes to a large portion of a "
+"program---typically one directory and its subdirectories.  A small program "
+"would use one @file{ChangeLog} file; a large program may have a "
+"@file{ChangeLog} file in each major directory.  @xref{Change Log}.  "
+"Programmers have used change logs since long before version control systems."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:349
+msgid ""
+"Changeset-based version systems typically maintain a changeset-based "
+"modification log for the entire system, which makes change log files "
+"somewhat redundant.  One advantage that they retain is that it is sometimes "
+"useful to be able to view the transaction history of a single directory "
+"separately from those of other directories.  Another advantage is that "
+"commit logs can't be fixed in many version control systems."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:354
+msgid ""
+"A project maintained with version control can use just the version control "
+"log, or it can use both kinds of logs.  It can handle some files one way and "
+"some files the other way.  Each project has its policy, which you should "
+"follow."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:361
+msgid ""
+"When the policy is to use both, you typically want to write an entry for "
+"each change just once, then put it into both logs.  You can write the entry "
+"in @file{ChangeLog}, then copy it to the log buffer with @kbd{C-c C-a} when "
+"committing the change (@pxref{Log Buffer}).  Or you can write the entry in "
+"the log buffer while committing the change, and later use the @kbd{C-x v a} "
+"command to copy it to @file{ChangeLog}"
+msgstr ""
+
+#. type: iftex
+#: maintaining.texi.orig:363
+msgid "(@pxref{Change Logs and VC,,,emacs-xtra, Specialized Emacs Features})."
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:366
+msgid "(@pxref{Change Logs and VC})."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:369
+#, no-wrap
+msgid "Version Control and the Mode Line"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:370
+#, no-wrap
+msgid "VC mode line indicator"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:375
+msgid ""
+"When you visit a file that is under version control, Emacs indicates this on "
+"the mode line.  For example, @samp{Bzr-1223} says that Bazaar is used for "
+"that file, and the current revision ID is 1223."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:376
+#, no-wrap
+msgid "version control status"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:386
+msgid ""
+"The character between the back-end name and the revision ID indicates the "
+"@dfn{version control status} of the work file.  In a merge-based version "
+"control system, a @samp{-} character indicates that the work file is "
+"unmodified, and @samp{:} indicates that it has been modified.  @samp{!} "
+"indicates that the file contains conflicts as result of a recent merge "
+"operation (@pxref{Merging}), or that the file was removed from the version "
+"control.  Finally, @samp{?} means that the file is under version control, "
+"but is missing from the working tree."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:392
+msgid ""
+"In a lock-based system, @samp{-} indicates an unlocked file, and @samp{:} a "
+"locked file; if the file is locked by another user (for instance, "
+"@samp{jim}), that is displayed as @samp{RCS:jim:1.3}.  @samp{@@} means that "
+"the file was locally added, but not yet committed to the master repository."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:398
+msgid ""
+"On a graphical display, you can move the mouse over this mode line indicator "
+"to pop up a ``tool-tip'', which displays a more verbose description of the "
+"version control status.  Pressing @kbd{Mouse-1} over the indicator pops up a "
+"menu of VC commands, identical to @samp{Tools / Version Control} on the menu "
+"bar."
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:399
+#, no-wrap
+msgid "auto-revert-check-vc-info"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:410
+msgid ""
+"When Auto Revert mode (@pxref{Reverting}) reverts a buffer that is under "
+"version control, it updates the version control information in the mode "
+"line.  However, Auto Revert mode may not properly update this information if "
+"the version control status changes without changes to the work file, from "
+"outside the current Emacs session.  If you set "
+"@code{auto-revert-check-vc-info} to @code{t}, Auto Revert mode updates the "
+"version control status information every @code{auto-revert-interval} "
+"seconds, even if the work file itself is unchanged.  The resulting CPU usage "
+"depends on the version control system, but is usually not excessive."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:412
+#, no-wrap
+msgid "Basic Editing under Version Control"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:414
+#, no-wrap
+msgid "filesets, VC"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:415
+#, no-wrap
+msgid "VC filesets"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:422
+msgid ""
+"Most VC commands operate on @dfn{VC filesets}.  A VC fileset is a collection "
+"of one or more files that a VC operation acts on.  When you type VC commands "
+"in a buffer visiting a version-controlled file, the VC fileset is simply "
+"that one file.  When you type them in a VC Directory buffer, and some files "
+"in it are marked, the VC fileset consists of the marked files (@pxref{VC "
+"Directory Mode})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:430
+msgid ""
+"On modern changeset-based version control systems (@pxref{VCS Changesets}), "
+"VC commands handle multi-file VC filesets as a group.  For example, "
+"committing a multi-file VC fileset generates a single revision, containing "
+"the changes to all those files.  On older file-based version control systems "
+"like CVS, each file in a multi-file VC fileset is handled individually; for "
+"example, a commit generates one revision for each changed file."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:432 maintaining.texi.orig:438
+#, no-wrap
+msgid "C-x v v"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:435
+msgid ""
+"Perform the next appropriate version control operation on the current VC "
+"fileset."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:437
+#, no-wrap
+msgid "vc-next-action"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:446
+msgid ""
+"The principal VC command is a multi-purpose command, @kbd{C-x v v} "
+"(@code{vc-next-action}), which performs the ``most appropriate'' action on "
+"the current VC fileset: either registering it with a version control system, "
+"or committing it, or unlocking it, or merging changes into it.  The precise "
+"actions are described in detail in the following subsections.  You can use "
+"@kbd{C-x v v} either in a file-visiting buffer or in a VC Directory buffer."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:451
+msgid ""
+"Note that VC filesets are distinct from the ``named filesets'' used for "
+"viewing and visiting files in functional groups (@pxref{Filesets}).  Unlike "
+"named filesets, VC filesets are not named and don't persist across sessions."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:456 maintaining.texi.orig:458
+#, no-wrap
+msgid "VC With A Merging VCS"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:456
+msgid "Without locking: default mode for CVS."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:456 maintaining.texi.orig:512
+#, no-wrap
+msgid "VC With A Locking VCS"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:456
+msgid "RCS in its default mode, SCCS, and optionally CVS."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:456 maintaining.texi.orig:554
+#, no-wrap
+msgid "Advanced C-x v v"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:456
+msgid "Advanced features available with a prefix argument."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:459
+#, no-wrap
+msgid "Basic Version Control with Merging"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:463
+msgid ""
+"On a merging-based version control system (i.e., most modern ones; "
+"@pxref{VCS Merging}), @kbd{C-x v v} does the following:"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:470
+msgid ""
+"If there is more than one file in the VC fileset and the files have "
+"inconsistent version control statuses, signal an error.  (Note, however, "
+"that a fileset is allowed to include both ``newly-added'' files and "
+"``modified'' files; @pxref{Registering}.)"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:477
+msgid ""
+"If none of the files in the VC fileset are registered with a version control "
+"system, register the VC fileset, i.e., place it under version control.  "
+"@xref{Registering}.  If Emacs cannot find a system to register under, it "
+"prompts for a repository type, creates a new repository, and registers the "
+"VC fileset with it."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:480
+msgid "If every work file in the VC fileset is unchanged, do nothing."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:486
+msgid ""
+"If every work file in the VC fileset has been modified, commit the changes.  "
+"To do this, Emacs pops up a @file{*vc-log*} buffer; type the desired log "
+"entry for the new revision, followed by @kbd{C-c C-c} to commit.  @xref{Log "
+"Buffer}."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:494
+msgid ""
+"If committing to a shared repository, the commit may fail if the repository "
+"that has been changed since your last update.  In that case, you must "
+"perform an update before trying again.  On a decentralized version control "
+"system, use @kbd{C-x v +} (@pxref{VC Pull}) or @kbd{C-x v m} "
+"(@pxref{Merging}).  On a centralized version control system, type @kbd{C-x v "
+"v} again to merge in the repository changes."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:499
+msgid ""
+"Finally, if you are using a centralized version control system, check if "
+"each work file in the VC fileset is up-to-date.  If any file has been "
+"changed in the repository, offer to update it."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:511
+msgid ""
+"These rules also apply when you use RCS in its ``non-locking'' mode, except "
+"that changes are not automatically merged from the repository.  Nothing "
+"informs you if another user has committed changes in the same file since you "
+"began editing it; when you commit your revision, his changes are removed "
+"(however, they remain in the repository and are thus not irrevocably lost).  "
+"Therefore, you must verify that the current revision is unchanged before "
+"committing your changes.  In addition, locking is possible with RCS even in "
+"this mode: @kbd{C-x v v} with an unmodified file locks the file, just as it "
+"does with RCS in its normal locking mode (@pxref{VC With A Locking VCS})."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:513
+#, no-wrap
+msgid "Basic Version Control with Locking"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:517
+msgid ""
+"On a locking-based version control system (such as SCCS, and RCS in its "
+"default mode), @kbd{C-x v v} does the following:"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:522
+msgid ""
+"If there is more than one file in the VC fileset and the files have "
+"inconsistent version control statuses, signal an error."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:529
+msgid ""
+"If each file in the VC fileset is not registered with a version control "
+"system, register the VC fileset.  @xref{Registering}.  If Emacs cannot find "
+"a system to register under, it prompts for a repository type, creates a new "
+"repository, and registers the VC fileset with it."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:533
+msgid ""
+"If each file is registered and unlocked, lock it and make it writable, so "
+"that you can begin to edit it."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:539
+msgid ""
+"If each file is locked by you and contains changes, commit the changes.  To "
+"do this, Emacs pops up a @file{*vc-log*} buffer; type the desired log entry "
+"for the new revision, followed by @kbd{C-c C-c} to commit (@pxref{Log "
+"Buffer})."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:543
+msgid ""
+"If each file is locked by you, but you have not changed it, release the lock "
+"and make the file read-only again."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:549
+msgid ""
+"If each file is locked by another user, ask whether you want to ``steal the "
+"lock''.  If you say yes, the file becomes locked by you, and a warning "
+"message is sent to the user who had formerly locked the file."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:553
+msgid ""
+"These rules also apply when you use CVS in locking mode, except that CVS "
+"does not support stealing locks."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:555
+#, no-wrap
+msgid "Advanced Control in @kbd{C-x v v}"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:557
+#, no-wrap
+msgid "revision ID in version control"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:562
+msgid ""
+"When you give a prefix argument to @code{vc-next-action} (@kbd{C-u C-x v "
+"v}), it still performs the next logical version control operation, but "
+"accepts additional arguments to specify precisely how to do the operation."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:565
+#, no-wrap
+msgid "specific version control system"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:569
+msgid ""
+"You can specify the name of a version control system.  This is useful if the "
+"fileset can be managed by more than one version control system, and Emacs "
+"fails to detect the correct one."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:572
+msgid "Otherwise, if using CVS or RCS, you can specify a revision ID."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:576
+msgid ""
+"If the fileset is modified (or locked), this makes Emacs commit with that "
+"revision ID@.  You can create a new branch by supplying an appropriate "
+"revision ID (@pxref{Branches})."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:582
+msgid ""
+"If the fileset is unmodified (and unlocked), this checks the specified "
+"revision into the working tree.  You can also specify a revision on another "
+"branch by giving its revision or branch ID (@pxref{Switching Branches}).  An "
+"empty argument (i.e., @kbd{C-u C-x v v @key{RET}})  checks out the latest "
+"(``head'') revision on the current branch."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:586
+msgid ""
+"This signals an error on a decentralized version control system.  Those "
+"systems do not let you specify your own revision IDs, nor do they use the "
+"concept of ``checking out'' individual files."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:589
+#, no-wrap
+msgid "Features of the Log Entry Buffer"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:591
+#, no-wrap
+msgid "C-c C-c @r{(Log Edit mode)}"
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:592
+#, no-wrap
+msgid "log-edit-done"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:598
+msgid ""
+"When you tell VC to commit a change, it pops up a buffer named "
+"@file{*vc-log*}.  In this buffer, you should write a @dfn{log entry} "
+"describing the changes you have made (@pxref{Why Version Control?}).  After "
+"you are done, type @kbd{C-c C-c} (@code{log-edit-done}) to exit the buffer "
+"and commit the change, together with your log entry."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:599
+#, no-wrap
+msgid "Log Edit mode"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:600
+#, no-wrap
+msgid "mode, Log Edit"
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:601
+#, no-wrap
+msgid "vc-log-mode-hook"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:607
+msgid ""
+"The major mode for the @file{*vc-log*} buffer is Log Edit mode, a variant of "
+"Text mode (@pxref{Text Mode}).  On entering Log Edit mode, Emacs runs the "
+"hooks @code{text-mode-hook} and @code{vc-log-mode-hook} (@pxref{Hooks})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:615
+msgid ""
+"In the @file{*vc-log*} buffer, you can write one or more @dfn{header lines}, "
+"specifying additional information to be supplied to the version control "
+"system.  Each header line must occupy a single line at the top of the "
+"buffer; the first line that is not a header line is treated as the start of "
+"the log entry.  For example, the following header line states that the "
+"present change was not written by you, but by another developer:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:618
+#, no-wrap
+msgid "Author: J. R. Hacker <jrh@@example.com>\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:628
+msgid ""
+"Apart from the @samp{Author} header, Emacs recognizes the headers "
+"@samp{Date} (a manually-specified commit time) and @samp{Fixes} (a reference "
+"to a bug fixed by the change).  Not all version control systems recognize "
+"all headers: Bazaar recognizes all three headers, while Git, Mercurial, and "
+"Monotone recognize only @samp{Author} and @samp{Date}.  If you specify a "
+"header for a system that does not support it, the header is treated as part "
+"of the log entry."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:629
+#, no-wrap
+msgid "C-c C-f @r{(Log Edit mode)}"
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:630
+#, no-wrap
+msgid "log-edit-show-files"
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:631
+#, no-wrap
+msgid "C-c C-d @r{(Log Edit mode)}"
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:632
+#, no-wrap
+msgid "log-edit-show-diff"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:640
+msgid ""
+"While in the @file{*vc-log*} buffer, the ``current VC fileset'' is "
+"considered to be the fileset that will be committed if you type @w{@kbd{C-c "
+"C-c}}.  To view a list of the files in the VC fileset, type @w{@kbd{C-c "
+"C-f}} (@code{log-edit-show-files}).  To view a diff of changes between the "
+"VC fileset and the version from which you started editing (@pxref{Old "
+"Revisions}), type @kbd{C-c C-d} (@code{log-edit-show-diff})."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:641
+#, no-wrap
+msgid "C-c C-a @r{(Log Edit mode)}"
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:642
+#, no-wrap
+msgid "log-edit-insert-changelog"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:650
+msgid ""
+"If the VC fileset includes one or more @file{ChangeLog} files (@pxref{Change "
+"Log}), type @kbd{C-c C-a} (@code{log-edit-insert-changelog}) to pull the "
+"relevant entries into the @file{*vc-log*} buffer.  If the topmost item in "
+"each @file{ChangeLog} was made under your user name on the current date, "
+"this command searches that item for entries matching the file(s) to be "
+"committed, and inserts them."
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:654
+msgid ""
+"If you are using CVS or RCS, see @ref{Change Logs and VC}, for the opposite "
+"way of working---generating ChangeLog entries from the Log Edit buffer."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:661
+msgid ""
+"To abort a commit, just @emph{don't} type @kbd{C-c C-c} in that buffer.  You "
+"can switch buffers and do other editing.  As long as you don't try to make "
+"another commit, the entry you were editing remains in the @file{*vc-log*} "
+"buffer, and you can go back to that buffer at any time to complete the "
+"commit."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:662
+#, no-wrap
+msgid "M-n @r{(Log Edit mode)}"
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:663
+#, no-wrap
+msgid "M-p @r{(Log Edit mode)}"
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:664
+#, no-wrap
+msgid "M-s @r{(Log Edit mode)}"
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:665
+#, no-wrap
+msgid "M-r @r{(Log Edit mode)}"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:672
+msgid ""
+"You can also browse the history of previous log entries to duplicate a "
+"commit comment.  This can be useful when you want to make several commits "
+"with similar comments.  The commands @kbd{M-n}, @kbd{M-p}, @kbd{M-s} and "
+"@kbd{M-r} for doing this work just like the minibuffer history commands "
+"(@pxref{Minibuffer History}), except that they are used outside the "
+"minibuffer."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:674
+#, no-wrap
+msgid "Registering a File for Version Control"
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:677 maintaining.texi.orig:681
+#, no-wrap
+msgid "C-x v i"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:679
+msgid "Register the visited file for version control."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:682
+#, no-wrap
+msgid "vc-register"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:689
+msgid ""
+"The command @kbd{C-x v i} (@code{vc-register}) @dfn{registers} each file in "
+"the current VC fileset, placing it under version control.  This is "
+"essentially equivalent to the action of @kbd{C-x v v} on an unregistered VC "
+"fileset (@pxref{Basic VC Editing}), except that if the VC fileset is already "
+"registered, @kbd{C-x v i} signals an error whereas @kbd{C-x v v} performs "
+"some other action."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:698
+msgid ""
+"To register a file, Emacs must choose a version control system.  For a "
+"multi-file VC fileset, the VC Directory buffer specifies the system to use "
+"(@pxref{VC Directory Mode}).  For a single-file VC fileset, if the file's "
+"directory already contains files registered in a version control system, or "
+"if the directory is part of a directory tree controlled by a version control "
+"system, Emacs chooses that system.  In the event that more than one version "
+"control system is applicable, Emacs uses the one that appears first in the "
+"variable"
+msgstr ""
+
+#. type: iftex
+#: maintaining.texi.orig:700
+msgid "@code{vc-handled-backends}."
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:703
+msgid "@code{vc-handled-backends} (@pxref{Customizing VC})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:707
+msgid ""
+"If Emacs cannot find a version control system to register the file under, it "
+"prompts for a repository type, creates a new repository, and registers the "
+"file into that repository."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:715
+msgid ""
+"On most version control systems, registering a file with @kbd{C-x v i} or "
+"@kbd{C-x v v} adds it to the ``working tree'' but not to the repository.  "
+"Such files are labeled as @samp{added} in the VC Directory buffer, and show "
+"a revision ID of @samp{@@@@} in the mode line.  To make the registration "
+"take effect in the repository, you must perform a commit (@pxref{Basic VC "
+"Editing}).  Note that a single commit can include both file additions and "
+"edits to existing files."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:719
+msgid ""
+"On a locking-based version control system (@pxref{VCS Merging}), registering "
+"a file leaves it unlocked and read-only.  Type @kbd{C-x v v} to start "
+"editing it."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:721
+#, no-wrap
+msgid "Examining And Comparing Old Revisions"
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:724 maintaining.texi.orig:751
+#, no-wrap
+msgid "C-x v ="
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:729
+msgid ""
+"Compare the work files in the current VC fileset with the versions you "
+"started from (@code{vc-diff}).  With a prefix argument, prompt for two "
+"revisions of the current VC fileset and compare them.  You can also call "
+"this command from a Dired buffer (@pxref{Dired})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:731
+#, no-wrap
+msgid "M-x vc-ediff"
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:734
+msgid ""
+"Like @kbd{C-x v =}, but using Ediff.  @xref{Top,, Ediff, ediff, The Ediff "
+"Manual}."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:736 maintaining.texi.orig:788
+#, no-wrap
+msgid "C-x v D"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:740
+msgid ""
+"Compare the entire working tree to the revision you started from "
+"(@code{vc-root-diff}).  With a prefix argument, prompt for two revisions and "
+"compare their trees."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:741 maintaining.texi.orig:811
+#, no-wrap
+msgid "C-x v ~"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:744
+msgid ""
+"Prompt for a revision of the current file, and visit it in a separate buffer "
+"(@code{vc-revision-other-window})."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:745 maintaining.texi.orig:820
+#, no-wrap
+msgid "C-x v g"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:748
+msgid ""
+"Display an annotated version of the current file: for each line, show the "
+"latest revision in which it was modified (@code{vc-annotate})."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:750
+#, no-wrap
+msgid "vc-diff"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:759
+msgid ""
+"@kbd{C-x v =} (@code{vc-diff}) displays a @dfn{diff} which compares each "
+"work file in the current VC fileset to the version(s) from which you started "
+"editing.  The diff is displayed in another window, in a Diff mode buffer "
+"(@pxref{Diff Mode}) named @file{*vc-diff*}.  The usual Diff mode commands "
+"are available in this buffer.  In particular, the @kbd{g} "
+"(@code{revert-buffer}) command performs the file comparison again, "
+"generating a new diff."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:760
+#, no-wrap
+msgid "C-u C-x v ="
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:769
+msgid ""
+"To compare two arbitrary revisions of the current VC fileset, call "
+"@code{vc-diff} with a prefix argument: @kbd{C-u C-x v =}.  This prompts for "
+"two revision IDs (@pxref{VCS Concepts}), and displays a diff between those "
+"versions of the fileset.  This will not work reliably for multi-file VC "
+"filesets, if the version control system is file-based rather than "
+"changeset-based (e.g., CVS), since then revision IDs for different files "
+"would not be related in any meaningful way."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:776
+msgid ""
+"Instead of the revision ID, some version control systems let you specify "
+"revisions in other formats.  For instance, under Bazaar you can enter "
+"@samp{date:yesterday} for the argument to @kbd{C-u C-x v =} (and related "
+"commands) to specify the first revision committed after yesterday.  See the "
+"documentation of the version control system for details."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:780
+msgid ""
+"If you invoke @kbd{C-x v =} or @kbd{C-u C-x v =} from a Dired buffer "
+"(@pxref{Dired}), the file listed on the current line is treated as the "
+"current VC fileset."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:782
+#, no-wrap
+msgid "vc-ediff"
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:785
+msgid ""
+"@kbd{M-x vc-ediff} works like @kbd{C-x v =}, except that it uses an Ediff "
+"session.  @xref{Top,, Ediff, ediff, The Ediff Manual}."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:787
+#, no-wrap
+msgid "vc-root-diff"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:794
+msgid ""
+"@kbd{C-x v D} (@code{vc-root-diff}) is similar to @kbd{C-x v =}, but it "
+"displays the changes in the entire current working tree (i.e., the working "
+"tree containing the current VC fileset).  If you invoke this command from a "
+"Dired buffer, it applies to the working tree containing the directory."
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:795
+#, no-wrap
+msgid "vc-diff-switches"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:809
+msgid ""
+"You can customize the @command{diff} options that @kbd{C-x v =} and @kbd{C-x "
+"v D} use for generating diffs.  The options used are taken from the first "
+"non-@code{nil} value amongst the variables "
+"@code{vc-@var{backend}-diff-switches}, @code{vc-diff-switches}, and "
+"@code{diff-switches} (@pxref{Comparing Files}), in that order.  Here, "
+"@var{backend} stands for the relevant version control system, e.g., "
+"@code{bzr} for Bazaar.  Since @code{nil} means to check the next variable in "
+"the sequence, either of the first two may use the value @code{t} to mean no "
+"switches at all.  Most of the @code{vc-@var{backend}-diff-switches} "
+"variables default to @code{nil}, but some default to @code{t}; these are for "
+"version control systems whose @code{diff} implementations do not accept "
+"common diff options, such as Subversion."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:810
+#, no-wrap
+msgid "vc-revision-other-window"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:818
+msgid ""
+"To directly examine an older version of a file, visit the work file and type "
+"@kbd{C-x v ~ @var{revision} @key{RET}} (@code{vc-revision-other-window}).  "
+"This retrieves the file version corresponding to @var{revision}, saves it to "
+"@file{@var{filename}.~@var{revision}~}, and visits it in a separate window."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:819
+#, no-wrap
+msgid "vc-annotate"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:829
+msgid ""
+"Many version control systems allow you to view files @dfn{annotated} with "
+"per-line revision information, by typing @kbd{C-x v g} "
+"(@code{vc-annotate}).  This creates a new buffer (the ``annotate buffer'') "
+"displaying the file's text, with each line colored to show how old it is.  "
+"Red text is new, blue is old, and intermediate colors indicate intermediate "
+"ages.  By default, the color is scaled over the full range of ages, such "
+"that the oldest changes are blue, and the newest changes are red."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:834
+msgid ""
+"When you give a prefix argument to this command, Emacs reads two arguments "
+"using the minibuffer: the revision to display and annotate (instead of the "
+"current file contents), and the time span in days the color range should "
+"cover."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:839
+msgid ""
+"From the annotate buffer, these and other color scaling options are "
+"available from the @samp{VC-Annotate} menu.  In this buffer, you can also "
+"use the following keys to browse the annotations of past revisions, view "
+"diffs, or view log entries:"
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:841 maintaining.texi.orig:954 maintaining.texi.orig:1178
+#, no-wrap
+msgid "p"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:845
+msgid ""
+"Annotate the previous revision, i.e., the revision before the one currently "
+"annotated.  A numeric prefix argument is a repeat count, so @kbd{C-u 10 p} "
+"would take you back 10 revisions."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:846 maintaining.texi.orig:960 maintaining.texi.orig:1174
+#, no-wrap
+msgid "n"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:849
+msgid ""
+"Annotate the next revision, i.e., the revision after the one currently "
+"annotated.  A numeric prefix argument is a repeat count."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:850
+#, no-wrap
+msgid "j"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:852
+msgid "Annotate the revision indicated by the current line."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:853 maintaining.texi.orig:973
+#, no-wrap
+msgid "a"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:857
+msgid ""
+"Annotate the revision before the one indicated by the current line.  This is "
+"useful to see the state the file was in before the change on the current "
+"line was made."
+msgstr ""
+
+#. type: itemx
+#: maintaining.texi.orig:858 maintaining.texi.orig:980 maintaining.texi.orig:1189
+#, no-wrap
+msgid "f"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:860
+msgid "Show in a buffer the file revision indicated by the current line."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:861 maintaining.texi.orig:983
+#, no-wrap
+msgid "d"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:865
+msgid ""
+"Display the diff between the current line's revision and the previous "
+"revision.  This is useful to see what the current line's revision actually "
+"changed in the file."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:866 maintaining.texi.orig:987
+#, no-wrap
+msgid "D"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:871
+msgid ""
+"Display the diff between the current line's revision and the previous "
+"revision for all files in the changeset (for VC systems that support "
+"changesets).  This is useful to see what the current line's revision "
+"actually changed in the tree."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:872
+#, no-wrap
+msgid "l"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:876
+msgid ""
+"Show the log of the current line's revision.  This is useful to see the "
+"author's description of the changes in the revision on the current line."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:877
+#, no-wrap
+msgid "w"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:881
+msgid ""
+"Annotate the working revision--the one you are editing.  If you used @kbd{p} "
+"and @kbd{n} to browse to other revisions, use this key to return to your "
+"working revision."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:882
+#, no-wrap
+msgid "v"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:885
+msgid ""
+"Toggle the annotation visibility.  This is useful for looking just at the "
+"file contents without distraction from the annotations."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:891 maintaining.texi.orig:908
+#, no-wrap
+msgid "C-x v l"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:894
+msgid "Display the change history for the current fileset (@code{vc-print-log})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:895
+#, no-wrap
+msgid "C-x v L"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:898
+msgid ""
+"Display the change history for the current repository "
+"(@code{vc-print-root-log})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:899
+#, no-wrap
+msgid "C-x v I"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:902
+msgid ""
+"Display the changes that a pull operation will retrieve "
+"(@code{vc-log-incoming})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:903
+#, no-wrap
+msgid "C-x v O"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:906
+msgid ""
+"Display the changes that will be sent by the next push operation "
+"(@code{vc-log-outgoing})."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:909
+#, no-wrap
+msgid "vc-print-log"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:918
+msgid ""
+"@kbd{C-x v l} (@code{vc-print-log}) displays a buffer named "
+"@file{*vc-change-log*}, showing the history of changes made to the current "
+"file, including who made the changes, the dates, and the log entry for each "
+"change (these are the same log entries you would enter via the "
+"@file{*vc-log*} buffer; @pxref{Log Buffer}).  Point is centered at the "
+"revision of the file currently being visited.  With a prefix argument, the "
+"command prompts for the revision to center on, and the maximum number of "
+"revisions to display."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:922
+msgid ""
+"If you call @kbd{C-x v l} from a VC Directory buffer (@pxref{VC Directory "
+"Mode}) or a Dired buffer (@pxref{Dired}), it applies to the file listed on "
+"the current line."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:923
+#, no-wrap
+msgid "vc-print-root-log"
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:924
+#, no-wrap
+msgid "log-view-toggle-entry-display"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:930
+msgid ""
+"@kbd{C-x v L} (@code{vc-print-root-log}) displays a @file{*vc-change-log*} "
+"buffer showing the history of the entire version-controlled directory tree "
+"(RCS, SCCS, and CVS do not support this feature).  With a prefix argument, "
+"the command prompts for the maximum number of revisions to display."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:936
+msgid ""
+"The @kbd{C-x v L} history is shown in a compact form, usually showing only "
+"the first line of each log entry.  However, you can type @key{RET} "
+"(@code{log-view-toggle-entry-display}) in the @file{*vc-change-log*} buffer "
+"to reveal the entire log entry for the revision at point.  A second "
+"@key{RET} hides it again."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:948
+msgid ""
+"On a decentralized version control system, the @kbd{C-x v I} "
+"(@code{vc-log-incoming}) command displays a log buffer showing the changes "
+"that will be applied, the next time you run the version control system's "
+"``pull'' command to get new revisions from another repository (@pxref{VC "
+"Pull}).  This other repository is the default one from which changes are "
+"pulled, as defined by the version control system; with a prefix argument, "
+"@code{vc-log-incoming} prompts for a specific repository.  Similarly, "
+"@kbd{C-x v O} (@code{vc-log-outgoing}) shows the changes that will be sent "
+"to another repository, the next time you run the ``push'' command; with a "
+"prefix argument, it prompts for a specific destination repository."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:952
+msgid ""
+"In the @file{*vc-change-log*} buffer, you can use the following keys to move "
+"between the logs of revisions and of files, and to examine and compare past "
+"revisions (@pxref{Old Revisions}):"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:959
+msgid ""
+"Move to the previous revision entry.  (Revision entries in the log buffer "
+"are usually in reverse-chronological order, so the previous revision-item "
+"usually corresponds to a newer revision.)  A numeric prefix argument is a "
+"repeat count."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:963
+msgid ""
+"Move to the next revision entry.  A numeric prefix argument is a repeat "
+"count."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:964
+#, no-wrap
+msgid "P"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:968
+msgid ""
+"Move to the log of the previous file, if showing logs for a multi-file VC "
+"fileset.  Otherwise, just move to the beginning of the log.  A numeric "
+"prefix argument is a repeat count."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:969
+#, no-wrap
+msgid "N"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:972
+msgid ""
+"Move to the log of the next file, if showing logs for a multi-file VC "
+"fileset.  A numeric prefix argument is a repeat count."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:975
+msgid "Annotate the revision on the current line (@pxref{Old Revisions})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:976
+#, no-wrap
+msgid "e"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:979
+msgid ""
+"Modify the change comment displayed at point.  Note that not all VC systems "
+"support modifying change comments."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:982
+msgid "Visit the revision indicated at the current line."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:986
+msgid ""
+"Display a diff between the revision at point and the next earlier revision, "
+"for the specific file."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:991
+msgid ""
+"Display the changeset diff between the revision at point and the next "
+"earlier revision.  This shows the changes to all files made in that "
+"revision."
+msgstr ""
+
+#. type: key{#1}
+#: maintaining.texi.orig:992 maintaining.texi.orig:1188
+#, no-wrap
+msgid "RET"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:996
+msgid ""
+"In a compact-style log buffer (e.g., the one created by @kbd{C-x v L}), "
+"toggle between showing and hiding the full log entry for the revision at "
+"point."
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:998
+#, no-wrap
+msgid "vc-log-show-limit"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1007
+msgid ""
+"Because fetching many log entries can be slow, the @file{*vc-change-log*} "
+"buffer displays no more than 2000 revisions by default.  The variable "
+"@code{vc-log-show-limit} specifies this limit; if you set the value to zero, "
+"that removes the limit.  You can also increase the number of revisions shown "
+"in an existing @file{*vc-change-log*} buffer by clicking on the @samp{Show "
+"2X entries} or @samp{Show unlimited entries} buttons at the end of the "
+"buffer.  However, RCS, SCCS, and CVS do not support this feature."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:1009
+#, no-wrap
+msgid "Undoing Version Control Actions"
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:1012 maintaining.texi.orig:1019
+#, no-wrap
+msgid "C-x v u"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1015
+msgid ""
+"Revert the work file(s) in the current VC fileset to the last revision "
+"(@code{vc-revert})."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:1020
+#, no-wrap
+msgid "vc-revert"
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:1021
+#, no-wrap
+msgid "vc-revert-show-diff"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1031
+msgid ""
+"If you want to discard all the changes you have made to the current VC "
+"fileset, type @kbd{C-x v u} (@code{vc-revert-buffer}).  This shows you a "
+"diff between the work file(s) and the revision from which you started "
+"editing, and asks for confirmation for discarding the changes.  If you "
+"agree, the fileset is reverted.  If you don't want @kbd{C-x v u} to show a "
+"diff, set the variable @code{vc-revert-show-diff} to @code{nil} (you can "
+"still view the diff directly with @kbd{C-x v =}; @pxref{Old Revisions}).  "
+"Note that @kbd{C-x v u} cannot be reversed with the usual undo commands "
+"(@pxref{Undo}), so use it with care."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1036
+msgid ""
+"On locking-based version control systems, @kbd{C-x v u} leaves files "
+"unlocked; you must lock again to resume editing.  You can also use @kbd{C-x "
+"v u} to unlock a file if you lock it and then decide not to change it."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:1038
+#, no-wrap
+msgid "Ignore Version Control Files"
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:1041 maintaining.texi.orig:1045
+#, no-wrap
+msgid "C-x v G"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1043
+msgid "Ignore a file under current version control system.  (@code{vc-ignore})."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:1046
+#, no-wrap
+msgid "vc-ignore"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1055
+msgid ""
+"Many source trees contain some files that do not need to be versioned, such "
+"as editor backups, object or bytecode files, and built programs.  You can "
+"simply not add them, but then they'll always crop up as unknown files.  You "
+"can also tell the version control system to ignore these files by adding "
+"them to the ignore file at the top of the tree.  @kbd{C-x v G} "
+"(@code{vc-ignore}) can help you do this.  When called with a prefix "
+"argument, you can remove a file from the ignored file list."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1059
+#, no-wrap
+msgid "VC Directory buffer"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1065
+msgid ""
+"The @dfn{VC Directory buffer} is a specialized buffer for viewing the "
+"version control statuses of the files in a directory tree, and performing "
+"version control operations on those files.  In particular, it is used to "
+"specify multi-file VC filesets for commands like @w{@kbd{C-x v v}} to act on "
+"(@pxref{VC Directory Commands})."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:1066
+#, no-wrap
+msgid "C-x v d"
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:1067
+#, no-wrap
+msgid "vc-dir"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1072
+msgid ""
+"To use the VC Directory buffer, type @kbd{C-x v d} (@code{vc-dir}).  This "
+"reads a directory name using the minibuffer, and switches to a VC Directory "
+"buffer for that directory.  By default, the buffer is named "
+"@file{*vc-dir*}.  Its contents are described"
+msgstr ""
+
+#. type: iftex
+#: maintaining.texi.orig:1074
+msgid "below."
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:1077
+msgid "in @ref{VC Directory Buffer}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1084
+msgid ""
+"The @code{vc-dir} command automatically detects the version control system "
+"to be used in the specified directory.  In the event that more than one "
+"system is being used in the directory, you should invoke the command with a "
+"prefix argument, @kbd{C-u C-x v d}; this prompts for the version control "
+"system which the VC Directory buffer should use."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1086
+#, no-wrap
+msgid "PCL-CVS"
+msgstr ""
+
+#. type: pindex
+#: maintaining.texi.orig:1087
+#, no-wrap
+msgid "cvs"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1088
+#, no-wrap
+msgid "CVS directory mode"
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:1092
+msgid ""
+"In addition to the VC Directory buffer, Emacs has a similar facility called "
+"PCL-CVS which is specialized for CVS@.  @xref{Top, , About PCL-CVS, pcl-cvs, "
+"PCL-CVS---The Emacs Front-End to CVS}."
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1097
+msgid "Buffer: VC Directory Buffer"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1097
+msgid "What the buffer looks like and means."
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1097
+msgid "Commands: VC Directory Commands"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1097
+msgid "Commands to use in a VC directory buffer."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:1099
+#, no-wrap
+msgid "VC Directory Buffer"
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:1100
+#, no-wrap
+msgid "The VC Directory Buffer"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1110
+msgid ""
+"The VC Directory buffer contains a list of version-controlled files and "
+"their version control statuses.  It lists files in the current directory "
+"(the one specified when you called @kbd{C-x v d}) and its subdirectories, "
+"but only those with a ``noteworthy'' status.  Files that are up-to-date "
+"(i.e., the same as in the repository) are omitted.  If all the files in a "
+"subdirectory are up-to-date, the subdirectory is not listed either.  As an "
+"exception, if a file has become up-to-date as a direct result of a VC "
+"command, it is listed."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1112
+msgid "Here is an example of a VC Directory buffer listing:"
+msgstr ""
+
+#. type: group
+#: maintaining.texi.orig:1121
+#, no-wrap
+msgid ""
+"                     ./\n"
+"    edited           configure.ac\n"
+"*   added            README\n"
+"    unregistered     temp.txt\n"
+"                     src/\n"
+"*   edited           src/main.c\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1130
+msgid ""
+"Two work files have been modified but not committed: @file{configure.ac} in "
+"the current directory, and @file{foo.c} in the @file{src/} subdirectory.  "
+"The file named @file{README} has been added but is not yet committed, while "
+"@file{temp.txt} is not under version control (@pxref{Registering})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1134
+msgid ""
+"The @samp{*} characters next to the entries for @file{README} and "
+"@file{src/main.c} indicate that the user has marked out these files as the "
+"current VC fileset"
+msgstr ""
+
+#. type: iftex
+#: maintaining.texi.orig:1136
+msgid "(see below)."
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:1139
+msgid "(@pxref{VC Directory Commands})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1147
+msgid ""
+"The above example is typical for a decentralized version control system like "
+"Bazaar, Git, or Mercurial.  Other systems can show other statuses.  For "
+"instance, CVS shows the @samp{needs-update} status if the repository has "
+"changes that have not been applied to the work file.  RCS and SCCS show the "
+"name of the user locking a file as its status."
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:1149
+#, no-wrap
+msgid "vc-stay-local"
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:1150
+#, no-wrap
+msgid "vc-cvs-stay-local"
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:1159
+msgid ""
+"On CVS and Subversion, the @code{vc-dir} command normally contacts the "
+"repository, which may be on a remote machine, to check for updates.  If you "
+"change the variable @code{vc-stay-local} or @code{vc-cvs-stay-local} (for "
+"CVS) to @code{nil} (@pxref{CVS Options}), then Emacs avoids contacting a "
+"remote repository when generating the VC Directory buffer (it will still "
+"contact it when necessary, e.g., when doing a commit).  This may be "
+"desirable if you are working offline or the network is slow."
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:1161
+#, no-wrap
+msgid "vc-directory-exclusion-list"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1165
+msgid ""
+"The VC Directory buffer omits subdirectories listed in the variable "
+"@code{vc-directory-exclusion-list}.  Its default value contains directories "
+"that are used internally by version control systems."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:1166 maintaining.texi.orig:1167
+#, no-wrap
+msgid "VC Directory Commands"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1172
+msgid ""
+"Emacs provides several commands for navigating the VC Directory buffer, and "
+"for ``marking'' files as belonging to the current VC fileset."
+msgstr ""
+
+#. type: key{#1}
+#: maintaining.texi.orig:1175
+#, no-wrap
+msgid "SPC"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1177
+msgid "Move point to the next entry (@code{vc-dir-next-line})."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1180
+msgid "Move point to the previous entry (@code{vc-dir-previous-line})."
+msgstr ""
+
+#. type: key{#1}
+#: maintaining.texi.orig:1181
+#, no-wrap
+msgid "TAB"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1183
+msgid "Move to the next directory entry (@code{vc-dir-next-directory})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1184
+#, no-wrap
+msgid "S-@key{TAB}"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1187
+msgid "Move to the previous directory entry (@code{vc-dir-previous-directory})."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1192
+msgid ""
+"Visit the file or directory listed on the current line "
+"(@code{vc-dir-find-file})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1193
+#, no-wrap
+msgid "o"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1196
+msgid ""
+"Visit the file or directory on the current line, in a separate window "
+"(@code{vc-dir-find-file-other-window})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1197 maintaining.texi.orig:1974
+#, no-wrap
+msgid "m"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1201
+msgid ""
+"Mark the file or directory on the current line (@code{vc-dir-mark}), putting "
+"it in the current VC fileset.  If the region is active, mark all files in "
+"the region."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1205
+msgid ""
+"A file cannot be marked with this command if it is already in a marked "
+"directory, or one of its subdirectories.  Similarly, a directory cannot be "
+"marked with this command if any file in its tree is marked."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1206
+#, no-wrap
+msgid "M"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1211
+msgid ""
+"If point is on a file entry, mark all files with the same status; if point "
+"is on a directory entry, mark all files in that directory tree "
+"(@code{vc-dir-mark-all-files}).  With a prefix argument, mark all listed "
+"files and directories."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1212
+#, no-wrap
+msgid "q"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1214
+msgid "Quit the VC Directory buffer, and bury it (@code{quit-window})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1215
+#, no-wrap
+msgid "u"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1218
+msgid ""
+"Unmark the file or directory on the current line.  If the region is active, "
+"unmark all the files in the region (@code{vc-dir-unmark})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1219
+#, no-wrap
+msgid "U"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1224
+msgid ""
+"If point is on a file entry, unmark all files with the same status; if point "
+"is on a directory entry, unmark all files in that directory tree "
+"(@code{vc-dir-unmark-all-files}).  With a prefix argument, unmark all files "
+"and directories."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1225
+#, no-wrap
+msgid "x"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1229
+msgid ""
+"Hide files with @samp{up-to-date} status (@code{vc-dir-hide-up-to-date}).  "
+"With a prefix argument, hide items whose state is that of the item at point."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:1231
+#, no-wrap
+msgid "vc-dir-mark"
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:1232
+#, no-wrap
+msgid "vc-dir-mark-all-files"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1243
+msgid ""
+"While in the VC Directory buffer, all the files that you mark with @kbd{m} "
+"(@code{vc-dir-mark}) or @kbd{M} (@code{vc-dir-mark}) are in the current VC "
+"fileset.  If you mark a directory entry with @kbd{m}, all the listed files "
+"in that directory tree are in the current VC fileset.  The files and "
+"directories that belong to the current VC fileset are indicated with a "
+"@samp{*} character in the VC Directory buffer, next to their VC status.  In "
+"this way, you can set up a multi-file VC fileset to be acted on by VC "
+"commands like @w{@kbd{C-x v v}} (@pxref{Basic VC Editing}), @w{@kbd{C-x v "
+"=}} (@pxref{Old Revisions}), and @w{@kbd{C-x v u}} (@pxref{VC Undo})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1247
+msgid ""
+"The VC Directory buffer also defines some single-key shortcuts for VC "
+"commands with the @kbd{C-x v} prefix: @kbd{=}, @kbd{+}, @kbd{l}, @kbd{i}, "
+"@kbd{D}, @kbd{L}, @kbd{G}, @kbd{I} and @kbd{v}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1253
+msgid ""
+"For example, you can commit a set of edited files by opening a VC Directory "
+"buffer, where the files are listed with the @samp{edited} status; marking "
+"the files; and typing @kbd{v} or @kbd{C-x v v} (@code{vc-next-action}).  If "
+"the version control system is changeset-based, Emacs will commit the files "
+"in a single revision."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1256
+msgid ""
+"While in the VC Directory buffer, you can also perform search and replace on "
+"the current VC fileset, with the following commands:"
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1258
+#, no-wrap
+msgid "S"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1260
+msgid "Search the fileset (@code{vc-dir-search})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1261
+#, no-wrap
+msgid "Q"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1264
+msgid ""
+"Do a regular expression query replace on the fileset "
+"(@code{vc-dir-query-replace-regexp})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1265
+#, no-wrap
+msgid "M-s a C-s"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1267
+msgid "Do an incremental search on the fileset (@code{vc-dir-isearch})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1268
+#, no-wrap
+msgid "M-s a C-M-s"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1271
+msgid ""
+"Do an incremental regular expression search on the fileset "
+"(@code{vc-dir-isearch-regexp})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1276
+msgid ""
+"Apart from acting on multiple files, these commands behave much like their "
+"single-buffer counterparts (@pxref{Search})."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1277
+#, no-wrap
+msgid "stashes in version control"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1278
+#, no-wrap
+msgid "shelves in version control"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1285
+msgid ""
+"The above commands are also available via the menu bar, and via a context "
+"menu invoked by @kbd{Mouse-2}.  Furthermore, some VC backends use the menu "
+"to provide extra backend-specific commands.  For example, Git and Bazaar "
+"allow you to manipulate @dfn{stashes} and @dfn{shelves} (where are a way to "
+"temporarily put aside uncommitted changes, and bring them back at a later "
+"time)."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:1287
+#, no-wrap
+msgid "Version Control Branches"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1288
+#, no-wrap
+msgid "branch (version control)"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1295
+msgid ""
+"One use of version control is to support multiple independent lines of "
+"development, which are called @dfn{branches}.  Amongst other things, "
+"branches can be used for maintaining separate ``stable'' and ``development'' "
+"versions of a program, and for developing unrelated features in isolation "
+"from one another."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1303
+msgid ""
+"VC's support for branch operations is currently fairly limited.  For "
+"decentralized version control systems, it provides commands for "
+"@dfn{updating} one branch with the contents of another, and for "
+"@dfn{merging} the changes made to two different branches (@pxref{Merging}).  "
+"For centralized version control systems, it supports checking out different "
+"branches and committing into new or different branches."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:1309 maintaining.texi.orig:1311
+#, no-wrap
+msgid "Switching Branches"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1309
+msgid "How to get to another existing branch."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:1309 maintaining.texi.orig:1350
+#, no-wrap
+msgid "VC Pull"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1309
+msgid "Updating the contents of a branch."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:1309 maintaining.texi.orig:1389
+#, no-wrap
+msgid "Merging"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1309
+msgid "Transferring changes between branches."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:1309 maintaining.texi.orig:1436
+#, no-wrap
+msgid "Creating Branches"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1309
+msgid "How to start a new branch."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:1312
+#, no-wrap
+msgid "Switching between Branches"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1316
+msgid ""
+"The various version control systems differ in how branches are implemented, "
+"and these differences cannot be entirely concealed by VC."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1327
+msgid ""
+"On some decentralized version control systems, including Bazaar and "
+"Mercurial in its normal mode of operation, each branch has its own working "
+"directory tree, so switching between branches just involves switching "
+"directories.  On Git, branches are normally @dfn{co-located} in the same "
+"directory, and switching between branches is done using the @command{git "
+"checkout} command, which changes the contents of the working tree to match "
+"the branch you switch to.  Bazaar also supports co-located branches, in "
+"which case the @command{bzr switch} command will switch branches in the "
+"current directory.  With Subversion, you switch to another branch using the "
+"@command{svn switch} command."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1330
+msgid ""
+"The VC command to switch to another branch in the current directory is "
+"@kbd{C-x v r @var{branch-name} @key{RET}} (@code{vc-retrieve-tag})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1342
+msgid ""
+"On centralized version control systems, you can also switch between branches "
+"by typing @kbd{C-u C-x v v} in an up-to-date work file (@pxref{Advanced C-x "
+"v v}), and entering the revision ID for a revision on another branch.  On "
+"CVS, for instance, revisions on the @dfn{trunk} (the main line of "
+"development) normally have IDs of the form 1.1, 1.2, 1.3, @dots{}, while the "
+"first branch created from (say)  revision 1.2 has revision IDs 1.2.1.1, "
+"1.2.1.2, @dots{}, the second branch created from revision 1.2 has revision "
+"IDs 1.2.2.1, 1.2.2.2, @dots{}, and so forth.  You can also specify the "
+"@dfn{branch ID}, which is a branch revision ID omitting its final component "
+"(e.g., 1.2.1), to switch to the latest revision on that branch."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1345
+msgid ""
+"On a locking-based system, switching to a different branch also unlocks "
+"(write-protects) the working tree."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1349
+msgid ""
+"Once you have switched to a branch, VC commands will apply to that branch "
+"until you switch away; for instance, any VC filesets that you commit will be "
+"committed to that specific branch."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:1351
+#, no-wrap
+msgid "Pulling Changes into a Branch"
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:1354 maintaining.texi.orig:1362
+#, no-wrap
+msgid "C-x v +"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1357
+msgid ""
+"On a decentralized version control system, update the current branch by "
+"``pulling in'' changes from another location."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1360
+msgid "On a centralized version control system, update the current VC fileset."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:1363
+#, no-wrap
+msgid "vc-pull"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1371
+msgid ""
+"On a decentralized version control system, the command @kbd{C-x v +} "
+"(@code{vc-pull}) updates the current branch and working tree.  It is "
+"typically used to update a copy of a remote branch.  If you supply a prefix "
+"argument, the command prompts for the exact version control command to use, "
+"which lets you specify where to pull changes from.  Otherwise, it pulls from "
+"a default location determined by the version control system."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1381
+msgid ""
+"Amongst decentralized version control systems, @kbd{C-x v +} is currently "
+"supported only by Bazaar, Git, and Mercurial.  On Bazaar, it calls "
+"@command{bzr pull} for ordinary branches (to pull from a master branch into "
+"a mirroring branch), and @command{bzr update} for a bound branch (to pull "
+"from a central repository).  On Git, it calls @command{git pull} to fetch "
+"changes from a remote repository and merge it into the current branch.  On "
+"Mercurial, it calls @command{hg pull -u} to fetch changesets from the "
+"default remote repository and update the working directory."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1385
+msgid ""
+"Prior to pulling, you can use @kbd{C-x v I} (@code{vc-log-incoming})  to "
+"view a log buffer of the changes to be applied.  @xref{VC Change Log}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1388
+msgid ""
+"On a centralized version control system like CVS, @kbd{C-x v +} updates the "
+"current VC fileset from the repository."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:1390
+#, no-wrap
+msgid "Merging Branches"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1391
+#, no-wrap
+msgid "merging changes"
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1394
+#, no-wrap
+msgid "C-x v m"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1397
+msgid ""
+"On a decentralized version control system, merge changes from another branch "
+"into the current one."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1400
+msgid ""
+"On a centralized version control system, merge changes from another branch "
+"into the current VC fileset."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1406
+msgid ""
+"While developing a branch, you may sometimes need to @dfn{merge} in changes "
+"that have already been made in another branch.  This is not a trivial "
+"operation, as overlapping changes may have been made to the two branches."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1414
+msgid ""
+"On a decentralized version control system, merging is done with the command "
+"@kbd{C-x v m} (@code{vc-merge}).  On Bazaar, this prompts for the exact "
+"arguments to pass to @command{bzr merge}, offering a sensible default if "
+"possible.  On Git, this prompts for the name of a branch to merge from, with "
+"completion (based on the branch names known to the current repository).  The "
+"output from running the merge command is shown in a separate buffer."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1422
+msgid ""
+"On a centralized version control system like CVS, @kbd{C-x v m} prompts for "
+"a branch ID, or a pair of revision IDs (@pxref{Switching Branches}); then it "
+"finds the changes from that branch, or the changes between the two revisions "
+"you specified, and merges those changes into the current VC fileset.  If you "
+"just type @key{RET}, Emacs simply merges any changes that were made on the "
+"same branch since you checked the file out."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1423
+#, no-wrap
+msgid "conflicts"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1424
+#, no-wrap
+msgid "resolving conflicts"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1435
+msgid ""
+"Immediately after performing a merge, only the working tree is modified, and "
+"you can review the changes produced by the merge with @kbd{C-x v D} and "
+"related commands (@pxref{Old Revisions}).  If the two branches contained "
+"overlapping changes, merging produces a @dfn{conflict}; a warning appears in "
+"the output of the merge command, and @dfn{conflict markers} are inserted "
+"into each affected work file, surrounding the two sets of conflicting "
+"changes.  You must then resolve the conflict by editing the conflicted "
+"files.  Once you are done, the modified files must be committed in the usual "
+"way for the merge to take effect (@pxref{Basic VC Editing})."
+msgstr ""
+
+#. type: subsubsection
+#: maintaining.texi.orig:1437
+#, no-wrap
+msgid "Creating New Branches"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1447
+msgid ""
+"On centralized version control systems like CVS, Emacs supports creating new "
+"branches as part of a commit operation.  When committing a modified VC "
+"fileset, type @kbd{C-u C-x v v} (@code{vc-next-action} with a prefix "
+"argument; @pxref{Advanced C-x v v}).  Then Emacs prompts for a revision ID "
+"for the new revision.  You should specify a suitable branch ID for a branch "
+"starting at the current revision.  For example, if the current revision is "
+"2.5, the branch ID should be 2.5.1, 2.5.2, and so on, depending on the "
+"number of existing branches at that point."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1452
+msgid ""
+"To create a new branch at an older revision (one that is no longer the head "
+"of a branch), first select that revision (@pxref{Switching Branches}).  Your "
+"procedure will then differ depending on whether you are using a locking or "
+"merging-based VCS."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1458
+msgid ""
+"On a locking VCS, you will need to lock the old revision branch with "
+"@kbd{C-x v v}.  You'll be asked to confirm, when you lock the old revision, "
+"that you really mean to create a new branch---if you say no, you'll be "
+"offered a chance to lock the latest revision instead.  On a merging-based "
+"VCS you will skip this step."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1462
+msgid ""
+"Then make your changes and type @kbd{C-x v v} again to commit a new "
+"revision.  This creates a new branch starting from the selected revision."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1466
+msgid ""
+"After the branch is created, subsequent commits create new revisions on that "
+"branch.  To leave the branch, you must explicitly select a different "
+"revision with @kbd{C-u C-x v v}."
+msgstr ""
+
+#. type: include
+#: maintaining.texi.orig:1468
+#, no-wrap
+msgid "vc1-xtra.texi"
+msgstr ""
+
+#. type: section
+#: maintaining.texi.orig:1472
+#, no-wrap
+msgid "Change Logs"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1474
+#, no-wrap
+msgid "change log"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1482
+msgid ""
+"Many software projects keep a @dfn{change log}.  This is a file, normally "
+"named @file{ChangeLog}, containing a chronological record of when and how "
+"the program was changed.  Sometimes, these files are automatically generated "
+"from the change log entries stored in version control systems, or are used "
+"to generate these change log entries.  Sometimes, there are several change "
+"log files, each recording the changes in one directory or directory tree."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:1486 maintaining.texi.orig:1488 maintaining.texi.orig:1489
+#, no-wrap
+msgid "Change Log Commands"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1486
+msgid "Commands for editing change log files."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:1486 maintaining.texi.orig:1553 maintaining.texi.orig:1554
+#, no-wrap
+msgid "Format of ChangeLog"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1486
+msgid "What the change log file looks like."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:1491
+#, no-wrap
+msgid "C-x 4 a"
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:1492
+#, no-wrap
+msgid "add-change-log-entry-other-window"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1499
+msgid ""
+"The Emacs command @kbd{C-x 4 a} adds a new entry to the change log file for "
+"the file you are editing (@code{add-change-log-entry-other-window}).  If "
+"that file is actually a backup file, it makes an entry appropriate for the "
+"file's parent---that is useful for making log entries for functions that "
+"have been deleted in the current version."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1505
+msgid ""
+"@kbd{C-x 4 a} visits the change log file and creates a new entry unless the "
+"most recent entry is for today's date and your name.  It also creates a new "
+"item for the current file.  For many languages, it can even guess the name "
+"of the function or other object that was changed."
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:1506
+#, no-wrap
+msgid "add-log-keep-changes-together"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1510
+msgid ""
+"When the variable @code{add-log-keep-changes-together} is non-@code{nil}, "
+"@kbd{C-x 4 a} adds to any existing item for the file rather than starting a "
+"new item."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1514
+msgid ""
+"You can combine multiple changes of the same nature.  If you don't enter any "
+"text after the initial @kbd{C-x 4 a}, any subsequent @kbd{C-x 4 a} adds "
+"another symbol to the change log entry."
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:1515
+#, no-wrap
+msgid "add-log-always-start-new-record"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1519
+msgid ""
+"If @code{add-log-always-start-new-record} is non-@code{nil}, @kbd{C-x 4 a} "
+"always makes a new entry, even if the last entry was made by you and on the "
+"same date."
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:1520
+#, no-wrap
+msgid "change-log-version-info-enabled"
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:1521
+#, no-wrap
+msgid "change-log-version-number-regexp-list"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1522
+#, no-wrap
+msgid "file version in change log entries"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1528
+msgid ""
+"If the value of the variable @code{change-log-version-info-enabled} is "
+"non-@code{nil}, @kbd{C-x 4 a} adds the file's version number to the change "
+"log entry.  It finds the version number by searching the first ten percent "
+"of the file, using regular expressions from the variable "
+"@code{change-log-version-number-regexp-list}."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1529
+#, no-wrap
+msgid "Change Log mode"
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:1530
+#, no-wrap
+msgid "change-log-mode"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1536
+msgid ""
+"The change log file is visited in Change Log mode.  In this major mode, each "
+"bunch of grouped items counts as one paragraph, and each entry is considered "
+"a page.  This facilitates editing the entries.  @kbd{C-j} and auto-fill "
+"indent each new line like the previous line; this is convenient for entering "
+"the contents of an entry."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1542
+msgid ""
+"You can use the @code{next-error} command (by default bound to @kbd{C-x `}) "
+"to move between entries in the Change Log, when Change Log mode is on.  You "
+"will jump to the actual site in the file that was changed, not just to the "
+"next Change Log entry.  You can also use @code{previous-error} to move back "
+"in the same list."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:1543
+#, no-wrap
+msgid "change-log-merge"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1547
+msgid ""
+"You can use the command @kbd{M-x change-log-merge} to merge other log files "
+"into a buffer in Change Log Mode, preserving the date ordering of entries."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1552
+msgid ""
+"Version control systems are another way to keep track of changes in your "
+"program and keep a change log.  In the VC log buffer, typing @kbd{C-c C-a} "
+"(@code{log-edit-insert-changelog}) inserts the relevant Change Log entry, if "
+"one exists.  @xref{Log Buffer}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1564
+msgid ""
+"A change log entry starts with a header line that contains the current date, "
+"your name (taken from the variable @code{add-log-full-name}), and your email "
+"address (taken from the variable @code{add-log-mailing-address}).  Aside "
+"from these header lines, every line in the change log starts with a space or "
+"a tab.  The bulk of the entry consists of @dfn{items}, each of which starts "
+"with a line starting with whitespace and a star.  Here are two entries, both "
+"dated in May 1993, with two items and one item respectively."
+msgstr ""
+
+#. type: iftex
+#: maintaining.texi.orig:1567
+msgid "@medbreak"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:1570
+#, no-wrap
+msgid ""
+"1993-05-25  Richard Stallman  <rms@@gnu.org>\n"
+"\n"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:1573
+#, no-wrap
+msgid ""
+"        * man.el: Rename symbols `man-*' to `Man-*'.\n"
+"        (manual-entry): Make prompt string clearer.\n"
+"\n"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:1576
+#, no-wrap
+msgid ""
+"        * simple.el (blink-matching-paren-distance):\n"
+"        Change default to 12,000.\n"
+"\n"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:1578
+#, no-wrap
+msgid ""
+"1993-05-24  Richard Stallman  <rms@@gnu.org>\n"
+"\n"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:1581
+#, no-wrap
+msgid ""
+"        * vc.el (minor-mode-map-alist): Don't use it if it's void.\n"
+"        (vc-cancel-version): Doc fix.\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1588
+msgid ""
+"One entry can describe several changes; each change should have its own "
+"item, or its own line in an item.  Normally there should be a blank line "
+"between items.  When items are related (parts of the same change, in "
+"different places), group them by leaving no blank line between them."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1591
+msgid ""
+"You should put a copyright notice and permission notice at the end of the "
+"change log file.  Here is an example:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:1596
+#, no-wrap
+msgid ""
+"Copyright 1997, 1998 Free Software Foundation, Inc.\n"
+"Copying and distribution of this file, with or without modification, are\n"
+"permitted provided the copyright notice and this notice are preserved.\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1600
+msgid "Of course, you should substitute the proper years and copyright holder."
+msgstr ""
+
+#. type: section
+#: maintaining.texi.orig:1602
+#, no-wrap
+msgid "Tags Tables"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1603
+#, no-wrap
+msgid "tags and tag tables"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1611
+msgid ""
+"A @dfn{tag} is a reference to a subunit in a program or in a document.  In "
+"source code, tags reference syntactic elements of the program: functions, "
+"subroutines, data types, macros, etc.  In a document, tags reference "
+"chapters, sections, appendices, etc.  Each tag specifies the name of the "
+"file where the corresponding subunit is defined, and the position of the "
+"subunit's definition in that file."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1620
+msgid ""
+"A @dfn{tags table} records the tags extracted by scanning the source code of "
+"a certain program or a certain document.  Tags extracted from generated "
+"files reference the original files, rather than the generated files that "
+"were scanned during tag extraction.  Examples of generated files include C "
+"files generated from Cweb source files, from a Yacc parser, or from Lex "
+"scanner definitions; @file{.i} preprocessed C files; and Fortran files "
+"produced by preprocessing @file{.fpp} source files."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1621
+#, no-wrap
+msgid "etags"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1627
+msgid ""
+"To produce a tags table, you run the @command{etags} shell command on a "
+"document or the source code file.  The @samp{etags} program writes the tags "
+"to a @dfn{tags table file}, or @dfn{tags file} in short.  The conventional "
+"name for a tags file is @file{TAGS}@.  @xref{Create Tags Table}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1632
+msgid ""
+"Emacs provides many commands for searching and replacing using the "
+"information recorded in tags tables.  For instance, the @kbd{M-.} "
+"(@code{find-tag}) jumps to the location of a specified function definition "
+"in its source file.  @xref{Find Tag}."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1633
+#, no-wrap
+msgid "C++ class browser, tags"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1634
+#, no-wrap
+msgid "tags, C++"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1635
+#, no-wrap
+msgid "class browser, C++"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1636
+#, no-wrap
+msgid "Ebrowse"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1642
+msgid ""
+"The Ebrowse facility is similar to @command{etags} but specifically tailored "
+"for C++.  @xref{Top,, Ebrowse, ebrowse, Ebrowse User's Manual}.  The "
+"Semantic package provides another way to generate and use tags, separate "
+"from the @command{etags} facility.  @xref{Semantic}."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:1651 maintaining.texi.orig:1653
+#, no-wrap
+msgid "Tag Syntax"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1651
+msgid "Tag syntax for various types of code and text files."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:1651 maintaining.texi.orig:1829
+#, no-wrap
+msgid "Create Tags Table"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1651
+msgid "Creating a tags table with @command{etags}."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:1651 maintaining.texi.orig:1932 maintaining.texi.orig:1933
+#, no-wrap
+msgid "Etags Regexps"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1651
+msgid "Create arbitrary tags using regular expressions."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:1651 maintaining.texi.orig:2088
+#, no-wrap
+msgid "Select Tags Table"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1651
+msgid "How to visit a tags table."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:1651 maintaining.texi.orig:2133
+#, no-wrap
+msgid "Find Tag"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1651
+msgid "Commands to find the definition of a specific tag."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:1651 maintaining.texi.orig:2215
+#, no-wrap
+msgid "Tags Search"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1651
+msgid "Using a tags table for searching and replacing."
+msgstr ""
+
+#. type: node
+#: maintaining.texi.orig:1651 maintaining.texi.orig:2292
+#, no-wrap
+msgid "List Tags"
+msgstr ""
+
+#. type: menuentry
+#: maintaining.texi.orig:1651
+msgid "Using tags for completion, and listing them."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:1654
+#, no-wrap
+msgid "Source File Tag Syntax"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1657
+msgid "Here is how tag syntax is defined for the most popular languages:"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1669
+msgid ""
+"In C code, any C function or typedef is a tag, and so are definitions of "
+"@code{struct}, @code{union} and @code{enum}.  @code{#define} macro "
+"definitions, @code{#undef} and @code{enum} constants are also tags, unless "
+"you specify @samp{--no-defines} when making the tags table.  Similarly, "
+"global variables are tags, unless you specify @samp{--no-globals}, and so "
+"are struct members, unless you specify @samp{--no-members}.  Use of "
+"@samp{--no-globals}, @samp{--no-defines} and @samp{--no-members} can make "
+"the tags table file much smaller."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1673
+msgid ""
+"You can tag function declarations and external variables in addition to "
+"function definitions by giving the @samp{--declarations} option to "
+"@command{etags}."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1681
+msgid ""
+"In C++ code, in addition to all the tag constructs of C code, member "
+"functions are also recognized; member variables are also recognized, unless "
+"you use the @samp{--no-members} option.  Tags for variables and functions in "
+"classes are named @samp{@var{class}::@var{variable}} and "
+"@samp{@var{class}::@var{function}}.  @code{operator} definitions have tag "
+"names like @samp{operator+}."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1687
+msgid ""
+"In Java code, tags include all the constructs recognized in C++, plus the "
+"@code{interface}, @code{extends} and @code{implements} constructs.  Tags for "
+"variables and functions in classes are named "
+"@samp{@var{class}.@var{variable}} and @samp{@var{class}.@var{function}}."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1695
+msgid ""
+"In @LaTeX{} documents, the arguments for @code{\\chapter}, @code{\\section}, "
+"@code{\\subsection}, @code{\\subsubsection}, @code{\\eqno}, @code{\\label}, "
+"@code{\\ref}, @code{\\cite}, @code{\\bibitem}, @code{\\part}, "
+"@code{\\appendix}, @code{\\entry}, @code{\\index}, @code{\\def}, "
+"@code{\\newcommand}, @code{\\renewcommand}, @code{\\newenvironment} and "
+"@code{\\renewenvironment} are tags."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1700
+msgid ""
+"Other commands can make tags as well, if you specify them in the environment "
+"variable @env{TEXTAGS} before invoking @command{etags}.  The value of this "
+"environment variable should be a colon-separated list of command names.  For "
+"example,"
+msgstr ""
+
+#. type: example
+#: maintaining.texi.orig:1704
+#, no-wrap
+msgid ""
+"TEXTAGS=\"mycommand:myothercommand\"\n"
+"export TEXTAGS\n"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1709
+msgid ""
+"specifies (using Bourne shell syntax) that the commands @samp{\\mycommand} "
+"and @samp{\\myothercommand} also define tags."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1717
+msgid ""
+"In Lisp code, any function defined with @code{defun}, any variable defined "
+"with @code{defvar} or @code{defconst}, and in general the first argument of "
+"any expression that starts with @samp{(def} in column zero is a tag.  As an "
+"exception, expressions of the form @code{(defvar @var{foo})} are treated as "
+"declarations, and are only tagged if the @samp{--declarations} option is "
+"given."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1722
+msgid ""
+"In Scheme code, tags include anything defined with @code{def} or with a "
+"construct whose name starts with @samp{def}.  They also include variables "
+"set with @code{set!} at top level in the file."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1725
+msgid "Several other languages are also supported:"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1732
+msgid ""
+"In Ada code, functions, procedures, packages, tasks and types are tags.  Use "
+"the @samp{--packages-only} option to create tags for packages only."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1739
+msgid ""
+"In Ada, the same name can be used for different kinds of entity (e.g., for a "
+"procedure and for a function).  Also, for things like packages, procedures "
+"and functions, there is the spec (i.e., the interface) and the body (i.e., "
+"the implementation).  To make it easier to pick the definition you want, Ada "
+"tag name have suffixes indicating the type of entity:"
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1741
+#, no-wrap
+msgid "/b"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1743
+msgid "package body."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1743
+#, no-wrap
+msgid "/f"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1745
+msgid "function."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1745
+#, no-wrap
+msgid "/k"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1747
+msgid "task."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1747
+#, no-wrap
+msgid "/p"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1749
+msgid "procedure."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1749
+#, no-wrap
+msgid "/s"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1751
+msgid "package spec."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1751
+#, no-wrap
+msgid "/t"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1753
+msgid "type."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1759
+msgid ""
+"Thus, @kbd{M-x find-tag @key{RET} bidule/b @key{RET}} will go directly to "
+"the body of the package @code{bidule}, while @kbd{M-x find-tag @key{RET} "
+"bidule @key{RET}} will just search for any tag @code{bidule}."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1763
+msgid ""
+"In assembler code, labels appearing at the start of a line, followed by a "
+"colon, are tags."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1768
+msgid ""
+"In Bison or Yacc input files, each rule defines as a tag the nonterminal it "
+"constructs.  The portions of the file that contain C code are parsed as C "
+"code."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1772
+msgid ""
+"In Cobol code, tags are paragraph names; that is, any word starting in "
+"column 8 and followed by a period."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1776
+msgid ""
+"In Erlang code, the tags are the functions, records and macros defined in "
+"the file."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1779
+msgid "In Fortran code, functions, subroutines and block data are tags."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1784
+msgid ""
+"In HTML input files, the tags are the @code{title} and the @code{h1}, "
+"@code{h2}, @code{h3} headers.  Also, tags are @code{name=} in anchors and "
+"all occurrences of @code{id=}."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1787
+msgid "In Lua input files, all functions are tags."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1791
+msgid ""
+"In makefiles, targets are tags; additionally, variables are tags unless you "
+"specify @samp{--no-globals}."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1797
+msgid ""
+"In Objective C code, tags include Objective C definitions for classes, class "
+"categories, methods and protocols.  Tags for variables and functions in "
+"classes are named @samp{@var{class}::@var{variable}} and "
+"@samp{@var{class}::@var{function}}."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1801
+msgid ""
+"In Pascal code, the tags are the functions and procedures defined in the "
+"file."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1809
+msgid ""
+"In Perl code, the tags are the packages, subroutines and variables defined "
+"by the @code{package}, @code{sub}, @code{use constant}, @code{my}, and "
+"@code{local} keywords.  Use @samp{--globals} if you want to tag global "
+"variables.  Tags for subroutines are named @samp{@var{package}::@var{sub}}.  "
+"The name for subroutines defined in the default package is "
+"@samp{main::@var{sub}}."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1813
+msgid ""
+"In PHP code, tags are functions, classes and defines.  Vars are tags too, "
+"unless you use the @samp{--no-members} option."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1816
+msgid "In PostScript code, the tags are the functions."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1820
+msgid "In Prolog code, tags are predicates and rules at the beginning of line."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:1824
+msgid ""
+"In Python code, @code{def} or @code{class} at the beginning of a line "
+"generate a tag."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1828
+msgid ""
+"You can also generate tags based on regexp matching (@pxref{Etags Regexps}) "
+"to handle other formats and languages."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:1830
+#, no-wrap
+msgid "Creating Tags Tables"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:1831
+#, no-wrap
+msgid "@command{etags} program"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1835
+msgid ""
+"The @command{etags} program is used to create a tags table file.  It knows "
+"the syntax of several languages, as described in"
+msgstr ""
+
+#. type: iftex
+#: maintaining.texi.orig:1837
+msgid "the previous section."
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:1840
+msgid "@ref{Tag Syntax}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1842
+msgid "Here is how to run @command{etags}:"
+msgstr ""
+
+#. type: example
+#: maintaining.texi.orig:1845
+#, no-wrap
+msgid "etags @var{inputfiles}@dots{}\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1853
+msgid ""
+"The @command{etags} program reads the specified files, and writes a tags "
+"table named @file{TAGS} in the current working directory.  You can "
+"optionally specify a different file name for the tags table by using the "
+"@samp{--output=@var{file}} option; specifying @file{-} as a file name prints "
+"the tags table to standard output."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1859
+msgid ""
+"If the specified files don't exist, @command{etags} looks for compressed "
+"versions of them and uncompresses them to read them.  Under MS-DOS, "
+"@command{etags} also looks for file names like @file{mycode.cgz} if it is "
+"given @samp{mycode.c} on the command line and @file{mycode.c} does not "
+"exist."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1868
+msgid ""
+"If the tags table becomes outdated due to changes in the files described in "
+"it, you can update it by running the @command{etags} program again.  If the "
+"tags table does not record a tag, or records it for the wrong file, then "
+"Emacs will not be able to find that definition until you update the tags "
+"table.  But if the position recorded in the tags table becomes a little bit "
+"wrong (due to other editing), Emacs will still be able to find the right "
+"position, with a slight delay."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1873
+msgid ""
+"Thus, there is no need to update the tags table after each edit.  You should "
+"update a tags table when you define new tags that you want to have listed, "
+"or when you move tag definitions from one file to another, or when changes "
+"become substantial."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1878
+msgid ""
+"You can make a tags table @dfn{include} another tags table, by passing the "
+"@samp{--include=@var{file}} option to @command{etags}.  It then covers all "
+"the files covered by the included tags file, as well as its own."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1888
+msgid ""
+"If you specify the source files with relative file names when you run "
+"@command{etags}, the tags file will contain file names relative to the "
+"directory where the tags file was initially written.  This way, you can move "
+"an entire directory tree containing both the tags file and the source files, "
+"and the tags file will still refer correctly to the source files.  If the "
+"tags file is @file{-} or is in the @file{/dev} directory, however, the file "
+"names are made relative to the current working directory.  This is useful, "
+"for example, when writing the tags to @file{/dev/stdout}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1892
+msgid ""
+"When using a relative file name, it should not be a symbolic link pointing "
+"to a tags file in a different directory, because this would generally render "
+"the file names invalid."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1898
+msgid ""
+"If you specify absolute file names as arguments to @command{etags}, then the "
+"tags file will contain absolute file names.  This way, the tags file will "
+"still refer to the same files even if you move it, as long as the source "
+"files remain in the same place.  Absolute file names start with @samp{/}, or "
+"with @samp{@var{device}:/} on MS-DOS and MS-Windows."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1904
+msgid ""
+"When you want to make a tags table from a great number of files, you may "
+"have problems listing them on the command line, because some systems have a "
+"limit on its length.  You can circumvent this limit by telling "
+"@command{etags} to read the file names from its standard input, by typing a "
+"dash in place of the file names, like this:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:1907
+#, no-wrap
+msgid "find . -name \"*.[chCH]\" -print | etags -\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1918
+msgid ""
+"@command{etags} recognizes the language used in an input file based on its "
+"file name and contents.  You can specify the language explicitly with the "
+"@samp{--language=@var{name}} option.  You can intermix these options with "
+"file names; each one applies to the file names that follow it.  Specify "
+"@samp{--language=auto} to tell @command{etags} to resume guessing the "
+"language from the file names and file contents.  Specify "
+"@samp{--language=none} to turn off language-specific processing entirely; "
+"then @command{etags} recognizes tags by regexp matching alone (@pxref{Etags "
+"Regexps})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1924
+msgid ""
+"The option @samp{--parse-stdin=@var{file}} is mostly useful when calling "
+"@command{etags} from programs.  It can be used (only once) in place of a "
+"file name on the command line.  @command{etags} will read from standard "
+"input and mark the produced tags as belonging to the file @var{file}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1931
+msgid ""
+"@samp{etags --help} outputs the list of the languages @command{etags} knows, "
+"and the file name rules for guessing the language.  It also prints a list of "
+"all the available @command{etags} options, together with a short "
+"explanation.  If followed by one or more @samp{--language=@var{lang}} "
+"options, it outputs detailed information about how tags are generated for "
+"@var{lang}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1940
+msgid ""
+"The @samp{--regex} option to @command{etags} allows tags to be recognized by "
+"regular expression matching.  You can intermix this option with file names; "
+"each one applies to the source files that follow it.  If you specify "
+"multiple @samp{--regex} options, all of them are used in parallel.  The "
+"syntax is:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:1943
+#, no-wrap
+msgid "--regex=[@var{@{language@}}]/@var{tagregexp}/[@var{nameregexp}/]@var{modifiers}\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1951
+msgid ""
+"The essential part of the option value is @var{tagregexp}, the regexp for "
+"matching tags.  It is always used anchored, that is, it only matches at the "
+"beginning of a line.  If you want to allow indented tags, use a regexp that "
+"matches initial whitespace; start it with @samp{[ \\t]*}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1957
+msgid ""
+"In these regular expressions, @samp{\\} quotes the next character, and all "
+"the GCC character escape sequences are supported (@samp{\\a} for bell, "
+"@samp{\\b} for back space, @samp{\\d} for delete, @samp{\\e} for escape, "
+"@samp{\\f} for formfeed, @samp{\\n} for newline, @samp{\\r} for carriage "
+"return, @samp{\\t} for tab, and @samp{\\v} for vertical tab)."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1965
+msgid ""
+"Ideally, @var{tagregexp} should not match more characters than are needed to "
+"recognize what you want to tag.  If the syntax requires you to write "
+"@var{tagregexp} so it matches more characters beyond the tag itself, you "
+"should add a @var{nameregexp}, to pick out just the tag.  This will enable "
+"Emacs to find tags more accurately and to do completion on tag names more "
+"reliably.  You can find some examples below."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1970
+msgid ""
+"The @var{modifiers} are a sequence of zero or more characters that modify "
+"the way @command{etags} does the matching.  A regexp with no modifiers is "
+"applied sequentially to each line of the input file, in a case-sensitive "
+"way.  The modifiers and their meanings are:"
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1972
+#, no-wrap
+msgid "i"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1974
+msgid "Ignore case when matching this regexp."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1977
+msgid ""
+"Match this regular expression against the whole file, so that multi-line "
+"matches are possible."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:1977
+#, no-wrap
+msgid "s"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:1980
+msgid ""
+"Match this regular expression against the whole file, and allow @samp{.} in "
+"@var{tagregexp} to match newlines."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:1985
+msgid ""
+"The @samp{-R} option cancels all the regexps defined by preceding "
+"@samp{--regex} options.  It too applies to the file names following it.  "
+"Here's an example:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:1989
+#, no-wrap
+msgid ""
+"etags --regex=/@var{reg1}/i voo.doo --regex=/@var{reg2}/m \\\n"
+"    bar.ber -R --lang=lisp los.er\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2002
+msgid ""
+"Here @command{etags} chooses the parsing language for @file{voo.doo} and "
+"@file{bar.ber} according to their contents.  @command{etags} also uses "
+"@var{reg1} to recognize additional tags in @file{voo.doo}, and both "
+"@var{reg1} and @var{reg2} to recognize additional tags in @file{bar.ber}.  "
+"@var{reg1} is checked against each line of @file{voo.doo} and "
+"@file{bar.ber}, in a case-insensitive way, while @var{reg2} is checked "
+"against the whole @file{bar.ber} file, permitting multi-line matches, in a "
+"case-sensitive way.  @command{etags} uses only the Lisp tags rules, with no "
+"user-specified regexp matching, to recognize tags in @file{los.er}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2010
+msgid ""
+"You can restrict a @samp{--regex} option to match only files of a given "
+"language by using the optional prefix @var{@{language@}}.  (@samp{etags "
+"--help} prints the list of languages recognized by @command{etags}.)  This "
+"is particularly useful when storing many predefined regular expressions for "
+"@command{etags} in a file.  The following example tags the @code{DEFVAR} "
+"macros in the Emacs source files, for the C language only:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:2013
+#, no-wrap
+msgid "--regex='@{c@}/[ \\t]*DEFVAR_[A-Z_ \\t(]+\"\\([^\"]+\\)\"/'\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2020
+msgid ""
+"When you have complex regular expressions, you can store the list of them in "
+"a file.  The following option syntax instructs @command{etags} to read two "
+"files of regular expressions.  The regular expressions contained in the "
+"second file are matched without regard to case."
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:2023
+#, no-wrap
+msgid ""
+"--regex=@@@var{case-sensitive-file} "
+"--ignore-case-regex=@@@var{ignore-case-file}\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2033
+msgid ""
+"A regex file for @command{etags} contains one regular expression per line.  "
+"Empty lines, and lines beginning with space or tab are ignored.  When the "
+"first character in a line is @samp{@@}, @command{etags} assumes that the "
+"rest of the line is the name of another file of regular expressions; thus, "
+"one such file can include another file.  All the other lines are taken to be "
+"regular expressions.  If the first non-whitespace text on the line is "
+"@samp{--}, that line is a comment."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2036
+msgid ""
+"For example, we can create a file called @samp{emacs.tags} with the "
+"following contents:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:2040
+#, no-wrap
+msgid ""
+"        -- This is for GNU Emacs C source files\n"
+"@{c@}/[ \\t]*DEFVAR_[A-Z_ \\t(]+\"\\([^\"]+\\)\"/\\1/\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2044
+msgid "and then use it like this:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:2047
+#, no-wrap
+msgid "etags --regex=@@emacs.tags *.[ch] */*.[ch]\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2051
+msgid ""
+"Here are some more examples.  The regexps are quoted to protect them from "
+"shell interpretation."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:2056
+msgid "Tag Octave files:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:2063
+#, no-wrap
+msgid ""
+"etags --language=none \\\n"
+"      --regex='/[ \\t]*function.*=[ \\t]*\\([^ \\t]*\\)[ \\t]*(/\\1/' \\\n"
+"      --regex='/###key \\(.*\\)/\\1/' \\\n"
+"      --regex='/[ \\t]*global[ \\t].*/' \\\n"
+"      *.m\n"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:2069
+msgid ""
+"Note that tags are not generated for scripts, so that you have to add a line "
+"by yourself of the form @samp{###key @var{scriptname}} if you want to jump "
+"to it."
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:2072
+msgid "Tag Tcl files:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:2075
+#, no-wrap
+msgid "etags --language=none --regex='/proc[ \\t]+\\([^ \\t]+\\)/\\1/' *.tcl\n"
+msgstr ""
+
+#. type: itemize
+#: maintaining.texi.orig:2079
+msgid "Tag VHDL files:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:2085
+#, no-wrap
+msgid ""
+"etags --language=none \\\n"
+"  --regex='/[ \\t]*\\(ARCHITECTURE\\|CONFIGURATION\\) +[^ ]* +OF/' \\\n"
+"  --regex='/[ \\t]*\\(ATTRIBUTE\\|ENTITY\\|FUNCTION\\|PACKAGE\\\n"
+"  \\( BODY\\)?\\|PROCEDURE\\|PROCESS\\|TYPE\\)[ \\t]+\\([^ \\t(]+\\)/\\3/'\n"
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:2089
+#, no-wrap
+msgid "Selecting a Tags Table"
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2091
+#, no-wrap
+msgid "visit-tags-table"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2097
+msgid ""
+"Emacs has at any time one @dfn{selected} tags table.  All the commands for "
+"working with tags tables use the selected one.  To select a tags table, type "
+"@kbd{M-x visit-tags-table}, which reads the tags table file name as an "
+"argument, with @file{TAGS} in the default directory as the default."
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:2098
+#, no-wrap
+msgid "tags-file-name"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2105
+msgid ""
+"Emacs does not actually read in the tags table contents until you try to use "
+"them; all @code{visit-tags-table} does is store the file name in the "
+"variable @code{tags-file-name}, and setting the variable yourself is just as "
+"good.  The variable's initial value is @code{nil}; that value tells all the "
+"commands for working with tags tables that they must ask for a tags table "
+"file name to use."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2112
+msgid ""
+"Using @code{visit-tags-table} when a tags table is already loaded gives you "
+"a choice: you can add the new tags table to the current list of tags tables, "
+"or start a new list.  The tags commands use all the tags tables in the "
+"current list.  If you start a new list, the new tags table is used "
+"@emph{instead} of others.  If you add the new table to the current list, it "
+"is used @emph{as well as} the others."
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:2113
+#, no-wrap
+msgid "tags-table-list"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2116
+msgid ""
+"You can specify a precise list of tags tables by setting the variable "
+"@code{tags-table-list} to a list of strings, like this:"
+msgstr ""
+
+#. type: group
+#: maintaining.texi.orig:2122
+#, no-wrap
+msgid ""
+"(setq tags-table-list\n"
+"      '(\"~/emacs\" \"/usr/local/lib/emacs/src\"))\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2130
+msgid ""
+"This tells the tags commands to look at the @file{TAGS} files in your "
+"@file{~/emacs} directory and in the @file{/usr/local/lib/emacs/src} "
+"directory.  The order depends on which file you are in and which tags table "
+"mentions that file, as explained above."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2132
+msgid "Do not set both @code{tags-file-name} and @code{tags-table-list}."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:2134
+#, no-wrap
+msgid "Finding a Tag"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2138
+msgid ""
+"The most important thing that a tags table enables you to do is to find the "
+"definition of a specific tag."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2140
+#, no-wrap
+msgid "M-.@: @var{tag} @key{RET}"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2142
+msgid "Find first definition of @var{tag} (@code{find-tag})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2142
+#, no-wrap
+msgid "C-u M-."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2144
+msgid "Find next alternate definition of last tag specified."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2144
+#, no-wrap
+msgid "C-u - M-."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2146
+msgid "Go back to previous tag found."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2146
+#, no-wrap
+msgid "C-M-. @var{pattern} @key{RET}"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2148
+msgid "Find a tag whose name matches @var{pattern} (@code{find-tag-regexp})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2148
+#, no-wrap
+msgid "C-u C-M-."
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2150
+msgid "Find the next tag whose name matches the last pattern used."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2150
+#, no-wrap
+msgid "C-x 4 .@: @var{tag} @key{RET}"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2153
+msgid ""
+"Find first definition of @var{tag}, but display it in another window "
+"(@code{find-tag-other-window})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2153
+#, no-wrap
+msgid "C-x 5 .@: @var{tag} @key{RET}"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2156
+msgid ""
+"Find first definition of @var{tag}, and create a new frame to select the "
+"buffer (@code{find-tag-other-frame})."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:2156 maintaining.texi.orig:2197
+#, no-wrap
+msgid "M-*"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2158
+msgid "Pop back to where you previously invoked @kbd{M-.} and friends."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:2160
+#, no-wrap
+msgid "M-."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2161
+#, no-wrap
+msgid "find-tag"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2167
+msgid ""
+"@kbd{M-.}@: (@code{find-tag}) prompts for a tag name and jumps to its source "
+"definition.  It works by searching through the tags table for that tag's "
+"file and approximate character position, visiting that file, and searching "
+"for the tag definition at ever-increasing distances away from the recorded "
+"approximate position."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2173
+msgid ""
+"When entering the tag argument to @kbd{M-.}, the usual minibuffer completion "
+"commands can be used (@pxref{Completion}), with the tag names in the "
+"selected tags table as completion candidates.  If you specify an empty "
+"argument, the balanced expression in the buffer before or around point is "
+"the default argument.  @xref{Expressions}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2181
+msgid ""
+"You don't need to give @kbd{M-.} the full name of the tag; a part will do.  "
+"@kbd{M-.} finds tags which contain that argument as a substring.  However, "
+"it prefers an exact match to a substring match.  To find other tags that "
+"match the same substring, give @code{find-tag} a numeric argument, as in "
+"@kbd{C-u M-.} or @kbd{M-0 M-.}; this does not read a tag name, but continues "
+"searching the tags table's text for another tag containing the same "
+"substring last used."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:2182
+#, no-wrap
+msgid "C-x 4 ."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2183
+#, no-wrap
+msgid "find-tag-other-window"
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:2184
+#, no-wrap
+msgid "C-x 5 ."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2185
+#, no-wrap
+msgid "find-tag-other-frame"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2191
+msgid ""
+"Like most commands that can switch buffers, @code{find-tag} has a variant "
+"that displays the new buffer in another window, and one that makes a new "
+"frame for it.  The former is @w{@kbd{C-x 4 .}} "
+"(@code{find-tag-other-window}), and the latter is @w{@kbd{C-x 5 .}} "
+"(@code{find-tag-other-frame})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2196
+msgid ""
+"To move back to previous tag definitions, use @kbd{C-u - M-.}; more "
+"generally, @kbd{M-.} with a negative numeric argument.  Similarly, "
+"@w{@kbd{C-x 4 .}} with a negative argument finds the previous tag location "
+"in another window."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2198
+#, no-wrap
+msgid "pop-tag-mark"
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:2199
+#, no-wrap
+msgid "find-tag-marker-ring-length"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2205
+msgid ""
+"As well as going back to places you've found tags recently, you can go back "
+"to places @emph{from where} you found them, using @kbd{M-*} "
+"(@code{pop-tag-mark}).  Thus you can find and examine the definition of "
+"something with @kbd{M-.} and then return to where you were with @kbd{M-*}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2208
+msgid ""
+"Both @kbd{C-u - M-.} and @kbd{M-*} allow you to retrace your steps to a "
+"depth determined by the variable @code{find-tag-marker-ring-length}."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2209
+#, no-wrap
+msgid "find-tag-regexp"
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:2210
+#, no-wrap
+msgid "C-M-."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2214
+msgid ""
+"The command @kbd{C-M-.} (@code{find-tag-regexp}) visits the tags that match "
+"a specified regular expression.  It is just like @kbd{M-.} except that it "
+"does regexp matching instead of substring matching."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:2216
+#, no-wrap
+msgid "Searching and Replacing with Tags Tables"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:2217
+#, no-wrap
+msgid "search and replace in multiple files"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:2218
+#, no-wrap
+msgid "multiple-file search and replace"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2227
+msgid ""
+"The commands in this section visit and search all the files listed in the "
+"selected tags table, one by one.  For these commands, the tags table serves "
+"only to specify a sequence of files to search.  These commands scan the list "
+"of tags tables starting with the first tags table (if any) that describes "
+"the current file, proceed from there to the end of the list, and then scan "
+"from the beginning of the list until they have covered all the tables in the "
+"list."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2229
+#, no-wrap
+msgid "M-x tags-search @key{RET} @var{regexp} @key{RET}"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2232
+msgid "Search for @var{regexp} through the files in the selected tags table."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2232
+#, no-wrap
+msgid ""
+"M-x tags-query-replace @key{RET} @var{regexp} @key{RET} @var{replacement} "
+"@key{RET}"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2234
+msgid ""
+"Perform a @code{query-replace-regexp} on each file in the selected tags "
+"table."
+msgstr ""
+
+#. type: kindex
+#: maintaining.texi.orig:2234 maintaining.texi.orig:2246
+#, no-wrap
+msgid "M-,"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2237
+msgid ""
+"Restart one of the commands above, from the current location of point "
+"(@code{tags-loop-continue})."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2239
+#, no-wrap
+msgid "tags-search"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2245
+msgid ""
+"@kbd{M-x tags-search} reads a regexp using the minibuffer, then searches for "
+"matches in all the files in the selected tags table, one file at a time.  It "
+"displays the name of the file being searched so you can follow its "
+"progress.  As soon as it finds an occurrence, @code{tags-search} returns."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2247
+#, no-wrap
+msgid "tags-loop-continue"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2252
+msgid ""
+"Having found one match, you probably want to find all the rest.  Type "
+"@kbd{M-,} (@code{tags-loop-continue}) to resume the @code{tags-search}, "
+"finding one more match.  This searches the rest of the current buffer, "
+"followed by the remaining files of the tags table."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2253
+#, no-wrap
+msgid "tags-query-replace"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2260
+msgid ""
+"@kbd{M-x tags-query-replace} performs a single @code{query-replace-regexp} "
+"through all the files in the tags table.  It reads a regexp to search for "
+"and a string to replace with, just like ordinary @kbd{M-x "
+"query-replace-regexp}.  It searches much like @kbd{M-x tags-search}, but "
+"repeatedly, processing matches according to your input.  @xref{Query "
+"Replace}, for more information on query replace."
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:2261
+#, no-wrap
+msgid "tags-case-fold-search"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:2262
+#, no-wrap
+msgid "case-sensitivity and tags search"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2267
+msgid ""
+"You can control the case-sensitivity of tags search commands by customizing "
+"the value of the variable @code{tags-case-fold-search}.  The default is to "
+"use the same setting as the value of @code{case-fold-search} (@pxref{Search "
+"Case})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2275
+msgid ""
+"It is possible to get through all the files in the tags table with a single "
+"invocation of @kbd{M-x tags-query-replace}.  But often it is useful to exit "
+"temporarily, which you can do with any input event that has no special query "
+"replace meaning.  You can resume the query replace subsequently by typing "
+"@kbd{M-,}; this command resumes the last tags search or replace command that "
+"you did.  For instance, to skip the rest of the current file, you can type "
+"@kbd{M-> M-,}."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2282
+msgid ""
+"The commands in this section carry out much broader searches than the "
+"@code{find-tag} family.  The @code{find-tag} commands search only for "
+"definitions of tags that match your substring or regexp.  The commands "
+"@code{tags-search} and @code{tags-query-replace} find every occurrence of "
+"the regexp, as ordinary search commands and replace commands do in the "
+"current buffer."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2287
+msgid ""
+"These commands create buffers only temporarily for the files that they have "
+"to search (those which are not already visited in Emacs buffers).  Buffers "
+"in which no match is found are quickly killed; the others continue to exist."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2291
+msgid ""
+"As an alternative to @code{tags-search}, you can run @command{grep} as a "
+"subprocess and have Emacs show you the matching lines one by one.  "
+"@xref{Grep Searching}."
+msgstr ""
+
+#. type: subsection
+#: maintaining.texi.orig:2293
+#, no-wrap
+msgid "Tags Table Inquiries"
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2296
+#, no-wrap
+msgid "C-M-i"
+msgstr ""
+
+#. type: itemx
+#: maintaining.texi.orig:2297
+#, no-wrap
+msgid "M-@key{TAB}"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2300
+msgid ""
+"Perform completion on the text around point, using the selected tags table "
+"if one is loaded (@code{completion-at-point})."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2300
+#, no-wrap
+msgid "M-x list-tags @key{RET} @var{file} @key{RET}"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2302
+msgid "Display a list of the tags defined in the program file @var{file}."
+msgstr ""
+
+#. type: item
+#: maintaining.texi.orig:2302
+#, no-wrap
+msgid "M-x tags-apropos @key{RET} @var{regexp} @key{RET}"
+msgstr ""
+
+#. type: table
+#: maintaining.texi.orig:2304
+msgid "Display a list of all tags matching @var{regexp}."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:2306
+#, no-wrap
+msgid "completion (symbol names)"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2311
+msgid ""
+"In most programming language modes, you can type @kbd{C-M-i} or "
+"@kbd{M-@key{TAB}} (@code{completion-at-point}) to complete the symbol at "
+"point.  If there is a selected tags table, this command can use it to "
+"generate completion candidates.  @xref{Symbol Completion}."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2312
+#, no-wrap
+msgid "list-tags"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2317
+msgid ""
+"@kbd{M-x list-tags} reads the name of one of the files covered by the "
+"selected tags table, and displays a list of tags defined in that file.  Do "
+"not include a directory as part of the file name unless the file name "
+"recorded in the tags table includes a directory."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2318
+#, no-wrap
+msgid "tags-apropos"
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:2319
+#, no-wrap
+msgid "tags-apropos-verbose"
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:2320
+#, no-wrap
+msgid "tags-tag-face"
+msgstr ""
+
+#. type: vindex
+#: maintaining.texi.orig:2321
+#, no-wrap
+msgid "tags-apropos-additional-actions"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2331
+msgid ""
+"@kbd{M-x tags-apropos} is like @code{apropos} for tags (@pxref{Apropos}).  "
+"It displays a list of tags in the selected tags table whose entries match "
+"@var{regexp}.  If the variable @code{tags-apropos-verbose} is "
+"non-@code{nil}, it displays the names of the tags files together with the "
+"tag names.  You can customize the appearance of the output by setting the "
+"variable @code{tags-tag-face} to a face.  You can display additional output "
+"by customizing the variable @code{tags-apropos-additional-actions}; see its "
+"documentation for details."
+msgstr ""
+
+#. type: findex
+#: maintaining.texi.orig:2332
+#, no-wrap
+msgid "next-file"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2338
+msgid ""
+"@kbd{M-x next-file} visits files covered by the selected tags table.  The "
+"first time it is called, it visits the first file covered by the table.  "
+"Each subsequent call visits the next covered file, unless a prefix argument "
+"is supplied, in which case it returns to the first file."
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:2340 maintaining.texi.orig:2342
+#, no-wrap
+msgid "Emacs Development Environment"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:2341
+#, no-wrap
+msgid "EDE (Emacs Development Environment)"
+msgstr ""
+
+#. type: cindex
+#: maintaining.texi.orig:2343
+#, no-wrap
+msgid "Integrated development environment"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2349
+msgid ""
+"EDE (@dfn{Emacs Development Environment}) is a package that simplifies the "
+"task of creating, building, and debugging large programs with Emacs.  It "
+"provides some of the features of an IDE, or @dfn{Integrated Development "
+"Environment}, in Emacs."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2351
+msgid "This section provides a brief description of EDE usage."
+msgstr ""
+
+#. type: ifnottex
+#: maintaining.texi.orig:2353
+msgid "For full details, see @ref{Top, EDE,, ede, Emacs Development Environment}."
+msgstr ""
+
+#. type: iftex
+#: maintaining.texi.orig:2357
+msgid "For full details on Ede, type @kbd{C-h i} and then select the EDE manual."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2364
+msgid ""
+"EDE is implemented as a global minor mode (@pxref{Minor Modes}).  To enable "
+"it, type @kbd{M-x global-ede-mode} or click on the @samp{Project Support "
+"(EDE)} item in the @samp{Tools} menu.  You can also enable EDE each time you "
+"start Emacs, by adding the following line to your initialization file:"
+msgstr ""
+
+#. type: smallexample
+#: maintaining.texi.orig:2367
+#, no-wrap
+msgid "(global-ede-mode t)\n"
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2373
+msgid ""
+"Activating EDE adds a menu named @samp{Development} to the menu bar.  Many "
+"EDE commands, including the ones described below, can be invoked from this "
+"menu."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2385
+msgid ""
+"EDE organizes files into @dfn{projects}, which correspond to directory "
+"trees.  The @dfn{project root} is the topmost directory of a project.  To "
+"define a new project, visit a file in the desired project root and type "
+"@kbd{M-x ede-new}.  This command prompts for a @dfn{project type}, which "
+"refers to the underlying method that EDE will use to manage the project "
+"(@pxref{Creating a project, EDE,, ede, Emacs Development Environment}).  The "
+"most common project types are @samp{Make}, which uses Makefiles, and "
+"@samp{Automake}, which uses GNU Automake (@pxref{Top, Automake,, automake, "
+"Automake}).  In both cases, EDE also creates a file named "
+"@file{Project.ede}, which stores information about the project."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2389
+msgid ""
+"A project may contain one or more @dfn{targets}.  A target can be an object "
+"file, executable program, or some other type of file, which is ``built'' "
+"from one or more of the files in the project."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2396
+msgid ""
+"To add a new @dfn{target} to a project, type @kbd{C-c . t} (@code{M-x "
+"ede-new-target}).  This command also asks if you wish to ``add'' the current "
+"file to that target, which means that the target is to be built from that "
+"file.  After you have defined a target, you can add more files to it by "
+"typing @kbd{C-c . a} (@code{ede-add-file})."
+msgstr ""
+
+#. type: Plain text
+#: maintaining.texi.orig:2401
+msgid ""
+"To build a target, type @kbd{C-c . c} (@code{ede-compile-target}).  To build "
+"all the targets in the project, type @kbd{C-c . C} "
+"(@code{ede-compile-project}).  EDE uses the file types to guess how the "
+"target should be built."
+msgstr ""
+
+#. type: include
+#: maintaining.texi.orig:2403
+#, no-wrap
+msgid "emerge-xtra.texi"
+msgstr ""

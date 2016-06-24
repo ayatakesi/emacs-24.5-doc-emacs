@@ -1,0 +1,1083 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: node
+#: mark.texi.orig:5
+#, no-wrap
+msgid "Mark"
+msgstr ""
+
+#. type: chapter
+#: mark.texi.orig:6
+#, no-wrap
+msgid "The Mark and the Region"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:7
+#, no-wrap
+msgid "mark"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:8
+#, no-wrap
+msgid "setting a mark"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:9
+#, no-wrap
+msgid "region"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:18
+msgid ""
+"Many Emacs commands operate on an arbitrary contiguous part of the current "
+"buffer.  To specify the text for such a command to operate on, you set "
+"@dfn{the mark} at one end of it, and move point to the other end.  The text "
+"between point and the mark is called @dfn{the region}.  The region always "
+"extends between point and the mark, no matter which one comes earlier in the "
+"text; each time you move point, the region changes."
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:19
+#, no-wrap
+msgid "active region"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:24
+msgid ""
+"Setting the mark at a position in the text also @dfn{activates} it.  When "
+"the mark is active, we say also that the region is active; Emacs indicates "
+"its extent by highlighting the text within it, using the @code{region} face "
+"(@pxref{Face Customization})."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:30
+msgid ""
+"After certain non-motion commands, including any command that changes the "
+"text in the buffer, Emacs automatically @dfn{deactivates} the mark; this "
+"turns off the highlighting.  You can also explicitly deactivate the mark at "
+"any time, by typing @kbd{C-g} (@pxref{Quitting})."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:35
+msgid ""
+"The above default behavior is known as Transient Mark mode.  Disabling "
+"Transient Mark mode switches Emacs to an alternative behavior, in which the "
+"region is usually not highlighted.  @xref{Disabled Transient Mark}."
+msgstr ""
+
+#. type: vindex
+#: mark.texi.orig:36
+#, no-wrap
+msgid "highlight-nonselected-windows"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:45
+msgid ""
+"Setting the mark in one buffer has no effect on the marks in other buffers.  "
+"When you return to a buffer with an active mark, the mark is at the same "
+"place as before.  When multiple windows show the same buffer, they can have "
+"different values of point, and thus different regions, but they all share "
+"one common mark position.  @xref{Windows}.  Ordinarily, only the selected "
+"window highlights its region; however, if the variable "
+"@code{highlight-nonselected-windows} is non-@code{nil}, each window "
+"highlights its own region."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:48
+msgid ""
+"There is another kind of region: the ``rectangular region''.  "
+"@xref{Rectangles}."
+msgstr ""
+
+#. type: node
+#: mark.texi.orig:57 mark.texi.orig:59
+#, no-wrap
+msgid "Setting Mark"
+msgstr ""
+
+#. type: menuentry
+#: mark.texi.orig:57
+msgid "Commands to set the mark."
+msgstr ""
+
+#. type: node
+#: mark.texi.orig:57 mark.texi.orig:156
+#, no-wrap
+msgid "Marking Objects"
+msgstr ""
+
+#. type: menuentry
+#: mark.texi.orig:57
+msgid "Commands to put region around textual units."
+msgstr ""
+
+#. type: node
+#: mark.texi.orig:57 mark.texi.orig:220
+#, no-wrap
+msgid "Using Region"
+msgstr ""
+
+#. type: menuentry
+#: mark.texi.orig:57
+msgid "Summary of ways to operate on contents of the region."
+msgstr ""
+
+#. type: node
+#: mark.texi.orig:57 mark.texi.orig:294
+#, no-wrap
+msgid "Mark Ring"
+msgstr ""
+
+#. type: menuentry
+#: mark.texi.orig:57
+msgid "Previous mark positions saved so you can go back there."
+msgstr ""
+
+#. type: node
+#: mark.texi.orig:57 mark.texi.orig:353
+#, no-wrap
+msgid "Global Mark Ring"
+msgstr ""
+
+#. type: menuentry
+#: mark.texi.orig:57
+msgid "Previous mark positions in various buffers."
+msgstr ""
+
+#. type: section
+#: mark.texi.orig:57 mark.texi.orig:374 mark.texi.orig:375
+#, no-wrap
+msgid "Shift Selection"
+msgstr ""
+
+#. type: menuentry
+#: mark.texi.orig:57
+msgid "Using shifted cursor motion keys."
+msgstr ""
+
+#. type: node
+#: mark.texi.orig:57 mark.texi.orig:408
+#, no-wrap
+msgid "Disabled Transient Mark"
+msgstr ""
+
+#. type: menuentry
+#: mark.texi.orig:57
+msgid "Leaving regions unhighlighted by default."
+msgstr ""
+
+#. type: section
+#: mark.texi.orig:60
+#, no-wrap
+msgid "Setting the Mark"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:63
+msgid "Here are some commands for setting the mark:"
+msgstr ""
+
+#. type: item
+#: mark.texi.orig:65
+#, no-wrap
+msgid "C-@key{SPC}"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:67
+msgid "Set the mark at point, and activate it (@code{set-mark-command})."
+msgstr ""
+
+#. type: kindex
+#: mark.texi.orig:67 mark.texi.orig:83
+#, no-wrap
+msgid "C-@@"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:69
+msgid "The same."
+msgstr ""
+
+#. type: kindex
+#: mark.texi.orig:69 mark.texi.orig:112
+#, no-wrap
+msgid "C-x C-x"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:72
+msgid ""
+"Set the mark at point, and activate it; then move point where the mark used "
+"to be (@code{exchange-point-and-mark})."
+msgstr ""
+
+#. type: item
+#: mark.texi.orig:72
+#, no-wrap
+msgid "Drag-Mouse-1"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:74
+msgid "Set point and the mark around the text you drag across."
+msgstr ""
+
+#. type: item
+#: mark.texi.orig:74
+#, no-wrap
+msgid "Mouse-3"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:77
+msgid ""
+"Set the mark at point, then move point to where you click "
+"(@code{mouse-save-then-kill})."
+msgstr ""
+
+#. type: samp{#1}
+#: mark.texi.orig:77
+#, no-wrap
+msgid "Shifted cursor motion keys"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:80
+msgid ""
+"Set the mark at point if the mark is inactive, then move point.  @xref{Shift "
+"Selection}."
+msgstr ""
+
+#. type: kindex
+#: mark.texi.orig:82
+#, no-wrap
+msgid "C-SPC"
+msgstr ""
+
+#. type: findex
+#: mark.texi.orig:84
+#, no-wrap
+msgid "set-mark-command"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:94
+msgid ""
+"The most common way to set the mark is with @kbd{C-@key{SPC}} "
+"(@code{set-mark-command})@footnote{There is no @kbd{C-@key{SPC}} character "
+"in @acronym{ASCII}; usually, typing @kbd{C-@key{SPC}} on a text terminal "
+"gives the character @kbd{C-@@}.  This key is also bound to "
+"@code{set-mark-command}, so unless you are unlucky enough to have a text "
+"terminal that behaves differently, you might as well think of @kbd{C-@@} as "
+"@kbd{C-@key{SPC}}.}.  This sets the mark where point is, and activates it.  "
+"You can then move point away, leaving the mark behind."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:101
+msgid ""
+"For example, suppose you wish to convert part of the buffer to upper case.  "
+"To accomplish this, go to one end of the desired text, type "
+"@kbd{C-@key{SPC}}, and move point until the desired portion of text is "
+"highlighted.  Now type @kbd{C-x C-u} (@code{upcase-region}).  This converts "
+"the text in the region to upper case, and then deactivates the mark."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:106
+msgid ""
+"Whenever the mark is active, you can deactivate it by typing @kbd{C-g} "
+"(@pxref{Quitting}).  Most commands that operate on the region also "
+"automatically deactivate the mark, like @kbd{C-x C-u} in the above example."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:111
+msgid ""
+"Instead of setting the mark in order to operate on a region, you can also "
+"use it to ``remember'' a position in the buffer (by typing @kbd{C-@key{SPC} "
+"C-@key{SPC}}), and later jump back there (by typing @kbd{C-u C-@key{SPC}}).  "
+"@xref{Mark Ring}, for details."
+msgstr ""
+
+#. type: findex
+#: mark.texi.orig:113
+#, no-wrap
+msgid "exchange-point-and-mark"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:125
+msgid ""
+"The command @kbd{C-x C-x} (@code{exchange-point-and-mark}) exchanges the "
+"positions of point and the mark.  @kbd{C-x C-x} is useful when you are "
+"satisfied with the position of point but want to move the other end of the "
+"region (where the mark is).  Using @kbd{C-x C-x} a second time, if "
+"necessary, puts the mark at the new position with point back at its original "
+"position.  Normally, if the mark is inactive, this command first reactivates "
+"the mark wherever it was last set, to ensure that the region is left "
+"highlighted.  However, if you call it with a prefix argument, it leaves the "
+"mark inactive and the region unhighlighted; you can use this to jump to the "
+"mark in a manner similar to @kbd{C-u C-@key{SPC}}."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:133
+msgid ""
+"You can also set the mark with the mouse.  If you press the left mouse "
+"button (@kbd{down-mouse-1}) and drag the mouse across a range of text, this "
+"sets the mark where you first pressed the mouse button and puts point where "
+"you release it.  Alternatively, clicking the right mouse button "
+"(@kbd{mouse-3}) sets the mark at point and then moves point to where you "
+"clicked.  @xref{Mouse Commands}, for a more detailed description of these "
+"mouse commands."
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:134 mark.texi.orig:376
+#, no-wrap
+msgid "shift-selection"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:143
+msgid ""
+"Finally, you can set the mark by holding down the shift key while typing "
+"certain cursor motion commands (such as @kbd{S-@key{RIGHT}}, @kbd{S-C-f}, "
+"@kbd{S-C-n}, etc.).  This is called @dfn{shift-selection}.  It sets the mark "
+"at point before moving point, but only if there is no active mark set via "
+"shift-selection.  The mark set by mouse commands and by shift-selection "
+"behaves slightly differently from the usual mark: any subsequent unshifted "
+"cursor motion command deactivates it automatically.  For details, "
+"@xref{Shift Selection}."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:149
+msgid ""
+"Many commands that insert text, such as @kbd{C-y} (@code{yank}), set the "
+"mark at the other end of the inserted text, without activating it.  This "
+"lets you easily return to that position (@pxref{Mark Ring}).  You can tell "
+"that a command does this when it shows @samp{Mark set} in the echo area."
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:150
+#, no-wrap
+msgid "primary selection"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:155
+msgid ""
+"Under X, every time the active region changes, Emacs saves the text in the "
+"region to the @dfn{primary selection}.  This lets you insert that text into "
+"other X applications with @kbd{mouse-2} clicks.  @xref{Primary Selection}."
+msgstr ""
+
+#. type: section
+#: mark.texi.orig:157
+#, no-wrap
+msgid "Commands to Mark Textual Objects"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:159
+#, no-wrap
+msgid "marking sections of text"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:162
+msgid ""
+"Here are commands for placing point and the mark around a textual object "
+"such as a word, list, paragraph or page:"
+msgstr ""
+
+#. type: kindex
+#: mark.texi.orig:164 mark.texi.orig:184
+#, no-wrap
+msgid "M-@@"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:167
+msgid ""
+"Set mark after end of next word (@code{mark-word}).  This does not move "
+"point."
+msgstr ""
+
+#. type: kindex
+#: mark.texi.orig:167 mark.texi.orig:197
+#, no-wrap
+msgid "C-M-@@"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:170
+msgid ""
+"Set mark after end of following balanced expression (@code{mark-sexp}).  "
+"This does not move point."
+msgstr ""
+
+#. type: item
+#: mark.texi.orig:170
+#, no-wrap
+msgid "M-h"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:173
+msgid ""
+"Move point to the beginning of the current paragraph, and set mark at the "
+"end (@code{mark-paragraph})."
+msgstr ""
+
+#. type: item
+#: mark.texi.orig:173
+#, no-wrap
+msgid "C-M-h"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:176
+msgid ""
+"Move point to the beginning of the current defun, and set mark at the end "
+"(@code{mark-defun})."
+msgstr ""
+
+#. type: item
+#: mark.texi.orig:176
+#, no-wrap
+msgid "C-x C-p"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:179
+msgid ""
+"Move point to the beginning of the current page, and set mark at the end "
+"(@code{mark-page})."
+msgstr ""
+
+#. type: kindex
+#: mark.texi.orig:179 mark.texi.orig:214
+#, no-wrap
+msgid "C-x h"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:182
+msgid ""
+"Move point to the beginning of the buffer, and set mark at the end "
+"(@code{mark-whole-buffer})."
+msgstr ""
+
+#. type: findex
+#: mark.texi.orig:185
+#, no-wrap
+msgid "mark-word"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:192
+msgid ""
+"@kbd{M-@@} (@code{mark-word}) sets the mark at the end of the next word "
+"(@pxref{Words}, for information about words).  Repeated invocations of this "
+"command extend the region by advancing the mark one word at a time.  As an "
+"exception, if the mark is active and located before point, @kbd{M-@@} moves "
+"the mark backwards from its current position one word at a time."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:196
+msgid ""
+"This command also accepts a numeric argument @var{n}, which tells it to "
+"advance the mark by @var{n} words.  A negative argument moves the mark back "
+"by @var{n} words."
+msgstr ""
+
+#. type: findex
+#: mark.texi.orig:198
+#, no-wrap
+msgid "mark-sexp"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:204
+msgid ""
+"Similarly, @kbd{C-M-@@} (@code{mark-sexp}) puts the mark at the end of the "
+"next balanced expression (@pxref{Expressions}).  Repeated invocations extend "
+"the region to subsequent expressions, while positive or negative numeric "
+"arguments move the mark forward or backward by the specified number of "
+"expressions."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:213
+msgid ""
+"The other commands in the above list set both point and mark, so as to "
+"delimit an object in the buffer.  @kbd{M-h} (@code{mark-paragraph})  marks "
+"paragraphs (@pxref{Paragraphs}), @kbd{C-M-h} (@code{mark-defun})  marks "
+"top-level definitions (@pxref{Moving by Defuns}), and @kbd{C-x C-p} "
+"(@code{mark-page}) marks pages (@pxref{Pages}).  Repeated invocations again "
+"play the same role, extending the region to consecutive objects; similarly, "
+"numeric arguments specify how many objects to move the mark by."
+msgstr ""
+
+#. type: findex
+#: mark.texi.orig:215
+#, no-wrap
+msgid "mark-whole-buffer"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:216
+#, no-wrap
+msgid "select all"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:219
+msgid ""
+"@kbd{C-x h} (@code{mark-whole-buffer}) sets up the entire buffer as the "
+"region, by putting point at the beginning and the mark at the end."
+msgstr ""
+
+#. type: section
+#: mark.texi.orig:221
+#, no-wrap
+msgid "Operating on the Region"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:223
+#, no-wrap
+msgid "operations on a marked region"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:226
+msgid "Once you have a region, here are some of the ways you can operate on it:"
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:230
+msgid "Kill it with @kbd{C-w} (@pxref{Killing})."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:232
+msgid "Copy it to the kill ring with @kbd{M-w} (@pxref{Yanking})."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:234
+msgid "Convert case with @kbd{C-x C-l} or @kbd{C-x C-u} (@pxref{Case})."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:236
+msgid "Undo changes within it using @kbd{C-u C-/} (@pxref{Undo})."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:238
+msgid "Replace text within it using @kbd{M-%} (@pxref{Query Replace})."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:240
+msgid "Indent it with @kbd{C-x @key{TAB}} or @kbd{C-M-\\} (@pxref{Indentation})."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:242
+msgid "Fill it as text with @kbd{M-x fill-region} (@pxref{Filling})."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:244
+msgid "Check the spelling of words within it with @kbd{M-$} (@pxref{Spelling})."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:246
+msgid "Evaluate it as Lisp code with @kbd{M-x eval-region} (@pxref{Lisp Eval})."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:248
+msgid "Save it in a register with @kbd{C-x r s} (@pxref{Registers})."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:250
+msgid "Save it in a buffer or a file (@pxref{Accumulating Text})."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:260
+msgid ""
+"Some commands have a default behavior when the mark is inactive, but operate "
+"on the region if the mark is active.  For example, @kbd{M-$} "
+"(@code{ispell-word}) normally checks the spelling of the word at point, but "
+"it checks the text in the region if the mark is active (@pxref{Spelling}).  "
+"Normally, such commands use their default behavior if the region is empty "
+"(i.e., if mark and point are at the same position).  If you want them to "
+"operate on the empty region, change the variable "
+"@code{use-empty-active-region} to @code{t}."
+msgstr ""
+
+#. type: vindex
+#: mark.texi.orig:261
+#, no-wrap
+msgid "delete-active-region"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:272
+msgid ""
+"As described in @ref{Erasing}, the @key{DEL} (@code{backward-delete-char}) "
+"and @key{delete} (@code{delete-forward-char}) commands also act this way.  "
+"If the mark is active, they delete the text in the region.  (As an "
+"exception, if you supply a numeric argument @var{n}, where @var{n} is not "
+"one, these commands delete @var{n} characters regardless of whether the mark "
+"is active).  If you change the variable @code{delete-active-region} to "
+"@code{nil}, then these commands don't act differently when the mark is "
+"active.  If you change the value to @code{kill}, these commands @dfn{kill} "
+"the region instead of deleting it (@pxref{Killing})."
+msgstr ""
+
+#. type: vindex
+#: mark.texi.orig:273
+#, no-wrap
+msgid "mark-even-if-inactive"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:283
+msgid ""
+"Other commands always operate on the region, and have no default behavior.  "
+"Such commands usually have the word @code{region} in their names, like "
+"@kbd{C-w} (@code{kill-region}) and @code{C-x C-u} (@code{upcase-region}).  "
+"If the mark is inactive, they operate on the ``inactive region''---that is, "
+"on the text between point and the position at which the mark was last set "
+"(@pxref{Mark Ring}).  To disable this behavior, change the variable "
+"@code{mark-even-if-inactive} to @code{nil}.  Then these commands will "
+"instead signal an error if the mark is inactive."
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:284
+#, no-wrap
+msgid "Delete Selection mode"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:285
+#, no-wrap
+msgid "mode, Delete Selection"
+msgstr ""
+
+#. type: findex
+#: mark.texi.orig:286
+#, no-wrap
+msgid "delete-selection-mode"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:293
+msgid ""
+"By default, text insertion occurs normally even if the mark is active---for "
+"example, typing @kbd{a} inserts the character @samp{a}, then deactivates the "
+"mark.  If you enable Delete Selection mode, a minor mode, then inserting "
+"text while the mark is active causes the text in the region to be deleted "
+"first.  To toggle Delete Selection mode on or off, type @kbd{M-x "
+"delete-selection-mode}."
+msgstr ""
+
+#. type: section
+#: mark.texi.orig:295
+#, no-wrap
+msgid "The Mark Ring"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:297
+#, no-wrap
+msgid "mark ring"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:302
+msgid ""
+"Each buffer remembers previous locations of the mark, in the @dfn{mark "
+"ring}.  Commands that set the mark also push the old mark onto this ring.  "
+"One of the uses of the mark ring is to remember spots that you may want to "
+"go back to."
+msgstr ""
+
+#. type: kindex
+#: mark.texi.orig:304 mark.texi.orig:448 mark.texi.orig:449
+#, no-wrap
+msgid "C-@key{SPC} C-@key{SPC}"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:306
+msgid "Set the mark, pushing it onto the mark ring, without activating it."
+msgstr ""
+
+#. type: item
+#: mark.texi.orig:306
+#, no-wrap
+msgid "C-u C-@key{SPC}"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:309
+msgid ""
+"Move point to where the mark was, and restore the mark from the ring of "
+"former marks."
+msgstr ""
+
+#. type: kindex
+#: mark.texi.orig:311
+#, no-wrap
+msgid "C-SPC C-SPC"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:321
+msgid ""
+"The command @kbd{C-@key{SPC} C-@key{SPC}} is handy when you want to use the "
+"mark to remember a position to which you may wish to return.  It pushes the "
+"current point onto the mark ring, without activating the mark (which would "
+"cause Emacs to highlight the region).  This is actually two consecutive "
+"invocations of @kbd{C-@key{SPC}} (@code{set-mark-command}); the first "
+"@kbd{C-@key{SPC}} sets the mark, and the second @kbd{C-@key{SPC}} "
+"deactivates it.  (When Transient Mark mode is off, @kbd{C-@key{SPC} "
+"C-@key{SPC}} instead activates Transient Mark mode temporarily; "
+"@pxref{Disabled Transient Mark}.)"
+msgstr ""
+
+#. type: kindex
+#: mark.texi.orig:322
+#, no-wrap
+msgid "C-u C-SPC"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:329
+msgid ""
+"To return to a marked position, use @code{set-mark-command} with a prefix "
+"argument: @kbd{C-u C-@key{SPC}}.  This moves point to where the mark was, "
+"and deactivates the mark if it was active.  Each subsequent @kbd{C-u "
+"C-@key{SPC}} jumps to a prior position stored in the mark ring.  The "
+"positions you move through in this way are not lost; they go to the end of "
+"the ring."
+msgstr ""
+
+#. type: vindex
+#: mark.texi.orig:330
+#, no-wrap
+msgid "set-mark-command-repeat-pop"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:336
+msgid ""
+"If you set @code{set-mark-command-repeat-pop} to non-@code{nil}, then "
+"immediately after you type @kbd{C-u C-@key{SPC}}, you can type "
+"@kbd{C-@key{SPC}} instead of @kbd{C-u C-@key{SPC}} to cycle through the mark "
+"ring.  By default, @code{set-mark-command-repeat-pop} is @code{nil}."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:340
+msgid ""
+"Each buffer has its own mark ring.  All editing commands use the current "
+"buffer's mark ring.  In particular, @kbd{C-u C-@key{SPC}} always stays in "
+"the same buffer."
+msgstr ""
+
+#. type: vindex
+#: mark.texi.orig:341
+#, no-wrap
+msgid "mark-ring-max"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:347
+msgid ""
+"The variable @code{mark-ring-max} specifies the maximum number of entries to "
+"keep in the mark ring.  This defaults to 16 entries.  If that many entries "
+"exist and another one is pushed, the earliest one in the list is discarded.  "
+"Repeating @kbd{C-u C-@key{SPC}} cycles through the positions currently in "
+"the ring."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:352
+msgid ""
+"If you want to move back to the same place over and over, the mark ring may "
+"not be convenient enough.  If so, you can record the position in a register "
+"for later retrieval (@pxref{Position Registers,, Saving Positions in "
+"Registers})."
+msgstr ""
+
+#. type: section
+#: mark.texi.orig:354
+#, no-wrap
+msgid "The Global Mark Ring"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:355
+#, no-wrap
+msgid "global mark ring"
+msgstr ""
+
+#. type: vindex
+#: mark.texi.orig:357
+#, no-wrap
+msgid "global-mark-ring-max"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:366
+msgid ""
+"In addition to the ordinary mark ring that belongs to each buffer, Emacs has "
+"a single @dfn{global mark ring}.  Each time you set a mark, this is recorded "
+"in the global mark ring in addition to the current buffer's own mark ring, "
+"if you have switched buffers since the previous mark setting.  Hence, the "
+"global mark ring records a sequence of buffers that you have been in, and, "
+"for each buffer, a place where you set the mark.  The length of the global "
+"mark ring is controlled by @code{global-mark-ring-max}, and is 16 by "
+"default."
+msgstr ""
+
+#. type: kindex
+#: mark.texi.orig:367
+#, no-wrap
+msgid "C-x C-@key{SPC}"
+msgstr ""
+
+#. type: findex
+#: mark.texi.orig:368
+#, no-wrap
+msgid "pop-global-mark"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:373
+msgid ""
+"The command @kbd{C-x C-@key{SPC}} (@code{pop-global-mark}) jumps to the "
+"buffer and position of the latest entry in the global ring.  It also rotates "
+"the ring, so that successive uses of @kbd{C-x C-@key{SPC}} take you to "
+"earlier buffers and mark positions."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:383
+msgid ""
+"If you hold down the shift key while typing a cursor motion command, this "
+"sets the mark before moving point, so that the region extends from the "
+"original position of point to its new position.  This feature is referred to "
+"as @dfn{shift-selection}.  It is similar to the way text is selected in "
+"other editors."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:391
+msgid ""
+"The mark set via shift-selection behaves a little differently from what we "
+"have described above.  Firstly, in addition to the usual ways of "
+"deactivating the mark (such as changing the buffer text or typing "
+"@kbd{C-g}), the mark is deactivated by any @emph{unshifted} cursor motion "
+"command.  Secondly, any subsequent @emph{shifted} cursor motion command "
+"avoids setting the mark anew.  Therefore, a series of shifted cursor motion "
+"commands will continuously adjust the region."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:397
+msgid ""
+"Shift-selection only works if the shifted cursor motion key is not already "
+"bound to a separate command (@pxref{Customization}).  For example, if you "
+"bind @kbd{S-C-f} to another command, typing @kbd{S-C-f} runs that command "
+"instead of performing a shift-selected version of @kbd{C-f} "
+"(@code{forward-char})."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:403
+msgid ""
+"A mark set via mouse commands behaves the same as a mark set via "
+"shift-selection (@pxref{Setting Mark}).  For example, if you specify a "
+"region by dragging the mouse, you can continue to extend the region using "
+"shifted cursor motion commands.  In either case, any unshifted cursor motion "
+"command deactivates the mark."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:407
+msgid ""
+"To turn off shift-selection, set @code{shift-select-mode} to @code{nil}.  "
+"Doing so does not disable setting the mark via mouse commands."
+msgstr ""
+
+#. type: section
+#: mark.texi.orig:409
+#, no-wrap
+msgid "Disabling Transient Mark Mode"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:410
+#, no-wrap
+msgid "mode, Transient Mark"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:411
+#, no-wrap
+msgid "Transient Mark mode"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:412
+#, no-wrap
+msgid "highlighting region"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:413
+#, no-wrap
+msgid "region highlighting"
+msgstr ""
+
+#. type: cindex
+#: mark.texi.orig:414
+#, no-wrap
+msgid "Zmacs mode"
+msgstr ""
+
+#. type: findex
+#: mark.texi.orig:415
+#, no-wrap
+msgid "transient-mark-mode"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:423
+msgid ""
+"The default behavior of the mark and region, in which setting the mark "
+"activates it and highlights the region, is called Transient Mark mode.  This "
+"is a minor mode that is enabled by default.  It can be toggled with @kbd{M-x "
+"transient-mark-mode}, or with the @samp{Active Region Highlighting} menu "
+"item in the @samp{Options} menu.  Turning it off switches Emacs to an "
+"alternative mode of operation:"
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:429
+msgid ""
+"Setting the mark, with commands like @kbd{C-@key{SPC}} or @kbd{C-x C-x}, "
+"does not highlight the region.  Therefore, you can't tell by looking where "
+"the mark is located; you have to remember."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:434
+msgid ""
+"The usual solution to this problem is to set the mark and then use it soon, "
+"before you forget where it is.  You can also check where the mark is by "
+"using @kbd{C-x C-x}, which exchanges the positions of the point and the mark "
+"(@pxref{Setting Mark})."
+msgstr ""
+
+#. type: itemize
+#: mark.texi.orig:442
+msgid ""
+"Some commands, which ordinarily act on the region when the mark is active, "
+"no longer do so.  For example, normally @kbd{M-%} (@code{query-replace}) "
+"performs replacements within the region, if the mark is active.  When "
+"Transient Mark mode is off, it always operates from point to the end of the "
+"buffer.  Commands that act this way are identified in their own "
+"documentation."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:446
+msgid ""
+"While Transient Mark mode is off, you can activate it temporarily using "
+"@kbd{C-@key{SPC} C-@key{SPC}} or @kbd{C-u C-x C-x}."
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:454
+msgid ""
+"Set the mark at point (like plain @kbd{C-@key{SPC}}) and enable Transient "
+"Mark mode just once, until the mark is deactivated.  (This is not really a "
+"separate command; you are using the @kbd{C-@key{SPC}} command twice.)"
+msgstr ""
+
+#. type: kindex
+#: mark.texi.orig:455 mark.texi.orig:456
+#, no-wrap
+msgid "C-u C-x C-x"
+msgstr ""
+
+#. type: table
+#: mark.texi.orig:461
+msgid ""
+"Exchange point and mark, activate the mark and enable Transient Mark mode "
+"temporarily, until the mark is next deactivated.  (This is the @kbd{C-x C-x} "
+"command, @code{exchange-point-and-mark}, with a prefix argument.)"
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:468
+msgid ""
+"These commands set or activate the mark, and enable Transient Mark mode only "
+"until the mark is deactivated.  One reason you may want to use them is that "
+"some commands operate on the entire buffer instead of the region when "
+"Transient Mark mode is off.  Enabling Transient Mark mode momentarily gives "
+"you a way to use these commands on the region."
+msgstr ""
+
+#. type: Plain text
+#: mark.texi.orig:471
+msgid ""
+"When you specify a region with the mouse (@pxref{Setting Mark}), or with "
+"shift-selection (@pxref{Shift Selection}), this likewise activates Transient "
+"Mark mode temporarily and highlights the region."
+msgstr ""

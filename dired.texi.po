@@ -1,0 +1,4185 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: cindex
+#: dired.texi.orig:5 dired.texi.orig:9
+#, no-wrap
+msgid "Dired"
+msgstr ""
+
+#. type: chapter
+#: dired.texi.orig:6
+#, no-wrap
+msgid "Dired, the Directory Editor"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:10
+#, no-wrap
+msgid "file management"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:16
+msgid ""
+"Dired makes an Emacs buffer containing a listing of a directory, and "
+"optionally some of its subdirectories as well.  You can use the normal Emacs "
+"commands to move around in this buffer, and special Dired commands to "
+"operate on the listed files."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:24
+msgid ""
+"The Dired buffer is ``read-only'', and inserting text in it is not allowed.  "
+"Ordinary printing characters such as @kbd{d} and @kbd{x} are redefined for "
+"special Dired commands.  Some Dired commands @dfn{mark} or @dfn{flag} the "
+"@dfn{current file} (that is, the file on the current line); other commands "
+"operate on the marked files or on the flagged files.  You first mark certain "
+"files in order to operate on all of them with one command."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:27
+msgid ""
+"The Dired-X package provides various extra features for Dired mode.  "
+"@xref{Top, Dired-X,,dired-x, Dired Extra User's Manual}."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:31
+msgid ""
+"You can also view a list of files in a directory with @kbd{C-x C-d} "
+"(@code{list-directory}).  Unlike Dired, this command does not allow you to "
+"operate on the listed files.  @xref{Directories}."
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Enter: Dired Enter"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "How to invoke Dired."
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Navigation: Dired Navigation"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Special motion commands in the Dired buffer."
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Deletion: Dired Deletion"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Deleting files with Dired."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:45 dired.texi.orig:234
+#, no-wrap
+msgid "Flagging Many Files"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Flagging files based on their names."
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Visit: Dired Visiting"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Other file operations through Dired."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:45 dired.texi.orig:378
+#, no-wrap
+msgid "Marks vs Flags"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Flagging for deletion vs marking."
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:45 dired.texi.orig:572 dired.texi.orig:573
+#, no-wrap
+msgid "Operating on Files"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid ""
+"How to copy, rename, print, compress, etc.  either one file or several "
+"files."
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:45 dired.texi.orig:794 dired.texi.orig:795
+#, no-wrap
+msgid "Shell Commands in Dired"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Running a shell command on the marked files."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:45 dired.texi.orig:870
+#, no-wrap
+msgid "Transforming File Names"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Using patterns to rename multiple files."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:45 dired.texi.orig:956
+#, no-wrap
+msgid "Comparison in Dired"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Running @code{diff} by way of Dired."
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:45 dired.texi.orig:975 dired.texi.orig:976
+#, no-wrap
+msgid "Subdirectories in Dired"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:45
+msgid "Adding subdirectories to the Dired buffer."
+msgstr ""
+
+#. type: ifnottex
+#: dired.texi.orig:47
+msgid "* Subdir Switches:: Subdirectory switches in Dired."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:55 dired.texi.orig:1027
+#, no-wrap
+msgid "Subdirectory Motion"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:55
+msgid "Moving across subdirectories, and up and down."
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:55 dired.texi.orig:1078 dired.texi.orig:1079
+#, no-wrap
+msgid "Hiding Subdirectories"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:55
+msgid "Making subdirectories visible or invisible."
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:55
+msgid "Updating: Dired Updating"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:55
+msgid "Discarding lines for files of no interest."
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:55
+msgid "Find: Dired and Find"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:55
+msgid "Using @code{find} to choose the files for Dired."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:55 dired.texi.orig:1258
+#, no-wrap
+msgid "Wdired"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:55
+msgid "Operating on files by editing the Dired buffer."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:55 dired.texi.orig:1291
+#, no-wrap
+msgid "Image-Dired"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:55
+msgid "Viewing image thumbnails in Dired."
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:55
+msgid "Misc: Misc Dired Features"
+msgstr ""
+
+#. type: menuentry
+#: dired.texi.orig:55
+msgid "Various other features."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:57
+#, no-wrap
+msgid "Dired Enter"
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:58
+#, no-wrap
+msgid "Entering Dired"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:60
+#, no-wrap
+msgid "dired"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:61
+#, no-wrap
+msgid "C-x d"
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:62
+#, no-wrap
+msgid "dired-listing-switches"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:71
+msgid ""
+"To invoke Dired, type @kbd{C-x d} (@code{dired}).  This reads a directory "
+"name using the minibuffer, and opens a @dfn{Dired buffer} listing the files "
+"in that directory.  You can also supply a wildcard file name pattern as the "
+"minibuffer argument, in which case the Dired buffer lists all files matching "
+"that pattern.  The usual history and completion commands can be used in the "
+"minibuffer; in particular, @kbd{M-n} puts the name of the visited file (if "
+"any) in the minibuffer (@pxref{Minibuffer History})."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:74
+msgid ""
+"You can also invoke Dired by giving @kbd{C-x C-f} (@code{find-file})  a "
+"directory name."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:84
+msgid ""
+"The variable @code{dired-listing-switches} specifies the options to give to "
+"@command{ls} for listing the directory; this string @emph{must} contain "
+"@samp{-l}.  If you use a prefix argument with the @code{dired} command, you "
+"can specify the @command{ls} switches with the minibuffer before you enter "
+"the directory specification.  No matter how they are specified, the "
+"@command{ls} switches can include short options (that is, single characters) "
+"requiring no arguments, and long options (starting with @samp{--}) whose "
+"arguments are specified with @samp{=}."
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:85
+#, no-wrap
+msgid "dired-use-ls-dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:98
+msgid ""
+"If your @command{ls} program supports the @samp{--dired} option, Dired "
+"automatically passes it that option; this causes @command{ls} to emit "
+"special escape sequences for certain unusual file names, without which Dired "
+"will not be able to parse those names.  The first time you run Dired in an "
+"Emacs session, it checks whether @command{ls} supports the @samp{--dired} "
+"option by calling it once with that option.  If the exit code is 0, Dired "
+"will subsequently use the @samp{--dired} option; otherwise it will not.  You "
+"can inhibit this check by customizing the variable "
+"@code{dired-use-ls-dired}.  The value @code{unspecified} (the default) means "
+"to perform the check; any other non-@code{nil} value means to use the "
+"@samp{--dired} option; and @code{nil} means not to use the @samp{--dired} "
+"option."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:101
+msgid ""
+"On MS-Windows and MS-DOS systems, Emacs emulates @command{ls}.  @xref{ls in "
+"Lisp}, for options and peculiarities of this emulation."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:102
+#, no-wrap
+msgid "dired-other-window"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:103
+#, no-wrap
+msgid "C-x 4 d"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:104
+#, no-wrap
+msgid "dired-other-frame"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:105
+#, no-wrap
+msgid "C-x 5 d"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:110
+msgid ""
+"To display the Dired buffer in another window, use @kbd{C-x 4 d} "
+"(@code{dired-other-window}).  @kbd{C-x 5 d} (@code{dired-other-frame}) "
+"displays the Dired buffer in a separate frame."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:111
+#, no-wrap
+msgid "q @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:112
+#, no-wrap
+msgid "quit-window"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:115
+msgid ""
+"Typing @kbd{q} (@code{quit-window}) buries the Dired buffer, and deletes its "
+"window if the window was created just for that buffer."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:116
+#, no-wrap
+msgid "Dired Navigation"
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:117
+#, no-wrap
+msgid "Navigation in the Dired Buffer"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:119
+#, no-wrap
+msgid "C-n @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:120
+#, no-wrap
+msgid "C-p @r{(Dired)}"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:125
+msgid ""
+"All the usual Emacs cursor motion commands are available in Dired buffers.  "
+"The keys @kbd{C-n} and @kbd{C-p} are redefined to put the cursor at the "
+"beginning of the file name on the line, rather than at the beginning of the "
+"line."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:126
+#, no-wrap
+msgid "SPC @r{(Dired)}"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:132
+msgid ""
+"For extra convenience, @key{SPC} and @kbd{n} in Dired are equivalent to "
+"@kbd{C-n}.  @kbd{p} is equivalent to @kbd{C-p}.  (Moving by lines is so "
+"common in Dired that it deserves to be easy to type.)  @key{DEL} (move up "
+"and unflag) is also often useful simply for moving up (@pxref{Dired "
+"Deletion})."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:133
+#, no-wrap
+msgid "dired-goto-file"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:134
+#, no-wrap
+msgid "j @r{(Dired)}"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:138
+msgid ""
+"@kbd{j} (@code{dired-goto-file}) prompts for a file name using the "
+"minibuffer, and moves point to the line in the Dired buffer describing that "
+"file."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:139
+#, no-wrap
+msgid "searching Dired buffers"
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:140 dired.texi.orig:141
+#, no-wrap
+msgid "dired-isearch-filenames"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:142
+#, no-wrap
+msgid "dired-isearch-filenames-regexp"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:143
+#, no-wrap
+msgid "M-s f C-s @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:144
+#, no-wrap
+msgid "M-s f M-C-s @r{(Dired)}"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:156
+msgid ""
+"@kbd{M-s f C-s} (@code{dired-isearch-filenames}) performs a forward "
+"incremental search in the Dired buffer, looking for matches only amongst the "
+"file names and ignoring the rest of the text in the buffer.  @kbd{M-s f "
+"M-C-s} (@code{dired-isearch-filenames-regexp})  does the same, using a "
+"regular expression search.  If you change the variable "
+"@code{dired-isearch-filenames} to @code{t}, then the usual search commands "
+"also limit themselves to the file names; for instance, @kbd{C-s} behaves "
+"like @kbd{M-s f C-s}.  If the value is @code{dwim}, then search commands "
+"match the file names only when point was on a file name initially.  "
+"@xref{Search}, for information about incremental search."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:159
+msgid ""
+"Some additional navigation commands are available when the Dired buffer "
+"includes several directories.  @xref{Subdirectory Motion}."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:160
+#, no-wrap
+msgid "Dired Deletion"
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:161
+#, no-wrap
+msgid "Deleting Files with Dired"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:162
+#, no-wrap
+msgid "flagging files (in Dired)"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:163
+#, no-wrap
+msgid "deleting files (in Dired)"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:167
+msgid ""
+"One of the most frequent uses of Dired is to first @dfn{flag} files for "
+"deletion, then delete the files that were flagged."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:169
+#, no-wrap
+msgid "d"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:171
+msgid "Flag this file for deletion (@code{dired-flag-file-deletion})."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:171 dired.texi.orig:433
+#, no-wrap
+msgid "u"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:173
+msgid "Remove the deletion flag (@code{dired-unmark})."
+msgstr ""
+
+#. type: key{#1}
+#: dired.texi.orig:173 dired.texi.orig:444
+#, no-wrap
+msgid "DEL"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:176
+msgid ""
+"Move point to previous line and remove the deletion flag on that line "
+"(@code{dired-unmark-backward})."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:176
+#, no-wrap
+msgid "x"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:178
+msgid "Delete files flagged for deletion (@code{dired-do-flagged-delete})."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:180
+#, no-wrap
+msgid "d @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:181
+#, no-wrap
+msgid "dired-flag-file-deletion"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:188
+msgid ""
+"You can flag a file for deletion by moving to the line describing the file "
+"and typing @kbd{d} (@code{dired-flag-file-deletion}).  The deletion flag is "
+"visible as a @samp{D} at the beginning of the line.  This command moves "
+"point to the next line, so that repeated @kbd{d} commands flag successive "
+"files.  A numeric prefix argument serves as a repeat count; a negative count "
+"means to flag preceding files."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:192
+msgid ""
+"If the region is active, the @kbd{d} command flags all files in the region "
+"for deletion; in this case, the command does not move point, and ignores any "
+"prefix argument."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:193
+#, no-wrap
+msgid "u @r{(Dired deletion)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:194
+#, no-wrap
+msgid "DEL @r{(Dired)}"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:206
+msgid ""
+"The reason for flagging files for deletion, rather than deleting files "
+"immediately, is to reduce the danger of deleting a file accidentally.  Until "
+"you direct Dired to delete the flagged files, you can remove deletion flags "
+"using the commands @kbd{u} and @key{DEL}.  @kbd{u} (@code{dired-unmark}) "
+"works just like @kbd{d}, but removes flags rather than making flags.  "
+"@key{DEL} (@code{dired-unmark-backward}) moves upward, removing flags; it is "
+"like @kbd{u} with argument @minus{}1.  A numeric prefix argument to either "
+"command serves as a repeat count, with a negative count meaning to unflag in "
+"the opposite direction.  If the region is active, these commands instead "
+"unflag all files in the region, without moving point."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:207
+#, no-wrap
+msgid "x @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:208
+#, no-wrap
+msgid "dired-do-flagged-delete"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:215
+msgid ""
+"To delete flagged files, type @kbd{x} (@code{dired-do-flagged-delete}).  "
+"This command displays a list of all the file names flagged for deletion, and "
+"requests confirmation with @kbd{yes}.  If you confirm, Dired deletes the "
+"flagged files, then deletes their lines from the text of the Dired buffer.  "
+"The Dired buffer, with somewhat fewer lines, remains selected."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:219
+msgid ""
+"If you answer @kbd{no} or quit with @kbd{C-g} when asked to confirm, you "
+"return immediately to Dired, with the deletion flags still present in the "
+"buffer, and no files actually deleted."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:220
+#, no-wrap
+msgid "recursive deletion"
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:221
+#, no-wrap
+msgid "dired-recursive-deletes"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:227
+msgid ""
+"You can delete empty directories just like other files, but normally Dired "
+"cannot delete directories that are nonempty.  If the variable "
+"@code{dired-recursive-deletes} is non-@code{nil}, then Dired can delete "
+"nonempty directories including all their contents.  That can be somewhat "
+"risky."
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:228
+#, no-wrap
+msgid "delete-by-moving-to-trash"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:233
+msgid ""
+"If you change the variable @code{delete-by-moving-to-trash} to @code{t}, the "
+"above deletion commands will move the affected files or directories into the "
+"operating system's Trash, instead of deleting them outright.  @xref{Misc "
+"File Ops}."
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:235
+#, no-wrap
+msgid "Flagging Many Files at Once"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:236
+#, no-wrap
+msgid "flagging many files for deletion (in Dired)"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:240
+msgid ""
+"The @kbd{#}, @kbd{~}, @kbd{.}, @kbd{% &}, and @kbd{% d} commands flag many "
+"files for deletion, based on their file names:"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:242
+#, no-wrap
+msgid "#"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:245
+msgid ""
+"Flag all auto-save files (files whose names start and end with @samp{#})  "
+"for deletion (@pxref{Auto Save})."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:246
+#, no-wrap
+msgid "~"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:249
+msgid ""
+"Flag all backup files (files whose names end with @samp{~}) for deletion "
+"(@pxref{Backup})."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:250
+#, no-wrap
+msgid ".@: @r{(Period)}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:254
+msgid ""
+"Flag excess numeric backup files for deletion.  The oldest and newest few "
+"backup files of any one file are exempt; the middle ones are flagged."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:255
+#, no-wrap
+msgid "% &"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:258
+msgid ""
+"Flag for deletion all files with certain kinds of names which suggest you "
+"could easily create those files again."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:259
+#, no-wrap
+msgid "% d @var{regexp} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:262
+msgid ""
+"Flag for deletion all files whose names match the regular expression "
+"@var{regexp}."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:264
+#, no-wrap
+msgid "# @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:265
+#, no-wrap
+msgid "dired-flag-auto-save-files"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:266
+#, no-wrap
+msgid "deleting auto-save files"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:270
+msgid ""
+"@kbd{#} (@code{dired-flag-auto-save-files}) flags all files whose names look "
+"like auto-save files---that is, files whose names begin and end with "
+"@samp{#}.  @xref{Auto Save}."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:271
+#, no-wrap
+msgid "~ @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:272
+#, no-wrap
+msgid "dired-flag-backup-files"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:276
+msgid ""
+"@kbd{~} (@code{dired-flag-backup-files}) flags all files whose names say "
+"they are backup files---that is, files whose names end in @samp{~}.  "
+"@xref{Backup}."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:277
+#, no-wrap
+msgid ". @r{(Dired)}"
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:278
+#, no-wrap
+msgid "dired-kept-versions"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:279
+#, no-wrap
+msgid "dired-clean-directory"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:287
+msgid ""
+"@kbd{.} (period, @code{dired-clean-directory}) flags just some of the backup "
+"files for deletion: all but the oldest few and newest few backups of any one "
+"file.  Normally, the number of newest versions kept for each file is given "
+"by the variable @code{dired-kept-versions} (@emph{not} "
+"@code{kept-new-versions}; that applies only when saving).  The number of "
+"oldest versions to keep is given by the variable @code{kept-old-versions}."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:293
+msgid ""
+"Period with a positive numeric argument, as in @kbd{C-u 3 .}, specifies the "
+"number of newest versions to keep, overriding @code{dired-kept-versions}.  A "
+"negative numeric argument overrides @code{kept-old-versions}, using minus "
+"the value of the argument to specify the number of oldest versions of each "
+"file to keep."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:294
+#, no-wrap
+msgid "% & @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:295
+#, no-wrap
+msgid "dired-flag-garbage-files"
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:296
+#, no-wrap
+msgid "dired-garbage-files-regexp"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:297
+#, no-wrap
+msgid "deleting some backup files"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:303
+msgid ""
+"@kbd{% &} (@code{dired-flag-garbage-files}) flags files whose names match "
+"the regular expression specified by the variable "
+"@code{dired-garbage-files-regexp}.  By default, this matches certain files "
+"produced by @TeX{}, @samp{.bak} files, and the @samp{.orig} and @samp{.rej} "
+"files produced by @code{patch}."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:304
+#, no-wrap
+msgid "dired-flag-files-regexp"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:305
+#, no-wrap
+msgid "% d @r{(Dired)}"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:312
+msgid ""
+"@kbd{% d} flags all files whose names match a specified regular expression "
+"(@code{dired-flag-files-regexp}).  Only the non-directory part of the file "
+"name is used in matching.  You can use @samp{^} and @samp{$} to anchor "
+"matches.  You can exclude certain subdirectories from marking by hiding them "
+"while you use @kbd{% d}.  @xref{Hiding Subdirectories}."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:313
+#, no-wrap
+msgid "Dired Visiting"
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:314
+#, no-wrap
+msgid "Visiting Files in Dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:320
+msgid ""
+"There are several Dired commands for visiting or examining the files listed "
+"in the Dired buffer.  All of them apply to the current line's file; if that "
+"file is really a directory, these commands invoke Dired on that subdirectory "
+"(making a separate Dired buffer)."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:322
+#, no-wrap
+msgid "f"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:323
+#, no-wrap
+msgid "f @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:324
+#, no-wrap
+msgid "dired-find-file"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:327
+msgid ""
+"Visit the file described on the current line, like typing @kbd{C-x C-f} and "
+"supplying that file name (@code{dired-find-file}).  @xref{Visiting}."
+msgstr ""
+
+#. type: key{#1}
+#: dired.texi.orig:328
+#, no-wrap
+msgid "RET"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:329
+#, no-wrap
+msgid "e"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:330
+#, no-wrap
+msgid "RET @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:331
+#, no-wrap
+msgid "e @r{(Dired)}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:333
+msgid "Equivalent to @kbd{f}."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:335
+#, no-wrap
+msgid "a"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:336
+#, no-wrap
+msgid "a @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:337
+#, no-wrap
+msgid "dired-find-alternate-file"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:342
+#, no-wrap
+msgid "o"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:343
+#, no-wrap
+msgid "o @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:344
+#, no-wrap
+msgid "dired-find-file-other-window"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:349
+msgid ""
+"Like @kbd{f}, but uses another window to display the file's buffer "
+"(@code{dired-find-file-other-window}).  The Dired buffer remains visible in "
+"the first window.  This is like using @kbd{C-x 4 C-f} to visit the file.  "
+"@xref{Windows}."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:350
+#, no-wrap
+msgid "C-o"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:351
+#, no-wrap
+msgid "C-o @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:352
+#, no-wrap
+msgid "dired-display-file"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:355
+msgid ""
+"Visit the file described on the current line, and display the buffer in "
+"another window, but do not select that window (@code{dired-display-file})."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:356
+#, no-wrap
+msgid "Mouse-1"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:357
+#, no-wrap
+msgid "Mouse-2"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:358
+#, no-wrap
+msgid "dired-mouse-find-file-other-window"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:362
+msgid ""
+"Visit the file whose name you clicked on "
+"(@code{dired-mouse-find-file-other-window}).  This uses another window to "
+"display the file, like the @kbd{o} command."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:363
+#, no-wrap
+msgid "v"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:364
+#, no-wrap
+msgid "v @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:365
+#, no-wrap
+msgid "dired-view-file"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:369
+msgid ""
+"View the file described on the current line, with View mode "
+"(@code{dired-view-file}).  View mode provides convenient commands to "
+"navigate the buffer but forbids changing it; @xref{View Mode}."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:370
+#, no-wrap
+msgid "^"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:371
+#, no-wrap
+msgid "^ @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:372
+#, no-wrap
+msgid "dired-up-directory"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:376
+msgid ""
+"Visit the parent directory of the current directory "
+"(@code{dired-up-directory}).  This is equivalent to moving to the line for "
+"@file{..} and typing @kbd{f} there."
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:379
+#, no-wrap
+msgid "Dired Marks vs. Flags"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:381
+#, no-wrap
+msgid "marking many files (in Dired)"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:387
+msgid ""
+"Instead of flagging a file with @samp{D}, you can @dfn{mark} the file with "
+"some other character (usually @samp{*}).  Most Dired commands to operate on "
+"files use the files marked with @samp{*}.  The only command that operates on "
+"flagged files is @kbd{x}, which deletes them."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:391
+msgid ""
+"Here are some commands for marking with @samp{*}, for unmarking, and for "
+"operating on marks.  (@xref{Dired Deletion}, for commands to flag and unflag "
+"files.)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:393
+#, no-wrap
+msgid "m"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:394
+#, no-wrap
+msgid "* m"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:395
+#, no-wrap
+msgid "m @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:396
+#, no-wrap
+msgid "* m @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:397
+#, no-wrap
+msgid "dired-mark"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:403
+msgid ""
+"Mark the current file with @samp{*} (@code{dired-mark}).  If the region is "
+"active, mark all files in the region instead; otherwise, if a numeric "
+"argument @var{n} is supplied, mark the next @var{n} files instead, starting "
+"with the current file (if @var{n} is negative, mark the previous "
+"@minus{}@var{n} files)."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:404
+#, no-wrap
+msgid "* *"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:405
+#, no-wrap
+msgid "* * @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:406
+#, no-wrap
+msgid "dired-mark-executables"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:407
+#, no-wrap
+msgid "marking executable files (in Dired)"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:411
+msgid ""
+"Mark all executable files with @samp{*} (@code{dired-mark-executables}).  "
+"With a numeric argument, unmark all those files."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:412
+#, no-wrap
+msgid "* @@"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:413
+#, no-wrap
+msgid "* @@ @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:414
+#, no-wrap
+msgid "dired-mark-symlinks"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:415
+#, no-wrap
+msgid "marking symbolic links (in Dired)"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:418
+msgid ""
+"Mark all symbolic links with @samp{*} (@code{dired-mark-symlinks}).  With a "
+"numeric argument, unmark all those files."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:419
+#, no-wrap
+msgid "* /"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:420
+#, no-wrap
+msgid "* / @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:421
+#, no-wrap
+msgid "dired-mark-directories"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:422
+#, no-wrap
+msgid "marking subdirectories (in Dired)"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:426
+msgid ""
+"Mark with @samp{*} all files which are directories, except for @file{.} and "
+"@file{..} (@code{dired-mark-directories}).  With a numeric argument, unmark "
+"all those files."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:427
+#, no-wrap
+msgid "* s"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:428
+#, no-wrap
+msgid "* s @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:429
+#, no-wrap
+msgid "dired-mark-subdir-files"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:432
+msgid ""
+"Mark all the files in the current subdirectory, aside from @file{.} and "
+"@file{..} (@code{dired-mark-subdir-files})."
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:434
+#, no-wrap
+msgid "* u"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:435
+#, no-wrap
+msgid "u @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:436
+#, no-wrap
+msgid "* u @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:437
+#, no-wrap
+msgid "dired-unmark"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:443
+msgid ""
+"Remove any mark on this line (@code{dired-unmark}).  If the region is "
+"active, unmark all files in the region instead; otherwise, if a numeric "
+"argument @var{n} is supplied, unmark the next @var{n} files instead, "
+"starting with the current file (if @var{n} is negative, unmark the previous "
+"@minus{}@var{n} files)."
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:445
+#, no-wrap
+msgid "* @key{DEL}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:446
+#, no-wrap
+msgid "* DEL @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:447
+#, no-wrap
+msgid "dired-unmark-backward"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:448
+#, no-wrap
+msgid "unmarking files (in Dired)"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:455
+msgid ""
+"Move point to previous line and remove any mark on that line "
+"(@code{dired-unmark-backward}).  If the region is active, unmark all files "
+"in the region instead; otherwise, if a numeric argument @var{n} is supplied, "
+"unmark the @var{n} preceding files instead, starting with the current file "
+"(if @var{n} is negative, unmark the next @minus{}@var{n} files)."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:456
+#, no-wrap
+msgid "* !"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:457
+#, no-wrap
+msgid "U"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:458
+#, no-wrap
+msgid "* ! @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:459
+#, no-wrap
+msgid "U @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:460
+#, no-wrap
+msgid "dired-unmark-all-marks"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:463
+msgid ""
+"Remove all marks from all the files in this Dired buffer "
+"(@code{dired-unmark-all-marks})."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:464
+#, no-wrap
+msgid "* ? @var{markchar}"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:465
+#, no-wrap
+msgid "M-@key{DEL}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:466
+#, no-wrap
+msgid "* ? @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:467
+#, no-wrap
+msgid "M-DEL @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:468
+#, no-wrap
+msgid "dired-unmark-all-files"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:474
+msgid ""
+"Remove all marks that use the character @var{markchar} "
+"(@code{dired-unmark-all-files}).  The argument is a single character---do "
+"not use @key{RET} to terminate it.  See the description of the @kbd{* c} "
+"command below, which lets you replace one mark character with another."
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:479
+msgid ""
+"With a numeric argument, this command queries about each marked file, asking "
+"whether to remove its mark.  You can answer @kbd{y} meaning yes, @kbd{n} "
+"meaning no, or @kbd{!} to remove the marks from the remaining files without "
+"asking about them."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:480
+#, no-wrap
+msgid "* C-n"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:481
+#, no-wrap
+msgid "M-@}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:482
+#, no-wrap
+msgid "dired-next-marked-file"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:483
+#, no-wrap
+msgid "* C-n @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:484
+#, no-wrap
+msgid "M-@} @r{(Dired)}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:487
+msgid ""
+"Move down to the next marked file (@code{dired-next-marked-file})  A file is "
+"``marked'' if it has any kind of mark."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:488
+#, no-wrap
+msgid "* C-p"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:489
+#, no-wrap
+msgid "M-@{"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:490
+#, no-wrap
+msgid "dired-prev-marked-file"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:491
+#, no-wrap
+msgid "* C-p @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:492
+#, no-wrap
+msgid "M-@{ @r{(Dired)}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:494
+msgid "Move up to the previous marked file (@code{dired-prev-marked-file})"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:495
+#, no-wrap
+msgid "t"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:496
+#, no-wrap
+msgid "* t"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:497
+#, no-wrap
+msgid "t @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:498
+#, no-wrap
+msgid "* t @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:499
+#, no-wrap
+msgid "dired-toggle-marks"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:500
+#, no-wrap
+msgid "toggling marks (in Dired)"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:504
+msgid ""
+"Toggle all marks (@code{dired-toggle-marks}): files marked with @samp{*} "
+"become unmarked, and unmarked files are marked with @samp{*}.  Files marked "
+"in any other way are not affected."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:505
+#, no-wrap
+msgid "* c @var{old-markchar} @var{new-markchar}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:506
+#, no-wrap
+msgid "* c @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:507
+#, no-wrap
+msgid "dired-change-marks"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:513
+msgid ""
+"Replace all marks that use the character @var{old-markchar} with marks that "
+"use the character @var{new-markchar} (@code{dired-change-marks}).  This "
+"command is the primary way to create or use marks other than @samp{*} or "
+"@samp{D}.  The arguments are single characters---do not use @key{RET} to "
+"terminate them."
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:519
+msgid ""
+"You can use almost any character as a mark character by means of this "
+"command, to distinguish various classes of files.  If @var{old-markchar} is "
+"a space (@samp{ }), then the command operates on all unmarked files; if "
+"@var{new-markchar} is a space, then the command unmarks the files it acts "
+"on."
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:523
+msgid ""
+"To illustrate the power of this command, here is how to put @samp{D} flags "
+"on all the files that have no marks, while unflagging all those that already "
+"have @samp{D} flags:"
+msgstr ""
+
+#. type: example
+#: dired.texi.orig:526
+#, no-wrap
+msgid "* c D t  * c @key{SPC} D  * c t @key{SPC}\n"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:529
+msgid "This assumes that no files were already marked with @samp{t}."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:530
+#, no-wrap
+msgid "% m @var{regexp} @key{RET}"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:531
+#, no-wrap
+msgid "* % @var{regexp} @key{RET}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:532
+#, no-wrap
+msgid "dired-mark-files-regexp"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:533
+#, no-wrap
+msgid "% m @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:534
+#, no-wrap
+msgid "* % @r{(Dired)}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:539
+msgid ""
+"Mark (with @samp{*}) all files whose names match the regular expression "
+"@var{regexp} (@code{dired-mark-files-regexp}).  This command is like @kbd{% "
+"d}, except that it marks files with @samp{*} instead of flagging with "
+"@samp{D}."
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:544
+msgid ""
+"Only the non-directory part of the file name is used in matching.  Use "
+"@samp{^} and @samp{$} to anchor matches.  You can exclude subdirectories by "
+"temporarily hiding them (@pxref{Hiding Subdirectories})."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:545
+#, no-wrap
+msgid "% g @var{regexp} @key{RET}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:546
+#, no-wrap
+msgid "dired-mark-files-containing-regexp"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:547
+#, no-wrap
+msgid "% g @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:548
+#, no-wrap
+msgid "finding files containing regexp matches (in Dired)"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:554
+msgid ""
+"Mark (with @samp{*}) all files whose @emph{contents} contain a match for the "
+"regular expression @var{regexp} "
+"(@code{dired-mark-files-containing-regexp}).  This command is like @kbd{% "
+"m}, except that it searches the file contents instead of the file name."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:555
+#, no-wrap
+msgid "C-/"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:556
+#, no-wrap
+msgid "C-x u"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:557
+#, no-wrap
+msgid "C-_"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:558
+#, no-wrap
+msgid "C-_ @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:559
+#, no-wrap
+msgid "dired-undo"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:564
+msgid ""
+"Undo changes in the Dired buffer, such as adding or removing marks "
+"(@code{dired-undo}).  @emph{This command does not revert the actual file "
+"operations, nor recover lost files!} It just undoes changes in the buffer "
+"itself."
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:570
+msgid ""
+"In some cases, using this after commands that operate on files can cause "
+"trouble.  For example, after renaming one or more files, @code{dired-undo} "
+"restores the original names in the Dired buffer, which gets the Dired buffer "
+"out of sync with the actual contents of the directory."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:574
+#, no-wrap
+msgid "operating on files in Dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:581
+msgid ""
+"This section describes the basic Dired commands to operate on one file or "
+"several files.  All of these commands are capital letters; all of them use "
+"the minibuffer, either to read an argument or to ask for confirmation, "
+"before they act.  All of them let you specify the files to manipulate in "
+"these ways:"
+msgstr ""
+
+#. type: itemize
+#: dired.texi.orig:588
+msgid ""
+"If you give the command a numeric prefix argument @var{n}, it operates on "
+"the next @var{n} files, starting with the current file.  (If @var{n} is "
+"negative, the command operates on the @minus{}@var{n} files preceding the "
+"current line.)"
+msgstr ""
+
+#. type: itemize
+#: dired.texi.orig:592
+msgid ""
+"Otherwise, if some files are marked with @samp{*}, the command operates on "
+"all those files."
+msgstr ""
+
+#. type: itemize
+#: dired.texi.orig:595
+msgid "Otherwise, the command operates on the current file only."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:600
+msgid ""
+"Certain other Dired commands, such as @kbd{!} and the @samp{%} commands, use "
+"the same conventions to decide which files to work on."
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:601
+#, no-wrap
+msgid "dired-dwim-target"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:602
+#, no-wrap
+msgid "two directories (in Dired)"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:609
+msgid ""
+"Commands which ask for a destination directory, such as those which copy and "
+"rename files or create links for them, try to guess the default target "
+"directory for the operation.  Normally, they suggest the Dired buffer's "
+"default directory, but if the variable @code{dired-dwim-target} is "
+"non-@code{nil}, and if there is another Dired buffer displayed in the next "
+"window, that other buffer's directory is suggested instead."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:611
+msgid "Here are the file-manipulating Dired commands that operate on files."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:613
+#, no-wrap
+msgid "dired-do-copy"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:614
+#, no-wrap
+msgid "C @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:615
+#, no-wrap
+msgid "copying files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:616
+#, no-wrap
+msgid "C @var{new} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:620
+msgid ""
+"Copy the specified files (@code{dired-do-copy}).  The argument @var{new} is "
+"the directory to copy into, or (if copying a single file) the new name.  "
+"This is like the shell command @code{cp}."
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:621
+#, no-wrap
+msgid "dired-copy-preserve-time"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:625
+msgid ""
+"If @code{dired-copy-preserve-time} is non-@code{nil}, then copying with this "
+"command preserves the modification time of the old file in the copy, like "
+"@samp{cp -p}."
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:626
+#, no-wrap
+msgid "dired-recursive-copies"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:627
+#, no-wrap
+msgid "recursive copying"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:631
+msgid ""
+"The variable @code{dired-recursive-copies} controls whether to copy "
+"directories recursively (like @samp{cp -r}).  The default is @code{top}, "
+"which means to ask before recursively copying a directory."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:632
+#, no-wrap
+msgid "D"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:633
+#, no-wrap
+msgid "dired-do-delete"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:634
+#, no-wrap
+msgid "D @r{(Dired)}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:637
+msgid ""
+"Delete the specified files (@code{dired-do-delete}).  This is like the shell "
+"command @code{rm}."
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:641
+msgid ""
+"Like the other commands in this section, this command operates on the "
+"@emph{marked} files, or the next @var{n} files.  By contrast, @kbd{x} "
+"(@code{dired-do-flagged-delete}) deletes all @dfn{flagged} files."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:642
+#, no-wrap
+msgid "dired-do-rename"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:643
+#, no-wrap
+msgid "R @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:644
+#, no-wrap
+msgid "renaming files (in Dired)"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:645
+#, no-wrap
+msgid "moving files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:646
+#, no-wrap
+msgid "R @var{new} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:651
+msgid ""
+"Rename the specified files (@code{dired-do-rename}).  If you rename a single "
+"file, the argument @var{new} is the new name of the file.  If you rename "
+"several files, the argument @var{new} is the directory into which to move "
+"the files (this is like the shell command @command{mv})."
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:654
+msgid ""
+"Dired automatically changes the visited file name of buffers associated with "
+"renamed files so that they refer to the new names."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:655
+#, no-wrap
+msgid "dired-do-hardlink"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:656
+#, no-wrap
+msgid "H @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:657
+#, no-wrap
+msgid "hard links (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:658
+#, no-wrap
+msgid "H @var{new} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:663
+msgid ""
+"Make hard links to the specified files (@code{dired-do-hardlink}).  This is "
+"like the shell command @command{ln}.  The argument @var{new} is the "
+"directory to make the links in, or (if making just one link) the name to "
+"give the link."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:664
+#, no-wrap
+msgid "dired-do-symlink"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:665
+#, no-wrap
+msgid "S @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:666
+#, no-wrap
+msgid "symbolic links (creation in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:667
+#, no-wrap
+msgid "S @var{new} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:672
+msgid ""
+"Make symbolic links to the specified files (@code{dired-do-symlink}).  This "
+"is like @samp{ln -s}.  The argument @var{new} is the directory to make the "
+"links in, or (if making just one link) the name to give the link."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:673
+#, no-wrap
+msgid "dired-do-chmod"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:674
+#, no-wrap
+msgid "M @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:675
+#, no-wrap
+msgid "changing file permissions (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:676
+#, no-wrap
+msgid "M @var{modespec} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:681
+msgid ""
+"Change the mode (also called @dfn{permission bits}) of the specified files "
+"(@code{dired-do-chmod}).  @var{modespec} can be in octal or symbolic "
+"notation, like arguments handled by the @command{chmod} program."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:682
+#, no-wrap
+msgid "dired-do-chgrp"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:683
+#, no-wrap
+msgid "G @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:684
+#, no-wrap
+msgid "changing file group (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:685
+#, no-wrap
+msgid "G @var{newgroup} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:688
+msgid ""
+"Change the group of the specified files to @var{newgroup} "
+"(@code{dired-do-chgrp})."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:689
+#, no-wrap
+msgid "dired-do-chown"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:690
+#, no-wrap
+msgid "O @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:691
+#, no-wrap
+msgid "changing file owner (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:692
+#, no-wrap
+msgid "O @var{newowner} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:696
+msgid ""
+"Change the owner of the specified files to @var{newowner} "
+"(@code{dired-do-chown}).  (On most systems, only the superuser can do this.)"
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:697
+#, no-wrap
+msgid "dired-chown-program"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:701
+msgid ""
+"The variable @code{dired-chown-program} specifies the name of the program to "
+"use to do the work (different systems put @command{chown} in different "
+"places)."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:702
+#, no-wrap
+msgid "dired-do-touch"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:703
+#, no-wrap
+msgid "T @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:704
+#, no-wrap
+msgid "changing file time (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:705
+#, no-wrap
+msgid "T @var{timestamp} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:709
+msgid ""
+"Touch the specified files (@code{dired-do-touch}).  This means updating "
+"their modification times to the present time.  This is like the shell "
+"command @code{touch}."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:710
+#, no-wrap
+msgid "dired-do-print"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:711
+#, no-wrap
+msgid "P @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:712
+#, no-wrap
+msgid "printing files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:713
+#, no-wrap
+msgid "P @var{command} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:719
+msgid ""
+"Print the specified files (@code{dired-do-print}).  You must specify the "
+"command to print them with, but the minibuffer starts out with a suitable "
+"guess made using the variables @code{lpr-command} and @code{lpr-switches} "
+"(the same variables that @code{lpr-buffer} uses; @pxref{Printing})."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:720
+#, no-wrap
+msgid "dired-do-compress"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:721
+#, no-wrap
+msgid "Z @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:722
+#, no-wrap
+msgid "compressing files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:723
+#, no-wrap
+msgid "Z"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:726
+msgid ""
+"Compress the specified files (@code{dired-do-compress}).  If the file "
+"appears to be a compressed file already, uncompress it instead."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:727
+#, no-wrap
+msgid "epa-dired-do-decrypt"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:728
+#, no-wrap
+msgid ":d @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:729
+#, no-wrap
+msgid "decrypting files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:730
+#, no-wrap
+msgid ":d"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:733
+msgid ""
+"Decrypt the specified files (@code{epa-dired-do-decrypt}).  @xref{Dired "
+"integration,,, epa, EasyPG Assistant User's Manual}."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:734
+#, no-wrap
+msgid "epa-dired-do-verify"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:735
+#, no-wrap
+msgid ":v @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:736
+#, no-wrap
+msgid "verifying digital signatures on files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:737
+#, no-wrap
+msgid ":v"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:740
+msgid ""
+"Verify digital signatures on the specified files "
+"(@code{epa-dired-do-verify}).  @xref{Dired integration,,, epa, EasyPG "
+"Assistant User's Manual}."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:741
+#, no-wrap
+msgid "epa-dired-do-sign"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:742
+#, no-wrap
+msgid ":s @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:743
+#, no-wrap
+msgid "signing files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:744
+#, no-wrap
+msgid ":s"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:747
+msgid ""
+"Digitally sign the specified files (@code{epa-dired-do-sign}).  @xref{Dired "
+"integration,,, epa, EasyPG Assistant User's Manual}."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:748
+#, no-wrap
+msgid "epa-dired-do-encrypt"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:749
+#, no-wrap
+msgid ":e @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:750
+#, no-wrap
+msgid "encrypting files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:751
+#, no-wrap
+msgid ":e"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:754
+msgid ""
+"Encrypt the specified files (@code{epa-dired-do-encrypt}).  @xref{Dired "
+"integration,,, epa, EasyPG Assistant User's Manual}."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:755
+#, no-wrap
+msgid "dired-do-load"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:756
+#, no-wrap
+msgid "L @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:757
+#, no-wrap
+msgid "loading several files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:758
+#, no-wrap
+msgid "L"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:761
+msgid ""
+"Load the specified Emacs Lisp files (@code{dired-do-load}).  @xref{Lisp "
+"Libraries}."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:762
+#, no-wrap
+msgid "dired-do-byte-compile"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:763
+#, no-wrap
+msgid "B @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:764
+#, no-wrap
+msgid "byte-compiling several files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:765
+#, no-wrap
+msgid "B"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:769
+msgid ""
+"Byte compile the specified Emacs Lisp files (@code{dired-do-byte-compile}).  "
+"@xref{Byte Compilation,, Byte Compilation, elisp, The Emacs Lisp Reference "
+"Manual}."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:770
+#, no-wrap
+msgid "A @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:771
+#, no-wrap
+msgid "dired-do-search"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:772
+#, no-wrap
+msgid "search multiple files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:773
+#, no-wrap
+msgid "A @var{regexp} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:776
+msgid ""
+"Search all the specified files for the regular expression @var{regexp} "
+"(@code{dired-do-search})."
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:780
+msgid ""
+"This command is a variant of @code{tags-search}.  The search stops at the "
+"first match it finds; use @kbd{M-,} to resume the search and find the next "
+"match.  @xref{Tags Search}."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:781
+#, no-wrap
+msgid "Q @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:782
+#, no-wrap
+msgid "dired-do-query-replace-regexp"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:783
+#, no-wrap
+msgid "search and replace in multiple files (in Dired)"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:784
+#, no-wrap
+msgid "Q @var{regexp} @key{RET} @var{to} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:788
+msgid ""
+"Perform @code{query-replace-regexp} on each of the specified files, "
+"replacing matches for @var{regexp} with the string @var{to} "
+"(@code{dired-do-query-replace-regexp})."
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:792
+msgid ""
+"This command is a variant of @code{tags-query-replace}.  If you exit the "
+"query replace loop, you can use @kbd{M-,} to resume the scan and replace "
+"more matches.  @xref{Tags Search}."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:796
+#, no-wrap
+msgid "shell commands, Dired"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:798
+#, no-wrap
+msgid "dired-do-shell-command"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:799
+#, no-wrap
+msgid "! @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:800
+#, no-wrap
+msgid "X @r{(Dired)}"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:806
+msgid ""
+"The Dired command @kbd{!} (@code{dired-do-shell-command}) reads a shell "
+"command string in the minibuffer, and runs that shell command on one or more "
+"files.  The files that the shell command operates on are determined in the "
+"usual way for Dired commands (@pxref{Operating on Files}).  The command "
+"@kbd{X} is a synonym for @kbd{!}."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:816
+msgid ""
+"The command @kbd{&} (@code{dired-do-async-shell-command}) does the same, "
+"except that it runs the shell command asynchronously.  (You can also do this "
+"with @kbd{!}, by appending a @samp{&} character to the end of the shell "
+"command.)  When the command operates on more than one file, it runs multiple "
+"parallel copies of the specified shell command, one for each file.  As an "
+"exception, if the specified shell command ends in @samp{;} or @samp{;&}, the "
+"shell command is run in the background on each file sequentially; Emacs "
+"waits for each invoked shell command to terminate before running the next "
+"one."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:819
+msgid ""
+"For both @kbd{!} and @kbd{&}, the working directory for the shell command is "
+"the top-level directory of the Dired buffer."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:823
+msgid ""
+"If you tell @kbd{!} or @kbd{&} to operate on more than one file, the shell "
+"command string determines how those files are passed to the shell command:"
+msgstr ""
+
+#. type: itemize
+#: dired.texi.orig:830
+msgid ""
+"If you use @samp{*} surrounded by whitespace in the command string, then the "
+"command runs just once, with the list of file names substituted for the "
+"@samp{*}.  The order of file names is the order of appearance in the Dired "
+"buffer."
+msgstr ""
+
+#. type: itemize
+#: dired.texi.orig:833
+msgid ""
+"Thus, @kbd{! tar cf foo.tar * @key{RET}} runs @code{tar} on the entire list "
+"of file names, putting them into one tar file @file{foo.tar}."
+msgstr ""
+
+#. type: itemize
+#: dired.texi.orig:838
+msgid ""
+"If you want to use @samp{*} as a shell wildcard with whitespace around it, "
+"write @samp{*\"\"}.  In the shell, this is equivalent to @samp{*}; but since "
+"the @samp{*} is not surrounded by whitespace, Dired does not treat it "
+"specially."
+msgstr ""
+
+#. type: itemize
+#: dired.texi.orig:845
+msgid ""
+"Otherwise, if the command string contains @samp{?} surrounded by whitespace, "
+"Emacs runs the shell command once @emph{for each file}, substituting the "
+"current file name for @samp{?} each time.  You can use @samp{?} more than "
+"once in the command; the same file name replaces each occurrence."
+msgstr ""
+
+#. type: itemize
+#: dired.texi.orig:851
+msgid ""
+"If the command string contains neither @samp{*} nor @samp{?}, Emacs runs the "
+"shell command once for each file, adding the file name at the end.  For "
+"example, @kbd{! uudecode @key{RET}} runs @code{uudecode} on each file."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:857
+msgid ""
+"To iterate over the file names in a more complicated fashion, use an "
+"explicit shell loop.  For example, here is how to uuencode each file, making "
+"the output file name by appending @samp{.uu} to the input file name:"
+msgstr ""
+
+#. type: example
+#: dired.texi.orig:860
+#, no-wrap
+msgid "for file in * ; do uuencode \"$file\" \"$file\" >\"$file\".uu; done\n"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:866
+msgid ""
+"The @kbd{!} and @kbd{&} commands do not attempt to update the Dired buffer "
+"to show new or modified files, because they don't know what files will be "
+"changed.  Use the @kbd{g} command to update the Dired buffer (@pxref{Dired "
+"Updating})."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:869
+msgid ""
+"@xref{Single Shell}, for information about running shell commands outside "
+"Dired."
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:871
+#, no-wrap
+msgid "Transforming File Names in Dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:876
+msgid ""
+"This section describes Dired commands which alter file names in a systematic "
+"way.  Each command operates on some or all of the marked files, using a new "
+"name made by transforming the existing name."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:882
+msgid ""
+"Like the basic Dired file-manipulation commands (@pxref{Operating on "
+"Files}), the commands described here operate either on the next @var{n} "
+"files, or on all files marked with @samp{*}, or on the current file.  (To "
+"mark files, use the commands described in @ref{Marks vs Flags}.)"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:889
+msgid ""
+"All of the commands described in this section work @emph{interactively}: "
+"they ask you to confirm the operation for each candidate file.  Thus, you "
+"can select more files than you actually need to operate on (e.g., with a "
+"regexp that matches many files), and then filter the selected names by "
+"typing @kbd{y} or @kbd{n} when the command prompts for confirmation."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:891
+#, no-wrap
+msgid "dired-upcase"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:892
+#, no-wrap
+msgid "% u @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:893
+#, no-wrap
+msgid "upcase file names"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:894
+#, no-wrap
+msgid "% u"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:898
+msgid ""
+"Rename each of the selected files to an upper-case name "
+"(@code{dired-upcase}).  If the old file names are @file{Foo} and @file{bar}, "
+"the new names are @file{FOO} and @file{BAR}."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:899
+#, no-wrap
+msgid "% l"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:900
+#, no-wrap
+msgid "dired-downcase"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:901
+#, no-wrap
+msgid "% l @r{(Dired)}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:902
+#, no-wrap
+msgid "downcase file names"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:906
+msgid ""
+"Rename each of the selected files to a lower-case name "
+"(@code{dired-downcase}).  If the old file names are @file{Foo} and "
+"@file{bar}, the new names are @file{foo} and @file{bar}."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:907
+#, no-wrap
+msgid "% R @var{from} @key{RET} @var{to} @key{RET}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:908
+#, no-wrap
+msgid "% R @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:909
+#, no-wrap
+msgid "dired-do-rename-regexp"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:910
+#, no-wrap
+msgid "% C @var{from} @key{RET} @var{to} @key{RET}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:911
+#, no-wrap
+msgid "% C @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:912
+#, no-wrap
+msgid "dired-do-copy-regexp"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:913
+#, no-wrap
+msgid "% H @var{from} @key{RET} @var{to} @key{RET}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:914
+#, no-wrap
+msgid "% H @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:915
+#, no-wrap
+msgid "dired-do-hardlink-regexp"
+msgstr ""
+
+#. type: itemx
+#: dired.texi.orig:916
+#, no-wrap
+msgid "% S @var{from} @key{RET} @var{to} @key{RET}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:917
+#, no-wrap
+msgid "% S @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:918
+#, no-wrap
+msgid "dired-do-symlink-regexp"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:922
+msgid ""
+"These four commands rename, copy, make hard links and make soft links, in "
+"each case computing the new name by regular-expression substitution from the "
+"name of the old file."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:934
+msgid ""
+"The four regular-expression substitution commands effectively perform a "
+"search-and-replace on the selected file names.  They read two arguments: a "
+"regular expression @var{from}, and a substitution pattern @var{to}; they "
+"match each ``old'' file name against @var{from}, and then replace the "
+"matching part with @var{to}.  You can use @samp{\\&} and "
+"@samp{\\@var{digit}} in @var{to} to refer to all or part of what the pattern "
+"matched in the old file name, as in @code{replace-regexp} (@pxref{Regexp "
+"Replace}).  If the regular expression matches more than once in a file name, "
+"only the first match is replaced."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:941
+msgid ""
+"For example, @kbd{% R ^.*$ @key{RET} x-\\& @key{RET}} renames each selected "
+"file by prepending @samp{x-} to its name.  The inverse of this, removing "
+"@samp{x-} from the front of each file name, is also possible: one method is "
+"@kbd{% R ^x-\\(.*\\)$ @key{RET} \\1 @key{RET}}; another is @kbd{% R ^x- "
+"@key{RET} @key{RET}}.  (Use @samp{^} and @samp{$} to anchor matches that "
+"should span the whole file name.)"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:947
+msgid ""
+"Normally, the replacement process does not consider the files' directory "
+"names; it operates on the file name within the directory.  If you specify a "
+"numeric argument of zero, then replacement affects the entire absolute file "
+"name including directory name.  (A non-zero argument specifies the number of "
+"files to operate on.)"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:955
+msgid ""
+"You may want to select the set of files to operate on using the same regexp "
+"@var{from} that you will use to operate on them.  To do this, mark those "
+"files with @kbd{% m @var{from} @key{RET}}, then use the same regular "
+"expression in the command to operate on the files.  To make this more "
+"convenient, the @kbd{%} commands to operate on files use the last regular "
+"expression specified in any @kbd{%} command as a default."
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:957
+#, no-wrap
+msgid "File Comparison with Dired"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:958
+#, no-wrap
+msgid "file comparison (in Dired)"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:959
+#, no-wrap
+msgid "compare files (in Dired)"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:961
+#, no-wrap
+msgid "dired-diff"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:962
+#, no-wrap
+msgid "= @r{(Dired)}"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:969
+msgid ""
+"The @kbd{=} (@code{dired-diff}) command compares the current file (the file "
+"at point) with another file (read using the minibuffer)  using the "
+"@command{diff} program.  The file specified with the minibuffer is the first "
+"argument of @command{diff}, and file at point is the second argument.  The "
+"output of the @command{diff} program is shown in a buffer using Diff mode "
+"(@pxref{Comparing Files})."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:974
+msgid ""
+"If the region is active, the default for the file read using the minibuffer "
+"is the file at the mark (i.e., the ordinary Emacs mark, not a Dired mark; "
+"@pxref{Setting Mark}).  Otherwise, if the file at point has a backup file "
+"(@pxref{Backup}), that is the default."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:977
+#, no-wrap
+msgid "subdirectories in Dired"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:978
+#, no-wrap
+msgid "expanding subdirectories in Dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:982
+msgid ""
+"A Dired buffer usually displays just one directory, but you can optionally "
+"include its subdirectories as well."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:988
+msgid ""
+"The simplest way to include multiple directories in one Dired buffer is to "
+"specify the options @samp{-lR} for running @command{ls}.  (If you give a "
+"numeric argument when you run Dired, then you can specify these options in "
+"the minibuffer.)  That produces a recursive directory listing showing all "
+"subdirectories at all levels."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:991
+msgid ""
+"More often, you will want to show only specific subdirectories.  You can do "
+"this with @kbd{i} (@code{dired-maybe-insert-subdir}):"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:993
+#, no-wrap
+msgid "dired-maybe-insert-subdir"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:994
+#, no-wrap
+msgid "i @r{(Dired)}"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:995
+#, no-wrap
+msgid "i"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:996
+#, no-wrap
+msgid "inserted subdirectory (Dired)"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:997
+#, no-wrap
+msgid "in-situ subdirectory (Dired)"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:999
+msgid "Insert the contents of a subdirectory later in the buffer."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1007
+msgid ""
+"If you use this command on a line that describes a file which is a "
+"directory, it inserts the contents of that directory into the same Dired "
+"buffer, and moves there.  Inserted subdirectory contents follow the "
+"top-level directory of the Dired buffer, just as they do in @samp{ls -lR} "
+"output."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1010
+msgid ""
+"If the subdirectory's contents are already present in the buffer, the "
+"@kbd{i} command just moves to it."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1016
+msgid ""
+"In either case, @kbd{i} sets the Emacs mark before moving, so @kbd{C-u "
+"C-@key{SPC}} returns to your previous position in the Dired buffer "
+"(@pxref{Setting Mark}).  You can also use @samp{^} to return to the parent "
+"directory in the same Dired buffer (@pxref{Dired Visiting})."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1022
+msgid ""
+"Use the @kbd{l} command (@code{dired-do-redisplay}) to update the "
+"subdirectory's contents, and use @kbd{C-u k} on the subdirectory header line "
+"to remove the subdirectory listing (@pxref{Dired Updating}).  You can also "
+"hide and show inserted subdirectories (@pxref{Hiding Subdirectories})."
+msgstr ""
+
+#. type: include
+#: dired.texi.orig:1024
+#, no-wrap
+msgid "dired-xtra.texi"
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:1028
+#, no-wrap
+msgid "Moving Over Subdirectories"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1033
+msgid ""
+"When a Dired buffer lists subdirectories, you can use the page motion "
+"commands @kbd{C-x [} and @kbd{C-x ]} to move by entire directories "
+"(@pxref{Pages})."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1034
+#, no-wrap
+msgid "header line (Dired)"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1035
+#, no-wrap
+msgid "directory header lines"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1040
+msgid ""
+"The following commands move across, up and down in the tree of directories "
+"within one Dired buffer.  They move to @dfn{directory header lines}, which "
+"are the lines that give a directory's name, at the beginning of the "
+"directory's contents."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1042
+#, no-wrap
+msgid "dired-next-subdir"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1043
+#, no-wrap
+msgid "C-M-n @r{(Dired)}"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1044
+#, no-wrap
+msgid "C-M-n"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1047
+msgid ""
+"Go to next subdirectory header line, regardless of level "
+"(@code{dired-next-subdir})."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1048
+#, no-wrap
+msgid "dired-prev-subdir"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1049
+#, no-wrap
+msgid "C-M-p @r{(Dired)}"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1050
+#, no-wrap
+msgid "C-M-p"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1053
+msgid ""
+"Go to previous subdirectory header line, regardless of level "
+"(@code{dired-prev-subdir})."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1054
+#, no-wrap
+msgid "dired-tree-up"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1055
+#, no-wrap
+msgid "C-M-u @r{(Dired)}"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1056
+#, no-wrap
+msgid "C-M-u"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1058
+msgid "Go up to the parent directory's header line (@code{dired-tree-up})."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1059
+#, no-wrap
+msgid "dired-tree-down"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1060
+#, no-wrap
+msgid "C-M-d @r{(Dired)}"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1061
+#, no-wrap
+msgid "C-M-d"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1064
+msgid ""
+"Go down in the directory tree, to the first subdirectory's header line "
+"(@code{dired-tree-down})."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1065
+#, no-wrap
+msgid "dired-prev-dirline"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1066
+#, no-wrap
+msgid "< @r{(Dired)}"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1067
+#, no-wrap
+msgid "<"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1071
+msgid ""
+"Move up to the previous directory-file line (@code{dired-prev-dirline}).  "
+"These lines are the ones that describe a directory as a file in its parent "
+"directory."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1072
+#, no-wrap
+msgid "dired-next-dirline"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1073
+#, no-wrap
+msgid "> @r{(Dired)}"
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1074
+#, no-wrap
+msgid ">"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1076
+msgid "Move down to the next directory-file line (@code{dired-prev-dirline})."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1080
+#, no-wrap
+msgid "hiding subdirectories (Dired)"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1081
+#, no-wrap
+msgid "showing hidden subdirectories (Dired)"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1085
+msgid ""
+"@dfn{Hiding} a subdirectory means to make it invisible, except for its "
+"header line."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1087
+#, no-wrap
+msgid "$"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1088
+#, no-wrap
+msgid "dired-hide-subdir"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1089
+#, no-wrap
+msgid "$ @r{(Dired)}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1093
+msgid ""
+"Hide or show the subdirectory that point is in, and move point to the next "
+"subdirectory (@code{dired-hide-subdir}).  This is a toggle.  A numeric "
+"argument serves as a repeat count."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1094
+#, no-wrap
+msgid "M-$"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1095
+#, no-wrap
+msgid "dired-hide-all"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1096
+#, no-wrap
+msgid "M-$ @r{(Dired)}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1102
+msgid ""
+"Hide all subdirectories in this Dired buffer, leaving only their header "
+"lines (@code{dired-hide-all}).  Or, if any subdirectory is currently hidden, "
+"make all subdirectories visible again.  You can use this command to get an "
+"overview in very deep directory trees or to move quickly to subdirectories "
+"far away."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1110
+msgid ""
+"Ordinary Dired commands never consider files inside a hidden subdirectory.  "
+"For example, the commands to operate on marked files ignore files in hidden "
+"directories even if they are marked.  Thus you can use hiding to temporarily "
+"exclude subdirectories from operations without having to remove the Dired "
+"marks on files in those subdirectories."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1113
+msgid ""
+"@xref{Subdirectories in Dired}, for how to insert a subdirectory listing, "
+"and @pxref{Dired Updating} for how delete it."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:1114
+#, no-wrap
+msgid "Dired Updating"
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:1115
+#, no-wrap
+msgid "Updating the Dired Buffer"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1116
+#, no-wrap
+msgid "updating Dired buffer"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1117
+#, no-wrap
+msgid "refreshing displayed files"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1122
+msgid ""
+"This section describes commands to update the Dired buffer to reflect "
+"outside (non-Dired) changes in the directories and files, and to delete part "
+"of the Dired buffer."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1124
+#, no-wrap
+msgid "g"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1126
+msgid "Update the entire contents of the Dired buffer (@code{revert-buffer})."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1127
+#, no-wrap
+msgid "l"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1130
+msgid ""
+"Update the specified files (@code{dired-do-redisplay}).  You specify the "
+"files for @kbd{l} in the same way as for file operations."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1131
+#, no-wrap
+msgid "k"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1134
+msgid ""
+"Delete the specified @emph{file lines}---not the files, just the lines "
+"(@code{dired-do-kill-lines})."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1135
+#, no-wrap
+msgid "s"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1138
+msgid ""
+"Toggle between alphabetical order and date/time order "
+"(@code{dired-sort-toggle-or-edit})."
+msgstr ""
+
+#. type: item
+#: dired.texi.orig:1139
+#, no-wrap
+msgid "C-u s @var{switches} @key{RET}"
+msgstr ""
+
+#. type: table
+#: dired.texi.orig:1142
+msgid ""
+"Refresh the Dired buffer using @var{switches} as "
+"@code{dired-listing-switches}."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1144
+#, no-wrap
+msgid "g @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1145
+#, no-wrap
+msgid "revert-buffer @r{(Dired)}"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1150
+msgid ""
+"Type @kbd{g} (@code{revert-buffer}) to update the contents of the Dired "
+"buffer, based on changes in the files and directories listed.  This "
+"preserves all marks except for those on files that have vanished.  Hidden "
+"subdirectories are updated but remain hidden."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1151
+#, no-wrap
+msgid "l @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1152
+#, no-wrap
+msgid "dired-do-redisplay"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1159
+msgid ""
+"To update only some of the files, type @kbd{l} (@code{dired-do-redisplay}).  "
+"Like the Dired file-operating commands, this command operates on the next "
+"@var{n} files (or previous @minus{}@var{n} files), or on the marked files if "
+"any, or on the current file.  Updating the files means reading their current "
+"status, then updating their lines in the buffer to indicate that status."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1162
+msgid ""
+"If you use @kbd{l} on a subdirectory header line, it updates the contents of "
+"the corresponding subdirectory."
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:1163
+#, no-wrap
+msgid "dired-auto-revert-buffer"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1171
+msgid ""
+"If you use @kbd{C-x d} or some other Dired command to visit a directory that "
+"is already being shown in a Dired buffer, Dired switches to that buffer but "
+"does not update it.  If the buffer is not up-to-date, Dired displays a "
+"warning telling you to type @key{g} to update it.  You can also tell Emacs "
+"to revert each Dired buffer automatically when you revisit it, by setting "
+"the variable @code{dired-auto-revert-buffer} to a non-@code{nil} value."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1172
+#, no-wrap
+msgid "k @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1173
+#, no-wrap
+msgid "dired-do-kill-lines"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1179
+msgid ""
+"To delete @emph{file lines} from the buffer---without actually deleting the "
+"files---type @kbd{k} (@code{dired-do-kill-lines}).  Like the file-operating "
+"commands, this command operates on the next @var{n} files, or on the marked "
+"files if any.  However, it does not operate on the current file, since "
+"otherwise mistyping @kbd{k} could be annoying."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1185
+msgid ""
+"If you use @kbd{k} to kill the line for a directory file which you had "
+"inserted in the Dired buffer as a subdirectory (@pxref{Subdirectories in "
+"Dired}), it removes the subdirectory listing as well.  Typing @kbd{C-u k} on "
+"the header line for a subdirectory also removes the subdirectory line from "
+"the Dired buffer."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1189
+msgid ""
+"The @kbd{g} command brings back any individual lines that you have killed in "
+"this way, but not subdirectories---you must use @kbd{i} to reinsert a "
+"subdirectory."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1190
+#, no-wrap
+msgid "Dired sorting"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1191
+#, no-wrap
+msgid "sorting Dired buffer"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1192
+#, no-wrap
+msgid "s @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1193
+#, no-wrap
+msgid "dired-sort-toggle-or-edit"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1199
+msgid ""
+"The files in a Dired buffers are normally listed in alphabetical order by "
+"file names.  Alternatively Dired can sort them by date/time.  The Dired "
+"command @kbd{s} (@code{dired-sort-toggle-or-edit}) switches between these "
+"two sorting modes.  The mode line in a Dired buffer indicates which way it "
+"is currently sorted---by name, or by date."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1202
+msgid ""
+"@kbd{C-u s @var{switches} @key{RET}} lets you specify a new value for "
+"@code{dired-listing-switches}."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:1203
+#, no-wrap
+msgid "Dired and Find"
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:1204
+#, no-wrap
+msgid "Dired and @code{find}"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1205
+#, no-wrap
+msgid "@code{find} and Dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1209
+msgid ""
+"You can select a set of files for display in a Dired buffer more flexibly by "
+"using the @command{find} utility to choose the files."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1210
+#, no-wrap
+msgid "find-name-dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1215
+msgid ""
+"To search for files with names matching a wildcard pattern use @kbd{M-x "
+"find-name-dired}.  It reads arguments @var{directory} and @var{pattern}, and "
+"chooses all the files in @var{directory} or its subdirectories whose "
+"individual names match @var{pattern}."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1218
+msgid ""
+"The files thus chosen are displayed in a Dired buffer, in which the ordinary "
+"Dired commands are available."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1219
+#, no-wrap
+msgid "find-grep-dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1230
+msgid ""
+"If you want to test the contents of files, rather than their names, use "
+"@kbd{M-x find-grep-dired}.  This command reads two minibuffer arguments, "
+"@var{directory} and @var{regexp}; it chooses all the files in "
+"@var{directory} or its subdirectories that contain a match for "
+"@var{regexp}.  It works by running the programs @command{find} and "
+"@command{grep}.  See also @kbd{M-x grep-find}, in @ref{Grep Searching}.  "
+"Remember to write the regular expression for @command{grep}, not for Emacs.  "
+"(An alternative method of showing files whose contents match a given regexp "
+"is the @kbd{% g @var{regexp}} command, see @ref{Marks vs Flags}.)"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1231
+#, no-wrap
+msgid "find-dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1238
+msgid ""
+"The most general command in this series is @kbd{M-x find-dired}, which lets "
+"you specify any condition that @command{find} can test.  It takes two "
+"minibuffer arguments, @var{directory} and @var{find-args}; it runs "
+"@command{find} in @var{directory}, passing @var{find-args} to tell "
+"@command{find} what condition to test.  To use this command, you need to "
+"know how to use @command{find}."
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:1239
+#, no-wrap
+msgid "find-ls-option"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1244
+msgid ""
+"The format of listing produced by these commands is controlled by the "
+"variable @code{find-ls-option}.  This is a pair of options; the first "
+"specifying how to call @command{find} to produce the file listing, and the "
+"second telling Dired to parse the output."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1245
+#, no-wrap
+msgid "locate"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1246
+#, no-wrap
+msgid "locate-with-filter"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1247
+#, no-wrap
+msgid "file database (locate)"
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:1248
+#, no-wrap
+msgid "locate-command"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1252
+msgid ""
+"The command @kbd{M-x locate} provides a similar interface to the "
+"@command{locate} program.  @kbd{M-x locate-with-filter} is similar, but "
+"keeps only files whose names match a given regular expression."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1257
+msgid ""
+"These buffers don't work entirely like ordinary Dired buffers: file "
+"operations work, but do not always automatically update the buffer.  "
+"Reverting the buffer with @kbd{g} deletes all inserted subdirectories, and "
+"erases all flags and marks."
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:1259
+#, no-wrap
+msgid "Editing the Dired Buffer"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1261
+#, no-wrap
+msgid "wdired mode"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1262
+#, no-wrap
+msgid "wdired-change-to-wdired-mode"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1268
+msgid ""
+"Wdired is a special mode that allows you to perform file operations by "
+"editing the Dired buffer directly (the ``W'' in ``Wdired'' stands for "
+"``writable''.)  To enter Wdired mode, type @kbd{C-x C-q} "
+"(@code{dired-toggle-read-only}) while in a Dired buffer.  Alternatively, use "
+"the @samp{Immediate / Edit File Names} menu item."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1269
+#, no-wrap
+msgid "wdired-finish-edit"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1276
+msgid ""
+"While in Wdired mode, you can rename files by editing the file names "
+"displayed in the Dired buffer.  All the ordinary Emacs editing commands, "
+"including rectangle operations and @code{query-replace}, are available for "
+"this.  Once you are done editing, type @kbd{C-c C-c} "
+"(@code{wdired-finish-edit}).  This applies your changes and switches back to "
+"ordinary Dired mode."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1282
+msgid ""
+"Apart from simply renaming files, you can move a file to another directory "
+"by typing in the new file name (either absolute or relative).  To mark a "
+"file for deletion, delete the entire file name.  To change the target of a "
+"symbolic link, edit the link target name which appears next to the link "
+"name."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1290
+msgid ""
+"The rest of the text in the buffer, such as the file sizes and modification "
+"dates, is marked read-only, so you can't edit it.  However, if you set "
+"@code{wdired-allow-to-change-permissions} to @code{t}, you can edit the file "
+"permissions.  For example, you can change @samp{-rw-r--r--} to "
+"@samp{-rw-rw-rw-} to make a file world-writable.  These changes also take "
+"effect when you type @kbd{C-c C-c}."
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:1292
+#, no-wrap
+msgid "Viewing Image Thumbnails in Dired"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1293
+#, no-wrap
+msgid "image-dired mode"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1294
+#, no-wrap
+msgid "image-dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1299
+msgid ""
+"Image-Dired is a facility for browsing image files.  It provides viewing the "
+"images either as thumbnails or in full size, either inside Emacs or through "
+"an external viewer."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1300
+#, no-wrap
+msgid "C-t d @r{(Image-Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1301
+#, no-wrap
+msgid "image-dired-display-thumbs"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1306
+msgid ""
+"To enter Image-Dired, mark the image files you want to look at in the Dired "
+"buffer, using @kbd{m} as usual.  Then type @kbd{C-t d} "
+"(@code{image-dired-display-thumbs}).  This creates and switches to a buffer "
+"containing image-dired, corresponding to the marked files."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1314
+msgid ""
+"You can also enter Image-Dired directly by typing @kbd{M-x image-dired}.  "
+"This prompts for a directory; specify one that has image files.  This "
+"creates thumbnails for all the images in that directory, and displays them "
+"all in the ``thumbnail buffer''.  This takes a long time if the directory "
+"contains many image files, and it asks for confirmation if the number of "
+"image files exceeds @code{image-dired-show-all-from-dir-max-files}."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1324
+msgid ""
+"With point in the thumbnail buffer, you can type @key{RET} "
+"(@code{image-dired-display-thumbnail-original-image}) to display a sized "
+"version of it in another window.  This sizes the image to fit the window.  "
+"Use the arrow keys to move around in the buffer.  For easy browsing, use "
+"@key{SPC} (@code{image-dired-display-next-thumbnail-original}) to advance "
+"and display the next image.  Typing @key{DEL} "
+"(@code{image-dired-display-previous-thumbnail-original}) backs up to the "
+"previous thumbnail and displays that instead."
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:1325
+#, no-wrap
+msgid "image-dired-external-viewer"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1331
+msgid ""
+"To view and the image in its original size, either provide a prefix argument "
+"(@kbd{C-u}) before pressing @key{RET}, or type @kbd{C-@key{RET}} "
+"(@code{image-dired-thumbnail-display-external}) to display the image in an "
+"external viewer.  You must first configure "
+"@code{image-dired-external-viewer}."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1337
+msgid ""
+"You can delete images through Image-Dired also.  Type @kbd{d} "
+"(@code{image-dired-flag-thumb-original-file}) to flag the image file for "
+"deletion in the Dired buffer.  You can also delete the thumbnail image from "
+"the thumbnail buffer with @kbd{C-d} (@code{image-dired-delete-char})."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1341
+msgid ""
+"More advanced features include @dfn{image tags}, which are metadata used to "
+"categorize image files.  The tags are stored in a plain text file configured "
+"by @code{image-dired-db-file}."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1348
+msgid ""
+"To tag image files, mark them in the dired buffer (you can also mark files "
+"in Dired from the thumbnail buffer by typing @kbd{m}) and type @kbd{C-t t} "
+"(@code{image-dired-tag-files}).  This reads the tag name in the minibuffer.  "
+"To mark files having a certain tag, type @kbd{C-t f} "
+"(@code{image-dired-mark-tagged-files}).  After marking image files with a "
+"certain tag, you can use @kbd{C-t d} to view them."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1357
+msgid ""
+"You can also tag a file directly from the thumbnail buffer by typing @kbd{t "
+"t} and you can remove a tag by typing @kbd{t r}.  There is also a special "
+"``tag'' called ``comment'' for each file (it is not a tag in the exact same "
+"sense as the other tags, it is handled slightly different).  That is used to "
+"enter a comment or description about the image.  You comment a file from the "
+"thumbnail buffer by typing @kbd{c}.  You will be prompted for a comment.  "
+"Type @kbd{C-t c} to add a comment from Dired "
+"(@code{image-dired-dired-comment-files})."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1362
+msgid ""
+"Image-Dired also provides simple image manipulation.  In the thumbnail "
+"buffer, type @kbd{L} to rotate the original image 90 degrees anti clockwise, "
+"and @kbd{R} to rotate it 90 degrees clockwise.  This rotation is lossless, "
+"and uses an external utility called JpegTRAN."
+msgstr ""
+
+#. type: node
+#: dired.texi.orig:1363
+#, no-wrap
+msgid "Misc Dired Features"
+msgstr ""
+
+#. type: section
+#: dired.texi.orig:1364
+#, no-wrap
+msgid "Other Dired Features"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1366
+#, no-wrap
+msgid "+ @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1367
+#, no-wrap
+msgid "dired-create-directory"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1371
+msgid ""
+"The command @kbd{+} (@code{dired-create-directory}) reads a directory name, "
+"and creates that directory.  It signals an error if the directory already "
+"exists."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1372
+#, no-wrap
+msgid "searching multiple files via Dired"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1373
+#, no-wrap
+msgid "M-s a C-s @r{(Dired)}"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1374
+#, no-wrap
+msgid "M-s a M-C-s @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1375
+#, no-wrap
+msgid "dired-do-isearch"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1376
+#, no-wrap
+msgid "dired-do-isearch-regexp"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1385
+msgid ""
+"The command @kbd{M-s a C-s} (@code{dired-do-isearch}) begins a "
+"``multi-file'' incremental search on the marked files.  If a search fails at "
+"the end of a file, typing @kbd{C-s} advances to the next marked file and "
+"repeats the search; at the end of the last marked file, the search wraps "
+"around to the first marked file.  The command @kbd{M-s a M-C-s} "
+"(@code{dired-do-isearch-regexp}) does the same with a regular expression "
+"search.  @xref{Repeat Isearch}, for information about search repetition."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1386
+#, no-wrap
+msgid "adding to the kill ring in Dired"
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1387
+#, no-wrap
+msgid "w @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1388
+#, no-wrap
+msgid "dired-copy-filename-as-kill"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1393
+msgid ""
+"The command @kbd{w} (@code{dired-copy-filename-as-kill}) puts the names of "
+"the marked (or next @var{n}) files into the kill ring, as if you had killed "
+"them with @kbd{C-w}.  The names are separated by a space."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1401
+msgid ""
+"With a zero prefix argument, this uses the absolute file name of each marked "
+"file.  With just @kbd{C-u} as the prefix argument, it uses file names "
+"relative to the Dired buffer's default directory.  (This can still contain "
+"slashes if in a subdirectory.)  As a special case, if point is on a "
+"directory headerline, @kbd{w} gives you the absolute name of that "
+"directory.  Any prefix argument or marked files are ignored in this case."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1406
+msgid ""
+"The main purpose of this command is so that you can yank the file names into "
+"arguments for other Emacs commands.  It also displays what it added to the "
+"kill ring, so you can use it to display the list of currently marked files "
+"in the echo area."
+msgstr ""
+
+#. type: kindex
+#: dired.texi.orig:1407
+#, no-wrap
+msgid "( @r{(Dired)}"
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1408
+#, no-wrap
+msgid "dired-hide-details-mode"
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:1409
+#, no-wrap
+msgid "dired-hide-details-hide-symlink-targets"
+msgstr ""
+
+#. type: vindex
+#: dired.texi.orig:1410
+#, no-wrap
+msgid "dired-hide-details-hide-information-lines"
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1411
+#, no-wrap
+msgid "hiding details in Dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1419
+msgid ""
+"The command @kbd{(} (@code{dired-hide-details-mode}) toggles whether "
+"details, such as ownership or file permissions, are visible in the current "
+"Dired buffer.  By default, it also hides the targets of symbolic links, and "
+"all lines other than the header line and file/directory listings.  To change "
+"this, customize the options @code{dired-hide-details-hide-symlink-targets} "
+"and @code{dired-hide-details-hide-information-lines}, respectively."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1420
+#, no-wrap
+msgid "Dired and version control"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1424
+msgid ""
+"If the directory you are visiting is under version control (@pxref{Version "
+"Control}), then the normal VC diff and log commands will operate on the "
+"selected files."
+msgstr ""
+
+#. type: findex
+#: dired.texi.orig:1425
+#, no-wrap
+msgid "dired-compare-directories"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1431
+msgid ""
+"The command @kbd{M-x dired-compare-directories} is used to compare the "
+"current Dired buffer with another directory.  It marks all the files that "
+"are ``different'' between the two directories.  It puts these marks in all "
+"Dired buffers where these files are listed, which of course includes the "
+"current buffer."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1443
+msgid ""
+"The default comparison method (used if you type @key{RET} at the prompt) is "
+"to compare just the file names---each file name that does not appear in the "
+"other directory is ``different''.  You can specify more stringent "
+"comparisons by entering a Lisp expression, which can refer to the variables "
+"@code{size1} and @code{size2}, the respective file sizes; @code{mtime1} and "
+"@code{mtime2}, the last modification times in seconds, as floating point "
+"numbers; and @code{fa1} and @code{fa2}, the respective file attribute lists "
+"(as returned by the function @code{file-attributes}).  This expression is "
+"evaluated for each pair of like-named files, and if the expression's value "
+"is non-@code{nil}, those files are considered ``different''."
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1449
+msgid ""
+"For instance, the sequence @code{M-x dired-compare-directories @key{RET} (> "
+"mtime1 mtime2) @key{RET}} marks files newer in this directory than in the "
+"other, and marks files older in the other directory than in this one.  It "
+"also marks files with no counterpart, in both directories, as always."
+msgstr ""
+
+#. type: cindex
+#: dired.texi.orig:1450
+#, no-wrap
+msgid "drag and drop, Dired"
+msgstr ""
+
+#. type: Plain text
+#: dired.texi.orig:1456
+msgid ""
+"On the X Window System, Emacs supports the ``drag and drop'' protocol.  You "
+"can drag a file object from another program, and drop it onto a Dired "
+"buffer; this either moves, copies, or creates a link to the file in that "
+"directory.  Precisely which action is taken is determined by the originating "
+"program.  Dragging files out of a Dired buffer is currently not supported."
+msgstr ""

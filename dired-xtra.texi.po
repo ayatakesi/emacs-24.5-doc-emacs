@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: node
+#: dired-xtra.texi.orig:7
+#, no-wrap
+msgid "Subdir Switches"
+msgstr ""
+
+#. type: section
+#: dired-xtra.texi.orig:8
+#, no-wrap
+msgid "Subdirectory Switches in Dired"
+msgstr ""
+
+#. type: Plain text
+#: dired-xtra.texi.orig:13
+msgid ""
+"You can insert subdirectories with specified @command{ls} switches in Dired "
+"buffers using @kbd{C-u i}.  You can change the @command{ls} switches of an "
+"already inserted subdirectory at point using @kbd{C-u l}."
+msgstr ""
+
+#. type: Plain text
+#: dired-xtra.texi.orig:16
+msgid ""
+"Dired preserves the switches if you revert the buffer.  Deleting a "
+"subdirectory forgets about its switches."
+msgstr ""
+
+#. type: Plain text
+#: dired-xtra.texi.orig:18
+msgid "Using @code{dired-undo}"
+msgstr ""
+
+#. type: iftex
+#: dired-xtra.texi.orig:20
+msgid "(@pxref{Marks vs Flags,,, emacs, the Emacs Manual})"
+msgstr ""
+
+#. type: ifnottex
+#: dired-xtra.texi.orig:23
+msgid "(@pxref{Marks vs Flags})"
+msgstr ""
+
+#. type: Plain text
+#: dired-xtra.texi.orig:35
+msgid ""
+"to reinsert or delete subdirectories that were inserted with explicit "
+"switches can bypass Dired's machinery for remembering (or forgetting) "
+"switches.  Deleting a subdirectory using @code{dired-undo} does not forget "
+"its switches.  When later reinserted using @kbd{i}, it will be reinserted "
+"using its old switches.  Using @code{dired-undo} to reinsert a subdirectory "
+"that was deleted using the regular Dired commands (not @code{dired-undo})  "
+"will originally insert it with its old switches.  Reverting the buffer, "
+"however, will relist it using the buffer's default switches.  If any of this "
+"yields problems, you can easily correct the situation using @kbd{C-u i} or "
+"@kbd{C-u l}."
+msgstr ""
+
+#. type: Plain text
+#: dired-xtra.texi.orig:41
+msgid ""
+"Dired does not remember the @code{R} switch.  Inserting a subdirectory with "
+"switches that include the @code{R} switch is equivalent to inserting each of "
+"its subdirectories using all remaining switches.  For instance, updating or "
+"killing a subdirectory that was inserted with the @code{R} switch will not "
+"update or kill its subdirectories."
+msgstr ""
+
+#. type: Plain text
+#: dired-xtra.texi.orig:47
+msgid ""
+"The buffer's default switches do not affect subdirectories that were "
+"inserted using explicitly specified switches.  In particular, commands such "
+"as @kbd{s} that change the buffer's switches do not affect such "
+"subdirectories.  (They do, however, affect subdirectories without explicitly "
+"assigned switches.)"
+msgstr ""
+
+#. type: Plain text
+#: dired-xtra.texi.orig:50
+msgid ""
+"You can make Dired forget about all subdirectory switches and relist all "
+"subdirectories with the buffer's default switches using @kbd{M-x "
+"dired-reset-subdir-switches}.  This also reverts the Dired buffer."
+msgstr ""

@@ -1,0 +1,1014 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: cindex
+#: emerge-xtra.texi.orig:7 emerge-xtra.texi.orig:9
+#, no-wrap
+msgid "Emerge"
+msgstr ""
+
+#. type: section
+#: emerge-xtra.texi.orig:8
+#, no-wrap
+msgid "Merging Files with Emerge"
+msgstr ""
+
+#. type: cindex
+#: emerge-xtra.texi.orig:10
+#, no-wrap
+msgid "merging files"
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:16
+msgid ""
+"It's not unusual for programmers to get their signals crossed and modify the "
+"same program in two different directions.  To recover from this confusion, "
+"you need to merge the two versions.  Emerge makes this easier.  For other "
+"ways to compare files, see"
+msgstr ""
+
+#. type: iftex
+#: emerge-xtra.texi.orig:18
+msgid "@ref{Comparing Files,,, emacs, the Emacs Manual},"
+msgstr ""
+
+#. type: ifnottex
+#: emerge-xtra.texi.orig:21
+msgid "@ref{Comparing Files},"
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:23
+msgid "and @ref{Top,, Ediff, ediff, The Ediff Manual}."
+msgstr ""
+
+#. type: subsection
+#: emerge-xtra.texi.orig:35 emerge-xtra.texi.orig:37 emerge-xtra.texi.orig:38
+#, no-wrap
+msgid "Overview of Emerge"
+msgstr ""
+
+#. type: menuentry
+#: emerge-xtra.texi.orig:35
+msgid "How to start Emerge.  Basic concepts."
+msgstr ""
+
+#. type: subsection
+#: emerge-xtra.texi.orig:35 emerge-xtra.texi.orig:128 emerge-xtra.texi.orig:129
+#, no-wrap
+msgid "Submodes of Emerge"
+msgstr ""
+
+#. type: menuentry
+#: emerge-xtra.texi.orig:35
+msgid "Fast mode vs. Edit mode.  Skip Prefers mode and Auto Advance mode."
+msgstr ""
+
+#. type: node
+#: emerge-xtra.texi.orig:35 emerge-xtra.texi.orig:166
+#, no-wrap
+msgid "State of Difference"
+msgstr ""
+
+#. type: menuentry
+#: emerge-xtra.texi.orig:35
+msgid "You do the merge by specifying state A or B for each difference."
+msgstr ""
+
+#. type: subsection
+#: emerge-xtra.texi.orig:35 emerge-xtra.texi.orig:223 emerge-xtra.texi.orig:224
+#, no-wrap
+msgid "Merge Commands"
+msgstr ""
+
+#. type: menuentry
+#: emerge-xtra.texi.orig:35
+msgid "Commands for selecting a difference, changing states of differences, etc."
+msgstr ""
+
+#. type: subsection
+#: emerge-xtra.texi.orig:35 emerge-xtra.texi.orig:337 emerge-xtra.texi.orig:338
+#, no-wrap
+msgid "Exiting Emerge"
+msgstr ""
+
+#. type: menuentry
+#: emerge-xtra.texi.orig:35
+msgid "What to do when you've finished the merge."
+msgstr ""
+
+#. type: node
+#: emerge-xtra.texi.orig:35 emerge-xtra.texi.orig:355
+#, no-wrap
+msgid "Combining in Emerge"
+msgstr ""
+
+#. type: menuentry
+#: emerge-xtra.texi.orig:35
+msgid "How to keep both alternatives for a difference."
+msgstr ""
+
+#. type: subsection
+#: emerge-xtra.texi.orig:35 emerge-xtra.texi.orig:387 emerge-xtra.texi.orig:388
+#, no-wrap
+msgid "Fine Points of Emerge"
+msgstr ""
+
+#. type: menuentry
+#: emerge-xtra.texi.orig:35
+msgid "Miscellaneous issues."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:41
+msgid "To start Emerge, run one of these four commands:"
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:43
+#, no-wrap
+msgid "M-x emerge-files"
+msgstr ""
+
+#. type: findex
+#: emerge-xtra.texi.orig:44
+#, no-wrap
+msgid "emerge-files"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:46
+msgid "Merge two specified files."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:47
+#, no-wrap
+msgid "M-x emerge-files-with-ancestor"
+msgstr ""
+
+#. type: findex
+#: emerge-xtra.texi.orig:48
+#, no-wrap
+msgid "emerge-files-with-ancestor"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:50
+msgid "Merge two specified files, with reference to a common ancestor."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:51
+#, no-wrap
+msgid "M-x emerge-buffers"
+msgstr ""
+
+#. type: findex
+#: emerge-xtra.texi.orig:52
+#, no-wrap
+msgid "emerge-buffers"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:54
+msgid "Merge two buffers."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:55
+#, no-wrap
+msgid "M-x emerge-buffers-with-ancestor"
+msgstr ""
+
+#. type: findex
+#: emerge-xtra.texi.orig:56
+#, no-wrap
+msgid "emerge-buffers-with-ancestor"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:59
+msgid "Merge two buffers with reference to a common ancestor in a third buffer."
+msgstr ""
+
+#. type: cindex
+#: emerge-xtra.texi.orig:61
+#, no-wrap
+msgid "merge buffer (Emerge)"
+msgstr ""
+
+#. type: cindex
+#: emerge-xtra.texi.orig:62
+#, no-wrap
+msgid "A and B buffers (Emerge)"
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:69
+msgid ""
+"The Emerge commands compare two files or buffers, and display the comparison "
+"in three buffers: one for each input text (the @dfn{A buffer} and the @dfn{B "
+"buffer}), and one (the @dfn{merge buffer}) where merging takes place.  The "
+"merge buffer shows the full merged text, not just the differences.  Wherever "
+"the two input texts differ, you can choose which one of them to include in "
+"the merge buffer."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:72
+msgid ""
+"The Emerge commands that take input from existing buffers use only the "
+"accessible portions of those buffers, if they are narrowed."
+msgstr ""
+
+#. type: iftex
+#: emerge-xtra.texi.orig:74
+msgid "@xref{Narrowing,,, emacs, the Emacs Manual}."
+msgstr ""
+
+#. type: ifnottex
+#: emerge-xtra.texi.orig:77
+msgid "@xref{Narrowing}."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:88
+msgid ""
+"If a common ancestor version is available, from which the two texts to be "
+"merged were both derived, Emerge can use it to guess which alternative is "
+"right.  Wherever one current version agrees with the ancestor, Emerge "
+"presumes that the other current version is a deliberate change which should "
+"be kept in the merged version.  Use the @samp{with-ancestor} commands if you "
+"want to specify a common ancestor text.  These commands read three file or "
+"buffer names---variant A, variant B, and the common ancestor."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:94
+msgid ""
+"After the comparison is done and the buffers are prepared, the interactive "
+"merging starts.  You control the merging by typing special @dfn{merge "
+"commands} in the merge buffer (@pxref{Merge Commands}).  For each run of "
+"differences between the input texts, you can choose which one of them to "
+"keep, or edit them both together."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:98
+msgid ""
+"The merge buffer uses a special major mode, Emerge mode, with commands for "
+"making these choices.  But you can also edit the buffer with ordinary Emacs "
+"commands."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:102
+msgid ""
+"At any given time, the attention of Emerge is focused on one particular "
+"difference, called the @dfn{selected} difference.  This difference is marked "
+"off in the three buffers like this:"
+msgstr ""
+
+#. type: example
+#: emerge-xtra.texi.orig:107
+#, no-wrap
+msgid ""
+"vvvvvvvvvvvvvvvvvvvv\n"
+"@var{text that differs}\n"
+"^^^^^^^^^^^^^^^^^^^^\n"
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:112
+msgid ""
+"Emerge numbers all the differences sequentially and the mode line always "
+"shows the number of the selected difference."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:116
+msgid ""
+"Normally, the merge buffer starts out with the A version of the text.  But "
+"when the A version of a difference agrees with the common ancestor, then the "
+"B version is initially preferred for that difference."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:123
+msgid ""
+"Emerge leaves the merged text in the merge buffer when you exit.  At that "
+"point, you can save it in a file with @kbd{C-x C-w}.  If you give a numeric "
+"argument to @code{emerge-files} or @code{emerge-files-with-ancestor}, it "
+"reads the name of the output file using the minibuffer.  (This is the last "
+"file name those commands read.)  Then exiting from Emerge saves the merged "
+"text in the output file."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:127
+msgid ""
+"Normally, Emerge commands save the output buffer in its file when you exit.  "
+"If you abort Emerge with @kbd{C-]}, the Emerge command does not save the "
+"output buffer, but you can save it yourself if you wish."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:138
+msgid ""
+"You can choose between two modes for giving merge commands: Fast mode and "
+"Edit mode.  In Fast mode, basic merge commands are single characters, but "
+"ordinary Emacs commands are disabled.  This is convenient if you use only "
+"merge commands.  In Edit mode, all merge commands start with the prefix key "
+"@kbd{C-c C-c}, and the normal Emacs commands are also available.  This "
+"allows editing the merge buffer, but slows down Emerge operations."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:142
+msgid ""
+"Use @kbd{e} to switch to Edit mode, and @kbd{C-c C-c f} to switch to Fast "
+"mode.  The mode line indicates Edit and Fast modes with @samp{E} and "
+"@samp{F}."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:145
+msgid ""
+"Emerge has two additional submodes that affect how particular merge commands "
+"work: Auto Advance mode and Skip Prefers mode."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:150
+msgid ""
+"If Auto Advance mode is in effect, the @kbd{a} and @kbd{b} commands advance "
+"to the next difference.  This lets you go through the merge faster as long "
+"as you simply choose one of the alternatives from the input.  The mode line "
+"indicates Auto Advance mode with @samp{A}."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:157
+msgid ""
+"If Skip Prefers mode is in effect, the @kbd{n} and @kbd{p} commands skip "
+"over differences in states ``prefer-A'' and ``prefer-B'' (@pxref{State of "
+"Difference}).  Thus you see only differences for which neither version is "
+"presumed ``correct''.  The mode line indicates Skip Prefers mode with "
+"@samp{S}.  This mode is only relevant when there is an ancestor."
+msgstr ""
+
+#. type: findex
+#: emerge-xtra.texi.orig:158
+#, no-wrap
+msgid "emerge-auto-advance"
+msgstr ""
+
+#. type: findex
+#: emerge-xtra.texi.orig:159
+#, no-wrap
+msgid "emerge-skip-prefers"
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:165
+msgid ""
+"Use the command @kbd{s a} (@code{emerge-auto-advance}) to set or clear Auto "
+"Advance mode.  Use @kbd{s s} (@code{emerge-skip-prefers}) to set or clear "
+"Skip Prefers mode.  These commands turn on the mode with a positive "
+"argument, turn it off with a negative or zero argument, and toggle the mode "
+"with no argument."
+msgstr ""
+
+#. type: subsection
+#: emerge-xtra.texi.orig:167
+#, no-wrap
+msgid "State of a Difference"
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:171
+msgid ""
+"In the merge buffer, a difference is marked with lines of @samp{v} and "
+"@samp{^} characters.  Each difference has one of these seven states:"
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:173
+#, no-wrap
+msgid "A"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:176
+msgid ""
+"The difference is showing the A version.  The @kbd{a} command always "
+"produces this state; the mode line indicates it with @samp{A}."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:177
+#, no-wrap
+msgid "B"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:180
+msgid ""
+"The difference is showing the B version.  The @kbd{b} command always "
+"produces this state; the mode line indicates it with @samp{B}."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:181
+#, no-wrap
+msgid "default-A"
+msgstr ""
+
+#. type: itemx
+#: emerge-xtra.texi.orig:182
+#, no-wrap
+msgid "default-B"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:187
+msgid ""
+"The difference is showing the A or the B state by default, because you "
+"haven't made a choice.  All differences start in the default-A state (and "
+"thus the merge buffer is a copy of the A buffer), except those for which one "
+"alternative is ``preferred'' (see below)."
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:192
+msgid ""
+"When you select a difference, its state changes from default-A or default-B "
+"to plain A or B@.  Thus, the selected difference never has state default-A "
+"or default-B, and these states are never displayed in the mode line."
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:201
+msgid ""
+"The command @kbd{d a} chooses default-A as the default state, and @kbd{d b} "
+"chooses default-B@.  This chosen default applies to all differences that you "
+"have never selected and for which no alternative is preferred.  If you are "
+"moving through the merge sequentially, the differences you haven't selected "
+"are those following the selected one.  Thus, while moving sequentially, you "
+"can effectively make the A version the default for some sections of the "
+"merge buffer and the B version the default for others by using @kbd{d a} and "
+"@kbd{d b} between sections."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:202
+#, no-wrap
+msgid "prefer-A"
+msgstr ""
+
+#. type: itemx
+#: emerge-xtra.texi.orig:203
+#, no-wrap
+msgid "prefer-B"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:210
+msgid ""
+"The difference is showing the A or B state because it is @dfn{preferred}.  "
+"This means that you haven't made an explicit choice, but one alternative "
+"seems likely to be right because the other alternative agrees with the "
+"common ancestor.  Thus, where the A buffer agrees with the common ancestor, "
+"the B version is preferred, because chances are it is the one that was "
+"actually changed."
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:212
+msgid "These two states are displayed in the mode line as @samp{A*} and @samp{B*}."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:213
+#, no-wrap
+msgid "combined"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:216
+msgid ""
+"The difference is showing a combination of the A and B states, as a result "
+"of the @kbd{x c} or @kbd{x C} commands."
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:219
+msgid ""
+"Once a difference is in this state, the @kbd{a} and @kbd{b} commands don't "
+"do anything to it unless you give them a numeric argument."
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:221
+msgid "The mode line displays this state as @samp{comb}."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:228
+msgid ""
+"Here are the Merge commands for Fast mode; in Edit mode, precede them with "
+"@kbd{C-c C-c}:"
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:230
+#, no-wrap
+msgid "p"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:232
+msgid "Select the previous difference."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:233
+#, no-wrap
+msgid "n"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:235
+msgid "Select the next difference."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:236
+#, no-wrap
+msgid "a"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:238
+msgid "Choose the A version of this difference."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:239
+#, no-wrap
+msgid "b"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:241
+msgid "Choose the B version of this difference."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:242
+#, no-wrap
+msgid "C-u @var{n} j"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:244
+msgid "Select difference number @var{n}."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:245
+#, no-wrap
+msgid "."
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:249
+msgid "Select the difference containing point."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:250
+#, no-wrap
+msgid "q"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:252
+msgid "Quit---finish the merge."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:253
+#, no-wrap
+msgid "C-]"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:255
+msgid "Abort---exit merging and do not save the output."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:256
+#, no-wrap
+msgid "f"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:258
+msgid "Go into Fast mode.  (In Edit mode, this is actually @kbd{C-c C-c f}.)"
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:259
+#, no-wrap
+msgid "e"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:261
+msgid "Go into Edit mode."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:262
+#, no-wrap
+msgid "l"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:265
+msgid ""
+"Recenter (like @kbd{C-l}) all three windows.  With an argument, reestablish "
+"the default three-window display."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:266
+#, no-wrap
+msgid "-"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:268
+msgid "Specify part of a prefix numeric argument."
+msgstr ""
+
+#. type: var{#1}
+#: emerge-xtra.texi.orig:269
+#, no-wrap
+msgid "digit"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:271
+msgid "Also specify part of a prefix numeric argument."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:272
+#, no-wrap
+msgid "d a"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:275
+msgid "Choose the A version as the default from here down in the merge buffer."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:276
+#, no-wrap
+msgid "d b"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:279
+msgid "Choose the B version as the default from here down in the merge buffer."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:280
+#, no-wrap
+msgid "c a"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:282
+msgid "Copy the A version of this difference into the kill ring."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:283
+#, no-wrap
+msgid "c b"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:285
+msgid "Copy the B version of this difference into the kill ring."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:286
+#, no-wrap
+msgid "i a"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:288
+msgid "Insert the A version of this difference at point."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:289
+#, no-wrap
+msgid "i b"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:291
+msgid "Insert the B version of this difference at point."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:292
+#, no-wrap
+msgid "m"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:294
+msgid "Put point and mark around the difference."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:295
+#, no-wrap
+msgid "^"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:297
+msgid "Scroll all three windows down (like @kbd{M-v})."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:298
+#, no-wrap
+msgid "v"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:300
+msgid "Scroll all three windows up (like @kbd{C-v})."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:301
+#, no-wrap
+msgid "<"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:303
+msgid "Scroll all three windows left (like @kbd{C-x <})."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:304
+#, no-wrap
+msgid ">"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:306
+msgid "Scroll all three windows right (like @kbd{C-x >})."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:307
+#, no-wrap
+msgid "|"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:309
+msgid "Reset horizontal scroll on all three windows."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:310
+#, no-wrap
+msgid "x 1"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:313
+msgid ""
+"Shrink the merge window to one line.  (Use @kbd{C-u l} to restore it to full "
+"size.)"
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:314
+#, no-wrap
+msgid "x c"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:317
+msgid "Combine the two versions of this difference (@pxref{Combining in Emerge})."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:318
+#, no-wrap
+msgid "x f"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:321
+msgid ""
+"Show the names of the files/buffers Emerge is operating on, in a Help "
+"window.  (Use @kbd{C-u l} to restore windows.)"
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:322
+#, no-wrap
+msgid "x j"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:325
+msgid ""
+"Join this difference with the following one.  (@kbd{C-u x j} joins this "
+"difference with the previous one.)"
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:326
+#, no-wrap
+msgid "x s"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:330
+msgid ""
+"Split this difference into two differences.  Before you use this command, "
+"position point in each of the three buffers at the place where you want to "
+"split the difference."
+msgstr ""
+
+#. type: item
+#: emerge-xtra.texi.orig:331
+#, no-wrap
+msgid "x t"
+msgstr ""
+
+#. type: table
+#: emerge-xtra.texi.orig:335
+msgid ""
+"Trim identical lines off the top and bottom of the difference.  Such lines "
+"occur when the A and B versions are identical but differ from the ancestor "
+"version."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:346
+msgid ""
+"The @kbd{q} command (@code{emerge-quit}) finishes the merge, storing the "
+"results into the output file if you specified one.  It restores the A and B "
+"buffers to their proper contents, or kills them if they were created by "
+"Emerge and you haven't changed them.  It also disables the Emerge commands "
+"in the merge buffer, since executing them later could damage the contents of "
+"the various buffers."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:350
+msgid ""
+"@kbd{C-]} aborts the merge.  This means exiting without writing the output "
+"file.  If you didn't specify an output file, then there is no real "
+"difference between aborting and finishing the merge."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:354
+msgid ""
+"If the Emerge command was called from another Lisp program, then its return "
+"value is @code{t} for successful completion, or @code{nil} if you abort."
+msgstr ""
+
+#. type: subsection
+#: emerge-xtra.texi.orig:356
+#, no-wrap
+msgid "Combining the Two Versions"
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:361
+msgid ""
+"Sometimes you want to keep @emph{both} alternatives for a particular "
+"difference.  To do this, use @kbd{x c}, which edits the merge buffer like "
+"this:"
+msgstr ""
+
+#. type: group
+#: emerge-xtra.texi.orig:369
+#, no-wrap
+msgid ""
+"#ifdef NEW\n"
+"@var{version from B buffer}\n"
+"#else /* not NEW */\n"
+"@var{version from A buffer}\n"
+"#endif /* not NEW */\n"
+msgstr ""
+
+#. type: vindex
+#: emerge-xtra.texi.orig:373
+#, no-wrap
+msgid "emerge-combine-versions-template"
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:380
+msgid ""
+"While this example shows C preprocessor conditionals delimiting the two "
+"alternative versions, you can specify the strings to use by setting the "
+"variable @code{emerge-combine-versions-template} to a string of your "
+"choice.  In the string, @samp{%a} says where to put version A, and @samp{%b} "
+"says where to put version B@.  The default setting, which produces the "
+"results shown above, looks like this:"
+msgstr ""
+
+#. type: group
+#: emerge-xtra.texi.orig:384
+#, no-wrap
+msgid "\"#ifdef NEW\\n%b#else /* not NEW */\\n%a#endif /* not NEW */\\n\"\n"
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:393
+msgid ""
+"During the merge, you mustn't try to edit the A and B buffers yourself.  "
+"Emerge modifies them temporarily, but ultimately puts them back the way they "
+"were."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:397
+msgid ""
+"You can have any number of merges going at once---just don't use any one "
+"buffer as input to more than one merge at once, since the temporary changes "
+"made in these buffers would get in each other's way."
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:404
+msgid ""
+"Starting Emerge can take a long time because it needs to compare the files "
+"fully.  Emacs can't do anything else until @code{diff} finishes.  Perhaps in "
+"the future someone will change Emerge to do the comparison in the background "
+"when the input files are large---then you could keep on doing other things "
+"with Emacs until Emerge is ready to accept commands."
+msgstr ""
+
+#. type: vindex
+#: emerge-xtra.texi.orig:405
+#, no-wrap
+msgid "emerge-startup-hook"
+msgstr ""
+
+#. type: Plain text
+#: emerge-xtra.texi.orig:408
+msgid "After setting up the merge, Emerge runs the hook @code{emerge-startup-hook}."
+msgstr ""
+
+#. type: iftex
+#: emerge-xtra.texi.orig:410
+msgid "@xref{Hooks,,, emacs, the Emacs Manual}."
+msgstr ""
+
+#. type: ifnottex
+#: emerge-xtra.texi.orig:413
+msgid "@xref{Hooks}."
+msgstr ""

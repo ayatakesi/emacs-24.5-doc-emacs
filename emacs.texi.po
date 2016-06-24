@@ -1,0 +1,7737 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: titlefont{#1}
+#: emacs.texi.orig:4 emacs.texi.orig:79 emacs.texi.orig:84
+#, no-wrap
+msgid "GNU Emacs Manual"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:18
+#, no-wrap
+msgid "emacsver.texi"
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:23
+msgid "This is the @value{EDITION} edition of the @cite{GNU Emacs Manual},@*"
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:26
+msgid "This is the @cite{GNU Emacs Manual},"
+msgstr ""
+
+#. type: copying
+#: emacs.texi.orig:28
+msgid "updated for Emacs version @value{EMACSVER}."
+msgstr ""
+
+#. type: copying
+#: emacs.texi.orig:30
+msgid "Copyright @copyright{} 1985--1987, 1993--2015 Free Software Foundation, Inc."
+msgstr ""
+
+#. type: quotation
+#: emacs.texi.orig:40
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License, Version 1.3 or any later "
+"version published by the Free Software Foundation; with the Invariant "
+"Sections being ``The GNU Manifesto,'' ``Distribution'' and ``GNU GENERAL "
+"PUBLIC LICENSE,'' with the Front-Cover Texts being ``A GNU Manual,'' and "
+"with the Back-Cover Texts as in (a) below.  A copy of the license is "
+"included in the section entitled ``GNU Free Documentation License.''"
+msgstr ""
+
+#. type: quotation
+#: emacs.texi.orig:44
+msgid ""
+"(a) The FSF's Back-Cover Text is: ``You have the freedom to copy and modify "
+"this GNU manual.  Buying copies from the FSF supports it in developing GNU "
+"and promoting software freedom.''"
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:48
+msgid "@documentencoding UTF-8"
+msgstr ""
+
+#. type: dircategory
+#: emacs.texi.orig:49
+#, no-wrap
+msgid "Emacs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:52
+msgid "Emacs: (emacs)"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:52
+msgid "The extensible self-documenting text editor."
+msgstr ""
+
+#. type: ifset
+#: emacs.texi.orig:61
+msgid "@smallbook"
+msgstr ""
+
+#. type: tex
+#: emacs.texi.orig:71
+#, no-wrap
+msgid "\\global\\hbadness=6666 % don't worry about not-too-underfull boxes\n"
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:78
+msgid "@kbdinputstyle code"
+msgstr ""
+
+#. type: center
+#: emacs.texi.orig:86
+#, no-wrap
+msgid "@value{EDITION} Edition, Updated for Emacs Version @value{EMACSVER}."
+msgstr ""
+
+#. type: center
+#: emacs.texi.orig:88
+#, no-wrap
+msgid "Richard Stallman et al."
+msgstr ""
+
+#. type: titlepage
+#: emacs.texi.orig:98
+msgid ""
+"Published by the Free Software Foundation @* 51 Franklin Street, Fifth Floor "
+"@* Boston, MA 02110-1301 USA @* ISBN 978-0-9831592-4-7"
+msgstr ""
+
+#. type: titlepage
+#: emacs.texi.orig:101
+msgid "Cover art by Etienne Suvasa; cover design by Matt Lee."
+msgstr ""
+
+#. type: node
+#: emacs.texi.orig:110
+#, no-wrap
+msgid "Top"
+msgstr ""
+
+#. type: top
+#: emacs.texi.orig:111
+#, no-wrap
+msgid "The Emacs Editor"
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:117
+msgid ""
+"Emacs is the extensible, customizable, self-documenting real-time display "
+"editor.  This manual describes how to edit with Emacs and some of the ways "
+"to customize it; it corresponds to GNU Emacs version @value{EMACSVER}."
+msgstr ""
+
+#. type: ifset
+#: emacs.texi.orig:127
+msgid ""
+"@html The homepage for GNU Emacs is at <a "
+"href=\"/software/emacs/\">http://www.gnu.org/software/emacs/</a>.<br> To "
+"view this manual in other formats, click <a "
+"href=\"/software/emacs/manual/emacs.html\">here</a>.<br> You can also "
+"purchase a printed copy from the <a "
+"href=\"http://shop.fsf.org/product/emacs-manual/\">FSF store</a>."
+msgstr ""
+
+#. type: ifinfo
+#: emacs.texi.orig:133
+msgid ""
+"If you are reading this in Emacs, type @kbd{h} to read a basic introduction "
+"to the Info documentation system."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:137
+msgid ""
+"For information on extending Emacs, see @ref{Top, Emacs Lisp,, elisp, The "
+"Emacs Lisp Reference Manual}."
+msgstr ""
+
+#. type: node
+#: emacs.texi.orig:146 emacs.texi.orig:1305
+#, no-wrap
+msgid "Distrib"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:146
+msgid "How to get the latest Emacs distribution."
+msgstr ""
+
+#. type: node
+#: emacs.texi.orig:146 emacs.texi.orig:1474
+#, no-wrap
+msgid "Intro"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:146
+msgid "An introduction to Emacs concepts."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "Important General Concepts"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "Screen"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "How to interpret what you see on the screen."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "User Input"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "Kinds of input events (characters, buttons, function keys)."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "Keys"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "Key sequences: what you type to request one editing action."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "Named functions run by key sequences to do editing."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "Entering Emacs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "Starting Emacs from the shell."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "Exiting"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:156
+msgid "Stopping or killing Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:162
+msgid "Fundamental Editing Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:162
+msgid "Basic"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:162
+msgid "The most basic editing commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:162
+msgid "Minibuffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:162
+msgid "Entering arguments that are prompted for."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:162
+msgid "M-x"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:162
+msgid "Invoking commands by their names."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:162 emacs.texi.orig:294
+msgid "Help"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:162
+msgid "Commands for asking Emacs about its commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Important Text-Changing Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Mark"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "The mark: how to delimit a \"region\" of text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Killing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Killing (cutting) and yanking (copying) text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171 emacs.texi.orig:347
+msgid "Registers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Saving a text string or a location in the buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Display"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Controlling what text is displayed."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Search"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Finding or replacing occurrences of a string."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Fixit"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Commands especially useful for fixing typos."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171 emacs.texi.orig:425
+msgid "Keyboard Macros"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:171
+msgid "Recording a sequence of keystrokes to be replayed."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:178
+msgid "Major Structures of Emacs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:178
+msgid "Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:178
+msgid "All about handling files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:178
+msgid "Buffers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:178
+msgid "Multiple buffers; editing several files at once."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:178
+msgid "Windows"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:178
+msgid "Viewing multiple pieces of text in one frame."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:178
+msgid "Frames"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:178
+msgid "Using multiple \"windows\" on your display."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:178
+msgid "International"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:178
+msgid "Using non-@acronym{ASCII} character sets."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Advanced Features"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Modes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Major and minor modes alter Emacs's basic behavior."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198 emacs.texi.orig:580
+msgid "Indentation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Editing the white space at the beginnings of lines."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Text"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Commands and modes for editing human languages."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Programs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Commands and modes for editing programs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Building"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Compiling, running and debugging programs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Maintaining"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Features for maintaining large programs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198 emacs.texi.orig:884
+msgid "Abbrevs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Defining text abbreviations to reduce typing."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Dired"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Directory and file manager."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Calendar/Diary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Calendar and diary facilities."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198 emacs.texi.orig:986
+msgid "Sending Mail"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Sending mail in Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Rmail"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Reading mail in Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198 emacs.texi.orig:1032
+msgid "Gnus"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "A flexible mail and news reader."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Document View"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Viewing PDF, PS and DVI files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "EWW"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "A web browser in Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Shell"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Executing shell commands from Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Emacs Server"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Using Emacs as an editing server."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Printing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Printing hardcopies of buffers or regions."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Sorting"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:198
+msgid "Sorting lines, paragraphs or pages within Emacs."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:200
+msgid "* Picture Mode:: Editing pictures made up of text characters."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Editing Binary Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Editing binary files with Hexl mode."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Saving Emacs Sessions"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Saving Emacs state from one session to the next."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Recursive Edit"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Performing edits while \"within another command\"."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Hyperlinking"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Following links in buffers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Amusements"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Various games and hacks."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Packages"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Installing additional features."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208 emacs.texi.orig:1089
+msgid "Customization"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:208
+msgid "Modifying the behavior of Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:215
+msgid "Recovery from Problems"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:215
+msgid "Quitting"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:215
+msgid "Quitting and aborting."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:215
+msgid "Lossage"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:215
+msgid "What to do if Emacs is hung or malfunctioning."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:215
+msgid "Bugs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:215
+msgid "How and when to report a bug."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:215
+msgid "Contributing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:215
+msgid "How to contribute improvements to Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:215
+msgid "Service"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:215
+msgid "How to get help for your own Emacs needs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "Appendices"
+msgstr ""
+
+#. type: node
+#: emacs.texi.orig:227 emacs.texi.orig:1564
+#, no-wrap
+msgid "Copying"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid ""
+"The GNU General Public License gives you permission to redistribute GNU "
+"Emacs on certain terms; it also explains that there is no warranty."
+msgstr ""
+
+#. type: appendix
+#: emacs.texi.orig:227 emacs.texi.orig:1568 emacs.texi.orig:1569
+#, no-wrap
+msgid "GNU Free Documentation License"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "The license for this documentation."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "Emacs Invocation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "Hairy startup options."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "X Resources"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "X resources for customizing Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "Antinews"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "Information about Emacs version 23."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "Mac OS / GNUstep"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "Using Emacs under Mac OS and GNUstep."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "Microsoft Windows"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "Using Emacs on Microsoft Windows and MS-DOS."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "Manifesto"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:227
+msgid "What's GNU? Gnu's Not Unix!"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:229
+msgid "Glossary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:229
+msgid "Terms used in this manual."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:231
+msgid "* Acknowledgments:: Major contributors to GNU Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:239
+msgid "Indexes (each index contains a large menu)"
+msgstr ""
+
+#. type: node
+#: emacs.texi.orig:239 emacs.texi.orig:1589
+#, no-wrap
+msgid "Key Index"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:239
+msgid "An item for each standard Emacs key sequence."
+msgstr ""
+
+#. type: node
+#: emacs.texi.orig:239 emacs.texi.orig:1594
+#, no-wrap
+msgid "Option Index"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:239
+msgid "An item for every command-line option."
+msgstr ""
+
+#. type: node
+#: emacs.texi.orig:239 emacs.texi.orig:1599
+#, no-wrap
+msgid "Command Index"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:239
+msgid "An item for each command name."
+msgstr ""
+
+#. type: unnumbered
+#: emacs.texi.orig:239 emacs.texi.orig:1603 emacs.texi.orig:1604
+#, no-wrap
+msgid "Variable Index"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:239
+msgid "An item for each documented variable."
+msgstr ""
+
+#. type: unnumbered
+#: emacs.texi.orig:239 emacs.texi.orig:1607 emacs.texi.orig:1608
+#, no-wrap
+msgid "Concept Index"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:239
+msgid "An item for each concept."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:248
+msgid "--- The Detailed Node Listing --- ---------------------------------"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:251
+msgid ""
+"Here are some other nodes which are really subnodes of the ones already "
+"listed, mentioned here so you can get to them in one step:"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:253
+msgid "The Organization of the Screen"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:258
+msgid "Point"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:258
+msgid "The place in the text where editing commands operate."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:258
+msgid "Echo Area"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:258
+msgid "Short messages appear at the bottom of the screen."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:258
+msgid "Mode Line"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:258
+msgid "Interpreting the mode line."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:258
+msgid "Menu Bar"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:258
+msgid "How to use the menu bar."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:260
+msgid "Basic Editing Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Inserting Text"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Inserting text by simply typing it."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Moving Point"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Moving the cursor to the place where you want to change something."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Erasing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Deleting and killing text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Basic Undo"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Undoing recent changes in the text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Basic Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Visiting, creating, and saving files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Basic Help"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Asking what a character does."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Blank Lines"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Making and deleting blank lines."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Continuation Lines"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "How Emacs displays lines too wide for the screen."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Position Info"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "What line, row, or column is point on?"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Arguments"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Numeric arguments for repeating a command N times."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Repeating"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:273
+msgid "Repeating the previous command quickly."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:275
+msgid "The Minibuffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Basic Minibuffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Basic usage of the minibuffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Minibuffer File"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Entering file names with the minibuffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Minibuffer Edit"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "How to edit in the minibuffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284 emacs.texi.orig:286
+msgid "Completion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "An abbreviation facility for minibuffer input."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Minibuffer History"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Reusing recent minibuffer arguments."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Repetition"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Re-executing commands that used the minibuffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Passwords"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Entering passwords in the echo area."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Yes or No Prompts"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:284
+msgid "Replying yes or no in the echo area."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:292
+msgid "Completion Example"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:292
+msgid "Examples of using completion."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:292
+msgid "Completion Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:292
+msgid "A list of completion commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:292
+msgid "Completion Exit"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:292
+msgid "Completion and minibuffer text submission."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:292
+msgid "Completion Styles"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:292
+msgid "How completion matches are chosen."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:292
+msgid "Completion Options"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:292
+msgid "Options for completion."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Help Summary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Brief list of all Help commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Key Help"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Asking what a key does in Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Name Help"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Asking about a command, variable or function name."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Apropos"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Asking what pertains to a given topic."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Help Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Special features of Help mode and Help buffers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Package Keywords"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Finding Lisp libraries by keywords (topics)."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Language Help"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Help relating to international language support."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Misc Help"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Other help commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Help Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Commands to display auxiliary help files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Help Echo"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:305
+msgid "Help on active text and tooltips (\"balloon help\")."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:307
+msgid "The Mark and the Region"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Setting Mark"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Commands to set the mark."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Marking Objects"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Commands to put region around textual units."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Using Region"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Summary of ways to operate on contents of the region."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Mark Ring"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Previous mark positions saved so you can go back there."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Global Mark Ring"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Previous mark positions in various buffers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Shift Selection"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Using shifted cursor motion keys."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Disabled Transient Mark"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:315
+msgid "Leaving regions unhighlighted by default."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:317
+msgid "Killing and Moving Text"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324 emacs.texi.orig:326
+msgid "Deletion and Killing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324
+msgid "Commands that remove text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324 emacs.texi.orig:335
+msgid "Yanking"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324
+msgid "Commands that insert text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324
+msgid "Cut and Paste"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324
+msgid "Clipboard and selections on graphical displays."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324
+msgid "Accumulating Text"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324
+msgid "Other methods to add text to the buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324
+msgid "Rectangles"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324
+msgid "Operating on text in rectangular areas."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324
+msgid "CUA Bindings"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:324
+msgid "Using @kbd{C-x}/@kbd{C-c}/@kbd{C-v} to kill and yank."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:333
+msgid "Deletion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:333
+msgid "Commands for deleting small amounts of text and blank areas."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:333
+msgid "Killing by Lines"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:333
+msgid "How to kill entire lines of text at one time."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:333
+msgid "Other Kill Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:333
+msgid ""
+"Commands to kill large regions of text and syntactic units such as words and "
+"sentences."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:333
+msgid "Kill Options"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:333
+msgid "Options that affect killing."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:339
+msgid "Kill Ring"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:339
+msgid "Where killed text is stored."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:339
+msgid "Earlier Kills"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:339
+msgid "Yanking something killed some time ago."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:339
+msgid "Appending Kills"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:339
+msgid "Several kills in a row all yank together."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:341
+msgid "\"Cut and Paste\" Operations on Graphical Displays"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:345
+msgid "Clipboard"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:345
+msgid "How Emacs uses the system clipboard."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:345
+msgid "Primary Selection"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:345
+msgid "The temporarily selected text selection."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:345
+msgid "Secondary Selection"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:345
+msgid "Cutting without altering point and mark."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Position Registers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Saving positions in registers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Text Registers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Saving text in registers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Rectangle Registers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Saving rectangles in registers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Configuration Registers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Saving window configurations in registers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Number Registers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Numbers in registers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "File Registers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "File names in registers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Keyboard Macro Registers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Keyboard macros in registers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Bookmarks"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:356
+msgid "Bookmarks are like registers, but persistent."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:358
+msgid "Controlling the Display"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Scrolling"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Commands to move text up and down in a window."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Recentering"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "A scroll command that centers the current line."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Auto Scrolling"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Redisplay scrolls text automatically when needed."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Horizontal Scrolling"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Moving text left and right in a window."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Narrowing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Restricting display and editing to a portion of the buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "View Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Viewing read-only buffers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Follow Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Follow mode lets two windows scroll as one."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Faces"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "How to change the display style using faces."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Colors"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Specifying colors for faces."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Standard Faces"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "The main predefined faces."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Text Scale"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Increasing or decreasing text size in a buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Font Lock"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Minor mode for syntactic highlighting using faces."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Highlight Interactively"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Tell Emacs what text to highlight."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Fringes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Enabling or disabling window fringes."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Displaying Boundaries"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Displaying top and bottom of the buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Useless Whitespace"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Showing possibly spurious trailing whitespace."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Selective Display"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Hiding lines with lots of indentation."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Optional Mode Line"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Optional mode line display features."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Text Display"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "How text characters are normally displayed."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Cursor Display"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Features for displaying the cursor."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Line Truncation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid ""
+"Truncating lines to fit the screen width instead of continuing them to "
+"multiple screen lines."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Visual Line Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Word wrap and screen line-based editing."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Display Custom"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:384
+msgid "Information on variables for customizing display."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:386
+msgid "Searching and Replacement"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398 emacs.texi.orig:400
+msgid "Incremental Search"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Search happens as you type the string."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Nonincremental Search"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Specify entire string and then search."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Word Search"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Search for sequence of words."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Symbol Search"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Search for a source code symbol."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Regexp Search"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Search for match for a regexp."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Regexps"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Syntax of regular expressions."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Regexp Backslash"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Regular expression constructs starting with `\\'."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Regexp Example"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "A complex regular expression explained."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Search Case"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "To ignore case while searching, or not."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Replace"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Search, and replace some or all matches."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Other Repeating Search"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:398
+msgid "Operating on all matches for some regexp."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Basic Isearch"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Basic incremental search commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Repeat Isearch"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Searching for the same string again."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Error in Isearch"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "When your string is not found."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Special Isearch"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Special input in incremental search."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Isearch Yank"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid ""
+"Commands that grab text into the search string or else edit the search "
+"string."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Not Exiting Isearch"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Prefix argument and scrolling commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Isearch Minibuffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:409
+msgid "Incremental search of the minibuffer history."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:411
+msgid "Replacement Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:416
+msgid "Unconditional Replace"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:416
+msgid "Replacing all matches for a string."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:416
+msgid "Regexp Replace"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:416
+msgid "Replacing all matches for a regexp."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:416
+msgid "Replacement and Case"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:416
+msgid "How replacements preserve case of letters."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:416
+msgid "Query Replace"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:416
+msgid "How to use querying."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:418
+msgid "Commands for Fixing Typos"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:423
+msgid "Undo"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:423
+msgid "The Undo commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:423
+msgid "Transpose"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:423
+msgid "Exchanging two characters, words, lines, lists..."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:423
+msgid "Fixing Case"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:423
+msgid "Correcting case of last word entered."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:423
+msgid "Spelling"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:423
+msgid "Apply spelling checker to a word, or a whole file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Basic Keyboard Macro"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Defining and running keyboard macros."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Keyboard Macro Ring"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Where previous keyboard macros are saved."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Keyboard Macro Counter"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Inserting incrementing numbers in macros."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Keyboard Macro Query"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Making keyboard macros do different things each time."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Save Keyboard Macro"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Giving keyboard macros names; saving them in files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Edit Keyboard Macro"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Editing keyboard macros."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Keyboard Macro Step-Edit"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:436
+msgid "Interactively executing and editing a keyboard macro."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:438
+msgid "File Handling"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:443
+msgid "File Names"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:443
+msgid "How to type and edit file-name arguments."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:443
+msgid "Visiting"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:443
+msgid "Visiting a file prepares Emacs to edit the file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:443
+msgid "Saving"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:443
+msgid "Saving makes your changes permanent."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:443
+msgid "Reverting"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:443
+msgid "Reverting cancels all the changes not saved."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:445
+msgid "* Autorevert:: Auto Reverting non-file buffers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Auto Save"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Auto Save periodically protects against loss of data."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "File Aliases"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Handling multiple names for one file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Directories"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Creating, deleting, and listing file directories."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Comparing Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Finding where two files differ."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Diff Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Mode for editing file differences."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Misc File Ops"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Other things you can do on files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Compressed Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Accessing compressed files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "File Archives"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Operating on tar, zip, jar etc. archive files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Remote Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Accessing files on other machines."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Quoted File Names"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Quoting special characters in file names."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "File Name Cache"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Completion against a list of files you often use."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "File Conveniences"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Convenience Features for Finding Files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Filesets"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:459
+msgid "Handling sets of files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:461
+msgid "Saving Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "Save Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "Commands for saving files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "Backup"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "How Emacs saves the old version of your file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "Customize Save"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "Customizing the saving of files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "Interlocking"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "How Emacs protects against simultaneous editing of one file by two users."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "File Shadowing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "Copying files to \"shadows\" automatically."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "Time Stamps"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:469
+msgid "Emacs can update time stamps on saved files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:471
+msgid "Backup Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:475
+msgid "Backup Names"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:475
+msgid "How backup files are named."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:475
+msgid "Backup Deletion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:475
+msgid "Emacs deletes excess numbered backups."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:475
+msgid "Backup Copying"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:475
+msgid "Backups can be made by copying or renaming."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:478
+msgid "Auto Reverting Non-File Buffers"
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:482
+msgid ""
+"* Auto Reverting the Buffer Menu:: Auto Revert of the Buffer Menu.  * Auto "
+"Reverting Dired:: Auto Revert of Dired buffers.  * Supporting additional "
+"buffers:: How to add more Auto Revert support."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:485
+msgid "Auto-Saving: Protection Against Disasters"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:490
+msgid "Auto Save Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:490
+msgid "The file where auto-saved changes are actually made until you save the file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:490
+msgid "Auto Save Control"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:490
+msgid "Controlling when and how often to auto-save."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:490
+msgid "Recover"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:490
+msgid "Recovering text from auto-save files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:492
+msgid "Using Multiple Buffers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "Select Buffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "Creating a new buffer or reselecting an old one."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "List Buffers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "Getting a list of buffers that exist."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "Misc Buffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "Renaming; changing read-only status; copying text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "Kill Buffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "Killing buffers you no longer need."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "Several Buffers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid ""
+"How to go through the list of all buffers and operate variously on several "
+"of them."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "Indirect Buffers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "An indirect buffer shares the text of another buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "Buffer Convenience"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:502
+msgid "Convenience and customization features for buffer handling."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:504
+msgid "Convenience Features and Customization of Buffer Handling"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:508
+msgid "Uniquify"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:508
+msgid "Making buffer names unique with directory parts."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:508
+msgid "Icomplete"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:508
+msgid "Fast minibuffer selection."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:508
+msgid "Buffer Menus"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:508
+msgid "Configurable buffer menu."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:510
+msgid "Multiple Windows"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Basic Window"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Introduction to Emacs windows."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Split Window"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "New windows are made by splitting existing windows."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Other Window"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Moving to another window or doing something to it."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Pop Up Window"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Finding a file or buffer in another window."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Change Window"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Deleting windows and changing their sizes."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Displaying Buffers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "How Emacs picks a window for displaying a buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Window Convenience"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:518
+msgid "Convenience functions for window handling."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:520
+msgid "Displaying a Buffer in a Window"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:522
+msgid "Window Choice"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:522
+msgid "How @code{display-buffer} works."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:524
+msgid "Frames and Graphical Displays"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Mouse Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Moving, cutting, and pasting, with the mouse."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Word and Line Mouse"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Mouse commands for selecting whole words or lines."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Mouse References"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Using the mouse to select an item from a list."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Menu Mouse Clicks"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Mouse clicks that bring up menus."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Mode Line Mouse"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Mouse clicks on the mode line."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Creating Frames"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Creating additional Emacs frames with various contents."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Frame Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Iconifying, deleting, and switching frames."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Fonts"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Changing the frame font."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Speedbar"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "How to make and use a speedbar frame."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Multiple Displays"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "How one Emacs instance can talk to several displays."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Frame Parameters"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Changing the colors and other modes of frames."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Scroll Bars"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "How to enable and disable scroll bars; how to use them."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Drag and Drop"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Using drag and drop to open files and insert text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Menu Bars"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Enabling and disabling the menu bar."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Tool Bars"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Enabling and disabling the tool bar."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Dialog Boxes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Controlling use of dialog boxes."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Tooltips"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Displaying information at the current mouse position."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Mouse Avoidance"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Preventing the mouse pointer from obscuring text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Non-Window Terminals"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Multiple frames on terminals that show only one."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Text-Only Mouse"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:545
+msgid "Using the mouse in text terminals."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:547
+msgid "International Character Set Support"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "International Chars"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Basic concepts of multibyte characters."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Language Environments"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Setting things up for the language you use."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Input Methods"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Entering text characters not on your keyboard."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Select Input Method"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Specifying your choice of input methods."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Coding Systems"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Character set conversion when you read and write files, and so on."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Recognize Coding"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "How Emacs figures out which conversion to use."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Specify Coding"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Specifying a file's coding system explicitly."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Output Coding"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Choosing coding systems for output."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Text Coding"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Choosing conversion to use for file text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Communication Coding"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Coding systems for interprocess communication."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "File Name Coding"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Coding systems for file @emph{names}."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Terminal Coding"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Specifying coding systems for converting terminal input and output."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Fontsets"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid ""
+"Fontsets are collections of fonts that cover the whole spectrum of "
+"characters."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Defining Fontsets"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Defining a new fontset."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Modifying Fontsets"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Modifying an existing fontset."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Undisplayable Characters::When characters don't display."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Unibyte Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "You can pick one European character set to use without multibyte characters."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Charsets"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "How Emacs groups its internal character codes."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Bidirectional Editing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:571
+msgid "Support for right-to-left scripts."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:573
+msgid "Major and Minor Modes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:578
+msgid "Major Modes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:578
+msgid "Text mode vs. Lisp mode vs. C mode..."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:578
+msgid "Minor Modes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:578
+msgid "Each minor mode is a feature you can turn on independently of any others."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:578
+msgid "Choosing Modes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:578
+msgid "How modes are chosen when visiting files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:585
+msgid "Indentation Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:585
+msgid "More commands for performing indentation."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:585
+msgid "Tab Stops"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:585
+msgid "Stop points for indentation in Text modes."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:585
+msgid "Just Spaces"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:585
+msgid "Using only space characters for indentation."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:585
+msgid "Indent Convenience"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:585
+msgid "Optional indentation features."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:587
+msgid "Commands for Human Languages"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Words"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Moving over and killing words."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Sentences"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Moving over and killing sentences."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Paragraphs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Moving over paragraphs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Pages"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Moving over pages."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Filling"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Filling or justifying text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Case"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Changing the case of text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Text Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "The major modes for editing text files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603 emacs.texi.orig:613
+msgid "Outline Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Editing outlines."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603 emacs.texi.orig:621
+msgid "Org Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "The Emacs organizer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "TeX Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Editing TeX and LaTeX files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "HTML Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Editing HTML and SGML files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Nroff Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Editing input to the nroff formatter."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603 emacs.texi.orig:633
+msgid "Enriched Text"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Editing text \"enriched\" with fonts, colors, etc."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Text Based Tables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Commands for editing text-based tables."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Two-Column"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:603
+msgid "Splitting text columns into separate windows."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:605
+msgid "Filling Text"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:611
+msgid "Auto Fill"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:611
+msgid "Auto Fill mode breaks long lines automatically."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:611
+msgid "Fill Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:611
+msgid "Commands to refill paragraphs and center lines."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:611
+msgid "Fill Prefix"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:611
+msgid "Filling paragraphs that are indented or in a comment, etc."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:611
+msgid "Adaptive Fill"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:611
+msgid "How Emacs can determine the fill prefix automatically."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:619
+msgid "Outline Format"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:619
+msgid "What the text of an outline looks like."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:619
+msgid "Outline Motion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:619
+msgid "Special commands for moving through outlines."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:619
+msgid "Outline Visibility"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:619
+msgid "Commands to control what is visible."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:619
+msgid "Outline Views"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:619
+msgid "Outlines and multiple views."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:619
+msgid "Foldout"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:619
+msgid "Folding means zooming in on outlines."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:624
+msgid "Org Organizer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:624
+msgid "Managing TODO lists and agendas."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:624
+msgid "Org Authoring"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:624
+msgid "Exporting Org buffers to various formats."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:626
+msgid "@TeX{} Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:631
+msgid "TeX Editing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:631
+msgid "Special commands for editing in TeX mode."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:631
+msgid "LaTeX Editing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:631
+msgid "Additional commands for LaTeX input files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:631
+msgid "TeX Print"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:631
+msgid "Commands for printing part of a file with TeX."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:631
+msgid "TeX Misc"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:631
+msgid "Customization of TeX mode, and related features."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "Enriched Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "Entering and exiting Enriched mode."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "Hard and Soft Newlines"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "There are two different kinds of newlines."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "Editing Format Info"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "How to edit text properties."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "Enriched Faces"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "Bold, italic, underline, etc."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "Enriched Indentation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "Changing the left and right margins."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "Enriched Justification"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "Centering, setting text flush with the left or right margin, etc."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "Enriched Properties"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:642
+msgid "The \"special\" text properties submenu."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:649
+msgid "Editing Text-based Tables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Table Definition"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "What is a text based table."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Table Creation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "How to create a table."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Table Recognition"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "How to activate and deactivate tables."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Cell Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Cell-oriented commands in a table."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Cell Justification"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Justifying cell contents."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Table Rows and Columns"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Inserting and deleting rows and columns."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Table Conversion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Converting between plain text and tables."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Table Misc"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:658
+msgid "Table miscellany."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:660
+msgid "Editing Programs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Program Modes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Major modes for editing programs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Defuns"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Commands to operate on major top-level parts of a program."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Program Indent"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Adjusting indentation to show the nesting."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Parentheses"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Commands that operate on parentheses."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Comments"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676 emacs.texi.orig:708
+msgid "Inserting, killing, and aligning comments."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Documentation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Getting documentation of functions you plan to call."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Hideshow"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Displaying blocks selectively."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Symbol Completion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Completion on symbol names of your program or language."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "MixedCase Words"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Dealing with identifiersLikeThis."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Semantic"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Suite of editing tools based on source code parsing."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Misc for Programs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Other Emacs features useful for editing programs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "C Modes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Special commands of C, C++, Objective-C, Java, IDL, Pike and AWK modes."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Asm Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:676
+msgid "Asm mode and its special features."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:678
+msgid "* Fortran:: Fortran mode and its special features."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:681
+msgid "Top-Level Definitions, or Defuns"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:687
+msgid "Left Margin Paren"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:687
+msgid ""
+"An open-paren or similar opening delimiter starts a defun if it is at the "
+"left margin."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:687
+msgid "Moving by Defuns"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:687
+msgid "Commands to move over or mark a major definition."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:687
+msgid "Imenu"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:687
+msgid "Making buffer indexes as menus."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:687
+msgid "Which Function"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:687
+msgid "Which Function mode shows which function you are in."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:689
+msgid "Indentation for Programs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:695
+msgid "Basic Indent"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:695
+msgid "Indenting a single line."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:695
+msgid "Multi-line Indent"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:695
+msgid "Commands to reindent many lines at once."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:695
+msgid "Lisp Indent"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:695
+msgid "Specifying how each Lisp function should be indented."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:695
+msgid "C Indent"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:695
+msgid "Extra features for indenting C and related modes."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:695
+msgid "Custom C Indent"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:695
+msgid "Controlling indentation style for C and related modes."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:697
+msgid "Commands for Editing with Parentheses"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:702
+msgid "Expressions"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:702
+msgid "Expressions with balanced parentheses."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:702
+msgid "Moving by Parens"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:702
+msgid "Commands for moving up, down and across in the structure of parentheses."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:702
+msgid "Matching"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:702
+msgid "Insertion of a close-delimiter flashes matching open."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:704
+msgid "Manipulating Comments"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:708
+msgid "Comment Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:708
+msgid "Multi-Line Comments"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:708
+msgid "Commands for adding and editing multi-line comments."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:708
+msgid "Options for Comments::Customizing the comment features."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:710
+msgid "Documentation Lookup"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:714
+msgid "Info Lookup"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:714
+msgid "Looking up library functions and commands in Info files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:714
+msgid "Man Page"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:714
+msgid "Looking up man pages of library functions and commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:714
+msgid "Lisp Doc"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:714
+msgid "Looking up Emacs Lisp functions, etc."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:716
+msgid "C and Related Modes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:722
+msgid "Motion in C"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:722
+msgid "Commands to move by C statements, etc."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:722
+msgid "Electric C"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:722
+msgid "Colon and other chars can automatically reindent."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:722
+msgid "Hungry Delete"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:722
+msgid "A more powerful DEL command."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:722
+msgid "Other C Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:722
+msgid "Filling comments, viewing expansion of macros, and other neat features."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:725
+msgid "Fortran Mode"
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:732
+msgid ""
+"* Fortran Motion:: Moving point by statements or subprograms.  * Fortran "
+"Indent:: Indentation commands for Fortran.  * Fortran Comments:: Inserting "
+"and aligning comments.  * Fortran Autofill:: Auto fill support for Fortran.  "
+"* Fortran Columns:: Measuring columns for valid Fortran.  * Fortran Abbrev:: "
+"Built-in abbrevs for Fortran keywords."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:734
+msgid "Fortran Indentation"
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:740
+msgid ""
+"* ForIndent Commands:: Commands for indenting and filling Fortran.  * "
+"ForIndent Cont:: How continuation lines indent.  * ForIndent Num:: How line "
+"numbers auto-indent.  * ForIndent Conv:: Conventions you must obey to avoid "
+"trouble.  * ForIndent Vars:: Variables controlling Fortran indent style."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:743
+msgid "Compiling and Testing Programs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Compilation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Compiling programs in languages other than Lisp (C, Pascal, etc.)."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Compilation Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "The mode for visiting compiler errors."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Compilation Shell"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Customizing your shell properly for use in the compilation buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Grep Searching"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Searching with grep."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Flymake"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Finding syntax errors on the fly."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Debuggers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Running symbolic debuggers for non-Lisp programs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Executing Lisp"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid ""
+"Various modes for editing Lisp programs, with different facilities for "
+"running the Lisp programs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Lisp Libraries"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "How Lisp programs are loaded into Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Lisp Eval"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Executing a single Lisp expression in Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Lisp Interaction"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Executing Lisp in an Emacs buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "External Lisp"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:759
+msgid "Communicating through Emacs with a separate Lisp."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:761
+msgid "Running Debuggers Under Emacs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:768
+msgid "Starting GUD"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:768
+msgid "How to start a debugger subprocess."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:768
+msgid "Debugger Operation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:768
+msgid "Connection between the debugger and source buffers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:768
+msgid "Commands of GUD"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:768
+msgid "Key bindings for common commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:768
+msgid "GUD Customization"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:768
+msgid "Defining your own commands for GUD."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:768 emacs.texi.orig:770
+msgid "GDB Graphical Interface"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:768
+msgid ""
+"An enhanced mode that uses GDB features to implement a graphical debugging "
+"environment."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "GDB User Interface Layout"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Control the number of displayed buffers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Source Buffers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Use the mouse in the fringe/margin to control your program."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Breakpoints Buffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "A breakpoint control panel."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Threads Buffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Displays your threads."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Stack Buffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Select a frame from the call stack."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Other GDB Buffers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Other buffers for controlling the GDB state."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Watch Expressions"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Monitor variable values in the speedbar."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Multithreaded Debugging"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:780
+msgid "Debugging programs with several threads."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:782
+msgid "Maintaining Large Programs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:788 emacs.texi.orig:793
+msgid "Version Control"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:788
+msgid "Using version control systems."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:788
+msgid "Change Log"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:788
+msgid "Maintaining a change history for your program."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:788
+msgid "Tags"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:788
+msgid ""
+"Go directly to any function in your program in one command.  Tags remembers "
+"which file it is in."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:788
+msgid "EDE"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:788
+msgid "An integrated development environment for Emacs."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:790
+msgid "* Emerge:: A convenient way of merging two versions of a program."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Introduction to VC"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "How version control works in general."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "VC Mode Line"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "How the mode line shows version control status."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Basic VC Editing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "How to edit a file under version control."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Log Buffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Features available in log entry buffers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Registering"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Putting a file under version control."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Old Revisions"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Examining and comparing old versions."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "VC Change Log"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Viewing the VC Change Log."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "VC Undo"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Canceling changes before or after committing."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "VC Ignore"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Ignore files under version control system."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805 emacs.texi.orig:827
+msgid "VC Directory Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Listing files managed by version control."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Branches"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:805
+msgid "Multiple lines of development."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:808
+msgid ""
+"* Miscellaneous VC:: Various other commands and features of VC.  * "
+"Customizing VC:: Variables that change VC's behavior."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:811
+msgid "Introduction to Version Control"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "Why Version Control?"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "Understanding the problems it addresses."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "Version Control Systems"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "Supported version control back-end systems."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "VCS Concepts"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "Words and concepts related to version control."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "VCS Merging"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "How file conflicts are handled."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "VCS Changesets"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "How changes are grouped."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "VCS Repositories"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "Where version control repositories are stored."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "Types of Log File"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:819
+msgid "The VCS log in contrast to the ChangeLog."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:821
+msgid "Basic Editing under Version Control"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:825
+msgid "VC With A Merging VCS"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:825
+msgid "Without locking: default mode for CVS."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:825
+msgid "VC With A Locking VCS"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:825
+msgid "RCS in its default mode, SCCS, and optionally CVS."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:825
+msgid "Advanced C-x v v"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:825
+msgid "Advanced features available with a prefix argument."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:830
+msgid "VC Directory Buffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:830
+msgid "What the buffer looks like and means."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:830
+msgid "VC Directory Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:830
+msgid "Commands to use in a VC directory buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:832
+msgid "Version Control Branches"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:837
+msgid "Switching Branches"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:837
+msgid "How to get to another existing branch."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:837
+msgid "VC Pull"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:837
+msgid "Updating the contents of a branch."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:837
+msgid "Merging"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:837
+msgid "Transferring changes between branches."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:837
+msgid "Creating Branches"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:837
+msgid "How to start a new branch."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:840
+msgid "Miscellaneous Commands and Features of VC"
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:845
+msgid ""
+"* Change Logs and VC:: Generating a change log file from log entries.  * VC "
+"Delete/Rename:: Deleting and renaming version-controlled files.  * Revision "
+"Tags:: Symbolic names for revisions.  * Version Headers:: Inserting version "
+"control headers into working files."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:847
+msgid "Customizing VC"
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:851
+msgid ""
+"* General VC Options:: Options that apply to multiple back ends.  * RCS and "
+"SCCS:: Options for RCS and SCCS.  * CVS Options:: Options for CVS."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:854
+msgid "Change Logs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:857
+msgid "Change Log Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:857
+msgid "Commands for editing change log files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:857
+msgid "Format of ChangeLog"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:857
+msgid "What the change log file looks like."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:859
+msgid "Tags Tables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Tag Syntax"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Tag syntax for various types of code and text files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Create Tags Table"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Creating a tags table with @command{etags}."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Etags Regexps"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Create arbitrary tags using regular expressions."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Select Tags Table"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "How to visit a tags table."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Find Tag"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Commands to find the definition of a specific tag."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Tags Search"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Using a tags table for searching and replacing."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "List Tags"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:867
+msgid "Using tags for completion, and listing them."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:870
+msgid "Merging Files with Emerge"
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:881
+msgid ""
+"* Overview of Emerge:: How to start Emerge.  Basic concepts.  * Submodes of "
+"Emerge:: Fast mode vs. Edit mode.  Skip Prefers mode and Auto Advance mode.  "
+"* State of Difference:: You do the merge by specifying state A or B for each "
+"difference.  * Merge Commands:: Commands for selecting a difference, "
+"changing states of differences, etc.  * Exiting Emerge:: What to do when "
+"you've finished the merge.  * Combining in Emerge:: How to keep both "
+"alternatives for a difference.  * Fine Points of Emerge:: Miscellaneous "
+"issues."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Abbrev Concepts"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Fundamentals of defined abbrevs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Defining Abbrevs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Defining an abbrev, so it will expand when typed."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Expanding Abbrevs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Controlling expansion: prefixes, canceling expansion."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Editing Abbrevs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Viewing or editing the entire list of defined abbrevs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Saving Abbrevs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Saving the entire list of abbrevs for another session."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Dynamic Abbrevs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Abbreviations for words already in the buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "Dabbrev Customization"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:892
+msgid "What is a word, for dynamic abbrevs.  Case handling."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:895
+msgid "Editing Pictures"
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:901
+msgid ""
+"* Basic Picture:: Basic concepts and simple commands of Picture Mode.  * "
+"Insert in Picture:: Controlling direction of cursor motion after "
+"\"self-inserting\" characters.  * Tabs in Picture:: Various features for tab "
+"stops and indentation.  * Rectangles in Picture:: Clearing and superimposing "
+"rectangles."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:904
+msgid "Dired, the Directory Editor"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Dired Enter"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "How to invoke Dired."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Dired Navigation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Special motion commands in the Dired buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Dired Deletion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Deleting files with Dired."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Flagging Many Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Flagging files based on their names."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Dired Visiting"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Other file operations through Dired."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Marks vs Flags"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Flagging for deletion vs marking."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Operating on Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid ""
+"How to copy, rename, print, compress, etc.  either one file or several "
+"files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Shell Commands in Dired"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Running a shell command on the marked files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Transforming File Names"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Using patterns to rename multiple files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Comparison in Dired"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Running @code{diff} by way of Dired."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Subdirectories in Dired"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:917
+msgid "Adding subdirectories to the Dired buffer."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:919
+msgid "* Subdir Switches:: Subdirectory switches in Dired."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Subdirectory Motion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Moving across subdirectories, and up and down."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Hiding Subdirectories"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Making subdirectories visible or invisible."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Dired Updating"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Discarding lines for files of no interest."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Dired and Find"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Using @code{find} to choose the files for Dired."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Wdired"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Operating on files by editing the Dired buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Image-Dired"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Viewing image thumbnails in Dired."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Misc Dired Features"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:927
+msgid "Various other features."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:929
+msgid "The Calendar and the Diary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Calendar Motion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Moving through the calendar; selecting a date."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Scroll Calendar"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Bringing earlier or later months onto the screen."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Counting Days"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "How many days are there between two dates?"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "General Calendar"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Exiting or recomputing the calendar."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Writing Calendar Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Writing calendars to files of various formats."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Holidays"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Displaying dates of holidays."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Sunrise/Sunset"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Displaying local times of sunrise and sunset."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Lunar Phases"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Displaying phases of the moon."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Other Calendars"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Converting dates to other calendar systems."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Diary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Displaying events from your diary."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Appointments"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Reminders when it's time to do something."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Importing Diary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Converting diary events to/from other formats."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Daylight Saving"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "How to specify when daylight saving time is active."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Time Intervals"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:944
+msgid "Keeping track of time intervals."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:946
+msgid "* Advanced Calendar/Diary Usage:: Advanced Calendar/Diary customization."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:949
+msgid "Movement in the Calendar"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:954
+msgid "Calendar Unit Motion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:954
+msgid "Moving by days, weeks, months, and years."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:954
+msgid "Move to Beginning or End"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:954
+msgid "Moving to start/end of weeks, months, and years."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:954
+msgid "Specified Dates"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:954
+msgid "Moving to the current date or another specific date."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:956
+msgid "Conversion To and From Other Calendars"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:961
+msgid "Calendar Systems"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:961
+msgid "The calendars Emacs understands (aside from Gregorian)."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:961
+msgid "To Other Calendar"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:961
+msgid "Converting the selected date to various calendars."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:961
+msgid "From Other Calendar"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:961
+msgid "Moving to a date specified in another calendar."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:963
+msgid "The Diary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:969
+msgid "Displaying the Diary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:969
+msgid "Viewing diary entries and associated calendar dates."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:969
+msgid "Format of Diary File"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:969
+msgid "Entering events in your diary."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:969
+msgid "Date Formats"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:969
+msgid "Various ways you can specify dates."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:969
+msgid "Adding to Diary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:969
+msgid "Commands to create diary entries."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:969
+msgid "Special Diary Entries"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:969
+msgid "Anniversaries, blocks of dates, cyclic entries, etc."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:972
+msgid "More advanced features of the Calendar and Diary"
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:983
+msgid ""
+"* Calendar Customizing:: Calendar layout and hooks.  * Holiday Customizing:: "
+"Defining your own holidays.  * Mayan Calendar:: Moving to a date specified "
+"in a Mayan calendar.  * Date Display Format:: Changing the format.  * Time "
+"Display Format:: Changing the format.  * Diary Customizing:: Defaults you "
+"can set.  * Non-Gregorian Diary:: Diary entries based on other calendars.  * "
+"Diary Display:: A choice of ways to display the diary.  * Fancy Diary "
+"Display:: Sorting diary entries, using included diary files.  * Sexp Diary "
+"Entries:: More flexible diary entries."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Mail Format"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Format of a mail message."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Mail Headers"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Details of some standard mail header fields."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Mail Aliases"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Abbreviating and grouping mail addresses."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994 emacs.texi.orig:996
+msgid "Mail Commands"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Special commands for editing mail being composed."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Mail Signature"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Adding a signature to every message."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Mail Amusements"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Distracting the NSA; adding fortune messages."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Mail Methods"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:994
+msgid "Using alternative mail-composition methods."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1001
+msgid "Mail Sending"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1001
+msgid "Commands to send the message."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1001
+msgid "Header Editing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1001
+msgid "Commands to move to header fields and edit them."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1001
+msgid "Citing Mail"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1001
+msgid "Quoting a message you are replying to."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1001
+msgid "Mail Misc"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1001
+msgid "Attachments, spell checking, etc."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1003
+msgid "Reading Mail with Rmail"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Basics"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Basic concepts of Rmail, and simple use."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Scrolling"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Scrolling through a message."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Motion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Moving to another message."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Deletion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Deleting and expunging messages."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Inbox"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "How mail gets into the Rmail file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Using multiple Rmail files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Output"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Copying message out to files."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Labels"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Classifying messages by labeling them."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Attributes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Certain standard labels, called attributes."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Reply"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Sending replies to messages you are viewing."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Summary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Summaries show brief info on many messages."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Sorting"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Sorting messages in Rmail."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Display"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "How Rmail displays a message; customization."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Coding"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "How Rmail handles decoding character sets."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Editing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Editing message text and headers in Rmail."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Digest"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Extracting the messages from a digest message."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Rmail Rot13"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Reading messages encoded in the rot13 code."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Movemail"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "More details of fetching new mail."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Remote Mailboxes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Retrieving mail from remote mailboxes."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Other Mailbox Formats"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1025
+msgid "Retrieving mail from local mailboxes in various formats."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1027
+msgid "Rmail Summaries"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1030
+msgid "Rmail Make Summary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1030
+msgid "Making various sorts of summaries."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1030
+msgid "Rmail Summary Edit"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1030
+msgid "Manipulating messages from the summary."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1037
+msgid "Buffers of Gnus"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1037
+msgid "The group, summary, and article buffers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1037
+msgid "Gnus Startup"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1037
+msgid "What you should know about starting Gnus."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1037
+msgid "Gnus Group Buffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1037
+msgid "A short description of Gnus group commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1037
+msgid "Gnus Summary Buffer"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1037
+msgid "A short description of Gnus summary commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1039
+msgid "Document Viewing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1044
+msgid "DocView Navigation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1044
+msgid "Navigating DocView buffers."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1044
+msgid "DocView Searching"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1044
+msgid "Searching inside documents."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1044
+msgid "DocView Slicing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1044
+msgid "Specifying which part of a page is displayed."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1044
+msgid "DocView Conversion"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1044
+msgid "Influencing and triggering conversion."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1046
+msgid "Running Shell Commands from Emacs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Single Shell"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "How to run one shell command and return."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Interactive Shell"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Permanent shell taking input via Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Shell Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Special Emacs commands used with permanent shell."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Shell Prompts"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Two ways to recognize shell prompts."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Shell History"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Repeating previous commands in a shell buffer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Directory Tracking"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Keeping track when the subshell changes directory."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Shell Options"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Options for customizing Shell mode."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Terminal emulator"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "An Emacs window as a terminal emulator."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Term Mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Special Emacs commands used in Term mode."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Remote Host"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Connecting to another computer."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Serial Terminal"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1058
+msgid "Connecting to a serial port."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1060
+msgid "Shell Command History"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1064
+msgid "Shell Ring"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1064
+msgid "Fetching commands from the history list."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1064
+msgid "Shell History Copying::Moving to a command and then copying it."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1064
+msgid "History References"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1064
+msgid "Expanding @samp{!}-style history references."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1066
+msgid "Using Emacs as a Server"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1069
+msgid "Invoking emacsclient"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1069
+msgid "Connecting to the Emacs server."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1069
+msgid "emacsclient Options"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1069
+msgid "Emacs client startup options."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1071
+msgid "Printing Hard Copies"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1075
+msgid "PostScript"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1075
+msgid "Printing buffers or regions as PostScript."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1075
+msgid "PostScript Variables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1075
+msgid "Customizing the PostScript printing commands."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1075
+msgid "Printing Package"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1075
+msgid "An optional advanced printing interface."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1077
+msgid "Hyperlinking and Navigation Features"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1081
+msgid "Browse-URL"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1081
+msgid "Following URLs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1081
+msgid "Goto Address mode"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1081
+msgid "Activating URLs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1081
+msgid "FFAP"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1081
+msgid "Finding files etc. at point."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1083
+msgid "Emacs Lisp Packages"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1087
+msgid "Package Menu"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1087
+msgid "Buffer for viewing and managing packages."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1087
+msgid "Package Installation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1087
+msgid "Options for package installation."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1087
+msgid "Package Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1087
+msgid "Where packages are installed."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1098
+msgid "Easy Customization"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1098
+msgid "Convenient way to browse and change settings."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1098 emacs.texi.orig:1111
+msgid "Variables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1098
+msgid ""
+"Many Emacs commands examine Emacs variables to decide what to do; by setting "
+"variables, you can control their functioning."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1098
+msgid "Key Bindings"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1098
+msgid ""
+"The keymaps say what command each key runs.  By changing them, you can "
+"\"redefine\" keys."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1098
+msgid "Init File"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1098
+msgid "How to write common customizations in the initialization file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1100
+msgid "Easy Customization Interface"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Customization Groups"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "How settings are classified."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Browsing Custom"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Browsing and searching for settings."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Changing a Variable"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "How to edit an option's value and set the option."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Saving Customizations"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Saving customizations for future Emacs sessions."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Face Customization"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "How to edit the attributes of a face."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Specific Customization"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Customizing specific settings or groups."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Custom Themes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Collections of customization settings."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "Creating Custom Themes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1109
+msgid "How to create a new custom theme."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1118
+msgid "Examining"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1118
+msgid "Examining or setting one variable's value."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1118
+msgid "Hooks"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1118
+msgid ""
+"Hook variables let you specify programs for parts of Emacs to run on "
+"particular occasions."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1118
+msgid "Locals"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1118
+msgid "Per-buffer values of variables."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1118
+msgid "File Variables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1118
+msgid "How files can specify variable values."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1118
+msgid "Directory Variables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1118
+msgid "How variable values can be specified by directory."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1120
+msgid "Local Variables in Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1123
+msgid "Specifying File Variables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1123
+msgid "Specifying file local variables."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1123
+msgid "Safe File Variables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1123
+msgid "Making sure file local variables are safe."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1125
+msgid "Customizing Key Bindings"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Keymaps"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Generalities.  The global keymap."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Prefix Keymaps"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Keymaps for prefix keys."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Local Keymaps"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Major and minor modes have their own keymaps."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Minibuffer Maps"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "The minibuffer uses its own local keymaps."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Rebinding"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "How to redefine one key's meaning conveniently."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Init Rebinding"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Rebinding keys with your initialization file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Modifier Keys"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Using modifier keys in key bindings."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Function Keys"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Rebinding terminal function keys."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Named ASCII Chars"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Distinguishing @key{TAB} from @kbd{C-i}, and so on."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Mouse Buttons"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Rebinding mouse buttons in Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid "Disabling"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1139
+msgid ""
+"Disabling a command means confirmation is required before it can be "
+"executed.  This is done to protect beginners from surprises."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1141
+msgid "The Emacs Initialization File"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1147
+msgid "Init Syntax"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1147
+msgid "Syntax of constants in Emacs Lisp."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1147
+msgid "Init Examples"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1147
+msgid "How to do some things with an init file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1147
+msgid "Terminal Init"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1147
+msgid "Each terminal type can have an init file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1147
+msgid "Find Init"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1147
+msgid "How Emacs finds the init file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1147
+msgid "Init Non-ASCII"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1147
+msgid "Using non-@acronym{ASCII} characters in an init file."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1149
+msgid "Dealing with Emacs Trouble"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "DEL Does Not Delete"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "What to do if @key{DEL} doesn't delete."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "Stuck Recursive"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "`[...]' in mode line around the parentheses."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "Screen Garbled"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "Garbage on the screen."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "Text Garbled"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "Garbage in the text."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "Memory Full"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "How to cope when you run out of memory."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "Crashing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "What Emacs does when it crashes."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "After a Crash"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "Recovering editing in an Emacs session that crashed."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "Emergency Escape"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1158
+msgid "What to do if Emacs stops responding."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1160
+msgid "Reporting Bugs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1166
+msgid "Known Problems"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1166
+msgid "How to read about known problems and bugs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1166
+msgid "Bug Criteria"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1166
+msgid "Have you really found a bug?"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1166
+msgid "Understanding Bug Reporting"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1166
+msgid "How to report a bug effectively."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1166
+msgid "Checklist"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1166
+msgid "Steps to follow for a good bug report."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1166
+msgid "Sending Patches"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1166
+msgid "How to send a patch for GNU Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1168
+msgid "Command Line Arguments for Emacs Invocation"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Action Arguments"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Arguments to visit files, load libraries, and call functions."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Initial Options"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Arguments that take effect while starting Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Command Example"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Examples of using command line arguments."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Environment"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Environment variables that Emacs uses."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Display X"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Changing the default display and using remote login."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Font X"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Choosing a font for text, under X."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Colors X"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Choosing display colors."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Window Size X"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Start-up window size, under X."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Borders X"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Internal and external borders, under X."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Title X"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Specifying the initial frame's title."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Icons X"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Choosing what sort of icon to use, under X."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Misc X"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1182
+msgid "Other display options."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1184
+msgid "Environment Variables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1188
+msgid "General Variables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1188
+msgid "Environment variables that all versions of Emacs use."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1188
+msgid "Misc Variables"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1188
+msgid "Certain system-specific variables."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1188
+msgid "MS-Windows Registry"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1188
+msgid "An alternative to the environment on MS-Windows."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1190
+msgid "X Options and Resources"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1196
+msgid "Resources"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1196
+msgid "Using X resources with Emacs (in general)."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1196
+msgid "Table of Resources"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1196
+msgid "Table of specific X resources that affect Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1196
+msgid "Lucid Resources"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1196
+msgid "X resources for Lucid menus."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1196
+msgid "Motif Resources"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1196
+msgid "X resources for Motif and LessTif menus."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1196 emacs.texi.orig:1198
+msgid "GTK resources"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1196
+msgid "Resources for GTK widgets."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1203
+msgid "GTK Resource Basics"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1203
+msgid "Basic usage of GTK+ resources."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1203
+msgid "GTK Widget Names"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1203
+msgid "How GTK+ widgets are named."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1203
+msgid "GTK Names in Emacs"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1203
+msgid "GTK widgets used by Emacs."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1203
+msgid "GTK styles"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1203
+msgid "What can be customized in a GTK widget."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1205
+msgid "Emacs and Mac OS / GNUstep"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1210
+msgid "Mac / GNUstep Basics"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1210
+msgid "Basic Emacs usage under GNUstep or Mac OS."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1210
+msgid "Mac / GNUstep Customization"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1210
+msgid "Customizations under GNUstep or Mac OS."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1210
+msgid "Mac / GNUstep Events"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1210
+msgid "How window system events are handled."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1210
+msgid "GNUstep Support"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1210
+msgid "Details on status of GNUstep support."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1212
+msgid "Emacs and Microsoft Windows/MS-DOS"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Windows Startup"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "How to start Emacs on Windows."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Text and Binary"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Text files use CRLF to terminate lines."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Windows Files"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "File-name conventions on Windows."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "ls in Lisp"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Emulation of @code{ls} for Dired."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Windows HOME"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Where Emacs looks for your @file{.emacs} and where it starts up."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Windows Keyboard"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Windows-specific keyboard features."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Windows Mouse"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Windows-specific mouse features."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Windows Processes"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Running subprocesses on Windows."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Windows Printing"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "How to specify the printer on MS-Windows."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Windows Fonts"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Specifying fonts on MS-Windows."
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Windows Misc"
+msgstr ""
+
+#. type: menuentry
+#: emacs.texi.orig:1225
+msgid "Miscellaneous Windows features."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:1227
+msgid "* MS-DOS:: Using Emacs on MS-DOS."
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:1229
+msgid "Emacs and MS-DOS"
+msgstr ""
+
+#. type: ifnottex
+#: emacs.texi.orig:1237
+msgid ""
+"* MS-DOS Keyboard:: Keyboard conventions on MS-DOS.  * MS-DOS Mouse:: Mouse "
+"conventions on MS-DOS.  * MS-DOS Display:: Fonts, frames and display size on "
+"MS-DOS.  * MS-DOS File Names:: File name conventions on MS-DOS.  * MS-DOS "
+"Printing:: Printing specifics on MS-DOS.  * MS-DOS and MULE:: Support for "
+"internationalization on MS-DOS.  * MS-DOS Processes:: Running subprocesses "
+"on MS-DOS."
+msgstr ""
+
+#. type: unnumbered
+#: emacs.texi.orig:1243
+#, no-wrap
+msgid "Preface"
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:1249
+msgid ""
+"This manual documents the use and simple customization of the Emacs editor.  "
+"Simple Emacs customizations do not require you to be a programmer, but if "
+"you are not interested in customizing, you can ignore the customization "
+"hints."
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:1256
+msgid ""
+"This is primarily a reference manual, but can also be used as a primer.  If "
+"you are new to Emacs, we recommend you start with the integrated, "
+"learn-by-doing tutorial, before reading the manual.  To run the tutorial, "
+"start Emacs and type @kbd{C-h t}.  The tutorial describes commands, tells "
+"you when to try them, and explains the results.  The tutorial is available "
+"in several languages."
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:1265
+msgid ""
+"On first reading, just skim chapters 1 and 2, which describe the notational "
+"conventions of the manual and the general appearance of the Emacs display "
+"screen.  Note which questions are answered in these chapters, so you can "
+"refer back later.  After reading chapter 4, you should practice the commands "
+"shown there.  The next few chapters describe fundamental techniques and "
+"concepts that are used constantly.  You need to understand them thoroughly, "
+"so experiment with them until you are fluent."
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:1270
+msgid ""
+"Chapters 14 through 19 describe intermediate-level features that are useful "
+"for many kinds of editing.  Chapter 20 and following chapters describe "
+"optional but useful features; read those chapters when you need them."
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:1275
+msgid ""
+"Read the Common Problems chapter if Emacs does not seem to be working "
+"properly.  It explains how to cope with several common problems "
+"(@pxref{Lossage,, Dealing with Emacs Trouble}), as well as when and how to "
+"report Emacs bugs (@pxref{Bugs})."
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:1279
+msgid ""
+"To find the documentation of a particular command, look in the index.  Keys "
+"(character commands) and command names have separate indexes.  There is also "
+"a glossary, with a cross reference for each term."
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:1286
+msgid ""
+"This manual is available as a printed book and also as an Info file.  The "
+"Info file is for reading from Emacs itself, or with the Info program.  Info "
+"is the principal format for documentation in the GNU system.  The Info file "
+"and the printed book contain substantially the same text and are generated "
+"from the same source files, which are also distributed with GNU Emacs."
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:1293
+msgid ""
+"GNU Emacs is a member of the Emacs editor family.  There are many Emacs "
+"editors, all sharing common principles of organization.  For information on "
+"the underlying philosophy of Emacs and the lessons learned from its "
+"development, see @cite{Emacs, the Extensible, Customizable Self-Documenting "
+"Display Editor}, available from "
+"@url{ftp://publications.ai.mit.edu/ai-publications/pdf/AIM-519A.pdf}."
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:1303
+msgid ""
+"This version of the manual is mainly intended for use with GNU Emacs "
+"installed on GNU and Unix systems.  GNU Emacs can also be used on MS-DOS, "
+"Microsoft Windows, and Macintosh systems.  The Info file version of this "
+"manual contains some more information about using Emacs on those systems.  "
+"Those systems use different file name syntax; in addition MS-DOS does not "
+"support all GNU Emacs features.  @xref{Microsoft Windows}, for information "
+"about using Emacs on Windows.  @xref{Mac OS / GNUstep}, for information "
+"about using Emacs on Macintosh (and GNUstep)."
+msgstr ""
+
+#. type: unnumbered
+#: emacs.texi.orig:1306
+#, no-wrap
+msgid "Distribution"
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1321
+msgid ""
+"GNU Emacs is @dfn{free software}; this means that everyone is free to use it "
+"and free to redistribute it under certain conditions.  GNU Emacs is not in "
+"the public domain; it is copyrighted and there are restrictions on its "
+"distribution, but these restrictions are designed to permit everything that "
+"a good cooperating citizen would want to do.  What is not allowed is to try "
+"to prevent others from further sharing any version of GNU Emacs that they "
+"might get from you.  The precise conditions are found in the GNU General "
+"Public License that comes with Emacs and also appears in this "
+"manual@footnote{This manual is itself covered by the GNU Free Documentation "
+"License.  This license is similar in spirit to the General Public License, "
+"but is more suitable for documentation.  @xref{GNU Free Documentation "
+"License}.}.  @xref{Copying}."
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1328
+msgid ""
+"One way to get a copy of GNU Emacs is from someone else who has it.  You "
+"need not ask for our permission to do so, or tell any one else; just copy "
+"it.  If you have access to the Internet, you can get the latest distribution "
+"version of GNU Emacs by anonymous FTP; see "
+"@url{http://www.gnu.org/software/emacs} on our website for more information."
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1336
+msgid ""
+"You may also receive GNU Emacs when you buy a computer.  Computer "
+"manufacturers are free to distribute copies on the same terms that apply to "
+"everyone else.  These terms require them to give you the full sources, "
+"including whatever changes they may have made, and to permit you to "
+"redistribute the GNU Emacs received from them under the usual terms of the "
+"General Public License.  In other words, the program must be free for you "
+"when you get it, not just free for the manufacturer."
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1344
+msgid ""
+"If you find GNU Emacs useful, please @strong{send a donation} to the Free "
+"Software Foundation to support our work.  Donations to the Free Software "
+"Foundation are tax deductible in the US@.  If you use GNU Emacs at your "
+"workplace, please suggest that the company make a donation.  To donate, see "
+"@url{https://my.fsf.org/donate/}.  For other ways in which you can help, see "
+"@url{http://www.gnu.org/help/help.html}."
+msgstr ""
+
+#. type: anchor{#1}
+#: emacs.texi.orig:1353
+msgid "Printed Books"
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1353
+msgid ""
+"We also sell hardcopy versions of this manual and @cite{An Introduction to "
+"Programming in Emacs Lisp}, by Robert J. Chassell.  You can visit our online "
+"store at @url{http://shop.fsf.org/}.  The income from sales goes to support "
+"the foundation's purpose: the development of new free software, and "
+"improvements to our existing programs including GNU Emacs."
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1356
+msgid ""
+"If you need to contact the Free Software Foundation, see "
+"@url{http://www.fsf.org/about/contact/}, or write to"
+msgstr ""
+
+#. type: display
+#: emacs.texi.orig:1362
+#, no-wrap
+msgid ""
+"Free Software Foundation\n"
+"51 Franklin Street, Fifth Floor\n"
+"Boston, MA 02110-1301\n"
+"USA\n"
+msgstr ""
+
+#. type: unnumberedsec
+#: emacs.texi.orig:1365 emacs.texi.orig:1366
+#, no-wrap
+msgid "Acknowledgments"
+msgstr ""
+
+#. type: iftex
+#: emacs.texi.orig:1472
+msgid ""
+"Contributors to GNU Emacs include Jari Aalto, Per Abrahamsen, Tomas "
+"Abrahamsson, Jay K. Adams, Alon Albert, Michael Albinus, Nagy Andras, "
+"Benjamin Andresen, Ralf Angeli, Dmitry Antipov, Joe Arceneaux, Emil Åström, "
+"Miles Bader, David Bakhash, Juanma Barranquero, Eli Barzilay, Thomas "
+"Baumann, Steven L. Baur, Jay Belanger, Alexander L. Belikoff, Thomas "
+"Bellman, Scott Bender, Boaz Ben-Zvi, Sergey Berezin, Stephen Berman, Karl "
+"Berry, Anna M. Bigatti, Ray Blaak, Martin Blais, Jim Blandy, Johan Bockgård, "
+"Jan Böcker, Joel Boehland, Lennart Borgman, Per Bothner, Terrence Brannon, "
+"Frank Bresz, Peter Breton, Emmanuel Briot, Kevin Broadey, Vincent Broman, "
+"Michael Brouwer, David M. Brown, Stefan Bruda, Georges Brun-Cottan, Joe "
+"Buehler, Scott Byer, Włodek Bzyl, Bill Carpenter, Per Cederqvist, Hans "
+"Chalupsky, Chris Chase, Bob Chassell, Andrew Choi, Chong Yidong, Sacha Chua, "
+"Stewart Clamen, James Clark, Mike Clarkson, Glynn Clements, Andrew Cohen, "
+"Daniel Colascione, Christoph Conrad, Ludovic Courtès, Andrew Csillag, Toby "
+"Cubitt, Baoqiu Cui, Doug Cutting, Mathias Dahl, Julien Danjou, Satyaki Das, "
+"Vivek Dasmohapatra, Dan Davison, Michael DeCorte, Gary Delp, Nachum "
+"Dershowitz, Dave Detlefs, Matthieu Devin, Christophe de Dinechin, Eri Ding, "
+"Jan Djärv, Lawrence R. Dodd, Carsten Dominik, Scott Draves, Benjamin Drieu, "
+"Viktor Dukhovni, Jacques Duthen, Dmitry Dzhus, John Eaton, Rolf Ebert, Carl "
+"Edman, David Edmondson, Paul Eggert, Stephen Eglen, Christian Egli, Torbjörn "
+"Einarsson, Tsugutomo Enami, David Engster, Hans Henrik Eriksen, Michael "
+"Ernst, Ata Etemadi, Frederick Farnbach, Oscar Figueiredo, Fred Fish, Steve "
+"Fisk, Karl Fogel, Gary Foster, Eric S. Fraga, Romain Francoise, Noah "
+"Friedman, Andreas Fuchs, Shigeru Fukaya, Xue Fuqiao, Hallvard Furuseth, "
+"Keith Gabryelski, Peter S.  Galbraith, Kevin Gallagher, Fabián E. Gallina, "
+"Kevin Gallo, Juan León Lahoz García, Howard Gayle, Daniel German, Stephen "
+"Gildea, Julien Gilles, David Gillespie, Bob Glickstein, Deepak Goel, David "
+"De La Harpe Golden, Boris Goldowsky, David Goodger, Chris Gray, Kevin "
+"Greiner, Michelangelo Grigni, Odd Gripenstam, Kai Großjohann, Michael "
+"Gschwind, Bastien Guerry, Henry Guillaume, Dmitry Gutov, Doug Gwyn, Bruno "
+"Haible, Ken'ichi Handa, Lars Hansen, Chris Hanson, Jesper Harder, Alexandru "
+"Harsanyi, K. Shane Hartman, John Heidemann, Jon K. Hellan, Magnus Henoch, "
+"Markus Heritsch, Dirk Herrmann, Karl Heuer, Manabu Higashida, Konrad Hinsen, "
+"Anders Holst, Jeffrey C. Honig, Tassilo Horn, Kurt Hornik, Tom Houlder, "
+"Joakim Hove, Denis Howe, Lars Ingebrigtsen, Andrew Innes, Seiichiro Inoue, "
+"Philip Jackson, Martyn Jago, Pavel Janik, Paul Jarc, Ulf Jasper, Thorsten "
+"Jolitz, Michael K. Johnson, Kyle Jones, Terry Jones, Simon Josefsson, "
+"Alexandre Julliard, Arne Jørgensen, Tomoji Kagatani, Brewster Kahle, Tokuya "
+"Kameshima, Lute Kamstra, Ivan Kanis, David Kastrup, David Kaufman, Henry "
+"Kautz, Taichi Kawabata, Taro Kawagishi, Howard Kaye, Michael Kifer, Richard "
+"King, Peter Kleiweg, Karel Klíč, Shuhei Kobayashi, Pavel Kobyakov, Larry "
+"K. Kolodney, David M. Koppelman, Koseki Yoshinori, Robert Krawitz, Sebastian "
+"Kremer, Ryszard Kubiak, Igor Kuzmin, David Kågedal, Daniel LaLiberte, Karl "
+"Landstrom, Mario Lang, Aaron Larson, James R. Larus, Vinicius Jose Latorre, "
+"Werner Lemberg, Frederic Lepied, Peter Liljenberg, Christian Limpach, Lars "
+"Lindberg, Chris Lindblad, Anders Lindgren, Thomas Link, Juri Linkov, Francis "
+"Litterio, Sergey Litvinov, Leo Liu, Emilio C. Lopes, Martin Lorentzon, Dave "
+"Love, Eric Ludlam, Károly Lőrentey, Sascha Lüdecke, Greg McGary, Roland "
+"McGrath, Michael McNamara, Alan Mackenzie, Christopher J. Madsen, Neil "
+"M. Mager, Ken Manheimer, Bill Mann, Brian Marick, Simon Marshall, Bengt "
+"Martensson, Charlie Martin, Yukihiro Matsumoto, Tomohiro Matsuyama, David "
+"Maus, Thomas May, Will Mengarini, David Megginson, Stefan Merten, Ben "
+"A. Mesander, Wayne Mesard, Brad Miller, Lawrence Mitchell, Richard Mlynarik, "
+"Gerd Möllmann, Dani Moncayo, Stefan Monnier, Keith Moore, Jan Moringen, "
+"Morioka Tomohiko, Glenn Morris, Don Morrison, Diane Murray, Riccardo Murri, "
+"Sen Nagata, Erik Naggum, Gergely Nagy, Nobuyoshi Nakada, Thomas Neumann, "
+"Mike Newton, Thien-Thi Nguyen, Jurgen Nickelsen, Dan Nicolaescu, Hrvoje "
+"Nikšić, Jeff Norden, Andrew Norman, Edward O'Connor, Kentaro Ohkouchi, "
+"Christian Ohler, Kenichi Okada, Alexandre Oliva, Bob Olson, Michael Olson, "
+"Takaaki Ota, Pieter E. J. Pareit, Ross Patterson, David Pearson, Juan "
+"Pechiar, Jeff Peck, Damon Anton Permezel, Tom Perrine, William M. Perry, Per "
+"Persson, Jens Petersen, Daniel Pfeiffer, Justus Piater, Richard L.  Pieri, "
+"Fred Pierresteguy, François Pinard, Daniel Pittman, Christian Plaunt, "
+"Alexander Pohoyda, David Ponce, Francesco A. Potortì, Michael D. Prange, "
+"Mukesh Prasad, Ken Raeburn, Marko Rahamaa, Ashwin Ram, Eric S. Raymond, Paul "
+"Reilly, Edward M. Reingold, David Reitter, Alex Rezinsky, Rob Riepel, Lara "
+"Rios, Adrian Robert, Nick Roberts, Roland B. Roberts, John Robinson, Denis "
+"B. Roegel, Danny Roozendaal, Sebastian Rose, William Rosenblatt, Markus "
+"Rost, Guillermo J. Rozas, Martin Rudalics, Ivar Rummelhoff, Jason Rumney, "
+"Wolfgang Rupprecht, Benjamin Rutt, Kevin Ryde, James B. Salem, Masahiko "
+"Sato, Timo Savola, Jorgen Schäfer, Holger Schauer, William Schelter, Ralph "
+"Schleicher, Gregor Schmid, Michael Schmidt, Ronald S. Schnell, Philippe "
+"Schnoebelen, Jan Schormann, Alex Schroeder, Stefan Schoef, Rainer Schöpf, "
+"Raymond Scholz, Eric Schulte, Andreas Schwab, Randal Schwartz, Oliver "
+"Seidel, Manuel Serrano, Paul Sexton, Hovav Shacham, Stanislav Shalunov, Marc "
+"Shapiro, Richard Sharman, Olin Shivers, Tibor Šimko, Espen Skoglund, Rick "
+"Sladkey, Lynn Slater, Chris Smith, David Smith, Paul D. Smith, Wilson "
+"Snyder, William Sommerfeld, Simon South, Andre Spiegel, Michael Staats, "
+"Thomas Steffen, Ulf Stegemann, Reiner Steib, Sam Steingold, Ake Stenhoff, "
+"Peter Stephenson, Ken Stevens, Andy Stewart, Jonathan Stigelman, Martin "
+"Stjernholm, Kim F.  Storm, Steve Strassmann, Christopher Suckling, Olaf "
+"Sylvester, Naoto Takahashi, Steven Tamm, Jan Tatarik, Luc Teirlinck, "
+"Jean-Philippe Theberge, Jens T. Berger Thielemann, Spencer Thomas, Jim "
+"Thompson, Toru Tomabechi, David O'Toole, Markus Triska, Tom Tromey, Enami "
+"Tsugutomo, Eli Tziperman, Daiki Ueno, Masanobu Umeda, Rajesh Vaidheeswarran, "
+"Neil W. Van Dyke, Didier Verna, Joakim Verona, Ulrik Vieth, Geoffrey "
+"Voelker, Johan Vromans, Inge Wallin, John Paul Wallington, Colin Walters, "
+"Barry Warsaw, Christoph Wedler, Ilja Weis, Zhang Weize, Morten Welinder, "
+"Joseph Brian Wells, Rodney Whitby, John Wiegley, Sascha Wilde, Ed Wilkinson, "
+"Mike Williams, Roland Winkler, Bill Wohler, Steven A. Wood, Dale R. Worley, "
+"Francis J. Wright, Felix S. T. Wu, Tom Wurgler, Yamamoto Mitsuharu, Katsumi "
+"Yamaoka, Masatake Yamato, Jonathan Yavner, Ryan Yeske, Ilya Zakharevich, "
+"Milan Zamazal, Victor Zandy, Eli Zaretskii, Jamie Zawinski, Andrew Zhilin, "
+"Shenghuo Zhu, Piotr Zieliński, Ian T. Zimmermann, Reto Zimmermann, Neal "
+"Ziring, Teodor Zlatanov, and Detlev Zundel."
+msgstr ""
+
+#. type: unnumbered
+#: emacs.texi.orig:1475
+#, no-wrap
+msgid "Introduction"
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1482
+msgid ""
+"You are reading about GNU Emacs, the GNU incarnation of the advanced, "
+"self-documenting, customizable, extensible editor Emacs.  (The @samp{G} in"
+msgstr ""
+
+#. type: acronym{#1}
+#: emacs.texi.orig:1484
+msgid "GNU, @acronym{GNU}'s Not Unix"
+msgstr ""
+
+#. type: acronym{#1}
+#: emacs.texi.orig:1487
+msgid "GNU, GNU's Not Unix"
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1489
+msgid "is not silent.)"
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1496
+msgid ""
+"We call Emacs @dfn{advanced} because it can do much more than simple "
+"insertion and deletion of text.  It can control subprocesses, indent "
+"programs automatically, show multiple files at once, and more.  Emacs "
+"editing commands operate in terms of characters, words, lines, sentences, "
+"paragraphs, and pages, as well as expressions and comments in various "
+"programming languages."
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1501
+msgid ""
+"@dfn{Self-documenting} means that at any time you can use special commands, "
+"known as @dfn{help commands}, to find out what your options are, or to find "
+"out what any command does, or to find all the commands that pertain to a "
+"given topic.  @xref{Help}."
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1510
+msgid ""
+"@dfn{Customizable} means that you can easily alter the behavior of Emacs "
+"commands in simple ways.  For instance, if you use a programming language in "
+"which comments start with @samp{<**} and end with @samp{**>}, you can tell "
+"the Emacs comment manipulation commands to use those strings "
+"(@pxref{Comments}).  To take another example, you can rebind the basic "
+"cursor motion commands (up, down, left and right)  to any keys on the "
+"keyboard that you find comfortable.  @xref{Customization}."
+msgstr ""
+
+#. type: Plain text
+#: emacs.texi.orig:1522
+msgid ""
+"@dfn{Extensible} means that you can go beyond simple customization and "
+"create entirely new commands.  New commands are simply programs written in "
+"the Lisp language, which are run by Emacs's own Lisp interpreter.  Existing "
+"commands can even be redefined in the middle of an editing session, without "
+"having to restart Emacs.  Most of the editing commands in Emacs are written "
+"in Lisp; the few exceptions could have been written in Lisp but use C "
+"instead for efficiency.  Writing an extension is programming, but "
+"non-programmers can use it afterwards.  @xref{Top, Emacs Lisp Intro, "
+"Preface, eintr, An Introduction to Programming in Emacs Lisp}, if you want "
+"to learn Emacs Lisp programming."
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1523
+#, no-wrap
+msgid "screen.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1524
+#, no-wrap
+msgid "commands.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1525
+#, no-wrap
+msgid "entering.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1526
+#, no-wrap
+msgid "basic.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1527
+#, no-wrap
+msgid "mini.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1528
+#, no-wrap
+msgid "m-x.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1529
+#, no-wrap
+msgid "help.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1530
+#, no-wrap
+msgid "mark.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1531
+#, no-wrap
+msgid "killing.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1532
+#, no-wrap
+msgid "regs.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1533
+#, no-wrap
+msgid "display.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1534
+#, no-wrap
+msgid "search.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1535
+#, no-wrap
+msgid "fixit.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1536
+#, no-wrap
+msgid "kmacro.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1538
+#, no-wrap
+msgid "files.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1539
+#, no-wrap
+msgid "buffers.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1540
+#, no-wrap
+msgid "windows.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1541
+#, no-wrap
+msgid "frames.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1542
+#, no-wrap
+msgid "mule.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1543
+#, no-wrap
+msgid "modes.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1544
+#, no-wrap
+msgid "indent.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1545
+#, no-wrap
+msgid "text.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1547
+#, no-wrap
+msgid "programs.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1548
+#, no-wrap
+msgid "building.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1550
+#, no-wrap
+msgid "maintaining.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1551
+#, no-wrap
+msgid "abbrevs.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1553
+#, no-wrap
+msgid "dired.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1555
+#, no-wrap
+msgid "calendar.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1556
+#, no-wrap
+msgid "sending.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1557
+#, no-wrap
+msgid "rmail.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1559
+#, no-wrap
+msgid "misc.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1560
+#, no-wrap
+msgid "package.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1561
+#, no-wrap
+msgid "custom.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1562
+#, no-wrap
+msgid "trouble.texi"
+msgstr ""
+
+#. type: appendix
+#: emacs.texi.orig:1565
+#, no-wrap
+msgid "GNU GENERAL PUBLIC LICENSE"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1566
+#, no-wrap
+msgid "gpl.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1570
+#, no-wrap
+msgid "doclicense.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1572
+#, no-wrap
+msgid "cmdargs.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1573
+#, no-wrap
+msgid "xresources.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1575
+#, no-wrap
+msgid "anti.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1576
+#, no-wrap
+msgid "macos.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1578
+#, no-wrap
+msgid "msdog.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1579
+#, no-wrap
+msgid "gnu.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1580
+#, no-wrap
+msgid "glossary.texi"
+msgstr ""
+
+#. type: include
+#: emacs.texi.orig:1582
+#, no-wrap
+msgid "ack.texi"
+msgstr ""
+
+#. type: unnumbered
+#: emacs.texi.orig:1590
+#, no-wrap
+msgid "Key (Character) Index"
+msgstr ""
+
+#. type: unnumbered
+#: emacs.texi.orig:1595
+#, no-wrap
+msgid "Command-Line Options Index"
+msgstr ""
+
+#. type: unnumbered
+#: emacs.texi.orig:1600
+#, no-wrap
+msgid "Command and Function Index"
+msgstr ""

@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: section
+#: vc-xtra.texi.orig:8 vc-xtra.texi.orig:9
+#, no-wrap
+msgid "Advanced VC Usage"
+msgstr ""
+
+#. type: iftex
+#: vc-xtra.texi.orig:14
+msgid ""
+"Commonly used features of Emacs's version control (VC) support are described "
+"in the main Emacs manual (@pxref{Version Control,,,emacs, the Emacs "
+"Manual}).  This chapter describes more advanced VC usage."
+msgstr ""
+
+#. type: menuentry
+#: vc-xtra.texi.orig:20
+msgid "Remote Repositories"
+msgstr ""
+
+#. type: menuentry
+#: vc-xtra.texi.orig:20
+msgid "Efficient access to remote VCS servers."
+msgstr ""
+
+#. type: menuentry
+#: vc-xtra.texi.orig:20
+msgid "Revision Tags"
+msgstr ""
+
+#. type: menuentry
+#: vc-xtra.texi.orig:20
+msgid "Symbolic names for revisions."
+msgstr ""
+
+#. type: menuentry
+#: vc-xtra.texi.orig:20
+msgid "Miscellaneous VC"
+msgstr ""
+
+#. type: menuentry
+#: vc-xtra.texi.orig:20
+msgid "Various other commands and features of VC."
+msgstr ""
+
+#. type: menuentry
+#: vc-xtra.texi.orig:20
+msgid "Customizing VC"
+msgstr ""
+
+#. type: menuentry
+#: vc-xtra.texi.orig:20
+msgid "Variables that change VC's behavior."
+msgstr ""
+
+#. type: include
+#: vc-xtra.texi.orig:24
+#, no-wrap
+msgid "vc1-xtra.texi"
+msgstr ""

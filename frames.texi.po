@@ -1,0 +1,2854 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: node
+#: frames.texi.orig:5
+#, no-wrap
+msgid "Frames"
+msgstr ""
+
+#. type: chapter
+#: frames.texi.orig:6
+#, no-wrap
+msgid "Frames and Graphical Displays"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:7
+#, no-wrap
+msgid "frames"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:16
+msgid ""
+"When Emacs is started on a graphical display, e.g., on the X Window System, "
+"it occupies a graphical system-level ``window''.  In this manual, we call "
+"this a @dfn{frame}, reserving the word ``window'' for the part of the frame "
+"used for displaying a buffer.  A frame initially contains one window, but it "
+"can be subdivided into multiple windows (@pxref{Windows}).  A frame normally "
+"also contains a menu bar, tool bar, and echo area."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:22
+msgid ""
+"You can also create additional frames (@pxref{Creating Frames}).  All frames "
+"created in the same Emacs session have access to the same underlying buffers "
+"and other data.  For instance, if a buffer is being shown in more than one "
+"frame, any changes made to it in one frame show up immediately in the other "
+"frames too."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:27
+msgid ""
+"Typing @kbd{C-x C-c} closes all the frames on the current display, and ends "
+"the Emacs session if it has no frames open on any other displays "
+"(@pxref{Exiting}).  To close just the selected frame, type @kbd{C-x 5 0} "
+"(that is zero, not @kbd{o})."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:36
+msgid ""
+"This chapter describes Emacs features specific to graphical displays "
+"(particularly mouse commands), and features for managing multiple frames.  "
+"On text terminals, many of these features are unavailable.  However, it is "
+"still possible to create multiple ``frames'' on text terminals; such frames "
+"are displayed one at a time, filling the entire terminal screen "
+"(@pxref{Non-Window Terminals}).  It is also possible to use the mouse on "
+"some text terminals (@pxref{Text-Only Mouse}, for doing so on GNU and Unix "
+"systems; and"
+msgstr ""
+
+#. type: iftex
+#: frames.texi.orig:38
+msgid "@pxref{MS-DOS Mouse,,,emacs-xtra,Specialized Emacs Features},"
+msgstr ""
+
+#. type: ifnottex
+#: frames.texi.orig:41
+msgid "@pxref{MS-DOS Mouse},"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:43
+msgid "for doing so on MS-DOS).  Menus are supported on all text terminals."
+msgstr ""
+
+#. type: node
+#: frames.texi.orig:65 frames.texi.orig:67
+#, no-wrap
+msgid "Mouse Commands"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Moving, cutting, and pasting, with the mouse."
+msgstr ""
+
+#. type: node
+#: frames.texi.orig:65 frames.texi.orig:208
+#, no-wrap
+msgid "Word and Line Mouse"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Mouse commands for selecting whole words or lines."
+msgstr ""
+
+#. type: node
+#: frames.texi.orig:65 frames.texi.orig:238
+#, no-wrap
+msgid "Mouse References"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Using the mouse to select an item from a list."
+msgstr ""
+
+#. type: node
+#: frames.texi.orig:65 frames.texi.orig:290
+#, no-wrap
+msgid "Menu Mouse Clicks"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Mouse clicks that bring up menus."
+msgstr ""
+
+#. type: node
+#: frames.texi.orig:65 frames.texi.orig:335
+#, no-wrap
+msgid "Mode Line Mouse"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Mouse clicks on the mode line."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:382 frames.texi.orig:383
+#, no-wrap
+msgid "Creating Frames"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Creating additional Emacs frames with various contents."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:431 frames.texi.orig:432
+#, no-wrap
+msgid "Frame Commands"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Iconifying, deleting, and switching frames."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:507 frames.texi.orig:508
+#, no-wrap
+msgid "Fonts"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Changing the frame font."
+msgstr ""
+
+#. type: node
+#: frames.texi.orig:65 frames.texi.orig:791
+#, no-wrap
+msgid "Speedbar"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "How to make and use a speedbar frame."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:849 frames.texi.orig:850
+#, no-wrap
+msgid "Multiple Displays"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "How one Emacs instance can talk to several displays."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:875 frames.texi.orig:876
+#, no-wrap
+msgid "Frame Parameters"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Changing the colors and other modes of frames."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:910 frames.texi.orig:911
+#, no-wrap
+msgid "Scroll Bars"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "How to enable and disable scroll bars; how to use them."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:968 frames.texi.orig:969
+#, no-wrap
+msgid "Drag and Drop"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Using drag and drop to open files and insert text."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:988 frames.texi.orig:989
+#, no-wrap
+msgid "Menu Bars"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Enabling and disabling the menu bar."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:1013 frames.texi.orig:1014
+#, no-wrap
+msgid "Tool Bars"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Enabling and disabling the tool bar."
+msgstr ""
+
+#. type: node
+#: frames.texi.orig:65 frames.texi.orig:1047
+#, no-wrap
+msgid "Dialog Boxes"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Controlling use of dialog boxes."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:1084 frames.texi.orig:1085
+#, no-wrap
+msgid "Tooltips"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Displaying information at the current mouse position."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:1118 frames.texi.orig:1119
+#, no-wrap
+msgid "Mouse Avoidance"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Preventing the mouse pointer from obscuring text."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:65 frames.texi.orig:1162 frames.texi.orig:1163
+#, no-wrap
+msgid "Non-Window Terminals"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Multiple frames on terminals that show only one."
+msgstr ""
+
+#. type: node
+#: frames.texi.orig:65 frames.texi.orig:1190
+#, no-wrap
+msgid "Text-Only Mouse"
+msgstr ""
+
+#. type: menuentry
+#: frames.texi.orig:65
+msgid "Using the mouse in text terminals."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:68
+#, no-wrap
+msgid "Mouse Commands for Editing"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:69
+#, no-wrap
+msgid "mouse buttons (what they do)"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:70
+#, no-wrap
+msgid "mouse, selecting text using"
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:72 frames.texi.orig:76 frames.texi.orig:350
+#, no-wrap
+msgid "Mouse-1"
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:73 frames.texi.orig:83 frames.texi.orig:358
+#, no-wrap
+msgid "Mouse-2"
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:74 frames.texi.orig:87 frames.texi.orig:362
+#, no-wrap
+msgid "Mouse-3"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:78
+msgid "Move point to where you click (@code{mouse-set-point})."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:79
+#, no-wrap
+msgid "Drag-Mouse-1"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:82
+msgid ""
+"Activate the region around the text selected by dragging, and put the text "
+"in the primary selection (@code{mouse-set-region})."
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:86
+msgid ""
+"Move point to where you click, and insert the contents of the primary "
+"selection there (@code{mouse-yank-primary})."
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:92
+msgid ""
+"If the region is active, move the nearer end of the region to the click "
+"position; otherwise, set mark at the current value of point and point at the "
+"click position.  Save the resulting region in the kill ring; on a second "
+"click, kill it (@code{mouse-save-then-kill})."
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:94
+#, no-wrap
+msgid "mouse-set-point"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:100
+msgid ""
+"The most basic mouse command is @code{mouse-set-point}, which is invoked by "
+"clicking with the left mouse button, @kbd{Mouse-1}, in the text area of a "
+"window.  This moves point to the position where you clicked.  If that window "
+"was not the selected window, it becomes the selected window."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:101
+#, no-wrap
+msgid "x-mouse-click-focus-ignore-position"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:109
+msgid ""
+"Normally, if the frame you clicked in was not the selected frame, it is made "
+"the selected frame, in addition to selecting the window and setting the "
+"cursor.  On the X Window System, you can change this by setting the variable "
+"@code{x-mouse-click-focus-ignore-position} to @code{t}.  In that case, the "
+"initial click on an unselected frame just selects the frame, without doing "
+"anything else; clicking again selects the window and sets the cursor "
+"position."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:110
+#, no-wrap
+msgid "mouse, dragging"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:111
+#, no-wrap
+msgid "mouse-set-region"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:118
+msgid ""
+"Holding down @kbd{Mouse-1} and ``dragging'' the mouse over a stretch of text "
+"activates the region around that text (@code{mouse-set-region}), placing the "
+"mark where you started holding down the mouse button, and point where you "
+"release it (@pxref{Mark}).  In addition, the text in the region becomes the "
+"primary selection (@pxref{Primary Selection})."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:119
+#, no-wrap
+msgid "mouse-drag-copy-region"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:123
+msgid ""
+"If you change the variable @code{mouse-drag-copy-region} to a non-@code{nil} "
+"value, dragging the mouse over a stretch of text also adds the text to the "
+"kill ring.  The default is @code{nil}."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:124
+#, no-wrap
+msgid "mouse-scroll-min-lines"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:131
+msgid ""
+"If you move the mouse off the top or bottom of the window while dragging, "
+"the window scrolls at a steady rate until you move the mouse back into the "
+"window.  This way, you can select regions that don't fit entirely on the "
+"screen.  The number of lines scrolled per step depends on how far away from "
+"the window edge the mouse has gone; the variable "
+"@code{mouse-scroll-min-lines} specifies a minimum step size."
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:132
+#, no-wrap
+msgid "mouse-yank-primary"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:133
+#, no-wrap
+msgid "mouse-yank-at-click"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:140
+msgid ""
+"Clicking with the middle mouse button, @kbd{Mouse-2}, moves point to the "
+"position where you clicked and inserts the contents of the primary selection "
+"(@code{mouse-yank-primary}).  @xref{Primary Selection}.  This behavior is "
+"consistent with other X applications.  Alternatively, you can rebind "
+"@kbd{Mouse-2} to @code{mouse-yank-at-click}, which performs a yank at the "
+"position you click."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:141
+#, no-wrap
+msgid "mouse-yank-at-point"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:147
+msgid ""
+"If you change the variable @code{mouse-yank-at-point} to a non-@code{nil} "
+"value, @kbd{Mouse-2} does not move point; it inserts the text at point, "
+"regardless of where you clicked or even which of the frame's windows you "
+"clicked on.  This variable affects both @code{mouse-yank-primary} and "
+"@code{mouse-yank-at-click}."
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:148
+#, no-wrap
+msgid "mouse-save-then-kill"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:152
+msgid ""
+"Clicking with the right mouse button, @kbd{Mouse-3}, runs the command "
+"@code{mouse-save-then-kill}.  This performs several actions depending on "
+"where you click and the status of the region:"
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:157
+msgid ""
+"If no region is active, clicking @kbd{Mouse-3} activates the region, placing "
+"the mark where point was and point at the clicked position."
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:163
+msgid ""
+"If a region is active, clicking @kbd{Mouse-3} adjusts the nearer end of the "
+"region by moving it to the clicked position.  The adjusted region's text is "
+"copied to the kill ring; if the text in the original region was already on "
+"the kill ring, it replaces it there."
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:169
+msgid ""
+"If you originally specified the region using a double or triple "
+"@kbd{Mouse-1}, so that the region is defined to consist of entire words or "
+"lines (@pxref{Word and Line Mouse}), then adjusting the region with "
+"@kbd{Mouse-3} also proceeds by entire words or lines."
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:178
+msgid ""
+"If you use @kbd{Mouse-3} a second time consecutively, at the same place, "
+"that kills the region already selected.  Thus, the simplest way to kill text "
+"with the mouse is to click @kbd{Mouse-1} at one end, then click "
+"@kbd{Mouse-3} twice at the other end.  To copy the text into the kill ring "
+"without deleting it from the buffer, press @kbd{Mouse-3} just once---or just "
+"drag across the text with @kbd{Mouse-1}.  Then you can copy it elsewhere by "
+"yanking it."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:186
+msgid ""
+"The @code{mouse-save-then-kill} command also obeys the variable "
+"@code{mouse-drag-copy-region} (described above).  If the value is "
+"non-@code{nil}, then whenever the command sets or adjusts the active region, "
+"the text in the region is also added to the kill ring.  If the latest kill "
+"ring entry had been added the same way, that entry is replaced rather than "
+"making a new entry."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:191
+msgid ""
+"Whenever you set the region using any of the mouse commands described above, "
+"the mark will be deactivated by any subsequent unshifted cursor motion "
+"command, in addition to the usual ways of deactivating the mark.  "
+"@xref{Shift Selection}."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:192
+#, no-wrap
+msgid "mouse wheel"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:193
+#, no-wrap
+msgid "mouse-wheel-mode"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:194
+#, no-wrap
+msgid "Mouse Wheel minor mode"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:195
+#, no-wrap
+msgid "mode, Mouse Wheel"
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:196
+#, no-wrap
+msgid "mouse-wheel-follow-mouse"
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:197
+#, no-wrap
+msgid "mouse-wheel-scroll-amount"
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:198
+#, no-wrap
+msgid "mouse-wheel-progressive-speed"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:207
+msgid ""
+"Some mice have a ``wheel'' which can be used for scrolling.  Emacs supports "
+"scrolling windows with the mouse wheel, by default, on most graphical "
+"displays.  To toggle this feature, use @kbd{M-x mouse-wheel-mode}.  The "
+"variables @code{mouse-wheel-follow-mouse} and "
+"@code{mouse-wheel-scroll-amount} determine where and by how much buffers are "
+"scrolled.  The variable @code{mouse-wheel-progressive-speed} determines "
+"whether the scroll speed is linked to how fast you move the wheel."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:209
+#, no-wrap
+msgid "Mouse Commands for Words and Lines"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:214
+msgid ""
+"These variants of @kbd{Mouse-1} select entire words or lines at a time.  "
+"Emacs activates the region around the selected text, which is also copied to "
+"the kill ring."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:216
+#, no-wrap
+msgid "Double-Mouse-1"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:218
+msgid "Select the text around the word which you click on."
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:227
+msgid ""
+"Double-clicking on a character with ``symbol'' syntax (such as underscore, "
+"in C mode) selects the symbol surrounding that character.  Double-clicking "
+"on a character with open- or close-parenthesis syntax selects the "
+"parenthetical grouping which that character starts or ends.  Double-clicking "
+"on a character with string-delimiter syntax (such as a single-quote or "
+"double-quote in C) selects the string constant (Emacs uses heuristics to "
+"figure out whether that character is the beginning or the end of it)."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:228
+#, no-wrap
+msgid "Double-Drag-Mouse-1"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:230
+msgid "Select the text you drag across, in the form of whole words."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:231
+#, no-wrap
+msgid "Triple-Mouse-1"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:233
+msgid "Select the line you click on."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:234
+#, no-wrap
+msgid "Triple-Drag-Mouse-1"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:236
+msgid "Select the text you drag across, in the form of whole lines."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:239
+#, no-wrap
+msgid "Following References with the Mouse"
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:240
+#, no-wrap
+msgid "Mouse-1 @r{(on buttons)}"
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:241
+#, no-wrap
+msgid "Mouse-2 @r{(on buttons)}"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:242
+#, no-wrap
+msgid "hyperlinks"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:243
+#, no-wrap
+msgid "links"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:244
+#, no-wrap
+msgid "text buttons"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:245
+#, no-wrap
+msgid "buttons"
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:247
+#, no-wrap
+msgid "mouse-highlight"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:256
+msgid ""
+"Some Emacs buffers include @dfn{buttons}, or @dfn{hyperlinks}: pieces of "
+"text that perform some action (e.g., following a reference)  when activated "
+"(e.g., by clicking on them).  Usually, a button's text is visually "
+"highlighted: it is underlined, or a box is drawn around it.  If you move the "
+"mouse over a button, the shape of the mouse cursor changes and the button "
+"lights up.  If you change the variable @code{mouse-highlight} to @code{nil}, "
+"Emacs disables this highlighting."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:264
+msgid ""
+"You can activate a button by moving point to it and typing @key{RET}, or by "
+"clicking either @kbd{Mouse-1} or @kbd{Mouse-2} on the button.  For example, "
+"in a Dired buffer, each file name is a button; activating it causes Emacs to "
+"visit that file (@pxref{Dired}).  In a @file{*Compilation*} buffer, each "
+"error message is a button, and activating it visits the source code for that "
+"error (@pxref{Compilation})."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:272
+msgid ""
+"Although clicking @kbd{Mouse-1} on a button usually activates the button, if "
+"you hold the mouse button down for a period of time before releasing it "
+"(specifically, for more than 450 milliseconds), then Emacs moves point where "
+"you clicked, without activating the button.  In this way, you can use the "
+"mouse to move point over a button without activating it.  Dragging the mouse "
+"over or onto a button has its usual behavior of setting the region, and does "
+"not activate the button."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:281
+msgid ""
+"You can change how @kbd{Mouse-1} applies to buttons by customizing the "
+"variable @code{mouse-1-click-follows-link}.  If the value is a positive "
+"integer, that determines how long you need to hold the mouse button down "
+"for, in milliseconds, to cancel button activation; the default is 450, as "
+"described in the previous paragraph.  If the value is @code{nil}, "
+"@kbd{Mouse-1} just sets point where you clicked, and does not activate "
+"buttons.  If the value is @code{double}, double clicks activate buttons but "
+"single clicks just set point."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:282
+#, no-wrap
+msgid "mouse-1-click-in-non-selected-windows"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:289
+msgid ""
+"Normally, @kbd{Mouse-1} on a button activates the button even if it is in a "
+"non-selected window.  If you change the variable "
+"@code{mouse-1-click-in-non-selected-windows} to @code{nil}, @kbd{Mouse-1} on "
+"a button in an unselected window moves point to the clicked position and "
+"selects that window, without activating the button."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:291
+#, no-wrap
+msgid "Mouse Clicks for Menus"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:295
+msgid ""
+"Several mouse clicks with the @key{CTRL} and @key{SHIFT} modifiers bring up "
+"menus."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:297 frames.texi.orig:298
+#, no-wrap
+msgid "C-Mouse-1"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:300
+msgid "This menu is for selecting a buffer."
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:303
+msgid ""
+"The MSB (``mouse select buffer'') global minor mode makes this menu smarter "
+"and more customizable.  @xref{Buffer Menus}."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:304 frames.texi.orig:305 frames.texi.orig:367
+#, no-wrap
+msgid "C-Mouse-2"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:309
+msgid ""
+"This menu contains entries for examining faces and other text properties, "
+"and well as for setting them (the latter is mainly useful when editing "
+"enriched text; @pxref{Enriched Text})."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:310 frames.texi.orig:311
+#, no-wrap
+msgid "C-Mouse-3"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:319
+msgid ""
+"This menu is mode-specific.  For most modes if Menu-bar mode is on, this "
+"menu has the same items as all the mode-specific menu-bar menus put "
+"together.  Some modes may specify a different menu for this button.  If Menu "
+"Bar mode is off, this menu contains all the items which would be present in "
+"the menu bar---not just the mode-specific ones---so that you can access them "
+"without having to display the menu bar."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:320
+#, no-wrap
+msgid "S-Mouse-1"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:323
+msgid ""
+"This menu is for changing the default face within the window's buffer.  "
+"@xref{Text Scale}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:330
+msgid ""
+"Some graphical applications use @kbd{Mouse-3} for a mode-specific menu.  If "
+"you prefer @kbd{Mouse-3} in Emacs to bring up such a menu instead of running "
+"the @code{mouse-save-then-kill} command, rebind @kbd{Mouse-3} by adding the "
+"following line to your init file (@pxref{Init Rebinding}):"
+msgstr ""
+
+#. type: smallexample
+#: frames.texi.orig:333
+#, no-wrap
+msgid "(global-set-key [mouse-3] 'mouse-popup-menubar-stuff)\n"
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:336
+#, no-wrap
+msgid "Mode Line Mouse Commands"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:337
+#, no-wrap
+msgid "mode line, mouse"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:338
+#, no-wrap
+msgid "mouse on mode line"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:342
+msgid ""
+"You can use mouse clicks on window mode lines to select and manipulate "
+"windows."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:348
+msgid ""
+"Some areas of the mode line, such as the buffer name, and major and minor "
+"mode names, have their own special mouse bindings.  These areas are "
+"highlighted when you hold the mouse over them, and information about the "
+"special bindings will be displayed (@pxref{Tooltips}).  This section's "
+"commands do not apply in those areas."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:351
+#, no-wrap
+msgid "Mouse-1 @r{(mode line)}"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:357
+msgid ""
+"@kbd{Mouse-1} on a mode line selects the window it belongs to.  By dragging "
+"@kbd{Mouse-1} on the mode line, you can move it, thus changing the height of "
+"the windows above and below.  Changing heights with the mouse in this way "
+"never deletes windows, it just refuses to make any window smaller than the "
+"minimum height."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:359
+#, no-wrap
+msgid "Mouse-2 @r{(mode line)}"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:361
+msgid "@kbd{Mouse-2} on a mode line expands that window to fill its frame."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:363
+#, no-wrap
+msgid "Mouse-3 @r{(mode line)}"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:366
+msgid ""
+"@kbd{Mouse-3} on a mode line deletes the window it belongs to.  If the frame "
+"has only one window, it does nothing."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:368
+#, no-wrap
+msgid "C-mouse-2 @r{(mode line)}"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:372
+msgid ""
+"@kbd{C-Mouse-2} on a mode line splits that window, producing two "
+"side-by-side windows with the boundary running through the click position "
+"(@pxref{Split Window})."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:374
+#, no-wrap
+msgid "Mouse-1 @r{(scroll bar)}"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:378
+msgid ""
+"Furthermore, by clicking and dragging @kbd{Mouse-1} on the divider between "
+"two side-by-side mode lines, you can move the vertical boundary to the left "
+"or right."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:381
+msgid ""
+"Note that resizing windows is affected by the value of "
+"@code{window-resize-pixelwise}, see @ref{Split Window}."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:384
+#, no-wrap
+msgid "creating frames"
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:386
+#, no-wrap
+msgid "C-x 5"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:394
+msgid ""
+"The prefix key @kbd{C-x 5} is analogous to @kbd{C-x 4}.  Whereas each "
+"@kbd{C-x 4} command pops up a buffer in a different window in the selected "
+"frame (@pxref{Pop Up Window}), the @kbd{C-x 5} commands use a different "
+"frame.  If an existing visible or iconified (``minimized'')  frame already "
+"displays the requested buffer, that frame is raised and deiconified "
+"(``un-minimized''); otherwise, a new frame is created on the current display "
+"terminal."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:397
+msgid ""
+"The various @kbd{C-x 5} commands differ in how they find or create the "
+"buffer to select:"
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:399 frames.texi.orig:400
+#, no-wrap
+msgid "C-x 5 2"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:401
+#, no-wrap
+msgid "make-frame-command"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:403
+msgid "Create a new frame (@code{make-frame-command})."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:403
+#, no-wrap
+msgid "C-x 5 b @var{bufname} @key{RET}"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:406
+msgid ""
+"Select buffer @var{bufname} in another frame.  This runs "
+"@code{switch-to-buffer-other-frame}."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:406
+#, no-wrap
+msgid "C-x 5 f @var{filename} @key{RET}"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:409
+msgid ""
+"Visit file @var{filename} and select its buffer in another frame.  This runs "
+"@code{find-file-other-frame}.  @xref{Visiting}."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:409
+#, no-wrap
+msgid "C-x 5 d @var{directory} @key{RET}"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:412
+msgid ""
+"Select a Dired buffer for directory @var{directory} in another frame.  This "
+"runs @code{dired-other-frame}.  @xref{Dired}."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:412
+#, no-wrap
+msgid "C-x 5 m"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:416
+msgid ""
+"Start composing a mail message in another frame.  This runs "
+"@code{mail-other-frame}.  It is the other-frame variant of @kbd{C-x m}.  "
+"@xref{Sending Mail}."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:416
+#, no-wrap
+msgid "C-x 5 ."
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:420
+msgid ""
+"Find a tag in the current tag table in another frame.  This runs "
+"@code{find-tag-other-frame}, the multiple-frame variant of @kbd{M-.}.  "
+"@xref{Tags}."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:420
+#, no-wrap
+msgid "C-x 5 r @var{filename} @key{RET}"
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:421
+#, no-wrap
+msgid "C-x 5 r"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:422
+#, no-wrap
+msgid "find-file-read-only-other-frame"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:426
+msgid ""
+"Visit file @var{filename} read-only, and select its buffer in another "
+"frame.  This runs @code{find-file-read-only-other-frame}.  @xref{Visiting}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:430
+msgid ""
+"You can control the appearance and behavior of the newly-created frames by "
+"specifying @dfn{frame parameters}.  @xref{Frame Parameters}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:435
+msgid "The following commands are used to delete and operate on frames:"
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:437 frames.texi.orig:438
+#, no-wrap
+msgid "C-x 5 0"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:439
+#, no-wrap
+msgid "delete-frame"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:442
+msgid ""
+"Delete the selected frame (@code{delete-frame}).  This signals an error if "
+"there is only one frame."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:443
+#, no-wrap
+msgid "C-z"
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:444
+#, no-wrap
+msgid "C-z @r{(X windows)}"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:445
+#, no-wrap
+msgid "suspend-frame"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:448
+msgid ""
+"Minimize (or ``iconify) the selected Emacs frame (@code{suspend-frame}).  "
+"@xref{Exiting}."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:449 frames.texi.orig:450
+#, no-wrap
+msgid "C-x 5 o"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:451
+#, no-wrap
+msgid "other-frame"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:454
+msgid ""
+"Select another frame, and raise it.  If you repeat this command, it cycles "
+"through all the frames on your terminal."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:455 frames.texi.orig:456
+#, no-wrap
+msgid "C-x 5 1"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:457
+#, no-wrap
+msgid "delete-other-frames"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:459
+msgid "Delete all frames on the current terminal, except the selected one."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:460 frames.texi.orig:461
+#, no-wrap
+msgid "M-<F10>"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:462
+#, no-wrap
+msgid "toggle-frame-maximized"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:465
+msgid ""
+"Toggle the maximization state of the current frame.  When a frame is "
+"maximized, it fills the screen."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:466 frames.texi.orig:467
+#, no-wrap
+msgid "<F11>"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:468
+#, no-wrap
+msgid "toggle-frame-fullscreen"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:473
+msgid ""
+"Toggle fullscreen mode for the current frame.  (The difference between "
+"``fullscreen'' and ``maximized'' is normally that the former hides window "
+"manager decorations, giving slightly more screen space to Emacs itself.)"
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:475
+#, no-wrap
+msgid "frame-resize-pixelwise"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:482
+msgid ""
+"Note that with some window managers you may have to customize the variable "
+"@code{frame-resize-pixelwise} to a non-@code{nil} value in order to make a "
+"frame truly ``maximized'' or ``fullscreen''.  This variable, when set to a "
+"non-@code{nil} value, in general allows resizing frames at pixel resolution, "
+"rather than in integral multiples of lines and columns."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:491
+msgid ""
+"The @kbd{C-x 5 0} (@code{delete-frame}) command deletes the selected frame.  "
+"However, it will refuse to delete the last frame in an Emacs session, to "
+"prevent you from losing the ability to interact with the Emacs session.  "
+"Note that when Emacs is run as a daemon (@pxref{Emacs Server}), there is "
+"always a ``virtual frame'' that remains after all the ordinary, interactive "
+"frames are deleted.  In this case, @kbd{C-x 5 0} can delete the last "
+"interactive frame; you can use @command{emacsclient} to reconnect to the "
+"Emacs session."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:497
+msgid ""
+"The @kbd{C-x 5 1} (@code{delete-other-frames}) command deletes all other "
+"frames on the current terminal (this terminal refers to either a graphical "
+"display, or a text terminal; @pxref{Non-Window Terminals}).  If the Emacs "
+"session has frames open on other graphical displays or text terminals, those "
+"are not deleted."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:498
+#, no-wrap
+msgid "focus-follows-mouse"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:506
+msgid ""
+"The @kbd{C-x 5 o} (@code{other-frame}) command selects the next frame on the "
+"current terminal.  If you are using Emacs on the X Window System with a "
+"window manager that selects (or @dfn{gives focus to})  whatever frame the "
+"mouse cursor is over, you have to change the variable "
+"@code{focus-follows-mouse} to @code{t} in order for this command to work "
+"properly.  Then invoking @kbd{C-x 5 o} will also warp the mouse cursor to "
+"the chosen frame."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:509
+#, no-wrap
+msgid "fonts"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:514
+msgid ""
+"By default, Emacs displays text on graphical displays using a 10-point "
+"monospace font.  There are several different ways to specify a different "
+"font:"
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:521
+msgid ""
+"Click on @samp{Set Default Font} in the @samp{Options} menu.  This makes the "
+"selected font the default on all existing graphical frames.  To save this "
+"for future sessions, click on @samp{Save Options} in the @samp{Options} "
+"menu."
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:526
+msgid ""
+"Add a line to your init file, modifying the variable "
+"@code{default-frame-alist} to specify the @code{font} parameter "
+"(@pxref{Frame Parameters}), like this:"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:530
+#, no-wrap
+msgid ""
+"(add-to-list 'default-frame-alist\n"
+"             '(font . \"DejaVu Sans Mono-10\"))\n"
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:535
+msgid ""
+"This makes the font the default on all graphical frames created after "
+"restarting Emacs with that init file."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:536
+#, no-wrap
+msgid "X defaults file"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:537
+#, no-wrap
+msgid "X resources file"
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:541
+msgid ""
+"Add an @samp{emacs.font} X resource setting to your X resource file, like "
+"this:"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:544
+#, no-wrap
+msgid "emacs.font: DejaVu Sans Mono-12\n"
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:550
+msgid ""
+"You must restart X, or use the @command{xrdb} command, for the X resources "
+"file to take effect.  @xref{Resources}.  Do not quote font names in X "
+"resource files."
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:556
+msgid ""
+"If you are running Emacs on the GNOME desktop, you can tell Emacs to use the "
+"default system font by setting the variable @code{font-use-system-font} to "
+"@code{t} (the default is @code{nil}).  For this to work, Emacs must have "
+"been compiled with Gconf support."
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:560
+msgid "Use the command line option @samp{-fn} (or @samp{--font}).  @xref{Font X}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:565
+msgid ""
+"To check what font you're currently using, the @kbd{C-u C-x =} command can "
+"be helpful.  It describes the character at point, and names the font that "
+"it's rendered in."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:566
+#, no-wrap
+msgid "fontconfig"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:570
+msgid ""
+"On X, there are four different ways to express a ``font name''.  The first "
+"is to use a @dfn{Fontconfig pattern}.  Fontconfig patterns have the "
+"following form:"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:573
+#, no-wrap
+msgid "@var{fontname}[-@var{fontsize}][:@var{name1}=@var{values1}][:@var{name2}=@var{values2}]...\n"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:586
+msgid ""
+"Within this format, any of the elements in braces may be omitted.  Here, "
+"@var{fontname} is the @dfn{family name} of the font, such as "
+"@samp{Monospace} or @samp{DejaVu Sans Mono}; @var{fontsize} is the "
+"@dfn{point size} of the font (one @dfn{printer's point} is about 1/72 of an "
+"inch); and the @samp{@var{name}=@var{values}} entries specify settings such "
+"as the slant and weight of the font.  Each @var{values} may be a single "
+"value, or a list of values separated by commas.  In addition, some property "
+"values are valid with only one kind of property name, in which case the "
+"@samp{@var{name}=} part may be omitted."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:588
+msgid "Here is a list of common font properties:"
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:590 frames.texi.orig:696
+#, no-wrap
+msgid "slant"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:592
+msgid "One of @samp{italic}, @samp{oblique}, or @samp{roman}."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:593 frames.texi.orig:693
+#, no-wrap
+msgid "weight"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:596
+msgid ""
+"One of @samp{light}, @samp{medium}, @samp{demibold}, @samp{bold} or "
+"@samp{black}."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:597 frames.texi.orig:704
+#, no-wrap
+msgid "style"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:601
+msgid ""
+"Some fonts define special styles which are a combination of slant and "
+"weight.  For instance, @samp{Dejavu Sans} defines the @samp{book} style, "
+"which overrides the slant and weight properties."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:602 frames.texi.orig:726
+#, no-wrap
+msgid "width"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:604
+msgid "One of @samp{condensed}, @samp{normal}, or @samp{expanded}."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:605 frames.texi.orig:723
+#, no-wrap
+msgid "spacing"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:608
+msgid ""
+"One of @samp{monospace}, @samp{proportional}, @samp{dual-width}, or "
+"@samp{charcell}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:612
+msgid "Here are some examples of Fontconfig patterns:"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:619
+#, no-wrap
+msgid ""
+"Monospace\n"
+"Monospace-12\n"
+"Monospace-12:bold\n"
+"DejaVu Sans Mono:bold:italic\n"
+"Monospace-12:weight=bold:slant=italic\n"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:624
+msgid ""
+"For a more detailed description of Fontconfig patterns, see the Fontconfig "
+"manual, which is distributed with Fontconfig and available online at "
+"@url{http://fontconfig.org/fontconfig-user.html}."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:625
+#, no-wrap
+msgid "GTK font pattern"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:628
+msgid ""
+"The second way to specify a font is to use a @dfn{GTK font pattern}.  These "
+"have the syntax"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:631
+#, no-wrap
+msgid "@var{fontname} [@var{properties}] [@var{fontsize}]\n"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:638
+msgid ""
+"where @var{fontname} is the family name, @var{properties} is a list of "
+"property values separated by spaces, and @var{fontsize} is the point size.  "
+"The properties that you may specify for GTK font patterns are as follows:"
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:643
+msgid ""
+"Slant properties: @samp{Italic} or @samp{Oblique}.  If omitted, the default "
+"(roman) slant is implied."
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:647
+msgid ""
+"Weight properties: @samp{Bold}, @samp{Book}, @samp{Light}, @samp{Medium}, "
+"@samp{Semi-bold}, or @samp{Ultra-light}.  If omitted, @samp{Medium} weight "
+"is implied."
+msgstr ""
+
+#. type: itemize
+#: frames.texi.orig:650
+msgid ""
+"Width properties: @samp{Semi-Condensed} or @samp{Condensed}.  If omitted, a "
+"default width is used."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:654
+msgid "Here are some examples of GTK font patterns:"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:658
+#, no-wrap
+msgid ""
+"Monospace 12\n"
+"Monospace Bold Italic 12\n"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:660
+#, no-wrap
+msgid "XLFD"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:661
+#, no-wrap
+msgid "X Logical Font Description"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:666
+msgid ""
+"The third way to specify a font is to use an @dfn{XLFD} (@dfn{X Logical Font "
+"Description}).  This is the traditional method for specifying fonts under "
+"X@.  Each XLFD consists of fourteen words or numbers, separated by dashes, "
+"like this:"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:669 frames.texi.orig:744
+#, no-wrap
+msgid "-misc-fixed-medium-r-semicondensed--13-*-*-*-c-60-iso8859-1\n"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:679
+msgid ""
+"A wildcard character (@samp{*}) in an XLFD matches any sequence of "
+"characters (including none), and @samp{?} matches any single character.  "
+"However, matching is implementation-dependent, and can be inaccurate when "
+"wildcards match dashes in a long name.  For reliable results, supply all 14 "
+"dashes and use wildcards only within a field.  Case is insignificant in an "
+"XLFD@.  The syntax for an XLFD is as follows:"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:683
+#, no-wrap
+msgid ""
+"-@var{maker}-@var{family}-@var{weight}-@var{slant}-@var{widthtype}-@var{style}@dots{}\n"
+"@dots{}-@var{pixels}-@var{height}-@var{horiz}-@var{vert}-@var{spacing}-@var{width}-@var{registry}-@var{encoding}\n"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:687
+msgid "The entries have the following meanings:"
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:689
+#, no-wrap
+msgid "maker"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:691
+msgid "The name of the font manufacturer."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:691
+#, no-wrap
+msgid "family"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:693
+msgid "The name of the font family (e.g., @samp{courier})."
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:696
+msgid ""
+"The font weight---normally either @samp{bold}, @samp{medium} or "
+"@samp{light}.  Some font names support other values."
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:700
+msgid ""
+"The font slant---normally @samp{r} (roman), @samp{i} (italic), @samp{o} "
+"(oblique), @samp{ri} (reverse italic), or @samp{ot} (other).  Some font "
+"names support other values."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:700
+#, no-wrap
+msgid "widthtype"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:704
+msgid ""
+"The font width---normally @samp{normal}, @samp{condensed}, "
+"@samp{semicondensed}, or @samp{extended}.  Some font names support other "
+"values."
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:707
+msgid ""
+"An optional additional style name.  Usually it is empty---most XLFDs have "
+"two hyphens in a row at this point."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:707
+#, no-wrap
+msgid "pixels"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:709
+msgid "The font height, in pixels."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:709
+#, no-wrap
+msgid "height"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:715
+msgid ""
+"The font height on the screen, measured in tenths of a printer's point.  "
+"This is the point size of the font, times ten.  For a given vertical "
+"resolution, @var{height} and @var{pixels} are proportional; therefore, it is "
+"common to specify just one of them and use @samp{*} for the other."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:715
+#, no-wrap
+msgid "horiz"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:718
+msgid ""
+"The horizontal resolution, in pixels per inch, of the screen for which the "
+"font is intended."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:718
+#, no-wrap
+msgid "vert"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:723
+msgid ""
+"The vertical resolution, in pixels per inch, of the screen for which the "
+"font is intended.  Normally the resolution of the fonts on your system is "
+"the right value for your screen; therefore, you normally specify @samp{*} "
+"for this and @var{horiz}."
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:726
+msgid ""
+"This is @samp{m} (monospace), @samp{p} (proportional) or @samp{c} (character "
+"cell)."
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:728
+msgid "The average character width, in pixels, multiplied by ten."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:728
+#, no-wrap
+msgid "registry"
+msgstr ""
+
+#. type: itemx
+#: frames.texi.orig:729
+#, no-wrap
+msgid "encoding"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:735
+msgid ""
+"The X font character set that the font depicts.  (X font character sets are "
+"not the same as Emacs character sets, but they are similar.)  You can use "
+"the @command{xfontsel} program to check which choices you have.  Normally "
+"you should use @samp{iso8859} for @var{registry} and @samp{1} for "
+"@var{encoding}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:741
+msgid ""
+"The fourth and final method of specifying a font is to use a ``font "
+"nickname''.  Certain fonts have shorter nicknames, which you can use instead "
+"of a normal font specification.  For instance, @samp{6x13} is equivalent to"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:746
+#, no-wrap
+msgid "client-side fonts"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:747
+#, no-wrap
+msgid "server-side fonts"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:754
+msgid ""
+"On X, Emacs recognizes two types of fonts: @dfn{client-side} fonts, which "
+"are provided by the Xft and Fontconfig libraries, and @dfn{server-side} "
+"fonts, which are provided by the X server itself.  Most client-side fonts "
+"support advanced font features such as antialiasing and subpixel hinting, "
+"while server-side fonts do not.  Fontconfig and GTK patterns match only "
+"client-side fonts."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:755
+#, no-wrap
+msgid "listing system fonts"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:760
+msgid ""
+"You will probably want to use a fixed-width default font---that is, a font "
+"in which all characters have the same width.  For Xft and Fontconfig fonts, "
+"you can use the @command{fc-list} command to list the available fixed-width "
+"fonts, like this:"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:763
+#, no-wrap
+msgid "fc-list :spacing=mono fc-list :spacing=charcell\n"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:768
+msgid ""
+"For server-side X fonts, you can use the @command{xlsfonts} program to list "
+"the available fixed-width fonts, like this:"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:773
+#, no-wrap
+msgid ""
+"xlsfonts -fn '*x*' | egrep \"^[0-9]+x[0-9]+\"\n"
+"xlsfonts -fn '*-*-*-*-*-*-*-*-*-*-*-m*'\n"
+"xlsfonts -fn '*-*-*-*-*-*-*-*-*-*-*-c*'\n"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:779
+msgid ""
+"Any font with @samp{m} or @samp{c} in the @var{spacing} field of the XLFD is "
+"a fixed-width font.  To see what a particular font looks like, use the "
+"@command{xfd} command.  For example:"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:782
+#, no-wrap
+msgid "xfd -fn 6x13\n"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:786
+msgid "displays the entire font @samp{6x13}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:790
+msgid ""
+"While running Emacs, you can also set the font of a specific kind of text "
+"(@pxref{Faces}), or a particular frame (@pxref{Frame Parameters})."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:792
+#, no-wrap
+msgid "Speedbar Frames"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:793
+#, no-wrap
+msgid "speedbar"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:795
+#, no-wrap
+msgid "attached frame (of speedbar)"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:800
+msgid ""
+"The @dfn{speedbar} is a special frame for conveniently navigating in or "
+"operating on another frame.  The speedbar, when it exists, is always "
+"associated with a specific frame, called its @dfn{attached frame}; all "
+"speedbar operations act on that frame."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:807
+msgid ""
+"Type @kbd{M-x speedbar} to create the speedbar and associate it with the "
+"current frame.  To dismiss the speedbar, type @kbd{M-x speedbar} again, or "
+"select the speedbar and type @kbd{q}.  (You can also delete the speedbar "
+"frame like any other Emacs frame.)  If you wish to associate the speedbar "
+"with a different frame, dismiss it and call @kbd{M-x speedbar} from that "
+"frame."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:823
+msgid ""
+"The speedbar can operate in various modes.  Its default mode is @dfn{File "
+"Display} mode, which shows the files in the current directory of the "
+"selected window of the attached frame, one file per line.  Clicking on a "
+"file name visits that file in the selected window of the attached frame, and "
+"clicking on a directory name shows that directory in the speedbar "
+"(@pxref{Mouse References}).  Each line also has a box, @samp{[+]} or "
+"@samp{<+>}, that you can click on to @dfn{expand} the contents of that "
+"item.  Expanding a directory adds the contents of that directory to the "
+"speedbar display, underneath the directory's own line.  Expanding an "
+"ordinary file adds a list of the tags in that file to the speedbar display; "
+"you can click on a tag name to jump to that tag in the selected window of "
+"the attached frame.  When a file or directory is expanded, the @samp{[+]} "
+"changes to @samp{[-]}; you can click on that box to @dfn{contract} the item, "
+"hiding its contents."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:831
+msgid ""
+"You navigate through the speedbar using the keyboard, too.  Typing @key{RET} "
+"while point is on a line in the speedbar is equivalent to clicking the item "
+"on the current line, and @key{SPC} expands or contracts the item.  @kbd{U} "
+"displays the parent directory of the current directory.  To copy, delete, or "
+"rename the file on the current line, type @kbd{C}, @kbd{D}, and @kbd{R} "
+"respectively.  To create a new directory, type @kbd{M}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:839
+msgid ""
+"Another general-purpose speedbar mode is @dfn{Buffer Display} mode; in this "
+"mode, the speedbar displays a list of Emacs buffers.  To switch to this "
+"mode, type @kbd{b} in the speedbar.  To return to File Display mode, type "
+"@kbd{f}.  You can also change the display mode by clicking @kbd{mouse-3} "
+"anywhere in the speedbar window (or @kbd{mouse-1} on the mode-line) and "
+"selecting @samp{Displays} in the pop-up menu."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:845
+msgid ""
+"Some major modes, including Rmail mode, Info, and GUD, have specialized ways "
+"of putting useful items into the speedbar for you to select.  For example, "
+"in Rmail mode, the speedbar shows a list of Rmail files, and lets you move "
+"the current message to another Rmail file by clicking on its @samp{<M>} box."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:848
+msgid ""
+"For more details on using and programming the speedbar, @xref{Top, "
+"Speedbar,,speedbar, Speedbar Manual}."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:851
+#, no-wrap
+msgid "multiple displays"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:858
+msgid ""
+"A single Emacs can talk to more than one X display.  Initially, Emacs uses "
+"just one display---the one specified with the @env{DISPLAY} environment "
+"variable or with the @samp{--display} option (@pxref{Initial Options}).  To "
+"connect to another display, use the command @code{make-frame-on-display}:"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:859
+#, no-wrap
+msgid "make-frame-on-display"
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:861
+#, no-wrap
+msgid "M-x make-frame-on-display @key{RET} @var{display} @key{RET}"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:863
+msgid "Create a new frame on display @var{display}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:869
+msgid ""
+"A single X server can handle more than one screen.  When you open frames on "
+"two screens belonging to one server, Emacs knows they share a single "
+"keyboard, and it treats all the commands arriving from these screens as a "
+"single stream of input."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:874
+msgid ""
+"When you open frames on different X servers, Emacs makes a separate input "
+"stream for each server.  Each server also has its own selected frame.  The "
+"commands you enter with a particular X server apply to that server's "
+"selected frame."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:877
+#, no-wrap
+msgid "default-frame-alist"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:885
+msgid ""
+"You can control the default appearance and behavior of all frames by "
+"specifying a default list of @dfn{frame parameters} in the variable "
+"@code{default-frame-alist}.  Its value should be a list of entries, each "
+"specifying a parameter name and a value for that parameter.  These entries "
+"take effect whenever Emacs creates a new frame, including the initial frame."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:886
+#, no-wrap
+msgid "frame size, specifying default"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:891
+msgid ""
+"For example, you can add the following lines to your init file (@pxref{Init "
+"File}) to set the default frame width to 90 character columns, the default "
+"frame height to 40 character rows, and the default font to "
+"@samp{Monospace-10}:"
+msgstr ""
+
+#. type: example
+#: frames.texi.orig:896
+#, no-wrap
+msgid ""
+"(add-to-list 'default-frame-alist '(width  . 90))\n"
+"(add-to-list 'default-frame-alist '(height . 40))\n"
+"(add-to-list 'default-frame-alist '(font . \"Monospace-10\"))\n"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:900
+msgid ""
+"For a list of frame parameters and their effects, see @ref{Frame "
+"Parameters,,, elisp, The Emacs Lisp Reference Manual}."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:901
+#, no-wrap
+msgid "initial-frame-alist"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:905
+msgid ""
+"You can also specify a list of frame parameters which apply to just the "
+"initial frame, by customizing the variable @code{initial-frame-alist}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:909
+msgid ""
+"If Emacs is compiled to use an X toolkit, frame parameters that specify "
+"colors and fonts don't affect menus and the menu bar, since those are drawn "
+"by the toolkit and not directly by Emacs."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:912
+#, no-wrap
+msgid "Scroll Bar mode"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:913
+#, no-wrap
+msgid "mode, Scroll Bar"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:922
+msgid ""
+"On graphical displays, there is a @dfn{scroll bar} on the side of each Emacs "
+"window.  Clicking @kbd{Mouse-1} on the scroll bar's up and down buttons "
+"scrolls the window by one line at a time.  Clicking @kbd{Mouse-1} above or "
+"below the scroll bar's inner box scrolls the window by nearly the entire "
+"height of the window, like @kbd{M-v} and @kbd{C-v} respectively "
+"(@pxref{Moving Point}).  Dragging the inner box scrolls continuously."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:928
+msgid ""
+"If Emacs is compiled on the X Window System without X toolkit support, the "
+"scroll bar behaves differently.  Clicking @kbd{Mouse-1} anywhere on the "
+"scroll bar scrolls forward like @kbd{C-v}, while @kbd{Mouse-3} scrolls "
+"backward like @kbd{M-v}.  Clicking @kbd{Mouse-2} in the scroll bar lets you "
+"drag the inner box up and down."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:929 frames.texi.orig:936
+#, no-wrap
+msgid "scroll-bar-mode"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:930
+#, no-wrap
+msgid "toggle-scroll-bar"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:935
+msgid ""
+"To toggle the use of scroll bars, type @kbd{M-x scroll-bar-mode}.  This "
+"command applies to all frames, including frames yet to be created.  To "
+"toggle scroll bars for just the selected frame, use the command @kbd{M-x "
+"toggle-scroll-bar}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:945
+msgid ""
+"To control the use of scroll bars at startup, customize the variable "
+"@code{scroll-bar-mode}.  Its value should be either @code{right} (put scroll "
+"bars on the right side of windows), @code{left} (put them on the left), or "
+"@code{nil} (disable scroll bars).  By default, Emacs puts scroll bars on the "
+"right if it was compiled with GTK+ support on the X Window System, and on "
+"MS-Windows or Mac OS; Emacs puts scroll bars on the left if compiled on the "
+"X Window System without GTK+ support (following the old convention for X "
+"applications)."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:946
+#, no-wrap
+msgid "scroll-bar-width"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:947
+#, no-wrap
+msgid "width of the scroll bar"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:952
+msgid ""
+"You can also use the X resource @samp{verticalScrollBars} to enable or "
+"disable the scroll bars (@pxref{Resources}).  To control the scroll bar "
+"width, change the @code{scroll-bar-width} frame parameter (@pxref{Frame "
+"Parameters,,, elisp, The Emacs Lisp Reference Manual})."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:953
+#, no-wrap
+msgid "scroll-bar-adjust-thumb-portion"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:954
+#, no-wrap
+msgid "overscrolling"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:963
+msgid ""
+"If you're using Emacs on X (with GTK+ or Motif), you can customize the "
+"variable @code{scroll-bar-adjust-thumb-portion} to control "
+"@dfn{overscrolling} of the scroll bar, i.e. dragging the thumb down even "
+"when the end of the buffer is visible.  If its value is non-@code{nil}, the "
+"scroll bar can be dragged downwards even if the end of the buffer is shown; "
+"if @code{nil}, the thumb will be at the bottom when the end of the buffer is "
+"shown.  You can not over-scroll when the entire buffer is visible."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:964
+#, no-wrap
+msgid "scroll-bar face"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:967
+msgid ""
+"The visual appearance of the scroll bars is controlled by the "
+"@code{scroll-bar} face."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:970
+#, no-wrap
+msgid "drag and drop"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:979
+msgid ""
+"In most graphical desktop environments, Emacs has basic support for "
+"@dfn{drag and drop} operations.  For instance, dropping text onto an Emacs "
+"frame inserts the text where it is dropped.  Dropping a file onto an Emacs "
+"frame visits that file.  As a special case, dropping the file on a Dired "
+"buffer moves or copies the file (according to the conventions of the "
+"application it came from) into the directory displayed in that buffer."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:980
+#, no-wrap
+msgid "dnd-open-file-other-window"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:984
+msgid ""
+"Dropping a file normally visits it in the window you drop it on.  If you "
+"prefer to visit the file in a new window in such cases, customize the "
+"variable @code{dnd-open-file-other-window}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:987
+msgid ""
+"The XDND and Motif drag and drop protocols, and the old KDE 1.x protocol, "
+"are currently supported."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:990
+#, no-wrap
+msgid "Menu Bar mode"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:991
+#, no-wrap
+msgid "mode, Menu Bar"
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:992 frames.texi.orig:993
+#, no-wrap
+msgid "menu-bar-mode"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1001
+msgid ""
+"You can toggle the use of menu bars with @kbd{M-x menu-bar-mode}.  With no "
+"argument, this command toggles Menu Bar mode, a global minor mode.  With an "
+"argument, the command turns Menu Bar mode on if the argument is positive, "
+"off if the argument is not positive.  To control the use of menu bars at "
+"startup, customize the variable @code{menu-bar-mode}."
+msgstr ""
+
+#. type: kindex
+#: frames.texi.orig:1002
+#, no-wrap
+msgid "C-Mouse-3 @r{(when menu bar is disabled)}"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1008
+msgid ""
+"Expert users often turn off the menu bar, especially on text terminals, "
+"where this makes one additional line available for text.  If the menu bar is "
+"off, you can still pop up a menu of its contents with @kbd{C-Mouse-3} on a "
+"display which supports pop-up menus.  @xref{Menu Mouse Clicks}."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1012
+msgid ""
+"@xref{Menu Bar}, for information on how to invoke commands with the menu "
+"bar.  @xref{X Resources}, for how to customize the menu bar menus' visual "
+"appearance."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1015
+#, no-wrap
+msgid "Tool Bar mode"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1016
+#, no-wrap
+msgid "mode, Tool Bar"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1017
+#, no-wrap
+msgid "icons, toolbar"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1022
+msgid ""
+"On graphical displays, Emacs puts a @dfn{tool bar} at the top of each frame, "
+"just below the menu bar.  This is a row of icons which you can click on with "
+"the mouse to invoke various commands."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1026
+msgid ""
+"The global (default) tool bar contains general commands.  Some major modes "
+"define their own tool bars; whenever a buffer with such a major mode is "
+"current, the mode's tool bar replaces the global tool bar."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:1027 frames.texi.orig:1028
+#, no-wrap
+msgid "tool-bar-mode"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1033
+msgid ""
+"To toggle the use of tool bars, type @kbd{M-x tool-bar-mode}.  This command "
+"applies to all frames, including frames yet to be created.  To control the "
+"use of tool bars at startup, customize the variable @code{tool-bar-mode}."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:1034
+#, no-wrap
+msgid "tool-bar-style"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1035
+#, no-wrap
+msgid "Tool Bar style"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1041
+msgid ""
+"When Emacs is compiled with GTK+ support, each tool bar item can consist of "
+"an image, or a text label, or both.  By default, Emacs follows the Gnome "
+"desktop's tool bar style setting; if none is defined, it displays tool bar "
+"items as just images.  To impose a specific tool bar style, customize the "
+"variable @code{tool-bar-style}."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1042
+#, no-wrap
+msgid "Tool Bar position"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1046
+msgid ""
+"You can also control the placement of the tool bar for the GTK+ tool bar "
+"with the frame parameter @code{tool-bar-position}.  @xref{Frame "
+"Parameters,,, elisp, The Emacs Lisp Reference Manual}."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:1048
+#, no-wrap
+msgid "Using Dialog Boxes"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1049
+#, no-wrap
+msgid "dialog boxes"
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:1051
+#, no-wrap
+msgid "use-dialog-box"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1056
+msgid ""
+"A dialog box is a special kind of menu for asking you a yes-or-no question "
+"or some other special question.  Many Emacs commands use a dialog box to ask "
+"a yes-or-no question, if you used the mouse to invoke the command that led "
+"to the question."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1062
+msgid ""
+"To disable the use of dialog boxes, change the variable "
+"@code{use-dialog-box} to @code{nil}.  In that case, Emacs always performs "
+"yes-or-no prompts using the echo area and keyboard input.  This variable "
+"also controls whether to use file selection windows (but those are not "
+"supported on all platforms)."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:1063
+#, no-wrap
+msgid "use-file-dialog"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1064
+#, no-wrap
+msgid "file selection dialog, how to disable"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1070
+msgid ""
+"A file selection window is a special kind of dialog box for asking for file "
+"names.  You can customize the variable @code{use-file-dialog} to suppress "
+"the use of file selection windows, even if you still want other kinds of "
+"dialogs.  This variable has no effect if you have suppressed all dialog "
+"boxes with the variable @code{use-dialog-box}."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:1071
+#, no-wrap
+msgid "x-gtk-show-hidden-files"
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:1072
+#, no-wrap
+msgid "x-gtk-file-dialog-help-text"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1073
+#, no-wrap
+msgid "hidden files, in GTK+ file chooser"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1074
+#, no-wrap
+msgid "help text, in GTK+ file chooser"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1083
+msgid ""
+"When Emacs is compiled with GTK+ support, it uses the GTK+ ``file chooser'' "
+"dialog.  Emacs adds an additional toggle button to this dialog, which you "
+"can use to enable or disable the display of hidden files (files starting "
+"with a dot) in that dialog.  If you want this toggle to be activated by "
+"default, change the variable @code{x-gtk-show-hidden-files} to @code{t}.  In "
+"addition, Emacs adds help text to the GTK+ file chooser dialog; to disable "
+"this help text, change the variable @code{x-gtk-file-dialog-help-text} to "
+"@code{nil}."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1086
+#, no-wrap
+msgid "tooltips"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1093
+msgid ""
+"@dfn{Tooltips} are small windows that display text information at the "
+"current mouse position.  They activate when there is a pause in mouse "
+"movement over some significant piece of text in a window, or the mode line, "
+"or some other part of the Emacs frame such as a tool bar button or menu "
+"item."
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:1094
+#, no-wrap
+msgid "tooltip-mode"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1099
+msgid ""
+"You can toggle the use of tooltips with the command @kbd{M-x tooltip-mode}.  "
+"When Tooltip mode is disabled, the help text is displayed in the echo area "
+"instead.  To control the use of tooltips at startup, customize the variable "
+"@code{tooltip-mode}."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:1100
+#, no-wrap
+msgid "tooltip-delay"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1105
+msgid ""
+"The variables @code{tooltip-delay} specifies how long Emacs should wait "
+"before displaying a tooltip.  For additional customization options for "
+"displaying tooltips, use @kbd{M-x customize-group @key{RET} tooltip "
+"@key{RET}}."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:1106
+#, no-wrap
+msgid "x-gtk-use-system-tooltips"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1113
+msgid ""
+"If Emacs is built with GTK+ support, it displays tooltips via GTK+, using "
+"the default appearance of GTK+ tooltips.  To disable this, change the "
+"variable @code{x-gtk-use-system-tooltips} to @code{nil}.  If you do this, or "
+"if Emacs is built without GTK+ support, most attributes of the tooltip text "
+"are specified by the @code{tooltip} face, and by X resources (@pxref{X "
+"Resources})."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1117
+msgid ""
+"@dfn{GUD tooltips} are special tooltips that show the values of variables "
+"when debugging a program with GUD@.  @xref{Debugger Operation}."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1120
+#, no-wrap
+msgid "avoiding mouse in the way of your typing"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1121
+#, no-wrap
+msgid "mouse avoidance"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1125
+msgid ""
+"On graphical terminals, the mouse pointer may obscure the text in the Emacs "
+"frame.  Emacs provides two methods to avoid this problem."
+msgstr ""
+
+#. type: vindex
+#: frames.texi.orig:1126
+#, no-wrap
+msgid "make-pointer-invisible"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1131
+msgid ""
+"Firstly, Emacs hides the mouse pointer each time you type a self-inserting "
+"character, if the pointer lies inside an Emacs frame; moving the mouse "
+"pointer makes it visible again.  To disable this feature, set the variable "
+"@code{make-pointer-invisible} to @code{nil}."
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:1132 frames.texi.orig:1157
+#, no-wrap
+msgid "mouse-avoidance-mode"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1137
+msgid ""
+"Secondly, you can use Mouse Avoidance mode, a minor mode, to keep the mouse "
+"pointer away from point.  To use Mouse Avoidance mode, customize the "
+"variable @code{mouse-avoidance-mode}.  You can set this to various values to "
+"move the mouse in several ways:"
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:1139
+#, no-wrap
+msgid "banish"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:1143
+msgid ""
+"Move the pointer to a corner of the frame on any key-press.  You can "
+"customize the variable @code{mouse-avoidance-banish-position} to specify "
+"where the pointer goes when it is banished."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:1143
+#, no-wrap
+msgid "exile"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:1146
+msgid ""
+"Banish the pointer only if the cursor gets too close, and allow it to return "
+"once the cursor is out of the way."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:1146
+#, no-wrap
+msgid "jump"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:1149
+msgid ""
+"If the cursor gets too close to the pointer, displace the pointer by a "
+"random distance and direction."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:1149
+#, no-wrap
+msgid "animate"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:1151
+msgid "As @code{jump}, but shows steps along the way for illusion of motion."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:1151
+#, no-wrap
+msgid "cat-and-mouse"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:1153
+msgid "The same as @code{animate}."
+msgstr ""
+
+#. type: item
+#: frames.texi.orig:1153
+#, no-wrap
+msgid "proteus"
+msgstr ""
+
+#. type: table
+#: frames.texi.orig:1155
+msgid "As @code{animate}, but changes the shape of the mouse pointer too."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1161
+msgid ""
+"You can also use the command @kbd{M-x mouse-avoidance-mode} to enable the "
+"mode.  Whenever Mouse Avoidance mode moves the mouse, it also raises the "
+"frame."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1164
+#, no-wrap
+msgid "text terminal"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1170
+msgid ""
+"On a text terminal, Emacs can display only one Emacs frame at a time.  "
+"However, you can still create multiple Emacs frames, and switch between "
+"them.  Switching frames on these terminals is much like switching between "
+"different window configurations."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1174
+msgid ""
+"Use @kbd{C-x 5 2} to create a new frame and switch to it; use @kbd{C-x 5 o} "
+"to cycle through the existing frames; use @kbd{C-x 5 0} to delete the "
+"current frame."
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1179
+msgid ""
+"Each frame has a number to distinguish it.  If your terminal can display "
+"only one frame at a time, the selected frame's number @var{n} appears near "
+"the beginning of the mode line, in the form @samp{F@var{n}}."
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:1180
+#, no-wrap
+msgid "set-frame-name"
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:1181
+#, no-wrap
+msgid "select-frame-by-name"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1189
+msgid ""
+"@samp{F@var{n}} is in fact the frame's initial name.  You can give frames "
+"more meaningful names if you wish, and you can select a frame by its name.  "
+"Use the command @kbd{M-x set-frame-name @key{RET} @var{name} @key{RET}} to "
+"specify a new name for the selected frame, and use @kbd{M-x "
+"select-frame-by-name @key{RET} @var{name} @key{RET}} to select a frame "
+"according to its name.  The name you specify appears in the mode line when "
+"the frame is selected."
+msgstr ""
+
+#. type: section
+#: frames.texi.orig:1191
+#, no-wrap
+msgid "Using a Mouse in Text Terminals"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1192
+#, no-wrap
+msgid "mouse support"
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1193
+#, no-wrap
+msgid "terminal emulators, mouse support"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1196
+msgid "Some text terminals support mouse clicks in the terminal window."
+msgstr ""
+
+#. type: cindex
+#: frames.texi.orig:1197
+#, no-wrap
+msgid "xterm"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1206
+msgid ""
+"In a terminal emulator which is compatible with @command{xterm}, you can use "
+"@kbd{M-x xterm-mouse-mode} to give Emacs control over simple uses of the "
+"mouse---basically, only non-modified single clicks are supported.  The "
+"normal @command{xterm} mouse functionality for such clicks is still "
+"available by holding down the @kbd{SHIFT} key when you press the mouse "
+"button.  Xterm Mouse mode is a global minor mode (@pxref{Minor Modes}).  "
+"Repeating the command turns the mode off again."
+msgstr ""
+
+#. type: findex
+#: frames.texi.orig:1207
+#, no-wrap
+msgid "gpm-mouse-mode"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1211
+msgid ""
+"In the console on GNU/Linux, you can use @kbd{M-x gpm-mouse-mode} to enable "
+"mouse support.  You must have the gpm server installed and running on your "
+"system in order for this to work."
+msgstr ""
+
+#. type: iftex
+#: frames.texi.orig:1214
+msgid "@xref{MS-DOS Mouse,,,emacs-xtra,Specialized Emacs Features},"
+msgstr ""
+
+#. type: ifnottex
+#: frames.texi.orig:1217
+msgid "@xref{MS-DOS Mouse},"
+msgstr ""
+
+#. type: Plain text
+#: frames.texi.orig:1218
+msgid "for information about mouse support on MS-DOS."
+msgstr ""

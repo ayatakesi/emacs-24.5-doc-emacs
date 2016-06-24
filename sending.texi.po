@@ -1,0 +1,1803 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: chapter
+#: sending.texi.orig:5 sending.texi.orig:6
+#, no-wrap
+msgid "Sending Mail"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:7
+#, no-wrap
+msgid "sending mail"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:8
+#, no-wrap
+msgid "mail"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:9
+#, no-wrap
+msgid "email"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:10
+#, no-wrap
+msgid "message"
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:12 sending.texi.orig:20
+#, no-wrap
+msgid "C-x m"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:13
+#, no-wrap
+msgid "compose-mail"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:18
+msgid ""
+"To send an email message from Emacs, type @kbd{C-x m}.  This switches to a "
+"buffer named @file{*unsent mail*}, where you can edit the text and headers "
+"of the message.  When done, type @kbd{C-c C-s} or @kbd{C-c C-c} to send it."
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:22
+msgid "Begin composing mail (@code{compose-mail})."
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:22 sending.texi.orig:43
+#, no-wrap
+msgid "C-x 4 m"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:24
+msgid "Likewise, in another window (@code{compose-mail-other-window})."
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:24 sending.texi.orig:45
+#, no-wrap
+msgid "C-x 5 m"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:26
+msgid "Likewise, but in a new frame (@code{compose-mail-other-frame})."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:26 sending.texi.orig:334
+#, no-wrap
+msgid "C-c C-s"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:28
+msgid "In the mail buffer, send the message (@code{message-send})."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:28 sending.texi.orig:332
+#, no-wrap
+msgid "C-c C-c"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:31
+msgid ""
+"In the mail buffer, send the message and bury the buffer "
+"(@code{message-send-and-exit})."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:42
+msgid ""
+"The mail buffer is an ordinary Emacs buffer, so you can switch to other "
+"buffers while composing the mail.  If you want to send another mail before "
+"finishing the current one, type @kbd{C-x m} again to open a new mail buffer "
+"whose name has a different numeric suffix (@pxref{Misc Buffer}).  If you "
+"invoke the command with a prefix argument, @w{@kbd{C-u C-x m}}, Emacs "
+"switches back to the last mail buffer, and asks if you want to erase the "
+"message in that buffer; if you answer no, this lets you pick up editing the "
+"message where you left off."
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:44
+#, no-wrap
+msgid "compose-mail-other-window"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:46
+#, no-wrap
+msgid "compose-mail-other-frame"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:51
+msgid ""
+"The command @kbd{C-x 4 m} (@code{compose-mail-other-window}) does the same "
+"as @kbd{C-x m}, except it displays the mail buffer in a different window.  "
+"The command @kbd{C-x 5 m} (@code{compose-mail-other-frame}) does it in a new "
+"frame."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:55
+msgid ""
+"When you type @kbd{C-c C-c} or @kbd{C-c C-s} to send the mail, Emacs may ask "
+"you how it should deliver the mail---either directly via SMTP, or using some "
+"other method.  @xref{Mail Sending}, for details."
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Format: Mail Format"
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Format of a mail message."
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Headers: Mail Headers"
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Details of some standard mail header fields."
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Aliases: Mail Aliases"
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Abbreviating and grouping mail addresses."
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Commands: Mail Commands"
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Special commands for editing mail being composed."
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Signature: Mail Signature"
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Adding a signature to every message."
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Amuse: Mail Amusements"
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Distracting the NSA; adding fortune messages."
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Methods: Mail Methods"
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:64
+msgid "Using alternative mail-composition methods."
+msgstr ""
+
+#. type: node
+#: sending.texi.orig:66
+#, no-wrap
+msgid "Mail Format"
+msgstr ""
+
+#. type: section
+#: sending.texi.orig:67
+#, no-wrap
+msgid "The Format of the Mail Buffer"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:70
+msgid "Here is an example of the contents of a mail buffer:"
+msgstr ""
+
+#. type: example
+#: sending.texi.orig:79
+#, no-wrap
+msgid ""
+"To: subotai@@example.org\n"
+"CC: mongol.soldier@@example.net, rms@@gnu.org\n"
+"Subject: Re: What is best in life?\n"
+"From: conan@@example.org\n"
+"--text follows this line--\n"
+"To crush your enemies, see them driven before you, and to\n"
+"hear the lamentation of their women.\n"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:88
+msgid ""
+"At the top of the mail buffer is a set of @dfn{header fields}, which are "
+"used for specifying information about the email's recipient(s), subject, and "
+"so on.  The above buffer contains header fields for @samp{To}, @samp{Cc}, "
+"@samp{Subject}, and @samp{From}.  Some header fields are automatically "
+"pre-initialized in the mail buffer, when appropriate."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:94
+msgid ""
+"The line that says @samp{--text follows this line--} separates the header "
+"fields from the @dfn{body} (or @dfn{text}) of the message.  Everything above "
+"that line is treated as part of the headers; everything below it is treated "
+"as the body.  The delimiter line itself does not appear in the message "
+"actually sent."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:100
+msgid ""
+"You can insert and edit header fields using ordinary editing commands.  "
+"@xref{Header Editing}, for commands specific to editing header fields.  "
+"Certain headers, such as @samp{Date} and @samp{Message-Id}, are normally "
+"omitted from the mail buffer and are created automatically when the message "
+"is sent."
+msgstr ""
+
+#. type: node
+#: sending.texi.orig:101
+#, no-wrap
+msgid "Mail Headers"
+msgstr ""
+
+#. type: section
+#: sending.texi.orig:102
+#, no-wrap
+msgid "Mail Header Fields"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:103
+#, no-wrap
+msgid "headers (of mail message)"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:109
+msgid ""
+"A header field in the mail buffer starts with a field name at the beginning "
+"of a line, terminated by a colon.  Upper and lower case are equivalent in "
+"field names.  After the colon and optional whitespace comes the contents of "
+"the field."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:112
+msgid ""
+"You can use any name you like for a header field, but normally people use "
+"only standard field names with accepted meanings."
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:113
+#, no-wrap
+msgid "user-full-name"
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:114
+#, no-wrap
+msgid "user-mail-address"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:124
+msgid ""
+"The @samp{From} header field identifies the person sending the email (i.e., "
+"you).  This should be a valid mailing address, as replies are normally sent "
+"there.  The default contents of this header field are computed from the "
+"variables @code{user-full-name} (which specifies your full name) and "
+"@code{user-mail-address} (your email address).  On some operating systems, "
+"Emacs initializes these two variables using environment variables "
+"(@pxref{General Variables}).  If this information is unavailable or wrong, "
+"you should customize the variables yourself (@pxref{Easy Customization})."
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:125
+#, no-wrap
+msgid "mail-from-style"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:128
+msgid ""
+"The value of the variable @code{mail-from-style} specifies how to format the "
+"contents of the @samp{From} field:"
+msgstr ""
+
+#. type: code{#1}
+#: sending.texi.orig:130
+#, no-wrap
+msgid "nil"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:132
+msgid "Use just the address, as in @samp{king@@grassland.com}."
+msgstr ""
+
+#. type: code{#1}
+#: sending.texi.orig:132
+#, no-wrap
+msgid "parens"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:135
+msgid ""
+"Use both address and full name, as in:@* @samp{king@@grassland.com (Elvis "
+"Parsley)}."
+msgstr ""
+
+#. type: code{#1}
+#: sending.texi.orig:135
+#, no-wrap
+msgid "angles"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:138
+msgid ""
+"Use both address and full name, as in:@* @samp{Elvis Parsley "
+"<king@@grassland.com>}."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:138
+#, no-wrap
+msgid "any other value"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:143
+msgid ""
+"Use @code{angles} normally.  But if the address must be ``quoted'' to remain "
+"syntactically valid under the @code{angles} format but not under the "
+"@code{parens} format, use @code{parens} instead.  This is the default."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:146
+msgid "Apart from @samp{From}, here is a table of commonly-used fields:"
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:148
+#, no-wrap
+msgid "To"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:151
+msgid ""
+"The mailing address(es) to which the message is addressed.  To list more "
+"than one address, use commas to separate them."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:152
+#, no-wrap
+msgid "Subject"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:154
+msgid "The subject of the message."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:155
+#, no-wrap
+msgid "CC"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:159
+msgid ""
+"Additional mailing address(es) to send the message to.  This is like "
+"@samp{To}, except that these readers should not regard the message as "
+"directed at them."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:160
+#, no-wrap
+msgid "BCC"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:164
+msgid ""
+"Additional mailing address(es) to send the message to, which should not "
+"appear in the header of the message actually sent.  ``BCC'' stands for "
+"@dfn{blind carbon copies}."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:165
+#, no-wrap
+msgid "FCC"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:172
+msgid ""
+"The name of a file, to which a copy of the sent message should be appended.  "
+"Emacs writes the message in mbox format, unless the file is in Babyl format "
+"(used by Rmail before Emacs 23), in which case Emacs writes in Babyl "
+"format.  If an Rmail buffer is visiting the file, Emacs updates it "
+"accordingly.  To specify more than one file, use several @samp{FCC} fields, "
+"with one file name in each field."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:173
+#, no-wrap
+msgid "Reply-to"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:177
+msgid ""
+"An address to which replies should be sent, instead of @samp{From}.  This is "
+"used if, for some reason, your @samp{From} address cannot receive replies."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:178
+#, no-wrap
+msgid "Mail-reply-to"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:182
+msgid ""
+"This field takes precedence over @samp{Reply-to}.  It is used because some "
+"mailing lists set the @samp{Reply-to} field for their own purposes (a "
+"somewhat controversial practice)."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:183
+#, no-wrap
+msgid "Mail-followup-to"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:188
+msgid ""
+"One of more address(es) to use as default recipient(s) for follow-up "
+"messages.  This is typically used when you reply to a message from a mailing "
+"list that you are subscribed to, and want replies to go to the list without "
+"sending an extra copy to you."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:189
+#, no-wrap
+msgid "In-reply-to"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:194
+msgid ""
+"An identifier for the message you are replying to.  Most mail readers use "
+"this information to group related messages together.  Normally, this header "
+"is filled in automatically when you reply to a message in any mail program "
+"built into Emacs."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:195
+#, no-wrap
+msgid "References"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:198
+msgid ""
+"Identifiers for previous related messages.  Like @samp{In-reply-to}, this is "
+"normally filled in automatically for you."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:208
+msgid ""
+"The @samp{To}, @samp{CC}, and @samp{BCC} fields can appear any number of "
+"times, and each such header field can contain multiple addresses, separated "
+"by commas.  This way, you can specify any number of places to send the "
+"message.  These fields can also have continuation lines: one or more lines "
+"starting with whitespace, following the starting line of the field, are "
+"considered part of the field.  Here's an example of a @samp{To} field with a "
+"continuation line:"
+msgstr ""
+
+#. type: group
+#: sending.texi.orig:213
+#, no-wrap
+msgid ""
+"To: foo@@example.net, this@@example.net,\n"
+"  bob@@example.com\n"
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:219
+#, no-wrap
+msgid "mail-default-headers"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:225
+msgid ""
+"You can direct Emacs to insert certain default headers into the mail buffer "
+"by setting the variable @code{mail-default-headers} to a string.  Then "
+"@kbd{C-x m} inserts this string into the message headers.  For example, here "
+"is how to add a @samp{Reply-to} and @samp{FCC} header to each message:"
+msgstr ""
+
+#. type: smallexample
+#: sending.texi.orig:229
+#, no-wrap
+msgid ""
+"(setq mail-default-headers\n"
+"      \"Reply-to: foo@@example.com\\nFCC: ~/Mail/sent\")\n"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:234
+msgid ""
+"If the default header fields are not appropriate for a particular message, "
+"edit them as necessary before sending the message."
+msgstr ""
+
+#. type: section
+#: sending.texi.orig:235 sending.texi.orig:236
+#, no-wrap
+msgid "Mail Aliases"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:237
+#, no-wrap
+msgid "mail aliases"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:238
+#, no-wrap
+msgid "@file{.mailrc} file"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:239
+#, no-wrap
+msgid "mailrc file"
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:240
+#, no-wrap
+msgid "mail-personal-alias-file"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:247
+msgid ""
+"You can define @dfn{mail aliases}, which are short mnemonic names that stand "
+"for one or more mailing addresses.  By default, mail aliases are defined in "
+"the file @file{~/.mailrc}.  You can specify a different file name to use, by "
+"setting the variable @code{mail-personal-alias-file}."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:249
+msgid "To define an alias in @file{.mailrc}, write a line like this:"
+msgstr ""
+
+#. type: example
+#: sending.texi.orig:252
+#, no-wrap
+msgid "alias @var{nick} @var{fulladdresses}\n"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:260
+msgid ""
+"This means that @var{nick} should expand into @var{fulladdresses}, where "
+"@var{fulladdresses} can be either a single address, or multiple addresses "
+"separated with spaces.  For instance, to make @code{maingnu} stand for "
+"@code{gnu@@gnu.org} plus a local address of your own, put in this line:"
+msgstr ""
+
+#. type: example
+#: sending.texi.orig:263
+#, no-wrap
+msgid "alias maingnu gnu@@gnu.org local-gnu\n"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:268
+msgid ""
+"If an address contains a space, quote the whole address with a pair of "
+"double quotes, like this:"
+msgstr ""
+
+#. type: example
+#: sending.texi.orig:271
+#, no-wrap
+msgid "alias jsmith \"John Q. Smith <none@@example.com>\"\n"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:278
+msgid ""
+"Note that you need not include double quotes around individual parts of the "
+"address, such as the person's full name.  Emacs puts them in if they are "
+"needed.  For instance, it inserts the above address as @samp{\"John "
+"Q. Smith\" <none@@example.com>}."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:281
+msgid ""
+"Emacs also recognizes ``include'' commands in @file{.mailrc}.  They look "
+"like this:"
+msgstr ""
+
+#. type: example
+#: sending.texi.orig:284
+#, no-wrap
+msgid "source @var{filename}\n"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:291
+msgid ""
+"The @file{.mailrc} file is not unique to Emacs; many other mail-reading "
+"programs use it for mail aliases, and it can contain various other "
+"commands.  However, Emacs ignores everything except alias definitions and "
+"include commands."
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:292
+#, no-wrap
+msgid "mail-abbrev-insert-alias"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:299
+msgid ""
+"Mail aliases expand as abbrevs---that is to say, as soon as you type a "
+"word-separator character after an alias (@pxref{Abbrevs}).  This expansion "
+"takes place only within the @samp{To}, @samp{From}, @samp{CC}, @samp{BCC}, "
+"and @samp{Reply-to} header fields (plus their @samp{Resent-} variants); it "
+"does not take place in other header fields, such as @samp{Subject}."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:303
+msgid ""
+"You can also insert an aliased address directly, using the command @kbd{M-x "
+"mail-abbrev-insert-alias}.  This reads an alias name, with completion, and "
+"inserts its definition at point."
+msgstr ""
+
+#. type: section
+#: sending.texi.orig:304 sending.texi.orig:305
+#, no-wrap
+msgid "Mail Commands"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:306
+#, no-wrap
+msgid "Message mode"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:307
+#, no-wrap
+msgid "mode, Message"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:313
+msgid ""
+"The default major mode for the @file{*mail*} buffer is called Message mode.  "
+"It behaves like Text mode in many ways, but provides several additional "
+"commands on the @kbd{C-c} prefix, which make editing a message more "
+"convenient."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:316
+msgid ""
+"In this section, we will describe some of the most commonly-used commands "
+"available in Message mode."
+msgstr ""
+
+#. type: ifnottex
+#: sending.texi.orig:319
+msgid ""
+"Message mode also has its own manual, where its features are described in "
+"greater detail.  @xref{Top,,Message, message, Message}."
+msgstr ""
+
+#. type: subsection
+#: sending.texi.orig:326 sending.texi.orig:328 sending.texi.orig:329
+#, no-wrap
+msgid "Mail Sending"
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:326
+msgid "Commands to send the message."
+msgstr ""
+
+#. type: node
+#: sending.texi.orig:326 sending.texi.orig:410
+#, no-wrap
+msgid "Header Editing"
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:326
+msgid "Commands to move to header fields and edit them."
+msgstr ""
+
+#. type: subsection
+#: sending.texi.orig:326 sending.texi.orig:477 sending.texi.orig:478
+#, no-wrap
+msgid "Citing Mail"
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:326
+msgid "Quoting a message you are replying to."
+msgstr ""
+
+#. type: node
+#: sending.texi.orig:326 sending.texi.orig:520
+#, no-wrap
+msgid "Mail Misc"
+msgstr ""
+
+#. type: menuentry
+#: sending.texi.orig:326
+msgid "Attachments, spell checking, etc."
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:334
+msgid "Send the message, and bury the mail buffer (@code{message-send-and-exit})."
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:336
+msgid "Send the message, and leave the mail buffer selected (@code{message-send})."
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:338
+#, no-wrap
+msgid "C-c C-s @r{(Message mode)}"
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:339
+#, no-wrap
+msgid "C-c C-c @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:340
+#, no-wrap
+msgid "message-send"
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:341
+#, no-wrap
+msgid "message-kill-buffer-on-exit"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:347
+msgid ""
+"The usual command to send a message is @kbd{C-c C-c} "
+"(@code{mail-send-and-exit}).  This sends the message and then ``buries'' the "
+"mail buffer, putting it at the lowest priority for reselection.  If you want "
+"it to kill the mail buffer instead, change the variable "
+"@code{message-kill-buffer-on-exit} to @code{t}."
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:348
+#, no-wrap
+msgid "message-send-and-exit"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:352
+msgid ""
+"The command @kbd{C-c C-s} (@code{message-send}) sends the message and leaves "
+"the buffer selected.  Use this command if you want to modify the message "
+"(perhaps with new recipients) and send it again."
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:353
+#, no-wrap
+msgid "message-send-hook"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:359
+msgid ""
+"Sending a message runs the hook @code{message-send-hook}.  It also marks the "
+"mail buffer as unmodified, except if the mail buffer is also a file-visiting "
+"buffer (in that case, only saving the file does that, and you don't get a "
+"warning if you try to send the same message twice)."
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:360
+#, no-wrap
+msgid "SMTP"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:361
+#, no-wrap
+msgid "Feedmail"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:362
+#, no-wrap
+msgid "Sendmail"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:363
+#, no-wrap
+msgid "Mailclient"
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:364
+#, no-wrap
+msgid "send-mail-function"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:367
+msgid ""
+"The variable @code{send-mail-function} controls how the message is "
+"delivered.  Its value should be one of the following functions:"
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:369
+#, no-wrap
+msgid "sendmail-query-once"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:375
+msgid ""
+"Query for a delivery method (one of the other entries in this list), and use "
+"that method for this message; then save the method to "
+"@code{send-mail-function}, so that it is used for future deliveries.  This "
+"is the default, unless you have already set the variables for sending mail "
+"via @code{smtpmail-send-it} (see below)."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:376
+#, no-wrap
+msgid "smtpmail-send-it"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:383
+msgid ""
+"Send mail through an external mail host, such as your Internet service "
+"provider's outgoing SMTP mail server.  If you have not told Emacs how to "
+"contact the SMTP server, it prompts for this information, which is saved in "
+"the @code{smtpmail-smtp-server} variable and the file @file{~/.authinfo}.  "
+"@xref{Top,,Emacs SMTP Library, smtpmail, Sending mail via SMTP}."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:384
+#, no-wrap
+msgid "sendmail-send-it"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:388
+msgid ""
+"Send mail using the system's default @command{sendmail} program, or "
+"equivalent.  This requires the system to be set up for delivering mail "
+"directly via SMTP."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:389
+#, no-wrap
+msgid "mailclient-send-it"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:392
+msgid ""
+"Pass the mail buffer on to the system's designated mail client.  See the "
+"commentary section in the file @file{mailclient.el} for details."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:393
+#, no-wrap
+msgid "feedmail-send-it"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:397
+msgid ""
+"This is similar to @code{sendmail-send-it}, but allows you to queue messages "
+"for later sending.  See the commentary section in the file "
+"@file{feedmail.el} for details."
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:399
+#, no-wrap
+msgid "sendmail-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:409
+msgid ""
+"When you send a message containing non-@acronym{ASCII} characters, they need "
+"to be encoded with a coding system (@pxref{Coding Systems}).  Usually the "
+"coding system is specified automatically by your chosen language environment "
+"(@pxref{Language Environments}).  You can explicitly specify the coding "
+"system for outgoing mail by setting the variable "
+"@code{sendmail-coding-system} (@pxref{Recognize Coding}).  If the coding "
+"system thus determined does not handle the characters in a particular "
+"message, Emacs asks you to select the coding system to use, showing a list "
+"of possible coding systems."
+msgstr ""
+
+#. type: subsection
+#: sending.texi.orig:411
+#, no-wrap
+msgid "Mail Header Editing"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:415
+msgid ""
+"Message mode provides the following special commands to move to particular "
+"header fields and to complete addresses in headers."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:417
+#, no-wrap
+msgid "C-c C-f C-t"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:419
+msgid "Move to the @samp{To} header (@code{message-goto-to})."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:419
+#, no-wrap
+msgid "C-c C-f C-s"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:421
+msgid "Move to the @samp{Subject} header (@code{message-goto-subject})."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:421
+#, no-wrap
+msgid "C-c C-f C-c"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:423
+msgid "Move to the @samp{CC} header (@code{message-goto-cc})."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:423
+#, no-wrap
+msgid "C-c C-f C-b"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:425
+msgid "Move to the @samp{BCC} header (@code{message-goto-bcc})."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:425
+#, no-wrap
+msgid "C-c C-f C-r"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:427
+msgid "Move to the @samp{Reply-To} header (@code{message-goto-reply-to})."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:427
+#, no-wrap
+msgid "C-c C-f C-f"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:430
+msgid ""
+"Move to the @samp{Mail-Followup-To} header field "
+"(@code{message-goto-followup-to})."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:430
+#, no-wrap
+msgid "C-c C-f C-w"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:433
+msgid ""
+"Add a new @samp{FCC} header field, with file-name completion "
+"(@code{message-goto-fcc})."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:433
+#, no-wrap
+msgid "C-c C-b"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:435
+msgid "Move to the start of the message body (@code{message-goto-body})."
+msgstr ""
+
+#. type: key{#1}
+#: sending.texi.orig:435
+#, no-wrap
+msgid "TAB"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:437
+msgid "Complete a mailing address (@code{message-tab})."
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:439
+#, no-wrap
+msgid "C-c C-f C-t @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:440
+#, no-wrap
+msgid "message-goto-to"
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:441
+#, no-wrap
+msgid "C-c C-f C-s @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:442
+#, no-wrap
+msgid "message-goto-subject"
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:443
+#, no-wrap
+msgid "C-c C-f C-c @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:444
+#, no-wrap
+msgid "message-goto-cc"
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:445
+#, no-wrap
+msgid "C-c C-f C-b @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:446
+#, no-wrap
+msgid "message-goto-bcc"
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:447
+#, no-wrap
+msgid "C-c C-f C-r @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:448
+#, no-wrap
+msgid "goto-reply-to"
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:449
+#, no-wrap
+msgid "C-c C-f C-f @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:450
+#, no-wrap
+msgid "goto-followup-to"
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:451
+#, no-wrap
+msgid "C-c C-f C-w @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:452
+#, no-wrap
+msgid "message-goto-fcc"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:457
+msgid ""
+"The commands to move point to particular header fields are all based on the "
+"prefix @kbd{C-c C-f} (@samp{C-f} is for ``field'').  If the field in "
+"question does not exist, the command creates one (the exception is "
+"@code{mail-fcc}, which creates a new field each time)."
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:458
+#, no-wrap
+msgid "C-c C-b @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:459
+#, no-wrap
+msgid "mail-text"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:463
+msgid ""
+"The command @kbd{C-c C-b} (@code{message-goto-body}) moves point to just "
+"after the header separator line---that is, to the beginning of the body."
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:464
+#, no-wrap
+msgid "message-tab"
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:465
+#, no-wrap
+msgid "TAB @r{(Message mode)}"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:476
+msgid ""
+"While editing a header field that contains addresses, such as @samp{To:}, "
+"@samp{CC:} and @samp{BCC:}, you can complete an address by typing @key{TAB} "
+"(@code{message-tab}).  This attempts to insert the full name corresponding "
+"to the address based on a couple of methods, including EUDC, a library that "
+"recognizes a number of directory server protocols (@pxref{Top,,EUDC,eudc, "
+"The Emacs Unified Directory Client}).  Failing that, it attempts to expand "
+"the address as a mail alias (@pxref{Mail Aliases}).  If point is on a header "
+"field that does not take addresses, or if it is in the message body, then "
+"@key{TAB} just inserts a tab character."
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:479
+#, no-wrap
+msgid "citing mail"
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:482
+#, no-wrap
+msgid "C-c C-y"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:485
+msgid ""
+"Yank the selected message from the mail reader, as a citation "
+"(@code{message-yank-original})."
+msgstr ""
+
+#. type: item
+#: sending.texi.orig:485
+#, no-wrap
+msgid "C-c C-q"
+msgstr ""
+
+#. type: table
+#: sending.texi.orig:488
+msgid ""
+"Fill each paragraph cited from another message "
+"(@code{message-fill-yanked-message})."
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:490
+#, no-wrap
+msgid "C-c C-y @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:491
+#, no-wrap
+msgid "message-yank-original"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:492
+#, no-wrap
+msgid "message-yank-prefix"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:498
+msgid ""
+"You can use the command @kbd{C-c C-y} (@code{message-yank-original})  to "
+"@dfn{cite} a message that you are replying to.  This inserts the text of "
+"that message into the mail buffer.  This command works only if the mail "
+"buffer is invoked from a mail reader running in Emacs, such as Rmail."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:503
+msgid ""
+"By default, Emacs inserts the string @samp{>} in front of each line of the "
+"cited text; this prefix string is specified by the variable "
+"@code{message-yank-prefix}.  If you call @code{message-yank-original} with a "
+"prefix argument, the citation prefix is not inserted."
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:504
+#, no-wrap
+msgid "C-c C-q @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:505
+#, no-wrap
+msgid "mail-fill-yanked-message"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:513
+msgid ""
+"After using @kbd{C-c C-y}, you can type @kbd{C-c C-q} "
+"(@code{message-fill-yanked-message}) to fill the paragraphs of the cited "
+"message.  One use of @kbd{C-c C-q} fills all such paragraphs, each one "
+"individually.  To fill a single paragraph of the quoted message, use "
+"@kbd{M-q}.  If filling does not automatically handle the type of citation "
+"prefix you use, try setting the fill prefix explicitly.  @xref{Filling}."
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:514
+#, no-wrap
+msgid "mail-citation-hook"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:519
+msgid ""
+"You can customize mail citation through the hook @code{mail-citation-hook}.  "
+"For example, you can use the Supercite package, which provides more flexible "
+"citation (@pxref{Introduction,,,sc, Supercite})."
+msgstr ""
+
+#. type: subsection
+#: sending.texi.orig:521
+#, no-wrap
+msgid "Mail Miscellany"
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:523
+#, no-wrap
+msgid "C-c C-a @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:524
+#, no-wrap
+msgid "mml-attach-file"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:525
+#, no-wrap
+msgid "MIME"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:526
+#, no-wrap
+msgid "Multipurpose Internet Mail Extensions"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:531
+msgid ""
+"You can @dfn{attach} a file to an outgoing message by typing @kbd{C-c C-a} "
+"(@code{mml-attach-file}) in the mail buffer.  Attaching is done using the "
+"Multipurpose Internet Mail Extensions (@acronym{MIME}) standard."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:542
+msgid ""
+"The @code{mml-attach-file} command prompts for the name of the file, and for "
+"the attachment's @dfn{content type}, @dfn{description}, and "
+"@dfn{disposition}.  The content type is normally detected automatically; "
+"just type @key{RET} to accept the default.  The description is a single line "
+"of text that the recipient will see next to the attachment; you may also "
+"choose to leave this empty.  The disposition is either @samp{inline} (the "
+"default), which means the recipient will see a link to the attachment within "
+"the message body, or @samp{attachment}, which means the link will be "
+"separate from the body."
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:543
+#, no-wrap
+msgid "mail-add-attachment"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:549
+msgid ""
+"The @code{mml-attach-file} command is specific to Message mode; in Mail mode "
+"use @kbd{mail-add-attachment} instead.  It will prompt only for the name of "
+"the file, and will determine the content type and the disposition "
+"automatically.  If you want to include some description of the attached "
+"file, type that in the message body."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:553
+msgid ""
+"The actual contents of the attached file are not inserted into the mail "
+"buffer.  Instead, some placeholder text is inserted into the mail buffer, "
+"like this:"
+msgstr ""
+
+#. type: smallexample
+#: sending.texi.orig:557
+#, no-wrap
+msgid ""
+"<#part type=\"text/plain\" filename=\"~/foo.txt\" disposition=inline>\n"
+"<#/part>\n"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:562
+msgid ""
+"When you type @kbd{C-c C-c} or @kbd{C-c C-s} to send the message, the "
+"attached file will be delivered with it."
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:563
+#, no-wrap
+msgid "ispell-message"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:570
+msgid ""
+"While composing a message, you can do spelling correction on the message "
+"text by typing @kbd{M-x ispell-message}.  If you have yanked an incoming "
+"message into the outgoing draft, this command skips what was yanked, but it "
+"checks the text that you yourself inserted (it looks for indentation or "
+"@code{mail-yank-prefix} to distinguish the cited lines from your input).  "
+"@xref{Spelling}."
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:571
+#, no-wrap
+msgid "mail-mode-hook"
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:572
+#, no-wrap
+msgid "mail-setup-hook"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:578
+msgid ""
+"Turning on Message mode (which @kbd{C-x m} does automatically) runs the "
+"normal hooks @code{text-mode-hook} and @code{message-mode-hook}.  "
+"Initializing a new outgoing message runs the normal hook "
+"@code{message-setup-hook}; you can use this hook if you want to make changes "
+"to the appearance of the mail buffer.  @xref{Hooks}."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:584
+msgid ""
+"The main difference between these hooks is just when they are invoked.  "
+"Whenever you type @kbd{C-x m}, @code{message-mode-hook} runs as soon as the "
+"mail buffer is created.  Then the @code{message-setup} function inserts the "
+"default contents of the buffer.  After these default contents are inserted, "
+"@code{message-setup-hook} runs."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:590
+msgid ""
+"If you use @kbd{C-x m} to continue an existing composition, "
+"@code{message-mode-hook} runs immediately after switching to the mail "
+"buffer.  If the buffer is unmodified, or if you decide to erase it and start "
+"again, @code{message-setup-hook} runs after the default contents are "
+"inserted."
+msgstr ""
+
+#. type: section
+#: sending.texi.orig:591 sending.texi.orig:592
+#, no-wrap
+msgid "Mail Signature"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:594
+#, no-wrap
+msgid "mail signature"
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:595
+#, no-wrap
+msgid "message-signature-file"
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:596
+#, no-wrap
+msgid "message-signature"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:602
+msgid ""
+"You can add a standard piece of text---your @dfn{mail signature}---to the "
+"end of every message.  This signature may contain information such as your "
+"telephone number or your physical location.  The variable "
+"@code{message-signature} determines how Emacs handles the mail signature."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:608
+msgid ""
+"The default value of @code{message-signature} is @code{t}; this means to "
+"look for your mail signature in the file @file{~/.signature}.  If this file "
+"exists, its contents are automatically inserted into the end of the mail "
+"buffer.  You can change the signature file via the variable "
+"@code{message-signature-file}."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:611
+msgid ""
+"If you change @code{message-signature} to a string, that specifies the text "
+"of the signature directly."
+msgstr ""
+
+#. type: kindex
+#: sending.texi.orig:612
+#, no-wrap
+msgid "C-c C-w @r{(Message mode)}"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:613
+#, no-wrap
+msgid "message-insert-signature"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:619
+msgid ""
+"If you change @code{message-signature} to @code{nil}, Emacs will not insert "
+"your mail signature automatically.  You can insert your mail signature by "
+"typing @kbd{C-c C-w} (@code{message-insert-signature}) in the mail buffer.  "
+"Emacs will look for your signature in the signature file."
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:620
+#, no-wrap
+msgid "mail-signature-file"
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:621
+#, no-wrap
+msgid "mail-signature"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:625
+msgid ""
+"If you use Mail mode rather than Message mode for composing your mail, the "
+"corresponding variables that determine how your signature is sent are "
+"@code{mail-signature} and @code{mail-signature-file} instead."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:630
+msgid ""
+"By convention, a mail signature should be marked by a line whose contents "
+"are @samp{-- }.  If your signature lacks this prefix, it is added for you.  "
+"The remainder of your signature should be no more than four lines."
+msgstr ""
+
+#. type: section
+#: sending.texi.orig:631 sending.texi.orig:632
+#, no-wrap
+msgid "Mail Amusements"
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:634
+#, no-wrap
+msgid "spook"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:635
+#, no-wrap
+msgid "NSA"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:639
+msgid ""
+"@kbd{M-x spook} adds a line of randomly chosen keywords to an outgoing mail "
+"message.  The keywords are chosen from a list of words that suggest you are "
+"discussing something subversive."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:648
+msgid ""
+"The idea behind this feature is the suspicion that the NSA@footnote{The US "
+"National Security Agency.} and other intelligence agencies snoop on all "
+"electronic mail messages that contain keywords suggesting they might find "
+"them interesting.  (The agencies say that they don't, but that's what they "
+"@emph{would} say.)  The idea is that if lots of people add suspicious words "
+"to their messages, the agencies will get so busy with spurious input that "
+"they will have to give up reading it all.  Whether or not this is true, it "
+"at least amuses some people."
+msgstr ""
+
+#. type: findex
+#: sending.texi.orig:649
+#, no-wrap
+msgid "fortune-to-signature"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:650
+#, no-wrap
+msgid "fortune cookies"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:654
+msgid ""
+"You can use the @code{fortune} program to put a ``fortune cookie'' message "
+"into outgoing mail.  To do this, add @code{fortune-to-signature} to "
+"@code{mail-setup-hook}:"
+msgstr ""
+
+#. type: example
+#: sending.texi.orig:657
+#, no-wrap
+msgid "(add-hook 'mail-setup-hook 'fortune-to-signature)\n"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:662
+msgid ""
+"You will probably need to set the variable @code{fortune-file} before using "
+"this."
+msgstr ""
+
+#. type: node
+#: sending.texi.orig:663
+#, no-wrap
+msgid "Mail Methods"
+msgstr ""
+
+#. type: section
+#: sending.texi.orig:664
+#, no-wrap
+msgid "Mail-Composition Methods"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:665
+#, no-wrap
+msgid "mail-composition methods"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:666
+#, no-wrap
+msgid "Mail mode"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:667
+#, no-wrap
+msgid "mode, Mail"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:669
+#, no-wrap
+msgid "MH mail interface"
+msgstr ""
+
+#. type: cindex
+#: sending.texi.orig:670
+#, no-wrap
+msgid "Message mode for sending mail"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:677
+msgid ""
+"In this chapter we have described the usual Emacs mode for editing and "
+"sending mail---Message mode.  This is only one of several available modes.  "
+"Prior to Emacs 23.2, the default mode was Mail mode, which is similar to "
+"Message mode in many respects but lacks features such as MIME support.  "
+"Another available mode is MH-E (@pxref{Top,,MH-E,mh-e, The Emacs Interface "
+"to MH})."
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:678
+#, no-wrap
+msgid "mail-user-agent"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:688
+msgid ""
+"You can choose any of these @dfn{mail user agents} as your preferred method "
+"for editing and sending mail.  The commands @code{C-x m}, @code{C-x 4 m} and "
+"@code{C-x 5 m} use whichever agent you have specified; so do various other "
+"parts of Emacs that send mail, such as the bug reporter (@pxref{Bugs}).  To "
+"specify a mail user agent, customize the variable @code{mail-user-agent}.  "
+"Currently, legitimate values include @code{message-user-agent} (Message "
+"mode)  @code{sendmail-user-agent} (Mail mode), @code{gnus-user-agent}, and "
+"@code{mh-e-user-agent}."
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:693
+msgid ""
+"If you select a different mail-composition method, the information in this "
+"chapter about the mail buffer and Message mode does not apply; the other "
+"methods use a different format of text in a different buffer, and their "
+"commands are different as well."
+msgstr ""
+
+#. type: vindex
+#: sending.texi.orig:694
+#, no-wrap
+msgid "read-mail-command"
+msgstr ""
+
+#. type: Plain text
+#: sending.texi.orig:697
+msgid ""
+"Similarly, to specify your preferred method for reading mail, customize the "
+"variable @code{read-mail-command}.  The default is @code{rmail} "
+"(@pxref{Rmail})."
+msgstr ""

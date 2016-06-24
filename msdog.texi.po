@@ -1,0 +1,2178 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: cindex
+#: msdog.texi.orig:5 msdog.texi.orig:7
+#, no-wrap
+msgid "Microsoft Windows"
+msgstr ""
+
+#. type: appendix
+#: msdog.texi.orig:6
+#, no-wrap
+msgid "Emacs and Microsoft Windows/MS-DOS"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:8
+#, no-wrap
+msgid "MS-Windows, Emacs peculiarities"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:15
+msgid ""
+"This section describes peculiarities of using Emacs on Microsoft Windows.  "
+"Some of these peculiarities are also relevant to Microsoft's older MS-DOS "
+"``operating system'' (also known as ``MS-DOG'').  However, Emacs features "
+"that are relevant @emph{only} to MS-DOS are described in a separate"
+msgstr ""
+
+#. type: iftex
+#: msdog.texi.orig:17
+msgid "manual (@pxref{MS-DOS,,, emacs-xtra, Specialized Emacs Features})."
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:20
+msgid "section (@pxref{MS-DOS})."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:28
+msgid ""
+"The behavior of Emacs on MS-Windows is reasonably similar to what is "
+"documented in the rest of the manual, including support for long file names, "
+"multiple frames, scroll bars, mouse menus, and subprocesses.  However, a few "
+"special considerations apply, and they are described here."
+msgstr ""
+
+#. type: node
+#: msdog.texi.orig:42 msdog.texi.orig:47
+#, no-wrap
+msgid "Windows Startup"
+msgstr ""
+
+#. type: menuentry
+#: msdog.texi.orig:42
+msgid "How to start Emacs on Windows."
+msgstr ""
+
+#. type: node
+#: msdog.texi.orig:42 msdog.texi.orig:127
+#, no-wrap
+msgid "Text and Binary"
+msgstr ""
+
+#. type: menuentry
+#: msdog.texi.orig:42
+msgid "Text files use CRLF to terminate lines."
+msgstr ""
+
+#. type: node
+#: msdog.texi.orig:42 msdog.texi.orig:221
+#, no-wrap
+msgid "Windows Files"
+msgstr ""
+
+#. type: menuentry
+#: msdog.texi.orig:42
+msgid "File-name conventions on Windows."
+msgstr ""
+
+#. type: node
+#: msdog.texi.orig:42 msdog.texi.orig:289
+#, no-wrap
+msgid "ls in Lisp"
+msgstr ""
+
+#. type: menuentry
+#: msdog.texi.orig:42
+msgid "Emulation of @code{ls} for Dired."
+msgstr ""
+
+#. type: node
+#: msdog.texi.orig:42 msdog.texi.orig:426
+#, no-wrap
+msgid "Windows HOME"
+msgstr ""
+
+#. type: menuentry
+#: msdog.texi.orig:42
+msgid "Where Emacs looks for your @file{.emacs} and where it starts up."
+msgstr ""
+
+#. type: node
+#: msdog.texi.orig:42 msdog.texi.orig:480
+#, no-wrap
+msgid "Windows Keyboard"
+msgstr ""
+
+#. type: menuentry
+#: msdog.texi.orig:42
+msgid "Windows-specific keyboard features."
+msgstr ""
+
+#. type: node
+#: msdog.texi.orig:42 msdog.texi.orig:630
+#, no-wrap
+msgid "Windows Mouse"
+msgstr ""
+
+#. type: menuentry
+#: msdog.texi.orig:42
+msgid "Windows-specific mouse features."
+msgstr ""
+
+#. type: node
+#: msdog.texi.orig:42 msdog.texi.orig:657
+#, no-wrap
+msgid "Windows Processes"
+msgstr ""
+
+#. type: menuentry
+#: msdog.texi.orig:42
+msgid "Running subprocesses on Windows."
+msgstr ""
+
+#. type: node
+#: msdog.texi.orig:42 msdog.texi.orig:726
+#, no-wrap
+msgid "Windows Printing"
+msgstr ""
+
+#. type: menuentry
+#: msdog.texi.orig:42
+msgid "How to specify the printer on MS-Windows."
+msgstr ""
+
+#. type: node
+#: msdog.texi.orig:42 msdog.texi.orig:872
+#, no-wrap
+msgid "Windows Fonts"
+msgstr ""
+
+#. type: menuentry
+#: msdog.texi.orig:42
+msgid "Specifying fonts on MS-Windows."
+msgstr ""
+
+#. type: node
+#: msdog.texi.orig:42 msdog.texi.orig:992
+#, no-wrap
+msgid "Windows Misc"
+msgstr ""
+
+#. type: menuentry
+#: msdog.texi.orig:42
+msgid "Miscellaneous Windows features."
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:44
+msgid "* MS-DOS:: Using Emacs on MS-DOS."
+msgstr ""
+
+#. type: section
+#: msdog.texi.orig:48
+#, no-wrap
+msgid "How to Start Emacs on MS-Windows"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:49
+#, no-wrap
+msgid "starting Emacs on MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:52
+msgid "There are several ways of starting Emacs on MS-Windows:"
+msgstr ""
+
+#. type: pindex
+#: msdog.texi.orig:55
+#, no-wrap
+msgid "runemacs.exe"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:56
+#, no-wrap
+msgid "desktop shortcut, MS-Windows"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:57
+#, no-wrap
+msgid "start directory, MS-Windows"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:58
+#, no-wrap
+msgid "directory where Emacs starts on MS-Windows"
+msgstr ""
+
+#. type: enumerate
+#: msdog.texi.orig:70
+msgid ""
+"From the desktop shortcut icon: either double-click the left mouse button on "
+"the icon, or click once, then press @key{RET}.  The desktop shortcut should "
+"specify as its ``Target'' (in the ``Properties'' of the shortcut) the full "
+"absolute file name of @file{runemacs.exe}, @emph{not} of @file{emacs.exe}.  "
+"This is because @file{runemacs.exe} hides the console window that would have "
+"been created if the target of the shortcut were @file{emacs.exe} (which is a "
+"console program, as far as Windows is concerned).  If you use this method, "
+"Emacs starts in the directory specified by the shortcut.  To control where "
+"that is, right-click on the shortcut, select ``Properties'', and in the "
+"``Shortcut'' tab modify the ``Start in'' field to your liking."
+msgstr ""
+
+#. type: enumerate
+#: msdog.texi.orig:76
+msgid ""
+"From the Command Prompt window, by typing @kbd{emacs @key{RET}} at the "
+"prompt.  The Command Prompt window where you did that will not be available "
+"for invoking other commands until Emacs exits.  In this case, Emacs will "
+"start in the current directory of the Windows shell."
+msgstr ""
+
+#. type: enumerate
+#: msdog.texi.orig:82
+msgid ""
+"From the Command Prompt window, by typing @kbd{runemacs @key{RET}} at the "
+"prompt.  The Command Prompt window where you did that will be immediately "
+"available for invoking other commands.  In this case, Emacs will start in "
+"the current directory of the Windows shell."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:84
+#, no-wrap
+msgid "invoking Emacs from Windows Explorer"
+msgstr ""
+
+#. type: pindex
+#: msdog.texi.orig:85
+#, no-wrap
+msgid "emacsclient.exe"
+msgstr ""
+
+#. type: pindex
+#: msdog.texi.orig:86
+#, no-wrap
+msgid "emacsclientw.exe"
+msgstr ""
+
+#. type: enumerate
+#: msdog.texi.orig:110
+msgid ""
+"Via @file{emacsclient.exe} or @file{emacsclientw.exe}, which allow you to "
+"invoke Emacs from other programs, and to reuse a running Emacs process for "
+"serving editing jobs required by other programs.  @xref{Emacs Server}.  The "
+"difference between @file{emacsclient.exe} and @file{emacsclientw.exe} is "
+"that the former is a console program, while the latter is a Windows GUI "
+"program.  Both programs wait for Emacs to signal that the editing job is "
+"finished, before they exit and return control to the program that invoked "
+"them.  Which one of them to use in each case depends on the expectations of "
+"the program that needs editing services.  If that program is itself a "
+"console (text-mode)  program, you should use @file{emacsclient.exe}, so that "
+"any of its messages and prompts appear in the same command window as those "
+"of the invoking program.  By contrast, if the invoking program is a GUI "
+"program, you will be better off using @file{emacsclientw.exe}, because "
+"@file{emacsclient.exe} will pop up a command window if it is invoked from a "
+"GUI program.  A notable situation where you would want "
+"@file{emacsclientw.exe} is when you right-click on a file in the Windows "
+"Explorer and select ``Open With'' from the pop-up menu.  Use the "
+"@samp{--alternate-editor=} or @samp{-a} options if Emacs might not be "
+"running (or not running as a server) when @command{emacsclient} is "
+"invoked---that will always give you an editor.  When invoked via "
+"@command{emacsclient}, Emacs will start in the current directory of the "
+"program that invoked @command{emacsclient}."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:112
+#, no-wrap
+msgid "emacsclient, on MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:126
+msgid ""
+"Note that, due to limitations of MS-Windows, Emacs cannot have both GUI and "
+"text-mode frames in the same session.  It also cannot open text-mode frames "
+"on more than a single @dfn{Command Prompt} window, because each Windows "
+"program can have only one console at any given time.  For these reasons, if "
+"you invoke @command{emacsclient} with the @option{-c} option, and the Emacs "
+"server runs in a text-mode session, Emacs will always create a new text-mode "
+"frame in the same @dfn{Command Prompt} window where it was started; a GUI "
+"frame will be created only if the server runs in a GUI session.  Similarly, "
+"if you invoke @command{emacsclient} with the @option{-t} option, Emacs will "
+"create a GUI frame if the server runs in a GUI session, or a text-mode frame "
+"when the session runs in text mode in a @dfn{Command Prompt} window.  "
+"@xref{emacsclient Options}."
+msgstr ""
+
+#. type: section
+#: msdog.texi.orig:128
+#, no-wrap
+msgid "Text Files and Binary Files"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:129
+#, no-wrap
+msgid "text and binary files on MS-DOS/MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:133
+msgid ""
+"GNU Emacs uses newline characters to separate text lines.  This is the "
+"convention used on GNU, Unix, and other Posix-compliant systems."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:134
+#, no-wrap
+msgid "end-of-line conversion on MS-DOS/MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:144
+msgid ""
+"By contrast, MS-DOS and MS-Windows normally use carriage-return linefeed, a "
+"two-character sequence, to separate text lines.  (Linefeed is the same "
+"character as newline.)  Therefore, convenient editing of typical files with "
+"Emacs requires conversion of these end-of-line (EOL) sequences.  And that is "
+"what Emacs normally does: it converts carriage-return linefeed into newline "
+"when reading files, and converts newline into carriage-return linefeed when "
+"writing files.  The same mechanism that handles conversion of international "
+"character codes does this conversion also (@pxref{Coding Systems})."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:145
+#, no-wrap
+msgid "cursor location, on MS-DOS"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:146
+#, no-wrap
+msgid "point location, on MS-DOS"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:150
+msgid ""
+"One consequence of this special format-conversion of most files is that "
+"character positions as reported by Emacs (@pxref{Position Info}) do not "
+"agree with the file size information known to the operating system."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:157
+msgid ""
+"In addition, if Emacs recognizes from a file's contents that it uses newline "
+"rather than carriage-return linefeed as its line separator, it does not "
+"perform EOL conversion when reading or writing that file.  Thus, you can "
+"read and edit files from GNU and Unix systems on MS-DOS with no special "
+"effort, and they will retain their Unix-style end-of-line convention after "
+"you edit them."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:165
+msgid ""
+"The mode line indicates whether end-of-line translation was used for the "
+"current buffer.  If MS-DOS end-of-line translation is in use for the buffer, "
+"the MS-Windows build of Emacs displays a backslash @samp{\\} after the "
+"coding system mnemonic near the beginning of the mode line (@pxref{Mode "
+"Line}).  If no EOL translation was performed, the string @samp{(Unix)} is "
+"displayed instead of the backslash, to alert you that the file's EOL format "
+"is not the usual carriage-return linefeed."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:166
+#, no-wrap
+msgid "DOS-to-Unix conversion of files"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:179
+msgid ""
+"To visit a file and specify whether it uses DOS-style or Unix-style "
+"end-of-line, specify a coding system (@pxref{Text Coding}).  For example, "
+"@kbd{C-x @key{RET} c unix @key{RET} C-x C-f foobar.txt} visits the file "
+"@file{foobar.txt} without converting the EOLs; if some line ends with a "
+"carriage-return linefeed pair, Emacs will display @samp{^M} at the end of "
+"that line.  Similarly, you can direct Emacs to save a buffer in a specified "
+"EOL format with the @kbd{C-x @key{RET} f} command.  For example, to save a "
+"buffer with Unix EOL format, type @kbd{C-x @key{RET} f unix @key{RET} C-x "
+"C-s}.  If you visit a file with DOS EOL conversion, then save it with Unix "
+"EOL format, that effectively converts the file to Unix EOL style, like the "
+"@code{dos2unix} program."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:180
+#, no-wrap
+msgid "untranslated file system"
+msgstr ""
+
+#. type: findex
+#: msdog.texi.orig:181
+#, no-wrap
+msgid "add-untranslated-filesystem"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:190
+msgid ""
+"When you use NFS, Samba, or some other similar method to access file systems "
+"that reside on computers using GNU or Unix systems, Emacs should not perform "
+"end-of-line translation on any files in these file systems---not even when "
+"you create a new file.  To request this, designate these file systems as "
+"@dfn{untranslated} file systems by calling the function "
+"@code{add-untranslated-filesystem}.  It takes one argument: the file system "
+"name, including a drive letter and optionally a directory.  For example,"
+msgstr ""
+
+#. type: example
+#: msdog.texi.orig:193
+#, no-wrap
+msgid "(add-untranslated-filesystem \"Z:\")\n"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:197
+msgid "designates drive Z as an untranslated file system, and"
+msgstr ""
+
+#. type: example
+#: msdog.texi.orig:200
+#, no-wrap
+msgid "(add-untranslated-filesystem \"Z:\\\\foo\")\n"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:205
+msgid "designates directory @file{\\foo} on drive Z as an untranslated file system."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:209
+msgid ""
+"Most often you would use @code{add-untranslated-filesystem} in your "
+"@file{.emacs} file, or in @file{site-start.el} so that all the users at your "
+"site get the benefit of it."
+msgstr ""
+
+#. type: findex
+#: msdog.texi.orig:210
+#, no-wrap
+msgid "remove-untranslated-filesystem"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:215
+msgid ""
+"To countermand the effect of @code{add-untranslated-filesystem}, use the "
+"function @code{remove-untranslated-filesystem}.  This function takes one "
+"argument, which should be a string just like the one that was used "
+"previously with @code{add-untranslated-filesystem}."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:220
+msgid ""
+"Designating a file system as untranslated does not affect character set "
+"conversion, only end-of-line conversion.  Essentially, it directs Emacs to "
+"create new files with the Unix-style convention of using newline at the end "
+"of a line.  @xref{Coding Systems}."
+msgstr ""
+
+#. type: section
+#: msdog.texi.orig:222
+#, no-wrap
+msgid "File Names on MS-Windows"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:223
+#, no-wrap
+msgid "file names on MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:229
+msgid ""
+"MS-Windows and MS-DOS normally use a backslash, @samp{\\}, to separate name "
+"units within a file name, instead of the slash used on other systems.  Emacs "
+"on MS-DOS/MS-Windows permits use of either slash or backslash, and also "
+"knows about drive letters in file names."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:230
+#, no-wrap
+msgid "file-name completion, on MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:233
+msgid ""
+"On MS-DOS/MS-Windows, file names are case-insensitive, so Emacs by default "
+"ignores letter-case in file names during completion."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:234
+#, no-wrap
+msgid "w32-get-true-file-attributes"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:244
+msgid ""
+"The variable @code{w32-get-true-file-attributes} controls whether Emacs "
+"should issue additional system calls to determine more accurately file "
+"attributes in primitives like @code{file-attributes} and "
+"@code{directory-files-and-attributes}.  These additional calls are needed to "
+"report correct file ownership, link counts and file types for special files "
+"such as pipes.  Without these system calls, file ownership will be "
+"attributed to the current user, link counts will be always reported as 1, "
+"and special files will be reported as regular files."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:253
+msgid ""
+"If the value of this variable is @code{local} (the default), Emacs will "
+"issue these additional system calls only for files on local fixed drives.  "
+"Any other non-@code{nil} value means do this even for removable and remote "
+"volumes, where this could potentially slow down Dired and other related "
+"features.  The value of @code{nil} means never issue those system calls.  "
+"Non-@code{nil} values are more useful on NTFS volumes, which support hard "
+"links and file security, than on FAT, FAT32, and exFAT volumes."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:254
+#, no-wrap
+msgid "file names, invalid characters on MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:258
+msgid ""
+"Unlike Unix, MS-Windows file systems restrict the set of characters that can "
+"be used in a file name.  The following characters are not allowed:"
+msgstr ""
+
+#. type: itemize
+#: msdog.texi.orig:262
+msgid "Shell redirection symbols @samp{<}, @samp{>}, and @samp{|}."
+msgstr ""
+
+#. type: itemize
+#: msdog.texi.orig:265
+msgid "Colon @samp{:} (except after the drive letter)."
+msgstr ""
+
+#. type: itemize
+#: msdog.texi.orig:269
+msgid ""
+"Forward slash @samp{/} and backslash @samp{\\} (except as directory "
+"separators)."
+msgstr ""
+
+#. type: itemize
+#: msdog.texi.orig:272
+msgid "Wildcard characters @samp{*} and @samp{?}."
+msgstr ""
+
+#. type: itemize
+#: msdog.texi.orig:276
+msgid ""
+"Control characters whose codepoints are 1 through 31 decimal.  In "
+"particular, newlines in file names are not allowed."
+msgstr ""
+
+#. type: itemize
+#: msdog.texi.orig:280
+msgid ""
+"The null character, whose codepoint is zero (this limitation exists on Unix "
+"filesystems as well)."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:288
+msgid ""
+"In addition, referencing any file whose name matches a DOS character device, "
+"such as @file{NUL} or @file{LPT1} or @file{PRN} or @file{CON}, with or "
+"without any file-name extension, will always resolve to those character "
+"devices, in any directory.  Therefore, only use such file names when you "
+"want to use the corresponding character device."
+msgstr ""
+
+#. type: section
+#: msdog.texi.orig:290
+#, no-wrap
+msgid "Emulation of @code{ls} on MS-Windows"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:291
+#, no-wrap
+msgid "Dired, and MS-Windows/MS-DOS"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:292
+#, no-wrap
+msgid "@code{ls} emulation"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:302
+msgid ""
+"Dired normally uses the external program @code{ls} to produce the directory "
+"listing displayed in Dired buffers (@pxref{Dired}).  However, MS-Windows and "
+"MS-DOS systems don't come with such a program, although several ports of "
+"@sc{gnu} @code{ls} are available.  Therefore, Emacs on those systems "
+"@emph{emulates} @code{ls} in Lisp, by using the @file{ls-lisp.el} package.  "
+"While @file{ls-lisp.el} provides a reasonably full emulation of @code{ls}, "
+"there are some options and features peculiar to that emulation;"
+msgstr ""
+
+#. type: iftex
+#: msdog.texi.orig:305
+msgid ""
+"for more details, see the documentation of the variables whose names begin "
+"with @code{ls-lisp}."
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:308
+msgid "they are described in this section."
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:317
+msgid ""
+"The @code{ls} emulation supports many of the @code{ls} switches, but it "
+"doesn't support all of them.  Here's the list of the switches it does "
+"support: @option{-A}, @option{-a}, @option{-B}, @option{-C}, @option{-c}, "
+"@option{-G}, @option{-g}, @option{-h}, @option{-i}, @option{-n}, "
+"@option{-R}, @option{-r}, @option{-S}, @option{-s}, @option{-t}, "
+"@option{-U}, @option{-u}, and @option{-X}.  The @option{-F} switch is "
+"partially supported (it appends the character that classifies the file, but "
+"does not prevent symlink following)."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:318
+#, no-wrap
+msgid "ls-lisp-use-insert-directory-program"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:325
+msgid ""
+"On MS-Windows and MS-DOS, @file{ls-lisp.el} is preloaded when Emacs is "
+"built, so the Lisp emulation of @code{ls} is always used on those "
+"platforms.  If you have a ported @code{ls}, setting "
+"@code{ls-lisp-use-insert-directory-program} to a non-@code{nil} value will "
+"revert to using an external program named by the variable "
+"@code{insert-directory-program}."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:326
+#, no-wrap
+msgid "ls-lisp-ignore-case"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:332
+msgid ""
+"By default, @file{ls-lisp.el} uses a case-sensitive sort order for the "
+"directory listing it produces; this is so the listing looks the same as on "
+"other platforms.  If you wish that the files be sorted in case-insensitive "
+"order, set the variable @code{ls-lisp-ignore-case} to a non-@code{nil} "
+"value."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:333
+#, no-wrap
+msgid "ls-lisp-dirs-first"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:339
+msgid ""
+"By default, files and subdirectories are sorted together, to emulate the "
+"behavior of @code{ls}.  However, native MS-Windows/MS-DOS file managers list "
+"the directories before the files; if you want that behavior, customize the "
+"option @code{ls-lisp-dirs-first} to a non-@code{nil} value."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:340
+#, no-wrap
+msgid "ls-lisp-verbosity"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:351
+msgid ""
+"The variable @code{ls-lisp-verbosity} controls the file attributes that "
+"@file{ls-lisp.el} displays.  The value should be a list that contains one or "
+"more of the symbols @code{links}, @code{uid}, and @code{gid}.  @code{links} "
+"means display the count of different file names that are associated with "
+"(a.k.a.@: @dfn{links to}) the file's data; this is only useful on NTFS "
+"volumes.  @code{uid} means display the numerical identifier of the user who "
+"owns the file.  @code{gid} means display the numerical identifier of the "
+"file owner's group.  The default value is @code{(links uid gid)} i.e., all "
+"the 3 optional attributes are displayed."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:352
+#, no-wrap
+msgid "ls-lisp-emulation"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:358
+msgid ""
+"The variable @code{ls-lisp-emulation} controls the flavor of the @code{ls} "
+"emulation by setting the defaults for the 3 options described above: "
+"@code{ls-lisp-ignore-case}, @code{ls-lisp-dirs-first}, and "
+"@code{ls-lisp-verbosity}.  The value of this option can be one of the "
+"following symbols:"
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:360
+#, no-wrap
+msgid "GNU"
+msgstr ""
+
+#. type: itemx
+#: msdog.texi.orig:361
+#, no-wrap
+msgid "nil"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:365
+msgid ""
+"Emulate @sc{gnu} systems; this is the default.  This sets "
+"@code{ls-lisp-ignore-case} and @code{ls-lisp-dirs-first} to @code{nil}, and "
+"@code{ls-lisp-verbosity} to @code{(links uid gid)}."
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:365
+#, no-wrap
+msgid "UNIX"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:368
+msgid ""
+"Emulate Unix systems.  Like @code{GNU}, but sets @code{ls-lisp-verbosity} to "
+"@code{(links uid)}."
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:368
+#, no-wrap
+msgid "MacOS"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:371
+msgid ""
+"Emulate MacOS@.  Sets @code{ls-lisp-ignore-case} to @code{t}, and "
+"@code{ls-lisp-dirs-first} and @code{ls-lisp-verbosity} to @code{nil}."
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:371
+#, no-wrap
+msgid "MS-Windows"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:378
+msgid ""
+"Emulate MS-Windows.  Sets @code{ls-lisp-ignore-case} and "
+"@code{ls-lisp-dirs-first} to @code{t}, and @code{ls-lisp-verbosity} to "
+"@code{(links)} on Windows NT/2K/XP/2K3 and to @code{nil} on Windows 9X@.  "
+"Note that the default emulation is @emph{not} @code{MS-Windows}, even on "
+"Windows, since many users of Emacs on those platforms prefer the @sc{gnu} "
+"defaults."
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:387
+msgid ""
+"Any other value of @code{ls-lisp-emulation} means the same as @code{GNU}.  "
+"Customizing this option calls the function @code{ls-lisp-set-options} to "
+"update the 3 dependent options as needed.  If you change the value of this "
+"variable without using customize after @file{ls-lisp.el} is loaded (note "
+"that it is preloaded on MS-Windows and MS-DOS), you can call that function "
+"manually for the same result."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:388
+#, no-wrap
+msgid "ls-lisp-support-shell-wildcards"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:393
+msgid ""
+"The variable @code{ls-lisp-support-shell-wildcards} controls how file-name "
+"patterns are supported: if it is non-@code{nil} (the default), they are "
+"treated as shell-style wildcards; otherwise they are treated as Emacs "
+"regular expressions."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:394
+#, no-wrap
+msgid "ls-lisp-format-time-list"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:401
+msgid ""
+"The variable @code{ls-lisp-format-time-list} defines how to format the date "
+"and time of files.  @emph{The value of this variable is ignored}, unless "
+"Emacs cannot determine the current locale.  (However, if the value of "
+"@code{ls-lisp-use-localized-time-format} is non-@code{nil}, Emacs obeys "
+"@code{ls-lisp-format-time-list} even if the current locale is available; see "
+"below.)"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:407
+msgid ""
+"The value of @code{ls-lisp-format-time-list} is a list of 2 strings.  The "
+"first string is used if the file was modified within the current year, while "
+"the second string is used for older files.  In each of these two strings you "
+"can use @samp{%}-sequences to substitute parts of the time.  For example:"
+msgstr ""
+
+#. type: lisp
+#: msdog.texi.orig:409
+#, no-wrap
+msgid "(\"%b %e %H:%M\" \"%b %e  %Y\")\n"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:415
+msgid ""
+"Note that the strings substituted for these @samp{%}-sequences depend on the "
+"current locale.  @xref{Time Parsing,,, elisp, The Emacs Lisp Reference "
+"Manual}, for more about format time specs."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:416
+#, no-wrap
+msgid "ls-lisp-use-localized-time-format"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:424
+msgid ""
+"Normally, Emacs formats the file time stamps in either traditional or "
+"ISO-style time format.  However, if the value of the variable "
+"@code{ls-lisp-use-localized-time-format} is non-@code{nil}, Emacs formats "
+"file time stamps according to what @code{ls-lisp-format-time-list} "
+"specifies.  The @samp{%}-sequences in @code{ls-lisp-format-time-list} "
+"produce locale-dependent month and day names, which might cause misalignment "
+"of columns in Dired display."
+msgstr ""
+
+#. type: section
+#: msdog.texi.orig:427
+#, no-wrap
+msgid "HOME and Startup Directories on MS-Windows"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:428
+#, no-wrap
+msgid "HOME directory on MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:439
+msgid ""
+"The Windows equivalent of @code{HOME} is the @dfn{user-specific application "
+"data directory}.  The actual location depends on the Windows version; "
+"typical values are @file{C:\\Documents and "
+"Settings\\@var{username}\\Application Data} on Windows 2000/XP/2K3, "
+"@file{C:\\Users\\@var{username}\\AppData\\Roaming} on Windows Vista/7/2008, "
+"and either @file{C:\\WINDOWS\\Application Data} or "
+"@file{C:\\WINDOWS\\Profiles\\@var{username}\\Application Data} on Windows "
+"9X/ME@.  If this directory does not exist or cannot be accessed, Emacs falls "
+"back to @file{C:\\} as the default value of @code{HOME}."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:446
+msgid ""
+"You can override this default value of @code{HOME} by explicitly setting the "
+"environment variable @env{HOME} to point to any directory on your system.  "
+"@env{HOME} can be set either from the command shell prompt or from "
+"@samp{Properties} dialog of @samp{My Computer}.  @code{HOME} can also be set "
+"in the system registry, @pxref{MS-Windows Registry}."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:457
+msgid ""
+"For compatibility with older versions of Emacs@footnote{ Older versions of "
+"Emacs didn't check the application data directory.  }, if there is a file "
+"named @file{.emacs} in @file{C:\\}, the root directory of drive @file{C:}, "
+"and @env{HOME} is set neither in the environment nor in the Registry, Emacs "
+"will treat @file{C:\\} as the default @code{HOME} location, and will not "
+"look in the application data directory, even if it exists.  Note that only "
+"@file{.emacs} is looked for in @file{C:\\}; the older name @file{_emacs} "
+"(see below) is not.  This use of @file{C:\\.emacs} to define @code{HOME} is "
+"deprecated."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:462
+msgid ""
+"Whatever the final place is, Emacs sets the internal value of the @env{HOME} "
+"environment variable to point to it, and it will use that location for other "
+"files and directories it normally looks for or creates in your home "
+"directory."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:468
+msgid ""
+"You can always find out what Emacs thinks is your home directory's location "
+"by typing @kbd{C-x d ~/ @key{RET}}.  This should present the list of files "
+"in the home directory, and show its full name on the first line.  Likewise, "
+"to visit your init file, type @kbd{C-x C-f ~/.emacs @key{RET}} (assuming the "
+"file's name is @file{.emacs})."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:469
+#, no-wrap
+msgid "init file @file{.emacs} on MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:472
+msgid ""
+"The home directory is where your init file is stored.  It can have any name "
+"mentioned in @ref{Init File}."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:473
+#, no-wrap
+msgid "@file{_emacs} init file, MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:479
+msgid ""
+"Because MS-DOS does not allow file names with leading dots, and older "
+"Windows systems made it hard to create files with such names, the Windows "
+"port of Emacs supports an init file name @file{_emacs}, if such a file "
+"exists in the home directory and @file{.emacs} does not.  This name is "
+"considered obsolete."
+msgstr ""
+
+#. type: section
+#: msdog.texi.orig:481
+#, no-wrap
+msgid "Keyboard Usage on MS-Windows"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:482
+#, no-wrap
+msgid "keyboard, MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:486
+msgid ""
+"This section describes the Windows-specific features related to keyboard "
+"input in Emacs."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:487
+#, no-wrap
+msgid "MS-Windows keyboard shortcuts"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:495
+msgid ""
+"Many key combinations (known as ``keyboard shortcuts'') that have "
+"conventional uses in MS-Windows programs conflict with traditional Emacs key "
+"bindings.  (These Emacs key bindings were established years before Microsoft "
+"was founded.)  Examples of conflicts include @kbd{C-c}, @kbd{C-x}, "
+"@kbd{C-z}, @kbd{C-a}, and @kbd{W-@key{SPC}}.  You can redefine some of them "
+"with meanings more like the MS-Windows meanings by enabling CUA Mode "
+"(@pxref{CUA Bindings})."
+msgstr ""
+
+#. type: iftex
+#: msdog.texi.orig:499
+msgid ""
+"@inforef{Windows Keyboard, , emacs}, for information about additional "
+"Windows-specific variables in this category."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:501
+#, no-wrap
+msgid "w32-alt-is-meta"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:502
+#, no-wrap
+msgid "@code{Alt} key (MS-Windows)"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:506
+msgid ""
+"By default, the key labeled @key{Alt} is mapped as the @key{META} key.  If "
+"you wish it to produce the @code{Alt} modifier instead, set the variable "
+"@code{w32-alt-is-meta} to a @code{nil} value."
+msgstr ""
+
+#. type: findex
+#: msdog.texi.orig:507
+#, no-wrap
+msgid "w32-register-hot-key"
+msgstr ""
+
+#. type: findex
+#: msdog.texi.orig:508
+#, no-wrap
+msgid "w32-unregister-hot-key"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:519
+msgid ""
+"MS-Windows reserves certain key combinations, such as "
+"@kbd{@key{Alt}-@key{TAB}}, for its own use.  These key combinations are "
+"intercepted by the system before Emacs can see them.  You can use the "
+"@code{w32-register-hot-key} function to allow a key sequence to be seen by "
+"Emacs instead of being grabbed by Windows.  This function registers a key "
+"sequence as a @dfn{hot key}, overriding the special meaning of that key "
+"sequence for Windows.  (MS-Windows is told that the key sequence is a hot "
+"key only when one of the Emacs windows has focus, so that the special keys "
+"still have their usual meaning for other Windows applications.)"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:528
+msgid ""
+"The argument to @code{w32-register-hot-key} must be a single key, with or "
+"without modifiers, in vector form that would be acceptable to "
+"@code{define-key}.  The meta modifier is interpreted as the @key{Alt} key if "
+"@code{w32-alt-is-meta} is @code{t} (the default), and the hyper modifier is "
+"always interpreted as the Windows key (usually labeled with @key{start} and "
+"the Windows logo).  If the function succeeds in registering the key "
+"sequence, it returns the hotkey ID, a number; otherwise it returns "
+"@code{nil}."
+msgstr ""
+
+#. type: kindex
+#: msdog.texi.orig:529
+#, no-wrap
+msgid "M-TAB@r{, (MS-Windows)}"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:530
+#, no-wrap
+msgid "@kbd{M-@key{TAB}} vs @kbd{@key{Alt}-@key{TAB}} (MS-Windows)"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:531
+#, no-wrap
+msgid "@kbd{@key{Alt}-@key{TAB}} vs @kbd{M-@key{TAB}} (MS-Windows)"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:536
+msgid ""
+"For example, @code{(w32-register-hot-key [M-tab])} lets you use "
+"@kbd{M-@key{TAB}} normally in Emacs; for instance, to complete the word or "
+"symbol at point at top level, or to complete the current search string "
+"against previously sought strings during incremental search."
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:539
+msgid ""
+"The function @code{w32-unregister-hot-key} reverses the effect of "
+"@code{w32-register-hot-key} for its argument key sequence."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:540
+#, no-wrap
+msgid "w32-capslock-is-shiftlock"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:547
+msgid ""
+"By default, the @key{CapsLock} key only affects normal character keys (it "
+"converts lower-case characters to their upper-case variants).  However, if "
+"you set the variable @code{w32-capslock-is-shiftlock} to a non-@code{nil} "
+"value, the @key{CapsLock} key will affect non-character keys as well, as if "
+"you pressed the @key{Shift} key while typing the non-character key."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:548
+#, no-wrap
+msgid "w32-enable-caps-lock"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:553
+msgid ""
+"If the variable @code{w32-enable-caps-lock} is set to a @code{nil} value, "
+"the @key{CapsLock} key produces the symbol @code{capslock} instead of the "
+"shifted version of they keys.  The default value is @code{t}."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:554
+#, no-wrap
+msgid "w32-enable-num-lock"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:555
+#, no-wrap
+msgid "keypad keys (MS-Windows)"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:560
+msgid ""
+"Similarly, if @code{w32-enable-num-lock} is @code{nil}, the @key{NumLock} "
+"key will produce the symbol @code{kp-numlock}.  The default is @code{t}, "
+"which causes @key{NumLock} to work as expected: toggle the meaning of the "
+"keys on the numeric keypad."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:562
+#, no-wrap
+msgid "w32-apps-modifier"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:569
+msgid ""
+"The variable @code{w32-apps-modifier} controls the effect of the @key{Apps} "
+"key (usually located between the right @key{Alt} and the right @key{Ctrl} "
+"keys).  Its value can be one of the symbols @code{hyper}, @code{super}, "
+"@code{meta}, @code{alt}, @code{control}, or @code{shift} for the respective "
+"modifier, or @code{nil} to appear as the key @code{apps}.  The default is "
+"@code{nil}."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:570
+#, no-wrap
+msgid "w32-lwindow-modifier"
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:571
+#, no-wrap
+msgid "w32-rwindow-modifier"
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:572
+#, no-wrap
+msgid "w32-scroll-lock-modifier"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:584
+msgid ""
+"The variable @code{w32-lwindow-modifier} determines the effect of the left "
+"Windows key (usually labeled with @key{start} and the Windows logo).  If its "
+"value is @code{nil} (the default), the key will produce the symbol "
+"@code{lwindow}.  Setting it to one of the symbols @code{hyper}, "
+"@code{super}, @code{meta}, @code{alt}, @code{control}, or @code{shift} will "
+"produce the respective modifier.  A similar variable "
+"@code{w32-rwindow-modifier} controls the effect of the right Windows key, "
+"and @code{w32-scroll-lock-modifier} does the same for the @key{ScrLock} "
+"key.  If these variables are set to @code{nil}, the right Windows key "
+"produces the symbol @code{rwindow} and @key{ScrLock} produces the symbol "
+"@code{scroll}."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:585
+#, no-wrap
+msgid "w32-pass-alt-to-system"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:586
+#, no-wrap
+msgid "Windows system menu"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:587
+#, no-wrap
+msgid "@code{Alt} key invokes menu (Windows)"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:595
+msgid ""
+"Emacs compiled as a native Windows application normally turns off the "
+"Windows feature that tapping the @key{Alt} key invokes the Windows menu.  "
+"The reason is that the @key{Alt} serves as @key{META} in Emacs.  When using "
+"Emacs, users often press the @key{META} key temporarily and then change "
+"their minds; if this has the effect of bringing up the Windows menu, it "
+"alters the meaning of subsequent commands.  Many users find this "
+"frustrating."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:599
+msgid ""
+"You can re-enable Windows's default handling of tapping the @key{Alt} key by "
+"setting @code{w32-pass-alt-to-system} to a non-@code{nil} value."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:601
+#, no-wrap
+msgid "w32-pass-lwindow-to-system"
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:602
+#, no-wrap
+msgid "w32-pass-rwindow-to-system"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:616
+msgid ""
+"The variables @code{w32-pass-lwindow-to-system} and "
+"@code{w32-pass-rwindow-to-system} determine whether the respective keys are "
+"passed to Windows or swallowed by Emacs.  If the value is @code{nil}, the "
+"respective key is silently swallowed by Emacs, otherwise it is passed to "
+"Windows.  The default is @code{t} for both of these variables.  Passing each "
+"of these keys to Windows produces its normal effect: for example, "
+"@kbd{@key{Lwindow}} opens the @code{Start} menu, etc.@footnote{ Some "
+"combinations of the ``Windows'' keys with other keys are caught by Windows "
+"at a low level in a way that Emacs currently cannot prevent.  For example, "
+"@kbd{@key{Lwindow} r} always pops up the Windows @samp{Run} dialog.  "
+"Customizing the value of @code{w32-phantom-key-code} might help in some "
+"cases, though.}"
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:617
+#, no-wrap
+msgid "w32-recognize-altgr"
+msgstr ""
+
+#. type: kindex
+#: msdog.texi.orig:618
+#, no-wrap
+msgid "AltGr @r{(MS-Windows)}"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:619
+#, no-wrap
+msgid "AltGr key (MS-Windows)"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:628
+msgid ""
+"The variable @code{w32-recognize-altgr} controls whether the @key{AltGr} key "
+"(if it exists on your keyboard), or its equivalent, the combination of the "
+"right @key{Alt} and left @key{Ctrl} keys pressed together, is recognized as "
+"the @key{AltGr} key.  The default is @code{t}, which means these keys "
+"produce @code{AltGr}; setting it to @code{nil} causes @key{AltGr} or the "
+"equivalent key combination to be interpreted as the combination of "
+"@key{Ctrl} and @key{META} modifiers."
+msgstr ""
+
+#. type: section
+#: msdog.texi.orig:631
+#, no-wrap
+msgid "Mouse Usage on MS-Windows"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:632
+#, no-wrap
+msgid "mouse, and MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:636
+msgid "This section describes the Windows-specific variables related to the mouse."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:637
+#, no-wrap
+msgid "w32-mouse-button-tolerance"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:638
+#, no-wrap
+msgid "simulation of middle mouse button"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:644
+msgid ""
+"The variable @code{w32-mouse-button-tolerance} specifies the time interval, "
+"in milliseconds, for faking middle mouse button press on 2-button mice.  If "
+"both mouse buttons are depressed within this time interval, Emacs generates "
+"a middle mouse button click event instead of a double click on one of the "
+"buttons."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:645
+#, no-wrap
+msgid "w32-pass-extra-mouse-buttons-to-system"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:649
+msgid ""
+"If the variable @code{w32-pass-extra-mouse-buttons-to-system} is "
+"non-@code{nil}, Emacs passes the fourth and fifth mouse buttons to Windows."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:650
+#, no-wrap
+msgid "w32-swap-mouse-buttons"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:656
+msgid ""
+"The variable @code{w32-swap-mouse-buttons} controls which of the 3 mouse "
+"buttons generates the @kbd{mouse-2} events.  When it is @code{nil} (the "
+"default), the middle button generates @kbd{mouse-2} and the right button "
+"generates @kbd{mouse-3} events.  If this variable is non-@code{nil}, the "
+"roles of these two buttons are reversed."
+msgstr ""
+
+#. type: section
+#: msdog.texi.orig:658
+#, no-wrap
+msgid "Subprocesses on Windows 9X/ME and Windows NT/2K/XP"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:659
+#, no-wrap
+msgid "subprocesses on MS-Windows"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:661
+#, no-wrap
+msgid "DOS applications, running from Emacs"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:671
+msgid ""
+"Emacs compiled as a native Windows application (as opposed to the DOS "
+"version) includes full support for asynchronous subprocesses.  In the "
+"Windows version, synchronous and asynchronous subprocesses work fine on both "
+"Windows 9X/ME and Windows NT/2K/XP as long as you run only 32-bit Windows "
+"applications.  However, when you run a DOS application in a subprocess, you "
+"may encounter problems or be unable to run the application at all; and if "
+"you run two DOS applications at the same time in two subprocesses, you may "
+"have to reboot your system."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:676
+msgid ""
+"Since the standard command interpreter (and most command line utilities)  on "
+"Windows 9X are DOS applications, these problems are significant when using "
+"that system.  But there's nothing we can do about them; only Microsoft can "
+"fix them."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:683
+msgid ""
+"If you run just one DOS application subprocess, the subprocess should work "
+"as expected as long as it is ``well-behaved'' and does not perform direct "
+"screen access or other unusual actions.  If you have a CPU monitor "
+"application, your machine will appear to be 100% busy even when the DOS "
+"application is idle, but this is only an artifact of the way CPU monitors "
+"measure processor load."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:688
+msgid ""
+"You must terminate the DOS application before you start any other DOS "
+"application in a different subprocess.  Emacs is unable to interrupt or "
+"terminate a DOS subprocess.  The only way you can terminate such a "
+"subprocess is by giving it a command that tells its program to exit."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:692
+msgid ""
+"If you attempt to run two DOS applications at the same time in separate "
+"subprocesses, the second one that is started will be suspended until the "
+"first one finishes, even if either or both of them are asynchronous."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:693
+#, no-wrap
+msgid "kill DOS application"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:702
+msgid ""
+"If you can go to the first subprocess, and tell it to exit, the second "
+"subprocess should continue normally.  However, if the second subprocess is "
+"synchronous, Emacs itself will be hung until the first subprocess finishes.  "
+"If it will not finish without user input, then you have no choice but to "
+"reboot if you are running on Windows 9X@.  If you are running on Windows "
+"NT/2K/XP, you can use a process viewer application to kill the appropriate "
+"instance of NTVDM instead (this will terminate both DOS subprocesses)."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:708
+msgid ""
+"If you have to reboot Windows 9X in this situation, do not use the "
+"@code{Shutdown} command on the @code{Start} menu; that usually hangs the "
+"system.  Instead, type @kbd{@key{Ctrl}-@key{Alt}-@key{DEL}} and then choose "
+"@code{Shutdown}.  That usually works, although it may take a few minutes to "
+"do its job."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:709
+#, no-wrap
+msgid "w32-quote-process-args"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:715
+msgid ""
+"The variable @code{w32-quote-process-args} controls how Emacs quotes the "
+"process arguments.  Non-@code{nil} means quote with the @code{\"} "
+"character.  If the value is a character, Emacs uses that character to escape "
+"any quote characters that appear; otherwise it chooses a suitable escape "
+"character based on the type of the program."
+msgstr ""
+
+#. type: findex
+#: msdog.texi.orig:717
+#, no-wrap
+msgid "w32-shell-execute"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:724
+msgid ""
+"The function @code{w32-shell-execute} can be useful for writing customized "
+"commands that run MS-Windows applications registered to handle a certain "
+"standard Windows operation for a specific type of document or file.  This "
+"function is a wrapper around the Windows @code{ShellExecute} API@.  See the "
+"MS-Windows API documentation for more details."
+msgstr ""
+
+#. type: section
+#: msdog.texi.orig:727
+#, no-wrap
+msgid "Printing and MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:735
+msgid ""
+"Printing commands, such as @code{lpr-buffer} (@pxref{Printing}) and "
+"@code{ps-print-buffer} (@pxref{PostScript}) work in MS-DOS and MS-Windows by "
+"sending the output to one of the printer ports, if a Posix-style @code{lpr} "
+"program is unavailable.  The same Emacs variables control printing on all "
+"systems, but in some cases they have different default values on MS-DOS and "
+"MS-Windows."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:741
+msgid ""
+"Emacs on MS Windows attempts to determine your default printer automatically "
+"(using the function @code{default-printer-name}).  But in some rare cases "
+"this can fail, or you may wish to use a different printer from within "
+"Emacs.  The rest of this section explains how to tell Emacs which printer to "
+"use."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:742
+#, no-wrap
+msgid "printer-name@r{, (MS-DOS/MS-Windows)}"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:752
+msgid ""
+"If you want to use your local printer, then set the Lisp variable "
+"@code{lpr-command} to @code{\"\"} (its default value on Windows) and "
+"@code{printer-name} to the name of the printer port---for example, "
+"@code{\"PRN\"}, the usual local printer port, or @code{\"LPT2\"}, or "
+"@code{\"COM1\"} for a serial printer.  You can also set @code{printer-name} "
+"to a file name, in which case ``printed'' output is actually appended to "
+"that file.  If you set @code{printer-name} to @code{\"NUL\"}, printed output "
+"is silently discarded (sent to the system null device)."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:763
+msgid ""
+"You can also use a printer shared by another machine by setting "
+"@code{printer-name} to the UNC share name for that printer---for example, "
+"@code{\"//joes_pc/hp4si\"}.  (It doesn't matter whether you use forward "
+"slashes or backslashes here.)  To find out the names of shared printers, run "
+"the command @samp{net view} from the command prompt to obtain a list of "
+"servers, and @samp{net view @var{server-name}} to see the names of printers "
+"(and directories) shared by that server.  Alternatively, click the "
+"@samp{Network Neighborhood} icon on your desktop, and look for machines that "
+"share their printers via the network."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:764
+#, no-wrap
+msgid "@samp{net use}, and printing on MS-Windows"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:765
+#, no-wrap
+msgid "networked printers (MS-Windows)"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:778
+msgid ""
+"If the printer doesn't appear in the output of @samp{net view}, or if "
+"setting @code{printer-name} to the UNC share name doesn't produce a hardcopy "
+"on that printer, you can use the @samp{net use} command to connect a local "
+"print port such as @code{\"LPT2\"} to the networked printer.  For example, "
+"typing @kbd{net use LPT2: \\\\joes_pc\\hp4si}@footnote{ Note that the "
+"@samp{net use} command requires the UNC share name to be typed with the "
+"Windows-style backslashes, while the value of @code{printer-name} can be set "
+"with either forward- or backslashes.} causes Windows to @dfn{capture} the "
+"@code{LPT2} port and redirect the printed material to the printer connected "
+"to the machine @code{joes_pc}.  After this command, setting "
+"@code{printer-name} to @code{\"LPT2\"} should produce the hardcopy on the "
+"networked printer."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:783
+msgid ""
+"With some varieties of Windows network software, you can instruct Windows to "
+"capture a specific printer port such as @code{\"LPT2\"}, and redirect it to "
+"a networked printer via the @w{@code{Control Panel->Printers}} applet "
+"instead of @samp{net use}."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:790
+msgid ""
+"If you set @code{printer-name} to a file name, it's best to use an absolute "
+"file name.  Emacs changes the working directory according to the default "
+"directory of the current buffer, so if the file name in @code{printer-name} "
+"is relative, you will end up with several such files, each one in the "
+"directory of the buffer from which the printing was done."
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:796
+msgid ""
+"If the value of @code{printer-name} is correct, but printing does not "
+"produce the hardcopy on your printer, it is possible that your printer does "
+"not support printing plain text (some cheap printers omit this "
+"functionality).  In that case, try the PostScript print commands, described "
+"below."
+msgstr ""
+
+#. type: findex
+#: msdog.texi.orig:797
+#, no-wrap
+msgid "print-buffer @r{(MS-DOS)}"
+msgstr ""
+
+#. type: findex
+#: msdog.texi.orig:798
+#, no-wrap
+msgid "print-region @r{(MS-DOS)}"
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:799
+#, no-wrap
+msgid "lpr-headers-switches @r{(MS-DOS)}"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:812
+msgid ""
+"The commands @code{print-buffer} and @code{print-region} call the @code{pr} "
+"program, or use special switches to the @code{lpr} program, to produce "
+"headers on each printed page.  MS-DOS and MS-Windows don't normally have "
+"these programs, so by default, the variable @code{lpr-headers-switches} is "
+"set so that the requests to print page headers are silently ignored.  Thus, "
+"@code{print-buffer} and @code{print-region} produce the same output as "
+"@code{lpr-buffer} and @code{lpr-region}, respectively.  If you do have a "
+"suitable @code{pr} program (for example, from GNU Coreutils), set "
+"@code{lpr-headers-switches} to @code{nil}; Emacs will then call @code{pr} to "
+"produce the page headers, and print the resulting output as specified by "
+"@code{printer-name}."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:813
+#, no-wrap
+msgid "print-region-function @r{(MS-DOS)}"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:814
+#, no-wrap
+msgid "lpr usage under MS-DOS"
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:815
+#, no-wrap
+msgid "lpr-command @r{(MS-DOS)}"
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:816
+#, no-wrap
+msgid "lpr-switches @r{(MS-DOS)}"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:825
+msgid ""
+"Finally, if you do have an @code{lpr} work-alike, you can set the variable "
+"@code{lpr-command} to @code{\"lpr\"}.  Then Emacs will use @code{lpr} for "
+"printing, as on other systems.  (If the name of the program isn't "
+"@code{lpr}, set @code{lpr-command} to the appropriate value.)  The variable "
+"@code{lpr-switches} has its standard meaning when @code{lpr-command} is not "
+"@code{\"\"}.  If the variable @code{printer-name} has a string value, it is "
+"used as the value for the @code{-P} option to @code{lpr}, as on Unix."
+msgstr ""
+
+#. type: findex
+#: msdog.texi.orig:826
+#, no-wrap
+msgid "ps-print-buffer @r{(MS-DOS)}"
+msgstr ""
+
+#. type: findex
+#: msdog.texi.orig:827
+#, no-wrap
+msgid "ps-spool-buffer @r{(MS-DOS)}"
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:828
+#, no-wrap
+msgid "ps-printer-name @r{(MS-DOS)}"
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:829
+#, no-wrap
+msgid "ps-lpr-command @r{(MS-DOS)}"
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:830
+#, no-wrap
+msgid "ps-lpr-switches @r{(MS-DOS)}"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:841
+msgid ""
+"A parallel set of variables, @code{ps-lpr-command}, @code{ps-lpr-switches}, "
+"and @code{ps-printer-name} (@pxref{PostScript Variables}), defines how "
+"PostScript files should be printed.  These variables are used in the same "
+"way as the corresponding variables described above for non-PostScript "
+"printing.  Thus, the value of @code{ps-printer-name} is used as the name of "
+"the device (or file) to which PostScript output is sent, just as "
+"@code{printer-name} is used for non-PostScript printing.  (There are two "
+"distinct sets of variables in case you have two printers attached to two "
+"different ports, and only one of them is a PostScript printer.)"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:842
+#, no-wrap
+msgid "Ghostscript, use for PostScript printing"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:856
+msgid ""
+"The default value of the variable @code{ps-lpr-command} is @code{\"\"}, "
+"which causes PostScript output to be sent to the printer port specified by "
+"@code{ps-printer-name}; but @code{ps-lpr-command} can also be set to the "
+"name of a program which will accept PostScript files.  Thus, if you have a "
+"non-PostScript printer, you can set this variable to the name of a "
+"PostScript interpreter program (such as Ghostscript).  Any switches that "
+"need to be passed to the interpreter program are specified using "
+"@code{ps-lpr-switches}.  (If the value of @code{ps-printer-name} is a "
+"string, it will be added to the list of switches as the value for the "
+"@code{-P} option.  This is probably only useful if you are using @code{lpr}, "
+"so when using an interpreter typically you would set @code{ps-printer-name} "
+"to something other than a string so it is ignored.)"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:859
+msgid ""
+"For example, to use Ghostscript for printing on the system's default "
+"printer, put this in your @file{.emacs} file:"
+msgstr ""
+
+#. type: example
+#: msdog.texi.orig:866
+#, no-wrap
+msgid ""
+"(setq ps-printer-name t)\n"
+"(setq ps-lpr-command \"D:/gs6.01/bin/gswin32c.exe\")\n"
+"(setq ps-lpr-switches '(\"-q\" \"-dNOPAUSE\" \"-dBATCH\"\n"
+"                        \"-sDEVICE=mswinpr2\"\n"
+"                        \"-sPAPERSIZE=a4\"))\n"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:871
+msgid ""
+"(This assumes that Ghostscript is installed in the @file{D:/gs6.01} "
+"directory.)"
+msgstr ""
+
+#. type: section
+#: msdog.texi.orig:873
+#, no-wrap
+msgid "Specifying Fonts on MS-Windows"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:874
+#, no-wrap
+msgid "font specification (MS Windows)"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:879
+msgid ""
+"Starting with Emacs 23, fonts are specified by their name, size and optional "
+"properties.  The format for specifying fonts comes from the fontconfig "
+"library used in modern Free desktops:"
+msgstr ""
+
+#. type: example
+#: msdog.texi.orig:882
+#, no-wrap
+msgid "  [Family[-PointSize]][:Option1=Value1[:Option2=Value2[...]]]\n"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:885
+msgid "The old XLFD based format is also supported for backwards compatibility."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:886
+#, no-wrap
+msgid "font backend selection (MS-Windows)"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:902
+msgid ""
+"Emacs 23 and later supports a number of font backends.  Currently, the "
+"@code{gdi} and @code{uniscribe} backends are supported on Windows.  The "
+"@code{gdi} font backend is available on all versions of Windows, and "
+"supports all fonts that are natively supported by Windows.  The "
+"@code{uniscribe} font backend is available on Windows 2000 and later, and "
+"supports TrueType and OpenType fonts.  Some languages requiring complex "
+"layout can only be properly supported by the Uniscribe backend.  By default, "
+"both backends are enabled if supported, with @code{uniscribe} taking "
+"priority over @code{gdi}.  To override that and use the GDI backend even if "
+"Uniscribe is available, invoke Emacs with the @kbd{-xrm "
+"Emacs.fontBackend:gdi} command-line argument, or add a "
+"@code{Emacs.fontBackend} resource with the value @code{gdi} in the Registry "
+"under either the @samp{HKEY_CURRENT_USER\\SOFTWARE\\GNU\\Emacs} or the "
+"@samp{HKEY_LOCAL_MACHINE\\SOFTWARE\\GNU\\Emacs} key (@pxref{Resources})."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:903
+#, no-wrap
+msgid "font properties (MS Windows)"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:906
+msgid "Optional properties common to all font backends on MS-Windows are:"
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:909
+#, no-wrap
+msgid "font-weight-table @r{(MS-Windows)}"
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:910
+#, no-wrap
+msgid "weight"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:917
+msgid ""
+"Specifies the weight of the font.  Special values @code{light}, "
+"@code{medium}, @code{demibold}, @code{bold}, and @code{black} can be "
+"specified without @code{weight=} (e.g., @kbd{Courier New-12:bold}).  "
+"Otherwise, the weight should be a numeric value between 100 and 900, or one "
+"of the named weights in @code{font-weight-table}.  If unspecified, a regular "
+"font is assumed."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:918
+#, no-wrap
+msgid "font-slant-table @r{(MS-Windows)}"
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:919
+#, no-wrap
+msgid "slant"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:926
+msgid ""
+"Specifies whether the font is italic.  Special values @code{roman}, "
+"@code{italic} and @code{oblique} can be specified without @code{slant=} "
+"(e.g., @kbd{Courier New-12:italic}).  Otherwise, the slant should be a "
+"numeric value, or one of the named slants in @code{font-slant-table}.  On "
+"Windows, any slant above 150 is treated as italics, and anything below as "
+"roman."
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:927
+#, no-wrap
+msgid "family"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:930
+msgid ""
+"Specifies the font family, but normally this will be specified at the start "
+"of the font name."
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:931
+#, no-wrap
+msgid "pixelsize"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:934
+msgid ""
+"Specifies the font size in pixels.  This can be used instead of the point "
+"size specified after the family name."
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:935
+#, no-wrap
+msgid "adstyle"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:940
+msgid ""
+"Specifies additional style information for the font.  On MS-Windows, the "
+"values @code{mono}, @code{sans}, @code{serif}, @code{script} and "
+"@code{decorative} are recognized.  These are most useful as a fallback with "
+"the font family left unspecified."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:941
+#, no-wrap
+msgid "w32-charset-info-alist"
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:942
+#, no-wrap
+msgid "registry"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:948
+msgid ""
+"Specifies the character set registry that the font is expected to cover.  "
+"Most TrueType and OpenType fonts will be Unicode fonts that cover several "
+"national character sets, but you can narrow down the selection of fonts to "
+"those that support a particular character set by using a specific registry "
+"from @code{w32-charset-info-alist} here."
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:949
+#, no-wrap
+msgid "spacing"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:952
+msgid ""
+"Specifies how the font is spaced.  The @code{p} spacing specifies a "
+"proportional font, and @code{m} or @code{c} specify a monospaced font."
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:953
+#, no-wrap
+msgid "foundry"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:958
+msgid ""
+"Not used on Windows, but for informational purposes and to prevent problems "
+"with code that expects it to be set, is set internally to @code{raster} for "
+"bitmapped fonts, @code{outline} for scalable fonts, or @code{unknown} if the "
+"type cannot be determined as one of those."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:960
+#, no-wrap
+msgid "font properties (MS Windows gdi backend)"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:962
+msgid "Options specific to @code{GDI} fonts:"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:965
+#, no-wrap
+msgid "font scripts (MS Windows)"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:966
+#, no-wrap
+msgid "font Unicode subranges (MS Windows)"
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:967
+#, no-wrap
+msgid "script"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:969
+msgid "Specifies a Unicode subrange the font should support."
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:981
+msgid ""
+"The following scripts are recognized on Windows: @code{latin}, @code{greek}, "
+"@code{coptic}, @code{cyrillic}, @code{armenian}, @code{hebrew}, "
+"@code{arabic}, @code{syriac}, @code{nko}, @code{thaana}, @code{devanagari}, "
+"@code{bengali}, @code{gurmukhi}, @code{gujarati}, @code{oriya}, "
+"@code{tamil}, @code{telugu}, @code{kannada}, @code{malayam}, @code{sinhala}, "
+"@code{thai}, @code{lao}, @code{tibetan}, @code{myanmar}, @code{georgian}, "
+"@code{hangul}, @code{ethiopic}, @code{cherokee}, @code{canadian-aboriginal}, "
+"@code{ogham}, @code{runic}, @code{khmer}, @code{mongolian}, @code{symbol}, "
+"@code{braille}, @code{han}, @code{ideographic-description}, @code{cjk-misc}, "
+"@code{kana}, @code{bopomofo}, @code{kanbun}, @code{yi}, "
+"@code{byzantine-musical-symbol}, @code{musical-symbol}, and "
+"@code{mathematical}."
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:982
+#, no-wrap
+msgid "font antialiasing (MS Windows)"
+msgstr ""
+
+#. type: item
+#: msdog.texi.orig:983
+#, no-wrap
+msgid "antialias"
+msgstr ""
+
+#. type: table
+#: msdog.texi.orig:990
+msgid ""
+"Specifies the antialiasing method.  The value @code{none} means no "
+"antialiasing, @code{standard} means use standard antialiasing, "
+"@code{subpixel} means use subpixel antialiasing (known as Cleartype on "
+"Windows), and @code{natural} means use subpixel antialiasing with adjusted "
+"spacing between letters.  If unspecified, the font will use the system "
+"default antialiasing."
+msgstr ""
+
+#. type: section
+#: msdog.texi.orig:993
+#, no-wrap
+msgid "Miscellaneous Windows-specific features"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:996
+msgid "This section describes miscellaneous Windows-specific features."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:997
+#, no-wrap
+msgid "w32-use-visible-system-caret"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:998
+#, no-wrap
+msgid "screen reader software, MS-Windows"
+msgstr ""
+
+#. type: Plain text
+#: msdog.texi.orig:1008
+msgid ""
+"The variable @code{w32-use-visible-system-caret} is a flag that determines "
+"whether to make the system caret visible.  The default when no screen reader "
+"software is in use is @code{nil}, which means Emacs draws its own cursor to "
+"indicate the position of point.  A non-@code{nil} value means Emacs will "
+"indicate point location with the system caret; this facilitates use of "
+"screen reader software, and is the default when such software is detected "
+"when running Emacs.  When this variable is non-@code{nil}, other variables "
+"affecting the cursor display have no effect."
+msgstr ""
+
+#. type: iftex
+#: msdog.texi.orig:1012
+msgid ""
+"@inforef{Windows Misc, , emacs}, for information about additional "
+"Windows-specific variables in this category."
+msgstr ""
+
+#. type: vindex
+#: msdog.texi.orig:1015
+#, no-wrap
+msgid "w32-grab-focus-on-raise"
+msgstr ""
+
+#. type: cindex
+#: msdog.texi.orig:1016
+#, no-wrap
+msgid "frame focus policy, MS-Windows"
+msgstr ""
+
+#. type: ifnottex
+#: msdog.texi.orig:1021
+msgid ""
+"The variable @code{w32-grab-focus-on-raise}, if set to a non-@code{nil} "
+"value causes a frame to grab focus when it is raised.  The default is "
+"@code{t}, which fits well with the Windows default click-to-focus policy."
+msgstr ""
+
+#. type: include
+#: msdog.texi.orig:1024
+#, no-wrap
+msgid "msdog-xtra.texi"
+msgstr ""

@@ -1,0 +1,3930 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: node
+#: mule.texi.orig:4
+#, no-wrap
+msgid "International"
+msgstr ""
+
+#. type: chapter
+#: mule.texi.orig:5
+#, no-wrap
+msgid "International Character Set Support"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:8
+#, no-wrap
+msgid "international scripts"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:9
+#, no-wrap
+msgid "multibyte characters"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:10
+#, no-wrap
+msgid "encoding of characters"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:12 mule.texi.orig:276
+#, no-wrap
+msgid "Arabic"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:13 mule.texi.orig:279
+#, no-wrap
+msgid "Bengali"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:14 mule.texi.orig:287
+#, no-wrap
+msgid "Chinese"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:15 mule.texi.orig:291
+#, no-wrap
+msgid "Cyrillic"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:16
+#, no-wrap
+msgid "Han"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:17 mule.texi.orig:23
+#, no-wrap
+msgid "Hindi"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:18 mule.texi.orig:300
+#, no-wrap
+msgid "Ethiopic"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:19 mule.texi.orig:303
+#, no-wrap
+msgid "Georgian"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:20 mule.texi.orig:306
+#, no-wrap
+msgid "Greek"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:21
+#, no-wrap
+msgid "Hangul"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:22 mule.texi.orig:309
+#, no-wrap
+msgid "Hebrew"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:24 mule.texi.orig:310
+#, no-wrap
+msgid "IPA"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:25 mule.texi.orig:314
+#, no-wrap
+msgid "Japanese"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:26 mule.texi.orig:318
+#, no-wrap
+msgid "Korean"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:27 mule.texi.orig:321
+#, no-wrap
+msgid "Latin"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:28 mule.texi.orig:350
+#, no-wrap
+msgid "Thai"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:29 mule.texi.orig:358
+#, no-wrap
+msgid "Vietnamese"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:37
+msgid ""
+"Emacs supports a wide variety of international character sets, including "
+"European and Vietnamese variants of the Latin alphabet, as well as Arabic "
+"scripts, Brahmic scripts (for languages such as Bengali, Hindi, and Thai), "
+"Cyrillic, Ethiopic, Georgian, Greek, Han (for Chinese and Japanese), Hangul "
+"(for Korean), Hebrew and IPA@.  Emacs also supports various encodings of "
+"these characters that are used by other internationalized software, such as "
+"word processors and mailers."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:40
+msgid ""
+"Emacs allows editing text with international characters by supporting all "
+"the related activities:"
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:50
+msgid ""
+"You can visit files with non-@acronym{ASCII} characters, save "
+"non-@acronym{ASCII} text, and pass non-@acronym{ASCII} text between Emacs "
+"and programs it invokes (such as compilers, spell-checkers, and mailers).  "
+"Setting your language environment (@pxref{Language Environments}) takes care "
+"of setting up the coding systems and other options for a specific language "
+"or culture.  Alternatively, you can specify how Emacs should encode or "
+"decode text for each command; see @ref{Text Coding}."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:58
+msgid ""
+"You can display non-@acronym{ASCII} characters encoded by the various "
+"scripts.  This works by using appropriate fonts on graphics displays "
+"(@pxref{Defining Fontsets}), and by sending special codes to text displays "
+"(@pxref{Terminal Coding}).  If some characters are displayed incorrectly, "
+"refer to @ref{Undisplayable Characters}, which describes possible problems "
+"and explains how to solve them."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:64
+msgid ""
+"Characters from scripts whose natural ordering of text is from right to left "
+"are reordered for display (@pxref{Bidirectional Editing}).  These scripts "
+"include Arabic, Hebrew, Syriac, Thaana, and a few others."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:74
+msgid ""
+"You can insert non-@acronym{ASCII} characters or search for them.  To do "
+"that, you can specify an input method (@pxref{Select Input Method}) suitable "
+"for your language, or use the default input method set up when you chose "
+"your language environment.  If your keyboard can produce non-@acronym{ASCII} "
+"characters, you can select an appropriate keyboard coding system "
+"(@pxref{Terminal Coding}), and Emacs will accept those characters.  Latin-1 "
+"characters can also be input by using the @kbd{C-x 8} prefix, see "
+"@ref{Unibyte Mode}."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:78
+msgid ""
+"With the X Window System, your locale should be set to an appropriate value "
+"to make sure Emacs interprets keyboard input correctly; see @ref{Language "
+"Environments, locales}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:81
+msgid "The rest of this chapter describes these issues in detail."
+msgstr ""
+
+#. type: node
+#: mule.texi.orig:106 mule.texi.orig:108
+#, no-wrap
+msgid "International Chars"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Basic concepts of multibyte characters."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:106 mule.texi.orig:238 mule.texi.orig:239
+#, no-wrap
+msgid "Language Environments"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Setting things up for the language you use."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:106 mule.texi.orig:442 mule.texi.orig:443
+#, no-wrap
+msgid "Input Methods"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Entering text characters not on your keyboard."
+msgstr ""
+
+#. type: node
+#: mule.texi.orig:106 mule.texi.orig:554
+#, no-wrap
+msgid "Select Input Method"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Specifying your choice of input methods."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:106 mule.texi.orig:661 mule.texi.orig:662
+#, no-wrap
+msgid "Coding Systems"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Character set conversion when you read and write files, and so on."
+msgstr ""
+
+#. type: node
+#: mule.texi.orig:106 mule.texi.orig:801
+#, no-wrap
+msgid "Recognize Coding"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "How Emacs figures out which conversion to use."
+msgstr ""
+
+#. type: node
+#: mule.texi.orig:106 mule.texi.orig:921
+#, no-wrap
+msgid "Specify Coding"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Specifying a file's coding system explicitly."
+msgstr ""
+
+#. type: node
+#: mule.texi.orig:106 mule.texi.orig:944
+#, no-wrap
+msgid "Output Coding"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Choosing coding systems for output."
+msgstr ""
+
+#. type: node
+#: mule.texi.orig:106 mule.texi.orig:1000
+#, no-wrap
+msgid "Text Coding"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Choosing conversion to use for file text."
+msgstr ""
+
+#. type: node
+#: mule.texi.orig:106 mule.texi.orig:1095
+#, no-wrap
+msgid "Communication Coding"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Coding systems for interprocess communication."
+msgstr ""
+
+#. type: node
+#: mule.texi.orig:106 mule.texi.orig:1173
+#, no-wrap
+msgid "File Name Coding"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Coding systems for file @emph{names}."
+msgstr ""
+
+#. type: node
+#: mule.texi.orig:106 mule.texi.orig:1236
+#, no-wrap
+msgid "Terminal Coding"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Specifying coding systems for converting terminal input and output."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:106 mule.texi.orig:1298 mule.texi.orig:1299
+#, no-wrap
+msgid "Fontsets"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid ""
+"Fontsets are collections of fonts that cover the whole spectrum of "
+"characters."
+msgstr ""
+
+#. type: node
+#: mule.texi.orig:106 mule.texi.orig:1370
+#, no-wrap
+msgid "Defining Fontsets"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Defining a new fontset."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:106 mule.texi.orig:1519 mule.texi.orig:1520
+#, no-wrap
+msgid "Modifying Fontsets"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Modifying an existing fontset."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:106 mule.texi.orig:1558 mule.texi.orig:1559
+#, no-wrap
+msgid "Undisplayable Characters"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "When characters don't display."
+msgstr ""
+
+#. type: node
+#: mule.texi.orig:106 mule.texi.orig:1584
+#, no-wrap
+msgid "Unibyte Mode"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "You can pick one European character set to use without multibyte characters."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:106 mule.texi.orig:1679 mule.texi.orig:1680
+#, no-wrap
+msgid "Charsets"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "How Emacs groups its internal character codes."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:106 mule.texi.orig:1729 mule.texi.orig:1730
+#, no-wrap
+msgid "Bidirectional Editing"
+msgstr ""
+
+#. type: menuentry
+#: mule.texi.orig:106
+msgid "Support for right-to-left scripts."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:109
+#, no-wrap
+msgid "Introduction to International Character Sets"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:116
+msgid ""
+"The users of international character sets and scripts have established many "
+"more-or-less standard coding systems for storing files.  These coding "
+"systems are typically @dfn{multibyte}, meaning that sequences of two or more "
+"bytes are used to represent individual non-@acronym{ASCII} characters."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:117
+#, no-wrap
+msgid "Unicode"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:124
+msgid ""
+"Internally, Emacs uses its own multibyte character encoding, which is a "
+"superset of the @dfn{Unicode} standard.  This internal encoding allows "
+"characters from almost every known script to be intermixed in a single "
+"buffer or string.  Emacs translates between the multibyte character encoding "
+"and various other coding systems when reading and writing files, and when "
+"exchanging data with subprocesses."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:125
+#, no-wrap
+msgid "C-h h"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:126
+#, no-wrap
+msgid "view-hello-file"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:127
+#, no-wrap
+msgid "undisplayable characters"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:128
+#, no-wrap
+msgid "@samp{?} in display"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:134
+msgid ""
+"The command @kbd{C-h h} (@code{view-hello-file}) displays the file "
+"@file{etc/HELLO}, which illustrates various scripts by showing how to say "
+"``hello'' in many languages.  If some characters can't be displayed on your "
+"terminal, they appear as @samp{?} or as hollow boxes (@pxref{Undisplayable "
+"Characters})."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:143
+msgid ""
+"Keyboards, even in the countries where these character sets are used, "
+"generally don't have keys for all the characters in them.  You can insert "
+"characters that your keyboard does not support, using @kbd{C-q} "
+"(@code{quoted-insert}) or @kbd{C-x 8 @key{RET}} (@code{insert-char}).  "
+"@xref{Inserting Text}.  Emacs also supports various @dfn{input methods}, "
+"typically one for each script or language, which make it easier to type "
+"characters in the script.  @xref{Input Methods}."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:144
+#, no-wrap
+msgid "C-x RET"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:147
+msgid ""
+"The prefix key @kbd{C-x @key{RET}} is used for commands that pertain to "
+"multibyte characters, coding systems, and input methods."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:148
+#, no-wrap
+msgid "C-x ="
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:149
+#, no-wrap
+msgid "what-cursor-position"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:156
+msgid ""
+"The command @kbd{C-x =} (@code{what-cursor-position}) shows information "
+"about the character at point.  In addition to the character position, which "
+"was described in @ref{Position Info}, this command displays how the "
+"character is encoded.  For instance, it displays the following line in the "
+"echo area for the character @samp{c}:"
+msgstr ""
+
+#. type: smallexample
+#: mule.texi.orig:159
+#, no-wrap
+msgid "Char: c (99, #o143, #x63) point=28062 of 36168 (78%) column=53\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:169
+msgid ""
+"The four values after @samp{Char:} describe the character that follows "
+"point, first by showing it and then by giving its character code in decimal, "
+"octal and hex.  For a non-@acronym{ASCII} multibyte character, these are "
+"followed by @samp{file} and the character's representation, in hex, in the "
+"buffer's coding system, if that coding system encodes the character safely "
+"and with a single byte (@pxref{Coding Systems}).  If the character's "
+"encoding is longer than one byte, Emacs shows @samp{file ...}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:176
+msgid ""
+"As a special case, if the character lies in the range 128 (0200 octal) "
+"through 159 (0237 octal), it stands for a ``raw'' byte that does not "
+"correspond to any specific displayable character.  Such a ``character'' lies "
+"within the @code{eight-bit-control} character set, and is displayed as an "
+"escaped octal character code.  In this case, @kbd{C-x =} shows @samp{part of "
+"display ...} instead of @samp{file}."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:177
+#, no-wrap
+msgid "character set of character at point"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:178
+#, no-wrap
+msgid "font of character at point"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:179
+#, no-wrap
+msgid "text properties at point"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:180
+#, no-wrap
+msgid "face at point"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:183
+msgid ""
+"With a prefix argument (@kbd{C-u C-x =}), this command displays a detailed "
+"description of the character in a window:"
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:189
+msgid ""
+"The character set name, and the codes that identify the character within "
+"that character set; @acronym{ASCII} characters are identified as belonging "
+"to the @code{ascii} character set."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:192
+msgid "The character's script, syntax and categories."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:196
+msgid ""
+"What keys to type to input the character in the current input method (if it "
+"supports the character)."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:200
+msgid ""
+"The character's encodings, both internally in the buffer, and externally if "
+"you were to save the file."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:205
+msgid ""
+"If you are running Emacs on a graphical display, the font name and glyph "
+"code for the character.  If you are running Emacs on a text terminal, the "
+"code(s) sent to the terminal."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:211
+msgid ""
+"The character's text properties (@pxref{Text Properties,,, elisp, the Emacs "
+"Lisp Reference Manual}), including any non-default faces used to display the "
+"character, and any overlays containing it (@pxref{Overlays,,, elisp, the "
+"same manual})."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:214
+msgid "Here's an example, with some lines folded to fit into this manual:"
+msgstr ""
+
+#. type: smallexample
+#: mule.texi.orig:230
+#, no-wrap
+msgid ""
+"             position: 1 of 1 (0%), column: 0\n"
+"            character: @^e (displayed as @^e) (codepoint 234, #o352, #xea)\n"
+"    preferred charset: unicode (Unicode (ISO10646))\n"
+"code point in charset: 0xEA\n"
+"               script: latin\n"
+"               syntax: w        which means: word\n"
+"             category: .:Base, L:Left-to-right (strong), c:Chinese,\n"
+"                       j:Japanese, l:Latin, v:Viet\n"
+"             to input: type \"C-x 8 RET HEX-CODEPOINT\" or \"C-x 8 RET "
+"NAME\"\n"
+"          buffer code: #xC3 #xAA\n"
+"            file code: #xC3 #xAA (encoded by coding system utf-8-unix)\n"
+"              display: by this font (glyph code)\n"
+"    xft:-unknown-DejaVu Sans Mono-normal-normal-\n"
+"        normal-*-15-*-*-*-m-0-iso10646-1 (#xAC)\n"
+"\n"
+msgstr ""
+
+#. type: smallexample
+#: mule.texi.orig:236
+#, no-wrap
+msgid ""
+"Character code properties: customize what to show\n"
+"  name: LATIN SMALL LETTER E WITH CIRCUMFLEX\n"
+"  old-name: LATIN SMALL LETTER E CIRCUMFLEX\n"
+"  general-category: Ll (Letter, Lowercase)\n"
+"  decomposition: (101 770) ('e' '^')\n"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:240
+#, no-wrap
+msgid "language environments"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:249
+msgid ""
+"All supported character sets are supported in Emacs buffers whenever "
+"multibyte characters are enabled; there is no need to select a particular "
+"language in order to display its characters.  However, it is important to "
+"select a @dfn{language environment} in order to set various defaults.  "
+"Roughly speaking, the language environment represents a choice of preferred "
+"script rather than a choice of language."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:255
+msgid ""
+"The language environment controls which coding systems to recognize when "
+"reading text (@pxref{Recognize Coding}).  This applies to files, incoming "
+"mail, and any other text you read into Emacs.  It may also specify the "
+"default coding system to use when you create a file.  Each language "
+"environment also specifies a default input method."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:256
+#, no-wrap
+msgid "set-language-environment"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:257
+#, no-wrap
+msgid "current-language-environment"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:267
+msgid ""
+"To select a language environment, customize "
+"@code{current-language-environment} or use the command @kbd{M-x "
+"set-language-environment}.  It makes no difference which buffer is current "
+"when you use this command, because the effects apply globally to the Emacs "
+"session.  See the variable @code{language-info-alist} for the list of "
+"supported language environments, and use the command @kbd{C-h L "
+"@var{lang-env} @key{RET}} (@code{describe-language-environment})  for more "
+"information about the language environment @var{lang-env}.  Supported "
+"language environments include:"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:275
+#, no-wrap
+msgid "ASCII"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:278
+msgid "ASCII, Arabic,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:278
+#, no-wrap
+msgid "Belarusian"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:281
+msgid "Belarusian, Bengali,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:281
+#, no-wrap
+msgid "Brazilian Portuguese"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:282
+#, no-wrap
+msgid "Bulgarian"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:284
+msgid "Brazilian Portuguese, Bulgarian,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:284
+#, no-wrap
+msgid "Burmese"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:285
+#, no-wrap
+msgid "Cham"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:287
+msgid "Burmese, Cham,"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:290
+msgid ""
+"Chinese-BIG5, Chinese-CNS, Chinese-EUC-TW, Chinese-GB, Chinese-GB18030, "
+"Chinese-GBK,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:290
+#, no-wrap
+msgid "Croatian"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:293
+msgid "Croatian, Cyrillic-ALT, Cyrillic-ISO, Cyrillic-KOI8,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:293
+#, no-wrap
+msgid "Czech"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:294
+#, no-wrap
+msgid "Devanagari"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:296
+msgid "Czech, Devanagari,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:296
+#, no-wrap
+msgid "Dutch"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:297
+#, no-wrap
+msgid "English"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:299
+msgid "Dutch, English,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:299
+#, no-wrap
+msgid "Esperanto"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:302
+msgid "Esperanto, Ethiopic,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:302
+#, no-wrap
+msgid "French"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:305
+msgid "French, Georgian,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:305
+#, no-wrap
+msgid "German"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:307
+#, no-wrap
+msgid "Gujarati"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:309
+msgid "German, Greek, Gujarati,"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:312
+msgid "Hebrew, IPA,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:312
+#, no-wrap
+msgid "Italian"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:314
+msgid "Italian,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:315
+#, no-wrap
+msgid "Kannada"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:317
+msgid "Japanese, Kannada,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:317
+#, no-wrap
+msgid "Khmer"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:319
+#, no-wrap
+msgid "Lao"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:321
+msgid "Khmer, Korean, Lao,"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:324
+msgid ""
+"Latin-1, Latin-2, Latin-3, Latin-4, Latin-5, Latin-6, Latin-7, Latin-8, "
+"Latin-9,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:324
+#, no-wrap
+msgid "Latvian"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:325
+#, no-wrap
+msgid "Lithuanian"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:327
+msgid "Latvian, Lithuanian,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:327
+#, no-wrap
+msgid "Malayalam"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:328
+#, no-wrap
+msgid "Oriya"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:330
+msgid "Malayalam, Oriya,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:330
+#, no-wrap
+msgid "Persian"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:331
+#, no-wrap
+msgid "Polish"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:333
+msgid "Persian, Polish,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:333
+#, no-wrap
+msgid "Punjabi"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:334
+#, no-wrap
+msgid "Romanian"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:336
+msgid "Punjabi, Romanian,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:336
+#, no-wrap
+msgid "Russian"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:337
+#, no-wrap
+msgid "Sinhala"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:339
+msgid "Russian, Sinhala,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:339
+#, no-wrap
+msgid "Slovak"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:340
+#, no-wrap
+msgid "Slovenian"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:341
+#, no-wrap
+msgid "Spanish"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:343
+msgid "Slovak, Slovenian, Spanish,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:343
+#, no-wrap
+msgid "Swedish"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:344
+#, no-wrap
+msgid "TaiViet"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:346
+msgid "Swedish, TaiViet,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:346
+#, no-wrap
+msgid "Tajik"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:347
+#, no-wrap
+msgid "Tamil"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:349
+msgid "Tajik, Tamil,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:349
+#, no-wrap
+msgid "Telugu"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:352
+msgid "Telugu, Thai,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:352
+#, no-wrap
+msgid "Tibetan"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:353
+#, no-wrap
+msgid "Turkish"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:355
+msgid "Tibetan, Turkish,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:355
+#, no-wrap
+msgid "UTF-8"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:356
+#, no-wrap
+msgid "Ukrainian"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:358
+msgid "UTF-8, Ukrainian,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:359
+#, no-wrap
+msgid "Welsh"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:361
+msgid "Vietnamese, Welsh,"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:361
+#, no-wrap
+msgid "Windows-1255"
+msgstr ""
+
+#. type: quotation
+#: mule.texi.orig:363
+msgid "and Windows-1255."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:368
+msgid ""
+"To display the script(s) used by your language environment on a graphical "
+"display, you need to have suitable fonts.  @xref{Fontsets}, for more details "
+"about setting up your fonts."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:369
+#, no-wrap
+msgid "set-locale-environment"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:370
+#, no-wrap
+msgid "locale-language-names"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:371
+#, no-wrap
+msgid "locale-charset-language-names"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:372
+#, no-wrap
+msgid "locales"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:387
+msgid ""
+"Some operating systems let you specify the character-set locale you are "
+"using by setting the locale environment variables @env{LC_ALL}, "
+"@env{LC_CTYPE}, or @env{LANG}.  (If more than one of these is set, the first "
+"one that is nonempty specifies your locale for this purpose.)  During "
+"startup, Emacs looks up your character-set locale's name in the system "
+"locale alias table, matches its canonical name against entries in the value "
+"of the variables @code{locale-charset-language-names} and "
+"@code{locale-language-names} (the former overrides the latter), and selects "
+"the corresponding language environment if a match is found.  It also adjusts "
+"the display table and terminal coding system, the locale coding system, the "
+"preferred coding system as needed for the locale, and---last but not "
+"least---the way Emacs decodes non-@acronym{ASCII} characters sent by your "
+"keyboard."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:394
+msgid ""
+"If you modify the @env{LC_ALL}, @env{LC_CTYPE}, or @env{LANG} environment "
+"variables while running Emacs (by using @kbd{M-x setenv}), you may want to "
+"invoke the @code{set-locale-environment} function afterwards to readjust the "
+"language environment from the new locale."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:395
+#, no-wrap
+msgid "locale-preferred-coding-systems"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:404
+msgid ""
+"The @code{set-locale-environment} function normally uses the preferred "
+"coding system established by the language environment to decode system "
+"messages.  But if your locale matches an entry in the variable "
+"@code{locale-preferred-coding-systems}, Emacs uses the corresponding coding "
+"system instead.  For example, if the locale @samp{ja_JP.PCK} matches "
+"@code{japanese-shift-jis} in @code{locale-preferred-coding-systems}, Emacs "
+"uses that encoding even though it might normally use "
+"@code{japanese-iso-8bit}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:409
+msgid ""
+"You can override the language environment chosen at startup with explicit "
+"use of the command @code{set-language-environment}, or with customization of "
+"@code{current-language-environment} in your init file."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:410
+#, no-wrap
+msgid "C-h L"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:411
+#, no-wrap
+msgid "describe-language-environment"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:420
+msgid ""
+"To display information about the effects of a certain language environment "
+"@var{lang-env}, use the command @kbd{C-h L @var{lang-env} @key{RET}} "
+"(@code{describe-language-environment}).  This tells you which languages this "
+"language environment is useful for, and lists the character sets, coding "
+"systems, and input methods that go with it.  It also shows some sample text "
+"to illustrate scripts used in this language environment.  If you give an "
+"empty input for @var{lang-env}, this command describes the chosen language "
+"environment."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:421
+#, no-wrap
+msgid "set-language-environment-hook"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:431
+msgid ""
+"You can customize any language environment with the normal hook "
+"@code{set-language-environment-hook}.  The command "
+"@code{set-language-environment} runs that hook after setting up the new "
+"language environment.  The hook functions can test for a specific language "
+"environment by checking the variable @code{current-language-environment}.  "
+"This hook is where you should put non-default settings for specific language "
+"environments, such as coding systems for keyboard input and terminal output, "
+"the default input method, etc."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:432
+#, no-wrap
+msgid "exit-language-environment-hook"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:441
+msgid ""
+"Before it starts to set up the new language environment, "
+"@code{set-language-environment} first runs the hook "
+"@code{exit-language-environment-hook}.  This hook is useful for undoing "
+"customizations that were made with @code{set-language-environment-hook}.  "
+"For instance, if you set up a special key binding in a specific language "
+"environment using @code{set-language-environment-hook}, you should set up "
+"@code{exit-language-environment-hook} to restore the normal binding for that "
+"key."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:445
+#, no-wrap
+msgid "input methods"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:451
+msgid ""
+"An @dfn{input method} is a kind of character conversion designed "
+"specifically for interactive input.  In Emacs, typically each language has "
+"its own input method; sometimes several languages that use the same "
+"characters can share one input method.  A few languages support several "
+"input methods."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:456
+msgid ""
+"The simplest kind of input method works by mapping @acronym{ASCII} letters "
+"into another alphabet; this allows you to use one other alphabet instead of "
+"@acronym{ASCII}.  The Greek and Russian input methods work this way."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:464
+msgid ""
+"A more powerful technique is composition: converting sequences of characters "
+"into one letter.  Many European input methods use composition to produce a "
+"single non-@acronym{ASCII} letter from a sequence that consists of a letter "
+"followed by accent characters (or vice versa).  For example, some methods "
+"convert the sequence @kbd{o ^} into a single accented letter.  These input "
+"methods have no special commands of their own; all they do is compose "
+"sequences of printing characters."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:470
+msgid ""
+"The input methods for syllabic scripts typically use mapping followed by "
+"composition.  The input methods for Thai and Korean work this way.  First, "
+"letters are mapped into symbols for particular sounds or tone marks; then, "
+"sequences of these that make up a whole syllable are mapped into one "
+"syllable sign."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:480
+msgid ""
+"Chinese and Japanese require more complex methods.  In Chinese input "
+"methods, first you enter the phonetic spelling of a Chinese word (in input "
+"method @code{chinese-py}, among others), or a sequence of portions of the "
+"character (input methods @code{chinese-4corner} and @code{chinese-sw}, and "
+"others).  One input sequence typically corresponds to many possible Chinese "
+"characters.  You select the one you mean using keys such as @kbd{C-f}, "
+"@kbd{C-b}, @kbd{C-n}, @kbd{C-p} (or the arrow keys), and digits, which have "
+"special meanings in this situation."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:487
+msgid ""
+"The possible characters are conceptually arranged in several rows, with each "
+"row holding up to 10 alternatives.  Normally, Emacs displays just one row at "
+"a time, in the echo area; @code{(@var{i}/@var{j})} appears at the beginning, "
+"to indicate that this is the @var{i}th row out of a total of @var{j} rows.  "
+"Type @kbd{C-n} or @kbd{C-p} to display the next row or the previous row."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:495
+msgid ""
+"Type @kbd{C-f} and @kbd{C-b} to move forward and backward among the "
+"alternatives in the current row.  As you do this, Emacs highlights the "
+"current alternative with a special color; type @code{C-@key{SPC}} to select "
+"the current alternative and use it as input.  The alternatives in the row "
+"are also numbered; the number appears before the alternative.  Typing a "
+"number selects the associated alternative of the current row and uses it as "
+"input."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:502
+msgid ""
+"@key{TAB} in these Chinese input methods displays a buffer showing all the "
+"possible characters at once; then clicking @kbd{Mouse-2} on one of them "
+"selects that alternative.  The keys @kbd{C-f}, @kbd{C-b}, @kbd{C-n}, "
+"@kbd{C-p}, and digits continue to work as usual, but they do the "
+"highlighting in the buffer showing the possible characters, rather than in "
+"the echo area."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:509
+msgid ""
+"In Japanese input methods, first you input a whole word using phonetic "
+"spelling; then, after the word is in the buffer, Emacs converts it into one "
+"or more characters using a large dictionary.  One phonetic spelling "
+"corresponds to a number of different Japanese words; to select one of them, "
+"use @kbd{C-n} and @kbd{C-p} to cycle through the alternatives."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:515
+msgid ""
+"Sometimes it is useful to cut off input method processing so that the "
+"characters you have just entered will not combine with subsequent "
+"characters.  For example, in input method @code{latin-1-postfix}, the "
+"sequence @kbd{o ^} combines to form an @samp{o} with an accent.  What if you "
+"want to enter them as separate characters?"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:522
+msgid ""
+"One way is to type the accent twice; this is a special feature for entering "
+"the separate letter and accent.  For example, @kbd{o ^ ^} gives you the two "
+"characters @samp{o^}.  Another way is to type another letter after the "
+"@kbd{o}---something that won't combine with that---and immediately delete "
+"it.  For example, you could type @kbd{o o @key{DEL} ^} to get separate "
+"@samp{o} and @samp{^}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:526
+msgid ""
+"Another method, more general but not quite as easy to type, is to use "
+"@kbd{C-\\ C-\\} between two characters to stop them from combining.  This is "
+"the command @kbd{C-\\} (@code{toggle-input-method}) used twice."
+msgstr ""
+
+#. type: ifnottex
+#: mule.texi.orig:528
+msgid "@xref{Select Input Method}."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:530
+#, no-wrap
+msgid "incremental search, input method interference"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:534
+msgid ""
+"@kbd{C-\\ C-\\} is especially useful inside an incremental search, because "
+"it stops waiting for more characters to combine, and starts searching for "
+"what you have already entered."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:537
+msgid ""
+"To find out how to input the character after point using the current input "
+"method, type @kbd{C-u C-x =}.  @xref{Position Info}."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:538
+#, no-wrap
+msgid "input-method-verbose-flag"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:539
+#, no-wrap
+msgid "input-method-highlight-flag"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:548
+msgid ""
+"The variables @code{input-method-highlight-flag} and "
+"@code{input-method-verbose-flag} control how input methods explain what is "
+"happening.  If @code{input-method-highlight-flag} is non-@code{nil}, the "
+"partial sequence is highlighted in the buffer (for most input methods---some "
+"disable this feature).  If @code{input-method-verbose-flag} is "
+"non-@code{nil}, the list of possible characters to type next is displayed in "
+"the echo area (but not when you are in the minibuffer)."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:553
+msgid ""
+"Another facility for typing characters not on your keyboard is by using "
+"@kbd{C-x 8 @key{RET}} (@code{insert-char}) to insert a single character "
+"based on its Unicode name or code-point; see @ref{Inserting Text}."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:555
+#, no-wrap
+msgid "Selecting an Input Method"
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:558 mule.texi.orig:588
+#, no-wrap
+msgid "C-\\"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:560
+msgid ""
+"Enable or disable use of the selected input method "
+"(@code{toggle-input-method})."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:561
+#, no-wrap
+msgid "C-x @key{RET} C-\\ @var{method} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:563
+msgid "Select a new input method for the current buffer (@code{set-input-method})."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:564
+#, no-wrap
+msgid "C-h I @var{method} @key{RET}"
+msgstr ""
+
+#. type: itemx
+#: mule.texi.orig:565
+#, no-wrap
+msgid "C-h C-\\ @var{method} @key{RET}"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:566
+#, no-wrap
+msgid "describe-input-method"
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:567
+#, no-wrap
+msgid "C-h I"
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:568
+#, no-wrap
+msgid "C-h C-\\"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:573
+msgid ""
+"Describe the input method @var{method} (@code{describe-input-method}).  By "
+"default, it describes the current input method (if any).  This description "
+"should give you the full details of how to use any particular input method."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:574
+#, no-wrap
+msgid "M-x list-input-methods"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:576
+msgid "Display a list of all the supported input methods."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:578
+#, no-wrap
+msgid "set-input-method"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:579
+#, no-wrap
+msgid "current-input-method"
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:580
+#, no-wrap
+msgid "C-x RET C-\\"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:586
+msgid ""
+"To choose an input method for the current buffer, use @kbd{C-x @key{RET} "
+"C-\\} (@code{set-input-method}).  This command reads the input method name "
+"from the minibuffer; the name normally starts with the language environment "
+"that it is meant to be used with.  The variable @code{current-input-method} "
+"records which input method is selected."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:587
+#, no-wrap
+msgid "toggle-input-method"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:594
+msgid ""
+"Input methods use various sequences of @acronym{ASCII} characters to stand "
+"for non-@acronym{ASCII} characters.  Sometimes it is useful to turn off the "
+"input method temporarily.  To do this, type @kbd{C-\\} "
+"(@code{toggle-input-method}).  To reenable the input method, type @kbd{C-\\} "
+"again."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:598
+msgid ""
+"If you type @kbd{C-\\} and you have not yet selected an input method, it "
+"prompts you to specify one.  This has the same effect as using @kbd{C-x "
+"@key{RET} C-\\} to specify an input method."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:602
+msgid ""
+"When invoked with a numeric argument, as in @kbd{C-u C-\\}, "
+"@code{toggle-input-method} always prompts you for an input method, "
+"suggesting the most recently selected one as the default."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:603
+#, no-wrap
+msgid "default-input-method"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:609
+msgid ""
+"Selecting a language environment specifies a default input method for use in "
+"various buffers.  When you have a default input method, you can select it in "
+"the current buffer by typing @kbd{C-\\}.  The variable "
+"@code{default-input-method} specifies the default input method (@code{nil} "
+"means there is none)."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:617
+msgid ""
+"In some language environments, which support several different input "
+"methods, you might want to use an input method different from the default "
+"chosen by @code{set-language-environment}.  You can instruct Emacs to select "
+"a different default input method for a certain language environment, if you "
+"wish, by using @code{set-language-environment-hook} (@pxref{Language "
+"Environments, set-language-environment-hook}).  For example:"
+msgstr ""
+
+#. type: lisp
+#: mule.texi.orig:624
+#, no-wrap
+msgid ""
+"(defun my-chinese-setup ()\n"
+"  \"Set up my private Chinese environment.\"\n"
+"  (if (equal current-language-environment \"Chinese-GB\")\n"
+"      (setq default-input-method \"chinese-tonepy\")))\n"
+"(add-hook 'set-language-environment-hook 'my-chinese-setup)\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:629
+msgid ""
+"This sets the default input method to be @code{chinese-tonepy} whenever you "
+"choose a Chinese-GB language environment."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:632
+msgid ""
+"You can instruct Emacs to activate a certain input method automatically.  "
+"For example:"
+msgstr ""
+
+#. type: lisp
+#: mule.texi.orig:636
+#, no-wrap
+msgid ""
+"(add-hook 'text-mode-hook\n"
+"  (lambda () (set-input-method \"german-prefix\")))\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:641
+msgid ""
+"This automatically activates the input method ``german-prefix'' in Text "
+"mode."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:642
+#, no-wrap
+msgid "quail-set-keyboard-layout"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:648
+msgid ""
+"Some input methods for alphabetic scripts work by (in effect)  remapping the "
+"keyboard to emulate various keyboard layouts commonly used for those "
+"scripts.  How to do this remapping properly depends on your actual keyboard "
+"layout.  To specify which layout your keyboard has, use the command @kbd{M-x "
+"quail-set-keyboard-layout}."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:649
+#, no-wrap
+msgid "quail-show-key"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:655
+msgid ""
+"You can use the command @kbd{M-x quail-show-key} to show what key (or key "
+"sequence) to type in order to input the character following point, using the "
+"selected keyboard layout.  The command @kbd{C-u C-x =} also shows that "
+"information, in addition to other information about the character."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:656
+#, no-wrap
+msgid "list-input-methods"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:660
+msgid ""
+"@kbd{M-x list-input-methods} displays a list of all the supported input "
+"methods.  The list gives information about each input method, including the "
+"string that stands for it in the mode line."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:663
+#, no-wrap
+msgid "coding systems"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:672
+msgid ""
+"Users of various languages have established many more-or-less standard "
+"coding systems for representing them.  Emacs does not use these coding "
+"systems internally; instead, it converts from various coding systems to its "
+"own system when reading data, and converts the internal coding system to "
+"other coding systems when writing data.  Conversion is possible in reading "
+"or writing files, in sending or receiving from the terminal, and in "
+"exchanging data with subprocesses."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:679
+msgid ""
+"Emacs assigns a name to each coding system.  Most coding systems are used "
+"for one language, and the name of the coding system starts with the language "
+"name.  Some coding systems are used for several languages; their names "
+"usually start with @samp{iso}.  There are also special coding systems, such "
+"as @code{no-conversion}, @code{raw-text}, and @code{emacs-internal}."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:680
+#, no-wrap
+msgid "international files from DOS/Windows systems"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:689
+msgid ""
+"A special class of coding systems, collectively known as @dfn{codepages}, is "
+"designed to support text encoded by MS-Windows and MS-DOS software.  The "
+"names of these coding systems are @code{cp@var{nnnn}}, where @var{nnnn} is a "
+"3- or 4-digit number of the codepage.  You can use these encodings just like "
+"any other coding system; for example, to visit a file encoded in codepage "
+"850, type @kbd{C-x @key{RET} c cp850 @key{RET} C-x C-f @var{filename} "
+"@key{RET}}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:695
+msgid ""
+"In addition to converting various representations of non-@acronym{ASCII} "
+"characters, a coding system can perform end-of-line conversion.  Emacs "
+"handles three different conventions for how to separate lines in a file: "
+"newline (``unix''), carriage-return linefeed (``dos''), and just "
+"carriage-return (``mac'')."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:697
+#, no-wrap
+msgid "C-h C @var{coding} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:699
+msgid "Describe coding system @var{coding} (@code{describe-coding-system})."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:700
+#, no-wrap
+msgid "C-h C @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:702
+msgid "Describe the coding systems currently in use."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:703
+#, no-wrap
+msgid "M-x list-coding-systems"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:705
+msgid "Display a list of all the supported coding systems."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:707
+#, no-wrap
+msgid "C-h C"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:708
+#, no-wrap
+msgid "describe-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:716
+msgid ""
+"The command @kbd{C-h C} (@code{describe-coding-system}) displays information "
+"about particular coding systems, including the end-of-line conversion "
+"specified by those coding systems.  You can specify a coding system name as "
+"the argument; alternatively, with an empty argument, it describes the coding "
+"systems currently selected for various purposes, both in the current buffer "
+"and as the defaults, and the priority list for recognizing coding systems "
+"(@pxref{Recognize Coding})."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:717
+#, no-wrap
+msgid "list-coding-systems"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:722
+msgid ""
+"To display a list of all the supported coding systems, type @kbd{M-x "
+"list-coding-systems}.  The list gives information about each coding system, "
+"including the letter that stands for it in the mode line (@pxref{Mode "
+"Line})."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:723
+#, no-wrap
+msgid "end-of-line conversion"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:724
+#, no-wrap
+msgid "line endings"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:725
+#, no-wrap
+msgid "MS-DOS end-of-line conversion"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:726
+#, no-wrap
+msgid "Macintosh end-of-line conversion"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:733
+msgid ""
+"Each of the coding systems that appear in this list---except for "
+"@code{no-conversion}, which means no conversion of any kind---specifies how "
+"and whether to convert printing characters, but leaves the choice of "
+"end-of-line conversion to be decided based on the contents of each file.  "
+"For example, if the file appears to use the sequence carriage-return "
+"linefeed to separate lines, DOS end-of-line conversion will be used."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:736
+msgid ""
+"Each of the listed coding systems has three variants, which specify exactly "
+"what to do for end-of-line conversion:"
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:738
+#, no-wrap
+msgid "@dots{}-unix"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:742
+msgid ""
+"Don't do any end-of-line conversion; assume the file uses newline to "
+"separate lines.  (This is the convention normally used on Unix and GNU "
+"systems, and Mac OS X.)"
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:743
+#, no-wrap
+msgid "@dots{}-dos"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:750
+msgid ""
+"Assume the file uses carriage-return linefeed to separate lines, and do the "
+"appropriate conversion.  (This is the convention normally used on Microsoft "
+"systems.@footnote{It is also specified for MIME @samp{text/*} bodies and in "
+"other network transport contexts.  It is different from the SGML reference "
+"syntax record-start/record-end format, which Emacs doesn't support "
+"directly.})"
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:751
+#, no-wrap
+msgid "@dots{}-mac"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:755
+msgid ""
+"Assume the file uses carriage-return to separate lines, and do the "
+"appropriate conversion.  (This was the convention used on the Macintosh "
+"system prior to OS X.)"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:762
+msgid ""
+"These variant coding systems are omitted from the @code{list-coding-systems} "
+"display for brevity, since they are entirely predictable.  For example, the "
+"coding system @code{iso-latin-1} has variants @code{iso-latin-1-unix}, "
+"@code{iso-latin-1-dos} and @code{iso-latin-1-mac}."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:763
+#, no-wrap
+msgid "@code{undecided}, coding system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:769
+msgid ""
+"The coding systems @code{unix}, @code{dos}, and @code{mac} are aliases for "
+"@code{undecided-unix}, @code{undecided-dos}, and @code{undecided-mac}, "
+"respectively.  These coding systems specify only the end-of-line conversion, "
+"and leave the character code conversion to be deduced from the text itself."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:770
+#, no-wrap
+msgid "@code{raw-text}, coding system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:780
+msgid ""
+"The coding system @code{raw-text} is good for a file which is mainly "
+"@acronym{ASCII} text, but may contain byte values above 127 that are not "
+"meant to encode non-@acronym{ASCII} characters.  With @code{raw-text}, Emacs "
+"copies those byte values unchanged, and sets "
+"@code{enable-multibyte-characters} to @code{nil} in the current buffer so "
+"that they will be interpreted properly.  @code{raw-text} handles end-of-line "
+"conversion in the usual way, based on the data encountered, and has the "
+"usual three variants to specify the kind of end-of-line conversion to use."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:781
+#, no-wrap
+msgid "@code{no-conversion}, coding system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:787
+msgid ""
+"In contrast, the coding system @code{no-conversion} specifies no character "
+"code conversion at all---none for non-@acronym{ASCII} byte values and none "
+"for end of line.  This is useful for reading or writing binary files, tar "
+"files, and other files that must be examined verbatim.  It, too, sets "
+"@code{enable-multibyte-characters} to @code{nil}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:792
+msgid ""
+"The easiest way to edit a file with no conversion of any kind is with the "
+"@kbd{M-x find-file-literally} command.  This uses @code{no-conversion}, and "
+"also suppresses other Emacs features that might convert the file contents "
+"before you see them.  @xref{Visiting}."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:793
+#, no-wrap
+msgid "@code{emacs-internal}, coding system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:800
+msgid ""
+"The coding system @code{emacs-internal} (or @code{utf-8-emacs}, which is "
+"equivalent) means that the file contains non-@acronym{ASCII} characters "
+"stored with the internal Emacs encoding.  This coding system handles "
+"end-of-line conversion based on the data encountered, and has the usual "
+"three variants to specify the kind of end-of-line conversion."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:802
+#, no-wrap
+msgid "Recognizing Coding Systems"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:809
+msgid ""
+"Whenever Emacs reads a given piece of text, it tries to recognize which "
+"coding system to use.  This applies to files being read, output from "
+"subprocesses, text from X selections, etc.  Emacs can select the right "
+"coding system automatically most of the time---once you have specified your "
+"preferences."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:815
+msgid ""
+"Some coding systems can be recognized or distinguished by which byte "
+"sequences appear in the data.  However, there are coding systems that cannot "
+"be distinguished, not even potentially.  For example, there is no way to "
+"distinguish between Latin-1 and Latin-2; they use the same byte values with "
+"different meanings."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:822
+msgid ""
+"Emacs handles this situation by means of a priority list of coding systems.  "
+"Whenever Emacs reads a file, if you do not specify the coding system to use, "
+"Emacs checks the data against each coding system, starting with the first in "
+"priority and working down the list, until it finds a coding system that fits "
+"the data.  Then it converts the file contents assuming that they are "
+"represented in this coding system."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:828
+msgid ""
+"The priority list of coding systems depends on the selected language "
+"environment (@pxref{Language Environments}).  For example, if you use "
+"French, you probably want Emacs to prefer Latin-1 to Latin-2; if you use "
+"Czech, you probably want Latin-2 to be preferred.  This is one of the "
+"reasons to specify a language environment."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:829
+#, no-wrap
+msgid "prefer-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:836
+msgid ""
+"However, you can alter the coding system priority list in detail with the "
+"command @kbd{M-x prefer-coding-system}.  This command reads the name of a "
+"coding system from the minibuffer, and adds it to the front of the priority "
+"list, so that it is preferred to all others.  If you use this command "
+"several times, each use adds one element to the front of the priority list."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:841
+msgid ""
+"If you use a coding system that specifies the end-of-line conversion type, "
+"such as @code{iso-8859-1-dos}, what this means is that Emacs should attempt "
+"to recognize @code{iso-8859-1} with priority, and should use DOS end-of-line "
+"conversion when it does recognize @code{iso-8859-1}."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:842
+#, no-wrap
+msgid "file-coding-system-alist"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:849
+msgid ""
+"Sometimes a file name indicates which coding system to use for the file.  "
+"The variable @code{file-coding-system-alist} specifies this correspondence.  "
+"There is a special function @code{modify-coding-system-alist} for adding "
+"elements to this list.  For example, to read and write all @samp{.txt} files "
+"using the coding system @code{chinese-iso-8bit}, you can execute this Lisp "
+"expression:"
+msgstr ""
+
+#. type: smallexample
+#: mule.texi.orig:852
+#, no-wrap
+msgid "(modify-coding-system-alist 'file \"\\\\.txt\\\\'\" 'chinese-iso-8bit)\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:858
+msgid ""
+"The first argument should be @code{file}, the second argument should be a "
+"regular expression that determines which files this applies to, and the "
+"third argument says which coding system to use for these files."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:859
+#, no-wrap
+msgid "inhibit-eol-conversion"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:860
+#, no-wrap
+msgid "DOS-style end-of-line display"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:871
+msgid ""
+"Emacs recognizes which kind of end-of-line conversion to use based on the "
+"contents of the file: if it sees only carriage-returns, or only "
+"carriage-return linefeed sequences, then it chooses the end-of-line "
+"conversion accordingly.  You can inhibit the automatic use of end-of-line "
+"conversion by setting the variable @code{inhibit-eol-conversion} to "
+"non-@code{nil}.  If you do that, DOS-style files will be displayed with the "
+"@samp{^M} characters visible in the buffer; some people prefer this to the "
+"more subtle @samp{(DOS)} end-of-line type indication near the left edge of "
+"the mode line (@pxref{Mode Line, eol-mnemonic})."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:872
+#, no-wrap
+msgid "inhibit-iso-escape-detection"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:873
+#, no-wrap
+msgid "escape sequences in files"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:879
+msgid ""
+"By default, the automatic detection of coding system is sensitive to escape "
+"sequences.  If Emacs sees a sequence of characters that begin with an escape "
+"character, and the sequence is valid as an ISO-2022 code, that tells Emacs "
+"to use one of the ISO-2022 encodings to decode the file."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:886
+msgid ""
+"However, there may be cases that you want to read escape sequences in a file "
+"as is.  In such a case, you can set the variable "
+"@code{inhibit-iso-escape-detection} to non-@code{nil}.  Then the code "
+"detection ignores any escape sequences, and never uses an ISO-2022 "
+"encoding.  The result is that all escape sequences become visible in the "
+"buffer."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:895
+msgid ""
+"The default value of @code{inhibit-iso-escape-detection} is @code{nil}.  We "
+"recommend that you not change it permanently, only for one specific "
+"operation.  That's because some Emacs Lisp source files in the Emacs "
+"distribution contain non-@acronym{ASCII} characters encoded in the coding "
+"system @code{iso-2022-7bit}, and they won't be decoded correctly when you "
+"visit those files if you suppress the escape sequence detection."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:896
+#, no-wrap
+msgid "auto-coding-alist"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:897
+#, no-wrap
+msgid "auto-coding-regexp-alist"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:907
+msgid ""
+"The variables @code{auto-coding-alist} and @code{auto-coding-regexp-alist} "
+"are the strongest way to specify the coding system for certain patterns of "
+"file names, or for files containing certain patterns, respectively.  These "
+"variables even override @samp{-*-coding:-*-} tags in the file itself "
+"(@pxref{Specify Coding}).  For example, Emacs uses @code{auto-coding-alist} "
+"for tar and archive files, to prevent it from being confused by a "
+"@samp{-*-coding:-*-} tag in a member of the archive and thinking it applies "
+"to the archive file as a whole."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:914
+#, no-wrap
+msgid "auto-coding-functions"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:920
+msgid ""
+"Another way to specify a coding system is with the variable "
+"@code{auto-coding-functions}.  For example, one of the builtin "
+"@code{auto-coding-functions} detects the encoding for XML files.  Unlike the "
+"previous two, this variable does not override any @samp{-*-coding:-*-} tag."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:922
+#, no-wrap
+msgid "Specifying a File's Coding System"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:931
+msgid ""
+"If Emacs recognizes the encoding of a file incorrectly, you can reread the "
+"file using the correct coding system with @kbd{C-x @key{RET} r} "
+"(@code{revert-buffer-with-coding-system}).  This command prompts for the "
+"coding system to use.  To see what coding system Emacs actually used to "
+"decode the file, look at the coding system mnemonic letter near the left "
+"edge of the mode line (@pxref{Mode Line}), or type @kbd{C-h C} "
+"(@code{describe-coding-system})."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:932
+#, no-wrap
+msgid "coding"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:943
+msgid ""
+"You can specify the coding system for a particular file in the file itself, "
+"using the @w{@samp{-*-@dots{}-*-}} construct at the beginning, or a local "
+"variables list at the end (@pxref{File Variables}).  You do this by defining "
+"a value for the ``variable'' named @code{coding}.  Emacs does not really "
+"have a variable @code{coding}; instead of setting a variable, this uses the "
+"specified coding system for the file.  For example, @samp{-*-mode: C; "
+"coding: latin-1;-*-} specifies use of the Latin-1 coding system, as well as "
+"C mode.  When you specify the coding explicitly in the file, that overrides "
+"@code{file-coding-system-alist}."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:945
+#, no-wrap
+msgid "Choosing Coding Systems for Output"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:947
+#, no-wrap
+msgid "buffer-file-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:954
+msgid ""
+"Once Emacs has chosen a coding system for a buffer, it stores that coding "
+"system in @code{buffer-file-coding-system}.  That makes it the default for "
+"operations that write from this buffer into a file, such as "
+"@code{save-buffer} and @code{write-region}.  You can specify a different "
+"coding system for further file output from the buffer using "
+"@code{set-buffer-file-coding-system} (@pxref{Text Coding})."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:964
+msgid ""
+"You can insert any character Emacs supports into any Emacs buffer, but most "
+"coding systems can only handle a subset of these characters.  Therefore, "
+"it's possible that the characters you insert cannot be encoded with the "
+"coding system that will be used to save the buffer.  For example, you could "
+"visit a text file in Polish, encoded in @code{iso-8859-2}, and add some "
+"Russian words to it.  When you save that buffer, Emacs cannot use the "
+"current value of @code{buffer-file-coding-system}, because the characters "
+"you added cannot be encoded by that coding system."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:972
+msgid ""
+"When that happens, Emacs tries the most-preferred coding system (set by "
+"@kbd{M-x prefer-coding-system} or @kbd{M-x set-language-environment}).  If "
+"that coding system can safely encode all of the characters in the buffer, "
+"Emacs uses it, and stores its value in @code{buffer-file-coding-system}.  "
+"Otherwise, Emacs displays a list of coding systems suitable for encoding the "
+"buffer's contents, and asks you to choose one of those coding systems."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:982
+msgid ""
+"If you insert the unsuitable characters in a mail message, Emacs behaves a "
+"bit differently.  It additionally checks whether the most-preferred coding "
+"system is recommended for use in MIME messages; if not, it informs you of "
+"this fact and prompts you for another coding system.  This is so you won't "
+"inadvertently send a message encoded in a way that your recipient's mail "
+"software will have difficulty decoding.  (You can still use an unsuitable "
+"coding system if you enter its name at the prompt.)"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:986
+#, no-wrap
+msgid "sendmail-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:999
+msgid ""
+"When you send a mail message (@pxref{Sending Mail}), Emacs has four "
+"different ways to determine the coding system to use for encoding the "
+"message text.  It tries the buffer's own value of "
+"@code{buffer-file-coding-system}, if that is non-@code{nil}.  Otherwise, it "
+"uses the value of @code{sendmail-coding-system}, if that is non-@code{nil}.  "
+"The third way is to use the default coding system for new files, which is "
+"controlled by your choice of language environment, if that is "
+"non-@code{nil}.  If all of these three values are @code{nil}, Emacs encodes "
+"outgoing mail using the Latin-1 coding system."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:1001
+#, no-wrap
+msgid "Specifying a Coding System for File Text"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1006
+msgid ""
+"In cases where Emacs does not automatically choose the right coding system "
+"for a file's contents, you can use these commands to specify one:"
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:1008
+#, no-wrap
+msgid "C-x @key{RET} f @var{coding} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:1011
+msgid ""
+"Use coding system @var{coding} to save or revisit the file in the current "
+"buffer (@code{set-buffer-file-coding-system})."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:1012
+#, no-wrap
+msgid "C-x @key{RET} c @var{coding} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:1015
+msgid ""
+"Specify coding system @var{coding} for the immediately following command "
+"(@code{universal-coding-system-argument})."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:1016
+#, no-wrap
+msgid "C-x @key{RET} r @var{coding} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:1019
+msgid ""
+"Revisit the current file using the coding system @var{coding} "
+"(@code{revert-buffer-with-coding-system})."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:1020
+#, no-wrap
+msgid "M-x recode-region @key{RET} @var{right} @key{RET} @var{wrong} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:1023
+msgid ""
+"Convert a region that was decoded using coding system @var{wrong}, decoding "
+"it using coding system @var{right} instead."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:1025
+#, no-wrap
+msgid "C-x RET f"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1026
+#, no-wrap
+msgid "set-buffer-file-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1034
+msgid ""
+"The command @kbd{C-x @key{RET} f} (@code{set-buffer-file-coding-system}) "
+"sets the file coding system for the current buffer (i.e., the coding system "
+"to use when saving or reverting the file).  You specify which coding system "
+"using the minibuffer.  You can also invoke this command by clicking with "
+"@kbd{Mouse-3} on the coding system indicator in the mode line (@pxref{Mode "
+"Line})."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1039
+msgid ""
+"If you specify a coding system that cannot handle all the characters in the "
+"buffer, Emacs will warn you about the troublesome characters, and ask you to "
+"choose another coding system, when you try to save the buffer (@pxref{Output "
+"Coding})."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1040
+#, no-wrap
+msgid "specify end-of-line conversion"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1046
+msgid ""
+"You can also use this command to specify the end-of-line conversion "
+"(@pxref{Coding Systems, end-of-line conversion}) for encoding the current "
+"buffer.  For example, @kbd{C-x @key{RET} f dos @key{RET}} will cause Emacs "
+"to save the current buffer's text with DOS-style carriage-return linefeed "
+"line endings."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:1047
+#, no-wrap
+msgid "C-x RET c"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1048
+#, no-wrap
+msgid "universal-coding-system-argument"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1055
+msgid ""
+"Another way to specify the coding system for a file is when you visit the "
+"file.  First use the command @kbd{C-x @key{RET} c} "
+"(@code{universal-coding-system-argument}); this command uses the minibuffer "
+"to read a coding system name.  After you exit the minibuffer, the specified "
+"coding system is used for @emph{the immediately following command}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1063
+msgid ""
+"So if the immediately following command is @kbd{C-x C-f}, for example, it "
+"reads the file using that coding system (and records the coding system for "
+"when you later save the file).  Or if the immediately following command is "
+"@kbd{C-x C-w}, it writes the file using that coding system.  When you "
+"specify the coding system for saving in this way, instead of with @kbd{C-x "
+"@key{RET} f}, there is no warning if the buffer contains characters that the "
+"coding system cannot handle."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1070
+msgid ""
+"Other file commands affected by a specified coding system include @kbd{C-x "
+"i} and @kbd{C-x C-v}, as well as the other-window variants of @kbd{C-x "
+"C-f}.  @kbd{C-x @key{RET} c} also affects commands that start subprocesses, "
+"including @kbd{M-x shell} (@pxref{Shell}).  If the immediately following "
+"command does not use the coding system, then @kbd{C-x @key{RET} c} "
+"ultimately has no effect."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1073
+msgid ""
+"An easy way to visit a file with no conversion is with the @kbd{M-x "
+"find-file-literally} command.  @xref{Visiting}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1080
+msgid ""
+"The default value of the variable @code{buffer-file-coding-system} specifies "
+"the choice of coding system to use when you create a new file.  It applies "
+"when you find a new file, and when you create a buffer and then save it in a "
+"file.  Selecting a language environment typically sets this variable to a "
+"good choice of default coding system for that language environment."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:1081
+#, no-wrap
+msgid "C-x RET r"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1082
+#, no-wrap
+msgid "revert-buffer-with-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1086
+msgid ""
+"If you visit a file with a wrong coding system, you can correct this with "
+"@kbd{C-x @key{RET} r} (@code{revert-buffer-with-coding-system}).  This "
+"visits the current file again, using a coding system you specify."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1087
+#, no-wrap
+msgid "recode-region"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1094
+msgid ""
+"If a piece of text has already been inserted into a buffer using the wrong "
+"coding system, you can redo the decoding of it using @kbd{M-x "
+"recode-region}.  This prompts you for the proper coding system, then for the "
+"wrong coding system that was actually used, and does the conversion.  It "
+"first encodes the region using the wrong coding system, then decodes it "
+"again using the proper coding system."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:1096
+#, no-wrap
+msgid "Coding Systems for Interprocess Communication"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1100
+msgid ""
+"This section explains how to specify coding systems for use in communication "
+"with other processes."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:1102
+#, no-wrap
+msgid "C-x @key{RET} x @var{coding} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:1105
+msgid ""
+"Use coding system @var{coding} for transferring selections to and from other "
+"graphical applications (@code{set-selection-coding-system})."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:1106
+#, no-wrap
+msgid "C-x @key{RET} X @var{coding} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:1110
+msgid ""
+"Use coding system @var{coding} for transferring @emph{one} selection---the "
+"next one---to or from another graphical application "
+"(@code{set-next-selection-coding-system})."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:1111
+#, no-wrap
+msgid "C-x @key{RET} p @var{input-coding} @key{RET} @var{output-coding} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:1115
+msgid ""
+"Use coding systems @var{input-coding} and @var{output-coding} for subprocess "
+"input and output in the current buffer "
+"(@code{set-buffer-process-coding-system})."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:1117
+#, no-wrap
+msgid "C-x RET x"
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:1118
+#, no-wrap
+msgid "C-x RET X"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1119
+#, no-wrap
+msgid "set-selection-coding-system"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1120
+#, no-wrap
+msgid "set-next-selection-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1128
+msgid ""
+"The command @kbd{C-x @key{RET} x} (@code{set-selection-coding-system})  "
+"specifies the coding system for sending selected text to other windowing "
+"applications, and for receiving the text of selections made in other "
+"applications.  This command applies to all subsequent selections, until you "
+"override it by using the command again.  The command @kbd{C-x @key{RET} X} "
+"(@code{set-next-selection-coding-system}) specifies the coding system for "
+"the next selection made in Emacs or read by Emacs."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1129
+#, no-wrap
+msgid "x-select-request-type"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1142
+msgid ""
+"The variable @code{x-select-request-type} specifies the data type to request "
+"from the X Window System for receiving text selections from other "
+"applications.  If the value is @code{nil} (the default), Emacs tries "
+"@code{UTF8_STRING} and @code{COMPOUND_TEXT}, in this order, and uses various "
+"heuristics to choose the more appropriate of the two results; if none of "
+"these succeed, Emacs falls back on @code{STRING}.  If the value of "
+"@code{x-select-request-type} is one of the symbols @code{COMPOUND_TEXT}, "
+"@code{UTF8_STRING}, @code{STRING}, or @code{TEXT}, Emacs uses only that "
+"request type.  If the value is a list of some of these symbols, Emacs tries "
+"only the request types in the list, in order, until one of them succeeds, or "
+"until the list is exhausted."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:1143
+#, no-wrap
+msgid "C-x RET p"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1144
+#, no-wrap
+msgid "set-buffer-process-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1151
+msgid ""
+"The command @kbd{C-x @key{RET} p} (@code{set-buffer-process-coding-system})  "
+"specifies the coding system for input and output to a subprocess.  This "
+"command applies to the current buffer; normally, each subprocess has its own "
+"buffer, and thus you can use this command to specify translation to and from "
+"a particular subprocess by giving the command in the corresponding buffer."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1156
+msgid ""
+"You can also use @kbd{C-x @key{RET} c} "
+"(@code{universal-coding-system-argument}) just before the command that runs "
+"or starts a subprocess, to specify the coding system for communicating with "
+"that subprocess.  @xref{Text Coding}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1159
+msgid ""
+"The default for translation of process input and output depends on the "
+"current language environment."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1160
+#, no-wrap
+msgid "locale-coding-system"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1161
+#, no-wrap
+msgid "decoding non-@acronym{ASCII} keyboard input on X"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1172
+msgid ""
+"The variable @code{locale-coding-system} specifies a coding system to use "
+"when encoding and decoding system strings such as system error messages and "
+"@code{format-time-string} formats and time stamps.  That coding system is "
+"also used for decoding non-@acronym{ASCII} keyboard input on the X Window "
+"System.  You should choose a coding system that is compatible with the "
+"underlying system's text representation, which is normally specified by one "
+"of the environment variables @env{LC_ALL}, @env{LC_CTYPE}, and @env{LANG}.  "
+"(The first one, in the order specified above, whose value is nonempty is the "
+"one that determines the text representation.)"
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:1174
+#, no-wrap
+msgid "Coding Systems for File Names"
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:1177
+#, no-wrap
+msgid "C-x @key{RET} F @var{coding} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:1180
+msgid ""
+"Use coding system @var{coding} for encoding and decoding file names "
+"(@code{set-file-name-coding-system})."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1182
+#, no-wrap
+msgid "set-file-name-coding-system"
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:1183
+#, no-wrap
+msgid "C-x @key{RET} F"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1184
+#, no-wrap
+msgid "file names with non-@acronym{ASCII} characters"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1188
+msgid ""
+"The command @kbd{C-x @key{RET} F} (@code{set-file-name-coding-system})  "
+"specifies a coding system to use for encoding file @emph{names}.  It has no "
+"effect on reading and writing the @emph{contents} of files."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1189
+#, no-wrap
+msgid "file-name-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1197
+msgid ""
+"In fact, all this command does is set the value of the variable "
+"@code{file-name-coding-system}.  If you set the variable to a coding system "
+"name (as a Lisp symbol or a string), Emacs encodes file names using that "
+"coding system for all file operations.  This makes it possible to use "
+"non-@acronym{ASCII} characters in file names---or, at least, those "
+"non-@acronym{ASCII} characters that the specified coding system can encode."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1205
+msgid ""
+"If @code{file-name-coding-system} is @code{nil}, Emacs uses a default coding "
+"system determined by the selected language environment, and stored in the "
+"@code{default-file-name-coding-system} variable.  In the default language "
+"environment, non-@acronym{ASCII} characters in file names are not encoded "
+"specially; they appear in the file system using the internal Emacs "
+"representation."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1206
+#, no-wrap
+msgid "file-name encoding, MS-Windows"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1207
+#, no-wrap
+msgid "w32-unicode-filenames"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1220
+msgid ""
+"When Emacs runs on MS-Windows versions that are descendants of the NT family "
+"(Windows 2000, XP, Vista, Windows 7, and Windows 8), the value of "
+"@code{file-name-coding-system} is largely ignored, as Emacs by default uses "
+"APIs that allow to pass Unicode file names directly.  By contrast, on "
+"Windows 9X, file names are encoded using @code{file-name-coding-system}, "
+"which should be set to the codepage (@pxref{Coding Systems, codepage}) "
+"pertinent for the current system locale.  The value of the variable "
+"@code{w32-unicode-filenames} controls whether Emacs uses the Unicode APIs "
+"when it calls OS functions that accept file names.  This variable is set by "
+"the startup code to @code{nil} on Windows 9X, and to @code{t} on newer "
+"versions of MS-Windows."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1229
+msgid ""
+"@strong{Warning:} if you change @code{file-name-coding-system} (or the "
+"language environment) in the middle of an Emacs session, problems can result "
+"if you have already visited files whose names were encoded using the earlier "
+"coding system and cannot be encoded (or are encoded differently) under the "
+"new coding system.  If you try to save one of these buffers under the "
+"visited file name, saving may use the wrong file name, or it may encounter "
+"an error.  If such a problem happens, use @kbd{C-x C-w} to specify a new "
+"file name for that buffer."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1230
+#, no-wrap
+msgid "recode-file-name"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1235
+msgid ""
+"If a mistake occurs when encoding a file name, use the command @kbd{M-x "
+"recode-file-name} to change the file name's coding system.  This prompts for "
+"an existing file name, its old coding system, and the coding system to which "
+"you wish to convert."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:1237
+#, no-wrap
+msgid "Coding Systems for Terminal I/O"
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:1240
+#, no-wrap
+msgid "C-x @key{RET} t @var{coding} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:1243
+msgid ""
+"Use coding system @var{coding} for terminal output "
+"(@code{set-terminal-coding-system})."
+msgstr ""
+
+#. type: item
+#: mule.texi.orig:1244
+#, no-wrap
+msgid "C-x @key{RET} k @var{coding} @key{RET}"
+msgstr ""
+
+#. type: table
+#: mule.texi.orig:1247
+msgid ""
+"Use coding system @var{coding} for keyboard input "
+"(@code{set-keyboard-coding-system})."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:1249
+#, no-wrap
+msgid "C-x RET t"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1250
+#, no-wrap
+msgid "set-terminal-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1255
+msgid ""
+"The command @kbd{C-x @key{RET} t} (@code{set-terminal-coding-system})  "
+"specifies the coding system for terminal output.  If you specify a character "
+"code for terminal output, all characters output to the terminal are "
+"translated into that coding system."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1261
+msgid ""
+"This feature is useful for certain character-only terminals built to support "
+"specific languages or character sets---for example, European terminals that "
+"support one of the ISO Latin character sets.  You need to specify the "
+"terminal coding system when using multibyte text, so that Emacs knows which "
+"characters the terminal can actually handle."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1265
+msgid ""
+"By default, output to the terminal is not translated at all, unless Emacs "
+"can deduce the proper coding system from your terminal type or your locale "
+"specification (@pxref{Language Environments})."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:1266
+#, no-wrap
+msgid "C-x RET k"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1267
+#, no-wrap
+msgid "set-keyboard-coding-system"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1268
+#, no-wrap
+msgid "keyboard-coding-system"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1275
+msgid ""
+"The command @kbd{C-x @key{RET} k} (@code{set-keyboard-coding-system}), or "
+"the variable @code{keyboard-coding-system}, specifies the coding system for "
+"keyboard input.  Character-code translation of keyboard input is useful for "
+"terminals with keys that send non-@acronym{ASCII} graphic characters---for "
+"example, some terminals designed for ISO Latin-1 or subsets of it."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1282
+msgid ""
+"By default, keyboard input is translated based on your system locale "
+"setting.  If your terminal does not really support the encoding implied by "
+"your locale (for example, if you find it inserts a non-@acronym{ASCII} "
+"character if you type @kbd{M-i}), you will need to set "
+"@code{keyboard-coding-system} to @code{nil} to turn off encoding.  You can "
+"do this by putting"
+msgstr ""
+
+#. type: lisp
+#: mule.texi.orig:1285
+#, no-wrap
+msgid "(set-keyboard-coding-system nil)\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1289
+msgid "in your init file."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1297
+msgid ""
+"There is a similarity between using a coding system translation for keyboard "
+"input, and using an input method: both define sequences of keyboard input "
+"that translate into single characters.  However, input methods are designed "
+"to be convenient for interactive use by humans, and the sequences that are "
+"translated are typically sequences of @acronym{ASCII} printing characters.  "
+"Coding systems typically translate sequences of non-graphic characters."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1300
+#, no-wrap
+msgid "fontsets"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1309
+msgid ""
+"A font typically defines shapes for a single alphabet or script.  Therefore, "
+"displaying the entire range of scripts that Emacs supports requires a "
+"collection of many fonts.  In Emacs, such a collection is called a "
+"@dfn{fontset}.  A fontset is defined by a list of font specifications, each "
+"assigned to handle a range of character codes, and may fall back on another "
+"fontset for characters that are not covered by the fonts it specifies."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1310
+#, no-wrap
+msgid "fonts for various scripts"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1311
+#, no-wrap
+msgid "Intlfonts package, installation"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1335
+msgid ""
+"Each fontset has a name, like a font.  However, while fonts are stored in "
+"the system and the available font names are defined by the system, fontsets "
+"are defined within Emacs itself.  Once you have defined a fontset, you can "
+"use it within Emacs by specifying its name, anywhere that you could use a "
+"single font.  Of course, Emacs fontsets can use only the fonts that the "
+"system supports.  If some characters appear on the screen as empty boxes or "
+"hex codes, this means that the fontset in use for them has no font for those "
+"characters.  In this case, or if the characters are shown, but not as well "
+"as you would like, you may need to install extra fonts.  Your operating "
+"system may have optional fonts that you can install; or you can install the "
+"GNU Intlfonts package, which includes fonts for most supported "
+"scripts.@footnote{If you run Emacs on X, you may need to inform the X server "
+"about the location of the newly installed fonts with commands such as: "
+"@example xset fp+ /usr/local/share/emacs/fonts xset fp rehash @end example }"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1349
+msgid ""
+"Emacs creates three fontsets automatically: the @dfn{standard fontset}, the "
+"@dfn{startup fontset} and the @dfn{default fontset}.  The default fontset is "
+"most likely to have fonts for a wide variety of non-@acronym{ASCII} "
+"characters, and is the default fallback for the other two fontsets, and if "
+"you set a default font rather than fontset.  However, it does not specify "
+"font family names, so results can be somewhat random if you use it "
+"directly.  You can specify use of a particular fontset by starting Emacs "
+"with the @samp{-fn} option.  For example,"
+msgstr ""
+
+#. type: example
+#: mule.texi.orig:1352
+#, no-wrap
+msgid "emacs -fn fontset-standard\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1357
+msgid ""
+"You can also specify a fontset with the @samp{Font} resource (@pxref{X "
+"Resources})."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1362
+msgid ""
+"If no fontset is specified for use, then Emacs uses an @acronym{ASCII} font, "
+"with @samp{fontset-default} as a fallback for characters the font does not "
+"cover.  The standard fontset is only used if explicitly requested, despite "
+"its name."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1369
+msgid ""
+"A fontset does not necessarily specify a font for every character code.  If "
+"a fontset specifies no font for a certain character, or if it specifies a "
+"font that does not exist on your system, then it cannot display that "
+"character properly.  It will display that character as a hex code or thin "
+"space or an empty box instead.  (@xref{Text Display, , glyphless "
+"characters}, for details.)"
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:1371
+#, no-wrap
+msgid "Defining fontsets"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1373
+#, no-wrap
+msgid "standard-fontset-spec"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1374
+#, no-wrap
+msgid "w32-standard-fontset-spec"
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1375
+#, no-wrap
+msgid "ns-standard-fontset-spec"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1376
+#, no-wrap
+msgid "standard fontset"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1379
+msgid ""
+"When running on X, Emacs creates a standard fontset automatically according "
+"to the value of @code{standard-fontset-spec}.  This fontset's name is"
+msgstr ""
+
+#. type: example
+#: mule.texi.orig:1382
+#, no-wrap
+msgid "-*-fixed-medium-r-normal-*-16-*-*-*-*-*-fontset-standard\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1386
+msgid "or just @samp{fontset-standard} for short."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1390
+msgid ""
+"On GNUstep and Mac OS X, the standard fontset is created using the value of "
+"@code{ns-standard-fontset-spec}, and on MS Windows it is created using the "
+"value of @code{w32-standard-fontset-spec}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1396
+msgid ""
+"Bold, italic, and bold-italic variants of the standard fontset are created "
+"automatically.  Their names have @samp{bold} instead of @samp{medium}, or "
+"@samp{i} instead of @samp{r}, or both."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1397
+#, no-wrap
+msgid "startup fontset"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1406
+msgid ""
+"Emacs generates a fontset automatically, based on any default "
+"@acronym{ASCII} font that you specify with the @samp{Font} resource or the "
+"@samp{-fn} argument, or the default font that Emacs found when it started.  "
+"This is the @dfn{startup fontset} and its name is @code{fontset-startup}.  "
+"It does this by replacing the @var{charset_registry} field with "
+"@samp{fontset}, and replacing @var{charset_encoding} field with "
+"@samp{startup}, then using the resulting string to specify a fontset."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1408
+msgid "For instance, if you start Emacs with a font of this form,"
+msgstr ""
+
+#. type: example
+#: mule.texi.orig:1418
+#, no-wrap
+msgid "emacs -fn \"*courier-medium-r-normal--14-140-*-iso8859-1\"\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1423
+msgid ""
+"Emacs generates the following fontset and uses it for the initial X window "
+"frame:"
+msgstr ""
+
+#. type: example
+#: mule.texi.orig:1426
+#, no-wrap
+msgid "-*-courier-medium-r-normal-*-14-140-*-*-*-*-fontset-startup\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1432
+msgid ""
+"The startup fontset will use the font that you specify, or a variant with a "
+"different registry and encoding, for all the characters that are supported "
+"by that font, and fallback on @samp{fontset-default} for other characters."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1439
+msgid ""
+"With the X resource @samp{Emacs.Font}, you can specify a fontset name just "
+"like an actual font name.  But be careful not to specify a fontset name in a "
+"wildcard resource like @samp{Emacs*Font}---that wildcard specification "
+"matches various other resources, such as for menus, and menus cannot handle "
+"fontsets.  @xref{X Resources}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1443
+msgid ""
+"You can specify additional fontsets using X resources named "
+"@samp{Fontset-@var{n}}, where @var{n} is an integer starting from 0.  The "
+"resource value should have this form:"
+msgstr ""
+
+#. type: smallexample
+#: mule.texi.orig:1446
+#, no-wrap
+msgid "@var{fontpattern}, @r{[}@var{charset}:@var{font}@r{]@dots{}}\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1453
+msgid ""
+"@var{fontpattern} should have the form of a standard X font name (see the "
+"previous fontset-startup example), except for the last two fields.  They "
+"should have the form @samp{fontset-@var{alias}}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1457
+msgid ""
+"The fontset has two names, one long and one short.  The long name is "
+"@var{fontpattern}.  The short name is @samp{fontset-@var{alias}}.  You can "
+"refer to the fontset by either name."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1463
+msgid ""
+"The construct @samp{@var{charset}:@var{font}} specifies which font to use "
+"(in this fontset) for one particular character set.  Here, @var{charset} is "
+"the name of a character set, and @var{font} is the font to use for that "
+"character set.  You can use this construct any number of times in defining "
+"one fontset."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1468
+msgid ""
+"For the other character sets, Emacs chooses a font based on "
+"@var{fontpattern}.  It replaces @samp{fontset-@var{alias}} with values that "
+"describe the character set.  For the @acronym{ASCII} character font, "
+"@samp{fontset-@var{alias}} is replaced with @samp{ISO8859-1}."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1475
+msgid ""
+"In addition, when several consecutive fields are wildcards, Emacs collapses "
+"them into a single wildcard.  This is to prevent use of auto-scaled fonts.  "
+"Fonts made by scaling larger fonts are not usable for editing, and scaling a "
+"smaller font is not also useful, because it is better to use the smaller "
+"font in its own size, which is what Emacs does."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1477
+msgid "Thus if @var{fontpattern} is this,"
+msgstr ""
+
+#. type: example
+#: mule.texi.orig:1480
+#, no-wrap
+msgid "-*-fixed-medium-r-normal-*-24-*-*-*-*-*-fontset-24\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1484
+msgid "the font specification for @acronym{ASCII} characters would be this:"
+msgstr ""
+
+#. type: example
+#: mule.texi.orig:1487
+#, no-wrap
+msgid "-*-fixed-medium-r-normal-*-24-*-ISO8859-1\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1491
+msgid "and the font specification for Chinese GB2312 characters would be this:"
+msgstr ""
+
+#. type: example
+#: mule.texi.orig:1494
+#, no-wrap
+msgid "-*-fixed-medium-r-normal-*-24-*-gb2312*-*\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1500
+msgid ""
+"You may not have any Chinese font matching the above font specification.  "
+"Most X distributions include only Chinese fonts that have @samp{song ti} or "
+"@samp{fangsong ti} in the @var{family} field.  In such a case, "
+"@samp{Fontset-@var{n}} can be specified as:"
+msgstr ""
+
+#. type: smallexample
+#: mule.texi.orig:1504
+#, no-wrap
+msgid ""
+"Emacs.Fontset-0: -*-fixed-medium-r-normal-*-24-*-*-*-*-*-fontset-24,\\\n"
+"        chinese-gb2312:-*-*-medium-r-normal-*-24-*-gb2312*-*\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1511
+msgid ""
+"Then, the font specifications for all but Chinese GB2312 characters have "
+"@samp{fixed} in the @var{family} field, and the font specification for "
+"Chinese GB2312 characters has a wild card @samp{*} in the @var{family} "
+"field."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1512
+#, no-wrap
+msgid "create-fontset-from-fontset-spec"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1516
+msgid ""
+"The function that processes the fontset resource value to create the fontset "
+"is called @code{create-fontset-from-fontset-spec}.  You can also call this "
+"function explicitly to create a fontset."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1518
+msgid "@xref{Fonts}, for more information about font naming."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1521
+#, no-wrap
+msgid "fontsets, modifying"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1522
+#, no-wrap
+msgid "set-fontset-font"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1530
+msgid ""
+"Fontsets do not always have to be created from scratch.  If only minor "
+"changes are required it may be easier to modify an existing fontset.  "
+"Modifying @samp{fontset-default} will also affect other fontsets that use it "
+"as a fallback, so can be an effective way of fixing problems with the fonts "
+"that Emacs chooses for a particular script."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1535
+msgid ""
+"Fontsets can be modified using the function @code{set-fontset-font}, "
+"specifying a character, a charset, a script, or a range of characters to "
+"modify the font for, and a font specification for the font to be used.  Some "
+"examples are:"
+msgstr ""
+
+#. type: example
+#: mule.texi.orig:1540
+#, no-wrap
+msgid ""
+";; Use Liberation Mono for latin-3 charset.\n"
+"(set-fontset-font \"fontset-default\" 'iso-8859-3\n"
+"                  \"Liberation Mono\")\n"
+"\n"
+msgstr ""
+
+#. type: example
+#: mule.texi.orig:1545
+#, no-wrap
+msgid ""
+";; Prefer a big5 font for han characters\n"
+"(set-fontset-font \"fontset-default\"\n"
+"                  'han (font-spec :registry \"big5\")\n"
+"                  nil 'prepend)\n"
+"\n"
+msgstr ""
+
+#. type: example
+#: mule.texi.orig:1550
+#, no-wrap
+msgid ""
+";; Use DejaVu Sans Mono as a fallback in fontset-startup\n"
+";; before resorting to fontset-default.\n"
+"(set-fontset-font \"fontset-startup\" nil \"DejaVu Sans Mono\"\n"
+"                  nil 'append)\n"
+"\n"
+msgstr ""
+
+#. type: example
+#: mule.texi.orig:1554
+#, no-wrap
+msgid ""
+";; Use MyPrivateFont for the Unicode private use area.\n"
+"(set-fontset-font \"fontset-default\"  '(#xe000 . #xf8ff)\n"
+"                  \"MyPrivateFont\")\n"
+"\n"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1567
+msgid ""
+"There may be some non-@acronym{ASCII} characters that your terminal cannot "
+"display.  Most text terminals support just a single character set (use the "
+"variable @code{default-terminal-coding-system} to tell Emacs which one, "
+"@ref{Terminal Coding}); characters that can't be encoded in that coding "
+"system are displayed as @samp{?} by default."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1571
+msgid ""
+"Graphical displays can display a broader range of characters, but you may "
+"not have fonts installed for all of them; characters that have no font "
+"appear as a hollow box."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1576
+msgid ""
+"If you use Latin-1 characters but your terminal can't display Latin-1, you "
+"can arrange to display mnemonic @acronym{ASCII} sequences instead, e.g., "
+"@samp{\"o} for o-umlaut.  Load the library @file{iso-ascii} to do this."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1577
+#, no-wrap
+msgid "latin1-display"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1583
+msgid ""
+"If your terminal can display Latin-1, you can display characters from other "
+"European character sets using a mixture of equivalent Latin-1 characters and "
+"@acronym{ASCII} mnemonics.  Customize the variable @code{latin1-display} to "
+"enable this.  The mnemonic @acronym{ASCII} sequences mostly correspond to "
+"those of the prefix input methods."
+msgstr ""
+
+#. type: section
+#: mule.texi.orig:1585
+#, no-wrap
+msgid "Unibyte Editing Mode"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1587
+#, no-wrap
+msgid "European character sets"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1588
+#, no-wrap
+msgid "accented characters"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1589
+#, no-wrap
+msgid "ISO Latin character sets"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1590
+#, no-wrap
+msgid "Unibyte operation"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1603
+msgid ""
+"The ISO 8859 Latin-@var{n} character sets define character codes in the "
+"range 0240 to 0377 octal (160 to 255 decimal) to handle the accented letters "
+"and punctuation needed by various European languages (and some non-European "
+"ones).  Note that Emacs considers bytes with codes in this range as raw "
+"bytes, not as characters, even in a unibyte buffer, i.e., if you disable "
+"multibyte characters.  However, Emacs can still handle these character codes "
+"as if they belonged to @emph{one} of the single-byte character sets at a "
+"time.  To specify @emph{which} of these codes to use, invoke @kbd{M-x "
+"set-language-environment} and specify a suitable language environment such "
+"as @samp{Latin-@var{n}}.  @xref{Disabling Multibyte, , Disabling Multibyte "
+"Characters, elisp, GNU Emacs Lisp Reference Manual}."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1604
+#, no-wrap
+msgid "unibyte-display-via-language-environment"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1615
+msgid ""
+"Emacs can also display bytes in the range 160 to 255 as readable characters, "
+"provided the terminal or font in use supports them.  This works "
+"automatically.  On a graphical display, Emacs can also display single-byte "
+"characters through fontsets, in effect by displaying the equivalent "
+"multibyte characters according to the current language environment.  To "
+"request this, set the variable "
+"@code{unibyte-display-via-language-environment} to a non-@code{nil} value.  "
+"Note that setting this only affects how these bytes are displayed, but does "
+"not change the fundamental fact that Emacs treats them as raw bytes, not as "
+"characters."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1616
+#, no-wrap
+msgid "@code{iso-ascii} library"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1623
+msgid ""
+"If your terminal does not support display of the Latin-1 character set, "
+"Emacs can display these characters as @acronym{ASCII} sequences which at "
+"least give you a clear idea of what the characters are.  To do this, load "
+"the library @code{iso-ascii}.  Similar libraries for other Latin-@var{n} "
+"character sets could be implemented, but have not been so far."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1624
+#, no-wrap
+msgid "standard-display-8bit"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1625
+#, no-wrap
+msgid "8-bit display"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1630
+msgid ""
+"Normally non-ISO-8859 characters (decimal codes between 128 and 159 "
+"inclusive) are displayed as octal escapes.  You can change this for "
+"non-standard ``extended'' versions of ISO-8859 character sets by using the "
+"function @code{standard-display-8bit} in the @code{disp-table} library."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1633
+msgid "There are two ways to input single-byte non-@acronym{ASCII} characters:"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1635
+#, no-wrap
+msgid "8-bit input"
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:1640
+msgid ""
+"You can use an input method for the selected language environment.  "
+"@xref{Input Methods}.  When you use an input method in a unibyte buffer, the "
+"non-@acronym{ASCII} character you specify with it is converted to unibyte."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:1645
+msgid ""
+"If your keyboard can generate character codes 128 (decimal) and up, "
+"representing non-@acronym{ASCII} characters, you can type those character "
+"codes directly."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:1656
+msgid ""
+"On a graphical display, you should not need to do anything special to use "
+"these keys; they should simply work.  On a text terminal, you should use the "
+"command @code{M-x set-keyboard-coding-system} or customize the variable "
+"@code{keyboard-coding-system} to specify which coding system your keyboard "
+"uses (@pxref{Terminal Coding}).  Enabling this feature will probably require "
+"you to use @key{ESC} to type Meta characters; however, on a console terminal "
+"or in @code{xterm}, you can arrange for Meta to be converted to @key{ESC} "
+"and still be able type 8-bit characters present directly on the keyboard or "
+"using @key{Compose} or @key{AltGr} keys.  @xref{User Input}."
+msgstr ""
+
+#. type: kindex
+#: mule.texi.orig:1657
+#, no-wrap
+msgid "C-x 8"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1658
+#, no-wrap
+msgid "@code{iso-transl} library"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1659
+#, no-wrap
+msgid "compose character"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1660
+#, no-wrap
+msgid "dead character"
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:1667
+msgid ""
+"For Latin-1 only, you can use the key @kbd{C-x 8} as a ``compose character'' "
+"prefix for entry of non-@acronym{ASCII} Latin-1 printing characters.  "
+"@kbd{C-x 8} is good for insertion (in the minibuffer as well as other "
+"buffers), for searching, and in any other context where a key sequence is "
+"allowed."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:1675
+msgid ""
+"@kbd{C-x 8} works by loading the @code{iso-transl} library.  Once that "
+"library is loaded, the @key{Alt} modifier key, if the keyboard has one, "
+"serves the same purpose as @kbd{C-x 8}: use @key{Alt} together with an "
+"accent character to modify the following letter.  In addition, if the "
+"keyboard has keys for the Latin-1 ``dead accent characters'', they too are "
+"defined to compose with the following character, once @code{iso-transl} is "
+"loaded."
+msgstr ""
+
+#. type: itemize
+#: mule.texi.orig:1677
+msgid "Use @kbd{C-x 8 C-h} to list all the available @kbd{C-x 8} translations."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1681
+#, no-wrap
+msgid "charsets"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1689
+msgid ""
+"In Emacs, @dfn{charset} is short for ``character set''.  Emacs supports most "
+"popular charsets (such as @code{ascii}, @code{iso-8859-1}, @code{cp1250}, "
+"@code{big5}, and @code{unicode}), in addition to some charsets of its own "
+"(such as @code{emacs}, @code{unicode-bmp}, and @code{eight-bit}).  All "
+"supported characters belong to one or more charsets."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1693
+msgid ""
+"Emacs normally ``does the right thing'' with respect to charsets, so that "
+"you don't have to worry about them.  However, it is sometimes helpful to "
+"know some of the underlying details about charsets."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1702
+msgid ""
+"One example is font selection (@pxref{Fonts}).  Each language environment "
+"(@pxref{Language Environments}) defines a ``priority list'' for the various "
+"charsets.  When searching for a font, Emacs initially attempts to find one "
+"that can display the highest-priority charsets.  For instance, in the "
+"Japanese language environment, the charset @code{japanese-jisx0208} has the "
+"highest priority, so Emacs tries to use a font whose @code{registry} "
+"property is @samp{JISX0208.1983-0}."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1703
+#, no-wrap
+msgid "list-charset-chars"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1704
+#, no-wrap
+msgid "characters in a certain charset"
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1705
+#, no-wrap
+msgid "describe-character-set"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1712
+msgid ""
+"There are two commands that can be used to obtain information about "
+"charsets.  The command @kbd{M-x list-charset-chars} prompts for a charset "
+"name, and displays all the characters in that character set.  The command "
+"@kbd{M-x describe-character-set} prompts for a charset name, and displays "
+"information about that charset, including its internal representation within "
+"Emacs."
+msgstr ""
+
+#. type: findex
+#: mule.texi.orig:1713
+#, no-wrap
+msgid "list-character-sets"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1724
+msgid ""
+"@kbd{M-x list-character-sets} displays a list of all supported charsets.  "
+"The list gives the names of charsets and additional information to identity "
+"each charset; see the @url{http://www.itscj.ipsj.or.jp/ISO-IR/, "
+"International Register of Coded Character Sets} for more details.  In this "
+"list, charsets are divided into two categories: @dfn{normal charsets} are "
+"listed first, followed by @dfn{supplementary charsets}.  A supplementary "
+"charset is one that is used to define another charset (as a parent or a "
+"subset), or to provide backward-compatibility for older Emacs versions."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1728
+msgid ""
+"To find out which charset a character in the buffer belongs to, put point "
+"before it and type @kbd{C-u C-x =} (@pxref{International Chars})."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1731
+#, no-wrap
+msgid "bidirectional editing"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1732
+#, no-wrap
+msgid "right-to-left text"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1743
+msgid ""
+"Emacs supports editing text written in scripts, such as Arabic and Hebrew, "
+"whose natural ordering of horizontal text for display is from right to "
+"left.  However, digits and Latin text embedded in these scripts are still "
+"displayed left to right.  It is also not uncommon to have small portions of "
+"text in Arabic or Hebrew embedded in an otherwise Latin document; e.g., as "
+"comments and strings in a program source file.  For these reasons, text that "
+"uses these scripts is actually @dfn{bidirectional}: a mixture of runs of "
+"left-to-right and right-to-left characters."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1746
+msgid ""
+"This section describes the facilities and options provided by Emacs for "
+"editing bidirectional text."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1747
+#, no-wrap
+msgid "logical order"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1748
+#, no-wrap
+msgid "visual order"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1757
+msgid ""
+"Emacs stores right-to-left and bidirectional text in the so-called "
+"@dfn{logical} (or @dfn{reading}) order: the buffer or string position of the "
+"first character you read precedes that of the next character.  Reordering of "
+"bidirectional text into the @dfn{visual} order happens at display time.  As "
+"result, character positions no longer increase monotonically with their "
+"positions on display.  Emacs implements the Unicode Bidirectional Algorithm "
+"described in the Unicode Standard Annex #9, for reordering of bidirectional "
+"text for display."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1758
+#, no-wrap
+msgid "bidi-display-reordering"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1764
+msgid ""
+"The buffer-local variable @code{bidi-display-reordering} controls whether "
+"text in the buffer is reordered for display.  If its value is "
+"non-@code{nil}, Emacs reorders characters that have right-to-left "
+"directionality when they are displayed.  The default value is @code{t}."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1765
+#, no-wrap
+msgid "base direction of paragraphs"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1766
+#, no-wrap
+msgid "paragraph, base direction"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1776
+msgid ""
+"Each paragraph of bidirectional text can have its own @dfn{base direction}, "
+"either right-to-left or left-to-right.  (Paragraph boundaries are empty "
+"lines, i.e., lines consisting entirely of whitespace characters.)  Text in "
+"left-to-right paragraphs begins on the screen at the left margin of the "
+"window and is truncated or continued when it reaches the right margin.  By "
+"contrast, text in right-to-left paragraphs is displayed starting at the "
+"right margin and is continued or truncated at the left margin."
+msgstr ""
+
+#. type: vindex
+#: mule.texi.orig:1777
+#, no-wrap
+msgid "bidi-paragraph-direction"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1787
+msgid ""
+"Emacs determines the base direction of each paragraph dynamically, based on "
+"the text at the beginning of the paragraph.  However, sometimes a buffer may "
+"need to force a certain base direction for its paragraphs.  The variable "
+"@code{bidi-paragraph-direction}, if non-@code{nil}, disables the dynamic "
+"determination of the base direction, and instead forces all paragraphs in "
+"the buffer to have the direction specified by its buffer-local value.  The "
+"value can be either @code{right-to-left} or @code{left-to-right}.  Any other "
+"value is interpreted as @code{nil}."
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1788
+#, no-wrap
+msgid "LRM"
+msgstr ""
+
+#. type: cindex
+#: mule.texi.orig:1789
+#, no-wrap
+msgid "RLM"
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1798
+msgid ""
+"Alternatively, you can control the base direction of a paragraph by "
+"inserting special formatting characters in front of the paragraph.  The "
+"special character @code{RIGHT-TO-LEFT MARK}, or @sc{rlm}, forces the "
+"right-to-left direction on the following paragraph, while "
+"@code{LEFT-TO-RIGHT MARK}, or @sc{lrm} forces the left-to-right direction.  "
+"(You can use @kbd{C-x 8 @key{RET}} to insert these characters.)  In a GUI "
+"session, the @sc{lrm} and @sc{rlm} characters display as very thin blank "
+"characters; on text terminals they display as blanks."
+msgstr ""
+
+#. type: Plain text
+#: mule.texi.orig:1809
+msgid ""
+"Because characters are reordered for display, Emacs commands that operate in "
+"the logical order or on stretches of buffer positions may produce unusual "
+"effects.  For example, @kbd{C-f} and @kbd{C-b} commands move point in the "
+"logical order, so the cursor will sometimes jump when point traverses "
+"reordered bidirectional text.  Similarly, a highlighted region covering a "
+"contiguous range of character positions may look discontinuous if the region "
+"spans reordered text.  This is normal and similar to the behavior of other "
+"programs that support bidirectional text.  If you set "
+"@code{visual-order-cursor-movement} to a non-@code{nil} value, cursor motion "
+"by the arrow keys follows the visual order on screen (@pxref{Moving Point, "
+"visual-order movement})."
+msgstr ""

@@ -1,0 +1,389 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: chapter
+#: commands.texi.orig:6
+#, no-wrap
+msgid "Characters, Keys and Commands"
+msgstr ""
+
+#. type: iftex
+#: commands.texi.orig:12
+msgid ""
+"This chapter explains the character sets used by Emacs for input commands, "
+"and the fundamental concepts of @dfn{keys} and @dfn{commands}, whereby Emacs "
+"interprets your keyboard and mouse input."
+msgstr ""
+
+#. type: ifnottex
+#: commands.texi.orig:16
+msgid "@raisesections"
+msgstr ""
+
+#. type: node
+#: commands.texi.orig:18
+#, no-wrap
+msgid "User Input"
+msgstr ""
+
+#. type: section
+#: commands.texi.orig:19
+#, no-wrap
+msgid "Kinds of User Input"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:20
+#, no-wrap
+msgid "input with the keyboard"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:21
+#, no-wrap
+msgid "keyboard input"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:22
+#, no-wrap
+msgid "character set (keyboard)"
+msgstr ""
+
+#. type: acronym{#1}
+#: commands.texi.orig:23
+#, no-wrap
+msgid "ASCII"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:24 commands.texi.orig:44
+#, no-wrap
+msgid "C-"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:25 commands.texi.orig:43
+#, no-wrap
+msgid "Control"
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:31
+msgid ""
+"GNU Emacs is primarily designed for use with the keyboard.  While it is "
+"possible to use the mouse to issue editing commands through the menu bar and "
+"tool bar, that is not as efficient as using the keyboard.  Therefore, this "
+"manual mainly documents how to edit with the keyboard."
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:32
+#, no-wrap
+msgid "control character"
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:41
+msgid ""
+"Keyboard input into Emacs is based on a heavily-extended version of "
+"@acronym{ASCII}.  Simple characters, like @samp{a}, @samp{B}, @samp{3}, "
+"@samp{=}, and the space character (denoted as @key{SPC}), are entered by "
+"typing the corresponding key.  @dfn{Control characters}, such as @key{RET}, "
+"@key{TAB}, @key{DEL}, @key{ESC}, @key{F1}, @key{Home}, and @key{LEFT}, are "
+"also entered this way, as are certain characters found on non-English "
+"keyboards (@pxref{International})."
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:42
+#, no-wrap
+msgid "modifier keys"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:45
+#, no-wrap
+msgid "META"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:46
+#, no-wrap
+msgid "M-"
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:57
+msgid ""
+"Emacs also recognizes control characters that are entered using "
+"@dfn{modifier keys}.  Two commonly-used modifier keys are @key{Control} "
+"(usually labeled @key{Ctrl}), and @key{META} (usually labeled "
+"@key{Alt})@footnote{We refer to @key{Alt} as @key{META} for historical "
+"reasons.}.  For example, @kbd{Control-a} is entered by holding down the "
+"@key{Ctrl} key while pressing @kbd{a}; we will refer to this as @kbd{C-a} "
+"for short.  Similarly @kbd{@key{META}-a}, or @kbd{M-a} for short, is entered "
+"by holding down the @key{Alt} key and pressing @kbd{a}.  Modifier keys can "
+"also be applied to non-alphanumerical characters, e.g., @kbd{C-@key{F1}} or "
+"@kbd{M-@key{LEFT}}."
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:58
+#, no-wrap
+msgid "@key{ESC} replacing @key{META} key"
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:67
+msgid ""
+"You can also type Meta characters using two-character sequences starting "
+"with @key{ESC}.  Thus, you can enter @kbd{M-a} by typing @kbd{@key{ESC} a}.  "
+"You can enter @kbd{C-M-a} by typing @kbd{@key{ESC} C-a}.  Unlike @key{META}, "
+"@key{ESC} is entered as a separate character.  You don't hold down @key{ESC} "
+"while typing the next character; instead, press @key{ESC} and release it, "
+"then enter the next character.  This feature is useful on certain text "
+"terminals where the @key{META} key does not function reliably."
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:68
+#, no-wrap
+msgid "keys stolen by window manager"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:69
+#, no-wrap
+msgid "window manager, keys stolen by"
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:75
+msgid ""
+"On graphical displays, the window manager might block some keyboard inputs, "
+"including @kbd{M-@key{TAB}}, @kbd{M-@key{SPC}}, @kbd{C-M-d} and "
+"@kbd{C-M-l}.  If you have this problem, you can either customize your window "
+"manager to not block those keys, or ``rebind'' the affected Emacs commands "
+"(@pxref{Customization})."
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:76
+#, no-wrap
+msgid "input event"
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:82
+msgid ""
+"Simple characters and control characters, as well as certain non-keyboard "
+"inputs such as mouse clicks, are collectively referred to as @dfn{input "
+"events}.  For details about how Emacs internally handles input events, see "
+"@ref{Input Events,,, elisp, The Emacs Lisp Reference Manual}."
+msgstr ""
+
+#. type: section
+#: commands.texi.orig:83 commands.texi.orig:84
+#, no-wrap
+msgid "Keys"
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:90
+msgid ""
+"Some Emacs commands are invoked by just one input event; for example, "
+"@kbd{C-f} moves forward one character in the buffer.  Other commands take "
+"two or more input events to invoke, such as @kbd{C-x C-f} and @kbd{C-x 4 "
+"C-f}."
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:91
+#, no-wrap
+msgid "key"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:92
+#, no-wrap
+msgid "key sequence"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:93
+#, no-wrap
+msgid "complete key"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:94
+#, no-wrap
+msgid "prefix key"
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:103
+msgid ""
+"A @dfn{key sequence}, or @dfn{key} for short, is a sequence of one or more "
+"input events that is meaningful as a unit.  If a key sequence invokes a "
+"command, we call it a @dfn{complete key}; for example, @kbd{C-f}, @kbd{C-x "
+"C-f} and @kbd{C-x 4 C-f} are all complete keys.  If a key sequence isn't "
+"long enough to invoke a command, we call it a @dfn{prefix key}; from the "
+"preceding example, we see that @kbd{C-x} and @kbd{C-x 4} are prefix keys.  "
+"Every key sequence is either a complete key or a prefix key."
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:114
+msgid ""
+"A prefix key combines with the following input event to make a longer key "
+"sequence.  For example, @kbd{C-x} is a prefix key, so typing @kbd{C-x} alone "
+"does not invoke a command; instead, Emacs waits for further input (if you "
+"pause for longer than a second, it echoes the @kbd{C-x} key to prompt for "
+"that input; @pxref{Echo Area}).  @kbd{C-x} combines with the next input "
+"event to make a two-event key sequence, which could itself be a prefix key "
+"(such as @kbd{C-x 4}), or a complete key (such as @kbd{C-x C-f}).  There is "
+"no limit to the length of key sequences, but in practice they are seldom "
+"longer than three or four input events."
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:118
+msgid ""
+"You can't add input events onto a complete key.  For example, because "
+"@kbd{C-f} is a complete key, the two-event sequence @kbd{C-f C-k} is two key "
+"sequences, not one."
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:129
+msgid ""
+"By default, the prefix keys in Emacs are @kbd{C-c}, @kbd{C-h}, @kbd{C-x}, "
+"@kbd{C-x @key{RET}}, @kbd{C-x @@}, @kbd{C-x a}, @kbd{C-x n}, @kbd{C-x r}, "
+"@kbd{C-x v}, @kbd{C-x 4}, @kbd{C-x 5}, @kbd{C-x 6}, @key{ESC}, @kbd{M-g}, "
+"and @kbd{M-o}.  (@key{F1} and @key{F2} are aliases for @kbd{C-h} and "
+"@kbd{C-x 6}.)  This list is not cast in stone; if you customize Emacs, you "
+"can make new prefix keys.  You could even eliminate some of the standard "
+"ones, though this is not recommended for most users; for example, if you "
+"remove the prefix definition of @kbd{C-x 4}, then @kbd{C-x 4 C-f} becomes an "
+"invalid key sequence.  @xref{Key Bindings}."
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:135
+msgid ""
+"Typing the help character (@kbd{C-h} or @key{F1}) after a prefix key "
+"displays a list of the commands starting with that prefix.  The sole "
+"exception to this rule is @key{ESC}: @kbd{@key{ESC} C-h} is equivalent to "
+"@kbd{C-M-h}, which does something else entirely.  You can, however, use "
+"@key{F1} to display a list of commands starting with @key{ESC}."
+msgstr ""
+
+#. type: node
+#: commands.texi.orig:136
+#, no-wrap
+msgid "Commands"
+msgstr ""
+
+#. type: section
+#: commands.texi.orig:137
+#, no-wrap
+msgid "Keys and Commands"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:139
+#, no-wrap
+msgid "binding"
+msgstr ""
+
+#. type: cindex
+#: commands.texi.orig:140
+#, no-wrap
+msgid "command"
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:145
+msgid ""
+"This manual is full of passages that tell you what particular keys do.  But "
+"Emacs does not assign meanings to keys directly.  Instead, Emacs assigns "
+"meanings to named @dfn{commands}, and then gives keys their meanings by "
+"@dfn{binding} them to commands."
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:153
+msgid ""
+"Every command has a name chosen by a programmer.  The name is usually made "
+"of a few English words separated by dashes; for example, @code{next-line} or "
+"@code{forward-word}.  Internally, each command is a special type of Lisp "
+"@dfn{function}, and the actions associated with the command are performed by "
+"running the function.  @xref{What Is a Function,, What Is a Function, elisp, "
+"The Emacs Lisp Reference Manual}."
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:156
+msgid ""
+"The bindings between keys and commands are recorded in tables called "
+"@dfn{keymaps}.  @xref{Keymaps}."
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:163
+msgid ""
+"When we say that ``@kbd{C-n} moves down vertically one line'' we are "
+"glossing over a subtle distinction that is irrelevant in ordinary use, but "
+"vital for Emacs customization.  The command @code{next-line} does a vertical "
+"move downward.  @kbd{C-n} has this effect @emph{because} it is bound to "
+"@code{next-line}.  If you rebind @kbd{C-n} to the command "
+"@code{forward-word}, @kbd{C-n} will move forward one word instead."
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:171
+msgid ""
+"In this manual, we will often speak of keys like @kbd{C-n} as commands, even "
+"though strictly speaking the key is bound to a command.  Usually we state "
+"the name of the command which really does the work in parentheses after "
+"mentioning the key that runs it.  For example, we will say that ``The "
+"command @kbd{C-n} (@code{next-line}) moves point vertically down'', meaning "
+"that the command @code{next-line} moves vertically down, and the key "
+"@kbd{C-n} is normally bound to it."
+msgstr ""
+
+#. type: Plain text
+#: commands.texi.orig:182
+msgid ""
+"Since we are discussing customization, we should tell you about "
+"@dfn{variables}.  Often the description of a command will say, ``To change "
+"this, set the variable @code{mumble-foo}.'' A variable is a name used to "
+"store a value.  Most of the variables documented in this manual are meant "
+"for customization: some command or other part of Emacs examines the variable "
+"and behaves differently according to the value that you set.  You can ignore "
+"the information about variables until you are interested in customizing "
+"them.  Then read the basic information on variables (@pxref{Variables}) and "
+"the information about specific variables will make sense."
+msgstr ""
+
+#. type: ifnottex
+#: commands.texi.orig:185
+msgid "@lowersections"
+msgstr ""

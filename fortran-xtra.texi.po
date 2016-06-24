@@ -1,0 +1,1491 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: node
+#: fortran-xtra.texi.orig:7
+#, no-wrap
+msgid "Fortran"
+msgstr ""
+
+#. type: section
+#: fortran-xtra.texi.orig:8
+#, no-wrap
+msgid "Fortran Mode"
+msgstr ""
+
+#. type: cindex
+#: fortran-xtra.texi.orig:9
+#, no-wrap
+msgid "Fortran mode"
+msgstr ""
+
+#. type: cindex
+#: fortran-xtra.texi.orig:10
+#, no-wrap
+msgid "mode, Fortran"
+msgstr ""
+
+#. type: cindex
+#: fortran-xtra.texi.orig:12
+#, no-wrap
+msgid "Fortran fixed form and free form"
+msgstr ""
+
+#. type: cindex
+#: fortran-xtra.texi.orig:13
+#, no-wrap
+msgid "Fortran 77 and Fortran 90, 95, 2003, 2008"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:14
+#, no-wrap
+msgid "f90-mode"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:15
+#, no-wrap
+msgid "fortran-mode"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:26
+msgid ""
+"Fortran mode is meant for editing ``fixed form'' (and also ``tab format'') "
+"source code (normally Fortran 77).  For editing more modern ``free form'' "
+"source code (Fortran 90, 95, 2003, 2008), use F90 mode (@code{f90-mode}).  "
+"Emacs normally uses Fortran mode for files with extension @samp{.f}, "
+"@samp{.F} or @samp{.for}, and F90 mode for the extensions @samp{.f90}, "
+"@samp{.f95}, @samp{.f03} and @samp{.f08}.  Customize @code{auto-mode-alist} "
+"to add more extensions.  GNU Fortran supports both free and fixed form.  "
+"This manual mainly documents Fortran mode, but the corresponding F90 mode "
+"features are mentioned when relevant."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:33
+msgid ""
+"Fortran mode provides special motion commands for Fortran statements and "
+"subprograms, and indentation commands that understand Fortran conventions of "
+"nesting, line numbers and continuation statements.  Fortran mode has support "
+"for Auto Fill mode that breaks long lines into proper Fortran continuation "
+"lines.  Fortran mode also supports Hideshow minor mode"
+msgstr ""
+
+#. type: iftex
+#: fortran-xtra.texi.orig:35
+msgid "(@pxref{Hideshow,,, emacs, the Emacs Manual}),"
+msgstr ""
+
+#. type: ifnottex
+#: fortran-xtra.texi.orig:38
+msgid "(@pxref{Hideshow}),"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:40
+msgid "and Imenu"
+msgstr ""
+
+#. type: iftex
+#: fortran-xtra.texi.orig:42
+msgid "(@pxref{Imenu,,, emacs, the Emacs Manual})."
+msgstr ""
+
+#. type: ifnottex
+#: fortran-xtra.texi.orig:45
+msgid "(@pxref{Imenu})."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:50
+msgid ""
+"Special commands for comments are provided because Fortran comments are "
+"unlike those of other languages.  Built-in abbrevs optionally save typing "
+"when you insert Fortran keywords."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:53
+msgid ""
+"Use @kbd{M-x fortran-mode} to switch to this major mode.  This command runs "
+"the hook @code{fortran-mode-hook}."
+msgstr ""
+
+#. type: iftex
+#: fortran-xtra.texi.orig:55 fortran-xtra.texi.orig:483
+msgid "@xref{Hooks,,, emacs, the Emacs Manual}."
+msgstr ""
+
+#. type: ifnottex
+#: fortran-xtra.texi.orig:58 fortran-xtra.texi.orig:486
+msgid "@xref{Hooks}."
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Motion: Fortran Motion"
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Moving point by statements or subprograms."
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Indent: Fortran Indent"
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Indentation commands for Fortran."
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Comments: Fortran Comments"
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Inserting and aligning comments."
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Autofill: Fortran Autofill"
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Auto fill support for Fortran."
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Columns: Fortran Columns"
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Measuring columns for valid Fortran."
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Abbrev: Fortran Abbrev"
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:67
+msgid "Built-in abbrevs for Fortran keywords."
+msgstr ""
+
+#. type: node
+#: fortran-xtra.texi.orig:69
+#, no-wrap
+msgid "Fortran Motion"
+msgstr ""
+
+#. type: subsection
+#: fortran-xtra.texi.orig:70
+#, no-wrap
+msgid "Motion Commands"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:77
+msgid ""
+"In addition to the normal commands for moving by and operating on ``defuns'' "
+"(Fortran subprograms---functions and subroutines, as well as modules for F90 "
+"mode, using the commands @code{fortran-end-of-subprogram} and "
+"@code{fortran-beginning-of-subprogram}), Fortran mode provides special "
+"commands to move by statements and other program units."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:79
+#, no-wrap
+msgid "C-c C-n @r{(Fortran mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:80
+#, no-wrap
+msgid "fortran-next-statement"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:81
+#, no-wrap
+msgid "f90-next-statement"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:82
+#, no-wrap
+msgid "C-c C-n"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:85
+msgid ""
+"Move to the beginning of the next statement "
+"(@code{fortran-next-statement}/@code{f90-next-statement})."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:86
+#, no-wrap
+msgid "C-c C-p @r{(Fortran mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:87
+#, no-wrap
+msgid "fortran-previous-statement"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:88
+#, no-wrap
+msgid "f90-previous-statement"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:89
+#, no-wrap
+msgid "C-c C-p"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:94
+msgid ""
+"Move to the beginning of the previous statement "
+"(@code{fortran-previous-statement}/@code{f90-previous-statement}).  If there "
+"is no previous statement (i.e., if called from the first statement in the "
+"buffer), move to the start of the buffer."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:95
+#, no-wrap
+msgid "C-c C-e @r{(F90 mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:96
+#, no-wrap
+msgid "f90-next-block"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:97
+#, no-wrap
+msgid "C-c C-e"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:103
+msgid ""
+"Move point forward to the start of the next code block, or the end of the "
+"current one, whichever comes first (@code{f90-next-block}).  A code block is "
+"a subroutine, @code{if}--@code{endif} statement, and so forth.  This command "
+"exists for F90 mode only, not Fortran mode.  With a numeric argument, it "
+"moves forward that many blocks."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:104
+#, no-wrap
+msgid "C-c C-a @r{(F90 mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:105
+#, no-wrap
+msgid "f90-previous-block"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:106
+#, no-wrap
+msgid "C-c C-a"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:110
+msgid ""
+"Move point backward to the previous block (@code{f90-previous-block}).  This "
+"is like @code{f90-next-block}, but moves backwards."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:111
+#, no-wrap
+msgid "C-M-n @r{(Fortran mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:112
+#, no-wrap
+msgid "fortran-end-of-block"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:113
+#, no-wrap
+msgid "f90-end-of-block"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:114
+#, no-wrap
+msgid "C-M-n"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:121
+msgid ""
+"Move to the end of the current code block "
+"(@code{fortran-end-of-block}/@code{f90-end-of-block}).  With a numeric "
+"argument, move forward that number of blocks.  The mark is set before moving "
+"point.  The F90 mode version of this command checks for consistency of block "
+"types and labels (if present), but it does not check the outermost block "
+"since that may be incomplete."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:122
+#, no-wrap
+msgid "C-M-p @r{(Fortran mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:123
+#, no-wrap
+msgid "fortran-beginning-of-block"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:124
+#, no-wrap
+msgid "f90-beginning-of-block"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:125
+#, no-wrap
+msgid "C-M-p"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:129
+msgid ""
+"Move to the start of the current code block "
+"(@code{fortran-beginning-of-block}/@code{f90-beginning-of-block}). This is "
+"like @code{fortran-end-of-block}, but moves backwards."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:136
+msgid ""
+"The commands @code{fortran-beginning-of-subprogram} and "
+"@code{fortran-end-of-subprogram} move to the start or end of the current "
+"subprogram, respectively.  The commands @code{fortran-mark-do} and "
+"@code{fortran-mark-if} mark the end of the current @code{do} or @code{if} "
+"block, and move point to the start."
+msgstr ""
+
+#. type: node
+#: fortran-xtra.texi.orig:138
+#, no-wrap
+msgid "Fortran Indent"
+msgstr ""
+
+#. type: subsection
+#: fortran-xtra.texi.orig:139
+#, no-wrap
+msgid "Fortran Indentation"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:145
+msgid ""
+"Special commands and features are needed for indenting fixed (or tab)  form "
+"Fortran code in order to make sure various syntactic entities (line numbers, "
+"comment line indicators and continuation line flags) appear in the required "
+"columns."
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:152
+msgid "Commands: ForIndent Commands"
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:152
+msgid "Commands for indenting and filling Fortran."
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:152
+msgid "Contline: ForIndent Cont"
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:152
+msgid "How continuation lines indent."
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:152
+msgid "Numbers: ForIndent Num"
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:152
+msgid "How line numbers auto-indent."
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:152
+msgid "Conv: ForIndent Conv"
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:152
+msgid "Conventions you must obey to avoid trouble."
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:152
+msgid "Vars: ForIndent Vars"
+msgstr ""
+
+#. type: menuentry
+#: fortran-xtra.texi.orig:152
+msgid "Variables controlling Fortran indent style."
+msgstr ""
+
+#. type: node
+#: fortran-xtra.texi.orig:154
+#, no-wrap
+msgid "ForIndent Commands"
+msgstr ""
+
+#. type: subsubsection
+#: fortran-xtra.texi.orig:155
+#, no-wrap
+msgid "Fortran Indentation and Filling Commands"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:158
+#, no-wrap
+msgid "C-M-j"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:161
+msgid ""
+"Break the current line at point and set up a continuation line "
+"(@code{fortran-split-line})."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:161
+#, no-wrap
+msgid "M-^"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:163
+msgid "Join this line to the previous line (@code{fortran-join-line})."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:163
+#, no-wrap
+msgid "C-M-q"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:166
+msgid ""
+"Indent all the lines of the subprogram that point is in "
+"(@code{fortran-indent-subprogram})."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:166
+#, no-wrap
+msgid "M-q"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:169
+msgid ""
+"Fill a comment block or statement (using @code{fortran-fill-paragraph} or "
+"@code{fortran-fill-statement})."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:171
+#, no-wrap
+msgid "C-M-q @r{(Fortran mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:172
+#, no-wrap
+msgid "fortran-indent-subprogram"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:176
+msgid ""
+"The key @kbd{C-M-q} runs @code{fortran-indent-subprogram}, a command to "
+"reindent all the lines of the Fortran subprogram (function or subroutine) "
+"containing point."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:177
+#, no-wrap
+msgid "C-M-j @r{(Fortran mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:178
+#, no-wrap
+msgid "fortran-split-line"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:184
+msgid ""
+"The key @kbd{C-M-j} runs @code{fortran-split-line}, which splits a line in "
+"the appropriate fashion for Fortran.  In a non-comment line, the second half "
+"becomes a continuation line and is indented accordingly.  In a comment line, "
+"both halves become separate comment lines."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:185
+#, no-wrap
+msgid "M-^ @r{(Fortran mode)}"
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:186
+#, no-wrap
+msgid "C-c C-d @r{(Fortran mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:187
+#, no-wrap
+msgid "fortran-join-line"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:192
+msgid ""
+"@kbd{M-^} or @kbd{C-c C-d} runs the command @code{fortran-join-line}, which "
+"joins a continuation line back to the previous line, roughly as the inverse "
+"of @code{fortran-split-line}.  The point must be on a continuation line when "
+"this command is invoked."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:193
+#, no-wrap
+msgid "M-q @r{(Fortran mode)}"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:196
+msgid ""
+"@kbd{M-q} in Fortran mode fills the comment block or statement that point is "
+"in.  This removes any excess statement continuations."
+msgstr ""
+
+#. type: node
+#: fortran-xtra.texi.orig:197
+#, no-wrap
+msgid "ForIndent Cont"
+msgstr ""
+
+#. type: subsubsection
+#: fortran-xtra.texi.orig:198
+#, no-wrap
+msgid "Continuation Lines"
+msgstr ""
+
+#. type: cindex
+#: fortran-xtra.texi.orig:199
+#, no-wrap
+msgid "Fortran continuation lines"
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:201
+#, no-wrap
+msgid "fortran-continuation-string"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:212
+msgid ""
+"Most Fortran 77 compilers allow two ways of writing continuation lines.  If "
+"the first non-space character on a line is in column 5, then that line is a "
+"continuation of the previous line.  We call this @dfn{fixed form}.  (In GNU "
+"Emacs we always count columns from 0; but note that the Fortran standard "
+"counts from 1.)  The variable @code{fortran-continuation-string} specifies "
+"what character to put in column 5.  A line that starts with a tab character "
+"followed by any digit except @samp{0} is also a continuation line.  We call "
+"this style of continuation @dfn{tab format}.  (Fortran 90 introduced ``free "
+"form'', with another style of continuation lines)."
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:213
+#, no-wrap
+msgid "indent-tabs-mode @r{(Fortran mode)}"
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:214
+#, no-wrap
+msgid "fortran-analyze-depth"
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:215
+#, no-wrap
+msgid "fortran-tab-mode-default"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:228
+msgid ""
+"Fortran mode can use either style of continuation line.  When you enter "
+"Fortran mode, it tries to deduce the proper continuation style automatically "
+"from the buffer contents.  It does this by scanning up to "
+"@code{fortran-analyze-depth} (default 100) lines from the start of the "
+"buffer.  The first line that begins with either a tab character or six "
+"spaces determines the choice.  If the scan fails (for example, if the buffer "
+"is new and therefore empty), the value of @code{fortran-tab-mode-default} "
+"(@code{nil} for fixed form, and non-@code{nil} for tab format) is used.  "
+"@samp{/t} (@code{fortran-tab-mode-string}) in the mode line indicates tab "
+"format is selected.  Fortran mode sets the value of @code{indent-tabs-mode} "
+"accordingly."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:236
+msgid ""
+"If the text on a line starts with the Fortran continuation marker @samp{$}, "
+"or if it begins with any non-whitespace character in column 5, Fortran mode "
+"treats it as a continuation line.  When you indent a continuation line with "
+"@key{TAB}, it converts the line to the current continuation style.  When you "
+"split a Fortran statement with @kbd{C-M-j}, the continuation marker on the "
+"newline is created according to the continuation style."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:244
+msgid ""
+"The setting of continuation style affects several other aspects of editing "
+"in Fortran mode.  In fixed form mode, the minimum column number for the body "
+"of a statement is 6.  Lines inside of Fortran blocks that are indented to "
+"larger column numbers must use only the space character for whitespace.  In "
+"tab format mode, the minimum column number for the statement body is 8, and "
+"the whitespace before column 8 must consist of one tab character."
+msgstr ""
+
+#. type: node
+#: fortran-xtra.texi.orig:245
+#, no-wrap
+msgid "ForIndent Num"
+msgstr ""
+
+#. type: subsubsection
+#: fortran-xtra.texi.orig:246
+#, no-wrap
+msgid "Line Numbers"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:251
+msgid ""
+"If a number is the first non-whitespace in the line, Fortran indentation "
+"assumes it is a line number and moves it to columns 0 through 4.  (Columns "
+"always count from 0 in Emacs.)"
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:252
+#, no-wrap
+msgid "fortran-line-number-indent"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:260
+msgid ""
+"Line numbers of four digits or less are normally indented one space.  The "
+"variable @code{fortran-line-number-indent} controls this; it specifies the "
+"maximum indentation a line number can have.  The default value of the "
+"variable is 1.  Fortran mode tries to prevent line number digits passing "
+"column 4, reducing the indentation below the specified maximum if "
+"necessary.  If @code{fortran-line-number-indent} has the value 5, line "
+"numbers are right-justified to end in column 4."
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:261
+#, no-wrap
+msgid "fortran-electric-line-number"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:266
+msgid ""
+"Simply inserting a line number is enough to indent it according to these "
+"rules.  As each digit is inserted, the indentation is recomputed.  To turn "
+"off this feature, set the variable @code{fortran-electric-line-number} to "
+"@code{nil}."
+msgstr ""
+
+#. type: node
+#: fortran-xtra.texi.orig:268
+#, no-wrap
+msgid "ForIndent Conv"
+msgstr ""
+
+#. type: subsubsection
+#: fortran-xtra.texi.orig:269
+#, no-wrap
+msgid "Syntactic Conventions"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:274
+msgid ""
+"Fortran mode assumes that you follow certain conventions that simplify the "
+"task of understanding a Fortran program well enough to indent it properly:"
+msgstr ""
+
+#. type: itemize
+#: fortran-xtra.texi.orig:278
+msgid "Two nested @samp{do} loops never share a @samp{continue} statement."
+msgstr ""
+
+#. type: itemize
+#: fortran-xtra.texi.orig:282
+msgid ""
+"Fortran keywords such as @samp{if}, @samp{else}, @samp{then}, @samp{do} and "
+"others are written without embedded whitespace or line breaks."
+msgstr ""
+
+#. type: itemize
+#: fortran-xtra.texi.orig:288
+msgid ""
+"Fortran compilers generally ignore whitespace outside of string constants, "
+"but Fortran mode does not recognize these keywords if they are not "
+"contiguous.  Constructs such as @samp{else if} or @samp{end do} are "
+"acceptable, but the second word should be on the same line as the first and "
+"not on a continuation line."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:295
+msgid ""
+"If you fail to follow these conventions, the indentation commands may indent "
+"some lines unaesthetically.  However, a correct Fortran program retains its "
+"meaning when reindented even if the conventions are not followed."
+msgstr ""
+
+#. type: node
+#: fortran-xtra.texi.orig:296
+#, no-wrap
+msgid "ForIndent Vars"
+msgstr ""
+
+#. type: subsubsection
+#: fortran-xtra.texi.orig:297
+#, no-wrap
+msgid "Variables for Fortran Indentation"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:299 fortran-xtra.texi.orig:308
+#, no-wrap
+msgid "fortran-do-indent"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:300 fortran-xtra.texi.orig:311
+#, no-wrap
+msgid "fortran-if-indent"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:301 fortran-xtra.texi.orig:315
+#, no-wrap
+msgid "fortran-structure-indent"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:302 fortran-xtra.texi.orig:319
+#, no-wrap
+msgid "fortran-continuation-indent"
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:303
+#, no-wrap
+msgid "fortran-check-all-num@dots{}"
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:304
+#, no-wrap
+msgid "fortran-minimum-statement-indent@dots{}"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:306
+msgid "Several additional variables control how Fortran indentation works:"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:310
+msgid "Extra indentation within each level of @samp{do} statement (default 3)."
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:314
+msgid ""
+"Extra indentation within each level of @samp{if}, @samp{select case}, or "
+"@samp{where} statements (default 3)."
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:318
+msgid ""
+"Extra indentation within each level of @samp{structure}, @samp{union}, "
+"@samp{map}, or @samp{interface} statements (default 3)."
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:321
+msgid "Extra indentation for bodies of continuation lines (default 5)."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:322
+#, no-wrap
+msgid "fortran-check-all-num-for-matching-do"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:331
+msgid ""
+"In Fortran 77, a numbered @samp{do} statement is ended by any statement with "
+"a matching line number.  It is common (but not compulsory) to use a "
+"@samp{continue} statement for this purpose.  If this variable has a "
+"non-@code{nil} value, indenting any numbered statement must check for a "
+"@samp{do} that ends there.  If you always end @samp{do} statements with a "
+"@samp{continue} line (or if you use the more modern @samp{enddo}), then you "
+"can speed up indentation by setting this variable to @code{nil} (the "
+"default)."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:332
+#, no-wrap
+msgid "fortran-blink-matching-if"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:336
+msgid ""
+"If this is @code{t}, indenting an @samp{endif} (or @samp{enddo} statement "
+"moves the cursor momentarily to the matching @samp{if} (or @samp{do}) "
+"statement to show where it is.  The default is @code{nil}."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:337
+#, no-wrap
+msgid "fortran-minimum-statement-indent-fixed"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:341
+msgid ""
+"Minimum indentation for Fortran statements when using fixed form "
+"continuation line style.  Statement bodies are never indented by less than "
+"this.  The default is 6."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:342
+#, no-wrap
+msgid "fortran-minimum-statement-indent-tab"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:346
+msgid ""
+"Minimum indentation for Fortran statements for tab format continuation line "
+"style.  Statement bodies are never indented by less than this.  The default "
+"is 8."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:350
+msgid ""
+"The following section describes the variables controlling the indentation of "
+"comments."
+msgstr ""
+
+#. type: subsection
+#: fortran-xtra.texi.orig:351 fortran-xtra.texi.orig:352
+#, no-wrap
+msgid "Fortran Comments"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:358
+msgid ""
+"The usual Emacs comment commands assume that a comment can follow a line of "
+"code.  In Fortran 77, the standard comment syntax requires an entire line to "
+"be just a comment.  Therefore, Fortran mode replaces the standard Emacs "
+"comment commands and defines some new variables."
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:359
+#, no-wrap
+msgid "fortran-comment-line-start"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:367
+msgid ""
+"Fortran mode can also handle the Fortran 90 comment syntax where comments "
+"start with @samp{!} and can follow other text.  Because only some Fortran 77 "
+"compilers accept this syntax, Fortran mode will not insert such comments "
+"unless you have said in advance to do so.  To do this, set the variable "
+"@code{fortran-comment-line-start} to @samp{\"!\"}.  If you use an unusual "
+"value, you may need to change @code{fortran-comment-line-start-skip}."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:370
+#, no-wrap
+msgid "M-;"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:372
+msgid "Align comment or insert new comment (@code{comment-dwim})."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:373
+#, no-wrap
+msgid "C-x ;"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:375
+msgid "Applies to nonstandard @samp{!} comments only (@code{comment-set-column})."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:376
+#, no-wrap
+msgid "C-c ;"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:379
+msgid ""
+"Turn all lines of the region into comments, or (with argument) turn them "
+"back into real code (@code{fortran-comment-region})."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:386
+msgid ""
+"@kbd{M-;} in Fortran mode runs the standard @code{comment-dwim}.  This "
+"recognizes any kind of existing comment and aligns its text appropriately; "
+"if there is no existing comment, a comment is inserted and aligned.  "
+"Inserting and aligning comments are not the same in Fortran mode as in other "
+"modes."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:391
+msgid ""
+"When a new comment must be inserted, if the current line is blank, a "
+"full-line comment is inserted.  On a non-blank line, a nonstandard @samp{!} "
+"comment is inserted if you have said you want to use them.  Otherwise a "
+"full-line comment is inserted on a new line before the current line."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:398
+msgid ""
+"Nonstandard @samp{!} comments are aligned like comments in other languages, "
+"but full-line comments are different.  In a standard full-line comment, the "
+"comment delimiter itself must always appear in column zero.  What can be "
+"aligned is the text within the comment.  You can choose from three styles of "
+"alignment by setting the variable @code{fortran-comment-indent-style} to one "
+"of these values:"
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:399
+#, no-wrap
+msgid "fortran-comment-indent-style"
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:400
+#, no-wrap
+msgid "fortran-comment-line-extra-indent"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:402
+#, no-wrap
+msgid "fixed"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:406
+msgid ""
+"Align the text at a fixed column, which is the sum of "
+"@code{fortran-comment-line-extra-indent} and the minimum statement "
+"indentation.  This is the default."
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:411
+msgid ""
+"The minimum indentation is @code{fortran-minimum-statement-indent-tab} for "
+"tab format continuation line style and "
+"@code{fortran-minimum-statement-indent-fixed} for fixed form style."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:412
+#, no-wrap
+msgid "relative"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:415
+msgid ""
+"Align the text as if it were a line of code, but with an additional "
+"@code{fortran-comment-line-extra-indent} columns of indentation."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:416
+#, no-wrap
+msgid "nil"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:418
+msgid "Don't move text in full-line comments automatically."
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:420
+#, no-wrap
+msgid "fortran-comment-indent-char"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:425
+msgid ""
+"In addition, you can specify the character to be used to indent within "
+"full-line comments by setting the variable "
+"@code{fortran-comment-indent-char} to the single-character string you want "
+"to use."
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:426
+#, no-wrap
+msgid "fortran-directive-re"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:434
+msgid ""
+"Compiler directive lines, or preprocessor lines, have much the same "
+"appearance as comment lines.  It is important, though, that such lines never "
+"be indented at all, no matter what the value of "
+"@code{fortran-comment-indent-style}.  The variable "
+"@code{fortran-directive-re} is a regular expression that specifies which "
+"lines are directives.  Matching lines are never indented, and receive "
+"distinctive font-locking."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:438
+msgid ""
+"The normal Emacs comment command @kbd{C-x ;} (@code{comment-set-column})  "
+"has not been redefined.  If you use @samp{!} comments, this command can be "
+"used with them.  Otherwise it is useless in Fortran mode."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:439
+#, no-wrap
+msgid "C-c ; @r{(Fortran mode)}"
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:440 fortran-xtra.texi.orig:441
+#, no-wrap
+msgid "fortran-comment-region"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:451
+msgid ""
+"The command @kbd{C-c ;} (@code{fortran-comment-region}) turns all the lines "
+"of the region into comments by inserting the string @samp{c$$$} at the front "
+"of each one.  With a numeric argument, it turns the region back into live "
+"code by deleting @samp{c$$$} from the front of each line in it.  The string "
+"used for these comments can be controlled by setting the variable "
+"@code{fortran-comment-region}.  Note that here we have an example of a "
+"command and a variable with the same name; these two uses of the name never "
+"conflict because in Lisp and in Emacs it is always clear from the context "
+"which one is meant."
+msgstr ""
+
+#. type: node
+#: fortran-xtra.texi.orig:452
+#, no-wrap
+msgid "Fortran Autofill"
+msgstr ""
+
+#. type: subsection
+#: fortran-xtra.texi.orig:453
+#, no-wrap
+msgid "Auto Fill in Fortran Mode"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:463
+msgid ""
+"Fortran mode has specialized support for Auto Fill mode, which is a minor "
+"mode that automatically splits statements as you insert them when they "
+"become too wide.  Splitting a statement involves making continuation lines "
+"using @code{fortran-continuation-string} (@pxref{ForIndent Cont}).  This "
+"splitting happens when you type @key{SPC}, @key{RET}, or @key{TAB}, and also "
+"in the Fortran indentation commands.  You activate Auto Fill in Fortran mode "
+"in the normal way."
+msgstr ""
+
+#. type: iftex
+#: fortran-xtra.texi.orig:465
+msgid "@xref{Auto Fill,,, emacs, the Emacs Manual}."
+msgstr ""
+
+#. type: ifnottex
+#: fortran-xtra.texi.orig:468
+msgid "@xref{Auto Fill}."
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:470
+#, no-wrap
+msgid "fortran-break-before-delimiters"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:478
+msgid ""
+"Auto Fill breaks lines at spaces or delimiters when the lines get longer "
+"than the desired width (the value of @code{fill-column}).  The delimiters "
+"(besides whitespace) that Auto Fill can break at are @samp{+}, @samp{-}, "
+"@samp{/}, @samp{*}, @samp{=}, @samp{<}, @samp{>}, and @samp{,}.  The line "
+"break comes after the delimiter if the variable "
+"@code{fortran-break-before-delimiters} is @code{nil}.  Otherwise (and by "
+"default), the break comes before the delimiter."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:481
+msgid ""
+"To enable Auto Fill in all Fortran buffers, add @code{auto-fill-mode} to "
+"@code{fortran-mode-hook}."
+msgstr ""
+
+#. type: node
+#: fortran-xtra.texi.orig:488
+#, no-wrap
+msgid "Fortran Columns"
+msgstr ""
+
+#. type: subsection
+#: fortran-xtra.texi.orig:489
+#, no-wrap
+msgid "Checking Columns in Fortran"
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:491
+#, no-wrap
+msgid "fortran-line-length"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:499
+msgid ""
+"In standard Fortran 77, anything beyond column 72 is ignored.  Most "
+"compilers provide an option to change this (for example, "
+"@samp{-ffixed-line-length-N} in gfortran).  Customize the variable "
+"@code{fortran-line-length} to change the line length in Fortran mode.  "
+"Anything beyond this point is font-locked as a comment.  (Unless it is "
+"inside a string: strings that extend beyond @code{fortran-line-length} will "
+"confuse font-lock.)"
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:501
+#, no-wrap
+msgid "C-c C-r"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:504
+msgid ""
+"Display a ``column ruler'' momentarily above the current line "
+"(@code{fortran-column-ruler})."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:504
+#, no-wrap
+msgid "C-c C-w"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:509
+msgid ""
+"Split the current window horizontally temporarily so that it is "
+"@code{fortran-line-length} columns wide "
+"(@code{fortran-window-create-momentarily}).  This may help you avoid making "
+"lines longer than the limit imposed by your Fortran compiler."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:509
+#, no-wrap
+msgid "C-u C-c C-w"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:513
+msgid ""
+"Split the current window horizontally so that it is "
+"@code{fortran-line-length} columns wide (@code{fortran-window-create}).  You "
+"can then continue editing."
+msgstr ""
+
+#. type: item
+#: fortran-xtra.texi.orig:513
+#, no-wrap
+msgid "M-x fortran-strip-sequence-nos"
+msgstr ""
+
+#. type: table
+#: fortran-xtra.texi.orig:515
+msgid "Delete all text in column @code{fortran-line-length} and beyond."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:517
+#, no-wrap
+msgid "C-c C-r @r{(Fortran mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:518
+#, no-wrap
+msgid "fortran-column-ruler"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:525
+msgid ""
+"The command @kbd{C-c C-r} (@code{fortran-column-ruler}) shows a column ruler "
+"momentarily above the current line.  The comment ruler is two lines of text "
+"that show you the locations of columns with special significance in Fortran "
+"programs.  Square brackets show the limits of the columns for line numbers, "
+"and curly brackets show the limits of the columns for the statement body.  "
+"Column numbers appear above them."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:530
+msgid ""
+"Note that the column numbers count from zero, as always in GNU Emacs.  As a "
+"result, the numbers may be one less than those you are familiar with; but "
+"the positions they indicate in the line are standard for Fortran."
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:531
+#, no-wrap
+msgid "fortran-column-ruler-fixed"
+msgstr ""
+
+#. type: vindex
+#: fortran-xtra.texi.orig:532
+#, no-wrap
+msgid "fortran-column-ruler-tabs"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:540
+msgid ""
+"The text used to display the column ruler depends on the value of the "
+"variable @code{indent-tabs-mode}.  If @code{indent-tabs-mode} is @code{nil}, "
+"then the value of the variable @code{fortran-column-ruler-fixed} is used as "
+"the column ruler.  Otherwise, the value of the variable "
+"@code{fortran-column-ruler-tab} is displayed.  By changing these variables, "
+"you can change the column ruler display."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:541
+#, no-wrap
+msgid "C-c C-w @r{(Fortran mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:542
+#, no-wrap
+msgid "fortran-window-create-momentarily"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:547
+msgid ""
+"@kbd{C-c C-w} (@code{fortran-window-create-momentarily}) temporarily splits "
+"the current window horizontally, making a window @code{fortran-line-length} "
+"columns wide, so you can see any lines that are too long.  Type a space to "
+"restore the normal width."
+msgstr ""
+
+#. type: kindex
+#: fortran-xtra.texi.orig:548
+#, no-wrap
+msgid "C-u C-c C-w @r{(Fortran mode)}"
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:549
+#, no-wrap
+msgid "fortran-window-create"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:554
+msgid ""
+"You can also split the window horizontally and continue editing with the "
+"split in place.  To do this, use @kbd{C-u C-c C-w} (@code{M-x "
+"fortran-window-create}).  By editing in this window you can immediately see "
+"when you make a line too wide to be correct Fortran."
+msgstr ""
+
+#. type: findex
+#: fortran-xtra.texi.orig:555
+#, no-wrap
+msgid "fortran-strip-sequence-nos"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:560
+msgid ""
+"The command @kbd{M-x fortran-strip-sequence-nos} deletes all text in column "
+"@code{fortran-line-length} and beyond, on all lines in the current buffer.  "
+"This is the easiest way to get rid of old sequence numbers."
+msgstr ""
+
+#. type: node
+#: fortran-xtra.texi.orig:561
+#, no-wrap
+msgid "Fortran Abbrev"
+msgstr ""
+
+#. type: subsection
+#: fortran-xtra.texi.orig:562
+#, no-wrap
+msgid "Fortran Keyword Abbrevs"
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:567
+msgid ""
+"Fortran mode provides many built-in abbrevs for common keywords and "
+"declarations.  These are the same sort of abbrev that you can define "
+"yourself.  To use them, you must turn on Abbrev mode."
+msgstr ""
+
+#. type: iftex
+#: fortran-xtra.texi.orig:569
+msgid "@xref{Abbrevs,,, emacs, the Emacs Manual}."
+msgstr ""
+
+#. type: ifnottex
+#: fortran-xtra.texi.orig:572
+msgid "@xref{Abbrevs}."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:579
+msgid ""
+"The built-in abbrevs are unusual in one way: they all start with a "
+"semicolon.  For example, one built-in Fortran abbrev is @samp{;c} for "
+"@samp{continue}.  If you insert @samp{;c} and then insert a punctuation "
+"character such as a space or a newline, the @samp{;c} expands automatically "
+"to @samp{continue}, provided Abbrev mode is enabled."
+msgstr ""
+
+#. type: Plain text
+#: fortran-xtra.texi.orig:581
+msgid ""
+"Type @samp{;?} or @samp{;C-h} to display a list of all the built-in Fortran "
+"abbrevs and what they stand for."
+msgstr ""

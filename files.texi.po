@@ -1,0 +1,4940 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: node
+#: files.texi.orig:5
+#, no-wrap
+msgid "Files"
+msgstr ""
+
+#. type: chapter
+#: files.texi.orig:6
+#, no-wrap
+msgid "File Handling"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:7
+#, no-wrap
+msgid "files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:12
+msgid ""
+"The operating system stores data permanently in named @dfn{files}, so most "
+"of the text you edit with Emacs comes from a file and is ultimately stored "
+"in a file."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:18
+msgid ""
+"To edit a file, you must tell Emacs to read the file and prepare a buffer "
+"containing a copy of the file's text.  This is called @dfn{visiting} the "
+"file.  Editing commands apply directly to text in the buffer; that is, to "
+"the copy inside Emacs.  Your changes appear in the file itself only when you "
+"@dfn{save} the buffer back into the file."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:22
+msgid ""
+"In addition to visiting and saving files, Emacs can delete, copy, rename, "
+"and append to files, keep multiple versions of them, and operate on file "
+"directories."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:28 files.texi.orig:46 files.texi.orig:47
+#, no-wrap
+msgid "File Names"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:28
+msgid "How to type and edit file-name arguments."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:28 files.texi.orig:129
+#, no-wrap
+msgid "Visiting"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:28
+msgid "Visiting a file prepares Emacs to edit the file."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:28 files.texi.orig:331
+#, no-wrap
+msgid "Saving"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:28
+msgid "Saving makes your changes permanent."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:28 files.texi.orig:888
+#, no-wrap
+msgid "Reverting"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:28
+msgid "Reverting cancels all the changes not saved."
+msgstr ""
+
+#. type: ifnottex
+#: files.texi.orig:30
+msgid "* Autorevert:: Auto Reverting non-file buffers."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:44 files.texi.orig:961
+#, no-wrap
+msgid "Auto Save"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Auto Save periodically protects against loss of data."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:44 files.texi.orig:1130
+#, no-wrap
+msgid "File Aliases"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Handling multiple names for one file."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:44 files.texi.orig:1189
+#, no-wrap
+msgid "Directories"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Creating, deleting, and listing file directories."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:44 files.texi.orig:1264 files.texi.orig:1265
+#, no-wrap
+msgid "Comparing Files"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Finding where two files differ."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:44 files.texi.orig:1341 files.texi.orig:1342
+#, no-wrap
+msgid "Diff Mode"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Mode for editing file differences."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:44 files.texi.orig:1513
+#, no-wrap
+msgid "Misc File Ops"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Other things you can do on files."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:44 files.texi.orig:1641
+#, no-wrap
+msgid "Compressed Files"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Accessing compressed files."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:44 files.texi.orig:1666 files.texi.orig:1667
+#, no-wrap
+msgid "File Archives"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Operating on tar, zip, jar etc. archive files."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:44 files.texi.orig:1743 files.texi.orig:1744
+#, no-wrap
+msgid "Remote Files"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Accessing files on other machines."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:44 files.texi.orig:1845 files.texi.orig:1846
+#, no-wrap
+msgid "Quoted File Names"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Quoting special characters in file names."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:44 files.texi.orig:1881 files.texi.orig:1882
+#, no-wrap
+msgid "File Name Cache"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Completion against a list of files you often use."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:44 files.texi.orig:1924
+#, no-wrap
+msgid "File Conveniences"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Convenience Features for Finding Files."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:44 files.texi.orig:2011 files.texi.orig:2012
+#, no-wrap
+msgid "Filesets"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:44
+msgid "Handling sets of files."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:48
+#, no-wrap
+msgid "file names"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:50
+#, no-wrap
+msgid "default file name"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:53
+msgid ""
+"Many Emacs commands that operate on a file require you to specify the file "
+"name, using the minibuffer (@pxref{Minibuffer File})."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:64
+msgid ""
+"While in the minibuffer, you can use the usual completion and history "
+"commands (@pxref{Minibuffer}).  Note that file name completion ignores file "
+"names whose extensions appear in the variable "
+"@code{completion-ignored-extensions} (@pxref{Completion Options}).  Note "
+"also that most commands use ``permissive completion with confirmation'' for "
+"reading file names: you are allowed to submit a nonexistent file name, but "
+"if you type @key{RET} immediately after completing up to a nonexistent file "
+"name, Emacs prints @samp{[Confirm]} and you must type a second @key{RET} to "
+"confirm.  @xref{Completion Exit}, for details."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:65
+#, no-wrap
+msgid "default directory"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:66
+#, no-wrap
+msgid "default-directory"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:67
+#, no-wrap
+msgid "insert-default-directory"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:77
+msgid ""
+"Each buffer has a @dfn{default directory}, stored in the buffer-local "
+"variable @code{default-directory}.  Whenever Emacs reads a file name using "
+"the minibuffer, it usually inserts the default directory into the minibuffer "
+"as the initial contents.  You can inhibit this insertion by changing the "
+"variable @code{insert-default-directory} to @code{nil} (@pxref{Minibuffer "
+"File}).  Regardless, Emacs always assumes that any relative file name is "
+"relative to the default directory, e.g., entering a file name without a "
+"directory specifies a file in the default directory."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:78
+#, no-wrap
+msgid "cd"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:79
+#, no-wrap
+msgid "pwd"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:89
+msgid ""
+"When you visit a file, Emacs sets @code{default-directory} in the visiting "
+"buffer to the directory of its file.  When you create a new buffer that is "
+"not visiting a file, via a command like @kbd{C-x b}, its default directory "
+"is usually copied from the buffer that was current at the time "
+"(@pxref{Select Buffer}).  You can use the command @kbd{M-x pwd} to see the "
+"value of @code{default-directory} in the current buffer.  The command "
+"@kbd{M-x cd} prompts for a directory name, and sets the buffer's "
+"@code{default-directory} to that directory (doing this does not change the "
+"buffer's file name, if any)."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:97
+msgid ""
+"As an example, when you visit the file @file{/u/rms/gnu/gnu.tasks}, the "
+"default directory is set to @file{/u/rms/gnu/}.  If you invoke a command "
+"that reads a file name, entering just @samp{foo} in the minibuffer, with a "
+"directory omitted, specifies the file @file{/u/rms/gnu/foo}; entering "
+"@samp{../.login} specifies @file{/u/rms/.login}; and entering @samp{new/foo} "
+"specifies @file{/u/rms/gnu/new/foo}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:102
+msgid ""
+"When typing a file name into the minibuffer, you can make use of a couple of "
+"shortcuts: a double slash is interpreted as ``ignore everything before the "
+"second slash in the pair'', and @samp{~/} is interpreted as your home "
+"directory.  @xref{Minibuffer File}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:103
+#, no-wrap
+msgid "environment variables in file names"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:104
+#, no-wrap
+msgid "expansion of environment variables"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:105
+#, no-wrap
+msgid "@code{$} in file names"
+msgstr ""
+
+#. type: anchor{#1}
+#: files.texi.orig:118
+msgid "File Names with $"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:118
+msgid ""
+"The character @samp{$} is used to substitute an environment variable into a "
+"file name.  The name of the environment variable consists of all the "
+"alphanumeric characters after the @samp{$}; alternatively, it can be "
+"enclosed in braces after the @samp{$}.  For example, if you have used the "
+"shell command @command{export FOO=rms/hacks} to set up an environment "
+"variable named @env{FOO}, then both @file{/u/$FOO/test.c} and "
+"@file{/u/$@{FOO@}/test.c} are abbreviations for @file{/u/rms/hacks/test.c}.  "
+"If the environment variable is not defined, no substitution occurs, so that "
+"the character @samp{$} stands for itself.  Note that environment variables "
+"affect Emacs only if they are applied before Emacs is started."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:125
+msgid ""
+"To access a file with @samp{$} in its name, if the @samp{$} causes "
+"expansion, type @samp{$$}.  This pair is converted to a single @samp{$} at "
+"the same time that variable substitution is performed for a single "
+"@samp{$}.  Alternatively, quote the whole file name with @samp{/:} "
+"(@pxref{Quoted File Names}).  File names which begin with a literal @samp{~} "
+"should also be quoted with @samp{/:}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:128
+msgid ""
+"You can include non-@acronym{ASCII} characters in file names.  @xref{File "
+"Name Coding}."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:130
+#, no-wrap
+msgid "Visiting Files"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:131
+#, no-wrap
+msgid "visiting files"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:132
+#, no-wrap
+msgid "open file"
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:135 files.texi.orig:159
+#, no-wrap
+msgid "C-x C-f"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:137
+msgid "Visit a file (@code{find-file})."
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:137 files.texi.orig:251
+#, no-wrap
+msgid "C-x C-r"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:140
+msgid ""
+"Visit a file for viewing, without allowing changes to it "
+"(@code{find-file-read-only})."
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:140 files.texi.orig:223
+#, no-wrap
+msgid "C-x C-v"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:143
+msgid ""
+"Visit a different file instead of the one visited last "
+"(@code{find-alternate-file})."
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:143 files.texi.orig:257
+#, no-wrap
+msgid "C-x 4 f"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:146
+msgid ""
+"Visit a file, in another window (@code{find-file-other-window}).  Don't "
+"alter what is displayed in the selected window."
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:146 files.texi.orig:267
+#, no-wrap
+msgid "C-x 5 f"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:149
+msgid ""
+"Visit a file, in a new frame (@code{find-file-other-frame}).  Don't alter "
+"what is displayed in the selected frame."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:149
+#, no-wrap
+msgid "M-x find-file-literally"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:151
+msgid "Visit a file with no conversion of the contents."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:153
+#, no-wrap
+msgid "files, visiting and saving"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:154
+#, no-wrap
+msgid "saving files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:158
+msgid ""
+"@dfn{Visiting} a file means reading its contents into an Emacs buffer so you "
+"can edit them.  Emacs makes a new buffer for each file that you visit."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:160
+#, no-wrap
+msgid "find-file"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:165
+msgid ""
+"To visit a file, type @kbd{C-x C-f} (@code{find-file}) and use the "
+"minibuffer to enter the name of the desired file.  While in the minibuffer, "
+"you can abort the command by typing @kbd{C-g}.  @xref{File Names}, for "
+"details about entering file names into minibuffers."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:177
+msgid ""
+"If the specified file exists but the system does not allow you to read it, "
+"an error message is displayed in the echo area.  Otherwise, you can tell "
+"that @kbd{C-x C-f} has completed successfully by the appearance of new text "
+"on the screen, and by the buffer name shown in the mode line (@pxref{Mode "
+"Line}).  Emacs normally constructs the buffer name from the file name, "
+"omitting the directory name.  For example, a file named "
+"@file{/usr/rms/emacs.tex} is visited in a buffer named @samp{emacs.tex}.  If "
+"there is already a buffer with that name, Emacs constructs a unique name; "
+"the normal method is to add a suffix based on the directory name (e.g., "
+"@samp{<rms>}, @samp{<tmp>}, and so on), but you can select other methods.  "
+"@xref{Uniquify}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:178
+#, no-wrap
+msgid "creating files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:182
+msgid ""
+"To create a new file, just visit it using the same command, @kbd{C-x C-f}.  "
+"Emacs displays @samp{(New file)} in the echo area, but in other respects "
+"behaves as if you had visited an existing empty file."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:183
+#, no-wrap
+msgid "modified (buffer)"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:191
+msgid ""
+"After visiting a file, the changes you make with editing commands are made "
+"in the Emacs buffer.  They do not take effect in the visited file, until you "
+"@dfn{save} the buffer (@pxref{Saving}).  If a buffer contains changes that "
+"have not been saved, we say the buffer is @dfn{modified}.  This implies that "
+"some changes will be lost if the buffer is not saved.  The mode line "
+"displays two stars near the left margin to indicate that the buffer is "
+"modified."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:196
+msgid ""
+"If you visit a file that is already in Emacs, @kbd{C-x C-f} switches to the "
+"existing buffer instead of making another copy.  Before doing so, it checks "
+"whether the file has changed since you last visited or saved it.  If the "
+"file has changed, Emacs offers to reread it."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:197
+#, no-wrap
+msgid "large-file-warning-threshold"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:198
+#, no-wrap
+msgid "file, warning when size is large"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:199
+#, no-wrap
+msgid "size of file, warning when visiting"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:200
+#, no-wrap
+msgid "maximum buffer size exceeded, error message"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:210
+msgid ""
+"If you try to visit a file larger than @code{large-file-warning-threshold} "
+"(the default is 10000000, which is about 10 megabytes), Emacs asks you for "
+"confirmation first.  You can answer @kbd{y} to proceed with visiting the "
+"file.  Note, however, that Emacs cannot visit files that are larger than the "
+"maximum Emacs buffer size, which is limited by the amount of memory Emacs "
+"can allocate and by the integers that Emacs can represent "
+"(@pxref{Buffers}).  If you try, Emacs displays an error message saying that "
+"the maximum buffer size has been exceeded."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:211
+#, no-wrap
+msgid "wildcard characters in file names"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:212
+#, no-wrap
+msgid "find-file-wildcards"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:222
+msgid ""
+"If the file name you specify contains shell-style wildcard characters, Emacs "
+"visits all the files that match it.  (On case-insensitive filesystems, Emacs "
+"matches the wildcards disregarding the letter case.)  Wildcards include "
+"@samp{?}, @samp{*}, and @samp{[@dots{}]} sequences.  To enter the wild card "
+"@samp{?} in a file name in the minibuffer, you need to type @kbd{C-q ?}.  "
+"@xref{Quoted File Names}, for information on how to visit a file whose name "
+"actually contains wildcard characters.  You can disable the wildcard feature "
+"by customizing @code{find-file-wildcards}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:224
+#, no-wrap
+msgid "find-alternate-file"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:233
+msgid ""
+"If you visit the wrong file unintentionally by typing its name incorrectly, "
+"type @kbd{C-x C-v} (@code{find-alternate-file}) to visit the file you really "
+"wanted.  @kbd{C-x C-v} is similar to @kbd{C-x C-f}, but it kills the current "
+"buffer (after first offering to save it if it is modified).  When @kbd{C-x "
+"C-v} reads the file name to visit, it inserts the entire default file name "
+"in the buffer, with point just after the directory part; this is convenient "
+"if you made a slight error in typing the name."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:234
+#, no-wrap
+msgid "find-file-run-dired"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:239
+msgid ""
+"If you ``visit'' a file that is actually a directory, Emacs invokes Dired, "
+"the Emacs directory browser.  @xref{Dired}.  You can disable this behavior "
+"by setting the variable @code{find-file-run-dired} to @code{nil}; in that "
+"case, it is an error to try to visit a directory."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:244
+msgid ""
+"Files which are actually collections of other files, or @dfn{file archives}, "
+"are visited in special modes which invoke a Dired-like environment to allow "
+"operations on archive members.  @xref{File Archives}, for more about these "
+"features."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:250
+msgid ""
+"If you visit a file that the operating system won't let you modify, or that "
+"is marked read-only, Emacs makes the buffer read-only too, so that you won't "
+"go ahead and make changes that you'll have trouble saving afterward.  You "
+"can make the buffer writable with @kbd{C-x C-q} (@code{read-only-mode}).  "
+"@xref{Misc Buffer}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:252
+#, no-wrap
+msgid "find-file-read-only"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:256
+msgid ""
+"If you want to visit a file as read-only in order to protect yourself from "
+"entering changes accidentally, visit it with the command @kbd{C-x C-r} "
+"(@code{find-file-read-only}) instead of @kbd{C-x C-f}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:258
+#, no-wrap
+msgid "find-file-other-window"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:266
+msgid ""
+"@kbd{C-x 4 f} (@code{find-file-other-window}) is like @kbd{C-x C-f} except "
+"that the buffer containing the specified file is selected in another "
+"window.  The window that was selected before @kbd{C-x 4 f} continues to show "
+"the same buffer it was already showing.  If this command is used when only "
+"one window is being displayed, that window is split in two, with one window "
+"showing the same buffer as before, and the other one showing the newly "
+"requested file.  @xref{Windows}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:268
+#, no-wrap
+msgid "find-file-other-frame"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:272
+msgid ""
+"@kbd{C-x 5 f} (@code{find-file-other-frame}) is similar, but opens a new "
+"frame, or selects any existing frame showing the specified file.  "
+"@xref{Frames}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:273
+#, no-wrap
+msgid "file selection dialog"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:282
+msgid ""
+"On graphical displays, there are two additional methods for visiting files.  "
+"Firstly, when Emacs is built with a suitable GUI toolkit, commands invoked "
+"with the mouse (by clicking on the menu bar or tool bar) use the toolkit's "
+"standard ``File Selection'' dialog instead of prompting for the file name in "
+"the minibuffer.  On GNU/Linux and Unix platforms, Emacs does this when built "
+"with GTK, LessTif, and Motif toolkits; on MS-Windows and Mac, the GUI "
+"version does that by default.  For information on how to customize this, see "
+"@ref{Dialog Boxes}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:288
+msgid ""
+"Secondly, Emacs supports ``drag and drop'': dropping a file into an ordinary "
+"Emacs window visits the file using that window.  As an exception, dropping a "
+"file into a window displaying a Dired buffer moves or copies the file into "
+"the displayed directory.  For details, see @ref{Drag and Drop}, and "
+"@ref{Misc Dired Features}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:292
+msgid ""
+"On text-mode terminals and on graphical displays when Emacs was built "
+"without a GUI toolkit, you can visit files via the menu-bar ``File'' menu, "
+"which has a ``Visit New File'' item."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:299
+msgid ""
+"Each time you visit a file, Emacs automatically scans its contents to detect "
+"what character encoding and end-of-line convention it uses, and converts "
+"these to Emacs's internal encoding and end-of-line convention within the "
+"buffer.  When you save the buffer, Emacs performs the inverse conversion, "
+"writing the file to disk with its original encoding and end-of-line "
+"convention.  @xref{Coding Systems}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:300
+#, no-wrap
+msgid "find-file-literally"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:311
+msgid ""
+"If you wish to edit a file as a sequence of @acronym{ASCII} characters with "
+"no special encoding or conversion, use the @kbd{M-x find-file-literally} "
+"command.  This visits a file, like @kbd{C-x C-f}, but does not do format "
+"conversion (@pxref{Format Conversion,, Format Conversion, elisp, the Emacs "
+"Lisp Reference Manual}), character code conversion (@pxref{Coding Systems}), "
+"or automatic uncompression (@pxref{Compressed Files}), and does not add a "
+"final newline because of @code{require-final-newline} (@pxref{Customize "
+"Save}).  If you have already visited the same file in the usual "
+"(non-literal) manner, this command asks you whether to visit it literally "
+"instead."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:312
+#, no-wrap
+msgid "find-file-hook"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:313
+#, no-wrap
+msgid "find-file-not-found-functions"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:321
+msgid ""
+"Two special hook variables allow extensions to modify the operation of "
+"visiting files.  Visiting a file that does not exist runs the functions in "
+"@code{find-file-not-found-functions}; this variable holds a list of "
+"functions, which are called one by one (with no arguments)  until one of "
+"them returns non-@code{nil}.  This is not a normal hook, and the name ends "
+"in @samp{-functions} rather than @samp{-hook} to indicate that fact."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:326
+msgid ""
+"Successful visiting of any file, whether existing or not, calls the "
+"functions in @code{find-file-hook}, with no arguments.  This variable is a "
+"normal hook.  In the case of a nonexistent file, the "
+"@code{find-file-not-found-functions} are run first.  @xref{Hooks}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:330
+msgid ""
+"There are several ways to specify automatically the major mode for editing "
+"the file (@pxref{Choosing Modes}), and to specify local variables defined "
+"for that file (@pxref{File Variables})."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:332
+#, no-wrap
+msgid "Saving Files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:336
+msgid ""
+"@dfn{Saving} a buffer in Emacs means writing its contents back into the file "
+"that was visited in the buffer."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:345 files.texi.orig:347
+#, no-wrap
+msgid "Save Commands"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:345
+msgid "Commands for saving files."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:345 files.texi.orig:471
+#, no-wrap
+msgid "Backup"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:345
+msgid "How Emacs saves the old version of your file."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:345 files.texi.orig:688
+#, no-wrap
+msgid "Customize Save"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:345
+msgid "Customizing the saving of files."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:345 files.texi.orig:734
+#, no-wrap
+msgid "Interlocking"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:345
+msgid "How Emacs protects against simultaneous editing of one file by two users."
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:345
+msgid "Shadowing: File Shadowing"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:345
+msgid "Copying files to \"shadows\" automatically."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:345 files.texi.orig:857
+#, no-wrap
+msgid "Time Stamps"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:345
+msgid "Emacs can update time stamps on saved files."
+msgstr ""
+
+#. type: subsection
+#: files.texi.orig:348
+#, no-wrap
+msgid "Commands for Saving Files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:351
+msgid "These are the commands that relate to saving and writing files."
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:353 files.texi.orig:366
+#, no-wrap
+msgid "C-x C-s"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:355
+msgid "Save the current buffer to its file (@code{save-buffer})."
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:355 files.texi.orig:389
+#, no-wrap
+msgid "C-x s"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:357
+msgid "Save any or all buffers to their files (@code{save-some-buffers})."
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:357 files.texi.orig:423
+#, no-wrap
+msgid "M-~"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:360
+msgid ""
+"Forget that the current buffer has been changed (@code{not-modified}).  With "
+"prefix argument (@kbd{C-u}), mark the current buffer as changed."
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:360 files.texi.orig:449
+#, no-wrap
+msgid "C-x C-w"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:362
+msgid "Save the current buffer with a specified file name (@code{write-file})."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:362
+#, no-wrap
+msgid "M-x set-visited-file-name"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:364
+msgid "Change the file name under which the current buffer will be saved."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:367
+#, no-wrap
+msgid "save-buffer"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:371
+msgid ""
+"When you wish to save the file and make your changes permanent, type "
+"@kbd{C-x C-s} (@code{save-buffer}).  After saving is finished, @kbd{C-x C-s} "
+"displays a message like this:"
+msgstr ""
+
+#. type: example
+#: files.texi.orig:374
+#, no-wrap
+msgid "Wrote /u/rms/gnu/gnu.tasks\n"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:381
+msgid ""
+"If the current buffer is not modified (no changes have been made in it since "
+"the buffer was created or last saved), saving is not really done, because it "
+"would have no effect.  Instead, @kbd{C-x C-s} displays a message like this "
+"in the echo area:"
+msgstr ""
+
+#. type: example
+#: files.texi.orig:384
+#, no-wrap
+msgid "(No changes need to be saved)\n"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:388
+msgid ""
+"With a prefix argument, @kbd{C-u C-x C-s}, Emacs also marks the buffer to be "
+"backed up when the next save is done.  @xref{Backup}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:390
+#, no-wrap
+msgid "save-some-buffers"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:394
+msgid ""
+"The command @kbd{C-x s} (@code{save-some-buffers}) offers to save any or all "
+"modified buffers.  It asks you what to do with each buffer.  The possible "
+"responses are analogous to those of @code{query-replace}:"
+msgstr ""
+
+#. type: item
+#: files.texi.orig:396
+#, no-wrap
+msgid "y"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:398
+msgid "Save this buffer and ask about the rest of the buffers."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:398
+#, no-wrap
+msgid "n"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:400
+msgid "Don't save this buffer, but ask about the rest of the buffers."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:400
+#, no-wrap
+msgid "!"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:403
+msgid "Save this buffer and all the rest with no more questions."
+msgstr ""
+
+#. type: key{#1}
+#: files.texi.orig:403
+#, no-wrap
+msgid "RET"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:405
+msgid "Terminate @code{save-some-buffers} without any more saving."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:405
+#, no-wrap
+msgid "."
+msgstr ""
+
+#. type: table
+#: files.texi.orig:408
+msgid ""
+"Save this buffer, then exit @code{save-some-buffers} without even asking "
+"about other buffers."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:408
+#, no-wrap
+msgid "C-r"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:412
+msgid ""
+"View the buffer that you are currently being asked about.  When you exit "
+"View mode, you get back to @code{save-some-buffers}, which asks the question "
+"again."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:412
+#, no-wrap
+msgid "d"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:416
+msgid ""
+"Diff the buffer against its corresponding file, so you can see what changes "
+"you would be saving.  This calls the command @code{diff-buffer-with-file} "
+"(@pxref{Comparing Files})."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:416
+#, no-wrap
+msgid "C-h"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:418
+msgid "Display a help message about these options."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:422
+msgid ""
+"@kbd{C-x C-c}, the key sequence to exit Emacs, invokes "
+"@code{save-some-buffers} and therefore asks the same questions."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:424
+#, no-wrap
+msgid "not-modified"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:438
+msgid ""
+"If you have changed a buffer but do not wish to save the changes, you should "
+"take some action to prevent it.  Otherwise, each time you use @kbd{C-x s} or "
+"@kbd{C-x C-c}, you are liable to save this buffer by mistake.  One thing you "
+"can do is type @kbd{M-~} (@code{not-modified}), which clears out the "
+"indication that the buffer is modified.  If you do this, none of the save "
+"commands will believe that the buffer needs to be saved.  (@samp{~} is often "
+"used as a mathematical symbol for `not'; thus @kbd{M-~} is `not', metafied.)  "
+"Alternatively, you can cancel all the changes made since the file was "
+"visited or saved, by reading the text from the file again.  This is called "
+"@dfn{reverting}.  @xref{Reverting}.  (You could also undo all the changes by "
+"repeating the undo command @kbd{C-x u} until you have undone all the "
+"changes; but reverting is easier.)"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:439
+#, no-wrap
+msgid "set-visited-file-name"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:448
+msgid ""
+"@kbd{M-x set-visited-file-name} alters the name of the file that the current "
+"buffer is visiting.  It reads the new file name using the minibuffer.  Then "
+"it marks the buffer as visiting that file name, and changes the buffer name "
+"correspondingly.  @code{set-visited-file-name} does not save the buffer in "
+"the newly visited file; it just alters the records inside Emacs in case you "
+"do save later.  It also marks the buffer as ``modified'' so that @kbd{C-x "
+"C-s} in that buffer @emph{will} save."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:450
+#, no-wrap
+msgid "write-file"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:460
+msgid ""
+"If you wish to mark the buffer as visiting a different file and save it "
+"right away, use @kbd{C-x C-w} (@code{write-file}).  This is equivalent to "
+"@code{set-visited-file-name} followed by @kbd{C-x C-s}, except that @kbd{C-x "
+"C-w} asks for confirmation if the file exists.  @kbd{C-x C-s} used on a "
+"buffer that is not visiting a file has the same effect as @kbd{C-x C-w}; "
+"that is, it reads a file name, marks the buffer as visiting that file, and "
+"saves it there.  The default file name in a buffer that is not visiting a "
+"file is made by combining the buffer name with the buffer's default "
+"directory (@pxref{File Names})."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:464
+msgid ""
+"If the new file name implies a major mode, then @kbd{C-x C-w} switches to "
+"that major mode, in most cases.  The command @code{set-visited-file-name} "
+"also does this.  @xref{Choosing Modes}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:470
+msgid ""
+"If Emacs is about to save a file and sees that the date of the latest "
+"version on disk does not match what Emacs last read or wrote, Emacs notifies "
+"you of this fact, because it probably indicates a problem caused by "
+"simultaneous editing and requires your immediate attention.  "
+"@xref{Interlocking,, Simultaneous Editing}."
+msgstr ""
+
+#. type: subsection
+#: files.texi.orig:472
+#, no-wrap
+msgid "Backup Files"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:473
+#, no-wrap
+msgid "backup file"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:474
+#, no-wrap
+msgid "make-backup-files"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:475
+#, no-wrap
+msgid "vc-make-backup-files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:482
+msgid ""
+"On most operating systems, rewriting a file automatically destroys all "
+"record of what the file used to contain.  Thus, saving a file from Emacs "
+"throws away the old contents of the file---or it would, except that Emacs "
+"carefully copies the old contents to another file, called the @dfn{backup} "
+"file, before actually saving."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:487
+msgid ""
+"Emacs makes a backup for a file only the first time the file is saved from a "
+"buffer.  No matter how many times you subsequently save the file, its backup "
+"remains unchanged.  However, if you kill the buffer and then visit the file "
+"again, a new backup file will be made."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:491
+msgid ""
+"For most files, the variable @code{make-backup-files} determines whether to "
+"make backup files.  On most operating systems, its default value is "
+"@code{t}, so that Emacs does write backup files."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:497
+msgid ""
+"For files managed by a version control system (@pxref{Version Control}), the "
+"variable @code{vc-make-backup-files} determines whether to make backup "
+"files.  By default it is @code{nil}, since backup files are redundant when "
+"you store all the previous versions in a version control system."
+msgstr ""
+
+#. type: iftex
+#: files.texi.orig:499
+msgid "@xref{General VC Options,,,emacs-xtra, Specialized Emacs Features}."
+msgstr ""
+
+#. type: ifnottex
+#: files.texi.orig:502
+msgid "@xref{General VC Options}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:507
+msgid ""
+"At your option, Emacs can keep either a single backup for each file, or make "
+"a series of numbered backup files for each file that you edit.  @xref{Backup "
+"Names}."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:508
+#, no-wrap
+msgid "backup-enable-predicate"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:509
+#, no-wrap
+msgid "temporary-file-directory"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:510
+#, no-wrap
+msgid "small-temporary-file-directory"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:515
+msgid ""
+"The default value of the @code{backup-enable-predicate} variable prevents "
+"backup files being written for files in the directories used for temporary "
+"files, specified by @code{temporary-file-directory} or "
+"@code{small-temporary-file-directory}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:524
+msgid ""
+"You can explicitly tell Emacs to make another backup file from a buffer, "
+"even though that buffer has been saved before.  If you save the buffer with "
+"@kbd{C-u C-x C-s}, the version thus saved will be made into a backup file if "
+"you save the buffer again.  @kbd{C-u C-u C-x C-s} saves the buffer, but "
+"first makes the previous file contents into a new backup file.  @kbd{C-u C-u "
+"C-u C-x C-s} does both things: it makes a backup from the previous contents, "
+"and arranges to make another from the newly saved contents if you save "
+"again."
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:529
+msgid "Names: Backup Names"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:529
+msgid "How backup files are named."
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:529
+msgid "Deletion: Backup Deletion"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:529
+msgid "Emacs deletes excess numbered backups."
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:529
+msgid "Copying: Backup Copying"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:529
+msgid "Backups can be made by copying or renaming."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:531
+#, no-wrap
+msgid "Backup Names"
+msgstr ""
+
+#. type: subsubsection
+#: files.texi.orig:532
+#, no-wrap
+msgid "Single or Numbered Backups"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:537
+msgid ""
+"When Emacs makes a backup file, its name is normally constructed by "
+"appending @samp{~} to the file name being edited; thus, the backup file for "
+"@file{eval.c} would be @file{eval.c~}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:542
+msgid ""
+"If access control stops Emacs from writing backup files under the usual "
+"names, it writes the backup file as @file{~/.emacs.d/%backup%~}.  Only one "
+"such file can exist, so only the most recently made such backup is "
+"available."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:548
+msgid ""
+"Emacs can also make @dfn{numbered backup files}.  Numbered backup file names "
+"contain @samp{.~}, the number, and another @samp{~} after the original file "
+"name.  Thus, the backup files of @file{eval.c} would be called "
+"@file{eval.c.~1~}, @file{eval.c.~2~}, and so on, all the way through names "
+"like @file{eval.c.~259~} and beyond."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:549
+#, no-wrap
+msgid "version-control"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:553
+msgid ""
+"The variable @code{version-control} determines whether to make single backup "
+"files or multiple numbered backup files.  Its possible values are:"
+msgstr ""
+
+#. type: item
+#: files.texi.orig:555
+#, no-wrap
+msgid "nil"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:558
+msgid ""
+"Make numbered backups for files that have numbered backups already.  "
+"Otherwise, make single backups.  This is the default."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:558
+#, no-wrap
+msgid "t"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:560
+msgid "Make numbered backups."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:560
+#, no-wrap
+msgid "never"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:562
+msgid "Never make numbered backups; always make single backups."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:572
+msgid ""
+"The usual way to set this variable is globally, through your init file or "
+"the customization buffer.  However, you can set @code{version-control} "
+"locally in an individual buffer to control the making of backups for that "
+"buffer's file (@pxref{Locals}).  You can have Emacs set "
+"@code{version-control} locally whenever you visit a given file (@pxref{File "
+"Variables}).  Some modes, such as Rmail mode, set this variable."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:573
+#, no-wrap
+msgid "@env{VERSION_CONTROL} environment variable"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:582
+msgid ""
+"If you set the environment variable @env{VERSION_CONTROL}, to tell various "
+"GNU utilities what to do with backup files, Emacs also obeys the environment "
+"variable by setting the Lisp variable @code{version-control} accordingly at "
+"startup.  If the environment variable's value is @samp{t} or "
+"@samp{numbered}, then @code{version-control} becomes @code{t}; if the value "
+"is @samp{nil} or @samp{existing}, then @code{version-control} becomes "
+"@code{nil}; if it is @samp{never} or @samp{simple}, then "
+"@code{version-control} becomes @code{never}."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:583
+#, no-wrap
+msgid "backup-directory-alist"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:595
+msgid ""
+"You can customize the variable @code{backup-directory-alist} to specify that "
+"files matching certain patterns should be backed up in specific "
+"directories.  This variable applies to both single and numbered backups.  A "
+"typical use is to add an element @code{(\".\" . @var{dir})} to make all "
+"backups in the directory with absolute name @var{dir}; Emacs modifies the "
+"backup file names to avoid clashes between files with the same names "
+"originating in different directories.  Alternatively, adding, @code{(\".\" "
+". \".~\")} would make backups in the invisible subdirectory @file{.~} of the "
+"original file's directory.  Emacs creates the directory, if necessary, to "
+"make the backup."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:596
+#, no-wrap
+msgid "make-backup-file-name-function"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:600
+msgid ""
+"If you set the variable @code{make-backup-file-name-function} to a suitable "
+"Lisp function, you can override the usual way Emacs constructs backup file "
+"names."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:601
+#, no-wrap
+msgid "Backup Deletion"
+msgstr ""
+
+#. type: subsubsection
+#: files.texi.orig:602
+#, no-wrap
+msgid "Automatic Deletion of Backups"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:608
+msgid ""
+"To prevent excessive consumption of disk space, Emacs can delete numbered "
+"backup versions automatically.  Generally Emacs keeps the first few backups "
+"and the latest few backups, deleting any in between.  This happens every "
+"time a new backup is made."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:609
+#, no-wrap
+msgid "kept-old-versions"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:610
+#, no-wrap
+msgid "kept-new-versions"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:621
+msgid ""
+"The two variables @code{kept-old-versions} and @code{kept-new-versions} "
+"control this deletion.  Their values are, respectively, the number of oldest "
+"(lowest-numbered) backups to keep and the number of newest "
+"(highest-numbered) ones to keep, each time a new backup is made.  The "
+"backups in the middle (excluding those oldest and newest) are the excess "
+"middle versions---those backups are deleted.  These variables' values are "
+"used when it is time to delete excess versions, just after a new backup "
+"version is made; the newly made backup is included in the count in "
+"@code{kept-new-versions}.  By default, both variables are 2."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:622
+#, no-wrap
+msgid "delete-old-versions"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:627
+msgid ""
+"If @code{delete-old-versions} is @code{t}, Emacs deletes the excess backup "
+"files silently.  If it is @code{nil}, the default, Emacs asks you whether it "
+"should delete the excess backup versions.  If it has any other value, then "
+"Emacs never automatically deletes backups."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:630
+msgid ""
+"Dired's @kbd{.} (Period) command can also be used to delete old versions.  "
+"@xref{Dired Deletion}."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:631
+#, no-wrap
+msgid "Backup Copying"
+msgstr ""
+
+#. type: subsubsection
+#: files.texi.orig:632
+#, no-wrap
+msgid "Copying vs.@: Renaming"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:641
+msgid ""
+"Backup files can be made by copying the old file or by renaming it.  This "
+"makes a difference when the old file has multiple names (hard links).  If "
+"the old file is renamed into the backup file, then the alternate names "
+"become names for the backup file.  If the old file is copied instead, then "
+"the alternate names remain names for the file that you are editing, and the "
+"contents accessed by those names will be the new contents."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:646
+msgid ""
+"The method of making a backup file may also affect the file's owner and "
+"group.  If copying is used, these do not change.  If renaming is used, you "
+"become the file's owner, and the file's group becomes the default (different "
+"operating systems have different defaults for the group)."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:647
+#, no-wrap
+msgid "backup-by-copying"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:648
+#, no-wrap
+msgid "backup-by-copying-when-linked"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:649
+#, no-wrap
+msgid "backup-by-copying-when-mismatch"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:650
+#, no-wrap
+msgid "backup-by-copying-when-privileged-mismatch"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:651
+#, no-wrap
+msgid "file ownership, and backup"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:652
+#, no-wrap
+msgid "backup, and user-id"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:654
+msgid "The choice of renaming or copying is made as follows:"
+msgstr ""
+
+#. type: itemize
+#: files.texi.orig:659
+msgid ""
+"If the variable @code{backup-by-copying} is non-@code{nil} (the default is "
+"@code{nil}), use copying."
+msgstr ""
+
+#. type: itemize
+#: files.texi.orig:664
+msgid ""
+"Otherwise, if the variable @code{backup-by-copying-when-linked} is "
+"non-@code{nil} (the default is @code{nil}), and the file has multiple names, "
+"use copying."
+msgstr ""
+
+#. type: itemize
+#: files.texi.orig:669
+msgid ""
+"Otherwise, if the variable @code{backup-by-copying-when-mismatch} is "
+"non-@code{nil} (the default is @code{t}), and renaming would change the "
+"file's owner or group, use copying."
+msgstr ""
+
+#. type: itemize
+#: files.texi.orig:675
+msgid ""
+"If you change @code{backup-by-copying-when-mismatch} to @code{nil}, Emacs "
+"checks the numeric user-id of the file's owner.  If this is higher than "
+"@code{backup-by-copying-when-privileged-mismatch}, then it behaves as though "
+"@code{backup-by-copying-when-mismatch} is non-@code{nil} anyway."
+msgstr ""
+
+#. type: itemize
+#: files.texi.orig:678
+msgid "Otherwise, renaming is the default choice."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:687
+msgid ""
+"When a file is managed with a version control system (@pxref{Version "
+"Control}), Emacs does not normally make backups in the usual way for that "
+"file.  But check-in and check-out are similar in some ways to making "
+"backups.  One unfortunate similarity is that these operations typically "
+"break hard links, disconnecting the file name you visited from any alternate "
+"names for the same file.  This has nothing to do with Emacs---the version "
+"control system does it."
+msgstr ""
+
+#. type: subsection
+#: files.texi.orig:689
+#, no-wrap
+msgid "Customizing Saving of Files"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:691
+#, no-wrap
+msgid "require-final-newline"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:702
+msgid ""
+"If the value of the variable @code{require-final-newline} is @code{t}, "
+"saving or writing a file silently puts a newline at the end if there isn't "
+"already one there.  If the value is @code{visit}, Emacs adds a newline at "
+"the end of any file that doesn't have one, just after it visits the file.  "
+"(This marks the buffer as modified, and you can undo it.)  If the value is "
+"@code{visit-save}, Emacs adds such newlines both on visiting and on saving.  "
+"If the value is @code{nil}, Emacs leaves the end of the file unchanged; any "
+"other non-@code{nil} value means to asks you whether to add a newline.  The "
+"default is @code{nil}."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:703
+#, no-wrap
+msgid "mode-require-final-newline"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:710
+msgid ""
+"Some major modes are designed for specific kinds of files that are always "
+"supposed to end in newlines.  Such major modes set the variable "
+"@code{require-final-newline} to the value of "
+"@code{mode-require-final-newline}, which defaults to @code{t}.  By setting "
+"the latter variable, you can control how these modes handle final newlines."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:711
+#, no-wrap
+msgid "write-region-inhibit-fsync"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:718
+msgid ""
+"Normally, when a program writes a file, the operating system briefly caches "
+"the file's data in main memory before committing the data to disk.  This can "
+"greatly improve performance; for example, when running on laptops, it can "
+"avoid a disk spin-up each time a file is written.  However, it risks data "
+"loss if the operating system crashes before committing the cache to disk."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:725
+msgid ""
+"To lessen this risk, Emacs can invoke the @code{fsync} system call after "
+"saving a file.  Using @code{fsync} does not eliminate the risk of data loss, "
+"partly because many systems do not implement @code{fsync} properly, and "
+"partly because Emacs's file-saving procedure typically relies also on "
+"directory updates that might not survive a crash even if @code{fsync} works "
+"properly."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:730
+msgid ""
+"The @code{write-region-inhibit-fsync} variable controls whether Emacs "
+"invokes @code{fsync} after saving a file.  The variable's default value is "
+"@code{nil} when Emacs is interactive, and @code{t} when Emacs runs in batch "
+"mode."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:733
+msgid ""
+"Emacs never uses @code{fsync} when writing auto-save files, as these files "
+"might lose data anyway."
+msgstr ""
+
+#. type: subsection
+#: files.texi.orig:735
+#, no-wrap
+msgid "Protection against Simultaneous Editing"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:737
+#, no-wrap
+msgid "file dates"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:738
+#, no-wrap
+msgid "simultaneous editing"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:743
+msgid ""
+"Simultaneous editing occurs when two users visit the same file, both make "
+"changes, and then both save them.  If nobody is informed that this is "
+"happening, whichever user saves first would later find that his changes were "
+"lost."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:750
+msgid ""
+"On some systems, Emacs notices immediately when the second user starts to "
+"change the file, and issues an immediate warning.  On all systems, Emacs "
+"checks when you save the file, and warns if you are about to overwrite "
+"another user's changes.  You can prevent loss of the other user's work by "
+"taking the proper corrective action instead of saving the file."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:751
+#, no-wrap
+msgid "ask-user-about-lock"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:752
+#, no-wrap
+msgid "locking files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:760
+msgid ""
+"When you make the first modification in an Emacs buffer that is visiting a "
+"file, Emacs records that the file is @dfn{locked} by you.  (It does this by "
+"creating a specially-named symbolic link@footnote{If your file system does "
+"not support symbolic links, a regular file is used.} with special contents "
+"in the same directory.)  Emacs removes the lock when you save the changes.  "
+"The idea is that the file is locked whenever an Emacs buffer visiting it has "
+"unsaved changes."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:761
+#, no-wrap
+msgid "create-lockfiles"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:765
+msgid ""
+"You can prevent the creation of lock files by setting the variable "
+"@code{create-lockfiles} to @code{nil}.  @strong{Caution:} by doing so you "
+"will lose the benefits that this feature provides."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:766
+#, no-wrap
+msgid "collision"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:773
+msgid ""
+"If you begin to modify the buffer while the visited file is locked by "
+"someone else, this constitutes a @dfn{collision}.  When Emacs detects a "
+"collision, it asks you what to do, by calling the Lisp function "
+"@code{ask-user-about-lock}.  You can redefine this function for the sake of "
+"customization.  The standard definition of this function asks you a question "
+"and accepts three possible answers:"
+msgstr ""
+
+#. type: item
+#: files.texi.orig:775
+#, no-wrap
+msgid "s"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:778
+msgid ""
+"Steal the lock.  Whoever was already changing the file loses the lock, and "
+"you gain the lock."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:778
+#, no-wrap
+msgid "p"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:780
+msgid ""
+"Proceed.  Go ahead and edit the file despite its being locked by someone "
+"else."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:780
+#, no-wrap
+msgid "q"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:784
+msgid ""
+"Quit.  This causes an error (@code{file-locked}), and the buffer contents "
+"remain unchanged---the modification you were trying to make does not "
+"actually take place."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:790
+msgid ""
+"If Emacs or the operating system crashes, this may leave behind lock files "
+"which are stale, so you may occasionally get warnings about spurious "
+"collisions.  When you determine that the collision is spurious, just use "
+"@kbd{p} to tell Emacs to go ahead anyway."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:794
+msgid ""
+"Note that locking works on the basis of a file name; if a file has multiple "
+"names, Emacs does not prevent two users from editing it simultaneously under "
+"different names."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:804
+msgid ""
+"A lock file cannot be written in some circumstances, e.g., if Emacs lacks "
+"the system permissions or cannot create lock files for some other reason.  "
+"In these cases, Emacs can still detect the collision when you try to save a "
+"file, by checking the file's last-modification date.  If the file has "
+"changed since the last time Emacs visited or saved it, that implies that "
+"changes have been made in some other way, and will be lost if Emacs proceeds "
+"with saving.  Emacs then displays a warning message and asks for "
+"confirmation before saving; answer @kbd{yes} to save, and @kbd{no} or "
+"@kbd{C-g} cancel the save."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:808
+msgid ""
+"If you are notified that simultaneous editing has already taken place, one "
+"way to compare the buffer to its file is the @kbd{M-x diff-buffer-with-file} "
+"command.  @xref{Comparing Files}."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:809
+#, no-wrap
+msgid "File Shadowing"
+msgstr ""
+
+#. type: subsection
+#: files.texi.orig:810
+#, no-wrap
+msgid "Shadowing Files"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:811
+#, no-wrap
+msgid "shadow files"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:812
+#, no-wrap
+msgid "file shadows"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:813
+#, no-wrap
+msgid "shadow-initialize"
+msgstr ""
+
+#. type: item
+#: files.texi.orig:816
+#, no-wrap
+msgid "M-x shadow-initialize"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:818
+msgid "Set up file shadowing."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:818
+#, no-wrap
+msgid "M-x shadow-define-literal-group"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:820
+msgid "Declare a single file to be shared between sites."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:820
+#, no-wrap
+msgid "M-x shadow-define-regexp-group"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:822
+msgid "Make all files that match each of a group of files be shared between hosts."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:822
+#, no-wrap
+msgid "M-x shadow-define-cluster @key{RET} @var{name} @key{RET}"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:824
+msgid "Define a shadow file cluster @var{name}."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:824
+#, no-wrap
+msgid "M-x shadow-copy-files"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:826
+msgid "Copy all pending shadow files."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:826
+#, no-wrap
+msgid "M-x shadow-cancel"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:828
+msgid "Cancel the instruction to shadow some files."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:839
+msgid ""
+"You can arrange to keep identical @dfn{shadow} copies of certain files in "
+"more than one place---possibly on different machines.  To do this, first you "
+"must set up a @dfn{shadow file group}, which is a set of identically-named "
+"files shared between a list of sites.  The file group is permanent and "
+"applies to further Emacs sessions as well as the current one.  Once the "
+"group is set up, every time you exit Emacs, it will copy the file you edited "
+"to the other files in its group.  You can also do the copying without "
+"exiting Emacs, by typing @kbd{M-x shadow-copy-files}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:843
+msgid ""
+"To set up a shadow file group, use @kbd{M-x shadow-define-literal-group} or "
+"@kbd{M-x shadow-define-regexp-group}.  See their documentation strings for "
+"further information."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:848
+msgid ""
+"Before copying a file to its shadows, Emacs asks for confirmation.  You can "
+"answer ``no'' to bypass copying of this file, this time.  If you want to "
+"cancel the shadowing permanently for a certain file, use @kbd{M-x "
+"shadow-cancel} to eliminate or change the shadow file group."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:856
+msgid ""
+"A @dfn{shadow cluster} is a group of hosts that share directories, so that "
+"copying to or from one of them is sufficient to update the file on all of "
+"them.  Each shadow cluster has a name, and specifies the network address of "
+"a primary host (the one we copy files to), and a regular expression that "
+"matches the host names of all the other hosts in the cluster.  You can "
+"define a shadow cluster with @kbd{M-x shadow-define-cluster}."
+msgstr ""
+
+#. type: subsection
+#: files.texi.orig:858
+#, no-wrap
+msgid "Updating Time Stamps Automatically"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:859
+#, no-wrap
+msgid "time stamps"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:860
+#, no-wrap
+msgid "modification dates"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:861
+#, no-wrap
+msgid "locale, date format"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:867
+msgid ""
+"You can arrange to put a time stamp in a file, so that it is updated "
+"automatically each time you edit and save the file.  The time stamp must be "
+"in the first eight lines of the file, and you should insert it like this:"
+msgstr ""
+
+#. type: example
+#: files.texi.orig:870
+#, no-wrap
+msgid "Time-stamp: <>\n"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:874
+msgid "or like this:"
+msgstr ""
+
+#. type: example
+#: files.texi.orig:877
+#, no-wrap
+msgid "Time-stamp: \" \"\n"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:879
+#, no-wrap
+msgid "time-stamp"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:887
+msgid ""
+"Then add the function @code{time-stamp} to the hook @code{before-save-hook} "
+"(@pxref{Hooks}).  When you save the file, this function then automatically "
+"updates the time stamp with the current date and time.  You can also use the "
+"command @kbd{M-x time-stamp} to update the time stamp manually.  For other "
+"customizations, see the Custom group @code{time-stamp}.  Note that the time "
+"stamp is formatted according to your locale setting (@pxref{Environment})."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:889
+#, no-wrap
+msgid "Reverting a Buffer"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:890
+#, no-wrap
+msgid "revert-buffer"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:891
+#, no-wrap
+msgid "drastic changes"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:892
+#, no-wrap
+msgid "reread a file"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:899
+msgid ""
+"If you have made extensive changes to a file-visiting buffer and then change "
+"your mind, you can @dfn{revert} the changes and go back to the saved version "
+"of the file.  To do this, type @kbd{M-x revert-buffer}.  Since reverting "
+"unintentionally could lose a lot of work, Emacs asks for confirmation first."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:904
+msgid ""
+"The @code{revert-buffer} command tries to position point in such a way that, "
+"if the file was edited only slightly, you will be at approximately the same "
+"part of the text as before.  But if you have made major changes, point may "
+"end up in a totally different location."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:909
+msgid ""
+"Reverting marks the buffer as ``not modified''.  It also clears the buffer's "
+"undo history (@pxref{Undo}).  Thus, the reversion cannot be undone---if you "
+"change your mind yet again, you can't use the undo commands to bring the "
+"reverted changes back."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:915
+msgid ""
+"Some kinds of buffers that are not associated with files, such as Dired "
+"buffers, can also be reverted.  For them, reverting means recalculating "
+"their contents.  Buffers created explicitly with @kbd{C-x b} cannot be "
+"reverted; @code{revert-buffer} reports an error if you try."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:916
+#, no-wrap
+msgid "revert-without-query"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:926
+msgid ""
+"When you edit a file that changes automatically and frequently---for "
+"example, a log of output from a process that continues to run---it may be "
+"useful for Emacs to revert the file without querying you.  To request this "
+"behavior, set the variable @code{revert-without-query} to a list of regular "
+"expressions.  When a file name matches one of these regular expressions, "
+"@code{find-file} and @code{revert-buffer} will revert it automatically if it "
+"has changed---provided the buffer itself is not modified.  (If you have "
+"edited the text, it would be wrong to discard your changes.)"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:927
+#, no-wrap
+msgid "Global Auto-Revert mode"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:928
+#, no-wrap
+msgid "mode, Global Auto-Revert"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:929
+#, no-wrap
+msgid "Auto-Revert mode"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:930
+#, no-wrap
+msgid "mode, Auto-Revert"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:931
+#, no-wrap
+msgid "global-auto-revert-mode"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:932
+#, no-wrap
+msgid "auto-revert-mode"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:933
+#, no-wrap
+msgid "auto-revert-tail-mode"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:934
+#, no-wrap
+msgid "auto-revert-interval"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:943
+msgid ""
+"You can also tell Emacs to revert buffers periodically.  To do this for a "
+"specific buffer, enable the minor mode Auto-Revert mode by typing @kbd{M-x "
+"auto-revert-mode}.  This automatically reverts the current buffer every five "
+"seconds; you can change the interval through the variable "
+"@code{auto-revert-interval}.  To do the same for all file buffers, type "
+"@kbd{M-x global-auto-revert-mode} to enable Global Auto-Revert mode.  These "
+"minor modes do not check or revert remote files, because that is usually too "
+"slow."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:952
+msgid ""
+"One use of Auto-Revert mode is to ``tail'' a file such as a system log, so "
+"that changes made to that file by other programs are continuously "
+"displayed.  To do this, just move the point to the end of the buffer, and it "
+"will stay there as the file contents change.  However, if you are sure that "
+"the file will only change by growing at the end, use Auto-Revert Tail mode "
+"instead (@code{auto-revert-tail-mode}).  It is more efficient for this.  "
+"Auto-Revert Tail mode works also for remote files."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:956
+msgid ""
+"@xref{VC Undo}, for commands to revert to earlier versions of files under "
+"version control.  @xref{VC Mode Line}, for Auto Revert peculiarities when "
+"visiting files under version control."
+msgstr ""
+
+#. type: include
+#: files.texi.orig:958
+#, no-wrap
+msgid "arevert-xtra.texi"
+msgstr ""
+
+#. type: section
+#: files.texi.orig:962
+#, no-wrap
+msgid "Auto-Saving: Protection Against Disasters"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:963
+#, no-wrap
+msgid "Auto Save mode"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:964
+#, no-wrap
+msgid "mode, Auto Save"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:965
+#, no-wrap
+msgid "crashes"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:971
+msgid ""
+"From time to time, Emacs automatically saves each visited file in a separate "
+"file, without altering the file you actually use.  This is called "
+"@dfn{auto-saving}.  It prevents you from losing more than a limited amount "
+"of work if the system crashes."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:979
+msgid ""
+"When Emacs determines that it is time for auto-saving, it considers each "
+"buffer, and each is auto-saved if auto-saving is enabled for it and it has "
+"been changed since the last time it was auto-saved.  The message "
+"@samp{Auto-saving...} is displayed in the echo area during auto-saving, if "
+"any files are actually auto-saved.  Errors occurring during auto-saving are "
+"caught so that they do not interfere with the execution of commands you have "
+"been typing."
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:985
+msgid "Files: Auto Save Files"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:985
+msgid "The file where auto-saved changes are actually made until you save the file."
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:985
+msgid "Control: Auto Save Control"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:985
+msgid "Controlling when and how often to auto-save."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:985 files.texi.orig:1083
+#, no-wrap
+msgid "Recover"
+msgstr ""
+
+#. type: menuentry
+#: files.texi.orig:985
+msgid "Recovering text from auto-save files."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:987
+#, no-wrap
+msgid "Auto Save Files"
+msgstr ""
+
+#. type: subsection
+#: files.texi.orig:988
+#, no-wrap
+msgid "Auto-Save Files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:995
+msgid ""
+"Auto-saving does not normally save in the files that you visited, because it "
+"can be very undesirable to save a change that you did not want to make "
+"permanent.  Instead, auto-saving is done in a different file called the "
+"@dfn{auto-save file}, and the visited file is changed only when you request "
+"saving explicitly (such as with @kbd{C-x C-s})."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1009
+msgid ""
+"Normally, the auto-save file name is made by appending @samp{#} to the front "
+"and rear of the visited file name.  Thus, a buffer visiting file "
+"@file{foo.c} is auto-saved in a file @file{#foo.c#}.  Most buffers that are "
+"not visiting files are auto-saved only if you request it explicitly; when "
+"they are auto-saved, the auto-save file name is made by appending @samp{#} "
+"to the front and rear of buffer name, then adding digits and letters at the "
+"end for uniqueness.  For example, the @file{*mail*} buffer in which you "
+"compose messages to be sent might be auto-saved in a file named "
+"@file{#*mail*#704juu}.  Auto-save file names are made this way unless you "
+"reprogram parts of Emacs to do something different (the functions "
+"@code{make-auto-save-file-name} and @code{auto-save-file-name-p}).  The file "
+"name to be used for auto-saving in a buffer is calculated when auto-saving "
+"is turned on in that buffer."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1010
+#, no-wrap
+msgid "auto-save for remote files"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1011
+#, no-wrap
+msgid "auto-save-file-name-transforms"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1018
+msgid ""
+"The variable @code{auto-save-file-name-transforms} allows a degree of "
+"control over the auto-save file name.  It lets you specify a series of "
+"regular expressions and replacements to transform the auto save file name.  "
+"The default value puts the auto-save files for remote files (@pxref{Remote "
+"Files}) into the temporary file directory on the local machine."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1025
+msgid ""
+"When you delete a substantial part of the text in a large buffer, auto save "
+"turns off temporarily in that buffer.  This is because if you deleted the "
+"text unintentionally, you might find the auto-save file more useful if it "
+"contains the deleted text.  To reenable auto-saving after this happens, save "
+"the buffer with @kbd{C-x C-s}, or use @kbd{C-u 1 M-x auto-save-mode}."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1026
+#, no-wrap
+msgid "auto-save-visited-file-name"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1032
+msgid ""
+"If you want auto-saving to be done in the visited file rather than in a "
+"separate auto-save file, set the variable @code{auto-save-visited-file-name} "
+"to a non-@code{nil} value.  In this mode, there is no real difference "
+"between auto-saving and explicit saving."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1033
+#, no-wrap
+msgid "delete-auto-save-files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1039
+msgid ""
+"A buffer's auto-save file is deleted when you save the buffer in its visited "
+"file.  (You can inhibit this by setting the variable "
+"@code{delete-auto-save-files} to @code{nil}.)  Changing the visited file "
+"name with @kbd{C-x C-w} or @code{set-visited-file-name} renames any "
+"auto-save file to go with the new visited name."
+msgstr ""
+
+#. type: node
+#: files.texi.orig:1040
+#, no-wrap
+msgid "Auto Save Control"
+msgstr ""
+
+#. type: subsection
+#: files.texi.orig:1041
+#, no-wrap
+msgid "Controlling Auto-Saving"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1043
+#, no-wrap
+msgid "auto-save-default"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1044
+#, no-wrap
+msgid "auto-save-mode"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1052
+msgid ""
+"Each time you visit a file, auto-saving is turned on for that file's buffer "
+"if the variable @code{auto-save-default} is non-@code{nil} (but not in batch "
+"mode; @pxref{Initial Options}).  The default for this variable is @code{t}, "
+"so auto-saving is the usual practice for file-visiting buffers.  To toggle "
+"auto-saving in the current buffer, type @kbd{M-x auto-save-mode}.  Auto Save "
+"mode acts as a buffer-local minor mode (@pxref{Minor Modes})."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1053
+#, no-wrap
+msgid "auto-save-interval"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1060
+msgid ""
+"Emacs auto-saves periodically based on how many characters you have typed "
+"since the last auto-save.  The variable @code{auto-save-interval} specifies "
+"how many characters there are between auto-saves.  By default, it is 300.  "
+"Emacs doesn't accept values that are too small: if you customize "
+"@code{auto-save-interval} to a value less than 20, Emacs will behave as if "
+"the value is 20."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1061
+#, no-wrap
+msgid "auto-save-timeout"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1074
+msgid ""
+"Auto-saving also takes place when you stop typing for a while.  By default, "
+"it does this after 30 seconds of idleness (at this time, Emacs may also "
+"perform garbage collection; @pxref{Garbage Collection,,, elisp, The Emacs "
+"Lisp Reference Manual}).  To change this interval, customize the variable "
+"@code{auto-save-timeout}.  The actual time period is longer if the current "
+"buffer is long; this is a heuristic which aims to keep out of your way when "
+"you are editing long buffers, in which auto-save takes an appreciable amount "
+"of time.  Auto-saving during idle periods accomplishes two things: first, it "
+"makes sure all your work is saved if you go away from the terminal for a "
+"while; second, it may avoid some auto-saving while you are actually typing."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1078
+msgid ""
+"Emacs also does auto-saving whenever it gets a fatal error.  This includes "
+"killing the Emacs job with a shell command such as @samp{kill %emacs}, or "
+"disconnecting a phone line or network connection."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1079
+#, no-wrap
+msgid "do-auto-save"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1082
+msgid ""
+"You can perform an auto-save explicitly with the command @kbd{M-x "
+"do-auto-save}."
+msgstr ""
+
+#. type: subsection
+#: files.texi.orig:1084
+#, no-wrap
+msgid "Recovering Data from Auto-Saves"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1086
+#, no-wrap
+msgid "recover-file"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1094
+msgid ""
+"You can use the contents of an auto-save file to recover from a loss of data "
+"with the command @kbd{M-x recover-file @key{RET} @var{file} @key{RET}}.  "
+"This visits @var{file} and then (after your confirmation)  restores the "
+"contents from its auto-save file @file{#@var{file}#}.  You can then save "
+"with @kbd{C-x C-s} to put the recovered text into @var{file} itself.  For "
+"example, to recover file @file{foo.c} from its auto-save file "
+"@file{#foo.c#}, do:"
+msgstr ""
+
+#. type: example
+#: files.texi.orig:1099
+#, no-wrap
+msgid ""
+"M-x recover-file @key{RET} foo.c @key{RET}\n"
+"yes @key{RET}\n"
+"C-x C-s\n"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1105
+msgid ""
+"Before asking for confirmation, @kbd{M-x recover-file} displays a directory "
+"listing describing the specified file and the auto-save file, so you can "
+"compare their sizes and dates.  If the auto-save file is older, @kbd{M-x "
+"recover-file} does not offer to read it."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1106
+#, no-wrap
+msgid "recover-session"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1111
+msgid ""
+"If Emacs or the computer crashes, you can recover all the files you were "
+"editing from their auto save files with the command @kbd{M-x "
+"recover-session}.  This first shows you a list of recorded interrupted "
+"sessions.  Move point to the one you choose, and type @kbd{C-c C-c}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1117
+msgid ""
+"Then @code{recover-session} asks about each of the files that were being "
+"edited during that session, asking whether to recover that file.  If you "
+"answer @kbd{y}, it calls @code{recover-file}, which works in its normal "
+"fashion.  It shows the dates of the original file and its auto-save file, "
+"and asks once again whether to recover that file."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1121
+msgid ""
+"When @code{recover-session} is done, the files you've chosen to recover are "
+"present in Emacs buffers.  You should then save them.  Only this---saving "
+"them---updates the files themselves."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1122
+#, no-wrap
+msgid "auto-save-list-file-prefix"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1129
+msgid ""
+"Emacs records information about interrupted sessions in files named "
+"@file{.saves-@var{pid}-@var{hostname}} in the directory "
+"@file{~/.emacs.d/auto-save-list/}.  This directory is determined by the "
+"variable @code{auto-save-list-file-prefix}.  If you set "
+"@code{auto-save-list-file-prefix} to @code{nil}, sessions are not recorded "
+"for recovery."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:1131
+#, no-wrap
+msgid "File Name Aliases"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1132
+#, no-wrap
+msgid "symbolic links (visiting)"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1133
+#, no-wrap
+msgid "hard links (visiting)"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1143
+msgid ""
+"Symbolic links and hard links both make it possible for several file names "
+"to refer to the same file.  Hard links are alternate names that refer "
+"directly to the file; all the names are equally valid, and no one of them is "
+"preferred.  By contrast, a symbolic link is a kind of defined alias: when "
+"@file{foo} is a symbolic link to @file{bar}, you can use either name to "
+"refer to the file, but @file{bar} is the real name, while @file{foo} is just "
+"an alias.  More complex cases occur when symbolic links point to "
+"directories."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1144
+#, no-wrap
+msgid "find-file-existing-other-name"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1145
+#, no-wrap
+msgid "find-file-suppress-same-file-warnings"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1157
+msgid ""
+"Normally, if you visit a file which Emacs is already visiting under a "
+"different name, Emacs displays a message in the echo area and uses the "
+"existing buffer visiting that file.  This can happen on systems that support "
+"hard or symbolic links, or if you use a long file name on a system that "
+"truncates long file names, or on a case-insensitive file system.  You can "
+"suppress the message by setting the variable "
+"@code{find-file-suppress-same-file-warnings} to a non-@code{nil} value.  You "
+"can disable this feature entirely by setting the variable "
+"@code{find-file-existing-other-name} to @code{nil}: then if you visit the "
+"same file under two different names, you get a separate buffer for each file "
+"name."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1158
+#, no-wrap
+msgid "find-file-visit-truename"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1159
+#, no-wrap
+msgid "truenames of files"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1160
+#, no-wrap
+msgid "file truenames"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1166
+msgid ""
+"If the variable @code{find-file-visit-truename} is non-@code{nil}, then the "
+"file name recorded for a buffer is the file's @dfn{truename} (made by "
+"replacing all symbolic links with their target names), rather than the name "
+"you specify.  Setting @code{find-file-visit-truename} also implies the "
+"effect of @code{find-file-existing-other-name}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1167
+#, no-wrap
+msgid "directory name abbreviation"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1168
+#, no-wrap
+msgid "directory-abbrev-alist"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1184
+msgid ""
+"Sometimes, a directory is ordinarily accessed through a symbolic link, and "
+"you may want Emacs to preferentially show its ``linked'' name.  To do this, "
+"customize @code{directory-abbrev-alist}.  Each element in this list should "
+"have the form @code{(@var{from} . @var{to})}, which means to replace "
+"@var{from} with @var{to} whenever @var{from} appears in a directory name.  "
+"The @var{from} string is a regular expression (@pxref{Regexps}).  It is "
+"matched against directory names anchored at the first character, and should "
+"start with @samp{\\`} (to support directory names with embedded newlines, "
+"which would defeat @samp{^}).  The @var{to} string should be an ordinary "
+"absolute directory name pointing to the same directory.  Do not use @samp{~} "
+"to stand for a home directory in the @var{to} string; Emacs performs these "
+"substitutions separately.  Here's an example, from a system on which "
+"@file{/home/fsf} is normally accessed through a symbolic link named "
+"@file{/fsf}:"
+msgstr ""
+
+#. type: example
+#: files.texi.orig:1187
+#, no-wrap
+msgid "((\"\\\\`/home/fsf\" . \"/fsf\"))\n"
+msgstr ""
+
+#. type: section
+#: files.texi.orig:1190
+#, no-wrap
+msgid "File Directories"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1192
+#, no-wrap
+msgid "file directory"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1193
+#, no-wrap
+msgid "directory listing"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1200
+msgid ""
+"The file system groups files into @dfn{directories}.  A @dfn{directory "
+"listing} is a list of all the files in a directory.  Emacs provides commands "
+"to create and delete directories, and to make directory listings in brief "
+"format (file names only) and verbose format (sizes, dates, and authors "
+"included).  Emacs also includes a directory browser feature called Dired; "
+"see @ref{Dired}."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1202
+#, no-wrap
+msgid "C-x C-d @var{dir-or-pattern} @key{RET}"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1204
+msgid "Display a brief directory listing (@code{list-directory})."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1204
+#, no-wrap
+msgid "C-u C-x C-d @var{dir-or-pattern} @key{RET}"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1206
+msgid "Display a verbose directory listing."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1206
+#, no-wrap
+msgid "M-x make-directory @key{RET} @var{dirname} @key{RET}"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1208
+msgid "Create a new directory named @var{dirname}."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1208
+#, no-wrap
+msgid "M-x delete-directory @key{RET} @var{dirname} @key{RET}"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1211
+msgid ""
+"Delete the directory named @var{dirname}.  If it isn't empty, you will be "
+"asked whether you want to delete it recursively."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1213
+#, no-wrap
+msgid "list-directory"
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:1214
+#, no-wrap
+msgid "C-x C-d"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1219
+msgid ""
+"The command to display a directory listing is @kbd{C-x C-d} "
+"(@code{list-directory}).  It reads using the minibuffer a file name which is "
+"either a directory to be listed or a wildcard-containing pattern for the "
+"files to be listed.  For example,"
+msgstr ""
+
+#. type: example
+#: files.texi.orig:1222
+#, no-wrap
+msgid "C-x C-d /u2/emacs/etc @key{RET}\n"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1227
+msgid ""
+"lists all the files in directory @file{/u2/emacs/etc}.  Here is an example "
+"of specifying a file name pattern:"
+msgstr ""
+
+#. type: example
+#: files.texi.orig:1230
+#, no-wrap
+msgid "C-x C-d /u2/emacs/src/*.c @key{RET}\n"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1236
+msgid ""
+"Normally, @kbd{C-x C-d} displays a brief directory listing containing just "
+"file names.  A numeric argument (regardless of value) tells it to make a "
+"verbose listing including sizes, dates, and owners (like @samp{ls -l})."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1237
+#, no-wrap
+msgid "list-directory-brief-switches"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1238
+#, no-wrap
+msgid "list-directory-verbose-switches"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1246
+msgid ""
+"The text of a directory listing is mostly obtained by running @code{ls} in "
+"an inferior process.  Two Emacs variables control the switches passed to "
+"@code{ls}: @code{list-directory-brief-switches} is a string giving the "
+"switches to use in brief listings (@code{\"-CF\"} by default), and "
+"@code{list-directory-verbose-switches} is a string giving the switches to "
+"use in a verbose listing (@code{\"-l\"} by default)."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1247
+#, no-wrap
+msgid "directory-free-space-program"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1248
+#, no-wrap
+msgid "directory-free-space-args"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1254
+msgid ""
+"In verbose directory listings, Emacs adds information about the amount of "
+"free space on the disk that contains the directory.  To do this, it runs the "
+"program specified by @code{directory-free-space-program} with arguments "
+"@code{directory-free-space-args}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1263
+msgid ""
+"The command @kbd{M-x delete-directory} prompts for a directory name using "
+"the minibuffer, and deletes the directory if it is empty.  If the directory "
+"is not empty, you will be asked whether you want to delete it recursively.  "
+"On systems that have a ``Trash'' (or ``Recycle Bin'') feature, you can make "
+"this command move the specified directory to the Trash instead of deleting "
+"it outright, by changing the variable @code{delete-by-moving-to-trash} to "
+"@code{t}.  @xref{Misc File Ops}, for more information about using the Trash."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1266
+#, no-wrap
+msgid "comparing files"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1268
+#, no-wrap
+msgid "diff"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1269
+#, no-wrap
+msgid "diff-switches"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1281
+msgid ""
+"The command @kbd{M-x diff} prompts for two file names, using the minibuffer, "
+"and displays the differences between the two files in a buffer named "
+"@file{*diff*}.  This works by running the @command{diff} program, using "
+"options taken from the variable @code{diff-switches}.  The value of "
+"@code{diff-switches} should be a string; the default is @code{\"-c\"} to "
+"specify a context diff.  @xref{Top,, Diff, diff, Comparing and Merging "
+"Files}, for more information about the @command{diff} program."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1284
+msgid ""
+"The output of the @code{diff} command is shown using a major mode called "
+"Diff mode.  @xref{Diff Mode}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1285
+#, no-wrap
+msgid "diff-backup"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1290
+msgid ""
+"The command @kbd{M-x diff-backup} compares a specified file with its most "
+"recent backup.  If you specify the name of a backup file, @code{diff-backup} "
+"compares it with the source file that it is a backup of.  In all other "
+"respects, this behaves like @kbd{M-x diff}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1291
+#, no-wrap
+msgid "diff-buffer-with-file"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1295
+msgid ""
+"The command @kbd{M-x diff-buffer-with-file} compares a specified buffer with "
+"its corresponding file.  This shows you what changes you would make to the "
+"file if you save the buffer."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1296
+#, no-wrap
+msgid "compare-windows"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1304
+msgid ""
+"The command @kbd{M-x compare-windows} compares the text in the current "
+"window with that in the next window.  (For more information about windows in "
+"Emacs, @ref{Windows}.)  Comparison starts at point in each window, after "
+"pushing each initial point value on the mark ring in its respective buffer.  "
+"Then it moves point forward in each window, one character at a time, until "
+"it reaches characters that don't match.  Then the command exits."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1310
+msgid ""
+"If point in the two windows is followed by non-matching text when the "
+"command starts, @kbd{M-x compare-windows} tries heuristically to advance up "
+"to matching text in the two windows, and then exits.  So if you use @kbd{M-x "
+"compare-windows} repeatedly, each time it either skips one matching range or "
+"finds the start of another."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1311
+#, no-wrap
+msgid "compare-ignore-case"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1312
+#, no-wrap
+msgid "compare-ignore-whitespace"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1319
+msgid ""
+"With a numeric argument, @code{compare-windows} ignores changes in "
+"whitespace.  If the variable @code{compare-ignore-case} is non-@code{nil}, "
+"the comparison ignores differences in case as well.  If the variable "
+"@code{compare-ignore-whitespace} is non-@code{nil}, @code{compare-windows} "
+"normally ignores changes in whitespace, and a prefix argument turns that "
+"off."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1320
+#, no-wrap
+msgid "Smerge mode"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1321
+#, no-wrap
+msgid "smerge-mode"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1322
+#, no-wrap
+msgid "failed merges"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1323
+#, no-wrap
+msgid "merges, failed"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1324
+#, no-wrap
+msgid "comparing 3 files (@code{diff3})"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1331
+msgid ""
+"You can use @kbd{M-x smerge-mode} to turn on Smerge mode, a minor mode for "
+"editing output from the @command{diff3} program.  This is typically the "
+"result of a failed merge from a version control system ``update'' outside "
+"VC, due to conflicting changes to a file.  Smerge mode provides commands to "
+"resolve conflicts by selecting specific changes."
+msgstr ""
+
+#. type: iftex
+#: files.texi.orig:1334
+msgid "@xref{Emerge,,, emacs-xtra, Specialized Emacs Features},"
+msgstr ""
+
+#. type: ifnottex
+#: files.texi.orig:1337
+msgid "@xref{Emerge},"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1340
+msgid ""
+"for the Emerge facility, which provides a powerful interface for merging "
+"files."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1343
+#, no-wrap
+msgid "Diff mode"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1344
+#, no-wrap
+msgid "diff-mode"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1345
+#, no-wrap
+msgid "patches, editing"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1352
+msgid ""
+"Diff mode is a major mode used for the output of @kbd{M-x diff} and other "
+"similar commands.  This kind of output is called a @dfn{patch}, because it "
+"can be passed to the @command{patch} command to automatically apply the "
+"specified changes.  To select Diff mode manually, type @kbd{M-x diff-mode}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1353
+#, no-wrap
+msgid "hunk, diff"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1361
+msgid ""
+"The changes specified in a patch are grouped into @dfn{hunks}, which are "
+"contiguous chunks of text that contain one or more changed lines.  Hunks can "
+"also include unchanged lines to provide context for the changes.  Each hunk "
+"is preceded by a @dfn{hunk header}, which specifies the old and new line "
+"numbers at which the hunk occurs.  Diff mode highlights each hunk header, to "
+"distinguish it from the actual contents of the hunk."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1362
+#, no-wrap
+msgid "diff-update-on-the-fly"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1369
+msgid ""
+"You can edit a Diff mode buffer like any other buffer.  (If it is read-only, "
+"you need to make it writable first.  @xref{Misc Buffer}.)  Whenever you "
+"change a hunk, Diff mode attempts to automatically correct the line numbers "
+"in the hunk headers, to ensure that the patch remains ``correct''.  To "
+"disable automatic line number correction, change the variable "
+"@code{diff-update-on-the-fly} to @code{nil}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1373
+msgid ""
+"Diff mode treats each hunk as an ``error message'', similar to Compilation "
+"mode.  Thus, you can use commands such as @kbd{C-x '} to visit the "
+"corresponding source locations.  @xref{Compilation Mode}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1376
+msgid ""
+"In addition, Diff mode provides the following commands to navigate, "
+"manipulate and apply parts of patches:"
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1378
+#, no-wrap
+msgid "M-n"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1379
+#, no-wrap
+msgid "diff-hunk-next"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1381
+msgid "Move to the next hunk-start (@code{diff-hunk-next})."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1382
+#, no-wrap
+msgid "diff-auto-refine-mode"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1383
+#, no-wrap
+msgid "mode, Diff Auto-Refine"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1384
+#, no-wrap
+msgid "Diff Auto-Refine mode"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1390
+msgid ""
+"This command has a side effect: it @dfn{refines} the hunk you move to, "
+"highlighting its changes with better granularity.  To disable this feature, "
+"type @kbd{M-x diff-auto-refine-mode} to toggle off the minor mode Diff "
+"Auto-Refine mode.  To disable Diff Auto Refine mode by default, add this to "
+"your init file (@pxref{Hooks}):"
+msgstr ""
+
+#. type: example
+#: files.texi.orig:1394
+#, no-wrap
+msgid ""
+"(add-hook 'diff-mode-hook\n"
+"          (lambda () (diff-auto-refine-mode -1)))\n"
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1396
+#, no-wrap
+msgid "M-p"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1397
+#, no-wrap
+msgid "diff-hunk-prev"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1401
+msgid ""
+"Move to the previous hunk-start (@code{diff-hunk-prev}).  Like @kbd{M-n}, "
+"this has the side-effect of refining the hunk you move to, unless you "
+"disable Diff Auto-Refine mode."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1402
+#, no-wrap
+msgid "M-@}"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1403
+#, no-wrap
+msgid "diff-file-next"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1406
+msgid "Move to the next file-start, in a multi-file patch (@code{diff-file-next})."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1407
+#, no-wrap
+msgid "M-@{"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1408
+#, no-wrap
+msgid "diff-file-prev"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1411
+msgid ""
+"Move to the previous file-start, in a multi-file patch "
+"(@code{diff-file-prev})."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1412
+#, no-wrap
+msgid "M-k"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1413
+#, no-wrap
+msgid "diff-hunk-kill"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1415
+msgid "Kill the hunk at point (@code{diff-hunk-kill})."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1416
+#, no-wrap
+msgid "M-K"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1417
+#, no-wrap
+msgid "diff-file-kill"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1420
+msgid "In a multi-file patch, kill the current file part.  (@code{diff-file-kill})."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1421
+#, no-wrap
+msgid "C-c C-a"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1422
+#, no-wrap
+msgid "diff-apply-hunk"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1423
+#, no-wrap
+msgid "patches, applying"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1426
+msgid ""
+"Apply this hunk to its target file (@code{diff-apply-hunk}).  With a prefix "
+"argument of @kbd{C-u}, revert this hunk."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1427
+#, no-wrap
+msgid "C-c C-b"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1428 files.texi.orig:1479
+#, no-wrap
+msgid "diff-refine-hunk"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1432
+msgid ""
+"Highlight the changes of the hunk at point with a finer granularity "
+"(@code{diff-refine-hunk}).  This allows you to see exactly which parts of "
+"each changed line were actually changed."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1433
+#, no-wrap
+msgid "C-c C-c"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1434
+#, no-wrap
+msgid "diff-goto-source"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1437
+msgid ""
+"Go to the source file and line corresponding to this hunk "
+"(@code{diff-goto-source})."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1438
+#, no-wrap
+msgid "C-c C-e"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1439
+#, no-wrap
+msgid "diff-ediff-patch"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1442
+msgid ""
+"Start an Ediff session with the patch (@code{diff-ediff-patch}).  @xref{Top, "
+"Ediff, Ediff, ediff, The Ediff Manual}."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1443
+#, no-wrap
+msgid "C-c C-n"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1444
+#, no-wrap
+msgid "diff-restrict-view"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1449
+msgid ""
+"Restrict the view to the current hunk (@code{diff-restrict-view}).  "
+"@xref{Narrowing}.  With a prefix argument of @kbd{C-u}, restrict the view to "
+"the current file of a multiple-file patch.  To widen again, use @kbd{C-x n "
+"w} (@code{widen})."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1450
+#, no-wrap
+msgid "C-c C-r"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1451
+#, no-wrap
+msgid "diff-reverse-direction"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1454
+msgid ""
+"Reverse the direction of comparison for the entire buffer "
+"(@code{diff-reverse-direction})."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1455
+#, no-wrap
+msgid "C-c C-s"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1456
+#, no-wrap
+msgid "diff-split-hunk"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1464
+msgid ""
+"Split the hunk at point (@code{diff-split-hunk}).  This is for manually "
+"editing patches, and only works with the @dfn{unified diff format} produced "
+"by the @option{-u} or @option{--unified} options to the @command{diff} "
+"program.  If you need to split a hunk in the @dfn{context diff format} "
+"produced by the @option{-c} or @option{--context} options to @command{diff}, "
+"first convert the buffer to the unified diff format with @kbd{C-c C-u}."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1465
+#, no-wrap
+msgid "C-c C-d"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1466
+#, no-wrap
+msgid "diff-unified->context"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1470
+msgid ""
+"Convert the entire buffer to the @dfn{context diff format} "
+"(@code{diff-unified->context}).  With a prefix argument, convert only the "
+"text within the region."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1471
+#, no-wrap
+msgid "C-c C-u"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1472
+#, no-wrap
+msgid "diff-context->unified"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1477
+msgid ""
+"Convert the entire buffer to unified diff format "
+"(@code{diff-context->unified}).  With a prefix argument, convert unified "
+"format to context format.  When the mark is active, convert only the text "
+"within the region."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1478
+#, no-wrap
+msgid "C-c C-w"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1482
+msgid ""
+"Refine the current hunk so that it disregards changes in whitespace "
+"(@code{diff-refine-hunk})."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1483
+#, no-wrap
+msgid "C-x 4 A"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1484
+#, no-wrap
+msgid "diff-add-change-log-entries-other-window"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1485
+#, no-wrap
+msgid "add-change-log-entry-other-window@r{, in Diff mode}"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1494
+msgid ""
+"Generate a ChangeLog entry, like @kbd{C-x 4 a} does (@pxref{Change Log}), "
+"for each one of the hunks "
+"(@code{diff-add-change-log-entries-other-window}).  This creates a skeleton "
+"of the log of changes that you can later fill with the actual descriptions "
+"of the changes.  @kbd{C-x 4 a} itself in Diff mode operates on behalf of the "
+"current hunk's file, but gets the function name from the patch itself.  This "
+"is useful for making log entries for functions that are deleted by the "
+"patch."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1498
+#, no-wrap
+msgid "trailing whitespace, in patches"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1499
+#, no-wrap
+msgid "diff-delete-trailing-whitespace"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1512
+msgid ""
+"Patches sometimes include trailing whitespace on modified lines, as an "
+"unintentional and undesired change.  There are two ways to deal with this "
+"problem.  Firstly, if you enable Whitespace mode in a Diff buffer "
+"(@pxref{Useless Whitespace}), it automatically highlights trailing "
+"whitespace in modified lines.  Secondly, you can use the command @kbd{M-x "
+"diff-delete-trailing-whitespace}, which searches for trailing whitespace in "
+"the lines modified by the patch, and removes that whitespace in both the "
+"patch and the patched source file(s).  This command does not save the "
+"modifications that it makes, so you can decide whether to save the changes "
+"(the list of modified files is displayed in the echo area).  With a prefix "
+"argument, it tries to modify the original source files rather than the "
+"patched source files."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:1514
+#, no-wrap
+msgid "Miscellaneous File Operations"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1518
+msgid ""
+"Emacs has commands for performing many other operations on files.  All "
+"operate on one file; they do not accept wildcard file names."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1519
+#, no-wrap
+msgid "delete-file"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1520
+#, no-wrap
+msgid "deletion (of files)"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1524
+msgid ""
+"@kbd{M-x delete-file} prompts for a file and deletes it.  If you are "
+"deleting many files in one directory, it may be more convenient to use Dired "
+"rather than @code{delete-file}.  @xref{Dired Deletion}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1525
+#, no-wrap
+msgid "trash"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1526
+#, no-wrap
+msgid "recycle bin"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1531
+msgid ""
+"@kbd{M-x move-file-to-trash} moves a file into the system @dfn{Trash} (or "
+"@dfn{Recycle Bin}).  This is a facility available on most operating systems; "
+"files that are moved into the Trash can be brought back later if you change "
+"your mind."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1532
+#, no-wrap
+msgid "delete-by-moving-to-trash"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1542
+msgid ""
+"By default, Emacs deletion commands do @emph{not} use the Trash.  To use the "
+"Trash (when it is available) for common deletion commands, change the "
+"variable @code{delete-by-moving-to-trash} to @code{t}.  This affects the "
+"commands @kbd{M-x delete-file} and @kbd{M-x delete-directory} "
+"(@pxref{Directories}), as well as the deletion commands in Dired "
+"(@pxref{Dired Deletion}).  Supplying a prefix argument to @kbd{M-x "
+"delete-file} or @kbd{M-x delete-directory} makes them delete outright, "
+"instead of using the Trash, regardless of @code{delete-by-moving-to-trash}."
+msgstr ""
+
+#. type: ifnottex
+#: files.texi.orig:1547
+msgid ""
+"If a file is under version control (@pxref{Version Control}), you should "
+"delete it using @kbd{M-x vc-delete-file} instead of @kbd{M-x delete-file}.  "
+"@xref{VC Delete/Rename}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1549
+#, no-wrap
+msgid "copy-file"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1550
+#, no-wrap
+msgid "copying files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1553
+msgid ""
+"@kbd{M-x copy-file} reads the file @var{old} and writes a new file named "
+"@var{new} with the same contents."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1554
+#, no-wrap
+msgid "copy-directory"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1561
+msgid ""
+"@kbd{M-x copy-directory} copies directories, similar to the @command{cp -r} "
+"shell command.  It prompts for a directory @var{old} and a destination "
+"@var{new}.  If @var{new} is an existing directory, it creates a copy of the "
+"@var{old} directory and puts it in @var{new}.  If @var{new} is not an "
+"existing directory, it copies all the contents of @var{old} into a new "
+"directory named @var{new}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1562
+#, no-wrap
+msgid "renaming files"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1563
+#, no-wrap
+msgid "rename-file"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1577
+msgid ""
+"@kbd{M-x rename-file} reads two file names @var{old} and @var{new} using the "
+"minibuffer, then renames file @var{old} as @var{new}.  If the file name "
+"@var{new} already exists, you must confirm with @kbd{yes} or renaming is not "
+"done; this is because renaming causes the old meaning of the name @var{new} "
+"to be lost.  If @var{old} and @var{new} are on different file systems, the "
+"file @var{old} is copied and deleted.  If the argument @var{new} is just a "
+"directory name, the real new name is in that directory, with the same "
+"non-directory component as @var{old}.  For example, @kbd{M-x rename-file "
+"@key{RET} ~/foo @key{RET} /tmp @key{RET}} renames @file{~/foo} to "
+"@file{/tmp/foo}.  The same rule applies to all the remaining commands in "
+"this section.  All of them ask for confirmation when the new file name "
+"already exists, too."
+msgstr ""
+
+#. type: ifnottex
+#: files.texi.orig:1582
+msgid ""
+"If a file is under version control (@pxref{Version Control}), you should "
+"rename it using @kbd{M-x vc-rename-file} instead of @kbd{M-x rename-file}.  "
+"@xref{VC Delete/Rename}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1584
+#, no-wrap
+msgid "add-name-to-file"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1585
+#, no-wrap
+msgid "hard links (creation)"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1592
+msgid ""
+"@kbd{M-x add-name-to-file} adds an additional name to an existing file "
+"without removing its old name.  The new name is created as a ``hard link'' "
+"to the existing file.  The new name must belong on the same file system that "
+"the file is on.  On MS-Windows, this command works only if the file resides "
+"in an NTFS file system.  On MS-DOS, it works by copying the file."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1593
+#, no-wrap
+msgid "make-symbolic-link"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1594
+#, no-wrap
+msgid "symbolic links (creation)"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1604
+msgid ""
+"@kbd{M-x make-symbolic-link} reads two file names @var{target} and "
+"@var{linkname}, then creates a symbolic link named @var{linkname}, which "
+"points at @var{target}.  The effect is that future attempts to open file "
+"@var{linkname} will refer to whatever file is named @var{target} at the time "
+"the opening is done, or will get an error if the name @var{target} is "
+"nonexistent at that time.  This command does not expand the argument "
+"@var{target}, so that it allows you to specify a relative name as the target "
+"of the link.  On MS-Windows, this command works only on MS Windows Vista and "
+"later."
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:1605
+#, no-wrap
+msgid "C-x i"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1606
+#, no-wrap
+msgid "insert-file"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1612
+msgid ""
+"@kbd{M-x insert-file} (also @kbd{C-x i}) inserts a copy of the contents of "
+"the specified file into the current buffer at point, leaving point unchanged "
+"before the contents.  The position after the inserted contents is added to "
+"the mark ring, without activating the mark (@pxref{Mark Ring})."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1613
+#, no-wrap
+msgid "insert-file-literally"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1619
+msgid ""
+"@kbd{M-x insert-file-literally} is like @kbd{M-x insert-file}, except the "
+"file is inserted ``literally'': it is treated as a sequence of "
+"@acronym{ASCII} characters with no special encoding or conversion, similar "
+"to the @kbd{M-x find-file-literally} command (@pxref{Visiting})."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1620
+#, no-wrap
+msgid "write-region"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1627
+msgid ""
+"@kbd{M-x write-region} is the inverse of @kbd{M-x insert-file}; it copies "
+"the contents of the region into the specified file.  @kbd{M-x "
+"append-to-file} adds the text of the region to the end of the specified "
+"file.  @xref{Accumulating Text}.  The variable "
+"@code{write-region-inhibit-fsync} applies to these commands, as well as "
+"saving files; see @ref{Customize Save}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1628
+#, no-wrap
+msgid "set-file-modes"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1629
+#, no-wrap
+msgid "file modes"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1630
+#, no-wrap
+msgid "file permissions"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1640
+msgid ""
+"@kbd{M-x set-file-modes} reads a file name followed by a @dfn{file mode}, "
+"and applies that file mode to the specified file.  File modes, also called "
+"@dfn{file permissions}, determine whether a file can be read, written to, or "
+"executed, and by whom.  This command reads file modes using the same "
+"symbolic or octal format accepted by the @command{chmod} command; for "
+"instance, @samp{u+x} means to add execution permission for the user who owns "
+"the file.  It has no effect on operating systems that do not support file "
+"modes.  @code{chmod} is a convenience alias for this function."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:1642
+#, no-wrap
+msgid "Accessing Compressed Files"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1643
+#, no-wrap
+msgid "compression"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1644
+#, no-wrap
+msgid "uncompression"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1645
+#, no-wrap
+msgid "Auto Compression mode"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1646
+#, no-wrap
+msgid "mode, Auto Compression"
+msgstr ""
+
+#. type: pindex
+#: files.texi.orig:1647
+#, no-wrap
+msgid "gzip"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1654
+msgid ""
+"Emacs automatically uncompresses compressed files when you visit them, and "
+"automatically recompresses them if you alter them and save them.  Emacs "
+"recognizes compressed files by their file names.  File names ending in "
+"@samp{.gz} indicate a file compressed with @code{gzip}.  Other endings "
+"indicate other compression programs."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1659
+msgid ""
+"Automatic uncompression and compression apply to all the operations in which "
+"Emacs uses the contents of a file.  This includes visiting it, saving it, "
+"inserting its contents into a buffer, loading it, and byte compiling it."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1660 files.texi.orig:1661
+#, no-wrap
+msgid "auto-compression-mode"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1665
+msgid ""
+"To disable this feature, type the command @kbd{M-x auto-compression-mode}.  "
+"You can disable it permanently by customizing the variable "
+"@code{auto-compression-mode}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1668
+#, no-wrap
+msgid "mode, tar"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1669
+#, no-wrap
+msgid "Tar mode"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1670
+#, no-wrap
+msgid "file archives"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1678
+msgid ""
+"A file whose name ends in @samp{.tar} is normally an @dfn{archive} made by "
+"the @code{tar} program.  Emacs views these files in a special mode called "
+"Tar mode which provides a Dired-like list of the contents (@pxref{Dired}).  "
+"You can move around through the list just as you would in Dired, and visit "
+"the subfiles contained in the archive.  However, not all Dired commands are "
+"available in Tar mode."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1682
+msgid ""
+"If Auto Compression mode is enabled (@pxref{Compressed Files}), then Tar "
+"mode is used also for compressed archives---files with extensions "
+"@samp{.tgz}, @code{.tar.Z} and @code{.tar.gz}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1691
+msgid ""
+"The keys @kbd{e}, @kbd{f} and @key{RET} all extract a component file into "
+"its own buffer.  You can edit it there, and if you save the buffer, the "
+"edited version will replace the version in the Tar buffer.  Clicking with "
+"the mouse on the file name in the Tar buffer does likewise.  @kbd{v} "
+"extracts a file into a buffer in View mode (@pxref{View Mode}).  @kbd{o} "
+"extracts the file and displays it in another window, so you could edit the "
+"file and operate on the archive simultaneously."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1698
+msgid ""
+"@kbd{d} marks a file for deletion when you later use @kbd{x}, and @kbd{u} "
+"unmarks a file, as in Dired.  @kbd{C} copies a file from the archive to disk "
+"and @kbd{R} renames a file within the archive.  @kbd{g} reverts the buffer "
+"from the archive on disk.  The keys @kbd{M}, @kbd{G}, and @kbd{O} change the "
+"file's permission bits, group, and owner, respectively."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1701
+msgid ""
+"Saving the Tar buffer writes a new version of the archive to disk with the "
+"changes you made to the components."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1705
+msgid ""
+"You don't need the @code{tar} program to use Tar mode---Emacs reads the "
+"archives directly.  However, accessing compressed archives requires the "
+"appropriate uncompression program."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1706
+#, no-wrap
+msgid "Archive mode"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1707
+#, no-wrap
+msgid "mode, archive"
+msgstr ""
+
+#. type: pindex
+#: files.texi.orig:1708 files.texi.orig:1715
+#, no-wrap
+msgid "arc"
+msgstr ""
+
+#. type: pindex
+#: files.texi.orig:1709 files.texi.orig:1716
+#, no-wrap
+msgid "jar"
+msgstr ""
+
+#. type: pindex
+#: files.texi.orig:1710 files.texi.orig:1718
+#, no-wrap
+msgid "rar"
+msgstr ""
+
+#. type: pindex
+#: files.texi.orig:1711 files.texi.orig:1717
+#, no-wrap
+msgid "zip"
+msgstr ""
+
+#. type: pindex
+#: files.texi.orig:1712 files.texi.orig:1719
+#, no-wrap
+msgid "lzh"
+msgstr ""
+
+#. type: pindex
+#: files.texi.orig:1713 files.texi.orig:1720
+#, no-wrap
+msgid "zoo"
+msgstr ""
+
+#. type: pindex
+#: files.texi.orig:1714 files.texi.orig:1721
+#, no-wrap
+msgid "7z"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1722
+#, no-wrap
+msgid "Java class archives"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1723
+#, no-wrap
+msgid "unzip archives"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1728
+msgid ""
+"A separate but similar Archive mode is used for @code{arc}, @code{jar}, "
+"@code{lzh}, @code{zip}, @code{rar}, @code{7z}, and @code{zoo} archives, as "
+"well as @code{exe} files that are self-extracting executables."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1736
+msgid ""
+"The key bindings of Archive mode are similar to those in Tar mode, with the "
+"addition of the @kbd{m} key which marks a file for subsequent operations, "
+"and @kbd{M-@key{DEL}} which unmarks all the marked files.  Also, the @kbd{a} "
+"key toggles the display of detailed file information, for those archive "
+"types where it won't fit in a single line.  Operations such as renaming a "
+"subfile, or changing its mode or owner, are supported only for some of the "
+"archive formats."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1742
+msgid ""
+"Unlike Tar mode, Archive mode runs the archiving programs to unpack and "
+"repack archives.  However, you don't need these programs to look at the "
+"archive table of contents, only to extract or manipulate the subfiles in the "
+"archive.  Details of the program names and their options can be set in the "
+"@samp{Archive} Customize group."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1746
+#, no-wrap
+msgid "Tramp"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1747
+#, no-wrap
+msgid "FTP"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1748
+#, no-wrap
+msgid "remote file access"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1751
+msgid "You can refer to files on other machines using a special file name syntax:"
+msgstr ""
+
+#. type: group
+#: files.texi.orig:1759
+#, no-wrap
+msgid ""
+"/@var{host}:@var{filename}\n"
+"/@var{user}@@@var{host}:@var{filename}\n"
+"/@var{user}@@@var{host}#@var{port}:@var{filename}\n"
+"/@var{method}:@var{user}@@@var{host}:@var{filename}\n"
+"/@var{method}:@var{user}@@@var{host}#@var{port}:@var{filename}\n"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1770
+msgid ""
+"To carry out this request, Emacs uses a remote-login program such as "
+"@command{ftp}, @command{ssh}, @command{rlogin}, or @command{telnet}.  You "
+"can always specify in the file name which method to use---for example, "
+"@file{/ftp:@var{user}@@@var{host}:@var{filename}} uses FTP, whereas "
+"@file{/ssh:@var{user}@@@var{host}:@var{filename}} uses @command{ssh}.  When "
+"you don't specify a method in the file name, Emacs chooses the method as "
+"follows:"
+msgstr ""
+
+#. type: enumerate
+#: files.texi.orig:1774
+msgid "If the host name starts with @samp{ftp.} (with dot), Emacs uses FTP."
+msgstr ""
+
+#. type: enumerate
+#: files.texi.orig:1776
+msgid "If the user name is @samp{ftp} or @samp{anonymous}, Emacs uses FTP."
+msgstr ""
+
+#. type: enumerate
+#: files.texi.orig:1779
+msgid ""
+"If the variable @code{tramp-default-method} is set to @samp{ftp}, Emacs uses "
+"FTP."
+msgstr ""
+
+#. type: enumerate
+#: files.texi.orig:1781
+msgid "If @command{ssh-agent} is running, Emacs uses @command{scp}."
+msgstr ""
+
+#. type: enumerate
+#: files.texi.orig:1783
+msgid "Otherwise, Emacs uses @command{ssh}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1785
+#, no-wrap
+msgid "disabling remote files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1791
+msgid ""
+"You can entirely turn off the remote file name feature by setting the "
+"variable @code{tramp-mode} to @code{nil}.  You can turn off the feature in "
+"individual cases by quoting the file name with @samp{/:} (@pxref{Quoted File "
+"Names})."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1792
+#, no-wrap
+msgid "ange-ftp"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1797
+msgid ""
+"Remote file access through FTP is handled by the Ange-FTP package, which is "
+"documented in the following.  Remote file access through the other methods "
+"is handled by the Tramp package, which has its own manual.  @xref{Top, The "
+"Tramp Manual,, tramp, The Tramp Manual}."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1798
+#, no-wrap
+msgid "ange-ftp-default-user"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1799
+#, no-wrap
+msgid "user name for remote file access"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1806
+msgid ""
+"When the Ange-FTP package is used, Emacs logs in through FTP using the name "
+"@var{user}, if that is specified in the remote file name.  If @var{user} is "
+"unspecified, Emacs logs in using your user name on the local system; but if "
+"you set the variable @code{ange-ftp-default-user} to a string, that string "
+"is used instead.  When logging in, Emacs may also ask for a password."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1807
+#, no-wrap
+msgid "backups for remote files"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1808
+#, no-wrap
+msgid "ange-ftp-make-backup-files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1812
+msgid ""
+"For performance reasons, Emacs does not make backup files for files accessed "
+"via FTP by default.  To make it do so, change the variable "
+"@code{ange-ftp-make-backup-files} to a non-@code{nil} value."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1817
+msgid ""
+"By default, auto-save files for remote files are made in the temporary file "
+"directory on the local machine, as specified by the variable "
+"@code{auto-save-file-name-transforms}.  @xref{Auto Save Files}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1818
+#, no-wrap
+msgid "anonymous FTP"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1819
+#, no-wrap
+msgid "ange-ftp-generate-anonymous-password"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1828
+msgid ""
+"To visit files accessible by anonymous FTP, you use special user names "
+"@samp{anonymous} or @samp{ftp}.  Passwords for these user names are handled "
+"specially.  The variable @code{ange-ftp-generate-anonymous-password} "
+"controls what happens: if the value of this variable is a string, then that "
+"string is used as the password; if non-@code{nil} (the default), then the "
+"value of @code{user-mail-address} is used; if @code{nil}, then Emacs prompts "
+"you for a password as usual (@pxref{Passwords})."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1829
+#, no-wrap
+msgid "firewall, and accessing remote files"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1830
+#, no-wrap
+msgid "gateway, and remote file access with @code{ange-ftp}"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1831
+#, no-wrap
+msgid "ange-ftp-smart-gateway"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1832
+#, no-wrap
+msgid "ange-ftp-gateway-host"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1844
+msgid ""
+"Sometimes you may be unable to access files on a remote machine because a "
+"@dfn{firewall} in between blocks the connection for security reasons.  If "
+"you can log in on a @dfn{gateway} machine from which the target files "
+"@emph{are} accessible, and whose FTP server supports gatewaying features, "
+"you can still use remote file names; all you have to do is specify the name "
+"of the gateway machine by setting the variable @code{ange-ftp-gateway-host}, "
+"and set @code{ange-ftp-smart-gateway} to @code{t}.  Otherwise you may be "
+"able to make remote file names work, but the procedure is complex.  You can "
+"read the instructions by typing @kbd{M-x finder-commentary @key{RET} "
+"ange-ftp @key{RET}}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1848
+#, no-wrap
+msgid "quoting file names"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1849
+#, no-wrap
+msgid "file names, quote special characters"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1853
+msgid ""
+"You can @dfn{quote} an absolute file name to prevent special characters and "
+"syntax in it from having their special effects.  The way to do this is to "
+"add @samp{/:} at the beginning."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1858
+msgid ""
+"For example, you can quote a local file name which appears remote, to "
+"prevent it from being treated as a remote file name.  Thus, if you have a "
+"directory named @file{/foo:} and a file named @file{bar} in it, you can "
+"refer to that file in Emacs as @samp{/:/foo:/bar}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1862
+msgid ""
+"@samp{/:} can also prevent @samp{~} from being treated as a special "
+"character for a user's home directory.  For example, @file{/:/tmp/~hack} "
+"refers to a file whose name is @file{~hack} in directory @file{/tmp}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1867
+msgid ""
+"Quoting with @samp{/:} is also a way to enter in the minibuffer a file name "
+"that contains @samp{$}.  In order for this to work, the @samp{/:} must be at "
+"the beginning of the minibuffer contents.  (You can also double each "
+"@samp{$}; see @ref{File Names with $}.)"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1871
+msgid ""
+"You can also quote wildcard characters with @samp{/:}, for visiting.  For "
+"example, @file{/:/tmp/foo*bar} visits the file @file{/tmp/foo*bar}."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1880
+msgid ""
+"Another method of getting the same result is to enter @file{/tmp/foo[*]bar}, "
+"which is a wildcard specification that matches only @file{/tmp/foo*bar}.  "
+"However, in many cases there is no need to quote the wildcard characters "
+"because even unquoted they give the right result.  For example, if the only "
+"file name in @file{/tmp} that starts with @samp{foo} and ends with "
+"@samp{bar} is @file{foo*bar}, then specifying @file{/tmp/foo*bar} will visit "
+"only @file{/tmp/foo*bar}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1884
+#, no-wrap
+msgid "file name caching"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1885
+#, no-wrap
+msgid "cache of file names"
+msgstr ""
+
+#. type: pindex
+#: files.texi.orig:1886
+#, no-wrap
+msgid "find"
+msgstr ""
+
+#. type: kindex
+#: files.texi.orig:1887
+#, no-wrap
+msgid "C-TAB"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1888
+#, no-wrap
+msgid "file-cache-minibuffer-complete"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1897
+msgid ""
+"You can use the @dfn{file name cache} to make it easy to locate a file by "
+"name, without having to remember exactly where it is located.  When typing a "
+"file name in the minibuffer, @kbd{C-@key{TAB}} "
+"(@code{file-cache-minibuffer-complete}) completes it using the file name "
+"cache.  If you repeat @kbd{C-@key{TAB}}, that cycles through the possible "
+"completions of what you had originally typed.  (However, note that the "
+"@kbd{C-@key{TAB}} character cannot be typed on most text terminals.)"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1900
+msgid ""
+"The file name cache does not fill up automatically.  Instead, you load file "
+"names into the cache using these commands:"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1901
+#, no-wrap
+msgid "file-cache-add-directory"
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1903
+#, no-wrap
+msgid "M-x file-cache-add-directory @key{RET} @var{directory} @key{RET}"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1905
+msgid "Add each file name in @var{directory} to the file name cache."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1905
+#, no-wrap
+msgid "M-x file-cache-add-directory-using-find @key{RET} @var{directory} @key{RET}"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1908
+msgid ""
+"Add each file name in @var{directory} and all of its nested subdirectories "
+"to the file name cache."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1908
+#, no-wrap
+msgid ""
+"M-x file-cache-add-directory-using-locate @key{RET} @var{directory} "
+"@key{RET}"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1912
+msgid ""
+"Add each file name in @var{directory} and all of its nested subdirectories "
+"to the file name cache, using @command{locate} to find them all."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1912
+#, no-wrap
+msgid "M-x file-cache-add-directory-list @key{RET} @var{variable} @key{RET}"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1916
+msgid ""
+"Add each file name in each directory listed in @var{variable} to the file "
+"name cache.  @var{variable} should be a Lisp variable whose value is a list "
+"of directory names, like @code{load-path}."
+msgstr ""
+
+#. type: item
+#: files.texi.orig:1916
+#, no-wrap
+msgid "M-x file-cache-clear-cache @key{RET}"
+msgstr ""
+
+#. type: table
+#: files.texi.orig:1918
+msgid "Clear the cache; that is, remove all file names from it."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1923
+msgid ""
+"The file name cache is not persistent: it is kept and maintained only for "
+"the duration of the Emacs session.  You can view the contents of the cache "
+"with the @code{file-cache-display} command."
+msgstr ""
+
+#. type: section
+#: files.texi.orig:1925
+#, no-wrap
+msgid "Convenience Features for Finding Files"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1930
+msgid ""
+"In this section, we introduce some convenient facilities for finding "
+"recently-opened files, reading file names from a buffer, and viewing image "
+"files."
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1931 files.texi.orig:1932
+#, no-wrap
+msgid "recentf-mode"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1933
+#, no-wrap
+msgid "recentf-save-list"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1934
+#, no-wrap
+msgid "recentf-edit-list"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1940
+msgid ""
+"If you enable Recentf mode, with @kbd{M-x recentf-mode}, the @samp{File} "
+"menu includes a submenu containing a list of recently opened files.  "
+"@kbd{M-x recentf-save-list} saves the current @code{recent-file-list} to a "
+"file, and @kbd{M-x recentf-edit-list} edits it."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1946
+msgid ""
+"The @kbd{M-x ffap} command generalizes @code{find-file} with more powerful "
+"heuristic defaults (@pxref{FFAP}), often based on the text at point.  "
+"Partial Completion mode offers other features extending @code{find-file}, "
+"which can be used with @code{ffap}.  @xref{Completion Options}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1947
+#, no-wrap
+msgid "image-mode"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1948
+#, no-wrap
+msgid "image-toggle-display"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1949
+#, no-wrap
+msgid "image-next-file"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1950
+#, no-wrap
+msgid "image-previous-file"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1951
+#, no-wrap
+msgid "images, viewing"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1963
+msgid ""
+"Visiting image files automatically selects Image mode.  In this major mode, "
+"you can type @kbd{C-c C-c} (@code{image-toggle-display})  to toggle between "
+"displaying the file as an image in the Emacs buffer, and displaying its "
+"underlying text (or raw byte) representation.  Displaying the file as an "
+"image works only if Emacs is compiled with support for displaying such "
+"images.  If the displayed image is wider or taller than the frame, the usual "
+"point motion keys (@kbd{C-f}, @kbd{C-p}, and so forth) cause different parts "
+"of the image to be displayed.  You can press @kbd{n} "
+"(@code{image-next-file}) and @kbd{p} (@code{image-previous-file}) to visit "
+"the next image file and the previous image file in the same directory, "
+"respectively."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1964
+#, no-wrap
+msgid "image-toggle-animation"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1965
+#, no-wrap
+msgid "image-next-frame"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1966
+#, no-wrap
+msgid "image-previous-frame"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1967
+#, no-wrap
+msgid "image-goto-frame"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1968
+#, no-wrap
+msgid "image-increase-speed"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1969
+#, no-wrap
+msgid "image-decrease-speed"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1970
+#, no-wrap
+msgid "image-reset-speed"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:1971
+#, no-wrap
+msgid "image-reverse-speed"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1972
+#, no-wrap
+msgid "image-animate-loop"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1973
+#, no-wrap
+msgid "image animation"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1974
+#, no-wrap
+msgid "animated images"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:1987
+msgid ""
+"If the image can be animated, the command @key{RET} "
+"(@code{image-toggle-animation}) starts or stops the animation.  Animation "
+"plays once, unless the option @code{image-animate-loop} is non-@code{nil}.  "
+"With @kbd{f} (@code{image-next-frame}) and @kbd{b} "
+"(@code{image-previous-frame}) you can step through the individual frames.  "
+"Both commands accept a numeric prefix to step through several frames at "
+"once.  You can go to a specific frame with @kbd{F} "
+"(@code{image-goto-frame}).  Typing @kbd{a +} (@code{image-increase-speed}) "
+"increases the speed of the animation, @kbd{a -} "
+"(@code{image-decrease-speed}) decreases it, and @kbd{a r} "
+"(@code{image-reverse-speed}) reverses it.  The command @kbd{a 0} "
+"(@code{image-reset-speed}) resets the speed to the original value."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:1988
+#, no-wrap
+msgid "ImageMagick support"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1989
+#, no-wrap
+msgid "imagemagick-enabled-types"
+msgstr ""
+
+#. type: vindex
+#: files.texi.orig:1990
+#, no-wrap
+msgid "imagemagick-types-inhibit"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:2005
+msgid ""
+"If Emacs was compiled with support for the ImageMagick library, it can use "
+"ImageMagick to render a wide variety of images.  The variable "
+"@code{imagemagick-enabled-types} lists the image types that Emacs may render "
+"using ImageMagick; each element in the list should be an internal "
+"ImageMagick name for an image type, as a symbol or an equivalent string "
+"(e.g., @code{BMP} for @file{.bmp} images).  To enable ImageMagick for all "
+"possible image types, change @code{imagemagick-enabled-types} to @code{t}.  "
+"The variable @code{imagemagick-types-inhibit} lists the image types which "
+"should never be rendered using ImageMagick, regardless of the value of "
+"@code{imagemagick-enabled-types} (the default list includes types like "
+"@code{C} and @code{HTML}, which ImageMagick can render as an ``image'' but "
+"Emacs should not).  To disable ImageMagick entirely, change "
+"@code{imagemagick-types-inhibit} to @code{t}."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:2006
+#, no-wrap
+msgid "thumbs-mode"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:2007
+#, no-wrap
+msgid "mode, thumbs"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:2010
+msgid ""
+"The Image-Dired package can also be used to view images as thumbnails.  "
+"@xref{Image-Dired}."
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:2013
+#, no-wrap
+msgid "filesets"
+msgstr ""
+
+#. type: cindex
+#: files.texi.orig:2014
+#, no-wrap
+msgid "sets of files"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:2016
+#, no-wrap
+msgid "filesets-init"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:2023
+msgid ""
+"If you regularly edit a certain group of files, you can define them as a "
+"@dfn{fileset}.  This lets you perform certain operations, such as visiting, "
+"@code{query-replace}, and shell commands on all the files at once.  To make "
+"use of filesets, you must first add the expression @code{(filesets-init)} to "
+"your init file (@pxref{Init File}).  This adds a @samp{Filesets} menu to the "
+"menu bar."
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:2024
+#, no-wrap
+msgid "filesets-add-buffer"
+msgstr ""
+
+#. type: findex
+#: files.texi.orig:2025
+#, no-wrap
+msgid "filesets-remove-buffer"
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:2032
+msgid ""
+"The simplest way to define a fileset is by adding files to it one at a "
+"time.  To add a file to fileset @var{name}, visit the file and type @kbd{M-x "
+"filesets-add-buffer @key{RET} @var{name} @key{RET}}.  If there is no fileset "
+"@var{name}, this creates a new one, which initially contains only the "
+"current file.  The command @kbd{M-x filesets-remove-buffer} removes the "
+"current file from a fileset."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:2042
+msgid ""
+"You can also edit the list of filesets directly, with @kbd{M-x "
+"filesets-edit} (or by choosing @samp{Edit Filesets} from the @samp{Filesets} "
+"menu).  The editing is performed in a Customize buffer (@pxref{Easy "
+"Customization}).  Normally, a fileset is a simple list of files, but you can "
+"also define a fileset as a regular expression matching file names.  Some "
+"examples of these more complicated filesets are shown in the Customize "
+"buffer.  Remember to select @samp{Save for future sessions} if you want to "
+"use the same filesets in future Emacs sessions."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:2048
+msgid ""
+"You can use the command @kbd{M-x filesets-open} to visit all the files in a "
+"fileset, and @kbd{M-x filesets-close} to close them.  Use @kbd{M-x "
+"filesets-run-cmd} to run a shell command on all the files in a fileset.  "
+"These commands are also available from the @samp{Filesets} menu, where each "
+"existing fileset is represented by a submenu."
+msgstr ""
+
+#. type: Plain text
+#: files.texi.orig:2052
+msgid ""
+"@xref{Version Control}, for a different concept of ``filesets'': groups of "
+"files bundled together for version control operations.  Filesets of that "
+"type are unnamed, and do not persist across Emacs sessions."
+msgstr ""

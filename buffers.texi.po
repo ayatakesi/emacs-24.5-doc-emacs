@@ -1,0 +1,1882 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-06-25 01:15+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: node
+#: buffers.texi.orig:5
+#, no-wrap
+msgid "Buffers"
+msgstr ""
+
+#. type: chapter
+#: buffers.texi.orig:6
+#, no-wrap
+msgid "Using Multiple Buffers"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:8
+#, no-wrap
+msgid "buffers"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:15
+msgid ""
+"The text you are editing in Emacs resides in an object called a "
+"@dfn{buffer}.  Each time you visit a file, a buffer is used to hold the "
+"file's text.  Each time you invoke Dired, a buffer is used to hold the "
+"directory listing.  If you send a message with @kbd{C-x m}, a buffer is used "
+"to hold the text of the message.  When you ask for a command's "
+"documentation, that appears in a buffer named @file{*Help*}."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:25
+msgid ""
+"Each buffer has a unique name, which can be of any length.  When a buffer is "
+"displayed in a window, its name is shown in the mode line (@pxref{Mode "
+"Line}).  The distinction between upper and lower case matters in buffer "
+"names.  Most buffers are made by visiting files, and their names are derived "
+"from the files' names; however, you can also create an empty buffer with any "
+"name you want.  A newly started Emacs has several buffers, including one "
+"named @file{*scratch*}, which can be used for evaluating Lisp expressions "
+"and is not associated with any file (@pxref{Lisp Interaction})."
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:26
+#, no-wrap
+msgid "selected buffer"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:27
+#, no-wrap
+msgid "current buffer"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:34
+msgid ""
+"At any time, one and only one buffer is @dfn{selected}; we call it the "
+"@dfn{current buffer}.  We sometimes say that a command operates on ``the "
+"buffer''; this really means that it operates on the current buffer.  When "
+"there is only one Emacs window, the buffer displayed in that window is "
+"current.  When there are multiple windows, the buffer displayed in the "
+"@dfn{selected window} is current.  @xref{Windows}."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:41
+msgid ""
+"Aside from its textual contents, each buffer records several pieces of "
+"information, such as what file it is visiting (if any), whether it is "
+"modified, and what major mode and minor modes are in effect "
+"(@pxref{Modes}).  These are stored in @dfn{buffer-local "
+"variables}---variables that can have a different value in each buffer.  "
+"@xref{Locals}."
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:42
+#, no-wrap
+msgid "buffer size, maximum"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:50
+msgid ""
+"A buffer's size cannot be larger than some maximum, which is defined by the "
+"largest buffer position representable by @dfn{Emacs integers}.  This is "
+"because Emacs tracks buffer positions using that data type.  For typical "
+"64-bit machines, this maximum buffer size is @math{2^{61} - 2} bytes, or "
+"about 2 EiB@.  For typical 32-bit machines, the maximum is usually "
+"@math{2^{29} - 2} bytes, or about 512 MiB@.  Buffer sizes are also limited "
+"by the amount of memory in the system."
+msgstr ""
+
+#. type: node
+#: buffers.texi.orig:61 buffers.texi.orig:63
+#, no-wrap
+msgid "Select Buffer"
+msgstr ""
+
+#. type: menuentry
+#: buffers.texi.orig:61
+msgid "Creating a new buffer or reselecting an old one."
+msgstr ""
+
+#. type: node
+#: buffers.texi.orig:61 buffers.texi.orig:165
+#, no-wrap
+msgid "List Buffers"
+msgstr ""
+
+#. type: menuentry
+#: buffers.texi.orig:61
+msgid "Getting a list of buffers that exist."
+msgstr ""
+
+#. type: node
+#: buffers.texi.orig:61 buffers.texi.orig:210
+#, no-wrap
+msgid "Misc Buffer"
+msgstr ""
+
+#. type: menuentry
+#: buffers.texi.orig:61
+msgid "Renaming; changing read-only status; copying text."
+msgstr ""
+
+#. type: node
+#: buffers.texi.orig:61 buffers.texi.orig:268
+#, no-wrap
+msgid "Kill Buffer"
+msgstr ""
+
+#. type: menuentry
+#: buffers.texi.orig:61
+msgid "Killing buffers you no longer need."
+msgstr ""
+
+#. type: node
+#: buffers.texi.orig:61 buffers.texi.orig:345
+#, no-wrap
+msgid "Several Buffers"
+msgstr ""
+
+#. type: menuentry
+#: buffers.texi.orig:61
+msgid ""
+"How to go through the list of all buffers and operate variously on several "
+"of them."
+msgstr ""
+
+#. type: section
+#: buffers.texi.orig:61 buffers.texi.orig:543 buffers.texi.orig:544
+#, no-wrap
+msgid "Indirect Buffers"
+msgstr ""
+
+#. type: menuentry
+#: buffers.texi.orig:61
+msgid "An indirect buffer shares the text of another buffer."
+msgstr ""
+
+#. type: node
+#: buffers.texi.orig:61 buffers.texi.orig:598
+#, no-wrap
+msgid "Buffer Convenience"
+msgstr ""
+
+#. type: menuentry
+#: buffers.texi.orig:61
+msgid "Convenience and customization features for buffer handling."
+msgstr ""
+
+#. type: section
+#: buffers.texi.orig:64
+#, no-wrap
+msgid "Creating and Selecting Buffers"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:65
+#, no-wrap
+msgid "change buffers"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:66
+#, no-wrap
+msgid "switch buffers"
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:69
+#, no-wrap
+msgid "C-x b @var{buffer} @key{RET}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:71
+msgid "Select or create a buffer named @var{buffer} (@code{switch-to-buffer})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:71
+#, no-wrap
+msgid "C-x 4 b @var{buffer} @key{RET}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:74
+msgid ""
+"Similar, but select @var{buffer} in another window "
+"(@code{switch-to-buffer-other-window})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:74
+#, no-wrap
+msgid "C-x 5 b @var{buffer} @key{RET}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:77
+msgid ""
+"Similar, but select @var{buffer} in a separate frame "
+"(@code{switch-to-buffer-other-frame})."
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:77 buffers.texi.orig:113
+#, no-wrap
+msgid "C-x @key{LEFT}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:79
+msgid "Select the previous buffer in the buffer list (@code{previous-buffer})."
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:79 buffers.texi.orig:114
+#, no-wrap
+msgid "C-x @key{RIGHT}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:81
+msgid "Select the next buffer in the buffer list (@code{next-buffer})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:81
+#, no-wrap
+msgid "C-u M-g M-g"
+msgstr ""
+
+#. type: itemx
+#: buffers.texi.orig:82
+#, no-wrap
+msgid "C-u M-g g"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:85
+msgid ""
+"Read a number @var{n} and move to line @var{n} in the most recently selected "
+"buffer other than the current buffer."
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:87
+#, no-wrap
+msgid "C-x b"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:88
+#, no-wrap
+msgid "switch-to-buffer"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:94
+msgid ""
+"The @kbd{C-x b} (@code{switch-to-buffer}) command reads a buffer name using "
+"the minibuffer.  Then it makes that buffer current, and displays it in the "
+"currently-selected window.  An empty input specifies the buffer that was "
+"current most recently among those not now displayed in any window."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:102
+msgid ""
+"While entering the buffer name, you can use the usual completion and history "
+"commands (@pxref{Minibuffer}).  Note that @kbd{C-x b}, and related commands, "
+"use ``permissive completion with confirmation'' for minibuffer completion: "
+"if you type @key{RET} immediately after completing up to a nonexistent "
+"buffer name, Emacs prints @samp{[Confirm]} and you must type a second "
+"@key{RET} to submit that buffer name.  @xref{Completion Exit}, for details."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:112
+msgid ""
+"If you specify a buffer that does not exist, @kbd{C-x b} creates a new, "
+"empty buffer that is not visiting any file, and selects it for editing.  The "
+"default value of the variable @code{major-mode} determines the new buffer's "
+"major mode; the default value is Fundamental mode.  @xref{Major Modes}.  One "
+"reason to create a new buffer is to use it for making temporary notes.  If "
+"you try to save it, Emacs asks for the file name to use, and the buffer's "
+"major mode is re-established taking that file name into account "
+"(@pxref{Choosing Modes})."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:115
+#, no-wrap
+msgid "next-buffer"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:116
+#, no-wrap
+msgid "previous-buffer"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:123
+msgid ""
+"For conveniently switching between a few buffers, use the commands @kbd{C-x "
+"@key{LEFT}} and @kbd{C-x @key{RIGHT}}.  @kbd{C-x @key{LEFT}} "
+"(@code{previous-buffer}) selects the previous buffer (following the order of "
+"most recent selection in the current frame), while @kbd{C-x @key{RIGHT}} "
+"(@code{next-buffer}) moves through buffers in the reverse direction."
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:124
+#, no-wrap
+msgid "C-x 4 b"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:125
+#, no-wrap
+msgid "switch-to-buffer-other-window"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:130
+msgid ""
+"To select a buffer in a window other than the current one, type @kbd{C-x 4 "
+"b} (@code{switch-to-buffer-other-window}).  This prompts for a buffer name "
+"using the minibuffer, displays that buffer in another window, and selects "
+"that window."
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:131
+#, no-wrap
+msgid "C-x 5 b"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:132
+#, no-wrap
+msgid "switch-to-buffer-other-frame"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:138
+msgid ""
+"Similarly, @kbd{C-x 5 b} (@code{switch-to-buffer-other-frame})  prompts for "
+"a buffer name, displays that buffer in another frame, and selects that "
+"frame.  If the buffer is already being shown in a window on another frame, "
+"Emacs selects that window and frame instead of creating a new frame."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:141
+msgid ""
+"@xref{Displaying Buffers}, for how the @kbd{C-x 4 b} and @kbd{C-x 5 b} "
+"commands get the window and/or frame to display in."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:145
+msgid ""
+"In addition, @kbd{C-x C-f}, and any other command for visiting a file, can "
+"also be used to switch to an existing file-visiting buffer.  "
+"@xref{Visiting}."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:146
+#, no-wrap
+msgid "goto-line"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:159
+msgid ""
+"@kbd{C-u M-g M-g}, that is @code{goto-line} with a plain prefix argument, "
+"reads a number @var{n} using the minibuffer, selects the most recently "
+"selected buffer other than the current buffer in another window, and then "
+"moves point to the beginning of line number @var{n} in that buffer.  This is "
+"mainly useful in a buffer that refers to line numbers in another buffer: if "
+"point is on or just after a number, @code{goto-line} uses that number as the "
+"default for @var{n}.  Note that prefix arguments other than just @kbd{C-u} "
+"behave differently.  @kbd{C-u 4 M-g M-g} goes to line 4 in the "
+"@emph{current} buffer, without reading a number from the minibuffer.  "
+"(Remember that @kbd{M-g M-g} without prefix argument reads a number @var{n} "
+"and then moves to line number @var{n} in the current buffer.  @xref{Moving "
+"Point}.)"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:164
+msgid ""
+"Emacs uses buffer names that start with a space for internal purposes.  It "
+"treats these buffers specially in minor ways---for example, by default they "
+"do not record undo information.  It is best to avoid using such buffer names "
+"yourself."
+msgstr ""
+
+#. type: section
+#: buffers.texi.orig:166
+#, no-wrap
+msgid "Listing Existing Buffers"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:169 buffers.texi.orig:174
+#, no-wrap
+msgid "C-x C-b"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:171
+msgid "List the existing buffers (@code{list-buffers})."
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:173
+#, no-wrap
+msgid "listing current buffers"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:175
+#, no-wrap
+msgid "list-buffers"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:180
+msgid ""
+"To display a list of existing buffers, type @kbd{C-x C-b}.  Each line in the "
+"list shows one buffer's name, size, major mode and visited file.  The "
+"buffers are listed in the order that they were current; the buffers that "
+"were current most recently come first."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:186
+msgid ""
+"@samp{.} in the first field of a line indicates that the buffer is current.  "
+"@samp{%} indicates a read-only buffer.  @samp{*} indicates that the buffer "
+"is ``modified''.  If several buffers are modified, it may be time to save "
+"some with @kbd{C-x s} (@pxref{Save Commands}).  Here is an example of a "
+"buffer list:"
+msgstr ""
+
+#. type: smallexample
+#: buffers.texi.orig:198
+#, no-wrap
+msgid ""
+"CRM Buffer                Size  Mode              File\n"
+". * .emacs                3294  Emacs-Lisp        ~/.emacs\n"
+" %  *Help*                 101  Help\n"
+"    search.c             86055  C                 ~/cvs/emacs/src/search.c\n"
+" %  src                  20959  Dired by name     ~/cvs/emacs/src/\n"
+"  * *mail*                  42  Mail\n"
+" %  HELLO                 1607  Fundamental       ~/cvs/emacs/etc/HELLO\n"
+" %  NEWS                481184  Outline           ~/cvs/emacs/etc/NEWS\n"
+"    *scratch*              191  Lisp Interaction\n"
+"  * *Messages*            1554  Messages\n"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:206
+msgid ""
+"The buffer @file{*Help*} was made by a help request (@pxref{Help}); it is "
+"not visiting any file.  The buffer @code{src} was made by Dired on the "
+"directory @file{~/cvs/emacs/src/}.  You can list only buffers that are "
+"visiting files by giving the command a prefix argument, as in @kbd{C-u C-x "
+"C-b}."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:209
+msgid ""
+"@code{list-buffers} omits buffers whose names begin with a space, unless "
+"they visit files: such buffers are used internally by Emacs."
+msgstr ""
+
+#. type: section
+#: buffers.texi.orig:211
+#, no-wrap
+msgid "Miscellaneous Buffer Operations"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:214 buffers.texi.orig:224
+#, no-wrap
+msgid "C-x C-q"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:216
+msgid "Toggle read-only status of buffer (@code{read-only-mode})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:216
+#, no-wrap
+msgid "M-x rename-buffer @key{RET} @var{name} @key{RET}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:218
+msgid "Change the name of the current buffer."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:218
+#, no-wrap
+msgid "M-x rename-uniquely"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:220
+msgid "Rename the current buffer by adding @samp{<@var{number}>} to the end."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:220
+#, no-wrap
+msgid "M-x view-buffer @key{RET} @var{buffer} @key{RET}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:222
+msgid "Scroll through buffer @var{buffer}.  @xref{View Mode}."
+msgstr ""
+
+#. type: vindex
+#: buffers.texi.orig:225
+#, no-wrap
+msgid "buffer-read-only"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:226
+#, no-wrap
+msgid "read-only buffer"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:233
+msgid ""
+"A buffer can be @dfn{read-only}, which means that commands to change its "
+"contents are not allowed.  The mode line indicates read-only buffers with "
+"@samp{%%} or @samp{%*} near the left margin.  Read-only buffers are usually "
+"made by subsystems such as Dired and Rmail that have special commands to "
+"operate on the text; also by visiting a file whose access control says you "
+"cannot write it."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:234
+#, no-wrap
+msgid "read-only-mode"
+msgstr ""
+
+#. type: vindex
+#: buffers.texi.orig:235
+#, no-wrap
+msgid "view-read-only"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:243
+msgid ""
+"The command @kbd{C-x C-q} (@code{read-only-mode}) makes a read-only buffer "
+"writable, and makes a writable buffer read-only.  This works by setting the "
+"variable @code{buffer-read-only}, which has a local value in each buffer and "
+"makes the buffer read-only if its value is non-@code{nil}.  If you change "
+"the option @code{view-read-only} to a non-@code{nil} value, making the "
+"buffer read-only with @kbd{C-x C-q} also enables View mode in the buffer "
+"(@pxref{View Mode})."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:244
+#, no-wrap
+msgid "rename-buffer"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:249
+msgid ""
+"@kbd{M-x rename-buffer} changes the name of the current buffer.  You specify "
+"the new name as a minibuffer argument; there is no default.  If you specify "
+"a name that is in use for some other buffer, an error happens and no "
+"renaming is done."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:250
+#, no-wrap
+msgid "rename-uniquely"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:263
+msgid ""
+"@kbd{M-x rename-uniquely} renames the current buffer to a similar name with "
+"a numeric suffix added to make it both different and unique.  This command "
+"does not need an argument.  It is useful for creating multiple shell "
+"buffers: if you rename the @file{*shell*} buffer, then do @kbd{M-x shell} "
+"again, it makes a new shell buffer named @file{*shell*}; meanwhile, the old "
+"shell buffer continues to exist under its new name.  This method is also "
+"good for mail buffers, compilation buffers, and most Emacs features that "
+"create special buffers with particular names.  (With some of these features, "
+"such as @kbd{M-x compile}, @kbd{M-x grep}, you need to switch to some other "
+"buffer before using the command again, otherwise it will reuse the current "
+"buffer despite the name change.)"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:267
+msgid ""
+"The commands @kbd{M-x append-to-buffer} and @kbd{M-x insert-buffer} can also "
+"be used to copy text from one buffer to another.  @xref{Accumulating Text}."
+msgstr ""
+
+#. type: section
+#: buffers.texi.orig:269
+#, no-wrap
+msgid "Killing Buffers"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:271
+#, no-wrap
+msgid "killing buffers"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:272
+#, no-wrap
+msgid "close buffer"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:273
+#, no-wrap
+msgid "close file"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:282
+msgid ""
+"If you continue an Emacs session for a while, you may accumulate a large "
+"number of buffers.  You may then find it convenient to @dfn{kill} the "
+"buffers you no longer need.  (Some other editors call this operation "
+"@dfn{close}, and talk about ``closing the buffer'' or ``closing the file'' "
+"visited in the buffer.)  On most operating systems, killing a buffer "
+"releases its space back to the operating system so that other programs can "
+"use it.  Here are some commands for killing buffers:"
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:284
+#, no-wrap
+msgid "C-x k @var{bufname} @key{RET}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:286
+msgid "Kill buffer @var{bufname} (@code{kill-buffer})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:286
+#, no-wrap
+msgid "M-x kill-some-buffers"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:288
+msgid "Offer to kill each buffer, one by one."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:288
+#, no-wrap
+msgid "M-x kill-matching-buffers"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:290
+msgid "Offer to kill all buffers matching a regular expression."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:292
+#, no-wrap
+msgid "kill-buffer"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:293
+#, no-wrap
+msgid "C-x k"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:301
+msgid ""
+"@kbd{C-x k} (@code{kill-buffer}) kills one buffer, whose name you specify in "
+"the minibuffer.  The default, used if you type just @key{RET} in the "
+"minibuffer, is to kill the current buffer.  If you kill the current buffer, "
+"another buffer becomes current: one that was current in the recent past but "
+"is not displayed in any window now.  If you ask to kill a file-visiting "
+"buffer that is modified, then you must confirm with @kbd{yes} before the "
+"buffer is killed."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:302
+#, no-wrap
+msgid "kill-some-buffers"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:307
+msgid ""
+"The command @kbd{M-x kill-some-buffers} asks about each buffer, one by one.  "
+"An answer of @kbd{y} means to kill the buffer, just like "
+"@code{kill-buffer}.  This command ignores buffers whose names begin with a "
+"space, which are used internally by Emacs."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:308
+#, no-wrap
+msgid "kill-matching-buffers"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:316
+msgid ""
+"The command @kbd{M-x kill-matching-buffers} prompts for a regular expression "
+"and kills all buffers whose names match that expression.  @xref{Regexps}.  "
+"Like @code{kill-some-buffers}, it asks for confirmation before each kill.  "
+"This command normally ignores buffers whose names begin with a space, which "
+"are used internally by Emacs.  To kill internal buffers as well, call "
+"@code{kill-matching-buffers} with a prefix argument."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:319
+msgid ""
+"The Buffer Menu feature is also convenient for killing various buffers.  "
+"@xref{Several Buffers}."
+msgstr ""
+
+#. type: vindex
+#: buffers.texi.orig:320
+#, no-wrap
+msgid "kill-buffer-hook"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:323
+msgid ""
+"If you want to do something special every time a buffer is killed, you can "
+"add hook functions to the hook @code{kill-buffer-hook} (@pxref{Hooks})."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:324
+#, no-wrap
+msgid "clean-buffer-list"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:333
+msgid ""
+"If you run one Emacs session for a period of days, as many people do, it can "
+"fill up with buffers that you used several days ago.  The command @kbd{M-x "
+"clean-buffer-list} is a convenient way to purge them; it kills all the "
+"unmodified buffers that you have not used for a long time.  An ordinary "
+"buffer is killed if it has not been displayed for three days; however, you "
+"can specify certain buffers that should never be killed automatically, and "
+"others that should be killed if they have been unused for a mere hour."
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:334
+#, no-wrap
+msgid "Midnight mode"
+msgstr ""
+
+#. type: vindex
+#: buffers.texi.orig:335
+#, no-wrap
+msgid "midnight-mode"
+msgstr ""
+
+#. type: vindex
+#: buffers.texi.orig:336
+#, no-wrap
+msgid "midnight-hook"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:344
+msgid ""
+"You can also have this buffer purging done for you, once a day, by enabling "
+"Midnight mode.  Midnight mode operates each day at midnight; at that time, "
+"it runs @code{clean-buffer-list}, or whichever functions you have placed in "
+"the normal hook @code{midnight-hook} (@pxref{Hooks}).  To enable Midnight "
+"mode, use the Customization buffer to set the variable @code{midnight-mode} "
+"to @code{t}.  @xref{Easy Customization}."
+msgstr ""
+
+#. type: section
+#: buffers.texi.orig:346
+#, no-wrap
+msgid "Operating on Several Buffers"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:347
+#, no-wrap
+msgid "Buffer Menu"
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:350
+#, no-wrap
+msgid "M-x buffer-menu"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:352
+msgid "Begin editing a buffer listing all Emacs buffers."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:352
+#, no-wrap
+msgid "M-x buffer-menu-other-window."
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:354
+msgid "Similar, but do it in another window."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:361
+msgid ""
+"The @dfn{Buffer Menu} opened by @kbd{C-x C-b} (@pxref{List Buffers})  does "
+"not merely list buffers.  It also allows you to perform various operations "
+"on buffers, through an interface similar to Dired (@pxref{Dired}).  You can "
+"save buffers, kill them (here called @dfn{deleting} them, for consistency "
+"with Dired), or display them."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:362
+#, no-wrap
+msgid "buffer-menu"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:363
+#, no-wrap
+msgid "buffer-menu-other-window"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:369
+msgid ""
+"To use the Buffer Menu, type @kbd{C-x C-b} and switch to the window "
+"displaying the @file{*Buffer List*} buffer.  You can also type @kbd{M-x "
+"buffer-menu} to open the Buffer Menu in the selected window.  Alternatively, "
+"the command @kbd{M-x buffer-menu-other-window} opens the Buffer Menu in "
+"another window, and selects that window."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:374
+msgid ""
+"The Buffer Menu is a read-only buffer, and can be changed only through the "
+"special commands described in this section.  The usual cursor motion "
+"commands can be used in this buffer.  The following commands apply to the "
+"buffer described on the current line:"
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:376
+#, no-wrap
+msgid "d"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:377
+#, no-wrap
+msgid "Buffer-menu-delete"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:378
+#, no-wrap
+msgid "d @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:383
+msgid ""
+"Flag the buffer for deletion (killing), then move point to the next line "
+"(@code{Buffer-menu-delete}).  The deletion flag is indicated by the "
+"character @samp{D} on the line, before the buffer name.  The deletion occurs "
+"only when you type the @kbd{x} command (see below)."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:384
+#, no-wrap
+msgid "C-d"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:385
+#, no-wrap
+msgid "Buffer-menu-delete-backwards"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:386
+#, no-wrap
+msgid "C-d @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:389
+msgid ""
+"Like @kbd{d}, but move point up instead of down "
+"(@code{Buffer-menu-delete-backwards})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:390
+#, no-wrap
+msgid "s"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:391
+#, no-wrap
+msgid "Buffer-menu-save"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:392
+#, no-wrap
+msgid "s @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:397
+msgid ""
+"Flag the buffer for saving (@code{Buffer-menu-save}).  The save flag is "
+"indicated by the character @samp{S} on the line, before the buffer name.  "
+"The saving occurs only when you type @kbd{x}.  You may request both saving "
+"and deletion for the same buffer."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:398
+#, no-wrap
+msgid "x"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:399
+#, no-wrap
+msgid "Buffer-menu-execute"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:400
+#, no-wrap
+msgid "x @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:402
+msgid "Perform all flagged deletions and saves (@code{Buffer-menu-execute})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:403
+#, no-wrap
+msgid "u"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:404
+#, no-wrap
+msgid "Buffer-menu-unmark"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:405
+#, no-wrap
+msgid "u @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:408
+msgid ""
+"Remove all flags from the current line, and move down "
+"(@code{Buffer-menu-unmark})."
+msgstr ""
+
+#. type: key{#1}
+#: buffers.texi.orig:409
+#, no-wrap
+msgid "DEL"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:410
+#, no-wrap
+msgid "Buffer-menu-backup-unmark"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:411
+#, no-wrap
+msgid "DEL @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:414
+msgid ""
+"Move to the previous line and remove all flags on that line "
+"(@code{Buffer-menu-backup-unmark})."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:419
+msgid ""
+"The commands for adding or removing flags, @kbd{d}, @kbd{C-d}, @kbd{s} and "
+"@kbd{u}, all accept a numeric argument as a repeat count."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:423
+msgid ""
+"The following commands operate immediately on the buffer listed on the "
+"current line.  They also accept a numeric argument as a repeat count."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:425
+#, no-wrap
+msgid "~"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:426
+#, no-wrap
+msgid "Buffer-menu-not-modified"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:427
+#, no-wrap
+msgid "~ @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:430
+msgid ""
+"Mark the buffer as unmodified (@code{Buffer-menu-not-modified}).  @xref{Save "
+"Commands}."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:431
+#, no-wrap
+msgid "%"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:432
+#, no-wrap
+msgid "Buffer-menu-toggle-read-only"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:433 buffers.texi.orig:439
+#, no-wrap
+msgid "% @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:436
+msgid ""
+"Toggle the buffer's read-only status (@code{Buffer-menu-toggle-read-only}).  "
+"@xref{Misc Buffer}."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:437
+#, no-wrap
+msgid "t"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:438
+#, no-wrap
+msgid "Buffer-menu-visit-tags-table"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:442
+msgid ""
+"Visit the buffer as a tags table (@code{Buffer-menu-visit-tags-table}).  "
+"@xref{Select Tags Table}."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:445
+msgid "The following commands are used to select another buffer or buffers:"
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:447
+#, no-wrap
+msgid "q"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:448
+#, no-wrap
+msgid "quit-window"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:449
+#, no-wrap
+msgid "q @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:452
+msgid ""
+"Quit the Buffer Menu (@code{quit-window}).  The most recent formerly visible "
+"buffer is displayed in its place."
+msgstr ""
+
+#. type: key{#1}
+#: buffers.texi.orig:453
+#, no-wrap
+msgid "RET"
+msgstr ""
+
+#. type: itemx
+#: buffers.texi.orig:454
+#, no-wrap
+msgid "f"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:455
+#, no-wrap
+msgid "Buffer-menu-this-window"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:456
+#, no-wrap
+msgid "f @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:457
+#, no-wrap
+msgid "RET @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:460
+msgid ""
+"Select this line's buffer, replacing the @file{*Buffer List*} buffer in its "
+"window (@code{Buffer-menu-this-window})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:461
+#, no-wrap
+msgid "o"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:462
+#, no-wrap
+msgid "Buffer-menu-other-window"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:463
+#, no-wrap
+msgid "o @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:467
+msgid ""
+"Select this line's buffer in another window, as if by @kbd{C-x 4 b}, leaving "
+"@file{*Buffer List*} visible (@code{Buffer-menu-other-window})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:468
+#, no-wrap
+msgid "C-o"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:469
+#, no-wrap
+msgid "Buffer-menu-switch-other-window"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:470
+#, no-wrap
+msgid "C-o @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:473
+msgid ""
+"Display this line's buffer in another window, without selecting it "
+"(@code{Buffer-menu-switch-other-window})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:474
+#, no-wrap
+msgid "1"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:475
+#, no-wrap
+msgid "Buffer-menu-1-window"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:476
+#, no-wrap
+msgid "1 @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:479
+msgid ""
+"Select this line's buffer in a full-frame window "
+"(@code{Buffer-menu-1-window})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:480
+#, no-wrap
+msgid "2"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:481
+#, no-wrap
+msgid "Buffer-menu-2-window"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:482
+#, no-wrap
+msgid "2 @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:486
+msgid ""
+"Set up two windows on the current frame, with this line's buffer selected in "
+"one, and a previously current buffer (aside from @file{*Buffer List*}) in "
+"the other (@code{Buffer-menu-2-window})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:487
+#, no-wrap
+msgid "b"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:488
+#, no-wrap
+msgid "Buffer-menu-bury"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:489
+#, no-wrap
+msgid "b @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:491
+msgid "Bury this line's buffer (@code{Buffer-menu-bury})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:492
+#, no-wrap
+msgid "m"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:493
+#, no-wrap
+msgid "Buffer-menu-mark"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:494
+#, no-wrap
+msgid "m @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:499
+msgid ""
+"Mark this line's buffer to be displayed in another window if you exit with "
+"the @kbd{v} command (@code{Buffer-menu-mark}).  The display flag is "
+"indicated by the character @samp{>} at the beginning of the line.  (A single "
+"buffer may not have both deletion and display flags.)"
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:500
+#, no-wrap
+msgid "v"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:501
+#, no-wrap
+msgid "Buffer-menu-select"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:502
+#, no-wrap
+msgid "v @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:507
+msgid ""
+"Select this line's buffer, and also display in other windows any buffers "
+"flagged with the @kbd{m} command (@code{Buffer-menu-select}).  If you have "
+"not flagged any buffers, this command is equivalent to @kbd{1}."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:510
+msgid "The following commands affect the entire buffer list:"
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:512
+#, no-wrap
+msgid "S"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:513
+#, no-wrap
+msgid "tabulated-list-sort"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:514
+#, no-wrap
+msgid "S @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:518
+msgid ""
+"Sort the Buffer Menu entries according to their values in the column at "
+"point.  With a numeric prefix argument @var{n}, sort according to the "
+"@var{n}-th column (@code{tabulated-list-sort})."
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:519
+#, no-wrap
+msgid "T"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:520
+#, no-wrap
+msgid "Buffer-menu-toggle-files-only"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:521
+#, no-wrap
+msgid "T @r{(Buffer Menu)}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:525
+msgid ""
+"Delete, or reinsert, lines for non-file buffers "
+"@code{Buffer-menu-toggle-files-only}).  This command toggles the inclusion "
+"of such buffers in the buffer list."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:536
+msgid ""
+"Normally, the buffer @file{*Buffer List*} is not updated automatically when "
+"buffers are created and killed; its contents are just text.  If you have "
+"created, deleted or renamed buffers, the way to update @file{*Buffer List*} "
+"to show what you have done is to type @kbd{g} (@code{revert-buffer}).  You "
+"can make this happen regularly every @code{auto-revert-interval} seconds if "
+"you enable Auto Revert mode in this buffer, as long as it is not marked "
+"modified.  Global Auto Revert mode applies to the @file{*Buffer List*} "
+"buffer only if @code{global-auto-revert-non-file-buffers} is non-@code{nil}."
+msgstr ""
+
+#. type: iftex
+#: buffers.texi.orig:538
+msgid "@inforef{Autorevert,, emacs-xtra}, for details."
+msgstr ""
+
+#. type: ifnottex
+#: buffers.texi.orig:541
+msgid "@xref{Autorevert, global-auto-revert-non-file-buffers}, for details."
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:545
+#, no-wrap
+msgid "indirect buffer"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:546
+#, no-wrap
+msgid "base buffer"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:551
+msgid ""
+"An @dfn{indirect buffer} shares the text of some other buffer, which is "
+"called the @dfn{base buffer} of the indirect buffer.  In some ways it is a "
+"buffer analogue of a symbolic link between files."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:553
+#, no-wrap
+msgid "make-indirect-buffer"
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:554
+#, no-wrap
+msgid ""
+"M-x make-indirect-buffer @key{RET} @var{base-buffer} @key{RET} "
+"@var{indirect-name} @key{RET}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:557
+msgid ""
+"Create an indirect buffer named @var{indirect-name} with base buffer "
+"@var{base-buffer}."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:557
+#, no-wrap
+msgid "clone-indirect-buffer"
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:558
+#, no-wrap
+msgid "M-x clone-indirect-buffer @key{RET}"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:560
+msgid "Create an indirect buffer that is a twin copy of the current buffer."
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:560 buffers.texi.orig:561
+#, no-wrap
+msgid "C-x 4 c"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:562
+#, no-wrap
+msgid "clone-indirect-buffer-other-window"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:565
+msgid ""
+"Create an indirect buffer that is a twin copy of the current buffer, and "
+"select it in another window (@code{clone-indirect-buffer-other-window})."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:573
+msgid ""
+"The text of the indirect buffer is always identical to the text of its base "
+"buffer; changes made by editing either one are visible immediately in the "
+"other.  But in all other respects, the indirect buffer and its base buffer "
+"are completely separate.  They can have different names, different values of "
+"point, different narrowing, different markers, different major modes, and "
+"different local variables."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:578
+msgid ""
+"An indirect buffer cannot visit a file, but its base buffer can.  If you try "
+"to save the indirect buffer, that actually works by saving the base buffer.  "
+"Killing the base buffer effectively kills the indirect buffer, but killing "
+"an indirect buffer has no effect on its base buffer."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:581
+msgid ""
+"One way to use indirect buffers is to display multiple views of an outline.  "
+"@xref{Outline Views}."
+msgstr ""
+
+#. type: vindex
+#: buffers.texi.orig:582
+#, no-wrap
+msgid "clone-indirect-buffer-hook"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:592
+msgid ""
+"A quick and handy way to make an indirect buffer is with the command "
+"@kbd{M-x clone-indirect-buffer}.  It creates and selects an indirect buffer "
+"whose base buffer is the current buffer.  With a numeric argument, it "
+"prompts for the name of the indirect buffer; otherwise it uses the name of "
+"the current buffer, with a @samp{<@var{n}>} suffix added.  @kbd{C-x 4 c} "
+"(@code{clone-indirect-buffer-other-window})  works like @kbd{M-x "
+"clone-indirect-buffer}, but it selects the new buffer in another window.  "
+"These functions run the hook @code{clone-indirect-buffer-hook} after "
+"creating the indirect buffer."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:597
+msgid ""
+"The more general way to make an indirect buffer is with the command @kbd{M-x "
+"make-indirect-buffer}.  It creates an indirect buffer named "
+"@var{indirect-name} from a buffer @var{base-buffer}, prompting for both "
+"using the minibuffer."
+msgstr ""
+
+#. type: section
+#: buffers.texi.orig:599
+#, no-wrap
+msgid "Convenience Features and Customization of Buffer Handling"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:603
+msgid ""
+"This section describes several modes and features that make it more "
+"convenient to switch between buffers."
+msgstr ""
+
+#. type: node
+#: buffers.texi.orig:608 buffers.texi.orig:610
+#, no-wrap
+msgid "Uniquify"
+msgstr ""
+
+#. type: menuentry
+#: buffers.texi.orig:608
+msgid "Making buffer names unique with directory parts."
+msgstr ""
+
+#. type: node
+#: buffers.texi.orig:608 buffers.texi.orig:653
+#, no-wrap
+msgid "Icomplete"
+msgstr ""
+
+#. type: menuentry
+#: buffers.texi.orig:608
+msgid "Fast minibuffer selection."
+msgstr ""
+
+#. type: node
+#: buffers.texi.orig:608 buffers.texi.orig:681
+#, no-wrap
+msgid "Buffer Menus"
+msgstr ""
+
+#. type: menuentry
+#: buffers.texi.orig:608
+msgid "Configurable buffer menu."
+msgstr ""
+
+#. type: subsection
+#: buffers.texi.orig:611
+#, no-wrap
+msgid "Making Buffer Names Unique"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:613
+#, no-wrap
+msgid "unique buffer names"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:614
+#, no-wrap
+msgid "directories in buffer names"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:622
+msgid ""
+"When several buffers visit identically-named files, Emacs must give the "
+"buffers distinct names.  The default method adds a suffix based on the names "
+"of the directories that contain the files.  For example, if you visit files "
+"@file{/foo/bar/mumble/name} and @file{/baz/quux/mumble/name} at the same "
+"time, their buffers will be named @samp{name<bar/mumble>} and "
+"@samp{name<quux/mumble>}, respectively.  Emacs adds as many directory parts "
+"as are needed to make a unique name."
+msgstr ""
+
+#. type: vindex
+#: buffers.texi.orig:623
+#, no-wrap
+msgid "uniquify-buffer-name-style"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:626
+msgid ""
+"You can choose from several different styles for constructing unique buffer "
+"names, by customizing the option @code{uniquify-buffer-name-style}."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:632
+msgid ""
+"The @code{forward} naming method includes part of the file's directory name "
+"at the beginning of the buffer name; using this method, buffers visiting the "
+"files @file{/u/rms/tmp/Makefile} and @file{/usr/projects/zaphod/Makefile} "
+"would be named @samp{tmp/Makefile} and @samp{zaphod/Makefile}."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:646
+msgid ""
+"In contrast, the @code{post-forward} naming method would call the buffers "
+"@samp{Makefile|tmp} and @samp{Makefile|zaphod}.  The default method "
+"@code{post-forward-angle-brackets} is like @code{post-forward}, except that "
+"it encloses the unique path in angle brackets.  The @code{reverse} naming "
+"method would call them @samp{Makefile\\tmp} and @samp{Makefile\\zaphod}.  "
+"The nontrivial difference between @code{post-forward} and @code{reverse} "
+"occurs when just one directory name is not enough to distinguish two files; "
+"then @code{reverse} puts the directory names in reverse order, so that "
+"@file{/top/middle/file} becomes @samp{file\\middle\\top}, while "
+"@code{post-forward} puts them in forward order after the file name, as in "
+"@samp{file|top/middle}.  If @code{uniquify-buffer-name-style} is set to "
+"@code{nil}, the buffer names simply get @samp{<2>}, @samp{<3>}, "
+"etc. appended."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:652
+msgid ""
+"Which rule to follow for putting the directory names in the buffer name is "
+"not very important if you are going to @emph{look} at the buffer names "
+"before you type one.  But as an experienced user, if you know the rule, you "
+"won't have to look.  And then you may find that one rule or another is "
+"easier for you to remember and apply quickly."
+msgstr ""
+
+#. type: subsection
+#: buffers.texi.orig:654
+#, no-wrap
+msgid "Fast minibuffer selection"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:656
+#, no-wrap
+msgid "icomplete-mode"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:657
+#, no-wrap
+msgid "Icomplete mode"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:663
+msgid ""
+"Icomplete global minor mode provides a convenient way to quickly select an "
+"element among the possible completions in a minibuffer.  When enabled, "
+"typing in the minibuffer continuously displays a list of possible "
+"completions that match the string you have typed."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:670
+msgid ""
+"At any time, you can type @kbd{C-j} to select the first completion in the "
+"list.  So the way to select a particular completion is to make it the first "
+"in the list.  There are two ways to do this.  You can type more of the "
+"completion name and thus narrow down the list, excluding unwanted "
+"completions above the desired one.  Alternatively, you can use @kbd{C-.} and "
+"@kbd{C-,} to rotate the list until the desired buffer is first."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:676
+msgid ""
+"@kbd{M-@key{TAB}} will select the first completion in the list, like "
+"@kbd{C-j} but without exiting the minibuffer, so you can edit it further.  "
+"This is typically used when entering a file name, where @kbd{M-@key{TAB}} "
+"can be used a few times to descend in the hierarchy of directories."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:680
+msgid ""
+"To enable Icomplete mode, type @kbd{M-x icomplete-mode}, or customize the "
+"variable @code{icomplete-mode} to @code{t} (@pxref{Easy Customization})."
+msgstr ""
+
+#. type: subsection
+#: buffers.texi.orig:682
+#, no-wrap
+msgid "Customizing Buffer Menus"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:684
+#, no-wrap
+msgid "bs-show"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:685
+#, no-wrap
+msgid "buffer list, customizable"
+msgstr ""
+
+#. type: item
+#: buffers.texi.orig:687
+#, no-wrap
+msgid "M-x bs-show"
+msgstr ""
+
+#. type: table
+#: buffers.texi.orig:690
+msgid "Make a list of buffers similarly to @kbd{M-x list-buffers} but customizable."
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:697
+msgid ""
+"@kbd{M-x bs-show} pops up a buffer list similar to the one normally "
+"displayed by @kbd{C-x C-b} but which you can customize.  If you prefer this "
+"to the usual buffer list, you can bind this command to @kbd{C-x C-b}.  To "
+"customize this buffer list, use the @code{bs} Custom group (@pxref{Easy "
+"Customization})."
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:698
+#, no-wrap
+msgid "msb-mode"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:699
+#, no-wrap
+msgid "mode, MSB"
+msgstr ""
+
+#. type: cindex
+#: buffers.texi.orig:700
+#, no-wrap
+msgid "MSB mode"
+msgstr ""
+
+#. type: findex
+#: buffers.texi.orig:701
+#, no-wrap
+msgid "mouse-buffer-menu"
+msgstr ""
+
+#. type: kindex
+#: buffers.texi.orig:702
+#, no-wrap
+msgid "C-Down-Mouse-1"
+msgstr ""
+
+#. type: Plain text
+#: buffers.texi.orig:707
+msgid ""
+"MSB global minor mode (``MSB'' stands for ``mouse select buffer'')  provides "
+"a different and customizable mouse buffer menu which you may prefer.  It "
+"replaces the bindings of @code{mouse-buffer-menu}, normally on "
+"@kbd{C-Down-Mouse-1}, and the menu bar buffer menu.  You can customize the "
+"menu in the @code{msb} Custom group."
+msgstr ""
