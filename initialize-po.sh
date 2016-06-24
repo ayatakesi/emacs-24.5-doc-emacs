@@ -54,7 +54,7 @@ TEXIS_FOR_TRANSLATE="\
 for TEXI in ${TEXIS_FOR_TRANSLATE}
 do
     # 初回は元ファイルを*.origで退避
-    if [ ! -f ${TEXI} ]
+    if [ ! -f ${TEXI}.orig ]
     then
 	cp -p ${TEXI} ${TEXI}.orig
     fi
