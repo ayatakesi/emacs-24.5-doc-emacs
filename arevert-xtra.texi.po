@@ -7,26 +7,26 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-11-08 21:39+0900\n"
+"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
 #: arevert-xtra.texi.orig:7
 #, no-wrap
 msgid "Autorevert"
-msgstr ""
+msgstr "Autorevert"
 
 #. type: section
 #: arevert-xtra.texi.orig:8
 #, no-wrap
 msgid "Auto Reverting Non-File Buffers"
-msgstr ""
+msgstr "Auto Reverting Non-File Buffers"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:16
@@ -37,7 +37,7 @@ msgid ""
 "@code{global-auto-revert-non-file-buffers} to a non-@code{nil} value.  The "
 "latter enables Auto Reverting for all types of buffers for which it is "
 "implemented (listed in the menu below)."
-msgstr ""
+msgstr "通常Global Auto Revertモードは、ファイルのバッファーだけをリバートします。非ファイルバッファーにたいして自動リバートを行うには、2つの方法があります。1つはそれらのバッファーにたいしてAuto Revertモードを有効にする方法です(@kbd{M-x auto-revert-mode}を使います)。もう1つは@code{global-auto-revert-non-file-buffers}に非@code{nil}値をセットする方法です。後者はそれが実装されているすべての種類のバッファーにたいして、自動リバートを有効にします(以下のメニューにリストされています)。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:23
@@ -47,66 +47,67 @@ msgid ""
 "reverting.  Therefore, they do not revert if they are ``modified''.  This "
 "can get tricky, because deciding when a non-file buffer should be marked "
 "modified is usually more difficult than for file buffers."
-msgstr ""
+msgstr "ファイルバッファーと同様、非ファイルバッファーはそれらにたいして作業を行っているときや、リバートすると失われてしまう情報が含まれているとき、通常はリバートすべきではありません。したがって、それらが``modified(変更されている)''のときはリバートしません。非ファイルバッファーが変更されているとマークするのは、ファイルバッファーのときより通常難しいので、トリッキーになり得ます。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:30
 msgid ""
 "Another tricky detail is that, for efficiency reasons, Auto Revert often "
 "does not try to detect all possible changes in the buffer, only changes that "
-"are ``major'' or easy to detect.  Hence, enabling auto-reverting for a "
-"non-file buffer does not always guarantee that all information in the buffer "
-"is up-to-date, and does not necessarily make manual reverts useless."
-msgstr ""
+"are ``major'' or easy to detect.  Hence, enabling auto-reverting for a non-"
+"file buffer does not always guarantee that all information in the buffer is "
+"up-to-date, and does not necessarily make manual reverts useless."
+msgstr "他のトリッキーな点に関する詳細は、効率の問題です。自動リバートはしばしばバッファーにたいするすべての可能な変更を検知しようとせず、``広範''または簡単に検知できる変更だけを検知します。したがって、非ファイルバッファーに自動リバートを有効にすることは、バッファーのすべての情報が最新であると常に保証はしませんし、手動によるリバートを無用にする必要もないからです。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:36
 msgid ""
-"At the other extreme, certain buffers automatically revert every "
-"@code{auto-revert-interval} seconds.  (This currently only applies to the "
-"Buffer Menu.)  In this case, Auto Revert does not print any messages while "
+"At the other extreme, certain buffers automatically revert every @code{auto-"
+"revert-interval} seconds.  (This currently only applies to the Buffer "
+"Menu.)  In this case, Auto Revert does not print any messages while "
 "reverting, even when @code{auto-revert-verbose} is non-@code{nil}."
-msgstr ""
+msgstr "それとは反対に、特定のバッファーは@code{auto-revert-interval}で指定された秒数ごとに自動的にリバートします(これは現在のところBuffer Menuだけに適用されます)。この場合、自動リバートはリバートの際、@code{auto-revert-verbose}が非@code{nil}でも、何もメッセージを表示しません。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:39
 msgid ""
 "The details depend on the particular types of buffers and are explained in "
 "the corresponding sections."
-msgstr ""
+msgstr "詳細はバッファーの特性に依存し、それらは対応するセクションで説明されています。"
 
 #. type: subsection
-#: arevert-xtra.texi.orig:44 arevert-xtra.texi.orig:46 arevert-xtra.texi.orig:47
+#: arevert-xtra.texi.orig:44 arevert-xtra.texi.orig:46
+#: arevert-xtra.texi.orig:47
 #, no-wrap
 msgid "Auto Reverting the Buffer Menu"
-msgstr ""
+msgstr "Auto Reverting the Buffer Menu"
 
 #. type: menuentry
 #: arevert-xtra.texi.orig:44
 msgid "Auto Revert of the Buffer Menu."
-msgstr ""
+msgstr "Buffer Menuの自動リバートについて。"
 
 #. type: node
 #: arevert-xtra.texi.orig:44 arevert-xtra.texi.orig:61
 #, no-wrap
 msgid "Auto Reverting Dired"
-msgstr ""
+msgstr "Auto Reverting Dired"
 
 #. type: menuentry
 #: arevert-xtra.texi.orig:44
 msgid "Auto Revert of Dired buffers."
-msgstr ""
+msgstr "Diredバッファーの自動リバートについて。"
 
 #. type: node
 #: arevert-xtra.texi.orig:44 arevert-xtra.texi.orig:100
 #, no-wrap
 msgid "Supporting additional buffers"
-msgstr ""
+msgstr "Supporting additional buffers"
 
 #. type: menuentry
 #: arevert-xtra.texi.orig:44
 msgid "How to add more Auto Revert support."
-msgstr ""
+msgstr "自動リバートのサポートを追加する方法。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:53
@@ -115,7 +116,7 @@ msgid ""
 "automatically reverts every @code{auto-revert-interval} seconds, whether "
 "there is a need for it or not.  (It would probably take longer to check "
 "whether there is a need than to actually revert.)"
-msgstr ""
+msgstr "非ファイルバッファーの自動リバートが有効なとき、必要性の有無にかかわらず、Buffer Menuは@code{auto-revert-interval}で指定された秒数ごとに自動的にリバートされます。(これは多分実際にリバートする必要があるかチェックするより長い間隔です)。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:60
@@ -126,20 +127,20 @@ msgid ""
 "careful, because reverting erases all marks.  The fact that adding marks "
 "sets the buffer's modified flag prevents Auto Revert from automatically "
 "erasing the marks."
-msgstr ""
+msgstr "Buffer Menuがmodifiedと不適切にマークされたときは、@kbd{g}により手動でリバートして自動リバートを再開します。しかし特定のバッファーにたいして削除や表示のマークをつけた場合は、慎重になる必要があります。なぜならリバートはすべてのマークを消去するからです。マークの追加はバッファーのmodifiedフラグをセットするという事実は、自動的なマークの消去からの自動リバートを防ぎます。"
 
 #. type: subsection
 #: arevert-xtra.texi.orig:62
 #, no-wrap
 msgid "Auto Reverting Dired buffers"
-msgstr ""
+msgstr "Auto Reverting Dired buffers"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:67
 msgid ""
 "Auto-reverting Dired buffers currently works on GNU or Unix style operating "
 "systems.  It may not work satisfactorily on some other systems."
-msgstr ""
+msgstr "Diredバッファーの自動リバートは、現在のところUnixスタイルのオペレーティングシステムだけで機能します。他のシステムでは満足に機能しないでしょう。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:80
@@ -155,7 +156,7 @@ msgid ""
 "changes to a file, or saving it, very often causes changes in the directory "
 "itself; for instance, through backup files or auto-save files.  However, "
 "this is not guaranteed."
-msgstr ""
+msgstr "Diredバッファーは、バッファーのメインディレクトリーのファイルリストが変化したとき(たとえば新しいファイルの追加)だけ、自動リバートします。特定のファイルの情報が変化したとき(たとえばサイズの変化)や、サブディレクトリーへの追加は自動リバートしません。@emph{すべて}のリストされた情報が最新であることを確実にするには、Diredバッファーで自動リバートが@emph{有効であっても}、手動で@kbd{g}を使ってリバートする必要があります。メインディレクトリーにリストされているファイルへの変更や保存で、実際に自動リバートが起こるのに気付くかもしれません。これはファイルの変更や保存は、たとえばバックアップファイルやauto-saveファイルにより、高い確率でディレクトリー自身を変更するからです。しかし、これは保証されているわけではありません。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:93
@@ -171,7 +172,7 @@ msgid ""
 "without warning.  If you want auto-reverting to resume in the presence of "
 "marks and flags, mark the buffer non-modified using @kbd{M-~}.  However, "
 "adding, deleting or changing marks or flags will mark it modified again."
-msgstr ""
+msgstr "Diredバッファーがmodifiedとマークされ、残したい変更がない場合、大抵は@kbd{g}でバッファーを手動でリバートすることにより、自動リバートを再開できます。しかし1つ例外があります。ファイルにフラグやマークをつけた場合、安全にバッファーをリバートできます。これはフラグやマークを消去しません(もちろんマークされたファイルが削除されていない場合です)。しかしバッファーはリバートの後でさえmodifiedの状態に留まるので、自動リバートは再開しません。これは、もしファイルにたいしてフラグやマークをつけた場合、それはバッファーにたいして作業をしており、警告なしにバッファーが変更されることを望まないだろうからです。マークやフラグがある状態で自動リバートを再開したいときは、@kbd{M-~}を使ってバッファーをnon-modifiedとマークします。しかしマークやフラグの追加・削除・変更により、バッファーは再びmodifiedとマークされます。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:98
@@ -180,20 +181,20 @@ msgid ""
 "Neither are Dired buffers for which you used shell wildcards or file "
 "arguments to list only some of the files.  @file{*Find*} and @file{*Locate*} "
 "buffers do not auto-revert either."
-msgstr ""
+msgstr "リモートのDiredバッファーは、自動リバートされません(これは遅くなるからです)。特定のファイルだけをリストするように、シェルのワイルドカードやファイル引数を与えられたDiredバッファーも同じです。@file{*Find*}および@file{*Locate*}は、どちらも自動リバートしません。"
 
 #. type: subsection
 #: arevert-xtra.texi.orig:101
 #, no-wrap
 msgid "Adding Support for Auto-Reverting additional Buffers."
-msgstr ""
+msgstr "Adding Support for Auto-Reverting additional Buffers."
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:105
 msgid ""
 "This section is intended for Elisp programmers who would like to add support "
 "for auto-reverting new types of buffers."
-msgstr ""
+msgstr "このセクションは、新しいタイプのバッファーに自動リバートのサポートを追加したいElispプログラマーのために意図されています。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:109
@@ -201,18 +202,18 @@ msgid ""
 "To support auto-reverting the buffer must first of all have a suitable "
 "@code{revert-buffer-function}.  @xref{Definition of revert-buffer-function,, "
 "Reverting, elisp, the Emacs Lisp Reference Manual}."
-msgstr ""
+msgstr "バッファーに自動リバートのサポートを追加するには、まず最初に適切な@code{revert-buffer-function}をもつことです。@xref{Definition of revert-buffer-function,, Reverting, elisp, the Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:111
 msgid "In addition, it must have a suitable @code{buffer-stale-function}."
-msgstr ""
+msgstr "それに加えて、適切な@code{buffer-stale-function}をもたなければなりません。"
 
 #. type: defvar
 #: arevert-xtra.texi.orig:113
 #, no-wrap
 msgid "buffer-stale-function"
-msgstr ""
+msgstr "buffer-stale-function"
 
 #. type: defvar
 #: arevert-xtra.texi.orig:119
@@ -221,7 +222,7 @@ msgid ""
 "reverting.  This should be a function with one optional argument "
 "@var{noconfirm}.  The function should return non-@code{nil} if the buffer "
 "should be reverted.  The buffer is current when this function is called."
-msgstr ""
+msgstr "この変数の値は、バッファーがリバートする必要があるかチェックする関数です。これは1つのオプション引数@var{noconfirm}をもつ関数です。この関数はバッファーがリバートされるべきときは、非@code{nil}を返します。バッファーは、この関数が呼ばれたときのバッファーです。"
 
 #. type: defvar
 #: arevert-xtra.texi.orig:130
@@ -235,14 +236,14 @@ msgid ""
 "out of date.  In particular, for use in auto-reverting, @var{noconfirm} is "
 "@code{t}.  If the function is only going to be used for auto-reverting, you "
 "can ignore the @var{noconfirm} argument."
-msgstr ""
+msgstr "この関数は主に自動リバートで使うことを意図していますが、他の目的にも同様に使うことができます。たとえば自動リバートが無効の場合、これはバッファーをリバートする必要があるとユーザーに警告するのに使えます。このアイデアは引数@var{noconfirm}が背景にあります。もしこれが@code{t}のときは、ユーザーに尋ねることなくリバートを行い、この関数をバッファーが無効だとユーザーに警告するために使うときは、@code{nil}を指定します。特に自動リバートに使う場合、@var{noconfirm}は@code{t}になります。関数を自動リバートだけに使う場合、引数@var{noconfirm}は無視できます。"
 
 #. type: defvar
 #: arevert-xtra.texi.orig:133
 msgid ""
-"If you just want to automatically auto-revert every "
-"@code{auto-revert-interval} seconds (like the Buffer Menu), use:"
-msgstr ""
+"If you just want to automatically auto-revert every @code{auto-revert-"
+"interval} seconds (like the Buffer Menu), use:"
+msgstr "(Buffer Menuのように)@code{auto-revert-interval}で指定した秒数ごとに自動リバートを自動的に行いたいだけのときは、以下のようにします:"
 
 #. type: example
 #: arevert-xtra.texi.orig:137
@@ -251,30 +252,32 @@ msgid ""
 "(setq-local buffer-stale-function\n"
 "     #'(lambda (&optional noconfirm) 'fast))\n"
 msgstr ""
+"(setq-local buffer-stale-function\n"
+"     #'(lambda (&optional noconfirm) 'fast))\n"
 
 #. type: defvar
 #: arevert-xtra.texi.orig:141
 msgid "in the buffer's mode function."
-msgstr ""
+msgstr "これをバッファーのモード関数の中に記述します。"
 
 #. type: defvar
 #: arevert-xtra.texi.orig:150
 msgid ""
 "The special return value @samp{fast} tells the caller that the need for "
 "reverting was not checked, but that reverting the buffer is fast.  It also "
-"tells Auto Revert not to print any revert messages, even if "
-"@code{auto-revert-verbose} is non-@code{nil}.  This is important, as getting "
-"revert messages every @code{auto-revert-interval} seconds can be very "
-"annoying.  The information provided by this return value could also be "
-"useful if the function is consulted for purposes other than auto-reverting."
-msgstr ""
+"tells Auto Revert not to print any revert messages, even if @code{auto-"
+"revert-verbose} is non-@code{nil}.  This is important, as getting revert "
+"messages every @code{auto-revert-interval} seconds can be very annoying.  "
+"The information provided by this return value could also be useful if the "
+"function is consulted for purposes other than auto-reverting."
+msgstr "特別な戻り値@samp{fast}は、呼出側にリバートの必要性チェックは必要ないが、バッファーのリバートは早く行うことを呼出側に伝えます。これは@code{auto-revert-verbose}が非@code{nil}のときも、自動リバートがリバートメッセージを表示しないことも伝えます。これは重要です。なぜなら@code{auto-revert-interval}秒ごとにリバートメッセージが表示されるのは、とても煩わしくなり得るからです。この戻り値で提供される情報は、関数が自動リバート以外の目的で使われる場合にも有用です。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:154
 msgid ""
 "Once the buffer has a suitable @code{revert-buffer-function} and "
 "@code{buffer-stale-function}, several problems usually remain."
-msgstr ""
+msgstr "バッファーが適切な@code{revert-buffer-function}および@code{buffer-stale-function}をもっていても、通常は問題がいくつか残ります。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:164
@@ -285,10 +288,10 @@ msgid ""
 "reverting, or there is reason to believe that the user might be "
 "inconvenienced by auto-reverting, because he is actively working on the "
 "buffer.  The user can always override this by manually adjusting the "
-"modified status of the buffer.  To support this, calling the "
-"@code{revert-buffer-function} on a buffer that is marked unmodified should "
-"always keep the buffer marked unmodified."
-msgstr ""
+"modified status of the buffer.  To support this, calling the @code{revert-"
+"buffer-function} on a buffer that is marked unmodified should always keep "
+"the buffer marked unmodified."
+msgstr "バッファーは、unmodifiedとマークされているときだけ自動リバートします。したがって、さまざまな関数がバッファーをmodifiedとマークするのは、バッファーがリバートされることにより失われる情報を持つとき、またはユーザーがバッファーで作業しているので、自動リバートが迷惑だと信じる理由があるときだと確信する必要があります。ユーザーはmodifiedのステータスを手作業で調整することにより、常にこれをオーバーライドできます。これをサポートするために、unmodifiedとマークされたバッファーでの@code{revert-buffer-function}の呼び出しは、そのバッファーのunmodifiedのマークを維持すべきです。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:168
@@ -296,7 +299,7 @@ msgid ""
 "It is important to assure that point does not continuously jump around as a "
 "consequence of auto-reverting.  Of course, moving point might be inevitable "
 "if the buffer radically changes."
-msgstr ""
+msgstr "一連の自動リバートで、ポイントがあちこちジャンプしないことを保証するのは重要です。もちろんバッファーが活発に変化するとき、ポイントが移動するのは仕方ありません。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:176
@@ -306,26 +309,26 @@ msgid ""
 "if @code{auto-revert-verbose} is @code{t}, and effectively override a "
 "@code{nil} value for @code{auto-revert-verbose}.  Hence, adapting a mode for "
 "auto-reverting often involves getting rid of such messages.  This is "
-"especially important for buffers that automatically revert every "
-"@code{auto-revert-interval} seconds."
-msgstr ""
+"especially important for buffers that automatically revert every @code{auto-"
+"revert-interval} seconds."
+msgstr "@code{revert-buffer-function}が、@code{auto-revert-verbose}が@code{t}のとき出力される自動リバート自身のメッセージと重複する、不要なメッセージを出力しないことと、@code{auto-revert-verbose}にセットされた@code{nil}値を、効果的にオーバーライドすることを確実にするべきです。したがってモードを自動リバートに適合させることは、しばしばそのようなメッセージの削除をともないます。これは@code{auto-revert-interval}秒ごとに自動リバートを行うバッファーで特に重要です。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:179
 msgid ""
 "If the new auto-reverting is part of Emacs, you should mention it in the "
 "documentation string of @code{global-auto-revert-non-file-buffers}."
-msgstr ""
+msgstr "新しい自動リバートがEmacsの一部となったときは、@code{global-auto-revert-non-file-buffers}のドキュメント文字列にそれを記載するべきです。"
 
 #. type: ifinfo
 #: arevert-xtra.texi.orig:182
 msgid "Similarly, you should add a node to this chapter's menu.  This node"
-msgstr ""
+msgstr "同様にこのチャプターのメニューにノードを追加するべきです。そのノード"
 
 #. type: ifnotinfo
 #: arevert-xtra.texi.orig:185
 msgid "Similarly, you should add a section to this chapter.  This section"
-msgstr ""
+msgstr "同様にこのチャプターにセクションを追加するべきです。そのセクション"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:189
@@ -333,4 +336,4 @@ msgid ""
 "should at the very least make clear whether enabling auto-reverting for the "
 "buffer reliably assures that all information in the buffer is completely up "
 "to date (or will be after @code{auto-revert-interval} seconds)."
-msgstr ""
+msgstr "は、バッファーの自動更新を有効にすることによりバッファーのすべての情報が完全に最新(または最新から@code{auto-revert-interval}秒後)であると保証されるかを、最小限かつ明確にすべきです。"
