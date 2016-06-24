@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Sending Mail
-@chapter Sending Mail
+@chapter メールの送信
 @cindex sending mail
 @cindex mail
 @cindex email
@@ -61,7 +61,7 @@ SMTPを通じて直接送信するか、またはほかの方法を使うか ---
 @end menu
 
 @node Mail Format
-@section The Format of the Mail Buffer
+@section メールバッファーのフォーマット
 
   以下はメールバッファーの内容の例です:
 
@@ -86,7 +86,7 @@ line--}という行は、ヘッダーフィールドとメッセージの@dfn{bo
 Editing}を参照してください。@samp{Date}や@samp{Message-Id}のような特定のヘッダーは、通常はメールバッファーでは省略され、メッセージを送信するとき自動的に作成されます。
 
 @node Mail Headers
-@section Mail Header Fields
+@section メールヘッダーフィールド
 @cindex headers (of mail message)
 
   メールバッファーのヘッダーフィールドは、行の最初がフィールド名で始まります。フィールド名はコロンで終端されます。フィールド名で大文字小文字は区別されません。コロンとオプションの空白文字の後に、フィールドの内容を記述します。
@@ -174,7 +174,7 @@ m}でメッセージヘッダーにその文字列が挿入されます。たと
 デフォルトのヘッダーフィールドが、特定のメッセージにたいして適切でない場合、メッセージを送信する前にそれらを編集する必要があります。
 
 @node Mail Aliases
-@section Mail Aliases
+@section メールエイリアス
 @cindex mail aliases
 @cindex @file{.mailrc} file
 @cindex mailrc file
@@ -224,7 +224,7 @@ source @var{filename}
 mail-abbrev-insert-alias}を使って、エイリアスされたアドレスを直接挿入することもできます。これは補完つきでエイリアス名を読み取り、ポイント位置にそれの定義を挿入します。
 
 @node Mail Commands
-@section Mail Commands
+@section メールコマンド
 @cindex Message mode
 @cindex mode, Message
 
@@ -244,7 +244,7 @@ Message}を参照してください。
 @end menu
 
 @node Mail Sending
-@subsection Mail Sending
+@subsection メールの送信
 
 @table @kbd
 @item C-c C-c
@@ -299,7 +299,7 @@ Environments}を参照してください)により、自動的に指定されま
 Coding}を参照してください)。そのようにして決定されたコーディングシステムで扱えない文字が、特定のメッセージに含まれる場合、Emacsは利用可能なコーディングシステムのリストを表示して、使用するコーディングシステムの選択を求めます。
 
 @node Header Editing
-@subsection Mail Header Editing
+@subsection メールヘッダーの編集
 
   Messageモードは、特定のヘッダーフィールドに移動したり、ヘッダーのアドレスを補完する、以下の特別なコマンドを提供します。
 
@@ -355,7 +355,7 @@ Client}を参照してください)、それに失敗したときはメールエ
 Aliases}を参照してください)。メール本文のような、アドレスを要求しないヘッダーフィールドにポイントがあるとき、@key{TAB}はタブ文字を挿入するだけです。
 
 @node Citing Mail
-@subsection Citing Mail
+@subsection メールの引用
 @cindex citing mail
 
 @table @kbd
@@ -384,7 +384,7 @@ C-q}の1つの使い方としては、そのようなパラグラフのすべて
 Supercite}を参照してください)。
 
 @node Mail Misc
-@subsection Mail Miscellany
+@subsection メール、その他
 
 @kindex C-c C-a @r{(Message mode)}
 @findex mml-attach-file
@@ -428,7 +428,7 @@ m}は自動的にこれを行ないます)、ノーマルフックの@code{text-
 m}で作成を継続する場合、そのメールバッファーに切り替えた直後に、@code{message-mode-hook}が実行されます。バッファーが変更されていない場合、またはそれを削除して新たに作成を開始する場合には、デフォルトの内容が挿入された後に、@code{message-setup-hook}が実行されます。
 
 @node Mail Signature
-@section Mail Signature
+@section メール署名
 
 @cindex mail signature
 @vindex message-signature-file
@@ -454,7 +454,7 @@ C-w}
 }であることによりマークされるべきです。署名にこのプレフィクスがない場合、このプレフィクスが追加されます。署名は4行を超えないようにするべきです。
 
 @node Mail Amusements
-@section Mail Amusements
+@section アミューズメント
 
 @findex spook
 @cindex NSA
@@ -477,7 +477,7 @@ cookie)''メッセージを追加できます。これを行なうには@code{ma
 多分、これを使う前に変数@code{fortune-file}をセットする必要があるでしょう。
 
 @node Mail Methods
-@section Mail-Composition Methods
+@section メール作成方法
 @cindex mail-composition methods
 @cindex Mail mode
 @cindex mode, Mail

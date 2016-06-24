@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Screen
-@chapter The Organization of the Screen
+@chapter 画面の構成
 @cindex screen
 @cindex frame
 
@@ -41,7 +41,7 @@ buffer)}と呼び、それが編集が行われているバッファーとなり
 @end menu
 
 @node Point
-@section Point
+@section ポイント
 @cindex point
 @cindex cursor
 
@@ -55,7 +55,7 @@ buffer)}と呼び、それが編集が行われているバッファーとなり
   Emacsがカーソルをどのように表示するか制御する方法については、@ref{Cursor Display}を参照してください。
 
 @node Echo Area
-@section The Echo Area
+@section エコーアリア
 @cindex echo area
 
   フレームの1番下の行は、@dfn{エコーエリア(echo area)}です。ここは、いろいろな目的向けの短いテキスト表示に使われます。
@@ -84,7 +84,7 @@ message)}を表示するためにも使用されます。エラーメッセー�
 string)}で始まるテキストが表示され、エコーエリアが一時的に選択されたウィンドウとなり、カーソルもその行に表示されます。@kbd{C-g}を打つと、いつでもミニバッファーから抜けられます。@ref{Minibuffer}を参照してください。
 
 @node Mode Line
-@section The Mode Line
+@section モードライン
 @cindex mode line
 @cindex top level
 
@@ -147,7 +147,7 @@ Line}を参照してください。さらにモードラインはマウスに反
 Line Mouse}を参照してください。
 
 @node Menu Bar
-@section The Menu Bar
+@section メニューバー
 @cindex menu bar
 
   各Emacsフレームには通常、最上部に@dfn{メニューバー(menu

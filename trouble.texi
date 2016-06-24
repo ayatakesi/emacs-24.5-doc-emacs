@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @iftex
-@chapter Dealing with Common Problems
+@chapter 一般的な問題への対処
 
   意図しないコマンドをタイプした場合、その結果は不可解なことが多くあります。このチャプターでは、間違いをキャンセルしたり、不可解な状況から復帰するために何ができるかを示します。Emacsのバグとシステムクラッシュについても考察します。
 @end iftex
@@ -18,7 +18,7 @@
 @end ifnottex
 
 @node Quitting
-@section Quitting and Aborting
+@section 中止と中断
 @cindex quitting
 
 @table @kbd
@@ -91,7 +91,7 @@ Edit}を参照してください。
 (@code{undo})はキャンセルコマンドではありませんが、すでに実行を終えたコマンドをキャンセルすると考えることができます。undo機能についての詳細は、@ref{Undo}を参照してください。
 
 @node Lossage
-@section Dealing with Emacs Trouble
+@section Emacsのトラブルへの対処
 @cindex troubleshooting Emacs
 
   このセクションでは、キーボードコードのミクスアップ(mixup)、文字化け、メモリー不足、クラッシュやハングなど、Emacsが期待したとおりに動作しない状況の認識と対処法について説明します。
@@ -110,7 +110,7 @@ Edit}を参照してください。
 @end menu
 
 @node DEL Does Not Delete
-@subsection If @key{DEL} Fails to Delete
+@subsection @key{DEL}で削除できない場合
 @cindex @key{DEL} vs @key{BACKSPACE}
 @cindex @key{BACKSPACE} vs @key{DEL}
 @cindex @key{DEL} does not delete
@@ -147,7 +147,7 @@ File}を参照してください)に以下の行の1つを記述します。上�
 Customization}を参照してください。
 
 @node Stuck Recursive
-@subsection Recursive Editing Levels
+@subsection 再帰編集レベル
 @cindex stuck in recursive editing
 @cindex recursive editing, cannot exit
 
@@ -158,7 +158,7 @@ brackets)@samp{[@dots{}]}がある場合、それは再帰編集レベルにい�
 top-level}とタイプします。@ref{Recursive Edit}を参照してください。
 
 @node Screen Garbled
-@subsection Garbage on the Screen
+@subsection スクリーン上のゴミ
 @cindex garbled display
 @cindex display, incorrect
 @cindex screen display, wrong
@@ -168,7 +168,7 @@ top-level}とタイプします。@ref{Recursive Edit}を参照してくださ�
   ディスプレー更新の問題は、使用している端末にたいする間違ったterminfoエントリーの結果であることがしばしばあります。Emacsディストリビューションのファイル@file{etc/TERMS}は、この種の既知の問題にたいする解決を与えます。@file{INSTALL}のセクションの中の1つは、これらの問題にたいする一般的なアドバイスを含みます。正しいterminfoエントリーを使用しているようなら、それはterminfoエントリーにバグがあるか、特定の端末タイプで発生するEmacsのバグである可能性があります。
 
 @node Text Garbled
-@subsection Garbage in the Text
+@subsection テキスト内のゴミ
 @cindex garbled text
 @cindex buffer text garbled
 
@@ -179,7 +179,7 @@ l}とタイプします。それから@kbd{C-x u}を使用して、正しいと�
 n w}とタイプします。@ref{Narrowing}を参照してください。
 
 @node Memory Full
-@subsection Running out of Memory
+@subsection メモリー不足
 @cindex memory full
 @cindex out of memory
 
@@ -196,7 +196,7 @@ FULL!}の表示が消えます。これは同じEmacsセッションで、安全
 Menuはかなりの量のメモリーを必要とするので、予備メモリーの供給では不充分でしょう。
 
 @node Crashing
-@subsection When Emacs Crashes
+@subsection Emacsがクラッシュしたとき
 
 @cindex crash report
 @cindex backtrace
@@ -239,7 +239,7 @@ dump)}を生成します。コアダンプはクラッシュ前のプログラ�
 -c unlimited}を実行して、明示的に有効にしなければなりません。
 
 @node After a Crash
-@subsection Recovery After a Crash
+@subsection クラッシュ後のリカバリー
 @cindex recovering crashed session
 
   Emacs、またはコンピューターがクラッシュした場合、クラッシュしたとき編集していたファイルを、自動保存ファイルからリカバリーすることができます。これを行なうには、再びEmacsを開始して、コマンド@kbd{M-x
@@ -263,7 +263,7 @@ core.emacs}のように指定します。@code{(gdb)}プロンプトで、@samp{
 /usr/src/emacs/etc/emacs-buffer.gdb}としてリカバリースクリプトをロードします。それから利用可能なバッファーを見るために、コマンド@code{ybuffer-list}とタイプします。これは各バッファーにたいして、バッファー番号をリストします。バッファーを保存するには、@code{ysave-buffer}を使用します。ここでバッファー番号とそのバッファーを書き込むファイル名を指定します。すでに存在するファイル名を使用するべきではありません。ファイルがすでに存在する場合、このスクリプトはそのファイルの古い内容のバックアップを作成しません。
 
 @node Emergency Escape
-@subsection Emergency Escape
+@subsection 緊急エスケープ
 @cindex emergency escape
 
   テキスト端末では、1回目の@kbd{C-g}にたいしてEmacsが実際に反応してquitする前に、2回目の@kbd{C-g}をタイプすると、@dfn{緊急エスケープ(emergency
@@ -295,7 +295,7 @@ core)?}にたいして@kbd{y}と応えると、Emacsはクラッシュしてコ�
 しかしシステムコールがハングしたり、EmacsがCコードのタイトなループにハマっているときは機能しないケースがあります。
 
 @node Bugs
-@section Reporting Bugs
+@section バグの報告
 
 @cindex bugs
   Emacsでバグを見つけたと思ったときは、それを報告してください。それをfixすることは約束できませんし、それがバグであると常に認める訳ではありませんが、もちろんそれについて知りたいのです。追加したいと考える機能についても、同じことが言えます。以下のセクションは、有効なバグレポートを作成する助けとなるでしょう。
@@ -309,7 +309,7 @@ core)?}にたいして@kbd{y}と応えると、Emacsはクラッシュしてコ�
 @end menu
 
 @node Known Problems
-@subsection Reading Existing Bug Reports and Known Problems
+@subsection 既存のバグレポートの既知の問題を読む
 
   バグを報告する前に、少しでも可能なら、それが既知のものか確認してください。実際には、それがもっと後のEmacsリリースや、Emacsの開発バージョンですでにfixされているかもしれません。以下は、既知の問題について読むことができる、主な場所のリストです:
 
@@ -348,7 +348,7 @@ debbugs-gnu-usertags}で表示されます。
 
 
 @node Bug Criteria
-@subsection When Is There a Bug
+@subsection バグがあったとき
 @cindex bug criteria
 @cindex what constitutes an Emacs bug
 
@@ -374,7 +374,7 @@ Help}を参照してください)を参照してください。
   関数や変数のビルトインドキュメントがマニュアルと異なる場合、どちらか一方が間違っていなければならないので、これはバグです。
 
 @node Understanding Bug Reporting
-@subsection Understanding Bug Reporting
+@subsection バグレポートの理解
 @cindex bug reporting
 @cindex report an Emacs bug, how to
 
@@ -406,7 +406,7 @@ Options}を参照してください)でEmacsを呼び出して、バグを発生
   報告したい複数の問題がある場合は、どうかそれらを個別のバグとしてそれぞれ報告してください。
 
 @node Checklist
-@subsection Checklist for Bug Reports
+@subsection バグレポートのためのチェックリスト
 @cindex checklist before reporting a bug
 @cindex bug reporting, checklist
 
@@ -635,7 +635,7 @@ Emacsを実行したときのシステムコールトレース。
 @end itemize
 
 @node Sending Patches
-@subsection Sending Patches for GNU Emacs
+@subsection GNU Emacsへのパッチの送付
 
 @cindex sending patches for GNU Emacs
 @cindex patches, sending
@@ -700,7 +700,7 @@ fixを記述するときは、わたしたちが他のシステムを壊すよ�
 
 @c FIXME: Include the node above?
 @node Contributing
-@section Contributing to Emacs Development
+@section Emacs開発への貢献
 @cindex contributing to Emacs
 
 Emacsを改善する作業をしたい場合は、
@@ -739,7 +739,7 @@ Emacsの開発バージョンは、開発者グループにより活発にメン
 ファイルを参照してください。
 
 @node Service
-@section How To Get Help with GNU Emacs
+@section GNU Emacsにたいして助けを得る方法
 @cindex help in using Emacs
 @cindex help-gnu-emacs mailing list
 @cindex gnu.emacs.help newsgroup

@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @iftex
-@chapter Characters, Keys and Commands
+@chapter 文字、キー、コマンド
 
   この章では、Emacsがコマンド入力に使う文字セット、および@dfn{キー(keys)}と@dfn{コマンド(commands)}の基本的な概念と、それによってEmacsがどのようにキーボードやマウス入力を解釈するかを説明します。
 @end iftex
@@ -18,7 +18,7 @@
 @end ifnottex
 
 @node User Input
-@section Kinds of User Input
+@section ユーザーインプットの種類
 @cindex input with the keyboard
 @cindex keyboard input
 @cindex character set (keyboard)
@@ -56,7 +56,7 @@ events)}と呼ばれます。Emacsが内部で入力イベントをどのよう�
 elisp, The Emacs Lisp Reference Manual}を参照してください.
 
 @node Keys
-@section Keys
+@section キー
 
   Emacsコマンドには、ただ1つの入力イベントで呼び出されるものが、いくつかあります。たとえば@kbd{C-f}はバッファーを1文字前方に移動します。他のコマンドは、@kbd{C-x
 C-f}や@kbd{C-x 4 C-f}のように、2つ以上の入力イベントにより呼び出されます。
@@ -92,7 +92,7 @@ v}、@kbd{C-x 4}、@kbd{C-x 5}、@kbd{C-x
 C-h}は@kbd{C-M-h}と同じで、これは何かまったく別のことを行うコマンドです。しかし@key{F1}ならば、@key{ESC}で始まるコマンドの一覧を表示できます。
 
 @node Commands
-@section Keys and Commands
+@section キーとコマンド
 
 @cindex binding
 @cindex command

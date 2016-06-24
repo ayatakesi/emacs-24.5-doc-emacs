@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Minibuffer
-@chapter The Minibuffer
+@chapter ミニバッファー
 @cindex minibuffer
 
   @dfn{ミニバッファー(minibuffer)}とは、Emacsのコマンドがファイル名、バッファー名、Emacsコマンド名、Lisp式といった、複雑な引数を読み取るための場所です。なぜ``ミニバッファー''と呼ぶかというと、それがスクリーン上の小領域を占める、特別な目的のためのバッファーだからです。ミニバッファーで引数テキストを編集するために、通常のEmacs編集コマンドを使うことができます。
@@ -25,7 +25,7 @@
 @end menu
 
 @node Basic Minibuffer
-@section Using the Minibuffer
+@section ミニバッファーを使う
 
 @cindex prompt
   ミニバッファーを使用中、ミニバッファーはエコーエリアにカーソルとともに表示されます。ミニバッファーは通常、コロンが最後についた@dfn{プロンプト(prompt)}から開始されます。プロンプトはどのような入力が期待されるか、そしてそれがどのように使われるのかを示します。プロンプトは、フェイス@code{minibuffer-prompt}を使ってハイライトされます。
@@ -48,7 +48,7 @@ minibuffer-electric-default-mode}とタイプしてください。
   エコーエリアにミニバッファーが表示されると、他のエコーエリアの使用と競合するかもしれません。ミニバッファーがアクティブなとき、エラーメッセージや情報メッセージは一時的な表示となります。メッセージは数秒ミニバッファーを隠すように表示されるか、なにかタイプするまでのあいだ表示され、その後ミニバッファーに戻ります。ミニバッファーの使用中、キーストロークはエコーされません。
 
 @node Minibuffer File
-@section Minibuffers for File Names
+@section ミニバッファーでのファイル名
 
 @cindex default directory
   @kbd{C-x C-f}
@@ -101,7 +101,7 @@ Emacs Manual}を参照してください。
   ミニバッファーにリモートファイル名を入力することもできます。 @ref{Remote Files}を参照してください。
 
 @node Minibuffer Edit
-@section Editing in the Minibuffer
+@section ミニバッファーでの編集
 
   ミニバッファーは一風変わっていますがEmacsのバッファーなので、引数テキストを編集するための、通常のEmacsコマンドが利用可能です(しかしプロンプトは@dfn{読み取り専用(read-only)}なので変更できません)。
 
@@ -140,7 +140,7 @@ Window}を参照してください。
   アクティブでないとき、ミニバッファーは@code{minibuffer-inactive-mode}になっており、@kbd{Mouse-1}をクリックすると、@file{*Messages*}バッファーを表示します。ミニバッファー専用のフレームを使用している場合、Emacsはそこでのキー入力も認識します。たとえば@kbd{n}は新しいフレームを作成します。
 
 @node Completion
-@section Completion
+@section 補完
 @c This node is referenced in the tutorial.  When renaming or deleting
 @c it, the tutorial needs to be adjusted.
 @cindex completion
@@ -164,7 +164,7 @@ Completion}を参照してください。
 @end menu
 
 @node Completion Example
-@subsection Completion Example
+@subsection 補完の例
 
 @kindex TAB @r{(completion)}
   ここでは簡単な例が理解しやすいでしょう。@kbd{M-x}は、コマンド名を読み取るためにミニバッファーを使います。補完はミニバッファーのテキストと、既存のEmacsコマンドの名前のマッチによって機能します。コマンドを@code{auto-fill-mode}を実行したいとします。@kbd{M-x
@@ -181,7 +181,7 @@ auto-fill-mode @key{RET}}をタイプすればよいのですが、補完を使�
 @key{TAB}}と入力するだけで、@samp{auto-fill-mode}と入力できるのです。
 
 @node Completion Commands
-@subsection Completion Commands
+@subsection 補完コマンド
 
   以下は補完が使えるときに、ミニバッファーで定義されている補完コマンドの一覧です。
 
@@ -239,7 +239,7 @@ Styles}を参照してください。
 @end table
 
 @node Completion Exit
-@subsection Completion Exit
+@subsection 補完の終了
 
 @kindex RET @r{(completion in minibuffer)}
 @findex minibuffer-complete-and-exit
@@ -277,7 +277,7 @@ confirmation)}は、寛大な補完と似ていますが例外があります。
 @end itemize
 
 @node Completion Styles
-@subsection How Completion Alternatives Are Chosen
+@subsection 補完候補が選択される方法
 @cindex completion style
 
   補完コマンドは、たくさんの可能性のある補完候補を、ミニバッファーに入力したものと``マッチ(match)''する、より少ないサブセットへと絞り込むことにより機能します。@ref{Completion
@@ -326,7 +326,7 @@ element)は、補完スタイルの名前(Lispシンボル)です。デフォル
 
 
 @node Completion Options
-@subsection Completion Options
+@subsection 補完オプション
 
 @cindex case-sensitivity and completion
 @cindex case in completion
@@ -351,7 +351,7 @@ char not unique}と表示し、2度目の@key{TAB}で補完リストバッファ
   @code{completion-cycle-threshold}が非@code{nil}のとき、補完コマンドは補完候補を``循環(cycle)''できます。通常ミニバッファーのテキストで１つ以上の補完候補がある場合、補完コマンドは補完できた文字までを表示します。@code{completion-cycle-threshold}を@code{t}に変更すると、補完コマンドは補完候補の中から最初の候補を表示します。それ以降の補完コマンドの呼び出しでは、その次の補完候補を循環的に表示します。@code{completion-cycle-threshold}を数値@var{n}にすると、補完候補が@var{n}以下のときだけ循環表示の動作をします。
 
 @node Minibuffer History
-@section Minibuffer History
+@section ミニバッファーヒストリー
 @cindex minibuffer history
 @cindex history of minibuffer input
 
@@ -406,7 +406,7 @@ Case}を参照してください)となります。
   変数@code{history-delete-duplicates}には、重複したヒストリーを削除するかを指定します。非@code{nil}の場合、新しい要素が追加されるとリストからそれと同じ要素がすべて削除されます。デフォルトは@code{nil}です。
 
 @node Repetition
-@section Repeating Minibuffer Commands
+@section ミニバッファーでのコマンドの繰り返し
 @cindex command history
 @cindex history of commands
 
@@ -443,7 +443,7 @@ Search}を参照してください。
   ミニバッファーを使用した以前のコマンドのリストは、Lispのリスト値として@code{command-history}に格納されています。Lisp式の各要素は、1つのコマンドとその引数をあらわしています。Lispプログラムは@code{eval}に@code{command-history}の要素を使って呼び出すことで、コマンドを再実行できます。
 
 @node Passwords
-@section Entering passwords
+@section パスワードの入力
 
 Emacsでパスワードを入力したい場合があります。たとえばEmacsにFTPのようなネットワークプロトコルを介して他のマシンのファイルをvisitし、マシンへのアクセスのためにパスワードを与える場合などです(@ref{Remote
 Files}を参照してください)。
@@ -456,7 +456,7 @@ Files}を参照してください)。
   パスワードのタイプ中は、@key{DEL}を押して後方に、すなわち最後に入力した文字から削除できます。@kbd{C-u}で入力したすべての文字を削除できます。@kbd{C-g}はパスワードプロンプトを閉じます(@ref{Quitting}を参照してください)。@kbd{C-y}は現在のkillリングからパスワードを挿入します(@pxref{Killing})。パスワードを確定するには、@key{RET}または@key{ESC}を入力します。他の自己挿入文字は、対応する文字をパスワードに入力します.それ以外の入力は無視されます。
 
 @node Yes or No Prompts
-@section Yes or No Prompts
+@section Yes or No プロンプト
 
   Emacsのコマンドが実行の過程で、``yes or
 no(はい/いいえ)''形式で質問して答えを求めるかもしれません。これらの質問は大きく2つにわけることができます。

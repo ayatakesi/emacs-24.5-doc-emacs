@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Maintaining
-@chapter Maintaining Large Programs
+@chapter 大きなプログラムの保守
 
   このチャプターでは、大きなプログラムをメンテナンスするEmacsの機能を説明します。Lispの大きなプログラムをメンテナンスしている場合は、ここで説明している機能に加え、@file{ERT}
 (``Emacs Lisp Regression Testing'')ライブラリーも便利だと思うかもしれません(@ref{Top,,ERT,ert,
@@ -25,7 +25,7 @@ Emacs Lisp Regression Testing}を参照してください)。
 @end menu
 
 @node Version Control
-@section Version Control
+@section バージョンコントロール
 @cindex version control
 
   @dfn{バージョンコントロールシステム(version control
@@ -61,7 +61,7 @@ Arch、Bazaar、CVS、Git、Mercurial、Monotone、RCS、SCCS/CSSC、Subversion�
 @end menu
 
 @node Introduction to VC
-@subsection Introduction to Version Control
+@subsection バージョンコントロールの紹介
 
   VCは、Emacsからのバージョンコントロールシステムの使用、およびバージョンコントロールの操作と編集をスムーズに統合します。VCは、多くのバージョンコントロールシステムでの一般的な操作にたいする、統一されたインターフェースを提供します。
 
@@ -80,7 +80,7 @@ Arch、Bazaar、CVS、Git、Mercurial、Monotone、RCS、SCCS/CSSC、Subversion�
 @end menu
 
 @node Why Version Control?
-@subsubsection Understanding the problems it addresses
+@subsubsection 問題の背景
 
   バージョンコントロールシステムは、3つの重要な能力を提供します。
 
@@ -97,7 +97,7 @@ Arch、Bazaar、CVS、Git、Mercurial、Monotone、RCS、SCCS/CSSC、Subversion�
 @end itemize
 
 @node Version Control Systems
-@subsubsection Supported Version Control Systems
+@subsubsection サポートされるバージョンコントロールシステム
 
 @cindex back end (version control)
   VCは現在のところ、多くの異なるバージョンコントロールで機能し、それらを@dfn{バックエンド(back ends)}として参照します:
@@ -149,7 +149,7 @@ Bazaar(bzr)は、リポジトリーベースと分散化されたバージョニ
 @end itemize
 
 @node VCS Concepts
-@subsubsection Concepts of Version Control
+@subsubsection バージョンコントロールの概念
 
 @cindex repository
 @cindex registered file
@@ -173,7 +173,7 @@ ID)}により名前がつけられます。リビジョンIDのフォーマッ�
   これらの基本的な概念を超えるにつれ、各バージョンコントロールシステムの違いの、3つの様相を理解する必要がでてくるでしょう。以降の3つのセクションで説明するように、各バージョンコントロールシステムには、ロックベース(lock-based)とマージベース(merge-based)、ファイルベース(file-based)と変更セットベース(changeset-based)、集中型(centralized)と分散型(decentralized)の違いがあります。VCはこれらすべてのモードの操作を処理しますが、それらの違いを隠蔽することはできません。
 
 @node VCS Merging
-@subsubsection Merge-based vs lock-based Version Control
+@subsubsection バージョンコントロールにおけるマージベースとロックベース
 
   バージョンコントロールシステムは通常、同じファイルを変更したい複数ユーザーを調整するために、何らかのメカニズムをもちます。これを行うには2つの方法
 --- マージとロック --- があります。
@@ -195,7 +195,7 @@ Arch、Git、Mercurialのような分散型のバージョンコントロール�
 in(チェックイン)''と``check out(チェックアウト)''という用語が使用されます。VCはこれらの違いをできる限り隠蔽します。
 
 @node VCS Changesets
-@subsubsection Changeset-based vs File-based Version Control
+@subsubsection バージョンコントロールに置ける変更セットベースとファイルベース
 
 @cindex file-based version control
   SCCS、RCS、CVS、およびその他の初期のバージョンコントロールシステムでは、バージョンコントロールの操作は@dfn{ファイルベース(file-based)}です。各ファイルは、他のすべてのファイルとは別に、ファイル自身のコメントとリビジョン履歴をもちます。Subversionで始まる新しいシステムは、@dfn{変更セットベース(changeset-based)}です。コミットは複数ファイルにたいする変更を含むときがあり、一連の変更全体を1つの単位として扱います。変更にたいするコメントは1つのファイルではなく、変更セットに属します。
@@ -204,7 +204,7 @@ in(チェックイン)''と``check out(チェックアウト)''という用語�
   変更セットベースのバージョンコントロールは、ファイルベースのバージョンコントロールより、柔軟で強力です。通常、複数ファイルの変更を元に戻す必要がある時、それを簡単に識別してすべてを削除できます。
 
 @node VCS Repositories
-@subsubsection Decentralized vs Centralized Repositories
+@subsubsection リポジトリーにおける分散型と集中型
 
 @cindex centralized version control
 @cindex decentralized version control
@@ -217,7 +217,7 @@ Archは、@dfn{分配型(distributed)}または@dfn{分散型(decentralized)}の
   VCは個人の作業ファイルと、リポジトリーとの間で行われる通信を管理する手助けをします。VCは、リポジトリーが唯一のマスターなのか、それともネットワークのピアーのレポジトリーの1つなのかは関知しません。
 
 @node Types of Log File
-@subsubsection Types of Log File
+@subsubsection ログファイルのタイプ
 @cindex types of log file
 @cindex log File, types of
 @cindex version control log
@@ -246,7 +246,7 @@ Features}を参照してください)。
 @end ifnottex
 
 @node VC Mode Line
-@subsection Version Control and the Mode Line
+@subsection バージョンコントロールとモードライン
 @cindex VC mode line indicator
 
   バージョンコントロール配下のファイルをvisitしたとき、Emacsはモードラインにそれを示します。たとえば@samp{Bzr-1223}と表示された場合、そのファイルにBazaarが使用され、カレントのリビジョンIDが1223であることを示します。
@@ -267,7 +267,7 @@ Revertモードは、作業ファイルの変更をともなわない、カレ�
 Revertモードは、作業ファイル自身を変更していなくても、@code{auto-revert-interval}秒ごとにバージョンコントロール状態の情報を更新します。CPU使用率はバージョンコントロールシステムに依存しますが、通常はそれほど高価な処理ではありません。
 
 @node Basic VC Editing
-@subsection Basic Editing under Version Control
+@subsection バージョンコントロール下での基本的な編集
 
 @cindex filesets, VC
 @cindex VC filesets
@@ -301,7 +301,7 @@ filesets)''とは別の物だということに注意してください(@ref{Fil
 @end menu
 
 @node VC With A Merging VCS
-@subsubsection Basic Version Control with Merging
+@subsubsection マージでの基本的なバージョンコントロール
 
   マージベースのバージョンコントロールシステム(たとえばもっとも現代的な方法の1つ。@ref{VCS
 Merging}を参照してください)では、@kbd{C-x v v}は以下のことを行います:
@@ -333,7 +333,7 @@ v v}とタイプしてください。
 v v}は、RCSの通常のロックモードのようにそのファイルをロックします。(@ref{VC With A Locking VCS}を参照してください)。
 
 @node VC With A Locking VCS
-@subsubsection Basic Version Control with Locking
+@subsubsection ロックでの基本的なバージョンコントロール
 
   ロックベースのバージョンコントロールシステム(SCCSやRCSのデフォルトモードなど)では、@kbd{C-x v v}は以下のことを行います:
 
@@ -362,7 +362,7 @@ lock)''か、確認を求めます。これにyesと応えると、あなたが�
   このルールは、CVSがロックの横取りをサポートしない点をのぞき、CVSをロックモードで使用している場合も適用されます。
 
 @node Advanced C-x v v
-@subsubsection Advanced Control in @kbd{C-x v v}
+@subsubsection @kbd{C-x v v}の高度な制御
 
 @cindex revision ID in version control
   @code{vc-next-action}にプレフィクス引数を与えた場合(@kbd{C-u C-x v
@@ -386,7 +386,7 @@ Branches}を参照してください)。空の引数(例: @kbd{C-u C-x v v
 @end itemize
 
 @node Log Buffer
-@subsection Features of the Log Entry Buffer
+@subsection Log Entryバッファーの機能
 
 @cindex C-c C-c @r{(Log Edit mode)}
 @findex log-edit-done
@@ -444,7 +444,7 @@ C-c}を@emph{タイプしない}で、バッファーを切り替えて他の編
 History}を参照してください)と同様です。
 
 @node Registering
-@subsection Registering a File for Version Control
+@subsection バージョンコントロールへのファイルの登録
 
 @table @kbd
 @item C-x v i
@@ -481,7 +481,7 @@ Merging}を参照してください)では、ファイルの登録により、�
 v v}とタイプします。
 
 @node Old Revisions
-@subsection Examining And Comparing Old Revisions
+@subsection 古いリビジョンの調査と比較
 
 @table @kbd
 @item C-x v =
@@ -670,7 +670,7 @@ L}で作成されたバッファー)で、ポイント位置のログエント�
 entries}をクリックして、表示するリビジョン数を増やすこともできます。しかしRCS、SCCS、CVSはこの機能をサポートしません。
 
 @node VC Undo
-@subsection Undoing Version Control Actions
+@subsection バージョンコントロール操作のアンドゥ
 
 @table @kbd
 @item C-x v u
@@ -694,7 +694,7 @@ u}はファイルをロックしないまま残します。編集を再開する
 v u}でファイルのロックを開放できます。
 
 @node VC Ignore
-@subsection Ignore Version Control Files
+@subsection バージョンコントロールファイルを無視する
 
 @table @kbd
 @item C-x v G
@@ -707,7 +707,7 @@ v u}でファイルのロックを開放できます。
 v G} (@code{vc-ignore})が助けとなるでしょう。プレフィクス引数を指定すると、無視するファイルリストからファイルを削除できます。
 
 @node VC Directory Mode
-@subsection VC Directory Mode
+@subsection VC Directoryモード
 
 @cindex VC Directory buffer
   @dfn{VC
@@ -745,7 +745,7 @@ PCL-CVS, pcl-cvs, PCL-CVS---The Emacs Front-End to CVS}を参照してくださ�
 @end menu
 
 @node VC Directory Buffer
-@subsubsection The VC Directory Buffer
+@subsubsection VC Directoryバッファー
 
   VC Directoryバッファーは、バージョンコントロールされたファイルと、それらのバージョンコントロール状態を含みます。これは、(@kbd{C-x
 v
@@ -790,7 +790,7 @@ Directoryバッファーが生成されるときのリモートのリポジト�
 Directoryバッファーは、変数@code{vc-directory-exclusion-list}にリストされているサブディレクトリーを省略します。この変数のデフォルト値には、バージョンコントロールシステムにより内部的に使用されるディレクトリーが含まれています。
 
 @node VC Directory Commands
-@subsubsection VC Directory Commands
+@subsubsection VC Directoryコマンド
 
   EmacsはVC
 Directoryバッファーの操作と、カレントVCファイルセットに属させるために、ファイルを``マーク''するためのコマンドをいくつか提供します。
@@ -878,7 +878,7 @@ v v}
   上記のコマンドは、メニューバーおよび@kbd{Mouse-2}によるコンテキストメニューを通じても利用可能です。さらにVCのバックエンドのいくつかは、そのバックエンド特有のコマンドを提供するメニューを使用します。たとえばGitとBazaarでは、@dfn{stashes(隠してあるもの)}と@dfn{shelves(棚)}を操作できます(コミットされていない変更を一時的に除外して、後でそれを戻すコマンドです)。
 
 @node Branches
-@subsection Version Control Branches
+@subsection バージョンコントロールのブランチ
 @cindex branch (version control)
 
   バージョンコントロールの活用法の1つとして、@dfn{ブランチ(branches)}と呼ばれる複数の独立した開発ラインのサポートがあります。中でもとりわけブランチは、プログラムの``安定版(stable)''と``開発版(development)''を個別に保守したり、関係のない機能を他の版から隔離して開発するのに使用されます。
@@ -893,7 +893,7 @@ v v}
 @end menu
 
 @node Switching Branches
-@subsubsection Switching between Branches
+@subsubsection ブランチ間の切り替え
 
   さまざまなバージョンコントロールシステムにおいて、ブランチが実装される方法は異なり、VCはこれらの違いを完全に隠蔽することはできません。
 
@@ -914,7 +914,7 @@ ID)}を指定して、そのブランチの最新のリビジョンに切り替�
   1度ブランチを切り替えると、そのブランチを他に切り替えるまで、VCコマンドはそのブランチに適用されます。たとえば任意のVCファイルセットをコミットすると、そのブランチにコミットされるようになります。
 
 @node VC Pull
-@subsubsection Pulling Changes into a Branch
+@subsubsection ブランチへの変更の取り込み
 
 @table @kbd
 @item C-x v +
@@ -942,7 +942,7 @@ Log}を参照してください。
   CVSのような集中型のバージョンコントロールシステムでは、@kbd{C-x v +}はリポジトリーからカレントVCファイルセットを更新します。
 
 @node Merging
-@subsubsection Merging Branches
+@subsubsection ブランチのマージ
 @cindex merging changes
 
 @table @kbd
@@ -970,7 +970,7 @@ markers)}が挿入されます。衝突を解決するには、衝突するフ�
 VC Editing}を参照してください)。
 
 @node Creating Branches
-@subsubsection Creating New Branches
+@subsubsection 新しいブランチの作成
 
   CVSのような集中型のバージョンコントロールシステムでは、Emacsはコミット操作の一部として、新しいブランチの作成をサポートします。変更されたVCファイルセットをコミットするとき、@kbd{C-u
 C-x v v} (@code{vc-next-action}のようにプレフィクス引数を指定します。@ref{Advanced C-x v
@@ -993,7 +993,7 @@ v}で明示的に異なるリビジョンを選択しなければなりません
 @end ifnottex
 
 @node Change Log
-@section Change Logs
+@section 変更ログ
 
 @cindex change log
   多くのソフトウェアプロジェクトでは、@dfn{変更ログ(change
@@ -1005,7 +1005,7 @@ log)}を管理します。これは通常、いつどのようにして、その
 @end menu
 
 @node Change Log Commands
-@subsection Change Log Commands
+@subsection 変更ログコマンド
 
 @kindex C-x 4 a
 @findex add-change-log-entry-other-window
@@ -1050,7 +1050,7 @@ C-a}
 (@code{log-edit-insert-changelog})とタイプすると、変更ログが存在する場合は、関連する変更ログのエントリーを追加します。
 
 @node Format of ChangeLog
-@subsection Format of ChangeLog
+@subsection ChangeLogの書式
 
   変更ログエントリーは、現在の日付、名前(変数@code{add-log-full-name}より取得)、電子メールアドレス(変数@code{add-log-mailing-address}より取得)を含むヘッダー行から開始されます。ヘッダー行を除いた変更ログの各行は、スペースまたはタブで開始されます。エントリーの大部分は、空白文字とアスタリスクで行が開始される、@dfn{アイテム(items)}から構成されます。以下は2つのアイテムおよび1つのアイテムをもつ、日付が1993年5月の、2つのエントリーの例です。
 
@@ -1086,7 +1086,7 @@ permitted provided the copyright notice and this notice are preserved.
 これはもちろん、正しい年と版権所有者に置き換えて使う必要があります。
 
 @node Tags
-@section Tags Tables
+@section タグテーブル
 @cindex tags and tag tables
 
   @dfn{タグ(tag)}とは、プログラムまたはドキュメント内のサブユニットにたいするリファレンスです。ソースコードではタグは、関数サブルーチン、データ型、マクロなどのプログラムの構文要素を参照します。ドキュメントではチャプター、セクション、アペンディクスなどを参照します。タグは対応するサブユニットが定義されているファイルの場所と、サブユニットがファイルのどこで定義されているかを指定します。
@@ -1123,7 +1123,7 @@ Semanticパッケージは、@command{etags}機能とは別の、タグを生成
 @end menu
 
 @node Tag Syntax
-@subsection Source File Tag Syntax
+@subsection ソースファイルタグの構文
 
   以下は、もっともポピュラーな言語でタグ構文が定義される方法です:
 
@@ -1242,7 +1242,7 @@ Pythonコードでは、行頭の@code{def}および@code{class}はタグを生�
 Regexps}を参照してください)。
 
 @node Create Tags Table
-@subsection Creating Tags Tables
+@subsection タグテーブルの作成
 @cindex @command{etags} program
 
   @command{etags}プログラムは、タグテーブルファイルを作成するために使用されます。このコマンドは、
@@ -1290,7 +1290,7 @@ Regexps}を参照してください)。
 --help}オプションは@command{etags}が認識する言語と、言語を推測するためのファイル名ルールのリストを出力します。これは利用可能な@command{etags}オプションと、簡単な説明のリストも出力します。このオプションの後に、1つ以上の@samp{--language=@var{lang}}を指定すると、@var{lang}にたいするタグの生成方法の詳細を出力します。
 
 @node Etags Regexps
-@subsection Etags Regexps
+@subsection EtagsのRegexps
 
   @samp{--regex}オプションは、正規表現のマッチにもとづいて@command{etags}がタグを認識できるようにします。このオプションはファイル名と混ぜることができます。オプションは、それぞれのオプション後に続くソースファイルに適用されます。複数の@samp{--regex}を指定した場合、それらすべては並列に使用されます。構文は以下のとおりです:
 
@@ -1398,7 +1398,7 @@ etags --language=none \
 @end itemize
 
 @node Select Tags Table
-@subsection Selecting a Tags Table
+@subsection タグテーブルの選択
 
 @findex visit-tags-table
   Emacsは常に、@dfn{選択された}タグテーブルを1つもちます。タグテーブルにたいして機能するすべてのコマンドは、選択されたタグテーブルを使用します。タグテーブルを選択するには、@kbd{M-x
@@ -1426,7 +1426,7 @@ visit-tags-table}とタイプします。これは、引数としてタグテー
   @code{tags-file-name}と@code{tags-table-list}の両方をセットしてはいけません。
 
 @node Find Tag
-@subsection Finding a Tag
+@subsection タグの検索
 
   タグテーブルが可能にすることの中で一番重要なのは、指定したタグの定義を探すことです。
 
@@ -1487,7 +1487,7 @@ M-.}および@kbd{M-*}は、@code{find-tag-marker-ring-length}により決定さ
 (@code{find-tag-regexp})は、指定した正規表現にマッチするタグをvisitします。これは@kbd{M-.}と同じですが、部分文字列にたいするマッチではなく、regexpにたいするマッチです。
 
 @node Tags Search
-@subsection Searching and Replacing with Tags Tables
+@subsection タグテーブルの検索と置換
 @cindex search and replace in multiple files
 @cindex multiple-file search and replace
 
@@ -1535,7 +1535,7 @@ M-,}とタイプします。
 Searching}を参照してください。
 
 @node List Tags
-@subsection Tags Table Inquiries
+@subsection タグテーブルの照会
 
 @table @kbd
 @item C-M-i
@@ -1568,7 +1568,7 @@ tags-apropos}は、タグにたいする@code{apropos(適切な)}のようなも
 next-file}は、選択されたタグテーブルでカバーされるファイルをvisitします。最初に呼び出したとき、テーブルでカバーされた最初のファイルをvisitします。続けて呼び出すことにより、次のカバーされたファイルをvisitしていきます。プレフィクス引数を指定した場合、最初のファイルに戻ります。
 
 @node EDE
-@section Emacs Development Environment
+@section Emacs開発環境
 @cindex EDE (Emacs Development Environment)
 @cindex Emacs Development Environment
 @cindex Integrated development environment

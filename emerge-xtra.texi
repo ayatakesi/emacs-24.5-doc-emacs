@@ -10,7 +10,7 @@
 @c This file is included either in emacs-xtra.texi (when producing the
 @c printed version) or in the main Emacs manual (for the on-line version).
 @node Emerge
-@section Merging Files with Emerge
+@section Emergeでのファイルのマージ
 @cindex Emerge
 @cindex merging files
 
@@ -35,7 +35,7 @@
 @end menu
 
 @node Overview of Emerge
-@subsection Overview of Emerge
+@subsection Emergeの概要
 
   Emergeを開始するには、以下の4つのコマンドの1つを実行します:
 
@@ -97,7 +97,7 @@ C-w}で、それをファイルに保存できます。@code{emerge-files}また
   通常、Emergeコマンドは終了するとき出力バッファーを、そのバッファーのファイルに保存します。Emergeを@kbd{C-]}で中断した場合、Emergeコマンドは出力バッファーを保存しませんが、もし保存したいときは自分で保存することができます。
 
 @node Submodes of Emerge
-@subsection Submodes of Emerge
+@subsection Emergeのサブモード
 
   マージコマンドに与える2つのモード ---
 FastモードとEditモードを選択することができます。Fastモードでは、基本的なマージコマンドは1文字ですが、通常のEmacsコマンドは利用不可です。これはマージコマンドだけを使いたいときは便利です。Editモードでは、すべてのマージコマンドはプレフィクスキー@kbd{C-c
@@ -125,7 +125,7 @@ Prefersモードの場合、モードラインに@samp{S}が示されます。�
 (@code{emerge-skip-prefers})を使用します。これらのコマンドは、正の引数の場合はモードをオンにして、負または0の引数のときはモードをオフにし、引数がないときはモードのオン・オフを切り替えます。
 
 @node State of Difference
-@subsection State of a Difference
+@subsection 相違の状態
 
   マージバッファーでは、相違は文字@samp{v}および@samp{^}のラインでマークされます。各相違は、以下の7つの状態のうち1つをもちます:
 
@@ -162,7 +162,7 @@ b}を使い分けることにより、マージバッファーのあるセクシ
 @end table
 
 @node Merge Commands
-@subsection Merge Commands
+@subsection マージコマンド
 
   以下はFastモードのマージコマンドです。Editモードでは前に@kbd{C-c C-c}をつけてください:
 
@@ -265,7 +265,7 @@ l}を使用します)。
 @end table
 
 @node Exiting Emerge
-@subsection Exiting Emerge
+@subsection Emergeの終了
 
   @kbd{q}コマンド(@code{emerge-quit})はマージを終了して、指定されている場合は結果を出力ファイルに保存します。これはバッファーAおよびBの内容を正しいものに復元するか、もしそれらがEmergeにより作成され、何も変更されていないときはkillします。これによりマージバッファーでEmergeコマンドは使えなくなります。なぜならそれらを実行することにより、さまざまなバッファーの内容にダメージを与えるからです。
 
@@ -274,7 +274,7 @@ l}を使用します)。
   Emergeコマンドが他のLispプログラムから呼び出された場合、正常終了の戻り値は@code{t}で、中断(abort)のときは@code{nil}です。
 
 @node Combining in Emerge
-@subsection Combining the Two Versions
+@subsection 2つのバージョンの合成
 
   特定の相違にたいして両方の候補を使いたいときがあります。これを行なうにはマージバッファーを以下のように編集する@kbd{x c}を使用します:
 
@@ -299,7 +299,7 @@ l}を使用します)。
 @end example
 
 @node Fine Points of Emerge
-@subsection Fine Points of Emerge
+@subsection Emergeの細かい注意点
 
   マージの間、AおよびBバッファーを自分で編集してはいけません。Emergeは一時的にこれらを変更しますが、最終的には元の内容に戻します。
 

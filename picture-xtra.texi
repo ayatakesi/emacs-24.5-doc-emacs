@@ -10,7 +10,7 @@
 @c This file is included either in emacs-xtra.texi (when producing the
 @c printed version) or in the main Emacs manual (for the on-line version).
 @node Picture Mode
-@section Editing Pictures
+@section ピクチャーの編集
 @cindex pictures
 @cindex making pictures out of text characters
 @findex picture-mode
@@ -42,7 +42,7 @@ C-c}は数引数を与えなければ、行末のスペースの削除も行な�
 @end menu
 
 @node Basic Picture
-@subsection Basic Editing in Picture Mode
+@subsection Pictureモードでの基本的な編集
 
 @findex picture-forward-column
 @findex picture-backward-column
@@ -82,7 +82,7 @@ C-d}(これは他のモードでは@kbd{C-d}にバインドされている@code{
 in Picture}を参照してください)。
 
 @node Insert in Picture
-@subsection Controlling Motion after Insert
+@subsection 挿入後の移動の制御
 
 @findex picture-movement-up
 @findex picture-movement-down
@@ -139,7 +139,7 @@ in Picture}を参照してください)。
 (@code{picture-motion-reverse})です。
 
 @node Tabs in Picture
-@subsection Picture Mode Tabs
+@subsection Pictureモードでのタブ
 
 @kindex M-TAB @r{(Picture mode)}
 @findex picture-tab-search
@@ -160,7 +160,7 @@ M-@key{TAB}}のように引数を指定した場合、このコマンドはカ�
 @key{TAB}}がピクチャーをめちゃくちゃにするのを防ぐことができます。変数@code{indent-tabs-mode}を@code{nil}にセットすることにより、これを行なうことができます。
 
 @node Rectangles in Picture
-@subsection Picture Mode Rectangle Commands
+@subsection Pictureモードの矩形領域コマンド
 @cindex rectangles and Picture mode
 @cindex Picture mode and rectangles
 

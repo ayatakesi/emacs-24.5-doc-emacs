@@ -7,7 +7,7 @@
 @c Copyright (C) 1997, 1999-2015 Free Software Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node International
-@chapter International Character Set Support
+@chapter 国際化文字セットのサポート
 @c This node is referenced in the tutorial.  When renaming or deleting
 @c it, the tutorial needs to be adjusted.  (TUTORIAL.de)
 @cindex international scripts
@@ -88,7 +88,7 @@ Environments, locales}を参照してください。
 @end menu
 
 @node International Chars
-@section Introduction to International Character Sets
+@section 国際化文字セットのイントロダクション
 
   国際化文字セットとスクリプトのユーザーは、ファイルを保存するために、多少の差はありますが、標準化された多くのコーディングシステムを確立しています。これらのコーディングシステムは通常は@dfn{マルチバイト(multibyte)}で、これは1つの非@acronym{ASCII}文字を表すのに、2つ以上のバイトシーケンスを対応させることを意味します。
 
@@ -185,7 +185,7 @@ Character code properties: customize what to show
 @end smallexample
 
 @node Language Environments
-@section Language Environments
+@section 言語環境
 @cindex language environments
 
   サポートされているすべての文字セットは、マルチバイト文字が利用可能なときは、Emacsバッファーの中でサポートされます。その文字を表示するために、特定の言語を選択する必要はありません。しかしさまざまなデフォルト値をセットするために、@dfn{言語環境(language
@@ -328,7 +328,7 @@ setenv}を使って)環境変数@env{LC_ALL}、@env{LC_CTYPE}、@env{LANG}を変
   新しい言語環境のセットアップを開始する前に、@code{set-language-environment}はまずフック@code{exit-language-environment-hook}を実行します。このフックは@code{set-language-environment-hook}によるカスタマイズを取り消すのに便利です。たとえば、特定の言語環境にたいして@code{set-language-environment-hook}を使って特別なキーバインドをセットアップした場合は、@code{exit-language-environment-hook}で通常のキーバインドに復元するべきです。
 
 @node Input Methods
-@section Input Methods
+@section インプットメソッド
 
 @cindex input methods
   @dfn{インプットメソッド(IM: input
@@ -384,7 +384,7 @@ C-\}は、インクリメンタル検索の中で使うのが特に便利です�
 Text}を参照してください。
 
 @node Select Input Method
-@section Selecting an Input Method
+@section インプットメソッドの選択
 
 @table @kbd
 @item C-\
@@ -463,7 +463,7 @@ C-x =}もこの情報と、それに加えてその文字に関する他の情�
 list-input-methods}は、サポートされているすべてのインプットメソッドを一覧します。この一覧は各インプットメソッドの情報と、モードラインに表示される文字列を表示します。
 
 @node Coding Systems
-@section Coding Systems
+@section コーディングシステム
 @cindex coding systems
 
   さまざまな言語のユーザーは、多少の差はあれ、それらを表示するための標準のコーディングシステムを確立しています。Emacsはこれらのコーディングシステムを、内部的に使用しません。データを読み込むときは、さまざまなコーディングシステムからEmacs独自のコーディングシステムに変換し、データを書き込むときには、内部コーディングシステムから他のコーディングシステムに変換します。ファイルの読み書き、端末とのやりとり、サブプロセスとのデータ交換において、変換が可能です。
@@ -540,7 +540,7 @@ find-file-literally}コマンドを使うことです。このコマンドは、
   コーディングシステム@code{emacs-internal}(または@code{utf-8-emacs})は、Emacs内部エンコーディングのままで格納された、非ASCII文字を含むファイルであることを意味します。これは出会ったデータに基づいて行末変換を処理し、行末変換の種類を指定する通常の3つの変種を持ちます。
 
 @node Recognize Coding
-@section Recognizing Coding Systems
+@section コーディングシステムの認識
 
   Emacsはテキストを読み込むとき、どのコーディングシステムが使われているか認識しようと試みます。これはファイルの読み込み、サブプロセスからの出力、X選択からのテキストなど、さまざまです。Emacsは大抵の場合
 --- 自分の好みを1度指定しておけば、自動的に正しいコーディングシステムを選択できます。
@@ -596,7 +596,7 @@ pattern, are decoded correctly.
   コーディングシステムを指定する他の方法は、変数@code{auto-coding-functions}を使う方法です。たとえばビルトインの1つ@code{auto-coding-functions}は、XMLファイルにたいするエンコーディングを検知します。前の2つと異なり、この変数は@samp{-*-coding:-*-}タグをオーバーライドしません.
 
 @node Specify Coding
-@section Specifying a File's Coding System
+@section ファイルのコーディングシステムの指定
 
   Emacsがファイルのエンコーディングを正しく認識しなかった場合、@kbd{C-x @key{RET} r}
 (@code{revert-buffer-with-coding-system})で、正しいコーディングシステムでファイルを再読み込みできます。このコマンドは、使用するコーディングシステムの入力を求めます。ファイルのデコードに実際に使われているコーディングシステムを見るには、モードラインの左端の近くのコーディングシステムのニーモニック文字を見るか、@kbd{C-h
@@ -609,7 +609,7 @@ C; coding:
 latin-1;-*-}は、Latin-1コーディングシステム、同様にCモードを指定することを指示します。ファイルの中でコーディングを明示的に指定した場合、これは@code{file-coding-system-alist}をオーバーライドします。
 
 @node Output Coding
-@section Choosing Coding Systems for Output
+@section 出力のためのコーディングシステムの選択
 
 @vindex buffer-file-coding-system
   Emacsがバッファーにたいして1度コーディングシステムを選択すると、そのコーディングシステムは、@code{buffer-file-coding-system}に記録されます。これにより@code{save-buffer}や@code{write-region}などの、バッファーからファイルに書き込む際のデフォルトに、それを使用するようになります。@code{set-buffer-file-coding-system}を使って、バッファーのコーディングシステムとは異なるコーディングシステムで、ファイルに書き込むよう指定できます(@ref{Text
@@ -632,7 +632,7 @@ set-language-environment}によりセットされた)もっとも適したコー
   メールメッセージを送信するとき、Emacsはメッセージテキストのエンコーディングに使うコーディングシステムを決定する、4つの異なる方法をもっています。最初にバッファー自身の@code{buffer-file-coding-system}が非@code{nil}なら、それを使います。次に@code{sendmail-coding-system}が非@code{nil}なら、それを使います。3番目は言語環境の選択により制御されるデフォルトのコーディングシステムが非@code{nil}なら、それを使います。上述した値のすべてが@code{nil}の場合、送信メールをLatin-1コーディングシステムを使ってエンコードします。
 
 @node Text Coding
-@section Specifying a Coding System for File Text
+@section ファイルのテキストにたいするコーディングシステムの指定
 
   Emacsがファイル内容にたいして、自動的に正しいコーディングシステムを選択しない場合、コーディングシステムを指定するために、以下のコマンドを使用できます。
 
@@ -693,7 +693,7 @@ find-file-literally}コマンドです。@ref{Visiting}を参照してくださ�
 recode-region}を使ってデコードしなおすことができます。これは正しいコーディングシステムと、実際に使われた間違ったコーディングシステムの入力を求め、変換を行います。最初にリージョンを間違ったコーディングシステムでエンコードして、その後で正しいコーディングシステムでデコードします。
 
 @node Communication Coding
-@section Coding Systems for Interprocess Communication
+@section プロセス間通信にたいするコーディングシステム
 
   このセクションでは、他のプロセスと通信するときに使うコーディングシステムを指定する方法を説明します。
 
@@ -737,7 +737,7 @@ Coding}を参照してください。
 representation)と互換性のあるコーディングシステムを選択するべきです(上記の順番で最初の環境変数の値が空でない場合、それはテキスト表現を決定します)。
 
 @node File Name Coding
-@section Coding Systems for File Names
+@section ファイル名にたいするコーディングシステム
 
 @table @kbd
 @item C-x @key{RET} F @var{coding} @key{RET}
@@ -776,7 +776,7 @@ C-w}を使って、そのバッファーにたいして新しいファイル名�
 recode-file-name}を使って、ファイル名のコーディングシステムを変更します。このコマンドは古いコーディングシステムでの既存のファイル名と、変換したいコーディングシステムの入力を求めます。
 
 @node Terminal Coding
-@section Coding Systems for Terminal I/O
+@section 端末入出力にたいするコーディングシステム
 
 @table @kbd
 @item C-x @key{RET} t @var{coding} @key{RET}
@@ -815,7 +815,7 @@ Latin文字セットの1つをサポートします。マルチバイトテキ�
   キーボード入力にたいするコーディングシステムを使用した変換と、インプットメソッドの使用は似通った点があります。これらは両方ともキーボード入力シーケンスを1つの文字に変換します。しかし、インプットメソッドは人間により対話的に使用されることが便利なようにデザインされており、通常は@acronym{ASCII}のプリント文字のシーケンスが、変換されたシーケンスになります。通常、コーディングシステムは非グラフィック文字のシーケンスを変換します。
 
 @node Fontsets
-@section Fontsets
+@section フォントセット
 @cindex fontsets
 
   フォントは通常、1つのアルファベットまたはスクリプトの形状を定義します。したがってEmacsがサポートするスクリプトの全範囲を表示するには、多くのフォントのコレクションが要求されます。Emacsではこのようなコレクションのことを@dfn{フォントセット(fontset)}と呼びます。フォントセットはフォント仕様のリストとして定義され、それぞれが文字コードのある範囲を処理し、指定されたフォントでカバーしない文字にたいしては他のフォントセットにフォールバックします。
@@ -854,7 +854,7 @@ emacs -fn fontset-standard
 Display, , glyphless characters}を参照してください)。
 
 @node Defining Fontsets
-@section Defining fontsets
+@section フォントセットの定義
 
 @vindex standard-fontset-spec
 @vindex w32-standard-fontset-spec
@@ -964,7 +964,7 @@ GB2312の文字に対するフォント指定では、@var{family}フィール�
   フォントの命名についての詳細は、@ref{Fonts}を参照してください。
 
 @node Modifying Fontsets
-@section Modifying Fontsets
+@section フォントセットの修正
 @cindex fontsets, modifying
 @findex set-fontset-font
 
@@ -995,7 +995,7 @@ GB2312の文字に対するフォント指定では、@var{family}フィール�
 
 
 @node Undisplayable Characters
-@section Undisplayable Characters
+@section 表示できない文字
 
   あなたの端末では表示できない非@acronym{ASCII}文字が、いくつか存在するかもしれません。ほとんどのテキスト端末は、1つの文字セットだけをサポートします(Emacsに何を使うか指示するには、変数@code{default-terminal-coding-system}を使用します。@ref{Terminal
 Coding}を参照してください)。そのコーディングシステムではエンコードできない文字は、デフォルトでは@samp{?}と表示されます。
@@ -1008,7 +1008,7 @@ Coding}を参照してください)。そのコーディングシステムでは
   端末がLatin-1を表示できる場合、Latin-1と等しい文字と@acronym{ASCII}ニーモニックを混交して、他のEuropean文字セットを表示できます。これは変数@code{latin1-display}をカスタマイズすることにより有効になります。ニーモニック@acronym{ASCII}シーケンスは、ほとんどがインプットメソッドのプレフィクスに対応します。
 
 @node Unibyte Mode
-@section Unibyte Editing Mode
+@section Unibyte編集モード
 
 @cindex European character sets
 @cindex accented characters
@@ -1066,7 +1066,7 @@ Latin-1にたいしてだけですが、非@acronym{ASCII}のLatin-1のプリン
 @end itemize
 
 @node Charsets
-@section Charsets
+@section 文字セット
 @cindex charsets
 
   Emacsでは``文字セット(character
@@ -1099,7 +1099,7 @@ charsets)}が続きます。追加のcharsetは他のcharsetを定義するの�
 =}をタイプします(@ref{International Chars}を参照してください)。
 
 @node Bidirectional Editing
-@section Bidirectional Editing
+@section 双方向の編集
 @cindex bidirectional editing
 @cindex right-to-left text
 

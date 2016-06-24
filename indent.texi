@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Indentation
-@chapter Indentation
+@chapter インデント
 @cindex indentation
 @cindex tabs
 @cindex columns (indentation)
@@ -42,7 +42,7 @@ Text}を参照してください)。
 @end menu
 
 @node Indentation Commands
-@section Indentation Commands
+@section インデントコマンド
 
 @key{TAB}
 (@code{indent-for-tab-command})コマンドとは別に、Emacsは他の方法でインデントを処理する、さまざまなコマンドを提供します。
@@ -102,7 +102,7 @@ C-u -999 C-x @key{TAB}
 @end table
 
 @node Tab Stops
-@section Tab Stops
+@section タブストップ
 @cindex tab stops
 
 @vindex tab-stop-list
@@ -133,7 +133,7 @@ Customization}を参照してください)。
 tab stop)}まで拡張される、空のスペースとして表示されます。@ref{Text Display}を参照してください。
 
 @node Just Spaces
-@section Tabs vs. Spaces
+@section タブ vs. スペース
 
 @vindex tab-width
   インデントコマンドは通常、スペース文字とタブ文字を最適にミックスした文字列を挿入(または削除)することにより、望む列に行を揃えます。タブ文字は次の@dfn{タブストップ表示(display
@@ -155,7 +155,7 @@ tabify}は、リージョンの連続するスペースをスキャンして、�
 untabify}は、リージョンのすべてのタブを適正な数のスペースに変更します。
 
 @node Indent Convenience
-@section Convenience Features for Indentation
+@section インデントの便利な機能
 
 @vindex tab-always-indent
   変数@code{tab-always-indent}は、@key{TAB}

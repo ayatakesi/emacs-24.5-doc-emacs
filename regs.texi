@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Registers
-@chapter Registers
+@chapter レジスター
 @cindex registers
 
   Emacsの@dfn{レジスター(registers)}は、テキストや矩形領域、位置、その他、後で使うものを保存するための小部屋です。一度テキストや矩形領域をレジスターに保存すれば、それをバッファーに何度もコピーできます。一度場所をレジスターに保存すれば、何度でもその場所にジャンプして戻ることができます。
@@ -42,7 +42,7 @@ view-register}を使います:
 @end menu
 
 @node Position Registers
-@section Saving Positions in Registers
+@section レジスターに位置を保存する
 @cindex saving position in a register
 
 @table @kbd
@@ -66,7 +66,7 @@ view-register}を使います:
 j}は同じファイルをvisitしてバッファーを生成しようと試みます。もちろんこれはファイルをvisitしたバッファーだけの動作です。
 
 @node Text Registers
-@section Saving Text in Registers
+@section レジスターにテキストを保存する
 @cindex saving text in a register
 
   同じテキストのコピーを何回も挿入したいとき、killリングからyankするのは不便です。なぜなら何かkillするたびに、そのエントリーはリングの下の方へ移動してしまうからです。代替として、テキストをレジスターに保存して、後で取り出す方法があります。
@@ -114,7 +114,7 @@ C-x r s
 @var{r}}は、レジスター@var{r}のテキストをバッファーに挿入します。通常はポイントをテキストの前に置き、非アクティブのマークをテキストの後ろにセットします。数引数を指定したときは、ポイントをテキストの後ろ、マークをテキストの前にセットします。
 
 @node Rectangle Registers
-@section Saving Rectangles in Registers
+@section レジスターに矩形領域を保存する
 @cindex saving rectangle in a register
 
   レジスターには線形のテキストだけでなく、矩形領域も保存できます。バッファーで矩形領域を指定する方法は、@ref{Rectangles}を参照してください。
@@ -132,7 +132,7 @@ C-x r s
 (@code{insert-register})コマンドは、レジスターに矩形領域が保存されているときはテキストではなく矩形領域を挿入します。
 
 @node Configuration Registers
-@section Saving Window Configurations in Registers
+@section レジスターにウィンドウ設定を保存する
 @cindex saving window configuration in a register
 
 @findex window-configuration-to-register
@@ -153,7 +153,7 @@ C-x r s
 C-x r j @var{r}}を使います。
 
 @node Number Registers
-@section Keeping Numbers in Registers
+@section レジスターに数字を保存する
 @cindex saving number in a register
 
   数字をレジスターに保存して、その数字(10進)をバッファーに挿入したり、増加させるコマンドがあります。これらのコマンドはキーボードマクロで使うと便利です(@ref{Keyboard
@@ -178,7 +178,7 @@ Registers}を参照してください。
 +}に数字の引数を与えない場合、レジスターの値は1増加します。@kbd{C-x r n}に数字の引数を与えない場合、レジスターには0が保存されます。
 
 @node File Registers
-@section Keeping File Names in Registers
+@section レジスターにファイル名を保存する
 @cindex saving file name in a register
 
   特定の名前のファイルを頻繁にvisitする場合、その名前をレジスターにセットしておけば、より便利にファイルをvisitすることができます。以下は@var{name}というファイルをレジスター@var{r}にセットするLispコードです:
@@ -202,7 +202,7 @@ Registers}を参照してください。
 @var{r}}とタイプします。これはある位置にジャンプしたり、フレームの設定を復元するのと同じコマンドです。
 
 @node Keyboard Macro Registers
-@section Keyboard Macro Registers
+@section キーボードマクロのレジスター
 @cindex saving keyboard macro in a register
 @cindex keyboard macros, in registers
 
@@ -217,7 +217,7 @@ Keyboard Macro}を参照してください)。@kbd{C-x C-k x @var{r}}
 @var{r}}とタイプします(これはある位置にジャンプしたりフレームを復元するのと同じコマンドです)。
 
 @node Bookmarks
-@section Bookmarks
+@section ブックマーク
 @cindex bookmarks
 
   @dfn{ブックマーク(Bookmarks)}とは、ジャンプしたい位置を記録するレジスターのようなものです。レジスターとの違いは、長い名前をもつことができ、次のEmacsセッションに自動的に引き継がれることです。ブックマークの典型的な使い方は、さまざまなファイルの``どこを読んでいたか''を記録することです。

@@ -7,7 +7,7 @@
 @c Copyright (C) 2000-2015 Free Software Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Mac OS / GNUstep
-@appendix Emacs and Mac OS / GNUstep
+@appendix EmacsとMac OS
 @cindex Mac OS X
 @cindex Macintosh
 @cindex GNUstep
@@ -32,7 +32,7 @@ Support}を参照してください)ですが、わたしたちは、将来こ�
 @end menu
 
 @node Mac / GNUstep Basics
-@section Basic Emacs usage under Mac OS and GNUstep
+@section Mac OSおよびGNUstepでのEmacsの基本的な使い方
 
   デフォルトでは、キー@key{alt}と@key{option}は、@key{Meta}と同じです。Macの@key{Cmd}キーは@key{Super}と同じで、Emacsは他のMac/GNUstepアプリケーション(@ref{Mac
 / GNUstep
@@ -53,7 +53,7 @@ C-f}のような標準のEmacsのキーシーケンスを使用する場合、Em
 selection)に転送するために、@kbd{C-w}や@kbd{M-w}のかわりに、@kbd{Cmd-c}を使用する必要があります。そうでない場合、Emacsは``クリップボード''選択を使用します。同様に(@kbd{C-y}のかわりに)@kbd{Cmd-y}は、killリングやクリップボードではなく、Xのプライマリー選択からyankします。
 
 
-@subsection Grabbing environment variables
+@subsection 環境変数の取得
 
 @c How is this any different to launching from a window manager menu
 @c in GNU/Linux?  These are sometimes not login shells either.
@@ -63,12 +63,12 @@ latexやmanのような、Emacsの下で実行される多くのプログラム�
 X10.5以降ではPATHをセットするシステムワイドな手法は、@file{/etc/paths}ファイルと@file{/etc/paths.d}ディレクトリーを使用することが推奨されています。
 
 @node Mac / GNUstep Customization
-@section Mac / GNUstep Customization
+@section GNUstepでのカスタマイズ
 
 多くはありませんが、Nextstepポートに特有のカスタマイズオプションがいくつかあります。たとえば修飾キーやフルスクリーン動作に影響するオプションです。そのようなオプションをすべて閲覧するには、@kbd{M-x
 customize-group @key{RET} ns @key{RET}}を使用します。
 
-@subsection Font and Color Panels
+@subsection フォントパネルとカラーパネル
 
 標準のMac/GNUstepのフォントパネルとカラーパネルには、Lispコマンドを通じてアクセスできます。フォントパネルにアクセスするには、@kbd{M-x
 ns-popup-font-panel}を使用します。これは一番最近使用された、またはクリックされたフレームの、デフォルトフォントをセットします。
@@ -94,7 +94,7 @@ Textベースのフォントバックエンドを使用します。古いフォ�
 
 
 @node Mac / GNUstep Events
-@section Windowing System Events under Mac OS / GNUstep
+@section Mac OSおよびGNUstepでのウィンドウシステムイベント
 
   Nextstepアプリケーションは、Xでは同等なものがない、特別なイベントを受け取ります。これらは、対応するキーストロークのシーケンスとしてではなく、特別に定義された``キー''として送られます。Emacsでは、これらの``キー''イベントを、通常のキーストロークのように、関数にバインドできます。以下はこのようなイベントのリストです。
 
@@ -131,7 +131,7 @@ Emacs'を選択したとき発生します。デフォルトの動作は、フ�
 ns-service-@key{TAB}}とタイプして、これらのコマンドをリストを見ることができます。これらの関数は、マークされたテキストを処理(結果でそれを置き換える)したり、文字列を引数として結果を文字列で返します。Lisp関数@code{ns-perform-service}を使用して、任意の文字列を任意のサービスに渡して、結果を受けとることもできます。新たに利用可能になったサービスにアクセスするには、Emacsの再起動が必要なことに注意してください。
 
 @node GNUstep Support
-@section GNUstep Support
+@section GNUstepにたいするサポート
 
 EmacsはGNUstepの下でビルドして実行することができますが、解決すべき問題が残っています。興味のある開発者は、
 @ifnothtml

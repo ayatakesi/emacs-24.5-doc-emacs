@@ -8,7 +8,7 @@
 @c See file emacs.texi for copying conditions.
 
 @node Antinews
-@appendix Emacs 23 Antinews
+@appendix Emacs 23 アンチニュース
 @c Update the emacs.texi Antinews menu entry with the above version number.
 
   時代に逆らって生きるユーザーのために、以下はEmacsバージョン23.4へのダウングレードに関する情報です。Emacs

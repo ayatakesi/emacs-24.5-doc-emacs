@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @iftex
-@chapter Miscellaneous Commands
+@chapter その他のコマンド
 
   このチャプターには、他のどこにも適さないような、複数のトピックについての概略が含まれています。それらには以下のものが含まれます:
 ``ドキュメントファイル''の閲覧、Usenetニュースの購読、シェルコマンドおよびシェルサブプロセスの実行、エディターをサブプロセスとして実行するユーティリティーとして1つの共有Emacsを使用する、ハードコピーの印刷、テキストのソート、バイナリーファイルの編集、後で再開するためにEmacsセッションを保存する、ハイパーリンクをフォローする、他のエディターのエミュレート、およびさまざまな気晴らしと娯楽、などです。
@@ -42,7 +42,7 @@ Gnusについての完全な詳細は、@kbd{C-h i}とタイプしてから、Gn
 @end menu
 
 @node Buffers of Gnus
-@subsection Gnus Buffers
+@subsection Gnusバッファー
 
   Gnusは、情報を表示したり返信コマンドのために、複数のバッファーを使用します。もっとも一般的に使用される3つのGnusバッファーは@dfn{グループバッファー(group
 buffer)}、@dfn{サマリーバッファー(summary buffer)}、@dfn{アーティクルバッファー(article
@@ -65,7 +65,7 @@ Manual}を参照してください。
 すべての便利なGnusコマンドはサマリーバッファーから呼び出すことができます。しかし望むなら、アーティクルバッファーを選択して、そこからGnusコマンドを実行することもできます。
 
 @node Gnus Startup
-@subsection When Gnus Starts Up
+@subsection Gnusを起動した時
 
 @findex gnus
 @cindex @file{.newsrc} file
@@ -95,7 +95,7 @@ groups: 登録されたグループ)}だけが表示されます。他の状態 
   Gnusを終了するには、グループバッファーで@kbd{q}とタイプします。これは自動的にグループの状態をファイル@file{.newsrc}ト@file{.newsrc.eld}に記録するので、その後のGnusセッションでも効果があります。
 
 @node Gnus Group Buffer
-@subsection Using the Gnus Group Buffer
+@subsection Gnus Groupバッファーの使用
 
   以下のコマンドは、Gnusグループバッファーで利用可能です:
 
@@ -164,7 +164,7 @@ Gnusのセッティングを更新してGnusを終了します。
 @end table
 
 @node Gnus Summary Buffer
-@subsection Using the Gnus Summary Buffer
+@subsection Gnus Summaryバッファーの使用
 
   以下のコマンドは、Gnusサマリーバッファーで利用可能です:
 
@@ -210,7 +210,7 @@ Search}を参照してください)とタイプしたかのように、インク
 @end table
 
 @node Document View
-@section Document Viewing
+@section ドキュメントの閲覧
 @cindex DVI file
 @cindex PDF file
 @cindex PS file
@@ -259,7 +259,7 @@ doc-view-minor-mode}で、DocView minorモードに切り替えることがで�
 @end menu
 
 @node DocView Navigation
-@subsection DocView Navigation
+@subsection DocViewの操作
 
   DocViewモードでは通常のEmacs移動キー、つまり@kbd{C-p}、@kbd{C-n}、@kbd{C-b}、@kbd{C-f}、および矢印キーを使って、ページをスクロールできます。
 
@@ -303,7 +303,7 @@ g} (@code{doc-view-goto-page})とタイプしてください。
 (@code{doc-view-shrink})で、ドキュメントを拡大したり縮小することができます。これらのコマンドはドキュメントを新しいサイズに再変換することにより機能します。DocViewにたいするデフォルトサイズを指定するには、変数@code{doc-view-resolution}をカスタマイズしてください。
 
 @node DocView Searching
-@subsection DocView Searching
+@subsection DocViewの検索
 
   DocViewモードでは、ファイルのテキストにたいして正規表現の検索を行なうことができます(@ref{Regexps}を参照してください)。検索のインターフェースは@code{isearch}が元になっています(@ref{Incremental
 Search}を参照してください)。
@@ -319,7 +319,7 @@ Search}を参照してください)。
 C-r}のように、検索コマンドにプレフィクス引数を使用します。
 
 @node DocView Slicing
-@subsection DocView Slicing
+@subsection DocViewのスライス
 
 印刷のために広い余白をもつドキュメントもあります。これらはスクリーンでドキュメントを読むとき邪魔になることがあります。なぜならこれらは画面スペースを消費して、スクロールが不便になるからです。
 
@@ -343,7 +343,7 @@ position)と、スライスの幅(width)と高さ(height)を入力します。
 (@code{doc-view-reset-slice})とタイプします。するとDocViewは、余白全体を含めたページ全体を表示します。
 
 @node DocView Conversion
-@subsection DocView Conversion
+@subsection DocViewの変換
 
 @vindex doc-view-cache-directory
 @findex doc-view-clear-cache
@@ -358,7 +358,7 @@ doc-view-clear-cache}とタイプすることにより、キャッシュディ�
 (@code{doc-view-kill-proc-and-buffer})は、変換プロセスとDocViewバッファーをkillします。
 
 @node EWW
-@section Web Browsing with EWW
+@section EWWによるウェブブラウズ
 
 @findex eww
 @findex eww-open-file
@@ -369,7 +369,7 @@ eww-open-file}を使用して、ファイルを開くことができます。@co
 EWW,, eww, The Emacs Web Wowser Manual}を参照してください。
 
 @node Shell
-@section Running Shell Commands from Emacs
+@section Emacsからのシェルコマンドの実行
 @cindex subshell
 @cindex shell commands
 
@@ -416,7 +416,7 @@ Emacsと共に配布される、Eshell Infoマニュアルを参照してくだ�
 @end menu
 
 @node Single Shell
-@subsection Single Shell Commands
+@subsection 単一のシェルコマンド
 
 @kindex M-!
 @findex shell-command
@@ -465,7 +465,7 @@ c}を使用します。@ref{Communication Coding}を参照してください。
   デフォルトでは、出力バッファーではエラー出力と標準出力が混ざって出力されます。しかし変数@code{shell-command-default-error-buffer}の値を文字列に変更すると、エラー出力はその名前のバッファーに出力されます。
 
 @node Interactive Shell
-@subsection Interactive Subshell
+@subsection 対話的なサブシェル
 
 @findex shell
   対話的にサブシェルを実行するには、@kbd{M-x
@@ -503,7 +503,7 @@ Coding}を参照してください。
   サブシェルでは、Emacsは環境変数@env{INSIDE_EMACS}に@samp{@var{version},comint}をセットします。ここで@var{version}は、Emacsのバージョン(たとえば@samp{24.1})です。プログラムはこの変数をチェックして、Emacsの内部で実行されているかを判断することができます(環境変数@env{EMACS}が定義されていない場合は、環境変数@env{EMACS}も@code{t}にセットします。しかし、この環境変数は時代遅れなので、これを使うプログラムは、かわりに@env{INSIDE_EMACS}を使うべきです)。
 
 @node Shell Mode
-@subsection Shell Mode
+@subsection Shellモード
 @cindex Shell mode
 @cindex mode, Shell
 
@@ -652,7 +652,7 @@ run-lisp} (@ref{External Lisp}を参照してください)が含まれます。
 comint-run}を使用することができます。
 
 @node Shell Prompts
-@subsection Shell Prompts
+@subsection Shellプロンプト
 
 @cindex prompt, shell
   プロンプトとは、新しいユーザー入力を受け取る準備ができたことを表す、プログラムによるテキスト出力のことです。Comintモード(したがってShellモードも)は通常、サブプロセスからの出力にもとづいて、バッファーの一部をプロンプトとして自動的に判断します(具体的には、改行で終端されていない任意の出力行を受け取ったときは、プロンプトとみなします)。
@@ -665,7 +665,7 @@ Properties,,, elisp, the Emacs Lisp Reference Manual}を参照してください
   変数@code{comint-use-prompt-regexp}を非@code{nil}値に変更した場合、Comintモードは正規表現を使ってプロンプトを認識します(@ref{Regexps}を参照してください)。Shellモードでは、その正規表現は変数@code{shell-prompt-pattern}により指定されます。@code{comint-use-prompt-regexp}のデフォルト値は@code{nil}です。なぜならプロンプト認識のためのこの方法は信頼性が低いためです。しかし特殊な状況では、これを非@code{nil}値にセットしたいと思うこともあるでしょう。そのような場合、EmacsはComintバッファーをフィールドに分割しないので、一般的な移動コマンドは、テキストプロパティーを使用せず、それらのコマンドがバッファーで通常行なうように振る舞います。しかし、バッファーを便利に操作するために、パラグラフ移動コマンドを使うことができます(@ref{Paragraphs}を参照してください)。Shellモードでは、Emacsはパラグラフ境界に@code{shell-prompt-pattern}を使用します。
 
 @node Shell History
-@subsection Shell Command History
+@subsection Shellコマンドヒストリー
 
   Shellバッファーは、以前のコマンドを繰り返す3つの方法をサポートします。1つ目はミニバッファーヒストリーにたいして使うのと同じようなキーを使う方法です。つまり、これらはミニバッファーで行なうのと同じように、前のコマンドからテキストを挿入して、ポイントを常にバッファーの最後に保ちます。2つ目は、バッファーを移動して元の場所から前の入力を取得して、それらを再実行したり、バッファーの最後にコピーする方法です。3つ目は@samp{!}スタイルのヒストリー参照を使う方法です。
 
@@ -676,7 +676,7 @@ Properties,,, elisp, the Emacs Lisp Reference Manual}を参照してください
 @end menu
 
 @node Shell Ring
-@subsubsection Shell History Ring
+@subsubsection Shellヒストリーリング
 
 @table @kbd
 @findex comint-previous-input
@@ -737,7 +737,7 @@ C-x}とタイプします。これは次のコマンド ---
   シェルの中には、コマンドヒストリーをファイルに保存して、以前のシェルセッションからコマンドを参照できるようにするものがあります。Emacsは選択されたシェルにたいして、コマンドヒストリーを初期化するために、コマンドヒストリーファイルを読み込みます。ヒストリーファイル名は、bashでは@file{~/.bash_history}、kshでは@file{~/.sh_history}、他のシェルでは@file{~/.history}です。
 
 @node Shell History Copying
-@subsubsection Shell History Copying
+@subsubsection Shellヒストリーのコピー
 
 @table @kbd
 @kindex C-c C-p @r{(Shell mode)}
@@ -765,7 +765,7 @@ C-x}とタイプします。これは次のコマンド ---
 @key{RET}}は、バッファーからテキストをコピーするので、入力をシェルに送信した後に入力テキストを編集していた場合は、ヒストリーリストと異なります。
 
 @node History References
-@subsubsection Shell History References
+@subsubsection Shellヒストリーの参照
 @cindex history reference
 
   cshやbashを含むさまざまなシェルは、@samp{!}や@samp{^}で始まる@dfn{ヒストリー参照(history
@@ -782,7 +782,7 @@ m v @key{TAB}}とタイプします。必要ならコマンドを編集して、
 Prompts}を参照してください。
 
 @node Directory Tracking
-@subsection Directory Tracking
+@subsection ディレクトリーの追跡
 @cindex directory tracking
 
 @vindex shell-pushd-regexp
@@ -805,7 +805,7 @@ dirs}を試してください。このコマンドはシェルに作業ディレ
 dirtrack-mode}とタイプするか、@code{shell-mode-hook}に@code{dirtrack-mode}を追加します(@ref{Hooks}を参照してください)。
 
 @node Shell Options
-@subsection Shell Mode Options
+@subsection Shellモードのオプション
 
 @vindex comint-scroll-to-bottom-on-input
   変数@code{comint-scroll-to-bottom-on-input}が非@code{nil}の場合、挿入およびyankコマンドは、挿入する前に選択されたウィンドウを、バッファーの最後までスクロールします。デフォルトは@code{nil}です。
@@ -847,7 +847,7 @@ dirtrack-mode}とタイプするか、@code{shell-mode-hook}に@code{dirtrack-mo
   @samp{pushd}の動作を設定することができます。@code{shell-pushd-tohome}は、引数を与えない場合に@samp{pushd}が@samp{cd}のように振る舞うかを制御します。@code{shell-pushd-dextract}は、数引数を与えたときローテートするのではなくpopするかを制御します。@code{shell-pushd-dunique}は、ディレクトリースタックにディレクトリーがない場合だけ追加するかを制御します。もちろん選択する値は背後のシェルに適合する必要があります。
 
 @node Terminal emulator
-@subsection Emacs Terminal Emulator
+@subsection Emacsの端末エミュレーター
 @findex term
 
   テキスト端末エミュレーターでサブシェルを実行するには、@kbd{M-x
@@ -876,7 +876,7 @@ rename-uniquely}を使って、バッファー@file{*terminal*}を違う名前�
 
 
 @node Term Mode
-@subsection Term Mode
+@subsection Termモード
 @cindex Term mode
 @cindex mode, Term
 
@@ -919,7 +919,7 @@ page-at-a-timeを切り替えます。このコマンドはlineモードとchar�
 @end table
 
 @node Remote Host
-@subsection Remote Host Shell
+@subsection リモートホストのシェル
 @cindex remote host
 @cindex connecting to remote host
 @cindex Telnet
@@ -932,7 +932,7 @@ page-at-a-timeを切り替えます。このコマンドはlineモードとchar�
   別のマシンにログインしているときは、リモートログインコマンドのために、環境変数@env{TERM}をセットすることにより、端末タイプを指定する必要があります(bashを使用している場合、リモートログインコマンドの前に、カンマで区切らず値割り当てを記述することにより、これを行なうことができます)。端末タイプ@samp{ansi}または@samp{vt100}は、ほとんどのシステムで動作するでしょう。
 
 @node Serial Terminal
-@subsection Serial Terminal
+@subsection シリアル端末
 @cindex terminal, serial
 @findex serial-term
 
@@ -946,7 +946,7 @@ serial-term}とタイプすることにより、デバイスと通信するこ�
   スピードや設定が間違っている場合、デバイスと通信できず、おそらくウィンドウにはゴミが出力されるでしょう。
 
 @node Emacs Server
-@section Using Emacs as a Server
+@section サーバーとしてのEmacsの使用
 @pindex emacsclient
 @cindex Emacs as a server
 @cindex server, using Emacs as
@@ -993,7 +993,7 @@ Options}を参照してください)。
 @end menu
 
 @node Invoking emacsclient
-@subsection Invoking @code{emacsclient}
+@subsection @code{emacsclient}の呼び出し
 @cindex @code{emacsclient} invocation
 
   @command{emacsclient}プログラムを使う一番簡単な方法は、シェルコマンド@samp{emacsclient
@@ -1037,7 +1037,7 @@ Mode}を参照してください)を使って@command{emacsclient}を呼び出�
 #}は常に次のサーバーバッファーを、そのウィンドウまたはそのフレームに表示します。
 
 @node emacsclient Options
-@subsection @code{emacsclient} Options
+@subsection @code{emacsclient}のオプション
 @cindex @code{emacsclient} options
 
   以下のようなオプション引数を@command{emacsclient}プログラムに渡すことができます:
@@ -1141,7 +1141,7 @@ C-c}がEmacsをkillすることはありません。デーモンセッション�
   @samp{-t}と@samp{-n}は、矛盾するオプションであることに注意してください。@samp{-t}はカレントテキスト端末に新たにクライアントフレームを作成して制御することを指示し、@samp{-n}はテキスト端末で制御を行なわないことを指示するからです。両方のオプションを与えた場合、@samp{-t}の効果は打ち消されて、Emacsは新たにフレームを作成せず、既存のフレームで指定されたファイルをvisitします。
 
 @node Printing
-@section Printing Hard Copies
+@section ハードコピーの印刷
 @cindex hardcopy
 @cindex printing
 
@@ -1188,7 +1188,7 @@ Mode}を参照してください)では、OrgファイルをPDFのような様�
 @end menu
 
 @node PostScript
-@subsection PostScript Hardcopy
+@subsection PostScriptのハードコピー
 
   これらのコマンドはバッファーの内容をPostScriptに変換して、それを印刷または別のEmacsバッファーに出力します。
 
@@ -1239,7 +1239,7 @@ handwrite}はもっと他愛ない機能です。これはカレントバッフ�
 8859-1文字だけサポートします。
 
 @node PostScript Variables
-@subsection Variables for PostScript Hardcopy
+@subsection PostScriptハードコピーにたいする変数
 
 @vindex ps-lpr-command
 @vindex ps-lpr-switches
@@ -1286,7 +1286,7 @@ Intlfontsパッケージのフォントで増強したり、EmacsにIntlfontsフ
   これらのコマンドに対する、その他多くのカスタマイズ変数は、Lispファイル@file{ps-print.el}および@file{ps-mule.el}で定義・説明されています。
 
 @node Printing Package
-@subsection Printing Package
+@subsection 印刷のためのパッケージ
 @cindex Printing package
 
   ハードコピーを印刷するためのEmacsの基本的な機能は、Printingパッケージを使って拡張できます。これは何を印刷するかの選択、印刷前のPostScriptファイルのプレビュー、プリントヘッダーなどのさまざまな印刷オプションの設定、横向きモードや縦向きモード、duplexモードにたいする使いやすいインターフェースを提供します。GNU/LinuxシステムまたはUnixシステムでは、Printingパッケージは、GhostScriptプログラムの一部として配布される、@file{gs}および@file{gv}ユーティリティーに依存しています。MS-Windowsでは、Ghostscriptのポート版の@file{gstools}が使用されます。
@@ -1299,7 +1299,7 @@ Interface*}バッファーを作成し、そこで印刷オプションをセッ
 Help}ボタンを使用してください。
 
 @node Sorting
-@section Sorting Text
+@section テキストのソート
 @cindex sorting
 
   Emacsは、バッファーのテキストをソートするためのコマンドをいくつか提供しています。これらはすべて、リージョンの内容にたいして処理を行ないます。これらのコマンドはリージョンのテキストを、多数の@dfn{ソートレコード(sort
@@ -1395,7 +1395,7 @@ sort-columns}は説明が必要でしょう。ある列にポイントを配し�
 
 
 @node Editing Binary Files
-@section Editing Binary Files
+@section バイナリーファイルの編集
 
 @cindex Hexl mode
 @cindex mode, Hexl
@@ -1443,7 +1443,7 @@ a hexl-@key{RET}}とタイプしてください。
 
 
 @node Saving Emacs Sessions
-@section Saving Emacs Sessions
+@section Emacsセッションの保存
 @cindex saving sessions
 @cindex restore session
 @cindex remember editing session
@@ -1491,7 +1491,7 @@ desktop-clear}とタイプします。これは内部バッファーを除いて
   あるセッションから別のセッションへ、ミニバッファーのヒストリーを保存したい場合は、@code{savehist}ライブラリーを使用してください。
 
 @node Recursive Edit
-@section Recursive Editing Levels
+@section 再帰編集レベル
 @cindex recursive editing level
 @cindex editing level, recursive
 
@@ -1530,7 +1530,7 @@ top-level}は、すべてのレベルの再帰編集をabortして、即座に�
 @c There seems no point having a node just for those, which both have
 @c their own manuals.
 @node Emulation
-@section Emulation
+@section エミュレーション
 @cindex emulating other editors
 @cindex other editors
 @cindex EDT
@@ -1570,7 +1570,7 @@ Viperはviにたいするエミュレーターです。これは複数レベル�
 
 
 @node Hyperlinking
-@section Hyperlinking and Navigation Features
+@section ハイパーリンクと操作機能
 
   以下のサブセクションでは、URLや、Emacsバッファーのテキスト内にある他の種類のリンクを扱う便利な機能を説明します。
 
@@ -1581,7 +1581,7 @@ Viperはviにたいするエミュレーターです。これは複数レベル�
 @end menu
 
 @node Browse-URL
-@subsection Following URLs
+@subsection URLのフォロー
 @cindex World Wide Web
 @cindex Web
 @findex browse-url
@@ -1606,7 +1606,7 @@ browse-url}は、URLの入力を求め、それをフォローします。ポイ
 P browse-url @key{RET}}とタイプすることにより表示される、パッケージのコメントを参照してください。
 
 @node Goto Address mode
-@subsection Activating URLs
+@subsection URLのアクティブ化
 @findex goto-address-mode
 @cindex mode, Goto Address
 @cindex Goto Address mode
@@ -1628,7 +1628,7 @@ References}を参照してください)、そのURLをフォローできます�
   モードフックや受信メッセージを表示するフック(たとえばRmailの@code{rmail-show-message-hook}や、MH-Eの@code{mh-show-mode-hook})に@code{goto-address-mode}を追加するのは便利かもしれません。Gnusには類似の機能があるので必要ありません。
 
 @node FFAP
-@subsection Finding Files and URLs at Point
+@subsection ポイント位置のファイルやURLを開く
 @findex find-file-at-point
 @findex ffap
 @findex dired-at-point
@@ -1687,7 +1687,7 @@ ffap-bindings}とタイプします。これにより、以下のキーバイン
 @end table
 
 @node Amusements
-@section Other Amusements
+@section その他の娯楽
 @cindex boredom
 
 @findex animate-birthday-present

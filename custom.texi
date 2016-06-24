@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Customization
-@chapter Customization
+@chapter カスタマイズ
 @cindex customization
 
   このチャプターでは、Emacsの振る舞いをカスタマイズするシンプルな方法をいくつか説明します。
@@ -32,7 +32,7 @@ Manual}を参照してください。
 @end menu
 
 @node Easy Customization
-@section Easy Customization Interface
+@section Easy Customizationインターフェース
 
 @cindex settings
 @cindex user option
@@ -60,7 +60,7 @@ buffer)}を作成します。
 @end menu
 
 @node Customization Groups
-@subsection Customization Groups
+@subsection カスタマイズグループ
 @cindex customization groups
 
   カスタマイズセッティングは、@dfn{カスタマイズグループ(customization
@@ -115,7 +115,7 @@ Custom}を参照してください)。マウスでクリック、またはポイ
 (@code{widget-backward})は、前のボタンまたは編集可能フィールドに後方へ移動します。
 
 @node Browsing Custom
-@subsection Browsing and Searching for Settings
+@subsection セッティングのブラウズと検索
 @findex customize-browse
 
   @kbd{M-x
@@ -141,7 +141,7 @@ customize-browse}は、利用可能なセッティングをブラウズする別
 customize-browse}では、この方法によりセッティングを変更します。
 
 @node Changing a Variable
-@subsection Changing a Variable
+@subsection 変数の変更
 
   以下は変数またはユーザーオプションが、カスタマイズバッファーではどのように表示されるかの例です:
 
@@ -267,7 +267,7 @@ for Future Sessions]}ボタンを使用するのと同様です。
   @samp{[Exit]}ボタンはカスタマイズバッファーを、バッファーリストの最後のバッファーに隠し(bury)ます。カスタマイズバッファーをkillさせるようにするには、変数@code{custom-buffer-done-kill}を@code{t}に変更します。
 
 @node Saving Customizations
-@subsection Saving Customizations
+@subsection カスタマイズの保存
 
   カスタマイズバッファーでは、カスタマイズしたセッティングの@samp{[State]}ボタンで@samp{Save for Future
 Sessions}を選択することにより、それを@dfn{保存(save)}できます。@kbd{C-x C-s}
@@ -305,7 +305,7 @@ File}を参照してください)にコードを書き込むことにより保�
   Emacsが@option{-q}または@option{--no-init-file}オプションで呼び出されたときは、カスタマイズを初期化ファイルに保存しません。なぜならそのようなセッションからカスタマイズを保存することにより、初期化ファイルに記述されていた他のすべてのカスタマイズが消されてしまうからです。
 
 @node Face Customization
-@subsection Customizing Faces
+@subsection フェイスのカスタマイズ
 @cindex customizing faces
 @cindex faces, customizing
 @cindex fonts and faces
@@ -358,7 +358,7 @@ Attributes]}に変化し、これはすべての属性リストを表示しま�
 All Kinds of Displays}を選択してください。
 
 @node Specific Customization
-@subsection Customizing Specific Items
+@subsection 特定のアイテムのカスタマイズ
 
 @table @kbd
 @item M-x customize-option @key{RET} @var{option} @key{RET}
@@ -403,7 +403,7 @@ customize-saved}を使用します。セットしたが保存していないカ�
 customize-unsaved}を使用します。
 
 @node Custom Themes
-@subsection Custom Themes
+@subsection カスタムテーマ
 @cindex custom themes
 
   @dfn{カスタムテーマ(Custom
@@ -455,7 +455,7 @@ Themes*}バッファーのその行で、@kbd{?}とタイプするか、Emacsの
 describe-theme}とタイプしてテーマ名を入力してください。
 
 @node Creating Custom Themes
-@subsection Creating Custom Themes
+@subsection カスタムテーマの作成
 @cindex custom themes, creating
 
 @findex customize-create-theme
@@ -488,7 +488,7 @@ Theme*}バッファーを使用するかわりに、テーマファイルを直�
 The Emacs Lisp Reference Manual}を参照してください。
 
 @node Variables
-@section Variables
+@section 変数
 @cindex variable
 
   @dfn{変数(variable)}とは、値をもつLipシンボルです。このようなシンボルの名前は、@dfn{変数名(variable
@@ -519,7 +519,7 @@ v}
 @end menu
 
 @node Examining
-@subsection Examining and Setting Variables
+@subsection 変数の確認とセット
 @cindex setting variables
 
 @table @kbd
@@ -585,7 +585,7 @@ Interaction}を参照してください)。
 File}を参照してください)。
 
 @node Hooks
-@subsection Hooks
+@subsection フック
 @cindex hook
 @cindex running a hook
 
@@ -666,7 +666,7 @@ Mode}を参照してください)はTextモードから派生しており、HTML
   フック変数がバッファーローカルな場合、グローバル変数のかわりにバッファーローカル変数が使用されます。しかしバッファーローカル変数が要素@code{t}を含む場合は、グローバル変数も同様に実行されます。
 
 @node Locals
-@subsection Local Variables
+@subsection ローカル変数
 
 @table @kbd
 @item M-x make-local-variable @key{RET} @var{var} @key{RET}
@@ -722,7 +722,7 @@ locals: 永久にローカル)}な変数を除いて、そのバッファーの�
 @end example
 
 @node File Variables
-@subsection Local Variables in Files
+@subsection ファイル内のローカル変数
 @cindex local variables in files
 @cindex file local variables
 
@@ -734,7 +734,7 @@ locals: 永久にローカル)}な変数を除いて、そのバッファーの�
 @end menu
 
 @node Specifying File Variables
-@subsubsection Specifying File Variables
+@subsubsection ファイル変数の指定
 
   ファイルローカル変数を指定するには2つの方法があります。1つは最初の行に記述する方法で、もう1つはローカル変数リストを使用する方法です。以下は最初の行でこれらを指定する方法の例です:
 
@@ -850,7 +850,7 @@ Lockモードを無効にする例です。
 normal-mode}を使用します。@ref{Choosing Modes}を参照してください。
 
 @node Safe File Variables
-@subsubsection Safety of File Variables
+@subsubsection 安全なファイル変数
 
   ファイルローカル変数が危険な場合もあります。他の誰かのファイルをvisitするとき、そのファイルのローカル変数リストがEmacsに何を行なうか、告げるものはありません。@code{eval}
 ``variable''や、その他の@code{load-path}などにたいする不正な値は、実行する意図がないLispコードを実行するかもしれません。
@@ -875,7 +875,7 @@ Customization}を参照してください)。
   例外として、評価する任意の@code{eval}形式が、変数@code{safe-local-eval-forms}で指定された形式の場合、Emacsは確認を求めません。
 
 @node Directory Variables
-@subsection Per-Directory Local Variables
+@subsection ディレクトリーごとのローカル変数
 @cindex local variables, for all files in a directory
 @cindex directory-local variables
 @cindex per-directory local variables
@@ -934,7 +934,7 @@ File Variables}を参照してください)。
   ディレクトリーローカル変数は、Diredバッファー(@ref{Dired}を参照してください)のような、ファイルを直接visitしていないが、ディレクトリーで処理を行なうバッファーにたいしても効果があります。
 
 @node Key Bindings
-@section Customizing Key Bindings
+@section キーバインディングのカスタマイズ
 @cindex key bindings
 
   このセクションでは、キーをコマンドにマップする@dfn{キーバインド(key
@@ -956,7 +956,7 @@ Rebinding}を参照してください)。
 @end menu
 
 @node Keymaps
-@subsection Keymaps
+@subsection キーマップ
 @cindex keymap
 
   @ref{Commands}で説明されているように、各Emacsコマンドは、対話的に使用することを条件として定義されたLisp関数です。すべてのLisp関数と同様に、コマンドは小文字とハイフンからなる関数名をもちます。
@@ -985,7 +985,7 @@ global-set-key}のような、キーをリバインドするコマンドは、�
 [}で始まることもしばしばあります)。Emacsが端末タイプを理解する場合、自動的にそのようなシーケンスを1つの入力イベントとして処理します。
 
 @node Prefix Keymaps
-@subsection Prefix Keymaps
+@subsection プレフィクスキーマップ
 
   内部的には、Emacsは各キーマップの1つのイベントだけを記録します。複数イベントのキーシーケンスの解釈は、キーマップの連鎖を生じます。最初のイベントにたいして最初のキーマップが定義を与え、シーケンス内の2番目のイベントを探すのに他のキーマップが使用され...と連鎖していきます。したがって@kbd{C-x}や@key{ESC}などのプレフィクスキーは独自のキーマップをもち、それらはプレフィクスの直後のイベントにたいする定義を保持します。
 
@@ -1018,7 +1018,7 @@ Keymaps,,,elisp, The Emacs Lisp Reference Manual}を参照してください。
 @end itemize
 
 @node Local Keymaps
-@subsection Local Keymaps
+@subsection ローカルキーマップ
 
 @cindex local keymap
 @cindex minor mode keymap
@@ -1031,7 +1031,7 @@ C-z}にローカルな意味を提供します。これは@kbd{C-c}で始まる�
   これを別の方法で考えると、Emacsはキーシーケンス全体のバインディングにたいして、複数のキーマップを1つずつ探して、複数イベントキーシーケンスを処理すると考えることができます。最初にマイナーモードが有効な場合はマイナーモードのキーマップをチェックして、次にメジャーモードのキーマップをチェックして、それからグローバルキーマップをチェックするのです。これはキーの照合が機能する正確な方法ではありませんが、通常の場面における結果を理解するには充分です。
 
 @node Minibuffer Maps
-@subsection Minibuffer Keymaps
+@subsection ミニバッファーキーマップ
 
 @cindex minibuffer keymaps
 @vindex minibuffer-local-map
@@ -1058,7 +1058,7 @@ completion)と慎重な補完(cautious completion)のためのキーマップで
 @end itemize
 
 @node Rebinding
-@subsection Changing Key Bindings Interactively
+@subsection 対話的なキーバインディングの変更
 @cindex key rebinding, this session
 @cindex redefining keys, this session
 @cindex binding keys
@@ -1117,7 +1117,7 @@ c}を使用します。このマニュアルのキーのドキュメントにも
   間違ってコマンドを呼び出すことから自分を守りたい場合、そのキーを未定義にするより、コマンドを無効にするほうがよいでしょう。無効にされたコマンドは、実際にそれを実行したくなったとき、少しの手間で呼び出すことができます。@ref{Disabling}を参照してください。
 
 @node Init Rebinding
-@subsection Rebinding Keys in Your Init File
+@subsection キーのリバインド
 @cindex rebinding major mode keys
 @c This node is referenced in the tutorial.  When renaming or deleting
 @c it, the tutorial needs to be adjusted.  (TUTORIAL.de)
@@ -1204,7 +1204,7 @@ n}と@kbd{C-c p}にローカルバインディングを追加するために、�
 @end example
 
 @node Modifier Keys
-@subsection Modifier Keys
+@subsection 修飾キー
 @cindex modifier keys
 
   Emacsでは、デフォルトのキーバインディングがセットアップされているので、修飾されたアルファベット文字は大文字小文字が区別されません。つまり@kbd{C-A}は@kbd{C-a}と同じことを行い、@kbd{M-A}は@kbd{M-a}と同じことを行ないます。これはアルファベット文字だけに当てはまり、他のキーの``シフトキーが押された(shifted)''バージョンには適用されません。たとえば、@kbd{C-@@}は@kbd{C-2}と同じではありません。
@@ -1222,7 +1222,7 @@ C-a}とタイプします(残念なことに同じ文字にたいして@kbd{C-x
 @@}を使用して、2つの修飾を追加する方法はありません。なぜなら最初の1つは2回目の@kbd{C-x}にたいして作用するからです)。
 
 @node Function Keys
-@subsection Rebinding Function Keys
+@subsection ファンクションキーのリバインド
 
   キーシーケンスには、通常の文字と同じようにファンクションキーを含めることができます。Lisp文字(実際は整数です)がキーボードの文字を表すように、Lispシンボルはファンクションキーを表します。ファンクションキーのラベルに示された単語が、それにタイプするLispシンボルの名前になります。以下は一般的なファンクションキーにたいする、慣例的なLisp名です:
 
@@ -1269,7 +1269,7 @@ Lock}がオフの場合、このキーは@code{kp-up}を生成し、これは@ke
 Customization}を参照してください)。キーをリバインドして、数引数を発行するなど、他のタスクを行なうことができます。
 
 @node Named ASCII Chars
-@subsection Named @acronym{ASCII} Control Characters
+@subsection 名前のある@acronym{ASCII}コントロール文字
 
   当初@key{TAB}、@key{RET}、@key{BS}、@key{LFD}、@key{ESC}、@key{DEL}は、特定の@acronym{ASCII}コントロール文字の名前として使用され、多用されるために自身の特別なキーをもつようになりました。たとえば@key{TAB}は@kbd{C-i}の別の名前です。その後、ユーザーはEmacsでこれらのキーと、@key{Ctrl}キーと一緒にタイプするコントロール文字を区別できると便利なことに気づきました。したがってほとんどの現代的な端末では、これらは同じではありません。つまり@key{TAB}は@kbd{C-i}と異なります。
 
@@ -1280,7 +1280,7 @@ Customization}を参照してください)。キーをリバインドして、�
   通常の@acronym{ASCII}端末では、@key{TAB}と@kbd{C-i}(および同じような他のペアー)を区別する方法はありません。なぜなら端末はどちらの場合も同じ文字を送るからです。
 
 @node Mouse Buttons
-@subsection Rebinding Mouse Buttons
+@subsection マウスボタンのリバインド
 @cindex mouse button events
 @cindex rebinding mouse buttons
 @cindex click events
@@ -1358,7 +1358,7 @@ horizontal scrolling, and people don't use them often.
   キーシーケンスにマウスボタンを複数配することもできますが、これは通常行なわれません。
 
 @node Disabling
-@subsection Disabling Commands
+@subsection コマンドの無効化
 @cindex disabled command
 
   コマンドを無効にするとは、そのコマンドを対話的に呼び出しユーザーに確認を求めることを意味します。コマンドを無効にする目的は、ユーザーが間違ってコマンドを実行するのを防ぐためです。わたしたちは初心者を混乱させるようなコマンドにたいして、これを行なっています。
@@ -1392,7 +1392,7 @@ Options}を参照してください)で呼び出された場合、これらの�
   コマンドが無効にされているかどうかは、それを呼び出すのに使用されるキーとは独立しています。@kbd{M-x}を使用してコマンドを呼び出しても、無効化は適用されます。しかしLispプログラムから関数として呼び出す場合、コマンドの無効化は効力をもちません。
 
 @node Init File
-@section The Emacs Initialization File
+@section Emacs初期化ファイル
 @cindex init file
 @cindex .emacs file
 @cindex ~/.emacs file
@@ -1443,7 +1443,7 @@ Manual}を参照してください。
 @end menu
 
 @node Init Syntax
-@subsection Init File Syntax
+@subsection initファイルの構文
 
   initファイルには、1つ以上のLisp式が含まれています。式のそれぞれは引数をともなう関数名で、それらはすべてカッコで括られています。たとえば@code{(setq
 fill-column
@@ -1487,7 +1487,7 @@ Lispの文字定数の構文は、たとえば@code{?x}、@code{?\n}、@code{?\"
 @end table
 
 @node Init Examples
-@subsection Init File Examples
+@subsection initファイルの例
 
   以下はLisp式で一般的に行ないたいような事柄の例です:
 
@@ -1679,7 +1679,7 @@ Textモードで@samp{$}に句読点構文をもたせます。@samp{$}にたい
 @end itemize
 
 @node Terminal Init
-@subsection Terminal-specific Initialization
+@subsection 端末固有の初期化
 
   各端末タイプは、Emacsをその端末タイプで実行するときEmacsにロードされるLispライブラリーをもつことができます。@var{termtype}という名前の端末タイプにたいして、そのライブラリーは@file{term/@var{termtype}}と呼ばれます。これは通常のようにディレクトリー@code{load-path}を検索することにより見つけられ、サフィックスは@samp{.elc}と@samp{.el}です。通常はほとんどのEmacsライブラリーがあるディレクトリーの、サブディレクトリー@file{term}にあります。
 
@@ -1696,7 +1696,7 @@ Textモードで@samp{$}に句読点構文をもたせます。@samp{$}にたい
   Emacsは初期化の最後、@file{.emacs}と端末固有ライブラリーの両方が読み込まれた後に、フック@code{tty-setup-hook}を実行します。端末固有ライブラリーの任意の部分をオーバーライドしたい場合や、ライブラリーをもたない端末の初期化を定義したい場合は、このフックにフック関数を追加します。@ref{Hooks}を参照してください。
 
 @node Find Init
-@subsection How Emacs Finds Your Init File
+@subsection Emacsがinitファイルを探す方法
 
   Emacsは通常、@file{.emacs}を探すために環境変数@env{HOME} (@ref{General Variables,
 HOME}を参照してください)を使用します。これはファイル名での@samp{~}を意味します。@file{~/}の中に@file{.emacs}(または@file{.emacs.el})が見つからない場合、Emacsは@file{~/.emacs.d/init.el}(@file{~/.emacs.el}と同様に、バイトコンパイルされている可能性があります)を探します。
@@ -1707,7 +1707,7 @@ HOME}を参照してください)を使用します。これはファイル名�
   より正確には、最初にEmacsはどのユーザーのinitファイルを使用するか決定します。Emacsは環境変数@env{LOGNAME}と@env{USER}からユーザー名を取得します。どちらも存在しない場合、実効ユーザーIDを使用します。ユーザー名が実ユーザーIDとマッチしたとき、Emacsは@env{HOME}を使用します。そうでない場合、Emacsはシステムのユーザーデータベースの、そのユーザー名に対応するホームディレクトリーを探します。
 
 @node Init Non-ASCII
-@subsection Non-@acronym{ASCII} Characters in Init Files
+@subsection initファイル内の非@acronym{ASCII}文字
 @cindex international characters in @file{.emacs}
 @cindex non-@acronym{ASCII} characters in @file{.emacs}
 @cindex non-@acronym{ASCII} keys, binding

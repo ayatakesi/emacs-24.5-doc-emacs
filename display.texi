@@ -9,7 +9,7 @@
 
 @c See file emacs.texi for copying conditions.
 @node Display
-@chapter Controlling the Display
+@chapter ディスプレーの制御
 
   ウィンドウに入りきらない大きなバッファーでは、Emacsはその一部しか表示できません。このチャプターでは、見たい部分のテキストを指定するコマンドや変数と、どのようにしてテキストが表示されるかを説明します。
 
@@ -40,7 +40,7 @@
 @end menu
 
 @node Scrolling
-@section Scrolling
+@section スクロール
 @cindex scrolling
 
   ウィンドウがバッファーのすべてのテキストを表示するには小さい場合、その一部だけが表示されます。@dfn{スクロール}コマンドは、バッファーで表示される部分を変更します。
@@ -104,7 +104,7 @@ scroll-down-line}は、現在のウィンドウを1行スクロールさせま�
 Rebinding}を参照してください)。
 
 @node Recentering
-@section Recentering
+@section センタリング
 
 @table @kbd
 @item C-l
@@ -148,7 +148,7 @@ recenter}は、@code{recenter-top-bottom}と同じように振る舞いますが
 (@code{reposition-window})は、有用な情報がスクリーンに表示されるように、現在のウィンドウを発見的な手法によりスクロールします。たとえばLispファイルの場合、このコマンドは可能な限り現在のdefun全体がスクリーン上に表示されるよう試みます。
 
 @node Auto Scrolling
-@section Automatic Scrolling
+@section 自動スクロール
 
 @cindex automatic scrolling
   ポイントが表示されているテキスト部分から外に移動すると、Emacsは@dfn{自動スクロール(automatic
@@ -173,7 +173,7 @@ scrolling)}の処理を行います。通常自動スクロールは、ウィン
   変数@code{scroll-margin}は(たとえscroll-up-aggressivelyやscroll-down-aggressivelyに、上端または下端からのマージンがウィンドウにたいして占める割合より大きくなるような@var{f}を指定していても)、ポイントがウィンドウの上端または下端にどれだけ近づけるかを制限します。変数の値にはスクリーン行の行数です。もしポイントがウィンドウの上端または下端から指定した行数の位置にくると、Emacsは自動的にスクロールします。デフォルトでは@code{scroll-margin}は0です。
 
 @node Horizontal Scrolling
-@section Horizontal Scrolling
+@section 水平スクロール
 @cindex horizontal scrolling
 
 @vindex auto-hscroll-mode
@@ -211,7 +211,7 @@ scrolling)}は、ウィンドウの行を右方向に移動させます。その
   これらのコマンドでウィンドウを水平方向にスクロールすると、自動水平スクロールの下限値がセットされます。自動スクロールはウィンドウのスクロールを続けますが、前に@code{scroll-left}にセットされた値を越えて右にスクロールできなくなります。
 
 @node Narrowing
-@section Narrowing
+@section ナローイング
 @cindex widening
 @cindex restriction
 @cindex narrowing
@@ -260,7 +260,7 @@ Info}を参照してください。
   ナローイングは、それを理解していないユーザーを容易に混乱させるので、通常@code{narrow-to-region}コマンドは無効になっています。このコマンドを使おうとすると、Emacsは確認を求め、有効にするオプションを提供します。このコマンドを有効にすると、それ以降は確認を求められなくなります。@ref{Disabling}を参照してください。
 
 @node View Mode
-@section View Mode
+@section Viewモード
 @cindex View mode
 @cindex mode, View
 
@@ -284,7 +284,7 @@ view-buffer}は、既存のEmacsバッファー名を入力として求め、そ
 view-file}はファイル名を入力として求め、そのファイルをvisitしてViewモードを有効にします。
 
 @node Follow Mode
-@section Follow Mode
+@section Followモード
 @cindex Follow mode
 @cindex mode, Follow
 @findex follow-mode
@@ -300,7 +300,7 @@ follow-mode}とタイプします。それ以降はバッファーをどちら�
   Followモードをオフにするには、もう一度@kbd{M-x follow-mode}とタイプしてください。
 
 @node Faces
-@section Text Faces
+@section テキストのフェイス
 @cindex faces
 
   Emacsは@dfn{フェイス(faces)}と呼ばれる仕組みを通じて、テキストをいくつかの異なるスタイルで表示できます。フェイスにはfont(フォント)、height(高さ)、weight(太さ)、slant(傾き)、foreground(前景)およびbackground(背景)、underline(アンダーライン)、overline(オーバーライン)などの様々な@dfn{フェイス属性(face
@@ -332,7 +332,7 @@ fonts)を表示できますが、いくつかのコマンド、特にインデ�
 Lockモードに割り当てられている場合は、使わないことを推奨します。
 
 @node Colors
-@section Colors for Faces
+@section フェイスのカラー
 @cindex color name
 @cindex RGB triplet
 
@@ -360,7 +360,7 @@ set-face-background}で、フェイスのフォアグラウンドとバックグ
 Parameters}を参照してください。
 
 @node Standard Faces
-@section Standard Faces
+@section 標準フェイス
 @cindex standard faces
 
   以下はテキストの外見を指定する標準フェイスです。これらのフェイスの効果が欲しい場合は、特定のテキストに適用することができます。
@@ -476,7 +476,7 @@ Display}を参照してください。
 @end table
 
 @node Text Scale
-@section Text Scale
+@section テキストのスケール
 
 @cindex adjust buffer face height
 @findex text-scale-adjust
@@ -509,7 +509,7 @@ C--}と同様、デフォルトフェイスを大きくまたは小さくしま�
   上記のコマンドは、現在のフォント倍率が1以外のときは、自動的にマイナーモード@code{text-scale-mode}を有効にし、そうでない場合は無効にします。
 
 @node Font Lock
-@section Font Lock mode
+@section Font Lockモード
 @cindex Font Lock mode
 @cindex mode, Font Lock
 @cindex syntax highlighting and coloring
@@ -593,7 +593,7 @@ Lockと呼ばれます。カスタマイズグループ@samp{jit-lock}の値を�
 Lockがどのように振る舞うか制御できます。@ref{Specific Customization}を参照してください。
 
 @node Highlight Interactively
-@section Interactive Highlighting
+@section インタラクティブなハイライト
 @cindex highlighting by matching
 @cindex interactive highlighting
 @cindex Highlight Changes mode
@@ -695,7 +695,7 @@ Lockモードがパターンを探して、それを自動的に抽出するべ�
 @end table
 
 @node Fringes
-@section Window Fringes
+@section ウィンドウのフリンジ
 @cindex fringes
 
 @findex set-fringe-style
@@ -719,7 +719,7 @@ Boundaries}を参照してください)や、デバッグ(@ref{Debuggers}を参�
   現在の行がウィンドウの幅と正確に一致して、ポイントがその行の行末にある場合、フリンジにはカーソルが描画されます。これを無効にするには、変数@code{overflow-newline-into-fringe}を@code{nil}に変更します。これによりEmacsはウィンドウ幅と同じ長さの行にたいしても、継続または切り詰めを行います。
 
 @node Displaying Boundaries
-@section Displaying Boundaries
+@section バウンダリーの表示
 
 @vindex indicate-buffer-boundaries
   グラフィカルなディスプレーでは、Emacsはバッファーのバウンダリー(boundary:
@@ -736,7 +736,7 @@ right))}は、最上行の左フリンジにかぎカッコを表示し、右フ
 .  left)  (bottom . left))}を使います。
 
 @node Useless Whitespace
-@section Useless Whitespace
+@section 不要なスペース
 
 @cindex trailing whitespace
 @cindex whitespace, trailing
@@ -801,7 +801,7 @@ whitespace-mode}とタイプします。視覚化される空白文字の種類�
 @end table
 
 @node Selective Display
-@section Selective Display
+@section 選択的な表示
 @cindex selective display
 @findex set-selective-display
 @kindex C-x $
@@ -823,7 +823,7 @@ whitespace-mode}とタイプします。視覚化される空白文字の種類�
   バッファーのテキストの一部を隠す他の方法については、@ref{Outline Mode}を参照してください。
 
 @node Optional Mode Line
-@section Optional Mode Line Features
+@section モードラインのオプション
 
 @cindex buffer size display
 @cindex display of buffer size
@@ -908,7 +908,7 @@ Customization}を参照してください。
   モードラインに表示される改行フォーマットは、変数@code{eol-mnemonic-unix}、@code{eol-mnemonic-dos}、@code{eol-mnemonic-mac}、および@code{eol-mnemonic-undecided}をセットすることにより、カスタマイズできます。
 
 @node Text Display
-@section How Text Is Displayed
+@section テキストが表示される方法
 @cindex characters (in text)
 @cindex printing character
 
@@ -951,7 +951,7 @@ Chars,, Glyphless Character Display, elisp, The Emacs Lisp Reference
 Manual}を参照してください。
 
 @node Cursor Display
-@section Displaying the Cursor
+@section カーソルの表示
 @cindex text cursor
 
 @vindex visible-cursor
@@ -998,7 +998,7 @@ hl-line-mode}を使います。このモードをグローバルに有効また�
 global-hl-line-mode}を使用してください。
 
 @node Line Truncation
-@section Line Truncation
+@section 行の切り詰め
 
 @cindex truncation
 @cindex line truncation, and fringes
@@ -1016,7 +1016,7 @@ toggle-truncate-lines}を使います。これは変数@code{truncate-lines}を�
 Window}を参照してください。
 
 @node Visual Line Mode
-@section Visual Line Mode
+@section Visual Lineモード
 
 @cindex word wrap
   このモードでは、通常の行継続の代わりに、@dfn{単語での折り返し}が使われます。通常の行継続のように、長い論理行は2行以上のスクリーン行に分割されます。しかしEmacsはウィンドウの右端の近くの、単語の境界で折り返すよう試みます。これは単語の途中で折り返さないことにより、可読性を高めるためです。
@@ -1050,7 +1050,7 @@ Rebinding}を参照してください。
 Lineモードは、長い論理行を含むファイルを編集するときに使われる場合があり、折り返し行すべてにフリンジの表示をすると見にくくなるためです。これを変更するには、変数@code{visual-line-fringe-indicators}をカスタマイズしてください。
 
 @node Display Custom
-@section Customization of Display
+@section ディスプレーのカスタマイズ
 
   このセクションでは、Emacsスクリーンの外観を制御するさまざまな変数を説明します。初心者はスキップして構いません。
 

@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Basic
-@chapter Basic Editing Commands
+@chapter 基本的な編集コマンド
 
 @kindex C-h t
 @findex help-with-tutorial
@@ -32,7 +32,7 @@ t} (@code{help-with-tutorial})とタイプしてください。
 @end menu
 
 @node Inserting Text
-@section Inserting Text
+@section テキストの挿入
 
 @cindex insertion
 @cindex graphic characters
@@ -98,7 +98,7 @@ sign: Unicode code-point @code{U+221E})を挿入します。
 @key{RET}}への数引数は、文字のコピーを何個挿入するかを指定します(@ref{Arguments}を参照してください)。
 
 @node Moving Point
-@section Changing the Location of Point
+@section ポイント位置の変更
 
 @cindex arrow keys
 @cindex moving point
@@ -264,7 +264,7 @@ Lines}を参照してください。@code{line-move-visual}などの変数をセ
   通常@kbd{C-n}をバッファーの最後の行で使用した場合、バッファーの最後でストップします。しかし変数@code{next-line-add-newlines}に非@code{nil}値をセットした場合、バッファーの最後の行で@kbd{C-n}を押すと、行を追加してその行に移動します。
 
 @node Erasing
-@section Erasing Text
+@section テキストの消去
 @cindex killing characters and lines
 @cindex deleting characters and lines
 @cindex erasing characters and lines
@@ -310,7 +310,7 @@ Does Not Delete}を参照してください。
   @kbd{C-k}と関連するコマンドについては、@ref{Killing}を参照してください。
 
 @node Basic Undo
-@section Undoing Changes
+@section 変更のアンドゥ
 
 @table @kbd
 @item C-/
@@ -331,7 +331,7 @@ u}と@kbd{C-_})にバインドされているコマンド@code{undo}を使って
   @code{undo}コマンドについてさらに学ぶには、@ref{Undo}を参照してください。
 
 @node Basic Files
-@section Files
+@section ファイル
 
   Emacsのバッファーに挿入したテキストは、Emacsのセッションの間だけ存在します。テキストを永続化させるためには、それを@dfn{ファイル(file)}に保存しなければなりません。
 
@@ -356,7 +356,7 @@ C-s}で保存するとき、Emacsは実際にファイルを作成します。
   Emacsでファイルを使うことについてさらに学ぶには、@ref{Files}を参照してください。
 
 @node Basic Help
-@section Help
+@section ヘルプ
 
 @cindex getting help with keys
   もしキーが何をするか忘れた場合、@kbd{C-h k}
@@ -369,7 +369,7 @@ k}以外にも、異なる種類のヘルプを提供する多くのヘルプコ
   詳細については、@ref{Help}を参照してください。
 
 @node Blank Lines
-@section Blank Lines
+@section 空行
 
 @cindex inserting blank lines
 @cindex deleting blank lines
@@ -400,7 +400,7 @@ C-o}は1行残してすべての空行を削除します。ポイントが単独
 C-o}はその空行を削除します。ポイントが空でない行にある場合、@kbd{C-x C-o}は、後続する空行があれば、それらすべてを削除します。
 
 @node Continuation Lines
-@section Continuation Lines
+@section 継続行
 
 @cindex continuation line
 @cindex wrapping
@@ -433,7 +433,7 @@ Lineモードでは、@code{C-a}、@code{C-n}、@code{C-k}などの編集コマ�
 Line Mode}を参照してください。
 
 @node Position Info
-@section Cursor Position Information
+@section カーソル位置の情報
 
   バッファーのある部分にたいしてサイズや位置、単語数や行数についての情報を得るためのコマンドがあります。
 
@@ -502,7 +502,7 @@ Char: C (67, #o103, #x43) point=252 of 889 (28%) <231-599> column=0
 ここで、新たに追加された2つの数字が、ポイントを設定できる文字位置の下限と上限を示します。これら2つの位置のあいだの文字が参照可能な文字です。@ref{Narrowing}を参照してください。
 
 @node Arguments
-@section Numeric Arguments
+@section 数引数
 @cindex numeric arguments
 @cindex prefix arguments
 @cindex arguments to commands
@@ -563,7 +563,7 @@ C-o}(空行を``たくさん''作る)、@kbd{C-u C-k}(4行削除する)、など
 argument)}という言葉を使います。
 
 @node Repeating
-@section Repeating a Command
+@section コマンドの繰り返し
 @cindex repeating a command
 
   単純なキーで呼び出されるものや、@kbd{M-x @var{command-name}

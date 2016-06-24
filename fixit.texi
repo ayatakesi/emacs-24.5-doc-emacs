@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Fixit
-@chapter Commands for Fixing Typos
+@chapter タイプミスを訂正するコマンド
 @cindex typos, fixing
 @cindex mistakes, correcting
 
@@ -26,7 +26,7 @@ u}と@kbd{C-_}にもバインドされています)。これは1つのコマン�
 @end menu
 
 @node Undo
-@section Undo
+@section Undo(取り消し)
 @cindex undo
 @cindex changes, undoing
 
@@ -80,7 +80,7 @@ limit)をセットします。この制限を超えるような以前のコマ�
 Reporting Bugs}を参照してください。
 
 @node Transpose
-@section Transposing Text
+@section テキストの入れ替え
 
 @table @kbd
 @item C-t
@@ -122,7 +122,7 @@ C-M-t}は、引数を指定しない@kbd{C-M-t}の効果を取り消します。
   数引数0には特別な意味が割り当てられています(繰り返し回数としては、0に意味がありません)。これはポイントの後ろで終わる文字(または単語、式、行)を、マーク位置で終わる文字(または単語、式、行)と入れ替えます。
 
 @node Fixing Case
-@section Case Conversion
+@section 大文字小文字の変換
 
 @table @kbd
 @item M-- M-l
@@ -139,7 +139,7 @@ C-M-t}は、引数を指定しない@kbd{C-M-t}の効果を取り消します。
   単語の大文字小文字を間違えてタイプするのは、とても一般的な間違えです。そのため、単語の大文字小文字の変換コマンド@kbd{M-l}、@kbd{M-u}、@kbd{M-c}に負の数引数を指定すると、カーソルを移動しないという特性があります。最後に入力した単語のタイプミスに気付いたら、単に大文字小文字を変換して、タイプを続けることができます。@ref{Case}を参照してください。
 
 @node Spelling
-@section Checking and Correcting Spelling
+@section スペルのチェックと訂正
 @cindex spelling, checking and correcting
 @cindex checking spelling
 @cindex correcting spelling

@@ -10,7 +10,7 @@
 @c This file is included either in emacs-xtra.texi (when producing the
 @c printed version) or in the main Emacs manual (for the on-line version).
 @node Autorevert
-@section Auto Reverting Non-File Buffers
+@section 非ファイルバッファーの自動リバート
 
 通常Global Auto
 Revertモードは、ファイルのバッファーだけをリバートします。非ファイルバッファーにたいして自動リバートを行うには、2つの方法があります。1つはそれらのバッファーにたいしてAuto
@@ -34,7 +34,7 @@ Menuだけに適用されます)。この場合、自動リバートはリバー
 @end menu
 
 @node Auto Reverting the Buffer Menu
-@subsection Auto Reverting the Buffer Menu
+@subsection Buffer Menuの自動リバート
 
 非ファイルバッファーの自動リバートが有効なとき、必要性の有無にかかわらず、Buffer
 Menuは@code{auto-revert-interval}で指定された秒数ごとに自動的にリバートされます。(これは多分実際にリバートする必要があるかチェックするより長い間隔です)。
@@ -43,7 +43,7 @@ Buffer
 Menuがmodifiedと不適切にマークされたときは、@kbd{g}により手動でリバートして自動リバートを再開します。しかし特定のバッファーにたいして削除や表示のマークをつけた場合は、慎重になる必要があります。なぜならリバートはすべてのマークを消去するからです。マークの追加はバッファーのmodifiedフラグをセットするという事実は、自動的なマークの消去からの自動リバートを防ぎます。
 
 @node Auto Reverting Dired
-@subsection Auto Reverting Dired buffers
+@subsection Diredバッファーの自動リバート
 
 Diredバッファーの自動リバートは、現在のところUnixスタイルのオペレーティングシステムだけで機能します。他のシステムでは満足に機能しないでしょう。
 
@@ -55,7 +55,7 @@ Diredバッファーがmodifiedとマークされ、残したい変更がない�
 
 @c FIXME?  This should be in the elisp manual?
 @node Supporting additional buffers
-@subsection Adding Support for Auto-Reverting additional Buffers.
+@subsection 追加のバッファーにたいする自動リバートのサポートの追加
 
 このセクションは、新しいタイプのバッファーに自動リバートのサポートを追加したいElispプログラマーのために意図されています。
 

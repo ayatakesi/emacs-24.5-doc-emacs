@@ -11,7 +11,7 @@
 @c printed version) or in the main Emacs manual (for the on-line version).
 
 @node Miscellaneous VC
-@subsection Miscellaneous Commands and Features of VC
+@subsection VCのその他のコマンドと機能
 
   このセクションでは、それほど頻繁には使用されないVCの機能を説明します。
 
@@ -23,7 +23,7 @@
 @end menu
 
 @node Change Logs and VC
-@subsubsection Change Logs and VC
+@subsubsection 変更ログとVC
 
   @file{ChangeLog}ファイル
 @iftex
@@ -93,7 +93,7 @@ Check call-process status.}の場合、@file{ChangeLog}のエントリーは以�
 a}が複数のChangeLogエントリーを1度に追加するとき、それらがすべて同じ作者に、ほぼ同じ日時にチェックインされている場合、関連するログエントリーとしてそれらをグループ化します。複数のファイルにたいするログエントリーがすべての同じテキストの場合、それらを1つのエントリーにまとめます。
 
 @node VC Delete/Rename
-@subsubsection Deleting and Renaming Version-Controlled Files
+@subsubsection バージョンコントロールされたファイルの削除とリネーム
 @cindex renaming version-controlled files
 
 @table @kbd
@@ -123,7 +123,7 @@ vc-rename-file}とタイプします。これは2つの引数の入力を求め�
   現代的なバージョンコントロールシステムは、リネームにたいするビルトインのサポートがあり、リネームされたファイルは元のファイルのすべての変更履歴を保持します。CVSおよび古いバージョンコントロールシステムでは、@code{vc-rename-file}コマンドは、実際には古いファイルを新しい名前にコピーして、それを登録してから古いファイルを削除することにより機能します。この場合、変更履歴は保存されません。
 
 @node Revision Tags
-@subsubsection Revision Tags
+@subsubsection リビジョンタグ
 @cindex revision tag
 @cindex tags for version control
 
@@ -167,7 +167,7 @@ tag)}を適用できます。現代的な変更セットベースのバージョ
 SCCSを使用している場合、、そのファイルが新しい名前になったことを告げるために、タグの記録も更新しなければなりません(@code{vc-rename-file}もこれを行います)。記録された名前では、すでに存在しないマスターファイルを参照する古いタグは無効になります。VCはそれを取得しません。RCSおよびSCCSでのタグの手修正は、このマニュアルの範囲を超えるでしょう。@code{vc-rename-file}を使用することにより、ファイルを取得できる有効なタグを作成できますが、それですべての問題が解決されるわけではありません。たとえば、プログラムのいくつかのファイルは、他のファイルを名前で参照するかもしれません。少なくともmakefileはリネームしたファイルを参照するでしょう。古いタグを取得した場合、リネームされたファイルは、makefileが期待しない新しい名前で取得されます。そのため、プログラムはうまく機能しないでしょう。
 
 @node Version Headers
-@subsubsection Inserting Version Control Headers
+@subsubsection バージョンコントロールヘッダーの挿入
 
   Subversion、CVS、RCS、SCCSでは、@dfn{バージョンヘッダー(version
 headers)}と呼ばれる文字列を、ファイル内に置くことができます。そのファイルがコミットされたとき、バージョンコントロールシステムは自動的にリビジョン番号、コミットしたユーザーの名前、その他関連する情報をバージョンヘッダーに挿入します。
@@ -189,7 +189,7 @@ h}コマンドは。ポイント位置の新しい行にリストのタブで囲
 @var{format})}という形式の要素からなるリストです。@var{regexp}がバッファー名にマッチした場合、バージョンヘッダーの一部として@var{format}も挿入されます。@var{format}の中の@samp{%s}は、そのファイルのバージョンコントロールのタイプに置換されます。
 
 @node Customizing VC
-@subsection Customizing VC
+@subsection VCのカスタマイズ
 
 @vindex vc-handled-backends
   変数@code{vc-handled-backends}は、どのバージョンコントロールシステムが処理するかを決定します。デフォルト値は@code{(RCS
@@ -211,7 +211,7 @@ Arch)}で、これには、現在サポートされている、すべてのバ�
 @end menu
 
 @node General VC Options
-@subsubsection General Options
+@subsubsection 一般的なオプション
 
 @vindex vc-make-backup-files
   Emacsは通常、バージョンコントロールにより保守されるソースファイルのバックアップファイルを保存しません。バージョンコントロールを使用したファイルにもバックアップファイルを作成したいときは、変数@code{vc-make-backup-files}に非@code{nil}値をセットしてください。
@@ -228,7 +228,7 @@ i}は確認を求めずにカレントバッファーを保存し、@kbd{C-x v u
   VCモードは多くの処理を、バージョンコントロールシステムにたいする適切なシェルコマンドを実行することにより行います。@code{vc-command-messages}が非@code{nil}の場合、VCはそれが実行するシェルコマンドを示すメッセージと、コマンドが終了したときの追加のメッセージを表示します。
 
 @node RCS and SCCS
-@subsubsection Options for RCS and SCCS
+@subsubsection RCSとSCCSにたいするオプション
 
 @cindex non-strict locking (RCS)
 @cindex locking, non-strict (RCS)
@@ -248,7 +248,7 @@ Headers}を参照してください)。ヘッダー文字列がない場合、VC
   VCがSCCSの配下にあるファイルのバージョンコントロール状態を決定する方法は、RCSとほぼ同じです。しかしSCCSのバージョンヘッダーは考慮しません。したがってSCCSを使用する場合、@code{vc-mistrust-permissions}は効果がありますが、@code{vc-consult-headers}は効果がありません。
 
 @node CVS Options
-@subsubsection Options specific for CVS
+@subsubsection CVSに特有のオプション
 
 @vindex vc-cvs-global-switches
   変数@code{vc-cvs-global-switches}で、すべてのCVS操作に渡す追加のコマンドラインオプションを指定できます。これらのスイッチは@code{cvs}コマンドの直後、呼び出す操作名の前に挿入されます。

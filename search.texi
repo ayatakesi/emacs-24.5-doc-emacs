@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Search
-@chapter Searching and Replacement
+@chapter 検索と置換
 @cindex searching
 @cindex finding strings within text
 
@@ -33,7 +33,7 @@ Files}を参照してください)、@code{grep}コマンドを使った検索(@
 @end menu
 
 @node Incremental Search
-@section Incremental Search
+@section インクリメンタル検索
 @cindex incremental search
 @cindex isearch
 
@@ -58,7 +58,7 @@ search)}です。これは検索する文字列の最初の文字をタイプす
 @end menu
 
 @node Basic Isearch
-@subsection Basics of Incremental Search
+@subsection インクリメンタル検索の基本
 
 @table @kbd
 @item C-s
@@ -96,7 +96,7 @@ Ring}を参照してください。これはマークがすでにアクティブ
 (@code{isearch-backward})を使います。前方検索が検索を開始した位置より前方にある最初のマッチを探すように、後方検索は検索を開始した位置より後方にある最後のマッチを探します。
 
 @node Repeat Isearch
-@subsection Repeating Incremental Search
+@subsection インクリメンタル検索の繰り返し
 
   前方に@samp{FOO}を検索してマッチしたが、それは探しているマッチではなく、探しているのはバッファーのもっと前方に出現する@samp{FOO}だとしましょう。ここでもう1度@kbd{C-s}をタイプすることにより、検索文字列が次に出現する場所に移動します。これは何回でも繰り返すことができます。もしタイプしすぎたときは、@kbd{C-s}を@key{DEL}で取り消すことができます。同様に後方へのインクリメンタル検索では、@kbd{C-r}により後方検索が繰り返されます。
 
@@ -124,7 +124,7 @@ ring)}を使います。コマンド@kbd{M-p}または@kbd{M-n}で、リング�
   ミニバッファーの現在の検索文字列を、サーチリングのアイテムで置き換えずに編集するときは、@kbd{M-e}をタイプします。@key{RET}、@kbd{C-s}、@kbd{C-r}をタイプすれば編集を終了して、それを検索できます。
 
 @node Error in Isearch
-@subsection Errors in Incremental Search
+@subsection インクリメンタル検索でのエラー
 
   文字列が見つからなかった場合、エコーエリアに@samp{Failing
 I-Search}と表示されて、文字列とできるかぎりマッチした位置に、カーソルが移動します。つまり@samp{FOOT}を検索して@samp{FOOT}がない場合、カーソルは@samp{FOOL}という文字列の@samp{FOO}の後ろに移動します。エコーエリアではマッチに失敗した検索文字列の一部が、フェイス@code{isearch-fail}を使ってハイライトされます。
@@ -136,7 +136,7 @@ I-Search}と表示されて、文字列とできるかぎりマッチした位�
   終了コマンドの@kbd{C-g}は、検索において特別な処理を行います。このコマンドの動作は、検索の状況に依存します。もし指定した文字列の検索が成功して、さらに検索文字の入力を待っているとき、@kbd{C-g}は検索全体を取り消して、カーソルを検索を開始したときの位置に移動します。検索文字列に検索に失敗した文字が含まれているときに、@kbd{C-g}がタイプされたときは、検索文字列から検索に失敗した文字が取り除かれます。後に残るのは検索に成功した文字列で、さらに検索文字の入力を待っているので、先のケースと同様、2回目の@kbd{C-g}で検索全体が取り消されます。
 
 @node Special Isearch
-@subsection Special Input for Incremental Search
+@subsection インクリメンタル検索の特別な入力
 
   インクリメンタル検索のときタイプする文字列の中には、特別な効果をもつものがあります。
 
@@ -206,7 +206,7 @@ Replace}を参照してください。
 C-h}とタイプすると、特別なキーバインドのリストを含む、対話的なヘルプにアクセスできます。これらのキーバインドは、キーマップ@code{isearch-mode-map}の一部です(@ref{Keymaps}を参照してください)。
 
 @node Isearch Yank
-@subsection Isearch Yanking
+@subsection インクリメンタル検索でのyank
 
 @kindex C-y @r{(Incremental search)}
 @kindex M-y @r{(Incremental search)}
@@ -240,7 +240,7 @@ C-e}はテキストを小文字に変換してからコピーするので、そ�
 Isearch}を参照してください)でミニバッファーに移動してから、検索文字列の最後で@kbd{C-f}をタイプします。
 
 @node Not Exiting Isearch
-@subsection Not Exiting Incremental Search
+@subsection インクリメンタル検索を終了させない
 
 このサブセクションでは、2つのカテゴリーに属するコマンドを説明します。これらのコマンドはインクリメンタル検索の一部ではありませんが、現在のインクリメンタル検索を終了させずにタイプできます。
 
@@ -275,7 +275,7 @@ File}を参照してください)。
 @end table
 
 @node Isearch Minibuffer
-@subsection Searching the Minibuffer
+@subsection ミニバッファーの検索
 @cindex minibuffer history, searching
 
 ミニバッファーがアクティブのときインクリメンタル検索を開始すると、Emacsはミニバッファーの内容を検索します。通常のバッファーにたいする検索とは異なり、エコーエリアはミニバッファーの表示に使われているので、検索文字列はエコーエリアには表示されません。
@@ -286,7 +286,7 @@ History}を参照してください。ミニバッファーとミニバッファ
 カレントマッチがヒストリーの要素にあった場合、ヒストリーの要素はミニバッファーに取り出されます。インクリメンタル検索を正常に終了(たとえば@key{RET}をタイプ)すれば、それはミニバッファーに残ります。検索を取り消すのは@kbd{C-g}で、これによりミニバッファーの内容は検索を開始したときのものに復元されます。
 
 @node Nonincremental Search
-@section Nonincremental Search
+@section 非インクリメンタル検索
 @cindex nonincremental search
 
   Emacsには、従来式の非インクリメンタル検索もあります。これは検索を開始する前に、検索文字列全体を入力する必要があります。
@@ -308,7 +308,7 @@ History}を参照してください。ミニバッファーとミニバッファ
 @key{RET}}も同様に、コマンド@code{search-backward}を呼び出します。
 
 @node Word Search
-@section Word Search
+@section 単語検索
 @cindex word search
 
   @dfn{単語検索(word
@@ -338,7 +338,7 @@ w}は検索の方向と現在の検索文字列は変更せずに、単語検索
 matches)には適用されません。それらは単語全体がマッチしなければハイライトされません。
 
 @node Symbol Search
-@section Symbol Search
+@section シンボル検索
 @cindex symbol search
 
   @dfn{シンボル検索(symbol
@@ -369,7 +369,7 @@ _}をタイプすると、シンボル検索を無効にできます)。イン�
 @key{RET}}をタイプします。非インクリメンタル検索では、文字列の先頭と最後が、シンボルの先頭と最後にマッチする必要があります。
 
 @node Regexp Search
-@section Regular Expression Search
+@section 正規表現検索
 @cindex regexp search
 @cindex search for a regular expression
 
@@ -410,7 +410,7 @@ Isearch}を参照してください。
 Search}を参照してください。
 
 @node Regexps
-@section Syntax of Regular Expressions
+@section 正規表現の構文
 @cindex syntax of regexps
 @cindex regular expression
 @cindex regexp
@@ -506,7 +506,7 @@ set}を開始します。つまり指定された文字以外がマッチしま�
 文字集合の候補中では@samp{\}は特別ではなく、@samp{-}と@samp{]}のもつ特別な意味を除去することはありません。したがって、これらの文字が特別な意味をもたないような場所にあるときは、これらの文字をクォートすべきではありません。これでは明確ではないかもしれません。これらの特殊文字が特別な意味を@emph{もつ}場所にあるとき、バックスラッシュを前置することによりクォートされるのです。たとえば@samp{[^\]}(Lispの文字記法では@code{"[^\\]"})は、バックスラッシュ以外の任意の一文字にマッチします。
 
 @node Regexp Backslash
-@section Backslash in Regular Expressions
+@section 正規表現でのバックスラッシュ
 
   多くの場合、任意の文字を伴う@samp{\}はその文字だけに一致します。しかしいくつか例外があって、@samp{\}で始まる2文字のシーケンスが、特別な意味を持つ場合があります。シーケンス内の2文字目にくる文字は、単独で使った場合には普通の文字として扱われるものです。以下は@samp{\}の構成の表です。
 
@@ -619,7 +619,7 @@ describe-categories @key{RET}}をタイプしてください。
 elisp, The Emacs Lisp Reference Manual}.
 
 @node Regexp Example
-@section Regular Expression Example
+@section 正規表現の例
 
   以下にregexpの例を示します。これはEmacsがセンテンスの最後(末尾の空白は含まない)を認識するために、デフォルトで使用するregexp(たとえば変数@code{sentence-end-base})と似ています。
 
@@ -633,7 +633,7 @@ elisp, The Emacs Lisp Reference Manual}.
 これには2つの連続する部分があります。1つは@samp{.}、@samp{?}、@samp{!}にマッチする文字です。もう1つは閉じカッコ、クォート、カッコの0回以上の繰り返しです。
 
 @node Search Case
-@section Searching and Case
+@section 検索と大文字小文字
 
   Emacsでの検索では、テキストを小文字で指定した場合、通常は検索するテキストの大文字小文字は区別されません。したがって@samp{foo}を検索すると、@samp{Foo}や@samp{foo}もマッチします。regexp、特に文字集合でも同様に振る舞います。つまり@samp{[ab]}は、@samp{a}、@samp{A}、@samp{b}、@samp{B}もマッチします。
 
@@ -650,7 +650,7 @@ History}を参照してください)を処理する、非インクリメンタ�
 apropos-variable @key{RET} case-fold-search @key{RET}}とタイプしてください。
 
 @node Replace
-@section Replacement Commands
+@section 置換コマンド
 @cindex replacement
 @cindex search-and-replace commands
 @cindex string substitution
@@ -676,7 +676,7 @@ Isearch}を参照してください)。置換で緩いスペースマッチン�
 @end menu
 
 @node Unconditional Replace
-@subsection Unconditional Replacement
+@subsection 無条件の置換
 @findex replace-string
 
 @table @kbd
@@ -695,7 +695,7 @@ C-@key{SPC}}で戻ることができます。@ref{Mark Ring}を参照してく�
   置換コマンドでの大文字小文字の区別については、@ref{Replacement and Case}を参照してください。
 
 @node Regexp Replace
-@subsection Regexp Replacement
+@subsection 正規表現の置換
 @findex replace-regexp
 
   @kbd{M-x replace-string}コマンドは、正確にマッチする単一の文字列を置換します。コマンド@kbd{M-x
@@ -749,7 +749,7 @@ M-x replace-regexp @key{RET} ^.\@{0,72\@}$ @key{RET}
 @end example
 
 @node Replacement and Case
-@subsection Replace Commands and Case
+@subsection 置換コマンドと大文字小文字
 
   置換コマンドの最初の引数がすべて小文字の場合、置換のための検索において大文字小文字の違いを無視します。これは@code{case-fold-search}が非@code{nil}の場合です。@code{case-fold-search}を@code{nil}にセットすると、すべての検索において常に大文字小文字の違いが有効になります。
 
@@ -766,7 +766,7 @@ M-x replace-string @key{RET} foo @key{RET} bar @key{RET}
   置換文字列に大文字が使われている場合、テキストが挿入されるときは、常に大文字のままとなります。大文字が最初の引数で使用されている場合、大文字小文字の変換なしで、2番目の引数に与えられたとおりに置換されます。同様に@code{case-replace}と@code{case-fold-search}の両方が@code{nil}にセットされている場合、大文字小文字の変換なしで置換されます。
 
 @node Query Replace
-@subsection Query Replace
+@subsection 問い合わせつき置換
 @cindex query replace
 
 @table @kbd
@@ -877,7 +877,7 @@ Files}を参照してください。regexpにマッチするファイル名に�
 File Names}を参照してください。
 
 @node Other Repeating Search
-@section Other Search-and-Loop Commands
+@section その他の検索およびループコマンド
 
   ここでは正規表現にたいするマッチを検索する、その他のコマンドを説明します。これらのコマンドは、パターンに大文字が含まれていないカ、@code{case-fold-search}が非@code{nil}のときは、マッチングで大文字小文字を区別しません。@code{occur}とその変種をのぞき、これらはすべて、ポイント位置からバッファーの最後まで、リージョンがアクティブなときはリージョンにたいして処理を行います。
 

@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Files
-@chapter File Handling
+@chapter ファイルの処理
 @cindex files
 
   オペレーティングシステムは@dfn{ファイル}にデータを永続化するので、Emacsで編集するテキストの大部分はファイルから読み込んで、最終的にファイルに格納します。
@@ -41,7 +41,7 @@
 @end menu
 
 @node File Names
-@section File Names
+@section ファイルの名前
 @cindex file names
 
 @cindex default file name
@@ -82,7 +82,7 @@ File Names}を参照してください)。名前が文字@samp{~}で始まるフ
   ファイル名に非@acronym{ASCII}文字を含めることができます。@ref{File Name Coding}を参照してください。
 
 @node Visiting
-@section Visiting Files
+@section ファイルのvisit(訪問)
 @cindex visiting files
 @cindex open file
 
@@ -205,7 +205,7 @@ Modes}を参照してください)、そのファイルのために特別なロ�
 Variables}を参照してください)。
 
 @node Saving
-@section Saving Files
+@section ファイルの保存
 
   Emacsでのバッファーの@dfn{保存(Saving)}は、バッファーの内容を、そのバッファーによりvisitされているファイルに書き戻すことを意味します。
 
@@ -219,7 +219,7 @@ Variables}を参照してください)。
 @end menu
 
 @node Save Commands
-@subsection Commands for Saving Files
+@subsection ファイルを保存するコマンド
 
   ファイルの保存と書き込みに関するコマンドが、いくつかあります。
 
@@ -314,7 +314,7 @@ Modes}を参照してください。
 Simultaneous Editing}を参照してください。
 
 @node Backup
-@subsection Backup Files
+@subsection バックアップファイル
 @cindex backup file
 @vindex make-backup-files
 @vindex vc-make-backup-files
@@ -354,7 +354,7 @@ C-s}は両方を行います。まず前の内容でバックアップを作成�
 @end menu
 
 @node Backup Names
-@subsubsection Single or Numbered Backups
+@subsubsection 単一または番号つきバックアップ
 
   Emacsのバックアップファイル作成では、バックアップの名前は通常、編集されるファイル名の後ろに@samp{~}をつけて作成されます。したがって@file{eval.c}のバックアップファイルは、@file{eval.c~}になります。
 
@@ -393,7 +393,7 @@ Variables}を参照してください)。Rmailモードのようないくつか�
   変数@code{make-backup-file-name-function}に適切なLisp関数をセットすることにより、Emacsがバックアップファイル名を作る通常の方法をオーバーライドできます。
 
 @node Backup Deletion
-@subsubsection Automatic Deletion of Backups
+@subsubsection バックアップの自動削除
 
   ディスク容量の過度な消費を防ぐため、Emacsは自動的に番号つきバックアップを削除することができます。一般的にEmacsは一番古いバックアップと、一番新しいバックアップをいくつか保持し、その間にあるバックアップを削除します。これは新しいバックアップが作られる度に行なわれます。
 
@@ -407,7 +407,7 @@ Variables}を参照してください)。Rmailモードのようないくつか�
   Diredの@kbd{.}(ピリオド)コマンドでも、古いバージョンを削除できます。@ref{Dired Deletion}を参照してください。
 
 @node Backup Copying
-@subsubsection Copying vs.@: Renaming
+@subsubsection コピー vs. リネーム
 
   バックアップファイルは、古いファイルをコピーまたはリネームすることで作ることができます。コピーとリネームは、古いファイルが複数の名前をもつ場合(ハードリンクされている場合)に、異なる効果をもちます。古いファイルがバックアップファイルにリネームされた場合、ハードリンクされた別の名前で参照されるファイルは、バックアップファイルとなります。かわりに古いファイルをコピーすると、ハードリンクされた別の名前で参照されるファイルは、編集中のファイルのままで、それらの名前でアクセスする内容は新しい内容となります。
 
@@ -441,7 +441,7 @@ Variables}を参照してください)。Rmailモードのようないくつか�
 Control}を参照してください)、通常、Emacsは普通の方法でそのファイルのバックアップを作りません。しかしチェックインとチェックアウトは、バックアップを作るのと似たところがあります。これらの操作は通常ハードリンクをこわし、同じファイルにたいする別のファイル名でのvisitを切断します。Emacsにできることはありません。バージョンコントロールシステムがこれを行うのです。
 
 @node Customize Save
-@subsection Customizing Saving of Files
+@subsection ファイル保存のカスタマイズ
 
 @vindex require-final-newline
   変数@code{require-final-newline}の値が@code{t}のとき、ファイルの保存または書き込みにより、ファイルの終端に改行がないときは、何も尋ねずに改行を追加します。値が@code{visit}の場合、Emacsはファイルをvisitした直後に、終端に改行がないファイルの改行を追加します(これによりバッファーは変更されたとマークされます。undoはできません)。値が@code{visit-save}の場合、Emacsはそのような改行をvisitと保存のときに追加します。値が@code{nil}の場合、Emacsはファイルの終端を変更しません。それ以外の非@code{nil}値は、改行を追加するか尋ねることを意味します。デフォルトは@code{nil}です。
@@ -459,7 +459,7 @@ Control}を参照してください)、通常、Emacsは普通の方法でその
   Emacsは自動保存ファイルの書き込みに@code{fsync}を使うことはありません。なぜなら、それらのファイルのデータは、いずれにせよ失われるものだからです。
 
 @node Interlocking
-@subsection Protection against Simultaneous Editing
+@subsection 同時編集からの保護
 
 @cindex file dates
 @cindex simultaneous editing
@@ -497,7 +497,7 @@ editing)は、2人のユーザーが同じファイルをvisitして、両者が
 diff-buffer-with-file}コマンドです。@ref{Comparing Files}を参照してください。
 
 @node File Shadowing
-@subsection Shadowing Files
+@subsection ファイルのシャドーイング
 @cindex shadow files
 @cindex file shadows
 @findex shadow-initialize
@@ -530,7 +530,7 @@ shadow-cancel}を使うことにより、shadowファイルグループを削除
 shadow-define-cluster}によりshadowクラスターを定義できます。
 
 @node Time Stamps
-@subsection Updating Time Stamps Automatically
+@subsection タイムスタンプの自動更新
 @cindex time stamps
 @cindex modification dates
 @cindex locale, date format
@@ -554,7 +554,7 @@ time-stamp}を使って、手動でタイムスタンプを更新することも
 groupの@code{time-stamp}を参照してください。タイムスタンプの書式は、localeのセッティングに従うことに注意して下さい(@ref{Environment}を参照してください)。
 
 @node Reverting
-@section Reverting a Buffer
+@section バッファーのリバート
 @findex revert-buffer
 @cindex drastic changes
 @cindex reread a file
@@ -599,7 +599,7 @@ Mode Line}を参照してください。
 @end ifnottex
 
 @node Auto Save
-@section Auto-Saving: Protection Against Disasters
+@section 自動保存－災害にたいする防御
 @cindex Auto Save mode
 @cindex mode, Auto Save
 @cindex crashes
@@ -615,7 +615,7 @@ Mode Line}を参照してください。
 @end menu
 
 @node Auto Save Files
-@subsection Auto-Save Files
+@subsection 自動保存ファイル
 
   自動保存は通常、visitしているファイルへの保存はしません。なぜなら永続化したくない変更を保存するのは、好ましくないからです。そのかわりに、自動保存は@dfn{auto-saveファイル}と呼ばれる別のファイルに保存し、visitしているファイルへの変更は、保存を明示的に要求したとき(@kbd{C-x
 C-s}など)に行います。
@@ -638,7 +638,7 @@ C-s}で保存するか、@kbd{C-u 1 M-x auto-save-mode}を使います。
 C-w}または@code{set-visited-file-name}で、visitされているファイル名を変更することにより、あたらしくvisitされているファイル名にもとづいてauto-saveファイル名はリネームされます。
 
 @node Auto Save Control
-@subsection Controlling Auto-Saving
+@subsection 自動保存の制御
 
 @vindex auto-save-default
 @findex auto-save-mode
@@ -662,7 +662,7 @@ Manual}を参照してください)。この間隔を変更するには、変数
   コマンド@kbd{M-x do-auto-save}により、明示的に自動保存を行うことができます。
 
 @node Recover
-@subsection Recovering Data from Auto-Saves
+@subsection 自動保存からのデータ復旧
 
 @findex recover-file
   コマンド@kbd{M-x recover-file @key{RET} @var{file}
@@ -692,7 +692,7 @@ C-c}をタイプします。
   Emacsは中断されたセッションについての情報を、ディレクトリー@file{~/.emacs.d/auto-save-list/}の、@file{.saves-@var{pid}-@var{hostname}}という名前のファイルに記録します。@code{auto-save-list-file-prefix}を@code{nil}にセットすると、復旧用にセッションが記録されなくなります。
 
 @node File Aliases
-@section File Name Aliases
+@section ファイルのエイリアス
 @cindex symbolic links (visiting)
 @cindex hard links (visiting)
 
@@ -718,7 +718,7 @@ C-c}をタイプします。
 @end example
 
 @node Directories
-@section File Directories
+@section ファイルディレクトリー
 
 @cindex file directory
 @cindex directory listing
@@ -768,7 +768,7 @@ Bin'')の機能をもつシステムでは、変数@code{delete-by-moving-to-tra
 File Ops}を参照してください。
 
 @node Comparing Files
-@section Comparing Files
+@section ファイルの比較
 @cindex comparing files
 
 @findex diff
@@ -820,7 +820,7 @@ smerge-mode}を使って、Smergeモードに切り替えることができま�
 @ref{Emerge}を参照してください。
 
 @node Diff Mode
-@section Diff Mode
+@section Diffモード
 @cindex Diff mode
 @findex diff-mode
 @cindex patches, editing
@@ -948,7 +948,7 @@ Whitespace}を参照してください)を有効にする方法で、これは�
 diff-delete-trailing-whitespace}を使う方法で、patchにより変更された行の行末の空白文字を検索して、patchとpatchされたソースファイルの両方からそれを取り除きます。このコマンドは変更を保存しないので、ユーザーが変更を保存するか決定することができます(変更されたファイルはエコーエリアに表示されます)。プレフィクス引数を指定すると、patchされたファイルではなく、元のソースファイルを変更しようと試みます。
 
 @node Misc File Ops
-@section Miscellaneous File Operations
+@section その他のファイル操作
 
   Emacsには、ファイルを操作する他のコマンドがたくさん存在します。それらはすべて1つのファイルを操作します。ファイル名にワイルドカードは指定できません。
 
@@ -1034,7 +1034,7 @@ mode)}を読み込んで、指定されたファイルにそのファイルモ�
 permissions)}とも呼ばれます)は、ファイルが読み込み可能か、書き込み可能か、実行可能か、そしてそれは誰にたいしてなのかを決定します。このコマンドは、@command{chmod}コマンドに指定する形式の、シンボルまたは8進のファイルモードを読み取ります。たとえば@samp{u+x}は、そのファイルを所有するユーザーに実行可能の権限を追加することを意味します。ファイルモードをサポートしないオペレーティングシステムでは、効果はありません。@code{chmod}はこの関数の便利なエイリアスです。
 
 @node Compressed Files
-@section Accessing Compressed Files
+@section 圧縮ファイルへのアクセス
 @cindex compression
 @cindex uncompression
 @cindex Auto Compression mode
@@ -1051,7 +1051,7 @@ permissions)}とも呼ばれます)は、ファイルが読み込み可能か、
 auto-compression-mode}とタイプします。変数@code{auto-compression-mode}をカスタマイズすることにより、永続的に無効にすることができます。
 
 @node File Archives
-@section File Archives
+@section ファイルアーカイブ
 @cindex mode, tar
 @cindex Tar mode
 @cindex file archives
@@ -1095,7 +1095,7 @@ Mode}を参照してください)。@kbd{o}は、ファイルを展開して他�
   Tarモードとは異なり、Archiveモードはアーカイブの展開と格納に、アーカイブプログラムを実行します。しかし、展開したりアーカイブ内のファイルを操作するときだけこれらのプログラムが必要で、アーカイブの目録を見るには必要ありません。プログラム名とセットできるオプションの詳細は、カスタマイズグループ@samp{Archive}でセットできます。
 
 @node Remote Files
-@section Remote Files
+@section リモートファイル
 
 @cindex Tramp
 @cindex FTP
@@ -1160,7 +1160,7 @@ Save Files}を参照してください。
 finder-commentary @key{RET} ange-ftp @key{RET}}とタイプして読むことができます。
 
 @node Quoted File Names
-@section Quoted File Names
+@section ファイル名のクォート
 
 @cindex quoting file names
 @cindex file names, quote special characters
@@ -1178,7 +1178,7 @@ Names with $}を参照してください)。
   同じ効果を得るための別の方法は、@file{/tmp/foo[*]bar}と入力する方法です。これは@file{/tmp/foo*bar}だけにマッチするワイルドカード指定です。しかしクォートしなくても同じ結果が得られるので、ワイルドカード文字をクォートする必要がない場合がたくさんあります。たとえば@file{/tmp}の中に@samp{foo}で始まり@samp{bar}で終わるファイルが@file{foo*bar}だけの場合、@file{/tmp/foo*bar}と指定することにより、@file{/tmp/foo*bar}だけをvisitすることができます。
 
 @node File Name Cache
-@section File Name Cache
+@section ファイル名キャッシュ
 
 @cindex file name caching
 @cindex cache of file names
@@ -1208,7 +1208,7 @@ cache)}により、ファイルがどこにあるか正確に覚えていなく�
   ファイル名キャッシュは永続的ではありません。キャッシュが維持されるのはEmacsのセッションの間だけです。キャッシュの内容は、@code{file-cache-display}コマンドで閲覧できます。
 
 @node File Conveniences
-@section Convenience Features for Finding Files
+@section ファイル検索の便利な機能
 
   このセクションでは、最近開いたファイルの検索、バッファーからのファイル名の読み取り、イメージファイルの閲覧などの、便利な機能を紹介します。
 
@@ -1268,7 +1268,7 @@ byte)表示を切り替えることができます。ファイルのイメージ
   Image-Diredパッケージはイメージをサムネールとして表示するのにも使用されます。@ref{Image-Dired}を参照してください。
 
 @node Filesets
-@section Filesets
+@section ファイルセット
 @cindex filesets
 @cindex sets of files
 

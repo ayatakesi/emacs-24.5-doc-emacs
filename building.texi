@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Building
-@chapter Compiling and Testing Programs
+@chapter プログラムのコンパイルとテスト
 @cindex building programs
 @cindex program building
 @cindex running Lisp functions
@@ -30,7 +30,7 @@
 @end menu
 
 @node Compilation
-@section Running Compilations under Emacs
+@section Emacs下でのコンパイルの実行
 @cindex inferior process
 @cindex make
 @cindex compilation errors
@@ -85,7 +85,7 @@ Buffer}を参照してください)@file{*compilation*}、バッファーをリ�
   コンパイルコマンドに渡される環境は、変数@code{compilation-environment}で制御できます。この変数の値は環境変数のセッティングのリストで、各要素は文字列@code{"@var{envvarname}=@var{value}"}の形式です。これらの環境変数のセッティングは、通常の値をオーバーライドします。
 
 @node Compilation Mode
-@section Compilation Mode
+@section Compilationモード
 
 @cindex Compilation mode
 @cindex mode, Compilation
@@ -175,7 +175,7 @@ Host}を参照してください)では、Compilation
 minorモードはリモートのソースファイルに、FTPを通じて自動的にアクセスします(@ref{File Names}を参照してください)。
 
 @node Compilation Shell
-@section Subshells for Compilation
+@section コンパイルのためのサブシェル
 
   @kbd{M-x
 compile}コマンドは、コンパイルコマンドを実行するためにシェルを使いますが、オプションで非対話的なシェルを指定します。これは、シェルがプロンプトなしで開始されることを意味します。@file{*compilation*}バッファーで、通常のシェルプロンプトの見映えがよくない場合、それはシェルの初期化ファイルで、無条件にプロンプトをセットするという間違いを犯していることを意味します(この初期化ファイルは使用しているシェルに応じて@file{.bashrc}、@file{.profile}、@file{.cshrc}、@file{.shrc}などの名前がついています)。シェルの初期化ファイルでは、プロンプトがすでにあるときだけプロンプトをセットするべきです。これをbashで行うには、以下のようにします:
@@ -214,7 +214,7 @@ compile}はコンパイルコマンドを同期実行します(たとえばEmacs
 @end ifnottex
 
 @node Grep Searching
-@section Searching with Grep under Emacs
+@section Emacs下でのGrepによる検索
 
   Emacsからコンパイラーを実行して、コンパイルエラーの行をvisitできるように、@command{grep}を実行して見つかったマッチの行をvisitすることもできます。これは@command{grep}が報告するマッチを、``エラー''のように扱うことで機能します。出力バッファーはGrepモードを使用します。これはCompilationモードの変種です(@ref{Compilation
 Mode}を参照してください)。
@@ -271,7 +271,7 @@ rgrep}と似ていますが、これは@command{grep}のかわりに@command{zgr
 rgrep}の検索で自動的にスキップされます。デフォルト値には、さまざまなバージョンコントロールシステムで使用されるデータディレクトリーが含まれます。
 
 @node Flymake
-@section Finding Syntax Errors On The Fly
+@section オンザフライで構文エラーを見つける
 @cindex checking syntax
 
   FlymakeモードはC、C++、Perl、HTML、@TeX{}/@LaTeX{}を含む、多くのプログラミング言語およびマークアップ言語の構文チェックを、オンザフライ(on-the-fly)で処理するマイナーモードです。これは通常の人間の言語にたいしてスペルチェックを処理する、Flyspellモード(@ref{Spelling}を参照してください)と、その方法において類似しています。Flymakeモードはファイルの編集にしたがい、そのバッファーの一時的なコピーを使用して、適切な構文チェックツールをバックグラウンドで実行します。それからエラーメッセージと警告メッセージを解析して、そのバッファーの間違った行をハイライトします。使用される構文チェックツールは、言語に依存します。たとえば通常、C/C++ファイルの場合は、Cコンパイラーです。Flymakeは、複雑なプロジェクトにたいしてのチェックでは、@code{make}のようなビルドツールを使うこともできます。
@@ -290,7 +290,7 @@ Emacsとともに配布されているFlymake Info manualを参照してくだ�
 @end iftex
 
 @node Debuggers
-@section Running Debuggers Under Emacs
+@section Emacs下でのデバッガーの実行
 @cindex debuggers
 @cindex GUD library
 @cindex GDB
@@ -319,7 +319,7 @@ Debugger, elisp, the Emacs Lisp Reference Manual}を参照してください。
 @end menu
 
 @node Starting GUD
-@subsection Starting GUD
+@subsection GUDの開始
 
   デバッガーサブプロセスを開始する複数のコマンドがあり、それらは特定のデバッガープログラムに対応しています。
 
@@ -371,7 +371,7 @@ Manual}を参照してください。これはGDBのリモートデバッグ機�
 Debugging,, Debugging Remote Programs, gdb, The GNU debugger}を参照してください)。
 
 @node Debugger Operation
-@subsection Debugger Operation
+@subsection デバッガーの操作
 @cindex GUD interaction buffer
 
   @dfn{GUD
@@ -413,7 +413,7 @@ Tooltipモードを使用する場合、GDBにより表示される式の値は�
 gdb}インターフェースを使用する場合、この問題は発生しません。なぜなら副作用を避ける特別なコードがあるからです。さらにプログラムが実行されていないときに、識別子に関連付けられたマクロの定義を表示することもできます。
 
 @node Commands of GUD
-@subsection Commands of GUD
+@subsection GUDのコマンド
 
   GUDはブレークポイントのセットとクリアー、スタックフレームの選択、プログラムのステップ実行のためのコマンドを提供します。
 
@@ -531,7 +531,7 @@ interactionバッファーだけで利用可能です。
 @key{TAB}}とタイプしてください。
 
 @node GUD Customization
-@subsection GUD Customization
+@subsection GUDのカスタマイズ
 
 @vindex gdb-mode-hook
 @vindex dbx-mode-hook
@@ -582,7 +582,7 @@ transient-mark-modeでは、リージョンがアクティブの場合はリー�
 @end table
 
 @node GDB Graphical Interface
-@subsection GDB Graphical Interface
+@subsection GDBのグラフィカルインターフェース
 
   コマンド@kbd{M-x
 gdb}はブレークポイント、スタックフレーム、その他のデバッグ状態の様相を制御するために特化したバッファーで、IDE-likeなインターフェースでGDBを開始します。これは、たとえばマウスソースバッファーのフリンジをクリックすることにより、そこにブレークポイントをセットするなどの、マウスによりデバッグセッションを制御する追加の方法も提供します。
@@ -607,7 +607,7 @@ gdb}はGDBにたいして``スクリーンサイズ''に制限がないと告げ
 @end menu
 
 @node GDB User Interface Layout
-@subsubsection GDB User Interface Layout
+@subsubsection GDBのユーザーインターフェースのレイアウト
 @cindex GDB User Interface layout
 
 @vindex gdb-many-windows
@@ -645,7 +645,7 @@ interactionバッファーをkillすれば、このセッションでの関連�
 interactionバッファーを残しておけば、シェルヒストリー、同様にGDBブレークポイントを残すことができる利点があります。最近編集したソースファイルのブレークポイントが、正しい場所にあるかチェックする必要があります。
 
 @node Source Buffers
-@subsubsection Source Buffers
+@subsubsection Sourceバッファー
 @cindex fringes, for debugging
 
 @table @asis
@@ -669,7 +669,7 @@ interactionバッファーを残しておけば、シェルヒストリー、同
   sourceバッファーの左フリンジの塗りつぶされた矢印は、デバッグされているプログラムがストップした最内フレームの行を示します。中抜きの矢印はより高いレベルのフレームの現在実行されている行を示します。フリンジの矢印を@kbd{Mouse-1}でドラッグすると、ボタンを離した行まで実行が進みます。かわりにフリンジを@kbd{Mouse-3}でクリックすることにより、その行まで実行を進めることができます。フリンジを@kbd{C-Mouse-3}でクリックすることにより、間にある行を実行せずに、その行にジャンプできます。このコマンドは後方へもジャンプできるので、すでに実行中のコードの実行の詳細を調べるのに便利です。
 
 @node Breakpoints Buffer
-@subsubsection Breakpoints Buffer
+@subsubsection Breakpointsバッファー
 
   GDB
 Breakpointsバッファーは、デバッガーセッションのブレークポイント(breakpoint)、ウォッチポイント(watchpoint)、キャッチポイント(catchpoint)を表示します。@ref{Breakpoints,,,
@@ -703,7 +703,7 @@ Threadsバッファーとウィンドウを共有します。一方から他方�
 Threadsバッファーがデフォルトとして表示されます。
 
 @node Threads Buffer
-@subsubsection Threads Buffer
+@subsubsection Threadsバッファー
 
 @findex gdb-select-thread
   GDB Threadsバッファーは、デバッグされているプログラムのスレッドのサマリーを表示します。@ref{Threads, Threads,
@@ -766,7 +766,7 @@ Threadsバッファーでは、さらに他のコマンドも利用可能で、�
 Debugging}を参照してください。
 
 @node Stack Buffer
-@subsubsection Stack Buffer
+@subsubsection Stackバッファー
 
   GDB Stackバッファーは、@dfn{コールスタック(call
 stack)}を表示します。これは、1行がデバッガーセッションでのネストされたサブルーチン呼び出し(@dfn{stack frames:
@@ -784,7 +784,7 @@ debugger}を参照してください。
 @end iftex
 
 @node Other GDB Buffers
-@subsubsection Other GDB Buffers
+@subsubsection その他のGDBバッファー
 
 @table @asis
 @item Localsバッファー
@@ -813,7 +813,7 @@ debugger}を参照してください)。ヘッダー行の適切な箇所を@kbd
 @code{gdb-many-windows}が非@code{nil}の場合、breakpointsバッファーとthreadsバッファーがウィンドウを共有するように、localsバッファーとregistersバッファーもウィンドウを共有します。一方から他方へ切り替えるには、ヘッダー行の関連するボタンを@kbd{Mouse-1}でクリックしてください。
 
 @node Watch Expressions
-@subsubsection Watch Expressions
+@subsubsection ウォッチ式
 @cindex Watching expressions in GDB
 
 @findex gud-watch
@@ -848,7 +848,7 @@ C-a C-w}とタイプします。プレフィクス引数を指定した場合、
 ウォッチ式の表示が更新されるたびに、自動的にspeedbarを前に表示するには、@code{gdb-speedbar-auto-raise}を非@code{nil}にセットします。これはEmacsフレームを全画面表示にしてデバッグしているとき便利です。
 
 @node Multithreaded Debugging
-@subsubsection Multithreaded Debugging
+@subsubsection マルチスレッドのデバッグ
 @cindex Multithreaded debugging in GDB
 @cindex Non-stop debugging in GDB
 
@@ -902,7 +902,7 @@ modeでは、スレッドを選択せずにスレッドを中断または継続�
 received}になることに注意してください。この理由が@code{gdb-switch-reasons}に含まれている場合(デフォルトでは含まれています)、Emacsはそのスレッドに切り替えます。
 
 @node Executing Lisp
-@section Executing Lisp Expressions
+@section Lisp式の実行
 
   Emacsには、Lispのいくつかの変種のためのメジャーモードがあります。これらは他のプログラミング言語のモードと同じ編集コマンドを使用します(@ref{Programs}を参照してください)。それに加えて、Lisp式を実行するための特別なコマンドを提供します。
 
@@ -937,7 +937,7 @@ Inferior Lispモードと同様ですが、Schemeのためのモードです。
 @end table
 
 @node Lisp Libraries
-@section Libraries of Lisp Code for Emacs
+@section EmacsのためのLispコードによるライブラリー
 @cindex libraries
 @cindex loading Lisp code
 
@@ -1000,7 +1000,7 @@ Help}を参照してください)にも発生します。それは、ドキュ�
 でコンパイルされたコンパイル済みのLispファイルのロードを拒絶します。なぜならそれはEmacsのクラッシュをさせるからです。これらのロードを試みる場合は、変数@code{load-dangerous-libraries}に@code{t}をセットしてください。
 
 @node Lisp Eval
-@section Evaluating Emacs Lisp Expressions
+@section Emacs Lisp式の評価
 @cindex Emacs Lispモード
 @cindex mode, Emacs Lisp
 @cindex evaluation, Emacs Lisp
@@ -1070,7 +1070,7 @@ eval-buffer}も同様ですが、これはバッファー全体を評価しま�
   オプション@code{eval-expression-print-level}および@code{eval-expression-print-length}は、評価コマンドが結果を出力する前に省略する、リストの最大の深さと長さを制御します。@code{eval-expression}または@code{eval-last-sexp}にプレフィクス引数0を指定すると、リストはすべて出力されます。@code{eval-expression-debug-on-error}は、これらのコマンドが使用されるとき、評価エラーによりデバッガーを呼び出すかを制御します、デフォルトは@code{t}です。
 
 @node Lisp Interaction
-@section Lisp Interaction Buffers
+@section Lisp Interactionバッファー
 
 @findex lisp-interaction-mode
   Emacsを開始したとき、@file{*scratch*}という名前のバッファーが含まれます、これはEmacs
@@ -1092,7 +1092,7 @@ Lisp式の評価にShellモード(@ref{Shell Mode}を参照してください)�
 ielm}とタイプすることにより、このモードを使用する@file{*ielm*}というバッファーが作成されます。詳細は、コマンドのドキュメントを参照してください。
 
 @node External Lisp
-@section Running an External Lisp
+@section 外部Lispの実行
 @cindex Lispモード
 @cindex mode, Lisp
 @cindex Common Lisp

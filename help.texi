@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Help
-@chapter Help
+@chapter ヘルプ
 @kindex Help
 @cindex help
 @cindex self-documentation
@@ -67,7 +67,7 @@ Infoを使ってEmacs FAQを標示します。
 @end iftex
 @ifnottex
 @node Help Summary
-@section Help Summary
+@section ヘルプの概要
 @end ifnottex
 
   ここではビルトインのドキュメントにアクセスする、ヘルプコマンドの要約を記します。これらの大部分については、以下のセクションで詳細を説明します。
@@ -134,7 +134,7 @@ environment)@var{language-env}で使用される文字セット、コーディ�
 @end table
 
 @node Key Help
-@section Documentation for a Key
+@section キーのドキュメント
 
 @findex describe-key-briefly
 @findex describe-key
@@ -166,7 +166,7 @@ k}の後で、メニューバーからメニューアイテムを選択すれば
 w}はコマンド@code{where-is}を実行します。
 
 @node Name Help
-@section Help by Command or Variable Name
+@section コマンドと変数名のヘルプ
 
 @kindex C-h f
 @findex describe-function
@@ -273,7 +273,7 @@ char、line、word、sentence、paragraph、region、page、sexp、list、defun�
   デフォルトでは、@code{apropos-documentation}を除くすべてのaproposコマンドは、結果をアルファベット順に一覧します。変数@code{apropos-sort-by-scores}が非@code{nil}のときは、かわりに結果の関連度を推測して、一番関連度が高いと思われるものを最初に表示します。@code{apropos-documentation}コマンドは、デフォルトで結果を関連度順で一覧します。これをアルファベット順にするには、変数@code{apropos-documentation-sort-by-scores}を@code{nil}に変更してください。
 
 @node Help Mode
-@section Help Mode Commands
+@section ヘルプモードのコマンド
 
   ヘルプバッファーはViewモード(@ref{View
 Mode}を参照してください)と同じコマンドを提供します。たとえば前方へのスクロールは@key{SPC}、後方へのスクロールは@key{DEL}か@kbd{S-@key{SPC}}です。他にも特別なコマンドをいくつか提供します:
@@ -322,7 +322,7 @@ C-b} (@code{help-go-back})で元に戻すことができます。
 (@code{help-follow-symbol})とタイプします。これはシンボル(変数、関数、フェイス)に関する、すべての利用可能なドキュメントを表示します。
 
 @node Package Keywords
-@section Keyword Search for Packages
+@section パッケージのキーワード検索
 @cindex finder
 
 Emacsのたいていのオプション機能は、@dfn{パッケージ(packages)}にグループ化されています。Emacsには数百のビルトインパッケージが含まれており、ネットワークを通じて他のパッケージのインストールもできます(@ref{Packages}を参照してください)。
@@ -340,7 +340,7 @@ Menu}を参照してください)で、パッケージの一覧が表示され�
 (@code{describe-package})はパッケージ名の入力を求めて、パッケージの属性と、それが実装する機能をヘルプバッファーで表示します。このバッファーは、ボタン形式で関連するパッケージのキーワードを一覧します。ボタンをクリックすると、そのキーワードに関連する他のパッケージを見ることができます。
 
 @node Language Help
-@section Help for International Language Support
+@section 国際化言語のサポートに関するヘルプ
 
   特定の言語環境(language environment: @ref{Language
 Environments}を参照してください)の情報を得るには、@kbd{C-h
@@ -358,7 +358,7 @@ Methods}を参照してください。
 Systems}を参照してください。
 
 @node Misc Help
-@section Other Help Commands
+@section その他のヘルプコマンド
 
 @kindex C-h i
 @findex info
@@ -412,7 +412,7 @@ C-h}は実際には@kbd{C-M-h}と解釈され、これはdefunをマークする
 @key{F1}}や@kbd{@key{ESC} ?}はうまく機能します)。
 
 @node Help Files
-@section Help Files
+@section ヘルプファイル
 
   ビルトインのドキュメントとマニュアル以外にも、Emacsにはコピー条件(copying conditions)、リリースノート(release
 notes)、デバッグ説明書(instructions for debugging)、バグ報告(reporting
@@ -469,7 +469,7 @@ GNU Emacsが完全に無保証なことにたいする、すべての詳細を�
 @end table
 
 @node Help Echo
-@section Help on Active Text and Tooltips
+@section アクティブテキストのヘルプとツールチップ
 
 @cindex tooltips
 @cindex balloon help

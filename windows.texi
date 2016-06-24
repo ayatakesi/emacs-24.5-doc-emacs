@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Windows
-@chapter Multiple Windows
+@chapter 複数ウィンドウ
 @cindex windows in Emacs
 @cindex multiple windows in Emacs
 
@@ -25,7 +25,7 @@
 @end menu
 
 @node Basic Window
-@section Concepts of Emacs Windows
+@section Emacsウィンドウの概念
 
   Emacsの各ウィンドウには、常に1つのEmacsバッファーが表示されます。1つのバッファーは、複数のウィンドウに表示される場合があります。この場合、バッファーのテキストへの任意の変更は、それが表示されているすべてのウィンドウで表示されます。しかし各ウィンドウは独自にポイント値をもっているので、ウィンドウごとにバッファーの異なる部分を表示できます。
 
@@ -45,7 +45,7 @@ b}のような、別のウィンドウを選択して、バッファーを切り
 Line}を参照してください。
 
 @node Split Window
-@section Splitting Windows
+@section ウィンドウの分割
 
 @table @kbd
 @item C-x 2
@@ -86,7 +86,7 @@ Truncation}を参照してください)。@code{truncate-lines}のかわりに�
   デフォルトでは、ウィンドウを分割したとき、Emacsは分割されたウィンドウのサイズをフレームのデフォルトフォントの整数倍にします。これによりスクリーンが正確に2分割されない場合があります。変数@code{window-resize-pixelwise}を非@code{nil}値にセットすると、Emacsは分割されたウィンドウのサイズを、同じピクセル数にします(元のサイズが奇数のピクセル数の場合、1ピクセル増減されます)。フレームのピクセル数がフレームの文字サイズ倍でない場合、このオプションが@code{nil}でも、少なくとも1つのウィンドウがピクセル幅のサイズ変更をされることに注意してください。
 
 @node Other Window
-@section Using Other Windows
+@section 他のウィンドウの使用
 
 @table @kbd
 @item C-x o
@@ -114,7 +114,7 @@ Edit}を参照してください)。
   @code{mouse-autoselect-window}を非@code{nil}値にセットしている場合、マウスが選択されたウィンドウ以外のウィンドウに移動すると、そのウィンドウが選択されます。この機能はデフォルトでオフです。
 
 @node Pop Up Window
-@section Displaying in Another Window
+@section 他のウィンドウでの表示
 
 @cindex selecting buffers in other windows
 @kindex C-x 4
@@ -156,7 +156,7 @@ Mail}を参照してください)と同様に、メールメッセージの編�
 @end table
 
 @node Change Window
-@section Deleting and Rearranging Windows
+@section ウィンドウの削除と再配置
 
 @table @kbd
 @item C-x 0
@@ -221,7 +221,7 @@ b}で切り替えることができます。
 Mouse}を参照してください。
 
 @node Displaying Buffers
-@section Displaying a Buffer in a Window
+@section ウィンドウでのバッファーの表示
 
   ユーザーのコマンドの結果として、任意のバッファーが表示または``ポップアップ''されるのは、Emacsでは一般的な処理です。コマンドがこれを行うには、いくつかの異なる方法があります。
 
@@ -250,7 +250,7 @@ Choice}を参照してください)。これらのコマンドのいくつかは
 @end menu
 
 @node Window Choice
-@subsection How @code{display-buffer} works
+@subsection @code{display-buffer}が機能する方法
 @findex display-buffer
 
 @code{display-buffer}コマンド(およびこのコマンドを内部的に呼び出すコマンド)は、以下で与えられたステップに従って、表示するウィンドウを選択します。このステップの順番を変更する方法については、@ref{Choosing
@@ -285,7 +285,7 @@ Manual}を参照してください。
 @end itemize
 
 @node Window Convenience
-@section Convenience Features for Window Handling
+@section ウィンドウ処理のための便利な機能
 
 @findex winner-mode
 @cindex Winner mode

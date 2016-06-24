@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @iftex
-@chapter Entering and Exiting Emacs
+@chapter Emacsの起動と終了
 
   この章では、Emacsを起動する方法、および終了する方法を説明します。
 @end iftex
@@ -18,7 +18,7 @@
 @end ifnottex
 
 @node Entering Emacs
-@section Entering Emacs
+@section Emacsの起動
 @cindex entering Emacs
 @cindex starting Emacs
 
@@ -62,7 +62,7 @@ File}を参照してください。}
 @code{initial-buffer-choice}が非@code{nil}の場合、コマンドラインにファイルを指定しても、それらのファイルは表示されますが、初期画面としては表示されません。
 
 @node Exiting
-@section Exiting Emacs
+@section Emacsの終了
 @cindex exiting
 @cindex killing Emacs
 @cindex leaving Emacs

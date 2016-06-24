@@ -10,7 +10,7 @@
 @c This file is included either in emacs-xtra.texi (when producing the
 @c printed version) or in the main Emacs manual (for the on-line version).
 @node Fortran
-@section Fortran Mode
+@section Fortranモード
 @cindex Fortran mode
 @cindex mode, Fortran
 
@@ -60,7 +60,7 @@ fortran-mode}を使用して、このメジャーモードに切り替えます�
 @end menu
 
 @node Fortran Motion
-@subsection Motion Commands
+@subsection 移動コマンド
 
   ``defun''(Fortranのサブプログラム ---
 関数、サブルーチン、同様にF90モードのモジュールには、コマンド@code{fortran-end-of-subprogram}および@code{fortran-beginning-of-subprogram}を使用します)を単位に移動、操作する通常コマンドに加えて、Fortranモードは命令文や他のプログラム単位に移動する、特別なコマンドを提供します。
@@ -105,7 +105,7 @@ fortran-mode}を使用して、このメジャーモードに切り替えます�
 
 
 @node Fortran Indent
-@subsection Fortran Indentation
+@subsection Fortranのインデント
 
   固定形式(またはタブ形式)のFortranコードにたいしては、さまざまな構文エントリー(行番号、行インジケーター、継続行フラグ)が、要求される列に表示されるようにするために、特別なコマンドと機能が必要です。
 
@@ -118,7 +118,7 @@ fortran-mode}を使用して、このメジャーモードに切り替えます�
 @end menu
 
 @node ForIndent Commands
-@subsubsection Fortran Indentation and Filling Commands
+@subsubsection Fortranのインデントおよびフィルコマンド
 
 @table @kbd
 @item C-M-j
@@ -149,7 +149,7 @@ C-d}は、コマンド@code{fortran-join-line}を実行します。これは継�
 Fortranモードでの@kbd{M-q}は、ポイントのあるコメントブロックまたは命令文ブロックをフィルします。これは余分な命令文の継続を削除します。
 
 @node ForIndent Cont
-@subsubsection Continuation Lines
+@subsubsection 継続行
 @cindex Fortran continuation lines
 
 @vindex fortran-continuation-string
@@ -169,7 +169,7 @@ format)}と呼びます(Fortran 90では、``自由形式(free form)''という�
   継続スタイルのセッティングは、Fortranモードでの編集の他の側面に影響します。固定形式の場合、命令文の最小列は6になります。Fortranブロック内でそれより大きい列にインデントされる行には、空白文字としてスペース文字だけを使用しなければなりません。タブ形式では、命令文の最小列は8で、列8より前の空白文字は1つのタブ文字でなければなりません。
 
 @node ForIndent Num
-@subsubsection Line Numbers
+@subsubsection 行番号
 
   その行の最初の非空白文字が数字の場合、Fortranのインデントはそれを行番号と判断して、列0から列4に移動します(Emacsでは列を常に0から数えます)。
 
@@ -181,7 +181,7 @@ format)}と呼びます(Fortran 90では、``自由形式(free form)''という�
 
 
 @node ForIndent Conv
-@subsubsection Syntactic Conventions
+@subsubsection 構文的な慣習
 
   Fortranモードは正しくインデントを行うために、あなたが、Fortranプログラム解読を単純化する特定の慣習にしたがうと仮定します：
 
@@ -200,7 +200,7 @@ if}や@samp{end do}のような構成は許されますが、2つ目の単語は
 これらの慣習にしたがわない場合、インデントコマンドは醜いインデントをするかもしれません。しかし正しいFortranプログラムなら、慣習にしたがわずにインデントされたものでも、その意味は変わりません。
 
 @node ForIndent Vars
-@subsubsection Variables for Fortran Indentation
+@subsubsection Fortranのインデントのための変数
 
 @vindex fortran-do-indent
 @vindex fortran-if-indent
@@ -240,7 +240,7 @@ Fortran
 以下のセクションでは、コメントのインデントを制御する変数を説明します。
 
 @node Fortran Comments
-@subsection Fortran Comments
+@subsection Fortranのコメント
 
   通常のEmacsのコメントコマンドは、コード行の後にコメントを記述できると仮定します。Fortran
 77では、標準のコメント構文はコメント行に行全体を要求します。したがってFortranモードは、標準のEmacsコメントコマンドを置き換え、新しい変数も定義します。
@@ -299,7 +299,7 @@ Fortran
 (@code{fortran-comment-region})は、リージョンのすべての行の行頭に文字列@samp{c$$$}を挿入することにより、これらをコメントにします。数引数を指定した場合、各行の行頭から@samp{c$$$}を削除することにより、リージョンをコードに戻します。これらのコメントに使用する文字列は、変数@code{fortran-comment-region}をセットすることにより制御できます。これはコマンドと変数が同じ名前をもつ例であることに注意してください。同じ名前を2つの用途で使用することによる衝突はありません。なぜならLispおよびEmacsではそれが意味するものは、コンテキストにより明らかだからです。
 
 @node Fortran Autofill
-@subsection Auto Fill in Fortran Mode
+@subsection FortranモードでのAuto Fill
 
   Fortranモードは、Auto
 Fillモードにたいする特別なサポートをもっています。これは命令文を挿入するとき、それが長くなりすぎた場合は自動的に分割するマイナーモードです。命令文の分割は、@code{fortran-continuation-string}を使用した継続行により行われます(@ref{ForIndent
@@ -327,7 +327,7 @@ Fillを有効にするには、@code{fortran-mode-hook}に@code{auto-fill-mode}�
 @end ifnottex
 
 @node Fortran Columns
-@subsection Checking Columns in Fortran
+@subsection Fortranでの列のチェック
 
 @vindex fortran-line-length
 標準のFortran
@@ -372,7 +372,7 @@ fortran-window-create})を使用します。このウィンドウで編集する
 fortran-strip-sequence-nos}は、カレントバッファーのすべての行にたいして、列@code{fortran-line-length}以上のテキストすべてを削除します。これは古いシーケンス番号を削除する一番簡単な方法です。
 
 @node Fortran Abbrev
-@subsection Fortran Keyword Abbrevs
+@subsection FortranキーワードのAbbrev
 
   Fortranモードは、一般的なキーワードや定義にたいするabbrev(abbreviation:
 省略形)を提供します。あなたが定義できるabbrevと同様なものがあります。これらを使用するには、Abbrevモードをオンに切り替えなければなりません。

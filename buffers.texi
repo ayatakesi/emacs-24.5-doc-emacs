@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Buffers
-@chapter Using Multiple Buffers
+@chapter 複数バッファーの使用
 
 @cindex buffers
   Emacsで編集するテキストは、@dfn{バッファー(buffer)}と呼ばれるオブジェクトの中に存在します。ファイルをvisitするたびに、そのファイルのテキストを保持するために、バッファーが使われます。Diredを呼び出すたびに、ディレクトリーリストを保持するためにバッファーが使われます。@kbd{C-x
@@ -44,7 +44,7 @@ integers)}で表されることにより定義されます。なぜならEmacs�
 @end menu
 
 @node Select Buffer
-@section Creating and Selecting Buffers
+@section バッファーの作成と選択
 @cindex change buffers
 @cindex switch buffers
 
@@ -115,7 +115,7 @@ Point}を参照してください)。
   Emacsはスペースで開始される名前のバッファーを、内部的な用途のために使用しています。それらのバッファーは特別な方法で扱われます。たとえば、それらのバッファーではundo情報が記録されません。そのようなバッファー名を使うことは避けるのが最良です。
 
 @node List Buffers
-@section Listing Existing Buffers
+@section 既存のバッファーを一覧する
 
 @table @kbd
 @item C-x C-b
@@ -151,7 +151,7 @@ C-x C-b}のように、コマンドにプレフィクス引数を与えます。
   @code{list-buffers}は名前がスペースで始まるバッファーを省略します(そのバッファーがファイルをvisitしていない限り)。これらのバッファーは、Emacsにより内部的に使用されます。
 
 @node Misc Buffer
-@section Miscellaneous Buffer Operations
+@section その他のバッファー操作
 
 @table @kbd
 @item C-x C-q
@@ -191,7 +191,7 @@ insert-buffer}も、あるバッファーから他のバッファーへテキス
 Text}を参照してください。
 
 @node Kill Buffer
-@section Killing Buffers
+@section バッファーのkill
 
 @cindex killing buffers
 @cindex close buffer
@@ -236,7 +236,7 @@ clean-buffer-list}は、それらを一掃するのに便利です。これは�
 Customization}を参照してください。
 
 @node Several Buffers
-@section Operating on Several Buffers
+@section 複数バッファーにたいする操作
 @cindex Buffer Menu
 
 @table @kbd
@@ -400,7 +400,7 @@ List*}バッファーに適用されます。
 @end ifnottex
 
 @node Indirect Buffers
-@section Indirect Buffers
+@section インダイレクトバッファー
 @cindex indirect buffer
 @cindex base buffer
 
@@ -437,7 +437,7 @@ clone-indirect-buffer}と同様に機能しますが、新しいバッファー�
 make-indirect-buffer}です。これはバッファー@var{base-buffer}から、名前が@var{indirect-name}のインダイレクトバッファーを作成します。これらの名前は、ミニバッファーを使って入力が求められます。
 
 @node Buffer Convenience
-@section Convenience Features and Customization of Buffer Handling
+@section バッファー処理の便利な機能とカスタマイズ
 
    このセクションではバッファーを切り替えをもっと便利にする、モードと機能をいくつか説明します。
 
@@ -448,7 +448,7 @@ make-indirect-buffer}です。これはバッファー@var{base-buffer}から、
 @end menu
 
 @node Uniquify
-@subsection Making Buffer Names Unique
+@subsection バッファー名を一意にする
 
 @cindex unique buffer names
 @cindex directories in buffer names
@@ -465,7 +465,7 @@ brackets)で囲います。命名方法@code{reverse}では、@samp{Makefile\tmp
   タイプする前にバッファー名に@emph{注意}すれば、バッファー名にディレクトリー名を付加する方法に重要な違いはありません。しかしルールを知った経験豊富なユーザーは、それほど注意する必要はないでしょう。そして、その場合いずれかのルールでバッファー名が表示されていれば，思い出し利用するのが容易になることでしょう。
 
 @node Icomplete
-@subsection Fast minibuffer selection
+@subsection 素早いミニバッファーの選択
 
 @findex icomplete-mode
 @cindex Icomplete mode
@@ -481,7 +481,7 @@ icomplete-mode}とタイプするか、変数@code{icomplete-mode}を@code{t}に
 Customization}を参照してください)。
 
 @node Buffer Menus
-@subsection Customizing Buffer Menus
+@subsection バッファーメニューのカスタマイズ
 
 @findex bs-show
 @cindex buffer list, customizable

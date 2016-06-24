@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Calendar/Diary
-@chapter The Calendar and the Diary
+@chapter カレンダーとダイアリー
 @cindex calendar
 @findex calendar
 
@@ -47,7 +47,7 @@ Usage,,, emacs-xtra, Specialized Emacs Features}を参照してください。
 @end menu
 
 @node Calendar Motion
-@section Movement in the Calendar
+@section カレンダーでの移動
 
 @cindex moving inside the calendar
   Calendarモードは日、週、月、年のような論理的な単位で、カレンダーを移動するコマンドを提供します。最初に表示されている3ヶ月の外に移動すると、カレンダーの表示は選択された日付が表示されるように、自動的に``スクロール''します。ある日付に移動することにより、その日が何の休日かを表示したり、ダイアリーのエントリーを表示したり、他のカレンダーに変換できます。単にカレンダーをスクロールするのは、長い期間を移動するのにも便利です。
@@ -59,7 +59,7 @@ Usage,,, emacs-xtra, Specialized Emacs Features}を参照してください。
 @end menu
 
 @node Calendar Unit Motion
-@subsection Motion by Standard Lengths of Time
+@subsection 標準的な時間間隔での移動
 
   カレンダーバッファーでの移動コマンドは、テキスト内での移動コマンドと似ています。日、週、月、年を前方および後方に移動できます。
 
@@ -111,7 +111,7 @@ Usage,,, emacs-xtra, Specialized Emacs Features}を参照してください。
 C-f}は、現在の位置から100日前方へポイントを移動します。
 
 @node Move to Beginning or End
-@subsection Beginning or End of Week, Month or Year
+@subsection 週、月、年の開始と終了
 
   週(または月や年)は、単に日が集まったものではなく、特定に日付から開始されると考えます。そのためCalendarモードは週、月、年の、最初と最後に移動するコマンドを提供します。
 
@@ -150,7 +150,7 @@ C-f}は、現在の位置から100日前方へポイントを移動します。
   デフォルトでは、週は日曜日から開始されます。週が月曜日から開始されるようにするには、変数@code{calendar-week-start-day}を1にセットしてください。
 
 @node Specified Dates
-@subsection Specified Dates
+@subsection 日付の指定
 
   Calendarモードは、さまざまな方法で、指定された特定の日付へ移動するコマンドを提供します。
 
@@ -189,7 +189,7 @@ w} (@code{calendar-iso-goto-week})は、年と週数の入力を求め、その�
   @kbd{.}@: (@code{calendar-goto-today})で今日の日付に戻ることができます。
 
 @node Scroll Calendar
-@section Scrolling in the Calendar
+@section カレンダーでのスクロール
 
 @cindex scrolling in the calendar
   カレンダーの表示は、ポイントが表示部分の外に移動すると、自動的にスクロールします。手動でスクロールすることもできます。カレンダーのウィンドウに、月が書き込まれた細長い紙が含まれているのを想像してみてください。カレンダーのスクロールとは、この紙を水平方向に動かして、そのウィンドウに新しい月を表示することを意味します。
@@ -224,7 +224,7 @@ C-v}は1年前方にカレンダーをスクロールし、@kbd{C-u M-v}は1年�
   他のモードのときと同様に、ファンクションキーの@key{next}と@key{prior}は、@kbd{C-v}や@kbd{M-v}と等価です。
 
 @node Counting Days
-@section Counting Days
+@section 日付のカウント
 
 @table @kbd
 @item M-=
@@ -237,7 +237,7 @@ C-v}は1年前方にカレンダーをスクロールし、@kbd{C-u M-v}は1年�
 (@code{calendar-count-days-region})とタイプします。表示される日数は@emph{包括的(inclusive)}です。つまりマークとポイントで指定された日も、日数に含まれます。
 
 @node General Calendar
-@section Miscellaneous Calendar Commands
+@section その他のカレンダーコマンド
 
 @table @kbd
 @item p d
@@ -277,7 +277,7 @@ day-in-year(1年で何日目か)を表示します(@code{calendar-print-day-of-y
 @c FIXME this mentions holidays and diary entries, albeit briefly, so
 @c should it be moved after those sections?  Or at least xref them.
 @node Writing Calendar Files
-@section Writing Calendar Files
+@section カレンダーファイルの記述
 
   カレンダーとダイアリーのエントリーを、HTMLや@LaTeX{}に書き出すことができます。
 
@@ -343,7 +343,7 @@ x
   必要なら、変数@code{cal-tex-preamble-extra}を使用して、生成されたドキュメントのプリアンブル(preamble)に、追加の@LaTeX{}コマンドを挿入できます。
 
 @node Holidays
-@section Holidays
+@section 休日
 @cindex holidays
 
   Emacsのカレンダーは、多くのメジャーおよびマイナーな休日を知っており、それらを表示することができます。デフォルトリストに、あなた自身の休日を追加できます。
@@ -404,7 +404,7 @@ holiday-list}は、ある年の範囲にたいする休日のリストを表示�
 Day(退役軍人の日)は1919年に始まった休日ですが、それより前の年でも表示されます。
 
 @node Sunrise/Sunset
-@section Times of Sunrise and Sunset
+@section 日の出と日の入りの時刻
 @cindex sunrise and sunset
 
   特別なカレンダーコマンドにより、任意の日付にたいする日の出(sunrise)と日の入り(sunset)の時刻を、1、2分の範囲で調べることができます。
@@ -470,7 +470,7 @@ Saving}を参照してください。
 File}を参照してください。
 
 @node Lunar Phases
-@section Phases of the Moon
+@section 月の位相
 @cindex phases of the moon
 @cindex moon, phases of
 
@@ -497,7 +497,7 @@ lunar-phases}を使用してください。
   月の位相にたいして与えられる日付と時刻は、(それが適切なときはサマータイム調整されて)地方時間で与えられます。前のセクションの議論を参照してください。@ref{Sunrise/Sunset}を参照してください。
 
 @node Other Calendars
-@section Conversion To and From Other Calendars
+@section 他のカレンダーとの間の変換
 
 @cindex Gregorian calendar
   Emacsのカレンダーは、@emph{常に}グレゴリオ暦(Gregorian
@@ -515,7 +515,7 @@ calendar)を置き換えて、世界的に受け入れられたのも20世紀初
 @c FIXME perhaps most of the details should be moved to cal-xtra.
 @c Just list the major supported systems here?
 @node Calendar Systems
-@subsection Supported Calendar Systems
+@subsection サポートされるカレンダーシステム
 
 @cindex ISO commercial calendar
   ISO商用暦(ISO commercial calendar)は、ビジネスで使われることがあります。
@@ -566,7 +566,7 @@ branches''の組み合わせにより名前がつけられ、これが合計で6
 days)''は、18ヶ月目と19ヶ月目の間に配されます。
 
 @node To Other Calendar
-@subsection Converting To Other Calendars
+@subsection 他のカレンダーへの変換
 
   以下のコマンドは、選択された日付(ポイント位置の日付)をさまざまなカレンダーシステムで記述します:
 
@@ -622,7 +622,7 @@ o}は日付を、Emacsが知るすべての形式で表示します。@kbd{Mouse
 calendars}を選択することもできます。これは、日付をEmacsが知るすべての形式でメニュー形式で表示します(メニュー形式で表示されるさまざまな形式の日付を選択しても、何もおこりません。この場合、メニューは表示のためだけに使用されます)。
 
 @node From Other Calendar
-@subsection Converting From Other Calendars
+@subsection 他のカレンダーからの変換
 
   サポートされている他のカレンダーで日付を指定して、その日付に移動することができます。このセクションでは、マヤ暦以外のカレンダーを使用してこれを行なうコマンドを説明します。マヤ暦については、以降のセクションを参照してください。
 
@@ -679,7 +679,7 @@ Exit}を参照してください)を使うので、ヘブライ、イスラム�
 calendar-hebrew-list-yahrzeits}により、まず年の範囲の入力を求め、ポイント位置の日付により、それらの年のyahrzeitの日付のリストを表示します。カレンダーにいないときは、このコマンドは最初に死亡日、次に年の範囲の入力を求め、yahrzeitの日付の一覧を表示します。
 
 @node Diary
-@section The Diary
+@section ダイアリー
 @cindex diary
 
   Emacsのダイアリーはカレンダーと共に、日常のアポイントメントやその他のイベントを管理します。ダイアリー機能を使うには、最初にイベントとその日付を含む@dfn{ダイアリーファイル(diary
@@ -715,7 +715,7 @@ April 15, 2013 Income tax due.
 @end menu
 
 @node Displaying the Diary
-@subsection Displaying the Diary
+@subsection ダイアリーの表示
 
   1度ダイアリーファイルを作成すると、カレンダーを使ってそれを閲覧できます。Calendarモードの外で、今日のイベントを閲覧することもできます。以下はCalendarバッファーで参照されるキーバインドです。
 
@@ -789,7 +789,7 @@ diary}は、カレンダーの表示とは独立に、その日のダイアリ�
 diary-mail-entries}を使用します。プレフィクス引数は、(今日から開始して)何日分をチェックするかを指定します。プレフィクス引数を指定しない場合、変数@code{diary-mail-days}により、何日分をチェックするかが指定されます。
 
 @node Format of Diary File
-@subsection The Diary File
+@subsection ダイアリーファイル
 @cindex diary file
 
 @vindex diary-file
@@ -824,7 +824,7 @@ file)}とは、特定の日付に関連付けられたイベントを記録す�
   カレンダーウィンドウで、特定のダイアリーエントリーのマークを抑止することができます。これを行なうには、エントリーの開始、日付の前に、@code{diary-nonmarking-symbol}で指定された文字列(デフォルトは@samp{&})を挿入します。これはエントリーをダイアリーウィンドウで表示する場合は、影響ありません。カレンダーウィンドウで日付をマークするときだけ影響があります。マークされないエントリーは、マークの数が多くなりすぎるような、一般的なエントリーにたいして有用です。
 
 @node Date Formats
-@subsection Date Formats
+@subsection 日付のフォーマット
 
   以下は、異なる方法でフォーマットされた日付を説明するために、ダイアリーエントリーの例をいくつか示したものです。この例では、日付はすべてアメリカ形式(月、日、年)ですが、Calendarモードは、オプションでヨーロッパ形式(日、月、年)と、ISO形式(年、月、日)をサポートします。
 
@@ -855,7 +855,7 @@ calendar-set-date-style}とタイプするか、変数@code{calendar-date-style}
   週のある曜日に適用されるジェネリックな日付として、曜日名を使うことができます。曜日名は完全なスペルを記述するか、上述した省略形を使用できます。大文字小文字に違いはありません。
 
 @node Adding to Diary
-@subsection Commands to Add to the Diary
+@subsection ダイアリーに追加するコマンド
 
   カレンダーでは、ダイアリーのエントリーを作成するコマンドがいくつかあります。以下は基本的なコマンドの一覧です。より複雑なコマンドは次のセクションで説明します((@ref{Special
 Diary Entries}を参照してください))。エントリーにはグレゴリオ暦以外も使用できます。
@@ -899,7 +899,7 @@ i w}は、マークされない週次のダイアリーエントリーを作成�
   ダイアリーファイルを変更したときは、Emacsを終了する前にそのファイルを保存してください。上記の挿入コマンドを使用した後でダイアリーファイルを保存することにより、それが適切な場合は、カレンダーウィンドウのダイアリーのマークを自動的に更新します。随時に更新させるには、コマンド@code{calendar-redraw}を使うことができます。
 
 @node Special Diary Entries
-@subsection Special Diary Entries
+@subsection 特別なダイアリーエントリー
 
   カレンダーの日付にもとづくエントリーに加え、ダイアリーファイルは記念日のような定期的なイベントにたいする、@dfn{sexpエントリー(sexp
 entries:
@@ -986,7 +986,7 @@ i a}は、マークされない記念日ダイアリーエントリーを作成�
 @end ifnottex
 
 @node Appointments
-@section Appointments
+@section アポイントメント
 @cindex appointment notification
 
 @vindex appt-display-format
@@ -1038,7 +1038,7 @@ appt-add}は、ダイアリーファイルに影響を与えずに、アポイ�
 appt-delete}を使います。
 
 @node Importing Diary
-@section Importing and Exporting Diary Entries
+@section ダイアリーエントリーのインポートとエクスポート
 
   Emacsのダイアリーファイルと、他のさまざまなフォーマットの間で、ダイアリーエントリーを変換できます。
 
@@ -1088,7 +1088,7 @@ Features}を参照してください。
   @code{icalendar-export-file}を使って、Emacsダイアリーファイル全体をiCalendar形式にエクスポートできます。ダイアリーファイルの一部をエクスポートするには、関連する領域をマークして、@code{icalendar-export-region}を呼び出します。どちらの場合も、Emacsは結果をターゲットファイルに追加します。
 
 @node Daylight Saving
-@section Daylight Saving Time
+@section サマータイム
 @cindex daylight saving time
 
   Emacsは、標準時とサマータイムの違いを理解します。日の出、日の入り、夏至、冬至、春分、秋分、月の位相では、時刻を補正しています。サマータイムのルールは、場所によりさまざまで、歴史的にも異なります。処理を正しく行なうには、Emacsが使用するルールを知る必要があります。
@@ -1127,7 +1127,7 @@ Features}を参照してください。
   最後に、2つの変数@code{calendar-daylight-savings-starts-time}と@code{calendar-daylight-savings-ends-time}は、サマータイムの開始と終了の遷移時に、地方時の真夜中から何分ずれるかを指定します。マサチューセッツのケンブリッジでは、変数の値は両方とも120です。
 
 @node Time Intervals
-@section Summing Time Intervals
+@section 時間間隔の加算
 @cindex time intervals, summing
 @cindex summing time intervals
 @cindex timeclock

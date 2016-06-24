@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Packages
-@chapter Emacs Lisp Packages
+@chapter Emacs Lispパッケージ
 @cindex Package
 @cindex Emacs Lisp package archive
 @cindex Package archive
@@ -41,7 +41,7 @@ FAQ}を参照してください。
 @end menu
 
 @node Package Menu
-@section The Package Menu Buffer
+@section Package Menuバッファー
 @cindex package menu
 @cindex built-in package
 @findex list-packages
@@ -111,7 +111,7 @@ Files}を参照してください。
 たとえばパッケージをインストールするには、そのパッケージの行で@kbd{i}をタイプしてから、@kbd{x}をタイプします。
 
 @node Package Installation
-@section Package Installation
+@section パッケージのインストール
 
 @findex package-install
   パッケージを一番便利にインストールするのはパッケージメニューを使う方法(@ref{Package
@@ -168,7 +168,7 @@ package-initialize}を呼び出して手動でパッケージをロードする�
 all)}にセットした場合、Emacsは@samp{muse}のバージョン3.20と、@samp{muse}以外のパッケージのインストール済みの任意のバージョンをロードします。@samp{muse}の他のバージョンがインストールされていたとしても、それらは無視されます。@samp{muse}パッケージは、@samp{held}というステータスでパッケージメニューにリストされるはずです。
 
 @node Package Files
-@section Package Files and Directory Layout
+@section パッケージのファイルとディレクトリー
 @cindex package directory
 
 @cindex package file

@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node M-x
-@chapter Running Commands by Name
+@chapter 名前を指定してコマンドを実行する
 
   すべてのEmacsコマンドは、それを使えば実行できるような名前を持っています。使いやすいようにキーバインディングされているコマンドも、たくさんあります。これらのコマンドはキーまたは名前で実行できます。キーがバインドされていないコマンドもたくさんあり、そのようなコマンドは名前でしか実行できません(キーバインドをセットアップする方法については、@ref{Key
 Bindings}を参照してください)。

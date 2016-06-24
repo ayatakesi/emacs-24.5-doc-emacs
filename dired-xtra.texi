@@ -10,7 +10,7 @@
 @c This file is included either in emacs-xtra.texi (when producing the
 @c printed version) or in the main Emacs manual (for the on-line version).
 @node Subdir Switches
-@section Subdirectory Switches in Dired
+@section Diredでのサブディレクトリーにたいするスイッチ
 
 @kbd{C-u
 i}を使うことにより、@command{ls}のスイッチを指定して、Diredバッファーにサブディレクトリーを挿入できます。すでに挿入されたサブディレクトリーの@command{ls}スイッチを変更するには、その位置で@kbd{C-u

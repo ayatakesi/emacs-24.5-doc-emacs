@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Microsoft Windows
-@appendix Emacs and Microsoft Windows/MS-DOS
+@appendix EmacsとMicrosoft Windows/MS-DOS
 @cindex Microsoft Windows
 @cindex MS-Windows, Emacs peculiarities
 
@@ -43,7 +43,7 @@ Features}を参照してください)で説明します。
 @end menu
 
 @node Windows Startup
-@section How to Start Emacs on MS-Windows
+@section MS-WindowsでEmacsを開始する方法
 @cindex starting Emacs on MS-Windows
 
   MS-WindowsでEmacsを開始するには、いくつかの方法があります:
@@ -80,7 +80,7 @@ MS-Windowsの制限により、Emacsは同一セッションでGUIとテキス�
 Options}を参照してください。
 
 @node Text and Binary
-@section Text Files and Binary Files
+@section テキストファイルとバイナリーファイル
 @cindex text and binary files on MS-DOS/MS-Windows
 
   GNU Emacsはテキスト行を分けるのに改行文字を使用します。これはGNU、Unixmその他のPosix準拠システムで使用されている慣習です。
@@ -139,7 +139,7 @@ C-s}とタイプします。DOSのEOL変換でファイルをvisitしていて�
 Systems}を参照してください。
 
 @node Windows Files
-@section File Names on MS-Windows
+@section MS-Windowsのファイル名
 @cindex file names on MS-Windows
 
   MS-WindowsとMS-DOSでは通常、ファイル名の名前単位の区切りにバックスラッシュを使用します(他のシステムではスラッシュを使用します)。MS-DOSおよびMS-WindowsのEmacsは、スラッシュとバックスラッシュのどちらも使用でき、ファイル名に含まれるドライブ文字も識別できます。
@@ -179,7 +179,7 @@ Systems}を参照してください。
 これらに加えて、ファイル名拡張子の有無に関わらず、@file{NUL}、@file{LPT1}、@file{PRN}、@file{CON}のようなDOSの文字デバイスに名前がマッチする任意のファイルは、どのディレクトリーにあっても、文字デバイスとして解釈されます。したがってその文字デバイスを使用したいときだけ、そのようなファイル名を使用します。
 
 @node ls in Lisp
-@section Emulation of @code{ls} on MS-Windows
+@section MS-Windowsでの@code{ls}のエミュレーション
 @cindex Dired, and MS-Windows/MS-DOS
 @cindex @code{ls} emulation
 
@@ -249,7 +249,7 @@ Parsing,,, elisp, The Emacs Lisp Reference Manual}を参照してください。
 @end ifnottex
 
 @node Windows HOME
-@section HOME and Startup Directories on MS-Windows
+@section MS-Windowsでのホームと開始ディレクトリー
 @cindex HOME directory on MS-Windows
 
   Windowsで@code{HOME}に相当するのは、@dfn{ユーザー固有のアプリケーションデータディレクトリー}で、それの実際の位置はWindowsのバージョンに依存します。典型的な値は、Windows
@@ -280,7 +280,7 @@ File}で述べられるとおり、initファイルは任意の名前をもつ�
   MS-DOSはドットで始まるファイル名を使用できず、古いWindowsシステムではそのような名前のファイルを作成するのが困難だったので、EmacsのWindowsポートは、ホームディレクトリーに@file{_emacs}が存在して、@file{.emacs}が存在しない場合、@file{_emacs}という名前ののinitファイルをサポートします。この名前は時代遅れと考えられています。
 
 @node Windows Keyboard
-@section Keyboard Usage on MS-Windows
+@section MS-Windowsでのキーボードの使用方法
 @cindex keyboard, MS-Windows
 
   このセクションでは、Emacsでのキーボード入力に関するWindows固有の機能について説明します。
@@ -353,7 +353,7 @@ r}は常にWindowsの@samp{Run}ダイアログをポップアップします。�
 @end ifnottex
 
 @node Windows Mouse
-@section Mouse Usage on MS-Windows
+@section MS-Windowsでのマウスの使用方法
 @cindex mouse, and MS-Windows
 
   このセクションでは、マウスに関連したWindows固有の変数について説明します。
@@ -369,7 +369,7 @@ r}は常にWindowsの@samp{Run}ダイアログをポップアップします。�
   変数@code{w32-swap-mouse-buttons}、は3ボタンマウスが@kbd{mouse-2}イベントを生成するかを制御します。これが@code{nil}(デフォルト)の場合、中央のボタンは@kbd{mouse-2}を生成し、右ボタンは@kbd{mouse-3}を生成します。この変数が非@code{nil}の場合、これら2つのボタンの役割は逆になります。
 
 @node Windows Processes
-@section Subprocesses on Windows 9X/ME and Windows NT/2K/XP
+@section Windows 9X/MEおよびWindows NT/2000/XPでのサブプロセス
 @cindex subprocesses on MS-Windows
 
 @cindex DOS applications, running from Emacs
@@ -401,7 +401,7 @@ APIの@code{ShellExecute}にたいするラッパーです。詳細は、MS-Wind
 @end ifnottex
 
 @node Windows Printing
-@section Printing and MS-Windows
+@section MS-Windowsでの印刷
 
   Posixスタイルの@code{lpr}プログラムが利用できない場合、MS-DOSとMS-Windowsでは、@code{lpr-buffer}(@ref{Printing}を参照してください)や@code{ps-print-buffer}(@ref{PostScript}を参照してください)のような印刷コマンドは、プリンターポートの1つに出力を送ります。同じEmacs変数がすべてのシステムでの印刷を制御しますが、MS-DOSとMS-Windowsでは、それらの変数が異なるデフォルト値をもつ場合があります。
 
@@ -472,7 +472,7 @@ Variables}を参照してください)は、PostScriptファイルがどのよ�
 (Ghostscriptがディレクトリー@file{D:/gs6.01}にインストールされていると仮定します。)
 
 @node Windows Fonts
-@section Specifying Fonts on MS-Windows
+@section MS-Windowsでのフォント指定
 @cindex font specification (MS Windows)
 
   Emacs23からは、フォントはフォント名、サイズ、オプションのプロパティーにより指定されるようになりました。フォントを指定するフォーマットは、モダンなフリーデスクトップで使用されているfontconfigライブラリーから由来しています。
@@ -546,7 +546,7 @@ Windowsでは@code{latin}、@code{greek}、@code{coptic}、@code{cyrillic}、@co
 @end table
 
 @node Windows Misc
-@section Miscellaneous Windows-specific features
+@section その他のWindows固有の機能
 
   このセクションでは、その他のWindows固有の機能を説明します。
 

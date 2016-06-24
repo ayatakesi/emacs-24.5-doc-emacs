@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Abbrevs
-@chapter Abbrevs
+@chapter abbrev(略語)
 @cindex abbrevs
 @cindex expansion (of abbrevs)
 
@@ -36,7 +36,7 @@ autotype, Features for Automatic Typing}を参照してください。
 @end menu
 
 @node Abbrev Concepts
-@section Abbrev Concepts
+@section abbrevの概念
 
   @dfn{abbrev}とは、特定の@dfn{展開結果}に@dfn{展開}されるために定義された単語のことです。abbrevの後ろに単語の区切りとなる文字を挿入したとき、それはabbrevを展開し、abbrevを展開結果に置き換えます。たとえば@samp{foo}が@samp{find
 outer otter}に展開されるabbrevとして定義された場合、@kbd{f o o .}とタイプすると@samp{find outer
@@ -54,7 +54,7 @@ Modes}を参照してください。
   Abbrevモードが有効かにかかわらず、編集セッションの間に対話的にabbrevを定義できます。後のセッションでリロードして使用するために、ファイルにabbrev定義のリストを保存することもできます。
 
 @node Defining Abbrevs
-@section Defining Abbrevs
+@section abbrevの定義
 
 @table @kbd
 @item C-x a g
@@ -108,7 +108,7 @@ l}のように、abbrev定義コマンドに負の引数を与えます。前者
 kill-all-abbrevs}は、すべてのabbrevにたいしてグローバルとローカルの両方の定義を削除します。
 
 @node Expanding Abbrevs
-@section Controlling Abbrev Expansion
+@section abbrev展開の制御
 
   Abbrevモードが有効な場合、バッファーのポイントの前にabbrevがあり、そこで自己挿入文字として空白文字か区切り文字(@key{SPC}やカンマなど)を挿入したときは、常にabbrevが展開されます。より正確には、単語を構成しない任意の文字はabbrevを展開し、単語を構成する任意の文字はabbrevの一部となります。もっとも一般的なabbrevの使用法は、まずabbrevを挿入し、それから区切り文字か空白文字を挿入してabbrevを展開する方法です。
 
@@ -152,7 +152,7 @@ expand-region-abbrevs}は、リージョン内の定義されたabbrevを検索�
 Expansion,,, elisp, The Emacs Lisp Reference Manual}を参照してください。
 
 @node Editing Abbrevs
-@section Examining and Editing Abbrevs
+@section abbrevのテストと編集
 
 @table @kbd
 @item M-x list-abbrevs
@@ -192,7 +192,7 @@ C-c}をタイプすると、そのバッファーで指定されたabbrev定義�
   コマンド@code{edit-abbrevs}は、実際には@code{list-abbrevs}と同じですが、@code{list-abbrevs}が単に@file{*Abbrevs*}を他のウィンドウに表示するのに比べ、このコマンドはそのバッファーを選択する点が異なります。
 
 @node Saving Abbrevs
-@section Saving Abbrevs
+@section abbrevの保存
 
   以下のコマンドにより、編集セッション間でabbrev定義を維持できます。
 
@@ -232,7 +232,7 @@ insert-abbrevs}は、カレントのabbrev定義の記述をカレントバッ�
 define-abbrevs}は、カレントバッファー全体を解析して、対応するabbrevを定義します。
 
 @node Dynamic Abbrevs
-@section Dynamic Abbrev Expansion
+@section 動的abbrev展開
 
   上記で説明したabbrev機能は、テキストの挿入にしたがい自動的に処理されますが、すべてのabbrevを明示的に定義しなければなりません。対照的に、@dfn{動的abbrev(dynamic
 abbrevs)}は、バッファーの内容から略語の展開結果を自動的に決定することができます、しかし動的abbrevの展開は、明示的に要求したときだけ行なわれます。
@@ -271,7 +271,7 @@ M-/}とタイプします。単語間のスペースおよび区切り文字は�
   動的abbrev展開は、Abbrevモードとは完全に独立しています。@kbd{M-/}での単語の展開は、その単語が通常のabbrevとして定義されていることとは無関係です。
 
 @node Dabbrev Customization
-@section Customizing Dynamic Abbreviation
+@section 動的abbrevのカスタマイズ
 
   動的abbrev展開は通常、展開結果の検索で大文字小文字を無視します。したがって、展開結果と展開する単語は、大文字小文字が一致する必要はありません。
 

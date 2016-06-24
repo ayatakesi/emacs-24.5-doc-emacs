@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Dired
-@chapter Dired, the Directory Editor
+@chapter Dired (ディレクトリーエディター)
 @c This node is referenced in the tutorial.  When renaming or deleting
 @c it, the tutorial needs to be adjusted.
 @cindex Dired
@@ -49,7 +49,7 @@ Extra User's Manual}を参照してください。
 @end menu
 
 @node Dired Enter
-@section Entering Dired
+@section Diredの起動
 
 @findex dired
 @kindex C-x d
@@ -82,7 +82,7 @@ in Lisp}を参照してください。
 (@code{quit-window})とタイプすると、Diredバッファーは隠され(bury)ます。ウィンドウがそのバッファーのためだけに作成された場合は、そのウィンドウを削除します。
 
 @node Dired Navigation
-@section Navigation in the Dired Buffer
+@section Diredバッファーでの移動
 
 @kindex C-n @r{(Dired)}
 @kindex C-p @r{(Dired)}
@@ -114,7 +114,7 @@ C-s}と同様に振る舞います。変数の値が@code{dwim}の場合、ポ�
 Motion}を参照してください。
 
 @node Dired Deletion
-@section Deleting Files with Dired
+@section Diredでのファイルの削除について
 @cindex flagging files (in Dired)
 @cindex deleting files (in Dired)
 
@@ -160,7 +160,7 @@ Motion}を参照してください。
 File Ops}を参照してください。
 
 @node Flagging Many Files
-@section Flagging Many Files at Once
+@section 大量のファイルに一度にフラグをつける
 @cindex flagging many files for deletion (in Dired)
 
   コマンド@kbd{#}、@kbd{~}、@kbd{.}、@kbd{% &}、@kbd{% d}は、ファイル名にもとづき多くのファイルにフラグをつけます。
@@ -217,7 +217,7 @@ d}は、指定された正規表現に名前がマッチするすべてのファ
 d}を使用するとき、特定のサブディレクトリーを隠して除外できます。@ref{Hiding Subdirectories}を参照してください。
 
 @node Dired Visiting
-@section Visiting Files in Dired
+@section Diredのファイルをvisitする
 
   Diredバッファーにリストされたファイルをvisitしたり、調べるためのDiredコマンドが、いくつかあります。これらのコマンドは、すべてカレント行のファイルに適用されます。そのファイルが実際にはディレクトリーの場合、これらのコマンドは(別のDiredバッファーを作成して)、そのサブディレクトリーにたいしてDiredを呼び出します。
 
@@ -271,7 +271,7 @@ Mode}を参照してください。
 @end table
 
 @node Marks vs Flags
-@section Dired Marks vs. Flags
+@section Diredでのマークとフラグ
 
 @cindex marking many files (in Dired)
   ファイルに@samp{D}というフラグをつけるのではなく、他の文字(通常は@samp{*})でファイルを@dfn{マーク}することもできます。ほとんどのDiredコマンドは、@samp{*}でマークされたファイルにたいしてコマンドを処理します。フラグ付けされたファイルだけに作用するコマンドは、それらのファイルを削除する@kbd{x}だけです。
@@ -411,7 +411,7 @@ Diredバッファーでの、マークの追加や削除などの変更をアン
 @end table
 
 @node Operating on Files
-@section Operating on Files
+@section ファイルにたいする操作
 @cindex operating on files in Dired
 
   このセクションでは、1つまたは複数のファイルを操作する、基本的なDiredコマンドを説明します。これらのコマンドはすべて大文字で、引数を読み取ったり、実際に動作する前に確認を求めるのに、ミニバッファーを使用します。これらのコマンドはすべて、以下の方法により操作するファイルを指定します:
@@ -584,7 +584,7 @@ Search}を参照してください。
 @end table
 
 @node Shell Commands in Dired
-@section Shell Commands in Dired
+@section Diredでのシェルコマンド
 @cindex shell commands, Dired
 
 @findex dired-do-shell-command
@@ -630,7 +630,7 @@ Updating}を参照してください)。
   Diredの外でシェルコマンドを実行する情報に関しては、@ref{Single Shell}を参照してください。
 
 @node Transforming File Names
-@section Transforming File Names in Dired
+@section Diredでのファイル名の変更
 
   このセクションでは、ファイル名を系統的な方法で変更する、Diredコマンドを説明します。各コマンドは、既存の名前を変換することにより作成される新しい名前を使って、マークされたファイルのいくつか、またはすべてのマークされたファイルを操作します。
 
@@ -684,7 +684,7 @@ m @var{from}
 @key{RET}}でそれらのファイルをマークして、それらのファイルを操作するコマンドで同じ正規表現を使用します。もっと便利にするために、ファイルを操作する@kbd{%}コマンドは、最後の@kbd{%}コマンドで指定された正規表現をデフォルトで使用します。
 
 @node Comparison in Dired
-@section File Comparison with Dired
+@section Diredでのファイル比較
 @cindex file comparison (in Dired)
 @cindex compare files (in Dired)
 
@@ -698,7 +698,7 @@ Files}を参照してください)。
 Mark}を参照してください)の位置のファイルになります。リージョンがアクティブでない場合、ポイント位置のファイルがバックアップファイル(@ref{Backup}を参照してください)のときは、それがデフォルトになります。
 
 @node Subdirectories in Dired
-@section Subdirectories in Dired
+@section Diredでのサブディレクトリー
 @cindex subdirectories in Dired
 @cindex expanding subdirectories in Dired
 
@@ -740,7 +740,7 @@ Subdirectories}を参照してください)。
 @end ifnottex
 
 @node Subdirectory Motion
-@section Moving Over Subdirectories
+@section サブディレクトリー間の移動
 
   Diredバッファーがサブディレクトリーを一覧している場合、ディレクトリー全体を移動するためのページ移動コマンド@kbd{C-x
 [}および@kbd{C-x ]}を使用することができます。
@@ -782,7 +782,7 @@ Subdirectories}を参照してください)。
 @end table
 
 @node Hiding Subdirectories
-@section Hiding Subdirectories
+@section サブディレクトリーを隠す
 @cindex hiding subdirectories (Dired)
 @cindex showing hidden subdirectories (Dired)
 
@@ -806,7 +806,7 @@ Diredバッファーのすべてのサブディレクトリーを、ヘッダー
 Dired}を、それを削除する方法については@ref{Dired Updating}を参照してください。
 
 @node Dired Updating
-@section Updating the Dired Buffer
+@section Diredバッファーの更新
 @cindex updating Dired buffer
 @cindex refreshing displayed files
 
@@ -868,7 +868,7 @@ nameやby dateのように示されます。
 @key{RET}}で、@code{dired-listing-switches}に新しい値を指定できます。
 
 @node Dired and Find
-@section Dired and @code{find}
+@section Diredと@code{find}
 @cindex @code{find} and Dired
 
   ファイルを選択するために@command{find}ユーティリティーを使うことにより、Diredバッファーに表示する一連のファイルを、より柔軟に選択できます。
@@ -903,7 +903,7 @@ locate-with-filter}も同様ですが、与えられた正規表現に名前が�
   これらのバッファーは、通常のDiredバッファーと完全に同じようには機能しません。ファイル操作は機能しますが、常にバッファーを自動的に更新するわけではありません。@kbd{g}でバッファーをリバートすると、挿入されたサブディレクトリーは削除され、フラグとマークはすべてリセットされます。
 
 @node Wdired
-@section Editing the Dired Buffer
+@section Diredバッファーの編集
 
 @cindex wdired mode
 @findex wdired-change-to-wdired-mode
@@ -922,7 +922,7 @@ C-c} (@code{wdired-finish-edit})とタイプします。これにより変更が
 C-c}をタイプしたときに効果をもちます。
 
 @node Image-Dired
-@section Viewing Image Thumbnails in Dired
+@section Diredでのイメージとサムネイルの閲覧
 @cindex image-dired mode
 @cindex image-dired
 
@@ -967,7 +967,7 @@ c} (@code{image-dired-dired-comment-files})とタイプしてください。
   Image-Diredは、シンプルなイメージ操作も提供します。thumbnailバッファーで@kbd{L}とタイプすると、オリジナルのイメージを反時計回りに90度ローテートし、@kbd{R}で時計回りにローテートします。このローテーションは損失がなく、JpegTRANと呼ばれる外部ユーティリティーを使用します。
 
 @node Misc Dired Features
-@section Other Dired Features
+@section その他のDiredの機能
 
 @kindex + @r{(Dired)}
 @findex dired-create-directory

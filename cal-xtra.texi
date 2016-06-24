@@ -12,7 +12,7 @@
 
 @c Moved here from the Emacs Lisp Reference Manual, 2005-03-26.
 @node Advanced Calendar/Diary Usage
-@section More advanced features of the Calendar and Diary
+@section カレンダーとダイアリーの上級な機能
 
   このセクションでは、カレンダーとダイアリーの、より上級で特別な機能をいくつか説明します。まず最初に、個人的な好みに合うようにカレンダーをカスタマイズする、多くの方法を紹介します。
 
@@ -30,7 +30,7 @@
 @end menu
 
 @node Calendar Customizing
-@subsection Customizing the Calendar
+@subsection カレンダーのカスタマイズ
 
 @vindex calendar-intermonth-text
 @cindex calendar layout
@@ -69,7 +69,7 @@
   カレンダーのカーソル移動コマンドは、カーソルを移動した後に、フック@code{calendar-move-hook}を実行します。
 
 @node Holiday Customizing
-@subsection Customizing the Holidays
+@subsection 休日のカスタマイズ
 
 @vindex calendar-holidays
 @vindex holiday-oriental-holidays
@@ -192,7 +192,7 @@ Lisp関数@code{(eclipses)}を記述します。
 @end smallexample
 
 @node Mayan Calendar
-@subsection Converting from the Mayan Calendar
+@subsection マヤ暦からの変換
 @cindex Mayan calendar
 
   以下は、マヤ暦(Mayan calendar)にもとづく日付を選択するコマンドです:
@@ -265,7 +265,7 @@ c}を使用すると、次の周期のsぽの組み合わせの日付にポイ�
 を使うので、スペルについて心配する必要はありません。
 
 @node Date Display Format
-@subsection Date Display Format
+@subsection 日付の表示フォーマット
 @vindex calendar-date-display-form
 
   @code{calendar-date-display-form}をセットすることにより、ダイアリー、モードライン、メッセージに表示される日付をカスタマイズできます。この変数は、文字列形式の数字をもつ変数@code{month}、@code{day}、@code{year}と、アルファベット文字列をもつ@code{monthname}、@code{dayname}を含む式のリストを保持します。アメリカ様式では、このリストのデフォルト値は以下のようになります:
@@ -297,7 +297,7 @@ c}を使用すると、次の周期のsぽの組み合わせの日付にポイ�
 @end smallexample
 
 @node Time Display Format
-@subsection Time Display Format
+@subsection 時刻の表示フォーマット
 @vindex calendar-time-display-form
 
   カレンダーとダイアリーは、デフォルトで1日の時刻を、@samp{am}または@samp{pm}と、1から12の時刻と分によるアメリカ様式の慣習にしたがって表示します。00から23の時刻による、ヨーロッパ様式(US軍用様式とも呼ばれる)にしたい場合は、変数@code{calendar-time-display-form}を変更することができます。この変数は式のリストです。このリストには文字列形式の数字をもつ変数@code{12-hours}、@code{24-hours}、@code{minutes}と、アルファベット文字列をもつ@code{am-pm}、@code{time-zone}を含めることができます。デフォルト値は以下のとおりです:
@@ -318,7 +318,7 @@ c}を使用すると、次の周期のsぽの組み合わせの日付にポイ�
 1日の時刻を返すカレンダー関数は少ないことに注意してください(現在のところsolar関数のみ)。
 
 @node Diary Customizing
-@subsection Customizing the Diary
+@subsection ダイアリーのカスタマイズ
 
 @vindex diary-show-holidays-flag
   ダイアリーウィンドウは通常、ダイアリーエントリーの日付が休日に相当する場合は、モードラインとバッファー自身にそれを示します。休日をチェックするプロセスは時間がかかることがあり、それは定義された休日に依存します。このような場合、@code{diary-show-holidays-flag}を@code{nil}にセットすることにより、ダイアリーの表示を速くすることができます。
@@ -366,7 +366,7 @@ exclusive)}でなければならず、ダイアリーエントリーの任意の
 3番目のパターンでの@code{backup}の使用に注目してください。これは4番目のパターンと区別するために、日付自体を越えて単語の一部にマッチする必要があるからです。
 
 @node Non-Gregorian Diary
-@subsection Diary Entries Using non-Gregorian Calendars
+@subsection 非グレゴリオ暦を使用するカレンダーエントリー
 
   グレゴリオ暦にもとづくエントリーと同様に、ダイアリーはBahá'í、Hebrew、Islamicの日付にもとづくエントリーをもつことができます。そのようなエントリーの識別は時間がかかる場合がありますが、これらを使用する人はほとんどいないので、使用する場合は明示的に有効にしなければなりません。ダイアリーが、ダイアリーエントリーのHebrew日付を識別するようにしたい場合、たとえば以下のようにして、これを行なわなければなりません:
 
@@ -442,7 +442,7 @@ IDhu al-Qada 25 Happy Islamic birthday!
   これらのコマンドは、通常のダイアリーエントリーの対応するコマンドに似ています。これらはカレンダーウィンドウのポイント位置の日付に適用され、これらのコマンドが行なうのはダイアリーファイルの最後にダイアリーエントリーの日付部分を挿入することだけです。その後、ダイアリーエントリーの残りを挿入しなければなりません。特定の非グレゴリオ日付のエントリーを追加する基本的なコマンドとして、与えられた非グレゴリオ日を各月に追加する@samp{monthly}コマンド、与えられた非グレゴリオの月日を各年に追加する@samp{yearly}コマンドがあります。
 
 @node Diary Display
-@subsection Diary Display
+@subsection ダイアリーの表示
 @vindex diary-display-function
 @findex diary-simple-display
 @findex diary-fancy-display
@@ -490,7 +490,7 @@ diary-print-entries}を実行します。通常のように、休日が含まれ
 diaryバッファーで編集する前に、@kbd{s} (@code{diary-show-all-entries})でファイル全体を表示するのが最善です。
 
 @node Fancy Diary Display
-@subsection Fancy Diary Display
+@subsection Fancy Diary表示
 
 以下の機能は、fancy diary表示だけで機能します。
 
@@ -539,7 +539,7 @@ diaryバッファーにインクルードします。インクルードの仕組
 diary表示は、エントリーをダイアリーファイルから直接表示するからです。
 
 @node Sexp Diary Entries
-@subsection Sexp Entries and the Fancy Diary Display
+@subsection sexpエントリーとFancy Diary表示
 @cindex sexp diary entries
 
 @vindex diary-sexp-entry-symbol

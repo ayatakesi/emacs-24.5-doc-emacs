@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Modes
-@chapter Major and Minor Modes
+@chapter メジャーモードとマイナーモード
 
   Emacsには多くの@dfn{編集用モード(editing
 modes)}が含まれており、これは基本的な振る舞いを、編集に便利な方法に変更します。これらの編集用モードは@dfn{メジャーモード(major
@@ -28,7 +28,7 @@ Fill}を参照してください)。マイナーモードは互いに独立し�
 @end menu
 
 @node Major Modes
-@section Major Modes
+@section メジャーモード
 @cindex major modes
 @cindex mode, major
 @kindex TAB @r{(and major modes)}
@@ -86,7 +86,7 @@ LispモードでEldocマイナーモード(@ref{Lisp Doc}を参照してくだ�
 @end example
 
 @node Minor Modes
-@section Minor Modes
+@section マイナーモード
 @cindex minor modes
 @cindex mode, minor
 
@@ -206,7 +206,7 @@ Markモードはリージョンをハイライトして、マークがアクテ�
 @end itemize
 
 @node Choosing Modes
-@section Choosing File Modes
+@section ファイルのモードを選択する
 
 @cindex choosing a major mode
 @cindex choosing a minor mode

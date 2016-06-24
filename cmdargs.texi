@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Emacs Invocation
-@appendix Command Line Arguments for Emacs Invocation
+@appendix Emacs呼び出しにたいするコマンドライン引数
 @cindex command line arguments
 @cindex arguments (command line)
 @cindex options (command line)
@@ -53,7 +53,7 @@ arguments)}と呼びます。動作引数は、変数@code{command-line-args}に
 @end menu
 
 @node Action Arguments
-@appendixsec Action Arguments
+@appendixsec 動作引数
 
   以下は動作引数の表です:
 
@@ -137,7 +137,7 @@ Emacsのバージョンをプリントしてから、正常終了します。
 @end table
 
 @node Initial Options
-@appendixsec Initial Options
+@appendixsec 初期化オプション
 
   初期化オプションは、Emacsセッションにたいするパラメーターを指定します。このセクションでは、より一般的な初期化オプションを説明します。いくつかのオプションは、厳密には以降のセクションで説明するXウィンドウシステムに関連したオプションです。
 
@@ -267,7 +267,7 @@ Debugger on an Error, elisp, The GNU Emacs Lisp Reference Manual}を参照して
 @end table
 
 @node Command Example
-@appendixsec Command Argument Example
+@appendixsec コマンド引数の例
 
   以下は、引数とオプションを指定してEmacsを使用する例です。ここでは、ロードすることにより、Cプログラムをvisitしたカレントバッファーにたいして、何か便利な操作を行なう、@file{hack-c.el}という名前のLispプログラムファイルがあるとしましょう。
 
@@ -280,7 +280,7 @@ emacs --batch foo.c -l hack-c -f save-buffer >& log
 C-s}にバインドされた関数であることに注意してください)した後に、(@samp{--batch}オプションなので)Emacsを終了してシェルに戻ります。@samp{--batch}は、出力を@file{log}にリダイレクトしても問題がないことが保証されます。なぜならEmacsは作業するためのディスプレー端末をもたないと想定されるからです。
 
 @node Environment
-@appendixsec Environment Variables
+@appendixsec 環境変数
 @cindex environment variables
 
   @dfn{環境(environment)}とは、オペレーティングシステムの機能です。これは値と名前をもつ変数のコレクションからなります。それぞれの変数は@dfn{環境変数(environment
@@ -319,7 +319,7 @@ setenv ORGANIZATION "not very much"
 @end menu
 
 @node General Variables
-@appendixsubsec General Variables
+@appendixsubsec 一般的な変数
 
   以下は、Emacsで特別な意味をもつ環境変数の、アルファベット順のリストです。これらの変数のほとんどは、他のプログラムでも使用されます。Emacsはこれらの環境変数がセットされていることを要求しませんが、セットされている場合はその値を使用します。
 
@@ -471,7 +471,7 @@ Emacsが使用する端末タイプです。Emacsがバッチモードで実行�
 @end table
 
 @node Misc Variables
-@appendixsubsec Miscellaneous Variables
+@appendixsubsec その他の変数
 
 これらの変数は、特定の設定だけにたいして使用されます:
 
@@ -502,7 +502,7 @@ MS-Windowsでは、@env{emacs_dir}は特別な環境変数で、これはEmacs�
 @end vtable
 
 @node MS-Windows Registry
-@appendixsubsec The MS-Windows System Registry
+@appendixsubsec MS-Windowsのシステムレジストリー
 @pindex addpm, MS-Windows installation program
 @cindex registry, setting environment variables (MS-Windows)
 
@@ -516,7 +516,7 @@ Emacsを開始したときは、環境のチェックと同様に、システム
 Resources})のセッティングの多くを追加することもできます。
 
 @node Display X
-@appendixsec Specifying the Display Name
+@appendixsec ディスプレー名の指定
 @cindex display name (X Window System)
 @cindex @env{DISPLAY} environment variable
 
@@ -546,7 +546,7 @@ Xlib:  connection to "glasperle:0.0" refused by server
 ローカル機で@command{xhost}コマンドを使用することにより、リモート機からアクセスする権限を与えれば、この問題を解決できるでしょう。
 
 @node Font X
-@appendixsec Font Specification Options
+@appendixsec フォント指定オプション
 @cindex font name (X Window System)
 
 デフォルトのフォントを指定するために、コマンドラインオプション@samp{-fn
@@ -570,7 +570,7 @@ emacs -fn "DejaVu Sans Mono-12"
 フォント名やデフォルトフォントを指定する別の方法についての詳細は、@ref{Fonts}を参照してください。
 
 @node Colors X
-@appendixsec Window Color Options
+@appendixsec ウィンドウカラーオプション
 @cindex color of window, from command line
 @cindex text colors, from command line
 
@@ -650,7 +650,7 @@ emacs -ms coral -cr 'slate blue' &
   @samp{-fg}、@samp{-bg}、@samp{-rv}オプションの機能は、テキスト端末でも、グラフィカルなディスプレーと同様です。
 
 @node Window Size X
-@appendixsec Options for Window Size and Position
+@appendixsec ウィンドウのサイズと位置にたいするオプション
 @cindex geometry of Emacs window
 @cindex position and size of Emacs frame
 @cindex width and height of Emacs frame
@@ -721,7 +721,7 @@ Resources}を参照してください)。そうすれば、Emacsは指定され�
  位置にたいする、プログラム指定とユーザー指定の両方を無視するようにできるオプションをもつウィンドウマネージャーがいくつかあります。これらのオプションがセットされている場合、Emacsはウィンドウを正しく配置するのに失敗します。
 
 @node Borders X
-@appendixsec Internal and External Borders
+@appendixsec 内枠ボーダーと外枠ボーダー
 @cindex borders (X Window System)
 
   Emacsフレームは内枠ボーダー(internal border)と、外枠ボーダー(external
@@ -750,7 +750,7 @@ border)をもちます。内枠ボーダーはフレームのテキスト部分�
 @var{n}}を使用します(ウィンドウマネージャーはその指定に注意を払わないかもしれませんが)。外枠ボーダーのデフォルト幅は2です。
 
 @node Title X
-@appendixsec Frame Titles
+@appendixsec フレームタイトル
 
   Emacshフレームが指定されたタイトルをもつ場合もあり、もたない場合もあります。フレームタイトルが指定された場合、それはウィンドウ装飾とアイコンに、フレームの名前として表示されます。Emacsフレームが指定されたタイトルをもたない場合、デフォルトのタイトルは@samp{@var{invocation-name}@@@var{machine}}という形式(フレームが1つだけのとき)か、選択されたウィンドウのバッファー名(複数のフレームがある場合)になります。
 
@@ -768,7 +768,7 @@ Emacs初期フレームのタイトルとして@var{title}を指定します。
   @samp{--name}オプション(@ref{Resources}を参照してください)でも、Emacs初期フレームのタイトルを指定できます。
 
 @node Icons X
-@appendixsec Icons
+@appendixsec アイコン
 @cindex icons (X Window System)
 @cindex minimizing a frame at startup
 
@@ -792,7 +792,7 @@ Emacsアイコンの使用を無効にします。
   デフォルトでは、EmacsはEmacsロゴを含むアイコンを使用します。Gnomeのようなデスクトップ環境では、このアイコンは他のコンテキスト、たとえばEmacsフレームに切り替えるときにも表示されます。@samp{-nbi}または@samp{--no-bitmap-icon}オプションは、使用するアイコンの種類をウィンドウマネージャーに選択させるよう、Emacsに指示します。通常これはフレームのタイトルを含んだ、ただの矩形です。
 
 @node Misc X
-@appendixsec Other Display Options
+@appendixsec その他のディスプレーオプション
 
 @table @samp
 @c @item -hb

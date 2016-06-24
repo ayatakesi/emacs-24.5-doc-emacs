@@ -9,7 +9,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Programs
-@chapter Editing Programs
+@chapter プログラムの編集
 @cindex Lisp editing
 @cindex C editing
 @cindex program editing
@@ -49,7 +49,7 @@
 @end menu
 
 @node Program Modes
-@section Major Modes for Programming Languages
+@section プログラミング言語のためのメジャーモード
 @cindex modes for programming languages
 
   Emacsには、プログラミング言語のために特化した、多くのメジャーモード(@ref{Major
@@ -112,7 +112,7 @@ emacs-xtra, Specialized Emacs Features}を参照してください。
 @end iftex
 
 @node Defuns
-@section Top-Level Definitions, or Defuns
+@section トップレベルの定義、またはdefun
 
   Emacsでは関数などの、バッファーのトップレベルの主要な定義は、@dfn{defun}と呼ばれます。この名前はLispが由来ですが、Emacsではすべての言語に使用します。
 
@@ -125,7 +125,7 @@ emacs-xtra, Specialized Emacs Features}を参照してください。
 @end menu
 
 @node Left Margin Paren
-@subsection Left Margin Convention
+@subsection 左端の慣習
 
 @cindex open-parenthesis in leftmost column
 @cindex ( in leftmost column
@@ -154,7 +154,7 @@ Lockモードは混乱して、(クォートする必要がある)開始区切�
   通常は、このオプションをデフォルト値の@code{t}にしておくべきです。バッファーの列0にdefunの開始でないカッコまたは大カッコが含まれていて、これらのカッコまたは大カッコを削除するのが何らかの理由で現実的でない場合、このオプションを@code{nil}にするのが役に立つかもしれません。しかしこれは大きなバッファーのスクロールや、表示の速度を著しく低下させるかもしれないことを知っておいてください。さらに、正しく機能させるために、バッファー全体を通じてカッコまたは大カッコが、正しく対応が取れていなければなりません。
 
 @node Moving by Defuns
-@subsection Moving by Defuns
+@subsection defunの移動
 @cindex defuns
 
   これらのコマンドはトップレベルの主要な定義、または@dfn{defuns}にもとづいてポイントを移動したり、リージョンをセットアップします。
@@ -191,7 +191,7 @@ Objects}を参照してください。これは、そのdefunをkillしてファ
   Cモードでは、@code{mark-defun}とほとんど同じな@code{c-mark-function}を実行します。違いは、それが引数定義、関数名、リターンデータ型を含むことで、これによりC関数全体にリージョンが設定されます。これは標準のキーバインディングをメジャーモードが調整する方法の例です。これにより特定の言語によりふさわしい方法で標準的な作業を行うのです。この目的のために、他のメジャーモードは、これらのキーバインディングすべてを置き換えているかもしれません。
 
 @node Imenu
-@subsection Imenu
+@subsection Imenuとは
 @cindex index of buffer definitions
 @cindex buffer definitions index
 
@@ -220,7 +220,7 @@ imenu}とタイプすると、これはミニバッファーを使用して定�
 Speedbarもこれを使用します(@ref{Speedbar}を参照してください)。
 
 @node Which Function
-@subsection Which Function Mode
+@subsection Which Functionモード
 @cindex current function name in mode line
 
   Which Function(どの関数)モードは、グローバルなマイナーモード(@ref{Minor
@@ -232,7 +232,7 @@ Modes}を参照してください)で、これはカレントの関数名をモ�
 Functionモードは、グローバルなマイナーモードです。デフォルトでは、それをサポートする方法を知っている、すべてのメジャーモード(たとえばImenuをサポートするすべてのメジャーモード)に影響を与えます。変数@code{which-func-modes}の値を@code{t}(これは利用可能なすべてのメジャーモードをサポートすることを意味します)から、特定のメジャーモードのリストに変更することにより、これを制限することができます。
 
 @node Program Indent
-@section Indentation for Programs
+@section プログラムのインデント
 @cindex indentation for programs
 
   プログラムを正しくインデントされた状態に保つには、何か変更したらEmacsを使って再インデントするのが一番よい方法です。Emacsには1行、指定した数の行、1つのカッコでグループ化されたすべての行をインデントするコマンドがあります。
@@ -251,7 +251,7 @@ Functionモードは、グローバルなマイナーモードです。デフォ
   Emacsは@code{pp}パッケージで、Lispのプリティープリンター(pretty-printer)も提供します。これはLispオブジェクトを、見栄えのよいインデントで再フォーマットします。
 
 @node Basic Indent
-@subsection Basic Program Indentation Commands
+@subsection プログラムの基本的なインデントコマンド
 
 @table @kbd
 @item @key{TAB}
@@ -278,7 +278,7 @@ Functionモードは、グローバルなマイナーモードです。デフォ
 Margin Paren}を参照してください
 
 @node Multi-line Indent
-@subsection Indenting Several Lines
+@subsection 複数行のインデント
 
   複数行のコードを、1度に再インデントしたいときがあるかもしれません。これを行う1つの方法は、マークを使う方法です。マークがアクティブでリージョンが空でないとき、@key{TAB}はリージョン内の各行をインデントします。一方、コマンド@kbd{C-M-\}
 (@code{indent-region})は、マークがアクティブか否かにかかわらず、リージョン内の各行をインデントします(@ref{Indentation
@@ -309,7 +309,7 @@ indent-code-rigidly}は、@code{indent-rigidly}が行うように(@ref{Indentati
 Commands}を参照してください)、リージョン内のすべての行を厳格(rigidly)にシフトします。このコマンドはリージョンが文字列内で開始される場合を除き、文字列内で開始される行のインデントは変更しません。プレフィクス引数は、インデントする列数です。
 
 @node Lisp Indent
-@subsection Customizing Lisp Indentation
+@subsection Lispのインデントのカスタマイズ
 @cindex customizing Lisp indentation
 
   Lisp式のインデントパターンは、式により呼ばれる関数によって決定することができます。それぞれのLisp関数のために、事前定義された複数のインデントパターンの中から選択するか、Lispプログラムで独自のものを定義できます。
@@ -327,7 +327,7 @@ Commands}を参照してください)、リージョン内のすべての行を�
 Macros,,, elisp, the Emacs Lisp Reference Manual}を参照してください。
 
 @node C Indent
-@subsection Commands for C Indentation
+@subsection Cのインデントのためのコマンド
 
   Cおよび関連するモードのインデントのために、特別な機能があります。
 
@@ -361,7 +361,7 @@ C-M-\}とタイプします。これは最初にバッファー全体をリー�
 C-M-q}を使用します。これはブロックの前に移動してから、ブロックのすべてを再インデントします。
 
 @node Custom C Indent
-@subsection Customizing C Indentation
+@subsection Cのインデントのカスタマイズ
 @cindex style (for indentation)
 
   Cモードおよび関連するモードは、インデントをカスタマイズするために柔軟なメカニズムを使用します。Cモードはソース行を2ステップでインデントします。最初のステップは、行の内容とコンテキストに応じて行の構文を分類します。次のステップで、構文コンストラクトで選択された@dfn{スタイル}により、関連付けられたインデントのオフセットを決定して、これを@dfn{アンカーとなる命令文(anchor
@@ -410,7 +410,7 @@ c-guess-install}として、推測されたスタイルを他のバッファー�
 Style,,, ccmode, the CC Mode Manual}を参照してください。
 
 @node Parentheses
-@section Commands for Editing with Parentheses
+@section カッコに付随する編集のためのコマンド
 
 @findex check-parens
 @cindex unbalanced parentheses and quotes
@@ -431,7 +431,7 @@ check-parens}を使用して、バッファー内の対応の取れていない�
 @end menu
 
 @node Expressions
-@subsection Expressions with Balanced Parentheses
+@subsection 対応が取れたカッコの式
 
 @cindex sexp
 @cindex expression
@@ -493,7 +493,7 @@ bar}は1つのCの式ですが、Cモードはこれを1つの式とは扱いま
 + bar)}を1つの式として認識します。
 
 @node Moving by Parens
-@subsection Moving in the Parenthesis Structure
+@subsection カッコ構造の移動
 
 @cindex parenthetical groupings
 @cindex parentheses, moving across
@@ -534,7 +534,7 @@ bar}は1つのCの式ですが、Cモードはこれを1つの式とは扱いま
 (@code{down-list})を使用します。Lispモードでは@samp{(}は開始区切りなので、これは@samp{(}を検索するのとほとんど同じです。引数は何レベルしたに移動するかを指定します。
 
 @node Matching
-@subsection Matching Parentheses
+@subsection マッチするカッコ
 @cindex matching parentheses
 @cindex parentheses, displaying matches
 
@@ -595,7 +595,7 @@ Pairモードの追加機能を制御します:
 Electric Pairモードに切り替えるには、@kbd{M-x electric-pair-mode}とタイプしてください。
 
 @node Comments
-@section Manipulating Comments
+@section コメントの操作
 @cindex comments
 
   コメントは、プログラミングにおいて重要なパートなので、Emacsはコメントの編集や挿入を行う特別なコマンドを提供します。Flyspell
@@ -620,7 +620,7 @@ Progモードによる、コメントのスペルチェックも行うことが�
 @end menu
 
 @node Comment Commands
-@subsection Comment Commands
+@subsection コメントコマンド
 @cindex indentation for comments
 @cindex alignment for comments
 
@@ -680,7 +680,7 @@ uncomment-region}は、リージョンの各行を非コメント化します。
 Commands,,, ccmode, The CC Mode Manual}を参照してください。
 
 @node Multi-Line Comments
-@subsection Multiple Lines of Comments
+@subsection 複数行のコメント
 
 @kindex C-M-j
 @kindex M-j
@@ -707,7 +707,7 @@ as described in the preceding section.
 ccmode, The CC Mode Manual}を参照してください。
 
 @node Options for Comments
-@subsection Options Controlling Comments
+@subsection コメントを制御するオプション
 
 @vindex comment-column
 @kindex C-x ;
@@ -740,7 +740,7 @@ Fillモードがコメントをどのように複数行に継続するかを制�
   変数@code{comment-indent-function}は、新しく挿入されたコメント、または既存のコメントの位置揃え位置を計算するために呼び出される関数を指定します。これはメジャーモードごとに異なります。関数は引数なしで呼び出されますが、新しいコメントが挿入されるときはコメント開始位置のポイント、または行末のポイントで呼び出されます。この関数はコメントが開始されるべき列を返す必要があります。たとえばLispモードでは、インデントフック関数の決定は、既存のコメントがいくつのセミコロンで始まるかと、前の行のコードにもとづきます。
 
 @node Documentation
-@section Documentation Lookup
+@section ドキュメントの照会
 
   Emacsは、関数やプログラムで使おうと計画している変数およびコマンドを、ドキュメントから探すのに使用できる機能をいくつか提供します。
 
@@ -751,7 +751,7 @@ Fillモードがコメントをどのように複数行に継続するかを制�
 @end menu
 
 @node Info Lookup
-@subsection Info Documentation Lookup
+@subsection Infoドキュメントの照会
 
 @findex info-lookup-symbol
 @findex info-lookup-file
@@ -768,7 +768,7 @@ info-lookup-file}を使用して、ドキュメントのファイル名を指定
 mode''を指定するよう求めます。ここでは@code{c-mode}コマンドのように、@kbd{C-h S}をサポートするメジャーモードを選択します。
 
 @node Man Page
-@subsection Man Page Lookup
+@subsection man-pageの照会
 
 @cindex man page
   Unixでは、オンラインドキュメントのメインフォームは@dfn{manual page}または@dfn{man
@@ -820,7 +820,7 @@ Emacsとともに配布されているWoMan Infoマニュアルを参照して�
 @end ifnotinfo
 
 @node Lisp Doc
-@subsection Emacs Lisp Documentation Lookup
+@subsection Emacs Lispドキュメントの照会
 
   Emacs Lispコードを編集するとき、コマンド@kbd{C-h f} (@code{describe-function})および@kbd{C-h
 v} (@code{describe-variable})で、使用したい関数または変数のビルトインドキュメントを閲覧できます。@ref{Name
@@ -833,7 +833,7 @@ eldoc-mode}とタイプします。Eldocモードは、メジャーモードのE
 Interactionモードとともに使用できます。
 
 @node Hideshow
-@section Hideshow minor mode
+@section Hideshowマイナーモード
 @cindex Hideshow mode
 @cindex mode, Hideshow
 
@@ -890,7 +890,7 @@ hs-minor-mode}とタイプします(@ref{Minor Modes}を参照してください
 @end table
 
 @node Symbol Completion
-@section Completion for Symbol Names
+@section シンボル名の補完
 @cindex completion (symbol names)
 
   補完は通常ミニバッファーで行われますが(@ref{Completion}を参照してください)、シンボル名の補完を、普通のEmacsバッファーで行うこともできます。
@@ -913,7 +913,7 @@ Lispモードの場合、カレントのEmacsセッションで定義された�
   Textモード、および関連するモードでは、@kbd{M-@key{TAB}}はスペルチェッカーの辞書にもとづいて単語を補完します。@ref{Spelling}を参照してください。
 
 @node MixedCase Words
-@section MixedCase Words
+@section 大文字小文字の混ざった単語
 @cindex camel case
 
   いくつかのプログラミングスタイルでは、@samp{unReadableSymbol}のような大文字小文字が混ざった(``CamelCase''の)シンボルを使います(GNUプロジェクトでは、識別子の単語の区切りに、大文字小文字の違いではなく、アンダースコアを使用することを推奨しています)。Emacsには、そのようなシンボルに簡単に対処するための、さまざまな機能があります。
@@ -932,7 +932,7 @@ P glasses @key{RET}}とタイプしてください。
 for Programs}を参照してください)。
 
 @node Semantic
-@section Semantic
+@section Semanticとは
 @cindex Semantic package
 
 Semanticは、@code{ソースコードパーサー(source code
@@ -981,7 +981,7 @@ Emacsがパースした任意のファイルで定義された関数名の入力
 @end ifnottex
 
 @node Misc for Programs
-@section Other Features Useful for Editing Programs
+@section プログラムを編集するための他の便利な機能
 
   プログラムを編集するためにデザインされているわけではありませんが、有用なEmacsコマンドもいくつかあります
 
@@ -1018,7 +1018,7 @@ Lispモードでは、文字列``lambda''を、ギリシャ文字のラムダに
 
 
 @node C Modes
-@section C and Related Modes
+@section Cおよび関連するモード
 @cindex C mode
 @cindex Java mode
 @cindex Pike mode
@@ -1052,7 +1052,7 @@ IDL、Pike、AWKのためのモード(これらは``Cモードおよび関連す
 @end menu
 
 @node Motion in C
-@subsection C Mode Motion Commands
+@subsection Cモードの移動コマンド
 
   このセクションでは、Cモードおよび関連するモードで、ポイントを移動するコマンドを説明します。
 
@@ -1097,7 +1097,7 @@ Cステートメントまたはセンテンスの最後に、ポイントを移�
 @end table
 
 @node Electric C
-@subsection Electric C Characters
+@subsection エレクトリックC文字
 
   Cモードおよび関連するモードでは、特定の文字は@dfn{エレクトリック(electric)} ---
 つまり自分自身を挿入するのに加えて、カレント行を再インデントしたり、オプションで改行を挿入します。``エレクトリック''な文字は、@kbd{@{}、@kbd{@}}、@kbd{:}、@kbd{#}、@kbd{;}、@kbd{,}、@kbd{<}、@kbd{>}、@kbd{/}、@kbd{*}、@kbd{(}、@kbd{)}です。
@@ -1126,7 +1126,7 @@ C-a}で、オンまたはオフに切り替えることができます。
 Auto-newlines,,, ccmode, The CC Mode Manual}を参照してください。
 
 @node Hungry Delete
-@subsection Hungry Delete Feature in C
+@subsection Cの欲張りな削除機能
 @cindex hungry deletion (C Mode)
 
   ポイント位置の空白文字のブロック全体を削除したい場合は、@dfn{hungry
@@ -1163,7 +1163,7 @@ hungry-delete機能を切り替えます(@code{c-toggle-hungry-state})。この�
    変数@code{c-hungry-delete-key}は、hungry-delete機能を有効にするかを制御します。
 
 @node Other C Commands
-@subsection Other Commands for C Mode
+@subsection Cモードのその他のコマンド
 
 @table @kbd
 @item M-x c-context-line-break
@@ -1255,7 +1255,7 @@ Hide-ifdefマイナーモードは、プリプロセッサーブロック@samp{#
 @end table
 
 @node Asm Mode
-@section Asm Mode
+@section Asmモード
 
 @cindex Asm mode
 @cindex assembler mode

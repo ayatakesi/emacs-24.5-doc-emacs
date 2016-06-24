@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Frames
-@chapter Frames and Graphical Displays
+@chapter フレームとグラフィカルなディスプレー
 @cindex frames
 
   Emacsがグラフィカルなディスプレー(たとえばXウィンドウシステム)で開始されたときは、システムレベルのグラフィカルな``ウィンドウ''を占有します。このマニュアルではこれを@dfn{フレーム}と呼び、``ウィンドウ''という言葉はフレームでバッファーを表示する部分のために使います。フレームには最初1つのウィンドウが含まれていますが、これを複数のウィンドウに分割することができます。フレームには通常、メニューバー、ツールバー、エコーエリアも含まれます。
@@ -55,7 +55,7 @@ systemsでこれを行うには、@ref{Text-Only Mouse}を、MS-DOSでこれを�
 @end menu
 
 @node Mouse Commands
-@section Mouse Commands for Editing
+@section 編集のためのマウスコマンド
 @cindex mouse buttons (what they do)
 @cindex mouse, selecting text using
 
@@ -135,7 +135,7 @@ Selection}を参照してください。
 mouse-wheel-mode}を使います。変数@code{mouse-wheel-follow-mouse}および@code{mouse-wheel-scroll-amount}は、(どこでホイールによるスクロール操作が行われたかによる)スクロール対象の選択方法と、バッファーがスクロールされる量を決定します。変数@code{mouse-wheel-progressive-speed}は、スクロールの早さがホイールを移動した早さにリンクするかを決定します。
 
 @node Word and Line Mouse
-@section Mouse Commands for Words and Lines
+@section 単語と行にたいするマウスコマンド
 
   以下の@kbd{Mouse-1}の変種は、1度に単語全体または行全体を選択します。Emacsは選択されたテキスト周辺のリージョンをアクティブにして、killリングにもコピーされます。
 
@@ -157,7 +157,7 @@ modeでのアンダースコアーなど)をダブルクリックすると、シ
 @end table
 
 @node Mouse References
-@section Following References with the Mouse
+@section マウスで参照をフォローする
 @kindex Mouse-1 @r{(on buttons)}
 @kindex Mouse-2 @r{(on buttons)}
 @cindex hyperlinks
@@ -178,7 +178,7 @@ modeでのアンダースコアーなど)をダブルクリックすると、シ
   選択されていないウィンドウのボタンでも通常、@kbd{Mouse-1}でクリックすればボタンがアクティブになります。変数@code{mouse-1-click-in-non-selected-windows}を@code{nil}に変更した場合、選択されていないウィンドウのボタンを@kbd{Mouse-1}でクリックすると、クリックした位置にポイントを移動してウィンドウを選択しますが、ボタンはアクティブになりません。
 
 @node Menu Mouse Clicks
-@section Mouse Clicks for Menus
+@section メニューにたいするマウスクリック
 
   @key{CTRL}および@key{SHIFT}で修飾されたマウスクリックにより、メニューが表示されるものがいくつかあります。
 
@@ -211,7 +211,7 @@ Rebinding}を参照してください)。
 @end smallexample
 
 @node Mode Line Mouse
-@section Mode Line Mouse Commands
+@section モードラインのマウスコマンド
 @cindex mode line, mouse
 @cindex mouse on mode line
 
@@ -245,7 +245,7 @@ Window}を参照してください)。
 Window}を参照してください。
 
 @node Creating Frames
-@section Creating Frames
+@section フレームの作成
 @cindex creating frames
 
 @kindex C-x 5
@@ -282,7 +282,7 @@ parameters)}を指定することにより、新しく作成されるフレー�
 Parameters}を参照してください。
 
 @node Frame Commands
-@section Frame Commands
+@section フレームコマンド
 
   以下のコマンドは、フレームを削除したり操作するために使われます:
 
@@ -337,7 +337,7 @@ Terminals}を参照してください)。他のグラフィカルなディスプ
 5 o}を呼び出し、マウスカーソルを選択されたフレームにワープさせます。
 
 @node Fonts
-@section Fonts
+@section フォント
 @cindex fonts
 
   デフォルトでは、Emacsはグラフィカルなディスプレーでテキストを表示するのに、10ポイントのmonospaceフォントを使います。違うフォントを指定する異なる方法がいくつかあります:
@@ -555,7 +555,7 @@ xfd -fn 6x13
 Parameters}を参照してください)のフォントをセットすることもできます。
 
 @node Speedbar
-@section Speedbar Frames
+@section スピードバーフレーム
 @cindex speedbar
 
 @cindex attached frame (of speedbar)
@@ -583,7 +583,7 @@ Displayモードに戻るには、@kbd{f}をタイプします。スピードバ
 Manual}を参照してください。
 
 @node Multiple Displays
-@section Multiple Displays
+@section 複数ディスプレー
 @cindex multiple displays
 
   1つのEmacsが、1つ以上のXディスプレーと通信できます。最初、Emacsは環境変数@env{DISPLAY}、または@samp{--display}オプション(@ref{Initial
@@ -600,7 +600,7 @@ Options}を参照してください)で指定された、ただ1つのディス�
   異なるXサーバーでフレームを開いた場合、Emacsは各サーバーごとに別な入力ストリームを作成します。各サーバーは、それぞれ選択されたフレームをもちます。特定のXサーバーで入力したコマンドは、そのサーバーの選択されたフレームに適用されます。
 
 @node Frame Parameters
-@section Frame Parameters
+@section フレームパラメーター
 @cindex default-frame-alist
 
   変数@code{default-frame-alist}の中の、@dfn{フレームパラメーター(frame
@@ -626,7 +626,7 @@ Reference Manual}を参照してください.
 ツールキットを使ってコンパイルされている場合、カラーとフォントを指定するフレームパラメーターは、メニューとメニューバーには影響を及ぼしません。なぜなら、それらはEmacsが直接描画しているのではなく、ツールキットにより描画されているからです。
 
 @node Scroll Bars
-@section Scroll Bars
+@section スクロールバー
 @cindex Scroll Bar mode
 @cindex mode, Scroll Bar
 
@@ -659,7 +659,7 @@ Parameters,,, elisp, The Emacs Lisp Reference Manual}を参照してください
   スクロールバーの視覚的な外見は、@code{scroll-bar}フェイスにより制御されます。
 
 @node Drag and Drop
-@section Drag and Drop
+@section ドラッグアンドドロップ
 @cindex drag and drop
 
   ほとんどのグラフィカルなデスクトップ環境で、Emacsは@dfn{ドラッグアンドドロップ(drag and
@@ -671,7 +671,7 @@ drop)}操作にたいする、基本的なサポートを提供します。た�
   現在のところ、XDNDおよびMotif drag and drop protocolsと、古いKDE 1.x protocolがサポートされています。
 
 @node Menu Bars
-@section Menu Bars
+@section メニューバー
 @cindex Menu Bar mode
 @cindex mode, Menu Bar
 @findex menu-bar-mode
@@ -690,7 +690,7 @@ Mouse Clicks}を参照してください。
 Bar}を参照してください。メニューバーのメニューの視覚的な外見をカスタマイズする方法は、@ref{X Resources}を参照してください。
 
 @node Tool Bars
-@section Tool Bars
+@section ツールバー
 @cindex Tool Bar mode
 @cindex mode, Tool Bar
 @cindex icons, toolbar
@@ -714,7 +714,7 @@ tool-bar-mode}とタイプします。このコマンドは、まだ作成され
 Parameters,,, elisp, The Emacs Lisp Reference Manual}を参照してください。
 
 @node Dialog Boxes
-@section Using Dialog Boxes
+@section ダイアログボックスの使用
 @cindex dialog boxes
 
 @vindex use-dialog-box
@@ -733,7 +733,7 @@ Parameters,,, elisp, The Emacs Lisp Reference Manual}を参照してください
   EmacsがGTK+サポートつきでコンパイルされている場合、EmacsはGTK+の``ファイル選択''ダイアログを使います。Emacsは非表示のファイル(名前がドットで始まるファイル)の表示の有効・無効を切り替えるボタンを、ダイアログボックスに追加します。この切り替えをデフォルトで有効にしたい場合、変数@code{x-gtk-show-hidden-files}を@code{t}に変更します。さらにEmacsは、GTK+ファイル選択ダイアログにヘルプテキストを追加します。このヘルプテキストを無効にするには、変数@code{x-gtk-file-dialog-help-text}を@code{nil}に変更してください。
 
 @node Tooltips
-@section Tooltips
+@section ツールチップ
 @cindex tooltips
 
   @dfn{ツールチップ}は、小さなウィンドウに現在のマウス位置のテキスト情報を表示します。ツールチップはウィンドウの重要なテキストの上や、ツールバーのボタンやメニューアイテムのような、Emacsフレームの他の部分の上でマウスを停止させたときにアクティブになります。
@@ -754,7 +754,7 @@ Resources}を参照してください)により指定されます。
 Operation}を参照してください。
 
 @node Mouse Avoidance
-@section Mouse Avoidance
+@section マウスの回避
 @cindex avoiding mouse in the way of your typing
 @cindex mouse avoidance
 
@@ -787,7 +787,7 @@ Avoidanceモードを使うには、変数@code{mouse-avoidance-mode}をカス�
 Avoidanceモードがマウスを移動したときは、常にそのフレームを前に表示します。
 
 @node Non-Window Terminals
-@section Non-Window Terminals
+@section 非ウィンドウ端末
 @cindex text terminal
 
   テキスト端末では、Emacsは1度に1つのEmacsフレームしか表示できません。それでも複数のEmacsフレームを作成して、それらを切り替えることができます。これらの端末でフレームを切り替えるのは、異なるウィンドウの設定を切り替えるのによく似ています。
@@ -806,7 +806,7 @@ set-frame-name @key{RET} @var{name}
 @key{RET}}を使うとその名前に一致するフレームを選択します。指定した名前は、そのフレームが選択されたときに、モードラインに表示されます。
 
 @node Text-Only Mouse
-@section Using a Mouse in Text Terminals
+@section テキスト端末でのマウスの使用
 @cindex mouse support
 @cindex terminal emulators, mouse support
 

@@ -9,7 +9,7 @@
 @c See file emacs.texi for copying conditions.
 
 @node Killing
-@chapter Killing and Moving Text
+@chapter テキストのkillと移動
 
   Emacsで@dfn{kill}とはテキストを消去して、@dfn{killリング}にコピーすることを意味します。@dfn{yank}とは、killリングからテキストを取り出して、バッファーに戻すことを意味します(``cut(カット、切り取り)''と``paste(ペースト、貼り付け)''という用語を使うアプリケーションもあります)。これはテキストブロックのセットが、循環的にアクセスできるリングに格納されているイメージから、killリングと名付けられました。@ref{Kill
 Ring}を参照してください。
@@ -26,7 +26,7 @@ Ring}を参照してください。
 @end menu
 
 @node Deletion and Killing
-@section Deletion and Killing
+@section 削除とkill
 
 @cindex killing text
 @cindex cutting text
@@ -54,7 +54,7 @@ Paste}を参照してください。
 @end menu
 
 @node Deletion
-@subsection Deletion
+@subsection 削除
 @findex delete-backward-char
 @findex delete-char
 
@@ -107,7 +107,7 @@ C-u}を指定すると、隣接した重複行だけを検索します。これ�
 C-u}を指定すると、連続する空行は残します。
 
 @node Killing by Lines
-@subsection Killing by Lines
+@subsection 行のkill
 
 @table @kbd
 @item C-k
@@ -136,7 +136,7 @@ C-u}を指定すると、連続する空行は残します。
 (@code{kill-whole-line})は行中のポイントの位置に関わらず、改行を含めた行全体をkillします。キーシーケンス@kbd{C-S-backspace}をタイプできないテキスト端末がたくさんあることに注意してください。
 
 @node Other Kill Commands
-@subsection Other Kill Commands
+@subsection その他のkillコマンド
 @findex kill-region
 @kindex C-w
 
@@ -179,7 +179,7 @@ expressions)にたいしては@kbd{C-M-k}(@ref{Expressions}を参照してくだ
 (@code{zap-to-char})は、killと検索が組み合わされています。これは文字を読み取り、ポイントからバッファー内の次にその文字が現れる場所までをkillします。数引数は繰り返し回数です。負の引数の場合は後方に検索することを意味し、ポイントの前のテキストをkillします。
 
 @node Kill Options
-@subsection Options for Killing
+@subsection killのオプション
 
 @vindex kill-read-only-ok
 @cindex read-only text, killing
@@ -189,7 +189,7 @@ expressions)にたいしては@kbd{C-M-k}(@ref{Expressions}を参照してくだ
   変数@code{kill-do-not-save-duplicates}を非@code{nil}に変更すると、同じものにたいするkillは重複なくkillリングの1つのエントリーとなります。
 
 @node Yanking
-@section Yanking
+@section yank
 @cindex moving text
 @cindex copying text
 @cindex kill ring
@@ -229,7 +229,7 @@ and Paste}を参照してください。
 @end menu
 
 @node Kill Ring
-@subsection The Kill Ring
+@subsection killリング
 
   @dfn{killリング(kill
 ring)}とは、以前にkillされたテキストブロックからなるリストです。すべてのバッファーにたいして、killリングは1つしかないので、あるバッファーでkillしたテキストを、他のバッファーにyankすることができます。これはバッファーから他のバッファーへテキストを移動する、通常の方法です(他の方法もいくつかあります。たとえばテキストをレジスターに格納することもできます。@ref{Registers}を参照してください。テキストを移動する他の方法については、@ref{Accumulating
@@ -243,7 +243,7 @@ Text}を参照してください)。
 v kill-ring}で見ることができます。
 
 @node Earlier Kills
-@subsection Yanking Earlier Kills
+@subsection 過去にkillしたテキストをyankする
 @cindex yanking previous kills
 
   @ref{Yanking}で説明したように、@kbd{C-y}に数引数を指定して、最後にkillされたものではないテキストをyankできます。これはkillリングのどのエントリーが欲しいか覚えているとき便利です。もし覚えていないときは、@kbd{M-y}
@@ -271,7 +271,7 @@ yank''ポインターは同じ位置に留まるので、@kbd{C-y}でそのテ�
   @kbd{C-y}に数引数を指定するときも、yankするエントリーに``last yank''ポインターをセットします。
 
 @node Appending Kills
-@subsection Appending Kills
+@subsection killしたテキストの追加
 
 @cindex appending kills in the ring
   通常はkillコマンドを実行するごとに、新しいエントリーがkillリングにpushされます。しかし2回以上の連続するkillコマンドにより、killされたテキストを1つのエントリーとしてまとめ、すべてのテキストを1単位として、あたかもそれがkillされたかのように、1回の@kbd{C-y}でyankできます。
@@ -303,7 +303,7 @@ M-@key{DEL}}で後方にkillしても結果は同じです。killリングのエ
 (@code{kill-ring-save})の後のkillコマンドは、@kbd{M-w}でkillリングにコピーされたテキストへの追加はしません。
 
 @node Cut and Paste
-@section ``Cut and Paste'' Operations on Graphical Displays
+@section グラフィカルなディスプレーでのカットアンドペースト
 @cindex cut
 @cindex copy
 @cindex paste
@@ -324,7 +324,7 @@ Coding}を参照してください。
 @end menu
 
 @node Clipboard
-@subsection Using the Clipboard
+@subsection クリップボードを使う
 @cindex clipboard
 
   @dfn{クリップボード(clipboard)}とは、ほとんどのグラフィカルなアプリケーションが、``カットアンドペースト''のために使う機能です。もしクリップボードが存在する場合、Emacsのkillおよびyankコマンドもそれを使います。
@@ -358,7 +358,7 @@ manager)}と呼ばれる機能をサポートします。もしEmacsがクリッ
 Selection}を参照してください)を使っていました。もしこのほうがよいなら、@code{x-select-enable-clipboard}を@code{nil}、@code{x-select-enable-primary}を@code{t}、@code{mouse-drag-copy-region}を@code{t}に変更してください。この場合は、次のコマンドを使って、クリップボードに明示的にアクセスできます。リージョンをkillしてクリップボードに保存するには@code{clipboard-kill-region}、リージョンをkillリングにコピーするとともにクリップボードに保存するには@code{clipboard-kill-ring-save}、クリップボードの内容をポイント位置にyankするには@code{clipboard-yank}です。
 
 @node Primary Selection
-@subsection Cut and Paste with Other Window Applications
+@subsection 他のウィンドウアプリケーションにたいするカットアンドペースト
 @cindex X cutting and pasting
 @cindex X selection
 @cindex primary selection
@@ -382,7 +382,7 @@ Selection}を参照してください)だけをプライマリー選択に保存
   MS-Windowsはプライマリー選択を提供しませんが、Emacsは単一のEmacsセッション内で選択されたテキストを内部に格納することにより、これをエミュレートします。したがってWindowsでも、プライマリー選択に関するすべての機能とコマンドは、Xと同様に機能します。しかしこれは同一セッションにおけるカットやペーストなどの場合で、Emacsセッションと他のアプリケーション間では機能しません。
 
 @node Secondary Selection
-@subsection Secondary Selection
+@subsection セカンダリー選択
 @cindex secondary selection
 
   プライマリー選択に加えて、Xウィンドウシステムは@dfn{セカンダリー選択(secondary
@@ -420,7 +420,7 @@ Commands}を参照してください)。
 Commands}を参照してください。
 
 @node Accumulating Text
-@section Accumulating Text
+@section テキストの追加
 @findex append-to-buffer
 @findex prepend-to-buffer
 @findex copy-to-buffer
@@ -462,7 +462,7 @@ append-to-file}でテキストを直接ファイルに追加できます。こ�
   テキストの移動に関する他の方法はレジスターに格納する方法です。@ref{Registers}を参照してください。
 
 @node Rectangles
-@section Rectangles
+@section 矩形領域(Rectangles)
 @cindex rectangle
 @cindex columns (and rectangles)
 @cindex killing rectangular areas of text
@@ -559,7 +559,7 @@ string-insert-rectangle}は、@code{string-rectangle}と同様ですが、各行
 (@code{rectangle-mark-mode})は、矩形リージョンをハイライトするか、標準のリージョンをハイライトするかを切り替えます(最初にリージョンをアクティブにする必要があります)。このモードが有効な場合、@kbd{C-f}、@kbd{C-n}などのコマンドは矩形領域に合ったやり方でリージョンのサイズを変更し、kill、yankは矩形領域を処理します。@ref{Killing}を参照してください。このモードはリージョンがアクティブな間だけ持続します。
 
 @node CUA Bindings
-@section CUA Bindings
+@section CUAバインド
 @findex cua-mode
 @vindex cua-mode
 @cindex CUA key bindings

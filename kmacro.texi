@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Keyboard Macros
-@chapter Keyboard Macros
+@chapter キーボードマクロ
 @cindex defining keyboard macros
 @cindex keyboard macro
 
@@ -35,7 +35,7 @@ language)で記述されている点が、通常のEmacsコマンドと異なり
 @end menu
 
 @node Basic Keyboard Macro
-@section Basic Use
+@section 基本的な使い方
 
 @table @kbd
 @item @key{F3}
@@ -112,7 +112,7 @@ e}には繰り返し回数を引数指定できます。
 4 C-x )}は、マクロを3回すぐに追加実行します。
 
 @node Keyboard Macro Ring
-@section The Keyboard Macro Ring
+@section キーボードマクロリング
 
   すべての定義されたキーボードマクロは、@dfn{キーボードマクロリング(keyboard macro
 ring)}に記録されます。キーボードマクロリングはすべてのバッファーで共有され、1つだけしかありません。
@@ -160,7 +160,7 @@ C-k n}で名前をつけることができます。
   キーボードマクロリングに格納できるマクロの最大数は、カスタマイズ可能な変数@code{kmacro-ring-max}により決定されます。
 
 @node Keyboard Macro Counter
-@section The Keyboard Macro Counter
+@section キーボードマクロカウンター
 
   キーボードマクロには、それぞれカウンターが割り当てられています。これはマクロの定義を開始したとき0に初期化されます。カウンターの数値をバッファーに挿入することもできます。カウンターの数値は、マクロが呼び出された回数にもとづきます。バッファーにカウンターの値が挿入される度に、カウンターは増加します。
 
@@ -223,7 +223,7 @@ Manual}を参照してください)。ミニバッファーに書式文字列を
 Registers}を参照してください。大抵の用途では、キーボードマクロカウンターを使う方が単純です。
 
 @node Keyboard Macro Query
-@section Executing Macros with Variations
+@section 変化のあるマクロの実行
 
   キーボードマクロで、@code{query-replace}のように変更を行うか応答を求める効果を作ることができます。
 
@@ -259,7 +259,7 @@ q}は、完全に異なる関数を実行します。これはマクロ定義中
 Edit}を参照してください。
 
 @node Save Keyboard Macro
-@section Naming and Saving Keyboard Macros
+@section キーボードマクロの命名と保存
 
 @table @kbd
 @item C-x C-k n
@@ -309,7 +309,7 @@ File}を参照してください)に保存すれば、そのマクロはEmacsを
   @code{insert-kbd-macro}に数引数を与えると、(もしあれば)@var{macroname}にバインドしたキーを記録するためのLispコードが追加されるので、ファイルをロードしたとき同じキーにマクロが割り当てられます。
 
 @node Edit Keyboard Macro
-@section Editing a Keyboard Macro
+@section キーボードマクロの編集
 
 @table @kbd
 @item C-x C-k C-e
@@ -339,7 +339,7 @@ e}、@kbd{M-x @var{name}}、またはその他のキーシーケンス)を入力
 (@code{kmacro-edit-lossage})とタイプして、最近300回のキーストロークをマクロとして編集できます。
 
 @node Keyboard Macro Step-Edit
-@section Stepwise Editing a Keyboard Macro
+@section キーボードマクロのステップ編集
 
 @findex kmacro-step-edit-macro
 @kindex C-x C-k SPC

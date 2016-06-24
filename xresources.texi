@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node X Resources
-@appendix X Options and Resources
+@appendix Xのオプションとリソース
 
   Xを使用するプログラムにたいして通常行なうように、Xリソースを使用してEmacsのXに関連する外観をカスタマイズできます。
 
@@ -33,7 +33,7 @@ Registry}を参照してください)を使用して、いくつかの外観を�
 @end menu
 
 @node Resources
-@appendixsec X Resources
+@appendixsec Xリソース
 @cindex resources
 @cindex X resources
 @cindex @file{~/.Xdefaults} file
@@ -100,7 +100,7 @@ Emacs呼び出しの名前がつくリソースは、@samp{Emacs}という名前
 @end ifnottex
 
 @node Table of Resources
-@appendixsec Table of X Resources for Emacs
+@appendixsec EmacsにたいするXリソースの表
 
   以下の表は、メニューバーのようなグラフィカルなウィジェットの外観を制御するものを除いた、Emacsが認識するXリソース名です:
 
@@ -240,7 +240,7 @@ Customization}を参照してください。
 
 @ifnottex
 @node Lucid Resources
-@appendixsec Lucid Menu And Dialog X Resources
+@appendixsec Lucidのメニューとダイアログ
 @cindex Menu X Resources (Lucid widgets)
 @cindex Dialog X Resources (Lucid widgets)
 @cindex Lucid Widget X Resources
@@ -284,7 +284,7 @@ Lucidウィジェットは、あなたのlocaleで他国語テキストを表示
 @end table
 
 @node Motif Resources
-@appendixsec Motif Menu X Resources
+@appendixsec MotifメニューのXリソース
 @cindex Menu X Resources (Motif widgets)
 @cindex Motif Widget X Resources
 
@@ -376,7 +376,7 @@ Emacs.fsb*.fontList: 8x16
 @end ifnottex
 
 @node GTK resources
-@appendixsec GTK resources
+@appendixsec GTKリソース
 @cindex GTK+ resources
 @cindex resource files for GTK
 @cindex @file{~/.gtkrc-2.0} file
@@ -401,7 +401,7 @@ APIドキュメントを参照してください。
 @end menu
 
 @node GTK Resource Basics
-@appendixsubsec GTK Resource Basics
+@appendixsubsec GTKリソースの基本
 
   GTK+2リソースファイル(通常は@file{~/.emacs.d/gtkrc})で、リソースをセットする一番簡単な方法は、単に変数に値を割り当てる方法です。たとえば以下の行を利ソースファイルに置くことにより、すべてのGTK+ウィジェットのフォントが@samp{courier-12}に変更されます:
 
@@ -447,7 +447,7 @@ widget "*verticalScrollBar*" style "scroll"
 @end smallexample
 
 @node GTK Widget Names
-@appendixsubsec GTK widget names
+@appendixsubsec GTKウィジェット名
 @cindex GTK widget names
 
   GTK+ウィジェットは@dfn{ウィジェット名(widget name)}と@dfn{ウィジェットクラス(widget
@@ -476,7 +476,7 @@ widget "*" style "my_style"
 @end smallexample
 
 @node GTK Names in Emacs
-@appendixsubsec GTK Widget Names in Emacs
+@appendixsubsec EmacsでのGTKウィジェット名
 @cindex GTK widget names
 @cindex GTK widget classes
 
@@ -533,7 +533,7 @@ widget_class "*Menu*" style "my_menu_style"
 @end smallexample
 
 @node GTK styles
-@appendixsubsec GTK styles
+@appendixsubsec GTKスタイル
 @cindex GTK styles
 
   以下は2つのGTK+スタイル宣言の例です:

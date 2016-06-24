@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Mark
-@chapter The Mark and the Region
+@chapter マークとリージョン
 @cindex mark
 @cindex setting a mark
 @cindex region
@@ -43,7 +43,7 @@ region(矩形リージョン)''という、違う種類のリージョンもあ�
 @end menu
 
 @node Setting Mark
-@section Setting the Mark
+@section マークのセット
 
   マークをセットするためのコマンドがいくつかあります:
 
@@ -103,7 +103,7 @@ selection)}に保存します。これにより@kbd{mouse-2}をクリックし�
 Selection}を参照してください。
 
 @node Marking Objects
-@section Commands to Mark Textual Objects
+@section テキストオブジェクトをマークするコマンド
 
 @cindex marking sections of text
   単語(word)、リスト(list)、パラグラフ(paragraph:
@@ -149,7 +149,7 @@ C-p}
 (@code{mark-whole-buffer})はポイントをバッファーの先頭、マークを最後にセットすることによりバッファー全体をリージョンとします。
 
 @node Using Region
-@section Operating on the Region
+@section リージョンを操作する
 
 @cindex operations on a marked region
   一度リージョンを設定すると、それを処理するいくつかの方法があります:
@@ -200,7 +200,7 @@ Selectionモードを有効にしていると、マークがアクティブな�
 Selectionモードをオフにするには、@kbd{M-x delete-selection-mode}とタイプしてください。
 
 @node Mark Ring
-@section The Mark Ring
+@section マークリング
 
 @cindex mark ring
   各バッファーは、@dfn{マークリング(mark
@@ -241,7 +241,7 @@ C-@key{SPC}}を繰り返すと、リングの現在位置を巡回します。
 Registers}を参照してください)。
 
 @node Global Mark Ring
-@section The Global Mark Ring
+@section グローバルマークリング
 @cindex global mark ring
 
 @vindex global-mark-ring-max
@@ -255,7 +255,7 @@ ring)}が1つあります。以前マークをセットしてからバッファ�
 C-@key{SPC}}を使うことにより、古いバッファーのマーク位置に移動します。
 
 @node Shift Selection
-@section Shift Selection
+@section シフト選択
 @cindex shift-selection
 
   シフトキーを押しながらカーソル移動コマンドをタイプすると、ポイントを移動する前の位置にマークをセットするので、リージョンが元のポイント位置から新しいポイント位置に拡張されます。この機能は@dfn{シフト選択(shift-selection)}と呼ばれます。これは他のエディターでテキストを選択する方法と似ています。
@@ -271,7 +271,7 @@ Mark}を参照してください)。たとえばマウスをドラッグして�
   シフト選択をオフにするには、@code{shift-select-mode}を@code{nil}にセットしてください。これをセットしても、マウスコマンドによるマークのセッティングは無効になりません。
 
 @node Disabled Transient Mark
-@section Disabling Transient Mark Mode
+@section Transient Markモードを無効にする
 @cindex mode, Transient Mark
 @cindex Transient Mark mode
 @cindex highlighting region

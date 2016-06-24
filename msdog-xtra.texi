@@ -10,7 +10,7 @@
 @c This file is included either in emacs-xtra.texi (when producing the
 @c printed version) or in the main Emacs manual (for the on-line version).
 @node MS-DOS
-@section Emacs and MS-DOS
+@section EmacsとMS-DOS
 @cindex MS-DOG
 @cindex MS-DOS peculiarities
 
@@ -49,7 +49,7 @@ Binary}を参照してください
 @end menu
 
 @node MS-DOS Keyboard
-@subsection Keyboard Usage on MS-DOS
+@subsection MS-DOSでのキーボードの使用方法
 
 @kindex DEL @r{(MS-DOS)}
 @kindex BS @r{(MS-DOS)}
@@ -90,7 +90,7 @@ Binary}を参照してください
 @end smallexample
 
 @node MS-DOS Mouse
-@subsection Mouse Usage on MS-DOS
+@subsection MS-DOSでびマウスの使用方法
 
 @cindex mouse support under MS-DOS
   MS-DOSのEmacsはマウスをサポートします(デフォルト端末のみ)。メニューやメニューバーの使用を含めて、マウスコマンドはドキュメントされているように機能します
@@ -139,7 +139,7 @@ Windows上でのMS-DOS版のEmacsは、プライマリー選択とカットバ�
   変数@code{dos-display-scancodes}が非@code{nil}の場合、Emacsは各キーストロークの@acronym{ASCII}値とキーボードのスキャンコードを表示します。この機能は、デバッグのための@code{view-lossage}コマンドを補足するためのものです。
 
 @node MS-DOS Display
-@subsection Display on MS-DOS
+@subsection MS-DOSでの表示
 @cindex faces under MS-DOS
 @cindex fonts, emulating under MS-DOS
 
@@ -210,7 +210,7 @@ Mode}を呼び出すことによりそのビデオモードに切り替えます
   MS-DOSでフレームサイズを変更すると、他のすべてのフレームも新しいサイズに変更されます。
 
 @node MS-DOS File Names
-@subsection File Names on MS-DOS
+@subsection MS-DOSでのファイル名
 @cindex file names under MS-DOS
 @cindex init file, default name under MS-DOS
 
@@ -245,7 +245,7 @@ NTはDOSプログラムが長いファイル名にアクセスすることを許
   MS-DOSのEmacsは、@file{/dev}というディレクトリー名を特別に使います。なぜならGJGPPのエミュレーターライブラリーの機能は、I/Oデバイスの名前がそのディレクトリーにあるかのように振る舞うからです。わたしたちは任意のディスクにたいして、@file{/dev}という名前のディレクトリーの使用を避けることを推奨します。
 
 @node MS-DOS Printing
-@subsection Printing and MS-DOS
+@subsection 印刷とMS-DOS
 
   @code{lpr-buffer}
 @iftex
@@ -282,7 +282,7 @@ lpr-buffer}の前に、@kbd{C-x @key{RET} c}
 
 
 @node MS-DOS and MULE
-@subsection International Support on MS-DOS
+@subsection MS-DOSでの国際化サポート
 @cindex international support @r{(MS-DOS)}
 
   MS-DOSのEmacsは、異なる文字セット同士を変換するためのコーディングシステムを含む、GNU、Unix、その他のプラットフォームでサポートされているのと同じ国際化文字セットをサポートします
@@ -347,7 +347,7 @@ accentつきの小文字の@samp{o})にたいするグリフをもたない場�
   MS-Windowsは独自のコードページを提供し、同じロケールにたいするDOSコードページとは異なります。たとえばDOSコードページと同じ文字をサポートするWindowsコードページは1252で、DOSコードページ855と同じ文字をサポートするWindowsコードページは1252、などです。EmacsのMS-Windowsバージョンを@samp{-nw}オプションで呼び出したとき、Emacsはカレントコードページを使用して表示を行ないます。
 
 @node MS-DOS Processes
-@subsection Subprocesses on MS-DOS
+@subsection MS-DOSでのサブプロセス
 
 @cindex compilation under MS-DOS
 @cindex inferior processes under MS-DOS

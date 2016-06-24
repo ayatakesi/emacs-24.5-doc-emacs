@@ -8,7 +8,7 @@
 @c Foundation, Inc.
 @c See file emacs.texi for copying conditions.
 @node Text
-@chapter Commands for Human Languages
+@chapter 人間の言語のためのコマンド
 @cindex text
 @cindex manipulating text
 
@@ -77,7 +77,7 @@ Manual,autotype}を参照してください。
 @end menu
 
 @node Words
-@section Words
+@section 単語
 @cindex words
 @cindex Meta commands and words
 
@@ -144,7 +144,7 @@ Tables, elisp, The Emacs Lisp Reference Manual}を参照してください。
 Info}を参照してください。
 
 @node Sentences
-@section Sentences
+@section センテンス
 @cindex sentences
 @cindex manipulating sentences
 
@@ -192,7 +192,7 @@ Commands}を参照してください)。
   Thaiのようないくつかの言語は、センテンスの最後を示すのにピリオドを使用しません。そのような場合は変数@code{sentence-end-without-period}に@code{t}をセットします。
 
 @node Paragraphs
-@section Paragraphs
+@section パラグラフ
 @cindex paragraphs
 @cindex manipulating paragraphs
 
@@ -237,7 +237,7 @@ Textモードを使用します。@ref{Text Mode}を参照してください。
 \t]*$"}}、@code{paragraph-separate}は@w{@code{"[ \t\f]*$"}}です。
 
 @node Pages
-@section Pages
+@section ページ
 
 @cindex pages
 @cindex formfeed character
@@ -298,7 +298,7 @@ Page has 96 (72+25) lines
   変数@code{page-delimiter}は、ページがどこで始まるかを制御します。この値にはページを分割する行の先頭にマッチする正規表現を指定します(@ref{Regexps}を参照してください)。この変数の値は通常@code{"^\f"}で、これは行の先頭の改ページ文字にマッチします。
 
 @node Filling
-@section Filling Text
+@section テキストのフィル
 @cindex filling text
 
   テキストを@dfn{フィル(fill)}するとは、指定した幅に収まるように行を分割することを意味します。Emacsはフィルを2つの方法で行います。Auto
@@ -313,7 +313,7 @@ Fillモードでは、自己挿入文字によるテキストの挿入で、自�
 @end menu
 
 @node Auto Fill
-@subsection Auto Fill Mode
+@subsection Auto Fillモード
 @cindex Auto Fill mode
 @cindex mode, Auto Fill
 
@@ -354,7 +354,7 @@ Fillモードはパラグラフ全体を再フィルしません。これは行�
 @end ifnottex
 
 @node Fill Commands
-@subsection Explicit Fill Commands
+@subsection 明示的なフィルコマンド
 
 @table @kbd
 @item M-q
@@ -408,7 +408,7 @@ Mode}を参照してください)。
   行分割を許さない場所の条件を追加で指定するには、アブノーマルフック変数@code{fill-nobreak-predicate}をカスタマイズします(@ref{Hooks}を参照してください)。このフックの各関数は、Emacsが行を分割すべきと判断する位置で、引数なしで呼び出されます。関数が非@code{nil}値を返した場合、Emacsはその位置で行を分割しません。このフックに指定できる関数には、@code{fill-single-word-nobreak-p}(センテンスの最初の単語の後ろ、および最後の単語の前では分割しません)、@code{fill-single-char-nobreak-p}(1文字の単語の後ろでは分割しません)、@code{fill-french-nobreak-p}(@samp{(}の後ろ、および@samp{)}、@samp{:}、@samp{?}の前では分割しません)が含まれます。
 
 @node Fill Prefix
-@subsection The Fill Prefix
+@subsection フィルプレフィクス
 
 @cindex fill prefix
   @dfn{フィルプレフィクス(fill
@@ -471,7 +471,7 @@ fill-nonuniform-paragraphs}も同様なコマンドですが、別の方法で�
 Indentation}を参照してください。
 
 @node Adaptive Fill
-@subsection Adaptive Filling
+@subsection 適応型フィル
 
 @cindex adaptive filling
   フィルコマンドは、特定なケースでは自動的に適切なフィルプレフィクスを推測できます。空白文字または特定の区切り文字が行の先頭にあり、それがパラグラフの全行に適用されている場合です。
@@ -508,7 +508,7 @@ Indentation}を参照してください。
   変数@code{adaptive-fill-function}に関数をセットすることにより、より複雑な方法で自動的にフィルプレフィクスを選択する方法を指定できます。この関数は行の左端の直後のポイントで呼び出され、その行にもとづいた適切なフィルプレフィクスを返すべきです。この関数が@code{nil}を返した場合、@code{adaptive-fill-regexp}がフィルプレフィクスを見つける機会を与えられます。
 
 @node Case
-@section Case Conversion Commands
+@section 大文字小文字変換コマンド
 @cindex case conversion
 
   Emacsには、1つの単語または任意の範囲のテキストを、大文字または小文字に変換するコマンドがあります。
@@ -555,7 +555,7 @@ Indentation}を参照してください。
   リージョンにたいする大文字小文字の変換コマンド@code{upcase-region}および@code{downcase-region}は、通常では無効になっています。これは、これらを使おうと試みたとき、確認を求められることを意味します。確認にたいして同意するとコマンドが有効になり、それ以降は確認を求められなくなることを意味します。@ref{Disabling}を参照してください。
 
 @node Text Mode
-@section Text Mode
+@section Textモード
 @cindex Text mode
 @cindex mode, Text
 @findex text-mode
@@ -591,7 +591,7 @@ paragraph-indent-minor-mode}を使って、等価なマイナーモードを有�
   以下のセクションでは、Textモードから@dfn{派生}したいくつかのメジャーモードを説明します。派生したモードは、上記で説明したTextモードのほとんどの機能を継承します。とくに、Textモードから派生したモードは、それら自身のモードフックの前に、@code{text-mode-hook}を実行します。
 
 @node Outline Mode
-@section Outline Mode
+@section Outlineモード
 @cindex Outline mode
 @cindex mode, Outline
 @cindex invisible lines
@@ -629,7 +629,7 @@ minorモードは、@kbd{C-c
 @end menu
 
 @node Outline Format
-@subsection Format of Outlines
+@subsection アウトラインのフォーマット
 
 @cindex heading lines (Outline mode)
 @cindex body lines (Outline mode)
@@ -668,7 +668,7 @@ texinfo形式のこと)、@code{outline-regexp}に@samp{"@@chap\\|@@\\(sub\\)*se
   変数@code{outline-level}をセットすることにより、ヘッダー行のレベルを計算するためのルールを明示できに指定できます。@code{outline-level}の値には、引数をとらないカレントヘッダーのレベルを返す関数を指定します。この変数をセットする推奨された方法は、メジャーモードのコマンドを使うか、ファイルローカル変数を使用する方法です。
 
 @node Outline Motion
-@subsection Outline Motion Commands
+@subsection アウトライン移動コマンド
 
   Outlineモードはヘッダー行を後方または前方に移動する、特別な移動コマンドを提供します。
 
@@ -704,7 +704,7 @@ texinfo形式のこと)、@code{outline-regexp}に@samp{"@@chap\\|@@\\(sub\\)*se
 C-u} (@code{outline-up-heading})は、より浅くネストされたヘッダー行に後方へ移動します。
 
 @node Outline Visibility
-@subsection Outline Visibility Commands
+@subsection アウトライン表示コマンド
 
   Outlineモードには、アウトライン構造にもとづいてバッファーの一部を一時的に非表示にしたり可視にするコマンドが、いくつかあります。これらのコマンドはアンドゥ可能ではありません。コマンドの効果は単純にアンドゥメカニズムに記録される訳ではありませんが、それらを実行した直後に限りアンドゥできます(@ref{Undo}を参照してください)。
 
@@ -789,7 +789,7 @@ Replace}を参照してください)。バッファーローカルなマイナ�
 reveal-mode})を使用して、操作にしたがって自動的にテキストを可視にもできます。
 
 @node Outline Views
-@subsection Viewing One Outline in Multiple Views
+@subsection 複数ビューによるアウトラインの閲覧
 
 @cindex multiple views of outline
 @cindex views of an outline
@@ -803,7 +803,7 @@ Buffers}を参照してください。
 b}や他のEmacsコマンドで、通常のやり方でウィンドウにそれを表示できます。テキストの一部を可視にしたり非表示にするOutlineモードのコマンドは、それぞれのバッファーで独立したエントリーを操作し、それぞれのバッファーは独自のビューをもつことができます。同じアウトラインにたいして2つ以上のビューが欲しいときは、追加でインダイレクトバッファーを作成します。
 
 @node Foldout
-@subsection Folding Editing
+@subsection 折り畳み編集
 
 @cindex folding editing
   Foldoutパッケージは、OutlineモードおよびOutline minorモードを、``フォールディング(folding:
@@ -886,7 +886,7 @@ C-x}は2つのフォールドを抜け出し、テキストとサブヘッダー
 @end example
 
 @node Org Mode
-@section Org Mode
+@section Orgモード
 @cindex organizer
 @cindex planner
 @findex Org mode
@@ -934,7 +934,7 @@ The Org Mode Manual, Introduction, org, The Org Manual}を参照してくださ�
 @end menu
 
 @node Org Organizer
-@subsection Org as an organizer
+@subsection オーガナイザーとしてのOrg
 @cindex TODO item
 @cindex Org agenda
 
@@ -971,7 +971,7 @@ org-agenda}とタイプします。このコマンドは何を見たいのか、
 @end ifnottex
 
 @node Org Authoring
-@subsection Org as an authoring system
+@subsection オーサリングシステムとしてのOrg
 @cindex Org exporting
 
 @findex org-export
@@ -1004,7 +1004,7 @@ This is an example.
 Manual}を参照してください。
 
 @node TeX Mode
-@section @TeX{} Mode
+@section @TeX{}モード
 @cindex @TeX{} mode
 @cindex @LaTeX{} mode
 @cindex Sli@TeX{} mode
@@ -1064,7 +1064,7 @@ AUC@TeX{}パッケージは、@TeX{}およびそれに関連するフォーマ�
 @end menu
 
 @node TeX Editing
-@subsection @TeX{} Editing Commands
+@subsection @TeX{}編集コマンド
 
 @table @kbd
 @item "
@@ -1109,7 +1109,7 @@ C-c}などの、通常のOccurモードのコマンドを使用できます(@ref
 brackets)やカッコ(parentheses)などもカウントすることに注意してください。これは@TeX{}構文をチェックする目的としては、厳密に正しいとは言えません。しかしカッコと角カッコはテキストの中で、同じような対応の取れた区切りとして使用され、さまざまな移動コマンドや、対応する区切りの表示が、それらにたいして機能するのは便利なのです。
 
 @node LaTeX Editing
-@subsection @LaTeX{} Editing Commands
+@subsection @LaTeX{}編集コマンド
 
   @LaTeX{}モードは、plain @TeX{}には適用できない特別な機能をいくつか提供します:
 
@@ -1137,7 +1137,7 @@ C-o}にたいしてブロックタイプを入力するとき、通常の補完�
 (@code{tex-close-latex-block})により、対応が取れていない最後の@samp{\begin}に対応する@samp{\end}を挿入することができます。これは対応する@samp{\begin}に調和するように@samp{\end}をインデントし、ポイントが行の先頭にあるときは@samp{\end}タグの後ろに改行を挿入します。マイナーモード@code{latex-electric-env-pair-mode}は、@samp{\end}か@samp{\begin}の一方をタイプしたとき、自動的に対応する@samp{\end}または@samp{\begin}を挿入します。
 
 @node TeX Print
-@subsection @TeX{} Printing Commands
+@subsection @TeX{}印刷コマンド
 
   バッファーの全内容、または一部(たとえば大きなドキュメントの1つのチャプター)にたいして、@TeX{}をEmacsのサブプロセスとして呼び出すことができます。
 
@@ -1263,7 +1263,7 @@ C-f} (@code{tex-file})を行う必要があります。その後@kbd{C-c @key{TA
 (@code{tex-compile})をタイプします。このコマンドは@file{pdflatex}、@file{yap}、@file{xdvi}、@file{dvips}を含む、多くの一般的なプログラムに渡す引数を知っています。標準の補完キーを使用して望ましいコンパイルプログラムを選択できます(@ref{Completion}を参照してください)。
 
 @node TeX Misc
-@subsection @TeX{} Mode Miscellany
+@subsection @TeX{}モード、その他
 
 @vindex tex-shell-hook
 @vindex tex-mode-hook
@@ -1283,7 +1283,7 @@ iso-iso2gtex}、@kbd{M-x
 iso-gtex2iso}はLatin-1でエンコードされたファイルと、@TeX{}でエンコードされた等価なファイルの変換に使用できます。
 
 @node HTML Mode
-@section SGML and HTML Modes
+@section SGMLモードとHTMLモード
 @cindex SGML mode
 @cindex HTML mode
 @cindex mode, SGML
@@ -1374,7 +1374,7 @@ nXMLモードについては、Emacsとともに配布されているInfoマニ�
 sgml-mode}とタイプします。SGMLを有効にするとき、EmacsはバッファーがXMLかどうかを検証します。もしXMLの場合、変数@code{sgml-xml-mode}に非@code{nil}値をセットします。これにより上述したSGMLモードのタグ挿入コマンドは、常に明示的に終了タグを挿入するようになります。
 
 @node Nroff Mode
-@section Nroff Mode
+@section Nroffモード
 
 @cindex nroff
 @findex nroff-mode
@@ -1409,7 +1409,7 @@ Modes}を参照してください)。このモードがオンのとき、グル�
 Mode}を参照してください)を使用する場合、ヘッダー行は@samp{.H}の後に数字(ヘッダーレベル)が続く形式の行です。
 
 @node Enriched Text
-@section Enriched Text
+@section Enrichedテキスト
 @cindex Enriched mode
 @cindex mode, Enriched
 @cindex enriched text
@@ -1440,7 +1440,7 @@ Lockモードはカレントバッファーの内容にもとづいて、テキ�
 @end menu
 
 @node Enriched Mode
-@subsection Enriched Mode
+@subsection Enrichedモード
 
   Enrichedモードは、バッファーローカルなマイナーモードです(@ref{Minor
 Modes}を参照してください)。@samp{text/enriched}フォーマットで保存されたファイルをvisitすると、Emacsは自動的にEnrichedモードを有効にし、ファイル内のフォーマット情報をバッファーのテキストに適用します。Enrichedモードが有効なときにバッファーを保存すると、ファイルはフォーマット情報を含む@samp{text/enriched}フォーマットで保存されます。
@@ -1465,7 +1465,7 @@ Manual}を参照してください。テキストプロパティーについて�
 Lisp Reference Manual}を参照してください。
 
 @node Hard and Soft Newlines
-@subsection Hard and Soft Newlines
+@subsection ハード改行とソフト改行
 @cindex hard newline
 @cindex soft newline
 @cindex newlines, hard and soft
@@ -1486,7 +1486,7 @@ Commands}を参照してください)を使用します。テーブルやリス�
 style)も@code{unfilled}にしたいと思うかもしれません(@ref{Enriched Justification}を参照してください)。
 
 @node Editing Format Info
-@subsection Editing Format Information
+@subsection フォーマット情報の編集
 
   プロパティーを変更する一番簡単な方法は、@samp{Text Properties}メニューです。このメニューは、メニューバー(@ref{Menu
 Bar}を参照してください)の@samp{Edit}メニュー、または@kbd{C-Mouse-2}(@ref{Menu Mouse
@@ -1521,7 +1521,7 @@ Properties}メニューのコマンドのいくつかを、以下にリストし
 他のメニューエントリーについては、以下のセクションで説明します。
 
 @node Enriched Faces
-@subsection Faces in Enriched Text
+@subsection Enrichedテキストのフェイス
 
   以下のコマンドは、フェイスを追加または削除するのに使用することができます(@ref{Faces}を参照してください)。マークがアクティブのときは、リージョンのテキストに適用され、マークが非アクティブのときは、次の自己挿入文字に適用されます。プレフィクス引数を指定すると、これらのコマンドはリージョンがアクティブな場合でも、次の自己挿入文字に適用されます。
 
@@ -1573,7 +1573,7 @@ Properties}メニューのコマンドのいくつかを、以下にリストし
   Enrichedモードは、他の追加のフェイス@code{excerpt}および@code{fixed}を定義します。これらはtext/enrichedファイルフォーマットで使われるコードに対応します。@code{excerpt}フェイスは引用のために使用されることを意図されており、デフォルトでは@code{italic}と同じように表示されます。@code{fixed}フェイスは固定幅テキストを指定し、デフォルトでは@code{bold}と同じように表示されます。
 
 @node Enriched Indentation
-@subsection Indentation in Enriched Text
+@subsection Enrichedテキストのインデント
 
   Enrichedモードでは、パラグラフまたはパラグラフの一部の、右余白または左余白に異なる量のインデントを指定できます。これらの余白は@kbd{M-q}
 (@ref{Filling}を参照してください)のようなフィルコマンドにも影響します。
@@ -1612,7 +1612,7 @@ Properties}メニューのコマンドのいくつかを、以下にリストし
 Prefix}を参照してください。
 
 @node Enriched Justification
-@subsection Justification in Enriched Text
+@subsection Enrichedテキストの位置調整
 @cindex justification style
 
   Enrichedモードでは、以下のコマンドを使って、フィルのためにさまざまな@dfn{行端揃えスタイル(justification
@@ -1652,7 +1652,7 @@ styles)}を指定できます。これらのコマンドは。ポイントを含
 PropertiesメニューのJustificationサブメニューを使用して、行端揃えスタイルを指定することもできます。デフォルトの行端揃えスタイルはバッファーごとの変数@code{default-justification}により指定されます。この変数の値はシンボル@code{left}、@code{right}、@code{full}、@code{center}、または@code{none}のうちの1つです。シンボルの意味は上述したコマンドに対応します。
 
 @node Enriched Properties
-@subsection Setting Other Text Properties
+@subsection その他のテキストプロパティーのセッティング
 
   Text PropertiesメニューのSpecial Propertiesサブメニューには、3つのテキストプロパティー ---
 @code{read-only}(テキストの変更を不可にします)、@code{invisible}(テキストを非表示にします)、@code{intangible}(テキスト内でのポイントの移動を不可にします)
@@ -1662,7 +1662,7 @@ Special}メニューアイテムは、リージョン内のテキストにたい
   プロパティー@code{invisible}および@code{intangible}は保存されません。
 
 @node Text Based Tables
-@section Editing Text-based Tables
+@section テキストベーステーブルの編集
 @cindex table mode
 @cindex text-based tables
 
@@ -1702,7 +1702,7 @@ Recognition}を参照してください)、テーブルのセル内容を編集�
 @end menu
 
 @node Table Definition
-@subsection What is a Text-based Table?
+@subsection テキストベーステーブルとは
 @cindex cells, for text-based tables
 
   @dfn{テーブル(table)}は矩形のテキスト領域からなり、それらは@dfn{セル(cells)}に分割されます。セルは少なくとも1文字分の幅と高さをもち、それにボーダーラインは含まれません。セルは複数のセルに分割できますが、それらは重なることはできません。
@@ -1750,7 +1750,7 @@ Recognition}を参照してください)、テーブルのセル内容を編集�
 @end enumerate
 
 @node Table Creation
-@subsection Creating a Table
+@subsection テーブルの作成
 @cindex create a text-based table
 @cindex table creation
 
@@ -1762,7 +1762,7 @@ table-insert}とタイプします。このコマンドはテーブルの列数�
 table-insert}で挿入されたテーブルは、Emacsにそれをテキストベースのテーブルとして特別に扱うように指示する、特別なテキストプロパティーを含みます。そのバッファーをファイルに保存して、後で再びvisitすると、それらのプロパティーは失われ、Emacsにとってテーブルは普通のテキストとして判断されます。これをテーブルに変換する方法については、次のセクションを参照してください。
 
 @node Table Recognition
-@subsection Table Recognition
+@subsection テーブルの認識
 @cindex table recognition
 
 @findex table-recognize
@@ -1803,7 +1803,7 @@ table-unrecognize}とタイプすることにより、特別なテキストプ�
   テーブルを認識する他の方法については、@ref{Table Conversion}を参照してください。
 
 @node Cell Commands
-@subsection Commands for Table Cells
+@subsection テーブルセルにたいするコマンド
 
 @findex table-forward-cell
 @findex table-backward-cell
@@ -1847,7 +1847,7 @@ table-split-cell-horizontally}を使います。垂直に分割する場合、�
 @end table
 
 @node Cell Justification
-@subsection Cell Justification
+@subsection セルの位置調整
 @cindex justification in text-based tables
 
   コマンド@kbd{M-x
@@ -1867,7 +1867,7 @@ table-recognize}(@ref{Table
 Recognition}を参照してください)のようなテーブルの認識コマンドは、セルの内容を確認して各セルの位置調整スタイルの決定と再適用を試みます。この機能を無効にするには、変数@code{table-detect-cell-alignment}を@code{nil}に変更してください。
 
 @node Table Rows and Columns
-@subsection Table Rows and Columns
+@subsection テーブルの行と列
 @cindex inserting rows and columns in text-based tables
 
 @findex table-insert-row
@@ -1885,7 +1885,7 @@ table-insert-column}は、テーブルのカレント列の左にセル列を挿
 table-delete-row}は、ポイントがあるセルの行を削除します。どちらのコマンドも数引数により削除する列または行の数を指定します。
 
 @node Table Conversion
-@subsection Converting Between Plain Text and Tables
+@subsection プレーンテキストとテーブルの変換
 @cindex text to table
 @cindex table to text
 
@@ -1965,7 +1965,7 @@ Commands}を参照してください)を使って、各パラグラフが1つの
 table-release}を呼び出して、テーブルをプレーンテキストに戻します。
 
 @node Table Misc
-@subsection Table Miscellany
+@subsection テーブル、その他
 
 @cindex table dimensions
 @findex table-query-dimension
@@ -1988,7 +1988,7 @@ Cell: (21w, 6h), Table: (67w, 16h), Dim: (2c, 3r), Total Cells: 5
 table-generate-source}は、特定のマークアップ言語にフォーマットされたテーブルを生成します。このコマンドは言語(これは@code{html}、@code{latex}、@code{cals}のどれか1つでなければなりません)と、結果を出力するバッファー、テーブルの表題を尋ね、生成されたテーブルを指定したバッファーに出力します。デフォルトの出力バッファーは@code{table.@var{lang}}で、@var{lang}は指定された言語です。
 
 @node Two-Column
-@section Two-Column Editing
+@section 2列編集
 @cindex two-column editing
 @cindex splitting columns
 @cindex columns, splitting
