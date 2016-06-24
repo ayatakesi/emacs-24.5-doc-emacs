@@ -3,24 +3,23 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2016-02-23 00:32+0900\n"
+"PO-Revision-Date: 2016-06-20 23:32+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: chapter
 #: trouble.texi.orig:6
 #, no-wrap
 msgid "Dealing with Common Problems"
-msgstr ""
+msgstr "Dealing with Common Problems"
 
 #. type: iftex
 #: trouble.texi.orig:12
@@ -29,105 +28,106 @@ msgid ""
 "mysterious.  This chapter tells what you can do to cancel your mistake or "
 "recover from a mysterious situation.  Emacs bugs and system crashes are also "
 "considered."
-msgstr ""
+msgstr "意図しないコマンドをタイプした場合、その結果は不可解なことが多くあります。このチャプターでは、間違いをキャンセルしたり、不可解な状況から復帰するために何ができるかを示します。Emacsのバグとシステムクラッシュについても考察します。"
 
 #. type: ifnottex
 #: trouble.texi.orig:16
 msgid "@raisesections"
-msgstr ""
+msgstr "@raisesections"
 
 #. type: node
 #: trouble.texi.orig:18
 #, no-wrap
 msgid "Quitting"
-msgstr ""
+msgstr "Quitting"
 
 #. type: section
 #: trouble.texi.orig:19
 #, no-wrap
 msgid "Quitting and Aborting"
-msgstr ""
+msgstr "Quitting and Aborting"
 
 #. type: cindex
 #: trouble.texi.orig:20 trouble.texi.orig:46
 #, no-wrap
 msgid "quitting"
-msgstr ""
+msgstr "quitting"
 
 #. type: kindex
 #: trouble.texi.orig:23 trouble.texi.orig:47
 #, no-wrap
 msgid "C-g"
-msgstr ""
+msgstr "C-g"
 
 #. type: itemx
 #: trouble.texi.orig:24
 #, no-wrap
 msgid "C-@key{Break} @r{(MS-DOS only)}"
-msgstr ""
+msgstr "C-@key{Break} @r{(MS-DOSのみ)}"
 
 #. type: table
 #: trouble.texi.orig:26
 msgid "Quit: cancel running or partially typed command."
-msgstr ""
+msgstr "quit(中止): コマンドの実行、または途中までタイプしたコマンドをキャンセルします。"
 
 #. type: kindex
 #: trouble.texi.orig:26 trouble.texi.orig:97
 #, no-wrap
 msgid "C-]"
-msgstr ""
+msgstr "C-]"
 
 #. type: table
 #: trouble.texi.orig:29
 msgid ""
 "Abort innermost recursive editing level and cancel the command which invoked "
 "it (@code{abort-recursive-edit})."
-msgstr ""
+msgstr "最内の再帰編集レベル(recursive editing level)をabort(中断)して、それを呼び出したコマンドをキャンセルします(@code{abort-recursive-edit})。"
 
 #. type: item
 #: trouble.texi.orig:29
 #, no-wrap
 msgid "@key{ESC} @key{ESC} @key{ESC}"
-msgstr ""
+msgstr "@key{ESC} @key{ESC} @key{ESC}"
 
 #. type: table
 #: trouble.texi.orig:31
-msgid "Either quit or abort, whichever makes sense (@code{keyboard-escape-quit})."
-msgstr ""
+msgid ""
+"Either quit or abort, whichever makes sense (@code{keyboard-escape-quit})."
+msgstr "quitまたはabortのどちらか、意味のあるほうを行ないます(@code{keyboard-escape-quit})。"
 
 #. type: item
 #: trouble.texi.orig:31
 #, no-wrap
 msgid "M-x top-level"
-msgstr ""
+msgstr "M-x top-level"
 
 #. type: table
 #: trouble.texi.orig:33
 msgid "Abort all recursive editing levels that are currently executing."
-msgstr ""
+msgstr "現在実行中のすべての再帰編集レベルをabortします。"
 
 #. type: item
 #: trouble.texi.orig:33
 #, no-wrap
 msgid "C-/"
-msgstr ""
+msgstr "C-/"
 
 #. type: itemx
 #: trouble.texi.orig:34
 #, no-wrap
 msgid "C-x u"
-msgstr ""
+msgstr "C-x u"
 
 #. type: itemx
 #: trouble.texi.orig:35
 #, no-wrap
 msgid "C-_"
-msgstr ""
+msgstr "C-_"
 
 #. type: table
 #: trouble.texi.orig:37
 msgid "Cancel a previously made change in the buffer contents (@code{undo})."
-msgstr ""
+msgstr "バッファー内容にたいする直前の変更をキャンセルします(@code{undo})。"
 
 #. type: Plain text
 #: trouble.texi.orig:45
@@ -137,7 +137,7 @@ msgid ""
 "top-level}.  Quitting cancels a partially typed command, or one which is "
 "still running.  Aborting exits a recursive editing level and cancels the "
 "command that invoked the recursive edit (@pxref{Recursive Edit})."
-msgstr ""
+msgstr "完了する前のコマンドをキャンセルする方法は2つあります。それは@kbd{C-g}による@dfn{quit}と、@kbd{C-]}や@kbd{M-x top-level}による@dfn{abort}です。quitは途中までタイプしたコマンド、または実行中のコマンドをキャンセルします。abortは再帰編集レベルを抜けて、再帰編集を呼び出したコマンドをキャンセルします(@ref{Recursive Edit}を参照してください)。"
 
 #. type: Plain text
 #: trouble.texi.orig:60
@@ -153,7 +153,7 @@ msgid ""
 "incremental search, @kbd{C-g} behaves specially; it may take two successive "
 "@kbd{C-g} characters to get out of a search.  @xref{Incremental Search}, for "
 "details."
-msgstr ""
+msgstr "@kbd{C-g}によるquitは、途中までタイプしたコマンドから抜けたり、望まない数引数から抜け出す方法です。さらに、あるコマンドが実行中の場合、@kbd{C-g}は比較的安全にコマンドを停止します。たとえば、長い時間がかかるkillコマンドをquitした場合、@emph{すべて}のテキストがバッファーに残るか、または@emph{すべて}のテキストがkillリングに残るか、もしかしたらその両方かもしれません。リージョンがアクティブの場合、Transient Markモードがオフでなければ、@kbd{C-g}はマークを非アクティブにします(@ref{Disabled Transient Mark}を参照してください)。インクリメンタル検索の途中では、@kbd{C-g}は特別に振る舞います。検索を抜けるには2回連続して@kbd{C-g}をタイプします。詳細は、@ref{Incremental Search}を参照してください。"
 
 #. type: Plain text
 #: trouble.texi.orig:66
@@ -163,23 +163,23 @@ msgid ""
 "@kbd{C-g} while a command is running, between interactions with the user.  "
 "By contrast, it @emph{is} feasible to recognize @kbd{C-@key{Break}} at all "
 "times."
-msgstr ""
+msgstr "MS-DOSでは、文字@kbd{C-@key{Break}}が@kbd{C-g}のような文字の役割をします。MS-DOSではユーザーとの相互作用を行なうとき以外に、実行中のコマンドで@kbd{C-g}を認識できないのが理由です。それとは対照的に、@kbd{C-@key{Break}}は常に認識できます。"
 
 #. type: iftex
 #: trouble.texi.orig:68
 msgid "@xref{MS-DOS Keyboard,,,emacs-xtra, Specialized Emacs Features}."
-msgstr ""
+msgstr "@ref{MS-DOS Keyboard,,,emacs-xtra, Specialized Emacs Features}を参照してください。"
 
 #. type: ifnottex
 #: trouble.texi.orig:71
 msgid "@xref{MS-DOS Keyboard}."
-msgstr ""
+msgstr "@ref{MS-DOS Keyboard}を参照してください。"
 
 #. type: findex
 #: trouble.texi.orig:73
 #, no-wrap
 msgid "keyboard-quit"
-msgstr ""
+msgstr "keyboard-quit"
 
 #. type: Plain text
 #: trouble.texi.orig:79
@@ -189,7 +189,7 @@ msgid ""
 "quits if it is non-@code{nil}.  @kbd{C-g} is only actually executed as a "
 "command if you type it while Emacs is waiting for input.  In that case, the "
 "command it runs is @code{keyboard-quit}."
-msgstr ""
+msgstr "@kbd{C-g}をタイプした瞬間に変数@code{quit-flag}を@code{t}にセットすることにより、@kbd{C-g}は機能します。Emacs Lispはこの変数を頻繁にチェックして、これが非@code{nil}のときはquitします。Emacsが入力待ちのときにタイプしたときだけ、@kbd{C-g}は実際にコマンドとして実行されます。この場合に実行されるコマンドは、@code{keyboard-quit}です。"
 
 #. type: Plain text
 #: trouble.texi.orig:83
@@ -197,13 +197,13 @@ msgid ""
 "On a text terminal, if you quit with @kbd{C-g} a second time before the "
 "first @kbd{C-g} is recognized, you activate the ``emergency escape'' feature "
 "and return to the shell.  @xref{Emergency Escape}."
-msgstr ""
+msgstr "テキスト端末では、最初の@kbd{C-g}が認識される前に2回目の@kbd{C-g}でquitした場合は、``emergency escape(緊急エスケープ)''機能がアクティブになり、シェルに戻ります。@ref{Emergency Escape}を参照してください。"
 
 #. type: cindex
 #: trouble.texi.orig:84
 #, no-wrap
 msgid "NFS and quitting"
-msgstr ""
+msgstr "NFS and quitting"
 
 #. type: Plain text
 #: trouble.texi.orig:94
@@ -216,19 +216,19 @@ msgid ""
 "handled.  In one very common case---waiting for file input or output using "
 "NFS---Emacs itself knows how to quit, but many NFS implementations simply do "
 "not allow user programs to stop waiting for NFS when the NFS server is hung."
-msgstr ""
+msgstr "quitできない状況もいくつか存在します。Emacsがオペレーティングシステムが何か行なうのを待つような場合、待ちが発生する箇所で特定のシステムコールにたいして、Emacsが特別な対処をしない場合、quitは不可能です。ユーザーがquitしたいと望むようなシステムコールにたいして、わたしたちはこれを行なっていなすが、それでも処理できないケースに出会う場合もあります。とても一般的なケースの1つは、NFSを使用したファイルへの入出力待ちです。Emacs自体はquitする方法を知っていますが、多くのNFS実装は、NFSサーバーがハングしたとき、ユーザープログラムがNFSを待つのを止めることを、単に許していません。"
 
 #. type: cindex
 #: trouble.texi.orig:95
 #, no-wrap
 msgid "aborting recursive edit"
-msgstr ""
+msgstr "aborting recursive edit"
 
 #. type: findex
 #: trouble.texi.orig:96
 #, no-wrap
 msgid "abort-recursive-edit"
-msgstr ""
+msgstr "abort-recursive-edit"
 
 #. type: Plain text
 #: trouble.texi.orig:106
@@ -240,39 +240,39 @@ msgid ""
 "level.  Both operations are useful.  For example, if you are in a recursive "
 "edit and type @kbd{C-u 8} to enter a numeric argument, you can cancel that "
 "argument with @kbd{C-g} and remain in the recursive edit."
-msgstr ""
+msgstr "@kbd{C-]} (@code{abort-recursive-edit})によるabortは、再帰編集レベルを抜けて、それを呼び出したコマンドをキャンセルするのに使用されます。@kbd{C-g}によるquitはこれを行なわず、行なうこともできません。なぜならこれは再帰編集レベルの@emph{中}で、途中までタイプされたコマンドをキャンセルするからです。どちらの操作も有用です。たとえば再帰編集中に、数引数を入力するために@kbd{C-u 8}とタイプした場合、@kbd{C-g}でその引数をキャンセルして、その再帰編集レベルに留まることができます。"
 
 #. type: findex
 #: trouble.texi.orig:107
 #, no-wrap
 msgid "keyboard-escape-quit"
-msgstr ""
+msgstr "keyboard-escape-quit"
 
 #. type: kindex
 #: trouble.texi.orig:108
 #, no-wrap
 msgid "ESC ESC ESC"
-msgstr ""
+msgstr "ESC ESC ESC"
 
 #. type: Plain text
 #: trouble.texi.orig:119
 msgid ""
-"The sequence @kbd{@key{ESC} @key{ESC} @key{ESC}} "
-"(@code{keyboard-escape-quit}) can either quit or abort.  (We defined it this "
-"way because @key{ESC} means ``get out'' in many PC programs.)  It can cancel "
-"a prefix argument, clear a selected region, or get out of a Query Replace, "
-"like @kbd{C-g}.  It can get out of the minibuffer or a recursive edit, like "
-"@kbd{C-]}.  It can also get out of splitting the frame into multiple "
-"windows, as with @kbd{C-x 1}.  One thing it cannot do, however, is stop a "
-"command that is running.  That's because it executes as an ordinary command, "
-"and Emacs doesn't notice it until it is ready for the next command."
-msgstr ""
+"The sequence @kbd{@key{ESC} @key{ESC} @key{ESC}} (@code{keyboard-escape-"
+"quit}) can either quit or abort.  (We defined it this way because @key{ESC} "
+"means ``get out'' in many PC programs.)  It can cancel a prefix argument, "
+"clear a selected region, or get out of a Query Replace, like @kbd{C-g}.  It "
+"can get out of the minibuffer or a recursive edit, like @kbd{C-]}.  It can "
+"also get out of splitting the frame into multiple windows, as with @kbd{C-x "
+"1}.  One thing it cannot do, however, is stop a command that is running.  "
+"That's because it executes as an ordinary command, and Emacs doesn't notice "
+"it until it is ready for the next command."
+msgstr "シーケンス@kbd{@key{ESC} @key{ESC} @key{ESC}} (@code{keyboard-escape-quit})は、quitかabortのどちらかを呼び出します(多くのPCプログラムで@key{ESC}は``抜け出す''ことを意味するので、このような定義にしました)。これは@kbd{C-g}のように、プレフィクス引数のキャンセル、選択されたリージョンのクリアー、また問い合わせつき置換から抜け出すこともできます。また@kbd{C-]}のように、ミニバッファーから抜け出したり、再帰編集から抜け出すこともできます。これは@kbd{C-x 1}のように、フレームの複数ウィンドウ分割から抜け出すこともできます。これが行なうことができないのは、実行中のコマンドの停止です。これは通常のコマンドとして実行されるので、Emacsが次のコマンドのために準備ができるまで、これを認識しないからです。"
 
 #. type: findex
 #: trouble.texi.orig:120
 #, no-wrap
 msgid "top-level"
-msgstr ""
+msgstr "top-level"
 
 #. type: Plain text
 #: trouble.texi.orig:130
@@ -285,7 +285,7 @@ msgid ""
 "unlike @kbd{C-g}, in that they take effect only when Emacs is ready for a "
 "command.  @kbd{C-]} is an ordinary key and has its meaning only because of "
 "its binding in the keymap.  @xref{Recursive Edit}."
-msgstr ""
+msgstr "コマンド@kbd{M-x top-level}は、現在の再帰編集レベルからすべての再帰編集レベルを抜けるための、``充分''な回数の@kbd{C-]}コマンドと等価です。ミニバッファーがアクティブなときは、ミニバッファーも抜けます。@kbd{C-]}は、1度に1レベル再帰編集レベルを抜けますが、@kbd{M-x top-level}は、1度ですべての再帰編集レベルを抜けます。@kbd{C-]}と@kbd{M-x top-level}の両方とも、他のすべてのコマンドと同様(そして@kbd{C-g}とは異なり)、Emacsがコマンドにたいして準備ができているときだけ効果があります。@kbd{C-]}は通常のキーで、このキーが意味をもつのは、それがキーマップでバインドされているときだけです。@ref{Recursive Edit}を参照してください。"
 
 #. type: Plain text
 #: trouble.texi.orig:135
@@ -294,25 +294,25 @@ msgid ""
 "command, but you can think of it as canceling a command that already "
 "finished executing.  @xref{Undo}, for more information about the undo "
 "facility."
-msgstr ""
+msgstr "厳密に言えば@kbd{C-/} (@code{undo})はキャンセルコマンドではありませんが、すでに実行を終えたコマンドをキャンセルすると考えることができます。undo機能についての詳細は、@ref{Undo}を参照してください。"
 
 #. type: node
 #: trouble.texi.orig:136
 #, no-wrap
 msgid "Lossage"
-msgstr ""
+msgstr "Lossage"
 
 #. type: section
 #: trouble.texi.orig:137
 #, no-wrap
 msgid "Dealing with Emacs Trouble"
-msgstr ""
+msgstr "Dealing with Emacs Trouble"
 
 #. type: cindex
 #: trouble.texi.orig:138
 #, no-wrap
 msgid "troubleshooting Emacs"
-msgstr ""
+msgstr "troubleshooting Emacs"
 
 #. type: Plain text
 #: trouble.texi.orig:143
@@ -320,124 +320,125 @@ msgid ""
 "This section describes how to recognize and deal with situations in which "
 "Emacs does not work as you expect, such as keyboard code mixups, garbled "
 "displays, running out of memory, and crashes and hangs."
-msgstr ""
+msgstr "このセクションでは、キーボードコードのミクスアップ(mixup)、文字化け、メモリー不足、クラッシュやハングなど、Emacsが期待したとおりに動作しない状況の認識と対処法について説明します。"
 
 #. type: Plain text
 #: trouble.texi.orig:146
-msgid "@xref{Bugs}, for what to do when you think you have found a bug in Emacs."
-msgstr ""
+msgid ""
+"@xref{Bugs}, for what to do when you think you have found a bug in Emacs."
+msgstr "Emacsでバグを見つけたと思ったら何をすればよいかについては、@ref{Bugs}を参照してください。"
 
 #. type: node
 #: trouble.texi.orig:156 trouble.texi.orig:158
 #, no-wrap
 msgid "DEL Does Not Delete"
-msgstr ""
+msgstr "DEL Does Not Delete"
 
 #. type: menuentry
 #: trouble.texi.orig:156
 msgid "What to do if @key{DEL} doesn't delete."
-msgstr ""
+msgstr "@key{DEL}で削除できないとき、何を行なうべきか。"
 
 #. type: node
 #: trouble.texi.orig:156 trouble.texi.orig:215
 #, no-wrap
 msgid "Stuck Recursive"
-msgstr ""
+msgstr "Stuck Recursive"
 
 #. type: menuentry
 #: trouble.texi.orig:156
 msgid "`[...]' in mode line around the parentheses."
-msgstr ""
+msgstr "モードラインのカッコの周囲の`[...]'。"
 
 #. type: node
 #: trouble.texi.orig:156 trouble.texi.orig:230
 #, no-wrap
 msgid "Screen Garbled"
-msgstr ""
+msgstr "Screen Garbled"
 
 #. type: menuentry
 #: trouble.texi.orig:156
 msgid "Garbage on the screen."
-msgstr ""
+msgstr "画面上のゴミ。"
 
 #. type: node
 #: trouble.texi.orig:156 trouble.texi.orig:250
 #, no-wrap
 msgid "Text Garbled"
-msgstr ""
+msgstr "Text Garbled"
 
 #. type: menuentry
 #: trouble.texi.orig:156
 msgid "Garbage in the text."
-msgstr ""
+msgstr "テキストの中のゴミ。"
 
 #. type: node
 #: trouble.texi.orig:156 trouble.texi.orig:266
 #, no-wrap
 msgid "Memory Full"
-msgstr ""
+msgstr "Memory Full"
 
 #. type: menuentry
 #: trouble.texi.orig:156
 msgid "How to cope when you run out of memory."
-msgstr ""
+msgstr "メモリー不足に対処する方法。"
 
 #. type: node
 #: trouble.texi.orig:156 trouble.texi.orig:290
 #, no-wrap
 msgid "Crashing"
-msgstr ""
+msgstr "Crashing"
 
 #. type: menuentry
 #: trouble.texi.orig:156
 msgid "What Emacs does when it crashes."
-msgstr ""
+msgstr "クラッシュ時にEmacsが何を行なうか。"
 
 #. type: node
 #: trouble.texi.orig:156 trouble.texi.orig:358
 #, no-wrap
 msgid "After a Crash"
-msgstr ""
+msgstr "After a Crash"
 
 #. type: menuentry
 #: trouble.texi.orig:156
 msgid "Recovering editing in an Emacs session that crashed."
-msgstr ""
+msgstr "クラッシュしたEmacsセッションでの編集をリカバリーする。"
 
 #. type: subsection
 #: trouble.texi.orig:156 trouble.texi.orig:405 trouble.texi.orig:406
 #, no-wrap
 msgid "Emergency Escape"
-msgstr ""
+msgstr "Emergency Escape"
 
 #. type: menuentry
 #: trouble.texi.orig:156
 msgid "What to do if Emacs stops responding."
-msgstr ""
+msgstr "Emacsが応答しなくなったとき、何を行なうべきか。"
 
 #. type: subsection
 #: trouble.texi.orig:159
 #, no-wrap
 msgid "If @key{DEL} Fails to Delete"
-msgstr ""
+msgstr "If @key{DEL} Fails to Delete"
 
 #. type: cindex
 #: trouble.texi.orig:160
 #, no-wrap
 msgid "@key{DEL} vs @key{BACKSPACE}"
-msgstr ""
+msgstr "@key{DEL} vs @key{BACKSPACE}"
 
 #. type: cindex
 #: trouble.texi.orig:161
 #, no-wrap
 msgid "@key{BACKSPACE} vs @key{DEL}"
-msgstr ""
+msgstr "@key{BACKSPACE} vs @key{DEL}"
 
 #. type: cindex
 #: trouble.texi.orig:162
 #, no-wrap
 msgid "@key{DEL} does not delete"
-msgstr ""
+msgstr "@key{DEL} does not delete"
 
 #. type: Plain text
 #: trouble.texi.orig:167
@@ -445,7 +446,7 @@ msgid ""
 "Every keyboard has a large key, usually labeled @key{BACKSPACE}, which is "
 "ordinarily used to erase the last character that you typed.  In Emacs, this "
 "key is supposed to be equivalent to @key{DEL}."
-msgstr ""
+msgstr "すべてのキーボードには多くのキーがありますが、通常@key{BACKSPACE}とラベルされたキーは、最後にタイプした文字を削除するのに使用されます。Emacsでは、このキーは@key{DEL}に等しいと想定されています。"
 
 #. type: Plain text
 #: trouble.texi.orig:172
@@ -454,7 +455,7 @@ msgid ""
 "which key should be @key{DEL}.  In some unusual cases, Emacs gets the wrong "
 "information from the system, and @key{BACKSPACE} ends up deleting forwards "
 "instead of backwards."
-msgstr ""
+msgstr "グラフィカルなディスプレーでEmacsを開始したとき、Emacsはどのキーが@key{DEL}なのか自動的に決定します。いくつかの特殊なケースでは、Emacsがシステムから間違った情報を取得して、@key{BACKSPACE}が後方ではなく前方に削除する場合があります。"
 
 #. type: Plain text
 #: trouble.texi.orig:177
@@ -462,7 +463,7 @@ msgid ""
 "Some keyboards also have a @key{Delete} key, which is ordinarily used to "
 "delete forwards.  If this key deletes backward in Emacs, that too suggests "
 "Emacs got the wrong information---but in the opposite sense."
-msgstr ""
+msgstr "@key{Delete}というキーをもつキーボードもあります。これは通常、前方に削除するために使用されます。Emacsでこのキーが後方に削除を行なう場合も、Emacsが間違った情報 --- ただし反対の意味の --- を受け取ったことを意味します。"
 
 #. type: Plain text
 #: trouble.texi.orig:182
@@ -471,13 +472,13 @@ msgid ""
 "command, like @kbd{Control-h}, instead of deleting a character, it means "
 "that key is actually sending the @samp{BS} character.  Emacs ought to be "
 "treating @key{BS} as @key{DEL}, but it isn't."
-msgstr ""
+msgstr "テキスト端末で、@key{BACKSPACE}が文字を削除するかわりに、@kbd{Control-h}のようなヘルプコマンドのプロンプトを表示する場合、それはこのキーが実際は@samp{BS}文字を送っていることを意味します。Emacsは@key{BS}を@key{DEL}と扱うべきですが、そうしていないのです。"
 
 #. type: findex
 #: trouble.texi.orig:183
 #, no-wrap
 msgid "normal-erase-is-backspace-mode"
-msgstr ""
+msgstr "normal-erase-is-backspace-mode"
 
 #. type: Plain text
 #: trouble.texi.orig:191
@@ -488,7 +489,7 @@ msgid ""
 "wrong mode, this should switch to the right mode.  On a text terminal, if "
 "you want to ask for help when @key{BS} is treated as @key{DEL}, use "
 "@key{F1}; @kbd{C-?} may also work, if it sends character code 127."
-msgstr ""
+msgstr "これらのケースのすべてにおいて、直ちに改善できることは同じでで、それはコマンド@kbd{M-x normal-erase-is-backspace-mode}を使用する方法です。これはEmacsが@key{DEL}の処理をサポートする2つのモードを切り替えるので、もしEmacsが間違ったモードで開始された場合、正しいモードに切り替えることができます。テキスト端末では、@key{BS}が@key{DEL}として扱われる場合にヘルプを見たいときは、@key{F1}を使用します。@kbd{C-?}が文字コード127を送る場合は、このキーも機能するでしょう。"
 
 #. type: Plain text
 #: trouble.texi.orig:196
@@ -497,30 +498,30 @@ msgid ""
 "into your initialization file (@pxref{Init File}).  For the first case "
 "above, where @key{BACKSPACE} deletes forwards instead of backwards, use this "
 "line to make @key{BACKSPACE} act as @key{DEL}:"
-msgstr ""
+msgstr "すべてのEmacsセッションで問題を解決するには、初期化ファイル(@ref{Init File}を参照してください)に以下の行の1つを記述します。上記の最初のケースでは、@key{BACKSPACE}が後方ではなく前方に削除を行なうので、@key{BACKSPACE}が@key{DEL}として動作するように、以下の行を使用します:"
 
 #. type: lisp
 #: trouble.texi.orig:199
 #, no-wrap
 msgid "(normal-erase-is-backspace-mode 0)\n"
-msgstr ""
+msgstr "(normal-erase-is-backspace-mode 0)\n"
 
 #. type: Plain text
 #: trouble.texi.orig:203
 msgid "For the other two cases, use this line:"
-msgstr ""
+msgstr "他の2つのケースでは、以下の行を使用します:"
 
 #. type: lisp
 #: trouble.texi.orig:206
 #, no-wrap
 msgid "(normal-erase-is-backspace-mode 1)\n"
-msgstr ""
+msgstr "(normal-erase-is-backspace-mode 1)\n"
 
 #. type: vindex
 #: trouble.texi.orig:208
 #, no-wrap
 msgid "normal-erase-is-backspace"
-msgstr ""
+msgstr "normal-erase-is-backspace"
 
 #. type: Plain text
 #: trouble.texi.orig:214
@@ -529,32 +530,32 @@ msgid ""
 "variable @code{normal-erase-is-backspace}: the value @code{t} specifies the "
 "mode where @key{BS} or @key{BACKSPACE} is @key{DEL}, and @code{nil} "
 "specifies the other mode.  @xref{Easy Customization}."
-msgstr ""
+msgstr "すべてのEmacsセッションで問題を解決する別の方法は、変数@code{normal-erase-is-backspace}をカスタマイズする方法です。@key{BS}または@key{BACKSPACE}が@key{DEL}となるようにモードを指定するには値@code{t}、他のモードにたいしては@code{nil}を指定します。@ref{Easy Customization}を参照してください。"
 
 #. type: subsection
 #: trouble.texi.orig:216
 #, no-wrap
 msgid "Recursive Editing Levels"
-msgstr ""
+msgstr "Recursive Editing Levels"
 
 #. type: cindex
 #: trouble.texi.orig:217
 #, no-wrap
 msgid "stuck in recursive editing"
-msgstr ""
+msgstr "stuck in recursive editing"
 
 #. type: cindex
 #: trouble.texi.orig:218
 #, no-wrap
 msgid "recursive editing, cannot exit"
-msgstr ""
+msgstr "recursive editing, cannot exit"
 
 #. type: Plain text
 #: trouble.texi.orig:222
 msgid ""
 "Recursive editing levels are important and useful features of Emacs, but "
 "they can seem like malfunctions if you do not understand them."
-msgstr ""
+msgstr "再帰編集レベルは、Emacsの重要かつ便利な機能ですが、それを理解していない場合は、うまく機能していないように見えるかもしれません。"
 
 #. type: Plain text
 #: trouble.texi.orig:229
@@ -564,31 +565,31 @@ msgid ""
 "recursive editing level.  If you did not do this on purpose, or if you don't "
 "understand what that means, you should just get out of the recursive editing "
 "level.  To do so, type @kbd{M-x top-level}.  @xref{Recursive Edit}."
-msgstr ""
+msgstr "モードラインの、メジャーモードやマイナーモードを囲む丸カッコ(parentheses)の周囲に、角カッコ(square brackets)@samp{[@dots{}]}がある場合、それは再帰編集レベルにいることを意味します。もしこれが目的でない場合、またはその意味を理解していない場合は、すぐに再帰編集レベルを抜けるべきです。これを行なうには、@kbd{M-x top-level}とタイプします。@ref{Recursive Edit}を参照してください。"
 
 #. type: subsection
 #: trouble.texi.orig:231
 #, no-wrap
 msgid "Garbage on the Screen"
-msgstr ""
+msgstr "Garbage on the Screen"
 
 #. type: cindex
 #: trouble.texi.orig:232
 #, no-wrap
 msgid "garbled display"
-msgstr ""
+msgstr "garbled display"
 
 #. type: cindex
 #: trouble.texi.orig:233
 #, no-wrap
 msgid "display, incorrect"
-msgstr ""
+msgstr "display, incorrect"
 
 #. type: cindex
 #: trouble.texi.orig:234
 #, no-wrap
 msgid "screen display, wrong"
-msgstr ""
+msgstr "screen display, wrong"
 
 #. type: Plain text
 #: trouble.texi.orig:241
@@ -597,7 +598,7 @@ msgid ""
 "whether it is wrong in the buffer.  Type @kbd{C-l} to redisplay the entire "
 "screen.  If the screen appears correct after this, the problem was entirely "
 "in the previous screen update.  (Otherwise, see the following section.)"
-msgstr ""
+msgstr "テキスト端末でテキストが間違って見える場合、まず行なうことはバッファーのテキストが間違っていないか確かめることです。画面全体を再描画するために、@kbd{C-l}とタイプしてください。この後でスクリーンが正常に表示される場合、問題は前のスクリーンの更新にあります(そうでない場合は、以下のセクションを参照してください)。"
 
 #. type: Plain text
 #: trouble.texi.orig:249
@@ -609,25 +610,25 @@ msgid ""
 "sections.  If you seem to be using the right terminfo entry, it is possible "
 "that there is a bug in the terminfo entry, or a bug in Emacs that appears "
 "for certain terminal types."
-msgstr ""
+msgstr "ディスプレー更新の問題は、使用している端末にたいする間違ったterminfoエントリーの結果であることがしばしばあります。Emacsディストリビューションのファイル@file{etc/TERMS}は、この種の既知の問題にたいする解決を与えます。@file{INSTALL}のセクションの中の1つは、これらの問題にたいする一般的なアドバイスを含みます。正しいterminfoエントリーを使用しているようなら、それはterminfoエントリーにバグがあるか、特定の端末タイプで発生するEmacsのバグである可能性があります。"
 
 #. type: subsection
 #: trouble.texi.orig:251
 #, no-wrap
 msgid "Garbage in the Text"
-msgstr ""
+msgstr "Garbage in the Text"
 
 #. type: cindex
 #: trouble.texi.orig:252
 #, no-wrap
 msgid "garbled text"
-msgstr ""
+msgstr "garbled text"
 
 #. type: cindex
 #: trouble.texi.orig:253
 #, no-wrap
 msgid "buffer text garbled"
-msgstr ""
+msgstr "buffer text garbled"
 
 #. type: Plain text
 #: trouble.texi.orig:259
@@ -636,7 +637,7 @@ msgid ""
 "what commands you typed to produce the observed results.  Then try undoing "
 "the changes step by step using @kbd{C-x u}, until it gets back to a state "
 "you consider correct."
-msgstr ""
+msgstr "@kbd{C-l}がそのテキストが間違っていることを示す場合、最初に実際の結果を生成するのに何のコマンドをタイプしたか見るために、@kbd{C-h l}とタイプします。それから@kbd{C-x u}を使用して、正しいと思える状態まで、1つずつ変更をundoします。"
 
 #. type: Plain text
 #: trouble.texi.orig:265
@@ -646,25 +647,25 @@ msgid ""
 "appears, the text you don't see is probably still present, but temporarily "
 "off-limits.  To make it accessible again, type @kbd{C-x n w}.  "
 "@xref{Narrowing}."
-msgstr ""
+msgstr "バッファーの先頭または最後の大量のテキストが失われているように見える場合は、モードラインに単語@samp{Narrow}が表示されていないかチェックします。もしこれが表示されている場合、表示されていないテキストはまだ存在しますが、一時的に制限されています。これに再びアクセスできるようにするには、@kbd{C-x n w}とタイプします。@ref{Narrowing}を参照してください。"
 
 #. type: subsection
 #: trouble.texi.orig:267
 #, no-wrap
 msgid "Running out of Memory"
-msgstr ""
+msgstr "Running out of Memory"
 
 #. type: cindex
 #: trouble.texi.orig:268
 #, no-wrap
 msgid "memory full"
-msgstr ""
+msgstr "memory full"
 
 #. type: cindex
 #: trouble.texi.orig:269
 #, no-wrap
 msgid "out of memory"
-msgstr ""
+msgstr "out of memory"
 
 #. type: Plain text
 #: trouble.texi.orig:278
@@ -673,10 +674,10 @@ msgid ""
 "modified buffers with @kbd{C-x s}.  This method of saving them has the "
 "smallest need for additional memory.  Emacs keeps a reserve of memory which "
 "it makes available when this error happens; that should be enough to enable "
-"@kbd{C-x s} to complete its work.  When the reserve has been used, "
-"@samp{!MEM FULL!} appears at the beginning of the mode line, indicating "
-"there is no more reserve."
-msgstr ""
+"@kbd{C-x s} to complete its work.  When the reserve has been used, @samp{!"
+"MEM FULL!} appears at the beginning of the mode line, indicating there is no "
+"more reserve."
+msgstr "@samp{Virtual memory exceeded}というエラーメッセージが表示された場合は、@kbd{C-x s}で変更されたバッファーを保存してください。この方法は、バッファーを保存するのに最小限の追加メモリーを必要とします。Emacsはこのエラーが発生したときでも利用可能な予備メモリーを保持しており、それは@kbd{C-x s}が処理を完了するのに充分なはずです。予備メモリーを使用したとき、モードラインの先頭に@samp{!MEM FULL!}が表示された場合、それは予備メモリーも使い切ったことを意味します。"
 
 #. type: Plain text
 #: trouble.texi.orig:285
@@ -687,7 +688,7 @@ msgid ""
 "refill its memory reserve, and @samp{!MEM FULL!} will disappear from the "
 "mode line.  That means you can safely go on editing in the same Emacs "
 "session."
-msgstr ""
+msgstr "変更されたバッファーを変更したら、このEmacsセッションを終了して別のセッションを開始するか、@kbd{M-x kill-some-buffers}を使用して、カレントEmacsジョブのスペースを開放できます。これにより充分なスペースが開放された場合、予備メモリーは再充填され、モードラインから@samp{!MEM FULL!}の表示が消えます。これは同じEmacsセッションで、安全に編集を継続できることを意味します。"
 
 #. type: Plain text
 #: trouble.texi.orig:289
@@ -695,31 +696,31 @@ msgid ""
 "Do not use @kbd{M-x buffer-menu} to save or kill buffers when you run out of "
 "memory, because the Buffer Menu needs a fair amount of memory itself, and "
 "the reserve supply may not be enough."
-msgstr ""
+msgstr "メモリー不足のときは、バッファーの保存やkillに@kbd{M-x buffer-menu}を使用しないでください。Buffer Menuはかなりの量のメモリーを必要とするので、予備メモリーの供給では不充分でしょう。"
 
 #. type: subsection
 #: trouble.texi.orig:291
 #, no-wrap
 msgid "When Emacs Crashes"
-msgstr ""
+msgstr "When Emacs Crashes"
 
 #. type: cindex
 #: trouble.texi.orig:293
 #, no-wrap
 msgid "crash report"
-msgstr ""
+msgstr "crash report"
 
 #. type: cindex
 #: trouble.texi.orig:294
 #, no-wrap
 msgid "backtrace"
-msgstr ""
+msgstr "backtrace"
 
 #. type: cindex
 #: trouble.texi.orig:295
 #, no-wrap
 msgid "@file{emacs_backtrace.txt} file, MS-Windows"
-msgstr ""
+msgstr "@file{emacs_backtrace.txt} file, MS-Windows"
 
 #. type: Plain text
 #: trouble.texi.orig:305
@@ -732,7 +733,7 @@ msgid ""
 "MS-Windows, the crash report is written to a file named "
 "@file{emacs_backtrace.txt} in the current directory of the Emacs process, in "
 "addition to the standard error stream."
-msgstr ""
+msgstr "Emacsはクラッシュを前提としていませんが、もしクラッシュした場合、exitする前に@dfn{クラッシュレポート(crash report)}を生成します。クラッシュレポートは標準エラーストリームにプリントされます。EmacsがGNUシステムまたはUnixシステムでグラフィカルなデスクトップから開始された場合、標準エラーストリームは一般的に@file{~/.xsession-errors}のようなファイルにリダイレクトされるので、そこでクラッシュレポートを探すことができます。MS-Windowsでは、クラッシュレポートは標準エラーストリームに加え、Emacsプロセスのカレントとディレクトリーの、@file{emacs_backtrace.txt}という名前のファイルに書き込まれます。"
 
 #. type: Plain text
 #: trouble.texi.orig:311
@@ -741,7 +742,7 @@ msgid ""
 "such as those using the GNU C Library, the crash report includes a "
 "@dfn{backtrace} describing the execution state prior to crashing, which can "
 "be used to help debug the crash.  Here is an example for a GNU system:"
-msgstr ""
+msgstr "クラッシュレポートのフォーマットは、プラットフォームに依存します。GNU Cライブラリーを使用するいくつかのプラットフォームでは、クラッシュレポートには、クラッシュ前の実行状態を説明する@dfn{backtrace}が含まれ、これはクラッシュをデバッグする助けとなります。以下はGNUシステムの例です:"
 
 #. type: example
 #: trouble.texi.orig:323
@@ -758,6 +759,16 @@ msgid ""
 "emacs[0x5acc26]\n"
 "@dots{}\n"
 msgstr ""
+"Fatal error 11: Segmentation fault\n"
+"Backtrace:\n"
+"emacs[0x5094e4]\n"
+"emacs[0x4ed3e6]\n"
+"emacs[0x4ed504]\n"
+"/lib64/libpthread.so.0[0x375220efe0]\n"
+"/lib64/libpthread.so.0(read+0xe)[0x375220e08e]\n"
+"emacs[0x509af6]\n"
+"emacs[0x5acc26]\n"
+"@dots{}\n"
 
 #. type: Plain text
 #: trouble.texi.orig:334
@@ -769,7 +780,7 @@ msgid ""
 "the source-code lines corresponding to the @samp{emacs[0x509af6]} entry.  If "
 "your system has the @command{addr2line} utility, the following shell command "
 "outputs a backtrace with source-code line numbers:"
-msgstr ""
+msgstr "数字@samp{11} はクラッシュにたいするシステムのシグナル番号 --- このケースではsegmentation fault --- です。16進数字はプログラムのアドレスで、これによりデバッグツールを使用して、ソースコード行に関連付けることができます。たとえばGDBコマンド@samp{list *0x509af6}は、@samp{emacs[0x509af6]}エントリーにたいするソースコード行をプリントします。システムに@command{addr2line}ユーティリティーがある場合、以下のシェルコマンドはソースコードの行番号とともに、backtraceを出力します:"
 
 #. type: example
 #: trouble.texi.orig:338
@@ -778,6 +789,8 @@ msgid ""
 "sed -n 's/.*\\[\\(.*\\)]$/\\1/p' @var{backtrace} |\n"
 "  addr2line -C -f -i -p -e @var{bindir}/@var{emacs-binary}\n"
 msgstr ""
+"sed -n 's/.*\\[\\(.*\\)]$/\\1/p' @var{backtrace} |\n"
+"  addr2line -C -f -i -p -e @var{bindir}/@var{emacs-binary}\n"
 
 #. type: Plain text
 #: trouble.texi.orig:348
@@ -785,16 +798,16 @@ msgid ""
 "Here, @var{backtrace} is the name of a text file containing a copy of the "
 "backtrace, @var{bindir} is the name of the directory that contains the Emacs "
 "executable, and @var{emacs-binary} is the name of the Emacs executable file, "
-"normally @file{emacs} on GNU and Unix systems and @file{emacs.exe} on "
-"MS-Windows and MS-DOS.  Omit the @option{-p} option if your version of "
+"normally @file{emacs} on GNU and Unix systems and @file{emacs.exe} on MS-"
+"Windows and MS-DOS.  Omit the @option{-p} option if your version of "
 "@command{addr2line} is too old to have it."
-msgstr ""
+msgstr "ここで、@var{backtrace}はbacktraceのコピーを含むテキストファイル名、@var{bindir}はEmacs実行可能ファイルを含むディレクトリー名、@var{emacs-binary}はEmacs実行可能ファイル(GNUおよびUnixシステムでは通常は@file{emacs}、MS-WindowsおよびMS-DOSでは@file{emacs.exe})です。@option{-p}オプションがない古いバージョンの@command{addr2line}では、このオプションを省略してください。"
 
 #. type: cindex
 #: trouble.texi.orig:349
 #, no-wrap
 msgid "core dump"
-msgstr ""
+msgstr "core dump"
 
 #. type: Plain text
 #: trouble.texi.orig:357
@@ -806,19 +819,19 @@ msgid ""
 "disabled by default, and you must explicitly enable them by running the "
 "shell command @samp{ulimit -c unlimited} (e.g., in your shell startup "
 "script)."
-msgstr ""
+msgstr "coreファイルをサポートするシステムでは、Emacsはオプションで@dfn{コアダンプ(core dump)}を生成します。コアダンプはクラッシュ前のプログラムの状態に関する多くのデータを含むファイルで、通常GDBのようなデバッガーにロードして調べられます。多くのプラットフォームでは、コアダンプはデフォルトで無効になっているので、(たとえばシェルのスタートアップスクリプトで)シェルコマンド@samp{ulimit -c unlimited}を実行して、明示的に有効にしなければなりません。"
 
 #. type: subsection
 #: trouble.texi.orig:359
 #, no-wrap
 msgid "Recovery After a Crash"
-msgstr ""
+msgstr "Recovery After a Crash"
 
 #. type: cindex
 #: trouble.texi.orig:360
 #, no-wrap
 msgid "recovering crashed session"
-msgstr ""
+msgstr "recovering crashed session"
 
 #. type: Plain text
 #: trouble.texi.orig:365
@@ -826,7 +839,7 @@ msgid ""
 "If Emacs or the computer crashes, you can recover the files you were editing "
 "at the time of the crash from their auto-save files.  To do this, start "
 "Emacs again and type the command @kbd{M-x recover-session}."
-msgstr ""
+msgstr "Emacs、またはコンピューターがクラッシュした場合、クラッシュしたとき編集していたファイルを、自動保存ファイルからリカバリーすることができます。これを行なうには、再びEmacsを開始して、コマンド@kbd{M-x recover-session}とタイプしてください。"
 
 #. type: Plain text
 #: trouble.texi.orig:370
@@ -835,7 +848,7 @@ msgid ""
 "files, each with its date.  You must choose which session to recover from.  "
 "Typically the one you want is the most recent one.  Move point to the one "
 "you choose, and type @kbd{C-c C-c}."
-msgstr ""
+msgstr "このコマンドはm最初に中断されたセッションのファイルを、ファイルの日付とともにリストするバッファーを表示します。そこからリカバリーするファイルを、選択しなければなりません。通常リカバリーしたいファイルは、一番最近のセッションでしょう。選択したファイルにポイントを移動して、@kbd{C-c C-c}とタイプしてください。"
 
 #. type: Plain text
 #: trouble.texi.orig:378
@@ -846,7 +859,7 @@ msgid ""
 "file and its auto-save file, then asks once again whether to recover that "
 "file.  For the second question, you must confirm with @kbd{yes}.  If you do, "
 "Emacs visits the file but gets the text from the auto-save file."
-msgstr ""
+msgstr "その後@code{recover-session}は、そのセッション中に編集していた各ファイルについて、検討を行ないます。そのようなファイルそれぞれについて、そのファイルをリカバリーするか尋ねるのです。あるファイルにたいして@kbd{y}と応えると、コマンドはファイルとファイルの自動保存ファイルの日付を表示して、再度そのファイルをリカバリーするか尋ねます。この2回目の質問にたいして同意するには、@kbd{yes}と応えなければなりません。@kbd{yes}と応えた場合、Emacsはそのファイルをvisitしますが、テキストは自動保存ファイルから取得します。"
 
 #. type: Plain text
 #: trouble.texi.orig:382
@@ -854,7 +867,7 @@ msgid ""
 "When @code{recover-session} is done, the files you've chosen to recover are "
 "present in Emacs buffers.  You should then save them.  Only this---saving "
 "them---updates the files themselves."
-msgstr ""
+msgstr "@code{recover-session}が終了すると、リカバリーを選択したファイルがEmacsバッファーに表示されます。そこでファイルを保存する必要があります。それらを保存することだけが、そのファイル自身を更新するのです。"
 
 #. type: Plain text
 #: trouble.texi.orig:390
@@ -865,35 +878,34 @@ msgid ""
 "GDB (the GNU Debugger) to retrieve them from a core dump--provided that a "
 "core dump was saved, and that the Emacs executable was not stripped of its "
 "debugging symbols."
-msgstr ""
+msgstr "ファイルに関連付けられていないバッファーをリカバリーしたいときや、自動保存が重要な更新を記録するほど最新でなかった場合、最後の手段として --- コアダンプが保存されていて、Emacsの実行ファイルからデバッグシンボルがストリップされていないという条件の元に --- コアダンプからそれらを取得するために、GDB(GNUデバッガー)で@file{etc/emacs-buffer.gdb}スクリプトを使用することができます。"
 
 #. type: Plain text
 #: trouble.texi.orig:393
 msgid ""
 "As soon as you get the core dump, rename it to another name such as "
 "@file{core.emacs}, so that another crash won't overwrite it."
-msgstr ""
+msgstr "コアダンプを入手したら、すぐに@file{core.emacs}のような別の名前にリネームします。これにより、他のクラッシュによるコアダンプの上書きを防ぎます。"
 
 #. type: Plain text
 #: trouble.texi.orig:404
 msgid ""
 "To use this script, run @code{gdb} with the file name of your Emacs "
-"executable and the file name of the core dump, e.g., @samp{gdb "
-"/usr/bin/emacs core.emacs}.  At the @code{(gdb)} prompt, load the recovery "
-"script: @samp{source /usr/src/emacs/etc/emacs-buffer.gdb}.  Then type the "
-"command @code{ybuffer-list} to see which buffers are available.  For each "
-"buffer, it lists a buffer number.  To save a buffer, use "
-"@code{ysave-buffer}; you specify the buffer number, and the file name to "
-"write that buffer into.  You should use a file name which does not already "
-"exist; if the file does exist, the script does not make a backup of its old "
-"contents."
-msgstr ""
+"executable and the file name of the core dump, e.g., @samp{gdb /usr/bin/"
+"emacs core.emacs}.  At the @code{(gdb)} prompt, load the recovery script: "
+"@samp{source /usr/src/emacs/etc/emacs-buffer.gdb}.  Then type the command "
+"@code{ybuffer-list} to see which buffers are available.  For each buffer, it "
+"lists a buffer number.  To save a buffer, use @code{ysave-buffer}; you "
+"specify the buffer number, and the file name to write that buffer into.  You "
+"should use a file name which does not already exist; if the file does exist, "
+"the script does not make a backup of its old contents."
+msgstr "このスクリプトを使用するには、Emacs実行ファイル名とコアダンプのファイル名を、@samp{gdb /usr/bin/emacs core.emacs}のように指定します。@code{(gdb)}プロンプトで、@samp{source /usr/src/emacs/etc/emacs-buffer.gdb}としてリカバリースクリプトをロードします。それから利用可能なバッファーを見るために、コマンド@code{ybuffer-list}とタイプします。これは各バッファーにたいして、バッファー番号をリストします。バッファーを保存するには、@code{ysave-buffer}を使用します。ここでバッファー番号とそのバッファーを書き込むファイル名を指定します。すでに存在するファイル名を使用するべきではありません。ファイルがすでに存在する場合、このスクリプトはそのファイルの古い内容のバックアップを作成しません。"
 
 #. type: cindex
 #: trouble.texi.orig:407
 #, no-wrap
 msgid "emergency escape"
-msgstr ""
+msgstr "emergency escape"
 
 #. type: Plain text
 #: trouble.texi.orig:418
@@ -906,14 +918,14 @@ msgid ""
 "second one won't trigger emergency escape.  However, if some problem "
 "prevents Emacs from handling the first @kbd{C-g} properly, then the second "
 "one will get you back to the shell."
-msgstr ""
+msgstr "テキスト端末では、1回目の@kbd{C-g}にたいしてEmacsが実際に反応してquitする前に、2回目の@kbd{C-g}をタイプすると、@dfn{緊急エスケープ(emergency escape)}が、Emacsを即座にサスペンドします。これにより、どんなにひどくハングしていても、常にGNU Emacsを抜け出すことができます。物事が正しく処理されている場合、Emacsは最初の@kbd{C-g}を素早く認識・処理するので。2回目の@kbd{C-g}は緊急エスケープを引き起こしません。しかし何らかの問題が、Emacsが最初の@kbd{C-g}を処理するのを妨げる場合、2回目の@kbd{C-g}でシェルに戻ります。"
 
 #. type: Plain text
 #: trouble.texi.orig:421
 msgid ""
 "When you resume Emacs after a suspension caused by emergency escape, it asks "
 "two questions before going back to what it had been doing:"
-msgstr ""
+msgstr "緊急エスケープによるサスペンドからEmacsを再開する場合、サスペンド前に行なっていた何かに戻る前に、Emacsは以下の2つの質問をします:"
 
 #. type: example
 #: trouble.texi.orig:425
@@ -922,19 +934,20 @@ msgid ""
 "Auto-save? (y or n)\n"
 "Abort (and dump core)? (y or n)\n"
 msgstr ""
+"Auto-save? (y or n)\n"
+"Abort (and dump core)? (y or n)\n"
 
 #. type: Plain text
 #: trouble.texi.orig:429
 msgid "Answer each one with @kbd{y} or @kbd{n} followed by @key{RET}."
-msgstr ""
+msgstr "質問に応えるには、それぞれにたいして@kbd{y}または@kbd{n}の後に、@key{RET}をタイプします。"
 
 #. type: Plain text
 #: trouble.texi.orig:433
 msgid ""
 "Saying @kbd{y} to @samp{Auto-save?} causes immediate auto-saving of all "
-"modified buffers in which auto-saving is enabled.  Saying @kbd{n} skips "
-"this."
-msgstr ""
+"modified buffers in which auto-saving is enabled.  Saying @kbd{n} skips this."
+msgstr "@samp{Auto-save?}にたいして@kbd{y}と応えると、自動保存が有効なすべての編集されたバッファーの自動保存を、即座に行ないます。@kbd{n}と応えると、これをスキップします。"
 
 #. type: Plain text
 #: trouble.texi.orig:438
@@ -943,15 +956,15 @@ msgid ""
 "dumping core.  This is to enable a wizard to figure out why Emacs was "
 "failing to quit in the first place.  Execution does not continue after a "
 "core dump."
-msgstr ""
+msgstr "@samp{Abort (and dump core)?}にたいして@kbd{y}と応えると、Emacsはクラッシュしてコアダンプします。これは専門家(wizard)が、なぜEmacsが最初の@kbd{C-g}でquitしなかったかを見つけ出すことを可能にします。コアダンプの後、実行は継続されません。"
 
 #. type: Plain text
 #: trouble.texi.orig:442
 msgid ""
 "If you answer this question @kbd{n}, Emacs execution resumes.  With luck, "
-"Emacs will ultimately do the requested quit.  If not, each subsequent "
-"@kbd{C-g} invokes emergency escape again."
-msgstr ""
+"Emacs will ultimately do the requested quit.  If not, each subsequent @kbd{C-"
+"g} invokes emergency escape again."
+msgstr "この質問に@kbd{n}と応えた場合、Emacsは実行を再開します。運がよければ、Emacsは最終的にquit要求を行なうでしょう。そうでない場合、連続して@kbd{C-g}をタイプして、緊急エスケープを再度呼び出します。"
 
 #. type: Plain text
 #: trouble.texi.orig:447
@@ -960,14 +973,14 @@ msgid ""
 "feature without really meaning to.  Then just resume and answer @kbd{n} to "
 "both questions, and you will get back to the former state.  The quit you "
 "requested will happen by and by."
-msgstr ""
+msgstr "実際はEmacsがハングしているのではなく、遅いだけの場合、本当に意味するところを意図せずに、2連@kbd{C-g}の機能を呼び出してしまうかもしれません。この場合は、2つの質問の両方に@kbd{n}を応えれば、前の状態に戻ることができます。やがて要求したquitが行なわれるでしょう。"
 
 #. type: Plain text
 #: trouble.texi.orig:451
 msgid ""
 "Emergency escape is active only for text terminals.  On graphical displays, "
 "you can use the mouse to kill Emacs or switch to another program."
-msgstr ""
+msgstr "緊急エスケープはテキスト端末だけでアクティブになっています。グラフィカルなディスプレーでは、マウスを使用してEmacsをkillしたり、他のプログラムに切り替えることができます。"
 
 #. type: Plain text
 #: trouble.texi.orig:455
@@ -975,25 +988,25 @@ msgid ""
 "On MS-DOS, you must type @kbd{C-@key{Break}} (twice) to cause emergency "
 "escape---but there are cases where it won't work, when system call hangs or "
 "when Emacs is stuck in a tight loop in C code."
-msgstr ""
+msgstr "MS-DOSでは緊急エスケープを発生させるために、@kbd{C-@key{Break}}を2回タイプしなければなりません --- しかしシステムコールがハングしたり、EmacsがCコードのタイトなループにハマっているときは機能しないケースがあります。"
 
 #. type: node
 #: trouble.texi.orig:456
 #, no-wrap
 msgid "Bugs"
-msgstr ""
+msgstr "Bugs"
 
 #. type: section
 #: trouble.texi.orig:457
 #, no-wrap
 msgid "Reporting Bugs"
-msgstr ""
+msgstr "Reporting Bugs"
 
 #. type: cindex
 #: trouble.texi.orig:459
 #, no-wrap
 msgid "bugs"
-msgstr ""
+msgstr "bugs"
 
 #. type: Plain text
 #: trouble.texi.orig:465
@@ -1003,67 +1016,67 @@ msgid ""
 "want to hear about it.  The same applies for new features you would like to "
 "see added.  The following sections will help you to construct an effective "
 "bug report."
-msgstr ""
+msgstr "Emacsでバグを見つけたと思ったときは、それを報告してください。それをfixすることは約束できませんし、それがバグであると常に認める訳ではありませんが、もちろんそれについて知りたいのです。追加したいと考える機能についても、同じことが言えます。以下のセクションは、有効なバグレポートを作成する助けとなるでしょう。"
 
 #. type: node
 #: trouble.texi.orig:472 trouble.texi.orig:474
 #, no-wrap
 msgid "Known Problems"
-msgstr ""
+msgstr "Known Problems"
 
 #. type: menuentry
 #: trouble.texi.orig:472
 msgid "How to read about known problems and bugs."
-msgstr ""
+msgstr "既知の問題とバグについて読む方法。"
 
 #. type: menuentry
 #: trouble.texi.orig:472
 msgid "Criteria: Bug Criteria"
-msgstr ""
+msgstr "Criteria: Bug Criteria"
 
 #. type: menuentry
 #: trouble.texi.orig:472
 msgid "Have you really found a bug?"
-msgstr ""
+msgstr "本当にバグを見つけたのか?"
 
 #. type: subsection
 #: trouble.texi.orig:472 trouble.texi.orig:594 trouble.texi.orig:595
 #, no-wrap
 msgid "Understanding Bug Reporting"
-msgstr ""
+msgstr "Understanding Bug Reporting"
 
 #. type: menuentry
 #: trouble.texi.orig:472
 msgid "How to report a bug effectively."
-msgstr ""
+msgstr "バグを報告する効果的な方法。"
 
 #. type: node
 #: trouble.texi.orig:472 trouble.texi.orig:652
 #, no-wrap
 msgid "Checklist"
-msgstr ""
+msgstr "Checklist"
 
 #. type: menuentry
 #: trouble.texi.orig:472
 msgid "Steps to follow for a good bug report."
-msgstr ""
+msgstr "良いバグレポートのために従うべきステップ。"
 
 #. type: node
 #: trouble.texi.orig:472 trouble.texi.orig:1050
 #, no-wrap
 msgid "Sending Patches"
-msgstr ""
+msgstr "Sending Patches"
 
 #. type: menuentry
 #: trouble.texi.orig:472
 msgid "How to send a patch for GNU Emacs."
-msgstr ""
+msgstr "GNU Emacsにパッチを送る方法。"
 
 #. type: subsection
 #: trouble.texi.orig:475
 #, no-wrap
 msgid "Reading Existing Bug Reports and Known Problems"
-msgstr ""
+msgstr "Reading Existing Bug Reports and Known Problems"
 
 #. type: Plain text
 #: trouble.texi.orig:481
@@ -1072,7 +1085,7 @@ msgid ""
 "already known about.  Indeed, it may already have been fixed in a later "
 "release of Emacs, or in the development version.  Here is a list of the main "
 "places you can read about known issues:"
-msgstr ""
+msgstr "バグを報告する前に、少しでも可能なら、それが既知のものか確認してください。実際には、それがもっと後のEmacsリリースや、Emacsの開発バージョンですでにfixされているかもしれません。以下は、既知の問題について読むことができる、主な場所のリストです:"
 
 #. type: itemize
 #: trouble.texi.orig:488
@@ -1081,20 +1094,20 @@ msgid ""
 "contains a list of particularly well-known issues that have been encountered "
 "in compiling, installing and running Emacs.  Often, there are suggestions "
 "for workarounds and solutions."
-msgstr ""
+msgstr "@file{etc/PROBLEMS}ファイル。@kbd{C-h C-p}とタイプして読むことができます。このファイルには、Emacsをコンパイル、インストール、実行するときに出会う、既知の問題の詳しいリストが含まれています。次善策や解決策の提案も、多くあります。"
 
 #. type: itemize
 #: trouble.texi.orig:492
 msgid ""
-"Some additional user-level problems can be found in @ref{Bugs and problems, "
-", Bugs and problems, efaq, GNU Emacs FAQ}."
-msgstr ""
+"Some additional user-level problems can be found in @ref{Bugs and "
+"problems, , Bugs and problems, efaq, GNU Emacs FAQ}."
+msgstr "追加のユーザーレベルの問題のいくつかは、@ref{Bugs and problems, , Bugs and problems, efaq, GNU Emacs FAQ}でも見ることができます。"
 
 #. type: cindex
 #: trouble.texi.orig:493
 #, no-wrap
 msgid "bug tracker"
-msgstr ""
+msgstr "bug tracker"
 
 #. type: itemize
 #: trouble.texi.orig:501
@@ -1104,13 +1117,13 @@ msgid ""
 "information about the status of each bug, the initial bug report, and the "
 "follow-up messages by the bug reporter and Emacs developers.  You can search "
 "for bugs by subject, severity, and other criteria."
-msgstr ""
+msgstr "@url{http://debbugs.gnu.org}のGNU Bug Tracker。Emacsのバグは@samp{emacs}パッケージの下のトラッカーにファイルされています。トラッカーは、各バグの状態、最初のバグレポート、バグ報告者とEmacs開発者によるフォローアップメッセージについて情報を記録します。subject、severity、その他の条件でバグを検索できます。"
 
 #. type: cindex
 #: trouble.texi.orig:502
 #, no-wrap
 msgid "debbugs package"
-msgstr ""
+msgstr "debbugs package"
 
 #. type: itemize
 #: trouble.texi.orig:509
@@ -1121,18 +1134,18 @@ msgid ""
 "debbugs-gnu} to list bugs, and @kbd{M-x debbugs-gnu-search} to search for a "
 "specific bug.  User tags, applied by the Emacs maintainers, are shown by "
 "@kbd{M-x debbugs-gnu-usertags}."
-msgstr ""
+msgstr "ウェブページでバグトラッカーを閲覧するかわりに、@code{debbugs}パッケージを使用して、それをEmacsから閲覧できます。このパッケージはパッケージメニュー(@ref{Packages}を参照してください)を通じてダウンロードできます。このパッケージは、バグをリストするコマンド@kbd{M-x debbugs-gnu}、特定のバグを検索する@kbd{M-x debbugs-gnu-search}を提供します。Emacsメンテナーにより適用されるユーザータグは、@kbd{M-x debbugs-gnu-usertags}で表示されます。"
 
 #. type: itemize
 #: trouble.texi.orig:517
 msgid ""
 "The @samp{bug-gnu-emacs} mailing list (also available as the newsgroup "
-"@samp{gnu.emacs.bug}).  You can read the list archives at "
-"@url{http://lists.gnu.org/mailman/listinfo/bug-gnu-emacs}.  This list works "
-"as a ``mirror'' of the Emacs bug reports and follow-up messages which are "
-"sent to the bug tracker.  It also contains old bug reports from before the "
-"bug tracker was introduced (in early 2008)."
-msgstr ""
+"@samp{gnu.emacs.bug}).  You can read the list archives at @url{http://lists."
+"gnu.org/mailman/listinfo/bug-gnu-emacs}.  This list works as a ``mirror'' of "
+"the Emacs bug reports and follow-up messages which are sent to the bug "
+"tracker.  It also contains old bug reports from before the bug tracker was "
+"introduced (in early 2008)."
+msgstr "@samp{bug-gnu-emacs}メーリングリスト(ニュースグループ@samp{gnu.emacs.bug}も利用可能)。リストのアーカイブは@url{http://lists.gnu.org/mailman/listinfo/bug-gnu-emacs}で見ることができます。このリストはバグトラッカーに送られたEmacsバグレポートとドローアップメッセージの、``mirror''として機能します。これにはバグトラッカーが導入される前(2008年以前)の古いバグレポートも含まれています。"
 
 #. type: itemize
 #: trouble.texi.orig:522
@@ -1141,7 +1154,7 @@ msgid ""
 "provide the Emacs maintainers with information about bugs and feature "
 "requests, so reports may contain fairly large amounts of data; spectators "
 "should not complain about this."
-msgstr ""
+msgstr "もし望むなら、メーリングリストに登録できます。このリストの目的はEmacsメンテナーにバグと機能リクエストの情報を提供するためのもので、報告には大量のデータが含まれるかもしれないことに注意してください。購読者はこれについて不満を言うべきではありません。"
 
 #. type: itemize
 #: trouble.texi.orig:530
@@ -1149,10 +1162,9 @@ msgid ""
 "The @samp{emacs-pretest-bug} mailing list.  This list is no longer used, and "
 "is mainly of historical interest.  At one time, it was used for bug reports "
 "in development (i.e., not yet released) versions of Emacs.  You can read the "
-"archives for 2003 to mid 2007 at "
-"@url{http://lists.gnu.org/archive/html/emacs-pretest-bug/}.  Nowadays, it is "
-"an alias for @samp{bug-gnu-emacs}."
-msgstr ""
+"archives for 2003 to mid 2007 at @url{http://lists.gnu.org/archive/html/"
+"emacs-pretest-bug/}.  Nowadays, it is an alias for @samp{bug-gnu-emacs}."
+msgstr "@samp{emacs-pretest-bug}メーリングリスト。このリストは今は使用されておらず、主に歴史的な興味のためのものです。一時は(たとえばまだリリースされていない)Emacs開発バージョンのために使用されていました。2003年から2007年中頃までのアーカイブは、@url{http://lists.gnu.org/archive/html/emacs-pretest-bug/}で見ることができます。現在は@samp{bug-gnu-emacs}にたいするエイリアスです。"
 
 #. type: itemize
 #: trouble.texi.orig:536
@@ -1161,31 +1173,31 @@ msgid ""
 "mailing list.  This is not the main purpose of the list, however, and it is "
 "much better to send bug reports to the bug list.  You should not feel "
 "obliged to read this list before reporting a bug."
-msgstr ""
+msgstr "@samp{emacs-devel}メーリングリスト。このメーリングリストにバグを報告する人がときどきいます。しかしこのリストの主な目的は違うので、バグレポートはバグリストに送るほうがよいでしょう。バグを報告する前に、この一覧を読んだことに感謝を感じることはありません。"
 
 #. type: node
 #: trouble.texi.orig:540
 #, no-wrap
 msgid "Bug Criteria"
-msgstr ""
+msgstr "Bug Criteria"
 
 #. type: subsection
 #: trouble.texi.orig:541
 #, no-wrap
 msgid "When Is There a Bug"
-msgstr ""
+msgstr "When Is There a Bug"
 
 #. type: cindex
 #: trouble.texi.orig:542
 #, no-wrap
 msgid "bug criteria"
-msgstr ""
+msgstr "bug criteria"
 
 #. type: cindex
 #: trouble.texi.orig:543
 #, no-wrap
 msgid "what constitutes an Emacs bug"
-msgstr ""
+msgstr "what constitutes an Emacs bug"
 
 #. type: Plain text
 #: trouble.texi.orig:549
@@ -1194,7 +1206,7 @@ msgid ""
 "exits with an operating system error message that indicates a problem in the "
 "program (as opposed to something like ``disk full''), then it is certainly a "
 "bug."
-msgstr ""
+msgstr "Emacsが不正なメモリー位置にアクセスする場合(``segmentation fault'')、または(``disk full''のようなメッセージではなく)プログラムに問題があることを示す、オペレーティングシステムのエラーメッセージとともに終了する場合、それは確実にバグです。"
 
 #. type: Plain text
 #: trouble.texi.orig:554
@@ -1203,7 +1215,7 @@ msgid ""
 "buffer, then it is a bug.  But you should check that features like buffer "
 "narrowing (@pxref{Narrowing}), which can hide parts of the buffer or change "
 "how it is displayed, are not responsible."
-msgstr ""
+msgstr "Emacsがバッファーの内容を正しく対応して表示しないとき、それはバグです。しかしバッファーのナローイング(@ref{Narrowing}を参照してください)チェックするべきです。これはバッファーの一部を隠して、表示される方法を変更できるので、バグではありません。"
 
 #. type: Plain text
 #: trouble.texi.orig:563
@@ -1215,14 +1227,14 @@ msgid ""
 "was such that you @emph{know} it should have been processed quickly, report "
 "a bug.  If you don't know whether the command should take a long time, find "
 "out by looking in the manual or by asking for assistance."
-msgstr ""
+msgstr "コマンドが永久に完了しないなら、それはバグですが、本当にEmacsのせいか確認しなくてはなりません。コマンドの中には単に長時間かかるものがいくつかあります。@kbd{C-g} (MS-DOSでは@kbd{C-@key{Break}})をタイプしてから、@kbd{C-h l}で、Emacsが受け取った入力が、あなたがタイプしようと意図したものなのか確認します。その入力が、あなたが素早く処理されるべきだと@emph{わかっている}ものだった場合は、バグを報告してください。そのコマンドが長時間かかるものか判らない場合は、マニュアルを調べるか、協力してくれる人に尋ねてください。"
 
 #. type: Plain text
 #: trouble.texi.orig:567
 msgid ""
 "If a command you are familiar with causes an Emacs error message in a case "
 "where its usual definition ought to be reasonable, it is probably a bug."
-msgstr ""
+msgstr "あなたの親しんでいるコマンドが、コマンドの通常の定義が正当なのに、Emacsのエラーメッセージを表示する場合、それはおそらくバグです。"
 
 #. type: Plain text
 #: trouble.texi.orig:572
@@ -1231,7 +1243,7 @@ msgid ""
 "certain what it ought to have done.  If you aren't familiar with the "
 "command, it might actually be working right.  If in doubt, read the "
 "command's documentation (@pxref{Name Help})."
-msgstr ""
+msgstr "コマンドが間違ったことを行なうなら、それはバグです。しかしそのコマンドが何を行なうべきか確実に知っているか確認してください。そのコマンドに詳しくない場合、コマンドは実際は正しく動いているのでしょう。疑うなら、コマンドのドキュメント(@ref{Name Help}を参照してください)を参照してください。"
 
 #. type: Plain text
 #: trouble.texi.orig:584
@@ -1245,7 +1257,7 @@ msgid ""
 "that what you want is not available.  Ask other Emacs users, too.  If you "
 "are not sure what the command is supposed to do after a careful reading of "
 "the manual, check the index and glossary for any terms that may be unclear."
-msgstr ""
+msgstr "あるコマンドの意図された定義が、それを編集するための最良の定義ではないこともあります。これはとても重要な問題の一種ですが、判断の問題でもあります。いくつかの既存の機能にたいする無知から、そのような決定を行なうのは簡単でもあります。通常の方法でドキュメントをチェックして、それを理解したと確信し、あなたがやりたいことが不可能だと確実に判るまでは、そのような問題にたいして不満を言わないのが、おそらく最良です。他のEmacsユーザーにも尋ねてみましょう。マニュアルを注意深く読んだ後でも、そのコマンドが何を想定しているか確信がもてないときは、不明解な単語をindex(索引)やglossary(用語集)でチェックしましょう。"
 
 #. type: Plain text
 #: trouble.texi.orig:590
@@ -1255,32 +1267,32 @@ msgid ""
 "report.  The manual's job is to make everything clear to people who are not "
 "Emacs experts---including you.  It is just as important to report "
 "documentation bugs as program bugs."
-msgstr ""
+msgstr "注意深くマニュアルを読んだ後でも、そのコマンドが何を行なうべきか判らないとき、それは報告すべきマニュアルのバグであることを示します。Emacsのエクスパートでない人 --- あなたを含めて --- にたいして、すべてを明解にするのがマニュアルの役目です。プログラムのバグと同様に、ドキュメントのバグレポートは重要です。"
 
 #. type: Plain text
 #: trouble.texi.orig:593
 msgid ""
 "If the built-in documentation for a function or variable disagrees with the "
 "manual, one of them must be wrong; that is a bug."
-msgstr ""
+msgstr "関数や変数のビルトインドキュメントがマニュアルと異なる場合、どちらか一方が間違っていなければならないので、これはバグです。"
 
 #. type: cindex
 #: trouble.texi.orig:596
 #, no-wrap
 msgid "bug reporting"
-msgstr ""
+msgstr "bug reporting"
 
 #. type: cindex
 #: trouble.texi.orig:597
 #, no-wrap
 msgid "report an Emacs bug, how to"
-msgstr ""
+msgstr "report an Emacs bug, how to"
 
 #. type: findex
 #: trouble.texi.orig:599
 #, no-wrap
 msgid "emacs-version"
-msgstr ""
+msgstr "emacs-version"
 
 #. type: Plain text
 #: trouble.texi.orig:604
@@ -1289,7 +1301,7 @@ msgid ""
 "report it in a way which is useful.  What is most useful is an exact "
 "description of what commands you type, starting with the shell command to "
 "run Emacs, until the problem happens."
-msgstr ""
+msgstr "バグがあると判断したときは、それを報告すること、そして有用な方法で報告することが重要です。もっとも有用なのは、Emacsを起動するシェルコマンドから、問題が発生するまでに、何のコマンドをタイプしたかの正確な記述です。"
 
 #. type: Plain text
 #: trouble.texi.orig:615
@@ -1303,7 +1315,7 @@ msgid ""
 "about the bug.  If you want to actually @emph{debug} the problem, and report "
 "explanations that are more than guesses, that is useful---but please include "
 "the raw facts as well."
-msgstr ""
+msgstr "バグレポートのもっとも重要な原理は、@emph{事実}を報告することです。仮定や口頭の説明は、詳細な生データの代替にはなりません。事実の報告は簡単ですが、多くの人は事実のかわりに仮定の説明をしようと懸命に努め、それを報告するのです。その説明がEmacsが実装されている方法にたいする仮定にもとづく場合、それらは使い道がありません。その一方で事実の欠落により、わたしたちはバグについての実際の情報を得られないでしょう。実際に問題を@emph{デバッグ}して、推定を超える説明を報告したい場合、それは有用です --- しかし、どうか生の事実も同様に含めてください。"
 
 #. type: Plain text
 #: trouble.texi.orig:628
@@ -1319,7 +1331,7 @@ msgid ""
 "would try out the problem with some ``large file'', probably with no "
 "@samp{z} in its name, and not see any problem.  There is no way we could "
 "guess that we should try visiting a file with a @samp{z} in its name."
-msgstr ""
+msgstr "たとえば、@kbd{C-x C-f /glorp/baz.ugh @key{RET}}とタイプして、ファイルをvisitしたとき、そのファイルが偶然大きい(とあなたは知っている)ファイルで、Emacsが@samp{I feel pretty today}と表示したとします。バグレポートにはすべての情報が必要になります。あなたは問題がファイルのサイズにあると仮定して、``大きなファイルをvisitしたら、Emacsが@samp{I feel pretty today}と表示します''、などと報告すべきではありません。これはわたしたちが``推測説明(guessing explanations)''と呼ぶものです。ファイル名に@samp{z}があるという事実が、問題の原因かもしれません。もしそうなら、あなたの報告を受け取ったとき、わたしたちは``大きなファイル''で問題の再現を試み、それらのファイル名にはおそらく@samp{z}が含まれておらず、問題を確認できないでしょう。名前に@samp{z}が含まれるファイルをvisitしてみるべきだと、推測できる方法はありません。"
 
 #. type: Plain text
 #: trouble.texi.orig:633
@@ -1328,7 +1340,7 @@ msgid ""
 "Similarly, rather than saying ``if I have three characters on the line'', "
 "say ``after I type @kbd{@key{RET} A B C @key{RET} C-p}'', if that is the way "
 "you entered the text."
-msgstr ""
+msgstr "@kbd{C-x C-f}のではなく、``ファイルをvisit''とさえ言うべきではありません。同様にテキストを入力する方法では、``その行に3文字あるとき''ではなく、``@kbd{@key{RET} A B C @key{RET} C-p}とタイプした後''と書いてください。"
 
 #. type: Plain text
 #: trouble.texi.orig:643
@@ -1341,7 +1353,7 @@ msgid ""
 "you started Emacs with @command{emacs -Q}, followed by the exact sequence of "
 "steps for reproducing the bug.  If possible, inform us of the exact contents "
 "of any file that is needed to reproduce the bug."
-msgstr ""
+msgstr "可能なら、すぐにバグを再現するために@command{emacs -Q}(Emacsは初期のカスタマイズなしで開始されます。@ref{Initial Options}を参照してください)でEmacsを呼び出して、バグを発生させるステップを繰り返してみてください。この方法でバグを再現できたら、あなたの個人的なカスタマイズをバグから除外できます。バグレポートは、Emacsを@command{emacs -Q}で開始したことから始まり、バグを再現させる正確な一連のステップを続けるべきです。可能ならバグを再現するのに必要な、正確なファイル内容を報告してください。"
 
 #. type: Plain text
 #: trouble.texi.orig:648
@@ -1350,39 +1362,39 @@ msgid ""
 "reproducible at all.  In that case, you should report what you have---but, "
 "as before, please stick to the raw facts about what you did to trigger the "
 "bug the first time."
-msgstr ""
+msgstr "@command{emacs -Q}では再現できないバグもいくつかあります。結局は再現するのが難しいバグもあります。そのような場合、何を行なったかを報告すべきです --- が、前述したように、どうか最初にバグを発生させた生の事実を固持してください。"
 
 #. type: Plain text
 #: trouble.texi.orig:651
 msgid ""
 "If you have multiple issues that you want to report, please make a separate "
 "bug report for each."
-msgstr ""
+msgstr "報告したい複数の問題がある場合は、どうかそれらを個別のバグとしてそれぞれ報告してください。"
 
 #. type: subsection
 #: trouble.texi.orig:653
 #, no-wrap
 msgid "Checklist for Bug Reports"
-msgstr ""
+msgstr "Checklist for Bug Reports"
 
 #. type: cindex
 #: trouble.texi.orig:654
 #, no-wrap
 msgid "checklist before reporting a bug"
-msgstr ""
+msgstr "checklist before reporting a bug"
 
 #. type: cindex
 #: trouble.texi.orig:655
 #, no-wrap
 msgid "bug reporting, checklist"
-msgstr ""
+msgstr "bug reporting, checklist"
 
 #. type: Plain text
 #: trouble.texi.orig:659
 msgid ""
 "Before reporting a bug, first try to see if the problem has already been "
 "reported (@pxref{Known Problems})."
-msgstr ""
+msgstr "バグを報告する前に、まずその問題がすでに報告されていないか、確認を試みてください(@ref{Known Problems}を参照してください)。"
 
 #. type: Plain text
 #: trouble.texi.orig:665
@@ -1391,13 +1403,13 @@ msgid ""
 "has already been fixed.  Even better is to try the latest development "
 "version.  We recognize that this is not easy for some people, so do not feel "
 "that you absolutely must do this before making a report."
-msgstr ""
+msgstr "もし可能なら、その問題がすでにfixされていないか、最新リリース版のEmacsも試してみてください。同様に、最新の開発版を試してみるのもよいでしょう。これがある人にとっては簡単でないことは認識しているので、バグを報告する前に、絶対にこれを行なわなければならないと思わないでください。"
 
 #. type: findex
 #: trouble.texi.orig:666
 #, no-wrap
 msgid "report-emacs-bug"
-msgstr ""
+msgstr "report-emacs-bug"
 
 #. type: Plain text
 #: trouble.texi.orig:677
@@ -1411,24 +1423,25 @@ msgid ""
 "information inserted by @kbd{M-x report-emacs-bug} is not relevant, but "
 "unless you are absolutely sure it is best to leave it, so that the "
 "developers can decide for themselves."
-msgstr ""
+msgstr "Emacsでバグレポートを書くベストな方法は、コマンド@kbd{M-x report-emacs-bug}を使用する方法です。これはメールバッファー(@ref{Sending Mail}を参照してください)をセットアップして、自動的に@emph{いくつかの}重要な情報を挿入します。しかし、すべての必要な情報は提供できません。だから以下のガイドラインを読んで、それに従うべきです。そうすればメッセージを送る前に、他の重大な情報を手で入力できます。@kbd{M-x report-emacs-bug}によって挿入されたいくつかの情報は、適切ではないと感じるかもしれませんが、完全に確信があるのでなければそれを残してください。そうすれば開発者たちがそれを判断できます。"
 
 #. type: Plain text
 #: trouble.texi.orig:680
 msgid ""
 "When you have finished writing your report, type @kbd{C-c C-c} and it will "
 "be sent to the Emacs maintainers at"
-msgstr ""
+msgstr "レポートを記述し終えたら、@kbd{C-c C-c}とタイプすると、それはEmacsメンテナー"
 
 #. type: ifnothtml
 #: trouble.texi.orig:682
 msgid "@email{bug-gnu-emacs@@gnu.org}."
-msgstr ""
+msgstr "@email{bug-gnu-emacs@@gnu.org}に送られます"
 
 #. type: ifhtml
 #: trouble.texi.orig:685
-msgid "@url{http://lists.gnu.org/mailman/listinfo/bug-gnu-emacs, bug-gnu-emacs}."
-msgstr ""
+msgid ""
+"@url{http://lists.gnu.org/mailman/listinfo/bug-gnu-emacs, bug-gnu-emacs}."
+msgstr "@url{http://lists.gnu.org/mailman/listinfo/bug-gnu-emacs, bug-gnu-emacs}に送られます"
 
 #. type: Plain text
 #: trouble.texi.orig:692
@@ -1439,7 +1452,7 @@ msgid ""
 "can type @kbd{C-c M-i} to have Emacs do this for you)  and send it to that "
 "address.  Or you can simply send an email to that address describing the "
 "problem."
-msgstr ""
+msgstr "(新しい機能や改善を提案したいときも、同じアドレスを使用します)。Emacsの中からメールを送れない場合、バグレポートのテキストを通常使用しているメールクライアントにコピーして(システムがサポートしている場合は、@kbd{C-c M-i}でEmacsにそれを行なわせることができます)、そのアドレスに送信できます。または、そのアドレスに問題を説明する簡単なメールを送ることもできます。"
 
 #. type: Plain text
 #: trouble.texi.orig:698
@@ -1449,7 +1462,7 @@ msgid ""
 "include a valid reply email address, in case we need to ask you for more "
 "information about your report.  Submissions are moderated, so there may be a "
 "delay before your report appears."
-msgstr ""
+msgstr "レポートは@samp{bug-gnu-emacs}メーリングリストに送られ、@url{http://debbugs.gnu.org}のGNU Bug Trackerに保管されます。報告について、より詳細な情報を尋ねる必要がある場合のために、どうか有効な返信用アドレスを含めてください。提出されたレポートは調停されるので、レポートが見られるようになるまで遅れが生じることもあります。"
 
 #. type: Plain text
 #: trouble.texi.orig:702
@@ -1457,7 +1470,7 @@ msgid ""
 "You do not need to know how the Gnu Bug Tracker works in order to report a "
 "bug, but if you want to, you can read the tracker's online documentation to "
 "see the various features you can use."
-msgstr ""
+msgstr "バグを報告するためにGnu Bug Trackerがどのように機能するか知る必要はありませんが、もし望むなら、トラッカーのオンラインドキュメントで、使用できるさまざま機能を見ることができます。"
 
 #. type: Plain text
 #: trouble.texi.orig:709
@@ -1467,7 +1480,7 @@ msgid ""
 "you not to post bug reports (or replies) via the newsgroup.  It can make it "
 "much harder to contact you if we need to ask for more information, and it "
 "does not integrate well with the bug tracker."
-msgstr ""
+msgstr "@samp{bug-gnu-emacs}メーリングリストに送られたすべてのメールは、@samp{gnu.emacs.bug}ニュースグループにもゲートウェイされます。この逆も真ですが、バグレポート(または返信)をニュースグループにポストしないでください。これにより、さらに情報を尋ねるためにあなたに連絡するのが困難になるのと、それがバグトラッカーと充分に統合されていないからです。"
 
 #. type: Plain text
 #: trouble.texi.orig:713
@@ -1475,14 +1488,14 @@ msgid ""
 "If your data is more than 500,000 bytes, please don't include it directly in "
 "the bug report; instead, offer to send it on request, or make it available "
 "by ftp and say where."
-msgstr ""
+msgstr "データが500,000バイトを超える場合は、どうかそれを直接レポートに含めないでください。要求されたら送るという提案に留めるか、データをFTPで利用可能にしてその場所を知らせてください。"
 
 #. type: Plain text
 #: trouble.texi.orig:716
 msgid ""
 "To enable maintainers to investigate a bug, your report should include all "
 "these things:"
-msgstr ""
+msgstr "メンテナーがバグを詳細に調べられるように、レポートには以下の事項を含めるべきです:"
 
 #. type: itemize
 #: trouble.texi.orig:721
@@ -1490,6 +1503,8 @@ msgid ""
 "The version number of Emacs.  Without this, we won't know whether there is "
 "any point in looking for the bug in the current version of GNU Emacs."
 msgstr ""
+"Emacsのバージョン番号。これがないと、GNU Emacsのカレントバージョンで,\n"
+"バグを探す意義があるかを知ることができません。"
 
 #. type: itemize
 #: trouble.texi.orig:727
@@ -1499,7 +1514,7 @@ msgid ""
 "number by typing @kbd{M-x emacs-version @key{RET}}.  If that command does "
 "not work, you probably have something other than GNU Emacs, so you will have "
 "to report the bug somewhere else."
-msgstr ""
+msgstr "この情報は、@kbd{M-x report-emacs-bug}により自動的にレポートに含まれますが、レポートでこのコマンドを使用しない場合は、@kbd{M-x emacs-version @key{RET}}とタイプして、バージョン番号を取得できます。このコマンドが機能しない場合、たぶんあなたはGNU Emacsではない他の何かを使っているので、どこか他のところにそのバグを報告する必要があるでしょう。"
 
 #. type: itemize
 #: trouble.texi.orig:734
@@ -1509,14 +1524,14 @@ msgid ""
 "@kbd{M-x emacs-version @key{RET}} provides this information too.  Copy its "
 "output from the @file{*Messages*} buffer, so that you get it all and get it "
 "accurately."
-msgstr ""
+msgstr "使用している機種のタイプ、およびオペレーティングシステム名とバージョン番号(繰り返しになりますが、これらは@kbd{M-x report-emacs-bug}で自動的にレポートに含まれます)。@kbd{M-x emacs-version @key{RET}}もこの情報を提供します。@file{*Messages*}バッファーからコマンドの出力をコピーすれば、すべてを正確に取得できます。"
 
 #. type: itemize
 #: trouble.texi.orig:738
 msgid ""
 "The operands given to the @code{configure} command when Emacs was installed "
 "(automatically included by @kbd{M-x report-emacs-bug})."
-msgstr ""
+msgstr "Emacsをインストールしたとき、@code{configure}に与えたオプション(@kbd{M-x report-emacs-bug}により自動的にレポートに含まれます)。"
 
 #. type: itemize
 #: trouble.texi.orig:744
@@ -1525,33 +1540,33 @@ msgid ""
 "may not have time to investigate the bug unless it happens in an unmodified "
 "Emacs.  But if you've made modifications and you don't tell us, you are "
 "sending us on a wild goose chase.)"
-msgstr ""
+msgstr "Emacsのソースにたいして行なった変更の完全なリスト(わたしたちには、変更されたEmacsのバグを詳細に調べる時間はないでしょう。しかし変更を行なっていて、それをわたしたちに告げないとしたら、それはわたしたちを野性のダチョウ狩りに送り出すようなものです)。"
 
 #. type: itemize
 #: trouble.texi.orig:747
 msgid ""
-"Be precise about these changes.  A description in English is not "
-"enough---send a context diff for them."
-msgstr ""
+"Be precise about these changes.  A description in English is not enough---"
+"send a context diff for them."
+msgstr "これらの変更について正確に記述してください。英語による説明では充分ではありません。それらにたいするコンテキストdiffも送ってください。"
 
 #. type: itemize
 #: trouble.texi.orig:750
 msgid ""
 "Adding files of your own, or porting to another machine, is a modification "
 "of the source."
-msgstr ""
+msgstr "独自のファイル追加や、他の機種へのポートも、ソースの変更です。"
 
 #. type: itemize
 #: trouble.texi.orig:754
 msgid ""
 "Details of any other deviations from the standard procedure for installing "
 "GNU Emacs."
-msgstr ""
+msgstr "GNU Emacsの標準的なインストール手順からの、その他あらゆる逸脱の詳細。"
 
 #. type: itemize
 #: trouble.texi.orig:757
 msgid "The complete text of any files needed to reproduce the bug."
-msgstr ""
+msgstr "バグを再現するのに必要なファイルの完全なテキスト。"
 
 #. type: itemize
 #: trouble.texi.orig:764
@@ -1562,7 +1577,7 @@ msgid ""
 "can matter whether there are spaces at the ends of lines, or a newline after "
 "the last line in the buffer (nothing ought to care whether the last line is "
 "terminated, but try telling the bugs that)."
-msgstr ""
+msgstr "ファイルをvisitせずに問題を発生させる方法を説明できるなら、ぜひそうしてください。これによりデバッグがとても簡単になります。ファイルが必要な場合、わたしたちがファイルの正確な内容を見られるよう確実にしてください。たとえば、行末にスペースがあるか、バッファーの最終行の後に改行があるかが問題となる場合があります(最終行が終端されているかどうかを心配すべき理由はないかもしれませんが、それがバグだと報告することを試みてください)。"
 
 #. type: itemize
 #: trouble.texi.orig:770
@@ -1570,25 +1585,25 @@ msgid ""
 "The precise commands we need to type to reproduce the bug.  If at all "
 "possible, give a full recipe for an Emacs started with the @samp{-Q} option "
 "(@pxref{Initial Options}).  This bypasses your personal customizations."
-msgstr ""
+msgstr "バグを再現するためにタイプする必要がある、正確なコマンド。少しでも可能なら、@samp{-Q}オプション(@ref{Initial Options}を参照してください)でEmacsを開始したときからの、完全なレシピを送ってください。このオプションはあなたの個人的なカスタマイズをバイパスします。"
 
 #. type: findex
 #: trouble.texi.orig:771
 #, no-wrap
 msgid "open-dribble-file"
-msgstr ""
+msgstr "open-dribble-file"
 
 #. type: cindex
 #: trouble.texi.orig:772
 #, no-wrap
 msgid "dribble file"
-msgstr ""
+msgstr "dribble file"
 
 #. type: cindex
 #: trouble.texi.orig:773
 #, no-wrap
 msgid "logging keystrokes"
-msgstr ""
+msgstr "logging keystrokes"
 
 #. type: itemize
 #: trouble.texi.orig:780
@@ -1598,25 +1613,25 @@ msgid ""
 "From then on, Emacs copies all your input to the specified dribble file "
 "until the Emacs process is killed.  Be aware that sensitive information "
 "(such as passwords) may end up recorded in the dribble file."
-msgstr ""
+msgstr "Emacsへの入力を正確に記録する方法の1つとして、それをdribbleファイルに書き込む方法があります。このファイルを開始するには、@kbd{M-x open-dribble-file @key{RET}}コマンドを使用します。このコマンドからそのEmacsプロセスがkillされるまで、Emacsはすべての入力を指定されたdribbleファイルにコピーします。機密情報(パスワードなど)は、dribbleファイルへの記録を終了させることに注意してください。"
 
 #. type: findex
 #: trouble.texi.orig:782
 #, no-wrap
 msgid "open-termscript"
-msgstr ""
+msgstr "open-termscript"
 
 #. type: cindex
 #: trouble.texi.orig:783
 #, no-wrap
 msgid "termscript file"
-msgstr ""
+msgstr "termscript file"
 
 #. type: cindex
 #: trouble.texi.orig:784
 #, no-wrap
 msgid "@env{TERM} environment variable"
-msgstr ""
+msgstr "@env{TERM} environment variable"
 
 #. type: itemize
 #: trouble.texi.orig:789
@@ -1625,18 +1640,19 @@ msgid ""
 "variable @env{TERM}), the complete termcap entry for the terminal from "
 "@file{/etc/termcap} (since that file is not identical on all machines), and "
 "the output that Emacs actually sent to the terminal."
-msgstr ""
+msgstr "表示のバグである可能性がある場合は、端末タイプ(環境変数@env{TERM}の値)、その端末にたいする@file{/etc/termcap}の完全なtermcapエントリー(このファイルはすべての機種で同じではありません)、Emacsが実際に端末に送った出力。"
 
 #. type: itemize
 #: trouble.texi.orig:791
-msgid "The way to collect the terminal output is to execute the Lisp expression"
-msgstr ""
+msgid ""
+"The way to collect the terminal output is to execute the Lisp expression"
+msgstr "端末出力を収集する方法は、以下のLisp式"
 
 #. type: example
 #: trouble.texi.orig:794
 #, no-wrap
 msgid "(open-termscript \"~/termscript\")\n"
-msgstr ""
+msgstr "(open-termscript \"~/termscript\")\n"
 
 #. type: itemize
 #: trouble.texi.orig:803
@@ -1647,7 +1663,7 @@ msgid ""
 "happens when Emacs starts up, put this expression into your Emacs "
 "initialization file so that the termscript file will be open when Emacs "
 "displays the screen for the first time."
-msgstr ""
+msgstr "を、Emacs開始直後に、@kbd{M-:}を使用するか、@file{*scratch*}バッファーで実行します。その後Emacsプロセスがkillされるまで、Emacsはすべての端末出力を、指定されたtermscriptファイルにもコピーします。Emacs開始時にその問題が発生する場合は、この式をEmacs初期化ファイルに記述すれば、Emacsが最初にスクリーンを表示するときに、termscriptファイルもオープンされます。"
 
 #. type: itemize
 #: trouble.texi.orig:807
@@ -1655,7 +1671,7 @@ msgid ""
 "Be warned: it is often difficult, and sometimes impossible, to fix a "
 "terminal-dependent bug without access to a terminal of the type that "
 "stimulates the bug."
-msgstr ""
+msgstr "警告: バグをシミュレートする端末タイプへのアクセスなしに、端末依存バグをfixするのは、しばしば困難で、不可能なときもあります。"
 
 #. type: itemize
 #: trouble.texi.orig:813
@@ -1664,7 +1680,7 @@ msgid ""
 "that was current when you started Emacs.  On GNU/Linux and Unix systems, or "
 "if you use a Posix-style shell such as Bash, you can use this shell command "
 "to view the relevant values:"
-msgstr ""
+msgstr "非@acronym{ASCII}または国際化されたテキストと関連性がある場合は、Emacsを開始したときのlocale。GNU/LinuxとUnixシステム、またはBashのようなPosixスタイルのシェルを使用している場合、以下のシェルコマンドを使用して関連する値を見ることができます:"
 
 #. type: smallexample
 #: trouble.texi.orig:817
@@ -1673,13 +1689,15 @@ msgid ""
 "echo LC_ALL=$LC_ALL LC_COLLATE=$LC_COLLATE LC_CTYPE=$LC_CTYPE \\\n"
 "  LC_MESSAGES=$LC_MESSAGES LC_TIME=$LC_TIME LANG=$LANG\n"
 msgstr ""
+"echo LC_ALL=$LC_ALL LC_COLLATE=$LC_COLLATE LC_CTYPE=$LC_CTYPE \\\n"
+"  LC_MESSAGES=$LC_MESSAGES LC_TIME=$LC_TIME LANG=$LANG\n"
 
 #. type: itemize
 #: trouble.texi.orig:821
 msgid ""
 "Alternatively, use the @command{locale} command, if your system has it, to "
 "display your locale settings."
-msgstr ""
+msgstr "別の方法として、システムにそれがある場合は、GNU/LinuxおよびUnixコマンドを使用して、localeセッティングを表示できます。"
 
 #. type: itemize
 #: trouble.texi.orig:827
@@ -1689,7 +1707,7 @@ msgid ""
 "Alternatively, @kbd{M-x getenv @key{RET} LC_ALL @key{RET}} will display the "
 "value of @code{LC_ALL} in the echo area, and you can copy its output from "
 "the @file{*Messages*} buffer."
-msgstr ""
+msgstr "@kbd{M-!}コマンドを使用してEmacsからこれらのコマンドを実行して、@file{*Messages*}バッファーからコマンドの出力をバグレポートにコピーできます。かわりに@kbd{M-x getenv @key{RET} LC_ALL @key{RET}}とタイプすると、@code{LC_ALL}の値をエコーエリアに表示するので、@file{*Messages*}バッファーからこの出力をコピーすることもできます。"
 
 #. type: itemize
 #: trouble.texi.orig:832
@@ -1697,7 +1715,7 @@ msgid ""
 "A description of what behavior you observe that you believe is incorrect.  "
 "For example, ``The Emacs process gets a fatal signal'', or, ``The resulting "
 "text is as follows, which I think is wrong.''"
-msgstr ""
+msgstr "あなたが間違いと主張する動作の説明。たとえば``Emacsプロセスが致命的なシグナルを受け取った''とか``結果のテキストは以下だが、これは間違いだと思う''など。"
 
 #. type: itemize
 #: trouble.texi.orig:836
@@ -1705,7 +1723,7 @@ msgid ""
 "Of course, if the bug is that Emacs gets a fatal signal, then one can't miss "
 "it.  But if the bug is incorrect text, the maintainer might fail to notice "
 "what is wrong.  Why leave it to chance?"
-msgstr ""
+msgstr "もちろん、Emacsが致命的なシグナルを受け取るというバグなら、見逃すことはないでしょう。しかし、そのバグが正しくないテキストの場合、メンテナーは何が間違っているか気づかないかもしれません。なぜそのような危険を放置するのですか?"
 
 #. type: itemize
 #: trouble.texi.orig:846
@@ -1718,7 +1736,7 @@ msgid ""
 "to crash, we would know that the bug was not happening.  If you don't say to "
 "expect a crash, then we would not know whether the bug was happening---we "
 "would not be able to draw any conclusion from our observations."
-msgstr ""
+msgstr "あなたが遭遇した問題が致命的なシグナルの場合でも、明示的にそれを告げるべきです。何か奇妙なこと --- たとえばあなたのソースコピーの同期がとれていない、またはあなたのシステムのCライブラリーにバグがある(これはあり得ます) --- が起こっているとしましょう。あなたのコピーはクラッシュするかもしれませんが、私たちのコピーはクラッシュしないでしょう。あなたがクラッシュすることを@emph{告げて}いれば、わたしたちのEmacsはクラッシュしないので、バグはなかったとわたしたちは言うことができます。クラッシュすることを告げていない場合、わたしたちはバグがあるかどうか知ることができません --- わたしたちの観察から、なんらかの結論を描くことも不可能です。"
 
 #. type: itemize
 #: trouble.texi.orig:852
@@ -1727,7 +1745,7 @@ msgid ""
 "to describe the actual behavior of Emacs, or that the text is confusing, "
 "copy in the text from the manual which you think is at fault.  If the "
 "section is small, just the section name is enough."
-msgstr ""
+msgstr "Emacs ManualやEmacs Lisp Reference Manualが、実際のEmacsの振る舞いを記述できていない、またはテキストが分かりにくいといったバグの場合、間違いだと思うテキストをマニュアルからコピーしてください。そのセクションが小さければ、セクション名だけで充分です。"
 
 #. type: itemize
 #: trouble.texi.orig:857
@@ -1735,26 +1753,26 @@ msgid ""
 "If the manifestation of the bug is an Emacs error message, it is important "
 "to report the precise text of the error message, and a backtrace showing how "
 "the Lisp program in Emacs arrived at the error."
-msgstr ""
+msgstr "バグの徴候がEmacsのエラーメッセージの場合、エラーメッセージの正確なテキストと、EmacsのLispプログラムがどのようにしてエラーに至ったかを示す、backtraceを報告するのが重要です。"
 
 #. type: itemize
 #: trouble.texi.orig:861
 msgid ""
 "To get the error message text accurately, copy it from the @file{*Messages*} "
 "buffer into the bug report.  Copy all of it, not just part."
-msgstr ""
+msgstr "エラーメッセージを正確に取得するには、それを@file{*Messages*}バッファーからバグレポートにコピーします。一部だけではなく、すべてをコピーしてください。"
 
 #. type: findex
 #: trouble.texi.orig:862
 #, no-wrap
 msgid "toggle-debug-on-error"
-msgstr ""
+msgstr "toggle-debug-on-error"
 
 #. type: pindex
 #: trouble.texi.orig:863
 #, no-wrap
 msgid "Edebug"
-msgstr ""
+msgstr "Edebug"
 
 #. type: itemize
 #: trouble.texi.orig:871
@@ -1766,7 +1784,7 @@ msgid ""
 "backtrace into the bug report.  @xref{Edebug,, Edebug, elisp, the Emacs Lisp "
 "Reference Manual}, for information on debugging Emacs Lisp programs with the "
 "Edebug package."
-msgstr ""
+msgstr "エラーにたいするbacktraceを作成するには、エラーが発生する前に@kbd{M-x toggle-debug-on-error}を使用します(つまり、このコマンドを与えた後で、バグを発生させなければなりません)。これはエラーによりbacktraceを表示するLispデバッガーを開始します。デバッガーのbacktraceをバグレポートにコピーしてください。EdebugパッケージでEmacs Lispプログラムをデバッグする情報については、@ref{Edebug,, Edebug, elisp, the Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: itemize
 #: trouble.texi.orig:875
@@ -1774,38 +1792,38 @@ msgid ""
 "This use of the debugger is possible only if you know how to make the bug "
 "happen again.  If you can't make it happen again, at least copy the whole "
 "error message."
-msgstr ""
+msgstr "このデバッガーの使用は、バグを再現する方法を知っているときだけ利用可能です。バグを再現できなければ、最低でもエラーメッセージ全体をコピーしてください。"
 
 #. type: vindex
 #: trouble.texi.orig:876
 #, no-wrap
 msgid "debug-on-quit"
-msgstr ""
+msgstr "debug-on-quit"
 
 #. type: itemize
 #: trouble.texi.orig:882
 msgid ""
 "If Emacs appears to be stuck in an infinite loop or in a very long "
-"operation, typing @kbd{C-g} with the variable @code{debug-on-quit} "
-"non-@code{nil} will start the Lisp debugger and show a backtrace.  This "
+"operation, typing @kbd{C-g} with the variable @code{debug-on-quit} non-"
+"@code{nil} will start the Lisp debugger and show a backtrace.  This "
 "backtrace is useful for debugging such long loops, so if you can produce it, "
 "copy it into the bug report."
-msgstr ""
+msgstr "Emacsが無限ループや、とても長い処理にハマっているように見えるとき、(変数@code{debug-on-quit}が非@code{nil}の場合は)@kbd{C-g}とタイプするとLispデバッガーを開始して、backtraceを表示します。このbacktraceは、そのような長いloopのデバッグにたいして有用なので、backtraceを生成できたら、バグレポートにコピーしてください。"
 
 #. type: vindex
 #: trouble.texi.orig:883
 #, no-wrap
 msgid "debug-on-event"
-msgstr ""
+msgstr "debug-on-event"
 
 #. type: itemize
 #: trouble.texi.orig:888
 msgid ""
-"If you cannot get Emacs to respond to @kbd{C-g} (e.g., because "
-"@code{inhibit-quit} is set), then you can try sending the signal specified "
-"by @code{debug-on-event} (default SIGUSR2) from outside Emacs to cause it to "
-"enter the debugger."
-msgstr ""
+"If you cannot get Emacs to respond to @kbd{C-g} (e.g., because @code{inhibit-"
+"quit} is set), then you can try sending the signal specified by @code{debug-"
+"on-event} (default SIGUSR2) from outside Emacs to cause it to enter the "
+"debugger."
+msgstr "(@code{inhibit-quit}がセットされている等で)、@kbd{C-g}にEmacsが応答しない場合、Emacsの外から@code{debug-on-event}で指定されたシグナル(デフォルトはSIGUSR2)を送ることにより、デバッガーに入ることができます。"
 
 #. type: itemize
 #: trouble.texi.orig:898
@@ -1817,7 +1835,7 @@ msgid ""
 "switch to prevent loading the init files).  If the problem does @emph{not} "
 "occur then, you must report the precise contents of any programs that you "
 "must load into the Lisp world in order to cause the problem to occur."
-msgstr ""
+msgstr "Lispの世界にロードしたプログラム(初期化ファイルを含みます)をチェックしてください。任意の変数にたいするセットは、Emacsの機能に影響を与えるかもしれません。初期化ファイルをロードせずに、フレッシュな状態で開始されたEmacsでも、その問題が発生するか確認してください(@code{-Q}スイッチでEmacsを開始することによりinitファイルのロードを抑止できます)。それで問題が発生しなかったら、問題を発生させるためにLispの世界にロードしなければならないプログラムの、正確な内容を報告しなければなりません。"
 
 #. type: itemize
 #: trouble.texi.orig:905
@@ -1827,14 +1845,14 @@ msgid ""
 "bug in those programs by complaining to their maintainers first.  After they "
 "verify that they are using Emacs in a way that is supposed to work, they "
 "should report the bug."
-msgstr ""
+msgstr "その問題がinitファイルやEmacsの標準システムの一部ではない他のLispプログラムに依存する場合、最初にそれらのプログラムのメンテナーに苦情を訴えて、それがバグでないことを確認すべきです。彼らが機能すると思われる方法でEmacsを使用してバグを確認した後、彼らがそのバグを報告すべきです。"
 
 #. type: itemize
 #: trouble.texi.orig:909
 msgid ""
 "If you wish to mention something in the GNU Emacs source, show the line of "
 "code with a few lines of context.  Don't just give a line number."
-msgstr ""
+msgstr "GNU Emacsのソース中の何かについて言及したい場合、数行のコンテキストとともにそのコードの行を示してください。行番号だけを示すのは止めてください。"
 
 #. type: itemize
 #: trouble.texi.orig:914
@@ -1842,7 +1860,7 @@ msgid ""
 "The line numbers in the development sources don't match those in your "
 "sources.  It would take extra work for the maintainers to determine what "
 "code is in your version at a given line number, and we could not be certain."
-msgstr ""
+msgstr "開発ソースの行番号と、あなたのソースの行番号は一致しません。行番号だけでは、あなたのバージョンでその行番号がどのコードをさすのか、メンテナーが判断するのに余分な作業を要しますし、それに確信をもつこともできません。"
 
 #. type: itemize
 #: trouble.texi.orig:926
@@ -1856,20 +1874,20 @@ msgid ""
 "subdirectory in which Emacs was compiled, then do @samp{gdb emacs}.  It is "
 "important for the directory @file{src} to be current so that GDB will read "
 "the @file{.gdbinit} file in this directory."
-msgstr ""
+msgstr "GDBのようなCデバッガーからの追加情報は、そのマシンを利用できなくても問題を見つけることを可能にするかもしれません。GDBの使い方を知らなければ、どうかGDBマニュアルを読んでください --- 非常に長いという訳ではありませんし、GDBは簡単に使用できます。GDBマニュアルを含むGDBディストリビューションはオンライン形式で見つけることができ、ほとんどはEmacsディストリビューションと同じ場所で見つけることができます。GDBの下でEmacsを実行するためには、Emacsをコンパイルした場所の@file{src}サブディレクトリーに移動するべきです。カレントディレクトリーが@file{src}であることは重要です。GDBはこのディレクトリーの@file{.gdbinit}を読み込みます。"
 
 #. type: itemize
 #: trouble.texi.orig:929
 msgid ""
 "However, you need to think when you collect the additional information if "
 "you want it to show what causes the bug."
-msgstr ""
+msgstr "しかし、何がバグを引き起こしたかを示すような追加の情報を収集するときは、考える必要があります。"
 
 #. type: cindex
 #: trouble.texi.orig:930
 #, no-wrap
 msgid "backtrace for bug reports"
-msgstr ""
+msgstr "backtrace for bug reports"
 
 #. type: itemize
 #: trouble.texi.orig:938
@@ -1879,15 +1897,14 @@ msgid ""
 "what is happening inside GNU Emacs, because most of the arguments listed in "
 "the backtrace are pointers to Lisp objects.  The numeric values of these "
 "pointers have no significance whatever; all that matters is the contents of "
-"the objects they point to (and most of the contents are themselves "
-"pointers)."
-msgstr ""
+"the objects they point to (and most of the contents are themselves pointers)."
+msgstr "たとえば、多くの人はbacktraceだけを送って着ますが、これだけではとても有用とは言えません。引数つきのシンプルなbacktraceは、GNU Emacsの中で何が起こっているかを少ししか伝えないことがしばしばです。なぜならbacktraceにリストされたほとんどの引数は、Lispオブジェクトへのポインターだからです。これらのポインターの数値は、何であれ意味をもちません。問題となるのはポインターが指すオブジェクトの内容(そして、その内容自身もポインターの場合がほとんどです)なのです。"
 
 #. type: findex
 #: trouble.texi.orig:939
 #, no-wrap
 msgid "debug_print"
-msgstr ""
+msgstr "debug_print"
 
 #. type: itemize
 #: trouble.texi.orig:945
@@ -1897,7 +1914,7 @@ msgid ""
 "several stack frames near the bottom of the stack.  Look at the source to "
 "see which variables are Lisp objects, because the debugger thinks of them as "
 "integers."
-msgstr ""
+msgstr "有用な情報を提供するためには、Lispオブジェクトの値をLisp表記で示す必要があります。基底スタックの近傍のスタックフレームのいくつかで、Lispオブジェクト変数それぞれにたいしてこれを行ないます。どの変数がLispオブジェクトであるかはソースを調べます。なぜならデバッガーはそれらを整数と判断するからです。"
 
 #. type: itemize
 #: trouble.texi.orig:952
@@ -1908,21 +1925,21 @@ msgid ""
 "@code{debug_print} with the object as an argument.)  The @code{pr} command "
 "is defined by the file @file{.gdbinit}, and it works only if you are "
 "debugging a running process (not with a core dump)."
-msgstr ""
+msgstr "Lisp構文で変数の値を表示するには、最初にその値をプリントして、それからLispオブジェクトをLisp構文でプリントするために、ユーザー定義のGDBコマンド@code{pr}を使用します(他のデバッガーを使用しなければならない場合、そのオブジェクトを引数として、関数@code{debug_print}を呼び出します)。@code{pr}コマンドはファイル@file{.gdbinit}で定義されていて、(コアダンプではなく)実行中のプロセスにたいしてデバッグするときだけ機能します。"
 
 #. type: itemize
 #: trouble.texi.orig:955
 msgid ""
 "To make Lisp errors stop Emacs and return to GDB, put a breakpoint at "
 "@code{Fsignal}."
-msgstr ""
+msgstr "LispエラーでEmacsを停止させてGDBに戻るには、@code{Fsignal}にブレークポイントを置きます。"
 
 #. type: itemize
 #: trouble.texi.orig:958
 msgid ""
 "For a short listing of Lisp functions running, type the GDB command "
 "@code{xbacktrace}."
-msgstr ""
+msgstr "実行中のLisp関数の短いリストのためには、GDBコマンド@code{xbacktrace}をタイプします。"
 
 #. type: itemize
 #: trouble.texi.orig:965
@@ -1932,13 +1949,13 @@ msgid ""
 "with @samp{x}.  These commands work at a lower level than @code{pr}, and are "
 "less convenient, but they may work even when @code{pr} does not, such as "
 "when debugging a core dump or when Emacs has had a fatal signal."
-msgstr ""
+msgstr "ファイル@file{.gdbinit}では、データ型やLispオブジェクトの内容を調べるための、他のコマンドも定義されています。これらのコマンドの名前は@samp{x}で始まります。これらのコマンドは@code{pr}より低いレベルで動作するので、少し不便になりますが、コアダンプをデバッグしていたり、Emacsが致命的なシグナルを受け取ったときなど、@code{pr}が機能しないようなときでも、機能するでしょう。"
 
 #. type: cindex
 #: trouble.texi.orig:966
 #, no-wrap
 msgid "debugging Emacs, tricks and techniques"
-msgstr ""
+msgstr "debugging Emacs, tricks and techniques"
 
 #. type: itemize
 #: trouble.texi.orig:972
@@ -1948,26 +1965,26 @@ msgid ""
 "also includes instructions for investigating problems whereby Emacs stops "
 "responding (many people assume that Emacs is ``hung'', whereas in fact it "
 "might be in an infinite loop)."
-msgstr ""
+msgstr "Emacsのデバッグにたいする、より詳細なアドバイスと、他の有用なテクニックは、Emacsディストリビューションの、ファイル@file{etc/DEBUG}で利用可能です。そのファイルには、Emacsが応答しない問題を詳しく調べる手順も含まれています(多くの人はこれをEmacsが``ハング''したとみなしますが、実際はおそらく無限ループにハマっているのでしょう)。"
 
 #. type: itemize
 #: trouble.texi.orig:975
 msgid ""
 "To find the file @file{etc/DEBUG} in your Emacs installation, use the "
 "directory name stored in the variable @code{data-directory}."
-msgstr ""
+msgstr "インストールしたEmacsのファイル@file{etc/DEBUG}を探すには、変数@code{data-directory}に保管されたディレクトリー名を使用します。"
 
 #. type: Plain text
 #: trouble.texi.orig:978
 msgid "Here are some things that are not necessary in a bug report:"
-msgstr ""
+msgstr "以下はバグレポートには不要な事柄です:"
 
 #. type: itemize
 #: trouble.texi.orig:983
 msgid ""
 "A description of the envelope of the bug---this is not necessary for a "
 "reproducible bug."
-msgstr ""
+msgstr "バグを取り巻く状況の説明 --- これは再現可能なバグにたいしては必要ありません。"
 
 #. type: itemize
 #: trouble.texi.orig:987
@@ -1975,7 +1992,7 @@ msgid ""
 "Often people who encounter a bug spend a lot of time investigating which "
 "changes to the input file will make the bug go away and which changes will "
 "not affect it."
-msgstr ""
+msgstr "バグに遭遇したとき人は、入力ファイルを変えてバグが発生しなくなるか、影響がないかなどを詳しく調べるのに、多くの時間を費やすことがしばしばです。"
 
 #. type: itemize
 #: trouble.texi.orig:994
@@ -1986,7 +2003,7 @@ msgid ""
 "well save time by not searching for additional examples.  It is better to "
 "send the bug report right away, go back to editing, and find another bug to "
 "report."
-msgstr ""
+msgstr "これは大抵多くの時間がかかる割に、とても有用とは言えません。なぜならわたしたちがバグを探す方法は、ブレークポイントを設定したデバッガーの元で1つの例を実行することであり、一連の例から得られる推論ではないからです。追加の例を探すのを止めることにより、あなたも時間を節約できるでしょう。すぐにバグレポートを送って、編集作業に戻り、報告すべき他のバグを探す法がよいでしょう。"
 
 #. type: itemize
 #: trouble.texi.orig:998
@@ -1994,19 +2011,19 @@ msgid ""
 "Of course, if you can find a simpler example to report @emph{instead} of the "
 "original one, that is a convenience.  Errors in the output will be easier to "
 "spot, running under the debugger will take less time, etc."
-msgstr ""
+msgstr "もちろんオリジナルの@emph{かわり}に、簡単な例を見つけることができたら、そちらのほうが便利です。出力中のエラーは簡単に見分けられますし、デバッガーでの実行も時間が短くなります"
 
 #. type: itemize
 #: trouble.texi.orig:1001
 msgid ""
 "However, simplification is not vital; if you can't do this or don't have "
 "time to try, please report the bug with your original test case."
-msgstr ""
+msgstr "しかし単純化は必須ではありません、これを行なうことができなかったり、試す時間がない場合は、どうかオリジナルのテストケースでバグを報告してください。"
 
 #. type: itemize
 #: trouble.texi.orig:1004
 msgid "A core dump file."
-msgstr ""
+msgstr "コアダンプファイル。"
 
 #. type: itemize
 #: trouble.texi.orig:1010
@@ -2016,12 +2033,12 @@ msgid ""
 "to the Emacs maintainers won't be useful.  Above all, don't include the core "
 "file in an email bug report! Such a large message can be extremely "
 "inconvenient."
-msgstr ""
+msgstr "コアダンプによるデバッグは有用ですが、それはあなたのEmacs実行ファイルと、あなたのマシンだけで行なうことができます。したがってEmacsメンテナーにコアダンプを送るのは、有益ではないでしょう。何よりも、コアダンプをメールのバグレポートに含めないでください! そのような巨大なメッセージは、すこぶる迷惑です。"
 
 #. type: itemize
 #: trouble.texi.orig:1013
 msgid "A system-call trace of Emacs execution."
-msgstr ""
+msgstr "Emacsを実行したときのシステムコールトレース。"
 
 #. type: itemize
 #: trouble.texi.orig:1020
@@ -2032,7 +2049,7 @@ msgid ""
 "information about a crash is to send a system-call trace.  Perhaps this is a "
 "habit formed from experience debugging programs that don't have source code "
 "or debugging symbols."
-msgstr ""
+msgstr "システムコールトレースは、ある特別な種類のデバッグにはとても有用ですが、有用な情報が少ない場合がほとんどです。したがって、クラッシュに関する情報を報告する@emph{一番}の方法は、システムコールトレースを送ることだと考えているように思える人が多いのは奇妙です。おそらくソースコードやデバッグシンボルがないプログラムをデバッグする経験がもたらす、習慣的なやり方なのでしょう。"
 
 #. type: itemize
 #: trouble.texi.orig:1026
@@ -2042,12 +2059,12 @@ msgid ""
 "informative, though to give full information you should supplement the "
 "backtrace by displaying variable values and printing them as Lisp objects "
 "with @code{pr} (see above)."
-msgstr ""
+msgstr "ほとんどのプログラムでは、システムコールトレースより、backtraceのほうが、通常はずっとずっと参考になります。完全な情報を得るには、変数の値を表示して、それらを@code{pr}でLispオブジェクトとしてプリントすることによりbacktraceを補完すべきであるとはいえ、シンプルなbacktraceのほうが一般的により参考になります(上記参照)。"
 
 #. type: itemize
 #: trouble.texi.orig:1029
 msgid "A patch for the bug."
-msgstr ""
+msgstr "バグにたいするパッチ。"
 
 #. type: itemize
 #: trouble.texi.orig:1037
@@ -2058,44 +2075,44 @@ msgid ""
 "patch and decide to fix the problem another way, or we might not understand "
 "it at all.  And if we can't understand what bug you are trying to fix, or "
 "why your patch should be an improvement, we mustn't install it."
-msgstr ""
+msgstr "バグにたいするパッチは、それが良いものなら有用です。しかし、そのパッチで充分だと思い込んで、テストケースのような、バグレポートに必要な他の情報を省略しないでください。わたしたちはそのパッチに問題を見つけて別の方法でfixすると判断するかもしれないし、結局はそれを理解できないかもしれません。わたしたちが、あなたがfixしようと試みているバグを理解できなければ、そしてなぜそのパッチが改善なのかを理解できなければ、私たちはそれを採用できません。"
 
 #. type: ifnottex
 #: trouble.texi.orig:1041
 msgid ""
 "@xref{Sending Patches}, for guidelines on how to make it easy for us to "
 "understand and install your patches."
-msgstr ""
+msgstr "わたしたちにパッチを理解させて、採用を簡単にするためのガイドラインについては、@ref{Sending Patches}を参照してください。"
 
 #. type: itemize
 #: trouble.texi.orig:1045
 msgid "A guess about what the bug is or what it depends on."
-msgstr ""
+msgstr "バグが何か、何に依存するかについての推測。"
 
 #. type: itemize
 #: trouble.texi.orig:1048
 msgid ""
 "Such guesses are usually wrong.  Even experts can't guess right about such "
 "things without first using the debugger to find the facts."
-msgstr ""
+msgstr "そのような推測は通常間違っています。エキスパートでさえ、事実を見つけるために最初にデバッガーを使用しなければ、そのような事柄を正しく推測できないのです。"
 
 #. type: subsection
 #: trouble.texi.orig:1051
 #, no-wrap
 msgid "Sending Patches for GNU Emacs"
-msgstr ""
+msgstr "Sending Patches for GNU Emacs"
 
 #. type: cindex
 #: trouble.texi.orig:1053
 #, no-wrap
 msgid "sending patches for GNU Emacs"
-msgstr ""
+msgstr "sending patches for GNU Emacs"
 
 #. type: cindex
 #: trouble.texi.orig:1054
 #, no-wrap
 msgid "patches, sending"
-msgstr ""
+msgstr "patches, sending"
 
 #. type: Plain text
 #: trouble.texi.orig:1062
@@ -2106,7 +2123,7 @@ msgid ""
 "guidelines, your information might still be useful, but using it will take "
 "extra work.  Maintaining GNU Emacs is a lot of work in the best of "
 "circumstances, and we can't keep up unless you do your best to help."
-msgstr ""
+msgstr "GNU Emacsを改善するためにバグfixを書きたいなら、それはとても助けになります。変更を送るとき、メンテナーがそれらを使うのが簡単になるように、どうか以下のガイドラインにしたがってください。これらのガイドラインにしたがわない場合でも、あなたの情報はまだ有用でしょうが、それを使用するのに余分な作業が必要になります。GNU Emacsの保守は最良の状況でも多くの作業を要すので、わたしたちを助けるのにあなたがベストをすくさなければ、わたしたちはそれを維持できないのです。"
 
 #. type: itemize
 #: trouble.texi.orig:1070
@@ -2116,7 +2133,7 @@ msgid ""
 "reply to the relevant discussion on the @samp{bug-gnu-emacs} list, or the "
 "bug entry in the GNU Bug Tracker at @url{http://debbugs.gnu.org}.  Explain "
 "why your change fixes the bug."
-msgstr ""
+msgstr "その変更が何の問題をfixするのか、または何を改善するかの説明を一緒に送ってください。既存のバグにたいするfixについては、@samp{bug-gnu-emacs}リストの関連するディスカッションか、@url{http://debbugs.gnu.org}のGNU Bug Trackerのバグエントリーに返信するのが最善でしょう。その変更が、なぜバグをfixするのか説明してください。"
 
 #. type: itemize
 #: trouble.texi.orig:1076
@@ -2125,21 +2142,21 @@ msgid ""
 "fixed.  We need to convince ourselves that the change is right before "
 "installing it.  Even if it is correct, we might have trouble understanding "
 "it if we don't have a way to reproduce the problem."
-msgstr ""
+msgstr "あなたがfixしたと思っている問題にたいする、正しいバグレポートを常に含めてください。それを採用する前に、わたしたちはその変更が正しいと、私たち自身に納得させる必要があります。もしそれが正しくても、問題を再現する方法がない場合、それを理解する妨げになるでしょう。"
 
 #. type: itemize
 #: trouble.texi.orig:1080
 msgid ""
 "Include all the comments that are appropriate to help people reading the "
 "source in the future understand why this change was needed."
-msgstr ""
+msgstr "将来このソースを読む人の理解を助けとなるように、なぜこの変更が必要なのか、適切なコメントを含めてください。"
 
 #. type: itemize
 #: trouble.texi.orig:1084
 msgid ""
 "Don't mix together changes made for different reasons.  Send them "
 "@emph{individually}."
-msgstr ""
+msgstr "異なる理由にたいする変更を一緒に混ぜないでください。それらを@emph{個別}に送ってください。"
 
 #. type: itemize
 #: trouble.texi.orig:1091
@@ -2150,7 +2167,7 @@ msgid ""
 "disentangle them---to figure out which parts of the change serve which "
 "purpose.  If we don't have time for this, we might have to ignore your "
 "changes entirely."
-msgstr ""
+msgstr "異なる理由にたいして2つの変更を行なった場合、わたしたちをそれを一緒に採用したいとは思わないでしょう。1つだけを採用したいと思うかもしれません。それらを合わせて1つのdiffにして送った場合、それらを区別するために --- 変更のどの部分がどの目的のためかを理解するために --- 余計な作業を行なう必要があります。これを行なう時間がない場合、わたしたちは変更全体を無視する必要があるかもしれません。"
 
 #. type: itemize
 #: trouble.texi.orig:1095
@@ -2158,7 +2175,7 @@ msgid ""
 "If you send each change as soon as you have written it, with its own "
 "explanation, then two changes never get tangled up, and we can consider each "
 "one properly without any extra work to disentangle them."
-msgstr ""
+msgstr "1つの変更を記述したら、その変更の説明と一緒にそれをすぐに送れば、2つの変更は混ざることはなくなり、それらを区別する余計な作業なしに、わたしたちはそれぞれを正しく判断することができます。"
 
 #. type: itemize
 #: trouble.texi.orig:1101
@@ -2166,7 +2183,7 @@ msgid ""
 "Send each change as soon as that change is finished.  Sometimes people think "
 "they are helping us by accumulating many changes to send them all together.  "
 "As explained above, this is absolutely the worst thing you could do."
-msgstr ""
+msgstr "1つの変更を終えたら、それをすぐに送ってください。ときどき人は多くの変更を累積して、すべて一緒に送るのがわたしたちの助けとなると考えます。上述したように、それは正にあなたにできる最悪のことです。"
 
 #. type: itemize
 #: trouble.texi.orig:1105
@@ -2174,7 +2191,7 @@ msgid ""
 "Since you should send each change separately, you might as well send it "
 "right away.  That gives us the option of installing it immediately if it is "
 "important."
-msgstr ""
+msgstr "変更は個別に送るべきなので、すぐに送ることができるでしょう。これは、その変更が重要なものなら、それをすぐに採用するオプションをわたしたちに与えます。"
 
 #. type: itemize
 #: trouble.texi.orig:1112
@@ -2183,7 +2200,7 @@ msgid ""
 "install reliably.  More than that, they are hard to study; we must always "
 "study a patch to decide whether we want to install it.  Unidiff format is "
 "better than contextless diffs, but not as easy to read as @samp{-c} format."
-msgstr ""
+msgstr "diffを作成するために、@samp{diff -c}を使用してください。コンテキストなしのdiffは確実に採用が困難です。それ以上に調べるのが難しくなります。わたしたちは変更の採用を望ましいか判断するために、つねにパッチを調べなければなりません。Unidiffフォーマットはコンテキストなしのdiffより優れていますが、@samp{-c}のように簡単に読むことができません。"
 
 #. type: itemize
 #: trouble.texi.orig:1116
@@ -2191,7 +2208,7 @@ msgid ""
 "If you have GNU diff, use @samp{diff -c -F'^[_a-zA-Z0-9$]+ *('} when making "
 "diffs of C code.  This shows the name of the function that each change "
 "occurs in."
-msgstr ""
+msgstr "GNU diffがある場合、Cコードのdiffの作成には@samp{diff -c -F'^[_a-zA-Z0-9$]+ *('}を使用してください。これは変更のある関数名を表示します。"
 
 #. type: itemize
 #: trouble.texi.orig:1123
@@ -2200,7 +2217,7 @@ msgid ""
 "Please make the old version the first argument to diff, and the new version "
 "the second argument.  And please give one version or the other a name that "
 "indicates whether it is the old version or your new changed one."
-msgstr ""
+msgstr "どちらが古いバージョンで、どちらが新しいバージョンか、あいまいになるのを避けてください。どうかdiffの第1引数に古いバージョン、2番目の引数に新しいバージョンを指定してください。そして一方のバージョンにたいして、それが古いバージョンなのか、変更した新しいバージョンなのかを示す名前をつけてください。"
 
 #. type: itemize
 #: trouble.texi.orig:1128
@@ -2208,7 +2225,7 @@ msgid ""
 "Write the change log entries for your changes.  This is both to save us the "
 "extra work of writing them, and to help explain your changes so we can "
 "understand them."
-msgstr ""
+msgstr "あなたの変更にたいする、変更ログ(ChangeLog)のエントリーを記述してください。それにより、わたしたちがそれを記述するために余計な作業をしなくてすみ、あなたが行なった変更をわたしたちが理解する助けにもなります。"
 
 #. type: itemize
 #: trouble.texi.orig:1133
@@ -2217,7 +2234,7 @@ msgid ""
 "changed.  So you need to be specific about what functions you changed; in "
 "large functions, it's often helpful to indicate where within the function "
 "the change was."
-msgstr ""
+msgstr "変更された場所を示すのが、変更ログの目的です。したがって変更した関数について、具体的である必要があります。大きな関数では、関数のどこを変更したか示すのが、助けになる場合が多々あります。"
 
 #. type: itemize
 #: trouble.texi.orig:1139
@@ -2227,7 +2244,7 @@ msgid ""
 "function, all you need to say about it is that it is new.  If you feel that "
 "the purpose needs explaining, it probably does---but put the explanation in "
 "comments in the code.  It will be more useful there."
-msgstr ""
+msgstr "それとは逆に、変更箇所を示せば、変更ログで変更目的の説明をする必要はありません。したがって、新しい関数を追加した場合、必要なのはそれが新しいということを示すだけです。変更目的の説明が必要だと感じたら、多分その通りなのでしょう、がコードのコメントにその説明を記述してください。変更目的はそこに記述されているほうが、より有用です。"
 
 #. type: itemize
 #: trouble.texi.orig:1143
@@ -2235,7 +2252,7 @@ msgid ""
 "Please look at the change log entries of recent commits to see what sorts of "
 "information to put in, and to learn the style that we use.  @xref{Change "
 "Log}."
-msgstr ""
+msgstr "どのような種類の情報を記述するかを見るために、最近のコミットにたいする変更ログエントリーを見て、わたしたちが使用しているスタイルを学んでください。@ref{Change Log}を参照してください。"
 
 #. type: itemize
 #: trouble.texi.orig:1148
@@ -2243,17 +2260,17 @@ msgid ""
 "When you write the fix, keep in mind that we can't install a change that "
 "would break other systems.  Please think about what effect your change will "
 "have if compiled on another type of system."
-msgstr ""
+msgstr "fixを記述するときは、わたしたちが他のシステムを壊すような変更は採用できないということを、念頭に置いてください。あなたの変更が、ほかのタイプのシステムでコンパイルされた場合の影響について、考えてください。"
 
 #. type: itemize
 #: trouble.texi.orig:1154
 msgid ""
-"Sometimes people send fixes that @emph{might} be an improvement in "
-"general---but it is hard to be sure of this.  It's hard to install such "
-"changes because we have to study them very carefully.  Of course, a good "
-"explanation of the reasoning by which you concluded the change was correct "
-"can help convince us."
-msgstr ""
+"Sometimes people send fixes that @emph{might} be an improvement in general---"
+"but it is hard to be sure of this.  It's hard to install such changes "
+"because we have to study them very carefully.  Of course, a good explanation "
+"of the reasoning by which you concluded the change was correct can help "
+"convince us."
+msgstr "一般的には改善となる@emph{かもしれない}が、そう確信するのは難しいようなfixを送る人が、ときどきいます。そのような変更を採用するのは、わたしたちがそれをとても慎重に調べなければならないので、難しくなります。もちろん、その変更が正しい理由の説明は、わたしたちを納得させる助けになります。"
 
 #. type: itemize
 #: trouble.texi.orig:1158
@@ -2261,80 +2278,80 @@ msgid ""
 "The safest changes are changes to the configuration files for a particular "
 "machine.  These are safe because they can't create new bugs on other "
 "machines."
-msgstr ""
+msgstr "一番安全な変更は、特定の機種の設定ファイルにたいする変更です。これらの変更は、新しいバグを他の機種に作成しないので、安全です。"
 
 #. type: itemize
 #: trouble.texi.orig:1161
 msgid ""
 "Please help us keep up with the workload by designing the patch in a form "
 "that is clearly safe to install."
-msgstr ""
+msgstr "インストールの安全性が明確な形式でパッチをデザインして、わたしたちの作業量を、良い状態に保つ助けとなってください。"
 
 #. type: node
 #: trouble.texi.orig:1164
 #, no-wrap
 msgid "Contributing"
-msgstr ""
+msgstr "Contributing"
 
 #. type: section
 #: trouble.texi.orig:1165
 #, no-wrap
 msgid "Contributing to Emacs Development"
-msgstr ""
+msgstr "Contributing to Emacs Development"
 
 #. type: cindex
 #: trouble.texi.orig:1166
 #, no-wrap
 msgid "contributing to Emacs"
-msgstr ""
+msgstr "contributing to Emacs"
 
 #. type: Plain text
 #: trouble.texi.orig:1169
 msgid ""
 "If you would like to work on improving Emacs, please contact the maintainers "
 "at"
-msgstr ""
+msgstr "Emacsを改善する作業をしたい場合は、"
 
 #. type: ifnothtml
 #: trouble.texi.orig:1171
 msgid "@email{emacs-devel@@gnu.org}."
-msgstr ""
+msgstr "@email{emacs-devel@@gnu.org}のメンテナーに連絡してください。"
 
 #. type: ifhtml
 #: trouble.texi.orig:1175
 msgid ""
 "@url{http://lists.gnu.org/mailman/listinfo/emacs-devel, the emacs-devel "
 "mailing list}."
-msgstr ""
+msgstr "@url{http://lists.gnu.org/mailman/listinfo/emacs-devel, emacs-develメーリングリスト}のメンテナーに連絡してください。"
 
 #. type: Plain text
 #: trouble.texi.orig:1177
 msgid "You can ask for suggested projects or suggest your own ideas."
-msgstr ""
+msgstr "提案されたプロジェクトを尋ねたり、あなたのアイデアを提案することができます。"
 
 #. type: Plain text
 #: trouble.texi.orig:1180
 msgid ""
 "If you have already written an improvement, please tell us about it.  If you "
 "have not yet started work, it is useful to contact"
-msgstr ""
+msgstr "すでに改善を記述したことがある場合は、それについて教えてください。まだ作業を開始していなければ、作業を開始する前に、"
 
 #. type: email{#1}
 #: trouble.texi.orig:1182
 msgid "emacs-devel@@gnu.org"
-msgstr ""
+msgstr "emacs-devel@@gnu.org"
 
 #. type: ifhtml
 #: trouble.texi.orig:1185
 msgid "@url{http://lists.gnu.org/mailman/listinfo/emacs-devel, emacs-devel}"
-msgstr ""
+msgstr "@url{http://lists.gnu.org/mailman/listinfo/emacs-devel, emacs-devel}"
 
 #. type: Plain text
 #: trouble.texi.orig:1188
 msgid ""
 "before you start; it might be possible to suggest ways to make your "
 "extension fit in better with the rest of Emacs."
-msgstr ""
+msgstr "に連絡をとるのが有益です。Emacsの他の部分にたいして、あなたの拡張がより適合する方法を提案することが可能かもしれません。"
 
 #. type: Plain text
 #: trouble.texi.orig:1193
@@ -2342,97 +2359,97 @@ msgid ""
 "The development version of Emacs can be downloaded from the repository where "
 "it is actively maintained by a group of developers.  See the Emacs project "
 "page @url{http://savannah.gnu.org/projects/emacs/} for details."
-msgstr ""
+msgstr "Emacsの開発バージョンは、開発者グループにより活発にメンテされている、レポジトリーからダウンロードできます。詳細についてはEmacsプロジェクトのページ@url{http://savannah.gnu.org/projects/emacs/}を参照してください。"
 
 #. type: Plain text
 #: trouble.texi.orig:1195
 msgid "For more information on how to contribute, see the"
-msgstr ""
+msgstr "貢献する方法についての情報は、"
 
 #. type: ifhtml
 #: trouble.texi.orig:1198
 msgid "@url{http://gnu.org/software/emacs/CONTRIBUTE, etc/CONTRIBUTE}"
-msgstr ""
+msgstr "@url{http://gnu.org/software/emacs/CONTRIBUTE, etc/CONTRIBUTE}を参照してください。"
 
 #. type: file{#1}
 #: trouble.texi.orig:1201 trouble.texi.orig:1205
 msgid "etc/CONTRIBUTE"
-msgstr ""
+msgstr "Emacsディストリビューションの、etc/CONTRIBUTE"
 
 #. type: Plain text
 #: trouble.texi.orig:1207
 msgid "file in the Emacs distribution."
-msgstr ""
+msgstr "ファイルを参照してください。"
 
 #. type: node
 #: trouble.texi.orig:1208
 #, no-wrap
 msgid "Service"
-msgstr ""
+msgstr "Service"
 
 #. type: section
 #: trouble.texi.orig:1209
 #, no-wrap
 msgid "How To Get Help with GNU Emacs"
-msgstr ""
+msgstr "How To Get Help with GNU Emacs"
 
 #. type: cindex
 #: trouble.texi.orig:1210
 #, no-wrap
 msgid "help in using Emacs"
-msgstr ""
+msgstr "help in using Emacs"
 
 #. type: cindex
 #: trouble.texi.orig:1211
 #, no-wrap
 msgid "help-gnu-emacs mailing list"
-msgstr ""
+msgstr "help-gnu-emacs mailing list"
 
 #. type: cindex
 #: trouble.texi.orig:1212
 #, no-wrap
 msgid "gnu.emacs.help newsgroup"
-msgstr ""
+msgstr "gnu.emacs.help newsgroup"
 
 #. type: Plain text
 #: trouble.texi.orig:1216
 msgid ""
 "If you need help installing, using or changing GNU Emacs, there are two ways "
 "to find it:"
-msgstr ""
+msgstr "インストール、使用方法、またはGNU Emacsの変更について助言を必要とする場合は、それを探す2つの方法があります:"
 
 #. type: itemize
 #: trouble.texi.orig:1220
 msgid "Send a message to"
-msgstr ""
+msgstr "メッセージを"
 
 #. type: ifnothtml
 #: trouble.texi.orig:1222
 msgid "the mailing list @email{help-gnu-emacs@@gnu.org},"
-msgstr ""
+msgstr "メーリングリスト@email{help-gnu-emacs@@gnu.org}に送るか、"
 
 #. type: ifhtml
 #: trouble.texi.orig:1226
 msgid ""
-"@url{http://lists.gnu.org/mailman/listinfo/help-gnu-emacs, the "
-"help-gnu-emacs mailing list},"
-msgstr ""
+"@url{http://lists.gnu.org/mailman/listinfo/help-gnu-emacs, the help-gnu-"
+"emacs mailing list},"
+msgstr "@url{http://lists.gnu.org/mailman/listinfo/help-gnu-emacs, help-gnu-emacsメーリングリスト}に送るか、"
 
 #. type: itemize
 #: trouble.texi.orig:1230
 msgid ""
 "or post your request on newsgroup @code{gnu.emacs.help}.  (This mailing list "
 "and newsgroup interconnect, so it does not matter which one you use.)"
-msgstr ""
+msgstr "あなたの要求をニュースグループ@code{gnu.emacs.help}にポストしてください(このメーリングリストとニュースグループは相互接続しているので、どちらを使っても問題ありません)。"
 
 #. type: itemize
 #: trouble.texi.orig:1234
 msgid ""
 "Look in the @uref{http://www.fsf.org/resources/service/, service directory} "
 "for someone who might help you for a fee."
-msgstr ""
+msgstr "手数料を徴収して助言してくれる人物を、@uref{http://www.fsf.org/resources/service/, service directory}で探してください。"
 
 #. type: ifnottex
 #: trouble.texi.orig:1238
 msgid "@lowersections"
-msgstr ""
+msgstr "@lowersections"
