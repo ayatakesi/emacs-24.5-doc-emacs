@@ -3,34 +3,33 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2016-05-17 00:54+0900\n"
+"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: top
 #: emacs-xtra.texi.orig:4 emacs-xtra.texi.orig:37 emacs-xtra.texi.orig:47
 #, no-wrap
 msgid "Specialized Emacs Features"
-msgstr ""
+msgstr "Specialized Emacs Features"
 
 #. type: copying
 #: emacs-xtra.texi.orig:13
 msgid "This manual describes specialized features of Emacs."
-msgstr ""
+msgstr "このマニュアルは、Emacsの特別な機能について説明します。"
 
 #. type: copying
 #: emacs-xtra.texi.orig:15
 msgid "Copyright @copyright{} 2004--2015 Free Software Foundation, Inc."
-msgstr ""
+msgstr "Copyright @copyright{} 2004--2015 Free Software Foundation, Inc."
 
 #. type: quotation
 #: emacs-xtra.texi.orig:23
@@ -42,6 +41,12 @@ msgid ""
 "Back-Cover Texts as in (a) below.  A copy of the license is included in the "
 "section entitled ``GNU Free Documentation License''."
 msgstr ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License, Version 1.3 or any later "
+"version published by the Free Software Foundation; with no Invariant "
+"Sections, with the Front-Cover Texts being ``A GNU Manual,'' and with the "
+"Back-Cover Texts as in (a) below.  A copy of the license is included in the "
+"section entitled ``GNU Free Documentation License''."
 
 #. type: quotation
 #: emacs-xtra.texi.orig:26
@@ -49,51 +54,55 @@ msgid ""
 "(a) The FSF's Back-Cover Text is: ``You have the freedom to copy and modify "
 "this GNU manual.''"
 msgstr ""
+"(a) The FSF's Back-Cover Text is: ``You have the freedom to copy and modify "
+"this GNU manual.''"
 
 #. type: Plain text
 #: emacs-xtra.texi.orig:30
 msgid "@documentencoding UTF-8"
-msgstr ""
+msgstr "@documentencoding UTF-8"
 
 #. type: dircategory
 #: emacs-xtra.texi.orig:31
 #, no-wrap
 msgid "Emacs"
-msgstr ""
+msgstr "Emacs"
 
 #. type: menuentry
 #: emacs-xtra.texi.orig:34
 msgid "Emacs-Xtra: (emacs-xtra)"
-msgstr ""
+msgstr "Emacs-Xtra: (emacs-xtra)"
 
 #. type: menuentry
 #: emacs-xtra.texi.orig:34
 msgid "Specialized Emacs features."
-msgstr ""
+msgstr "Specialized Emacs features."
 
 #. type: node
 #: emacs-xtra.texi.orig:46
 #, no-wrap
 msgid "Top"
-msgstr ""
+msgstr "Top"
 
 #. type: unnumbered
 #: emacs-xtra.texi.orig:55 emacs-xtra.texi.orig:71 emacs-xtra.texi.orig:72
 #, no-wrap
 msgid "Introduction"
-msgstr ""
+msgstr "イントロダクション"
 
 #. type: menuentry
 #: emacs-xtra.texi.orig:55
 msgid "What documentation belongs here?"
-msgstr ""
+msgstr "どんなドキュメントがこのマニュアルに属するのか?"
 
 #. type: iftex
 #: emacs-xtra.texi.orig:58
 msgid ""
-"* Picture Mode:: Editing pictures made up of characters using the "
-"quarter-plane screen model."
+"* Picture Mode:: Editing pictures made up of characters using the quarter-"
+"plane screen model."
 msgstr ""
+"* Picture Mode:: Editing pictures made up of characters using the quarter-"
+"plane screen model."
 
 #. type: iftex
 #: emacs-xtra.texi.orig:66
@@ -105,23 +114,29 @@ msgid ""
 "features.  * Fortran:: Fortran mode and its special features.  * MS-DOS:: "
 "Using Emacs on MS-DOS."
 msgstr ""
+"* Autorevert:: Auto Reverting non-file buffers.  * Subdir Switches:: "
+"Subdirectory switches in Dired.  * Advanced Calendar/Diary Usage:: Advanced "
+"Calendar/Diary customization.  * Emerge:: A convenient way of merging two "
+"versions of a program.  * Advanced VC Usage:: Advanced VC (version control) "
+"features.  * Fortran:: Fortran mode and its special features.  * MS-DOS:: "
+"Using Emacs on MS-DOS."
 
 #. type: appendix
 #: emacs-xtra.texi.orig:69 emacs-xtra.texi.orig:128 emacs-xtra.texi.orig:129
 #, no-wrap
 msgid "GNU Free Documentation License"
-msgstr ""
+msgstr "GNU Free Documentation License"
 
 #. type: menuentry
 #: emacs-xtra.texi.orig:69
 msgid "The license for this documentation."
-msgstr ""
+msgstr "The license for this documentation."
 
 #. type: unnumbered
 #: emacs-xtra.texi.orig:69 emacs-xtra.texi.orig:132 emacs-xtra.texi.orig:133
 #, no-wrap
 msgid "Index"
-msgstr ""
+msgstr "Index"
 
 #. type: Plain text
 #: emacs-xtra.texi.orig:80
@@ -132,7 +147,7 @@ msgid ""
 "certain sections may be intended for a more specialized audience, such as "
 "Elisp authors.  This should be clearly pointed out at the beginning of these "
 "sections."
-msgstr ""
+msgstr "このマニュアルには、印刷されたEmacsマニュアルに含めるには特化的に過ぎる、さまざまな機能についての詳細な情報が含まれています。このマニュアルは、Emacsの基本的な知識をもつ人が読めるように意図されています。しかし、いくつかのセクションは、Elisp作者のような、より専門的な読者を意図しているものもあります。これについては、それらのセクションの冒頭で明確に指摘されているはずです。"
 
 #. type: Plain text
 #: emacs-xtra.texi.orig:101
@@ -145,7 +160,7 @@ msgid ""
 "justify their own manual, or inclusion in the printed Emacs manual.  The "
 "chapters in this manual are, however, included (at the relevant places) in "
 "the main Emacs manual when it is formatted as an Info document."
-msgstr ""
+msgstr "特定のパッケージ(または関連する機能のコレクション)には、メインのEmacsマニュアルとは別に、自身のマニュアルがあります。このマニュアルは、それらの追加のマニュアルを読むことにたいする代替ではなく、補足であることを意図しています。一言で言うと、このマニュアルは、自身のマニュアルをもったり印刷されたEmacsマニュアルに含めたりするには、あまりに些細な(あるいは、あまりにマイナーな)、小さな特定の機能(または標準機能についての追加詳細)のコレクションです。しかし、このマニュアルのチャプターは、InfoドキュメントとしてフォーマットされたメインのEmacsマニュアルには、(関連する場所に)含まれています。"
 
 #. type: Plain text
 #: emacs-xtra.texi.orig:105
@@ -153,68 +168,68 @@ msgid ""
 "Sections intended specifically for Elisp programmers can follow the style of "
 "the Elisp manual.  Other sections should follow the style of the Emacs "
 "manual."
-msgstr ""
+msgstr "特にElispプログラマーを意図したセクションは、Elispマニュアルのスタイルにしたがうことができます。その他のセクションは、Emacsマニュアルのスタイルにしたがうでしょう。"
 
 #. type: iftex
 #: emacs-xtra.texi.orig:109
 msgid "@raisesections"
-msgstr ""
+msgstr "@raisesections"
 
 #. type: include
 #: emacs-xtra.texi.orig:109
 #, no-wrap
 msgid "picture-xtra.texi"
-msgstr ""
+msgstr "picture-xtra.texi"
 
 #. type: include
 #: emacs-xtra.texi.orig:111
 #, no-wrap
 msgid "arevert-xtra.texi"
-msgstr ""
+msgstr "arevert-xtra.texi"
 
 #. type: include
 #: emacs-xtra.texi.orig:113
 #, no-wrap
 msgid "dired-xtra.texi"
-msgstr ""
+msgstr "dired-xtra.texi"
 
 #. type: include
 #: emacs-xtra.texi.orig:115
 #, no-wrap
 msgid "cal-xtra.texi"
-msgstr ""
+msgstr "cal-xtra.texi"
 
 #. type: include
 #: emacs-xtra.texi.orig:117
 #, no-wrap
 msgid "emerge-xtra.texi"
-msgstr ""
+msgstr "emerge-xtra.texi"
 
 #. type: include
 #: emacs-xtra.texi.orig:119
 #, no-wrap
 msgid "vc-xtra.texi"
-msgstr ""
+msgstr "vc-xtra.texi"
 
 #. type: include
 #: emacs-xtra.texi.orig:121
 #, no-wrap
 msgid "fortran-xtra.texi"
-msgstr ""
+msgstr "fortran-xtra.texi"
 
 #. type: include
 #: emacs-xtra.texi.orig:123
 #, no-wrap
 msgid "msdog-xtra.texi"
-msgstr ""
+msgstr "msdog-xtra.texi"
 
 #. type: iftex
 #: emacs-xtra.texi.orig:126
 msgid "@lowersections"
-msgstr ""
+msgstr "@lowersections"
 
 #. type: include
 #: emacs-xtra.texi.orig:130
 #, no-wrap
 msgid "doclicense.texi"
-msgstr ""
+msgstr "doclicense.texi"
