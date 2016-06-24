@@ -3,30 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-10-09 20:19+0900\n"
+"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
 #: killing.texi.orig:6
 #, no-wrap
 msgid "Killing"
-msgstr ""
+msgstr "Killing"
 
 #. type: chapter
 #: killing.texi.orig:7
 #, no-wrap
 msgid "Killing and Moving Text"
-msgstr ""
+msgstr "Killing and Moving Text"
 
 #. type: Plain text
 #: killing.texi.orig:15
@@ -37,7 +36,7 @@ msgid ""
 "similar operations.)  The kill ring is so-named because it can be visualized "
 "as a set of blocks of text arranged in a ring, which you can access in "
 "cyclic order.  @xref{Kill Ring}."
-msgstr ""
+msgstr "Emacsで@dfn{kill}とはテキストを消去して、@dfn{killリング}にコピーすることを意味します。@dfn{yank}とは、killリングからテキストを取り出して、バッファーに戻すことを意味します(``cut(カット、切り取り)''と``paste(ペースト、貼り付け)''という用語を使うアプリケーションもあります)。これはテキストブロックのセットが、循環的にアクセスできるリングに格納されているイメージから、killリングと名付けられました。@ref{Kill Ring}を参照してください。"
 
 #. type: Plain text
 #: killing.texi.orig:19
@@ -45,91 +44,91 @@ msgid ""
 "Killing and yanking are the most common way to move or copy text within "
 "Emacs.  It is very versatile, because there are commands for killing many "
 "different types of syntactic units."
-msgstr ""
+msgstr "killとyankは、Emacsでテキストを移動したりコピーするための、もっとも一般的な方法です。これは用途が広いコマンドです。なぜなら、多くの異なる種類の構文単位をkillするためのコマンドが存在するからです。"
 
 #. type: section
 #: killing.texi.orig:27 killing.texi.orig:29 killing.texi.orig:30
 #, no-wrap
 msgid "Deletion and Killing"
-msgstr ""
+msgstr "Deletion and Killing"
 
 #. type: menuentry
 #: killing.texi.orig:27
 msgid "Commands that remove text."
-msgstr ""
+msgstr "テキストを削除するコマンド。"
 
 #. type: section
 #: killing.texi.orig:27 killing.texi.orig:270 killing.texi.orig:271
 #, no-wrap
 msgid "Yanking"
-msgstr ""
+msgstr "Yanking"
 
 #. type: menuentry
 #: killing.texi.orig:27
 msgid "Commands that insert text."
-msgstr ""
+msgstr "テキストを挿入するコマンド。"
 
 #. type: node
 #: killing.texi.orig:27 killing.texi.orig:447
 #, no-wrap
 msgid "Cut and Paste"
-msgstr ""
+msgstr "Cut and Paste"
 
 #. type: menuentry
 #: killing.texi.orig:27
 msgid "Clipboard and selections on graphical displays."
-msgstr ""
+msgstr "グラフィカルなディスプレーにおけるクリップボードと選択。"
 
 #. type: section
 #: killing.texi.orig:27 killing.texi.orig:631 killing.texi.orig:632
 #, no-wrap
 msgid "Accumulating Text"
-msgstr ""
+msgstr "Accumulating Text"
 
 #. type: menuentry
 #: killing.texi.orig:27
 msgid "Other methods to add text to the buffer."
-msgstr ""
+msgstr "バッファーにテキストを追加する他の方法。"
 
 #. type: section
 #: killing.texi.orig:27 killing.texi.orig:702 killing.texi.orig:703
 #, no-wrap
 msgid "Rectangles"
-msgstr ""
+msgstr "Rectangles"
 
 #. type: menuentry
 #: killing.texi.orig:27
 msgid "Operating on text in rectangular areas."
-msgstr ""
+msgstr "矩形領域のテキストの操作。"
 
 #. type: section
 #: killing.texi.orig:27 killing.texi.orig:856 killing.texi.orig:857
 #, no-wrap
 msgid "CUA Bindings"
-msgstr ""
+msgstr "CUA Bindings"
 
 #. type: menuentry
 #: killing.texi.orig:27
 msgid "Using @kbd{C-x}/@kbd{C-c}/@kbd{C-v} to kill and yank."
-msgstr ""
+msgstr "killとyankで@kbd{C-x}/@kbd{C-c}/@kbd{C-v}を使う。"
 
 #. type: cindex
 #: killing.texi.orig:32
 #, no-wrap
 msgid "killing text"
-msgstr ""
+msgstr "killing text"
 
 #. type: cindex
 #: killing.texi.orig:33
 #, no-wrap
 msgid "cutting text"
-msgstr ""
+msgstr "cutting text"
 
 #. type: cindex
 #: killing.texi.orig:34
 #, no-wrap
 msgid "deletion"
-msgstr ""
+msgstr "deletion"
 
 #. type: Plain text
 #: killing.texi.orig:43
@@ -141,7 +140,7 @@ msgid ""
 "you don't have to worry much about losing text that you previously killed.  "
 "The kill ring is shared by all buffers, so text that is killed in one buffer "
 "can be yanked into another buffer."
-msgstr ""
+msgstr "バッファーからテキストを消去するコマンドの多くは、それをkillリングに保存します。これらは@dfn{kill}コマンドとして知られており、通常名前に@samp{kill}が含まれます(例 @code{kill-line})。killリングには、最近killしたものが、1つだけではなくいくつか格納されているので、killはとても安全な操作と言えます。なぜなら、以前にkillしたテキストが失われる心配をする必要がないからです。killリングは、すべてのバッファーで共有されているので、あるバッファーでkillしたテキストを、別のバッファーにyankすることができます。"
 
 #. type: Plain text
 #: killing.texi.orig:47
@@ -149,89 +148,88 @@ msgid ""
 "When you use @kbd{C-/} (@code{undo}) to undo a kill command (@pxref{Undo}), "
 "that brings the killed text back into the buffer, but does not remove it "
 "from the kill ring."
-msgstr ""
+msgstr "@kbd{C-/} (@code{undo})を使うと、killコマンドはアンドゥ(@ref{Undo}を参照してください)されるので、killしたテキストはバッファーに戻されますが、killリングからは削除されません。"
 
 #. type: Plain text
 #: killing.texi.orig:50
 msgid ""
 "On graphical displays, killing text also copies it to the system clipboard.  "
 "@xref{Cut and Paste}."
-msgstr ""
+msgstr "グラフィカルなディスプレーでは、テキストをkillすると、それはシステムのクリップボードにもコピーされます。 @ref{Cut and Paste}を参照してください。"
 
 #. type: Plain text
 #: killing.texi.orig:58
 msgid ""
 "Commands that erase text but do not save it in the kill ring are known as "
 "@dfn{delete} commands; their names usually contain the word @samp{delete}.  "
-"These include @kbd{C-d} (@code{delete-char}) and @key{DEL} "
-"(@code{delete-backward-char}), which delete only one character at a time, "
-"and those commands that delete only spaces or newlines.  Commands that can "
-"erase significant amounts of nontrivial data generally do a kill operation "
-"instead."
-msgstr ""
+"These include @kbd{C-d} (@code{delete-char}) and @key{DEL} (@code{delete-"
+"backward-char}), which delete only one character at a time, and those "
+"commands that delete only spaces or newlines.  Commands that can erase "
+"significant amounts of nontrivial data generally do a kill operation instead."
+msgstr "テキストを消去してkillリングに保存しないコマンドは、@dfn{削除(delete)}コマンドとして知られており、名前に@samp{delete}が含まれています。これらは@kbd{C-d} (@code{delete-char})や@key{DEL} (@code{delete-backward-char})のように、一度に1文字削除するものや、スペースや改行だけを削除するものが含まれます。重要なデータの有意な量を消去するコマンドには、一般的にkill操作が用いられます。"
 
 #. type: Plain text
 #: killing.texi.orig:60
 msgid "You can also use the mouse to kill and yank.  @xref{Cut and Paste}."
-msgstr ""
+msgstr "killとyankでマウスを使うこともできます。@ref{Cut and Paste}を参照してください。"
 
 #. type: subsection
 #: killing.texi.orig:68 killing.texi.orig:70 killing.texi.orig:71
 #, no-wrap
 msgid "Deletion"
-msgstr ""
+msgstr "Deletion"
 
 #. type: menuentry
 #: killing.texi.orig:68
 msgid "Commands for deleting small amounts of text and blank areas."
-msgstr ""
+msgstr "少量のテキストや空の領域を削除するコマンド。"
 
 #. type: subsection
 #: killing.texi.orig:68 killing.texi.orig:153 killing.texi.orig:154
 #, no-wrap
 msgid "Killing by Lines"
-msgstr ""
+msgstr "Killing by Lines"
 
 #. type: menuentry
 #: killing.texi.orig:68
 msgid "How to kill entire lines of text at one time."
-msgstr ""
+msgstr "テキスト行を一度にkillする方法。"
 
 #. type: subsection
 #: killing.texi.orig:68 killing.texi.orig:201 killing.texi.orig:202
 #, no-wrap
 msgid "Other Kill Commands"
-msgstr ""
+msgstr "Other Kill Commands"
 
 #. type: menuentry
 #: killing.texi.orig:68
 msgid ""
 "Commands to kill large regions of text and syntactic units such as words and "
 "sentences."
-msgstr ""
+msgstr "大きなリージョン、および単語やセンテンスのような構文単位をkillするコマンド。"
 
 #. type: node
 #: killing.texi.orig:68 killing.texi.orig:251
 #, no-wrap
 msgid "Kill Options"
-msgstr ""
+msgstr "Kill Options"
 
 #. type: menuentry
 #: killing.texi.orig:68
 msgid "Options that affect killing."
-msgstr ""
+msgstr "killに影響を与えるオプション。"
 
 #. type: findex
 #: killing.texi.orig:72
 #, no-wrap
 msgid "delete-backward-char"
-msgstr ""
+msgstr "delete-backward-char"
 
 #. type: findex
 #: killing.texi.orig:73
 #, no-wrap
 msgid "delete-char"
-msgstr ""
+msgstr "delete-char"
 
 #. type: Plain text
 #: killing.texi.orig:78
@@ -239,98 +237,98 @@ msgid ""
 "Deletion means erasing text and not saving it in the kill ring.  For the "
 "most part, the Emacs commands that delete text are those that erase just one "
 "character or only whitespace."
-msgstr ""
+msgstr "削除とは、テキストを消去してkillリングに保存しないという意味です。テキストを削除するたいていのEmacsコマンドは、1文字または空白文字しか消去しません。"
 
 #. type: key{#1}
 #: killing.texi.orig:80
 #, no-wrap
 msgid "DEL"
-msgstr ""
+msgstr "DEL"
 
 #. type: key{#1}
 #: killing.texi.orig:81
 #, no-wrap
 msgid "BACKSPACE"
-msgstr ""
+msgstr "BACKSPACE"
 
 #. type: table
 #: killing.texi.orig:84
 msgid ""
 "Delete the previous character, or the text in the region if it is active "
 "(@code{delete-backward-char})."
-msgstr ""
+msgstr "前の文字を削除します。リージョンがアクティブのときは、リージョンのテキストを削除します(@code{delete-backward-char})。"
 
 #. type: key{#1}
 #: killing.texi.orig:85
 #, no-wrap
 msgid "Delete"
-msgstr ""
+msgstr "Delete"
 
 #. type: table
 #: killing.texi.orig:88
 msgid ""
 "Delete the next character, or the text in the region if it is active "
 "(@code{delete-forward-char})."
-msgstr ""
+msgstr "次の文字を削除します。リージョンがアクティブのときは、リージョンのテキストを削除します(@code{delete-forward-char})。"
 
 #. type: item
 #: killing.texi.orig:89
 #, no-wrap
 msgid "C-d"
-msgstr ""
+msgstr "C-d"
 
 #. type: table
 #: killing.texi.orig:91
 msgid "Delete the next character (@code{delete-char})."
-msgstr ""
+msgstr "次の文字を削除します(@code{delete-char})。"
 
 #. type: kindex
 #: killing.texi.orig:92 killing.texi.orig:112
 #, no-wrap
 msgid "M-\\"
-msgstr ""
+msgstr "M-\\"
 
 #. type: table
 #: killing.texi.orig:94
 msgid "Delete spaces and tabs around point (@code{delete-horizontal-space})."
-msgstr ""
+msgstr "ポイントの周囲のスペースとタブを削除します(@code{delete-horizontal-space})。"
 
 #. type: item
 #: killing.texi.orig:94
 #, no-wrap
 msgid "M-@key{SPC}"
-msgstr ""
+msgstr "M-@key{SPC}"
 
 #. type: table
 #: killing.texi.orig:97
 msgid ""
-"Delete spaces and tabs around point, leaving one space "
-"(@code{just-one-space})."
-msgstr ""
+"Delete spaces and tabs around point, leaving one space (@code{just-one-"
+"space})."
+msgstr "スペースを1つ残して、ポイントの周囲のスペースとタブを削除します(@code{just-one-space})。"
 
 #. type: item
 #: killing.texi.orig:97
 #, no-wrap
 msgid "C-x C-o"
-msgstr ""
+msgstr "C-x C-o"
 
 #. type: table
 #: killing.texi.orig:99
 msgid "Delete blank lines around the current line (@code{delete-blank-lines})."
-msgstr ""
+msgstr "現在行の周囲の空行を削除します(@code{delete-blank-lines})。"
 
 #. type: item
 #: killing.texi.orig:99
 #, no-wrap
 msgid "M-^"
-msgstr ""
+msgstr "M-^"
 
 #. type: table
 #: killing.texi.orig:102
 msgid ""
 "Join two lines by deleting the intervening newline, along with any "
 "indentation following it (@code{delete-indentation})."
-msgstr ""
+msgstr "行間にある改行をインデントと共に削除して2行を1行にします(@code{delete-indentation})。"
 
 #. type: Plain text
 #: killing.texi.orig:111
@@ -341,31 +339,31 @@ msgid ""
 "argument, they delete the specified number of characters.  If the numeric "
 "argument is omitted or one, they delete all the text in the region if it is "
 "active (@pxref{Using Region})."
-msgstr ""
+msgstr "基本的な削除コマンド@key{DEL} (@code{delete-backward-char})、@key{delete} (@code{delete-forward-char})、@kbd{C-d} (@code{delete-char})については既に説明しました。@ref{Erasing}を参照してください。数引数を指定すると、指定した数の文字を削除します。リージョンがアクティブのとき、数引数に1を指定するか省略した場合は、リージョンのすべてのテキストを削除します。"
 
 #. type: findex
 #: killing.texi.orig:113
 #, no-wrap
 msgid "delete-horizontal-space"
-msgstr ""
+msgstr "delete-horizontal-space"
 
 #. type: kindex
 #: killing.texi.orig:114
 #, no-wrap
 msgid "M-SPC"
-msgstr ""
+msgstr "M-SPC"
 
 #. type: findex
 #: killing.texi.orig:115
 #, no-wrap
 msgid "just-one-space"
-msgstr ""
+msgstr "just-one-space"
 
 #. type: findex
 #: killing.texi.orig:116
 #, no-wrap
 msgid "cycle-spacing"
-msgstr ""
+msgstr "cycle-spacing"
 
 #. type: Plain text
 #: killing.texi.orig:132
@@ -384,7 +382,7 @@ msgid ""
 "things if you call it repeatedly in succession.  The first call acts like "
 "@code{just-one-space}, the next removes all whitespace, and a third call "
 "restores the original whitespace."
-msgstr ""
+msgstr "他の削除コマンドは、空白文字(スペース、タブ、改行)だけを削除するものです。@kbd{M-\\} (@code{delete-horizontal-space})は、ポイントの前後にあるすべてのスペースとタブを削除します。プレフィクス引数を指定すると、ポイントの前にあるスペースとタブだけを削除します。@kbd{M-@key{SPC}} (@code{just-one-space})も同様ですが、前にスペースが何個あるかに関係なく、ポイントの前に1つのスペースを残します。数引数@var{n}を指定すると、@var{n}が正のときはポイントの前に、@var{n}個のスペースを残します。@var{n}が負の場合は、スペースとタブに加えて改行も削除し、ポイントの前に@var{-n}個のスペースを残します。コマンド@code{cycle-spacing}は、@code{just-one-space}のようなコマンドで、よりフレキシブルな動作をします。これは連続で呼び出すと異なる処理を行います。1番目の呼び出しでは@code{just-one-space}と同様の処理をし、2番目の呼び出しではすべての空白文字を削除し、3番目の呼び出しでは元の空白文字を復元します。"
 
 #. type: Plain text
 #: killing.texi.orig:137
@@ -393,7 +391,7 @@ msgid ""
 "current line.  If the current line is blank, it deletes all blank lines "
 "preceding the current line as well (leaving one blank line, the current "
 "line).  On a solitary blank line, it deletes that line."
-msgstr ""
+msgstr "@kbd{C-x C-o} (@code{delete-blank-lines})は、現在行の下にあるすべての空行を削除します。現在行が空行のときは、現在行の上にあるすべての空行も削除します(空行を1つ、つまり現在行は残します)。単独の空行で実行するとその行を削除します。"
 
 #. type: Plain text
 #: killing.texi.orig:141
@@ -401,13 +399,13 @@ msgid ""
 "@kbd{M-^} (@code{delete-indentation}) joins the current line and the "
 "previous line, by deleting a newline and all surrounding spaces, usually "
 "leaving a single space.  @xref{Indentation,M-^}."
-msgstr ""
+msgstr "@kbd{M-^} (@code{delete-indentation})は、改行と周囲のスペース(通常1つのスペースを残す)を削除することにより、現在行とその上の行を結合します。@ref{Indentation,M-^}を参照してください。"
 
 #. type: findex
 #: killing.texi.orig:143
 #, no-wrap
 msgid "delete-duplicate-lines"
-msgstr ""
+msgstr "delete-duplicate-lines"
 
 #. type: Plain text
 #: killing.texi.orig:152
@@ -419,35 +417,35 @@ msgid ""
 "adjacent identical lines.  This is a more efficient mode of operation, "
 "useful when the lines have already been sorted.  With a @kbd{C-u C-u C-u} "
 "prefix argument, it retains repeated blank lines."
-msgstr ""
+msgstr "コマンド@code{delete-duplicate-lines}は、リージョン内の重複した行を検索して、それぞれ1行を残して削除します。通常は重複した行の最初の行を残しますが、プレフィクス引数@kbd{C-u}を指定すると、最後の行を残します。プレフィクス引数@kbd{C-u C-u}を指定すると、隣接した重複行だけを検索します。これは行がソート済みのとき効果的です。プレフィクス引数@kbd{C-u C-u C-u}を指定すると、連続する空行は残します。"
 
 #. type: kindex
 #: killing.texi.orig:157 killing.texi.orig:163
 #, no-wrap
 msgid "C-k"
-msgstr ""
+msgstr "C-k"
 
 #. type: table
 #: killing.texi.orig:159
 msgid "Kill rest of line or one or more lines (@code{kill-line})."
-msgstr ""
+msgstr "行の残り、または1行以上をkillします(@code{kill-line})。"
 
 #. type: kindex
 #: killing.texi.orig:159 killing.texi.orig:194
 #, no-wrap
 msgid "C-S-backspace"
-msgstr ""
+msgstr "C-S-backspace"
 
 #. type: table
 #: killing.texi.orig:161
 msgid "Kill an entire line at once (@code{kill-whole-line})"
-msgstr ""
+msgstr "1度に行全体を削除します(@code{kill-whole-line})。"
 
 #. type: findex
 #: killing.texi.orig:164
 #, no-wrap
 msgid "kill-line"
-msgstr ""
+msgstr "kill-line"
 
 #. type: Plain text
 #: killing.texi.orig:171
@@ -458,23 +456,23 @@ msgid ""
 "Otherwise, @kbd{C-k} kills all the text from point up to the end of the "
 "line; if point was originally at the beginning of the line, this leaves the "
 "line blank."
-msgstr ""
+msgstr "もっとも簡単なkillコマンドは、@kbd{C-k} (@code{kill-line})です。これを行末で使うと、その行を終端している改行をkillして、現在行と次の行を継げます(空行なら削除します)。そうでない場合、@kbd{C-k}はポイントから行末までを削除します。ポイントの元の位置が行頭の場合は、空行が残ります。"
 
 #. type: Plain text
 #: killing.texi.orig:177
 msgid ""
 "Spaces and tabs at the end of the line are ignored when deciding which case "
 "applies.  As long as point is after the last visible character in the line, "
-"you can be sure that @kbd{C-k} will kill the newline.  To kill an entire "
-"non-blank line, go to the beginning and type @kbd{C-k} twice."
-msgstr ""
+"you can be sure that @kbd{C-k} will kill the newline.  To kill an entire non-"
+"blank line, go to the beginning and type @kbd{C-k} twice."
+msgstr "どちらのケースを適用するか決める際には、行末のスペースとタブは無視されます。ポイントが行の一番最後の可視の文字の後ろにあるとき、@kbd{C-k}は改行をkillすることに注意してください。空でない行全体をkillするときは、行頭で@kbd{C-k}を2回タイプしてください。"
 
 #. type: Plain text
 #: killing.texi.orig:180
 msgid ""
 "In this context, ``line'' means a logical text line, not a screen line "
 "(@pxref{Continuation Lines})."
-msgstr ""
+msgstr "このコンテキストで``行''とは、スクリーン行ではなく論理行を意味します(@ref{Continuation Lines}を参照してください)。"
 
 #. type: Plain text
 #: killing.texi.orig:188
@@ -485,13 +483,13 @@ msgid ""
 "lines preceding the current line, together with the text on the current line "
 "before point.  @kbd{C-k} with an argument of zero kills the text before "
 "point on the current line."
-msgstr ""
+msgstr "@kbd{C-k}に正の数値@var{n}を与えると、@var{n}行とそれに続く改行をkillします(現在行のポイントの前にあるテキストはkillされません)。負の引数@minus{}@var{n}を与えると、現在行のポイントの前にあるテキストと、前の@var{n}行をkillします。@kbd{C-k}に0を指定すると、現在行のポイントの前にあるテキストをkillします。"
 
 #. type: findex
 #: killing.texi.orig:189 killing.texi.orig:195
 #, no-wrap
 msgid "kill-whole-line"
-msgstr ""
+msgstr "kill-whole-line"
 
 #. type: Plain text
 #: killing.texi.orig:193
@@ -499,120 +497,120 @@ msgid ""
 "If the variable @code{kill-whole-line} is non-@code{nil}, @kbd{C-k} at the "
 "very beginning of a line kills the entire line including the following "
 "newline.  This variable is normally @code{nil}."
-msgstr ""
+msgstr "変数@code{kill-whole-line}が非@code{nil}のときは、行頭での@kbd{C-k}により行末の改行も含めて行全体がkillされます。この変数は通常@code{nil}です。"
 
 #. type: Plain text
 #: killing.texi.orig:200
 msgid ""
 "@kbd{C-S-backspace} (@code{kill-whole-line}) kills a whole line including "
 "its newline, regardless of the position of point within the line.  Note that "
-"many text terminals will prevent you from typing the key sequence "
-"@kbd{C-S-backspace}."
-msgstr ""
+"many text terminals will prevent you from typing the key sequence @kbd{C-S-"
+"backspace}."
+msgstr "@kbd{C-S-backspace} (@code{kill-whole-line})は行中のポイントの位置に関わらず、改行を含めた行全体をkillします。キーシーケンス@kbd{C-S-backspace}をタイプできないテキスト端末がたくさんあることに注意してください。"
 
 #. type: findex
 #: killing.texi.orig:203 killing.texi.orig:227
 #, no-wrap
 msgid "kill-region"
-msgstr ""
+msgstr "kill-region"
 
 #. type: kindex
 #: killing.texi.orig:204 killing.texi.orig:207 killing.texi.orig:226
 #, no-wrap
 msgid "C-w"
-msgstr ""
+msgstr "C-w"
 
 #. type: table
 #: killing.texi.orig:209
 msgid "Kill the region (@code{kill-region})."
-msgstr ""
+msgstr "リージョンをkillします(@code{kill-region})。"
 
 #. type: kindex
 #: killing.texi.orig:209 killing.texi.orig:228
 #, no-wrap
 msgid "M-w"
-msgstr ""
+msgstr "M-w"
 
 #. type: table
 #: killing.texi.orig:211
 msgid "Copy the region into the kill ring (@code{kill-ring-save})."
-msgstr ""
+msgstr "リージョンをkillリングにコピーします(@code{kill-ring-save})。"
 
 #. type: item
 #: killing.texi.orig:211
 #, no-wrap
 msgid "M-d"
-msgstr ""
+msgstr "M-d"
 
 #. type: table
 #: killing.texi.orig:213
 msgid "Kill the next word (@code{kill-word}).  @xref{Words}."
-msgstr ""
+msgstr "次の単語をkillします(@code{kill-word})。@ref{Words}を参照してください。"
 
 #. type: item
 #: killing.texi.orig:213
 #, no-wrap
 msgid "M-@key{DEL}"
-msgstr ""
+msgstr "M-@key{DEL}"
 
 #. type: table
 #: killing.texi.orig:215
 msgid "Kill one word backwards (@code{backward-kill-word})."
-msgstr ""
+msgstr "後方に1単語killします(@code{backward-kill-word})。"
 
 #. type: item
 #: killing.texi.orig:215
 #, no-wrap
 msgid "C-x @key{DEL}"
-msgstr ""
+msgstr "C-x @key{DEL}"
 
 #. type: table
 #: killing.texi.orig:218
 msgid ""
 "Kill back to beginning of sentence (@code{backward-kill-sentence}).  "
 "@xref{Sentences}."
-msgstr ""
+msgstr "センテンスの先頭までを後方にkillします(@code{backward-kill-sentence})。@ref{Sentences}を参照してください。"
 
 #. type: item
 #: killing.texi.orig:218
 #, no-wrap
 msgid "M-k"
-msgstr ""
+msgstr "M-k"
 
 #. type: table
 #: killing.texi.orig:220
 msgid "Kill to the end of the sentence (@code{kill-sentence})."
-msgstr ""
+msgstr "文の末尾までをkillします(@code{kill-sentence})。"
 
 #. type: item
 #: killing.texi.orig:220
 #, no-wrap
 msgid "C-M-k"
-msgstr ""
+msgstr "C-M-k"
 
 #. type: table
 #: killing.texi.orig:222
 msgid ""
 "Kill the following balanced expression (@code{kill-sexp}).  "
 "@xref{Expressions}."
-msgstr ""
+msgstr "後に続く対応のとれた式(balanced expressions)をkillします(@code{kill-sexp})。@ref{Expressions}を参照してください。"
 
 #. type: item
 #: killing.texi.orig:222
 #, no-wrap
 msgid "M-z @var{char}"
-msgstr ""
+msgstr "M-z @var{char}"
 
 #. type: table
 #: killing.texi.orig:224
 msgid "Kill through the next occurrence of @var{char} (@code{zap-to-char})."
-msgstr ""
+msgstr "次の@var{char}までをkillします(@code{zap-to-char})。"
 
 #. type: findex
 #: killing.texi.orig:229
 #, no-wrap
 msgid "kill-ring-save"
-msgstr ""
+msgstr "kill-ring-save"
 
 #. type: Plain text
 #: killing.texi.orig:237
@@ -623,7 +621,7 @@ msgid ""
 "without removing it from the buffer.  If the mark is inactive when you type "
 "@kbd{C-w} or @kbd{M-w}, the command acts on the text between point and where "
 "you last set the mark (@pxref{Using Region})."
-msgstr ""
+msgstr "一般によく使われるkillコマンドは@kbd{C-w} (@code{kill-region})で、これはリージョンのテキストをkillします(@ref{Mark}を参照してください)。同様に@kbd{M-w} (@code{kill-ring-save})は、バッファーからテキストを消去せずに、リージョンのテキストをkillリングにコピーします。@kbd{C-w}または@kbd{M-w}をタイプしたとき、マークが非アクティブの場合、これらのコマンドはポイントと最後にセットしたマークの間にあるテキストにたいして処理を行います(@ref{Using Region}を参照してください)。"
 
 #. type: Plain text
 #: killing.texi.orig:242
@@ -632,19 +630,19 @@ msgid ""
 "@kbd{M-@key{DEL}} and @kbd{M-d} (@pxref{Words}); balanced expressions, with "
 "@kbd{C-M-k} (@pxref{Expressions}); and sentences, with @kbd{C-x @key{DEL}} "
 "and @kbd{M-k} (@pxref{Sentences})."
-msgstr ""
+msgstr "Emacsは特定の構文単位にたいするkillコマンドを提供します。単語(words)にたいしては@kbd{M-@key{DEL}}と@kbd{M-d}(@ref{Words}を参照してください)、対応のとれた式(balanced expressions)にたいしては@kbd{C-M-k}(@ref{Expressions}を参照してください)、センテンス(sentences: 文)にたいしては@kbd{C-x @key{DEL}}@kbd{M-k}(@ref{Sentences}を参照してください)です。"
 
 #. type: kindex
 #: killing.texi.orig:243
 #, no-wrap
 msgid "M-z"
-msgstr ""
+msgstr "M-z"
 
 #. type: findex
 #: killing.texi.orig:244
 #, no-wrap
 msgid "zap-to-char"
-msgstr ""
+msgstr "zap-to-char"
 
 #. type: Plain text
 #: killing.texi.orig:250
@@ -654,25 +652,25 @@ msgid ""
 "occurrence of that character in the buffer.  A numeric argument acts as a "
 "repeat count; a negative argument means to search backward and kill text "
 "before point."
-msgstr ""
+msgstr "コマンド@kbd{M-z} (@code{zap-to-char})は、killと検索が組み合わされています。これは文字を読み取り、ポイントからバッファー内の次にその文字が現れる場所までをkillします。数引数は繰り返し回数です。負の引数の場合は後方に検索することを意味し、ポイントの前のテキストをkillします。"
 
 #. type: subsection
 #: killing.texi.orig:252
 #, no-wrap
 msgid "Options for Killing"
-msgstr ""
+msgstr "Options for Killing"
 
 #. type: vindex
 #: killing.texi.orig:254
 #, no-wrap
 msgid "kill-read-only-ok"
-msgstr ""
+msgstr "kill-read-only-ok"
 
 #. type: cindex
 #: killing.texi.orig:255
 #, no-wrap
 msgid "read-only text, killing"
-msgstr ""
+msgstr "read-only text, killing"
 
 #. type: Plain text
 #: killing.texi.orig:264
@@ -684,101 +682,101 @@ msgid ""
 "display an error message when this happens.  But if you set the variable "
 "@code{kill-read-only-ok} to a non-@code{nil} value, they just print a "
 "message in the echo area to explain why the text has not been erased."
-msgstr ""
+msgstr "いくつかの特別なバッファーは、@dfn{読み取り専用(read-only)のテキスト}を含んでいて、それらは変更できないのでkillもできません。killコマンドは読み取り専用のバッファーにたいして特別な動作をします。バッファーから実際にテキストを削除せずに、killリングにコピーします。通常はビープ音をならし、その旨のエラーメッセージを表示します。しかし変数@code{kill-read-only-ok}を非@code{nil}にセットすると、なぜテキストが消去されないのかをエコーエリアにメッセージ表示します。"
 
 #. type: vindex
 #: killing.texi.orig:265
 #, no-wrap
 msgid "kill-do-not-save-duplicates"
-msgstr ""
+msgstr "kill-do-not-save-duplicates"
 
 #. type: Plain text
 #: killing.texi.orig:269
 msgid ""
-"If you change the variable @code{kill-do-not-save-duplicates} to a "
-"non-@code{nil} value, identical subsequent kills yield a single kill-ring "
-"entry, without duplication."
-msgstr ""
+"If you change the variable @code{kill-do-not-save-duplicates} to a non-"
+"@code{nil} value, identical subsequent kills yield a single kill-ring entry, "
+"without duplication."
+msgstr "変数@code{kill-do-not-save-duplicates}を非@code{nil}に変更すると、同じものにたいするkillは重複なくkillリングの1つのエントリーとなります。"
 
 #. type: cindex
 #: killing.texi.orig:272
 #, no-wrap
 msgid "moving text"
-msgstr ""
+msgstr "moving text"
 
 #. type: cindex
 #: killing.texi.orig:273
 #, no-wrap
 msgid "copying text"
-msgstr ""
+msgstr "copying text"
 
 #. type: cindex
 #: killing.texi.orig:274
 #, no-wrap
 msgid "kill ring"
-msgstr ""
+msgstr "kill ring"
 
 #. type: cindex
 #: killing.texi.orig:275
 #, no-wrap
 msgid "yanking"
-msgstr ""
+msgstr "yanking"
 
 #. type: cindex
 #: killing.texi.orig:276
 #, no-wrap
 msgid "pasting"
-msgstr ""
+msgstr "pasting"
 
 #. type: Plain text
 #: killing.texi.orig:280
 msgid ""
 "@dfn{Yanking} means reinserting text previously killed.  The usual way to "
 "move or copy text is to kill it and then yank it elsewhere."
-msgstr ""
+msgstr "@dfn{yank}するとは、以前killしたテキストを再び挿入するという意味です。テキストを移動またはコピーする通常の方法は、それをkillしてからどこかにyankする方法です。"
 
 #. type: kindex
 #: killing.texi.orig:282 killing.texi.orig:292
 #, no-wrap
 msgid "C-y"
-msgstr ""
+msgstr "C-y"
 
 #. type: table
 #: killing.texi.orig:284
 msgid "Yank the last kill into the buffer, at point (@code{yank})."
-msgstr ""
+msgstr "最後にkillしたものをポイント位置にyankします(@code{yank})。"
 
 #. type: kindex
 #: killing.texi.orig:284 killing.texi.orig:352
 #, no-wrap
 msgid "M-y"
-msgstr ""
+msgstr "M-y"
 
 #. type: table
 #: killing.texi.orig:287
 msgid ""
 "Replace the text just yanked with an earlier batch of killed text "
 "(@code{yank-pop}).  @xref{Earlier Kills}."
-msgstr ""
+msgstr "yankしたテキストを、それより前にkillしたテキストに置き換えます(@code{yank-pop})。@ref{Earlier Kills}を参照してください。"
 
 #. type: kindex
 #: killing.texi.orig:287 killing.texi.orig:431
 #, no-wrap
 msgid "C-M-w"
-msgstr ""
+msgstr "C-M-w"
 
 #. type: table
 #: killing.texi.orig:290
 msgid ""
 "Cause the following command, if it is a kill command, to append to the "
 "previous kill (@code{append-next-kill}).  @xref{Appending Kills}."
-msgstr ""
+msgstr "次のコマンドがkillコマンドのときは、killしたものを、以前にkillしたものに追加します(@code{append-next-kill})。@ref{Appending Kills}を参照してください。"
 
 #. type: findex
 #: killing.texi.orig:293
 #, no-wrap
 msgid "yank"
-msgstr ""
+msgstr "yank"
 
 #. type: Plain text
 #: killing.texi.orig:299
@@ -788,7 +786,7 @@ msgid ""
 "sets the mark at the beginning of the inserted text, without activating the "
 "mark; this lets you jump easily to that position, if you wish, with @kbd{C-u "
 "C-@key{SPC}} (@pxref{Mark Ring})."
-msgstr ""
+msgstr "基本的なyankコマンドは、@kbd{C-y} (@code{yank})です。これはもっとも最近killされたものを挿入し、カーソルを挿入されたテキストの最後に移動します。また挿入されたテキストの先頭にマークをセットして、それを非アクティブにします。これにより@kbd{C-u C-@key{SPC}}で簡単にその位置にジャンプできます(@ref{Mark Ring}を参照してください)。"
 
 #. type: Plain text
 #: killing.texi.orig:305
@@ -797,7 +795,7 @@ msgid ""
 "cursor in front of the inserted text, and sets the mark at the end.  Using "
 "any other prefix argument specifies an earlier kill; e.g., @kbd{C-u 4 C-y} "
 "reinserts the fourth most recent kill.  @xref{Earlier Kills}."
-msgstr ""
+msgstr "@kbd{C-u C-y}のようにプレフィクス引数を指定すると、カーソルを挿入されたテキストの前に移動して、マークをテキストの最後にセットします。他のプレフィクス引数は、何回前のkillかを指定します。たとえば@kbd{C-u 4 C-y}は、もっとも最近killされたものから4番目に古いものを挿入します。"
 
 #. type: Plain text
 #: killing.texi.orig:313
@@ -808,46 +806,46 @@ msgid ""
 "effectively treats ``cut'' or ``copy'' clipboard operations performed in "
 "other applications like Emacs kills, except that they are not recorded in "
 "the kill ring.  @xref{Cut and Paste}, for details."
-msgstr ""
+msgstr "グラフィカルなディスプレーでは、@kbd{C-y}はまず最後にEmacsがkillした後に、他のアプリケーションがシステムのクリップボードに、何らかのテキストをコピーしていないか調べます。もしコピーしていたなら、かわりにクリップボードのテキストを挿入します。このようにEmacsは効果的に``カット(cut)''や``コピー(copy)''などの、他のアプリケーションで処理されたクリップボード操作を、Emacsのkillのように扱います(ただしkillリングには記録されません)。詳細については、@ref{Cut and Paste}を参照してください。"
 
 #. type: node
 #: killing.texi.orig:318 killing.texi.orig:320
 #, no-wrap
 msgid "Kill Ring"
-msgstr ""
+msgstr "Kill Ring"
 
 #. type: menuentry
 #: killing.texi.orig:318
 msgid "Where killed text is stored."
-msgstr ""
+msgstr "killされたテキストが格納される場所。"
 
 #. type: node
 #: killing.texi.orig:318 killing.texi.orig:342
 #, no-wrap
 msgid "Earlier Kills"
-msgstr ""
+msgstr "Earlier Kills"
 
 #. type: menuentry
 #: killing.texi.orig:318
 msgid "Yanking something killed some time ago."
-msgstr ""
+msgstr "もっと前にkillしたものをyankする。"
 
 #. type: subsection
 #: killing.texi.orig:318 killing.texi.orig:390 killing.texi.orig:391
 #, no-wrap
 msgid "Appending Kills"
-msgstr ""
+msgstr "Appending Kills"
 
 #. type: menuentry
 #: killing.texi.orig:318
 msgid "Several kills in a row all yank together."
-msgstr ""
+msgstr "数回のkillを一緒にまとめてyankする。"
 
 #. type: subsection
 #: killing.texi.orig:321
 #, no-wrap
 msgid "The Kill Ring"
-msgstr ""
+msgstr "The Kill Ring"
 
 #. type: Plain text
 #: killing.texi.orig:330
@@ -858,13 +856,13 @@ msgid ""
 "move text from one buffer to another.  (There are several other methods: for "
 "instance, you could store the text in a register; see @ref{Registers}.  "
 "@xref{Accumulating Text}, for some other ways to move text around.)"
-msgstr ""
+msgstr "@dfn{killリング(kill ring)}とは、以前にkillされたテキストブロックからなるリストです。すべてのバッファーにたいして、killリングは1つしかないので、あるバッファーでkillしたテキストを、他のバッファーにyankすることができます。これはバッファーから他のバッファーへテキストを移動する、通常の方法です(他の方法もいくつかあります。たとえばテキストをレジスターに格納することもできます。@ref{Registers}を参照してください。テキストを移動する他の方法については、@ref{Accumulating Text}を参照してください)。"
 
 #. type: vindex
 #: killing.texi.orig:331
 #, no-wrap
 msgid "kill-ring-max"
-msgstr ""
+msgstr "kill-ring-max"
 
 #. type: Plain text
 #: killing.texi.orig:336
@@ -873,13 +871,13 @@ msgid ""
 "@code{kill-ring-max}.  The default is 60.  If you make a new kill when this "
 "limit has been reached, Emacs makes room by deleting the oldest entry in the "
 "kill ring."
-msgstr ""
+msgstr "killリングのエントリーの最大数は、変数@code{kill-ring-max}で制御されます。デフォルトは60です。エントリー数が制限に達しているとき新たにkillすると、Emacsはkillリングの一番古いエントリーを削除して空きを作ります。"
 
 #. type: vindex
 #: killing.texi.orig:337
 #, no-wrap
 msgid "kill-ring"
-msgstr ""
+msgstr "kill-ring"
 
 #. type: Plain text
 #: killing.texi.orig:341
@@ -887,19 +885,19 @@ msgid ""
 "The actual contents of the kill ring are stored in a variable named "
 "@code{kill-ring}; you can view the entire contents of the kill ring with "
 "@kbd{C-h v kill-ring}."
-msgstr ""
+msgstr "killリングの実際の内容は、@code{kill-ring}という名前の変数に格納されています。killリングのエントリーの内容は、@kbd{C-h v kill-ring}で見ることができます。"
 
 #. type: subsection
 #: killing.texi.orig:343
 #, no-wrap
 msgid "Yanking Earlier Kills"
-msgstr ""
+msgstr "Yanking Earlier Kills"
 
 #. type: cindex
 #: killing.texi.orig:344
 #, no-wrap
 msgid "yanking previous kills"
-msgstr ""
+msgstr "yanking previous kills"
 
 #. type: Plain text
 #: killing.texi.orig:351
@@ -908,13 +906,13 @@ msgid ""
 "to yank text that is no longer the most recent kill.  This is useful if you "
 "remember which kill ring entry you want.  If you don't, you can use the "
 "@kbd{M-y} (@code{yank-pop}) command to cycle through the possibilities."
-msgstr ""
+msgstr "@ref{Yanking}で説明したように、@kbd{C-y}に数引数を指定して、最後にkillされたものではないテキストをyankできます。これはkillリングのどのエントリーが欲しいか覚えているとき便利です。もし覚えていないときは、@kbd{M-y} (@code{yank-pop})コマンドを使って、候補を探すことができます。"
 
 #. type: findex
 #: killing.texi.orig:353
 #, no-wrap
 msgid "yank-pop"
-msgstr ""
+msgstr "yank-pop"
 
 #. type: Plain text
 #: killing.texi.orig:360
@@ -924,7 +922,7 @@ msgid ""
 "recover the text of the next-to-the-last kill, first use @kbd{C-y} to yank "
 "the last kill, and then use @kbd{M-y} to replace it with the previous kill.  "
 "@kbd{M-y} is allowed only after a @kbd{C-y} or another @kbd{M-y}."
-msgstr ""
+msgstr "もし前のコマンドがyankコマンドのとき、@kbd{M-y}はyankされたテキストを、1つ前にkillされたテキストで置き換えます。つまり2番目に新しいkillされたテキストを復元するには、最初に@kbd{C-y}で最後にkillされたテキストをyankし、次に@kbd{M-y}でその1回前にkillされたテキストで置き換えます。@kbd{M-y}は、@kbd{C-y}または他の@kbd{M-y}の後しか使えません。"
 
 #. type: Plain text
 #: killing.texi.orig:370
@@ -938,7 +936,7 @@ msgid ""
 "entry in the ring, so you can get any entry into the buffer.  Eventually the "
 "pointer reaches the end of the ring; the next @kbd{M-y} loops back around to "
 "the first entry again."
-msgstr ""
+msgstr "killリングのエントリーを指す(ポイントする)、``last yank''ポインターという概念で、@kbd{M-y}を理解できるでしょう。なにかをkillする度に、``last yank''ポインターはリングの先頭に新たに作られたエントリーを指すように移動します。@kbd{C-y}は、``last yank''ポインターが指すエントリーをyankします。@kbd{M-y}は``last yank''ポインターが違うエントリーを指すように移動して、バッファーのテキストをポインターが指すテキストに変更します。@kbd{M-y}コマンドを繰り返すことにより、リングの任意のエントリーにポインターを移動できるので、任意のエントリーをバッファーに取り込むことができます。やがてリングの最後に到達すると、次の@kbd{M-y}により再び最初のエントリーに戻ります。"
 
 #. type: Plain text
 #: killing.texi.orig:374
@@ -946,7 +944,7 @@ msgid ""
 "@kbd{M-y} moves the ``last yank'' pointer around the ring, but it does not "
 "change the order of the entries in the ring, which always runs from the most "
 "recent kill at the front to the oldest one still remembered."
-msgstr ""
+msgstr "@kbd{M-y}はリング内で``last yank''ポインターを移動させますが、リング内のエントリーの順番は変更しません。リングのエントリーは、常に最後にkillされたものを先頭に、記憶されているもので一番古いエントリーへと並んでいます。"
 
 #. type: Plain text
 #: killing.texi.orig:379
@@ -955,7 +953,7 @@ msgid ""
 "advance the ``last yank'' pointer by.  A negative argument moves the pointer "
 "toward the front of the ring; from the front of the ring, it moves "
 "``around'' to the last entry and continues forward from there."
-msgstr ""
+msgstr "``last yank''ポインターを何回進めるかを、@kbd{M-y}に数引数で指定できます。負の引数はリングの先頭に向かってポインターを移動させます。リングの先頭では一番古いエントリーに``戻り''、そこから先頭へと移動します。"
 
 #. type: Plain text
 #: killing.texi.orig:386
@@ -966,20 +964,20 @@ msgid ""
 "ring.  As long as no new killing is done, the ``last yank'' pointer remains "
 "at the same place in the kill ring, so repeating @kbd{C-y} will yank another "
 "copy of the same previous kill."
-msgstr ""
+msgstr "望むテキストを見つけてバッファーに取り込んだら、@kbd{M-y}コマンドを止めればそのテキストはそこに残ります。このテキストはkillリングのエントリーの単なるコピーなので、それを編集してもリングの中のエントリーは変更されません。新しく何かをkillしない限り、``last yank''ポインターは同じ位置に留まるので、@kbd{C-y}でそのテキストの別のコピーをyankできます。"
 
 #. type: Plain text
 #: killing.texi.orig:389
 msgid ""
 "When you call @kbd{C-y} with a numeric argument, that also sets the ``last "
 "yank'' pointer to the entry that it yanks."
-msgstr ""
+msgstr "@kbd{C-y}に数引数を指定するときも、yankするエントリーに``last yank''ポインターをセットします。"
 
 #. type: cindex
 #: killing.texi.orig:393
 #, no-wrap
 msgid "appending kills in the ring"
-msgstr ""
+msgstr "appending kills in the ring"
 
 #. type: Plain text
 #: killing.texi.orig:398
@@ -988,7 +986,7 @@ msgid ""
 "two or more kill commands in a row combine their text into a single entry, "
 "so that a single @kbd{C-y} yanks all the text as a unit, just as it was "
 "before it was killed."
-msgstr ""
+msgstr "通常はkillコマンドを実行するごとに、新しいエントリーがkillリングにpushされます。しかし2回以上の連続するkillコマンドにより、killされたテキストを1つのエントリーとしてまとめ、すべてのテキストを1単位として、あたかもそれがkillされたかのように、1回の@kbd{C-y}でyankできます。"
 
 #. type: Plain text
 #: killing.texi.orig:403
@@ -996,7 +994,7 @@ msgid ""
 "Thus, if you want to yank text as a unit, you need not kill all of it with "
 "one command; you can keep killing line after line, or word after word, until "
 "you have killed it all, and you can still get it all back at once."
-msgstr ""
+msgstr "つまりテキストを1つの単位としてyankしたいとき、そのテキストすべてを1回でkillする必要はありません。すべてがkillされるまで行から行、単語から単語へとkillを続け、それを一度に取得することができます。"
 
 #. type: Plain text
 #: killing.texi.orig:410
@@ -1007,40 +1005,40 @@ msgid ""
 "commands puts all the killed text into one entry without rearrangement.  "
 "Numeric arguments do not break the sequence of appending kills.  For "
 "example, suppose the buffer contains this text:"
-msgstr ""
+msgstr "ポイントから前方にkillするコマンドは、直前にkillされたテキストの最後に追加します。ポイントから後方にkillするコマンドは、テキストの先頭に追加します。この方法により前方と後方を併用した連続するkillコマンドは、すべてのkillされたテキストを再配置しなくてもよいように、1つのエントリーにまとめます。数引数を指定してもkillの連続性は途切れません。たとえば以下のようなテキストを含むバッファーがあるとしましょう:"
 
 #. type: example
 #: killing.texi.orig:413
 #, no-wrap
 msgid "This is a line @point{}of sample text.\n"
-msgstr ""
+msgstr "This is a line @point{}of sample text.\n"
 
 #. type: Plain text
 #: killing.texi.orig:422
 msgid ""
-"with point shown by @point{}.  If you type @kbd{M-d M-@key{DEL} M-d "
-"M-@key{DEL}}, killing alternately forward and backward, you end up with "
+"with point shown by @point{}.  If you type @kbd{M-d M-@key{DEL} M-d M-"
+"@key{DEL}}, killing alternately forward and backward, you end up with "
 "@samp{a line of sample} as one entry in the kill ring, and @samp{This is@ @ "
 "text.} in the buffer.  (Note the double space between @samp{is} and "
 "@samp{text}, which you can clean up with @kbd{M-@key{SPC}} or @kbd{M-q}.)"
-msgstr ""
+msgstr "ポイントの位置は@point{}で示された場所です。@kbd{M-d M-@key{DEL} M-d M-@key{DEL}}とタイプして、前方と後方へのkillを交互に行うと、最後にkillリングには@samp{a line of sample}という1つのエントリー、バッファーには@samp{This is@ @ text.}が残ります(@samp{is}と@samp{text}の間には2つのスペースがあることに注意してください。これは@kbd{M-@key{SPC}}または@kbd{M-q}で取り除くことができます)。"
 
 #. type: Plain text
 #: killing.texi.orig:430
 msgid ""
-"Another way to kill the same text is to move back two words with @kbd{M-b "
-"M-b}, then kill all four words forward with @kbd{C-u M-d}.  This produces "
-"exactly the same results in the buffer and in the kill ring.  @kbd{M-f M-f "
-"C-u M-@key{DEL}} kills the same text, all going backward; once again, the "
+"Another way to kill the same text is to move back two words with @kbd{M-b M-"
+"b}, then kill all four words forward with @kbd{C-u M-d}.  This produces "
+"exactly the same results in the buffer and in the kill ring.  @kbd{M-f M-f C-"
+"u M-@key{DEL}} kills the same text, all going backward; once again, the "
 "result is the same.  The text in the kill ring entry always has the same "
 "order that it had in the buffer before you killed it."
-msgstr ""
+msgstr "同じテキストをkillする別の方法は、@kbd{M-b M-b}で単語2つ後方に移動してから、@kbd{C-u M-d}で前方の単語4つをkillする方法です。これはバッファーとkillリングに、正確に同じ結果をもたらします。@kbd{M-f M-f C-u M-@key{DEL}}で後方にkillしても結果は同じです。killリングのエントリーは、常にバッファーからkillされる前と同じ順番になります。"
 
 #. type: findex
 #: killing.texi.orig:432
 #, no-wrap
 msgid "append-next-kill"
-msgstr ""
+msgstr "append-next-kill"
 
 #. type: Plain text
 #: killing.texi.orig:443
@@ -1054,38 +1052,38 @@ msgid ""
 "killed text if the command kills forward, and prepended if the command kills "
 "backward.  In this way, you can kill several separated pieces of text and "
 "accumulate them to be yanked back in one place."
-msgstr ""
+msgstr "killコマンドと最後のキルコマンドの間に、(単なる数引数ではない)他のコマンドが入ると、killリングには新たなエントリーが作られます。しかし、あらかじめ@kbd{C-M-w} (@code{append-next-kill})とタイプすることにより、最後にkillされたテキストに追加するように強制できます。@kbd{C-M-w}は、後に続くコマンドがkillコマンドであれば、killしたテキストを前にkillしたテキストに付け加えるよう指示します。この方法でも、前方にkillするコマンドの場合は、前にkillされたテキストの最後に追加され、後方にkillするコマンドの場合は、先頭に追加されます。この方法により、1ヶ所にyankするために離れた場所にあるいくつかのテキスト断片を、killして集めることができます。"
 
 #. type: Plain text
 #: killing.texi.orig:446
 msgid ""
 "A kill command following @kbd{M-w} (@code{kill-ring-save}) does not append "
 "to the text that @kbd{M-w} copied into the kill ring."
-msgstr ""
+msgstr "@kbd{M-w} (@code{kill-ring-save})の後のkillコマンドは、@kbd{M-w}でkillリングにコピーされたテキストへの追加はしません。"
 
 #. type: section
 #: killing.texi.orig:448
 #, no-wrap
 msgid "``Cut and Paste'' Operations on Graphical Displays"
-msgstr ""
+msgstr "``Cut and Paste'' Operations on Graphical Displays"
 
 #. type: cindex
 #: killing.texi.orig:449
 #, no-wrap
 msgid "cut"
-msgstr ""
+msgstr "cut"
 
 #. type: cindex
 #: killing.texi.orig:450
 #, no-wrap
 msgid "copy"
-msgstr ""
+msgstr "copy"
 
 #. type: cindex
 #: killing.texi.orig:451
 #, no-wrap
 msgid "paste"
-msgstr ""
+msgstr "paste"
 
 #. type: Plain text
 #: killing.texi.orig:460
@@ -1097,62 +1095,62 @@ msgid ""
 "graphical display, its kill and yank commands integrate with these "
 "facilities, so that you can easily transfer text between Emacs and other "
 "graphical applications."
-msgstr ""
+msgstr "ほとんどのグラフィカルなデスクトップ環境では、異なるアプリケーション間のデータ転送(通常はテキスト)に、@dfn{クリップボード(clipboard)}と呼ばれるシステム機能を使います。Xでは他にプライマリー選択(primary selection)とセカンダリー選択(secondary selection)という、同様の機能が利用可能です。Emacsをグラフィカルなディスプレーで実行している場合、killとyankコマンドはこれらの機能に統合されているので、Emacsと他のグラフィカルアプリケーション間で、簡単にテキストを転送できます。"
 
 #. type: Plain text
 #: killing.texi.orig:467
 msgid ""
 "By default, Emacs uses UTF-8 as the coding system for inter-program text "
 "transfers.  If you find that the pasted text is not what you expected, you "
-"can specify another coding system by typing @kbd{C-x @key{RET} x} or "
-"@kbd{C-x @key{RET} X}.  You can also request a different data type by "
-"customizing @code{x-select-request-type}.  @xref{Communication Coding}."
-msgstr ""
+"can specify another coding system by typing @kbd{C-x @key{RET} x} or @kbd{C-"
+"x @key{RET} X}.  You can also request a different data type by customizing "
+"@code{x-select-request-type}.  @xref{Communication Coding}."
+msgstr "デフォルトでは、Emacsはプログラム間テキスト転送のコーディングシステムとして、UTF-8を使います。もしコピーしたテキストが期待したものでない場合、@kbd{C-x @key{RET} x}または@kbd{C-x @key{RET} X}とタイプして、他のコーディングシステムを指定できます。@code{x-select-request-type}をカスタマイズして、異なるデータタイプを要求することもできます。@ref{Communication Coding}を参照してください。"
 
 #. type: node
 #: killing.texi.orig:472 killing.texi.orig:474
 #, no-wrap
 msgid "Clipboard"
-msgstr ""
+msgstr "Clipboard"
 
 #. type: menuentry
 #: killing.texi.orig:472
 msgid "How Emacs uses the system clipboard."
-msgstr ""
+msgstr "Emacsがシステムクリップボードを使う方法。"
 
 #. type: node
 #: killing.texi.orig:472 killing.texi.orig:537
 #, no-wrap
 msgid "Primary Selection"
-msgstr ""
+msgstr "Primary Selection"
 
 #. type: menuentry
 #: killing.texi.orig:472
 msgid "The temporarily selected text selection."
-msgstr ""
+msgstr "一時的に選択されたテキストの選択。"
 
 #. type: subsection
 #: killing.texi.orig:472 killing.texi.orig:579 killing.texi.orig:580
 #, no-wrap
 msgid "Secondary Selection"
-msgstr ""
+msgstr "Secondary Selection"
 
 #. type: menuentry
 #: killing.texi.orig:472
 msgid "Cutting without altering point and mark."
-msgstr ""
+msgstr "ポイントとマークを変化させずに切り取る。"
 
 #. type: subsection
 #: killing.texi.orig:475
 #, no-wrap
 msgid "Using the Clipboard"
-msgstr ""
+msgstr "Using the Clipboard"
 
 #. type: cindex
 #: killing.texi.orig:476
 #, no-wrap
 msgid "clipboard"
-msgstr ""
+msgstr "clipboard"
 
 #. type: Plain text
 #: killing.texi.orig:481
@@ -1160,32 +1158,32 @@ msgid ""
 "The @dfn{clipboard} is the facility that most graphical applications use for "
 "``cutting and pasting''.  When the clipboard exists, the kill and yank "
 "commands in Emacs make use of it."
-msgstr ""
+msgstr "@dfn{クリップボード(clipboard)}とは、ほとんどのグラフィカルなアプリケーションが、``カットアンドペースト''のために使う機能です。もしクリップボードが存在する場合、Emacsのkillおよびyankコマンドもそれを使います。"
 
 #. type: Plain text
 #: killing.texi.orig:486
 msgid ""
-"When you kill some text with a command such as @kbd{C-w} "
-"(@code{kill-region}), or copy it to the kill ring with a command such as "
-"@kbd{M-w} (@code{kill-ring-save}), that text is also put in the clipboard."
-msgstr ""
+"When you kill some text with a command such as @kbd{C-w} (@code{kill-"
+"region}), or copy it to the kill ring with a command such as @kbd{M-w} "
+"(@code{kill-ring-save}), that text is also put in the clipboard."
+msgstr "何らかのテキストを、@kbd{C-w} (@code{kill-region})のようなコマンドでkillしたり、@kbd{M-w} (@code{kill-ring-save})のようなコマンドでkillリングにコピーしたとき、そのテキストはクリップボードにも転送されます。"
 
 #. type: vindex
 #: killing.texi.orig:487
 #, no-wrap
 msgid "save-interprogram-paste-before-kill"
-msgstr ""
+msgstr "save-interprogram-paste-before-kill"
 
 #. type: Plain text
 #: killing.texi.orig:494
 msgid ""
 "When an Emacs kill command puts text in the clipboard, the existing "
-"clipboard contents are normally lost.  Optionally, you can change "
-"@code{save-interprogram-paste-before-kill} to @code{t}.  Then Emacs will "
-"first save the clipboard to its kill ring, preventing you from losing the "
-"old clipboard data---at the risk of high memory consumption if that data "
-"turns out to be large."
-msgstr ""
+"clipboard contents are normally lost.  Optionally, you can change @code{save-"
+"interprogram-paste-before-kill} to @code{t}.  Then Emacs will first save the "
+"clipboard to its kill ring, preventing you from losing the old clipboard "
+"data---at the risk of high memory consumption if that data turns out to be "
+"large."
+msgstr "Emacsのkillコマンドがテキストをクリップボードに転送すると、通常クリップボードの既存の内容は失われます。オプションとして、@code{save-interprogram-paste-before-kill}を@code{t}に変更できます。これにより、Emacsは古いクリップボードのデータが失われることを防ぐために、最初にクリップボードのデータをkillリングに保存します。これにはデータが大きくなると、メモリー消費が増えるというリスクがあります。"
 
 #. type: Plain text
 #: killing.texi.orig:500
@@ -1194,47 +1192,46 @@ msgid ""
 "another application ``owns'' the clipboard---i.e., if you cut or copied text "
 "there more recently than your last kill command in Emacs---then Emacs yanks "
 "from the clipboard instead of the kill ring."
-msgstr ""
+msgstr "@kbd{C-y} (@code{yank})のようなyankコマンドもクリップボードを使います。他のアプリケーションがクリップボードを``所有''する場合(たとえばEmacsで最後にkillコマンドを実行した後に、他のアプリケーションでテキストをカットまたはコピーした場合)、Emacsはkillリングではなくクリップボードからyankします。"
 
 #. type: vindex
 #: killing.texi.orig:501
 #, no-wrap
 msgid "yank-pop-change-selection"
-msgstr ""
+msgstr "yank-pop-change-selection"
 
 #. type: Plain text
 #: killing.texi.orig:506
 msgid ""
 "Normally, rotating the kill ring with @kbd{M-y} (@code{yank-pop})  does not "
-"alter the clipboard.  However, if you change "
-"@code{yank-pop-change-selection} to @code{t}, then @kbd{M-y} saves the new "
-"yank to the clipboard."
-msgstr ""
+"alter the clipboard.  However, if you change @code{yank-pop-change-"
+"selection} to @code{t}, then @kbd{M-y} saves the new yank to the clipboard."
+msgstr "通常killリングを@kbd{M-y} (@code{yank-pop})で巡回することでは、クリップボードは変更されません。しかし@code{yank-pop-change-selection}を@code{t}に変更すると、@kbd{M-y}は新しいyankをクリップボードに保存します。"
 
 #. type: vindex
 #: killing.texi.orig:507
 #, no-wrap
 msgid "x-select-enable-clipboard"
-msgstr ""
+msgstr "x-select-enable-clipboard"
 
 #. type: Plain text
 #: killing.texi.orig:510
 msgid ""
 "To prevent kill and yank commands from accessing the clipboard, change the "
 "variable @code{x-select-enable-clipboard} to @code{nil}."
-msgstr ""
+msgstr "killおよびyankコマンドがクリップボードにアクセスしないようにするには、変数@code{x-select-enable-clipboard}を@code{nil}に変更してください。"
 
 #. type: cindex
 #: killing.texi.orig:511
 #, no-wrap
 msgid "clipboard manager"
-msgstr ""
+msgstr "clipboard manager"
 
 #. type: vindex
 #: killing.texi.orig:512
 #, no-wrap
 msgid "x-select-enable-clipboard-manager"
-msgstr ""
+msgstr "x-select-enable-clipboard-manager"
 
 #. type: Plain text
 #: killing.texi.orig:521
@@ -1246,76 +1243,75 @@ msgid ""
 "circumstances, this may cause a delay when exiting Emacs; if you wish to "
 "prevent Emacs from transferring data to the clipboard manager, change the "
 "variable @code{x-select-enable-clipboard-manager} to @code{nil}."
-msgstr ""
+msgstr "多くのXデスクトップ環境は、@dfn{クリップボードマネージャー(clipboard manager)}と呼ばれる機能をサポートします。もしEmacsがクリップボードのデータの現在の``持ち主''のときにEmacsを終了し、そのときクリップボードマネージャーが実行されていると、Emacsはクリップボードのデータをクリップボードマネージャーに転送するのでデータは失われません。ある状況において、これはEmacsが終了するが遅くなる原因となります。Emacsがクリップボードマネージャーにデータをを転送しないようにするには、変数@code{x-select-enable-clipboard-manager}を@code{nil}に変更してください。"
 
 #. type: vindex
 #: killing.texi.orig:522
 #, no-wrap
 msgid "x-select-enable-primary"
-msgstr ""
+msgstr "x-select-enable-primary"
 
 #. type: findex
 #: killing.texi.orig:523
 #, no-wrap
 msgid "clipboard-kill-region"
-msgstr ""
+msgstr "clipboard-kill-region"
 
 #. type: findex
 #: killing.texi.orig:524
 #, no-wrap
 msgid "clipboard-kill-ring-save"
-msgstr ""
+msgstr "clipboard-kill-ring-save"
 
 #. type: findex
 #: killing.texi.orig:525
 #, no-wrap
 msgid "clipboard-yank"
-msgstr ""
+msgstr "clipboard-yank"
 
 #. type: Plain text
 #: killing.texi.orig:536
 msgid ""
 "Prior to Emacs 24, the kill and yank commands used the primary selection "
 "(@pxref{Primary Selection}), not the clipboard.  If you prefer this "
-"behavior, change @code{x-select-enable-clipboard} to @code{nil}, "
-"@code{x-select-enable-primary} to @code{t}, and "
-"@code{mouse-drag-copy-region} to @code{t}.  In this case, you can use the "
-"following commands to act explicitly on the clipboard: "
-"@code{clipboard-kill-region} kills the region and saves it to the clipboard; "
-"@code{clipboard-kill-ring-save} copies the region to the kill ring and saves "
-"it to the clipboard; and @code{clipboard-yank} yanks the contents of the "
-"clipboard at point."
-msgstr ""
+"behavior, change @code{x-select-enable-clipboard} to @code{nil}, @code{x-"
+"select-enable-primary} to @code{t}, and @code{mouse-drag-copy-region} to "
+"@code{t}.  In this case, you can use the following commands to act "
+"explicitly on the clipboard: @code{clipboard-kill-region} kills the region "
+"and saves it to the clipboard; @code{clipboard-kill-ring-save} copies the "
+"region to the kill ring and saves it to the clipboard; and @code{clipboard-"
+"yank} yanks the contents of the clipboard at point."
+msgstr "Emacs 24以前は、killおよびyankコマンドは、クリップボードではなくプライマリー選択(@ref{Primary Selection}を参照してください)を使っていました。もしこのほうがよいなら、@code{x-select-enable-clipboard}を@code{nil}、@code{x-select-enable-primary}を@code{t}、@code{mouse-drag-copy-region}を@code{t}に変更してください。この場合は、次のコマンドを使って、クリップボードに明示的にアクセスできます。リージョンをkillしてクリップボードに保存するには@code{clipboard-kill-region}、リージョンをkillリングにコピーするとともにクリップボードに保存するには@code{clipboard-kill-ring-save}、クリップボードの内容をポイント位置にyankするには@code{clipboard-yank}です。"
 
 #. type: subsection
 #: killing.texi.orig:538
 #, no-wrap
 msgid "Cut and Paste with Other Window Applications"
-msgstr ""
+msgstr "Cut and Paste with Other Window Applications"
 
 #. type: cindex
 #: killing.texi.orig:539
 #, no-wrap
 msgid "X cutting and pasting"
-msgstr ""
+msgstr "X cutting and pasting"
 
 #. type: cindex
 #: killing.texi.orig:540
 #, no-wrap
 msgid "X selection"
-msgstr ""
+msgstr "X selection"
 
 #. type: cindex
 #: killing.texi.orig:541
 #, no-wrap
 msgid "primary selection"
-msgstr ""
+msgstr "primary selection"
 
 #. type: cindex
 #: killing.texi.orig:542
 #, no-wrap
 msgid "selection, primary"
-msgstr ""
+msgstr "selection, primary"
 
 #. type: Plain text
 #: killing.texi.orig:552
@@ -1327,7 +1323,7 @@ msgid ""
 "clipboard.  Its contents are more ``fragile''; they are overwritten each "
 "time you select text with the mouse, whereas the clipboard is only "
 "overwritten by explicit ``cut'' or ``copy'' commands."
-msgstr ""
+msgstr "Xウィンドウシステム下では、@dfn{プライマリー選択(primary selection)}に、Xアプリケーションで最後に選択されたテキスト(通常はマウスのドラッグで選択される)が存在します。一般的に、このテキストは他のXアプリケーションに@kbd{mouse-2}をクリックして挿入することができます。プライマリー選択はクリップボードとは別のものです。プライマリー選択の内容は、より``脆弱''です。なぜなら、クリップボードは明示的な``カット''または``コピー''だけにより上書きされるのにくらべ、プライマリー選択はマウスでテキストが選択される度に上書きされるからです。"
 
 #. type: Plain text
 #: killing.texi.orig:558
@@ -1337,13 +1333,13 @@ msgid ""
 "whether the region was made by dragging or clicking the mouse (@pxref{Mouse "
 "Commands}), or by keyboard commands (e.g., by typing @kbd{C-@key{SPC}} and "
 "moving point; @pxref{Setting Mark})."
-msgstr ""
+msgstr "Xの下では、リージョンがアクティブ(@ref{Mark}を参照してください)になればいつでも、リージョンのテキストはプライマリー選択に保存されます。これは、そのリージョンの選択がマウスでドラッグやクリック(@ref{Mouse Commands}を参照してください)されたのか、キーボードコマンド(たとえば@kbd{C-@key{SPC}}をタイプしてからポイントを移動したなど。@ref{Setting Mark}を参照してください)なのかによらず適用されます。"
 
 #. type: vindex
 #: killing.texi.orig:559
 #, no-wrap
 msgid "select-active-regions"
-msgstr ""
+msgstr "select-active-regions"
 
 #. type: Plain text
 #: killing.texi.orig:566
@@ -1353,7 +1349,7 @@ msgid ""
 "those made with the mouse or with shift selection (@pxref{Shift "
 "Selection}).  If you change @code{select-active-regions} to @code{nil}, "
 "Emacs avoids saving active regions to the primary selection entirely."
-msgstr ""
+msgstr "変数@code{select-active-regions}を@code{only}に変更すると、Emacsは一時的にアクティブになったリージョン(たとえばマウスやシフト選択など。@ref{Shift Selection}を参照してください)だけをプライマリー選択に保存します。@code{select-active-regions}を@code{nil}に変更すると、Emacsはアクティブなリージョンをプライマリー選択に保存しません。"
 
 #. type: Plain text
 #: killing.texi.orig:570
@@ -1361,13 +1357,13 @@ msgid ""
 "To insert the primary selection into an Emacs buffer, click @kbd{mouse-2} "
 "(@code{mouse-yank-primary}) where you want to insert it.  @xref{Mouse "
 "Commands}."
-msgstr ""
+msgstr "プライマリー選択をEmacsのバッファーに挿入するには、挿入したい場所で@kbd{mouse-2} (@code{mouse-yank-primary})をクリックします。@ref{Mouse Commands}を参照してください。"
 
 #. type: cindex
 #: killing.texi.orig:571
 #, no-wrap
 msgid "MS-Windows, and primary selection"
-msgstr ""
+msgstr "MS-Windows, and primary selection"
 
 #. type: Plain text
 #: killing.texi.orig:578
@@ -1377,13 +1373,13 @@ msgid ""
 "all the features and commands related to the primary selection work on "
 "Windows as they do on X, for cutting and pasting within the same session, "
 "but not across Emacs sessions or with other applications."
-msgstr ""
+msgstr "MS-Windowsはプライマリー選択を提供しませんが、Emacsは単一のEmacsセッション内で選択されたテキストを内部に格納することにより、これをエミュレートします。したがってWindowsでも、プライマリー選択に関するすべての機能とコマンドは、Xと同様に機能します。しかしこれは同一セッションにおけるカットやペーストなどの場合で、Emacsセッションと他のアプリケーション間では機能しません。"
 
 #. type: cindex
 #: killing.texi.orig:581
 #, no-wrap
 msgid "secondary selection"
-msgstr ""
+msgstr "secondary selection"
 
 #. type: Plain text
 #: killing.texi.orig:587
@@ -1392,108 +1388,108 @@ msgid ""
 "similar facility known as the @dfn{secondary selection}.  Nowadays, few X "
 "applications make use of the secondary selection, but you can access it "
 "using the following Emacs commands:"
-msgstr ""
+msgstr "プライマリー選択に加えて、Xウィンドウシステムは@dfn{セカンダリー選択(secondary selection)}として知られる、同様な第2の機能を提供します。最近ではセカンダリー選択を使うXアプリケーションの数は多くありませんが、以下のEmacsコマンドによりアクセスできます:"
 
 #. type: findex
 #: killing.texi.orig:589
 #, no-wrap
 msgid "mouse-set-secondary"
-msgstr ""
+msgstr "mouse-set-secondary"
 
 #. type: item
 #: killing.texi.orig:590 killing.texi.orig:592
 #, no-wrap
 msgid "M-Drag-Mouse-1"
-msgstr ""
+msgstr "M-Drag-Mouse-1"
 
 #. type: cindex
 #: killing.texi.orig:591
 #, no-wrap
 msgid "secondary-selection face"
-msgstr ""
+msgstr "secondary-selection face"
 
 #. type: table
 #: killing.texi.orig:599
 msgid ""
 "Set the secondary selection, with one end at the place where you press down "
-"the button, and the other end at the place where you release it "
-"(@code{mouse-set-secondary}).  The selected text is highlighted, using the "
+"the button, and the other end at the place where you release it (@code{mouse-"
+"set-secondary}).  The selected text is highlighted, using the "
 "@code{secondary-selection} face, as you drag.  The window scrolls "
 "automatically if you drag the mouse off the top or bottom of the window, "
 "just like @code{mouse-set-region} (@pxref{Mouse Commands})."
-msgstr ""
+msgstr "ボタンを押した場所からボタンを話した場所までを、セカンダリー選択としてセットします(@code{mouse-set-secondary})。ドラッグして選択されたテキストは、フェイス@code{secondary-selection}を使ってハイライトされます。ウィンドウの上端または下端を越えてマウスをドラッグすると、@code{mouse-set-region}と同様にウィンドウは自動的にスクロールします(@ref{Mouse Commands}を参照してください)。"
 
 #. type: table
 #: killing.texi.orig:601
 msgid "This command does not alter the kill ring."
-msgstr ""
+msgstr "このコマンドはkillリングを変更しません。"
 
 #. type: findex
 #: killing.texi.orig:602
 #, no-wrap
 msgid "mouse-start-secondary"
-msgstr ""
+msgstr "mouse-start-secondary"
 
 #. type: item
 #: killing.texi.orig:603 killing.texi.orig:604
 #, no-wrap
 msgid "M-Mouse-1"
-msgstr ""
+msgstr "M-Mouse-1"
 
 #. type: table
 #: killing.texi.orig:607
 msgid ""
-"Set one endpoint for the @dfn{secondary selection} "
-"(@code{mouse-start-secondary})."
-msgstr ""
+"Set one endpoint for the @dfn{secondary selection} (@code{mouse-start-"
+"secondary})."
+msgstr "@dfn{セカンダリー選択}の始点をセットします(@code{mouse-start-secondary})。"
 
 #. type: findex
 #: killing.texi.orig:608
 #, no-wrap
 msgid "mouse-secondary-save-then-kill"
-msgstr ""
+msgstr "mouse-secondary-save-then-kill"
 
 #. type: item
 #: killing.texi.orig:609 killing.texi.orig:610
 #, no-wrap
 msgid "M-Mouse-3"
-msgstr ""
+msgstr "M-Mouse-3"
 
 #. type: table
 #: killing.texi.orig:616
 msgid ""
 "Set the secondary selection, with one end at the position clicked and the "
-"other at the position specified with @kbd{M-Mouse-1} "
-"(@code{mouse-secondary-save-then-kill}).  This also puts the selected text "
-"in the kill ring.  A second @kbd{M-Mouse-3} at the same place kills the "
-"secondary selection just made."
-msgstr ""
+"other at the position specified with @kbd{M-Mouse-1} (@code{mouse-secondary-"
+"save-then-kill}).  This also puts the selected text in the kill ring.  A "
+"second @kbd{M-Mouse-3} at the same place kills the secondary selection just "
+"made."
+msgstr "@kbd{M-Mouse-1}で指定された位置から、クリックされた点を終点とするセカンダリー選択をセットします(@code{mouse-secondary-save-then-kill})。これは選択されたテキストをkillリングにも保存します。同じ場所での2回目の@kbd{M-Mouse-3}は、作成されたセカンダリー選択をkillします。"
 
 #. type: findex
 #: killing.texi.orig:617
 #, no-wrap
 msgid "mouse-yank-secondary"
-msgstr ""
+msgstr "mouse-yank-secondary"
 
 #. type: item
 #: killing.texi.orig:618 killing.texi.orig:619
 #, no-wrap
 msgid "M-Mouse-2"
-msgstr ""
+msgstr "M-Mouse-2"
 
 #. type: table
 #: killing.texi.orig:622
 msgid ""
 "Insert the secondary selection where you click, placing point at the end of "
 "the yanked text (@code{mouse-yank-secondary})."
-msgstr ""
+msgstr "クリックした場所にセカンダリー選択を挿入し、ポイントをyankしたテキストの最後に配します(@code{mouse-yank-secondary})。"
 
 #. type: Plain text
 #: killing.texi.orig:626
 msgid ""
 "Double or triple clicking of @kbd{M-Mouse-1} operates on words and lines, "
 "much like @kbd{Mouse-1}."
-msgstr ""
+msgstr "@kbd{Mouse-1}と同様、@kbd{M-Mouse-1}のダブルクリックで単語、トリプルクリックで行を処理します。"
 
 #. type: Plain text
 #: killing.texi.orig:630
@@ -1501,37 +1497,37 @@ msgid ""
 "If @code{mouse-yank-at-point} is non-@code{nil}, @kbd{M-Mouse-2} yanks at "
 "point.  Then it does not matter precisely where you click, or even which of "
 "the frame's windows you click on.  @xref{Mouse Commands}."
-msgstr ""
+msgstr "@code{mouse-yank-at-point}が非@code{nil}の場合、@kbd{M-Mouse-2}はポイント位置にyankします。どこをクリックしたか、さらにはフレームのどのウィンドウをクリックしたかは関係ありません。@ref{Mouse Commands}を参照してください。"
 
 #. type: findex
 #: killing.texi.orig:633
 #, no-wrap
 msgid "append-to-buffer"
-msgstr ""
+msgstr "append-to-buffer"
 
 #. type: findex
 #: killing.texi.orig:634
 #, no-wrap
 msgid "prepend-to-buffer"
-msgstr ""
+msgstr "prepend-to-buffer"
 
 #. type: findex
 #: killing.texi.orig:635
 #, no-wrap
 msgid "copy-to-buffer"
-msgstr ""
+msgstr "copy-to-buffer"
 
 #. type: findex
 #: killing.texi.orig:636
 #, no-wrap
 msgid "append-to-file"
-msgstr ""
+msgstr "append-to-file"
 
 #. type: cindex
 #: killing.texi.orig:638
 #, no-wrap
 msgid "accumulating scattered text"
-msgstr ""
+msgstr "accumulating scattered text"
 
 #. type: Plain text
 #: killing.texi.orig:644
@@ -1541,62 +1537,63 @@ msgid ""
 "for copying many scattered blocks of text into one place.  Here we describe "
 "the commands to accumulate scattered pieces of text into a buffer or into a "
 "file."
-msgstr ""
+msgstr "テキストのコピーや移動は、それをkillしてyankすることにより通常行います。しかし多くの箇所にあるテキストブロックをコピーしたり、たくさんのテキストの断片を1ヶ所にコピーする便利な方法があります。ここではテキストの断片を、バッファーやファイルに追加するコマンドを説明します。"
 
 #. type: item
 #: killing.texi.orig:646
 #, no-wrap
 msgid "M-x append-to-buffer"
-msgstr ""
+msgstr "M-x append-to-buffer"
 
 #. type: table
 #: killing.texi.orig:648
 msgid "Append region to the contents of a specified buffer."
-msgstr ""
+msgstr "リージョンを指定したバッファーの内容の後に追加(append)します。"
 
 #. type: item
 #: killing.texi.orig:648
 #, no-wrap
 msgid "M-x prepend-to-buffer"
-msgstr ""
+msgstr "M-x prepend-to-buffer"
 
 #. type: table
 #: killing.texi.orig:650
 msgid "Prepend region to the contents of a specified buffer."
-msgstr ""
+msgstr "リージョンを指定したバッファーの内容の前に追加(prepend)します。"
 
 #. type: item
 #: killing.texi.orig:650
 #, no-wrap
 msgid "M-x copy-to-buffer"
-msgstr ""
+msgstr "M-x copy-to-buffer"
 
 #. type: table
 #: killing.texi.orig:652
-msgid "Copy region into a specified buffer, deleting that buffer's old contents."
-msgstr ""
+msgid ""
+"Copy region into a specified buffer, deleting that buffer's old contents."
+msgstr "リージョンを指定したバッファーにコピーして、バッファーの古い内容は削除されます。"
 
 #. type: item
 #: killing.texi.orig:652
 #, no-wrap
 msgid "M-x insert-buffer"
-msgstr ""
+msgstr "M-x insert-buffer"
 
 #. type: table
 #: killing.texi.orig:654
 msgid "Insert the contents of a specified buffer into current buffer at point."
-msgstr ""
+msgstr "指定したバッファーの内容を、現在のバッファーのポイント位置に挿入します。"
 
 #. type: item
 #: killing.texi.orig:654
 #, no-wrap
 msgid "M-x append-to-file"
-msgstr ""
+msgstr "M-x append-to-file"
 
 #. type: table
 #: killing.texi.orig:656
 msgid "Append region to the contents of a specified file, at the end."
-msgstr ""
+msgstr "リージョンを指定したファイルの内容の最後に追加します。"
 
 #. type: Plain text
 #: killing.texi.orig:665
@@ -1608,19 +1605,19 @@ msgid ""
 "If you have been using the buffer for editing, the copied text goes into the "
 "middle of the text of the buffer, starting from wherever point happens to be "
 "at that moment."
-msgstr ""
+msgstr "テキストをバッファーに追加するには、@kbd{M-x append-to-buffer}を使います。これはバッファー名を読み取り、リージョンのコピーを指定したバッファーに挿入します。存在しないバッファーを指定すると、@code{append-to-buffer}はそのバッファーを作成します。テキストは、そのバッファーのポイント位置に挿入されます。バッファーを編集用に使っていると、コピーされたテキストはその時ポイントがあった位置に挿入されます。"
 
 #. type: Plain text
 #: killing.texi.orig:673
 msgid ""
 "Point in that buffer is left at the end of the copied text, so successive "
 "uses of @code{append-to-buffer} accumulate the text in the specified buffer "
-"in the same order as they were copied.  Strictly speaking, "
-"@code{append-to-buffer} does not always append to the text already in the "
-"buffer---it appends only if point in that buffer is at the end.  However, if "
+"in the same order as they were copied.  Strictly speaking, @code{append-to-"
+"buffer} does not always append to the text already in the buffer---it "
+"appends only if point in that buffer is at the end.  However, if "
 "@code{append-to-buffer} is the only command you use to alter a buffer, then "
 "point is always at the end."
-msgstr ""
+msgstr "バッファーのポイントは、コピーされたテキストの最後に残ります。連続して@code{append-to-buffer}を使うと、テキストは指定したバッファーにコピーした順番で追加されていきます。厳密に言うと@code{append-to-buffer}は既存のバッファーのテキストにたいして、常に追加をする訳ではありません。これはポイントがバッファーの最後にあるときに追加をします。しかしバッファーを変更するのに@code{append-to-buffer}しか使わない場合、ポイントは常にバッファーの最後に位置することになります。"
 
 #. type: Plain text
 #: killing.texi.orig:680
@@ -1630,7 +1627,7 @@ msgid ""
 "prependings add text in reverse order.  @kbd{M-x copy-to-buffer} is similar, "
 "except that any existing text in the other buffer is deleted, so the buffer "
 "is left containing just the text newly copied into it."
-msgstr ""
+msgstr "@kbd{M-x prepend-to-buffer}も@code{append-to-buffer}と同様ですが、他のバッファーのポイントはコピーされたテキストの前に置かれるので、連続してテキストを追加すると結果は逆の順番にコピーされます。@kbd{M-x copy-to-buffer}も同様ですが、他のバッファーの既存の内容は削除されるので、バッファーの内容は新しくコピーされたテキストだけになります。"
 
 #. type: Plain text
 #: killing.texi.orig:688
@@ -1641,7 +1638,7 @@ msgid ""
 "point, leaving point at the beginning of the inserted text.  It also adds "
 "the position of the end of the inserted text to the mark ring, without "
 "activating the mark.  @xref{Buffers}, for background information on buffers."
-msgstr ""
+msgstr "コマンド@kbd{M-x insert-buffer}は、追加するテキストを他のバッファーから取得するために使われます。これはバッファー名の入力を求め、そのバッファーのすべてのテキストのコピーを、現在のバッファーのポイント位置に挿入します。ポイントは挿入されたテキストの先頭になります。挿入されたテキストの最後の位置もマークリングに追加されます。マークは非アクティブになります。バッファーに関する背景情報は、@ref{Buffers}を参照してください。"
 
 #. type: Plain text
 #: killing.texi.orig:693
@@ -1650,7 +1647,7 @@ msgid ""
 "a file with @kbd{M-x append-to-file}.  This prompts for a filename, and adds "
 "the text of the region to the end of the specified file.  The file is "
 "changed immediately on disk."
-msgstr ""
+msgstr "バッファーのテキストを追加するかわりに、@kbd{M-x append-to-file}でテキストを直接ファイルに追加できます。これはファイル名の入力を求め、リージョンのテキストを指定されたファイルの最後に追加します。ディスク上のファイルはすぐに変更されます。"
 
 #. type: Plain text
 #: killing.texi.orig:698
@@ -1659,32 +1656,32 @@ msgid ""
 "being visited in Emacs.  Using it on a file that you are editing in Emacs "
 "would change the file behind Emacs's back, which can lead to losing some of "
 "your editing."
-msgstr ""
+msgstr "@code{append-to-file}は、Emacsがvisitして@emph{いない}ファイルだけに使うべきです。Emacsで編集中のファイルにたいして使用すると、それはEmacsの背後でファイルが変更されることになるため、編集内容が失われる可能性があります。"
 
 #. type: Plain text
 #: killing.texi.orig:701
 msgid ""
 "Another way to move text around is to store it in a register.  "
 "@xref{Registers}."
-msgstr ""
+msgstr "テキストの移動に関する他の方法はレジスターに格納する方法です。@ref{Registers}を参照してください。"
 
 #. type: findex
 #: killing.texi.orig:704 killing.texi.orig:824
 #, no-wrap
 msgid "rectangle"
-msgstr ""
+msgstr "rectangle"
 
 #. type: cindex
 #: killing.texi.orig:705
 #, no-wrap
 msgid "columns (and rectangles)"
-msgstr ""
+msgstr "columns (and rectangles)"
 
 #. type: cindex
 #: killing.texi.orig:706
 #, no-wrap
 msgid "killing rectangular areas of text"
-msgstr ""
+msgstr "killing rectangular areas of text"
 
 #. type: Plain text
 #: killing.texi.orig:714
@@ -1695,13 +1692,13 @@ msgid ""
 "out, fill them with blanks or text, or delete them.  Rectangle commands are "
 "useful with text in multicolumn formats, and for changing text into or out "
 "of such formats."
-msgstr ""
+msgstr "@dfn{矩形領域(rectangle)}コマンドは、テキストの矩形領域を操作します。矩形領域のテキストとは、特定の行範囲内にある、特定の2つの列の間にある文字すべての文字です。Emacsには矩形領域にたいしてkill、yank、クリアー、スペースやテキストでんpフィル、削除を行うコマンドがあります。矩形領域コマンドは、複数列のテキストを操作したり、テキストをそのように変更したり戻したりする場合に便利です。"
 
 #. type: cindex
 #: killing.texi.orig:715
 #, no-wrap
 msgid "mark rectangle"
-msgstr ""
+msgstr "mark rectangle"
 
 #. type: Plain text
 #: killing.texi.orig:721
@@ -1709,9 +1706,9 @@ msgid ""
 "To specify a rectangle for a command to work on, set the mark at one corner "
 "and point at the opposite corner.  The rectangle thus specified is called "
 "the @dfn{region-rectangle}.  If point and the mark are in the same column, "
-"the region-rectangle is empty.  If they are in the same line, the "
-"region-rectangle is one line high."
-msgstr ""
+"the region-rectangle is empty.  If they are in the same line, the region-"
+"rectangle is one line high."
+msgstr "コマンドで操作する矩形領域を指定するには、一方の角にマークを設定し、その対角にポイントを置きます。このように設定した矩形領域を矩形リージョン(region-rectangle)と呼びます。ポイントとマークが同じ列の場合、矩形リージョンは空になります。ポイントとマークが同じ行の場合、矩形リージョンの高さは1行になります。"
 
 #. type: Plain text
 #: killing.texi.orig:726
@@ -1720,77 +1717,77 @@ msgid ""
 "controlled.  But remember that a given combination of point and mark values "
 "can be interpreted either as a region or as a rectangle, depending on the "
 "command that uses them."
-msgstr ""
+msgstr "矩形リージョンは、リージョンの制御と大体同じ方法で制御できます。しかし、ポイントとマークの組がリージョンとして解釈されるのか、あるいは矩形領域として解釈されるかは、それらを使うコマンドに依存することに注意してください。"
 
 #. type: kindex
 #: killing.texi.orig:728 killing.texi.orig:767
 #, no-wrap
 msgid "C-x r k"
-msgstr ""
+msgstr "C-x r k"
 
 #. type: table
 #: killing.texi.orig:731
 msgid ""
 "Kill the text of the region-rectangle, saving its contents as the ``last "
 "killed rectangle'' (@code{kill-rectangle})."
-msgstr ""
+msgstr "矩形リージョンをkillして、内容を``最後にkillされた矩形領域''として保存します(@code{kill-rectangle})。"
 
 #. type: kindex
 #: killing.texi.orig:731 killing.texi.orig:786
 #, no-wrap
 msgid "C-x r M-w"
-msgstr ""
+msgstr "C-x r M-w"
 
 #. type: table
 #: killing.texi.orig:734
 msgid ""
-"Save the text of the region-rectangle as the ``last killed rectangle'' "
-"(@code{copy-rectangle-as-kill})."
-msgstr ""
+"Save the text of the region-rectangle as the ``last killed "
+"rectangle'' (@code{copy-rectangle-as-kill})."
+msgstr "矩形リージョンのテキストを``最後にkillされた矩形領域''として保存します(@code{copy-rectangle-as-kill})。"
 
 #. type: kindex
 #: killing.texi.orig:734 killing.texi.orig:768
 #, no-wrap
 msgid "C-x r d"
-msgstr ""
+msgstr "C-x r d"
 
 #. type: table
 #: killing.texi.orig:736
 msgid "Delete the text of the region-rectangle (@code{delete-rectangle})."
-msgstr ""
+msgstr "矩形リージョンのテキストを削除します(@code{delete-rectangle})。"
 
 #. type: kindex
 #: killing.texi.orig:736 killing.texi.orig:792
 #, no-wrap
 msgid "C-x r y"
-msgstr ""
+msgstr "C-x r y"
 
 #. type: table
 #: killing.texi.orig:739
 msgid ""
 "Yank the last killed rectangle with its upper left corner at point "
 "(@code{yank-rectangle})."
-msgstr ""
+msgstr "最後にkillされた矩形領域の左上隅をがポイント位置になるようにyankします(@code{yank-rectangle})。"
 
 #. type: kindex
 #: killing.texi.orig:739 killing.texi.orig:807
 #, no-wrap
 msgid "C-x r o"
-msgstr ""
+msgstr "C-x r o"
 
 #. type: table
 #: killing.texi.orig:743
 msgid ""
-"Insert blank space to fill the space of the region-rectangle "
-"(@code{open-rectangle}).  This pushes the previous contents of the "
-"region-rectangle to the right."
-msgstr ""
+"Insert blank space to fill the space of the region-rectangle (@code{open-"
+"rectangle}).  This pushes the previous contents of the region-rectangle to "
+"the right."
+msgstr "矩形領域にスペースを挿入します(@code{open-rectangle})。これにより矩形リージョンの以前の内容は右にずれます。"
 
 #. type: kindex
 #: killing.texi.orig:743 killing.texi.orig:823
 #, no-wrap
 msgid "C-x r N"
-msgstr ""
+msgstr "C-x r N"
 
 #. type: table
 #: killing.texi.orig:747
@@ -1798,63 +1795,63 @@ msgid ""
 "Insert line numbers along the left edge of the region-rectangle "
 "(@code{rectangle-number-lines}).  This pushes the previous contents of the "
 "region-rectangle to the right."
-msgstr ""
+msgstr "矩形リージョンの左端に行番号を挿入します(@code{rectangle-number-lines})。これにより矩形リージョンの以前の内容は右にずれます。"
 
 #. type: kindex
 #: killing.texi.orig:747 killing.texi.orig:809
 #, no-wrap
 msgid "C-x r c"
-msgstr ""
+msgstr "C-x r c"
 
 #. type: table
 #: killing.texi.orig:750
 msgid ""
 "Clear the region-rectangle by replacing all of its contents with spaces "
 "(@code{clear-rectangle})."
-msgstr ""
+msgstr "矩形リージョンの内容をスペースに置き換えてクリアーします(@code{clear-rectangle})。"
 
 #. type: item
 #: killing.texi.orig:750
 #, no-wrap
 msgid "M-x delete-whitespace-rectangle"
-msgstr ""
+msgstr "M-x delete-whitespace-rectangle"
 
 #. type: table
 #: killing.texi.orig:753
 msgid ""
 "Delete whitespace in each of the lines on the specified rectangle, starting "
 "from the left edge column of the rectangle."
-msgstr ""
+msgstr "指定された矩形領域の各行で、矩形領域の左端の列から空白文字を削除します。"
 
 #. type: item
 #: killing.texi.orig:753
 #, no-wrap
 msgid "C-x r t @var{string} @key{RET}"
-msgstr ""
+msgstr "C-x r t @var{string} @key{RET}"
 
 #. type: table
 #: killing.texi.orig:756
 msgid ""
-"Replace rectangle contents with @var{string} on each line "
-"(@code{string-rectangle})."
-msgstr ""
+"Replace rectangle contents with @var{string} on each line (@code{string-"
+"rectangle})."
+msgstr "矩形領域の各行にたいして、内容を@var{string}に置き換えます(@code{string-rectangle})。"
 
 #. type: item
 #: killing.texi.orig:756
 #, no-wrap
 msgid "M-x string-insert-rectangle @key{RET} @var{string} @key{RET}"
-msgstr ""
+msgstr "M-x string-insert-rectangle @key{RET} @var{string} @key{RET}"
 
 #. type: table
 #: killing.texi.orig:758
 msgid "Insert @var{string} on each line of the rectangle."
-msgstr ""
+msgstr "矩形領域の各行にたいして、@var{string}を挿入します。"
 
 #. type: item
 #: killing.texi.orig:758
 #, no-wrap
 msgid "C-x @key{SPC}"
-msgstr ""
+msgstr "C-x @key{SPC}"
 
 #. type: table
 #: killing.texi.orig:762
@@ -1862,26 +1859,26 @@ msgid ""
 "Toggle Rectangle Mark mode (@code{rectangle-mark-mode}).  When this mode is "
 "active, the region-rectangle is highlighted and can be shrunk/grown, and the "
 "standard kill and yank commands operate on it."
-msgstr ""
+msgstr "Rectangle Markモードを切り替えます(@code{rectangle-mark-mode})。このモードがアクティブのとき矩形領域はハイライトされ、拡大・縮小が可能になります。標準のkillおよびyankコマンドは、それにたいして操作を行います。"
 
 #. type: Plain text
 #: killing.texi.orig:766
 msgid ""
 "The rectangle operations fall into two classes: commands to erase or insert "
 "rectangles, and commands to make blank rectangles."
-msgstr ""
+msgstr "矩形領域の操作は2種類に分類できます。それは矩形領域を消去または挿入するものと、空の矩形領域を作るものです。"
 
 #. type: findex
 #: killing.texi.orig:769
 #, no-wrap
 msgid "kill-rectangle"
-msgstr ""
+msgstr "kill-rectangle"
 
 #. type: findex
 #: killing.texi.orig:770
 #, no-wrap
 msgid "delete-rectangle"
-msgstr ""
+msgstr "delete-rectangle"
 
 #. type: Plain text
 #: killing.texi.orig:778
@@ -1892,7 +1889,7 @@ msgid ""
 "killed rectangle}.  In both cases, erasing the region-rectangle is like "
 "erasing the specified text on each line of the rectangle; if there is any "
 "following text on the line, it moves backwards to fill the gap."
-msgstr ""
+msgstr "矩形領域のテキストを消去するには2つの方法があります。@kbd{C-x r d} (@code{delete-rectangle})はテキストを無条件に削除します。@kbd{C-x r k} (@code{kill-rectangle})はテキストを取り除いて、それを@dfn{最後にkillされた矩形領域}として保存します。両方とも矩形領域の各行の指定したテキストを消去するように、矩形リージョンを消去します。その行の後に続くテキストがある場合、削除による隙間を生めるために後方に移動されます。"
 
 #. type: Plain text
 #: killing.texi.orig:785
@@ -1902,37 +1899,37 @@ msgid ""
 "most recent rectangle killed.  This is because yanking a rectangle is so "
 "different from yanking linear text that different yank commands have to be "
 "used.  Yank-popping is not defined for rectangles."
-msgstr ""
+msgstr "矩形領域の``kill''は普通のkillとは異なります。矩形領域はkillリングには保存されず、一番最後にkillされた矩形領域だけを記録する、特別な場所に保存されます。矩形領域のyankは線形テキストのyankとは大きく異なるので、異なるyankコマンドが使われるからです。矩形領域にたいしてyankのpopは定義されていません。"
 
 #. type: findex
 #: killing.texi.orig:787
 #, no-wrap
 msgid "copy-rectangle-as-kill"
-msgstr ""
+msgstr "copy-rectangle-as-kill"
 
 #. type: Plain text
 #: killing.texi.orig:791
 msgid ""
-"@kbd{C-x r M-w} (@code{copy-rectangle-as-kill}) is the equivalent of "
-"@kbd{M-w} for rectangles: it records the rectangle as the ``last killed "
+"@kbd{C-x r M-w} (@code{copy-rectangle-as-kill}) is the equivalent of @kbd{M-"
+"w} for rectangles: it records the rectangle as the ``last killed "
 "rectangle'', without deleting the text from the buffer."
-msgstr ""
+msgstr "@kbd{C-x r M-w} (@code{copy-rectangle-as-kill})は矩形領域用の@kbd{M-w}に相当します。これはバッファーからテキストを削除することなく、矩形領域を``最後にkillされた矩形領域''として記録します。"
 
 #. type: findex
 #: killing.texi.orig:793
 #, no-wrap
 msgid "yank-rectangle"
-msgstr ""
+msgstr "yank-rectangle"
 
 #. type: Plain text
 #: killing.texi.orig:799
 msgid ""
-"To yank the last killed rectangle, type @kbd{C-x r y} "
-"(@code{yank-rectangle}).  The rectangle's first line is inserted at point, "
-"the rectangle's second line is inserted at the same horizontal position one "
-"line vertically below, and so on.  The number of lines affected is "
-"determined by the height of the saved rectangle."
-msgstr ""
+"To yank the last killed rectangle, type @kbd{C-x r y} (@code{yank-"
+"rectangle}).  The rectangle's first line is inserted at point, the "
+"rectangle's second line is inserted at the same horizontal position one line "
+"vertically below, and so on.  The number of lines affected is determined by "
+"the height of the saved rectangle."
+msgstr "killされた矩形領域をyankするには、@kbd{C-x r y} (@code{yank-rectangle})とタイプします。矩形領域の最初の行はポイント位置に挿入されます。矩形領域の2行目はポイントの1行下の位置に挿入され、以下同様に挿入されていきます。影響を受ける行数は、保存された矩形領域の高さにより決定されます。"
 
 #. type: Plain text
 #: killing.texi.orig:803
@@ -1940,41 +1937,41 @@ msgid ""
 "For example, you can convert two single-column lists into a double-column "
 "list by killing one of the single-column lists as a rectangle, and then "
 "yanking it beside the other list."
-msgstr ""
+msgstr "たとえば1列のリスト2つを2列のリストに変換できます。一方の1列リストを矩形領域としてkillしてもう一方の1列リストの隣にyankすればよいのです。"
 
 #. type: Plain text
 #: killing.texi.orig:806
 msgid ""
 "You can also copy rectangles into and out of registers with @kbd{C-x r r "
 "@var{r}} and @kbd{C-x r i @var{r}}.  @xref{Rectangle Registers}."
-msgstr ""
+msgstr "@kbd{C-x r r @var{r}}と@kbd{C-x r i @var{r}}で、矩形領域をレジスターにコピーしたり取り出したりできます。@ref{Rectangle Registers}を参照してください。"
 
 #. type: findex
 #: killing.texi.orig:808
 #, no-wrap
 msgid "open-rectangle"
-msgstr ""
+msgstr "open-rectangle"
 
 #. type: findex
 #: killing.texi.orig:810
 #, no-wrap
 msgid "clear-rectangle"
-msgstr ""
+msgstr "clear-rectangle"
 
 #. type: Plain text
 #: killing.texi.orig:815
 msgid ""
 "There are two commands you can use for making blank rectangles: @kbd{C-x r "
-"c} (@code{clear-rectangle}) blanks out existing text in the "
-"region-rectangle, and @kbd{C-x r o} (@code{open-rectangle}) inserts a blank "
+"c} (@code{clear-rectangle}) blanks out existing text in the region-"
+"rectangle, and @kbd{C-x r o} (@code{open-rectangle}) inserts a blank "
 "rectangle."
-msgstr ""
+msgstr "空の矩形領域を作るために使うことのできるコマンドが2つあります。@kbd{C-x r c} (@code{clear-rectangle})は、矩形リージョンの既存のテキストを空白に置き換えます。@kbd{C-x r o} (@code{open-rectangle})は空白の矩形領域を挿入します。"
 
 #. type: findex
 #: killing.texi.orig:816
 #, no-wrap
 msgid "delete-whitespace-rectangle"
-msgstr ""
+msgstr "delete-whitespace-rectangle"
 
 #. type: Plain text
 #: killing.texi.orig:822
@@ -1982,9 +1979,8 @@ msgid ""
 "@kbd{M-x delete-whitespace-rectangle} deletes horizontal whitespace starting "
 "from a particular column.  This applies to each of the lines in the "
 "rectangle, and the column is specified by the left edge of the rectangle.  "
-"The right edge of the rectangle does not make any difference to this "
-"command."
-msgstr ""
+"The right edge of the rectangle does not make any difference to this command."
+msgstr "@kbd{M-x delete-whitespace-rectangle}は、指定した列を起点に水平方向の空白文字を削除します。これは矩形領域の各行に適用され、開始列は矩形領域の左端です。矩形領域の右端はこのコマンドに影響を及ぼしません。"
 
 #. type: Plain text
 #: killing.texi.orig:832
@@ -1995,19 +1991,19 @@ msgid ""
 "prefix argument, the command prompts for a number to begin from, and for a "
 "format string with which to print the numbers (@pxref{Formatting Strings,,, "
 "elisp, The Emacs Lisp Reference Manual})."
-msgstr ""
+msgstr "コマンド@kbd{C-x r N} (@code{rectangle-number-lines})は、矩形領域の左端に行番号を挿入します。通常は矩形領域の最初の行を1として番号が開始されます。プレフィクス引数を指定すると、このコマンドは開始番号と、番号を出力する際の書式文字列(@ref{Formatting Strings,,, elisp, The Emacs Lisp Reference Manual}を参照してください)の入力を求めます。"
 
 #. type: kindex
 #: killing.texi.orig:833
 #, no-wrap
 msgid "C-x r t"
-msgstr ""
+msgstr "C-x r t"
 
 #. type: findex
 #: killing.texi.orig:834
 #, no-wrap
 msgid "string-rectangle"
-msgstr ""
+msgstr "string-rectangle"
 
 #. type: Plain text
 #: killing.texi.orig:841
@@ -2017,27 +2013,27 @@ msgid ""
 "be the same as the width of the rectangle.  If the string's width is less, "
 "the text after the rectangle shifts left; if the string is wider than the "
 "rectangle, the text after the rectangle shifts right."
-msgstr ""
+msgstr "コマンド@kbd{C-x r t} (@code{string-rectangle})は、矩形リージョンの各行を文字列で置き換えます。文字列の幅は矩形領域と同じ幅である必要はありません。矩形領域の後ろのテキストは、文字列の幅が少ないときは左に、文字列の幅が大きいときは右にシフトされます。"
 
 #. type: findex
 #: killing.texi.orig:842
 #, no-wrap
 msgid "string-insert-rectangle"
-msgstr ""
+msgstr "string-insert-rectangle"
 
 #. type: Plain text
 #: killing.texi.orig:846
 msgid ""
-"The command @kbd{M-x string-insert-rectangle} is similar to "
-"@code{string-rectangle}, but inserts the string on each line, shifting the "
-"original text to the right."
-msgstr ""
+"The command @kbd{M-x string-insert-rectangle} is similar to @code{string-"
+"rectangle}, but inserts the string on each line, shifting the original text "
+"to the right."
+msgstr "コマンド@kbd{M-x string-insert-rectangle}は、@code{string-rectangle}と同様ですが、各行に文字列を挿入し、元の文字列は右にシフトされます。\n"
 
 #. type: findex
 #: killing.texi.orig:847
 #, no-wrap
 msgid "rectangle-mark-mode"
-msgstr ""
+msgstr "rectangle-mark-mode"
 
 #. type: Plain text
 #: killing.texi.orig:855
@@ -2048,32 +2044,32 @@ msgid ""
 "the region (@kbd{C-f}, @kbd{C-n} etc.) do so in a rectangular fashion, and "
 "killing and yanking operate on the rectangle.  @xref{Killing}.  The mode "
 "persists only as long as the region is active."
-msgstr ""
+msgstr "コマンド@kbd{C-x @key{SPC}} (@code{rectangle-mark-mode})は、矩形リージョンをハイライトするか、標準のリージョンをハイライトするかを切り替えます(最初にリージョンをアクティブにする必要があります)。このモードが有効な場合、@kbd{C-f}、@kbd{C-n}などのコマンドは矩形領域に合ったやり方でリージョンのサイズを変更し、kill、yankは矩形領域を処理します。@ref{Killing}を参照してください。このモードはリージョンがアクティブな間だけ持続します。"
 
 #. type: vindex
 #: killing.texi.orig:858 killing.texi.orig:859
 #, no-wrap
 msgid "cua-mode"
-msgstr ""
+msgstr "cua-mode"
 
 #. type: cindex
 #: killing.texi.orig:860
 #, no-wrap
 msgid "CUA key bindings"
-msgstr ""
+msgstr "CUA key bindings"
 
 #. type: vindex
 #: killing.texi.orig:861
 #, no-wrap
 msgid "cua-enable-cua-keys"
-msgstr ""
+msgstr "cua-enable-cua-keys"
 
 #. type: Plain text
 #: killing.texi.orig:865
 msgid ""
 "The command @kbd{M-x cua-mode} sets up key bindings that are compatible with "
 "the Common User Access (CUA) system used in many other applications."
-msgstr ""
+msgstr "コマンド@kbd{M-x cua-mode}は、多くのアプリケーションで使われている、CUA(Common User Access)互換のキーバンドをセットアップします。"
 
 #. type: Plain text
 #: killing.texi.orig:873
@@ -2085,16 +2081,16 @@ msgid ""
 "standard Emacs commands like @kbd{C-x C-c} still work.  Note that this means "
 "the variable @code{mark-even-if-inactive} has no effect for @kbd{C-x} and "
 "@kbd{C-c} (@pxref{Using Region})."
-msgstr ""
+msgstr "CUAモードが有効な場合、@kbd{C-x}、@kbd{C-c}、@kbd{C-v}、@kbd{C-z}などのキーは、カット(kill)、コピー、ペースト(yank)、アンドウのコマンドを呼び出します。@kbd{C-x}と@kbd{C-c}によるカットとコピーは、リージョンがアクティブなときだけ処理されます。リージョンが非アクティブのときはプレフィクスキーとして動作するので、@kbd{C-x C-c}のような標準のEmacsコマンドは正常に機能します。変数@code{mark-even-if-inactive}は@kbd{C-x}と@kbd{C-c}に影響を及ぼさないことに注意してください(@ref{Using Region}を参照してください)。"
 
 #. type: Plain text
 #: killing.texi.orig:878
 msgid ""
 "To enter an Emacs command like @kbd{C-x C-f} while the mark is active, use "
 "one of the following methods: either hold @kbd{Shift} together with the "
-"prefix key, e.g., @kbd{S-C-x C-f}, or quickly type the prefix key twice, "
-"e.g., @kbd{C-x C-x C-f}."
-msgstr ""
+"prefix key, e.g., @kbd{S-C-x C-f}, or quickly type the prefix key twice, e."
+"g., @kbd{C-x C-x C-f}."
+msgstr "マークがアクティブのときに@kbd{C-x C-f}のようなEmacsコマンドを入力するには、@kbd{Shift}を押しながらプレフィクスキーを押す(例 @kbd{S-C-x C-f})か、プレフィクスキーを素早く2回タイプ(例 @kbd{C-x C-x C-f})します。"
 
 #. type: Plain text
 #: killing.texi.orig:882
@@ -2102,21 +2098,22 @@ msgid ""
 "To disable the overriding of standard Emacs binding by CUA mode, while "
 "retaining the other features of CUA mode described below, set the variable "
 "@code{cua-enable-cua-keys} to @code{nil}."
-msgstr ""
+msgstr "CUAモードがEmacs標準のキーバインドをオーバーライドするのを無効にしつつ、以下で説明するそれ以外のCUAモードの機能は使う場合は、変数@code{cua-enable-cua-keys}に@code{nil}をセットしてください。"
 
 #. type: Plain text
 #: killing.texi.orig:886
 msgid ""
-"CUA mode by default activates Delete-Selection mode (@pxref{Mouse Commands})  "
-"so that typed text replaces the active region.  To use CUA without this "
-"behavior, set the variable @code{cua-delete-selection} to @code{nil}."
-msgstr ""
+"CUA mode by default activates Delete-Selection mode (@pxref{Mouse "
+"Commands})  so that typed text replaces the active region.  To use CUA "
+"without this behavior, set the variable @code{cua-delete-selection} to "
+"@code{nil}."
+msgstr "CUA モードはデフォルトでDelete-Selectionモード(@ref{Mouse Commands}を参照してください)を有効にするので、アクティブなリージョンがあるときテキストをタイプすると、そのテキストで置き換えられます。CUAモードでこれを無効にするには、変数@code{cua-delete-selection}を@code{nil}にセットしてください。"
 
 #. type: cindex
 #: killing.texi.orig:887
 #, no-wrap
 msgid "rectangle highlighting"
-msgstr ""
+msgstr "rectangle highlighting"
 
 #. type: Plain text
 #: killing.texi.orig:895
@@ -2128,7 +2125,7 @@ msgid ""
 "so you can easily expand it in any direction.  Normal text you type is "
 "inserted to the left or right of each line in the rectangle (on the same "
 "side as the cursor)."
-msgstr ""
+msgstr "CUAモードは矩形領域を明白にハイライトする、強化された矩形領域サポートを提供します。@kbd{C-@key{RET}}を使うことにより矩形領域の選択が開始され、移動コマンドを使って拡張したり、@kbd{C-x}と@kbd{C-c}で切り取りとコピーができます。@key{RET}により、矩形領域の四隅に時計方向へカーソルを移動させるので、任意の方向に簡単に領域を拡張できます。タイプされた通常のテキストは、矩形領域の各行の左か右(カーソルのある側)に挿入されます。"
 
 #. type: Plain text
 #: killing.texi.orig:899
@@ -2136,7 +2133,7 @@ msgid ""
 "You can use this rectangle support without activating CUA by calling the "
 "@code{cua-rectangle-mark-mode} command.  But see also the standard "
 "@code{rectangle-mark-mode}.  @xref{Rectangles}."
-msgstr ""
+msgstr "この矩形領域サポートは、@code{cua-rectangle-mark-mode}コマンドを呼び出すことにより、CUAモードを有効にせずに使うこともできます。しかし標準の@code{rectangle-mark-mode}も参照してください。@xref{Rectangles}を参照してください。"
 
 #. type: Plain text
 #: killing.texi.orig:904
@@ -2145,13 +2142,13 @@ msgid ""
 "by providing a one-digit numeric prefix to the kill, copy, and yank "
 "commands, e.g., @kbd{C-1 C-c} copies the region into register @code{1}, and "
 "@kbd{C-2 C-v} yanks the contents of register @code{2}."
-msgstr ""
+msgstr "CUAモードでは、テキストや矩形領域を簡単にレジスターに保存したり、取り出すことができます。これは1桁の数引数をkill、copy、yankコマンドに指定します。たとえば@kbd{C-1 C-c}はリージョンをレジスター@code{1}にコピーし、@kbd{C-2 C-v}はレジスター@code{2}の内容をyankします。"
 
 #. type: cindex
 #: killing.texi.orig:905
 #, no-wrap
 msgid "global mark"
-msgstr ""
+msgstr "global mark"
 
 #. type: Plain text
 #: killing.texi.orig:912
@@ -2161,7 +2158,7 @@ msgid ""
 "on and off.  When the global mark is on, all text that you kill or copy is "
 "automatically inserted at the global mark, and text you type is inserted at "
 "the global mark rather than at the current position."
-msgstr ""
+msgstr "CUAモードは、バッファー間での簡単にテキストを移動したりコピーするためのグローバルマーク機能も提供します。@kbd{C-S-@key{SPC}}を使って、グローバルマークのオンとオフが切り替えられます。グローバルマークがオンのときは、killまたはコピーされたすべてのテキストは自動的にグローバルマークの位置に挿入され、タイプしたテキストも現在のカーソル位置ではなくグローバルマークに挿入されます。"
 
 #. type: Plain text
 #: killing.texi.orig:918
@@ -2171,4 +2168,4 @@ msgid ""
 "the words you want in the list, mark it (e.g., with @kbd{S-M-f}), copy it to "
 "the list with @kbd{C-c} or @kbd{M-w}, and insert a newline after the word in "
 "the target list by pressing @key{RET}."
-msgstr ""
+msgstr "たとえば複数のバッファーから単語をコピーして単語リストを作るには、単語リストを作るバッファーにグローバルマークをセットします。次にリストにしたい単語をマーク(@kbd{S-M-f}など)してから、@kbd{C-c}か@kbd{M-w}でリストにコピーします。そして@key{RET}でリストにコピーされた単語の後ろに改行を挿入すればよいのです。"
