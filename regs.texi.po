@@ -3,30 +3,29 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-10-13 21:22+0900\n"
+"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: chapter
 #: regs.texi.orig:5 regs.texi.orig:6
 #, no-wrap
 msgid "Registers"
-msgstr ""
+msgstr "Registers"
 
 #. type: cindex
 #: regs.texi.orig:7
 #, no-wrap
 msgid "registers"
-msgstr ""
+msgstr "registers"
 
 #. type: Plain text
 #: regs.texi.orig:14
@@ -36,7 +35,7 @@ msgid ""
 "rectangle in a register, you can copy it into the buffer once, or many "
 "times; once you save a position in a register, you can jump back to that "
 "position once, or many times."
-msgstr ""
+msgstr "Emacsの@dfn{レジスター(registers)}は、テキストや矩形領域、位置、その他、後で使うものを保存するための小部屋です。一度テキストや矩形領域をレジスターに保存すれば、それをバッファーに何度もコピーできます。一度場所をレジスターに保存すれば、何度でもその場所にジャンプして戻ることができます。"
 
 #. type: Plain text
 #: regs.texi.orig:19
@@ -45,13 +44,13 @@ msgid ""
 "denote by @var{r}; @var{r} can be a letter (such as @samp{a})  or a number "
 "(such as @samp{1}); case matters, so register @samp{a} is not the same as "
 "register @samp{A}."
-msgstr ""
+msgstr "各レジスターは1文字からなる名前があり、ここでは@var{r}と表記することにします。@var{r}には、英字(@samp{a}など)または数字(@samp{1}など)を使用できます。大文字小文字は区別されるので、レジスター@samp{a}とレジスター@samp{A}は同じではありません。"
 
 #. type: findex
 #: regs.texi.orig:20
 #, no-wrap
 msgid "view-register"
-msgstr ""
+msgstr "view-register"
 
 #. type: Plain text
 #: regs.texi.orig:26
@@ -61,41 +60,40 @@ msgid ""
 "Whatever you store in a register remains there until you store something "
 "else in that register.  To see what register @var{r} contains, use @kbd{M-x "
 "view-register}:"
-msgstr ""
+msgstr "レジスターには位置、テキスト、矩形領域、数字、ウィンドウの設定、ファイル名が保存できますが、一度に保存できるのは1つです。レジスターに何か保存すると、他の何かをそのレジスターに保存するまで残ります。レジスター@var{r}に何が含まれているのか見るには。@kbd{M-x view-register}を使います:"
 
 #. type: item
 #: regs.texi.orig:28
 #, no-wrap
 msgid "M-x view-register @key{RET} @var{r}"
-msgstr ""
+msgstr "M-x view-register @key{RET} @var{r}"
 
 #. type: table
 #: regs.texi.orig:30
 msgid "Display a description of what register @var{r} contains."
-msgstr ""
+msgstr "レジスター@var{r}に何が含まれるかの説明を表示します。"
 
 #. type: vindex
 #: regs.texi.orig:32
 #, no-wrap
 msgid "register-preview-delay"
-msgstr ""
+msgstr "register-preview-delay"
 
 #. type: cindex
 #: regs.texi.orig:33
 #, no-wrap
 msgid "preview of registers"
-msgstr ""
+msgstr "preview of registers"
 
 #. type: Plain text
 #: regs.texi.orig:40
 msgid ""
 "All of the commands that prompt for a register will display a ``preview'' "
 "window that lists the existing registers (if there are any) after a short "
-"delay.  To change the length of the delay, customize "
-"@code{register-preview-delay}.  To prevent this display, set that option to "
-"@code{nil}.  You can explicitly request a preview window by pressing "
-"@kbd{C-h} or @key{F1}."
-msgstr ""
+"delay.  To change the length of the delay, customize @code{register-preview-"
+"delay}.  To prevent this display, set that option to @code{nil}.  You can "
+"explicitly request a preview window by pressing @kbd{C-h} or @key{F1}."
+msgstr "レジスター名の入力を求めるコマンドはすべて、既存のレジスターを一覧する``プレビュー(preview)''ウィンドウを遅延表示します。遅延の長さは@code{register-preview-delay}でカスタマイズできます。遅延を無効にするには、@code{nil}をセットしてください。この場合、@kbd{C-h}か@key{F1}で、明示的にプレビューウィンドウを要求できます。"
 
 #. type: Plain text
 #: regs.texi.orig:45
@@ -103,145 +101,145 @@ msgid ""
 "@dfn{Bookmarks} record files and positions in them, so you can return to "
 "those positions when you look at the file again.  Bookmarks are similar in "
 "spirit to registers, so they are also documented in this chapter."
-msgstr ""
+msgstr "@dfn{ブックマーク(Bookmarks)}はファイルと位置を記録するので、ファイルを再び見るときは記録された位置から閲覧できます。ブックマークも本質的にレジスター同じなので、このチャプターに記載します。"
 
 #. type: node
 #: regs.texi.orig:55 regs.texi.orig:57
 #, no-wrap
 msgid "Position Registers"
-msgstr ""
+msgstr "Position Registers"
 
 #. type: menuentry
 #: regs.texi.orig:55
 msgid "Saving positions in registers."
-msgstr ""
+msgstr "位置をレジスターに保存する。"
 
 #. type: node
 #: regs.texi.orig:55 regs.texi.orig:89
 #, no-wrap
 msgid "Text Registers"
-msgstr ""
+msgstr "Text Registers"
 
 #. type: menuentry
 #: regs.texi.orig:55
 msgid "Saving text in registers."
-msgstr ""
+msgstr "テキストをレジスターに保存する。"
 
 #. type: node
 #: regs.texi.orig:55 regs.texi.orig:156
 #, no-wrap
 msgid "Rectangle Registers"
-msgstr ""
+msgstr "Rectangle Registers"
 
 #. type: menuentry
 #: regs.texi.orig:55
 msgid "Saving rectangles in registers."
-msgstr ""
+msgstr "矩形領域をレジスターに保存する。"
 
 #. type: node
 #: regs.texi.orig:55 regs.texi.orig:180
 #, no-wrap
 msgid "Configuration Registers"
-msgstr ""
+msgstr "Configuration Registers"
 
 #. type: menuentry
 #: regs.texi.orig:55
 msgid "Saving window configurations in registers."
-msgstr ""
+msgstr "ウィンドウの設定をレジスターに保存する。"
 
 #. type: node
 #: regs.texi.orig:55 regs.texi.orig:208
 #, no-wrap
 msgid "Number Registers"
-msgstr ""
+msgstr "Number Registers"
 
 #. type: menuentry
 #: regs.texi.orig:55
 msgid "Numbers in registers."
-msgstr ""
+msgstr "レジスターの中の数字。"
 
 #. type: node
 #: regs.texi.orig:55 regs.texi.orig:237
 #, no-wrap
 msgid "File Registers"
-msgstr ""
+msgstr "File Registers"
 
 #. type: menuentry
 #: regs.texi.orig:55
 msgid "File names in registers."
-msgstr ""
+msgstr "レジスターの中のファイル名。"
 
 #. type: section
 #: regs.texi.orig:55 regs.texi.orig:264 regs.texi.orig:265
 #, no-wrap
 msgid "Keyboard Macro Registers"
-msgstr ""
+msgstr "Keyboard Macro Registers"
 
 #. type: menuentry
 #: regs.texi.orig:55
 msgid "Keyboard macros in registers."
-msgstr ""
+msgstr "レジスターの中のキーボードマクロ。"
 
 #. type: section
 #: regs.texi.orig:55 regs.texi.orig:281 regs.texi.orig:282
 #, no-wrap
 msgid "Bookmarks"
-msgstr ""
+msgstr "Bookmarks"
 
 #. type: menuentry
 #: regs.texi.orig:55
 msgid "Bookmarks are like registers, but persistent."
-msgstr ""
+msgstr "レジスターと似ているが永続性があるブックマーク。"
 
 #. type: section
 #: regs.texi.orig:58
 #, no-wrap
 msgid "Saving Positions in Registers"
-msgstr ""
+msgstr "Saving Positions in Registers"
 
 #. type: cindex
 #: regs.texi.orig:59
 #, no-wrap
 msgid "saving position in a register"
-msgstr ""
+msgstr "saving position in a register"
 
 #. type: item
 #: regs.texi.orig:62
 #, no-wrap
 msgid "C-x r @key{SPC} @var{r}"
-msgstr ""
+msgstr "C-x r @key{SPC} @var{r}"
 
 #. type: table
 #: regs.texi.orig:65
 msgid ""
 "Record the position of point and the current buffer in register @var{r} "
 "(@code{point-to-register})."
-msgstr ""
+msgstr "現在のバッファーのポイント位置をレジスター@var{r}に記録します(@code{point-to-register})。"
 
 #. type: item
 #: regs.texi.orig:65
 #, no-wrap
 msgid "C-x r j @var{r}"
-msgstr ""
+msgstr "C-x r j @var{r}"
 
 #. type: table
 #: regs.texi.orig:68
 msgid ""
-"Jump to the position and buffer saved in register @var{r} "
-"(@code{jump-to-register})."
-msgstr ""
+"Jump to the position and buffer saved in register @var{r} (@code{jump-to-"
+"register})."
+msgstr "レジスター@var{r}に記録されたバッファーの位置にジャンプします(@code{jump-to-register})。"
 
 #. type: kindex
 #: regs.texi.orig:70
 #, no-wrap
 msgid "C-x r SPC"
-msgstr ""
+msgstr "C-x r SPC"
 
 #. type: findex
 #: regs.texi.orig:71
 #, no-wrap
 msgid "point-to-register"
-msgstr ""
+msgstr "point-to-register"
 
 #. type: Plain text
 #: regs.texi.orig:76
@@ -250,19 +248,19 @@ msgid ""
 "character @kbd{@var{r}}, saves both the position of point and the current "
 "buffer in register @var{r}.  The register retains this information until you "
 "store something else in it."
-msgstr ""
+msgstr "@kbd{C-x r @key{SPC}} (@code{point-to-register})と、それに続けて文字@kbd{@var{r}}をタイプすると、ポイント位置と現在のバッファーの両方をレジスター@var{r}も保存します。レジスターは他の何かが保存されるまでこの情報を保持します。"
 
 #. type: kindex
 #: regs.texi.orig:77
 #, no-wrap
 msgid "C-x r j"
-msgstr ""
+msgstr "C-x r j"
 
 #. type: findex
 #: regs.texi.orig:78
 #, no-wrap
 msgid "jump-to-register"
-msgstr ""
+msgstr "jump-to-register"
 
 #. type: Plain text
 #: regs.texi.orig:83
@@ -271,7 +269,7 @@ msgid ""
 "register @var{r}, and moves point to the recorded position.  The contents of "
 "the register are not changed, so you can jump to the saved position any "
 "number of times."
-msgstr ""
+msgstr "コマンド@kbd{C-x r j @var{r}}は、@var{r}に記録されたバッファーに切り替えて、記録された位置にポイントを移動します。レジスターの内容は変わらないので、保存した位置に何度でもジャンプできます。"
 
 #. type: Plain text
 #: regs.texi.orig:88
@@ -280,19 +278,19 @@ msgid ""
 "saved from has been killed, @kbd{C-x r j} tries to create the buffer again "
 "by visiting the same file.  Of course, this works only for buffers that were "
 "visiting files."
-msgstr ""
+msgstr "@kbd{C-x r j}を使って保存した位置に移動するとき、保存されたバッファがkillされていた場合、@kbd{C-x r j}は同じファイルをvisitしてバッファーを生成しようと試みます。もちろんこれはファイルをvisitしたバッファーだけの動作です。"
 
 #. type: section
 #: regs.texi.orig:90
 #, no-wrap
 msgid "Saving Text in Registers"
-msgstr ""
+msgstr "Saving Text in Registers"
 
 #. type: cindex
 #: regs.texi.orig:91
 #, no-wrap
 msgid "saving text in a register"
-msgstr ""
+msgstr "saving text in a register"
 
 #. type: Plain text
 #: regs.texi.orig:97
@@ -301,46 +299,46 @@ msgid ""
 "may be inconvenient to yank it from the kill ring, since each subsequent "
 "kill moves that entry further down the ring.  An alternative is to store the "
 "text in a register and later retrieve it."
-msgstr ""
+msgstr "同じテキストのコピーを何回も挿入したいとき、killリングからyankするのは不便です。なぜなら何かkillするたびに、そのエントリーはリングの下の方へ移動してしまうからです。代替として、テキストをレジスターに保存して、後で取り出す方法があります。"
 
 #. type: item
 #: regs.texi.orig:99
 #, no-wrap
 msgid "C-x r s @var{r}"
-msgstr ""
+msgstr "C-x r s @var{r}"
 
 #. type: table
 #: regs.texi.orig:101
 msgid "Copy region into register @var{r} (@code{copy-to-register})."
-msgstr ""
+msgstr "リージョンをレジスター@var{r}にコピーします(@code{copy-to-register})。"
 
 #. type: item
 #: regs.texi.orig:101 regs.texi.orig:171 regs.texi.orig:228
 #, no-wrap
 msgid "C-x r i @var{r}"
-msgstr ""
+msgstr "C-x r i @var{r}"
 
 #. type: table
 #: regs.texi.orig:103
 msgid "Insert text from register @var{r} (@code{insert-register})."
-msgstr ""
+msgstr "レジスター@var{r}からテキストを挿入します(@code{insert-register})。"
 
 #. type: item
 #: regs.texi.orig:103
 #, no-wrap
 msgid "M-x append-to-register @key{RET} @var{r}"
-msgstr ""
+msgstr "M-x append-to-register @key{RET} @var{r}"
 
 #. type: table
 #: regs.texi.orig:105
 msgid "Append region to text in register @var{r}."
-msgstr ""
+msgstr "リージョンをレジスター@var{r}のテキストに追加します。"
 
 #. type: kindex
 #: regs.texi.orig:106 regs.texi.orig:222
 #, no-wrap
 msgid "C-x r +"
-msgstr ""
+msgstr "C-x r +"
 
 #. type: table
 #: regs.texi.orig:111
@@ -349,30 +347,30 @@ msgid ""
 "(@code{increment-register}) to append to that register.  Note that command "
 "@kbd{C-x r +} behaves differently if @var{r} contains a number.  "
 "@xref{Number Registers}."
-msgstr ""
+msgstr "レジスター@var{r}の内容がテキストの場合、そのレジスターに追加するのに@kbd{C-x r +} (@code{increment-register})も使用できます。レジスター@var{r}に数値が含まれている場合、コマンド@kbd{C-x r +}は違う動作をすることに注意してください。@ref{Number Registers}を参照してください。"
 
 #. type: item
 #: regs.texi.orig:112
 #, no-wrap
 msgid "M-x prepend-to-register @key{RET} @var{r}"
-msgstr ""
+msgstr "M-x prepend-to-register @key{RET} @var{r}"
 
 #. type: table
 #: regs.texi.orig:114
 msgid "Prepend region to text in register @var{r}."
-msgstr ""
+msgstr "リージョンをレジスター@var{r}の先頭に追加します。"
 
 #. type: kindex
 #: regs.texi.orig:116
 #, no-wrap
 msgid "C-x r s"
-msgstr ""
+msgstr "C-x r s"
 
 #. type: findex
 #: regs.texi.orig:117
 #, no-wrap
 msgid "copy-to-register"
-msgstr ""
+msgstr "copy-to-register"
 
 #. type: Plain text
 #: regs.texi.orig:125
@@ -384,19 +382,19 @@ msgid ""
 "prefix argument, copies the text into register @var{r} and deletes the text "
 "from the buffer as well; you can think of this as ``moving'' the region text "
 "into the register."
-msgstr ""
+msgstr "@kbd{C-x r s @var{r}}は、リージョンのテキストのコピーを、@var{r}という名前のレジスターに保存します。マークが非アクティブのとき、Emacsはまず最後にセットされたマークをアクティブにします。マークはこのコマンドの最後に非アクティブになります。@ref{Mark}を参照してください。同じコマンドにプレフィクス引数を指定した@kbd{C-u C-x r s @var{r}}は、テキストのコピーをレジスター@var{r}に保存してから、バッファーのテキストを削除します。これはリージョンのテキストを、レジスターに``移動''したと考えることができます。"
 
 #. type: findex
 #: regs.texi.orig:126
 #, no-wrap
 msgid "append-to-register"
-msgstr ""
+msgstr "append-to-register"
 
 #. type: findex
 #: regs.texi.orig:127
 #, no-wrap
 msgid "prepend-to-register"
-msgstr ""
+msgstr "prepend-to-register"
 
 #. type: Plain text
 #: regs.texi.orig:135
@@ -407,24 +405,24 @@ msgid ""
 "the register.  The command @code{prepend-to-register} is similar, except "
 "that it @emph{prepends} the region text to the text in the register instead "
 "of @emph{appending} it."
-msgstr ""
+msgstr "@kbd{M-x append-to-register @key{RET} @var{r}}は、リージョンのテキストのコピーを、@var{r}という名前のレジスターにすでに保存されているテキストに追加します。プレフィクス引数を指定した場合、レジスターに追加した後にリージョンを削除します。コマンド@code{prepend-to-register}も同様ですが、これはリージョンのテキストをレジスターのテキストの@emph{最後}ではなく@emph{先頭}に追加します。"
 
 #. type: vindex
 #: regs.texi.orig:136
 #, no-wrap
 msgid "register-separator"
-msgstr ""
+msgstr "register-separator"
 
 #. type: Plain text
 #: regs.texi.orig:143
 msgid ""
 "When you are collecting text using @code{append-to-register} and "
 "@code{prepend-to-register}, you may want to separate individual collected "
-"pieces using a separator.  In that case, configure a "
-"@code{register-separator} and store the separator text in to that register.  "
-"For example, to get double newlines as text separator during the collection "
-"process, you can use the following setting."
-msgstr ""
+"pieces using a separator.  In that case, configure a @code{register-"
+"separator} and store the separator text in to that register.  For example, "
+"to get double newlines as text separator during the collection process, you "
+"can use the following setting."
+msgstr "@code{append-to-register}と@code{prepend-to-register}を使ってテキストを集める場合、セパレーターを使って個々に集めたテキストを分割したい場合があります。そのようなときは@code{register-separator}を構成して、セパレーター文字列をそのレジスターに保存します。たとえばテキストを収集する過程で、個々のテキストを2つの改行で分けたい場合、以下の設定を使うことができます。"
 
 #. type: example
 #: regs.texi.orig:147
@@ -433,18 +431,20 @@ msgid ""
 "(setq register-separator ?+)\n"
 "(set-register register-separator \"\\n\\n\")\n"
 msgstr ""
+"(setq register-separator ?+)\n"
+"(set-register register-separator \"\\n\\n\")\n"
 
 #. type: kindex
 #: regs.texi.orig:149
 #, no-wrap
 msgid "C-x r i"
-msgstr ""
+msgstr "C-x r i"
 
 #. type: findex
 #: regs.texi.orig:150
 #, no-wrap
 msgid "insert-register"
-msgstr ""
+msgstr "insert-register"
 
 #. type: Plain text
 #: regs.texi.orig:155
@@ -453,19 +453,19 @@ msgid ""
 "Normally it leaves point before the text and sets the mark after, without "
 "activating it.  With a numeric argument, it instead puts point after the "
 "text and the mark before."
-msgstr ""
+msgstr "@kbd{C-x r i @var{r}}は、レジスター@var{r}のテキストをバッファーに挿入します。通常はポイントをテキストの前に置き、非アクティブのマークをテキストの後ろにセットします。数引数を指定したときは、ポイントをテキストの後ろ、マークをテキストの前にセットします。"
 
 #. type: section
 #: regs.texi.orig:157
 #, no-wrap
 msgid "Saving Rectangles in Registers"
-msgstr ""
+msgstr "Saving Rectangles in Registers"
 
 #. type: cindex
 #: regs.texi.orig:158
 #, no-wrap
 msgid "saving rectangle in a register"
-msgstr ""
+msgstr "saving rectangle in a register"
 
 #. type: Plain text
 #: regs.texi.orig:163
@@ -473,40 +473,39 @@ msgid ""
 "A register can contain a rectangle instead of linear text.  "
 "@xref{Rectangles}, for basic information on how to specify a rectangle in "
 "the buffer."
-msgstr ""
+msgstr "レジスターには線形のテキストだけでなく、矩形領域も保存できます。バッファーで矩形領域を指定する方法は、@ref{Rectangles}を参照してください。"
 
 #. type: findex
 #: regs.texi.orig:165
 #, no-wrap
 msgid "copy-rectangle-to-register"
-msgstr ""
+msgstr "copy-rectangle-to-register"
 
 #. type: kindex
 #: regs.texi.orig:166
 #, no-wrap
 msgid "C-x r r"
-msgstr ""
+msgstr "C-x r r"
 
 #. type: item
 #: regs.texi.orig:167
 #, no-wrap
 msgid "C-x r r @var{r}"
-msgstr ""
+msgstr "C-x r r @var{r}"
 
 #. type: table
 #: regs.texi.orig:171
 msgid ""
-"Copy the region-rectangle into register @var{r} "
-"(@code{copy-rectangle-to-register}).  With numeric argument, delete it as "
-"well."
-msgstr ""
+"Copy the region-rectangle into register @var{r} (@code{copy-rectangle-to-"
+"register}).  With numeric argument, delete it as well."
+msgstr "矩形リージョンをレジスター@var{r}にコピーします(@code{copy-rectangle-to-register})。数引数を指定するとコピー後に矩形リージョンを削除します。"
 
 #. type: table
 #: regs.texi.orig:174
 msgid ""
 "Insert the rectangle stored in register @var{r} (if it contains a rectangle) "
 "(@code{insert-register})."
-msgstr ""
+msgstr "レジスター@var{r}に矩形リージョンが保存されている場合、それを挿入します(@code{insert-register})。"
 
 #. type: Plain text
 #: regs.texi.orig:179
@@ -514,43 +513,43 @@ msgid ""
 "The @kbd{C-x r i @var{r}} (@code{insert-register}) command, previously "
 "documented in @ref{Text Registers}, inserts a rectangle rather than a text "
 "string, if the register contains a rectangle."
-msgstr ""
+msgstr "前に@ref{Text Registers}でも説明した@kbd{C-x r i @var{r}} (@code{insert-register})コマンドは、レジスターに矩形領域が保存されているときはテキストではなく矩形領域を挿入します。"
 
 #. type: section
 #: regs.texi.orig:181
 #, no-wrap
 msgid "Saving Window Configurations in Registers"
-msgstr ""
+msgstr "Saving Window Configurations in Registers"
 
 #. type: cindex
 #: regs.texi.orig:182
 #, no-wrap
 msgid "saving window configuration in a register"
-msgstr ""
+msgstr "saving window configuration in a register"
 
 #. type: findex
 #: regs.texi.orig:184
 #, no-wrap
 msgid "window-configuration-to-register"
-msgstr ""
+msgstr "window-configuration-to-register"
 
 #. type: findex
 #: regs.texi.orig:185
 #, no-wrap
 msgid "frameset-to-register"
-msgstr ""
+msgstr "frameset-to-register"
 
 #. type: kindex
 #: regs.texi.orig:186
 #, no-wrap
 msgid "C-x r w"
-msgstr ""
+msgstr "C-x r w"
 
 #. type: kindex
 #: regs.texi.orig:187
 #, no-wrap
 msgid "C-x r f"
-msgstr ""
+msgstr "C-x r f"
 
 #. type: Plain text
 #: regs.texi.orig:192
@@ -559,33 +558,33 @@ msgid ""
 "or even the configuration of all windows in all frames, and restore the "
 "configuration later.  @xref{Windows}, for information about window "
 "configurations."
-msgstr ""
+msgstr "選択されたフレームのウィンドウの設定や、すべてのフレームのすべてのウィンドウの設定もレジスターに保存して、後で設定を復元することができます。ウィンドウの設定については、@ref{Windows}を参照してください。"
 
 #. type: item
 #: regs.texi.orig:194
 #, no-wrap
 msgid "C-x r w @var{r}"
-msgstr ""
+msgstr "C-x r w @var{r}"
 
 #. type: table
 #: regs.texi.orig:197
 msgid ""
 "Save the state of the selected frame's windows in register @var{r} "
 "(@code{window-configuration-to-register})."
-msgstr ""
+msgstr "選択されたフレームのウィンドウの設定を、レジスター@var{r}に保存します(@code{window-configuration-to-register})。"
 
 #. type: item
 #: regs.texi.orig:197
 #, no-wrap
 msgid "C-x r f @var{r}"
-msgstr ""
+msgstr "C-x r f @var{r}"
 
 #. type: table
 #: regs.texi.orig:200
 msgid ""
 "Save the state of all frames, including all their windows, in register "
 "@var{r} (@code{frameset-to-register})."
-msgstr ""
+msgstr "すべてのフレームおよびフレームに含まれるすべてのウィンドウの状態を、レジスター@var{r}に保存します(@code{frameset-to-register})。"
 
 #. type: Plain text
 #: regs.texi.orig:207
@@ -595,19 +594,19 @@ msgid ""
 "frame configuration, any existing frames not included in the configuration "
 "become invisible.  If you wish to delete these frames instead, use @kbd{C-u "
 "C-x r j @var{r}}."
-msgstr ""
+msgstr "@kbd{C-x r j @var{r}}を使うと、ウィンドウまたはフレームの設定を復元できます。これはカーソル位置を復元するコマンドと同じです。フレームの設定を復元するとき、設定に含まれていないフレームは非表示になります。もしこれらのフレームを削除したいときは、かわりに@kbd{C-u C-x r j @var{r}}を使います。"
 
 #. type: section
 #: regs.texi.orig:209
 #, no-wrap
 msgid "Keeping Numbers in Registers"
-msgstr ""
+msgstr "Keeping Numbers in Registers"
 
 #. type: cindex
 #: regs.texi.orig:210
 #, no-wrap
 msgid "saving number in a register"
-msgstr ""
+msgstr "saving number in a register"
 
 #. type: Plain text
 #: regs.texi.orig:215
@@ -615,42 +614,42 @@ msgid ""
 "There are commands to store a number in a register, to insert the number in "
 "the buffer in decimal, and to increment it.  These commands can be useful in "
 "keyboard macros (@pxref{Keyboard Macros})."
-msgstr ""
+msgstr "数字をレジスターに保存して、その数字(10進)をバッファーに挿入したり、増加させるコマンドがあります。これらのコマンドはキーボードマクロで使うと便利です(@ref{Keyboard Macros}を参照してください)。"
 
 #. type: item
 #: regs.texi.orig:217
 #, no-wrap
 msgid "C-u @var{number} C-x r n @var{r}"
-msgstr ""
+msgstr "C-u @var{number} C-x r n @var{r}"
 
 #. type: kindex
 #: regs.texi.orig:218
 #, no-wrap
 msgid "C-x r n"
-msgstr ""
+msgstr "C-x r n"
 
 #. type: findex
 #: regs.texi.orig:219
 #, no-wrap
 msgid "number-to-register"
-msgstr ""
+msgstr "number-to-register"
 
 #. type: table
 #: regs.texi.orig:221
 msgid "Store @var{number} into register @var{r} (@code{number-to-register})."
-msgstr ""
+msgstr "@var{number}をレジスター@var{r}に保存します(@code{number-to-register})。"
 
 #. type: item
 #: regs.texi.orig:221
 #, no-wrap
 msgid "C-u @var{number} C-x r + @var{r}"
-msgstr ""
+msgstr "C-u @var{number} C-x r + @var{r}"
 
 #. type: findex
 #: regs.texi.orig:223
 #, no-wrap
 msgid "increment-register"
-msgstr ""
+msgstr "increment-register"
 
 #. type: table
 #: regs.texi.orig:228
@@ -658,12 +657,12 @@ msgid ""
 "If @var{r} contains a number, increment the number in that register by "
 "@var{number}.  Note that command @kbd{C-x r +} (@code{increment-register}) "
 "behaves differently if @var{r} contains text.  @xref{Text Registers}."
-msgstr ""
+msgstr "@var{r}に数字が保存しているときは、レジスターの数字を@var{number}だけ増加させます。コマンド@kbd{C-x r +} (@code{increment-register})は、@var{r}にテキストが保存されているときは異なる動作をすることに注意してください。@ref{Text Registers}を参照してください。"
 
 #. type: table
 #: regs.texi.orig:230
 msgid "Insert the number from register @var{r} into the buffer."
-msgstr ""
+msgstr "レジスター@var{r}の数字をバッファーに挿入します。"
 
 #. type: Plain text
 #: regs.texi.orig:236
@@ -672,19 +671,19 @@ msgid ""
 "contents into the buffer.  @kbd{C-x r +} with no numeric argument increments "
 "the register value by 1; @kbd{C-x r n} with no numeric argument stores zero "
 "in the register."
-msgstr ""
+msgstr "@kbd{C-x r i}は、他のレジスターの内容をバッファーに挿入するコマンドと同じです。@kbd{C-x r +}に数字の引数を与えない場合、レジスターの値は1増加します。@kbd{C-x r n}に数字の引数を与えない場合、レジスターには0が保存されます。"
 
 #. type: section
 #: regs.texi.orig:238
 #, no-wrap
 msgid "Keeping File Names in Registers"
-msgstr ""
+msgstr "Keeping File Names in Registers"
 
 #. type: cindex
 #: regs.texi.orig:239
 #, no-wrap
 msgid "saving file name in a register"
-msgstr ""
+msgstr "saving file name in a register"
 
 #. type: Plain text
 #: regs.texi.orig:244
@@ -692,29 +691,29 @@ msgid ""
 "If you visit certain file names frequently, you can visit them more "
 "conveniently if you put their names in registers.  Here's the Lisp code used "
 "to put a file @var{name} into register @var{r}:"
-msgstr ""
+msgstr "特定の名前のファイルを頻繁にvisitする場合、その名前をレジスターにセットしておけば、より便利にファイルをvisitすることができます。以下は@var{name}というファイルをレジスター@var{r}にセットするLispコードです:"
 
 #. type: smallexample
 #: regs.texi.orig:247
 #, no-wrap
 msgid "(set-register @var{r} '(file . @var{name}))\n"
-msgstr ""
+msgstr "(set-register @var{r} '(file . @var{name}))\n"
 
 #. type: Plain text
 #: regs.texi.orig:252
 msgid "For example,"
-msgstr ""
+msgstr "たとえば"
 
 #. type: smallexample
 #: regs.texi.orig:255
 #, no-wrap
 msgid "(set-register ?z '(file . \"/gd/gnu/emacs/19.0/src/ChangeLog\"))\n"
-msgstr ""
+msgstr "(set-register ?z '(file . \"/gd/gnu/emacs/19.0/src/ChangeLog\"))\n"
 
 #. type: Plain text
 #: regs.texi.orig:259
 msgid "puts the file name shown in register @samp{z}."
-msgstr ""
+msgstr "はレジスター@samp{z}にファイル名をセットします。"
 
 #. type: Plain text
 #: regs.texi.orig:263
@@ -722,41 +721,40 @@ msgid ""
 "To visit the file whose name is in register @var{r}, type @kbd{C-x r j "
 "@var{r}}.  (This is the same command used to jump to a position or restore a "
 "frame configuration.)"
-msgstr ""
+msgstr "レジスター@var{r}に名前がセットされているファイルをvisitするには、@kbd{C-x r j @var{r}}とタイプします。これはある位置にジャンプしたり、フレームの設定を復元するのと同じコマンドです。"
 
 #. type: cindex
 #: regs.texi.orig:266
 #, no-wrap
 msgid "saving keyboard macro in a register"
-msgstr ""
+msgstr "saving keyboard macro in a register"
 
 #. type: cindex
 #: regs.texi.orig:267
 #, no-wrap
 msgid "keyboard macros, in registers"
-msgstr ""
+msgstr "keyboard macros, in registers"
 
 #. type: kindex
 #: regs.texi.orig:269
 #, no-wrap
 msgid "C-x C-k x"
-msgstr ""
+msgstr "C-x C-k x"
 
 #. type: findex
 #: regs.texi.orig:270
 #, no-wrap
 msgid "kmacro-to-register"
-msgstr ""
+msgstr "kmacro-to-register"
 
 #. type: Plain text
 #: regs.texi.orig:276
 msgid ""
 "If you need to execute a keyboard macro (@pxref{Keyboard Macros})  "
 "frequently, it is more convenient to put it in a register or save it "
-"(@pxref{Save Keyboard Macro}).  @kbd{C-x C-k x @var{r}} "
-"(@code{kmacro-to-register}) stores the last keyboard macro in register "
-"@var{r}."
-msgstr ""
+"(@pxref{Save Keyboard Macro}).  @kbd{C-x C-k x @var{r}} (@code{kmacro-to-"
+"register}) stores the last keyboard macro in register @var{r}."
+msgstr "あるキーボードマクロ(@ref{Keyboard Macros}を参照してください)を頻繁に実行する必要がある場合、それをレジスターにセットしたり保存することができればより便利でしょう(@ref{Save Keyboard Macro}を参照してください)。@kbd{C-x C-k x @var{r}} (@code{kmacro-to-register})は、最後のキーボードマクロをレジスター@var{r}に保存します。"
 
 #. type: Plain text
 #: regs.texi.orig:280
@@ -764,13 +762,13 @@ msgid ""
 "To execute the keyboard macro in register @var{r}, type @kbd{C-x r j "
 "@var{r}}.  (This is the same command used to jump to a position or restore a "
 "frameset.)"
-msgstr ""
+msgstr "レジスター@var{r}のキーボードマクロを実行するには、@kbd{C-x r j @var{r}}とタイプします(これはある位置にジャンプしたりフレームを復元するのと同じコマンドです)。"
 
 #. type: cindex
 #: regs.texi.orig:283
 #, no-wrap
 msgid "bookmarks"
-msgstr ""
+msgstr "bookmarks"
 
 #. type: Plain text
 #: regs.texi.orig:290
@@ -779,98 +777,98 @@ msgid ""
 "you can jump to.  Unlike registers, they have long names, and they persist "
 "automatically from one Emacs session to the next.  The prototypical use of "
 "bookmarks is to record ``where you were reading'' in various files."
-msgstr ""
+msgstr "@dfn{ブックマーク(Bookmarks)}とは、ジャンプしたい位置を記録するレジスターのようなものです。レジスターとの違いは、長い名前をもつことができ、次のEmacsセッションに自動的に引き継がれることです。ブックマークの典型的な使い方は、さまざまなファイルの``どこを読んでいたか''を記録することです。"
 
 #. type: item
 #: regs.texi.orig:292
 #, no-wrap
 msgid "C-x r m @key{RET}"
-msgstr ""
+msgstr "C-x r m @key{RET}"
 
 #. type: table
 #: regs.texi.orig:294
 msgid "Set the bookmark for the visited file, at point."
-msgstr ""
+msgstr "visitしているファイルのポイント位置に、ブックマークをセットします。"
 
 #. type: item
 #: regs.texi.orig:295
 #, no-wrap
 msgid "C-x r m @var{bookmark} @key{RET}"
-msgstr ""
+msgstr "C-x r m @var{bookmark} @key{RET}"
 
 #. type: findex
 #: regs.texi.orig:296 regs.texi.orig:313
 #, no-wrap
 msgid "bookmark-set"
-msgstr ""
+msgstr "bookmark-set"
 
 #. type: table
 #: regs.texi.orig:298
 msgid "Set the bookmark named @var{bookmark} at point (@code{bookmark-set})."
-msgstr ""
+msgstr "ポイント位置に、@var{bookmark}という名前のブックマークをセットします(@code{bookmark-set})。"
 
 #. type: item
 #: regs.texi.orig:299
 #, no-wrap
 msgid "C-x r b @var{bookmark} @key{RET}"
-msgstr ""
+msgstr "C-x r b @var{bookmark} @key{RET}"
 
 #. type: findex
 #: regs.texi.orig:300 regs.texi.orig:315
 #, no-wrap
 msgid "bookmark-jump"
-msgstr ""
+msgstr "bookmark-jump"
 
 #. type: table
 #: regs.texi.orig:302
 msgid "Jump to the bookmark named @var{bookmark} (@code{bookmark-jump})."
-msgstr ""
+msgstr "@var{bookmark}という名前のブックマークにジャンプします(@code{bookmark-jump})。"
 
 #. type: kindex
 #: regs.texi.orig:303 regs.texi.orig:323
 #, no-wrap
 msgid "C-x r l"
-msgstr ""
+msgstr "C-x r l"
 
 #. type: findex
 #: regs.texi.orig:304
 #, no-wrap
 msgid "list-bookmarks"
-msgstr ""
+msgstr "list-bookmarks"
 
 #. type: table
 #: regs.texi.orig:306
 msgid "List all bookmarks (@code{list-bookmarks})."
-msgstr ""
+msgstr "すべてのブックマークを一覧します(@code{list-bookmarks})。"
 
 #. type: item
 #: regs.texi.orig:307
 #, no-wrap
 msgid "M-x bookmark-save"
-msgstr ""
+msgstr "M-x bookmark-save"
 
 #. type: findex
 #: regs.texi.orig:308
 #, no-wrap
 msgid "bookmark-save"
-msgstr ""
+msgstr "bookmark-save"
 
 #. type: table
 #: regs.texi.orig:310
 msgid "Save all the current bookmark values in the default bookmark file."
-msgstr ""
+msgstr "現在のすべてのブックマークの値を、デフォルトのブックマークファイルに保存します。"
 
 #. type: kindex
 #: regs.texi.orig:312
 #, no-wrap
 msgid "C-x r m"
-msgstr ""
+msgstr "C-x r m"
 
 #. type: kindex
 #: regs.texi.orig:314
 #, no-wrap
 msgid "C-x r b"
-msgstr ""
+msgstr "C-x r b"
 
 #. type: Plain text
 #: regs.texi.orig:322
@@ -881,7 +879,7 @@ msgid ""
 "each bookmark after the file it points to, then you can conveniently revisit "
 "any of those files with @kbd{C-x r b}, and move to the position of the "
 "bookmark at the same time."
-msgstr ""
+msgstr "ブックマークの典型的な使い方は、各ファイルごとに現在の位置を保存することです。そのためブックマークをセットするコマンド@kbd{C-x r m}は、ブックマーク名のデフォルトとしてファイル名を使います。ブックマークが指すファイルをもとにブックマークの名前を付ければ、@kbd{C-x r b}で任意のファイルを再びvisitして、同時にブックマーク位置に移動するという操作を楽に行えます。"
 
 #. type: Plain text
 #: regs.texi.orig:329
@@ -891,26 +889,25 @@ msgid ""
 "to edit your bookmark definitions or annotate the bookmarks.  Type @kbd{C-h "
 "m} in the bookmark buffer for more information about its special editing "
 "commands."
-msgstr ""
+msgstr "すべてのブックマークのリストを別のバッファーに表示するには、@kbd{C-x r l} (@code{list-bookmarks})とタイプします。そのバッファーに切り替えて、ブックマークの定義の編集やブックマークに注釈をつけることができます。ブックマークバッファーで@kbd{C-h m}とタイプすれば、特別な編集コマンドに関する情報を見ることができます。"
 
 #. type: Plain text
 #: regs.texi.orig:338
 msgid ""
 "When you kill Emacs, Emacs saves your bookmarks, if you have changed any "
 "bookmark values.  You can also save the bookmarks at any time with the "
-"@kbd{M-x bookmark-save} command.  Bookmarks are saved to the file "
-"@file{~/.emacs.d/bookmarks} (for compatibility with older versions of Emacs, "
-"if you have a file named @file{~/.emacs.bmk}, that is used instead).  The "
-"bookmark commands load your default bookmark file automatically.  This "
-"saving and loading is how bookmarks persist from one Emacs session to the "
-"next."
-msgstr ""
+"@kbd{M-x bookmark-save} command.  Bookmarks are saved to the file @file{~/."
+"emacs.d/bookmarks} (for compatibility with older versions of Emacs, if you "
+"have a file named @file{~/.emacs.bmk}, that is used instead).  The bookmark "
+"commands load your default bookmark file automatically.  This saving and "
+"loading is how bookmarks persist from one Emacs session to the next."
+msgstr "Emacsを終了するとき、もしブックマークの値を変更していたら、Emacsはブックマークを保存します。@kbd{M-x bookmark-save}コマンドで、いつでもブックマークを保存できます。ブックマークは@file{~/.emacs.d/bookmarks}というファイルに保存されます(古いバージョンのEmacsとの互換性を保つため、もし@file{~/.emacs.bmk}というファイルがあればそのファイルに保存します)。ブックマークコマンドは、デフォルトのブックマークファイルを自動的にロードします。この保存とロードにより、ブックマークの内容を次のEmacsセッションに引き継ぐことができるのです。"
 
 #. type: vindex
 #: regs.texi.orig:339
 #, no-wrap
 msgid "bookmark-save-flag"
-msgstr ""
+msgstr "bookmark-save-flag"
 
 #. type: Plain text
 #: regs.texi.orig:346
@@ -921,26 +918,26 @@ msgid ""
 "many bookmark modifications should go by between saving.  If you set this "
 "variable to @code{nil}, Emacs only saves bookmarks if you explicitly use "
 "@kbd{M-x bookmark-save}."
-msgstr ""
+msgstr "@code{bookmark-save-flag}に1をセットすると、ブックマークをセットするコマンドはブックマークの保存も行ないます。こうすることにより、Emacsがクラッシュしてもブックマークを失わずにすみます。この変数の値が数字の場合、それはブックマークを何回変更したら保存するという意味です。この変数に@code{nil}をセットすると、Emacsは明示的に@kbd{M-x bookmark-save}を使ったときだけブックマークを保存します。"
 
 #. type: vindex
 #: regs.texi.orig:347
 #, no-wrap
 msgid "bookmark-default-file"
-msgstr ""
+msgstr "bookmark-default-file"
 
 #. type: Plain text
 #: regs.texi.orig:350
 msgid ""
 "The variable @code{bookmark-default-file} specifies the file in which to "
 "save bookmarks by default."
-msgstr ""
+msgstr "変数@code{bookmark-default-file}には、ブックマークを保存するデフォルトのファイルを指定します。"
 
 #. type: vindex
 #: regs.texi.orig:351
 #, no-wrap
 msgid "bookmark-search-size"
-msgstr ""
+msgstr "bookmark-search-size"
 
 #. type: Plain text
 #: regs.texi.orig:357
@@ -949,24 +946,24 @@ msgid ""
 "@code{bookmark-jump} can find the proper position even if the file is "
 "modified slightly.  The variable @code{bookmark-search-size} says how many "
 "characters of context to record on each side of the bookmark's position."
-msgstr ""
+msgstr "ブックマークの位置は、周囲のコンテキストとともに保存されるので、ファイルが少し変更されていても、@code{bookmark-jump}は正確な位置を見つけることができます。変数@code{bookmark-search-size}は、ブックマーク位置のコンテキストの前後何文字を記録するかを指定します。"
 
 #. type: Plain text
 #: regs.texi.orig:359
 msgid "Here are some additional commands for working with bookmarks:"
-msgstr ""
+msgstr "以下はブックマークを処理する追加のコマンドです:"
 
 #. type: item
 #: regs.texi.orig:361
 #, no-wrap
 msgid "M-x bookmark-load @key{RET} @var{filename} @key{RET}"
-msgstr ""
+msgstr "M-x bookmark-load @key{RET} @var{filename} @key{RET}"
 
 #. type: findex
 #: regs.texi.orig:362
 #, no-wrap
 msgid "bookmark-load"
-msgstr ""
+msgstr "bookmark-load"
 
 #. type: table
 #: regs.texi.orig:367
@@ -974,76 +971,76 @@ msgid ""
 "Load a file named @var{filename} that contains a list of bookmark values.  "
 "You can use this command, as well as @code{bookmark-write}, to work with "
 "other files of bookmark values in addition to your default bookmark file."
-msgstr ""
+msgstr "ブックマークのリストを含む、@var{filename}という名前のファイルをロードします。このコマンドは@code{bookmark-write}と同様に、デフォルトのブックマークファイルに加えて、他のファイルのブックマークを使うことができます。"
 
 #. type: item
 #: regs.texi.orig:368
 #, no-wrap
 msgid "M-x bookmark-write @key{RET} @var{filename} @key{RET}"
-msgstr ""
+msgstr "M-x bookmark-write @key{RET} @var{filename} @key{RET}"
 
 #. type: findex
 #: regs.texi.orig:369
 #, no-wrap
 msgid "bookmark-write"
-msgstr ""
+msgstr "bookmark-write"
 
 #. type: table
 #: regs.texi.orig:371
 msgid "Save all the current bookmark values in the file @var{filename}."
-msgstr ""
+msgstr "現在のすべてのブックマークをファイル@var{filename}に保存します。"
 
 #. type: item
 #: regs.texi.orig:372
 #, no-wrap
 msgid "M-x bookmark-delete @key{RET} @var{bookmark} @key{RET}"
-msgstr ""
+msgstr "M-x bookmark-delete @key{RET} @var{bookmark} @key{RET}"
 
 #. type: findex
 #: regs.texi.orig:373
 #, no-wrap
 msgid "bookmark-delete"
-msgstr ""
+msgstr "bookmark-delete"
 
 #. type: table
 #: regs.texi.orig:375
 msgid "Delete the bookmark named @var{bookmark}."
-msgstr ""
+msgstr "@var{bookmark}という名前のブックマークを削除します。"
 
 #. type: item
 #: regs.texi.orig:376
 #, no-wrap
 msgid "M-x bookmark-insert-location @key{RET} @var{bookmark} @key{RET}"
-msgstr ""
+msgstr "M-x bookmark-insert-location @key{RET} @var{bookmark} @key{RET}"
 
 #. type: findex
 #: regs.texi.orig:377
 #, no-wrap
 msgid "bookmark-insert-location"
-msgstr ""
+msgstr "bookmark-insert-location"
 
 #. type: table
 #: regs.texi.orig:380
 msgid ""
 "Insert in the buffer the name of the file that bookmark @var{bookmark} "
 "points to."
-msgstr ""
+msgstr "ブックマーク@var{bookmark}が指すファイル名をバッファーに挿入します。"
 
 #. type: item
 #: regs.texi.orig:381
 #, no-wrap
 msgid "M-x bookmark-insert @key{RET} @var{bookmark} @key{RET}"
-msgstr ""
+msgstr "M-x bookmark-insert @key{RET} @var{bookmark} @key{RET}"
 
 #. type: findex
 #: regs.texi.orig:382
 #, no-wrap
 msgid "bookmark-insert"
-msgstr ""
+msgstr "bookmark-insert"
 
 #. type: table
 #: regs.texi.orig:385
 msgid ""
 "Insert in the buffer the @emph{contents} of the file that bookmark "
 "@var{bookmark} points to."
-msgstr ""
+msgstr "ブックマーク@var{bookmark}が指すファイルの@emph{内容}をバッファーに挿入します。"
