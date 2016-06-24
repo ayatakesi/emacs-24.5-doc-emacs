@@ -1,3 +1,8 @@
+@c ===========================================================================
+@c
+@c This file was generated with po4a. Translate the source file.
+@c
+@c ===========================================================================
 @c This is part of the Emacs manual.
 @c Copyright (C) 1985-1987, 1993-1995, 1997, 2000-2015 Free Software
 @c Foundation, Inc.
@@ -11,62 +16,54 @@
 
 @kindex C-x m
 @findex compose-mail
-  To send an email message from Emacs, type @kbd{C-x m}.  This
-switches to a buffer named @file{*unsent mail*}, where you can edit
-the text and headers of the message.  When done, type @kbd{C-c C-s} or
-@kbd{C-c C-c} to send it.
+  Emacsから電子メールのメッセージを送信するには、@kbd{C-x
+m}とタイプします。これはメッセージのテキストとヘッダーを編集できる、@file{*unsent
+mail*}という名前のバッファーに切り替えます。編集が終了したら@kbd{C-c C-s}または@kbd{C-c
+C-c}とタイプして、それを送信します。
 
 @table @kbd
 @item C-x m
-Begin composing mail (@code{compose-mail}).
+メールの作成を開始します(@code{compose-mail})。
 @item C-x 4 m
-Likewise, in another window (@code{compose-mail-other-window}).
+同様ですが、他のウィンドウで行ないます(@code{compose-mail-other-window})。
 @item C-x 5 m
-Likewise, but in a new frame (@code{compose-mail-other-frame}).
+同様ですが、新しいフレームで行ないます(@code{compose-mail-other-frame})。
 @item C-c C-s
-In the mail buffer, send the message (@code{message-send}).
+メールバッファーでは、メッセージを送信します(@code{message-send})。
 @item C-c C-c
-In the mail buffer, send the message and bury the buffer
-(@code{message-send-and-exit}).
+メールバッファーでは、メッセージを送信して、そのバッファーを隠し(bury)ます(@code{message-send-and-exit})。
 @end table
 
-  The mail buffer is an ordinary Emacs buffer, so you can switch to
-other buffers while composing the mail.  If you want to send another
-mail before finishing the current one, type @kbd{C-x m} again to open
-a new mail buffer whose name has a different numeric suffix
-(@pxref{Misc Buffer}).  If you invoke the command with a prefix
-argument, @w{@kbd{C-u C-x m}}, Emacs switches back to the last mail
-buffer, and asks if you want to erase the message in that buffer; if
-you answer no, this lets you pick up editing the message where you
-left off.
+  メールバッファーは通常のEmacsバッファーなので、メールの作成中に他のバッファーに切り替えることができます。現在のメールを終了する前に他のメールを送信したい場合は、再度@kbd{C-x
+m}とタイプして新しいメールバッファーを開きます、このバッファーは異なる数字が後ろについた名前をもちます(@ref{Misc
+Buffer}を参照してください)。@w{@kbd{C-u C-x
+m}}のように、プレフィクス引数を指定してコマンドを呼び出した場合、Emacsは最後のメールバッファーに戻って、そのバッファーのメッセージを削除したいか尋ねます。これにnoと答えると、中止した場所から編集を再開できます。
 
 @kindex C-x 4 m
 @findex compose-mail-other-window
 @kindex C-x 5 m
 @findex compose-mail-other-frame
-  The command @kbd{C-x 4 m} (@code{compose-mail-other-window}) does
-the same as @kbd{C-x m}, except it displays the mail buffer in a
-different window.  The command @kbd{C-x 5 m}
-(@code{compose-mail-other-frame}) does it in a new frame.
+  コマンド@kbd{C-x 4 m} (@code{compose-mail-other-window})は、@kbd{C-x
+m}と同じことを行ないますが、これはメールバッファーを別のウィンドウに表示します。コマンド@kbd{C-x 5 m}
+(@code{compose-mail-other-frame})は、新しいフレームでこれを行ないます。
 
-  When you type @kbd{C-c C-c} or @kbd{C-c C-s} to send the mail, Emacs
-may ask you how it should deliver the mail---either directly via SMTP,
-or using some other method.  @xref{Mail Sending}, for details.
+  @kbd{C-c C-c}または@kbd{C-c C-s}とタイプしてメールを送信するとき、Emacsはどのようにしてメールを送信するべきか ---
+SMTPを通じて直接送信するか、またはほかの方法を使うか --- を尋ねます。詳細は、@ref{Mail Sending}を参照してください。
 
 @menu
-* Format: Mail Format.        Format of a mail message.
-* Headers: Mail Headers.      Details of some standard mail header fields.
-* Aliases: Mail Aliases.      Abbreviating and grouping mail addresses.
-* Commands: Mail Commands.    Special commands for editing mail being composed.
-* Signature: Mail Signature.  Adding a signature to every message.
-* Amuse: Mail Amusements.     Distracting the NSA; adding fortune messages.
-* Methods: Mail Methods.      Using alternative mail-composition methods.
+* Format: Mail Format.       メールメッセージのフォーマット。
+* Headers: Mail Headers.     いくつかの標準的なメールヘッダーフィールドの詳細。
+* Aliases: Mail Aliases.     メールアドレスの短縮とグループ化。
+* Commands: Mail Commands.   作成するメールを編集するための特別なコマンド。
+* Signature: Mail Signature.  各メッセージに署名を追加する。
+* Amuse: Mail Amusements.    NSAを混乱させるキーワードや、fortuneのメッセージを累加する。
+* Methods: Mail Methods.     他のメール作成方法を使用する。
 @end menu
 
 @node Mail Format
 @section The Format of the Mail Buffer
 
-  Here is an example of the contents of a mail buffer:
+  以下はメールバッファーの内容の例です:
 
 @example
 To: subotai@@example.org
@@ -79,132 +76,80 @@ hear the lamentation of their women.
 @end example
 
 @noindent
-At the top of the mail buffer is a set of @dfn{header fields}, which
-are used for specifying information about the email's recipient(s),
-subject, and so on.  The above buffer contains header fields for
-@samp{To}, @samp{Cc}, @samp{Subject}, and @samp{From}.  Some header
-fields are automatically pre-initialized in the mail buffer, when
-appropriate.
+メールバッファーのトップは、一連の@dfn{ヘッダーフィールド(header
+fields)}です。これは電子メールの受取人、subject(題目)などに関する情報を指定するのに使用されます。上記のバッファー例には@samp{To}、@samp{Cc}、@samp{Subject}、@samp{From}のヘッダーフィールドが含まれています。いくつかのヘッダーフィールドは、それが適切なときは、事前に自動的に初期化されます。
 
-  The line that says @samp{--text follows this line--} separates the
-header fields from the @dfn{body} (or @dfn{text}) of the message.
-Everything above that line is treated as part of the headers;
-everything below it is treated as the body.  The delimiter line itself
-does not appear in the message actually sent.
+  @samp{--text follows this
+line--}という行は、ヘッダーフィールドとメッセージの@dfn{body}(本文、または@dfn{text})を分割します。この行の上にあるすべては、ヘッダーの一部として扱われます。下にあるすべては、bodyとして扱われます。区切り行自体は、実際に送信されるメッセージには含まれません。
 
-  You can insert and edit header fields using ordinary editing
-commands.  @xref{Header Editing}, for commands specific to editing
-header fields.  Certain headers, such as @samp{Date} and
-@samp{Message-Id}, are normally omitted from the mail buffer and are
-created automatically when the message is sent.
+  通常の編集コマンドで、ヘッダーフィールドの挿入と編集ができます。ヘッダーフィールドを編集するための特定のコマンドについては、@ref{Header
+Editing}を参照してください。@samp{Date}や@samp{Message-Id}のような特定のヘッダーは、通常はメールバッファーでは省略され、メッセージを送信するとき自動的に作成されます。
 
 @node Mail Headers
 @section Mail Header Fields
 @cindex headers (of mail message)
 
-  A header field in the mail buffer starts with a field name at the
-beginning of a line, terminated by a colon.  Upper and lower case are
-equivalent in field names.  After the colon and optional whitespace
-comes the contents of the field.
+  メールバッファーのヘッダーフィールドは、行の最初がフィールド名で始まります。フィールド名はコロンで終端されます。フィールド名で大文字小文字は区別されません。コロンとオプションの空白文字の後に、フィールドの内容を記述します。
 
-  You can use any name you like for a header field, but normally
-people use only standard field names with accepted meanings.
+  好きな名前のヘッダーフィールドを使用できますが、多くの人は通常、一般に認められた意味をもつは、標準的なフィールド名だけを使用します。
 
 @vindex user-full-name
 @vindex user-mail-address
-  The @samp{From} header field identifies the person sending the email
-(i.e., you).  This should be a valid mailing address, as replies are
-normally sent there.  The default contents of this header field are
-computed from the variables @code{user-full-name} (which specifies
-your full name) and @code{user-mail-address} (your email address).  On
-some operating systems, Emacs initializes these two variables using
-environment variables (@pxref{General Variables}).  If this
-information is unavailable or wrong, you should customize the
-variables yourself (@pxref{Easy Customization}).
+  ヘッダーフィールド@samp{From}は、電子メールを送信した人(あとえばあなた)を識別します。これは有効なメールアドレスである必要があります。なぜなら、通常はそのアドレスに返信されるからです。このヘッダーフィールドのデフォルトの内容は、変数@code{user-full-name}(あなたのフルネームを指定します)と@code{user-mail-address}(あなたの電子メールアドレス)から計算されます。いくつかのオペレーティングシステムでは、Emacsはこの2つの変数を環境変数から初期化します(@ref{General
+Variables}を参照してください)。この情報が利用不可能か間違っている場合、変数を自分でカスタマイズする必要があります(@ref{Easy
+Customization}を参照してください)。
 
 @vindex mail-from-style
-  The value of the variable @code{mail-from-style} specifies how to
-format the contents of the @samp{From} field:
+  変数@code{mail-from-style}の値は、@samp{From}フィールドの内容をどのようにフォーマットするかを指定します:
 
 @table @asis
 @item @code{nil}
-Use just the address, as in @samp{king@@grassland.com}.
+@samp{king@@grassland.com}のように、アドレスだけを使用します。
 @item @code{parens}
-Use both address and full name, as in:@*
-@samp{king@@grassland.com (Elvis Parsley)}.
+@samp{king@@grassland.com (Elvis Parsley)}のように、アドレスとフルネームの両方を使用します。
 @item @code{angles}
-Use both address and full name, as in:@*
-@samp{Elvis Parsley <king@@grassland.com>}.
+@samp{Elvis Parsley <king@@grassland.com>}のように、アドレスとフルネームの両方を使用します。
 @item any other value
-Use @code{angles} normally.  But if the address must be ``quoted'' to
-remain syntactically valid under the @code{angles} format but not
-under the @code{parens} format, use @code{parens} instead.  This is
-the default.
+通常は@code{angles}を使用します。しかし@code{angles}では、構文的に有効にするためにアドレスを``クォート''しなければならないときは、かわりに@code{parens}を使用します。これがデフォルトです。
 @end table
 
-  Apart from @samp{From}, here is a table of commonly-used fields:
+  以下は@samp{From}以外の、一般的に使用されるフィールドの表です:
 
 @table @samp
 @item To
-The mailing address(es) to which the message is addressed.  To list
-more than one address, use commas to separate them.
+メッセージを送信するメールアドレスです。複数のアドレスを記述するには、それらを区切るのにカンマを使用します。
 
 @item Subject
-The subject of the message.
+メッセージのsubjectです。
 
 @item CC
-Additional mailing address(es) to send the message to.  This is like
-@samp{To}, except that these readers should not regard the message as
-directed at them.
+メッセージを送信する追加のメールアドレスです。これは@samp{To}と似ていますが、受取人はそのメッセージが自分宛だと思うべきではありません。
 
 @item BCC
-Additional mailing address(es) to send the message to, which should
-not appear in the header of the message actually sent.  ``BCC'' stands
-for @dfn{blind carbon copies}.
+実際に送信するメッセージのヘッダーには現れない、追加のメッセージ送信先のメールアドレスです。``BCC''は@dfn{blind carbon
+copies}が由来です。
 
 @item FCC
-The name of a file, to which a copy of the sent message should be
-appended.  Emacs writes the message in mbox format, unless the file is
-in Babyl format (used by Rmail before Emacs 23), in which case Emacs
-writes in Babyl format.  If an Rmail buffer is visiting the file,
-Emacs updates it accordingly.  To specify more than one file, use
-several @samp{FCC} fields, with one file name in each field.
+送信されたメッセージのコピーが追加されるべき、ファイルの名前です。ファイルがBabyl形式(Emacs23以前のRmailで使用されていました)の場合、EmacsはBabyl形式で書き込み、それ以外はmbox形式で書き込みます。Rmailバッファーがそのファイルをvisitしている場合、Emacsはそれに合わせて更新します。複数のファイルを指定するには、複数の@samp{FCC}フィールドを使用して、各フィールドに1つのファイル名を記述します。
 
 @item Reply-to
-An address to which replies should be sent, instead of @samp{From}.
-This is used if, for some reason, your @samp{From} address cannot
-receive replies.
+@samp{From}のかわりとなる、返信が送信されるべきアドレスです。これは何らかの理由により、@samp{From}のアドレスが返信を受け取れないときに使用します。
 
 @item Mail-reply-to
-This field takes precedence over @samp{Reply-to}.  It is used because
-some mailing lists set the @samp{Reply-to} field for their own
-purposes (a somewhat controversial practice).
+このフィールドは@samp{Reply-to}より優先されます。メーリングリストの中には、@samp{Reply-to}を独自の目的(問題の多い、何らかの方法)のために使用しているものがあるため、これが使用されます。
 
 @item Mail-followup-to
-One of more address(es) to use as default recipient(s) for follow-up
-messages.  This is typically used when you reply to a message from a
-mailing list that you are subscribed to, and want replies to go to the
-list without sending an extra copy to you.
+follow-upメッセージのための、デフォルトの受取人のために使用する1つ以上のアドレスです。これは通常、登録しているメーリングリストからメッセージを受信するとき、余分なコピーを送らせないようにしたいときに使用します。
 
 @item In-reply-to
-An identifier for the message you are replying to.  Most mail readers
-use this information to group related messages together.  Normally,
-this header is filled in automatically when you reply to a message in
-any mail program built into Emacs.
+返信するメッセージのための識別子です。ほとんどのメールリーダーは、関連するメッセージをまとめてグループ化するためにこの情報を使用します。このヘッダーは通常、Emacsに組み込まれた任意のメールプログラムでメッセージに返信するとき、自動的に充填されます。
 
 @item References
-Identifiers for previous related messages.  Like @samp{In-reply-to},
-this is normally filled in automatically for you.
+以前の関連するメッセージのための識別子です。@samp{In-reply-to}と同じように、これは通常、自動的に充填されます。
 @end table
 
 @noindent
-The @samp{To}, @samp{CC}, and @samp{BCC} fields can appear any number
-of times, and each such header field can contain multiple addresses,
-separated by commas.  This way, you can specify any number of places
-to send the message.  These fields can also have continuation lines:
-one or more lines starting with whitespace, following the starting
-line of the field, are considered part of the field.  Here's an
-example of a @samp{To} field with a continuation line:
+@samp{To}、@samp{CC}、@samp{BCC}のフィールドは何回記述してもよく、また各フィールドにはカンマで括って複数のアドレスを含めることができます。この方法により、メッセージを送信する複数の場所を指定できます。これらのフィールドには継続行も使用できます。フィールドの開始行に続く、空白文字で始まる1行以上の行は、そのフィールドの一部とみなされます。以下は継続行を使用した@samp{To}フィールドの例です:
 
 @example
 @group
@@ -217,11 +162,8 @@ To: foo@@example.net, this@@example.net,
 @c these are probably not topics for the Emacs manual.
 
 @vindex mail-default-headers
-  You can direct Emacs to insert certain default headers into the mail
-buffer by setting the variable @code{mail-default-headers} to a
-string.  Then @kbd{C-x m} inserts this string into the message
-headers.  For example, here is how to add a @samp{Reply-to} and
-@samp{FCC} header to each message:
+  変数@code{mail-default-headers}に文字列をセットすることにより、特定のデフォルトヘッダーを挿入するよう、Emacsに指示できます。これにより@kbd{C-x
+m}でメッセージヘッダーにその文字列が挿入されます。たとえば以下は、各メッセージにヘッダー@samp{Reply-to}と@samp{FCC}を追加する例です:
 
 @smallexample
 (setq mail-default-headers
@@ -229,8 +171,7 @@ headers.  For example, here is how to add a @samp{Reply-to} and
 @end smallexample
 
 @noindent
-If the default header fields are not appropriate for a
-particular message, edit them as necessary before sending the message.
+デフォルトのヘッダーフィールドが、特定のメッセージにたいして適切でない場合、メッセージを送信する前にそれらを編集する必要があります。
 
 @node Mail Aliases
 @section Mail Aliases
@@ -239,90 +180,67 @@ particular message, edit them as necessary before sending the message.
 @cindex mailrc file
 @vindex mail-personal-alias-file
 
-  You can define @dfn{mail aliases}, which are short mnemonic names
-that stand for one or more mailing addresses.  By default, mail
-aliases are defined in the file @file{~/.mailrc}.  You can specify a
-different file name to use, by setting the variable
-@code{mail-personal-alias-file}.
+  @dfn{メールエイリアス(mail
+aliases)}を定義することができます。これは1つ以上のメールアドレスを意味する短い呼び名です。デフォルトでは、メールエイリアスはファイル@file{~/.mailrc}で定義されます。変数@code{mail-personal-alias-file}をセットすることにより、異なるファイル名を指定できます。
 
-  To define an alias in @file{.mailrc}, write a line like this:
+  @file{.mailrc}でエイリアスを定義するには、以下のように記述します:
 
 @example
 alias @var{nick} @var{fulladdresses}
 @end example
 
 @noindent
-This means that @var{nick} should expand into @var{fulladdresses},
-where @var{fulladdresses} can be either a single address, or multiple
-addresses separated with spaces.  For instance, to make @code{maingnu}
-stand for @code{gnu@@gnu.org} plus a local address of your own, put in
-this line:
+これは@var{nick}が@var{fulladdresses}に展開されるという意味で、@var{fulladdresses}は単一のアドレス、またはスペースで区切られた複数のアドレスです。たとえば@code{maingnu}が、@code{gnu@@gnu.org}とあなた自身のローカルのアドレスを意味するよう定義するには、以下の行を記述します:
 
 @example
 alias maingnu gnu@@gnu.org local-gnu
 @end example
 
 @noindent
-If an address contains a space, quote the whole address with a pair of
-double quotes, like this:
+アドレスにスペースが含まれる場合は、以下のようにダブルクォートでアドレス全体をクォートします:
 
 @example
 alias jsmith "John Q. Smith <none@@example.com>"
 @end example
 
 @noindent
-Note that you need not include double quotes around individual parts
-of the address, such as the person's full name.  Emacs puts them in if
-they are needed.  For instance, it inserts the above address as
-@samp{"John Q. Smith" <none@@example.com>}.
+その人の名前の部分などのような、アドレスの特定の部分をダブルクォートで括る必要はないことに注意してください。Emacsは必要に応じてそれらを挿入します。たとえば上記のアドレスは@samp{"John
+Q. Smith" <none@@example.com>}のように挿入されます。
 
-  Emacs also recognizes ``include'' commands in @file{.mailrc}.  They
-look like this:
+  Emacsは、@file{.mailrc}での``include''コマンドも識別します。これらは以下のようなものです:
 
 @example
 source @var{filename}
 @end example
 
 @noindent
-The @file{.mailrc} file is not unique to Emacs; many other
-mail-reading programs use it for mail aliases, and it can contain
-various other commands.  However, Emacs ignores everything except
-alias definitions and include commands.
+ファイル@file{.mailrc}は、Emacsだけのものではありません。他の多くのメールを閲覧するプログラムが、メールアドレスのためにこれを使用し、他にもさまざまなコマンドが含まれます。しかしEmacsは、エイリアスの定義とインクルードコマンド以外のすべてを無視します。
 
 @findex mail-abbrev-insert-alias
-  Mail aliases expand as abbrevs---that is to say, as soon as you type
-a word-separator character after an alias (@pxref{Abbrevs}).  This
-expansion takes place only within the @samp{To}, @samp{From},
-@samp{CC}, @samp{BCC}, and @samp{Reply-to} header fields (plus their
-@samp{Resent-} variants); it does not take place in other header
-fields, such as @samp{Subject}.
+  メールエイリアスはabbrevのように --- つまり、エイリアスの後で単語区切り文字をタイプするとすぐに ---
+展開されます。この展開はヘッダーフィールド@samp{To}、@samp{From}、@samp{CC}、@samp{BCC}、@samp{Reply-to}(およびそれらの@samp{Resent-}の変種)だけで展開されます。@samp{Subject}のような、他のヘッダーフィールドでは展開されません。
 
-  You can also insert an aliased address directly, using the command
-@kbd{M-x mail-abbrev-insert-alias}.  This reads an alias name, with
-completion, and inserts its definition at point.
+  コマンド@kbd{M-x
+mail-abbrev-insert-alias}を使って、エイリアスされたアドレスを直接挿入することもできます。これは補完つきでエイリアス名を読み取り、ポイント位置にそれの定義を挿入します。
 
 @node Mail Commands
 @section Mail Commands
 @cindex Message mode
 @cindex mode, Message
 
-  The default major mode for the @file{*mail*} buffer is called
-Message mode.  It behaves like Text mode in many ways, but provides
-several additional commands on the @kbd{C-c} prefix, which make
-editing a message more convenient.
+  @file{*mail*}バッファーのデフォルトのメジャーモードは、Messageモードと呼ばれます。これはTextモードのように振る舞いますが、メッセージをより快適に編集するために、@kbd{C-c}プレフィクスを伴う、追加のコマンドをいくつか提供します。
 
-  In this section, we will describe some of the most commonly-used
-commands available in Message mode.
+  このセクションでは、Messageモードで利用可能な、もっとも一般的に使用されるコマンドを説明します。
 @ifnottex
-Message mode also has its own manual, where its features are described
-in greater detail.  @xref{Top,,Message, message, Message}.
+Messageモードにはそれ自身のマニュアルがあり、その機能についてより詳細に説明されています。@ref{Top,,Message, message,
+Message}を参照してください。
 @end ifnottex
 
 @menu
-* Mail Sending::        Commands to send the message.
-* Header Editing::      Commands to move to header fields and edit them.
-* Citing Mail::         Quoting a message you are replying to.
-* Mail Misc::           Attachments, spell checking, etc.
+* Mail Sending::             メッセージを送信するコマンド。
+* Header Editing::           ヘッダーフィールドに移動して編集するコマンド。
+* Citing Mail::              返信するメッセージのクォート。
+* Mail Misc::                ファイル添付、スペルチェックなど。
 @end menu
 
 @node Mail Sending
@@ -330,110 +248,80 @@ in greater detail.  @xref{Top,,Message, message, Message}.
 
 @table @kbd
 @item C-c C-c
-Send the message, and bury the mail buffer (@code{message-send-and-exit}).
+そのメッセージを送信して、メールバッファーを隠し(bury)ます(@code{message-send-and-exit})。
 @item C-c C-s
-Send the message, and leave the mail buffer selected (@code{message-send}).
+そのメッセージを送信して、メールバッファーを選択されたまま残します(@code{message-send})。
 @end table
 
 @kindex C-c C-s @r{(Message mode)}
 @kindex C-c C-c @r{(Message mode)}
 @findex message-send
 @vindex message-kill-buffer-on-exit
-  The usual command to send a message is @kbd{C-c C-c}
-(@code{mail-send-and-exit}).  This sends the message and then
-``buries'' the mail buffer, putting it at the lowest priority for
-reselection.  If you want it to kill the mail buffer instead, change
-the variable @code{message-kill-buffer-on-exit} to @code{t}.
+  メッセージを送信するために通常使用されるコマンドは、@kbd{C-c C-c}
+(@code{mail-send-and-exit})です。これはメッセージを送信して、メールバッファーを``隠す(bury)'' ---
+つまりバッファーを再選択するときもっとも低い優先順位になるようにします。かわりにメールバッファーをkillしたい場合は、変数@code{message-kill-buffer-on-exit}を@code{t}に変更してください。
 
 @findex message-send-and-exit
-  The command @kbd{C-c C-s} (@code{message-send}) sends the message
-and leaves the buffer selected.  Use this command if you want to
-modify the message (perhaps with new recipients) and send it again.
+  コマンド@kbd{C-c C-s}
+(@code{message-send})はメッセージを送信して、そのバッファーを選択されたまま残します。(たとえば新しい送信先のために)メッセージを変更して、再度送信したい場合に、このコマンドを使用します。
 
 @vindex message-send-hook
-  Sending a message runs the hook @code{message-send-hook}.  It also
-marks the mail buffer as unmodified, except if the mail buffer is also
-a file-visiting buffer (in that case, only saving the file does that,
-and you don't get a warning if you try to send the same message
-twice).
+  メッセージの送信により、フック@code{message-send-hook}が実行されます。メールバッファーがファイルをvisitしているバッファーの場合をのぞき、送信によりメールバッファーは変更なし(unmodified)とマークされます(ファイルをvisitしている場合は、そのファイルを保存したときだけ変更なしとマークされます。このため、同じメッセージを2回送信しても警告はされません)。
 
 @cindex SMTP
 @cindex Feedmail
 @cindex Sendmail
 @cindex Mailclient
 @vindex send-mail-function
-  The variable @code{send-mail-function} controls how the message is
-delivered.  Its value should be one of the following functions:
+  変数@code{send-mail-function}は、メッセージの配送方法を制御します。値には、以下の関数のどれか1つを指定します:
 
 @table @code
 @item sendmail-query-once
-Query for a delivery method (one of the other entries in this list),
-and use that method for this message; then save the method to
-@code{send-mail-function}, so that it is used for future deliveries.
-This is the default, unless you have already set the variables for
-sending mail via @code{smtpmail-send-it} (see below).
+配送方法(このリストの他の項目のうちの1つ)を尋ね、このメッセージにその方法を使用します。@code{smtpmail-send-it}を通じてすでにメールの配送方法を変数にセットしていない場合(以下参照)、これがデフォルトです。
 
 @item smtpmail-send-it
-Send mail through an external mail host, such as your
-Internet service provider's outgoing SMTP mail server.  If you have
-not told Emacs how to contact the SMTP server, it prompts for this
-information, which is saved in the @code{smtpmail-smtp-server} variable
-and the file @file{~/.authinfo}.
-@xref{Top,,Emacs SMTP Library, smtpmail, Sending mail via SMTP}.
+インターネットサービスプロバイダーの対外SMTPメールサーバーのような、外部のメールホストを通じてメールを送信します。そのSMTPサーバーに接続する方法をEmacsに指示していない場合、コマンドはこの情報の入力を求め、それは変数@code{smtpmail-smtp-server}と、ファイル@file{~/.authinfo}に保存されます。@ref{Top,,Emacs
+SMTP Library, smtpmail, Sending mail via SMTP}を参照してください。
 
 @item sendmail-send-it
-Send mail using the system's default @command{sendmail} program, or
-equivalent.  This requires the system to be set up for delivering mail
-directly via SMTP.
+システムのデフォルトの@command{sendmail}プログラム、またはそれと等価なプログラムを使用してメールを送信します。これは、そのシステムがSMTPで直接メールを配送できるように、セットアップされている必要があります。
 
 @item mailclient-send-it
-Pass the mail buffer on to the system's designated mail client.  See
-the commentary section in the file @file{mailclient.el} for details.
+メールバッファーを、システムで指定されたメールクライアントに渡します。詳細はファイル@file{mailclient.el}の、コメントセクションを参照してください。
 
 @item feedmail-send-it
-This is similar to @code{sendmail-send-it}, but allows you to queue
-messages for later sending.  See the commentary section in the file
-@file{feedmail.el} for details.
+これは@code{sendmail-send-it}と同様ですが、後で送信するためにメッセージをキューできます。詳細は、ファイル@file{feedmail.el}の、コメントセクションを参照してください。
 @end table
 
 @vindex sendmail-coding-system
-  When you send a message containing non-@acronym{ASCII} characters,
-they need to be encoded with a coding system (@pxref{Coding Systems}).
-Usually the coding system is specified automatically by your chosen
-language environment (@pxref{Language Environments}).  You can
-explicitly specify the coding system for outgoing mail by setting the
-variable @code{sendmail-coding-system} (@pxref{Recognize Coding}).  If
-the coding system thus determined does not handle the characters in a
-particular message, Emacs asks you to select the coding system to use,
-showing a list of possible coding systems.
+  非@acronym{ASCII}文字を含むメッセージを送信する場合、それらはコーディングシステムでエンコードされる必要があります。コーディングシステムは通常、選択された言語環境(@ref{Language
+Environments}を参照してください)により、自動的に指定されます。変数@code{sendmail-coding-system}をセットすることにより、対外に送信するメールのコーディングシステムを明示的に指定することができます(@ref{Recognize
+Coding}を参照してください)。そのようにして決定されたコーディングシステムで扱えない文字が、特定のメッセージに含まれる場合、Emacsは利用可能なコーディングシステムのリストを表示して、使用するコーディングシステムの選択を求めます。
 
 @node Header Editing
 @subsection Mail Header Editing
 
-  Message mode provides the following special commands to move to
-particular header fields and to complete addresses in headers.
+  Messageモードは、特定のヘッダーフィールドに移動したり、ヘッダーのアドレスを補完する、以下の特別なコマンドを提供します。
 
 @table @kbd
 @item C-c C-f C-t
-Move to the @samp{To} header (@code{message-goto-to}).
+@samp{To}ヘッダーに移動します(@code{message-goto-to})。
 @item C-c C-f C-s
-Move to the @samp{Subject} header (@code{message-goto-subject}).
+@samp{Subject}ヘッダーに移動します(@code{message-goto-subject})。
 @item C-c C-f C-c
-Move to the @samp{CC} header (@code{message-goto-cc}).
+@samp{CC}ヘッダーに移動します(@code{message-goto-cc})。
 @item C-c C-f C-b
-Move to the @samp{BCC} header (@code{message-goto-bcc}).
+@samp{BCC}ヘッダーに移動します(@code{message-goto-bcc})。
 @item C-c C-f C-r
-Move to the @samp{Reply-To} header (@code{message-goto-reply-to}).
+@samp{Reply-To}ヘッダーに移動します(@code{message-goto-reply-to})。
 @item C-c C-f C-f
-Move to the @samp{Mail-Followup-To} header field
-(@code{message-goto-followup-to}).
+@samp{Mail-Followup-To}ヘッダーフィールドに移動します(@code{message-goto-followup-to})。
 @item C-c C-f C-w
-Add a new @samp{FCC} header field, with file-name completion
-(@code{message-goto-fcc}).
+ファイル名の補完つきで、新しい@samp{FCC}ヘッダーフィールドを追加します(@code{message-goto-fcc})。
 @item C-c C-b
-Move to the start of the message body (@code{message-goto-body}).
+メッセージ本文の先頭に移動します(@code{message-goto-body})。
 @item @key{TAB}
-Complete a mailing address (@code{message-tab}).
+メールアドレスを補完します(@code{message-tab})。
 @end table
 
 @kindex C-c C-f C-t @r{(Message mode)}
@@ -450,29 +338,21 @@ Complete a mailing address (@code{message-tab}).
 @findex goto-followup-to
 @kindex C-c C-f C-w @r{(Message mode)}
 @findex message-goto-fcc
-  The commands to move point to particular header fields are all based
-on the prefix @kbd{C-c C-f} (@samp{C-f} is for ``field'').  If the
-field in question does not exist, the command creates one (the
-exception is @code{mail-fcc}, which creates a new field each time).
+  特定のヘッダーフィールドにポイントを移動するコマンドは、すべて@kbd{C-c
+C-f}というプレフィクスを指定します(@samp{C-f}は``field''が由来です)。指定したフィールドが存在しない場合、コマンドは新たにそれを作成します(例外は@code{mail-fcc}で、これは毎回新たなフィールドを作成します)。
 
 @kindex C-c C-b @r{(Message mode)}
 @findex mail-text
-  The command @kbd{C-c C-b} (@code{message-goto-body}) moves point to
-just after the header separator line---that is, to the beginning of
-the body.
+  コマンド@kbd{C-c C-b} (@code{message-goto-body})は、ポイントをヘッダー区切り行の下 ---
+つまり本文の先頭にポイントを移動します。
 
 @findex message-tab
 @kindex TAB @r{(Message mode)}
-  While editing a header field that contains addresses, such as
-@samp{To:}, @samp{CC:} and @samp{BCC:}, you can complete an address by
-typing @key{TAB} (@code{message-tab}).  This attempts to insert the
-full name corresponding to the address based on a couple of methods,
-including EUDC, a library that recognizes a number of directory server
-protocols (@pxref{Top,,EUDC,eudc, The Emacs Unified Directory
-Client}).  Failing that, it attempts to expand the address as a mail
-alias (@pxref{Mail Aliases}).  If point is on a header field that does
-not take addresses, or if it is in the message body, then @key{TAB}
-just inserts a tab character.
+  @samp{To:}、@samp{CC:}、@samp{BCC:}のようなアドレスを含むヘッダーフィールドを編集しているときは、@key{TAB}
+(@code{message-tab})をタイプすることにより、アドレスを補完できます。これは2つの方法にもとづいて、そのアドレスにタイプするフルネームを挿入しようと試みます。まず複数のディレクトリーサーバープロトコルを認識するEUDCライブラリーを試み(@ref{Top,,EUDC,eudc,
+The Emacs Unified Directory
+Client}を参照してください)、それに失敗したときはメールエイリアスによりアドレスの展開を試みます(@ref{Mail
+Aliases}を参照してください)。メール本文のような、アドレスを要求しないヘッダーフィールドにポイントがあるとき、@key{TAB}はタブ文字を挿入するだけです。
 
 @node Citing Mail
 @subsection Citing Mail
@@ -480,42 +360,28 @@ just inserts a tab character.
 
 @table @kbd
 @item C-c C-y
-Yank the selected message from the mail reader, as a citation
-(@code{message-yank-original}).
+選択されたメッセージを、引用のためにメールリーダーからyankします(@code{message-yank-original})。
 @item C-c C-q
-Fill each paragraph cited from another message
-(@code{message-fill-yanked-message}).
+他のメッセージから引用された各パラグラフをフィルします(@code{message-fill-yanked-message})。
 @end table
 
 @kindex C-c C-y @r{(Message mode)}
 @findex message-yank-original
 @findex message-yank-prefix
-  You can use the command @kbd{C-c C-y} (@code{message-yank-original})
-to @dfn{cite} a message that you are replying to.  This inserts the
-text of that message into the mail buffer.  This command works only if
-the mail buffer is invoked from a mail reader running in Emacs, such
-as Rmail.
+  @kbd{C-c C-y}
+(@code{message-yank-original})を使用して、返信するメッセージから``引用(cite)''することができます。これは、そのメッセージのテキストをメールバッファーに挿入します。このコマンドは、Rmailのように、Emacsから実行されるメールリーダーから呼び出されたときだけ機能します。
 
-  By default, Emacs inserts the string @samp{>} in front of each line
-of the cited text; this prefix string is specified by the variable
-@code{message-yank-prefix}.  If you call @code{message-yank-original}
-with a prefix argument, the citation prefix is not inserted.
+  デフォルトでは、Emacsは引用されたテキストの各行の前に、文字列@samp{>}を挿入します。このプレフィクス文字列は、変数@code{message-yank-prefix}で指定されます。プレフィクス引数を指定して@code{message-yank-original}を呼び出した場合、引用のためのプレフィクスは挿入されません。
 
 @kindex C-c C-q @r{(Message mode)}
 @findex mail-fill-yanked-message
-  After using @kbd{C-c C-y}, you can type @kbd{C-c C-q}
-(@code{message-fill-yanked-message}) to fill the paragraphs of the
-cited message.  One use of @kbd{C-c C-q} fills all such paragraphs,
-each one individually.  To fill a single paragraph of the quoted
-message, use @kbd{M-q}.  If filling does not automatically handle the
-type of citation prefix you use, try setting the fill prefix
-explicitly.  @xref{Filling}.
+  @kbd{C-c C-y}を使用した後で、@kbd{C-c C-q}
+(@code{message-fill-yanked-message})とタイプして、引用されたメッセージのパラグラフをフィルできます。@kbd{C-c
+C-q}の1つの使い方としては、そのようなパラグラフのすべてを個別にフィルすることです。クォートされたメッセージの1つのパラグラフをフィルするには、@kbd{M-q}を使います。フィルが、あなたが使用している引用プレフィクスを自動的に処理しない場合は、フィルプレフィクスを明示的にセットしてみてください。@ref{Filling}を参照してください。
 
 @vindex mail-citation-hook
-  You can customize mail citation through the hook
-@code{mail-citation-hook}.  For example, you can use the Supercite
-package, which provides more flexible citation
-(@pxref{Introduction,,,sc, Supercite}).
+  フック@code{mail-citation-hook}を通じて、メールの引用をカスタマイズできます。たとえば、より柔軟な引用を提供するSuperciteパッケージを使うことができます(@ref{Introduction,,,sc,
+Supercite}を参照してください)。
 
 @node Mail Misc
 @subsection Mail Miscellany
@@ -524,32 +390,19 @@ package, which provides more flexible citation
 @findex mml-attach-file
 @cindex MIME
 @cindex Multipurpose Internet Mail Extensions
-  You can @dfn{attach} a file to an outgoing message by typing
-@kbd{C-c C-a} (@code{mml-attach-file}) in the mail buffer.  Attaching
-is done using the Multipurpose Internet Mail Extensions
-(@acronym{MIME}) standard.
+  メールバッファーで@kbd{C-c C-a}
+(@code{mml-attach-file})とタイプすることにより、送信するメッセージに、ファイルを@dfn{添付(attach)}できます。添付は、@acronym{MIME}(Multipurpose
+Internet Mail Extensions)標準を使って行なわれます。
 
-  The @code{mml-attach-file} command prompts for the name of the file,
-and for the attachment's @dfn{content type}, @dfn{description}, and
-@dfn{disposition}.  The content type is normally detected
-automatically; just type @key{RET} to accept the default.  The
-description is a single line of text that the recipient will see next
-to the attachment; you may also choose to leave this empty.  The
-disposition is either @samp{inline} (the default), which means the
-recipient will see a link to the attachment within the message body,
-or @samp{attachment}, which means the link will be separate from the
-body.
+  @code{mml-attach-file}コマンドはファイル名と、添付ファイルの@dfn{content
+type(内容のタイプ)}、@dfn{description(説明)}、@dfn{disposition(性質)}の入力を求めます。通常content
+typeは自動的に検知されます。単に@key{RET}とタイプすると、そのデフォルトが適用されます。descriptionは1行のテキストで、そのメールの受取人には添付ファイルの隣に表示されます。これは空にすることもできます。dispositionは@samp{inline}(デフォルト)、または@samp{attachment}のどちらかです。@samp{inline}の場合、メッセージ本文に添付ファイルへのリンクが表示され、@samp{attachment}の場合は、本文とは別にリンクが表示されます。
 
 @findex mail-add-attachment
-  The @code{mml-attach-file} command is specific to Message mode; in
-Mail mode use @kbd{mail-add-attachment} instead.  It will prompt only
-for the name of the file, and will determine the content type and the
-disposition automatically.  If you want to include some description of
-the attached file, type that in the message body.
+  @code{mml-attach-file}コマンドは、Messageモードに特有なコマンドです。Mailモードではかわりに、@kbd{mail-add-attachment}を使用します。これはファイル名の入力だけを求め、content
+typeとdispositionは自動的に決定されます。添付ファイルの説明を含めたい場合は、それをメッセージの本文にタイプしてください。
 
-  The actual contents of the attached file are not inserted into the
-mail buffer.  Instead, some placeholder text is inserted into the mail
-buffer, like this:
+  添付ファイルの実際の内容は、メールバッファーには挿入されません。かわりに、以下のような代替テキストがメールバッファーに挿入されます:
 
 @smallexample
 <#part type="text/plain" filename="~/foo.txt" disposition=inline>
@@ -557,36 +410,22 @@ buffer, like this:
 @end smallexample
 
 @noindent
-When you type @kbd{C-c C-c} or @kbd{C-c C-s} to send the message, the
-attached file will be delivered with it.
+@kbd{C-c C-c}または@kbd{C-c C-s}でメッセージを送信するとき、それと一緒に添付ファイルも送信されます。
 
 @findex ispell-message
-  While composing a message, you can do spelling correction on the
-message text by typing @kbd{M-x ispell-message}.  If you have yanked
-an incoming message into the outgoing draft, this command skips what
-was yanked, but it checks the text that you yourself inserted (it
-looks for indentation or @code{mail-yank-prefix} to distinguish the
-cited lines from your input).  @xref{Spelling}.
+  メッセージを作成しているとき、@kbd{M-x
+ispell-message}とタイプして、メッセージテキストのスペル訂正を行なうことができます。受信メッセージから送信用の下書きにyankした場合、このコマンドはyankされたテキストをスキップして、あなた自身が挿入したテキストだけをチェックします(このコマンドはインデント、またはあなたの入力と引用された行を区別する@code{mail-yank-prefix}を調べます)。@ref{Spelling}を参照してください。
 
 @vindex mail-mode-hook
 @vindex mail-setup-hook
-  Turning on Message mode (which @kbd{C-x m} does automatically) runs
-the normal hooks @code{text-mode-hook} and @code{message-mode-hook}.
-Initializing a new outgoing message runs the normal hook
-@code{message-setup-hook}; you can use this hook if you want to make
-changes to the appearance of the mail buffer.  @xref{Hooks}.
+  Messageモードをオンに切り替えると(@kbd{C-x
+m}は自動的にこれを行ないます)、ノーマルフックの@code{text-mode-hook}と@code{message-mode-hook}が自動的に実行されます。新しい送信メッセージの初期化では、ノーマルフック@code{message-setup-hook}が実行されます。メールバッファーの外観を変更したい場合は、このフックを使うことができます。@ref{Hooks}を参照してください。
 
-  The main difference between these hooks is just when they are
-invoked.  Whenever you type @kbd{C-x m}, @code{message-mode-hook} runs
-as soon as the mail buffer is created.  Then the @code{message-setup}
-function inserts the default contents of the buffer.  After these
-default contents are inserted, @code{message-setup-hook} runs.
+  これらのフックの主な違いは、それらが呼び出されるタイミングだけです。@kbd{C-x m},
+@code{message-mode-hook}とタイプしたときは、メールバッファーが作成された直後に@code{message-mode-hook}が実行されます。その後@code{message-setup}関数がそのバッファーのデフォルトの内容を挿入します。これらのデフォルトの内容が挿入された後に、@code{message-setup-hook}が実行されます。
 
-  If you use @kbd{C-x m} to continue an existing composition,
-@code{message-mode-hook} runs immediately after switching to the mail
-buffer.  If the buffer is unmodified, or if you decide to erase it and
-start again, @code{message-setup-hook} runs after the default contents
-are inserted.
+  既存のメッセージにたいして、@kbd{C-x
+m}で作成を継続する場合、そのメールバッファーに切り替えた直後に、@code{message-mode-hook}が実行されます。バッファーが変更されていない場合、またはそれを削除して新たに作成を開始する場合には、デフォルトの内容が挿入された後に、@code{message-setup-hook}が実行されます。
 
 @node Mail Signature
 @section Mail Signature
@@ -594,71 +433,48 @@ are inserted.
 @cindex mail signature
 @vindex message-signature-file
 @vindex message-signature
-  You can add a standard piece of text---your @dfn{mail
-signature}---to the end of every message.  This signature may contain
-information such as your telephone number or your physical location.
-The variable @code{message-signature} determines how Emacs handles the
-mail signature.
+  各メッセージの最後に標準的なテキストの断片 --- @dfn{メール署名(mail signature)} ---
+を追加できます。この署名には、あなたの電話番号や住所などの情報を含めることができます。変数@code{message-signature}は、Emacsがメール署名を扱う方法を決定します。
 
-  The default value of @code{message-signature} is @code{t}; this
-means to look for your mail signature in the file @file{~/.signature}.
-If this file exists, its contents are automatically inserted into the
-end of the mail buffer.  You can change the signature file via the
-variable @code{message-signature-file}.
+  @code{message-signature}のデフォルト値は@code{t}です。これはメール署名をファイル@file{~/.signature}から探すことを意味します。ファイルが存在する場合、そのファイルの内容がメールバッファーの最後に自動的に挿入されます。変数@code{message-signature-file}を通じて署名ファイルを変更できます。
 
-  If you change @code{message-signature} to a string, that specifies
-the text of the signature directly.
+  @code{message-signature}を文字列に変更すると、それは署名のテキストを直接指定することになります。
 
 @kindex C-c C-w @r{(Message mode)}
 @findex message-insert-signature
-  If you change @code{message-signature} to @code{nil}, Emacs will not
-insert your mail signature automatically.  You can insert your mail
-signature by typing @kbd{C-c C-w} (@code{message-insert-signature}) in
-the mail buffer.  Emacs will look for your signature in the signature
-file.
+  @code{message-signature}を@code{nil}に変更した場合、Emacsはメール署名を自動的に挿入しません。メールバッファーで@kbd{C-c
+C-w}
+(@code{message-insert-signature})とタイプすることにより、メール署名を挿入できます。この場合も、Emacsは署名ファイルから署名を探します。
 
 @vindex mail-signature-file
 @vindex mail-signature
-  If you use Mail mode rather than Message mode for composing your
-mail, the corresponding variables that determine how your signature is
-sent are @code{mail-signature} and @code{mail-signature-file} instead.
+  メールを作成するのにMessageモードではなくMailモードを使用する場合、どのようにして署名を送るか決定する変数は、@code{mail-signature}と@code{mail-signature-file}になります。
 
-  By convention, a mail signature should be marked by a line whose
-contents are @samp{-- }.  If your signature lacks this prefix, it is
-added for you.  The remainder of your signature should be no more than
-four lines.
+  慣例により、メール署名は行の内容が@samp{--
+}であることによりマークされるべきです。署名にこのプレフィクスがない場合、このプレフィクスが追加されます。署名は4行を超えないようにするべきです。
 
 @node Mail Amusements
 @section Mail Amusements
 
 @findex spook
 @cindex NSA
-  @kbd{M-x spook} adds a line of randomly chosen keywords to an outgoing
-mail message.  The keywords are chosen from a list of words that suggest
-you are discussing something subversive.
+  @kbd{M-x
+spook}は、送信するメールメッセージに、ランダムに選択されたキーワードの行を追加します。これらのキーワードは、あなたが何らかの破壊活動を企てていると思わせるような単語のリストから選択されます。
 
-  The idea behind this feature is the suspicion that the
-NSA@footnote{The US National Security Agency.} and other intelligence
-agencies snoop on all electronic mail messages that contain keywords
-suggesting they might find them interesting.  (The agencies say that
-they don't, but that's what they @emph{would} say.)  The idea is that if
-lots of people add suspicious words to their messages, the agencies will
-get so busy with spurious input that they will have to give up reading
-it all.  Whether or not this is true, it at least amuses some people.
+  この機能の背後にあるアイデアは、NSA@footnote{The US National Security
+Agency.}や他の情報機関が、かれらが関心をもつキーワードを含むすべてのインターネットメールのメッセージを監視しているという疑惑です(そのような政府機関は、``やっていない''と言いますが、もちろんかれらはそう言うでしょう)。このアイデアは、もし多くの人々がメッセージに不審な単語を含めれば、政府機関は不審な入力で手一杯になり、やがて最後はそれらを読むのを止めるだろうというものです。これが本当かどうかはわかりませんが、少なくとも人々を楽しませることができます。
 
 @findex fortune-to-signature
 @cindex fortune cookies
-  You can use the @code{fortune} program to put a ``fortune cookie''
-message into outgoing mail.  To do this, add
-@code{fortune-to-signature} to @code{mail-setup-hook}:
+  @code{fortune}プログラムを使用して、送信メールに``フォーチューンクッキー(fortune
+cookie)''メッセージを追加できます。これを行なうには@code{mail-setup-hook}に@code{fortune-to-signature}を追加してください。
 
 @example
 (add-hook 'mail-setup-hook 'fortune-to-signature)
 @end example
 
 @noindent
-You will probably need to set the variable @code{fortune-file} before
-using this.
+多分、これを使う前に変数@code{fortune-file}をセットする必要があるでしょう。
 
 @node Mail Methods
 @section Mail-Composition Methods
@@ -668,30 +484,16 @@ using this.
 
 @cindex MH mail interface
 @cindex Message mode for sending mail
-  In this chapter we have described the usual Emacs mode for editing
-and sending mail---Message mode.  This is only one of several
-available modes.  Prior to Emacs 23.2, the default mode was Mail mode,
-which is similar to Message mode in many respects but lacks features
-such as MIME support.  Another available mode is MH-E
-(@pxref{Top,,MH-E,mh-e, The Emacs Interface to MH}).
+  このチャプターでは、メールを編集したり送信する通常のEmacsモードである、Messageモードを説明してきました。これは、いくつかの利用可能なモードのうちの1つに過ぎません。Emacs23.2以前では、デフォルトのモードはMailモードで、これは多くの点でMessageモードに似ていますが、MIMEサポートのような機能がありません。その他の利用可能なモードはMH-Eです(@ref{Top,,MH-E,mh-e,
+The Emacs Interface to MH}を参照してください)。
 
 @vindex mail-user-agent
-  You can choose any of these @dfn{mail user agents} as your preferred
-method for editing and sending mail.  The commands @code{C-x m},
-@code{C-x 4 m} and @code{C-x 5 m} use whichever agent you have
-specified; so do various other parts of Emacs that send mail, such as
-the bug reporter (@pxref{Bugs}).  To specify a mail user agent,
-customize the variable @code{mail-user-agent}.  Currently, legitimate
-values include @code{message-user-agent} (Message mode)
-@code{sendmail-user-agent} (Mail mode), @code{gnus-user-agent}, and
-@code{mh-e-user-agent}.
+  これらの@dfn{メールユーザーエージェント(mail user
+agents)}から、メールを編集したり送信するための、好みの方法を選択できます。コマンド@code{C-x m}、@code{C-x 4
+m}、@code{C-x 5
+m}は指定されたエージェントを使用するので、Emacsでメールを送信する他の様々な部分(たとえばバグリポーターなど、@ref{Bugs}を参照してください)もこれを行ないます。メールユーザーエージェントを指定するには、変数@code{mail-user-agent}をカスタマイズします。現在のところ、正式な値には@code{message-user-agent}(Messageモード)、@code{sendmail-user-agent}(Mailモード)、@code{gnus-user-agent}、@code{mh-e-user-agent}が含まれます。
 
-  If you select a different mail-composition method, the information
-in this chapter about the mail buffer and Message mode does not apply;
-the other methods use a different format of text in a different
-buffer, and their commands are different as well.
+  他のメール作成方法を選択した場合、メールバッファーとMessageモードに関するこのチャプターの情報は適用できません。他の方法は違うバッファーで異なるフォーマットのテキストを使用し、コマンドも異なります。
 
 @vindex read-mail-command
-  Similarly, to specify your preferred method for reading mail,
-customize the variable @code{read-mail-command}.  The default is
-@code{rmail} (@pxref{Rmail}).
+  同様に、メールを読むための好みの方法を指定するには、変数@code{read-mail-command}をカスタマイズします。デフォルトは@code{rmail}です(@ref{Rmail}を参照してください)。

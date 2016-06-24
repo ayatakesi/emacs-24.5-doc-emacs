@@ -1,3 +1,8 @@
+@c ===========================================================================
+@c
+@c This file was generated with po4a. Translate the source file.
+@c
+@c ===========================================================================
 @c This is part of the Emacs manual., Abbrevs, This is part of the Emacs manual., Top
 @c Copyright (C) 1985-1987, 1993-1995, 1997, 1999-2015 Free Software
 @c Foundation, Inc.
@@ -5,20 +10,17 @@
 @node Maintaining
 @chapter Maintaining Large Programs
 
-  This chapter describes Emacs features for maintaining large
-programs.  If you are maintaining a large Lisp program, then in
-addition to the features described here, you may find
-the @file{ERT} (``Emacs Lisp Regression Testing'') library useful
-(@pxref{Top,,ERT,ert, Emacs Lisp Regression Testing}).
+  このチャプターでは、大きなプログラムをメンテナンスするEmacsの機能を説明します。Lispの大きなプログラムをメンテナンスしている場合は、ここで説明している機能に加え、@file{ERT}
+(``Emacs Lisp Regression Testing'')ライブラリーも便利だと思うかもしれません(@ref{Top,,ERT,ert,
+Emacs Lisp Regression Testing}を参照してください)。
 
 @menu
-* Version Control::     Using version control systems.
-* Change Log::          Maintaining a change history for your program.
-* Tags::                Go directly to any function in your program in one
-                          command.  Tags remembers which file it is in.
-* EDE::                 An integrated development environment for Emacs.
+* Version Control::          バージョンコントロールシステムの使用。
+* Change Log::               プログラムの変更履歴をメンテナンスする。
+* Tags::                     1つのコマンドでプログラムの任意の関数に直接移動する。Tagsはそれがどのファイルにあるか記憶する。
+* EDE::                      Emacsのための統合開発環境。
 @ifnottex
-* Emerge::              A convenient way of merging two versions of a program.
+* Emerge:: 2つのバージョンのプログラムをマージする便利な方法。
 @end ifnottex
 @end menu
 
@@ -26,171 +28,124 @@ the @file{ERT} (``Emacs Lisp Regression Testing'') library useful
 @section Version Control
 @cindex version control
 
-  A @dfn{version control system} is a program that can record multiple
-versions of a source file, storing information such as the creation
-time of each version, who made it, and a description of what was
-changed.
+  @dfn{バージョンコントロールシステム(version control
+system)}は、ソースファイルの複数のバージョンを記録したり、それらのバージョンの作成日時などや、誰が作成したか、何が変更されたかの説明などを記録できるプログラムのことです。
 
-  The Emacs version control interface is called @dfn{VC}@.  VC commands
-work with several different version control systems; currently, it
-supports GNU Arch, Bazaar, CVS, Git, Mercurial, Monotone, RCS,
-SCCS/CSSC, and Subversion.  Of these, the GNU project distributes CVS,
-Arch, RCS, and Bazaar.
+  Emacsのバージョンコントロールのためのインターフェースは、@dfn{VC}と呼ばれます。VCコマンドは、複数の異なるバージョンコントロールシステムで機能します。現在のところ、GNU
+Arch、Bazaar、CVS、Git、Mercurial、Monotone、RCS、SCCS/CSSC、Subversionがサポートされます。これらの中で、GNUプロジェクトのディストリビューションはCVS、Arch、RCS、Bazaarです。
 
-  VC is enabled automatically whenever you visit a file governed by a
-version control system.  To disable VC entirely, set the customizable
-variable @code{vc-handled-backends} to @code{nil}
+  バージョン管理システムで生成されたファイルをvisitすると、自動的にVCが有効になります。VCを無効にするには、カスタマイズ可能な変数@code{vc-handled-backends}を@code{nil}をセットします
 @iftex
-(@pxref{Customizing VC,,,emacs-xtra, Specialized Emacs Features}).
+(@ref{Customizing VC,,,emacs-xtra, Specialized Emacs Features}を参照してください)。
 @end iftex
 @ifnottex
-(@pxref{Customizing VC}).
+(@ref{Customizing VC}を参照してください)。
 @end ifnottex
 
 @menu
-* Introduction to VC::  How version control works in general.
-* VC Mode Line::        How the mode line shows version control status.
-* Basic VC Editing::    How to edit a file under version control.
-* Log Buffer::          Features available in log entry buffers.
-* Registering::         Putting a file under version control.
-* Old Revisions::       Examining and comparing old versions.
-* VC Change Log::       Viewing the VC Change Log.
-* VC Undo::             Canceling changes before or after committing.
-* VC Ignore::           Ignore files under version control system.
-* VC Directory Mode::   Listing files managed by version control.
-* Branches::            Multiple lines of development.
+* Introduction to VC::       バージョンコントロールが機能する一般的な方法。
+* VC Mode Line::             モードラインがバージョンコントロールの状態を表示する方法。
+* Basic VC Editing::         バージョンコントロール下のファイルの編集方法。
+* Log Buffer::               logエントリーバッファーで利用可能な機能。
+* Registering::              バージョンコントロール下にファイルを置く。
+* Old Revisions::            古いバージョンの調査と比較。
+* VC Change Log::            VC Change Logの閲覧。
+* VC Undo::                  コミット前後の変更の取り消し。
+* VC Ignore::                バージョンコントロール下のファイルの無視。
+* VC Directory Mode::        バージョンコントロールで管理されたファイルの一覧。
+* Branches::                 開発における複数行。
 @ifnottex
-* Miscellaneous VC::    Various other commands and features of VC.
-* Customizing VC::      Variables that change VC's behavior.
+* Miscellaneous VC:: その他のVCのさまざまなコマンドと機能。
+* Customizing VC:: VCの動作を変更する変数。
 @end ifnottex
 @end menu
 
 @node Introduction to VC
 @subsection Introduction to Version Control
 
-  VC allows you to use a version control system from within Emacs,
-integrating the version control operations smoothly with editing.  It
-provides a uniform interface for common operations in many version
-control operations.
+  VCは、Emacsからのバージョンコントロールシステムの使用、およびバージョンコントロールの操作と編集をスムーズに統合します。VCは、多くのバージョンコントロールシステムでの一般的な操作にたいする、統一されたインターフェースを提供します。
 
-  Some uncommon or intricate version control operations, such as
-altering repository settings, are not supported in VC@.  You should
-perform such tasks outside Emacs, e.g., via the command line.
+  リポジトリー設定の変更など、非一般的または複雑なバージョンコントロールの操作は、VCではサポートされません。そのようなタスクは、Emacsの外(たとえばコマンドライン)で処理する必要があります。
 
-  This section provides a general overview of version control, and
-describes the version control systems that VC supports.  You can skip
-this section if you are already familiar with the version control system
-you want to use.
+  このセクションは、バージョンコントロールの一般的な概観を提供し、VCがサポートするバージョンコントロールを説明します。すでに使いたいバージョンコントロールシステムをよく知っている場合、このセクションはスキップできます。
 
 @menu
-* Why Version Control?::    Understanding the problems it addresses.
-* Version Control Systems:: Supported version control back-end systems.
-* VCS Concepts::            Words and concepts related to version control.
-* VCS Merging::             How file conflicts are handled.
-* VCS Changesets::          How changes are grouped.
-* VCS Repositories::        Where version control repositories are stored.
-* Types of Log File::       The VCS log in contrast to the ChangeLog.
+* Why Version Control?::     問題が示すところを理解するには。
+* Version Control Systems::  バックエンドシステムとしてサポートされるバージョンコントロール。
+* VCS Concepts::             バージョンコントロールに関連する単語と概念。
+* VCS Merging::              ファイルの衝突を処理する方法。
+* VCS Changesets::           変更がグループ化される方法。
+* VCS Repositories::         バージョンコントロールのリポジトリーが格納される場所。
+* Types of Log File::        VCS logとChangeLogの違い。
 @end menu
 
 @node Why Version Control?
 @subsubsection Understanding the problems it addresses
 
-  Version control systems provide you with three important
-capabilities:
+  バージョンコントロールシステムは、3つの重要な能力を提供します。
 
 @itemize @bullet
 @item
-@dfn{Reversibility}: the ability to back up to a previous state if you
-discover that some modification you did was a mistake or a bad idea.
+@dfn{Reversibility(可逆性)}: ある変更が間違い、または間違えた考えにもとづくものだと気づいたときに、前の状態に戻す能力です。
 
 @item
-@dfn{Concurrency}: the ability to have many people modifying the same
-collection of files knowing that conflicting modifications can be
-detected and resolved.
+@dfn{Concurrency(並列性)}: 多くの人が同じファイルコレクションを変更するとき、変更の衝突を検知して解決する能力です。
 
 @item
-@dfn{History}: the ability to attach historical data to your data,
-such as explanatory comments about the intention behind each change to
-it.  Even for a programmer working solo, change histories are an
-important aid to memory; for a multi-person project, they are a
-vitally important form of communication among developers.
+@dfn{History(履歴)}:
+それを変更した背後の意図を説明するコメントなど、履歴データをデータに付す能力です。1人で作業するプログラマーでさえ、変更履歴は記憶を助けるのに重要です。複数人のプロジェクトでは、開発者間のコミュニケーション形式として、とても重要です。
 @end itemize
 
 @node Version Control Systems
 @subsubsection Supported Version Control Systems
 
 @cindex back end (version control)
-  VC currently works with many different version control systems,
-which it refers to as @dfn{back ends}:
+  VCは現在のところ、多くの異なるバージョンコントロールで機能し、それらを@dfn{バックエンド(back ends)}として参照します:
 
 @itemize @bullet
 
 @cindex SCCS
 @item
-SCCS was the first version control system ever built, and was long ago
-superseded by more advanced ones.  VC compensates for certain features
-missing in SCCS (e.g., tag names for releases) by implementing them
-itself.  Other VC features, such as multiple branches, are simply
-unavailable.  Since SCCS is non-free, we recommend avoiding it.
+SCCSは、これまでに構築された一番最初のバージョンコントロールシステムで、ずっと以前に、もっと進んだものに取って代わられました。SCCSにない特定の機能のためのVCコンポーネントは、それら自身により実装されています。複数ブランチなど、その他のVC機能は単に利用不可です。SCCSはフリーではないので、これを避けることを推奨します。
 
 @cindex CSSC
 @item
-CSSC is a free replacement for SCCS@.  You should use CSSC only if, for
-some reason, you cannot use a more recent and better-designed version
-control system.
+CSSCはSCCSのフリーな置き換えです。何らかの理由により、もっと新しい、より良いデザインのバージョンコントロールシステムを使うことができないときだけ、CSSCを使うべきです。
 
 @cindex RCS
 @item
-RCS is the free version control system around which VC was initially
-built.  It is relatively primitive: it cannot be used over the
-network, and works at the level of individual files.  Almost
-everything you can do with RCS can be done through VC.
+RCSは、VCが最初に構築された頃の、フリーなバージョンコントロールシステムです。これは比較的に初期のものです。これはネットワークを超えて使うことはできず、ファイルに個別のレベルで機能します。RCSでできるほとんどのことは、VCを通じて行うことができます。
 
 @cindex CVS
 @item
-CVS is the free version control system that was, until recently (circa
-2008), used by the majority of free software projects.  Nowadays, it
-is slowly being superseded by newer systems.  CVS allows concurrent
-multi-user development either locally or over the network.  Unlike
-newer systems, it lacks support for atomic commits and file
-moving/renaming.  VC supports all basic editing operations under CVS.
+CVSは、フリーなバージョンコントロールシステムで、最近(2008年ごろ)まではフリーソフトウェアプロジェクトの大半で使われていました。最近では、新しいシステムに徐々に置き換えられています。CVSではローカルまたはネットワーク越しの、複数ユーザーによる並列開発が可能です。新しいシステムとは異なり、アトミックなコミットとファイルの移動・リネームにたいするサポートがありません。VCはCVS下での基本的な編集操作をサポートします。
 
 @cindex SVN
 @cindex Subversion
 @item
-Subversion (svn) is a free version control system designed to be
-similar to CVS but without its problems (e.g., it supports atomic
-commits of filesets, and versioning of directories, symbolic links,
-meta-data, renames, copies, and deletes).
+Subversion(svn)は、CVSと同じようにデザインされた、フリーなバージョンコントロールシステムですが、CVSのもつ問題はありません(たとえば、これはファイルセットのアトミックなコミット、ディレクトリーのバージョニング、シンボリックリンク、メタデータ、リネーム、コピー、削除をサポートします)。
 
 @cindex GNU Arch
 @cindex Arch
 @item
-GNU Arch is one of the earliest @dfn{decentralized} version control
-systems (the other being Monotone).  @xref{VCS Concepts}, for a
-description of decentralized version control systems.  It is no longer
-under active development, and has been deprecated in favor of Bazaar.
+GNU
+Archは、一番古い@dfn{分散化された(decentralized)}バージョンコントロールシステムです(他にMonotoneがあります)。分散化されたバージョンコントロールシステムの説明は、@ref{VCS
+Concepts}を参照してください。Bazaarを優先するために、もはや活発に開発されておらず、推奨されていません。
 
 @cindex git
 @item
-Git is a decentralized version control system originally invented by
-Linus Torvalds to support development of Linux (his kernel).  VC
-supports many common Git operations, but others, such as repository
-syncing, must be done from the command line.
+Gitは、最初にLinus
+TorvaldsによりLinux(彼のkernel)の開発をサポートするために考案されました。VCは多くのGit操作をサポートしますが、その他のリポジトリーの同期などはコマンドラインを使わなければなりません。
 
 @cindex hg
 @cindex Mercurial
 @item
-Mercurial (hg) is a decentralized version control system broadly
-resembling Git.  VC supports most Mercurial commands, with the
-exception of repository sync operations.
+Mercurial(hg)は、Gitに酷似した分散化されたバージョンコントロールシステムです。VCは、リポジトリーの同期操作を除いて、ほとんどのMercurialコマンドをサポートします。
 
 @cindex bzr
 @cindex Bazaar
 @item
-Bazaar (bzr) is a decentralized version control system that supports
-both repository-based and decentralized versioning.  VC supports most
-basic editing operations under Bazaar.
+Bazaar(bzr)は、リポジトリーベースと分散化されたバージョニングの両方をサポートする、分散化されたバージョンコントロールシステムです。VCはBazaar下でのほとんどの基本的な編集操作をサポートします。
 @end itemize
 
 @node VCS Concepts
@@ -198,102 +153,55 @@ basic editing operations under Bazaar.
 
 @cindex repository
 @cindex registered file
-   When a file is under version control, we say that it is
-@dfn{registered} in the version control system.  The system has a
-@dfn{repository} which stores both the file's present state and its
-change history---enough to reconstruct the current version or any
-earlier version.  The repository also contains other information, such
-as @dfn{log entries} that describe the changes made to each file.
+   ファイルがバージョンコントロールの配下にある時、それがバージョンコントロールシステムに@dfn{登録されている(registered)}と言います。バージョンコントロールシステムは、@dfn{リポジトリー(repository)}をもちます。これはファイルの現在の状態、および古いバージョンから現在のバージョンを再構成するのに充分な変更履歴の、両方を保存します。リポジトリーには、各ファイルに行われた変更の説明である@dfn{ログエントリー(log
+entries)}など、その他の情報も含まれます。
 
 @cindex work file
 @cindex checking out files
-  The copy of a version-controlled file that you actually edit is
-called the @dfn{work file}.  You can change each work file as you
-would an ordinary file.  After you are done with a set of changes, you
-may @dfn{commit} (or @dfn{check in}) the changes; this records the
-changes in the repository, along with a descriptive log entry.
+  実際に編集する、バージョンコントロールされたファイルのコピーのことを、@dfn{作業ファイル(work
+file)}と呼びます。作業ファイルは、通常のファイルを同じように変更できます。一連の変更を終えた後、その変更を@dfn{コミット(commit)}または@dfn{チェックイン(check
+in)}します。これにより、その変更はログエントリーの記述とともに、リポジトリーに記録されます。
 
 @cindex working tree
-  A directory tree of work files is called a @dfn{working tree}.
+  作業ファイルのディレクトリツリーを、@dfn{作業ツリー(working tree)}と呼びます。
 
 @cindex revision
 @cindex revision ID
-  Each commit creates a new @dfn{revision} in the repository.  The
-version control system keeps track of all past revisions and the
-changes that were made in each revision.  Each revision is named by a
-@dfn{revision ID}, whose format depends on the version control system;
-in the simplest case, it is just an integer.
+  co８mmitするたびに、リポジトリーに新しい@dfn{リビジョン(revision)}が作成されます。バージョンコントロールシステムは、過去のすべてのリビジョンと、各リビジョンで行われた変更を記録します。各リビジョンには、@dfn{リビジョンID(revision
+ID)}により名前がつけられます。リビジョンIDのフォーマットは、バージョンコントロールシステムに依存します。もっとも簡単なケースでは、リビジョンIDは単なる整数です。
 
-  To go beyond these basic concepts, you will need to understand three
-aspects in which version control systems differ.  As explained in the
-next three sections, they can be lock-based or merge-based; file-based
-or changeset-based; and centralized or decentralized.  VC handles all
-these modes of operation, but it cannot hide the differences.
+  これらの基本的な概念を超えるにつれ、各バージョンコントロールシステムの違いの、3つの様相を理解する必要がでてくるでしょう。以降の3つのセクションで説明するように、各バージョンコントロールシステムには、ロックベース(lock-based)とマージベース(merge-based)、ファイルベース(file-based)と変更セットベース(changeset-based)、集中型(centralized)と分散型(decentralized)の違いがあります。VCはこれらすべてのモードの操作を処理しますが、それらの違いを隠蔽することはできません。
 
 @node VCS Merging
 @subsubsection Merge-based vs lock-based Version Control
 
-  A version control system typically has some mechanism to coordinate
-between users who want to change the same file.  There are two ways to
-do this: merging and locking.
+  バージョンコントロールシステムは通常、同じファイルを変更したい複数ユーザーを調整するために、何らかのメカニズムをもちます。これを行うには2つの方法
+--- マージとロック --- があります。
 
 @cindex merging-based version
-  In a version control system that uses merging, each user may modify
-a work file at any time.  The system lets you @dfn{merge} your work
-file, which may contain changes that have not been committed, with the
-latest changes that others have committed.
+  マージを使うバージョンコントロールシステムでは、各ユーザーはいつでも作業ファイルを変更します。バージョンコントロールシステムは、コミットされていない変更を含むユーザーの作業ファイルを、他のユーザーによりコミットされた最新の変更とマージします。
 
 @cindex locking-based version
-  Older version control systems use a @dfn{locking} scheme instead.
-Here, work files are normally read-only.  To edit a file, you ask the
-version control system to make it writable for you by @dfn{locking}
-it; only one user can lock a given file at any given time.  This
-procedure is analogous to, but different from, the locking that Emacs
-uses to detect simultaneous editing of ordinary files
-(@pxref{Interlocking}).  When you commit your changes, that unlocks
-the file, and the work file becomes read-only again.  Other users may
-then lock the file to make their own changes.
+  古いバージョンコントロールシステムは、かわりに@dfn{ロック(locking)}を使います。この場合、作業ファイルは通常は読み取り専用です。ファイルを編集するには、それを@dfn{ロック}することにより書き込み可能にできるか、バージョンコントロールシステムに尋ねます。ある時点で、そのファイルをロックできるユーザーは1人だけです。この手順は、通常のファイルの同時編集をEmacsが検知する方法と類似しているようですが、異なります(@ref{Interlocking}を参照してください)。変更をコミットすると、ファイルはアンロック(unlocks)され、作業ファイルは再び読み取り専用になります。他のユーザーは、変更するためにそのファイルをロックすることができます。
 
-  Both locking and merging systems can have problems when multiple
-users try to modify the same file at the same time.  Locking systems
-have @dfn{lock conflicts}; a user may try to check a file out and be
-unable to because it is locked.  In merging systems, @dfn{merge
-conflicts} happen when you commit a change to a file that conflicts
-with a change committed by someone else after your checkout.  Both
-kinds of conflict have to be resolved by human judgment and
-communication.  Experience has shown that merging is superior to
-locking, both in convenience to developers and in minimizing the
-number and severity of conflicts that actually occur.
+  ロックおよびマージの両方のシステムは、複数ユーザーが同じときに同じファイルの変更を試みたときに問題が発生し得ます。ロックを使うシステムには、@dfn{ロックの衝突(lock
+conflicts)}があります。あるユーザーはファイルのチェックアウトを試みますが、それがすでにロックされている場合はロックできません。マージを使うシステムには、@dfn{マージの衝突(merge
+conflicts)}があります。これはファイルに行った変更をコミットするとき、それが後からチェックアウトした他の誰かによる変更のコミットと衝突するときに発生します。どちらの衝突も、人間の判断と意思疎通により解決する必要があります。経験から、開発者に取っての利便性と、実際に発生する衝突の重大性と数を最小にするという両方の点で、マージはロックに優ります。
 
-  SCCS always uses locking.  RCS is lock-based by default but can be
-told to operate in a merging style.  CVS and Subversion are
-merge-based by default but can be told to operate in a locking mode.
-Decentralized version control systems, such as GNU Arch, Git, and
-Mercurial, are exclusively merging-based.
+  SCCSは常にロックを使います。RCSはデフォルトではロックベースですが、マージスタイルで処理するように指示できます。CVSとSubversionはデフォルトではマージベースですが、ロックモードで処理するように指示できます。GNU
+Arch、Git、Mercurialのような分散型のバージョンコントロールシステムは、マージベースだけです。
 
-  VC mode supports both locking and merging version control.  The
-terms ``commit'' and ``update'' are used in newer version control
-systems; older lock-based systems use the terms ``check in'' and
-``check out''.  VC hides the differences between them as much as
-possible.
+  VCはロックとマージの両方のバージョンコントロールをサポートします。``commit(コミット)''と``update(更新)''という用語は、新しいバージョンコントロールシステムで使用されます。古いロックベースのシステムでは、``check
+in(チェックイン)''と``check out(チェックアウト)''という用語が使用されます。VCはこれらの違いをできる限り隠蔽します。
 
 @node VCS Changesets
 @subsubsection Changeset-based vs File-based Version Control
 
 @cindex file-based version control
-  On SCCS, RCS, CVS, and other early version control systems, version
-control operations are @dfn{file-based}: each file has its own comment
-and revision history separate from that of all other files.  Newer
-systems, beginning with Subversion, are @dfn{changeset-based}: a
-commit may include changes to several files, and the entire set of
-changes is handled as a unit.  Any comment associated with the change
-does not belong to a single file, but to the changeset itself.
+  SCCS、RCS、CVS、およびその他の初期のバージョンコントロールシステムでは、バージョンコントロールの操作は@dfn{ファイルベース(file-based)}です。各ファイルは、他のすべてのファイルとは別に、ファイル自身のコメントとリビジョン履歴をもちます。Subversionで始まる新しいシステムは、@dfn{変更セットベース(changeset-based)}です。コミットは複数ファイルにたいする変更を含むときがあり、一連の変更全体を1つの単位として扱います。変更にたいするコメントは1つのファイルではなく、変更セットに属します。
 
 @cindex changeset-based version control
-  Changeset-based version control is more flexible and powerful than
-file-based version control; usually, when a change to multiple files
-has to be reversed, it's good to be able to easily identify and remove
-all of it.
+  変更セットベースのバージョンコントロールは、ファイルベースのバージョンコントロールより、柔軟で強力です。通常、複数ファイルの変更を元に戻す必要がある時、それを簡単に識別してすべてを削除できます。
 
 @node VCS Repositories
 @subsubsection Decentralized vs Centralized Repositories
@@ -301,23 +209,12 @@ all of it.
 @cindex centralized version control
 @cindex decentralized version control
 @cindex distributed version control
-  Early version control systems were designed around a
-@dfn{centralized} model in which each project has only one repository
-used by all developers.  SCCS, RCS, CVS, and Subversion share this
-kind of model.  One of its drawbacks is that the repository is a choke
-point for reliability and efficiency.
+  初期のバージョンコントロールシステムは、@dfn{集中型(centralized)}モデルでデザインされていて、各プロジェクトはすべての開発者が使用するただ1つのリポジトリーをもちます。SCCS、RCS、CVS、Subversionはこの種のモデルを共有します。このモデルの欠点の1つは、リポジトリーが信頼性と効率の要衝となることです。
 
-  GNU Arch pioneered the concept of @dfn{distributed} or
-@dfn{decentralized} version control, later implemented in Git,
-Mercurial, and Bazaar.  A project may have several different
-repositories, and these systems support a sort of super-merge between
-repositories that tries to reconcile their change histories.  In
-effect, there is one repository for each developer, and repository
-merges take the place of commit operations.
+  GNU
+Archは、@dfn{分配型(distributed)}または@dfn{分散型(decentralized)}のバージョンコントロールの先駆で、後にGit、Mercurial、Bazaarで実装されました。プロジェクトは複数の異なるリポジトリーをもつことができ、これらのシステムはリポジトリー間で変更履歴を調停する、ある種のスーパーマージをサポートします。開発者ごとに1つのリポジトリーがあり、リポジトリーのマージがコミット操作を代行します。
 
-  VC helps you manage the traffic between your personal workfiles and
-a repository.  Whether the repository is a single master, or one of a
-network of peer repositories, is not something VC has to care about.
+  VCは個人の作業ファイルと、リポジトリーとの間で行われる通信を管理する手助けをします。VCは、リポジトリーが唯一のマスターなのか、それともネットワークのピアーのレポジトリーの1つなのかは関知しません。
 
 @node Types of Log File
 @subsubsection Types of Log File
@@ -325,264 +222,167 @@ network of peer repositories, is not something VC has to care about.
 @cindex log File, types of
 @cindex version control log
 
-  Projects that use a version control system can have two types of log
-for changes.  One is the log maintained by the version control system:
-each time you commit a change, you fill out a @dfn{log entry} for the
-change (@pxref{Log Buffer}).  This is called the @dfn{version control
-log}.
+  バージョンコントロールシステムを使うプロジェクトは、変更にたいする2つのタイプのログをもつことができます。1つはバージョンコントロールシステムで保守されるログです。変更をコミットするたびに、変更にたいする@dfn{ログエントリー(log
+entry)}を入力します(@ref{Log Buffer}を参照してください)。これは@dfn{バージョンコントロールログ(version
+control log)}と呼ばれます。
 
-  The other kind of log is the file @file{ChangeLog} (@pxref{Change
-Log}).  It provides a chronological record of all changes to a large
-portion of a program---typically one directory and its subdirectories.
-A small program would use one @file{ChangeLog} file; a large program
-may have a @file{ChangeLog} file in each major directory.
-@xref{Change Log}.  Programmers have used change logs since long
-before version control systems.
+  もう1つの種類のログは、@file{ChangeLog}です(@ref{Change
+Log}を参照してください)。これはプログラムの大きな部分(通常は1つのディレクトリーと、そのサブディレクトリー)にたいする変更の記録を、年代順に記録します。小さなプログラムは、1つの@file{ChangeLog}を使用するでしょう。大きなプログラムは、主要なディレクトリーごとに@file{ChangeLog}をもつかもしれません。@ref{Change
+Log}を参照してください。プログラマーは、バージョンコントロールシステムのずっと前からChangeLogを使ってきました。
 
-  Changeset-based version systems typically maintain a changeset-based
-modification log for the entire system, which makes change log files
-somewhat redundant.  One advantage that they retain is that it is
-sometimes useful to be able to view the transaction history of a
-single directory separately from those of other directories.  Another
-advantage is that commit logs can't be fixed in many version control
-systems.
+  変更セットベースのバージョンシステムは、通常システム全体にたいして変更セットベースの修正ログを保守します。これはChangeLogを冗長なものにします。ChangeLogを残す利点の1つは、他のディレクトリーとは別に、1つのディレクトリーの履歴トランザクションが見れるのは便利なときがあるからです。他の利点として、多くのバージョンコントロールシステムはコミットログを特定できないからです。
 
-  A project maintained with version control can use just the version
-control log, or it can use both kinds of logs.  It can handle some
-files one way and some files the other way.  Each project has its
-policy, which you should follow.
+  バージョンコントロールで管理されるプロジェクトは、バージョンコントロールログだけを使用するか、両方の種類のログを使用します。あるファイルにたいしては1つのログを使い、他のファイルにたいしては別の方法を使うこともできます。プロジェクトごとに、したがうべきポリシーがあります。
 
-  When the policy is to use both, you typically want to write an entry
-for each change just once, then put it into both logs.  You can write
-the entry in @file{ChangeLog}, then copy it to the log buffer with
-@kbd{C-c C-a} when committing the change (@pxref{Log Buffer}).  Or you
-can write the entry in the log buffer while committing the change, and
-later use the @kbd{C-x v a} command to copy it to @file{ChangeLog}
+  両方を使うというポリシーの場合は通常、変更にたいして1度だけエントリーを書いて、それを両方のログに書き込みたいと思うでしょう。@file{ChangeLog}にエントリーを記述して、変更をコミットするとき@kbd{C-c
+C-a}でログバッファーにコピーできます。または変更をコミットするときログバッファーにエントリーを記述して、後で@kbd{C-x v
+a}コマンドでそれを@file{ChangeLog}にコピーできます
 @iftex
-(@pxref{Change Logs and VC,,,emacs-xtra, Specialized Emacs Features}).
+(@ref{Change Logs and VC,,,emacs-xtra, Specialized Emacs
+Features}を参照してください)。
 @end iftex
 @ifnottex
-(@pxref{Change Logs and VC}).
+(@ref{Change Logs and VC}を参照してください)。
 @end ifnottex
 
 @node VC Mode Line
 @subsection Version Control and the Mode Line
 @cindex VC mode line indicator
 
-  When you visit a file that is under version control, Emacs indicates
-this on the mode line.  For example, @samp{Bzr-1223} says that Bazaar
-is used for that file, and the current revision ID is 1223.
+  バージョンコントロール配下のファイルをvisitしたとき、Emacsはモードラインにそれを示します。たとえば@samp{Bzr-1223}と表示された場合、そのファイルにBazaarが使用され、カレントのリビジョンIDが1223であることを示します。
 
 @cindex version control status
-  The character between the back-end name and the revision ID
-indicates the @dfn{version control status} of the work file.  In a
-merge-based version control system, a @samp{-} character indicates
-that the work file is unmodified, and @samp{:} indicates that it has
-been modified.  @samp{!} indicates that the file contains conflicts as
-result of a recent merge operation (@pxref{Merging}), or that the file
-was removed from the version control.  Finally, @samp{?} means that
-the file is under version control, but is missing from the working
-tree.
+  バックエンド名とリビジョンIDの間の文字は、作業ファイルの@dfn{バージョンコントロール状態(version control
+status)}を示します。マージベースのバージョンコントロールシステムでは、文字@samp{-}は作業ファイルが変更されていないことを示し、文字@samp{:}は作業ファイルが変更されていることを示します。文字@samp{!}は最新のマージ処理の結果により、そのファイルに衝突が含まれていることを示すか(@ref{Merging}を参照してください)、そのファイルがバージョンコントロールから削除されたことを示します。最後に、文字@samp{?}は、そのファイルがバージョンコントロールの配下にあるが、作業ツリーにないことを示します。
 
-  In a lock-based system, @samp{-} indicates an unlocked file, and
-@samp{:} a locked file; if the file is locked by another user (for
-instance, @samp{jim}), that is displayed as @samp{RCS:jim:1.3}.
-@samp{@@} means that the file was locally added, but not yet committed
-to the master repository.
+  ロックベースのシステムでは、@samp{-}はファイルがロックされていないことを示し、@samp{:}はファイルが他のユーザー(たとえば@samp{jim})にロックされていることを示し、@samp{RCS:jim:1.3}のように表示されます。@samp{@@}は、そのファイルがローカルに追加されたが、まだマスターリポジトリーにコミットされていないことを示します。
 
-  On a graphical display, you can move the mouse over this mode line
-indicator to pop up a ``tool-tip'', which displays a more verbose
-description of the version control status.  Pressing @kbd{Mouse-1}
-over the indicator pops up a menu of VC commands, identical to
-@samp{Tools / Version Control} on the menu bar.
+  グラフィカルなディスプレーでは、モードラインのインジケーターの上にマウスを移動すると、``ツールチップ''が表示され、それにはバージョンコントロール状態の、より多くの説明が表示されます。インジケーターを@kbd{Mouse-1}でクリックすると、メニューバーの@samp{Tools
+/ Version Control}と同じVCコマンドがのメニューがポップアップします。
 
 @vindex auto-revert-check-vc-info
-  When Auto Revert mode (@pxref{Reverting}) reverts a buffer that is
-under version control, it updates the version control information in
-the mode line.  However, Auto Revert mode may not properly update this
-information if the version control status changes without changes to
-the work file, from outside the current Emacs session.  If you set
-@code{auto-revert-check-vc-info} to @code{t}, Auto Revert mode updates
-the version control status information every
-@code{auto-revert-interval} seconds, even if the work file itself is
-unchanged.  The resulting CPU usage depends on the version control
-system, but is usually not excessive.
+  Auto
+Revertモード(@ref{Reverting}を参照してください)がバージョンコントロール配下のバッファーをリバートするとき、これはモードラインのバージョンコントロール情報を更新します。しかし、Auto
+Revertモードは、作業ファイルの変更をともなわない、カレントのEmacsセッションの外でのバージョンコントロール状態の変化の情報は、正しく更新しないかもしれません。@code{auto-revert-check-vc-info}を@code{t}にセットすると、Auto
+Revertモードは、作業ファイル自身を変更していなくても、@code{auto-revert-interval}秒ごとにバージョンコントロール状態の情報を更新します。CPU使用率はバージョンコントロールシステムに依存しますが、通常はそれほど高価な処理ではありません。
 
 @node Basic VC Editing
 @subsection Basic Editing under Version Control
 
 @cindex filesets, VC
 @cindex VC filesets
-   Most VC commands operate on @dfn{VC filesets}.  A VC fileset is a
-collection of one or more files that a VC operation acts on.  When you
-type VC commands in a buffer visiting a version-controlled file, the
-VC fileset is simply that one file.  When you type them in a VC
-Directory buffer, and some files in it are marked, the VC fileset
-consists of the marked files (@pxref{VC Directory Mode}).
+   ほとんどのVCコマンドは、@dfn{VCファイルセット(VC
+filesets)}にたいして処理を行います。VCファイルセットは、VC操作が機能する1つ以上のファイルのコレクションです。バージョンコントロールされたファイルをvisitしているバッファーでVCコマンドをタイプすると、VCファイルセットは単にそのファイル1つだけになります。VC
+Directoryバッファーで、いくつかのファイルをマークしているときにVCコマンドをタイプしたときは、VCファイルセットはマークされたファイルです(@ref{VC
+Directory Mode}を参照してください)。
 
-  On modern changeset-based version control systems (@pxref{VCS
-Changesets}), VC commands handle multi-file VC filesets as a group.
-For example, committing a multi-file VC fileset generates a single
-revision, containing the changes to all those files.  On older
-file-based version control systems like CVS, each file in a multi-file
-VC fileset is handled individually; for example, a commit generates
-one revision for each changed file.
+  現代的な変更セットベースのバージョンコントロールシステム(@ref{VCS
+Changesets}を参照してください)では、VCコマンドは複数ファイルからなるVCファイルセットを1つのグループとして扱います。たとえば複数ファイルからなるVCファイルセットをコミットすると、それらすべてのファイルにたいする変更を含む、1つのリビジョンが生成されます。CVSのような古いファイルベースのバージョンコントロールシステムでは、複数ファイルからなるVCファイルセットの各ファイルは個別に処理されます。たとえば、コミットにより、変更されたファイル後とに1つのリビジョンが生成されます。
 
 @table @kbd
 @item C-x v v
-Perform the next appropriate version control operation on the current
-VC fileset.
+カレントVCファイルセットにたいして、次の適切なバージョンコントロール操作を処理します。
 @end table
 
 @findex vc-next-action
 @kindex C-x v v
-  The principal VC command is a multi-purpose command, @kbd{C-x v v}
-(@code{vc-next-action}), which performs the ``most appropriate''
-action on the current VC fileset: either registering it with a version
-control system, or committing it, or unlocking it, or merging changes
-into it.  The precise actions are described in detail in the following
-subsections.  You can use @kbd{C-x v v} either in a file-visiting
-buffer or in a VC Directory buffer.
+  重要なVCコマンド@kbd{C-x v v}
+(@code{vc-next-action})は多目的なもので、カレントのVCファイルセットにたいして、``もっとも適切''な操作を処理します。このコマンドは、それをバージョンコントロールシステムに登録するか、コミットするか、ロックを外すか、変更をマージします。正確な動作の詳細は、以下のサブセクションで説明します。@kbd{C-x
+v v}は、ファイルをvisitしているバッファーと、VC Directoryバッファーの両方で使うことができます。
 
-  Note that VC filesets are distinct from the ``named filesets'' used
-for viewing and visiting files in functional groups
-(@pxref{Filesets}).  Unlike named filesets, VC filesets are not named
-and don't persist across sessions.
+  VCファイルセットは、ファイルを閲覧したりvisitするためのグループ機能として使用される、``名前付のファイルセット(named
+filesets)''とは別の物だということに注意してください(@ref{Filesets}を参照してください)。名前付のファイルセットとは異なり、VCファイルセットは名前をもたず、セッションをまたいで持続しません。
 
 @menu
-* VC With A Merging VCS::  Without locking: default mode for CVS.
-* VC With A Locking VCS::  RCS in its default mode, SCCS, and optionally CVS.
-* Advanced C-x v v::       Advanced features available with a prefix argument.
+* VC With A Merging VCS::    ロックしない: 
+                               CVSのデフォルトモード。
+* VC With A Locking VCS::    RCSのデフォルトモード、SCCS、オプションでCVS。
+* Advanced C-x v v::         プレフィクス引数で利用可能な上級機能。
 @end menu
 
 @node VC With A Merging VCS
 @subsubsection Basic Version Control with Merging
 
-  On a merging-based version control system (i.e., most modern ones;
-@pxref{VCS Merging}), @kbd{C-x v v} does the following:
+  マージベースのバージョンコントロールシステム(たとえばもっとも現代的な方法の1つ。@ref{VCS
+Merging}を参照してください)では、@kbd{C-x v v}は以下のことを行います:
 
 @itemize @bullet
 @item
-If there is more than one file in the VC fileset and the files have
-inconsistent version control statuses, signal an error.  (Note,
-however, that a fileset is allowed to include both ``newly-added''
-files and ``modified'' files; @pxref{Registering}.)
+VCファイルセットに1つ以上のファイルがあり、そのファイルがバージョンコントロール状態と矛盾する場合、エラーをシグナルします(しかしファイルセットには、``新しく追加された''ファイルと、``変更された''ファイルを含むことができることに注意してください。@ref{Registering}を参照してください)。
 
 @item
-If none of the files in the VC fileset are registered with a version
-control system, register the VC fileset, i.e., place it under version
-control.  @xref{Registering}.  If Emacs cannot find a system to
-register under, it prompts for a repository type, creates a new
-repository, and registers the VC fileset with it.
+VCファイルセットに、バージョンコントロールシステムに登録されたファイルがない場合、VCファイルセットを登録(たとえばバージョンコントロールの配下に置く)します。@ref{Registering}を参照してください。Emacsが登録すべきシステムを見つけられない場合、リポジトリータイプの入力を求め、新しいリポジトリーを作成して、VCファイルセットをそれに登録します。
 
 @item
-If every work file in the VC fileset is unchanged, do nothing.
+VCファイルセットの、すべての作業ファイルが変更されていない場合は、何もしません。
 
 @item
-If every work file in the VC fileset has been modified, commit the
-changes.  To do this, Emacs pops up a @file{*vc-log*} buffer; type the
-desired log entry for the new revision, followed by @kbd{C-c C-c} to
-commit.  @xref{Log Buffer}.
+VCファイルセットの各作業ファイルが変更されている場合、変更をコミットします。これを行うには、Emacsが@file{*vc-log*}バッファーをポップアップするので、新しいリビジョンのログエントリーをタイプしてから、@kbd{C-c
+C-c}でコミットします。@ref{Log Buffer}を参照してください。
 
-If committing to a shared repository, the commit may fail if the
-repository that has been changed since your last update.  In that
-case, you must perform an update before trying again.  On a
-decentralized version control system, use @kbd{C-x v +} (@pxref{VC
-Pull}) or @kbd{C-x v m} (@pxref{Merging}).  On a centralized version
-control system, type @kbd{C-x v v} again to merge in the repository
-changes.
+共有リポジトリーにコミットする場合、最後に更新したときからリポジトリーが変更されているときは、コミットが失敗するでしょう。このような場合、再試行する前に更新をしなければなりません。分散型のバージョンコントロールシステムでは、@kbd{C-x
+v +}(@ref{VC Pull}を参照してください)、またh@kbd{C-x v
+m}を使用します(@ref{Merging}を参照してください)。集中型のバージョンコントロールシステムでは、リポジトリーに変更をマージするために、再度@kbd{C-x
+v v}とタイプしてください。
 
 @item
-Finally, if you are using a centralized version control system, check
-if each work file in the VC fileset is up-to-date.  If any file has
-been changed in the repository, offer to update it.
+最後に、集中型のバージョンコントロールシステムでは、VCファイルセットの各ファイルが最新かチェックします。リポジトリーで変更されたファイルがある場合、更新を提案します。
 @end itemize
 
-  These rules also apply when you use RCS in its ``non-locking'' mode,
-except that changes are not automatically merged from the repository.
-Nothing informs you if another user has committed changes in the same
-file since you began editing it; when you commit your revision, his
-changes are removed (however, they remain in the repository and are
-thus not irrevocably lost).  Therefore, you must verify that the
-current revision is unchanged before committing your changes.  In
-addition, locking is possible with RCS even in this mode: @kbd{C-x v
-v} with an unmodified file locks the file, just as it does with RCS in
-its normal locking mode (@pxref{VC With A Locking VCS}).
+  これらのルールは、変更はリポジトリーから自動的にマージされない点をのぞき、RCSを``非ロック''モードで使用している場合も適用されます。あなたがファイルの編集を始めた後に、他のユーザーが同じファイルをコミットした場合、何の情報も与えられません。あなたのリビジョンをコミットしたとき、彼の変更は失われます(しかし、それはリポジトリーには残るので、決定的に失われるわけではありません)。したがって、変更をコミットする前に、カレントリビジョンが変更されていないことを調べなければなりません。それに加えて、このモードでもRCSでロックすることが可能です。変更されていないファイルでの@kbd{C-x
+v v}は、RCSの通常のロックモードのようにそのファイルをロックします。(@ref{VC With A Locking VCS}を参照してください)。
 
 @node VC With A Locking VCS
 @subsubsection Basic Version Control with Locking
 
-  On a locking-based version control system (such as SCCS, and RCS in
-its default mode), @kbd{C-x v v} does the following:
+  ロックベースのバージョンコントロールシステム(SCCSやRCSのデフォルトモードなど)では、@kbd{C-x v v}は以下のことを行います:
 
 @itemize @bullet
 @item
-If there is more than one file in the VC fileset and the files have
-inconsistent version control statuses, signal an error.
+VCファイルセットに1つ以上のファイルがあり、そのファイルがバージョンコントロール状態と矛盾する場合、エラーをシグナルします。
 
 @item
-If each file in the VC fileset is not registered with a version
-control system, register the VC fileset.  @xref{Registering}.  If
-Emacs cannot find a system to register under, it prompts for a
-repository type, creates a new repository, and registers the VC
-fileset with it.
+VCファイルセットに、バージョンコントロールシステムに登録されたファイルがない場合、VCファイルセットを登録します。@ref{Registering}を参照してください。Emacsが登録すべきシステムを見つけられない場合、リポジトリータイプの入力を求め、新しいリポジトリーを作成して、VCファイルセットをそれに登録します。
 
 @item
-If each file is registered and unlocked, lock it and make it writable,
-so that you can begin to edit it.
+各ファイルが登録されていてロックされていなければ、それを書き込み可能にするためにロックして、編集を開始できるようにします。
 
 @item
-If each file is locked by you and contains changes, commit the
-changes.  To do this, Emacs pops up a @file{*vc-log*} buffer; type the
-desired log entry for the new revision, followed by @kbd{C-c C-c} to
-commit (@pxref{Log Buffer}).
+各ファイルのロックを獲得していて、それらが変更を含む場合、その変更をコミットします。これを行うことにより、Emacsは@file{*vc-log*}バッファーをポップアップするので、新しいリビジョンのログエントリーをタイプしてから、C-c
+C-cでコミットします(@ref{Log Buffer}を参照してください)。
 
 @item
-If each file is locked by you, but you have not changed it, release
-the lock and make the file read-only again.
+各ファイルのロックをすでに獲得していて、変更がない場合、ファイルを再び読み取り専用にするために、ロックを開放します。
 
 @item
-If each file is locked by another user, ask whether you want to
-``steal the lock''.  If you say yes, the file becomes locked by you,
-and a warning message is sent to the user who had formerly locked the
-file.
+各ファイルが他のユーザーによりロックされている場合、``ロックを横取りする(steal the
+lock)''か、確認を求めます。これにyesと応えると、あなたがロックを獲得して、その前にファイルをロックしていたユーザーに、警告メッセージが送られます。
 @end itemize
 
-  These rules also apply when you use CVS in locking mode, except
-that CVS does not support stealing locks.
+  このルールは、CVSがロックの横取りをサポートしない点をのぞき、CVSをロックモードで使用している場合も適用されます。
 
 @node Advanced C-x v v
 @subsubsection Advanced Control in @kbd{C-x v v}
 
 @cindex revision ID in version control
-  When you give a prefix argument to @code{vc-next-action} (@kbd{C-u
-C-x v v}), it still performs the next logical version control
-operation, but accepts additional arguments to specify precisely how
-to do the operation.
+  @code{vc-next-action}にプレフィクス引数を与えた場合(@kbd{C-u C-x v
+v})、論理的に次のバージョンコントロール操作を処理する点に変わりはありませんが、どのように操作を行うかを正確に指定するために、追加の引数を指定できるようになります。
 
 @itemize @bullet
 @item
 @cindex specific version control system
-You can specify the name of a version control system.  This is useful
-if the fileset can be managed by more than one version control system,
-and Emacs fails to detect the correct one.
+バージョンコントロールシステムの名前を指定できます。これは、ファイルセットが複数のバージョンコントロールシステムで管理されていて、Emacsが正しいものを検知するのに失敗するとき便利です。
 
 @item
-Otherwise, if using CVS or RCS, you can specify a revision ID.
+そうでない場合で、CVSかRCSを使用しているときは、リビジョンIDを指定できます。
 
-If the fileset is modified (or locked), this makes Emacs commit with
-that revision ID@.  You can create a new branch by supplying an
-appropriate revision ID (@pxref{Branches}).
+ファイルセットが変更(またはロック)されている場合、Emacsは指定したリビジョンIDでそれをコミットします。適切なリビジョンIDを与えることにより、新しいブランチを作成できます(@ref{Branches}を参照してください)。
 
-If the fileset is unmodified (and unlocked), this checks the specified
-revision into the working tree.  You can also specify a revision on
-another branch by giving its revision or branch ID (@pxref{Switching
-Branches}).  An empty argument (i.e., @kbd{C-u C-x v v @key{RET}})
-checks out the latest (``head'') revision on the current branch.
+ファイルセットが変更(またはロック)されていない場合、これは指定したリビジョンを作業ツリーにチェックインします。リビジョンIDまたはブランチIDを与えることにより、他のブランチのリビジョンを指定できます(@ref{Switching
+Branches}を参照してください)。空の引数(例: @kbd{C-u C-x v v
+@key{RET}})は、カレントブランチの最新のリビジョン(``head'')をチェックアウトします。
 
-This signals an error on a decentralized version control system.
-Those systems do not let you specify your own revision IDs, nor do
-they use the concept of ``checking out'' individual files.
+これは、分散型のバージョンコントロールシステムではエラーをシグナルします。これらのシステムでは、独自のリビジョンIDは指定できず、個別のファイルを``チェックアウト''するという概念も使いません。
 @end itemize
 
 @node Log Buffer
@@ -590,298 +390,200 @@ they use the concept of ``checking out'' individual files.
 
 @cindex C-c C-c @r{(Log Edit mode)}
 @findex log-edit-done
-  When you tell VC to commit a change, it pops up a buffer named
-@file{*vc-log*}.  In this buffer, you should write a @dfn{log entry}
-describing the changes you have made (@pxref{Why Version Control?}).
-After you are done, type @kbd{C-c C-c} (@code{log-edit-done}) to exit
-the buffer and commit the change, together with your log entry.
+  VCに変更のコミットを指示したとき、@file{*vc-log*}という名前のバッファーがポップアップします。このバッファーには、行った変更を説明する@dfn{ログエントリー(log
+entry)}を書き込みます。書き込んだら@kbd{C-c C-c} (@code{log-edit-done})とタイプして,
+そのバッファーを抜けて、ログエントリーとともに変更をコミットします。
 
 @cindex Log Edit mode
 @cindex mode, Log Edit
 @vindex vc-log-mode-hook
 @c FIXME: Mention log-edit-mode-hook here?  --xfq
-  The major mode for the @file{*vc-log*} buffer is Log Edit mode, a
-variant of Text mode (@pxref{Text Mode}).  On entering Log Edit mode,
-Emacs runs the hooks @code{text-mode-hook} and @code{vc-log-mode-hook}
-(@pxref{Hooks}).
+  @file{*vc-log*}バッファーのためのメジャーモードはLog Editモードで、これはTextモードの変種です(@ref{Text
+Mode}を参照してください)。Log
+Editモードに入ると、Emacsはフック@code{text-mode-hook}および@code{vc-log-mode-hook}を実行します(@ref{Hooks}を参照してください)。
 
-  In the @file{*vc-log*} buffer, you can write one or more @dfn{header
-lines}, specifying additional information to be supplied to the
-version control system.  Each header line must occupy a single line at
-the top of the buffer; the first line that is not a header line is
-treated as the start of the log entry.  For example, the following
-header line states that the present change was not written by you, but
-by another developer:
+  @file{*vc-log*}バッファーでは、１行以上の@dfn{ヘッダー行(header
+lines)}を記入できます。これにはバージョンコントロールシステムにより提供される、追加の情報を指定します。各ヘッダー行は、そのバッファーの最初の1行を占めなければなりません。ヘッダー行でない最初の行は、ログエントリーの開始として扱われます。たとえば以下のヘッダー行は、その変更が他の開発者によるものだということを示します:
 
 @smallexample
 Author: J. R. Hacker <jrh@@example.com>
 @end smallexample
 
 @noindent
-Apart from the @samp{Author} header, Emacs recognizes the headers
-@samp{Date} (a manually-specified commit time) and @samp{Fixes} (a
-reference to a bug fixed by the change).  Not all version control
-systems recognize all headers: Bazaar recognizes all three headers,
-while Git, Mercurial, and Monotone recognize only @samp{Author} and
-@samp{Date}.  If you specify a header for a system that does not
-support it, the header is treated as part of the log entry.
+@samp{Author}ヘッダーとは別に、Emacsは@samp{Date}ヘッダー(コミット日時を手入力で指定します)、@samp{Fixes}ヘッダー(変更によるバグフィクスへの参照)を認識します。すべてのバージョンコントロールシステムが、すべてのヘッダーを認識するわけではありません。Bazaarは3つのヘッダーすべてを認識し、Git、Mercurial、Monotoneは@samp{Author}と@samp{Date}だけを認識します。そのシステムでサポートされていないヘッダーを指定した場合、それはログエントリーの一部として扱われます。
 
 @kindex C-c C-f @r{(Log Edit mode)}
 @findex log-edit-show-files
 @kindex C-c C-d @r{(Log Edit mode)}
 @findex log-edit-show-diff
-  While in the @file{*vc-log*} buffer, the ``current VC fileset'' is
-considered to be the fileset that will be committed if you type
-@w{@kbd{C-c C-c}}.  To view a list of the files in the VC fileset,
-type @w{@kbd{C-c C-f}} (@code{log-edit-show-files}).  To view a diff
-of changes between the VC fileset and the version from which you
-started editing (@pxref{Old Revisions}), type @kbd{C-c C-d}
-(@code{log-edit-show-diff}).
+  @file{*vc-log*}バッファーにいる間は、``カレントVCファイルセット(current VC
+fileset)''とは、@w{@kbd{C-c
+C-c}}とタイプすることによりコミットされるファイルセットだと考えられます。そのVCファイルセットのファイル一覧を閲覧するには、@w{@kbd{C-c
+C-f}}
+(@code{log-edit-show-files})とタイプします。そのVCファイルセットと、編集を開始したバージョンとのdiffを閲覧するには、@kbd{C-c
+C-d} (@code{log-edit-show-diff})とタイプしてください。
 
 @kindex C-c C-a @r{(Log Edit mode)}
 @findex log-edit-insert-changelog
-  If the VC fileset includes one or more @file{ChangeLog} files
-(@pxref{Change Log}), type @kbd{C-c C-a}
-(@code{log-edit-insert-changelog}) to pull the relevant entries into
-the @file{*vc-log*} buffer.  If the topmost item in each
-@file{ChangeLog} was made under your user name on the current date,
-this command searches that item for entries matching the file(s) to be
-committed, and inserts them.
+  VCファイルセットが1つ以上の@file{ChangeLog}(@ref{Change Log}を参照してください)ファイルを含む場合、@kbd{C-c
+C-a}
+(@code{log-edit-insert-changelog})とタイプすると、関連するエントリーを、@file{*vc-log*}バッファーに引用します。各@file{ChangeLog}ファイルの一番上のアイテムが、今日の日付でユーザー名があなたの場合、このコマンドはコミットされるファイルにマッチするエントリーのアイテムを検索して、それを挿入します。
 @ifnottex
-If you are using CVS or RCS, see @ref{Change Logs and VC}, for the
-opposite way of working---generating ChangeLog entries from the Log
-Edit buffer.
+CVSまたはRCSを使用している場合は、反対のこと --- Log EditバッファーからChangeLogエントリーを生成 ---
+を行います。@ref{Change Logs and VC}を参照してください。
 @end ifnottex
 
-  To abort a commit, just @emph{don't} type @kbd{C-c C-c} in that
-buffer.  You can switch buffers and do other editing.  As long as you
-don't try to make another commit, the entry you were editing remains
-in the @file{*vc-log*} buffer, and you can go back to that buffer at
-any time to complete the commit.
+  コミットを中止するには、そのバッファーで単に@kbd{C-c
+C-c}を@emph{タイプしない}で、バッファーを切り替えて他の編集を行うことができます。他のコミットを試みなければ、編集していたエントリーは@file{*vc-log*}に残っているので、後でそのバッファーに戻ってコミットを完了できます。
 
 @kindex M-n @r{(Log Edit mode)}
 @kindex M-p @r{(Log Edit mode)}
 @kindex M-s @r{(Log Edit mode)}
 @kindex M-r @r{(Log Edit mode)}
-  You can also browse the history of previous log entries to duplicate
-a commit comment.  This can be useful when you want to make several
-commits with similar comments.  The commands @kbd{M-n}, @kbd{M-p},
-@kbd{M-s} and @kbd{M-r} for doing this work just like the minibuffer
-history commands (@pxref{Minibuffer History}), except that they are
-used outside the minibuffer.
+  コミットコメントをコピーするために、以前のログエントリーの履歴を閲覧することもできます。これは、似たようなコメントで複数のコミットを行いたいとき便利です。これを行うコマンド@kbd{M-n}、@kbd{M-p}、@kbd{M-s}、@kbd{M-r}は、これらがミニバッファーの外で使用される点を除けば、ミニバッファーのヒストリーコマンド(@ref{Minibuffer
+History}を参照してください)と同様です。
 
 @node Registering
 @subsection Registering a File for Version Control
 
 @table @kbd
 @item C-x v i
-Register the visited file for version control.
+visitしているファイルを、バージョンコントロールに登録します。
 @end table
 
 @kindex C-x v i
 @findex vc-register
-  The command @kbd{C-x v i} (@code{vc-register}) @dfn{registers} each
-file in the current VC fileset, placing it under version control.
-This is essentially equivalent to the action of @kbd{C-x v v} on an
-unregistered VC fileset (@pxref{Basic VC Editing}), except that if the
-VC fileset is already registered, @kbd{C-x v i} signals an error
-whereas @kbd{C-x v v} performs some other action.
+  コマンド@kbd{C-x v i}
+(@code{vc-register})は、カレントVCファイルセットの各ファイルを、バージョンコントロールの配下に置きます。これは登録されていないVCファイルセットにたいして、@kbd{C-x
+v v}が行う動作と基本的に同じですが、VCファイルセットがすでに登録されているとき(@ref{Basic VC
+Editing}を参照してください)、@kbd{C-x v v}は他の操作を処理しますが、@kbd{C-x v
+i}はエラーをシグナルする、という点が異なります。
 
-  To register a file, Emacs must choose a version control system.  For
-a multi-file VC fileset, the VC Directory buffer specifies the system
-to use (@pxref{VC Directory Mode}).  For a single-file VC fileset, if
-the file's directory already contains files registered in a version
-control system, or if the directory is part of a directory tree
-controlled by a version control system, Emacs chooses that system.  In
-the event that more than one version control system is applicable,
-Emacs uses the one that appears first in the variable
+  ファイルを登録するために、Emacsはバージョンコントロールシステムを選択しなければなりません。複数ファイルのVCファイルセットにたいしては、VC
+Directoryバッファーが使用するシステムを指定します(@ref{VC Directory
+Mode}を参照してください)。VCファイルセットのファイルが1つで、そのファイルのディレクトリーがすでにバージョンコントロールシステムに登録されたファイルを含むか、そのディレクトリーがバージョンコントロールシステムにより制御される作業ツリーの一部の場合、Emacsはそのシステムを選択します。複数のバージョンコントロールシステムが当てはまる場合、Emacsは変数
 @iftex
-@code{vc-handled-backends}.
+@code{vc-handled-backends}に最初に表れるシステムを使用します。
 @end iftex
 @ifnottex
-@code{vc-handled-backends} (@pxref{Customizing VC}).
+@code{vc-handled-backends}に最初に表れるシステムを使用します(@pxref{Customizing VC})。
 @end ifnottex
-If Emacs cannot find a version control system to register the file
-under, it prompts for a repository type, creates a new repository, and
-registers the file into that repository.
+Emacsがファイルを登録するバージョンコントロールシステムを見つけられなかった場合、リポジトリータイプの入力を求め、新しいリポジトリーを作成して、そのリポジトリーにファイルを登録します。
 
-  On most version control systems, registering a file with @kbd{C-x v
-i} or @kbd{C-x v v} adds it to the ``working tree'' but not to the
-repository.  Such files are labeled as @samp{added} in the VC
-Directory buffer, and show a revision ID of @samp{@@@@} in the mode
-line.  To make the registration take effect in the repository, you
-must perform a commit (@pxref{Basic VC Editing}).  Note that a single
-commit can include both file additions and edits to existing files.
+  ほとんどのバージョンコントロールシステムでは、@kbd{C-x v i}または@kbd{C-x v
+v}でファイルを登録することにより、それを``作業ツリー(working
+tree)''に追加しますが、リポジトリーには追加しません。そのようなファイルは、VC
+Directoryバッファーでは@samp{added}とラベル付けされ、モードラインのリビジョンIDには@samp{@@@@}が表示されます。リポジトリーにたいして登録を有効にするには、コミットを行わなければなりません(@ref{Basic
+VC Editing}を参照してください)。1つのコミットに、ファイルの追加と、既存ファイルの編集の両方を含むことができるのに注意してください。
 
-  On a locking-based version control system (@pxref{VCS Merging}),
-registering a file leaves it unlocked and read-only.  Type @kbd{C-x v
-v} to start editing it.
+  ロックベースのバージョンコントロールシステム(@ref{VCS
+Merging}を参照してください)では、ファイルの登録により、ファイルはロックされていない読み取り専用の状態に留まります。編集を開始するには、@kbd{C-x
+v v}とタイプします。
 
 @node Old Revisions
 @subsection Examining And Comparing Old Revisions
 
 @table @kbd
 @item C-x v =
-Compare the work files in the current VC fileset with the versions you
-started from (@code{vc-diff}).  With a prefix argument, prompt for two
-revisions of the current VC fileset and compare them.  You can also
-call this command from a Dired buffer (@pxref{Dired}).
+カレントVCファイルセットの作業ファイルと、編集を開始したバージョンを比較します(@code{vc-diff})。プレフィクス引数を指定した場合、カレントVCファイルセットの2つのリビジョンの入力を求め、それらを比較します。このコマンドをDiredバッファーから呼び出すこともできます(@ref{Dired}を参照してください)。
 
 @ifnottex
 @item M-x vc-ediff
-Like @kbd{C-x v =}, but using Ediff.  @xref{Top,, Ediff, ediff, The
-Ediff Manual}.
+@kbd{C-x v =}と同様ですが、Ediffを使用します。@ref{Top,, Ediff, ediff, The Ediff
+Manual}を参照してください。
 @end ifnottex
 
 @item C-x v D
-Compare the entire working tree to the revision you started from
-(@code{vc-root-diff}).  With a prefix argument, prompt for two
-revisions and compare their trees.
+編集を開始したリビジョンの、作業ツリー全体を比較します(@code{vc-root-diff})。プレフィクス引数を指定した場合、2つのリビジョンの入力を求め、それらのツリーを比較します。
 
 @item C-x v ~
-Prompt for a revision of the current file, and visit it in a separate
-buffer (@code{vc-revision-other-window}).
+カレントファイルのリビジョンの入力を求め、それを別のバッファーでvisitします(@code{vc-revision-other-window})。
 
 @item C-x v g
-Display an annotated version of the current file: for each line, show
-the latest revision in which it was modified (@code{vc-annotate}).
+カレントファイルの、注釈付きのバージョンを表示します。各行には、その行が変更された最新のリビジョンが表示されます(@code{vc-annotate})。
 @end table
 
 @findex vc-diff
 @kindex C-x v =
-  @kbd{C-x v =} (@code{vc-diff}) displays a @dfn{diff} which compares
-each work file in the current VC fileset to the version(s) from which
-you started editing.  The diff is displayed in another window, in a
-Diff mode buffer (@pxref{Diff Mode}) named @file{*vc-diff*}.  The
-usual Diff mode commands are available in this buffer.  In particular,
-the @kbd{g} (@code{revert-buffer}) command performs the file
-comparison again, generating a new diff.
+  @kbd{C-x v =}
+(@code{vc-diff})は、@dfn{diff}を表示します。これはカレントVCファイルセットの各作業ファイルを、編集を開始したときのバージョンと比較します。diffは別のウィンドウに、@file{*vc-diff*}という名前のDiff
+modeモードのバッファー(@ref{Diff
+Mode}を参照してください)で表示されます。このバッファーでは、通常のDiffモードコマンドが利用可能です。特に@kbd{g}
+(@code{revert-buffer})コマンドは、ファイル比較を再び行い、新しいdiffを生成します。
 
 @kindex C-u C-x v =
-  To compare two arbitrary revisions of the current VC fileset, call
-@code{vc-diff} with a prefix argument: @kbd{C-u C-x v =}.  This
-prompts for two revision IDs (@pxref{VCS Concepts}), and displays a
-diff between those versions of the fileset.  This will not work
-reliably for multi-file VC filesets, if the version control system is
-file-based rather than changeset-based (e.g., CVS), since then
-revision IDs for different files would not be related in any
-meaningful way.
+  カレントVCファイルセットの、任意の2つのリビジョンを比較するには、@kbd{C-u C-x v
+=}のようにプレフィクス引数を指定して、@code{vc-diff}を呼び出します。これは2つのリビジョンID(@ref{VCS
+Concepts}を参照してください)の入力を求め、ファイルセットのそれらのバージョンの間のdiffを表示します。このコマンドは、バージョンコントロールシステムが変更セットベースではなくファイルベースの場合(たとえばCVS)に、複数ファイルのVCファイルセットにたいして確実に動作しません。なぜなら同じリビジョンIDをもつ異なるファイル同士を、意味のある方法で関連させることができないからです。
 
-  Instead of the revision ID, some version control systems let you
-specify revisions in other formats.  For instance, under Bazaar you
-can enter @samp{date:yesterday} for the argument to @kbd{C-u C-x v =}
-(and related commands) to specify the first revision committed after
-yesterday.  See the documentation of the version control system for
-details.
+  リビジョンIDではなく、他のフォーマットでリビジョンを指定するバージョンコントロールシステムもいくつかあります。たとえばBazaarでは、@kbd{C-u
+C-x v
+=}(および関連するコマンド)に@samp{date:yesterday}と入力でき、これは昨日以降コミットされた最初のリビジョンを指定します。詳細については、バージョンコントロールシステムのドキュメントを参照してください。
 
-  If you invoke @kbd{C-x v =} or @kbd{C-u C-x v =} from a Dired buffer
-(@pxref{Dired}), the file listed on the current line is treated as the
-current VC fileset.
+  Diredバッファー(@ref{Dired}を参照してください)で@kbd{C-x v =}または@kbd{C-u C-x v
+=}を呼び出すと、カレント行にリストされたファイルが、カレントVCファイルセットとして扱われます。
 
 @ifnottex
 @findex vc-ediff
-  @kbd{M-x vc-ediff} works like @kbd{C-x v =}, except that it uses an
-Ediff session.  @xref{Top,, Ediff, ediff, The Ediff Manual}.
+  @kbd{M-x vc-ediff}は、@kbd{C-x v =}と同じように機能しますが、Ediffセッションを使用します。@ref{Top,,
+Ediff, ediff, The Ediff Manual}を参照してください。
 @end ifnottex
 
 @findex vc-root-diff
 @kindex C-x v D
-  @kbd{C-x v D} (@code{vc-root-diff}) is similar to @kbd{C-x v =}, but
-it displays the changes in the entire current working tree (i.e., the
-working tree containing the current VC fileset).  If you invoke this
-command from a Dired buffer, it applies to the working tree containing
-the directory.
+  @kbd{C-x v D} (@code{vc-root-diff})は、@kbd{C-x v
+=}と似ていますが、カレント作業ツリー全体の変更を表示します(たとえばカレントVCファイルセットを含む作業ツリー)。このコマンドをDiredバッファーから呼び出すと、そのディレクトリーを含む作業ツリーに適用されます。
 
 @vindex vc-diff-switches
-  You can customize the @command{diff} options that @kbd{C-x v =} and
-@kbd{C-x v D} use for generating diffs.  The options used are taken
-from the first non-@code{nil} value amongst the variables
-@code{vc-@var{backend}-diff-switches}, @code{vc-diff-switches}, and
-@code{diff-switches} (@pxref{Comparing Files}), in that order.  Here,
-@var{backend} stands for the relevant version control system,
-e.g., @code{bzr} for Bazaar.  Since @code{nil} means to check the
-next variable in the sequence, either of the first two may use the
-value @code{t} to mean no switches at all.  Most of the
-@code{vc-@var{backend}-diff-switches} variables default to @code{nil},
-but some default to @code{t}; these are for version control systems
-whose @code{diff} implementations do not accept common diff options,
-such as Subversion.
+  @kbd{C-x v =}および@kbd{C-x v
+D}が、diffを生成するために使用する@command{diff}オプションをカスタマイズできます。オプションには、変数@code{vc-@var{backend}-diff-switches}、@code{vc-diff-switches}、@code{diff-switches}(@pxref{Comparing
+Files})の順に、最初の非@code{nil}の値が使用されます。ここで@var{backend}は、関連するバージョンコントロールシステムで、たとえばBazaarの場合は@code{bzr}です。@code{nil}は順番に次の変数をチェックすることを意味するので、スイッチを指定しない場合は最初の2つの値を@code{t}にします。ほとんどの@code{vc-@var{backend}-diff-switches}変数のデフォルトは@code{nil}ですが、いくつかのbackendのデフォルトは@code{t}です。Subversionのように、これらのバージョンコントロールシステムの@code{diff}実装は、一般的なdiffオプションを受け付けません。
 
 @findex vc-revision-other-window
 @kindex C-x v ~
-  To directly examine an older version of a file, visit the work file
-and type @kbd{C-x v ~ @var{revision} @key{RET}}
-(@code{vc-revision-other-window}).  This retrieves the file version
-corresponding to @var{revision}, saves it to
-@file{@var{filename}.~@var{revision}~}, and visits it in a separate
-window.
+  ファイルの古いバージョンを直接調べるには、作業ファイルをvisitして、@kbd{C-x v ~ @var{revision} @key{RET}}
+(@code{vc-revision-other-window})とタイプします。これは@var{revision}に対応するバージョンのファイルを取得して、それを@file{@var{filename}.~@var{revision}~}に保存してから、別のウィンドウでvisitします。
 
 @findex vc-annotate
 @kindex C-x v g
-  Many version control systems allow you to view files @dfn{annotated}
-with per-line revision information, by typing @kbd{C-x v g}
-(@code{vc-annotate}).  This creates a new buffer (the ``annotate
-buffer'') displaying the file's text, with each line colored to show
-how old it is.  Red text is new, blue is old, and intermediate colors
-indicate intermediate ages.  By default, the color is scaled over the
-full range of ages, such that the oldest changes are blue, and the
-newest changes are red.
+  多くのバージョンコントロールシステムでは、@kbd{C-x v g}
+(@code{vc-annotate})とタイプして、行ごとにリビジョン情報の@dfn{注釈付き(annotated)}でファイルを閲覧できます。これは新しいバッファー(``annotateバッファー'')を作成して、各行に古さを示すカラーをつけて、ファイルのテキストを表示します。赤いテキストは新しく、古いものは青、その中間色は中間のバージョンを示します。デフォルトでは、一番古い変更を青、一番新しい変更を赤で、すべてのバージョンレンジにカラーをスケーリングします。
 
-  When you give a prefix argument to this command, Emacs reads two
-arguments using the minibuffer: the revision to display and annotate
-(instead of the current file contents), and the time span in days the
-color range should cover.
+  このコマンドにプレフィクス引数を指定した場合、Emacsはミニバッファーを使って、表示および注釈つけする(カレントファイル内容のかわりの)リビジョンと、カラーレンジがカバーすべきタイムスパンの、2つの引数を読み取ります。
 
-  From the annotate buffer, these and other color scaling options are
-available from the @samp{VC-Annotate} menu.  In this buffer, you can
-also use the following keys to browse the annotations of past revisions,
-view diffs, or view log entries:
+  annotateバッファーでは、@samp{VC-Annotate}メニューから、これら、または他のカラースケールオプションが利用可能です。このバッファーでは、過去のリビジョンの注釈の表示、diffの閲覧、ログエントリーの閲覧を行うために、以下のキーを使うこともできます:
 
 @table @kbd
 @item p
-Annotate the previous revision, i.e., the revision before the one
-currently annotated.  A numeric prefix argument is a repeat count, so
-@kbd{C-u 10 p} would take you back 10 revisions.
+前のリビジョン(たとえば現在の注釈付きのリビジョンの1つ前のリビジョン)に注釈を付けます。数引数は繰り返し回数となるので、@kbd{C-u 10
+p}は10個前のリビジョンに注釈を付けます。
 
 @item n
-Annotate the next revision, i.e., the revision after the one
-currently annotated.  A numeric prefix argument is a repeat count.
+次のリビジョン(たとえば現在の注釈付きのリビジョンの1つ後のリビジョン)に注釈を付けます。数引数は繰り返し回数です。
 
 @item j
-Annotate the revision indicated by the current line.
+カレント行に示されたリビジョンに解釈を付けます。
 
 @item a
-Annotate the revision before the one indicated by the current line.
-This is useful to see the state the file was in before the change on
-the current line was made.
+カレント行に示されたリビジョンの、1つ前のリビジョンに注釈を付けます。これはカレント行が変更される前の状態のファイルを見るとき便利です。
 
 @item f
-Show in a buffer the file revision indicated by the current line.
+カレント行に示されたリビジョンのファイルを、バッファーに表示します。
 
 @item d
-Display the diff between the current line's revision and the previous
-revision.  This is useful to see what the current line's revision
-actually changed in the file.
+カレント行のリビジョンと、その前のリビジョンの間のdiffを表示します。これはカレント行のリビジョンが実際にどのように変更されたか、ファイルを見るとき便利です。
 
 @item D
-Display the diff between the current line's revision and the previous
-revision for all files in the changeset (for VC systems that support
-changesets).  This is useful to see what the current line's revision
-actually changed in the tree.
+カレント行のリビジョンと、その前のリビジョンの間で、(変更セットをサポートするバージョンコントロールシステムの)変更セットのすべてのファイルのdiffを表示します。これはカレント行のリビジョンが、実際にどのように変更されたかツリー内を見るとき便利です。
 
 @item l
-Show the log of the current line's revision.  This is useful to see
-the author's description of the changes in the revision on the current
-line.
+カレント行のリビジョンのログを表示します。これはカレント行のリビジョンの変更にたいする執筆者(author)の説明を見るのに便利です。
 
 @item w
-Annotate the working revision--the one you are editing.  If you used
-@kbd{p} and @kbd{n} to browse to other revisions, use this key to
-return to your working revision.
+作業中のリビジョン(編集中のもの)に注釈を付けます。@kbd{p}や@kbd{n}を使って他のリビジョンを表示している場合、このキーで作業中のリビジョンに戻ることができます。
 
 @item v
-Toggle the annotation visibility.  This is useful for looking just at
-the file contents without distraction from the annotations.
+注釈の表示・非表示を切り替えます。これは邪魔になる注釈抜きでファイル内容だけを見たいとき便利です。
 @end table
 
 @node VC Change Log
@@ -889,129 +591,90 @@ the file contents without distraction from the annotations.
 
 @table @kbd
 @item C-x v l
-Display the change history for the current fileset
-(@code{vc-print-log}).
+カレントファイルセットの変更履歴を表示します(@code{vc-print-log})。
 
 @item C-x v L
-Display the change history for the current repository
-(@code{vc-print-root-log}).
+カレントリポジトリーの変更履歴を表示します(@code{vc-print-root-log})。
 
 @item C-x v I
-Display the changes that a pull operation will retrieve
-(@code{vc-log-incoming}).
+pull操作が取り込む変更を表示します(@code{vc-log-incoming})。
 
 @item C-x v O
-Display the changes that will be sent by the next push operation
-(@code{vc-log-outgoing}).
+push操作が送信する変更を表示します(@code{vc-log-outgoing})。
 @end table
 
 @kindex C-x v l
 @findex vc-print-log
-  @kbd{C-x v l} (@code{vc-print-log}) displays a buffer named
-@file{*vc-change-log*}, showing the history of changes made to the
-current file, including who made the changes, the dates, and the log
-entry for each change (these are the same log entries you would enter
-via the @file{*vc-log*} buffer; @pxref{Log Buffer}).  Point is
-centered at the revision of the file currently being visited.  With a
-prefix argument, the command prompts for the revision to center on,
-and the maximum number of revisions to display.
+  @kbd{C-x v l}
+(@code{vc-print-log})は、@file{*vc-change-log*}という名前のバッファーを表示して、誰が変更したのか、その日時、各変更のログエントリー(これらは@file{*vc-log*}バッファーを通じて入力したログエントリーと同じです。@ref{Log
+Buffer}を参照してください)を含む、カレントファイルに行われた変更の履歴を表示します。現在visitしているファイルのリビジョンに、ポイントが配されます。プレフィクス引数を指定した場合、このコマンドはポイントが配されるリビジョンと、表示するリビジョンの最大数の入力を求めます。
 
-  If you call @kbd{C-x v l} from a VC Directory buffer (@pxref{VC
-Directory Mode}) or a Dired buffer (@pxref{Dired}), it applies to the
-file listed on the current line.
+  VC Directoryバッファー(@ref{VC Directory
+Mode}を参照してください)、またはDiredバッファー(@ref{Dired}を参照してください)から@kbd{C-x v
+l}を呼び出した場合、カレント行にリストされたファイルにたいして適用されます。
 
 @findex vc-print-root-log
 @findex log-view-toggle-entry-display
-  @kbd{C-x v L} (@code{vc-print-root-log}) displays a
-@file{*vc-change-log*} buffer showing the history of the entire
-version-controlled directory tree (RCS, SCCS, and CVS do not support
-this feature).  With a prefix argument, the command prompts for the
-maximum number of revisions to display.
+  @kbd{C-x v L}
+(@code{vc-print-root-log})は、@file{*vc-change-log*}バッファーを表示して、バージョンコントロールされたディレクトリーツリー全体を表示します。このコマンドはプレフィクス引数を指定した場合、表示するリビジョンの最大数の入力を求めます。
 
-  The @kbd{C-x v L} history is shown in a compact form, usually
-showing only the first line of each log entry.  However, you can type
-@key{RET} (@code{log-view-toggle-entry-display}) in the
-@file{*vc-change-log*} buffer to reveal the entire log entry for the
-revision at point.  A second @key{RET} hides it again.
+  @kbd{C-x v
+L}では履歴は簡略化された形式で表示され、通常は各ログエントリーの最初の行だけが表示されます。しかし@file{*vc-change-log*}バッファーで@key{RET}
+(@code{log-view-toggle-entry-display})とタイプすると、ポイント位置のリビジョンのログエントリー全体を表示します。2回目の@key{RET}で、再びそれを隠します。
 
-  On a decentralized version control system, the @kbd{C-x v I}
-(@code{vc-log-incoming}) command displays a log buffer showing the
-changes that will be applied, the next time you run the version
-control system's ``pull'' command to get new revisions from another
-repository (@pxref{VC Pull}).  This other repository is the default
-one from which changes are pulled, as defined by the version control
-system; with a prefix argument, @code{vc-log-incoming} prompts for a
-specific repository.  Similarly, @kbd{C-x v O}
-(@code{vc-log-outgoing}) shows the changes that will be sent to
-another repository, the next time you run the ``push'' command; with a
-prefix argument, it prompts for a specific destination repository.
+  分散型のバージョンコントロールシステムでは、@kbd{C-x v I}
+(@code{vc-log-incoming})コマンドは、次回にバージョンコントロールの``pull''コマンドを実行するときに、他のリポジトリーから受け取る新しいリビジョンにより適用される変更を、ログバッファーに表示します(@ref{VC
+Pull}を参照してください)。ここで他のリポジトリーとは、バージョンコントロールシステムで定義される、変更がpullされるリポジトリーのことです。プレフィクス引数を指定すると、@code{vc-log-incoming}は特定のリポジトリーの入力を求めます。同様に、@kbd{C-x
+v O}
+(@code{vc-log-outgoing})は、次回に``push''コマンドを実行するときに、他のリポジトリーに送る変更を表示します。プレフィクス引数を指定すると、特定の送信先リポジトリーの入力を求めます。
 
-  In the @file{*vc-change-log*} buffer, you can use the following keys
-to move between the logs of revisions and of files, and to examine and
-compare past revisions (@pxref{Old Revisions}):
+  @file{*vc-change-log*}バッファーでは、リビジョンのログまたはファイル間の移動や、過去のリビジョン(@ref{Old
+Revisions}を参照してください)を調べたり比較するために、以下のキーを使うことができます:
 
 @table @kbd
 @item p
-Move to the previous revision entry.  (Revision entries in the log
-buffer are usually in reverse-chronological order, so the previous
-revision-item usually corresponds to a newer revision.)  A numeric
-prefix argument is a repeat count.
+前のリビジョンエントリーに移動します(logバッファーのリビジョンエントリーは通常、日時の降順になっているので、前のリビジョンアイテムは通常、もっと新しいリビジョンに対応します)。数引数は繰り返し回数です。
 
 @item n
-Move to the next revision entry.  A numeric prefix argument is a
-repeat count.
+次のリビジョンエントリーに移動します。数引数は繰り返し回数です。
 
 @item P
-Move to the log of the previous file, if showing logs for a multi-file
-VC fileset.  Otherwise, just move to the beginning of the log.  A
-numeric prefix argument is a repeat count.
+複数ファイルのVCファイルセットのログを表示している場合は、前のファイルのログに移動します。そうでない場合は、単にログの先頭に移動します。数引数は繰り返し回数です。
 
 @item N
-Move to the log of the next file, if showing logs for a multi-file VC
-fileset.  A numeric prefix argument is a repeat count.
+複数ファイルのVCファイルセットのログを表示している場合は、次のファイルのログに移動します。数引数は繰り返し回数です。
 
 @item a
-Annotate the revision on the current line (@pxref{Old Revisions}).
+カレント行のリビジョンに注釈を付けます(@ref{Old Revisions}を参照してください)。
 
 @item e
-Modify the change comment displayed at point.  Note that not all VC
-systems support modifying change comments.
+ポイント位置に表示された変更コメントを修正します。すべてのバージョンコントロールシステムが、変更コメントの修正をサポートするわけではないことに注意してください。
 
 @item f
-Visit the revision indicated at the current line.
+カレント行に示されたリビジョンをvisitします。
 
 @item d
-Display a diff between the revision at point and the next earlier
-revision, for the specific file.
+ポイント位置のリビジョンと、次に古いリビジョンとの間で、特定のファイルにたいするdiffを表示します。
 
 @item D
-Display the changeset diff between the revision at point and the next
-earlier revision.  This shows the changes to all files made in that
-revision.
+ポイント位置のリビジョンと、次に古いリビジョンとの間で、変更セットのdiffを表示します。これは、そのリビジョンですべてのファイルにたいして行われた変更を表示します。
 
 @item @key{RET}
-In a compact-style log buffer (e.g., the one created by @kbd{C-x v
-L}), toggle between showing and hiding the full log entry for the
-revision at point.
+簡略形式のlogバッファー(たとえば@kbd{C-x v
+L}で作成されたバッファー)で、ポイント位置のログエントリーにたいして、完全なログエントリーの表示・非表示を切り替えます。
 @end table
 
 @vindex vc-log-show-limit
-Because fetching many log entries can be slow, the
-@file{*vc-change-log*} buffer displays no more than 2000 revisions by
-default.  The variable @code{vc-log-show-limit} specifies this limit;
-if you set the value to zero, that removes the limit.  You can also
-increase the number of revisions shown in an existing
-@file{*vc-change-log*} buffer by clicking on the @samp{Show 2X
-entries} or @samp{Show unlimited entries} buttons at the end of the
-buffer.  However, RCS, SCCS, and CVS do not support this feature.
+多くのログエントリーを取得するには時間がかかるので、@file{*vc-change-log*}バッファーは、デフォルトで2000を超えるリビジョンは表示しません。変数@code{vc-log-show-limit}はこの制限を指定します。この値を0にセットすると、制限が削除されます。既存の@file{*vc-change-log*}で、バッファーの最後のボタン@samp{Show
+2X entries}または@samp{Show unlimited
+entries}をクリックして、表示するリビジョン数を増やすこともできます。しかしRCS、SCCS、CVSはこの機能をサポートしません。
 
 @node VC Undo
 @subsection Undoing Version Control Actions
 
 @table @kbd
 @item C-x v u
-Revert the work file(s) in the current VC fileset to the last revision
-(@code{vc-revert}).
+カレントVCファイルセットの作業ファイルを、最後のリビジョンにリバートします(@code{vc-revert})。
 @end table
 
 @c `C-x v c' (vc-rollback) was removed, since it's RCS/SCCS specific.
@@ -1019,96 +682,76 @@ Revert the work file(s) in the current VC fileset to the last revision
 @kindex C-x v u
 @findex vc-revert
 @vindex vc-revert-show-diff
-  If you want to discard all the changes you have made to the current
-VC fileset, type @kbd{C-x v u} (@code{vc-revert-buffer}).  This shows
-you a diff between the work file(s) and the revision from which you
-started editing, and asks for confirmation for discarding the changes.
-If you agree, the fileset is reverted.  If you don't want @kbd{C-x v
-u} to show a diff, set the variable @code{vc-revert-show-diff} to
-@code{nil} (you can still view the diff directly with @kbd{C-x v =};
-@pxref{Old Revisions}).  Note that @kbd{C-x v u} cannot be reversed
-with the usual undo commands (@pxref{Undo}), so use it with care.
+  カレントVCファイルセットにたいするすべての変更を破棄したい場合、@kbd{C-x v u}
+(@code{vc-revert-buffer})とタイプします。これは作業ファイルと、編集を開始したときのリビジョンのdiffを表示して、変更を破棄するか確認を求めます。これに同意するとファイルセットはリバートされます。@kbd{C-x
+v
+u}でdiffを表示させたくない場合は、変数@code{vc-revert-show-diff}に@code{nil}をセットします(この設定をしても@kbd{C-x
+v =}で直接diffを表示できます。@ref{Old Revisions}を参照してください)。@kbd{C-x v
+u}は通常のアンドゥコマンドでは戻せないので、注意して使用してください(@ref{Undo}を参照してください)。
 
-  On locking-based version control systems, @kbd{C-x v u} leaves files
-unlocked; you must lock again to resume editing.  You can also use
-@kbd{C-x v u} to unlock a file if you lock it and then decide not to
-change it.
+  ロックベースのバージョンコントロールシステムでは、@kbd{C-x v
+u}はファイルをロックしないまま残します。編集を再開するには、再度ロックしなければなりません。ファイルをロックしてから、やはりそれを変更しないと決めたときも、@kbd{C-x
+v u}でファイルのロックを開放できます。
 
 @node VC Ignore
 @subsection Ignore Version Control Files
 
 @table @kbd
 @item C-x v G
-Ignore a file under current version control system.  (@code{vc-ignore}).
+カレントのバージョンコントロールシステム配下のファイルを無視します(@code{vc-ignore})。
 @end table
 
 @kindex C-x v G
 @findex vc-ignore
-  Many source trees contain some files that do not need to be
-versioned, such as editor backups, object or bytecode files, and built
-programs.  You can simply not add them, but then they'll always crop
-up as unknown files.  You can also tell the version control system to
-ignore these files by adding them to the ignore file at the top of the
-tree.  @kbd{C-x v G} (@code{vc-ignore}) can help you do this.  When
-called with a prefix argument, you can remove a file from the ignored
-file list.
+  ソースツリーの多くは、エディターのバックアップや、オブジェクトファイル、バイトコードファイル、ビルドされるプログラムなどの、バージョン管理する必要のないファイルを含みます。これらは単に追加しないだけでも構いませんが、常に不明なファイルとして現れるでしょう。ツリーのトップの、無視するファイルのリストにこれらのファイルを追加して、それらを無視するようにバージョンコントロールシステムに指示することもできます。これを行うには@kbd{C-x
+v G} (@code{vc-ignore})が助けとなるでしょう。プレフィクス引数を指定すると、無視するファイルリストからファイルを削除できます。
 
 @node VC Directory Mode
 @subsection VC Directory Mode
 
 @cindex VC Directory buffer
-  The @dfn{VC Directory buffer} is a specialized buffer for viewing
-the version control statuses of the files in a directory tree, and
-performing version control operations on those files.  In particular,
-it is used to specify multi-file VC filesets for commands like
-@w{@kbd{C-x v v}} to act on (@pxref{VC Directory Commands}).
+  @dfn{VC
+Directoryバッファー}は、ディレクトリーツリーにあるファイルのバージョンコントロール状態を見て、それらのファイルにバージョンコントロール操作を実行するために特化したバッファーです。特に複数ファイルのVCファイルセットにたいして、@w{@kbd{C-x
+v v}}のようなコマンドを適用するのに使用されます(@ref{VC Directory Commands}を参照してください)。
 
 @kindex C-x v d
 @findex vc-dir
-  To use the VC Directory buffer, type @kbd{C-x v d} (@code{vc-dir}).
-This reads a directory name using the minibuffer, and switches to a VC
-Directory buffer for that directory.  By default, the buffer is named
-@file{*vc-dir*}.  Its contents are described
+  VC Directoryバッファーを使用するには、@kbd{C-x v d}
+(@code{vc-dir})とタイプします。これはミニバッファーを使用してディレクトリー名を読み取り、そのディレクトリーにたいするVC
+Directoryバッファーに切り替えます。デフォルトでは、バッファーの名前は@file{*vc-dir*}です。その内容については、
 @iftex
-below.
+以下で説明します。
 @end iftex
 @ifnottex
-in @ref{VC Directory Buffer}.
+@ref{VC Directory Buffer}で説明します。
 @end ifnottex
 
-  The @code{vc-dir} command automatically detects the version control
-system to be used in the specified directory.  In the event that more
-than one system is being used in the directory, you should invoke the
-command with a prefix argument, @kbd{C-u C-x v d}; this prompts for
-the version control system which the VC Directory buffer should use.
+  @code{vc-dir}コマンドは、指定したディレクトリーで使用されているバージョンコントロールシステムを自動的に検知します。そのディレクトリーにたいして複数のバージョンコントロールシステムが使用されている場合、@kbd{C-u
+C-x v d}のようにプレフィクス引数を指定して、このコマンドを呼び出す必要があるでしょう。これはVC
+Directoryバッファーが使用すべきバージョンコントロールシステムの入力を求めます。
 
 @ifnottex
 @cindex PCL-CVS
 @pindex cvs
 @cindex CVS directory mode
-  In addition to the VC Directory buffer, Emacs has a similar facility
-called PCL-CVS which is specialized for CVS@.  @xref{Top, , About
-PCL-CVS, pcl-cvs, PCL-CVS---The Emacs Front-End to CVS}.
+  VC Directoryバッファーに加えて、EmacsにはCVSに特化したPCL-CVSと呼ばれる似た機能があります。@ref{Top, , About
+PCL-CVS, pcl-cvs, PCL-CVS---The Emacs Front-End to CVS}を参照してください。
 @end ifnottex
 
 @menu
-* Buffer: VC Directory Buffer.      What the buffer looks like and means.
-* Commands: VC Directory Commands.  Commands to use in a VC directory buffer.
+* Buffer: VC Directory Buffer.  バッファーの外観と意味。
+* Commands: VC Directory Commands.  VC 
+                                      directoryバッファーで使用するコマンド。
 @end menu
 
 @node VC Directory Buffer
 @subsubsection The VC Directory Buffer
 
-  The VC Directory buffer contains a list of version-controlled files
-and their version control statuses.  It lists files in the current
-directory (the one specified when you called @kbd{C-x v d}) and its
-subdirectories, but only those with a ``noteworthy'' status.  Files
-that are up-to-date (i.e., the same as in the repository) are
-omitted.  If all the files in a subdirectory are up-to-date, the
-subdirectory is not listed either.  As an exception, if a file has
-become up-to-date as a direct result of a VC command, it is listed.
+  VC Directoryバッファーは、バージョンコントロールされたファイルと、それらのバージョンコントロール状態を含みます。これは、(@kbd{C-x
+v
+d}を呼び出すことにより指定される)カレントディレクトリーの、``注目すべき''状態のファイルとサブディレクトリーをだけリストします。最新のファイル(リポジトリーのものと同じ)は省略されます。サブディレクトリーのファイルがすべて最新の場合、そのサブディレクトリーもリストされません。例外として、VCコマンドの直接の結果として最新になったファイルはリストされます。
 
-  Here is an example of a VC Directory buffer listing:
+  以下はVC Directoryバッファーのリストの例です:
 
 @smallexample
 @group
@@ -1122,269 +765,181 @@ become up-to-date as a direct result of a VC command, it is listed.
 @end smallexample
 
 @noindent
-Two work files have been modified but not committed:
-@file{configure.ac} in the current directory, and @file{foo.c} in the
-@file{src/} subdirectory.  The file named @file{README} has been added
-but is not yet committed, while @file{temp.txt} is not under version
-control (@pxref{Registering}).
+2つの作業ファイル、カレントディレクトリーの@file{configure.ac}と、サブディレクトリー@file{src/}の@file{foo.c}は、変更されていますがコミットされていません。@file{README}という名前のファイルは追加されましたが、まだコミットされていません。そして@file{temp.txt}はバージョンコントロールの配下にありません(@ref{Registering}を参照してください)。
 
-The @samp{*} characters next to the entries for @file{README} and
-@file{src/main.c} indicate that the user has marked out these files as
-the current VC fileset
+エントリー@file{README}および@file{src/main.c}の隣の@samp{*}という文字は、ユーザーがそれらのファイルをカレントVCファイルセットとしてマークしたことを示します
 @iftex
-(see below).
+(以下を参照してください)。
 @end iftex
 @ifnottex
-(@pxref{VC Directory Commands}).
+(@ref{VC Directory Commands}を参照してください)。
 @end ifnottex
 
-  The above example is typical for a decentralized version control
-system like Bazaar, Git, or Mercurial.  Other systems can show other
-statuses.  For instance, CVS shows the @samp{needs-update} status if
-the repository has changes that have not been applied to the work
-file.  RCS and SCCS show the name of the user locking a file as its
-status.
+  上記は、Bazaar、Git、Mercurialのような分散型のバージョンコントロールシステムでの典型的な例です。他のシステムでは、他の状態も見られます。たとえばCVSは、リポジトリーが変更されていて、それがまだ作業ファイルに適用されていないときは、@samp{needs-update}という状態を表示します。RCSとSCCSは、ロックされているファイルの状態に、ロックしているユーザーの名前を表示します。
 
 @ifnottex
 @vindex vc-stay-local
 @vindex vc-cvs-stay-local
-  On CVS and Subversion, the @code{vc-dir} command normally contacts
-the repository, which may be on a remote machine, to check for
-updates.  If you change the variable @code{vc-stay-local} or
-@code{vc-cvs-stay-local} (for CVS) to @code{nil} (@pxref{CVS
-Options}), then Emacs avoids contacting a remote repository when
-generating the VC Directory buffer (it will still contact it when
-necessary, e.g., when doing a commit).  This may be desirable if you
-are working offline or the network is slow.
+  CVSとSubversionでは通常、@code{vc-dir}コマンドは更新のチェックのために、おそらくはリモートマシン上にあるであろうリポジトリーにアクセスします。変数@code{vc-stay-local}(CVSは@code{vc-cvs-stay-local}。@ref{CVS
+Options}を参照してください)を@code{nil}に変更すると、EmacsはVC
+Directoryバッファーが生成されるときのリモートのリポジトリーへのアクセスを避けます(コミットを行うときなど、必要なときはアクセスします)。これは、オフラインで作業していたり、ネットワークが遅いときは望ましいでしょう。
 @end ifnottex
 
 @vindex vc-directory-exclusion-list
-  The VC Directory buffer omits subdirectories listed in the variable
-@code{vc-directory-exclusion-list}.  Its default value contains
-directories that are used internally by version control systems.
+  VC
+Directoryバッファーは、変数@code{vc-directory-exclusion-list}にリストされているサブディレクトリーを省略します。この変数のデフォルト値には、バージョンコントロールシステムにより内部的に使用されるディレクトリーが含まれています。
 
 @node VC Directory Commands
 @subsubsection VC Directory Commands
 
-  Emacs provides several commands for navigating the VC Directory
-buffer, and for ``marking'' files as belonging to the current VC
-fileset.
+  EmacsはVC
+Directoryバッファーの操作と、カレントVCファイルセットに属させるために、ファイルを``マーク''するためのコマンドをいくつか提供します。
 
 @table @kbd
 @item n
 @itemx @key{SPC}
-Move point to the next entry (@code{vc-dir-next-line}).
+次のエントリーにポイントを移動します(@code{vc-dir-next-line})。
 
 @item p
-Move point to the previous entry (@code{vc-dir-previous-line}).
+前のエントリーにポイントを移動します(@code{vc-dir-previous-line})。
 
 @item @key{TAB}
-Move to the next directory entry (@code{vc-dir-next-directory}).
+次のディレクトリーエントリーに移動します(@code{vc-dir-next-directory})。
 
 @item S-@key{TAB}
-Move to the previous directory entry
-(@code{vc-dir-previous-directory}).
+前のディレクトリーエントリーに移動します(@code{vc-dir-previous-directory})。
 
 @item @key{RET}
 @itemx f
-Visit the file or directory listed on the current line
-(@code{vc-dir-find-file}).
+カレント行にリストされたファイル、またはディレクトリーをvisitします(@code{vc-dir-find-file})。
 
 @item o
-Visit the file or directory on the current line, in a separate window
-(@code{vc-dir-find-file-other-window}).
+カレント行にリストされたファイル、またはディレクトリーを別のウィンドウでvisitします(@code{vc-dir-find-file-other-window})。
 
 @item m
-Mark the file or directory on the current line (@code{vc-dir-mark}),
-putting it in the current VC fileset.  If the region is active, mark
-all files in the region.
+カレント行のファイルまたはディレクトリーをマークして、それをカレントVCファイルセットに加えます(@code{vc-dir-mark})。リージョンがアクティブのときは、リージョンの中のすべてのファイルをマークします。
 
-A file cannot be marked with this command if it is already in a marked
-directory, or one of its subdirectories.  Similarly, a directory
-cannot be marked with this command if any file in its tree is marked.
+すでにマークされたディレクトリーの中のファイル、またはそのサブディレクトリーは、このコマンドではマークされません。同様に、ツリーの中のいくつかのファイルがマークされているディレクトリーは、このコマンドではマークされません。
 
 @item M
-If point is on a file entry, mark all files with the same status; if
-point is on a directory entry, mark all files in that directory tree
-(@code{vc-dir-mark-all-files}).  With a prefix argument, mark all
-listed files and directories.
+ポイントがファイルエントリーにあるときは、同じ状態のすべてのファイルをマークします。ポイントがディレクトリーエントリーにあるときは、そのディレクトリーツリーのすべてのファイルをマークします(@code{vc-dir-mark-all-files})。プレフィクス引数を指定した場合、リストされたファイルとディレクトリーのすべてをマークします。
 
 @item q
-Quit the VC Directory buffer, and bury it (@code{quit-window}).
+VC Directoryバッファーを終了して、隠します(@code{quit-window})。
 
 @item u
-Unmark the file or directory on the current line.  If the region is
-active, unmark all the files in the region (@code{vc-dir-unmark}).
+カレント行のファイル、またはディレクトリーのマークを外します(@code{vc-dir-unmark})。リージョンがアクティブのときは、リージョンの中のすべてのファイルのマークを外します。
 
 @item U
-If point is on a file entry, unmark all files with the same status; if
-point is on a directory entry, unmark all files in that directory tree
-(@code{vc-dir-unmark-all-files}).  With a prefix argument, unmark all
-files and directories.
+ポイントがファイルエントリーにあるときは。同じ状態のすべてのファイルのマークを外し、ポイントがディレクトリーエントリーにあるときは、そのディレクトリーツリーのすべてのファイルのマークを外します(@code{vc-dir-unmark-all-files})。プレフィクス引数を指定した場合、すべてのファイルおよびディレクトリーのマークを外します。
 
 @item x
-Hide files with @samp{up-to-date} status
-(@code{vc-dir-hide-up-to-date}).  With a prefix argument, hide items
-whose state is that of the item at point.
+状態が@samp{up-to-date}のファイルを隠します(@code{vc-dir-hide-up-to-date})。プレフィクス引数を指定した場合、状態がポイント位置のアイテムと同じアイテムを隠します。
 @end table
 
 @findex vc-dir-mark
 @findex vc-dir-mark-all-files
-  While in the VC Directory buffer, all the files that you mark with
-@kbd{m} (@code{vc-dir-mark}) or @kbd{M} (@code{vc-dir-mark}) are in
-the current VC fileset.  If you mark a directory entry with @kbd{m},
-all the listed files in that directory tree are in the current VC
-fileset.  The files and directories that belong to the current VC
-fileset are indicated with a @samp{*} character in the VC Directory
-buffer, next to their VC status.  In this way, you can set up a
-multi-file VC fileset to be acted on by VC commands like @w{@kbd{C-x v
-v}} (@pxref{Basic VC Editing}), @w{@kbd{C-x v =}} (@pxref{Old
-Revisions}), and @w{@kbd{C-x v u}} (@pxref{VC Undo}).
+  VC Directoryバッファーでは、@kbd{m} (@code{vc-dir-mark})または@kbd{M}
+(@code{vc-dir-mark})でマークしたすべてのファイルが、カレントVCファイルセットになります。ディレクトリーエントリーを@kbd{m}でマークした場合、そのディレクトリーツリーにリストされたすべてのファイルが、カレントVCファイルセットになります。カレントVCファイルセットに属するファイルとディレクトリーは、VC
+Directoryではバージョンコントロール状態の隣に、文字@samp{*}が示されます。この方法により@w{@kbd{C-x v v}}
+(@ref{Basic VC Editing}を参照してください)、@w{@kbd{C-x v =}} (@ref{Old
+Revisions}を参照してください)、@w{@kbd{C-x v u}} (@ref{VC
+Undo}を参照してください)のようなVCコマンドが作用する、複数ファイルのVCファイルセットをセットアップできます。
 
-  The VC Directory buffer also defines some single-key shortcuts for
-VC commands with the @kbd{C-x v} prefix: @kbd{=}, @kbd{+}, @kbd{l},
-@kbd{i}, @kbd{D}, @kbd{L}, @kbd{G}, @kbd{I} and @kbd{v}.
+  VC Directoryバッファーは、@kbd{C-x
+v}というプレフィクスをもつコマンドを、1キーで入力するショートカット(@kbd{=}、@kbd{+}、@kbd{l}、@kbd{i}、@kbd{D}、@kbd{L}、@kbd{G}、@kbd{I}、@kbd{v})を定義します。
 
-  For example, you can commit a set of edited files by opening a VC
-Directory buffer, where the files are listed with the @samp{edited}
-status; marking the files; and typing @kbd{v} or @kbd{C-x v v}
-(@code{vc-next-action}).  If the version control system is
-changeset-based, Emacs will commit the files in a single revision.
+  たとえば、VC
+Directoryバッファーで開いて編集された一連のファイルは、@samp{edited}という状態でリストされ、それらのファイルをマークして、@kbd{v}または@kbd{C-x
+v v}
+(@code{vc-next-action})でコミットできます。バージョンコントロールシステムが変更セットベースの場合、Emacsはそれらのファイルを1つのリビジョンとしてコミットします。
 
-  While in the VC Directory buffer, you can also perform search and
-replace on the current VC fileset, with the following commands:
+  VC Directoryバッファーでは、以下のコマンドによりカレントVCファイルセットの検索と置換を処理することもできます:
 
 @table @kbd
 @item S
-Search the fileset (@code{vc-dir-search}).
+ファイルセットを検索します(@code{vc-dir-search})。
 
 @item Q
-Do a regular expression query replace on the fileset
-(@code{vc-dir-query-replace-regexp}).
+ファイルセットにたいして、正規表現による問い合わせ置換を行います(@code{vc-dir-query-replace-regexp})。
 
 @item M-s a C-s
-Do an incremental search on the fileset (@code{vc-dir-isearch}).
+ファイルセットにたいして、インクリメンタル検索を行います(@code{vc-dir-isearch})。
 
 @item M-s a C-M-s
-Do an incremental regular expression search on the fileset
-(@code{vc-dir-isearch-regexp}).
+ファイルセットにたいして、インクリメンタルな正規表現検索を行います(@code{vc-dir-isearch-regexp})。
 @end table
 
 @noindent
-Apart from acting on multiple files, these commands behave much like
-their single-buffer counterparts (@pxref{Search}).
+複数ファイルに作用する点を除けば、これらのコマンドは1つのバッファーに作用する同等のコマンドに似ています(@ref{Search}を参照してください)。
 
 @cindex stashes in version control
 @cindex shelves in version control
-  The above commands are also available via the menu bar, and via a
-context menu invoked by @kbd{Mouse-2}.  Furthermore, some VC backends
-use the menu to provide extra backend-specific commands.  For example,
-Git and Bazaar allow you to manipulate @dfn{stashes} and @dfn{shelves}
-(where are a way to temporarily put aside uncommitted changes, and
-bring them back at a later time).
+  上記のコマンドは、メニューバーおよび@kbd{Mouse-2}によるコンテキストメニューを通じても利用可能です。さらにVCのバックエンドのいくつかは、そのバックエンド特有のコマンドを提供するメニューを使用します。たとえばGitとBazaarでは、@dfn{stashes(隠してあるもの)}と@dfn{shelves(棚)}を操作できます(コミットされていない変更を一時的に除外して、後でそれを戻すコマンドです)。
 
 @node Branches
 @subsection Version Control Branches
 @cindex branch (version control)
 
-  One use of version control is to support multiple independent lines
-of development, which are called @dfn{branches}.  Amongst other
-things, branches can be used for maintaining separate ``stable'' and
-``development'' versions of a program, and for developing unrelated
-features in isolation from one another.
+  バージョンコントロールの活用法の1つとして、@dfn{ブランチ(branches)}と呼ばれる複数の独立した開発ラインのサポートがあります。中でもとりわけブランチは、プログラムの``安定版(stable)''と``開発版(development)''を個別に保守したり、関係のない機能を他の版から隔離して開発するのに使用されます。
 
-  VC's support for branch operations is currently fairly limited.  For
-decentralized version control systems, it provides commands for
-@dfn{updating} one branch with the contents of another, and for
-@dfn{merging} the changes made to two different branches
-(@pxref{Merging}).  For centralized version control systems, it
-supports checking out different branches and committing into new or
-different branches.
+  現在のところVCのブランチ操作にたいするサポートは、かなり制限されています。分散型のバージョンコントロールシステムにたいしては、あるブランチを他のブランチのコンテンツで@dfn{更新}するコマンドと、2つの異なるブランチの変更を@dfn{マージ}するコマンドを提供します。集中型のバージョンコントロールシステムにたいしては、異なるブランチからチェックアウトして、新規または異なるブランチにコミットするコマンドを提供します。
 
 @menu
-* Switching Branches::    How to get to another existing branch.
-* VC Pull::               Updating the contents of a branch.
-* Merging::               Transferring changes between branches.
-* Creating Branches::     How to start a new branch.
+* Switching Branches::       既存のブランチを取得する方法。
+* VC Pull::                  ブランチの内容の更新。
+* Merging::                  ブランチ間での変更の転送。
+* Creating Branches::        新しいブランチを開始する方法。
 @end menu
 
 @node Switching Branches
 @subsubsection Switching between Branches
 
-  The various version control systems differ in how branches are
-implemented, and these differences cannot be entirely concealed by VC.
+  さまざまなバージョンコントロールシステムにおいて、ブランチが実装される方法は異なり、VCはこれらの違いを完全に隠蔽することはできません。
 
-  On some decentralized version control systems, including Bazaar and
-Mercurial in its normal mode of operation, each branch has its own
-working directory tree, so switching between branches just involves
-switching directories.  On Git, branches are normally @dfn{co-located}
-in the same directory, and switching between branches is done using
-the @command{git checkout} command, which changes the contents of the
-working tree to match the branch you switch to.  Bazaar also supports
-co-located branches, in which case the @command{bzr switch} command
-will switch branches in the current directory.  With Subversion, you
-switch to another branch using the @command{svn switch} command.
+  BazaarとMercurialを含む分散型バージョンコントロールシステムのいくつかは、ノーマルモードの操作では、各ブランチは自身の作業ディレクトリーツリーをもつので、ブランチの切り替えは単にディレクトリーを切り替えるだけです。Gitでは、ブランチは通常、同じディレクトリーの@dfn{共通場所(co-located)}を使用し、ブランチの切り替えは、作業ツリーの内容をそのブランチに一致するように変更する、@command{git
+checkout}を使用して行われます。Bazaarも共通場所をサポートし、この場合は@command{bzr
+switch}コマンドによりカレントディレクトリーでブランチを切り替えます。Subversionでは他のブランチに切り替えるのに、@command{svn
+switch}コマンドを使用します。
 
-  The VC command to switch to another branch in the current directory
-is @kbd{C-x v r @var{branch-name} @key{RET}} (@code{vc-retrieve-tag}).
+  カレントディレクトリーの他のブランチに切り替えるVCコマンドは、@kbd{C-x v r @var{branch-name} @key{RET}}
+(@code{vc-retrieve-tag})です。
 
-  On centralized version control systems, you can also switch between
-branches by typing @kbd{C-u C-x v v} in an up-to-date work file
-(@pxref{Advanced C-x v v}), and entering the revision ID for a
-revision on another branch.  On CVS, for instance, revisions on the
-@dfn{trunk} (the main line of development) normally have IDs of the
-form 1.1, 1.2, 1.3, @dots{}, while the first branch created from (say)
-revision 1.2 has revision IDs 1.2.1.1, 1.2.1.2, @dots{}, the second
-branch created from revision 1.2 has revision IDs 1.2.2.1, 1.2.2.2,
-@dots{}, and so forth.  You can also specify the @dfn{branch ID},
-which is a branch revision ID omitting its final component
-(e.g., 1.2.1), to switch to the latest revision on that branch.
+  集中型のバージョンコントロールシステムでは、最新の作業ファイルで@kbd{C-u C-x v v}とタイプして(@ref{Advanced C-x v
+v}を参照してください)、他のブランチのリビジョンIDを入力することにより、ブランチ間を切り替えることもできます。たとえばCVSでは、@dfn{trunk(幹の意。開発の主要ラインを示します)}のリビジョンは通常、1.1、1.2、1.3、@dots{}という形式をもち、最初のブランチがリビジョン1.2から作成された場合、リビジョン1.2は1.2.1.1、1.2.1.2、@dots{}というリビジョンIDをもち、さらに2番目のブランチが同じくリビジョン1.2から作成された場合、それは1.2.2.1、1.2.2.2、@dots{}という形式になります。ブランチのリビジョンIDから最後の部分を除いた(たとえば1.2.1)、@dfn{ブランチID(branch
+ID)}を指定して、そのブランチの最新のリビジョンに切り替えることもできます。
 
-  On a locking-based system, switching to a different branch also
-unlocks (write-protects) the working tree.
+  ロックベースのシステムでは、他のブランチに切り替えることにより、作業ツリーのロックが解除(書き込み禁止)になります。
 
-  Once you have switched to a branch, VC commands will apply to that
-branch until you switch away; for instance, any VC filesets that you
-commit will be committed to that specific branch.
+  1度ブランチを切り替えると、そのブランチを他に切り替えるまで、VCコマンドはそのブランチに適用されます。たとえば任意のVCファイルセットをコミットすると、そのブランチにコミットされるようになります。
 
 @node VC Pull
 @subsubsection Pulling Changes into a Branch
 
 @table @kbd
 @item C-x v +
-On a decentralized version control system, update the current branch
-by ``pulling in'' changes from another location.
+分散型のバージョンコントロールシステムでは、他の場所から変更を``pull''することにより、カレントのブランチを更新します。
 
-On a centralized version control system, update the current VC
-fileset.
+集中型のバージョンコントロールシステムでは、カレントVCファイルセットを更新します。
 @end table
 
 @kindex C-x v +
 @findex vc-pull
-  On a decentralized version control system, the command @kbd{C-x v +}
-(@code{vc-pull}) updates the current branch and working tree.  It is
-typically used to update a copy of a remote branch.  If you supply a
-prefix argument, the command prompts for the exact version control
-command to use, which lets you specify where to pull changes from.
-Otherwise, it pulls from a default location determined by the version
-control system.
+  分散型のバージョンコントロールシステムでは、コマンド@kbd{C-x v +}
+(@code{vc-pull})は、カレントブランチと作業ツリーを更新します。これは通常、リモートのブランチのコピーを更新するのに使用されます。プレフィクス引数を与えた場合、このコマンドは使用する正確なバージョンコントロールコマンドの入力をもとめます。これにより変更をどこからpullするか指定できます。プレフィクス引数を指定しない場合は、バージョンコントロールシステムにより決定される、デフォルトの場所からpullします。
 
-  Amongst decentralized version control systems, @kbd{C-x v +} is
-currently supported only by Bazaar, Git, and Mercurial.  On Bazaar, it
-calls @command{bzr pull} for ordinary branches (to pull from a master
-branch into a mirroring branch), and @command{bzr update} for a bound
-branch (to pull from a central repository).  On Git, it calls
-@command{git pull} to fetch changes from a remote repository and merge
-it into the current branch.  On Mercurial, it calls @command{hg pull
--u} to fetch changesets from the default remote repository and update
-the working directory.
+  分散型のバージョンコントロールシステムの中で、現在@kbd{C-x v
++}がサポートするのはBazaar、Git、Mercurialだけです。Bazaarでは、これは通常のブランチにたいしては、(マスターブランチをミラーリングされたブランチにpullするために)@command{bzr
+pull}を呼び出し、バインドされたブランチにたいしては、(中心となるリポジトリーからpullするために)@command{bzr
+update}を呼び出します。Gitでは、これはリモートのリポジトリーから変更を取得して、それをカレントブランチにマージするために、@command{git
+pull}を呼び出します。Mercurialでは、デフォルトのリモートリポジトリーから変更を取得して、作業ディレクトリーを更新するために@command{hg
+pull -u}を呼び出します。
 
-  Prior to pulling, you can use @kbd{C-x v I} (@code{vc-log-incoming})
-to view a log buffer of the changes to be applied.  @xref{VC Change
-Log}.
+  pullする前に@kbd{C-x v I}
+(@code{vc-log-incoming})を使用して、適用される変更のlogバッファーを閲覧できます。@ref{VC Change
+Log}を参照してください。
 
-  On a centralized version control system like CVS, @kbd{C-x v +}
-updates the current VC fileset from the repository.
+  CVSのような集中型のバージョンコントロールシステムでは、@kbd{C-x v +}はリポジトリーからカレントVCファイルセットを更新します。
 
 @node Merging
 @subsubsection Merging Branches
@@ -1392,77 +947,46 @@ updates the current VC fileset from the repository.
 
 @table @kbd
 @item C-x v m
-On a decentralized version control system, merge changes from another
-branch into the current one.
+分散型のバージョンコントロールシステムでは、カレントのブランチに他のブランチの変更をマージします。
 
-On a centralized version control system, merge changes from another
-branch into the current VC fileset.
+集中型のバージョンコントロールシステムでは、カレントVCファイルセットに他のブランチの変更をマージします。
 @end table
 
-  While developing a branch, you may sometimes need to @dfn{merge} in
-changes that have already been made in another branch.  This is not a
-trivial operation, as overlapping changes may have been made to the
-two branches.
+  ブランチで開発している場合、すでに他のブランチで行われた変更を@dfn{マージ(merge)}する必要があるときがあります。これは2つのブランチでの変更が重なる場合もあるため、些細な操作とはいえません。
 
-  On a decentralized version control system, merging is done with the
-command @kbd{C-x v m} (@code{vc-merge}).  On Bazaar, this prompts for
-the exact arguments to pass to @command{bzr merge}, offering a
-sensible default if possible.  On Git, this prompts for the name of a
-branch to merge from, with completion (based on the branch names known
-to the current repository).  The output from running the merge command
-is shown in a separate buffer.
+  分散型のバージョンコントロールシステムでは、マージはコマンド@kbd{C-x v m}
+(@code{vc-merge})により行われます。Bazaarでは、これは@command{bzr
+merge}に渡す正確な引数の入力を求めます。そのとき、可能であれば目的にかなったデフォルトを提示します。Gitでは、これはマージするブランチ名の入力を求めます。このとき、(カレントリポジトリーが知っているブランチ名にもとづく)補完を行います。マージコマンドの実行による出力は、他のバッファーに表示されます。
 
-  On a centralized version control system like CVS, @kbd{C-x v m}
-prompts for a branch ID, or a pair of revision IDs (@pxref{Switching
-Branches}); then it finds the changes from that branch, or the changes
-between the two revisions you specified, and merges those changes into
-the current VC fileset.  If you just type @key{RET}, Emacs simply
-merges any changes that were made on the same branch since you checked
-the file out.
+  CVSのような集中型のバージョンコントロールシステムでは、@kbd{C-x v
+m}はブランチID、または2つのリビジョンIDの入力を求めます。コマンドはそのブランチからの変更点、または指定した2つのリビジョン間の差分を探して、それらの変更をカレントVCファイルセットにマージします。@key{RET}だけをタイプした場合、Emacsは単にそのファイルをチェックアウトしたブランチに行われた変更をマージします。
 
 @cindex conflicts
 @cindex resolving conflicts
-  Immediately after performing a merge, only the working tree is
-modified, and you can review the changes produced by the merge with
-@kbd{C-x v D} and related commands (@pxref{Old Revisions}).  If the
-two branches contained overlapping changes, merging produces a
-@dfn{conflict}; a warning appears in the output of the merge command,
-and @dfn{conflict markers} are inserted into each affected work file,
-surrounding the two sets of conflicting changes.  You must then
-resolve the conflict by editing the conflicted files.  Once you are
-done, the modified files must be committed in the usual way for the
-merge to take effect (@pxref{Basic VC Editing}).
+  マージを処理した直後は、作業ツリーだけが変更されており、@kbd{C-x v
+D}および関連するコマンドで、マージにより生成された変更をレビューできます(@ref{Old
+Revisions}を参照してください)。2つのブランチが重なった変更をもつ場合、マージは@dfn{衝突(conflict)}を生成します。その場合、マージコマンドの出力には警告が現れ。影響のある作業ファイルの、衝突する2つの変更の周囲に、@dfn{衝突マーカー(conflict
+markers)}が挿入されます。衝突を解決するには、衝突するファイルを編集しなければなりません。編集が終わったら、マージが効果を発揮するように、通常の方法により変更したファイルをコミットしなければなりません(@ref{Basic
+VC Editing}を参照してください)。
 
 @node Creating Branches
 @subsubsection Creating New Branches
 
-  On centralized version control systems like CVS, Emacs supports
-creating new branches as part of a commit operation.  When committing
-a modified VC fileset, type @kbd{C-u C-x v v} (@code{vc-next-action}
-with a prefix argument; @pxref{Advanced C-x v v}).  Then Emacs prompts
-for a revision ID for the new revision.  You should specify a suitable
-branch ID for a branch starting at the current revision.  For example,
-if the current revision is 2.5, the branch ID should be 2.5.1, 2.5.2,
-and so on, depending on the number of existing branches at that point.
+  CVSのような集中型のバージョンコントロールシステムでは、Emacsはコミット操作の一部として、新しいブランチの作成をサポートします。変更されたVCファイルセットをコミットするとき、@kbd{C-u
+C-x v v} (@code{vc-next-action}のようにプレフィクス引数を指定します。@ref{Advanced C-x v
+v}を参照してください).すると、Emacsは新しいリビジョンのリビジョンIDの入力を求めます。ここでカレントリビジョンから開始するブランチの。適切なブランチIDを指定する必要があります。たとえば、カレントリビジョンIDが2.5の場合、ブランチIDは2.5.1、2.5.2、...となるべきでしょう。ブランチIDは、その時点での既存のブランチの番号に依存します。
 
-  To create a new branch at an older revision (one that is no longer
-the head of a branch), first select that revision (@pxref{Switching
-Branches}).  Your procedure will then differ depending on whether you
-are using a locking or merging-based VCS.
+  (すでにブランチのヘッドではない)古いリビジョンに新しいブランチを作成するには、最初にそのリビジョンを選択します(@ref{Switching
+Branches}を参照してください)。その後の手順は、ロックベースのバージョンコントロールシステムを使っているか、マージベースのものを使っているかで異なります。
 
-  On a locking VCS, you will need to lock the old revision branch with
-@kbd{C-x v v}.  You'll be asked to confirm, when you lock the old
-revision, that you really mean to create a new branch---if you say no,
-you'll be offered a chance to lock the latest revision instead.  On a
-merging-based VCS you will skip this step.
+  ロックベースのバージョンコントロールシステムでは、@kbd{C-x v
+v}で古いリビジョンのブランチを選択します。古いリビジョンを選択する場合、本当に新しいブランチを作成したいのか確認を求めます。これにnoと応えた場合、かわりに最新のリビジョンをロックする機会が与えられます。マージベースのバージョンコントロールシステムでは、このステップはスキップします。
 
-  Then make your changes and type @kbd{C-x v v} again to commit a new
-revision.  This creates a new branch starting from the selected
-revision.
+  変更を行なってから、再び@kbd{C-x v
+v}とタイプして、新しいリビジョンをコミットします。これは選択されたリビジョンから始まる、新しいブランチを作成します。
 
-  After the branch is created, subsequent commits create new revisions
-on that branch.  To leave the branch, you must explicitly select a
-different revision with @kbd{C-u C-x v v}.
+  ブランチが作成された後は、それ以降のコミットは、そのブランチに新しいリビジョンを作成します。ブランチを離れるには、@kbd{C-u C-x v
+v}で明示的に異なるリビジョンを選択しなければなりません。
 
 @ifnottex
 @include vc1-xtra.texi
@@ -1472,17 +996,12 @@ different revision with @kbd{C-u C-x v v}.
 @section Change Logs
 
 @cindex change log
-  Many software projects keep a @dfn{change log}.  This is a file,
-normally named @file{ChangeLog}, containing a chronological record of
-when and how the program was changed.  Sometimes, these files are
-automatically generated from the change log entries stored in version
-control systems, or are used to generate these change log entries.
-Sometimes, there are several change log files, each recording the
-changes in one directory or directory tree.
+  多くのソフトウェアプロジェクトでは、@dfn{変更ログ(change
+log)}を管理します。これは通常、いつどのようにして、そのプログラムが変更されたかの日付順の記録を含む、@file{ChangeLog}という名前のファイルです。これらのファイルは、バージョンコントロールシステムに保存された変更ログエントリーから自動的に生成されたり、それらの変更ログエントリーを自動的に生成するのに使われる場合もあります。複数の変更ログファイルがあり、それぞれが1つのディレクトリー、またはディレクトリーツリーに対応する場合もあります。
 
 @menu
-* Change Log Commands:: Commands for editing change log files.
-* Format of ChangeLog:: What the change log file looks like.
+* Change Log Commands::      変更ログファイルを編集するためのコマンド。
+* Format of ChangeLog::      変更ログファイルがどのように見えるか。
 @end menu
 
 @node Change Log Commands
@@ -1490,77 +1009,50 @@ changes in one directory or directory tree.
 
 @kindex C-x 4 a
 @findex add-change-log-entry-other-window
-  The Emacs command @kbd{C-x 4 a} adds a new entry to the change log
-file for the file you are editing
-(@code{add-change-log-entry-other-window}).  If that file is actually
-a backup file, it makes an entry appropriate for the file's
-parent---that is useful for making log entries for functions that
-have been deleted in the current version.
+  Emacsコマンド@kbd{C-x 4
+a}は、編集しているファイルにたいする新しいエントリーを、変更ログファイルに追加します(@code{add-change-log-entry-other-window})。そのファイルが実際にはバックアップファイルの場合、このコマンドはそのファイルの元のファイルのエントリーを適切に作成します
+--- これはカレントバージョンから削除された関数のログエントリーを作成するとき便利です。
 
-  @kbd{C-x 4 a} visits the change log file and creates a new entry
-unless the most recent entry is for today's date and your name.  It
-also creates a new item for the current file.  For many languages, it
-can even guess the name of the function or other object that was
-changed.
+  @kbd{C-x 4
+a}は変更ログファイルをvisitして、一番最近のエントリーが今日の日付であなたの名前でない場合は、新しいエントリーを作成します。これはカレントファイルにたいする、新しいアイテムも作成します。このコマンドは多くの言語にたいして、変更された関数またはその他のオブジェクトを推測することすらできます。
 
 @vindex add-log-keep-changes-together
-  When the variable @code{add-log-keep-changes-together} is
-non-@code{nil}, @kbd{C-x 4 a} adds to any existing item for the file
-rather than starting a new item.
+  変数@code{add-log-keep-changes-together}が非@code{nil}の場合、@kbd{C-x 4
+a}は新しいアイテムを開始せず、そのファイルにたいする既存のアイテムに追加します。
 
-You can combine multiple changes of the same nature.  If you don't
-enter any text after the initial @kbd{C-x 4 a}, any subsequent
-@kbd{C-x 4 a} adds another symbol to the change log entry.
+同じ性質の複数の変更を1つにまとめることができます。最初の@kbd{C-x 4 a}の後にテキストを何も入力せずに、続けて@kbd{C-x 4
+a}をタイプしていくと、他のシンボルが変更ログエントリーに追加されます。
 
 @vindex add-log-always-start-new-record
-  If @code{add-log-always-start-new-record} is non-@code{nil},
-@kbd{C-x 4 a} always makes a new entry, even if the last entry
-was made by you and on the same date.
+  @code{add-log-always-start-new-record}が非@code{nil}の場合、最後のエントリーが同じ日付のあなたによる変更だったときでも、@kbd{C-x
+4 a}は常に新しいエントリーを作成します。
 
 @vindex change-log-version-info-enabled
 @vindex change-log-version-number-regexp-list
 @cindex file version in change log entries
-  If the value of the variable @code{change-log-version-info-enabled}
-is non-@code{nil}, @kbd{C-x 4 a} adds the file's version number to the
-change log entry.  It finds the version number by searching the first
-ten percent of the file, using regular expressions from the variable
-@code{change-log-version-number-regexp-list}.
+  変数@code{change-log-version-info-enabled}の値が非@code{nil}の場合、@kbd{C-x 4
+a}は、ファイルのバージョン番号を変更ログのエントリーに追加します。これは変数@code{change-log-version-number-regexp-list}の正規表現を使用して、ファイルの最初の10%から、バージョン番号を探します。
 
 @cindex Change Log mode
 @findex change-log-mode
-  The change log file is visited in Change Log mode.  In this major
-mode, each bunch of grouped items counts as one paragraph, and each
-entry is considered a page.  This facilitates editing the entries.
-@kbd{C-j} and auto-fill indent each new line like the previous line;
-this is convenient for entering the contents of an entry.
+  変更ログファイルは、Change
+Logモードでvisitされます。このメジャーモードでは、グループ化されたアイテムの集まりは1つのパラグラフと扱われ。各エントリーはページとみなされます。これはエントリーの編集を容易にします。@kbd{C-j}およびauto-fillは、新しい行を前の行と同様にインデントします。これはエントリーの内容を入力するとき便利です。
 
-You can use the @code{next-error} command (by default bound to
-@kbd{C-x `}) to move between entries in the Change Log, when Change
-Log mode is on.  You will jump to the actual site in the file that was
-changed, not just to the next Change Log entry.  You can also use
-@code{previous-error} to move back in the same list.
+Change Logモードがオンの場合、@code{next-error}コマンド(デフォルトでは@kbd{C-x
+`}にバインドされています)を使用して、変更ログのエントリー間を移動することができます。次の変更ログエントリーだけでなく、そのファイルが変更された実際の場所にジャンプすることもあるでしょう。同じリストを戻って移動するのに、@code{previous-error}を使うこともできます。
 
 @findex change-log-merge
-  You can use the command @kbd{M-x change-log-merge} to merge other
-log files into a buffer in Change Log Mode, preserving the date
-ordering of entries.
+  コマンド@kbd{M-x change-log-merge}を使用して、他のログファイルを、エントリーの日付順を保持したまま、Change
+Logモードのバッファーにマージできます。
 
-  Version control systems are another way to keep track of changes in
-your program and keep a change log.  In the VC log buffer, typing
-@kbd{C-c C-a} (@code{log-edit-insert-changelog}) inserts the relevant
-Change Log entry, if one exists.  @xref{Log Buffer}.
+  プログラムの変更を追跡して変更ログを維持する他の方法として、バージョンコントロールシステムがあります。VC logバッファーでは、@kbd{C-c
+C-a}
+(@code{log-edit-insert-changelog})とタイプすると、変更ログが存在する場合は、関連する変更ログのエントリーを追加します。
 
 @node Format of ChangeLog
 @subsection Format of ChangeLog
 
-  A change log entry starts with a header line that contains the
-current date, your name (taken from the variable
-@code{add-log-full-name}), and your email address (taken from the
-variable @code{add-log-mailing-address}).  Aside from these header
-lines, every line in the change log starts with a space or a tab.  The
-bulk of the entry consists of @dfn{items}, each of which starts with a
-line starting with whitespace and a star.  Here are two entries, both
-dated in May 1993, with two items and one item respectively.
+  変更ログエントリーは、現在の日付、名前(変数@code{add-log-full-name}より取得)、電子メールアドレス(変数@code{add-log-mailing-address}より取得)を含むヘッダー行から開始されます。ヘッダー行を除いた変更ログの各行は、スペースまたはタブで開始されます。エントリーの大部分は、空白文字とアスタリスクで行が開始される、@dfn{アイテム(items)}から構成されます。以下は2つのアイテムおよび1つのアイテムをもつ、日付が1993年5月の、2つのエントリーの例です。
 
 @iftex
 @medbreak
@@ -1580,14 +1072,9 @@ dated in May 1993, with two items and one item respectively.
         (vc-cancel-version): Doc fix.
 @end smallexample
 
-  One entry can describe several changes; each change should have its
-own item, or its own line in an item.  Normally there should be a
-blank line between items.  When items are related (parts of the same
-change, in different places), group them by leaving no blank line
-between them.
+  1つのエントリーで複数の変更を記述できます。変更はそれぞれアイテム、またはアイテムの中の行を占めます。アイテムの間には通常、空行があります。アイテムが関連している場合(異なる場所での同じ変更など)、それらの間に空行を置かずにそれらをグループ化します。
 
-  You should put a copyright notice and permission notice at the
-end of the change log file.  Here is an example:
+  変更ログファイルの最後には、著作権表示と使用許諾を配すべきです。以下は例です:
 
 @smallexample
 Copyright 1997, 1998 Free Software Foundation, Inc.
@@ -1596,107 +1083,68 @@ permitted provided the copyright notice and this notice are preserved.
 @end smallexample
 
 @noindent
-Of course, you should substitute the proper years and copyright holder.
+これはもちろん、正しい年と版権所有者に置き換えて使う必要があります。
 
 @node Tags
 @section Tags Tables
 @cindex tags and tag tables
 
-  A @dfn{tag} is a reference to a subunit in a program or in a
-document.  In source code, tags reference syntactic elements of the
-program: functions, subroutines, data types, macros, etc.  In a
-document, tags reference chapters, sections, appendices, etc.  Each
-tag specifies the name of the file where the corresponding subunit is
-defined, and the position of the subunit's definition in that file.
+  @dfn{タグ(tag)}とは、プログラムまたはドキュメント内のサブユニットにたいするリファレンスです。ソースコードではタグは、関数サブルーチン、データ型、マクロなどのプログラムの構文要素を参照します。ドキュメントではチャプター、セクション、アペンディクスなどを参照します。タグは対応するサブユニットが定義されているファイルの場所と、サブユニットがファイルのどこで定義されているかを指定します。
 
-  A @dfn{tags table} records the tags extracted by scanning the source
-code of a certain program or a certain document.  Tags extracted from
-generated files reference the original files, rather than the
-generated files that were scanned during tag extraction.  Examples of
-generated files include C files generated from Cweb source files, from
-a Yacc parser, or from Lex scanner definitions; @file{.i} preprocessed
-C files; and Fortran files produced by preprocessing @file{.fpp}
-source files.
+  @dfn{タグテーブル(tags
+table)}は、特定のプログラムまたはドキュメントのソースコードをスキャンすることにより抽出されたタグを記録します。生成されたファイルから抽出されたタグは、タグ抽出の際にスキャンされる生成されたファイルではなく、その元になるファイルを参照します。生成されたファイルの例として、Cwebソース、Yaccパーサー、Lexスキャナー定義から生成されたCファイルや、プリプロセスされたCファイルの@file{.i}、@file{.fpp}ソースファイルをプリプロセスすることにより生成されるFortranファイルがあります。
 
 @cindex etags
-  To produce a tags table, you run the @command{etags} shell command
-on a document or the source code file.  The @samp{etags} program
-writes the tags to a @dfn{tags table file}, or @dfn{tags file} in
-short.  The conventional name for a tags file is @file{TAGS}@.
-@xref{Create Tags Table}.
+  タグテーブルを生成するには、ドキュメントまたはソースコードファイルにたいして、シェルコマンド@command{etags}を実行します。@samp{etags}プログラムは、@dfn{タグテーブルファイル(tags
+table file)}、または略記して@dfn{タグファイル(tags
+file)}にタグを書き込みます。タグファイルは慣習的に@file{TAGS}という名前です。@ref{Create Tags
+Table}を参照してください。
 
-  Emacs provides many commands for searching and replacing using the
-information recorded in tags tables.  For instance, the @kbd{M-.}
-(@code{find-tag}) jumps to the location of a specified function
-definition in its source file.  @xref{Find Tag}.
+  Emacsは、タグテーブルに記録された情報を使用して検索や置換を行う、多くのコマンドを提供します。たとえば@kbd{M-.}
+(@code{find-tag})は、指定した関数にたいして、それのソースファイルの関数定義の場所にジャンプします。@ref{Find
+Tag}を参照してください。
 
 @cindex C++ class browser, tags
 @cindex tags, C++
 @cindex class browser, C++
 @cindex Ebrowse
-  The Ebrowse facility is similar to @command{etags} but specifically
-tailored for C++.  @xref{Top,, Ebrowse, ebrowse, Ebrowse User's
-Manual}.  The Semantic package provides another way to generate and
-use tags, separate from the @command{etags} facility.
-@xref{Semantic}.
+  Ebrowse機能は@command{etags}に似ていますが、C++に特化したものです。@ref{Top,, Ebrowse, ebrowse,
+Ebrowse User's Manual}を参照してください。
+Semanticパッケージは、@command{etags}機能とは別の、タグを生成して使用する他の方法を提供します。@ref{Semantic}を参照してください。
 
 @menu
-* Tag Syntax::          Tag syntax for various types of code and text files.
-* Create Tags Table::   Creating a tags table with @command{etags}.
-* Etags Regexps::       Create arbitrary tags using regular expressions.
-* Select Tags Table::   How to visit a tags table.
-* Find Tag::            Commands to find the definition of a specific tag.
-* Tags Search::         Using a tags table for searching and replacing.
-* List Tags::           Using tags for completion, and listing them.
+* Tag Syntax::               さまざまなタイプのコードおよびテキストファイルにたいするタグ構文。
+* Create Tags Table::        @command{etags}によるタグテーブルの作成。
+* Etags Regexps::            正規表現を使用した任意タグの作成。
+* Select Tags Table::        タグテーブルをvisitする方法。
+* Find Tag::                 特定のタグの定義を見つけるコマンド。
+* Tags Search::              検索と置換にたいしてタグテーブルを使う。
+* List Tags::                補完および補完候補の一覧にタグを使う。
 @end menu
 
 @node Tag Syntax
 @subsection Source File Tag Syntax
 
-  Here is how tag syntax is defined for the most popular languages:
+  以下は、もっともポピュラーな言語でタグ構文が定義される方法です:
 
 @itemize @bullet
 @item
-In C code, any C function or typedef is a tag, and so are definitions of
-@code{struct}, @code{union} and @code{enum}.
-@code{#define} macro definitions, @code{#undef} and @code{enum}
-constants are also
-tags, unless you specify @samp{--no-defines} when making the tags table.
-Similarly, global variables are tags, unless you specify
-@samp{--no-globals}, and so are struct members, unless you specify
-@samp{--no-members}.  Use of @samp{--no-globals}, @samp{--no-defines}
-and @samp{--no-members} can make the tags table file much smaller.
+Cコードでは、Cの関数やtypedefはタグなので、@code{struct}、@code{union}、@code{enum}の定義もタグです。タグテーブルを作成するとき、@samp{--no-defines}を指定しなければ、@code{#define}マクロ定義、@code{#undef}および@code{enum}定数もタグになります。同様に、@samp{--no-globals}を指定しなければグローバル変数もタグで、@samp{--no-members}を指定していなければ構造体のメンバーもタグです。@samp{--no-globals}、@samp{--no-defines}、@samp{--no-members}を使用することにより、タグテーブルを小さくすることができます。
 
-You can tag function declarations and external variables in addition
-to function definitions by giving the @samp{--declarations} option to
-@command{etags}.
+@command{etags}に@samp{--declarations}オプションを与えることにより、関数定義(function
+definitions)に加えて、関数宣言(function declarations)と外部変数(external
+variables)もタグ付けできます。
 
 @item
-In C++ code, in addition to all the tag constructs of C code, member
-functions are also recognized; member variables are also recognized,
-unless you use the @samp{--no-members} option.  Tags for variables and
-functions in classes are named @samp{@var{class}::@var{variable}} and
-@samp{@var{class}::@var{function}}.  @code{operator} definitions have
-tag names like @samp{operator+}.
+C++コードでは、Cコードのすべてのタグ構成に加えて、メンバー関数も認識されます。@samp{--no-members}オプションを使用しなければ、メンバー変数も認識されます。クラスの変数および関数にたいするタグは、@samp{@var{class}::@var{variable}}および@samp{@var{class}::@var{function}}という名前になります。@code{演算子(operator)}定義は@samp{operator+}のような名前になります。
 
 @item
-In Java code, tags include all the constructs recognized in C++, plus
-the @code{interface}, @code{extends} and @code{implements} constructs.
-Tags for variables and functions in classes are named
-@samp{@var{class}.@var{variable}} and @samp{@var{class}.@var{function}}.
+Javaコードでは、C++で認識されるのすべてのタグ構成に加えて、@code{interface}、@code{extends}、@code{implements}もタグとして認識されます。クラスの変数および関数にたいするタグは、@samp{@var{class}.@var{variable}}および@samp{@var{class}.@var{function}}という名前になります。
 
 @item
-In @LaTeX{} documents, the arguments for @code{\chapter},
-@code{\section}, @code{\subsection}, @code{\subsubsection},
-@code{\eqno}, @code{\label}, @code{\ref}, @code{\cite},
-@code{\bibitem}, @code{\part}, @code{\appendix}, @code{\entry},
-@code{\index}, @code{\def}, @code{\newcommand}, @code{\renewcommand},
-@code{\newenvironment} and @code{\renewenvironment} are tags.
+@LaTeX{}ドキュメントでは、@code{\chapter}、@code{\section}、@code{\subsection}、@code{\subsubsection}、@code{\eqno}、@code{\label}、@code{\ref}、@code{\cite}、@code{\bibitem}、@code{\part}、@code{\appendix}、@code{\entry}、@code{\index}、@code{\def}、@code{\newcommand}、@code{\renewcommand}、@code{\newenvironment}、@code{\renewenvironment}にたいする引数がタグになります。
 
-Other commands can make tags as well, if you specify them in the
-environment variable @env{TEXTAGS} before invoking @command{etags}.  The
-value of this environment variable should be a colon-separated list of
-command names.  For example,
+@command{etags}を呼び出す前に、環境変数@env{TEXTAGS}で指定することにより、他のコマンドも同様にタグにできます。この環境変数の値には、コロンで区切られたコマンド名のリストを指定します。たとえば、
 
 @example
 TEXTAGS="mycommand:myothercommand"
@@ -1704,284 +1152,174 @@ export TEXTAGS
 @end example
 
 @noindent
-specifies (using Bourne shell syntax) that the commands
-@samp{\mycommand} and @samp{\myothercommand} also define tags.
+これは、(Bourneシェルの構文の使用して)コマンド@samp{\mycommand}と@samp{\myothercommand}もタグとして定義します。
 
 @item
-In Lisp code, any function defined with @code{defun}, any variable
-defined with @code{defvar} or @code{defconst}, and in general the
-first argument of any expression that starts with @samp{(def} in
-column zero is a tag.  As an exception, expressions of the form
-@code{(defvar @var{foo})} are treated as declarations, and are only
-tagged if the @samp{--declarations} option is given.
+Lispコードでは、@code{defun}で定義された任意の関数、@code{defvar}および@code{defconst}で定義された任意の変数、および一般的に列0から@samp{(def}で始まる任意の式の最初の引数はタグです。例外として@code{(defvar
+@var{foo})}という形式の式は、宣言として扱われ、@samp{--declarations}オプションが与えられたときだけタグになります。
 
 @item
-In Scheme code, tags include anything defined with @code{def} or with a
-construct whose name starts with @samp{def}.  They also include variables
-set with @code{set!} at top level in the file.
+Schemeコードでは、@code{def}で定義されたすべて、または名前が@samp{def}で始まる構成がタグに含まれます。これらは、ファイルのトップレベルで@code{set!}でセットされる変数も含まれます。
 @end itemize
 
-  Several other languages are also supported:
+  他の言語もいくつかサポートされます:
 
 @itemize @bullet
 
 @item
-In Ada code, functions, procedures, packages, tasks and types are
-tags.  Use the @samp{--packages-only} option to create tags for
-packages only.
+Adaコードでは、関数(functions)、プロシージャー(procedures)、パッケージ(packages)、タスク(tasks)、タイプ(types)がタグです。@samp{--packages-only}オプションを使用することにより、タグをパッケージにたいしてだけ作成できます。
 
-In Ada, the same name can be used for different kinds of entity
-(e.g., for a procedure and for a function).  Also, for things like
-packages, procedures and functions, there is the spec (i.e., the
-interface) and the body (i.e., the implementation).  To make it
-easier to pick the definition you want, Ada tag name have suffixes
-indicating the type of entity:
+Adaでは、異なる種類のエンティティー(たとえば関数とプロシージャー)に、同じ名前を使うことができます。またパッケージ、プロシージャー、関数と似たものに、スペック(spec、たとえばinterface)およびボディー(body、たとえばimplementation)があります。欲しい定義を簡単に取り出すために、Adaのタグ名にはエンティティーのタイプを示す接尾辞がつきます:
 
 @table @samp
 @item /b
-package body.
+パッケージのボディー(package body)。
 @item /f
-function.
+関数(function)
 @item /k
-task.
+タスク(task)。
 @item /p
-procedure.
+プロシージャー(procedure)。
 @item /s
-package spec.
+パッケージのスペック(package spec)。
 @item /t
-type.
+タイプ(type)。
 @end table
 
-  Thus, @kbd{M-x find-tag @key{RET} bidule/b @key{RET}} will go
-directly to the body of the package @code{bidule}, while @kbd{M-x
-find-tag @key{RET} bidule @key{RET}} will just search for any tag
-@code{bidule}.
+  したがって、@kbd{M-x find-tag @key{RET} bidule
+@key{RET}}は単に@code{bidule}という任意のタグを検索しますが、@kbd{M-x find-tag @key{RET}
+bidule/b @key{RET}}は直接パッケージ@code{bidule}のボディーに移動します。
 
 @item
-In assembler code, labels appearing at the start of a line,
-followed by a colon, are tags.
+アセンブラーコードでは、行の開始に現れ、後にコロンが続くラベルがタグです。
 
 @item
-In Bison or Yacc input files, each rule defines as a tag the nonterminal
-it constructs.  The portions of the file that contain C code are parsed
-as C code.
+BisonまたはYaccの入力ファイルでは、各構文規則で定義する非終端記号がタグです。ファイル内に含まれるCコードの部分は、Cコードとして解析します。
 
 @item
-In Cobol code, tags are paragraph names; that is, any word starting in
-column 8 and followed by a period.
+Cobolコードでは、タグはパラグラフ名なので、列8から始まり、後にピリオドが続く任意の単語がタグです。
 
 @item
-In Erlang code, the tags are the functions, records and macros defined
-in the file.
+Erlangコードでは、ファイルで定義された関数(functions)、レコード(records)、マクロ(macros)がタグです。
 
 @item
-In Fortran code, functions, subroutines and block data are tags.
+Fortranコードでは、サブルーチン(subroutines)およびブロックデータ(block data)がタグです。
 
 @item
-In HTML input files, the tags are the @code{title} and the @code{h1},
-@code{h2}, @code{h3} headers.  Also, tags are @code{name=} in anchors
-and all occurrences of @code{id=}.
+HTML入力ファイルでは、@code{title}、および@code{h1}、@code{h2}、@code{h3}ヘッダーがタグです。アンカー内の@code{name=}、およびすべての@code{id=}もタグです。
 
 @item
-In Lua input files, all functions are tags.
+Lua入力ファイルでは、すべての関数(functions)がタグです。
 
 @item
-In makefiles, targets are tags; additionally, variables are tags
-unless you specify @samp{--no-globals}.
+makefileでは、ターゲット(targets)がタグで、@samp{--no-globals}を指定しなければ変数(variables)もタグです。
 
 @item
-In Objective C code, tags include Objective C definitions for classes,
-class categories, methods and protocols.  Tags for variables and
-functions in classes are named @samp{@var{class}::@var{variable}} and
-@samp{@var{class}::@var{function}}.
+Objective Cコードでは、クラスにたいするObjective C定義、クラスカテゴリー(class
+categories)、メソッド(methods)、プロトコル(protocols)が含まれます。クラスの変数および関数にたいするタグの名前は、@samp{@var{class}::@var{variable}}および@samp{@var{class}::@var{function}}になります。
 
 @item
-In Pascal code, the tags are the functions and procedures defined in
-the file.
+Pascalコードでは、ファイル内で定義された関数およびプロシージャーがタグです。
 
 @item
-In Perl code, the tags are the packages, subroutines and variables
-defined by the @code{package}, @code{sub}, @code{use constant},
-@code{my}, and @code{local} keywords.  Use @samp{--globals} if you
-want to tag global variables.  Tags for subroutines are named
-@samp{@var{package}::@var{sub}}.  The name for subroutines defined in
-the default package is @samp{main::@var{sub}}.
+Perlコードでは、パッケージ、サブルーチン、変数がタグで、キーワード@code{package}、@code{sub}、@code{use
+constant}、@code{my}、@code{local}で定義されます。グローバル変数をタグ付けしたい場合、@samp{--globals}を使用します。サブルーチンにたいするタグの名前は、@samp{@var{package}::@var{sub}}になります。デフォルトのパッケージで定義されたサブルーチンの名前は、@samp{main::@var{sub}}になります。
 
 @item
-In PHP code, tags are functions, classes and defines.  Vars are tags
-too, unless you use the @samp{--no-members} option.
+PHPコードでは、関数(functions)、クラス(classes)、定義(defines)がタグです。@samp{--no-members}オプションを使用しなければ、変数(vars)もタグです。
 
 @item
-In PostScript code, the tags are the functions.
+PostScriptコードでは、関数がタグです。
 
 @item
-In Prolog code, tags are predicates and rules at the beginning of
-line.
+Prologコードでは、行頭の述語(predicates)とルール(rules)がタグです。
 
 @item
-In Python code, @code{def} or @code{class} at the beginning of a line
-generate a tag.
+Pythonコードでは、行頭の@code{def}および@code{class}はタグを生成します。
 @end itemize
 
-  You can also generate tags based on regexp matching (@pxref{Etags
-Regexps}) to handle other formats and languages.
+  他の書式や言語を扱うために、regexpにたいするマッチにもとづいてタグを生成することもできます(@ref{Etags
+Regexps}を参照してください)。
 
 @node Create Tags Table
 @subsection Creating Tags Tables
 @cindex @command{etags} program
 
-  The @command{etags} program is used to create a tags table file.  It knows
-the syntax of several languages, as described in
+  @command{etags}プログラムは、タグテーブルファイルを作成するために使用されます。このコマンドは、
 @iftex
-the previous section.
+前のセクションで説明している複数の構文を理解します。
 @end iftex
 @ifnottex
-@ref{Tag Syntax}.
+@ref{Tag Syntax}で説明している複数の構文を理解します。
 @end ifnottex
-Here is how to run @command{etags}:
+以下は@command{etags}を実行する方法です:
 
 @example
 etags @var{inputfiles}@dots{}
 @end example
 
 @noindent
-The @command{etags} program reads the specified files, and writes a tags
-table named @file{TAGS} in the current working directory.  You can
-optionally specify a different file name for the tags table by using the
-@samp{--output=@var{file}} option; specifying @file{-} as a file name
-prints the tags table to standard output.
+@command{etags}プログラムは、指定されたファイルを読み込んで、カレント作業ディレクトリーの@file{TAGS}という名前のファイルに、タグテーブルを書き込みます。@samp{--output=@var{file}}オプションを使用して、タグテーブルに異なる名前のファイル名を指定することもできます。ファイル名に@file{-}を指定すると、タグテーブルを標準出力に出力します。
 
-  If the specified files don't exist, @command{etags} looks for
-compressed versions of them and uncompresses them to read them.  Under
-MS-DOS, @command{etags} also looks for file names like @file{mycode.cgz}
-if it is given @samp{mycode.c} on the command line and @file{mycode.c}
-does not exist.
+  指定されたファイルが見つからない場合、@command{etags}はそれらの圧縮されたバージョンを探して、それらを解凍して読み込みます。MS-DOSでは、コマンドラインに@samp{mycode.c}が与えられ、@samp{mycode.c}が存在しないとき、@command{etags}は@file{mycode.cgz}のような名前のファイルを探します。
 
-  If the tags table becomes outdated due to changes in the files
-described in it, you can update it by running the @command{etags}
-program again.  If the tags table does not record a tag, or records it
-for the wrong file, then Emacs will not be able to find that
-definition until you update the tags table.  But if the position
-recorded in the tags table becomes a little bit wrong (due to other
-editing), Emacs will still be able to find the right position, with a
-slight delay.
+  ファイルの内容が変更されてタグテーブルが古くなったときは、@command{etags}を再び実行することにより、タグテーブルを更新できます。タグテーブルにタグが記録されていなかったり、間違ったファイルにたいして記録している場合、タグテーブルを更新するまで、Emacsはそれの定義を見つけることができません。しかしタグに記録されている位置が、(編集により)少し間違っているようなときは、少しの遅れは生じますがEmacsは正しい位置を見つけることができます。
 
-   Thus, there is no need to update the tags table after each edit.
-You should update a tags table when you define new tags that you want
-to have listed, or when you move tag definitions from one file to
-another, or when changes become substantial.
+   したがって、編集するたびにタグテーブルを更新する必要はありません。リストしたい新しいタグを定義したときや、タグ定義をあるファイルから他のファイルへ移動したとき、または大幅な変更を施したときは、タグテーブルを更新するべきです。
 
-  You can make a tags table @dfn{include} another tags table, by
-passing the @samp{--include=@var{file}} option to @command{etags}.  It
-then covers all the files covered by the included tags file, as well
-as its own.
+  @command{etags}に@samp{--include=@var{file}}オプションを渡すことにより、タグテーブルに他のタグテーブルを@dfn{インクルード(include)}できます。これによりインクルードされたタグファイルでカバーされる、すべてのファイルをカバーできます。
 
-  If you specify the source files with relative file names when you run
-@command{etags}, the tags file will contain file names relative to the
-directory where the tags file was initially written.  This way, you can
-move an entire directory tree containing both the tags file and the
-source files, and the tags file will still refer correctly to the source
-files.  If the tags file is @file{-} or is in the @file{/dev} directory,
-however, the file names are
-made relative to the current working directory.  This is useful, for
-example, when writing the tags to @file{/dev/stdout}.
+  @command{etags}を実行するとき、ソースファイルを相対ファイル名で指定した場合、タグファイルには、そのタグファイルが最初に書き込まれたディレクトリーにたいする相対ファイル名が含まれます。この方法を使えば、ディレクトリーツリー全体を移動しても、タグファイルは正しくソースファイルを参照します。しかしタグファイルが@file{-}または@file{/dev}のときは、ファイル名はカレント作業ディレクトリーにたいする相対ファイル名になります。これはタグを@file{/dev/stdout}に書き込むときに便利です。
 
-  When using a relative file name, it should not be a symbolic link
-pointing to a tags file in a different directory, because this would
-generally render the file names invalid.
+  相対ファイル名を使う場合、違うディレクトリーにあるタグファイルを指すシンボリックリンクを指定するべきではありません。なぜならこれは一般的にファイル名を無効にするからです。
 
-  If you specify absolute file names as arguments to @command{etags}, then
-the tags file will contain absolute file names.  This way, the tags file
-will still refer to the same files even if you move it, as long as the
-source files remain in the same place.  Absolute file names start with
-@samp{/}, or with @samp{@var{device}:/} on MS-DOS and MS-Windows.
+  @command{etags}の引数に絶対ファイル名を指定した場合、タグファイルには絶対ファイル名が含まれます。この方法では、ソースファイルが同じ場所にある限り、タグファイルを移動してもタグファイルは同じ名前を参照します。絶対ファイル名は@samp{/}で開始されるか、MS-DOSおよびMS-Windowsでは@samp{@var{device}:/}で開始されます。
 
-   When you want to make a tags table from a great number of files,
-you may have problems listing them on the command line, because some
-systems have a limit on its length.  You can circumvent this limit by
-telling @command{etags} to read the file names from its standard
-input, by typing a dash in place of the file names, like this:
+   非常に大きな数のファイルからタグテーブルを作成したい場合、それをコマンドラインに指定すると問題が発生するかもしれません。なぜならコマンドライン引数の長さに制限のあるシステムもあるからです。この制限は、以下のようにファイル名の場所にダッシュを指定して、@command{etags}にファイル名を標準入力から読み込むように指示して回避することができます。
 
 @smallexample
 find . -name "*.[chCH]" -print | etags -
 @end smallexample
 
-  @command{etags} recognizes the language used in an input file based
-on its file name and contents.  You can specify the language
-explicitly with the @samp{--language=@var{name}} option.  You can
-intermix these options with file names; each one applies to the file
-names that follow it.  Specify @samp{--language=auto} to tell
-@command{etags} to resume guessing the language from the file names
-and file contents.  Specify @samp{--language=none} to turn off
-language-specific processing entirely; then @command{etags} recognizes
-tags by regexp matching alone (@pxref{Etags Regexps}).
+  @command{etags}はファイル名とファイル内容にもとづいて、入力ファイルで使用されている言語を認識します。@samp{--language=@var{name}}オプションで、明示的に言語を指定できます。このオプションはファイル名に混ぜることができます。各指定はその後に続くファイル名に適用されます。@samp{--language=auto}の指定は、ファイル名とファイル内容から言語を推測するよう@command{etags}に指示します。@samp{--language=none}を指定すると、言語に特有の処理を完全にオフに切り替えます。この場合、@command{etags}はregexpのマッチングだけでタグを認識します(@ref{Etags
+Regexps}を参照してください)。
 
-  The option @samp{--parse-stdin=@var{file}} is mostly useful when
-calling @command{etags} from programs.  It can be used (only once) in
-place of a file name on the command line.  @command{etags} will read from
-standard input and mark the produced tags as belonging to the file
-@var{file}.
+  オプション@samp{--parse-stdin=@var{file}}は、@command{etags}をプログラムから呼び出すときに便利です。これは、(1回だけ)コマンドラインからファイル名を読み取るとき使用できます。@command{etags}は標準入力から読み取り、生成されたタグがファイル@var{file}に属するとマークします。
 
-  @samp{etags --help} outputs the list of the languages @command{etags}
-knows, and the file name rules for guessing the language.  It also prints
-a list of all the available @command{etags} options, together with a short
-explanation.  If followed by one or more @samp{--language=@var{lang}}
-options, it outputs detailed information about how tags are generated for
-@var{lang}.
+  @samp{etags
+--help}オプションは@command{etags}が認識する言語と、言語を推測するためのファイル名ルールのリストを出力します。これは利用可能な@command{etags}オプションと、簡単な説明のリストも出力します。このオプションの後に、1つ以上の@samp{--language=@var{lang}}を指定すると、@var{lang}にたいするタグの生成方法の詳細を出力します。
 
 @node Etags Regexps
 @subsection Etags Regexps
 
-  The @samp{--regex} option to @command{etags} allows tags to be
-recognized by regular expression matching.  You can intermix this
-option with file names; each one applies to the source files that
-follow it.  If you specify multiple @samp{--regex} options, all of
-them are used in parallel.  The syntax is:
+  @samp{--regex}オプションは、正規表現のマッチにもとづいて@command{etags}がタグを認識できるようにします。このオプションはファイル名と混ぜることができます。オプションは、それぞれのオプション後に続くソースファイルに適用されます。複数の@samp{--regex}を指定した場合、それらすべては並列に使用されます。構文は以下のとおりです:
 
 @smallexample
 --regex=[@var{@{language@}}]/@var{tagregexp}/[@var{nameregexp}/]@var{modifiers}
 @end smallexample
 
 @noindent
-The essential part of the option value is @var{tagregexp}, the regexp
-for matching tags.  It is always used anchored, that is, it only
-matches at the beginning of a line.  If you want to allow indented
-tags, use a regexp that matches initial whitespace; start it with
-@samp{[ \t]*}.
+オプション値の肝心な部分は@var{tagregexp}で、これはタグにマッチするregexpです。これは常に位置が固定されており、行の開始だけにマッチします。インデントされたタグの場合、最初の空白文字にマッチさせるために、@samp{[
+\t]*}で始まるregexpを使用します。
 
-  In these regular expressions, @samp{\} quotes the next character, and
-all the GCC character escape sequences are supported (@samp{\a} for
-bell, @samp{\b} for back space, @samp{\d} for delete, @samp{\e} for
-escape, @samp{\f} for formfeed, @samp{\n} for newline, @samp{\r} for
-carriage return, @samp{\t} for tab, and @samp{\v} for vertical tab).
+  これらの正規表現では、@samp{\}は次の文字をクォートします。またGCCのエスケープ文字シーケンスのすべて、すなわち@samp{\a}(bell)、@samp{\b}(back
+space)、@samp{\d}(delete)、@samp{\e}(escape)、@samp{\f}(formfeed)、@samp{\n}(newline)、@samp{\r}(carriage
+return)、@samp{\t}(tab)、and @samp{\v}(vertical tab)がサポートされます。
 
-  Ideally, @var{tagregexp} should not match more characters than are
-needed to recognize what you want to tag.  If the syntax requires you
-to write @var{tagregexp} so it matches more characters beyond the tag
-itself, you should add a @var{nameregexp}, to pick out just the tag.
-This will enable Emacs to find tags more accurately and to do
-completion on tag names more reliably.  You can find some examples
-below.
+  理想的には、@var{tagregexp}はタグとして認識させるのに必要な文字以上にマッチさせるべきではありません。構文がそれを求める場合、タグより多くの文字にマッチする@var{tagregexp}を記述して、そのマッチからタグだけをピックアップするために、@var{nameregexp}を追加するべきです。これはEmacsがより正しくタグを見つけて、タグ名の補完をより確実にすることを可能にします。
 
-  The @var{modifiers} are a sequence of zero or more characters that
-modify the way @command{etags} does the matching.  A regexp with no
-modifiers is applied sequentially to each line of the input file, in a
-case-sensitive way.  The modifiers and their meanings are:
+  @var{modifiers}(修飾子)は、@command{etags}がマッチングを行う方法を変更するための0文字以上の文字シーケンスです。修飾子がないregexpは、大文字小文字を区別する方法で、入力ファイルの各行にたいして順番に適用されます。修飾子とその意味は以下のとおりです:
 
 @table @samp
 @item i
-Ignore case when matching this regexp.
+このregexpのマッチングで、大文字小文字を無視します。
 @item m
-Match this regular expression against the whole file, so that
-multi-line matches are possible.
+この正規表現はファイル全体にマッチするので、複数行のマッチが可能です。
 @item s
-Match this regular expression against the whole file, and allow
-@samp{.} in @var{tagregexp} to match newlines.
+この正規表現はファイル全体にマッチし、@var{tagregexp}内の@samp{.}は改行にマッチします。
 @end table
 
-  The @samp{-R} option cancels all the regexps defined by preceding
-@samp{--regex} options.  It too applies to the file names following
-it.  Here's an example:
+  @samp{-R}オプションは、それの前に@samp{--regex}で定義されたregexpをすべて取り消します。これは後に続くファイル名にも適用されます。以下は例です:
 
 @smallexample
 etags --regex=/@var{reg1}/i voo.doo --regex=/@var{reg2}/m \
@@ -1989,50 +1327,26 @@ etags --regex=/@var{reg1}/i voo.doo --regex=/@var{reg2}/m \
 @end smallexample
 
 @noindent
-Here @command{etags} chooses the parsing language for @file{voo.doo} and
-@file{bar.ber} according to their contents.  @command{etags} also uses
-@var{reg1} to recognize additional tags in @file{voo.doo}, and both
-@var{reg1} and @var{reg2} to recognize additional tags in
-@file{bar.ber}.  @var{reg1} is checked against each line of
-@file{voo.doo} and @file{bar.ber}, in a case-insensitive way, while
-@var{reg2} is checked against the whole @file{bar.ber} file,
-permitting multi-line matches, in a case-sensitive way.  @command{etags}
-uses only the Lisp tags rules, with no user-specified regexp matching,
-to recognize tags in @file{los.er}.
+この例では、@command{etags}は@file{voo.doo}と@file{bar.ber}にたいして。ファイル内容に一致する解析用の言語を選択します。@command{etags}は、@file{voo.doo}内の追加のタグを認識するために@var{reg1}も使用し、@file{bar.ber}内の追加のタグを認識するために@var{reg1}と@var{reg2}の両方を使用します。@file{voo.doo}と@file{bar.ber}の各行にたいして大文字小文字を区別せずに@var{reg1}がチェックされ、@file{bar.ber}のファイル全体にたいして大文字小文字を区別して@var{reg2}がチェックされ、これは複数行へのマッチが許されます。@file{los.er}のタグの認識にはユーザー指定のregexpマッチは行わず、Lispのタグルールだけが使用されます。
 
-  You can restrict a @samp{--regex} option to match only files of a
-given language by using the optional prefix @var{@{language@}}.
-(@samp{etags --help} prints the list of languages recognized by
-@command{etags}.)  This is particularly useful when storing many
-predefined regular expressions for @command{etags} in a file.  The
-following example tags the @code{DEFVAR} macros in the Emacs source
-files, for the C language only:
+  オプションのプレフィクス@var{@{language@}}を使用して、与えられた言語だけに@samp{--regex}オプションを制限できます(@samp{etags
+--help}で@command{etags}が認識する言語のリストが表示されます)。これはファイルに、@command{etags}にたいして事前に定義された多くの正規表現が含まれている場合に便利です。以下の例は、EmacsのC言語のソースファイルの@code{DEFVAR}マクロにたいするタグです:
 
 @smallexample
 --regex='@{c@}/[ \t]*DEFVAR_[A-Z_ \t(]+"\([^"]+\)"/'
 @end smallexample
 
 @noindent
-When you have complex regular expressions, you can store the list of
-them in a file.  The following option syntax instructs @command{etags} to
-read two files of regular expressions.  The regular expressions
-contained in the second file are matched without regard to case.
+正規表現が複雑な場合、そのリストをファイルに保存することができます。以下のオプション構文は、@command{etags}に正規表現が保存された2つのファイルを指示します。2つ目のファイルに含まれる正規表現は、大文字小文字を区別せずにマッチします。
 
 @smallexample
 --regex=@@@var{case-sensitive-file} --ignore-case-regex=@@@var{ignore-case-file}
 @end smallexample
 
 @noindent
-A regex file for @command{etags} contains one regular expression per
-line.  Empty lines, and lines beginning with space or tab are ignored.
-When the first character in a line is @samp{@@}, @command{etags} assumes
-that the rest of the line is the name of another file of regular
-expressions; thus, one such file can include another file.  All the
-other lines are taken to be regular expressions.  If the first
-non-whitespace text on the line is @samp{--}, that line is a comment.
+@command{etags}にたいするregexファイルは、行ごとに1つの正規表現を含みます。空行およびスペースかタブで始まる行は無視されます。表の開始が@samp{@@}の場合、@command{etags}はその行の残りを他の正規表現ファイルとみなすので、そのようなファイルを他のファイルをインクルードできます。他のすべての行は正規表現です。最初の非空白文字が@samp{--}の場合、その行はコメントです。
 
-  For example, we can create a file called @samp{emacs.tags} with the
-following contents:
+  たとえば、以下の内容の@samp{emacs.tags}という名前のファイルを作成できます:
 
 @smallexample
         -- This is for GNU Emacs C source files
@@ -2040,19 +1354,18 @@ following contents:
 @end smallexample
 
 @noindent
-and then use it like this:
+これは以下のように使用します:
 
 @smallexample
 etags --regex=@@emacs.tags *.[ch] */*.[ch]
 @end smallexample
 
-  Here are some more examples.  The regexps are quoted to protect them
-from shell interpretation.
+  さらに例を示しましょう。regexpはシェルから解釈され内容にクォートされています。
 
 @itemize @bullet
 
 @item
-Tag Octave files:
+Octaveファイルのタグ:
 
 @smallexample
 etags --language=none \
@@ -2063,19 +1376,18 @@ etags --language=none \
 @end smallexample
 
 @noindent
-Note that tags are not generated for scripts, so that you have to add
-a line by yourself of the form @samp{###key @var{scriptname}} if you
-want to jump to it.
+タグはスクリプトにたいして生成されるので、そのスクリプトにジャンプしたいときは、あなた自身で@samp{###key
+@var{scriptname}}という形式の行を追加する必要があることに注意してください。
 
 @item
-Tag Tcl files:
+Tclファイルのタグ:
 
 @smallexample
 etags --language=none --regex='/proc[ \t]+\([^ \t]+\)/\1/' *.tcl
 @end smallexample
 
 @item
-Tag VHDL files:
+VHDLファイルのタグ:
 
 @smallexample
 etags --language=none \
@@ -2089,30 +1401,16 @@ etags --language=none \
 @subsection Selecting a Tags Table
 
 @findex visit-tags-table
-  Emacs has at any time one @dfn{selected} tags table.  All the
-commands for working with tags tables use the selected one.  To select
-a tags table, type @kbd{M-x visit-tags-table}, which reads the tags
-table file name as an argument, with @file{TAGS} in the default
-directory as the default.
+  Emacsは常に、@dfn{選択された}タグテーブルを1つもちます。タグテーブルにたいして機能するすべてのコマンドは、選択されたタグテーブルを使用します。タグテーブルを選択するには、@kbd{M-x
+visit-tags-table}とタイプします。これは、引数としてタグテーブルファイル名を読み取ります。デフォルトディレクトリーの@file{TAGS}がデフォルトです。
 
 @vindex tags-file-name
-  Emacs does not actually read in the tags table contents until you
-try to use them; all @code{visit-tags-table} does is store the file
-name in the variable @code{tags-file-name}, and setting the variable
-yourself is just as good.  The variable's initial value is @code{nil};
-that value tells all the commands for working with tags tables that
-they must ask for a tags table file name to use.
+  Emacsは、タグテーブルを使用するまでは実際にタグテーブルの内容を読み込みません。@code{visit-tags-table}が行うのは、ファイル名を変数@code{tags-file-name}に格納するのがすべてなので、あなた自身でこの変数をセットしても同じことができます。この変数の初期値は@code{nil}です。この変数の値は、タグテーブルにたいして機能するすべてのコマンドに、使用するタグテーブルファイル名を知らせます。
 
-  Using @code{visit-tags-table} when a tags table is already loaded
-gives you a choice: you can add the new tags table to the current list
-of tags tables, or start a new list.  The tags commands use all the tags
-tables in the current list.  If you start a new list, the new tags table
-is used @emph{instead} of others.  If you add the new table to the
-current list, it is used @emph{as well as} the others.
+  タグテーブルがすでにロードされているときに@code{visit-tags-table}を使用すると、2つの選択肢が与えられます。つまり、タグテーブルのカレントリストに新しいタグを追加するか、あるいは新しいリストを開始することもできます。タグコマンドは、カレントリストのすべてのタグテーブルを使用します。新しいリストを開始した場合、他のものの@emph{かわりに}、新しいタグテーブルが使用されます。カレントリストに新しいタグテーブルを追加した場合、それは他のものと@emph{同じように}使用されます。
 
 @vindex tags-table-list
-  You can specify a precise list of tags tables by setting the variable
-@code{tags-table-list} to a list of strings, like this:
+  以下のようにして、変数@code{tags-table-list}に文字列のリストをセットすることにより、タグテーブルのリストを正確に指定できます:
 
 @c keep this on two lines for formatting in smallbook
 @example
@@ -2123,171 +1421,118 @@ current list, it is used @emph{as well as} the others.
 @end example
 
 @noindent
-This tells the tags commands to look at the @file{TAGS} files in your
-@file{~/emacs} directory and in the @file{/usr/local/lib/emacs/src}
-directory.  The order depends on which file you are in and which tags
-table mentions that file, as explained above.
+これは、タグコマンドが@file{TAGS}ファイルを、@file{~/emacs}ディレクトリーと@file{/usr/local/lib/emacs/src}ディレクトリーから探すよう指示します。上記で説明したように、順序は、対象にしているファイルと、どのタグテーブルがそのファイルを記述しているかに依存します。
 
-  Do not set both @code{tags-file-name} and @code{tags-table-list}.
+  @code{tags-file-name}と@code{tags-table-list}の両方をセットしてはいけません。
 
 @node Find Tag
 @subsection Finding a Tag
 
-  The most important thing that a tags table enables you to do is to find
-the definition of a specific tag.
+  タグテーブルが可能にすることの中で一番重要なのは、指定したタグの定義を探すことです。
 
 @table @kbd
 @item M-.@: @var{tag} @key{RET}
-Find first definition of @var{tag} (@code{find-tag}).
+@var{tag}の最初の定義を探します(@code{find-tag})。
 @item C-u M-.
-Find next alternate definition of last tag specified.
+最後に指定したタグにたいして、次の候補の定義を探します。
 @item C-u - M-.
-Go back to previous tag found.
+前に見つかったタグに戻ります。
 @item C-M-. @var{pattern} @key{RET}
-Find a tag whose name matches @var{pattern} (@code{find-tag-regexp}).
+@var{pattern}にマッチする名前のタグを探します(@code{find-tag-regexp})。
 @item C-u C-M-.
-Find the next tag whose name matches the last pattern used.
+最後に使用したパターンにマッチする名前のタグを探します。
 @item C-x 4 .@: @var{tag} @key{RET}
-Find first definition of @var{tag}, but display it in another window
-(@code{find-tag-other-window}).
+@var{tag}の最初の定義を探して、他のウィンドウに表示します(@code{find-tag-other-window})。
 @item C-x 5 .@: @var{tag} @key{RET}
-Find first definition of @var{tag}, and create a new frame to select the
-buffer (@code{find-tag-other-frame}).
+@var{tag}の最初の定義を探して、新しいフレームを作成してそのバッファーを選択します(@code{find-tag-other-frame})。
 @item M-*
-Pop back to where you previously invoked @kbd{M-.} and friends.
+前に@kbd{M-.}または同種のコマンドを呼び出した場所に戻ります。
 @end table
 
 @kindex M-.
 @findex find-tag
-  @kbd{M-.}@: (@code{find-tag}) prompts for a tag name and jumps to
-its source definition.  It works by searching through the tags table
-for that tag's file and approximate character position, visiting that
-file, and searching for the tag definition at ever-increasing
-distances away from the recorded approximate position.
+  @kbd{M-.}
+(@code{find-tag})はタグ名の入力を求め、それのソース定義にジャンプします。これはタグテーブルからタグのファイルと、おおよその文字位置を検索して、そのファイルをvisitし、記録されたおおよその位置から、範囲を広げながらタグ定義の検索をします。
 
-  When entering the tag argument to @kbd{M-.}, the usual minibuffer
-completion commands can be used (@pxref{Completion}), with the tag
-names in the selected tags table as completion candidates.  If you
-specify an empty argument, the balanced expression in the buffer
-before or around point is the default argument.  @xref{Expressions}.
+  @kbd{M-.}の引数にタグを入力するとき、通常のミニバッファーの補完コマンドを使用できます(@ref{Completion}を参照してください)。補完では、選択されたタグテーブルのタグ名が補完候補になります。空の引数を指定した場合、ポイント位置またはその前の、対応がとれた式がデフォルトの引数になります。@ref{Expressions}を参照してください。
 
-  You don't need to give @kbd{M-.} the full name of the tag; a part
-will do.  @kbd{M-.} finds tags which contain that argument as a
-substring.  However, it prefers an exact match to a substring match.
-To find other tags that match the same substring, give @code{find-tag}
-a numeric argument, as in @kbd{C-u M-.}  or @kbd{M-0 M-.}; this does
-not read a tag name, but continues searching the tags table's text for
-another tag containing the same substring last used.
+  @kbd{M-.}に、タグの完全な名前を与える必要はありません。名前の一部で充分です。@kbd{M-.}は、引数を部分文字列として含むタグを探します。しかし部分文字列にたいするマッチより、正確なマッチの方が好ましいです。同じ部分文字列にマッチする他のタグを探すには、@kbd{C-u
+M-.}または@kbd{M-0
+M-.}のように、@code{find-tag}に数引数を与えます。これはタグ名を読み取らず、最後に使用されたのと同じ部分文字列を含む他のタグにたいして、タグテーブルのテキストの検索を継続します。
 
 @kindex C-x 4 .
 @findex find-tag-other-window
 @kindex C-x 5 .
 @findex find-tag-other-frame
-  Like most commands that can switch buffers, @code{find-tag} has a
-variant that displays the new buffer in another window, and one that
-makes a new frame for it.  The former is @w{@kbd{C-x 4 .}}
-(@code{find-tag-other-window}), and the latter is @w{@kbd{C-x 5 .}}
-(@code{find-tag-other-frame}).
+  バッファーを切り替えるほとんどのコマンドと同様に、@code{find-tag}は新しいバッファーを他のウィンドウ、または新しいバッファーのために新しいフレームを作成する変種をもっています。前者は@w{@kbd{C-x
+4 .}} (@code{find-tag-other-window})、後者は@w{@kbd{C-x 5 .}}
+(@code{find-tag-other-frame})です。
 
-  To move back to previous tag definitions, use @kbd{C-u - M-.}; more
-generally, @kbd{M-.} with a negative numeric argument.  Similarly,
-@w{@kbd{C-x 4 .}} with a negative argument finds the previous tag
-location in another window.
+  前のタグ定義に戻るには@kbd{C-u -
+M-.}を使用します。より一般的には、@kbd{M-.}に負の数引数を指定します。同様に@w{@kbd{C-x 4
+.}}に負の引数を指定すると、他のウィンドウで前のタグ位置を探します。
 
 @kindex M-*
 @findex pop-tag-mark
 @vindex find-tag-marker-ring-length
-  As well as going back to places you've found tags recently, you can
-go back to places @emph{from where} you found them, using @kbd{M-*}
-(@code{pop-tag-mark}).  Thus you can find and examine the definition
-of something with @kbd{M-.} and then return to where you were with
-@kbd{M-*}.
+  最近探したタグの位置に戻るのと同様に、@kbd{M-*}
+(@code{pop-tag-mark})を使用して、それらを探すのを始めた場所に戻ることができます。したがって何かにたいして@kbd{M-.}で探して調べた後、@kbd{M-*}で元の場所に戻ることができます。
 
-  Both @kbd{C-u - M-.} and @kbd{M-*} allow you to retrace your steps to
-a depth determined by the variable @code{find-tag-marker-ring-length}.
+  @kbd{C-u -
+M-.}および@kbd{M-*}は、@code{find-tag-marker-ring-length}により決定される深さで、それまでのステップを遡ることができます。
 
 @findex find-tag-regexp
 @kindex C-M-.
-  The command @kbd{C-M-.} (@code{find-tag-regexp}) visits the tags that
-match a specified regular expression.  It is just like @kbd{M-.} except
-that it does regexp matching instead of substring matching.
+  コマンド@kbd{C-M-.}
+(@code{find-tag-regexp})は、指定した正規表現にマッチするタグをvisitします。これは@kbd{M-.}と同じですが、部分文字列にたいするマッチではなく、regexpにたいするマッチです。
 
 @node Tags Search
 @subsection Searching and Replacing with Tags Tables
 @cindex search and replace in multiple files
 @cindex multiple-file search and replace
 
-  The commands in this section visit and search all the files listed
-in the selected tags table, one by one.  For these commands, the tags
-table serves only to specify a sequence of files to search.  These
-commands scan the list of tags tables starting with the first tags
-table (if any) that describes the current file, proceed from there to
-the end of the list, and then scan from the beginning of the list
-until they have covered all the tables in the list.
+  このセクションのコマンドは、選択されたタグテーブルにリストされたファイルを、1つずつvisitして検索します。これらのコマンドにたいして、タグテーブルは検索する一連のファイルを指定するためだけに使用されます。これらのコマンドは、タグテーブルのリストの最初のタグテーブルから、(もしあれば)カレントファイルを記述するものを走査して、そこからリストの最後まで進めて、その後リストの先頭からリストのすべてのタグテーブルをカバーするまで走査します。
 
 @table @kbd
 @item M-x tags-search @key{RET} @var{regexp} @key{RET}
-Search for @var{regexp} through the files in the selected tags
-table.
+選択されたタグテーブルのファイルから、@var{regexp}を検索します。
 @item M-x tags-query-replace @key{RET} @var{regexp} @key{RET} @var{replacement} @key{RET}
-Perform a @code{query-replace-regexp} on each file in the selected tags table.
+選択されたタグテーブルの各ファイルにたいして、@code{query-replace-regexp}を実行します。
 @item M-,
-Restart one of the commands above, from the current location of point
-(@code{tags-loop-continue}).
+ポイントのカレント位置から上記のコマンドの1つを再開します(@code{tags-loop-continue})。
 @end table
 
 @findex tags-search
-  @kbd{M-x tags-search} reads a regexp using the minibuffer, then
-searches for matches in all the files in the selected tags table, one
-file at a time.  It displays the name of the file being searched so you
-can follow its progress.  As soon as it finds an occurrence,
-@code{tags-search} returns.
+  @kbd{M-x
+tags-search}は、ミニバッファーを使用してregexpを読み取り、選択されたタグテーブルのすべてのファイルから、1ファイルずつマッチを検索します。これは検索しているファイル名を表示するので、進行状況を確認することができます。マッチが見つかった場合、@code{tags-search}はリターンします。
 
 @kindex M-,
 @findex tags-loop-continue
-  Having found one match, you probably want to find all the rest.
-Type @kbd{M-,} (@code{tags-loop-continue}) to resume the
-@code{tags-search}, finding one more match.  This searches the rest of
-the current buffer, followed by the remaining files of the tags table.
+  1つのマッチが見つかったら、おそらく残りのすべてについても検索したいと思うでしょう。@kbd{M-,}
+(@code{tags-loop-continue})とタイプすると、多くのマッチを探すために@code{tags-search}を再開します。これはカレントバッファーの残りの部分を検索して、その後タグテーブルの残りのファイルを検索します。
 
 @findex tags-query-replace
-  @kbd{M-x tags-query-replace} performs a single
-@code{query-replace-regexp} through all the files in the tags table.  It
-reads a regexp to search for and a string to replace with, just like
-ordinary @kbd{M-x query-replace-regexp}.  It searches much like @kbd{M-x
-tags-search}, but repeatedly, processing matches according to your
-input.  @xref{Query Replace}, for more information on query replace.
+  @kbd{M-x
+tags-query-replace}は、タグテーブルのすべてのファイルにたいして、1つの@code{query-replace-regexp}を実行します。これは、通常の@kbd{M-x
+query-replace-regexp}と同様、検索するregexpと、それを置換する文字列を読み取ります。この検索はむしろ@kbd{M-x
+tags-search}に似ていますが、入力へのマッチを繰り返し処理します。問い合わせ付き置換については、@ref{Query
+Replace}を参照してください。
 
 @vindex tags-case-fold-search
 @cindex case-sensitivity and tags search
-  You can control the case-sensitivity of tags search commands by
-customizing the value of the variable @code{tags-case-fold-search}.  The
-default is to use the same setting as the value of
-@code{case-fold-search} (@pxref{Search Case}).
+  変数@code{tags-case-fold-search}の値をカスタマイズすることにより、タグ検索コマンドの大文字小文字の扱いを制御できます。デフォルトには、@code{case-fold-search}の値と同じ設定が使用されます(@ref{Search
+Case}を参照してください)。
 
-  It is possible to get through all the files in the tags table with a
-single invocation of @kbd{M-x tags-query-replace}.  But often it is
-useful to exit temporarily, which you can do with any input event that
-has no special query replace meaning.  You can resume the query
-replace subsequently by typing @kbd{M-,}; this command resumes the
-last tags search or replace command that you did.  For instance, to
-skip the rest of the current file, you can type @kbd{M-> M-,}.
+  1回の@kbd{M-x
+tags-query-replace}の呼び出しで、タグテーブルのすべてのファイルを検索することが可能です。しかし、一時的に検索を抜けられると便利なときもあります。これは、問い合わせ付き置換として特別な意味をもたない入力イベントで行うことができます。つづけて問い合わせ付き置換を再開するには、@kbd{M-,}とタイプします。このコマンドは、最後のタグ検索または置換コマンドを再開します。たとえばカレントファイルの残りをスキップするには、@kbd{M->
+M-,}とタイプします。
 
-  The commands in this section carry out much broader searches than the
-@code{find-tag} family.  The @code{find-tag} commands search only for
-definitions of tags that match your substring or regexp.  The commands
-@code{tags-search} and @code{tags-query-replace} find every occurrence
-of the regexp, as ordinary search commands and replace commands do in
-the current buffer.
+  このセクションのコマンドは、@code{find-tag}系の検索より広範な検索を行います。@code{find-tag}コマンドは、部分文字列または正規表現にマッチするタグ定義だけを検索します。コマンド@code{tags-search}および@code{tags-query-replace}は、通常の検索および置換コマンドがカレントバッファーにたいして行うように、すべてのマッチを検索します。
 
-  These commands create buffers only temporarily for the files that they
-have to search (those which are not already visited in Emacs buffers).
-Buffers in which no match is found are quickly killed; the others
-continue to exist.
+  これらのコマンドは、(それらがすでにEmacsバッファーでvisitされていなければ)検索する必要があるファイルのために、一時的なバッファーを作成します。マッチが見つからないバッファーは、速やかにkillされます。そうでない場合は残されます。
 
-  As an alternative to @code{tags-search}, you can run @command{grep}
-as a subprocess and have Emacs show you the matching lines one by one.
-@xref{Grep Searching}.
+  @code{tags-search}のかわりに、サブプロセスとして@command{grep}を実行して、Emacsにマッチした行を1つずつ表示させることができます。@ref{Grep
+Searching}を参照してください。
 
 @node List Tags
 @subsection Tags Table Inquiries
@@ -2295,46 +1540,32 @@ as a subprocess and have Emacs show you the matching lines one by one.
 @table @kbd
 @item C-M-i
 @itemx M-@key{TAB}
-Perform completion on the text around point, using the selected tags
-table if one is loaded (@code{completion-at-point}).
+タグテーブルがロードされているときは、選択されたタグテーブルを使って、ポイント周囲のテキストの置換を行います(@code{completion-at-point})。
 @item M-x list-tags @key{RET} @var{file} @key{RET}
-Display a list of the tags defined in the program file @var{file}.
+プログラムファイル@var{file}で定義されているタグのリストを表示します。
 @item M-x tags-apropos @key{RET} @var{regexp} @key{RET}
-Display a list of all tags matching @var{regexp}.
+@var{regexp}にマッチする、すべてのタグのリストを表示します。
 @end table
 
 @cindex completion (symbol names)
-  In most programming language modes, you can type @kbd{C-M-i} or
-@kbd{M-@key{TAB}} (@code{completion-at-point}) to complete the symbol
-at point.  If there is a selected tags table, this command can use it
-to generate completion candidates.  @xref{Symbol Completion}.
+  プログラミング言語のモードのほとんどでは、@kbd{C-M-i}または@kbd{M-@key{TAB}}
+(@code{completion-at-point})とタイプして、ポイント位置のシンボルを補完できます。選択されたタグテーブルがある場合、このコマンドは補完候補を生成するためにそれを使用することができます。@ref{Symbol
+Completion}を参照してください。
 
 @findex list-tags
-  @kbd{M-x list-tags} reads the name of one of the files covered by
-the selected tags table, and displays a list of tags defined in that
-file.  Do not include a directory as part of the file name unless the
-file name recorded in the tags table includes a directory.
+  @kbd{M-x
+list-tags}は、選択されたタグテーブルでカバーされたファイルの名前を1つ読み取り、そのファイルで定義されたタグのリストを表示します。タグテーブルに記録されたファイル名にディレクトリーが含まれない場合は、ファイル名にディレクトリーを含めないでください。
 
 @findex tags-apropos
 @vindex tags-apropos-verbose
 @vindex tags-tag-face
 @vindex tags-apropos-additional-actions
-  @kbd{M-x tags-apropos} is like @code{apropos} for tags
-(@pxref{Apropos}).  It displays a list of tags in the selected tags
-table whose entries match @var{regexp}.  If the variable
-@code{tags-apropos-verbose} is non-@code{nil}, it displays the names
-of the tags files together with the tag names.  You can customize the
-appearance of the output by setting the variable @code{tags-tag-face}
-to a face.  You can display additional output by customizing the
-variable @code{tags-apropos-additional-actions}; see its documentation
-for details.
+  @kbd{M-x
+tags-apropos}は、タグにたいする@code{apropos(適切な)}のようなものです(@ref{Apropos}を参照してください)。これは、選択されたタグテーブルのエントリーが@var{regexp}にマッチするタグのリストを表示します。変数@code{tags-apropos-verbose}が非@code{nil}の場合、タグ名と一緒にタグファイル名も表示します。フェイスにたいする変数@code{tags-tag-face}をセットすることにより、出力の外観をカスタマイズできます。変数@code{tags-apropos-additional-actions}をカスタマイズすることにより、追加の出力を表示できます。詳細は、変数のドキュメントを参照してください。
 
 @findex next-file
-  @kbd{M-x next-file} visits files covered by the selected tags table.
-The first time it is called, it visits the first file covered by the
-table.  Each subsequent call visits the next covered file, unless a
-prefix argument is supplied, in which case it returns to the first
-file.
+  @kbd{M-x
+next-file}は、選択されたタグテーブルでカバーされるファイルをvisitします。最初に呼び出したとき、テーブルでカバーされた最初のファイルをvisitします。続けて呼び出すことにより、次のカバーされたファイルをvisitしていきます。プレフィクス引数を指定した場合、最初のファイルに戻ります。
 
 @node EDE
 @section Emacs Development Environment
@@ -2342,62 +1573,47 @@ file.
 @cindex Emacs Development Environment
 @cindex Integrated development environment
 
-EDE (@dfn{Emacs Development Environment}) is a package that simplifies
-the task of creating, building, and debugging large programs with
-Emacs.  It provides some of the features of an IDE, or @dfn{Integrated
-Development Environment}, in Emacs.
+EDE(@dfn{Emacs Development Environment:
+Emacs開発環境})は、Emacsでの大きなプログラムの作成、ビルド、デバッグなどのタスクを単純化するパッケージです。これはEmacsにおいて、IDE(@dfn{Integrated
+Development Environment: 統合開発環境})の機能をいくつか提供します。
 
-This section provides a brief description of EDE usage.
+このセクションは、EDEの簡単な説明を提供します。
 @ifnottex
-For full details, see @ref{Top, EDE,, ede, Emacs Development Environment}.
+完全な詳細については、@ref{Top, EDE,, ede, Emacs Development Environment}を参照してください。
 @end ifnottex
 @iftex
-For full details on Ede, type @kbd{C-h i} and then select the EDE
-manual.
+EDEの完全な詳細は、@kbd{C-h i}とタイプしてEDEのマニュアルを選択してください。
 @end iftex
 
-  EDE is implemented as a global minor mode (@pxref{Minor Modes}).  To
-enable it, type @kbd{M-x global-ede-mode} or click on the
-@samp{Project Support (EDE)} item in the @samp{Tools} menu.  You can
-also enable EDE each time you start Emacs, by adding the following
-line to your initialization file:
+  EDEは、グローバルなマイナーモードとして実装されています(@ref{Minor Modes}を参照してください)。有効にするには@kbd{M-x
+global-ede-mode}とタイプするか、@samp{Tools}メニューの@samp{Project Support
+(EDE)}アイテムをクリックします。以下の行をinitファイルに追加することにより、Emacs開始時にEDEを有効にすることもできます。
 
 @smallexample
 (global-ede-mode t)
 @end smallexample
 
 @noindent
-Activating EDE adds a menu named @samp{Development} to the menu bar.
-Many EDE commands, including the ones described below, can be invoked
-from this menu.
+EDEを有効にすることにより、メニューバーに@samp{Development}という名前のメニューが追加されます。以下で説明するコマンドを含めて、多くのEDEコマンドをこのメニューから呼び出すことができます。
 
-  EDE organizes files into @dfn{projects}, which correspond to
-directory trees.  The @dfn{project root} is the topmost directory of a
-project.  To define a new project, visit a file in the desired project
-root and type @kbd{M-x ede-new}.  This command prompts for a
-@dfn{project type}, which refers to the underlying method that EDE
-will use to manage the project (@pxref{Creating a project, EDE,, ede,
-Emacs Development Environment}).  The most common project types are
-@samp{Make}, which uses Makefiles, and @samp{Automake}, which uses GNU
-Automake (@pxref{Top, Automake,, automake, Automake}).  In both cases,
-EDE also creates a file named @file{Project.ede}, which stores
-information about the project.
+  EDEは、ファイルを@dfn{プロジェクト(projects)}に編成します。プロジェクトはディレクトリーに対応します。@dfn{プロジェクトルート(project
+root)}は、プロジェクトの最上層のディレクトリーです。新しいプロジェクトを定義するには、プロジェクトルートのファイルをvisitして、@kbd{M-x
+ede-new}とタイプします。このコマンドは@dfn{プロジェクトタイプ(project
+type)}の入力を求めます。これはEDEがプロジェクトを背後で管理する方式です(@ref{Creating a project, EDE,, ede,
+Emacs Development
+Environment}を参照してください)。もっとも一般的なプロジェクトタイプは、Makefilesを使用する@samp{Make}、およびGNU
+Automake(@ref{Top, Automake,, automake,
+Automake}を参照してください)を使用する@samp{Automake}です。どちらの場合も、EDEはプロジェクトに関する情報を格納する、@file{Project.ede}という名前のファイルを作成します。
 
-  A project may contain one or more @dfn{targets}.  A target can be an
-object file, executable program, or some other type of file, which is
-``built'' from one or more of the files in the project.
+  プロジェクトには、1つ以上の@dfn{ターゲット(targets)}を含めることができます。ターゲットとは、プロジェクトの1つ以上のファイルから``ビルド''されるオブジェクトファイル、実行ファイル、またはその他の種類のファイルです。
 
-  To add a new @dfn{target} to a project, type @kbd{C-c . t}
-(@code{M-x ede-new-target}).  This command also asks if you wish to
-``add'' the current file to that target, which means that the target
-is to be built from that file.  After you have defined a target, you
-can add more files to it by typing @kbd{C-c . a}
-(@code{ede-add-file}).
+  プロジェクトに新しい@dfn{ターゲット(target)}を追加するには、@kbd{C-c . t} (@code{M-x
+ede-new-target})とタイプします。このコマンドは、カレントファイルをそのターゲットに``追加''するか尋ねます。これはターゲットがそのファイルからビルドされることを意味します。ターゲットを定義した後は、@kbd{C-c
+. a} (@code{ede-add-file})とタイプすることにより、ターゲットにファイルを追加することができます。
 
-  To build a target, type @kbd{C-c . c} (@code{ede-compile-target}).
-To build all the targets in the project, type @kbd{C-c . C}
-(@code{ede-compile-project}).  EDE uses the file types to guess how
-the target should be built.
+  ターゲットをビルドするには、@kbd{C-c . c}
+(@code{ede-compile-target})とタイプします。プロジェクトのすべてのターゲットをビルドするには、@kbd{C-c . C}
+(@code{ede-compile-project})とタイプします。EDEはターゲットがどのようにビルドされるべきか推測するために、ファイルタイプを使用します。
 
 @ifnottex
 @include emerge-xtra.texi

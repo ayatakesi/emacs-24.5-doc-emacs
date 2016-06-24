@@ -1,3 +1,8 @@
+@c ===========================================================================
+@c
+@c This file was generated with po4a. Translate the source file.
+@c
+@c ===========================================================================
 @c This is part of the Emacs manual.
 @c Copyright (C) 1985-1987, 1993-1995, 1997, 2000-2015 Free Software
 @c Foundation, Inc.
@@ -6,58 +11,36 @@
 @chapter Using Multiple Buffers
 
 @cindex buffers
-  The text you are editing in Emacs resides in an object called a
-@dfn{buffer}.  Each time you visit a file, a buffer is used to hold
-the file's text.  Each time you invoke Dired, a buffer is used to hold
-the directory listing.  If you send a message with @kbd{C-x m}, a
-buffer is used to hold the text of the message.  When you ask for a
-command's documentation, that appears in a buffer named @file{*Help*}.
+  Emacsで編集するテキストは、@dfn{バッファー(buffer)}と呼ばれるオブジェクトの中に存在します。ファイルをvisitするたびに、そのファイルのテキストを保持するために、バッファーが使われます。Diredを呼び出すたびに、ディレクトリーリストを保持するためにバッファーが使われます。@kbd{C-x
+m}でメッセージを送信すると、メッセージのテキストを保持するためにバッファーが使われます。コマンドのドキュメントは、@file{*Help*}という名前のバッファーに表示されます。
 
-  Each buffer has a unique name, which can be of any length.  When a
-buffer is displayed in a window, its name is shown in the mode line
-(@pxref{Mode Line}).  The distinction between upper and lower case
-matters in buffer names.  Most buffers are made by visiting files, and
-their names are derived from the files' names; however, you can also
-create an empty buffer with any name you want.  A newly started Emacs
-has several buffers, including one named @file{*scratch*}, which can
-be used for evaluating Lisp expressions and is not associated with any
-file (@pxref{Lisp Interaction}).
+  それぞれのバッファーは、任意の長さの一意な名前を持っています。バッファーがウインドウに表示されているとき、バッファーの名前はモードライン(@ref{Mode
+Line}を参照してください)に表示されます。バッファー名での大文字と小文字の違いは重要です。ほとんどの場合、ほとんどのバッファーはvisitしているファイルから作られ、それらの名前はファイル名から生成されます。しかし、新しい空のバッファーを、任意の名前で作成することもできます。新しく開始されたEmacsにはいくつかのバッファーがあり、それらの中には@file{*scratch*}という名前の、Lisp式を評価するのに使用されるバッファーも含まれます。そのバッファーはファイルに関連付けられていません(@ref{Lisp
+Interaction}を参照してください)。
 
 @cindex selected buffer
 @cindex current buffer
-  At any time, one and only one buffer is @dfn{selected}; we call it
-the @dfn{current buffer}.  We sometimes say that a command operates on
-``the buffer''; this really means that it operates on the current
-buffer.  When there is only one Emacs window, the buffer displayed in
-that window is current.  When there are multiple windows, the buffer
-displayed in the @dfn{selected window} is current.  @xref{Windows}.
+  @dfn{選択}されるバッファーは、常に1つだけです。そのバッファーを@dfn{カレントバッファー(current buffer:
+現在のバッファー)}と呼びます。「コマンドは``そのバッファー(the
+buffer)''を操作します」という言い方をするときがあります。これはカレントバッファーを操作するというのが、本当の意味です。Emacsのウィンドウが1つだけのとき、そのウィンドウに表示されているバッファーがカレントになります。複数のウィンドウがあるとき、@dfn{選択されたウィンドウ}に表示されているバッファーがカレントになります。@ref{Windows}を参照してください。
 
-  Aside from its textual contents, each buffer records several pieces
-of information, such as what file it is visiting (if any), whether it
-is modified, and what major mode and minor modes are in effect
-(@pxref{Modes}).  These are stored in @dfn{buffer-local
-variables}---variables that can have a different value in each buffer.
-@xref{Locals}.
+  バッファーのテキスト的な内容は別として、それぞれのバッファーはいくつかの情報を記録しています。それらは、(もしあれば)visitしているファイルは何か、変更されているか、有効なメジャーモードとマイナーモードは何か(@ref{Modes}を参照してください)、などの情報です。これらは、@dfn{バッファーローカルな変数(buffer-local
+variables)}に格納され、これらの変数はバッファーごとに異なる値をもつことができます。@ref{Locals}を参照してください。
 
 @cindex buffer size, maximum
-  A buffer's size cannot be larger than some maximum, which is defined
-by the largest buffer position representable by @dfn{Emacs integers}.
-This is because Emacs tracks buffer positions using that data type.
-For typical 64-bit machines, this maximum buffer size is @math{2^{61} - 2}
-bytes, or about 2 EiB@.  For typical 32-bit machines, the maximum is
-usually @math{2^{29} - 2} bytes, or about 512 MiB@.  Buffer sizes are
-also limited by the amount of memory in the system.
+  バッファーのサイズは、いくつかの最大値を超えて大きくすることはできません。これは一番大きいバッファーの位置が、@dfn{Emacsの整数(Emacs
+integers)}で表されることにより定義されます。なぜならEmacsはそのデータ型を使用して、バッファーの位置を追跡するからです。通常の64ビットマシンでは、バッファーの最大サイズは@math{2^{61}
+- 2}バイト、およそ2EiBです。通常の32ビットマシンでは、バッファーの最大サイズは通常@math{2^{29} -
+2}バイト、およそ512MiBです。バッファーのサイズはシステムのメモリー量によっても制限されます。
 
 @menu
-* Select Buffer::       Creating a new buffer or reselecting an old one.
-* List Buffers::        Getting a list of buffers that exist.
-* Misc Buffer::         Renaming; changing read-only status; copying text.
-* Kill Buffer::         Killing buffers you no longer need.
-* Several Buffers::     How to go through the list of all buffers
-                          and operate variously on several of them.
-* Indirect Buffers::    An indirect buffer shares the text of another buffer.
-* Buffer Convenience::  Convenience and customization features for
-                          buffer handling.
+* Select Buffer::            新しいバッファーの作成と既存のバッファーの再選択。
+* List Buffers::             既存のバッファーリストの取得。
+* Misc Buffer::              リネーム、読み取り専用属性の変更、テキストのコピー。
+* Kill Buffer::              不必要なバッファーのkill。
+* Several Buffers::          すべてのバッファーにたいするリストの操作と、複数バッファーにたいする操作。
+* Indirect Buffers::         他のバッファーのテキストを共有するインダイレクトバッファー。
+* Buffer Convenience::       バッファー操作のための便利な機能とカスタマイズ。
 @end menu
 
 @node Select Buffer
@@ -67,122 +50,86 @@ also limited by the amount of memory in the system.
 
 @table @kbd
 @item C-x b @var{buffer} @key{RET}
-Select or create a buffer named @var{buffer} (@code{switch-to-buffer}).
+@var{buffer}という名前のバッファーを、選択または作成します(@code{switch-to-buffer})。
 @item C-x 4 b @var{buffer} @key{RET}
-Similar, but select @var{buffer} in another window
-(@code{switch-to-buffer-other-window}).
+同様ですが、他のウィンドウで@var{buffer}を選択します(@code{switch-to-buffer-other-window})。
 @item C-x 5 b @var{buffer} @key{RET}
-Similar, but select @var{buffer} in a separate frame
-(@code{switch-to-buffer-other-frame}).
+同様ですが、別のフレームで@var{buffer}を選択します(@code{switch-to-buffer-other-frame})。
 @item C-x @key{LEFT}
-Select the previous buffer in the buffer list (@code{previous-buffer}).
+バッファーリストの、前のバッファーを選択します(@code{previous-buffer})。
 @item C-x @key{RIGHT}
-Select the next buffer in the buffer list (@code{next-buffer}).
+バッファーリストの、次のバッファーを選択します(@code{next-buffer})。
 @item C-u M-g M-g
 @itemx C-u M-g g
-Read a number @var{n} and move to line @var{n} in the most recently
-selected buffer other than the current buffer.
+数字@var{n}を読み取って、カレントバッファーではない、一番最近選択されたバッファーの、@var{n}行目に移動します。
 @end table
 
 @kindex C-x b
 @findex switch-to-buffer
-  The @kbd{C-x b} (@code{switch-to-buffer}) command reads a buffer
-name using the minibuffer.  Then it makes that buffer current, and
-displays it in the currently-selected window.  An empty input
-specifies the buffer that was current most recently among those not
-now displayed in any window.
+  @kbd{C-x b}
+(@code{switch-to-buffer})コマンドは、ミニバッファーを使ってバッファー名を読み取ります。それからそのバッファーをカレントとして、現在選択されたウィンドウに表示します。空の入力は、そのとき他のウィンドウに表示されていない、一番最近カレントだったバッファーを指定します。
 
-  While entering the buffer name, you can use the usual completion and
-history commands (@pxref{Minibuffer}).  Note that @kbd{C-x b}, and
-related commands, use ``permissive completion with confirmation'' for
-minibuffer completion: if you type @key{RET} immediately after
-completing up to a nonexistent buffer name, Emacs prints
-@samp{[Confirm]} and you must type a second @key{RET} to submit that
-buffer name.  @xref{Completion Exit}, for details.
+  バッファー名を入力するとき、通常の補完とヒストリーコマンドを使うことができます(@ref{Minibuffer}を参照してください)。@kbd{C-x
+b}および関連するコマンドは、ミニバッファーの補完に、``確認つきの寛大な補完(permissive completion with
+confirmation)''を使うことに注意してください。存在しないバッファー名にたいする補完の後、すぐに@key{RET}をタイプすると、Emacsは@samp{[Confirm]}を出力し、バッファー名を確定するために2回目の@key{RET}をタイプしなければなりません。詳細は、@ref{Completion
+Exit}を参照してください。
 
-  If you specify a buffer that does not exist, @kbd{C-x b} creates a
-new, empty buffer that is not visiting any file, and selects it for
-editing.  The default value of the variable @code{major-mode}
-determines the new buffer's major mode; the default value is
-Fundamental mode.  @xref{Major Modes}.  One reason to create a new
-buffer is to use it for making temporary notes.  If you try to save
-it, Emacs asks for the file name to use, and the buffer's major mode
-is re-established taking that file name into account (@pxref{Choosing
-Modes}).
+  存在しないバッファーを指定すると、@kbd{C-x
+b}はファイルをvisitしていない新しい空のバッファーを作成し、編集用にそのバッファーを選択します。変数@code{major-mode}は、新しいバッファーのメジャーモードのデフォルトを決定します。デフォルトでは、これはFundamentalモードです。@ref{Major
+Modes}を参照してください。新しいバッファーを作る1つの理由は、それを一時的なノートとして使うためです。これを保存しようと試みると、Emacsは保存に使うファイル名を尋ね、バッファーのメジャーモードは、ファイル名にもとづきメジャーモードを再割り当てします(@ref{Choosing
+Modes}を参照してください)。
 
 @kindex C-x @key{LEFT}
 @kindex C-x @key{RIGHT}
 @findex next-buffer
 @findex previous-buffer
-  For conveniently switching between a few buffers, use the commands
-@kbd{C-x @key{LEFT}} and @kbd{C-x @key{RIGHT}}.  @kbd{C-x @key{LEFT}}
-(@code{previous-buffer}) selects the previous buffer (following the
-order of most recent selection in the current frame), while @kbd{C-x
-@key{RIGHT}} (@code{next-buffer}) moves through buffers in the reverse
-direction.
+  少ないバッファーの切り替えでは、コマンド@kbd{C-x @key{LEFT}}および@kbd{C-x
+@key{RIGHT}}を使うのが便利です。@kbd{C-x @key{LEFT}}
+(@code{previous-buffer})は前のバッファー(現在のフレームの一番最近選択されたバッファー順)、@kbd{C-x
+@key{RIGHT}} (@code{next-buffer})は逆方向のバッファーに移動します。
 
 @kindex C-x 4 b
 @findex switch-to-buffer-other-window
-  To select a buffer in a window other than the current one, type
-@kbd{C-x 4 b} (@code{switch-to-buffer-other-window}).  This prompts
-for a buffer name using the minibuffer, displays that buffer in
-another window, and selects that window.
+  現在のウィンドウとは別のウィンドウにバッファーを選択するには、@kbd{C-x 4 b}
+(@code{switch-to-buffer-other-window})とタイプします。これはミニバッファーを使ってバッファー名の入力を求め、選択されているウィンドウではない別のウィンドウに、そのバッファーを表示します。
 
 @kindex C-x 5 b
 @findex switch-to-buffer-other-frame
-  Similarly, @kbd{C-x 5 b} (@code{switch-to-buffer-other-frame})
-prompts for a buffer name, displays that buffer in another frame, and
-selects that frame.  If the buffer is already being shown in a window
-on another frame, Emacs selects that window and frame instead of
-creating a new frame.
+  同様に@kbd{C-x 5 b}
+(@code{switch-to-buffer-other-frame})はバッファー名の入力を求め、他のフレームにそのバッファーを表示して、そのフレームを選択します。他のウィンドウまたはフレームにすでにバッファーが表示されている場合、Emacsは新しく作成するのではなく、そのウィンドウまたはフレームを選択します。
 
-  @xref{Displaying Buffers}, for how the @kbd{C-x 4 b} and @kbd{C-x 5
-b} commands get the window and/or frame to display in.
+  @kbd{C-x 4 b}および@kbd{C-x 5
+b}コマンドが表示するウィンドウまたはフレームを取得する方法については、@ref{Displaying Buffers}を参照してください。
 
-  In addition, @kbd{C-x C-f}, and any other command for visiting a
-file, can also be used to switch to an existing file-visiting buffer.
-@xref{Visiting}.
+  これらに加えて、@kbd{C-x
+C-f}や、その他のファイルをvisitするコマンドでも、すでにファイルをvisitしているバッファーに切り替えることができます。@ref{Visiting}を参照してください。
 
 @findex goto-line
-  @kbd{C-u M-g M-g}, that is @code{goto-line} with a plain prefix
-argument, reads a number @var{n} using the minibuffer, selects the
-most recently selected buffer other than the current buffer in another
-window, and then moves point to the beginning of line number @var{n}
-in that buffer.  This is mainly useful in a buffer that refers to line
-numbers in another buffer: if point is on or just after a number,
-@code{goto-line} uses that number as the default for @var{n}.  Note
-that prefix arguments other than just @kbd{C-u} behave differently.
-@kbd{C-u 4 M-g M-g} goes to line 4 in the @emph{current} buffer,
-without reading a number from the minibuffer.  (Remember that @kbd{M-g
-M-g} without prefix argument reads a number @var{n} and then moves to
-line number @var{n} in the current buffer.  @xref{Moving Point}.)
+  プレフィクス引数だけを指定した@kbd{C-u M-g M-g}
+@code{goto-line}は、ミニバッファーを使って数字@var{n}を読み取り、別のウィンドウにあるカレントバッファー以外の、一番最近選択されたバッファーを選択して、ポイントをそのバッファーの@var{n}行目の先頭に移動します。これは他のバッファーの行番号を参照するバッファーで特に有用です。ポイントが数字の直後にある場合、@code{goto-line}は@var{n}のデフォルトとしてその数字を使います。ただの@kbd{C-u}ではないプレフィクス引数では、異なる振る舞いをすることに注意してください。@kbd{C-u
+4 M-g
+M-g}はミニバッファーから数字を読み取らず、@emph{カレントバッファー}の4行目にジャンプします(プレフィクス引数を指定しない@kbd{M-g
+M-g}は、数字@var{n}を読み取ってカレントバッファーの@var{n}行目に移動することを思い出してください。@ref{Moving
+Point}を参照してください)。
 
-  Emacs uses buffer names that start with a space for internal purposes.
-It treats these buffers specially in minor ways---for example, by
-default they do not record undo information.  It is best to avoid using
-such buffer names yourself.
+  Emacsはスペースで開始される名前のバッファーを、内部的な用途のために使用しています。それらのバッファーは特別な方法で扱われます。たとえば、それらのバッファーではundo情報が記録されません。そのようなバッファー名を使うことは避けるのが最良です。
 
 @node List Buffers
 @section Listing Existing Buffers
 
 @table @kbd
 @item C-x C-b
-List the existing buffers (@code{list-buffers}).
+既存のバッファーをリストします(@code{list-buffers})。
 @end table
 
 @cindex listing current buffers
 @kindex C-x C-b
 @findex list-buffers
-  To display a list of existing buffers, type @kbd{C-x C-b}.  Each
-line in the list shows one buffer's name, size, major mode and visited file.
-The buffers are listed in the order that they were current; the
-buffers that were current most recently come first.
+  既存のバッファーのリストを表示するには、@kbd{C-x
+C-b}とタイプします。リストの各行にはバッファー名、サイズ、メジャーモード、visitしているファイルが表示されます。バッファーは、カレントだった順でリストされます。したがって、一番最近カレントだったバッファーが先頭に表示されます。
 
-  @samp{.} in the first field of a line indicates that the buffer is
-current.  @samp{%} indicates a read-only buffer.  @samp{*} indicates
-that the buffer is ``modified''.  If several buffers are modified, it
-may be time to save some with @kbd{C-x s} (@pxref{Save Commands}).
-Here is an example of a buffer list:
+  行の最初のフィールドの@samp{.}は、そのバッファーがカレントであることを示します。@samp{%}は読み取り専用バッファーであることを示します。@samp{*}はそのバッファーが``変更''されていることを示します。いくつかのバッファーが変更されていて、それらを保存するべきだと思ったときは、@kbd{C-x
+s} (@ref{Save Commands}を参照してください)で保存します。以下はバッファーリストの例です:
 
 @smallexample
 CRM Buffer                Size  Mode              File
@@ -198,72 +145,50 @@ CRM Buffer                Size  Mode              File
 @end smallexample
 
 @noindent
-The buffer @file{*Help*} was made by a help request (@pxref{Help}); it
-is not visiting any file.  The buffer @code{src} was made by Dired on
-the directory @file{~/cvs/emacs/src/}.  You can list only buffers that
-are visiting files by giving the command a prefix argument, as in
-@kbd{C-u C-x C-b}.
+この例でバッファー@file{*Help*}は、ヘルプを要求されたことにより作成されます(@ref{Help}を参照してください)。これはファイルをvisitしていません。バッファー@code{src}は、ディレクトリー@file{~/cvs/emacs/src/}にたいして、Diredが作成したバッファーです。ファイルをvisitしているバッファーだけを一覧するには、@kbd{C-u
+C-x C-b}のように、コマンドにプレフィクス引数を与えます。
 
-  @code{list-buffers} omits buffers whose names begin with a space,
-unless they visit files: such buffers are used internally by Emacs.
+  @code{list-buffers}は名前がスペースで始まるバッファーを省略します(そのバッファーがファイルをvisitしていない限り)。これらのバッファーは、Emacsにより内部的に使用されます。
 
 @node Misc Buffer
 @section Miscellaneous Buffer Operations
 
 @table @kbd
 @item C-x C-q
-Toggle read-only status of buffer (@code{read-only-mode}).
+バッファーの読み取り専用の状態を切り替えます(@code{read-only-mode})。
 @item M-x rename-buffer @key{RET} @var{name} @key{RET}
-Change the name of the current buffer.
+カレントバッファーの名前を変更します。
 @item M-x rename-uniquely
-Rename the current buffer by adding @samp{<@var{number}>} to the end.
+カレントバッファーの末尾に@samp{<@var{number}>}を加えてリネームします。
 @item M-x view-buffer @key{RET} @var{buffer} @key{RET}
-Scroll through buffer @var{buffer}.  @xref{View Mode}.
+バッファー@var{buffer}をスクロールして閲覧します。@ref{View Mode}を参照してください。
 @end table
 
 @kindex C-x C-q
 @vindex buffer-read-only
 @cindex read-only buffer
-  A buffer can be @dfn{read-only}, which means that commands to change
-its contents are not allowed.  The mode line indicates read-only
-buffers with @samp{%%} or @samp{%*} near the left margin.  Read-only
-buffers are usually made by subsystems such as Dired and Rmail that
-have special commands to operate on the text; also by visiting a file
-whose access control says you cannot write it.
+  バッファーを読み取り専用にすることができます、これは内容を変更するコマンドが許されないことを意味します。読み取り専用バッファーのモードラインでは、左余白の近くに@samp{%%}または@samp{%*}が表示されます。読み取り専用バッファーは通常DiredやRmailのように、そのバッファーのテキストを操作する専用コマンドをもつ、サブシステムにより作成されます。アクセスコントロールにより制御されているファイルをvisitしたときも、書き込めない旨が通知されます。
 
 @findex read-only-mode
 @vindex view-read-only
- The command @kbd{C-x C-q} (@code{read-only-mode}) makes a read-only
-buffer writable, and makes a writable buffer read-only.  This works by
-setting the variable @code{buffer-read-only}, which has a local value
-in each buffer and makes the buffer read-only if its value is
-non-@code{nil}.  If you change the option @code{view-read-only} to a
-non-@code{nil} value, making the buffer read-only with @kbd{C-x C-q}
-also enables View mode in the buffer (@pxref{View Mode}).
+ コマンド@kbd{C-x C-q}
+(@code{read-only-mode})は、読み取り専用バッファーを書き込み可能に、書き込み可能なバッファーを読み取り専用にします。これは各バッファーにローカルな変数@code{buffer-read-only}をセットすることにより機能します(値が非@code{nil}のときバッファーは読み取り専用)。オプション@code{view-read-only}を非@code{nil}値に変更すると、@kbd{C-x
+C-q}でバッファーを読み取り専用にしたとき、そのバッファーでViewモードが有効になります(@ref{View Mode}を参照してください)。
 
 @findex rename-buffer
-  @kbd{M-x rename-buffer} changes the name of the current buffer.  You
-specify the new name as a minibuffer argument; there is no default.
-If you specify a name that is in use for some other buffer, an error
-happens and no renaming is done.
+  @kbd{M-x
+rename-buffer}は、カレントバッファーの名前をリネームします。新しい名前はミニバッファーで指定します。デフォルトはありません。他のバッファーで使用済の名前を指定するとエラーとなり、リネームされません。
 
 @findex rename-uniquely
-  @kbd{M-x rename-uniquely} renames the current buffer to a similar
-name with a numeric suffix added to make it both different and unique.
-This command does not need an argument.  It is useful for creating
-multiple shell buffers: if you rename the @file{*shell*} buffer, then
-do @kbd{M-x shell} again, it makes a new shell buffer named
-@file{*shell*}; meanwhile, the old shell buffer continues to exist
-under its new name.  This method is also good for mail buffers,
-compilation buffers, and most Emacs features that create special
-buffers with particular names.  (With some of these features, such as
-@kbd{M-x compile}, @kbd{M-x grep}, you need to switch to some other
-buffer before using the command again, otherwise it will reuse the
-current buffer despite the name change.)
+  @kbd{M-x
+rename-uniquely}は、カレントバッファーの後ろに数字を追加して、似てはいるが異なる名前を作成します。このコマンドに引数は必要ありません。これは複数のshellバッファーを作成するのに便利です。@file{*shell*}バッファーをリネームしてから、再度@kbd{M-x
+shell}を行うと、これは新しく@file{*shell*}という名前のバッファーを作成します。一方リネームされた古いshellバッファーは、新しい名前で実行を続けます。この方法はmailバッファー、compilationバッファー、そして特定の名前で特別なバッファーを作成するEmacs機能に適しています(これらの機能のいくつか、たとえば@kbd{M-x
+compile}、@kbd{M-x
+grep}などでは、コマンドを再度実行する前に他のバッファーに切り替える必要があります。さもないとカレントバッファーの名前を変更せずに、そのバッファーを再使用します)。
 
-  The commands @kbd{M-x append-to-buffer} and @kbd{M-x insert-buffer}
-can also be used to copy text from one buffer to another.
-@xref{Accumulating Text}.
+  コマンド@kbd{M-x append-to-buffer}および@kbd{M-x
+insert-buffer}も、あるバッファーから他のバッファーへテキストをコピーするのに使用できます。@ref{Accumulating
+Text}を参照してください。
 
 @node Kill Buffer
 @section Killing Buffers
@@ -271,76 +196,44 @@ can also be used to copy text from one buffer to another.
 @cindex killing buffers
 @cindex close buffer
 @cindex close file
-  If you continue an Emacs session for a while, you may accumulate a
-large number of buffers.  You may then find it convenient to @dfn{kill}
-the buffers you no longer need.  (Some other editors call this
-operation @dfn{close}, and talk about ``closing the buffer'' or
-``closing the file'' visited in the buffer.)  On most operating
-systems, killing a buffer releases its space back to the operating
-system so that other programs can use it.  Here are some commands for
-killing buffers:
+  しばらくの間、Emacsセッションを続けていると、多くのバッファーが溜まってしまう場合があります。必要のないバッファーを@dfn{kill}したほうがよいと思うかもしれません(他のエディターではこの操作を@dfn{close(閉じる)}と呼び、``バッファーを閉じる''とか、ファイルをvisitしているバッファーでは``ファイルを閉じる''のように表現するものもあります)。ほとんどのオペレーティングシステムでは、バッファーをkillすることにより、そのスペースをオペレーティングシステムに返却するので、他のプログラムがそれを使えるようになります。以下はバッファーをkillするコマンドです:
 
 @table @kbd
 @item C-x k @var{bufname} @key{RET}
-Kill buffer @var{bufname} (@code{kill-buffer}).
+バッファー@var{bufname}をkillします(@code{kill-buffer})。
 @item M-x kill-some-buffers
-Offer to kill each buffer, one by one.
+バッファーを1つずつkillするか尋ねます。
 @item M-x kill-matching-buffers
-Offer to kill all buffers matching a regular expression.
+正規表現にマッチするすべてのバッファーをkillするか尋ねます。
 @end table
 
 @findex kill-buffer
 @kindex C-x k
-  @kbd{C-x k} (@code{kill-buffer}) kills one buffer, whose name you
-specify in the minibuffer.  The default, used if you type just
-@key{RET} in the minibuffer, is to kill the current buffer.  If you
-kill the current buffer, another buffer becomes current: one that was
-current in the recent past but is not displayed in any window now.  If
-you ask to kill a file-visiting buffer that is modified, then you must
-confirm with @kbd{yes} before the buffer is killed.
+  @kbd{C-x k}
+(@code{kill-buffer})は、ミニバッファーで指定した名前のバッファーを1つkillします。@key{RET}だけをタイプしたときはデフォルトが使われ、これはカレントバッファーをkillします。カレントバッファーをkillすると、最近カレントだったが、今は別のウィンドウにも表示されていないバッファーがカレントになります。ファイルをvisitしているバッファーが変更されているとき、それをkillしようとすると確認を求められます。そのバッファーをkillする前に、確認に@kbd{yes}を応えなければkillできません。
 
 @findex kill-some-buffers
-  The command @kbd{M-x kill-some-buffers} asks about each buffer, one
-by one.  An answer of @kbd{y} means to kill the buffer, just like
-@code{kill-buffer}.  This command ignores buffers whose names begin
-with a space, which are used internally by Emacs.
+  コマンド@kbd{M-x
+kill-some-buffers}は、各バッファーについて1つずつ確認を求めます。@kbd{y}と応えると、@code{kill-buffer}と同様にバッファーをkillすることを意味します。このコマンドは名前がスペースで始まる、Emacsが内部的に使用するバッファーは無視します。
 
 @findex kill-matching-buffers
-  The command @kbd{M-x kill-matching-buffers} prompts for a regular
-expression and kills all buffers whose names match that expression.
-@xref{Regexps}.  Like @code{kill-some-buffers}, it asks for
-confirmation before each kill.  This command normally ignores buffers
-whose names begin with a space, which are used internally by Emacs.
-To kill internal buffers as well, call @code{kill-matching-buffers}
-with a prefix argument.
+  コマンド@kbd{M-x
+kill-matching-buffers}は、正規表現の入力を求め、名前がその正規表現にマッチするすべてのバッファーをkillします。@xref{Regexps}を参照してください。@code{kill-some-buffers}と同様、このコマンドはkillする前に確認を求めます。このコマンドは通常、名前がスペースで始まる、Emacsが内部的に使うバッファーを無視します。内部的なバッファーも同じようにkillするには、プレフィクス引数を指定して@code{kill-matching-buffers}を呼び出します。
 
-  The Buffer Menu feature is also convenient for killing various
-buffers.  @xref{Several Buffers}.
+  さまざまなバッファーをkillするにはBuffer Menu機能も便利です。@ref{Several Buffers}を参照してください。
 
 @vindex kill-buffer-hook
-  If you want to do something special every time a buffer is killed, you
-can add hook functions to the hook @code{kill-buffer-hook} (@pxref{Hooks}).
+  バッファーがkillされるときに特別な処理を行いたい場合、フック@code{kill-buffer-hook}にフック関数を追加できます(@ref{Hooks}を参照してください)。
 
 @findex clean-buffer-list
-  If you run one Emacs session for a period of days, as many people do,
-it can fill up with buffers that you used several days ago.  The command
-@kbd{M-x clean-buffer-list} is a convenient way to purge them; it kills
-all the unmodified buffers that you have not used for a long time.  An
-ordinary buffer is killed if it has not been displayed for three days;
-however, you can specify certain buffers that should never be killed
-automatically, and others that should be killed if they have been unused
-for a mere hour.
+  (多くの人がそうしているように)何日間も1つのEmacsセッションを使っていると、何日か前に使ったバッファーが溜まってくるかもしれません。コマンド@kbd{M-x
+clean-buffer-list}は、それらを一掃するのに便利です。これは長い間使用されていない、変更されていないバッファーをすべてkillします。3日間表示されていない普通のバッファーはkillされます。しかし自動的にkillされるべきではない特定のバッファーを指定したり、使われていない時間が短いバッファーでもkillするように指定できます。
 
 @cindex Midnight mode
 @vindex midnight-mode
 @vindex midnight-hook
-  You can also have this buffer purging done for you, once a day,
-by enabling Midnight mode.  Midnight mode operates each day
-at midnight; at that time, it runs @code{clean-buffer-list}, or
-whichever functions you have placed in the normal hook
-@code{midnight-hook} (@pxref{Hooks}).  To enable Midnight mode, use
-the Customization buffer to set the variable @code{midnight-mode} to
-@code{t}.  @xref{Easy Customization}.
+  Midnightモードを有効にすることにより、1日ごとにバッファーを一掃することもできます。Midnightモードは毎日真夜中に@code{clean-buffer-list}、またはノーマルフック@code{midnight-hook}に指定された関数を実行します(@ref{Hooks}を参照してください)。Midnightモードを有効にするには、Customizationバッファーを使って変数@code{midnight-mode}を@code{t}にセットします。@ref{Easy
+Customization}を参照してください。
 
 @node Several Buffers
 @section Operating on Several Buffers
@@ -348,196 +241,162 @@ the Customization buffer to set the variable @code{midnight-mode} to
 
 @table @kbd
 @item M-x buffer-menu
-Begin editing a buffer listing all Emacs buffers.
+すべてのEmacsバッファーの、バッファーリストの編集を開始します。
 @item M-x buffer-menu-other-window.
-Similar, but do it in another window.
+同様ですが、別のウィンドウで行います。
 @end table
 
-  The @dfn{Buffer Menu} opened by @kbd{C-x C-b} (@pxref{List Buffers})
-does not merely list buffers.  It also allows you to perform various
-operations on buffers, through an interface similar to Dired
-(@pxref{Dired}).  You can save buffers, kill them (here called
-@dfn{deleting} them, for consistency with Dired), or display them.
+  @kbd{C-x C-b} (@ref{List Buffers}を参照してください)でオープンされる@dfn{Buffer
+Menu}は、単にバッファーを一覧するだけではありません。これはDiredに似たインターフェースで、バッファーにたいしてさまざまな操作を行うことができます。ここでは、バッファーの保存、kill(Diredとの一貫性を保つため、ここではそれらを@dfn{削除(delete)}する、と呼びます)、表示ができます。
 
 @findex buffer-menu
 @findex buffer-menu-other-window
-  To use the Buffer Menu, type @kbd{C-x C-b} and switch to the window
-displaying the @file{*Buffer List*} buffer.  You can also type
-@kbd{M-x buffer-menu} to open the Buffer Menu in the selected window.
-Alternatively, the command @kbd{M-x buffer-menu-other-window} opens
-the Buffer Menu in another window, and selects that window.
+  Buffer Menuを使うには@kbd{C-x C-b}とタイプして、@file{*Buffer
+List*}バッファーが表示されたウィンドウに切り替えます。@kbd{M-x buffer-menu}とタイプして、選択されたウィンドウにBuffer
+Menuを開くこともできます。コマンド@kbd{M-x buffer-menu-other-window}は、Buffer
+Menuを別のウィンドウに開いて、そのウィンドウを選択します。
 
-  The Buffer Menu is a read-only buffer, and can be changed only
-through the special commands described in this section.  The usual
-cursor motion commands can be used in this buffer.  The following
-commands apply to the buffer described on the current line:
+  Buffer
+Menuは読み取り専用バッファーで、このセクションで説明する特別なコマンドだけを通じて変更します。このバッファーでは、通常のカーソル移動コマンドを使うことができます。以下のコマンドは、バッファーのカレント行に適用されます。
 
 @table @kbd
 @item d
 @findex Buffer-menu-delete
 @kindex d @r{(Buffer Menu)}
-Flag the buffer for deletion (killing), then move point to the next
-line (@code{Buffer-menu-delete}).  The deletion flag is indicated by
-the character @samp{D} on the line, before the buffer name.  The
-deletion occurs only when you type the @kbd{x} command (see below).
+そのバッファーの削除(kill)フラグをセットしてから、ポイントを次の行に移動します(@code{Buffer-menu-delete})。削除フラグは、各行のバッファー名の前の文字@samp{D}により示されます。削除は@kbd{x}コマンド(以下参照)をタイプしたときだけ発生します。
 
 @item C-d
 @findex Buffer-menu-delete-backwards
 @kindex C-d @r{(Buffer Menu)}
-Like @kbd{d}, but move point up instead of down
-(@code{Buffer-menu-delete-backwards}).
+@kbd{d}と同様ですが、ポイントを下ではなく上に移動します(@code{Buffer-menu-delete-backwards})。
 
 @item s
 @findex Buffer-menu-save
 @kindex s @r{(Buffer Menu)}
-Flag the buffer for saving (@code{Buffer-menu-save}).  The save flag
-is indicated by the character @samp{S} on the line, before the buffer
-name.  The saving occurs only when you type @kbd{x}.  You may request
-both saving and deletion for the same buffer.
+そのバッファーの保存フラグをセットします(@code{Buffer-menu-save})。保存フラグは各行のバッファー名の前の文字@samp{S}により示されます。保存は@kbd{x}コマンド(以下参照)をタイプしたときだけ発生します。同じバッファーに保存と削除の両方をリクエストできます。
 
 @item x
 @findex Buffer-menu-execute
 @kindex x @r{(Buffer Menu)}
-Perform all flagged deletions and saves (@code{Buffer-menu-execute}).
+すべての削除および保存フラグを処理します(@code{Buffer-menu-execute})。
 
 @item u
 @findex Buffer-menu-unmark
 @kindex u @r{(Buffer Menu)}
-Remove all flags from the current line, and move down
-(@code{Buffer-menu-unmark}).
+カレント行のすべてのフラグを取り除いてから、下に移動します(@code{Buffer-menu-unmark})。
 
 @item @key{DEL}
 @findex Buffer-menu-backup-unmark
 @kindex DEL @r{(Buffer Menu)}
-Move to the previous line and remove all flags on that line
-(@code{Buffer-menu-backup-unmark}).
+前の行に移動して、その行のすべてのフラグを取り除きます(@code{Buffer-menu-backup-unmark})。
 @end table
 
 @noindent
-The commands for adding or removing flags, @kbd{d}, @kbd{C-d}, @kbd{s}
-and @kbd{u}, all accept a numeric argument as a repeat count.
+フラグを追加または取り除くコマンド@kbd{d}、@kbd{C-d}、@kbd{s}、@kbd{u}には、すべて繰り返し回数として数引数を指定できます。
 
-  The following commands operate immediately on the buffer listed on
-the current line.  They also accept a numeric argument as a repeat
-count.
+  以下のコマンドは、カレント行にリストされたバッファーを即座に処理します。これらのコマンドにも、繰り返し回数を数引数として指定できます。
 
 @table @kbd
 @item ~
 @findex Buffer-menu-not-modified
 @kindex ~ @r{(Buffer Menu)}
-Mark the buffer as unmodified (@code{Buffer-menu-not-modified}).
-@xref{Save Commands}.
+バッファーを変更されていない(unmodified)とマークします(@code{Buffer-menu-not-modified})。@ref{Save
+Commands}を参照してください。
 
 @item %
 @findex Buffer-menu-toggle-read-only
 @kindex % @r{(Buffer Menu)}
-Toggle the buffer's read-only status
-(@code{Buffer-menu-toggle-read-only}).  @xref{Misc Buffer}.
+バッファーの読み取り専用属性を切り替えます(@code{Buffer-menu-toggle-read-only})。@ref{Misc
+Buffer}を参照してください。
 
 @item t
 @findex Buffer-menu-visit-tags-table
 @kindex % @r{(Buffer Menu)}
-Visit the buffer as a tags table
-(@code{Buffer-menu-visit-tags-table}).  @xref{Select Tags Table}.
+そのバッファーを、tagsテーブルとしてvisitします(@code{Buffer-menu-visit-tags-table})。@ref{Select
+Tags Table}を参照してください。
 @end table
 
-  The following commands are used to select another buffer or buffers:
+  以下は、他のバッファーを選択するために使われるコマンドです:
 
 @table @kbd
 @item q
 @findex quit-window
 @kindex q @r{(Buffer Menu)}
-Quit the Buffer Menu (@code{quit-window}).  The most recent formerly
-visible buffer is displayed in its place.
+Buffer Menuメニューを閉じます(@code{quit-window})。一番最近に表示されていたバッファーが、その場所に表示されます。
 
 @item @key{RET}
 @itemx f
 @findex Buffer-menu-this-window
 @kindex f @r{(Buffer Menu)}
 @kindex RET @r{(Buffer Menu)}
-Select this line's buffer, replacing the @file{*Buffer List*} buffer
-in its window (@code{Buffer-menu-this-window}).
+そのウィンドウの@file{*Buffer
+List*}バッファーを置き換えて。この行のバッファーを選択します(@code{Buffer-menu-this-window})。
 
 @item o
 @findex Buffer-menu-other-window
 @kindex o @r{(Buffer Menu)}
-Select this line's buffer in another window, as if by @kbd{C-x 4 b},
-leaving @file{*Buffer List*} visible
-(@code{Buffer-menu-other-window}).
+@kbd{C-x 4 b}のように@file{*Buffer
+List*}を表示したまま、その行のバッファーを他のウィンドウで選択します(@code{Buffer-menu-other-window})。
 
 @item C-o
 @findex Buffer-menu-switch-other-window
 @kindex C-o @r{(Buffer Menu)}
-Display this line's buffer in another window, without selecting it
-(@code{Buffer-menu-switch-other-window}).
+この行のバッファーを他のウィンドウで表示しますが、選択はしません(@code{Buffer-menu-switch-other-window})。
 
 @item 1
 @findex Buffer-menu-1-window
 @kindex 1 @r{(Buffer Menu)}
-Select this line's buffer in a full-frame window
-(@code{Buffer-menu-1-window}).
+この行のバッファーを、フレーム全体のウィンドウで選択します(@code{Buffer-menu-1-window})。
 
 @item 2
 @findex Buffer-menu-2-window
 @kindex 2 @r{(Buffer Menu)}
-Set up two windows on the current frame, with this line's buffer
-selected in one, and a previously current buffer (aside from
-@file{*Buffer List*}) in the other (@code{Buffer-menu-2-window}).
+現在のフレームを2つのウィンドウにセットアップして、この行のバッファーを一方のウィンドウで選択し、もう一方のウィンドウに以前のカレントバッファー(@file{*Buffer
+List*})は除く)を表示します(@code{Buffer-menu-2-window})。
 
 @item b
 @findex Buffer-menu-bury
 @kindex b @r{(Buffer Menu)}
-Bury this line's buffer (@code{Buffer-menu-bury}).
+この行のバッファーを、リストの最後に移動します(@code{Buffer-menu-bury})。
 
 @item m
 @findex Buffer-menu-mark
 @kindex m @r{(Buffer Menu)}
-Mark this line's buffer to be displayed in another window if you exit
-with the @kbd{v} command (@code{Buffer-menu-mark}).  The display flag
-is indicated by the character @samp{>} at the beginning of the line.
-(A single buffer may not have both deletion and display flags.)
+@kbd{v}コマンドで抜けるとき、この行のバッファーを他のウィンドウで表示されるようにマークします(@code{Buffer-menu-mark})。表示フラグは行の先頭に文字@samp{>}で示されます(1つのバッファーが削除と表示のフラグを両方もつことはないでしょう)。
 
 @item v
 @findex Buffer-menu-select
 @kindex v @r{(Buffer Menu)}
-Select this line's buffer, and also display in other windows any
-buffers flagged with the @kbd{m} command (@code{Buffer-menu-select}).
-If you have not flagged any buffers, this command is equivalent to
-@kbd{1}.
+この行のバッファーを選択し、@kbd{m}コマンドでフラグづけされたバッファーも他のウィンドウで表示します(@code{Buffer-menu-select})。バッファーにフラグをつけていないとき、このコマンドは@kbd{1}と等価です。
 @end table
 
-  The following commands affect the entire buffer list:
+  以下はバッファーリスト全体に影響を与えるコマンドです:
 
 @table @kbd
 @item S
 @findex tabulated-list-sort
 @kindex S @r{(Buffer Menu)}
-Sort the Buffer Menu entries according to their values in the column
-at point.  With a numeric prefix argument @var{n}, sort according to
-the @var{n}-th column (@code{tabulated-list-sort}).
+ポイントがある列の数値にしたがって、Buffer
+Menu全体をソートします。数引数@var{n}を指定すると、@var{n}番目の列でソートします(@code{tabulated-list-sort})。
 
 @item T
 @findex Buffer-menu-toggle-files-only
 @kindex T @r{(Buffer Menu)}
-Delete, or reinsert, lines for non-file buffers
-@code{Buffer-menu-toggle-files-only}).  This command toggles the
-inclusion of such buffers in the buffer list.
+非ファイルバッファーを削除または再挿入します@code{Buffer-menu-toggle-files-only})。このコマンドは、そのようなバッファーがバッファーリストに含まれるか否かを切り替えます。
 @end table
 
-  Normally, the buffer @file{*Buffer List*} is not updated
-automatically when buffers are created and killed; its contents are
-just text.  If you have created, deleted or renamed buffers, the way
-to update @file{*Buffer List*} to show what you have done is to type
-@kbd{g} (@code{revert-buffer}).  You can make this happen regularly
-every @code{auto-revert-interval} seconds if you enable Auto Revert
-mode in this buffer, as long as it is not marked modified.  Global
-Auto Revert mode applies to the @file{*Buffer List*} buffer only if
-@code{global-auto-revert-non-file-buffers} is non-@code{nil}.
+  バッファー@file{*Buffer
+List*}は通常、バッファーの作成およびkillにより自動的に更新はされません(内容は単なるテキストです)。バッファーを作成・削除・リネームした場合、それが行われたか確かめるために@file{*Buffer
+List*}を更新するには、@kbd{g} (@code{revert-buffer})とタイプします。このバッファーのAuto
+Revertモードを有効にすれば、このバッファーが変更されたとマークされない限り、@code{auto-revert-interval}秒ごとに定期的に更新させることができます。Global
+Auto
+Revertモードは、@code{global-auto-revert-non-file-buffers}が非@code{nil}のときだけ、@file{*Buffer
+List*}バッファーに適用されます。
 @iftex
-@inforef{Autorevert,, emacs-xtra}, for details.
+詳細は、@inforef{Autorevert,, emacs-xtra}を参照してください。
 @end iftex
 @ifnottex
-@xref{Autorevert, global-auto-revert-non-file-buffers}, for details.
+詳細は、@ref{Autorevert, global-auto-revert-non-file-buffers}を参照してください。
 @end ifnottex
 
 @node Indirect Buffers
@@ -545,66 +404,47 @@ Auto Revert mode applies to the @file{*Buffer List*} buffer only if
 @cindex indirect buffer
 @cindex base buffer
 
-  An @dfn{indirect buffer} shares the text of some other buffer, which
-is called the @dfn{base buffer} of the indirect buffer.  In some ways it
-is a buffer analogue of a symbolic link between files.
+  @dfn{インダイレクトバッファー(indirect buffer:
+間接バッファー)}は、そのインダイレクトバッファーの@dfn{ベースバッファー(base buffer:
+基底バッファー)}と呼ばれる、他のバッファーのテキストを共有します。ある点においては、ファイルに置けるシンボリックリンクの、バッファー版に例えることができます。
 
 @table @kbd
 @findex make-indirect-buffer
 @item M-x make-indirect-buffer @key{RET} @var{base-buffer} @key{RET} @var{indirect-name} @key{RET}
-Create an indirect buffer named @var{indirect-name} with base buffer
-@var{base-buffer}.
+ベースバッファー@var{base-buffer}の、インダイレクトバッファー@var{indirect-name}を作成します。
 @findex clone-indirect-buffer
 @item M-x clone-indirect-buffer @key{RET}
-Create an indirect buffer that is a twin copy of the current buffer.
+カレントバッファーの、インダイレクトバッファーを作成します。
 @item C-x 4 c
 @kindex C-x 4 c
 @findex clone-indirect-buffer-other-window
-Create an indirect buffer that is a twin copy of the current buffer, and
-select it in another window (@code{clone-indirect-buffer-other-window}).
+カレントバッファーのインダイレクトバッファーを作成して、それを別のウィンドウで選択します(@code{clone-indirect-buffer-other-window})。
 @end table
 
-  The text of the indirect buffer is always identical to the text of its
-base buffer; changes made by editing either one are visible immediately
-in the other.  But in all other respects, the indirect buffer and its
-base buffer are completely separate.  They can have different names,
-different values of point, different narrowing, different markers,
-different major modes, and different local variables.
+  インダイレクトバッファーのテキストは、常にベースバッファーのテキストと等しく、どちらかを編集すると、その変更はすぐにもう一方から見えるようになります。しかし他の観点では、インダイレクトバッファーとベースバッファーは、完全に分離されています。これらのバッファーは異なる名前、異なるポイント値、異なるナローイング、異なるマーカー、異なるメジャーモード、異なるローカル変数をもつことができます。
 
-  An indirect buffer cannot visit a file, but its base buffer can.  If
-you try to save the indirect buffer, that actually works by saving the
-base buffer.  Killing the base buffer effectively kills the indirect
-buffer, but killing an indirect buffer has no effect on its base buffer.
+  インダイレクトバッファーはファイルをvisitできませんが、ベースバッファーはvisitできます。インダイレクトバッファーの保存を試みると、それは実際にはベースバッファーの保存として機能します。ベースバッファーをkillするとインダイレクトバッファーもkillされますが、インダイレクトバッファーのkillは、ベースバッファーに影響を与えません。
 
-  One way to use indirect buffers is to display multiple views of an
-outline.  @xref{Outline Views}.
+  インダイレクトバッファーの1つの使い方としては、アウトラインの複数の視点からの表示です。@ref{Outline Views}を参照してください。
 
 @vindex clone-indirect-buffer-hook
-  A quick and handy way to make an indirect buffer is with the command
-@kbd{M-x clone-indirect-buffer}.  It creates and selects an indirect
-buffer whose base buffer is the current buffer.  With a numeric
-argument, it prompts for the name of the indirect buffer; otherwise it
-uses the name of the current buffer, with a @samp{<@var{n}>} suffix
-added.  @kbd{C-x 4 c} (@code{clone-indirect-buffer-other-window})
-works like @kbd{M-x clone-indirect-buffer}, but it selects the new
-buffer in another window.  These functions run the hook
-@code{clone-indirect-buffer-hook} after creating the indirect buffer.
+  手早くインダイレクトバッファーを作成するには、コマンド@kbd{M-x
+clone-indirect-buffer}を使う方法があります。これはカレントバッファーをベースバッファーとする、インダイレクトバッファーを作成して選択します。数引数を指定すると、インダイレクトバッファーの名前の入力を求めます。指定しない場合、カレントバッファー名の後ろに@samp{<@var{n}>}を付加した名前を使います。@kbd{C-x
+4 c} (@code{clone-indirect-buffer-other-window})は、@kbd{M-x
+clone-indirect-buffer}と同様に機能しますが、新しいバッファーを他のウィンドウで選択します。これらの関数はインダイレクトバッファーを作成した後、フック@code{clone-indirect-buffer-hook}を実行します。
 
-  The more general way to make an indirect buffer is with the command
-@kbd{M-x make-indirect-buffer}.  It creates an indirect buffer
-named @var{indirect-name} from a buffer @var{base-buffer}, prompting for
-both using the minibuffer.
+  インダイレクトバッファーを作成する、より一般的な方法はコマンド@kbd{M-x
+make-indirect-buffer}です。これはバッファー@var{base-buffer}から、名前が@var{indirect-name}のインダイレクトバッファーを作成します。これらの名前は、ミニバッファーを使って入力が求められます。
 
 @node Buffer Convenience
 @section Convenience Features and Customization of Buffer Handling
 
-   This section describes several modes and features that make it more
-convenient to switch between buffers.
+   このセクションではバッファーを切り替えをもっと便利にする、モードと機能をいくつか説明します。
 
 @menu
-* Uniquify::               Making buffer names unique with directory parts.
-* Icomplete::              Fast minibuffer selection.
-* Buffer Menus::           Configurable buffer menu.
+* Uniquify::                 ディレクトリー部分でバッファー名を一意にする。
+* Icomplete::                素早いミニバッファーの選択について。
+* Buffer Menus::             バッファーメニューの設定。
 @end menu
 
 @node Uniquify
@@ -612,43 +452,17 @@ convenient to switch between buffers.
 
 @cindex unique buffer names
 @cindex directories in buffer names
-  When several buffers visit identically-named files, Emacs must give
-the buffers distinct names.  The default method adds a suffix based on
-the names of the directories that contain the files.  For example, if
-you visit files @file{/foo/bar/mumble/name} and
-@file{/baz/quux/mumble/name} at the same time, their buffers will be
-named @samp{name<bar/mumble>} and @samp{name<quux/mumble>}, respectively.
-Emacs adds as many directory parts as are needed to make a unique name.
+  同じ名前のファイルを複数のバッファーでvisitしているとき、Emacsはバッファーに区別可能な名前をつけなければなりません。デフォルトの方法はファイルをディレクトリーの一部を後ろに追加する方法です。たとえば同時にファイル@file{/foo/bar/mumble/name}と@file{/baz/quux/mumble/name}をvisitしている場合、バッファーの名前は@samp{name<bar/mumble>}と@samp{name<quux/mumble>}になるでしょう。Emacsは名前を一意にするために必要な分だけ、ディレクトリー名の一部を追加します。
 
 @vindex uniquify-buffer-name-style
-  You can choose from several different styles for constructing unique
-buffer names, by customizing the option @code{uniquify-buffer-name-style}.
+  オプション@code{uniquify-buffer-name-style}をカスタマイズして、一意なバッファー名を構築するための異なるスタイルを選択することができます。
 
-  The @code{forward} naming method includes part of the file's
-directory name at the beginning of the buffer name; using this method,
-buffers visiting the files @file{/u/rms/tmp/Makefile} and
-@file{/usr/projects/zaphod/Makefile} would be named
-@samp{tmp/Makefile} and @samp{zaphod/Makefile}.
+  命名方法@code{forward}は、バッファー名の先頭部分に、ファイルのディレクトリー名の一部を含めます。この方法を使うとファイル@file{/u/rms/tmp/Makefile}と@file{/usr/projects/zaphod/Makefile}をvisitしているバッファーの名前は、@samp{tmp/Makefile}と@samp{zaphod/Makefile}になるでしょう。
 
-  In contrast, the @code{post-forward} naming method would call the
-buffers @samp{Makefile|tmp} and @samp{Makefile|zaphod}.  The default
-method @code{post-forward-angle-brackets} is like @code{post-forward},
-except that it encloses the unique path in angle brackets.  The
-@code{reverse} naming method would call them @samp{Makefile\tmp} and
-@samp{Makefile\zaphod}.  The nontrivial difference between
-@code{post-forward} and @code{reverse} occurs when just one directory
-name is not enough to distinguish two files; then @code{reverse} puts
-the directory names in reverse order, so that @file{/top/middle/file}
-becomes @samp{file\middle\top}, while @code{post-forward} puts them in
-forward order after the file name, as in @samp{file|top/middle}.  If
-@code{uniquify-buffer-name-style} is set to @code{nil}, the buffer
-names simply get @samp{<2>}, @samp{<3>}, etc. appended.
+  対照的に命名方法@code{post-forward}は、バッファーを@samp{Makefile|tmp}および@samp{Makefile|zaphod}と名づけます。デフォルトの@code{post-forward-angle-brackets}は、@code{post-forward}と同様ですが、一意なパスを山形カッコ(angle
+brackets)で囲います。命名方法@code{reverse}では、@samp{Makefile\tmp}および@samp{Makefile\zaphod}となります。@code{post-forward}と@code{reverse}の重要な違いは、2つのファイルを区別するのに1つのディレクトリ名では不足するときです。@code{reverse}はディレクトリー名を逆順にして命名するので、ファイル@file{/top/middle/file}は@samp{file\middle\top}となります。一方@code{post-forward}はディレクトリー名を正順でファイル名に追加するので@samp{file|top/middle}となります。@code{uniquify-buffer-name-style}が@code{nil}にセットされていると、バッファー名の後ろに単に@samp{<2>}、@samp{<3>}と加えることにより、バッファー名を作成します。
 
-  Which rule to follow for putting the directory names in the buffer
-name is not very important if you are going to @emph{look} at the
-buffer names before you type one.  But as an experienced user, if you
-know the rule, you won't have to look.  And then you may find that one
-rule or another is easier for you to remember and apply quickly.
+  タイプする前にバッファー名に@emph{注意}すれば、バッファー名にディレクトリー名を付加する方法に重要な違いはありません。しかしルールを知った経験豊富なユーザーは、それほど注意する必要はないでしょう。そして、その場合いずれかのルールでバッファー名が表示されていれば，思い出し利用するのが容易になることでしょう。
 
 @node Icomplete
 @subsection Fast minibuffer selection
@@ -656,27 +470,15 @@ rule or another is easier for you to remember and apply quickly.
 @findex icomplete-mode
 @cindex Icomplete mode
 
-  Icomplete global minor mode provides a convenient way to quickly select an
-element among the possible completions in a minibuffer.  When enabled, typing
-in the minibuffer continuously displays a list of possible completions that
-match the string you have typed.
+  グローバルなマイナーモードのIcompleteモードは、ミニバッファーで利用可能な補完候補を素早く選択する便利な方法を提供します。これが有効な場合、ミニバッファーでタイプすることにより、すでにタイプした文字にマッチする、利用可能な候補を連続で表示します。
 
-  At any time, you can type @kbd{C-j} to select the first completion in
-the list.  So the way to select a particular completion is to make it the
-first in the list.  There are two ways to do this.  You can type more
-of the completion name and thus narrow down the list, excluding unwanted
-completions above the desired one.  Alternatively, you can use @kbd{C-.}
-and @kbd{C-,} to rotate the list until the desired buffer is first.
+  @kbd{C-j}とタイプすることにより、常にリストの最初の補完候補を選択できます。つまり特定の補完候補を選択するには、まずその候補をリストの先頭にすることです。これを行うには2つの方法があります。1つ目の方法は、補完候補の名前をさらにタイプすることにより、違う候補が含まれないように、希望する補完候補にリストを絞りこむ方法です。もう1つは@kbd{C-.}および@kbd{C-,}を使って、望む候補が先頭にくるまでリストをローテートする方法です。
 
-  @kbd{M-@key{TAB}} will select the first completion in the list, like
-@kbd{C-j} but without exiting the minibuffer, so you can edit it
-further.  This is typically used when entering a file name, where
-@kbd{M-@key{TAB}} can be used a few times to descend in the hierarchy
-of directories.
+  @kbd{M-@key{TAB}}は@kbd{C-j}のようにリストの最初の補完候補を選択しますが、ミニバッファーを抜けないので、さらに編集を続けることができます。これはファイル名の入力で通常使われます。@kbd{M-@key{TAB}}により、いくつかのディレクトリー階層をたどることができます。
 
-  To enable Icomplete mode, type @kbd{M-x icomplete-mode}, or customize
-the variable @code{icomplete-mode} to @code{t} (@pxref{Easy
-Customization}).
+  Icompleteモードを有効にするには、@kbd{M-x
+icomplete-mode}とタイプするか、変数@code{icomplete-mode}を@code{t}にカスタマイズします(@ref{Easy
+Customization}を参照してください)。
 
 @node Buffer Menus
 @subsection Customizing Buffer Menus
@@ -685,23 +487,20 @@ Customization}).
 @cindex buffer list, customizable
 @table @kbd
 @item M-x bs-show
-Make a list of buffers similarly to @kbd{M-x list-buffers} but
-customizable.
+@kbd{M-x list-buffers}と同様にバッファーリストを作成しますが、カスタマイズが可能です。
 @end table
 
-  @kbd{M-x bs-show} pops up a buffer list similar to the one normally
-displayed by @kbd{C-x C-b} but which you can customize.  If you prefer
-this to the usual buffer list, you can bind this command to @kbd{C-x
-C-b}.  To customize this buffer list, use the @code{bs} Custom group
-(@pxref{Easy Customization}).
+  @kbd{M-x bs-show}は、通常@kbd{C-x
+C-b}で表示されるのと同じようなバッファーリストを表示しますが、カスタマイズが可能です。通常のバッファーリストよりこちらのほうが好ましい場合、このコマンドを@kbd{C-x
+C-b}にバインドできます。このバッファーリストをカスタマイズするには、Customグループの@code{bs}を使います(@ref{Easy
+Customization}を参照してください)。
 
 @findex msb-mode
 @cindex mode, MSB
 @cindex MSB mode
 @findex mouse-buffer-menu
 @kindex C-Down-Mouse-1
-  MSB global minor mode (``MSB'' stands for ``mouse select buffer'')
-provides a different and customizable mouse buffer menu which you may
-prefer.  It replaces the bindings of @code{mouse-buffer-menu},
-normally on @kbd{C-Down-Mouse-1}, and the menu bar buffer menu.  You
-can customize the menu in the @code{msb} Custom group.
+  MSBグローバルマイナーモード(``MSB''は``mouse select
+buffer(マウス選択バッファー)''が由来)は、カスタマイズ可能なマウスによるBuffer
+Menuを提供します。これは通常@kbd{C-Down-Mouse-1}にバインドされている@code{mouse-buffer-menu}と、Buffer
+Menuのメニューを置き換えます。メニューはCustomグループ@code{msb}でカスタマイズが可能です。

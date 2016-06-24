@@ -1,3 +1,8 @@
+@c ===========================================================================
+@c
+@c This file was generated with po4a. Translate the source file.
+@c
+@c ===========================================================================
 @c This is part of the Emacs manual.
 @c Copyright (C) 2004-2015 Free Software Foundation, Inc.
 @c See file emacs.texi for copying conditions.
@@ -9,96 +14,71 @@
 @cindex Emerge
 @cindex merging files
 
-  It's not unusual for programmers to get their signals crossed and
-modify the same program in two different directions.  To recover from
-this confusion, you need to merge the two versions.  Emerge makes this
-easier.  For other ways to compare files, see
+  行き違いの指示を受けて、同じプログラムを異なる2つの方向に修正してしまうのは、プログラマーにとって珍しいことではありません。この混乱を正常な状態に戻すには、2つのバージョンをマージする必要があります。Emergeはこれを簡単にします。ファイルを比較する他の方法については、
 @iftex
-@ref{Comparing Files,,, emacs, the Emacs Manual},
+@ref{Comparing Files,,, emacs, the Emacs Manual}、
 @end iftex
 @ifnottex
-@ref{Comparing Files},
+@ref{Comparing Files}、
 @end ifnottex
-and @ref{Top,, Ediff, ediff, The Ediff Manual}.
+および@ref{Top,, Ediff, ediff, The Ediff Manual}を参照してください。
 
 @menu
-* Overview of Emerge::     How to start Emerge.  Basic concepts.
-* Submodes of Emerge::     Fast mode vs. Edit mode.
-                             Skip Prefers mode and Auto Advance mode.
-* State of Difference::    You do the merge by specifying state A or B
-                             for each difference.
-* Merge Commands::         Commands for selecting a difference,
-                             changing states of differences, etc.
-* Exiting Emerge::         What to do when you've finished the merge.
-* Combining in Emerge::    How to keep both alternatives for a difference.
-* Fine Points of Emerge::  Miscellaneous issues.
+* Overview of Emerge::       Emergeを開始する方法と、基本的な概念。
+* Submodes of Emerge::       Fastモード vs. Editモード。Skip 
+                               PrefersモードとAuto Advanceモード。
+* State of Difference::      各相違にたいして、AまたはBの状態を指定することによりマージを行う。
+* Merge Commands::           相違を選択したり、相違の状態を変更するコマンドなど。
+* Exiting Emerge::           マージを終えた後に行うこと。
+* Combining in Emerge::      相違にたいする両方の候補を維持する方法。
+* Fine Points of Emerge::    その他の問題。
 @end menu
 
 @node Overview of Emerge
 @subsection Overview of Emerge
 
-  To start Emerge, run one of these four commands:
+  Emergeを開始するには、以下の4つのコマンドの1つを実行します:
 
 @table @kbd
 @item M-x emerge-files
 @findex emerge-files
-Merge two specified files.
+指定した2つのファイルをマージします。
 
 @item M-x emerge-files-with-ancestor
 @findex emerge-files-with-ancestor
-Merge two specified files, with reference to a common ancestor.
+共通の祖先(ancestor)を参照して、指定した2つのファイルをマージします。
 
 @item M-x emerge-buffers
 @findex emerge-buffers
-Merge two buffers.
+2つのバッファーをマージします。
 
 @item M-x emerge-buffers-with-ancestor
 @findex emerge-buffers-with-ancestor
-Merge two buffers with reference to a common ancestor in a third
-buffer.
+第3のバッファーにある共通の祖先を参照して、2つのバッファーをマージします。
 @end table
 
 @cindex merge buffer (Emerge)
 @cindex A and B buffers (Emerge)
-  The Emerge commands compare two files or buffers, and display the
-comparison in three buffers: one for each input text (the @dfn{A buffer}
-and the @dfn{B buffer}), and one (the @dfn{merge buffer}) where merging
-takes place.  The merge buffer shows the full merged text, not just the
-differences.  Wherever the two input texts differ, you can choose which
-one of them to include in the merge buffer.
+  Emergeコマンドは2つのファイルまたはバッファーを比較して、3つのバッファーにそれ表示します。最初の2つは入力テキスト(@dfn{Aバッファー}と@dfn{Bバッファー})で、残りの1つ(@dfn{マージバッファー})はどこにマージが行われたかを表示します。マージバッファーは相違だけではなく、マージされたテキストをすべて表示します。2つの入力テキストが異なる場所では、どちらをマージバッファーに含めるか選択できます。
 
-  The Emerge commands that take input from existing buffers use only
-the accessible portions of those buffers, if they are narrowed.
+  既存のバッファーから入力を得るEmergeコマンドは、そのバッファーがナローされている場合は、バッファーのアクセス可能な部分だけを使用します。
 @iftex
-@xref{Narrowing,,, emacs, the Emacs Manual}.
+@ref{Narrowing,,, emacs, the Emacs Manual}を参照してください。
 @end iftex
 @ifnottex
-@xref{Narrowing}.
+@ref{Narrowing}を参照してください。
 @end ifnottex
 
 
-  If a common ancestor version is available, from which the two texts to
-be merged were both derived, Emerge can use it to guess which
-alternative is right.  Wherever one current version agrees with the
-ancestor, Emerge presumes that the other current version is a deliberate
-change which should be kept in the merged version.  Use the
-@samp{with-ancestor} commands if you want to specify a common ancestor
-text.  These commands read three file or buffer names---variant A,
-variant B, and the common ancestor.
+  2つのマージされるテキストの元となる、共通の祖先となるバージョンが利用可能な場合は、Emergeはどちらが正しい候補かを推測するために、それを使用することができます。一方のカレントバージョンが祖先に一致する場合、Emergeはもう一方のカレントバージョンが、マージされたバージョンに残すべき、意図した変更であると仮定します。共通の祖先となるテキストを指定したい場合は、@samp{with-ancestor}がつくコマンドを使用します。これらのコマンドは3つのファイルまたはバッファーの名前
+--- バージョンA、バージョンB、そして共通の祖先の名前を読み取ります。
 
-  After the comparison is done and the buffers are prepared, the
-interactive merging starts.  You control the merging by typing special
-@dfn{merge commands} in the merge buffer (@pxref{Merge Commands}).
-For each run of differences between the input texts, you can choose
-which one of them to keep, or edit them both together.
+  比較が終了してバッファーの準備ができた後、対話的なマージが開始されます。マージバッファーで特別な@dfn{マージコマンド}をタイプすることにより、マージを制御できます(@ref{Merge
+Commands}を参照してください)。入力テキストの相違それぞれにたいして、どちらを残すか、または両方編集するか選択することができます。
 
-  The merge buffer uses a special major mode, Emerge mode, with commands
-for making these choices.  But you can also edit the buffer with
-ordinary Emacs commands.
+  マージバッファーはこれらの選択を行うために、Emergeモードという特別なメジャーモードを使用します。しかし、そのバッファーでは通常のEmacsコマンドで編集することもできます。
 
-  At any given time, the attention of Emerge is focused on one
-particular difference, called the @dfn{selected} difference.  This
-difference is marked off in the three buffers like this:
+  常にEmergeの注目は、@dfn{選択された}相違と呼ばれる、特定の相違に焦点を置きます。この相違は、3つのバッファーで以下のようにマークされます:
 
 @example
 vvvvvvvvvvvvvvvvvvvv
@@ -107,257 +87,196 @@ vvvvvvvvvvvvvvvvvvvv
 @end example
 
 @noindent
-Emerge numbers all the differences sequentially and the mode
-line always shows the number of the selected difference.
+Emergeはすべての相違に順番に番号をふり、モードラインには選択された相違の番号が常に表示されます。
 
-  Normally, the merge buffer starts out with the A version of the text.
-But when the A version of a difference agrees with the common ancestor,
-then the B version is initially preferred for that difference.
+  マージバッファーは通常、バージョンAのテキストで開始されます。しかしバージョンAの相違が共通の祖先と一致する場合、その相違の初期値にはバージョンBが優先されます。
 
-  Emerge leaves the merged text in the merge buffer when you exit.  At
-that point, you can save it in a file with @kbd{C-x C-w}.  If you give a
-numeric argument to @code{emerge-files} or
-@code{emerge-files-with-ancestor}, it reads the name of the output file
-using the minibuffer.  (This is the last file name those commands read.)
-Then exiting from Emerge saves the merged text in the output file.
+  マージバッファーを抜けるとき、Emergeはマージされたテキストを残します。このとき、@kbd{C-x
+C-w}で、それをファイルに保存できます。@code{emerge-files}または@code{emerge-files-with-ancestor}に数引数を与えた場合、ミニバッファーを使用して、出力するファイル名を読み取ります(これは、このコマンドが読み取るファイル名の最後のファイル名です)。その後Emergeから抜けると、マージされたテキストを出力ファイルに保存します。
 
-  Normally, Emerge commands save the output buffer in its file when you
-exit.  If you abort Emerge with @kbd{C-]}, the Emerge command does not
-save the output buffer, but you can save it yourself if you wish.
+  通常、Emergeコマンドは終了するとき出力バッファーを、そのバッファーのファイルに保存します。Emergeを@kbd{C-]}で中断した場合、Emergeコマンドは出力バッファーを保存しませんが、もし保存したいときは自分で保存することができます。
 
 @node Submodes of Emerge
 @subsection Submodes of Emerge
 
-  You can choose between two modes for giving merge commands: Fast mode
-and Edit mode.  In Fast mode, basic merge commands are single
-characters, but ordinary Emacs commands are disabled.  This is
-convenient if you use only merge commands.  In Edit mode, all merge
-commands start with the prefix key @kbd{C-c C-c}, and the normal Emacs
-commands are also available.  This allows editing the merge buffer, but
-slows down Emerge operations.
+  マージコマンドに与える2つのモード ---
+FastモードとEditモードを選択することができます。Fastモードでは、基本的なマージコマンドは1文字ですが、通常のEmacsコマンドは利用不可です。これはマージコマンドだけを使いたいときは便利です。Editモードでは、すべてのマージコマンドはプレフィクスキー@kbd{C-c
+C-c}で始まり、通常のEmacsコマンドも利用可能です。これによりマージバッファーで編集することができますが、Emerge操作は遅くなります。
 
-  Use @kbd{e} to switch to Edit mode, and @kbd{C-c C-c f} to switch to
-Fast mode.  The mode line indicates Edit and Fast modes with @samp{E}
-and @samp{F}.
+  @kbd{e}でEditモード、@kbd{C-c C-c
+f}でFastモードに切り替わります。モードラインにはEditモードおよびFastモードは、@samp{E}と@samp{F}で示されます。
 
-  Emerge has two additional submodes that affect how particular merge
-commands work: Auto Advance mode and Skip Prefers mode.
+  Emergeは、特定のマージコマンドがどのように機能するかに影響を与える、2つの追加的なサブモード --- Auto AdvanceモードとSkip
+Prefersモードがあります。
 
-  If Auto Advance mode is in effect, the @kbd{a} and @kbd{b} commands
-advance to the next difference.  This lets you go through the merge
-faster as long as you simply choose one of the alternatives from the
-input.  The mode line indicates Auto Advance mode with @samp{A}.
+  Auto
+Advanceモードが効力をもつ場合、@kbd{a}または@kbd{b}コマンドで次の相違に移動します。これは候補を単に選んでいくだけで、素早くマージすることができます。Auto
+Advanceモードの場合、モードラインに@samp{A}が示されます。
 
-  If Skip Prefers mode is in effect, the @kbd{n} and @kbd{p} commands
-skip over differences in states ``prefer-A'' and ``prefer-B''
-(@pxref{State of Difference}).  Thus you see only differences for
-which neither version is presumed ``correct''.  The mode line
-indicates Skip Prefers mode with @samp{S}.  This mode is only relevant
-when there is an ancestor.
+  Skip
+Prefersモードが効力をもつ場合、@kbd{n}および@kbd{p}コマンドは、状態が``prefer-A''と``prefer-B''の相違をスキップします(@ref{State
+of Difference}を参照してください)。したがって、どちらのバージョンも``正しい''と推定できない相違だけを見ていくことができます。Skip
+Prefersモードの場合、モードラインに@samp{S}が示されます。このモードは祖先がある場合にだけ適しています。
 
 @findex emerge-auto-advance
 @findex emerge-skip-prefers
-  Use the command @kbd{s a} (@code{emerge-auto-advance}) to set or clear
-Auto Advance mode.  Use @kbd{s s} (@code{emerge-skip-prefers}) to set or
-clear Skip Prefers mode.  These commands turn on the mode with a
-positive argument, turn it off with a negative or zero argument, and
-toggle the mode with no argument.
+  Auto Advanceをセットまたはクリアーするには、コマンド@kbd{s a}
+(@code{emerge-auto-advance})を使用します。Skip Prefersモードをセットまたはクリアーするには、@kbd{s s}
+(@code{emerge-skip-prefers})を使用します。これらのコマンドは、正の引数の場合はモードをオンにして、負または0の引数のときはモードをオフにし、引数がないときはモードのオン・オフを切り替えます。
 
 @node State of Difference
 @subsection State of a Difference
 
-  In the merge buffer, a difference is marked with lines of @samp{v} and
-@samp{^} characters.  Each difference has one of these seven states:
+  マージバッファーでは、相違は文字@samp{v}および@samp{^}のラインでマークされます。各相違は、以下の7つの状態のうち1つをもちます:
 
 @table @asis
 @item A
-The difference is showing the A version.  The @kbd{a} command always
-produces this state; the mode line indicates it with @samp{A}.
+相違にはバージョンAが表示されています。@kbd{a}コマンドは常にこの状態を生成します。モードラインには@samp{A}が示されます。
 
 @item B
-The difference is showing the B version.  The @kbd{b} command always
-produces this state; the mode line indicates it with @samp{B}.
+相違にはバージョンBが表示されています。@kbd{b}コマンドは常にこの状態を生成します。モードラインには@samp{B}が示されます。
 
 @item default-A
 @itemx default-B
-The difference is showing the A or the B state by default, because you
-haven't made a choice.  All differences start in the default-A state
-(and thus the merge buffer is a copy of the A buffer), except those for
-which one alternative is ``preferred'' (see below).
+選択を行っていないので、相違にはデフォルトとしてAまたはBの状態が表示されています。すべての相違はdefault-A状態で開始されます(したがってマージバッファーはAバッファーのコピーとなります)が、例外として、もう一方のほうが``preferred(好ましい)''場合を除きます(以下参照)。
 
-When you select a difference, its state changes from default-A or
-default-B to plain A or B@.  Thus, the selected difference never has
-state default-A or default-B, and these states are never displayed in
-the mode line.
+相違を選択したときに、状態はdefault-Aまたはdefault-Bから、AまたはBに遷移します。したがって、選択された相違が状態default-Aまたはdefault-Bをもつことはなく、これらの状態がモードラインに表示されることはありません。
 
-The command @kbd{d a} chooses default-A as the default state, and @kbd{d
-b} chooses default-B@.  This chosen default applies to all differences
-that you have never selected and for which no alternative is preferred.
-If you are moving through the merge sequentially, the differences you
-haven't selected are those following the selected one.  Thus, while
-moving sequentially, you can effectively make the A version the default
-for some sections of the merge buffer and the B version the default for
-others by using @kbd{d a} and @kbd{d b} between sections.
+コマンド@kbd{d a}は、デフォルトの状態にdefault-Aを選択し、@kbd{d
+b}はdefault-Bを選択します。これらで選択されるデフォルトは、まだ1度も選択していないか、好ましい候補をもたないすべての相違に適用されます。順番に移動しながらマージを行っている場合、一度も選択されていない相違とは、選択された相違の後のすべての相違です。したがって順番に移動しながら、セクションの間で@kbd{d
+a}と@kbd{d
+b}を使い分けることにより、マージバッファーのあるセクションにたいしてはバージョンAをデフォルトに、他のセクションにはバージョンBを効果的に選択できます。
 
 @item prefer-A
 @itemx prefer-B
-The difference is showing the A or B state because it is
-@dfn{preferred}.  This means that you haven't made an explicit choice,
-but one alternative seems likely to be right because the other
-alternative agrees with the common ancestor.  Thus, where the A buffer
-agrees with the common ancestor, the B version is preferred, because
-chances are it is the one that was actually changed.
+相違には、状態Aまたは状態Bが表示されています。なぜなら、それが@dfn{preferred(好ましい)}からです。これはまだ明示的な選択を行なっていないが、一方の候補は共通の祖先と同じなので、もう一方の候補の方が正しく見えることを意味します。したがってAバッファーが共通の祖先と同じ場合、バージョンBの方が好ましいといえます。なぜなら、それは実際に変更されているからです。
 
-These two states are displayed in the mode line as @samp{A*} and @samp{B*}.
+これら2つの状態は、モードラインに@samp{A*}と@samp{B*}で表示されます。
 
 @item combined
-The difference is showing a combination of the A and B states, as a
-result of the @kbd{x c} or @kbd{x C} commands.
+@kbd{x c}または@kbd{x C}コマンドの結果として、相違は状態Aおよび状態Bが混合されたものを表示しています。
 
-Once a difference is in this state, the @kbd{a} and @kbd{b} commands
-don't do anything to it unless you give them a numeric argument.
+相違が1度この状態になると、@kbd{a}コマンドと@kbd{b}コマンドは、数引数を与えないかぎり何もしません。
 
-The mode line displays this state as @samp{comb}.
+モードラインには状態@samp{comb}が表示されます。
 @end table
 
 @node Merge Commands
 @subsection Merge Commands
 
-  Here are the Merge commands for Fast mode; in Edit mode, precede them
-with @kbd{C-c C-c}:
+  以下はFastモードのマージコマンドです。Editモードでは前に@kbd{C-c C-c}をつけてください:
 
 @table @kbd
 @item p
-Select the previous difference.
+前の相違を選択します。
 
 @item n
-Select the next difference.
+次の相違を選択します。
 
 @item a
-Choose the A version of this difference.
+この相違にバージョンAを選択します。
 
 @item b
-Choose the B version of this difference.
+この相違にバージョンBを選択します。
 
 @item C-u @var{n} j
-Select difference number @var{n}.
+番号@var{n}の相違を選択します。
 
 @item .
-Select the difference containing point.
 @c [Does not work in the A or B buffer?]
 @c You can use this command in the merge buffer or in the A or B buffer.
+ポイントを含む相違を選択します。
 
 @item q
-Quit---finish the merge.
+終了 --- マージを終了します。
 
 @item C-]
-Abort---exit merging and do not save the output.
+中断 --- マージをexitして出力を保存しません。
 
 @item f
-Go into Fast mode.  (In Edit mode, this is actually @kbd{C-c C-c f}.)
+Fastモードに移行します(Editモードでは実際には@kbd{C-c C-c f}です)。
 
 @item e
-Go into Edit mode.
+Editモードに移行します。
 
 @item l
-Recenter (like @kbd{C-l}) all three windows.  With an argument,
-reestablish the default three-window display.
+3つのウィンドウにたいして、(@kbd{C-l}のように)再センタリングをします。引数を指定すると、デフォルトの3ウィンドウ表示を再構築します。
 
 @item -
-Specify part of a prefix numeric argument.
+数引数の一部を指定します。
 
 @item @var{digit}
-Also specify part of a prefix numeric argument.
+これも数引数の一部を指定します。
 
 @item d a
-Choose the A version as the default from here down in
-the merge buffer.
+ポイント位置からマージバッファーの下方へ、バージョンAをデフォルトとして選択します。
 
 @item d b
-Choose the B version as the default from here down in
-the merge buffer.
+ポイント位置からマージバッファーの下方へ、バージョンBをデフォルトとして選択します。
 
 @item c a
-Copy the A version of this difference into the kill ring.
+この相違のバージョンAを、killリングにコピーします。
 
 @item c b
-Copy the B version of this difference into the kill ring.
+この相違のバージョンBを、killリングにコピーします。
 
 @item i a
-Insert the A version of this difference at point.
+この相違のバージョンAを、ポイント位置に挿入します。
 
 @item i b
-Insert the B version of this difference at point.
+この相違のバージョンBを、ポイント位置に挿入します。
 
 @item m
-Put point and mark around the difference.
+相違の周囲に、ポイントとマークを配します。
 
 @item ^
-Scroll all three windows down (like @kbd{M-v}).
+3つのウィンドウすべてを、(@kbd{M-v}のように)下にスクロールします。
 
 @item v
-Scroll all three windows up (like @kbd{C-v}).
+3つのウィンドウすべてを、(@kbd{C-v}のように)上にスクロールします。
 
 @item <
-Scroll all three windows left (like @kbd{C-x <}).
+3つのウィンドウすべてを、(@kbd{C-x <}のように)左にスクロールします。
 
 @item >
-Scroll all three windows right (like @kbd{C-x >}).
+3つのウィンドウすべてを、(@kbd{C-x >}のように)右にスクロールします。
 
 @item |
-Reset horizontal scroll on all three windows.
+3つのウィンドウすべての水平スクロールをリセットします。
 
 @item x 1
-Shrink the merge window to one line.  (Use @kbd{C-u l} to restore it
-to full size.)
+マージウィンドウを1行に縮めます(フルサイズに復元するには@kbd{C-u l}を使用します)。
 
 @item x c
-Combine the two versions of this difference (@pxref{Combining in
-Emerge}).
+この相違の2つのバージョンを合成します(@ref{Combining in Emerge}を参照してください)。
 
 @item x f
-Show the names of the files/buffers Emerge is operating on, in a Help
-window.  (Use @kbd{C-u l} to restore windows.)
+Emergeが操作しているファイルまたはバッファーの名前を、Helpウィンドウに表示します(ウィンドウを復元するには@kbd{C-u
+l}を使用します)。
 
 @item x j
-Join this difference with the following one.
-(@kbd{C-u x j} joins this difference with the previous one.)
+この相違を次の相違に結合します(@kbd{C-u x j}は前の相違に結合します)。
 
 @item x s
-Split this difference into two differences.  Before you use this
-command, position point in each of the three buffers at the place where
-you want to split the difference.
+この相違を2つの相違に分割します。このコマンドを使う前に、3つのバッファーで、相違を分割したい位置にポイントを配してください。
 
 @item x t
-Trim identical lines off the top and bottom of the difference.
-Such lines occur when the A and B versions are
-identical but differ from the ancestor version.
+相違の上部と下部にある、同じ行を取り除きます。このような行は、バージョンAとバージョンBが同じでも、それらが祖先となるバージョンと異なる場合に発生します。
 @end table
 
 @node Exiting Emerge
 @subsection Exiting Emerge
 
-  The @kbd{q} command (@code{emerge-quit}) finishes the merge, storing
-the results into the output file if you specified one.  It restores the
-A and B buffers to their proper contents, or kills them if they were
-created by Emerge and you haven't changed them.  It also disables the
-Emerge commands in the merge buffer, since executing them later could
-damage the contents of the various buffers.
+  @kbd{q}コマンド(@code{emerge-quit})はマージを終了して、指定されている場合は結果を出力ファイルに保存します。これはバッファーAおよびBの内容を正しいものに復元するか、もしそれらがEmergeにより作成され、何も変更されていないときはkillします。これによりマージバッファーでEmergeコマンドは使えなくなります。なぜならそれらを実行することにより、さまざまなバッファーの内容にダメージを与えるからです。
 
-  @kbd{C-]} aborts the merge.  This means exiting without writing the
-output file.  If you didn't specify an output file, then there is no
-real difference between aborting and finishing the merge.
+  @kbd{C-]}はマージを中断します。これは出力ファイルに書き込まずに終了することを意味します。出力ファイルを指定していない場合、マージの終了と中断に実際の違いはありません。
 
-  If the Emerge command was called from another Lisp program, then its
-return value is @code{t} for successful completion, or @code{nil} if you
-abort.
+  Emergeコマンドが他のLispプログラムから呼び出された場合、正常終了の戻り値は@code{t}で、中断(abort)のときは@code{nil}です。
 
 @node Combining in Emerge
 @subsection Combining the Two Versions
 
-  Sometimes you want to keep @emph{both} alternatives for a particular
-difference.  To do this, use @kbd{x c}, which edits the merge buffer
-like this:
+  特定の相違にたいして両方の候補を使いたいときがあります。これを行なうにはマージバッファーを以下のように編集する@kbd{x c}を使用します:
 
 @example
 @group
@@ -371,12 +290,7 @@ like this:
 
 @noindent
 @vindex emerge-combine-versions-template
-While this example shows C preprocessor conditionals delimiting the two
-alternative versions, you can specify the strings to use by setting
-the variable @code{emerge-combine-versions-template} to a string of your
-choice.  In the string, @samp{%a} says where to put version A, and
-@samp{%b} says where to put version B@.  The default setting, which
-produces the results shown above, looks like this:
+この例はCプリプロセッサー条件が2つのバージョン候補を区切っていますが、区切りに使う文字列は、変数@code{emerge-combine-versions-template}に選択した文字列をセットすることにより、指定することができます。この文字列で@samp{%a}はバージョンA、@samp{%b}はバージョンBです。上記の結果を生成するデフォルトのセッティングは、以下のようなものです:
 
 @example
 @group
@@ -387,27 +301,19 @@ produces the results shown above, looks like this:
 @node Fine Points of Emerge
 @subsection Fine Points of Emerge
 
-  During the merge, you mustn't try to edit the A and B buffers yourself.
-Emerge modifies them temporarily, but ultimately puts them back the way
-they were.
+  マージの間、AおよびBバッファーを自分で編集してはいけません。Emergeは一時的にこれらを変更しますが、最終的には元の内容に戻します。
 
-  You can have any number of merges going at once---just don't use any one
-buffer as input to more than one merge at once, since the temporary
-changes made in these buffers would get in each other's way.
+  複数のマージを一度に行うことができます ---
+ただし、ある1つのバッファーを複数のマージの入力として使用しないでください。なぜなら、これらのバッファーに加えられる一時的な変更が、1つのバッファーに加えられてしまうからです。
 
-  Starting Emerge can take a long time because it needs to compare the
-files fully.  Emacs can't do anything else until @code{diff} finishes.
-Perhaps in the future someone will change Emerge to do the comparison in
-the background when the input files are large---then you could keep on
-doing other things with Emacs until Emerge is ready to accept
-commands.
+  ファイル全体を比較する必要があるため、Emergeの開始には時間がかかることもあります。Emacsは、@code{diff}が終了するまで他のことを行なえません。入力ファイルが大きいときはバックグラウンドで比較を行なうように、誰かがEmergeを変更するかもしれません
+--- そうなればEmergeがコマンドを受け付けられるようになるまでの間、Emacsで他の作業を続けることができるでしょう。
 
 @vindex emerge-startup-hook
-  After setting up the merge, Emerge runs the hook
-@code{emerge-startup-hook}.
+  マージをセットアップした後、Emergeはフック@code{emerge-startup-hook}を実行します。
 @iftex
-@xref{Hooks,,, emacs, the Emacs Manual}.
+@ref{Hooks,,, emacs, the Emacs Manual}を参照してください。
 @end iftex
 @ifnottex
-@xref{Hooks}.
+@ref{Hooks}を参照してください。
 @end ifnottex

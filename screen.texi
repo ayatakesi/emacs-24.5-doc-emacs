@@ -1,3 +1,8 @@
+@c ===========================================================================
+@c
+@c This file was generated with po4a. Translate the source file.
+@c
+@c ===========================================================================
 @c This is part of the Emacs manual.
 @c Copyright (C) 1985-1987, 1993-1995, 1997, 2001-2015 Free Software
 @c Foundation, Inc.
@@ -7,58 +12,32 @@
 @cindex screen
 @cindex frame
 
-  On a graphical display, such as on GNU/Linux using the X Window
-System, Emacs occupies a ``graphical window''.  On a text terminal,
-Emacs occupies the entire terminal screen.  We will use the term
-@dfn{frame} to mean a graphical window or terminal screen occupied by
-Emacs.  Emacs behaves very similarly on both kinds of frames.  It
-normally starts out with just one frame, but you can create additional
-frames if you wish (@pxref{Frames}).
+  Xウィンドウシステムを使うGNU/Linuxのようなグラフィカルなディスプレーの場合、Emacsは``グラフィカルなウィンドウ''に表示されます。テキスト端末の場合、Emacsは端末スクリーン全体を表示領域として使います。Emacsが占有する画面スクリーンや、グラフィカルなウィンドウを指して、@dfn{フレーム(frame)}という用語を使用します。Emacsの振る舞いは、どちらのフレームでも同じです。通常は1個のフレームだけで始まりますが、必要ならば新たにフレームを作れます(@ref{Frames}を参照してください)。
 
-  Each frame consists of several distinct regions.  At the top of the
-frame is a @dfn{menu bar}, which allows you to access commands via a
-series of menus.  On a graphical display, directly below the menu bar
-is a @dfn{tool bar}, a row of icons that perform editing commands if
-you click on them.  At the very bottom of the frame is an @dfn{echo
-area}, where informative messages are displayed and where you enter
-information when Emacs asks for it.
+  それぞれのフレームにはいくつかの領域が含まれています。いちばん上のフレームは@dfn{メニューバー(menu
+bar)}で、メニューにある一連のコマンドにアクセスできます。グラフィカルなディスプレーでは、メニューバーのすぐ下に@dfn{ツールバー(tool
+bar)}があり、アイコンをクリックすることにより編集コマンドを実行できます。いちばん下のフレームは@dfn{エコーエリア(echo
+area)}で、メッセージが表示されたり、Emacsが入力を求める際に使用されます。
 
-  The main area of the frame, below the tool bar (if one exists) and
-above the echo area, is called @dfn{the window}.  Henceforth in this
-manual, we will use the word ``window'' in this sense.  Graphical
-display systems commonly use the word ``window'' with a different
-meaning; but, as stated above, we refer to those ``graphical windows''
-as ``frames''.
+  (もしあれば)ツールバーの下とエコーエリアの間の、フレームの主要な領域の部分を、@dfn{ウィンドウ(the
+window)}といいます。このマニュアルでは``ウィンドウ''という言葉を、上記のような場合に使います。グラフィカルなディスプレーのシステムでは、``ウィンドウ''という言葉を違う意味で用いますが、上述したとおり、そのような``グラフィカルなウィンドウ''のことは、``フレーム''と呼ぶことにします。
 
-  An Emacs window is where the @dfn{buffer}---the text you are
-editing---is displayed.  On a graphical display, the window possesses
-a @dfn{scroll bar} on one side, which can be used to scroll through
-the buffer.  The last line of the window is a @dfn{mode line}.  This
-displays various information about what is going on in the buffer,
-such as whether there are unsaved changes, the editing modes that are
-in use, the current line number, and so forth.
+  Emacsのウィンドウには、@dfn{バッファー(buffer)} --- 編集中のテキスト ---
+が表示されます。グラフィカルなディスプレーでは、ウィンドウの片側に@dfn{スクロールバー(scroll
+bar)}あり、これを使ってバッファー内をスクロールできます。ウィンドウのいちばん下の行は、@dfn{モードライン(mode
+line)}です。これには保存されてない変更や、使用されている編集モード、現在のライン番号など、バッファーについての様々な情報が表示されます。
 
-  When you start Emacs, there is normally only one window in the
-frame.  However, you can subdivide this window horizontally or
-vertically to create multiple windows, each of which can independently
-display a buffer (@pxref{Windows}).
+  Emacsを起動すると、通常フレームには1つのウィンドウが表示されます。しかしこのウィンドウを水平方向、または垂直方向に分割して複数のウィンドウを作成し、それぞれ異なるバッファーを表示することもできます(@ref{Windows}を参照してください)。
 
-  At any time, one window is the @dfn{selected window}.  On a
-graphical display, the selected window shows a more prominent cursor
-(usually solid and blinking); other windows show a less prominent
-cursor (usually a hollow box).  On a text terminal, there is only one
-cursor, which is shown in the selected window.  The buffer displayed
-in the selected window is called the @dfn{current buffer}, and it is
-where editing happens.  Most Emacs commands implicitly apply to the
-current buffer; the text displayed in unselected windows is mostly
-visible for reference.  If you use multiple frames on a graphical
-display, selecting a particular frame selects a window in that frame.
+  どんな時でも、1つのウィンドウが@dfn{選択されたウィンドウ(selected
+window)}となります。グラフィカルなディスプレーでは、選択されたウィンドウには目立つカーソル(通常は塗りつぶされて点滅している)が表示され、他のウィンドウには目立たないカーソル(通常はぬりつぶされていない四角)が表示されます。テキスト端末では、選択されたウィンドウのカーソルだけが表示されます。選択されたウィンドウ上に表示されているバッファーを、@dfn{カレントバッファー(current
+buffer)}と呼び、それが編集が行われているバッファーとなります。多くのEmacsコマンドはカレントバッファーに暗黙に適用され、選択されてないウィンドウに表示されているテキストは参照用に使用します。もしグラフィカルなディスプレーで複数のフレームを使っている場合、特定のフレームを選択すると、そのフレームのウィンドウが選択されます。
 
 @menu
-* Point::             The place in the text where editing commands operate.
-* Echo Area::         Short messages appear at the bottom of the screen.
-* Mode Line::         Interpreting the mode line.
-* Menu Bar::          How to use the menu bar.
+* Point::                    テキスト内で編集コマンドが作用する場所
+* Echo Area::                スクリーンのいちばん下で、短いメッセージが表示されます
+* Mode Line::                モードを説明するライン
+* Menu Bar::                 メニューバーの使い方
 @end menu
 
 @node Point
@@ -66,259 +45,126 @@ display, selecting a particular frame selects a window in that frame.
 @cindex point
 @cindex cursor
 
-  The cursor in the selected window shows the location where most
-editing commands take effect, which is called @dfn{point}@footnote{The
-term ``point'' comes from the character @samp{.}, which was the
-command in TECO (the language in which the original Emacs was written)
-for accessing the editing position.}.  Many Emacs commands move point
-to different places in the buffer; for example, you can place point by
-clicking mouse button 1 (normally the left button) at the desired
-location.
+  カーソルは、選択されたウィンドウで多くの編集コマンドが作用する場所を示し、その場所を@dfn{ポイント(point)}@footnote{``point''という用語は、文字@samp{.}に由来します。この文字は、現在ポイントと呼んでいる値を参照するためのTECO(オリジナルのEmacsを記述していた言語)のコマンドです。}と呼びます。多くのEmacsコマンドはポイントをテキスト中で移動し、テキスト中のさまざまな箇所で編集できるようにします。マウスのボタン1(通常は左ボタン)をクリックしても、ポイントを移動できます。
 
-  By default, the cursor in the selected window is drawn as a solid
-block and appears to be @emph{on} a character, but you should think of
-point as @emph{between} two characters; it is situated @emph{before}
-the character under the cursor.  For example, if your text looks like
-@samp{frob} with the cursor over the @samp{b}, then point is between
-the @samp{o} and the @samp{b}.  If you insert the character @samp{!}
-at that position, the result is @samp{fro!b}, with point between the
-@samp{!}  and the @samp{b}.  Thus, the cursor remains over the
-@samp{b}, as before.
+  デフォルトでは、選択されたウィンドウ上にある、塗りつぶされたボックスのカーソルは文字の@emph{上}に表示されますが、ポイントは2つの文字の@emph{間}にあると考える必要があります。つまりポイントは、カーソルが重なっている文字の@emph{前}にあります。たとえば、@samp{frob}というテキストで、@samp{b}にカーソルがある場合、ポイントは@samp{o}と@samp{b}の間にあります。その位置に@samp{!}という文字を挿入すると、@samp{fro!b}という結果になり、ポイントは@samp{!}と@samp{b}の間にあります。つまりカーソルは@samp{b}の上にあり、実行前と同じです。
+ 
 
-  If you are editing several files in Emacs, each in its own buffer,
-each buffer has its own value of point.  A buffer that is not
-currently displayed remembers its value of point if you later display
-it again.  Furthermore, if a buffer is displayed in multiple windows,
-each of those windows has its own value of point.
+  Emacsでいくつかのファイルを編集して、各ファイルがそれぞれ専用のバッファーにある場合、各バッファには独自のポイント位置があります。バッファーが表示されていなくても、後で表示されるときに備えて、ポイント位置を記録しています。1つのフレームに複数のウィンドウがある場合、各ウィンドウには独自のポイント位置があります。
 
-  @xref{Cursor Display}, for options that control how Emacs displays
-the cursor.
+  Emacsがカーソルをどのように表示するか制御する方法については、@ref{Cursor Display}を参照してください。
 
 @node Echo Area
 @section The Echo Area
 @cindex echo area
 
-  The line at the very bottom of the frame is the @dfn{echo area}.  It
-is used to display small amounts of text for various purposes.
+  フレームの1番下の行は、@dfn{エコーエリア(echo area)}です。ここは、いろいろな目的向けの短いテキスト表示に使われます。
 
 @cindex echoing
-  The echo area is so-named because one of the things it is used for
-is @dfn{echoing}, which means displaying the characters of a
-multi-character command as you type.  Single-character commands are
-not echoed.  Multi-character commands (@pxref{Keys}) are echoed if you
-pause for more than a second in the middle of a command.  Emacs then
-echoes all the characters of the command so far, to prompt you for the
-rest.  Once echoing has started, the rest of the command echoes
-immediately as you type it.  This behavior is designed to give
-confident users fast response, while giving hesitant users maximum
-feedback.
+  エコーエリアという名前は、あなたが打った文字が@dfn{エコーされる}ことが由来で、これは複数の文字からなるコマンドが表示されることを意味します。1文字のコマンドをエコーすることはありません。複数の文字からなるコマンド(@ref{Keys}を参照してください)の途中で、入力中に1秒以上間を置くとエコーされます。Emacsはそれまでに入力されたコマンドの文字を表示し、ユーザーに残りの文字の入力を促します。いったんエコーが始まると、コマンドの残りは、打つと同時にただちにエコーされます。これは、タイプに自信のあるユーザーには速い応答を提供する一方で、自信のないユーザーには最大限のフィードバックを与えるための機能です。
 
 @cindex error message
 @cindex echo area message
-  The echo area is also used to display an @dfn{error message} when a
-command cannot do its job.  Error messages may be accompanied by
-beeping or by flashing the screen.
+  エコーエリアは、コマンドを実行できなかったときに、@dfn{エラーメッセージ(error
+message)}を表示するためにも使用されます。エラーメッセージと共に、ビープ音が鳴ったり、画面が点滅する場合もあります。
 
-  Some commands display informative messages in the echo area to tell
-you what the command has done, or to provide you with some specific
-information.  These @dfn{informative} messages, unlike error messages,
-are not accompanied with a beep or flash.  For example, @kbd{C-x =}
-(hold down @key{Ctrl} and type @kbd{x}, then let go of @key{Ctrl} and
-type @kbd{=}) displays a message describing the character at point,
-its position in the buffer, and its current column in the window.
-Commands that take a long time often display messages ending in
-@samp{...} while they are working (sometimes also indicating how much
-progress has been made, as a percentage), and add @samp{done} when
-they are finished.
+  エコーエリアに有用なメッセージを表示するコマンドもあります。これらの@dfn{有用}なメッセージは、エラーメッセージによく似ていますが、ビープ音を伴わず点滅もしません。たとえば、コマンド@kbd{C-x
+=}(@key{Ctrl}を押したまま@kbd{x}をタイプし、@key{Ctrl}を離してから@kbd{=}をタイプします)は、テキスト中のポイントの文字位置と、ウィンドウの現在の列位置を示すメッセージを表示します。処理に時間のかかるコマンドでは、実行中に@samp{...}(どの程度進行したかをパーセント表示で示す場合もあります)で終わるメッセージをエコーエリアに表示し、完了時には@samp{done}を最後に付け加えることがよくあります。
 
 @cindex @file{*Messages*} buffer
 @cindex saved echo area messages
 @cindex messages saved from echo area
 @vindex message-log-max
-  Informative echo area messages are saved in a special buffer named
-@file{*Messages*}.  (We have not explained buffers yet; see
-@ref{Buffers}, for more information about them.)  If you miss a
-message that appeared briefly on the screen, you can switch to the
-@file{*Messages*} buffer to see it again.  The @file{*Messages*}
-buffer is limited to a certain number of lines, specified by the
-variable @code{message-log-max}.  (We have not explained variables
-either; see @ref{Variables}, for more information about them.)  Beyond
-this limit, one line is deleted from the beginning whenever a new
-message line is added at the end.
+  エコーエリアに表示される有益なメッセージは、@file{*Messages*}と呼ばれる特別なバッファーに保存されます(まだバッファーについては説明していませんが、詳細は@ref{Buffers}を参照してください)。画面上に短時間しか表示されないメッセージを見逃してしまった場合には、@file{*Messages*}バッファーに切り替えて、もう一度そのメッセージを見ることができます。@file{*Messages*}のサイズは、ある行数に制限されています。変数@code{message-log-max}は、その行数を指定します(まだ変数については説明していませんが、詳細は@ref{Variables}を参照してください)。いったんバッファーがこの行数を超えると、最後に1行加わるごとに先頭の1行を削除します。
 
-  @xref{Display Custom}, for options that control how Emacs uses the
-echo area.
+  Emacsがエコーエリアをどのように使用するか制御するオプションについては、@ref{Display Custom}を参照してください。
 
 @cindex minibuffer
-  The echo area is also used to display the @dfn{minibuffer}, a
-special window where you can input arguments to commands, such as the
-name of a file to be edited.  When the minibuffer is in use, the text
-displayed in the echo area begins with a @dfn{prompt string}, and the
-active cursor appears within the minibuffer, which is temporarily
-considered the selected window.  You can always get out of the
-minibuffer by typing @kbd{C-g}.  @xref{Minibuffer}.
+  エコーエリアは@dfn{ミニバッファー(minibuffer)}の表示にも使われます。これは、編集しようとするファイル名のような、コマンドへの引数を読むのに使われるウィンドウです。ミニバッファーが使用されているとき、エコーエリアには@dfn{プロンプト文字列(prompt
+string)}で始まるテキストが表示され、エコーエリアが一時的に選択されたウィンドウとなり、カーソルもその行に表示されます。@kbd{C-g}を打つと、いつでもミニバッファーから抜けられます。@ref{Minibuffer}を参照してください。
 
 @node Mode Line
 @section The Mode Line
 @cindex mode line
 @cindex top level
 
-  At the bottom of each window is a @dfn{mode line}, which describes
-what is going on in the current buffer.  When there is only one
-window, the mode line appears right above the echo area; it is the
-next-to-last line in the frame.  On a graphical display, the mode line
-is drawn with a 3D box appearance.  Emacs also usually draws the mode
-line of the selected window with a different color than that of
-unselected windows, in order to make it stand out.
+  ウィンドウの最後の行は@dfn{モードライン(mode
+line)}で、そのウィンドウで何が進行しているか表示します。ウィンドウが1つしかない場合、モードラインはエコーエリアのすぐ上に表示されます。フレームでは最後から2番目の行になります。グラフィカルなディスプレーでは、モードラインは立体的に描画されます。通常、Emacsは目立つように選択されたウィンドウのモードラインを、選択されていないウィンドウと異なるカラーで描画します。
 
-  The text displayed in the mode line has the following format:
+  モードラインに表示されるテキストは以下の書式です:
 
 @example
  @var{cs}:@var{ch}-@var{fr}  @var{buf}      @var{pos} @var{line}   (@var{major} @var{minor})
 @end example
 
 @noindent
-On a text terminal, this text is followed by a series of dashes
-extending to the right edge of the window.  These dashes are omitted
-on a graphical display.
+テキスト端末では、上記テキストの後ろからウィンドウの右端まで一連のダッシュ表示されます。これらのダッシュはグラフィカルなディスプレーでは省略されます。
 
-The @var{cs} string and the colon character after it describe the
-character set and newline convention used for the current buffer.
-Normally, Emacs automatically handles these settings for you, but it
-is sometimes useful to have this information.
+@var{cs}とその後ろのコロンは、カレントバッファーのキャラクターセットと改行の規則を説明しています。通常Emacsはこれらの設定を自動的に処理しますが、このメッセージが便利なときもあります。
 
-  @var{cs} describes the character set of the text in the buffer
-(@pxref{Coding Systems}).  If it is a dash (@samp{-}), that indicates
-no special character set handling (with the possible exception of
-end-of-line conventions, described in the next paragraph).  @samp{=}
-means no conversion whatsoever, and is usually used for files
-containing non-textual data.  Other characters represent various
-@dfn{coding systems}---for example, @samp{1} represents ISO Latin-1.
+  @var{cs}はバッファーのキャラクターセットを説明します(@ref{Coding
+Systems}を参照してください)。もしこれがダッシュ(@samp{-})の場合、特定のキャラクターセットの処理が行われていないことを意味します(例外として、以降で説明する行末規則があります)。@samp{=}の場合は、変換が行われていないことを意味し、通常はテキストに非テキストデータが含まれているときに使用されます。他の文字はさまざまな@dfn{コーディングシステム(coding
+systems)} --- たとえば@samp{1}はISO Latin-1を表します。
 
-  On a text terminal, @var{cs} is preceded by two additional
-characters that describe the coding systems for keyboard input and
-terminal output.  Furthermore, if you are using an input method,
-@var{cs} is preceded by a string that identifies the input method
-(@pxref{Input Methods}).
+  テキスト端末では@var{cs}の前に追加で2つの文字が表示され、それによりキーボード入力と端末出力のコーディングシステムが示されます。さらに何らかの入力メソッドを使用している場合は、@var{cs}の前に入力メソッドを識別する文字列が表示されます(@ref{Input
+Methods}を参照してください)。
 
 @cindex end-of-line convention, mode-line indication
-  The character after @var{cs} is usually a colon.  If a different
-string is displayed, that indicates a nontrivial end-of-line
-convention for encoding a file.  Usually, lines of text are separated
-by @dfn{newline characters} in a file, but two other conventions are
-sometimes used.  The MS-DOS convention uses a ``carriage-return''
-character followed by a ``linefeed'' character; when editing such
-files, the colon changes to either a backslash (@samp{\}) or
-@samp{(DOS)}, depending on the operating system.  Another convention,
-employed by older Macintosh systems, uses a ``carriage-return''
-character instead of a newline; when editing such files, the colon
-changes to either a forward slash (@samp{/}) or @samp{(Mac)}.  On some
-systems, Emacs displays @samp{(Unix)} instead of the colon for files
-that use newline as the line separator.
+  @var{cs}の後ろの文字は、通常コロンです。もし違う文字が表示されている場合、それはファイルのエンコーディングに特別な行末規則が使われていることを意味します。通常ファイル内のテキストの各行は@dfn{改行文字(newline
+characters)}で区切られていますが、他の2つの規則が使われる場合もあります。MS-DOSのファイルを編集する場合には``キャリッジリターン(carriage-return)''と``ラインフィード(linefeed)''が使われ、コロンではなくバックスラッシュ(@samp{\})または@samp{(DOS)}(オペレーティングシステムに依存する)が表示されます。古いマッキントッシュシステムのファイルでは、改行文字の代わりに``キャリッジリターン(carriage-return)''が使われ、そのような場合コロンではなくスラッシュ(@samp{/})または@samp{(Mac)}が表示されます。いくつかのシステムでは行の区切りとして改行文字を使う場合、コロンではなく@samp{(Unix)}と表示されます。
 
-  The next element on the mode line is the string indicated by
-@var{ch}.  This shows two dashes (@samp{--}) if the buffer displayed
-in the window has the same contents as the corresponding file on the
-disk; i.e., if the buffer is ``unmodified''.  If the buffer is
-modified, it shows two stars (@samp{**}).  For a read-only buffer, it
-shows @samp{%*} if the buffer is modified, and @samp{%%} otherwise.
+  モードラインの次の要素は@var{ch}で示される文字列です。2つのダッシュ(@samp{--})が表示されている場合、ウィンドウに表示されているバッファーとディスク上のファイルの内容が同じことを意味し、たとえばバッファーが``未変更(unmodified)''の場合です。バッファーが変更されている場合には2つの星印(@samp{**})が表示されます。読み出し専用のバッファーの場合には、バッファーが編集されている場合には@samp{%*}になり、バッファーが編集されていない場合には@samp{%%}となります。
 
-  The character after @var{ch} is normally a dash (@samp{-}).
-However, if the default-directory for the current buffer is on a
-remote machine, @samp{@@} is displayed instead (@pxref{File Names}).
+  通常、@var{ch}の後ろの文字はダッシュ(@samp{-})です。しかしカレントバッファーのデフォルトディレクトリーがリモートマシン上にある場合、かわりに@samp{@@}が表示されます(@ref{File
+Names}を参照してください)。
 
-  @var{fr} gives the selected frame name (@pxref{Frames}).  It appears
-only on text terminals.  The initial frame's name is @samp{F1}.
+  @var{fr}は選択されているフレームの名前です(@ref{Frames}を参照してください)。これはテキスト端末でだけ表示されます。フレーム名の初期値は@samp{F1}です。
 
-  @var{buf} is the name of the buffer displayed in the window.
-Usually, this is the same as the name of a file you are editing.
-@xref{Buffers}.
+  @var{buf}は、ウィンドウに表示されているバッファーの名前です。通常は編集中のファイル名と同じです。@ref{Buffers}を参照してください。
 
-  @var{pos} tells you whether there is additional text above the top
-of the window, or below the bottom.  If your buffer is small and all
-of it is visible in the window, @var{pos} is @samp{All}.  Otherwise,
-it is @samp{Top} if you are looking at the beginning of the buffer,
-@samp{Bot} if you are looking at the end of the buffer, or
-@samp{@var{nn}%}, where @var{nn} is the percentage of the buffer above
-the top of the window.  With Size Indication mode, you can display the
-size of the buffer as well.  @xref{Optional Mode Line}.
+  @var{pos}はウィンドウの上またはウィンドウの下に、まだテキストがあるかを知らせます。もしバッファーが小さくてウィンドウに全体が表示されている場合、@var{pos}には@samp{All}が表示されます。そうではなくバッファーの一部が表示されているときには、バッファーの先頭が表示されている場合には@samp{Top}、バッファーの最後が表示されている場合には@samp{Bot}、@samp{@var{nn}%}と表示されている場合、@var{nn}はウィンドウの上部がバッファーのどこかをパーセント表示したものです。Size
+Indication(サイズ表示)モードでは、バッファー全体のサイズを表示できます。
 
-  @var{line} is the character @samp{L} followed by the line number at
-point.  (You can display the current column number too, by turning on
-Column Number mode.  @xref{Optional Mode Line}.)
+  @var{line}は、@samp{L}のあとに現在ポイントがある行の番号が続いたものです(Column
+Number(列番号)モードをオンにすると、現在の列番号も表示できます。@ref{Optional Mode Line}を参照してください)。
 
-  @var{major} is the name of the @dfn{major mode} used in the buffer.
-A major mode is a principal editing mode for the buffer, such as Text
-mode, Lisp mode, C mode, and so forth.  @xref{Major Modes}.  Some
-major modes display additional information after the major mode name.
-For example, Compilation buffers and Shell buffers display the status
-of the subprocess.
+  majorは、そのバッファの@dfn{メジャーモード(major
+mode)}の名前です。メジャーモードはバッファーを編集する際の主要なモードで、Textモード、Lispモード、Cモードなどがあります。@ref{Major
+Modes}を参照してください。メジャーモード名の後ろに追加の情報を表示するメジャーモードもあります。たとえばCompilation
+buffer(コンパイルバッファー)やShell buffer(Shellバッファー)などは、サブプロセスの状態を表示します。
 
-  @var{minor} is a list of some of the enabled @dfn{minor modes},
-which are optional editing modes that provide additional features on
-top of the major mode.  @xref{Minor Modes}.
+  @var{minor}は有効になっている@dfn{マイナーモード(minor
+modes)}の一覧で、上位のメジャーモードに追加の機能を提供するための編集モードです。@ref{Minor Modes}を参照してください。
 
-  Some features are listed together with the minor modes whenever they
-are turned on, even though they are not really minor modes.
-@samp{Narrow} means that the buffer being displayed has editing
-restricted to only a portion of its text (@pxref{Narrowing}).
-@samp{Def} means that a keyboard macro is currently being defined
-(@pxref{Keyboard Macros}).
+  いくつかの機能は、それらが本当はマイナーモードではなくても、有効になっていればマイナーモードの一覧とともに表示されます。@samp{Narrow}は、表示中のバッファーが、そのテキストの一部のみを編集するように制限されていることを示します(@ref{Narrowing}を参照してください)。@samp{Def}は、キーボードマクロを定義中であることを示します(@ref{Keyboard
+Macros}を参照してください)。
 
-  In addition, if Emacs is inside a recursive editing level, square
-brackets (@samp{[@dots{}]}) appear around the parentheses that
-surround the modes.  If Emacs is in one recursive editing level within
-another, double square brackets appear, and so on.  Since recursive
-editing levels affect Emacs globally, such square brackets appear in
-the mode line of every window.  @xref{Recursive Edit}.
+  さらにEmacsがリカーシブエディットにあるときには、モードを囲んでいるカッコの周りに角カッコ(@samp{[@dots{}]})が現れます。リカーシブエディット中も別のリカーシブエディットに入ると、角カッコは2重になります。リカーシブエディットは、特定のバッファにだけ関係するものではなく、Emacs全体に影響するので、角カッコはすべてのウィンドウのモード行に表示されるか、まったく表示されないのどちらかです。@ref{Recursive
+Edit}を参照してください。
 
-  You can change the appearance of the mode line as well as the format
-of its contents.  @xref{Optional Mode Line}.  In addition, the mode
-line is mouse-sensitive; clicking on different parts of the mode line
-performs various commands.  @xref{Mode Line Mouse}.
+  モードラインの外観は、その内容の書式と同様、変更できます。@ref{Optional Mode
+Line}を参照してください。さらにモードラインはマウスに反応します。モードラインの違う部分をクリックすることでさまざまなコマンドを実行できます。@ref{Mode
+Line Mouse}を参照してください。
 
 @node Menu Bar
 @section The Menu Bar
 @cindex menu bar
 
-  Each Emacs frame normally has a @dfn{menu bar} at the top which you
-can use to perform common operations.  There's no need to list them
-here, as you can more easily see them yourself.
+  各Emacsフレームには通常、最上部に@dfn{メニューバー(menu
+bar)}があり、よく使われる操作を実行するために使用できます。これはあなた自身で簡単に確かめられますから、ここではそれらを列挙する必要はないでしょう。
 
-  On a display that supports a mouse, you can use the mouse to choose a
-command from the menu bar.  An arrow on the right edge of a menu item
-means it leads to a subsidiary menu, or @dfn{submenu}.  A @samp{...}
-at the end of a menu item means that the command will prompt you for
-further input before it actually does anything.
+  マウスをサポートするディスプレー上では、マウスを使ってメニューバーからコマンドを選ぶことができます。メニューアイテムの後にある右矢印は、そのアイテムにサブメニューがあることを示します。アイテムの最後に@samp{...}がある場合は、コマンドを実際に実行する前に、そのコマンドがキーボードから引数を読み取ることを意味します。
 
-  Some of the commands in the menu bar have ordinary key bindings as
-well; if so, a key binding is shown in parentheses after the item
-itself.  To view the full command name and documentation for a menu
-item, type @kbd{C-h k}, and then select the menu bar with the mouse in
-the usual way (@pxref{Key Help}).
+  メニューのコマンドの中には、他のコマンドと同様、キーが割り当てられているものもあります。そのような場合、メニューのアイテムの後ろのカッコ内にキーバインディングが表示されます。メニューアイテムの完全なコマンド名や説明文を見るには、@kbd{C-h
+k}とタイプしてから、通常どおりにマウスでメニューバーを選択してください(@ref{Key Help}を参照してください)。
 
 @kindex F10
 @findex menu-bar-open
 @cindex menu bar access using keyboard
-  Instead of using the mouse, you can also invoke the first menu bar
-item by pressing @key{F10} (to run the command @code{menu-bar-open}).
-You can then navigate the menus with the arrow keys.  To activate a
-selected menu item, press @key{RET}; to cancel menu navigation, press
-@kbd{C-g} or @kbd{@key{ESC} @key{ESC} @key{ESC}}.
+  マウスを使う代わりに@key{F10}(コマンド@code{menu-bar-open}を実行します)を押せば、メニューバーの最初のアイテムを呼び出すことができます。その後は矢印キーでメニュー操作できます。選択されたメニューアイテムを起動するときは@key{RET}、メニュー操作をキャンセルするときは@kbd{C-g}か@kbd{@key{ESC}
+@key{ESC} @key{ESC}}を押します。
 
 @kindex M-`
 @findex tmm-menubar
 @vindex tty-menu-open-use-tmm
-  On a text terminal, you can optionally access the menu-bar menus in
-the echo area.  To this end, customize the variable
-@code{tty-menu-open-use-tmm} to a non-@code{nil} value.  Then typing
-@key{F10} will run the command @code{tmm-menubar} instead of dropping
-down the menu.  (You can also type @kbd{M-`}, which always invokes
-@code{tmm-menubar}.)  @code{tmm-menubar} lets you select a menu item
-with the keyboard.  A provisional choice appears in the echo area.
-You can use the up and down arrow keys to move through the menu to
-different items, and then you can type @key{RET} to select the item.
-Each menu item is also designated by a letter or digit (usually the
-initial of some word in the item's name).  This letter or digit is
-separated from the item name by @samp{==>}.  You can type the item's
-letter or digit to select the item.
+  テキスト端末では、エコーエリアからメニューバーのメニューにアクセスすることもできます。これを行うには、変数@code{tty-menu-open-use-tmm}をカスタマイズして、非@code{nil}値にします。その後は@key{F10}をタイプするとメニューをドロップダウンせずに、コマンド@code{tmm-menubar}が実行されます(@kbd{M-`}は常に@code{tmm-menubar}を呼び出します)。@code{tmm-menubar}では、キーボードでメニューアイテムを選択できます。暫定的な候補がエコーエリアに表示されるので、上矢印か下矢印でメニューの異なるアイテムを表示し、@key{RET}を押せばアイテムを選択できます。各メニューアイテムを文字か数字で指定することもできます(通常メニューアイテム名のイニシャル)。この文字または数字とアイテム名は@samp{==>}で区切られています。アイテムの文字または数字を押せばアイテムを選択することができます。

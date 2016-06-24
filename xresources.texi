@@ -1,3 +1,8 @@
+@c ===========================================================================
+@c
+@c This file was generated with po4a. Translate the source file.
+@c
+@c ===========================================================================
 @c This is part of the Emacs manual.
 @c Copyright (C) 1987, 1993-1995, 1997, 2001-2015 Free Software
 @c Foundation, Inc.
@@ -5,30 +10,26 @@
 @node X Resources
 @appendix X Options and Resources
 
-  You can customize some X-related aspects of Emacs behavior using X
-resources, as is usual for programs that use X.
+  Xを使用するプログラムにたいして通常行なうように、Xリソースを使用してEmacsのXに関連する外観をカスタマイズできます。
 
-  When Emacs is compiled with GTK+ support, the appearance of various
-graphical widgets, such as the menu-bar, scroll-bar, and dialog boxes,
-is determined by
+  EmacsがGTK+サポートつきでコンパイルされている場合、メニューバー、スクロールバー、ダイアログボックスなどの、さまざまなグラフィカルウィジェットの外観は
 @ifnottex
-``GTK resources'', which we will also describe.
+``GTKリソース''で決定されるので、これについても説明します。
 @end ifnottex
 @iftex
-``GTK resources''.
+``GTKリソース''で決定されます。
 @end iftex
-When Emacs is built without GTK+ support, the appearance of these
-widgets is determined by additional X resources.
+EmacsがGTK+のサポートなしでビルドされた場合、これらのウィジェットの外観は追加のXリソースにより決定されます。
 
-  On MS-Windows, you can customize some of the same aspects using the
-system registry (@pxref{MS-Windows Registry}).
+  MS-Windowsでは、システムレジストリー(@ref{MS-Windows
+Registry}を参照してください)を使用して、いくつかの外観を同じようにカスタマイズできます。
 
 @menu
-* Resources::           Using X resources with Emacs (in general).
-* Table of Resources::  Table of specific X resources that affect Emacs.
-* Lucid Resources::     X resources for Lucid menus.
-* Motif Resources::     X resources for Motif and LessTif menus.
-* GTK resources::       Resources for GTK widgets.
+* Resources::                EmacsでXリソースを使用する(概説)。
+* Table of Resources::       Emacsに影響する特定のXリソースの表。
+* Lucid Resources::          LucidメニューにたいするXリソース。
+* Motif Resources::          MotifおよびLessTifメニューにたいするXリソース。
+* GTK resources::            GTKウィジェットにたいするリソース。
 @end menu
 
 @node Resources
@@ -38,279 +39,204 @@ system registry (@pxref{MS-Windows Registry}).
 @cindex @file{~/.Xdefaults} file
 @cindex @file{~/.Xresources} file
 
-  Programs running under the X Window System organize their user
-options under a hierarchy of classes and resources.  You can specify
-default values for these options in your @dfn{X resource file},
-usually named @file{~/.Xdefaults} or @file{~/.Xresources}.  Changes in
-this file do not take effect immediately, because the X server stores
-its own list of resources; to update it, use the command
-@command{xrdb}---for instance, @samp{xrdb ~/.Xdefaults}.
+  Xウィンドウシステムの下で実行されているプログラムは、クラスとリソースの階層の下にユーザーオプションを組織化します。これらのオプションにたいして、@dfn{Xリソースファイル(X
+resource
+file)}でデフォルト値を指定できます。Xリソースファイルは、通常@file{~/.Xdefaults}または@file{~/.Xresources}という名前です。このファイルの内容を変更しても、変更は即座に効果をもちません。これはXサーバーが独自にリソースのリストを保持しているからです。これを更新するには、たとえば@samp{xrdb
+~/.Xdefaults}のように、コマンド@command{xrdb}を使用します。
 
 @cindex registry, setting resources (MS-Windows)
-  (MS-Windows systems do not support X resource files; on such systems,
-Emacs looks for X resources in the Windows Registry, first under the
-key @samp{HKEY_CURRENT_USER\SOFTWARE\GNU\Emacs}, which affects only
-the current user and override the system-wide settings, and then under
-the key @samp{HKEY_LOCAL_MACHINE\SOFTWARE\GNU\Emacs}, which affects
-all users of the system.  The menu and scroll bars are native widgets
-on MS-Windows, so they are only customizable via the system-wide
-settings in the Display Control Panel.  You can also set resources
-using the @samp{-xrm} command line option, as explained below.)
+  (MS-WindowsシステムはXリソースファイルをサポートしません。そのようなシステムでは、EmacsはWindowsレジストリーの中からXリソースを探します。最初にキー@samp{HKEY_CURRENT_USER\SOFTWARE\GNU\Emacs}の下を探します。これはカレントユーザーだけに影響し、システムワイドなセッティングをオーバーライドします。次にキー@samp{HKEY_LOCAL_MACHINE\SOFTWARE\GNU\Emacs}の下を探します。これはシステムのすべてのユーザーに影響します。メニューとスクロールバーは、MS-Windowsのネイティブなウィジェットなので、Display
+Control
+Panelのシステムワイドなセッティングからしかカスタマイズできません。以下で説明するように、コマンドラインオプション@samp{-xrm}を使用して、リソースをセットすることもできます。)
 
-  Each line in the X resource file specifies a value for one option or
-for a collection of related options.  The order in which the lines
-appear in the file does not matter.  Each resource specification
-consists of a @dfn{program name} and a @dfn{resource name}.  Case
-distinctions are significant in each of these names.  Here is an
-example:
+  Xリソースファイルの各行は、1つのオプション、または関連するオプションのコレクションにたいして値を指定します。ファイル内で行が出現する順番に意味はありません。各リソース指定は、@dfn{プログラム名(program
+name)}と@dfn{リソース名(resource name)}から構成されます。これらの名前の大文字小文字は区別されます。以下は例です:
 
 @example
 emacs.cursorColor: dark green
 @end example
 
-  The program name is the name of the executable file to which the
-resource applies.  For Emacs, this is normally @samp{emacs}.  To
-specify a definition that applies to all instances of Emacs,
-regardless of the name of the Emacs executable, use @samp{Emacs}.
+  プログラム名は、そのリソースが適用される実行可能ファイルの名前です。Emacsでは通常、@samp{emacs}です。Emacsの実行可能ファイル名の如何にかかわらずに、Emacsのすべてのインスタンスに適用される定義を指定するには、@samp{Emacs}を使用します。
 
-  The resource name is the name of a program setting.  For instance,
-Emacs recognizes a @samp{cursorColor} resource that controls the color
-of the text cursor.
+  リソース名はプログラムセッティングの名前です。たとえばEmacsは、@samp{cursorColor}リソースを、テキストカーソルのカラーを制御するリソースと認識します。
 
-  Resources are grouped into named classes.  For instance, the
-@samp{Foreground} class contains the @samp{cursorColor},
-@samp{foreground} and @samp{pointerColor} resources (@pxref{Table of
-Resources}).  Instead of using a resource name, you can use a class
-name to specify the default value for all resources in that class,
-like this:
+  リソースは、名前のついたクラスにグループ化されます。たとえば@samp{Foreground}クラスには、リソース@samp{cursorColor}、@samp{foreground}、@samp{pointerColor}が含まれます(@ref{Table
+of
+Resources}を参照してください)。以下のように、リソース名を使用するかわりに、クラス内のすべてのリソースにたいしてデフォルト値を指定するのに、クラス名を使用できます:
 
 @example
 emacs.Foreground: dark green
 @end example
 
-  Emacs does not process X resources at all if you set the variable
-@code{inhibit-x-resources} to a non-@code{nil} value.  If you invoke
-Emacs with the @samp{-Q} (or @samp{--quick}) command-line option,
-@code{inhibit-x-resources} is automatically set to @code{t}
-(@pxref{Initial Options}).
+  変数@code{inhibit-x-resources}を非@code{nil}値にセットした場合、EmacsはXリソースを処理しません。コマンドラインオプション@samp{-Q}
+(または@samp{--quick})でEmacsを呼び出した場合、@code{inhibit-x-resources}は自動的に@code{t}にセットされます(@ref{Initial
+Options}を参照してください)。
 
 @ifnottex
-  In addition, you can use the following command-line options to
-override the X resources file:
+  これに加えて、Xリソースファイルをオーバーライドするために、以下のコマンドラインオプションが使用できます:
 
 @table @samp
 @item -name @var{name}
 @opindex --name
 @itemx --name=@var{name}
 @cindex resource name, command-line argument
-This option sets the program name of the initial Emacs frame to
-@var{name}.  It also sets the title of the initial frame to
-@var{name}.  This option does not affect subsequent frames.
+このオプションは初期Emacsフレームのプログラム名を@var{name}にセットします。これは初期フレームのタイトルも@var{name}にセットします。このオプションは、それ以降のフレームには影響しません。
 
-If you don't specify this option, the default is to use the Emacs
-executable's name as the program name.
+このオプションを指定しない場合、プログラム名としてEmacs実行可能ファイル名をデフォルトとして使用されます。
 
-For consistency, @samp{-name} also specifies the name to use for other
-resource values that do not belong to any particular frame.
+整合性のため、@samp{-name}は、特定のフレームに属さない、他のリソース値にたいして使用する名前も指定します。
 
-The resources that name Emacs invocations also belong to a class,
-named @samp{Emacs}.  If you write @samp{Emacs} instead of
-@samp{emacs}, the resource applies to all frames in all Emacs jobs,
-regardless of frame titles and regardless of the name of the
-executable file.
+Emacs呼び出しの名前がつくリソースは、@samp{Emacs}という名前のクラスにも所属します。@samp{emacs}のかわりに@samp{Emacs}と記述した場合、実行可能ファイル名にかかわらず、そのリソースは、すべてのEmacsジョブのすべてのフレームに適用されます。
 
 @item -xrm @var{resource-values}
 @opindex --xrm
 @itemx --xrm=@var{resource-values}
 @cindex resource values, command-line argument
-This option specifies X resource values for the present Emacs job.
+このオプションは、現在のEmacsジョブにたいして、Xリソース値を指定します。
 
-@var{resource-values} should have the same format that you would use
-inside a file of X resources.  To include multiple resource
-specifications in @var{resource-values}, put a newline between them,
-just as you would in a file.  You can also use @samp{#include
-"@var{filename}"} to include a file full of resource specifications.
-Resource values specified with @samp{-xrm} take precedence over all
-other resource specifications.
+@var{resource-values}は、Xリソースファイルの内部で使用するのと同じ形式をもつ必要があります。@var{resource-values}に複数のリソース指定を含めるには、ファイルに記述するときのように、リソース間に改行を置きます。ファイルのリソース指定をすべてインクルードするために、@samp{#include
+"@var{filename}"}を使用することもできます。@samp{-xrm}で指定されたリソース値は、他のすべてのリソース指定に優先します。
 @end table
 @end ifnottex
 
 @node Table of Resources
 @appendixsec Table of X Resources for Emacs
 
-  This table lists the X resource names that Emacs recognizes,
-excluding those that control the appearance of graphical widgets like
-the menu bar:
+  以下の表は、メニューバーのようなグラフィカルなウィジェットの外観を制御するものを除いた、Emacsが認識するXリソース名です:
 
 @table @asis
 @item @code{background} (class @code{Background})
-Background color (@pxref{Colors}).
+バックグラウンドカラーです(@ref{Colors}を参照してください)。
 
 @item @code{bitmapIcon} (class @code{BitmapIcon})
-Tell the window manager to display the Emacs icon if @samp{on}; don't
-do so if @samp{off}.  @xref{Icons X}, for a description of the icon.
+@samp{on}のときはEmacsアイコンを表示し、@samp{off}のときは表示しないように、ウィンドウマネージャーに指示します。アイコンの説明は、@ref{Icons
+X}を参照してください。
 
 @ifnottex
 @item @code{borderColor} (class @code{BorderColor})
-Color of the frame's external border.  This has no effect if Emacs is
-compiled with GTK+ support.
+フレームの外枠ボーダーのカラーです。EmacsがGTK+サポートつきでコンパイルされている場合、効果はありません。
 
 @item @code{borderWidth} (class @code{BorderWidth})
-Width of the frame's external border, in pixels.  This has no effect
-if Emacs is compiled with GTK+ support.
+フレームの外枠ボーダーの幅(ピクセル)です。EmacsがGTK+サポートつきでコンパイルされている場合、効果はありません。
 @end ifnottex
 
 @item @code{cursorColor} (class @code{Foreground})
-Text cursor color.  If this resource is specified when Emacs starts
-up, Emacs sets its value as the background color of the @code{cursor}
-face (@pxref{Faces}).
+テキストカーソルのカラーです。Emacs開始時にこのリソースが指定されている場合、Emacsはその値を@code{cursor}フェイス(@ref{Faces}を参照してください)のバックグラウンドカラーとしてセットします。
 
 @item @code{cursorBlink} (class @code{CursorBlink})
-If the value of this resource is @samp{off} or @samp{false} or
-@samp{0} at startup, Emacs disables Blink Cursor mode (@pxref{Cursor
-Display}).
+開始時に、このリソースの値が@samp{off}、@samp{false}、@samp{0}の場合、EmacsはBlink
+Cursorモードを無効にします(@ref{Cursor Display}を参照してください)。
 
 @item @code{font} (class @code{Font})
-Font name for the @code{default} face (@pxref{Fonts}).  You can also
-specify a fontset name (@pxref{Fontsets}).
+@code{default}フェイスにたいするフォント名です(@ref{Fonts}を参照してください)。フォントセット名(@ref{Fontsets}を参照してください)を指定することもできます。
 
 @item @code{fontBackend} (class @code{FontBackend})
-Comma-delimited list of backend(s) to use for drawing fonts, in order
-of precedence.  For instance, the value @samp{x,xft} tells Emacs to
-draw fonts using the X core font driver, falling back on the Xft font
-driver if that fails.  Normally, you should leave this resource unset,
-in which case Emacs tries using all available font backends.
+フォントの描画に使用するバックエンドを、優先順にカンマ区切りで記述したリストです。たとえば値@samp{x,xft}は、EmacsにXコアフォントドライバー(X
+core font driver)を使用してフォントを描画し、それに失敗したときはXftフォントドライバー(Xft font
+driver)にフォールバックするよう指示します。このリソースは通常、セットしないでおくべきです。その場合、Emacsは利用可能なすべてのバックエンドの使用を試みます。
 
 @item @code{foreground} (class @code{Foreground})
 Default foreground color for text.
 
 @item @code{geometry} (class @code{Geometry})
-Window size and position.  The value should be a size and position
-specification, of the same form as in the @samp{-g} or
-@samp{--geometry} command-line option (@pxref{Window Size X}).
+ウィンドウのサイズと位置です。値にはコマンドラインオプション@samp{-g}または@samp{--geometry}と同じ形式で、サイズと位置を指定します。
 
-The size applies to all frames in the Emacs session, but the position
-applies only to the initial Emacs frame (or, in the case of a resource
-for a specific frame name, only that frame).
+サイズはEmacsセッションのすべてのフレームに適用されますが、位置は初期フレーム(特定のフレームにたいするリソースの場合は、そのフレーム)だけに適用されます。
 
 
-Be careful not to specify this resource as @samp{emacs*geometry}, as
-that may affect individual menus as well as the main Emacs frame.
+このリソースを、@samp{emacs*geometry}のように指定しないように気をつけてください。これはEmacsのメインのフレームと同じように、個別のメニューにも影響します。
 
 @item @code{fullscreen} (class @code{Fullscreen})
-The desired fullscreen size.  The value can be one of @code{fullboth},
-@code{maximized}, @code{fullwidth} or @code{fullheight}, which
-correspond to the command-line options @samp{-fs}, @samp{-mm},
-@samp{-fw}, and @samp{-fh} (@pxref{Window Size X}).  Note that this
-applies to the initial frame only.
+望ましいフルスクリーンサイズを指定します。値は@code{fullboth}、@code{maximized}、@code{fullwidth}、@code{fullheight}のうちどれか1つを指定でき、これらはコマンドラインオプションの@samp{-fs}、@samp{-mm}、@samp{-fw}、@samp{-fh}に相当します(@ref{Window
+Size X}を参照してください)。これは初期フレームだけに適用されることに注意してください。
 
 @ifnottex
 @item @code{iconName} (class @code{Title})
-Name to display in the icon.
+アイコンに表示する名前です。
 
 @item @code{internalBorder} (class @code{BorderWidth})
-Width of the internal frame border, in pixels.
+フレームの内枠ボーダーの幅(ピクセル)です。
 @end ifnottex
 
 @item @code{lineSpacing} (class @code{LineSpacing})
 @cindex line spacing
-Additional space between lines, in pixels.
+行間の追加のスペース(ピクセル)です。
 
 @item @code{menuBar} (class @code{MenuBar})
 @cindex menu bar
-If the value of this resource is @samp{off} or @samp{false} or
-@samp{0}, Emacs disables Menu Bar mode at startup (@pxref{Menu Bars}).
+このリソースの値が@samp{off}、@samp{false}、@samp{0}の場合、Emacsは開始時にMenu
+Barモードを無効にします(@ref{Menu Bars}を参照してください)。
 
 @ifnottex
 @item @code{minibuffer} (class @code{Minibuffer})
-If @samp{none}, Emacs will not make a minibuffer in this frame; it
-will use a separate minibuffer frame instead.
+@samp{none}の場合、Emacsはこのフレームにミニバッファーを作成しません。かわりに別のミニバッファーフレームを使用します。
 
 @item @code{paneFont} (class @code{Font})
 @cindex font for menus
-Font name for menu pane titles, in non-toolkit versions of Emacs.
+ツールキット版ではない、Emacsのメニューのタイトルのフォント名です。
 @end ifnottex
 
 @item @code{pointerColor} (class @code{Foreground})
-Color of the mouse cursor.  This has no effect in many graphical
-desktop environments, as they do not let Emacs change the mouse cursor
-this way.
+マウスカーソルのカラーです。多くのグラフィカルなデスクトップ環境では、この方法でEmacsがマウスカーソルを変更するのを許さないので、効果はありません。
 
 @ifnottex
 @item @code{privateColormap} (class @code{PrivateColormap})
-If @samp{on}, use a private color map, in the case where the ``default
-visual'' of class PseudoColor and Emacs is using it.
+@samp{on}の場合、Emacsが使用するクラスPseudoColorの``default
+visual''が使用されている場所で、プライベートなカラーマップを使用します。
 
 @item @code{reverseVideo} (class @code{ReverseVideo})
-Switch foreground and background default colors if @samp{on}, use colors as
-specified if @samp{off}.
+@samp{on}の場合はデフォルトのフォア九ラウンドカラーとバックグラウンドカラーを切り替え、@samp{off}の場合は指定されたカラーを使用します。
 
 @item @code{screenGamma} (class @code{ScreenGamma})
 @cindex gamma correction
-Gamma correction for colors, equivalent to the frame parameter
-@code{screen-gamma}.
+カラーのガンマ補正で、フレームパラメーターの@code{screen-gamma}と等価です。
 
 @item @code{scrollBarWidth} (class @code{ScrollBarWidth})
 @cindex scrollbar width
-The scroll bar width in pixels, equivalent to the frame parameter
-@code{scroll-bar-width}.  Do not set this resource if Emacs is
-compiled with GTK+ support.
+スクロールバーの幅(ピクセル)で、フレームパラメーターの@code{scroll-bar-width}と等価です。EmacsがGTK+サポートつきでコンパイルされている場合は、このリソースをセットしないでください。
 @end ifnottex
 
 @ifnottex
 @item @code{selectionFont} (class @code{SelectionFont})
-Font name for pop-up menu items, in non-toolkit versions of Emacs.  (For
-toolkit versions, see @ref{Lucid Resources}, also see @ref{Motif
-Resources}.)
+ツールキット版でないEmacsの、ポップアップメニューのフォント名です(ツールキット版の場合は@ref{Lucid
+Resources}と@ref{Motif Resources}を参照してください)。
 
 @item @code{selectionTimeout} (class @code{SelectionTimeout})
-Number of milliseconds to wait for a selection reply.
-If the selection owner doesn't reply in this time, we give up.
-A value of 0 means wait as long as necessary.
+選択にたいする応答を待つ時間(ミリ秒)です。選択したオーナーが、この時間内に応答しない場合は諦めます。値0は必要なだけ待つことを意味します。
 
 @item @code{synchronous} (class @code{Synchronous})
 @cindex debugging X problems
 @cindex synchronous X mode
-Run Emacs in synchronous mode if @samp{on}.  Synchronous mode is
-useful for debugging X problems.
+@samp{on}の場合、Emacsを同期モード(synchronous mode)で実行します。同期モードはXに関する問題のデバッグに有用です。
 @end ifnottex
 
 @item @code{title} (class @code{Title})
-Name to display in the title bar of the initial Emacs frame.
+初期Emacsフレームのタイトルバーに表示する名前です。
 
 @item @code{toolBar} (class @code{ToolBar})
 @cindex tool bar
-If the value of this resource is @samp{off} or @samp{false} or
-@samp{0}, Emacs disables Tool Bar mode at startup (@pxref{Tool Bars}).
+このリソースの値が@samp{off}、@samp{false}、@samp{0}の場合、Emacsは開始時にTool
+Barモードを無効にします(@ref{Tool Bars}を参照してください)。
 
 @item @code{useXIM} (class @code{UseXIM})
 @cindex XIM
 @cindex X input methods
 @cindex input methods, X
-Disable use of X input methods (XIM) if @samp{false} or @samp{off}.
-This is only relevant if your Emacs is built with XIM support.  It
-might be useful to turn off XIM on slow X client/server links.
+@samp{false}または@samp{off}の場合、X入力メソッド(XIM: X input
+methods)の使用を無効にします。これはEmacsがXIMサポートつきでビルドされた場合だけ関係があります。Xのクライアント/サーバーのリンクが遅いときは、XIMをオフにするのが便利かもしれません。
 
 @item @code{verticalScrollBars} (class @code{ScrollBars})
-Give frames scroll bars if @samp{on}; don't have scroll bars if
-@samp{off}.
+@samp{on}の場合はフレームはスクロールバーをもち、@samp{off}のときはスクロールバーをもちません。
 
 @ifnottex
 @item @code{visualClass} (class @code{VisualClass})
-The @dfn{visual class} for X color display.  If specified, the value
-should start with one of @samp{TrueColor}, @samp{PseudoColor},
-@samp{DirectColor}, @samp{StaticColor}, @samp{GrayScale}, and
-@samp{StaticGray}, followed by @samp{-@var{depth}}, where @var{depth}
-is the number of color planes.
+Xカラーディスプレーの@dfn{visual
+class}です。指定する場合、値は@samp{TrueColor}、@samp{PseudoColor}、@samp{DirectColor}、@samp{StaticColor}、@samp{GrayScale}、@samp{StaticGray}で始まり、その後に@samp{-@var{depth}}が続きます。ここで@var{depth}は色平面の数です。
 @end ifnottex
 @end table
 
-  You can also use X resources to customize individual Emacs faces
-(@pxref{Faces}).  For example, setting the resource
-@samp{@var{face}.attributeForeground} is equivalent to customizing the
-@samp{foreground} attribute of the face @var{face}.  However, we
-recommend customizing faces from within Emacs, instead of using X
-resources.  @xref{Face Customization}.
+  特定のEmacsフェイスのカスタマイズに、Xリソースを使用することもできます(@ref{Faces}を参照してください)。たとえば@samp{@var{face}.attributeForeground}をセットするのは、フェイス@var{face}の@samp{foreground}属性をカスタマイズするのと等価です。しかし、わたしたちはXリソースを使用してフェイスのカスタマイズするかわりに、Emacs内でフェイスをカスタマイズする方法を推奨します。@ref{Face
+Customization}を参照してください。
 
 @ifnottex
 @node Lucid Resources
@@ -319,55 +245,42 @@ resources.  @xref{Face Customization}.
 @cindex Dialog X Resources (Lucid widgets)
 @cindex Lucid Widget X Resources
 
-  If Emacs is compiled with the X toolkit support using Lucid widgets,
-you can use X resources to customize the appearance of the menu bar,
-pop-up menus, and dialog boxes.  The resources for the menu bar fall
-in the @samp{pane.menubar} class (following, as always, either the
-name of the Emacs executable or @samp{Emacs} for all Emacs
-invocations).  The resources for the pop-up menu are in the
-@samp{menu*} class.  The resources for dialog boxes are in the
-@samp{dialog*} class.
+  EmacsがLucidウィジェットを使用したXツールキットサポートつきでコンパイルされた場合、メニューバー、ポップアップメニュー、ダイアログボックスの外観をカスタマイズするために、Xリソースを使用できます。メニューバーにたいするリソースは、@samp{pane.menubar}クラスの中に集められています(例のごとくEmacs実行可能ファイル名または、すべてのEmacs呼び出しに対応する@samp{Emacs}の後に続けて記述します)。ポップアップメニューにたいするリソースは、@samp{menu*}クラスの中です。ダイアログボックスにたいするリソースは、@samp{dialog*}クラスの中です。
 
-  For example, to display menu bar entries with the @samp{Courier-12}
-font (@pxref{Fonts}), write this:
+  たとえばメニューバーエントリーを@samp{Courier-12}フォントで表示するには、以下のように記述します:
 
 @example
 Emacs.pane.menubar.font: Courier-12
 @end example
 
 @noindent
-Lucid widgets can display multilingual text in your locale.  To enable
-this, specify a @code{fontSet} resource instead of a @code{font}
-resource.  @xref{Fontsets}.  If both @code{font} and @code{fontSet}
-resources are specified, the @code{fontSet} resource is used.
+Lucidウィジェットは、あなたのlocaleで他国語テキストを表示できます。これを有効にするには、@code{font}リソースのかわりに、@code{fontSet}リソースを指定します。@code{font}と@code{fontSet}の両方のリソースが指定された場合は、@code{fontSet}リソースが使用されます。
 
-Here is a list of resources for menu bars, pop-up menus, and dialogs:
+以下はメニューバー、ポップアップメニュー、ダイアログにたいするリソースのリストです:
 
 @table @code
 @item font
-Font for menu item text.
+メニューアイテムのテキストにたいするフォントです。
 @item fontSet
-Fontset for menu item text.
+メニューアイテムのテキストにたいするフォントセットです。
 @item foreground
-Foreground color.
+フォアグラウンドカラーです。
 @item background
-Background color.
+バックグラウンドカラーです。
 @item buttonForeground
-Foreground color for a selected item.
+選択されたアイテムのフォアグラウンドカラーです。
 @ifnottex
 @item horizontalSpacing
-Horizontal spacing in pixels between items.  Default is 3.
+アイテム間の水平間隔(ピクセル)です。デフォルトは3です。
 @item verticalSpacing
-Vertical spacing in pixels between items.  Default is 2.
+アイテム間の垂直間隔(ピクセル)です。デフォルトは2です。
 @item arrowSpacing
-Horizontal spacing between the arrow (which indicates a submenu) and
-the associated text.  Default is 10.
+(サブメニューを示す)矢印と、それに付随するテキストの間の水平間隔です。デフォルトは10です。
 @item shadowThickness
-Thickness of shadow lines for 3D buttons, arrows, and other graphical
-elements.  Default is 1.
+3Dのボタン、矢印、その他グラフィカルな要素の陰線(shadow lines)の厚さです。デフォルトは1です。
 @end ifnottex
 @item margin
-Margin of the menu bar, in characters.  Default is 1.
+メニューバーの余白(文字数)です。デフォルトは1です。
 @end table
 
 @node Motif Resources
@@ -375,109 +288,90 @@ Margin of the menu bar, in characters.  Default is 1.
 @cindex Menu X Resources (Motif widgets)
 @cindex Motif Widget X Resources
 
-  If Emacs is compiled with the X toolkit support using Motif or
-LessTif widgets, you can use X resources to customize the appearance
-of the menu bar, pop-up menus, and dialog boxes.  However, the
-resources are organized differently from Lucid widgets.
+  EmacsがMotifまたはLessTifのウィジェットを使用するXツールキットサポートつきでコンパイルされた場合、メニューバー、ポップアップメニュー、ダイアログボックスの外観をカスタマイズするために、Xリソースを使用できます。しかし、これらのリソースは、Lucidウィジェットとは組織方法が異なります。
 
-  The resource names for the menu bar are in the @samp{pane.menubar}
-class, and they must be specified in this form:
+  メニューバーにたいするリソース名は@samp{pane.menubar}クラスの中にあり、それらは以下の形式で指定しなければなりません:
 
 @smallexample
 Emacs.pane.menubar.@var{subwidget}.@var{resource}:  @var{value}
 @end smallexample
 
 @noindent
-For pop-up menus, the resources are in the @samp{menu*} class, instead
-of @samp{pane.menubar}.  For dialog boxes, they are in @samp{dialog}.
-In each case, each individual menu string is a subwidget; the
-subwidget's name is the same as the menu item string.  For example,
-the @samp{File} menu in the menu bar is a subwidget named
-@samp{emacs.pane.menubar.File}.
+ポップアップメニューにたいするリソースは、@samp{pane.menubar}ではなく、@samp{menu*}クラスの中にあります。ダイアログボックスにたいするリソースは@samp{dialog}クラスの中です。どの場合でも、それぞれのメニュー文字列がサブウィジェットです。サブウィジェットの名前は、メニューアイテム文字列と同じです。たとえば、メニューバーの中の@samp{File}メニューは、@samp{emacs.pane.menubar.File}という名前のサブウィジェットです。
 
-  Typically, you want to specify the same resources for the whole menu
-bar.  To do this, use @samp{*} instead of a specific subwidget name.
-For example, to specify the font @samp{8x16} for all menu bar items,
-including submenus, write this:
+  通常は、メニューバー全体に同じリソースを指定したいでしょう。これを行なうには、特定のウィジェット名のかわりに@samp{*}を使用します。たとえば、サブメニューを含むすべてのメニューバーアイテムに、フォント@samp{8x16}を指定するには、以下のように記述します:
 
 @smallexample
 Emacs.pane.menubar.*.fontList:  8x16
 @end smallexample
 
-  Each item in a submenu also has its own name for X resources; for
-example, the @samp{File} submenu has an item named @samp{Save (current
-buffer)}.  A resource specification for a submenu item looks like
-this:
+  サブメニューの中の各アイテムは、Xリソースにたいする独自の名前をもちます。たとえば@samp{File}サブメニューは、@samp{Save
+(current buffer)}という名前のアイテムをもちます。サブメニューアイテムにたいするリソース指定は以下のようになります:
 
 @smallexample
 Emacs.pane.menubar.popup_*.@var{menu}.@var{item}.@var{resource}: @var{value}
 @end smallexample
 
 @noindent
-For example, here's how to specify the font for the @samp{Save (current
-buffer)} item:
+たとえば、以下は@samp{Save (current buffer)}アイテムにフォントを指定する方法です:
 
 @smallexample
 Emacs.pane.menubar.popup_*.File.Save (current buffer).fontList: 8x16
 @end smallexample
 
 @noindent
-For an item in a second-level submenu, such as @samp{Complete Word}
-under @samp{Spell Checking} under @samp{Tools}, the resource fits this
-template:
+@samp{Tools}の下の、@samp{Spell Checking}の下の@samp{Complete
+Word}のような、第2レベルのアイテムには、以下のテンプレートが当てはまります:
 
 @smallexample
 Emacs.pane.menubar.popup_*.popup_*.@var{menu}.@var{resource}: @var{value}
 @end smallexample
 
 @noindent
-For example,
+たとえば、
 
 @smallexample
 Emacs.pane.menubar.popup_*.popup_*.Spell Checking.Complete Word: @var{value}
 @end smallexample
 
 @noindent
-(This should be one long line.)
+(これは長い1行で記述する必要があります。)
 
-  If you want the submenu items to look different from the menu bar
-itself, you must first specify the resource for all of them, then
-override the value for submenus alone.  Here is an example:
+  サブメニューアイテムにメニューバー自体とは異なる外観を与えたい場合、最初にすべてにたいしてリソースを指定してから、そのサブメニューにたいする値をオーバーライドしなければなりません。以下は例です:
 
 @smallexample
 Emacs.pane.menubar.*.fontList:  8x16
 Emacs.pane.menubar.popup_*.fontList: 8x16
 @end smallexample
 
-  To specify resources for the LessTif file-selection box, use
-@samp{fsb*}, like this:
+  LessTifのファイル選択ボックスにたいしてリソースを指定するには、以下のように@samp{fsb*}を使用します:
 
 @example
 Emacs.fsb*.fontList: 8x16
 @end example
 
-  Here is a list of resources for LessTif menu bars and pop-up menus:
+  以下はLessTifのメニューバーとポップアップメニューにたいするリソースのリストです:
 
 @table @code
 @item armColor
-The color to show in an armed button.
+アームドボタン(armed button: 押されてまだ離されていないボタン)を表示するカラーです。
 @item fontList
-The font to use.
+使用するフォントです。
 @item marginBottom
 @itemx marginHeight
 @itemx marginLeft
 @itemx marginRight
 @itemx marginTop
 @itemx marginWidth
-Amount of space to leave around the item, within the border.
+アイテムの周囲に残すスペースの量を、ボーダーも含めて指定します。
 @item borderWidth
-The width of the border around the menu item, on all sides.
+メニューアイテムの各辺のボーダーの幅です。
 @item shadowThickness
-The width of the border shadow.
+ボーダーの影の幅です。
 @item bottomShadowColor
-The color for the border shadow, on the bottom and the right.
+ボーダーの影の底辺と右辺のカラーです。
 @item topShadowColor
-The color for the border shadow, on the top and the left.
+ボーダーの影の上辺と左辺のカラーです。
 @end table
 @end ifnottex
 
@@ -488,64 +382,37 @@ The color for the border shadow, on the top and the left.
 @cindex @file{~/.gtkrc-2.0} file
 @cindex @file{~/.emacs.d/gtkrc} file
 
-  If Emacs is compiled with GTK+ toolkit support, the simplest way to
-customize its GTK+ widgets (e.g., menus, dialogs, tool bars and
-scroll bars) is to choose an appropriate GTK+ theme, for example with
-the GNOME theme selector.
+  EmacsがGTK+サポートつきでコンパイルされた場合、EmacsのGTK+ウィジェット(例:
+メニュー、ダイアログ、ツールバー、スクロールバー)をカスタマイズする一番簡単な方法は、たとえばGNOME theme
+selectorなどで適切なGTK+テーマを選択する方法です。
 
-  In GTK+ version 2, you can also use @dfn{GTK+ resources} to
-customize the appearance of GTK+ widgets used by Emacs.  These
-resources are specified in either the file @file{~/.emacs.d/gtkrc}
-(for Emacs-specific GTK+ resources), or @file{~/.gtkrc-2.0} (for
-general GTK+ resources).  We recommend using @file{~/.emacs.d/gtkrc},
-since GTK+ seems to ignore @file{~/.gtkrc-2.0} when running GConf with
-GNOME@.  Note, however, that some GTK themes may override
-customizations in @file{~/.emacs.d/gtkrc}; there is nothing we can do
-about this.  GTK+ resources do not affect aspects of Emacs unrelated
-to GTK+ widgets, such as fonts and colors in the main Emacs window;
-those are governed by normal X resources (@pxref{Resources}).
+  GTK+バージョン2では、Emacsで使用されるGTK+ウィジェットの外観をカスタマイズするために、@dfn{GTK+リソース}も使用できます。これらのリソースは、ファイル@file{~/.emacs.d/gtkrc}(Emacs固有のGTK+リソース用)、またはファイル@file{~/.gtkrc-2.0}(一般的なGTK+リソース用)のどちらかで指定されます。GTK+は、GNOMEでGConfを実行するとき@file{~/.gtkrc-2.0}を無視するように思われるため、わたしたちは@file{~/.emacs.d/gtkrc}の使用を推奨します。しかし@file{~/.emacs.d/gtkrc}によるカスタマイズをオーバーライドするGTKテーマがあることに注意してください。これにたいして、わたしたちができることはありません。GTK+リソースは、EmacsのGTK+ウィジェットと関係のない側面、たとえばEmacsのメインウィンドウのフォントやカラーにたいしては影響しません。これらは通常のXリソースに管理されます(@ref{Resources}を参照してください)。
 
-  The following sections describe how to customize GTK+ resources for
-Emacs.  For details about GTK+ resources, see the GTK+ API document at
-@uref{http://developer.gnome.org/gtk2/stable/gtk2-Resource-Files.html}.
+  以下のセクションでは、EmacsにたいしてGTK+リソースをカスタマイズする方法を説明します。GTK+リソースについての詳細は、@uref{http://developer.gnome.org/gtk2/stable/gtk2-Resource-Files.html}のGTK+
+APIドキュメントを参照してください。
 
-  In GTK+ version 3, GTK+ resources have been replaced by a completely
-different system.  The appearance of GTK+ widgets is now determined by
-CSS-like style files: @file{gtk-3.0/gtk.css} in the GTK+ installation
-directory, and @file{~/.themes/@var{theme}/gtk-3.0/gtk.css} for local
-style settings (where @var{theme} is the name of the current GTK+
-theme).  Therefore, the description of GTK+ resources in this section
-does not apply to GTK+ 3.  For details about the GTK+ 3 styling
-system, see
-@uref{http://developer.gnome.org/gtk3/3.0/GtkCssProvider.html}.
+  GTK+バージョン3では、GTK+リソースは完全に異なるシステムに置き換えられました。GTK+ウィジェットの外観は、今やCSS-likeなスタイルのファイル、すなわちGTK+をインストールしたディレクトリーの@file{gtk-3.0/gtk.css}、およびローカルなスタイルセッティングにたいしては@file{~/.themes/@var{theme}/gtk-3.0/gtk.css}で決定されます(@var{theme}はカレントGTK+テーマの名前です)。したがってこのセクションのGTK+リソースの説明は、GTK+3に適合しません。GTK+3スタイリングシステムについての詳細は、@uref{http://developer.gnome.org/gtk3/3.0/GtkCssProvider.html}を参照してください。
 
 @menu
-* GTK Resource Basics::   Basic usage of GTK+ resources.
-* GTK Widget Names::      How GTK+ widgets are named.
-* GTK Names in Emacs::    GTK widgets used by Emacs.
-* GTK styles::            What can be customized in a GTK widget.
+* GTK Resource Basics::      GTK+リソースの基本的な使い方。
+* GTK Widget Names::         GTK+ウィジェットの命名方法。
+* GTK Names in Emacs::       Emacsが使用するGTK+ウィジェット。
+* GTK styles::               GTK+ウィジェットの何がカスタマイズできるか。
 @end menu
 
 @node GTK Resource Basics
 @appendixsubsec GTK Resource Basics
 
-  In a GTK+ 2 resource file (usually @file{~/.emacs.d/gtkrc}), the
-simplest kinds of resource settings simply assign a value to a
-variable.  For example, putting the following line in the resource
-file changes the font on all GTK+ widgets to @samp{courier-12}:
+  GTK+2リソースファイル(通常は@file{~/.emacs.d/gtkrc})で、リソースをセットする一番簡単な方法は、単に変数に値を割り当てる方法です。たとえば以下の行を利ソースファイルに置くことにより、すべてのGTK+ウィジェットのフォントが@samp{courier-12}に変更されます:
 
 @smallexample
 gtk-font-name = "courier 12"
 @end smallexample
 
 @noindent
-Note that in this case the font name must be supplied as a GTK font
-pattern (also called a @dfn{Pango font name}), not as a
-Fontconfig-style font name or XLFD@.  @xref{Fonts}.
+この場合、フォント名はFontconfigスタイルのフォント名やXLFDではなく、GTKフォントパターン(@dfn{Pangoフォント名}とも呼ばれます)で記述しなければなりません。@ref{Fonts}を参照してください。
 
-  To customize widgets you first define a @dfn{style}, and then apply
-the style to the widgets.  Here is an example that sets the font for
-menus (@samp{#} characters indicate comments):
+  ウィジェットをカスタマイズするには、最初に@dfn{スタイル}を定義して、そのスタイルをウィジェットに適用します。以下はメニューにたいしてフォントをセットする例です(文字@samp{#}はコメントを示します):
 
 @smallexample
 # @r{Define the style @samp{my_style}.}
@@ -559,18 +426,13 @@ widget "*emacs-menuitem*" style "my_style"
 @end smallexample
 
 @noindent
-The widget name in this example contains wildcards, so the style is
-applied to all widgets matching @samp{*emacs-menuitem*}.  The widgets
-are named by the way they are contained, from the outer widget to the
-inner widget.  Here is another example that applies @samp{my_style}
-specifically to the Emacs menu bar:
+この例のウィジェット名にはワイルドカードが含まれるので、このスタイルは@samp{*emacs-menuitem*}にマッチするすべてのウィジェットに適用されます。ウィジェットは、外側のウィジェットから内側のウィジェットへと、それが含まれる方法により、名前がつけられます。以下はEmacsメニューバーに@samp{my_style}を指定して適用する例です:
 
 @smallexample
 widget "Emacs.pane.menubar.*" style "my_style"
 @end smallexample
 
-  Here is a more elaborate example, showing how to change the parts of
-the scroll bar:
+  以下はスクロールバーを部分的に変更する方法を示す、より複雑な例です:
 
 @smallexample
 style "scroll"
@@ -588,42 +450,26 @@ widget "*verticalScrollBar*" style "scroll"
 @appendixsubsec GTK widget names
 @cindex GTK widget names
 
-  A GTK+ widget is specified by a @dfn{widget name} and a @dfn{widget
-class}.  The widget name refers to a specific widget
-(e.g., @samp{emacs-menuitem}), while the widget class refers to a
-collection of similar widgets (e.g., @samp{GtkMenuItem}).  A widget
-always has a class, but need not have a name.
+  GTK+ウィジェットは@dfn{ウィジェット名(widget name)}と@dfn{ウィジェットクラス(widget
+class)}により指定されます。ウィジェット名は特定のウィジェット(たとえば@samp{emacs-menuitem})を参照し、ウィジェットクラスは似通ったウィジェット(たとえば@samp{GtkMenuItem})のコレクションを参照します。ウィジェットは常にクラスをもちますが、名前をもつ必要はありません。
 
-  @dfn{Absolute names} are sequences of widget names or widget
-classes, corresponding to hierarchies of widgets embedded within
-other widgets.  For example, if a @code{GtkWindow} named @code{top}
-contains a @code{GtkVBox} named @code{box}, which in turn contains
-a @code{GtkMenuBar} called @code{menubar}, the absolute class name
-of the menu-bar widget is @code{GtkWindow.GtkVBox.GtkMenuBar}, and
-its absolute widget name is @code{top.box.menubar}.
+  @dfn{絶対名(absolute
+names)}とは、一連のウィジェット名またはウィジェットクラスで、他のウィジェットに埋め込まれたウィジェットの階層に対応します。たとえば、@code{top}という名前の@code{GtkWindow}が、@code{box}という名前の@code{GtkVBox}を含み、それがさらに@code{menubar}という名前の@code{GtkMenuBar}を含む場合、メニューバーウィジェットの完全クラス名は@code{GtkWindow.GtkVBox.GtkMenuBar}で、完全ウィジェット名は@code{top.box.menubar}になります。
 
-  GTK+ resource files can contain two types of commands for specifying
-widget appearances:
+  GTK+リソースファイルには、ウィジェットの外観を指定する2種類のコマンドを含めることができます:
 
 @table @code
 @item widget
-specifies a style for widgets based on the class name, or just the
-class.
+クラス名または単にクラスにもとづいてウィジェットのスタイルを指定します。
 
 @item widget_class
-specifies a style for widgets based on the class name.
+クラス名にもとづいてウィジェットのスタイルを指定します。
 @end table
 
 @noindent
-See the previous subsection for examples of using the @code{widget}
-command; the @code{widget_class} command is used similarly.  Note that
-the widget name/class and the style must be enclosed in double-quotes,
-and these commands must be at the top level in the GTK+ resource file.
+@code{widget}コマンドを使用する例は、前のセクションを参照してください。@code{widget_class}コマンドも同じように使用されます。ウィジェット名/ウィジェットクラスとスタイルはダブルクォートで囲わなければならないこと、そしてこれらのコマンドはGTK+リソースファイルのトップレベルに記述しなければならないことに注意してください。
 
-  As previously noted, you may specify a widget name or class with
-shell wildcard syntax: @samp{*} matches zero or more characters and
-@samp{?} matches one character.  This example assigns a style to all
-widgets:
+  前に記したように、ウィジェット名とウィジェットクラスはシェルのワイルドカード構文で指定することができます。@samp{*}は0文字以上にマッチし、@samp{?}は1文字にマッチします。以下はすべてのウィジェットにスタイルを割り当てる例です:
 
 @smallexample
 widget "*" style "my_style"
@@ -634,7 +480,7 @@ widget "*" style "my_style"
 @cindex GTK widget names
 @cindex GTK widget classes
 
-  The GTK+ widgets used by an Emacs frame are listed below:
+  Emacsフレームが使用するGTK+ウィジェットを以下にリストします:
 
 @table @asis
 @item @code{Emacs} (class @code{GtkWindow})
@@ -661,25 +507,18 @@ widget "*" style "my_style"
 @end table
 
 @noindent
-The contents of Emacs windows are drawn in the @code{emacs} widget.
-Note that even if there are multiple Emacs windows, each scroll bar
-widget is named @code{verticalScrollBar}.
+Emacsウィンドウの内容は、@code{emacs}ウィジェットにより描画されます。複数のEmacsウィンドウがある場合でも、それぞれのスクロールバーウィジェットの名前は@code{verticalScrollBar}であることに注意してください。
 
-  For example, here are two different ways to set the menu bar style:
+  たとえば、以下はメニューバーのスタイルをセットする、2つの異なる方法の例です:
 
 @smallexample
 widget "Emacs.pane.menubar.*" style "my_style"
 widget_class "GtkWindow.GtkVBox.GtkMenuBar.*" style "my_style"
 @end smallexample
 
-  For GTK+ dialogs, Emacs uses a widget named @code{emacs-dialog}, of
-class @code{GtkDialog}.  For file selection, Emacs uses a widget named
-@code{emacs-filedialog}, of class @code{GtkFileSelection}.
+  GTK+ダイアログにたいしては、Emacsはクラス@code{GtkDialog}の、@code{emacs-dialog}という名前のウィジェットを使用します。ファイル選択にたいしては、Emacsはクラス@code{GtkFileSelection}の、@code{emacs-filedialog}という名前のウィジェットを使用します。
 
-  Because the widgets for pop-up menus and dialogs are free-standing
-windows and not ``contained'' in the @code{Emacs} widget, their GTK+
-absolute names do not start with @samp{Emacs}.  To customize these
-widgets, use wildcards like this:
+  ポップアップメニューとダイアログのウィジェットは独立したウィンドウであり、@code{Emacs}ウィジェットに``含まれ''ていないので、それらのGTK+完全名は@samp{Emacs}で始まりません。これらのウィジェットをカスタマイズするには、以下のようにワイルドカードを使用します:
 
 @smallexample
 widget "*emacs-dialog*" style "my_dialog_style"
@@ -687,7 +526,7 @@ widget "*emacs-filedialog* style "my_file_style"
 widget "*emacs-menuitem* style "my_menu_style"
 @end smallexample
 
-  If you want to apply a style to all menus in Emacs, use this:
+  Emacsのすべてのメニューにスタイルを適用したい場合は、以下を使用します:
 
 @smallexample
 widget_class "*Menu*" style "my_menu_style"
@@ -697,7 +536,7 @@ widget_class "*Menu*" style "my_menu_style"
 @appendixsubsec GTK styles
 @cindex GTK styles
 
-  Here is an example of two GTK+ style declarations:
+  以下は2つのGTK+スタイル宣言の例です:
 
 @smallexample
 pixmap_path "/usr/share/pixmaps:/usr/include/X11/pixmaps"
@@ -734,88 +573,56 @@ style "ruler" = "default"
 
 @end smallexample
 
-  The style @samp{ruler} inherits from @samp{default}.  This way you can build
-on existing styles.  The syntax for fonts and colors is described below.
+  スタイル@samp{ruler}は@samp{default}を継承します。この方法により、既存のスタイルを元にすることができます。フォントとカラーの構文は以下に記述されています。
 
-  As this example shows, it is possible to specify several values for
-foreground and background depending on the widget's @dfn{state}.  The
-possible states are:
+  この例が示すように、ウィジェットの@dfn{状態}にもとづいてフォアグラウンドとバックグラウンドのカラーに複数の値を指定することが可能です。以下の状態が利用できます:
 
 @table @code
 @item NORMAL
-This is the default state for widgets.
+ウィジェットのフォルトの状態です。
 @item ACTIVE
-This is the state for a widget that is ready to do something.  It is
-also for the trough of a scroll bar, i.e., @code{bg[ACTIVE] = "red"}
-sets the scroll bar trough to red.  Buttons that have been pressed but
-not released yet (``armed'') are in this state.
+ウィジェットが何かを行なう準備ができた状態です。これはスクロールバーの溝(trough)にも適用できます。たとえば@code{bg[ACTIVE] =
+"red"}はスクロールバーの溝を赤にセットします。ボタンが押されてまだ離されていない状態(``armed'')も、この状態です。
 @item PRELIGHT
-This is the state for a widget that can be manipulated, when the mouse
-pointer is over it---for example when the mouse is over the thumb in
-the scroll bar or over a menu item.  When the mouse is over a button
-that is not pressed, the button is in this state.
+マウスポインターがその上にきたとき、ウィジェットが操作可能な状態です ---
+たとえばマウスがスクロールバーのハンドルの上やメニューアイテムの上にきたときの状態です。押されていないボタンの上にマウスがくると、そのボタンはこの状態になります。
 @item SELECTED
-This is the state for data that has been selected by the user.  It can
-be selected text or items selected in a list.  This state is not used
-in Emacs.
+ユーザーにより選択されたデータにたいする状態です。それは選択されたテキストやリストの選択されたアイテムの場合もあります。この状態はEmacsでは使用されません。
 @item INSENSITIVE
-This is the state for widgets that are visible, but they can not be
-manipulated in the usual way---for example, buttons that can't be
-pressed, and disabled menu items.  To display disabled menu items in
-yellow, use @code{fg[INSENSITIVE] = "yellow"}.
+ウィジェットが可視だが通常の方法では操作できない状態 ---
+たとえば押せないボタンや、無効なメニューアイテムなどです。無効なメニューアイテムを黄色で表示するには、@code{fg[INSENSITIVE] =
+"yellow"}を使用します。
 @end table
 
-  Here are the things that can go in a style declaration:
+  以下をスタイル宣言に記述できます:
 
 @table @code
 @item bg[@var{state}] = @var{color}
-This specifies the background color for the widget.  Note that
-editable text doesn't use @code{bg}; it uses @code{base} instead.
+ウィジェットのバックグラウンドカラーを指定します。編集可能なテキストは@code{bg}ではなく@code{base}を使用することに注意してください。
 
 @item base[@var{state}] = @var{color}
-This specifies the background color for editable text.  In Emacs, this
-color is used for the background of the text fields in the file
-dialog.
+編集可能なテキストのバックグラウンドカラーを指定します。Emacsでは、ファイルダイアログのテキストフィールドのバックグラウンドに、このカラーが使用されます。
 
 @item bg_pixmap[@var{state}] = "@var{pixmap}"
-This specifies an image background (instead of a background color).
-@var{pixmap} should be the image file name.  GTK can use a number of
-image file formats, including XPM, XBM, GIF, JPEG and PNG@.  If you
-want a widget to use the same image as its parent, use
-@samp{<parent>}.  If you don't want any image, use @samp{<none>}.
-@samp{<none>} is the way to cancel a background image inherited from a
-parent style.
+(バックグラウンドカラーのかわりに)バックグラウンドイメージを指定します。@var{pixmap}はイメージファイル名です。GTKはXPM、XBM、GIF、JPEG、PNGヲ含む、いくつかのイメージファイルを使用することができます。親ウィジェットと同じイメージをウィジェットに使用したい場合は、@samp{<parent>}を使用します。イメージを使わない場合は、@samp{<none>}を使用します。@samp{<none>}で、親スタイルから継承されたバックグラウンドイメージをキャンセルできます。
 
-You can't specify the file by its absolute file name.  GTK looks for
-the pixmap file in directories specified in @code{pixmap_path}.
-@code{pixmap_path} is a colon-separated list of directories within
-double quotes, specified at the top level in a @file{gtkrc} file
-(i.e., not inside a style definition; see example above):
+ファイル名は絶対ファイル名で指定できません。GTKは@code{pixmap_path}で指定されたディレクトリーのpixmapファイルを探します。@code{pixmap_path}は、ダブルクォートされたファイルをコロンで区切ったリストで、@file{gtkrc}ファイルのトップレベルで指定します(スタイル定義の中ではありません。上記の例を参照してください)。
 
 @smallexample
 pixmap_path "/usr/share/pixmaps:/usr/include/X11/pixmaps"
 @end smallexample
 
 @item fg[@var{state}] = @var{color}
-This specifies the foreground color for widgets to use.  It is the
-color of text in menus and buttons, and the color for the arrows in
-the scroll bar.  For editable text, use @code{text}.
+使用するウィジェットのフォアグラウンドカラーを指定します。これはメニューやボタンのテキストのカラー、スクロールバーの矢印のカラーです。編集可能なテキストにたいしては、@code{text}を使用します。
 
 @item text[@var{state}] = @var{color}
-This is the color for editable text.  In Emacs, this color is used for the
-text fields in the file dialog.
+編集可能なテキストのカラーです。Emacsでは、ファイルダイアログのテキストフィールドに使用されるカラーです。
 
 @item font_name = "@var{font}"
-This specifies the font for text in the widget.  @var{font} is a
-GTK-style (or Pango) font name, like @samp{Sans Italic 10}.
-@xref{Fonts}.  The names are case insensitive.
+ウィジェット内のテキストのフォントを指定します。@var{font}は、@samp{Sans Italic
+10}のような、GTK(Pango)スタイルのフォント名です。@ref{Fonts}を参照してください。名前は大文字小文字を区別しません。
 @end table
 
-  There are three ways to specify a color: a color name, an RGB
-triplet, or a GTK-style RGB triplet.  @xref{Colors}, for a description
-of color names and RGB triplets.  Color names should be enclosed with
-double quotes, e.g., @samp{"red"}.  RGB triplets should be written
-without double quotes, e.g., @samp{#ff0000}.  GTK-style RGB triplets
-have the form @w{@code{@{ @var{r}, @var{g}, @var{b} @}}}, where
-@var{r}, @var{g} and @var{b} are either integers in the range 0--65535
-or floats in the range 0.0--1.0.
+  カラーを指定する3つの方法があります。それはカラーネーム、RGBトリプレット、GTKスタイルRGBトリプレットです。カラーネームとRGBトリプレットについては、@ref{Colors}を参照してください。カラーネームは@samp{"red"}のように、ダブルクォートで囲む必要があります。RGBトリプレットは@samp{#ff0000}のように、ダブルクォートで囲う必要がありません。GTKスタイルRGBトリプレットは@w{@code{@{
+@var{r}, @var{g}, @var{b}
+@}}}という形式をもち、@var{r}、@var{g}、@var{b}は、0から65535の整数か、0.0から1.0の浮動小数点数です。

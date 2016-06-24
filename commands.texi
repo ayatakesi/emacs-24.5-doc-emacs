@@ -1,3 +1,8 @@
+@c ===========================================================================
+@c
+@c This file was generated with po4a. Translate the source file.
+@c
+@c ===========================================================================
 @c This is part of the Emacs manual.
 @c Copyright (C) 1985-1987, 1993-1995, 1997, 2001-2015 Free Software
 @c Foundation, Inc.
@@ -5,10 +10,7 @@
 @iftex
 @chapter Characters, Keys and Commands
 
-  This chapter explains the character sets used by Emacs for input
-commands, and the fundamental concepts of @dfn{keys} and
-@dfn{commands}, whereby Emacs interprets your keyboard and mouse
-input.
+  この章では、Emacsがコマンド入力に使う文字セット、および@dfn{キー(keys)}と@dfn{コマンド(commands)}の基本的な概念と、それによってEmacsがどのようにキーボードやマウス入力を解釈するかを説明します。
 @end iftex
 
 @ifnottex
@@ -24,161 +26,91 @@ input.
 @cindex C-
 @cindex Control
 
-  GNU Emacs is primarily designed for use with the keyboard.  While it
-is possible to use the mouse to issue editing commands through the
-menu bar and tool bar, that is not as efficient as using the keyboard.
-Therefore, this manual mainly documents how to edit with the keyboard.
+  GNU
+Emacsは、主にキーボードを使うようにデザインされています。マウスを使ってメニューバーやツールバーの編集コマンドを実行することはできますが、キーボードを使う場合に比べて効率的ではありません。したがって、このマニュアルには主にキーボードで編集する方法を記します。
 
 @cindex control character
-  Keyboard input into Emacs is based on a heavily-extended version of
-@acronym{ASCII}.  Simple characters, like @samp{a}, @samp{B},
-@samp{3}, @samp{=}, and the space character (denoted as @key{SPC}),
-are entered by typing the corresponding key.  @dfn{Control
-characters}, such as @key{RET}, @key{TAB}, @key{DEL}, @key{ESC},
-@key{F1}, @key{Home}, and @key{LEFT}, are also entered this way, as
-are certain characters found on non-English keyboards
-(@pxref{International}).
+  Emacsにたいするキーボード入力は、@acronym{ASCII}を大きく拡張したバージョンが基本となっています。@samp{a}、@samp{B}、@samp{3}、@samp{=}や空白文字(@key{SPC})と表記します)などの単純な文字は、それぞれに対応するキーをタイプして入力します。@key{RET}、@key{TAB}、@key{DEL}、@key{ESC}、@key{F1}、@key{Home}、@key{LEFT}などの制御文字なども、この方法で入力できますし、非英語キーボードの特定の文字も同様です(@ref{International}を参照してください)。
 
 @cindex modifier keys
 @cindex Control
 @cindex C-
 @cindex META
 @cindex M-
-  Emacs also recognizes control characters that are entered using
-@dfn{modifier keys}.  Two commonly-used modifier keys are
-@key{Control} (usually labeled @key{Ctrl}), and @key{META} (usually
-labeled @key{Alt})@footnote{We refer to @key{Alt} as @key{META} for
-historical reasons.}.  For example, @kbd{Control-a} is entered by
-holding down the @key{Ctrl} key while pressing @kbd{a}; we will refer
-to this as @kbd{C-a} for short.  Similarly @kbd{@key{META}-a}, or @kbd{M-a}
-for short, is entered by holding down the @key{Alt} key and pressing
-@kbd{a}.  Modifier keys can also be applied to non-alphanumerical
-characters, e.g., @kbd{C-@key{F1}} or @kbd{M-@key{LEFT}}.
+  Emacsは@dfn{修飾キー(modifier
+keys)}を用いて入力された制御文字も認識します。よく使用される修飾キーは、@key{Control}(通常@key{Ctrl})というラベル)と、@key{META}(通常@key{Alt}@footnote{歴史的な理由により、@key{Alt}のことを@key{META}という名前で参照します。}というラベル)の2つです。たとえば、@kbd{Control-a}は@key{Ctrl}を押したままで@kbd{a}を押して入力しますが、これを短く@kbd{C-a}と記します。同様に、@kbd{@key{META}-a}または短く@kbd{M-a}は、@key{Alt}を押したまま@kbd{a}を押すことです。修飾キーは英数文字以外のキーにも適用できます。例:
+@kbd{C-@key{F1}}、@kbd{M-@key{LEFT}}
 
 @cindex @key{ESC} replacing @key{META} key
-  You can also type Meta characters using two-character sequences
-starting with @key{ESC}.  Thus, you can enter @kbd{M-a} by typing
-@kbd{@key{ESC} a}.  You can enter @kbd{C-M-a} by typing @kbd{@key{ESC}
-C-a}.  Unlike @key{META}, @key{ESC} is entered as a separate
-character.  You don't hold down @key{ESC} while typing the next
-character; instead, press @key{ESC} and release it, then enter the
-next character.  This feature is useful on certain text terminals
-where the @key{META} key does not function reliably.
+  @key{ESC}で始まる2文字キーシーケンスを使って、Meta文字を入力することもできます。したがって@kbd{M-a}を@kbd{@key{ESC}
+a}と入力することができます。@kbd{C-M-a}は@kbd{@key{ESC}
+C-a}と入力できます。@key{META}と違い、@key{ESC}は切り離された文字です。次の文字を押すとき@key{ESC}を押しっぱなしにするのではなく、@key{ESC}を押して離してから次の文字を入力します。この機能は@key{META}キーをあてにできない、一部のテキスト端末で有用です。
 
 @cindex keys stolen by window manager
 @cindex window manager, keys stolen by
-  On graphical displays, the window manager might block some keyboard
-inputs, including @kbd{M-@key{TAB}}, @kbd{M-@key{SPC}}, @kbd{C-M-d}
-and @kbd{C-M-l}.  If you have this problem, you can either customize
-your window manager to not block those keys, or ``rebind'' the
-affected Emacs commands (@pxref{Customization}).
+  グラフィカルなディスプレーでは、ウィンドウマネージャーが@kbd{M-@key{TAB}}、@kbd{M-@key{SPC}}、@kbd{C-M-d}、@kbd{C-M-l}などのキーボード入力をブロックするかもしれません。このような問題がある場合、ウィンドウマネージャーがこれらのキーをブロックしないようにカスタマイズしたり、影響を受けるEmacsのコマンドを``リバインド(rebind)''したりできます(@ref{Customization}を参照してください)。
 
 @cindex input event
-  Simple characters and control characters, as well as certain
-non-keyboard inputs such as mouse clicks, are collectively referred to
-as @dfn{input events}.  For details about how Emacs internally handles
-input events, see @ref{Input Events,,, elisp, The Emacs Lisp Reference
-Manual}.
+  単純な文字や制御文字、同様にマウスのクリックなどの非キーボード入力は、総じて@dfn{入力イベント(input
+events)}と呼ばれます。Emacsが内部で入力イベントをどのように処理するかについての詳細は、@ref{Input Events,,,
+elisp, The Emacs Lisp Reference Manual}を参照してください.
 
 @node Keys
 @section Keys
 
-  Some Emacs commands are invoked by just one input event; for
-example, @kbd{C-f} moves forward one character in the buffer.  Other
-commands take two or more input events to invoke, such as @kbd{C-x
-C-f} and @kbd{C-x 4 C-f}.
+  Emacsコマンドには、ただ1つの入力イベントで呼び出されるものが、いくつかあります。たとえば@kbd{C-f}はバッファーを1文字前方に移動します。他のコマンドは、@kbd{C-x
+C-f}や@kbd{C-x 4 C-f}のように、2つ以上の入力イベントにより呼び出されます。
 
 @cindex key
 @cindex key sequence
 @cindex complete key
 @cindex prefix key
-  A @dfn{key sequence}, or @dfn{key} for short, is a sequence of one
-or more input events that is meaningful as a unit.  If a key sequence
-invokes a command, we call it a @dfn{complete key}; for example,
-@kbd{C-f}, @kbd{C-x C-f} and @kbd{C-x 4 C-f} are all complete keys.
-If a key sequence isn't long enough to invoke a command, we call it a
-@dfn{prefix key}; from the preceding example, we see that @kbd{C-x}
-and @kbd{C-x 4} are prefix keys.  Every key sequence is either a
-complete key or a prefix key.
+  @dfn{キーシーケンス(key
+sequence)}、短く書くと@dfn{キー(key)}は、1つの単位として考えることのできる、1つまたはそれ以上の一連の入力イベントの集まりのことです。もし、あるキーシーケンスがコマンドを呼び出すような場合、それを@dfn{コンプリートキー(complete
+key)}と呼ぶことにします。たとえば@kbd{C-f}、@kbd{C-x C-f}、@kbd{C-x 4
+C-f}などはコンプリートキーです。もし、あるキーシーケンスがコマンドを呼び出すほど十分長くないとき、それを@dfn{プレフィクスキー(prefix
+key)}と呼ぶことにします。たとえば前の例でいうと、@kbd{C-x}や@kbd{C-x
+4}はプレフィクスキーです。すべてのキーシーケンスは、コンプリートキーかプレフィクスキーのどちらかになります。
 
-  A prefix key combines with the following input event to make a
-longer key sequence.  For example, @kbd{C-x} is a prefix key, so
-typing @kbd{C-x} alone does not invoke a command; instead, Emacs waits
-for further input (if you pause for longer than a second, it echoes
-the @kbd{C-x} key to prompt for that input; @pxref{Echo Area}).
-@kbd{C-x} combines with the next input event to make a two-event key
-sequence, which could itself be a prefix key (such as @kbd{C-x 4}), or
-a complete key (such as @kbd{C-x C-f}).  There is no limit to the
-length of key sequences, but in practice they are seldom longer than
-three or four input events.
+  プレフィクスキーは、その後の入力イベントと組み合わせて、もっと長いキーシーケンスを作るためのものです。たとえば@kbd{C-x}
+はプレフィクスキーなので、@kbd{C-x}と入力しただけではコマンドは呼び出されません。かわりにEmacsは更なる入力を待ちます(もし１秒以上入力がない場合、入力を促すために@kbd{C-x}がエコーされます。@ref{Echo
+Area}を参照してください)。@kbd{C-x}は、それに続く次の入力イベントと組み合わされる、2イベントのキーシーケンスで、それはプレフィクスキー(@kbd{C-x
+4})など)のときもあれば、コンプリートキー(@kbd{C-x
+C-f}など)のときもあります。キーシーケンスの長さに制限はありませんが、実際に3つ、4つ以上の入力イベントの場合は、ほとんどありません。
 
-  You can't add input events onto a complete key.  For example,
-because @kbd{C-f} is a complete key, the two-event sequence @kbd{C-f
-C-k} is two key sequences, not one.
+  コンプリートキーに入力イベントを付け加えることはできません。たとえば、@kbd{C-f}はコンプリートキーなので、2イベントのシーケンス@kbd{C-f
+C-k}は、1つではなく2つのキーシーケンスです。
 
-  By default, the prefix keys in Emacs are @kbd{C-c}, @kbd{C-h},
-@kbd{C-x}, @kbd{C-x @key{RET}}, @kbd{C-x @@}, @kbd{C-x a}, @kbd{C-x
-n}, @kbd{C-x r}, @kbd{C-x v}, @kbd{C-x 4}, @kbd{C-x 5}, @kbd{C-x 6},
-@key{ESC}, @kbd{M-g}, and @kbd{M-o}.  (@key{F1} and @key{F2} are
-aliases for @kbd{C-h} and @kbd{C-x 6}.)  This list is not cast in
-stone; if you customize Emacs, you can make new prefix keys.  You
-could even eliminate some of the standard ones, though this is not
-recommended for most users; for example, if you remove the prefix
-definition of @kbd{C-x 4}, then @kbd{C-x 4 C-f} becomes an invalid key
-sequence.  @xref{Key Bindings}.
+  デフォルトではEmacsのプレフィクスキーは@kbd{C-c}、@kbd{C-h}、@kbd{C-x}、@kbd{C-x
+@key{RET}}、@kbd{C-x @@}、@kbd{C-x a}、@kbd{C-x n}、@kbd{C-x r}、@kbd{C-x
+v}、@kbd{C-x 4}、@kbd{C-x 5}、@kbd{C-x
+6}、@key{ESC}、@kbd{M-g}、@kbd{M-o}です(@key{F1}と@key{F2}は、@kbd{C-h}と@kbd{C-x
+6}のエイリアスです)。このリストは不変のものではありません。Emacsをカスタマイズすれば、新しいプレフィクスキーを作ることができます。標準のプレフィクスキーを無効にすることさえできますが、これはほとんどのユーザーにたいして推奨はできません。たとえばプレフィクス定義@kbd{C-x
+4}を削除すると、@kbd{C-x 4 C-f}は無効なキーシーケンスになります。@ref{Key Bindings}を参照してください。
 
-  Typing the help character (@kbd{C-h} or @key{F1}) after a prefix key
-displays a list of the commands starting with that prefix.  The sole
-exception to this rule is @key{ESC}: @kbd{@key{ESC} C-h} is equivalent
-to @kbd{C-M-h}, which does something else entirely.  You can, however,
-use @key{F1} to display a list of commands starting with @key{ESC}.
+  プレフィックスキーのあとにヘルプ文字(@kbd{C-h}や@key{F1})を押すと、そのプレフィックスで始まるコマンド一覧を表示できます。唯一の例外は@key{ESC}です。@kbd{@key{ESC}
+C-h}は@kbd{C-M-h}と同じで、これは何かまったく別のことを行うコマンドです。しかし@key{F1}ならば、@key{ESC}で始まるコマンドの一覧を表示できます。
 
 @node Commands
 @section Keys and Commands
 
 @cindex binding
 @cindex command
-  This manual is full of passages that tell you what particular keys
-do.  But Emacs does not assign meanings to keys directly.  Instead,
-Emacs assigns meanings to named @dfn{commands}, and then gives keys
-their meanings by @dfn{binding} them to commands.
+  このマニュアルは、特定のキーが何を行うかを説明するページばかりです。しかし、Emacsは直接キーに意味を与えてはいません。そのかわりに、Emacsは名前を付けた@dfn{コマンド(commands)}に意味を持たせ、キーとコマンドを@dfn{バインディング(binding)}することによって、キーに意味を与えています。
 
-  Every command has a name chosen by a programmer.  The name is
-usually made of a few English words separated by dashes; for example,
-@code{next-line} or @code{forward-word}.  Internally, each command is
-a special type of Lisp @dfn{function}, and the actions associated with
-the command are performed by running the function.  @xref{What Is a
-Function,, What Is a Function, elisp, The Emacs Lisp Reference
-Manual}.
+  すべてのコマンドには、プログラマーが選んだ名前が付いています。名前は、たとえば@code{next-line}、@code{forward-word}のように、いくつかの英単語をダッシュで区切って作られます。内部的には、それぞれのコマンドはLispの@dfn{関数(function)}の特別な型で、コマンドに関連付けられたアクションは、関数を実行することによって機能します。@ref{What
+Is a Function,, What Is a Function, elisp, The Emacs Lisp Reference
+Manual}を参照してください。
 
-  The bindings between keys and commands are recorded in tables called
-@dfn{keymaps}.  @xref{Keymaps}.
+  キーとコマンドの間のバインディングは、@dfn{keymaps}というテーブルに記憶されます。@ref{Keymaps}を参照してください。
 
-  When we say that ``@kbd{C-n} moves down vertically one line'' we are
-glossing over a subtle distinction that is irrelevant in ordinary use,
-but vital for Emacs customization.  The command @code{next-line} does
-a vertical move downward.  @kbd{C-n} has this effect @emph{because} it
-is bound to @code{next-line}.  If you rebind @kbd{C-n} to the command
-@code{forward-word}, @kbd{C-n} will move forward one word instead.
+  ``@kbd{C-n}は下に1行動きます''という言い方は、通常の使用では関係ないが、Emacsをカスタマイズする上では重要になる点を隠蔽しています。1行下に移動するコマンドは@code{next-line}です。@kbd{C-n}が@code{next-line}にバインドされているから効果があるのです。もし@kbd{C-n}をコマンド@code{forward-word}にリバインドしたら、@kbd{C-n}で1語前方に動くことになります。
 
-  In this manual, we will often speak of keys like @kbd{C-n} as
-commands, even though strictly speaking the key is bound to a command.
-Usually we state the name of the command which really does the work in
-parentheses after mentioning the key that runs it.  For example, we
-will say that ``The command @kbd{C-n} (@code{next-line}) moves point
-vertically down'', meaning that the command @code{next-line} moves
-vertically down, and the key @kbd{C-n} is normally bound to it.
+  厳密に言えばキーはコマンドにバインドされているだけですが、このマニュアルでは@kbd{C-n}をコマンドであるかのような言い回しをするときがあります。そのようなときは、処理を実行させるキーの後ろに、本当に処理を行うコマンドの名前をカッコ内に記します。たとえば、``コマンド@kbd{C-n}
+(@code{next-line})は、ポイントを垂直下方に移動します''というときは、コマンド@code{next-line}がポイントを垂直下方に移動し、それは通常@kbd{C-n}にバインドされている、ということを意味します。
 
-  Since we are discussing customization, we should tell you about
-@dfn{variables}.  Often the description of a command will say, ``To
-change this, set the variable @code{mumble-foo}.''  A variable is a
-name used to store a value.  Most of the variables documented in this
-manual are meant for customization: some command or other part of
-Emacs examines the variable and behaves differently according to the
-value that you set.  You can ignore the information about variables
-until you are interested in customizing them.  Then read the basic
-information on variables (@pxref{Variables}) and the information about
-specific variables will make sense.
+  カスタマイズについて議論したので、@dfn{変数(variables)}にもふれておくべきでしょう。コマンドの説明で、``これを変更する場合、変数
+@code{mumble-foo}をセットしてください''というときがあります。変数とは、値を保存するときに使用する名前のことです。このマニュアルに記載されている変数は、ほとんどがカスタマイズに関するものです。いくつかのコマンド、およびEmacsのある部分は、変数調べてその変数にセットされた値により、動作がかわります。カスタマイズに興味がでるまでは、、変数に関する情報は無視してかまいません。その後で変数(@ref{Variables}を参照してください)の基本を読めば、特定の変数についての情報に合点がいくでしょう。
 
 @ifnottex
 @lowersections
