@@ -3,42 +3,41 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-10-31 20:23+0900\n"
+"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
 #: fixit.texi.orig:5
 #, no-wrap
 msgid "Fixit"
-msgstr ""
+msgstr "Fixit"
 
 #. type: chapter
 #: fixit.texi.orig:6
 #, no-wrap
 msgid "Commands for Fixing Typos"
-msgstr ""
+msgstr "Commands for Fixing Typos"
 
 #. type: cindex
 #: fixit.texi.orig:7
 #, no-wrap
 msgid "typos, fixing"
-msgstr ""
+msgstr "typos, fixing"
 
 #. type: cindex
 #: fixit.texi.orig:8
 #, no-wrap
 msgid "mistakes, correcting"
-msgstr ""
+msgstr "mistakes, correcting"
 
 #. type: Plain text
 #: fixit.texi.orig:18
@@ -46,11 +45,11 @@ msgid ""
 "In this chapter we describe commands that are useful when you catch a "
 "mistake while editing.  The most fundamental of these commands is the undo "
 "command @kbd{C-/} (also bound to @kbd{C-x u} and @kbd{C-_}).  This undoes a "
-"single command, or a part of a command (as in the case of "
-"@code{query-replace}), or several consecutive character insertions.  "
-"Consecutive repetitions of @kbd{C-/} undo earlier and earlier changes, back "
-"to the limit of the undo information available."
-msgstr ""
+"single command, or a part of a command (as in the case of @code{query-"
+"replace}), or several consecutive character insertions.  Consecutive "
+"repetitions of @kbd{C-/} undo earlier and earlier changes, back to the limit "
+"of the undo information available."
+msgstr "このチャプターでは、編集中に間違いに気付いたときに便利なコマンドを説明します。これらのコマンドの中でもっとも基本的なのは、undoコマンド@kbd{C-/}です(これは@kbd{C-x u}と@kbd{C-_}にもバインドされています)。これは1つのコマンドやコマンドの一部(@code{query-replace}の場合など)、または連続するいくつかの文字の挿入を取り消します。連続して@kbd{C-/}を繰り返すと、前へ前へと変更を取り消し、undo情報が利用できる限界までさかのぼって、変更を取り消します。"
 
 #. type: Plain text
 #: fixit.texi.orig:22
@@ -58,63 +57,63 @@ msgid ""
 "Aside from the commands described here, you can erase text using deletion "
 "commands such as @key{DEL} (@code{delete-backward-char}).  These were "
 "described earlier in this manual.  @xref{Erasing}."
-msgstr ""
+msgstr "ここで説明するコマンドとは別に、@key{DEL} (@code{delete-backward-char})のような削除コマンドでもテキストを消去できます。これらのコマンドは、このマニュアルの前のチャプターで説明しています。@ref{Erasing}を参照してください。"
 
 #. type: section
 #: fixit.texi.orig:28 fixit.texi.orig:30 fixit.texi.orig:31
 #, no-wrap
 msgid "Undo"
-msgstr ""
+msgstr "Undo"
 
 #. type: menuentry
 #: fixit.texi.orig:28
 msgid "The Undo commands."
-msgstr ""
+msgstr "Undoコマンド。"
 
 #. type: node
 #: fixit.texi.orig:28 fixit.texi.orig:136
 #, no-wrap
 msgid "Transpose"
-msgstr ""
+msgstr "Transpose"
 
 #. type: menuentry
 #: fixit.texi.orig:28
 msgid "Exchanging two characters, words, lines, lists..."
-msgstr ""
+msgstr "2つの文字、単語、行、リスト、...の入れ替え。"
 
 #. type: node
 #: fixit.texi.orig:28 fixit.texi.orig:200
 #, no-wrap
 msgid "Fixing Case"
-msgstr ""
+msgstr "Fixing Case"
 
 #. type: menuentry
 #: fixit.texi.orig:28
 msgid "Correcting case of last word entered."
-msgstr ""
+msgstr "最後に入力した文字の大文字小文字を訂正する。"
 
 #. type: node
 #: fixit.texi.orig:28 fixit.texi.orig:221
 #, no-wrap
 msgid "Spelling"
-msgstr ""
+msgstr "Spelling"
 
 #. type: menuentry
 #: fixit.texi.orig:28
 msgid "Apply spelling checker to a word, or a whole file."
-msgstr ""
+msgstr "単語またはファイル全体へのスペルチェッカーの適用。"
 
 #. type: findex
 #: fixit.texi.orig:32 fixit.texi.orig:55
 #, no-wrap
 msgid "undo"
-msgstr ""
+msgstr "undo"
 
 #. type: cindex
 #: fixit.texi.orig:33
 #, no-wrap
 msgid "changes, undoing"
-msgstr ""
+msgstr "changes, undoing"
 
 #. type: Plain text
 #: fixit.texi.orig:44
@@ -123,35 +122,34 @@ msgid ""
 "buffer records changes individually, and the undo command always applies to "
 "the current buffer.  You can undo all the changes in a buffer for as far "
 "back as the buffer's records go.  Usually, each editing command makes a "
-"separate entry in the undo records, but some commands such as "
-"@code{query-replace} divide their changes into multiple entries for "
-"flexibility in undoing.  Consecutive character insertion commands are "
-"usually grouped together into a single undo record, to make undoing less "
-"tedious."
-msgstr ""
+"separate entry in the undo records, but some commands such as @code{query-"
+"replace} divide their changes into multiple entries for flexibility in "
+"undoing.  Consecutive character insertion commands are usually grouped "
+"together into a single undo record, to make undoing less tedious."
+msgstr "@dfn{undo(取り消し)}コマンドは、バッファーのテキストにたいする最後の変更を無効にします。バッファーはそれぞれ変更を個別に記録しており、undoコマンドは常にカレントバッファーに適用されます。バッファーのレコードにより、バッファーにたいするすべての変更をundoできます。通常、個々の変種コマンドは、undoレコードに個別のエントリーを作成しますが、@code{query-replace}のようないくつかのコマンドは、undo操作に柔軟性をもたせるために、コマンドによる変更を複数のエントリーに分割します。連続した文字の挿入コマンドは、undo操作の冗長性をなくすために、通常1つのundoレコードにまとめられます。"
 
 #. type: kindex
 #: fixit.texi.orig:46 fixit.texi.orig:54
 #, no-wrap
 msgid "C-/"
-msgstr ""
+msgstr "C-/"
 
 #. type: kindex
 #: fixit.texi.orig:47 fixit.texi.orig:52
 #, no-wrap
 msgid "C-x u"
-msgstr ""
+msgstr "C-x u"
 
 #. type: kindex
 #: fixit.texi.orig:48 fixit.texi.orig:53
 #, no-wrap
 msgid "C-_"
-msgstr ""
+msgstr "C-_"
 
 #. type: table
 #: fixit.texi.orig:50
 msgid "Undo one entry in the current buffer's undo records (@code{undo})."
-msgstr ""
+msgstr "カレントバッファーのundoレコードの、1エントリーでundoします(@code{undo})。"
 
 #. type: Plain text
 #: fixit.texi.orig:66
@@ -165,19 +163,19 @@ msgid ""
 "before that change.  Consecutive repetitions of @kbd{C-/} (or its aliases) "
 "undo earlier and earlier changes in the current buffer.  If all the recorded "
 "changes have already been undone, the undo command signals an error."
-msgstr ""
+msgstr "undoを開始するには、@kbd{C-/}(またはエイリアスの@kbd{C-_}か@kbd{C-x u})をタイプします@footnote{@kbd{C-/}以外に、@code{undo}コマンドは@kbd{C-x u}にもバインドされています。なぜならこれは初心者が記憶するのが簡単だからです。@samp{u}は``undo''に由来しています。このコマンドは@kbd{C-_}にもバインドされています。なぜならいくつかのテキスト端末では、@kbd{C-/}とタイプすることにより、@kbd{C-_}が入力されるからです。}。これは一番最近のバッファーにたいする変更を取り消して、バッファーが変更される前の位置にポイントを戻します。連続して@kbd{C-/}(またはそれのエイリアス)を繰り返すと、現在のバッファーにたいする変更を、前へ前へとさかのぼって取り消します。すでに記録されている変更がすべて取り消されているとき、undoコマンドはエラーをシグナルします。"
 
 #. type: cindex
 #: fixit.texi.orig:67
 #, no-wrap
 msgid "redo"
-msgstr ""
+msgstr "redo"
 
 #. type: findex
 #: fixit.texi.orig:68
 #, no-wrap
 msgid "undo-only"
-msgstr ""
+msgstr "undo-only"
 
 #. type: Plain text
 #: fixit.texi.orig:76
@@ -188,7 +186,7 @@ msgid ""
 "a single set of changes.  Therefore, to re-apply changes you have undone, "
 "type @kbd{C-f} or any other command that harmlessly breaks the sequence of "
 "undoing; then type @kbd{C-/} to undo the undo command."
-msgstr ""
+msgstr "undo以外のコマンドは、undoコマンドの順序性を損ないます。undo以外のコマンドを開始した時点から、undoしてきた一連のundoコマンド全体が、1つの変更としてundoレコードとして記録されます。したがってundoした変更を再適用するには、undoの順序性を損なわないような@kbd{C-f}のようなコマンドをタイプしてから、@kbd{C-/}でundoコマンドをundoします。"
 
 #. type: Plain text
 #: fixit.texi.orig:80
@@ -196,7 +194,7 @@ msgid ""
 "Alternatively, if you want to resume undoing, without redoing previous undo "
 "commands, use @kbd{M-x undo-only}.  This is like @code{undo}, but will not "
 "redo changes you have just undone."
-msgstr ""
+msgstr "以前のundoコマンドを再実行せずにundoを再開したいときは、かわりに@kbd{M-x undo-only}を使います。これは@code{undo}と同様ですが、すでにundoした変更を再実行しません。"
 
 #. type: Plain text
 #: fixit.texi.orig:91
@@ -210,19 +208,19 @@ msgid ""
 "@kbd{C-/} once.  When you see the last change you made undone, you will see "
 "whether it was an intentional change.  If it was an accident, leave it "
 "undone.  If it was deliberate, redo the change as described above."
-msgstr ""
+msgstr "バッファーをうっかり変更してしまったのに気付いたら、モードラインのアスタリスクが表示されなくなるまで@kbd{C-/}を繰り返しタイプするのが、もっとも簡単な復旧方法です。undoコマンドによりモードラインのアスタリスクが消えたとき、それはバッファーの内容がファイルを最後に読み込んだとき、または保存したときと同じ内容だということを意味します。バッファーを意図して変更したか覚えていないときは、@kbd{C-/}を1回タイプします。最後の変更がundoされたのを確認して、それが意図した変更なのか確かめます。もしそれが意図しない変更だったならundoしたままにします。意図した変更だった場合、上で説明した方法で変更を再実行します。"
 
 #. type: cindex
 #: fixit.texi.orig:92
 #, no-wrap
 msgid "selective undo"
-msgstr ""
+msgstr "selective undo"
 
 #. type: kindex
 #: fixit.texi.orig:93
 #, no-wrap
 msgid "C-u C-/"
-msgstr ""
+msgstr "C-u C-/"
 
 #. type: Plain text
 #: fixit.texi.orig:103
@@ -235,7 +233,7 @@ msgid ""
 "by supplying a prefix argument to the @code{undo} command: @kbd{C-u C-/}.  "
 "To undo further changes in the same region, repeat the @code{undo} command "
 "(no prefix argument is needed)."
-msgstr ""
+msgstr "アクティブなリージョンがあるとき、@code{undo}は@dfn{選択的なundo(selective undo)}を行います。これはバッファー全体ではなく、リージョンにたいして一番最近の変更をundoします。しかしTransient Markモードがオフのとき(@ref{Disabled Transient Mark}を参照してください)、@kbd{C-/}は、リージョンではなく、常にバッファー全体を操作します。この場合@code{undo}コマンドにプレフィクス引数を指定（@kbd{C-u C-/})することにより、選択的なundoができます。同じリージョンにたいしてさらに変更をundoしたいときは、@code{undo}コマンドを繰り返します(プレフィクス引数は必要ありません)。"
 
 #. type: Plain text
 #: fixit.texi.orig:107
@@ -243,31 +241,31 @@ msgid ""
 "Some specialized buffers do not make undo records.  Buffers whose names "
 "start with spaces never do; these buffers are used internally by Emacs to "
 "hold text that users don't normally look at or edit."
-msgstr ""
+msgstr "undoレコードを作らない、特別なバッファーがいくつかあります。それは名前がスペースで始まるバッファーです。これらのバッファーはEmacsにより内部的に使用されており、通常ユーザーが閲覧したり編集しないテキストを保持します。"
 
 #. type: vindex
 #: fixit.texi.orig:108
 #, no-wrap
 msgid "undo-limit"
-msgstr ""
+msgstr "undo-limit"
 
 #. type: vindex
 #: fixit.texi.orig:109
 #, no-wrap
 msgid "undo-strong-limit"
-msgstr ""
+msgstr "undo-strong-limit"
 
 #. type: vindex
 #: fixit.texi.orig:110
 #, no-wrap
 msgid "undo-outer-limit"
-msgstr ""
+msgstr "undo-outer-limit"
 
 #. type: cindex
 #: fixit.texi.orig:111
 #, no-wrap
 msgid "undo limit"
-msgstr ""
+msgstr "undo limit"
 
 #. type: Plain text
 #: fixit.texi.orig:117
@@ -277,7 +275,7 @@ msgid ""
 "specify how much undo information to keep by setting the variables "
 "@code{undo-limit}, @code{undo-strong-limit}, and @code{undo-outer-limit}.  "
 "Their values are expressed in bytes."
-msgstr ""
+msgstr "バッファーにたいするundo情報が大きくなりすぎたとき、Emacsは一番古いレコードを、時々(@dfn{ガベージコレクション(garbage collection)の間})廃棄します。変数@code{undo-limit}、@code{undo-strong-limit}、@code{undo-outer-limit}をセットすることにより、どれだけのundo情報を保持するか指定することができます。これらの値はバイト数で指定します。"
 
 #. type: Plain text
 #: fixit.texi.orig:125
@@ -289,7 +287,7 @@ msgid ""
 "command (though not the most recent one)  that pushes the size past this "
 "amount is forgotten.  The default value of @code{undo-strong-limit} is "
 "120000."
-msgstr ""
+msgstr "変数@code{undo-limit}は、ソフトリミットをセットします。Emacsはこのサイズに達するまでのコマンドのundoデータを保持します。制限を超えることもあり得ますが、これを超える古いデータは保持しません。デフォルト値は80000です。変数@code{undo-strong-limit}は、厳密なリミット(stricter limit)をセットします。この制限を超えるような以前のコマンド(一番最近のコマンドではない)は記憶されません。@code{undo-strong-limit}のデフォルト値は120000です。"
 
 #. type: Plain text
 #: fixit.texi.orig:135
@@ -298,68 +296,67 @@ msgid ""
 "discarded unless it gets bigger than @code{undo-outer-limit} (normally "
 "12,000,000).  At that point, Emacs discards the undo data and warns you "
 "about it.  This is the only situation in which you cannot undo the last "
-"command.  If this happens, you can increase the value of "
-"@code{undo-outer-limit} to make it even less likely to happen in the "
-"future.  But if you didn't expect the command to create such large undo "
-"data, then it is probably a bug and you should report it.  @xref{Bugs,, "
-"Reporting Bugs}."
-msgstr ""
+"command.  If this happens, you can increase the value of @code{undo-outer-"
+"limit} to make it even less likely to happen in the future.  But if you "
+"didn't expect the command to create such large undo data, then it is "
+"probably a bug and you should report it.  @xref{Bugs,, Reporting Bugs}."
+msgstr "これらの変数の値にかかわらず、一番最近の変更はundo情報が@code{undo-outer-limit}(通常は12,000,000)より大きくならない限り、廃棄されることはありません。もしこれを超えるような場合、Emacsはundoデータを廃棄して、それにたいする警告を発します。これは一番最近のコマンドをundoできない唯一の状況です。これが発生した場合、将来同じことが起こらないように@code{undo-outer-limit}の値を増やすことができます。しかしコマンドがそのような大きなundoデータを作るとは考えられない場合、それは多分バグなので、それを報告すべきです。@ref{Bugs,, Reporting Bugs}を参照してください。"
 
 #. type: section
 #: fixit.texi.orig:137
 #, no-wrap
 msgid "Transposing Text"
-msgstr ""
+msgstr "Transposing Text"
 
 #. type: kindex
 #: fixit.texi.orig:140 fixit.texi.orig:150
 #, no-wrap
 msgid "C-t"
-msgstr ""
+msgstr "C-t"
 
 #. type: table
 #: fixit.texi.orig:142
 msgid "Transpose two characters (@code{transpose-chars})."
-msgstr ""
+msgstr "2つの文字を入れ替えます(@code{transpose-chars})。"
 
 #. type: kindex
 #: fixit.texi.orig:142 fixit.texi.orig:167
 #, no-wrap
 msgid "M-t"
-msgstr ""
+msgstr "M-t"
 
 #. type: table
 #: fixit.texi.orig:144
 msgid "Transpose two words (@code{transpose-words})."
-msgstr ""
+msgstr "2つの単語を入れ替えます(@code{transpose-words})。"
 
 #. type: item
 #: fixit.texi.orig:144
 #, no-wrap
 msgid "C-M-t"
-msgstr ""
+msgstr "C-M-t"
 
 #. type: table
 #: fixit.texi.orig:146
 msgid "Transpose two balanced expressions (@code{transpose-sexps})."
-msgstr ""
+msgstr "バランスのとれた2つの式を入れ替えます(@code{transpose-sexps})。"
 
 #. type: kindex
 #: fixit.texi.orig:146 fixit.texi.orig:165
 #, no-wrap
 msgid "C-x C-t"
-msgstr ""
+msgstr "C-x C-t"
 
 #. type: table
 #: fixit.texi.orig:148
 msgid "Transpose two lines (@code{transpose-lines})."
-msgstr ""
+msgstr "2つの行を入れ替えます(@code{transpose-lines})。"
 
 #. type: findex
 #: fixit.texi.orig:151
 #, no-wrap
 msgid "transpose-chars"
-msgstr ""
+msgstr "transpose-chars"
 
 #. type: Plain text
 #: fixit.texi.orig:164
@@ -376,19 +373,19 @@ msgid ""
 "the word before it, the word motion commands are a good way of getting "
 "there.  Otherwise, a reverse search (@kbd{C-r})  is often the best way.  "
 "@xref{Search}."
-msgstr ""
+msgstr "2つの文字を入れ違いに入力してしまう間違いはよくありますが、それらが隣接しているときは@kbd{C-t}(@code{transpose-chars})コマンドで訂正できます。通常@kbd{C-t}はポイントの左右にある文字を入れ替えます。行末でこのコマンドを使う場合、最後の文字と改行を入れ替えるのはおそらく無意味なので、@kbd{C-t}は行末の2文字を入れ替えます。このような入れ違いミスにすぐ気付いたときは、@kbd{C-t}だけで訂正できます。すぐに間違いに気付かなかった場合、@kbd{C-t}をタイプする前に、入れ替えて入力してしまった文字の間にカーソルを移動しなければなりません。単語の最後の文字とスペースを入れ替えて入力してしまった場合、そこに戻るには単語移動コマンドが良い方法です。それ以外では、逆向きの検索(@kbd{C-r})が最善な方法の場合があります。@ref{Search}を参照してください。"
 
 #. type: findex
 #: fixit.texi.orig:166
 #, no-wrap
 msgid "transpose-lines"
-msgstr ""
+msgstr "transpose-lines"
 
 #. type: findex
 #: fixit.texi.orig:168
 #, no-wrap
 msgid "transpose-words"
-msgstr ""
+msgstr "transpose-words"
 
 #. type: Plain text
 #: fixit.texi.orig:179
@@ -398,16 +395,16 @@ msgid ""
 "word preceding or containing point forward as well.  The punctuation "
 "characters between the words do not move.  For example, @w{@samp{FOO, BAR}} "
 "transposes into @w{@samp{BAR, FOO}} rather than @samp{@w{BAR FOO,}}."
-msgstr ""
+msgstr "@kbd{M-t}は、ポイントの前にある単語と、後にある単語を入れ替えます(@code{transpose-words})。このコマンドはポイントより後方、またはポイントがある単語を前方に移動して、ポイントをその後に移動します。文字の間にある区切り文字は移動しません。たとえば@w{@samp{FOO, BAR}}は、@samp{@w{BAR FOO,}}ではなく、@w{@samp{BAR, FOO}}に入れ替わります。"
 
 #. type: Plain text
 #: fixit.texi.orig:184
 msgid ""
 "@kbd{C-M-t} (@code{transpose-sexps}) is a similar command for transposing "
-"two expressions (@pxref{Expressions}), and @kbd{C-x C-t} "
-"(@code{transpose-lines}) exchanges lines.  They work like @kbd{M-t} except "
-"as regards what units of text they transpose."
-msgstr ""
+"two expressions (@pxref{Expressions}), and @kbd{C-x C-t} (@code{transpose-"
+"lines}) exchanges lines.  They work like @kbd{M-t} except as regards what "
+"units of text they transpose."
+msgstr "@kbd{C-M-t} (@code{transpose-sexps})も似ていますが、これは2つの式(@ref{Expressions}を参照してください)を入れ替えます。そして@kbd{C-x C-t} (@code{transpose-lines})は、行を入れ替えます。これらは@kbd{M-t}と同様に動作しますが、入れ替えを行うテキスト単位が異なります。"
 
 #. type: Plain text
 #: fixit.texi.orig:194
@@ -416,12 +413,12 @@ msgid ""
 "the transpose command to move the character (word, expression, line)  before "
 "or containing point across several other characters (words, expressions, "
 "lines).  For example, @kbd{C-u 3 C-t} moves the character before point "
-"forward across three other characters.  It would change "
-"@samp{f@point{}oobar} into @samp{oobf@point{}ar}.  This is equivalent to "
-"repeating @kbd{C-t} three times.  @kbd{C-u - 4 M-t} moves the word before "
-"point backward across four words.  @kbd{C-u - C-M-t} would cancel the effect "
-"of plain @kbd{C-M-t}."
-msgstr ""
+"forward across three other characters.  It would change @samp{f@point{}"
+"oobar} into @samp{oobf@point{}ar}.  This is equivalent to repeating @kbd{C-"
+"t} three times.  @kbd{C-u - 4 M-t} moves the word before point backward "
+"across four words.  @kbd{C-u - C-M-t} would cancel the effect of plain "
+"@kbd{C-M-t}."
+msgstr "入れ替えコマンドに数引数を指定すると、反復回数になります。これは入れ替えコマンドに、ポイントより前(またはポイントがある)の移動させる文字(または単語、式、行)を、何文字(または単語、式、行)後に移動させるか指示します。たとえば@kbd{C-u 3 C-t}は、ポイントの前にある文字を3文字後ろに移動します。つまり@samp{f@point{}oobar}は@samp{oobf@point{}ar}に変更されます。これは@kbd{C-t}を3回繰り返したのと同じです@kbd{C-u - 4 M-t}はポイントの前にある単語を、後方に単語4つ分移動します。@kbd{C-u - C-M-t}は、引数を指定しない@kbd{C-M-t}の効果を取り消します。"
 
 #. type: Plain text
 #: fixit.texi.orig:199
@@ -430,64 +427,64 @@ msgid ""
 "a command with a repeat count of zero would do nothing): to transpose the "
 "character (word, expression, line) ending after point with the one ending "
 "after the mark."
-msgstr ""
+msgstr "数引数0には特別な意味が割り当てられています(繰り返し回数としては、0に意味がありません)。これはポイントの後ろで終わる文字(または単語、式、行)を、マーク位置で終わる文字(または単語、式、行)と入れ替えます。"
 
 #. type: section
 #: fixit.texi.orig:201
 #, no-wrap
 msgid "Case Conversion"
-msgstr ""
+msgstr "Case Conversion"
 
 #. type: item
 #: fixit.texi.orig:204
 #, no-wrap
 msgid "M-- M-l"
-msgstr ""
+msgstr "M-- M-l"
 
 #. type: table
 #: fixit.texi.orig:206
 msgid "Convert last word to lower case.  Note @kbd{Meta--} is Meta-minus."
-msgstr ""
+msgstr "最後に入力した単語を小文字に変換します。@kbd{Meta--}はメタとマイナスであることに注意して下さい。"
 
 #. type: item
 #: fixit.texi.orig:206
 #, no-wrap
 msgid "M-- M-u"
-msgstr ""
+msgstr "M-- M-u"
 
 #. type: table
 #: fixit.texi.orig:208
 msgid "Convert last word to all upper case."
-msgstr ""
+msgstr "最後に入力した単語をすべて大文字に変換します。"
 
 #. type: item
 #: fixit.texi.orig:208
 #, no-wrap
 msgid "M-- M-c"
-msgstr ""
+msgstr "M-- M-c"
 
 #. type: table
 #: fixit.texi.orig:210
 msgid "Convert last word to lower case with capital initial."
-msgstr ""
+msgstr "最後に入力した単語の先頭を大文字、それ以外を小文字に変換します。"
 
 #. type: kindex
 #: fixit.texi.orig:212
 #, no-wrap
 msgid "M-@t{-} M-l"
-msgstr ""
+msgstr "M-@t{-} M-l"
 
 #. type: kindex
 #: fixit.texi.orig:213
 #, no-wrap
 msgid "M-@t{-} M-u"
-msgstr ""
+msgstr "M-@t{-} M-u"
 
 #. type: kindex
 #: fixit.texi.orig:214
 #, no-wrap
 msgid "M-@t{-} M-c"
-msgstr ""
+msgstr "M-@t{-} M-c"
 
 #. type: Plain text
 #: fixit.texi.orig:220
@@ -497,31 +494,31 @@ msgid ""
 "special feature when used with a negative argument: they do not move the "
 "cursor.  As soon as you see you have mistyped the last word, you can simply "
 "case-convert it and go on typing.  @xref{Case}."
-msgstr ""
+msgstr "単語の大文字小文字を間違えてタイプするのは、とても一般的な間違えです。そのため、単語の大文字小文字の変換コマンド@kbd{M-l}、@kbd{M-u}、@kbd{M-c}に負の数引数を指定すると、カーソルを移動しないという特性があります。最後に入力した単語のタイプミスに気付いたら、単に大文字小文字を変換して、タイプを続けることができます。@ref{Case}を参照してください。"
 
 #. type: section
 #: fixit.texi.orig:222
 #, no-wrap
 msgid "Checking and Correcting Spelling"
-msgstr ""
+msgstr "Checking and Correcting Spelling"
 
 #. type: cindex
 #: fixit.texi.orig:223
 #, no-wrap
 msgid "spelling, checking and correcting"
-msgstr ""
+msgstr "spelling, checking and correcting"
 
 #. type: cindex
 #: fixit.texi.orig:224
 #, no-wrap
 msgid "checking spelling"
-msgstr ""
+msgstr "checking spelling"
 
 #. type: cindex
 #: fixit.texi.orig:225
 #, no-wrap
 msgid "correcting spelling"
-msgstr ""
+msgstr "correcting spelling"
 
 #. type: Plain text
 #: fixit.texi.orig:232
@@ -531,144 +528,143 @@ msgid ""
 "checker program Aspell, Ispell or Hunspell is installed.  These programs are "
 "not part of Emacs, but one of them is usually installed in GNU/Linux and "
 "other free operating systems."
-msgstr ""
+msgstr "このセクションでは、1つの単語、またはバッファーの一部のスペルをチェックするコマンドを説明します。これらのコマンドはAspell、Ispell、Hunspellのようなスペルチェッカープログラムがインストールされている場合だけ機能します。これらのプログラムはEmacsの一部ではありませんが、GNU/Linuxまたは他のフリーなオペレーティングシステムには、通常1つはインストールされています。"
 
 #. type: ifnottex
 #: fixit.texi.orig:234
 msgid "@xref{Top, Aspell,, aspell, The Aspell Manual}."
-msgstr ""
+msgstr "@ref{Top, Aspell,, aspell, The Aspell Manual}を参照してください。"
 
 #. type: kindex
 #: fixit.texi.orig:237 fixit.texi.orig:264
 #, no-wrap
 msgid "M-$"
-msgstr ""
+msgstr "M-$"
 
 #. type: table
 #: fixit.texi.orig:240
 msgid ""
 "Check and correct spelling of the word at point (@code{ispell-word}).  If "
 "the region is active, do it for all words in the region instead."
-msgstr ""
+msgstr "ポイントがある単語スペルの、チェックと訂正をします(@code{ispell-word})。リージョンがアクティブのときは、リージョンに含まれるすべての単語にたいして行います。"
 
 #. type: item
 #: fixit.texi.orig:240
 #, no-wrap
 msgid "M-x ispell"
-msgstr ""
+msgstr "M-x ispell"
 
 #. type: table
 #: fixit.texi.orig:243
 msgid ""
 "Check and correct spelling of all words in the buffer.  If the region is "
 "active, do it for all words in the region instead."
-msgstr ""
+msgstr "バッファーにある単語スペルの、チェックと訂正をします。リージョンがアクティブのときは、リージョンに含まれるすべての単語にたいして行います。"
 
 #. type: item
 #: fixit.texi.orig:243
 #, no-wrap
 msgid "M-x ispell-buffer"
-msgstr ""
+msgstr "M-x ispell-buffer"
 
 #. type: table
 #: fixit.texi.orig:245
 msgid "Check and correct spelling in the buffer."
-msgstr ""
+msgstr "バッファーにある単語スペルの、チェックと訂正をします。"
 
 #. type: item
 #: fixit.texi.orig:245
 #, no-wrap
 msgid "M-x ispell-region"
-msgstr ""
+msgstr "M-x ispell-region"
 
 #. type: table
 #: fixit.texi.orig:247
 msgid "Check and correct spelling in the region."
-msgstr ""
+msgstr "リージョンにある単語スペルの、チェックと訂正をします。"
 
 #. type: item
 #: fixit.texi.orig:247
 #, no-wrap
 msgid "M-x ispell-message"
-msgstr ""
+msgstr "M-x ispell-message"
 
 #. type: table
 #: fixit.texi.orig:250
 msgid ""
-"Check and correct spelling in a draft mail message, excluding cited "
-"material."
-msgstr ""
+"Check and correct spelling in a draft mail message, excluding cited material."
+msgstr "メールメッセージのドラフト(引用部分を除く)にたいして、単語スペルのチェックと訂正をします。"
 
 #. type: item
 #: fixit.texi.orig:250
 #, no-wrap
 msgid "M-x ispell-change-dictionary @key{RET} @var{dict} @key{RET}"
-msgstr ""
+msgstr "M-x ispell-change-dictionary @key{RET} @var{dict} @key{RET}"
 
 #. type: table
 #: fixit.texi.orig:252
 msgid ""
 "Restart the Aspell/Ispell/Hunspell process, using @var{dict} as the "
 "dictionary."
-msgstr ""
+msgstr "Aspell/Ispell/Hunspellのプロセスを再起動して、@var{dict}を辞書として使用させます。"
 
 #. type: item
 #: fixit.texi.orig:252
 #, no-wrap
 msgid "M-x ispell-kill-ispell"
-msgstr ""
+msgstr "M-x ispell-kill-ispell"
 
 #. type: table
 #: fixit.texi.orig:254
 msgid "Kill the Aspell/Ispell/Hunspell subprocess."
-msgstr ""
+msgstr "Aspell/Ispell/Hunspellのサブプロセスをkillします。"
 
 #. type: item
 #: fixit.texi.orig:254
 #, no-wrap
 msgid "M-@key{TAB}"
-msgstr ""
+msgstr "M-@key{TAB}"
 
 #. type: itemx
 #: fixit.texi.orig:255
 #, no-wrap
 msgid "@key{ESC} @key{TAB}"
-msgstr ""
+msgstr "@key{ESC} @key{TAB}"
 
 #. type: table
 #: fixit.texi.orig:258
 msgid ""
 "Complete the word before point based on the spelling dictionary "
 "(@code{ispell-complete-word})."
-msgstr ""
+msgstr "ポイントの前にある単語を、スペル辞書をもとに補完します(@code{ispell-complete-word})。"
 
 #. type: item
 #: fixit.texi.orig:258
 #, no-wrap
 msgid "M-x flyspell-mode"
-msgstr ""
+msgstr "M-x flyspell-mode"
 
 #. type: table
 #: fixit.texi.orig:260
 msgid "Enable Flyspell mode, which highlights all misspelled words."
-msgstr ""
+msgstr "スペルミスした単語をハイライトする、Flyspellモードを有効にします。"
 
 #. type: item
 #: fixit.texi.orig:260
 #, no-wrap
 msgid "M-x flyspell-prog-mode"
-msgstr ""
+msgstr "M-x flyspell-prog-mode"
 
 #. type: table
 #: fixit.texi.orig:262
 msgid "Enable Flyspell mode for comments and strings only."
-msgstr ""
+msgstr "コメントと文字列にたいして、Flyspellモードを有効にします。"
 
 #. type: findex
 #: fixit.texi.orig:265
 #, no-wrap
 msgid "ispell-word"
-msgstr ""
+msgstr "ispell-word"
 
 #. type: Plain text
 #: fixit.texi.orig:272
@@ -679,97 +675,96 @@ msgid ""
 "@xref{Mark}.  (When Transient Mark mode is off, @kbd{M-$} always acts on the "
 "word around or before point, ignoring the region; @pxref{Disabled Transient "
 "Mark}.)"
-msgstr ""
+msgstr "ポイントの前または周囲にある単語スペルをチェックしたり訂正するには、@kbd{M-$} (@code{ispell-word})をタイプします。リージョンがアクティブのときは、リージョン内のすべての単語スペルをチェックします。@ref{Mark}を参照してください(Transient Markモードがオフのとき、@kbd{M-$}はリージョンを無視して、常にポイントの前または周囲の単語にたいして動作します。@ref{Disabled Transient Mark}を参照してください)。"
 
 #. type: findex
 #: fixit.texi.orig:273
 #, no-wrap
 msgid "ispell"
-msgstr ""
+msgstr "ispell"
 
 #. type: findex
 #: fixit.texi.orig:274
 #, no-wrap
 msgid "ispell-buffer"
-msgstr ""
+msgstr "ispell-buffer"
 
 #. type: findex
 #: fixit.texi.orig:275
 #, no-wrap
 msgid "ispell-region"
-msgstr ""
+msgstr "ispell-region"
 
 #. type: cindex
 #: fixit.texi.orig:276
 #, no-wrap
 msgid "spell-checking the active region"
-msgstr ""
+msgstr "spell-checking the active region"
 
 #. type: Plain text
 #: fixit.texi.orig:285
 msgid ""
 "Similarly, the command @kbd{M-x ispell} performs spell-checking in the "
 "region if one is active, or in the entire buffer otherwise.  The commands "
-"@kbd{M-x ispell-buffer} and @kbd{M-x ispell-region} explicitly perform "
-"spell-checking on the entire buffer or the region respectively.  To check "
-"spelling in an email message you are writing, use @kbd{M-x ispell-message}; "
-"that command checks the whole buffer, except for material that is indented "
-"or appears to be cited from other messages.  @xref{Sending Mail}."
-msgstr ""
+"@kbd{M-x ispell-buffer} and @kbd{M-x ispell-region} explicitly perform spell-"
+"checking on the entire buffer or the region respectively.  To check spelling "
+"in an email message you are writing, use @kbd{M-x ispell-message}; that "
+"command checks the whole buffer, except for material that is indented or "
+"appears to be cited from other messages.  @xref{Sending Mail}."
+msgstr "同様に、コマンド@kbd{M-x ispell}はリージョンがアクティブのときはリージョン、それ以外のときはバッファー全体にたいして、スペルチェックを行います。コマンド@kbd{M-x ispell-buffer}および@kbd{M-x ispell-region}は、スペルチェックをバッファー全体にたいして行うのか、リージョンにたいして行うかを明示します。このコマンドはバッファー全体をチェックしますが、インデントされているテキストと、以前のメッセージの引用と思われるテキストはチェックしません。@ref{Sending Mail}を参照してください。"
 
 #. type: Plain text
 #: fixit.texi.orig:291
 msgid ""
 "When one of these commands encounters what appears to be an incorrect word, "
-"it asks you what to do.  It usually displays a list of numbered "
-"``near-misses''---words that are close to the incorrect word.  Then you must "
-"type a single-character response.  Here are the valid responses:"
-msgstr ""
+"it asks you what to do.  It usually displays a list of numbered ``near-"
+"misses''---words that are close to the incorrect word.  Then you must type a "
+"single-character response.  Here are the valid responses:"
+msgstr "これらのコマンドは、正しくないと思われる単語に出会うと、それをどうするかを尋ねます。通常は番号が振られた``近い単語(near-misses)''(正しくないと思われる単語に似た単語)のリストを表示します。これにたいして1文字をタイプして応答しなければなりません。以下は有効な応答文字です。"
 
 #. type: var{#1}
 #: fixit.texi.orig:293
 #, no-wrap
 msgid "digit"
-msgstr ""
+msgstr "数字"
 
 #. type: table
 #: fixit.texi.orig:297
 msgid ""
 "Replace the word, just this time, with one of the displayed near-misses.  "
 "Each near-miss is listed with a digit; type that digit to select it."
-msgstr ""
+msgstr "今回だけは近い単語の一覧で単語を置き換えます。近い単語には番号が振られており、選択するにはその番号をタイプします。"
 
 #. type: key{#1}
 #: fixit.texi.orig:298
 #, no-wrap
 msgid "SPC"
-msgstr ""
+msgstr "SPC"
 
 #. type: table
 #: fixit.texi.orig:301
 msgid ""
-"Skip this word---continue to consider it incorrect, but don't change it "
-"here."
-msgstr ""
+"Skip this word---continue to consider it incorrect, but don't change it here."
+msgstr "その単語を間違いと判断することは変更しませんが、その単語をここでは変更せずスキップします。"
 
 #. type: item
 #: fixit.texi.orig:302
 #, no-wrap
 msgid "r @var{new} @key{RET}"
-msgstr ""
+msgstr "r @var{new} @key{RET}"
 
 #. type: table
 #: fixit.texi.orig:305
 msgid ""
 "Replace the word, just this time, with @var{new}.  (The replacement string "
 "will be rescanned for more spelling errors.)"
-msgstr ""
+msgstr "今回は単語を@var{new}で置き換えます(置換文字列にスペルエラーがないか再スキャンされます)。"
 
 #. type: item
 #: fixit.texi.orig:306
 #, no-wrap
 msgid "R @var{new} @key{RET}"
-msgstr ""
+msgstr "R @var{new} @key{RET}"
 
 #. type: table
 #: fixit.texi.orig:310
@@ -777,76 +772,77 @@ msgid ""
 "Replace the word with @var{new}, and do a @code{query-replace} so you can "
 "replace it elsewhere in the buffer if you wish.  (The replacements will be "
 "rescanned for more spelling errors.)"
-msgstr ""
+msgstr "単語を@var{new}で置き換え、@code{query-replace}を実行します。これによりバッファーの他の箇所の間違えを置換できます(置換にスペルエラーがないか再スキャンされます)。"
 
 #. type: item
 #: fixit.texi.orig:311
 #, no-wrap
 msgid "a"
-msgstr ""
+msgstr "a"
 
 #. type: table
 #: fixit.texi.orig:314
 msgid ""
 "Accept the incorrect word---treat it as correct, but only in this editing "
 "session."
-msgstr ""
+msgstr "正しくないと思われる単語を正しいものとして受け入れますが、それは今回の編集セッションに限られます。"
 
 #. type: item
 #: fixit.texi.orig:315
 #, no-wrap
 msgid "A"
-msgstr ""
+msgstr "A"
 
 #. type: table
 #: fixit.texi.orig:318
 msgid ""
 "Accept the incorrect word---treat it as correct, but only in this editing "
 "session and for this buffer."
-msgstr ""
+msgstr "正しくないと思われる単語を正しいものとして受け入れますが、それは今回の編集セッションとそのバッファーに限られます。"
 
 #. type: item
 #: fixit.texi.orig:319
 #, no-wrap
 msgid "i"
-msgstr ""
+msgstr "i"
 
 #. type: table
 #: fixit.texi.orig:322
 msgid ""
 "Insert this word in your private dictionary file so that Aspell or Ispell or "
 "Hunspell will consider it correct from now on, even in future sessions."
-msgstr ""
+msgstr "この単語をプライベートな辞書ファイルに挿入するので、今後(将来のセッションを含めて)Aspell/Ispell/Hunspellはその単語を正しく認識します。"
 
 #. type: item
 #: fixit.texi.orig:323
 #, no-wrap
 msgid "m"
-msgstr ""
+msgstr "m"
 
 #. type: table
 #: fixit.texi.orig:326
-msgid "Like @kbd{i}, but you can also specify dictionary completion information."
-msgstr ""
+msgid ""
+"Like @kbd{i}, but you can also specify dictionary completion information."
+msgstr "@kbd{i}と同様ですが、辞書の補完情報も指定できます。"
 
 #. type: item
 #: fixit.texi.orig:327
 #, no-wrap
 msgid "u"
-msgstr ""
+msgstr "u"
 
 #. type: table
 #: fixit.texi.orig:330
 msgid ""
 "Insert the lower-case version of this word in your private dic@-tion@-ary "
 "file."
-msgstr ""
+msgstr "この単語の小文字バージョンを、プライベートな辞書ファイルに挿入します。"
 
 #. type: item
 #: fixit.texi.orig:331
 #, no-wrap
 msgid "l @var{word} @key{RET}"
-msgstr ""
+msgstr "l @var{word} @key{RET}"
 
 #. type: table
 #: fixit.texi.orig:336
@@ -855,91 +851,90 @@ msgid ""
 "the new list of ``near-misses''; you can select one of them as the "
 "replacement by typing a digit.  You can use @samp{*} in @var{word} as a "
 "wildcard."
-msgstr ""
+msgstr "@var{word}にマッチする単語を辞書から探します。これらの単語は``近い単語''の新しいリストになるので、置換で数字をタイプして選択できるようになります。@var{word}にはワイルドカードとして@samp{*}を使うことができます。"
 
 #. type: item
 #: fixit.texi.orig:337
 #, no-wrap
 msgid "C-g"
-msgstr ""
+msgstr "C-g"
 
 #. type: itemx
 #: fixit.texi.orig:338
 #, no-wrap
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #. type: table
 #: fixit.texi.orig:342
 msgid ""
 "Quit interactive spell checking, leaving point at the word that was being "
 "checked.  You can restart checking again afterward with @kbd{C-u M-$}."
-msgstr ""
+msgstr "対話的なスペルチェックを終了します(ポイントはチェックされた単語の位置に残されます)。@kbd{C-u M-$}でチェックを再開できます。"
 
 #. type: item
 #: fixit.texi.orig:343
 #, no-wrap
 msgid "x"
-msgstr ""
+msgstr "x"
 
 #. type: table
 #: fixit.texi.orig:346
 msgid ""
 "Quit interactive spell checking and move point back to where it was when you "
 "started spell checking."
-msgstr ""
+msgstr "対話的なスペルチェックを終了します(ポイントはチェックを開始したときの位置に戻ります)。"
 
 #. type: item
 #: fixit.texi.orig:347
 #, no-wrap
 msgid "q"
-msgstr ""
+msgstr "q"
 
 #. type: table
 #: fixit.texi.orig:349
 msgid "Quit interactive spell checking and kill the spell-checker subprocess."
-msgstr ""
+msgstr "対話的なスペルチェックを終了して、スペルチェッカーのサブプロセスをkillします。"
 
 #. type: item
 #: fixit.texi.orig:350
 #, no-wrap
 msgid "?"
-msgstr ""
+msgstr "?"
 
 #. type: table
 #: fixit.texi.orig:352
 msgid "Show the list of options."
-msgstr ""
+msgstr "オプションの一覧を表示します。"
 
 #. type: findex
 #: fixit.texi.orig:354
 #, no-wrap
 msgid "ispell-complete-word"
-msgstr ""
+msgstr "ispell-complete-word"
 
 #. type: Plain text
 #: fixit.texi.orig:362
 msgid ""
-"In Text mode and related modes, @kbd{M-@key{TAB}} "
-"(@code{ispell-complete-word}) performs in-buffer completion based on "
-"spelling correction.  Insert the beginning of a word, and then type "
-"@kbd{M-@key{TAB}}; this shows a list of completions.  (If your window "
-"manager intercepts @kbd{M-@key{TAB}}, type @kbd{@key{ESC} @key{TAB}} or "
-"@kbd{C-M-i}.)  Each completion is listed with a digit or character; type "
-"that digit or character to choose it."
-msgstr ""
+"In Text mode and related modes, @kbd{M-@key{TAB}} (@code{ispell-complete-"
+"word}) performs in-buffer completion based on spelling correction.  Insert "
+"the beginning of a word, and then type @kbd{M-@key{TAB}}; this shows a list "
+"of completions.  (If your window manager intercepts @kbd{M-@key{TAB}}, type "
+"@kbd{@key{ESC} @key{TAB}} or @kbd{C-M-i}.)  Each completion is listed with a "
+"digit or character; type that digit or character to choose it."
+msgstr "Textモードおよびそれに関連するモードでは、@kbd{M-@key{TAB}} (@code{ispell-complete-word})で、スペル訂正にもとづくバッファー内補完を行います。単語の最初の部分を入力してから@kbd{M-@key{TAB}}をタイプすると、補完一覧が表示されます(ウィンドウマネージャーが@kbd{M-@key{TAB}}を横取りしてしまう場合は、@kbd{@key{ESC} @key{TAB}}または@kbd{C-M-i}をタイプします)。補完対象には番号か文字が振られているので、その番号か文字をタイプして選択します。"
 
 #. type: cindex
 #: fixit.texi.orig:363
 #, no-wrap
 msgid "@code{ispell} program"
-msgstr ""
+msgstr "@code{ispell} program"
 
 #. type: findex
 #: fixit.texi.orig:364
 #, no-wrap
 msgid "ispell-kill-ispell"
-msgstr ""
+msgstr "ispell-kill-ispell"
 
 #. type: Plain text
 #: fixit.texi.orig:371
@@ -949,31 +944,31 @@ msgid ""
 "complete more quickly.  If you want to get rid of the process, use @kbd{M-x "
 "ispell-kill-ispell}.  This is not usually necessary, since the process uses "
 "no processor time except when you do spelling correction."
-msgstr ""
+msgstr "1度プロセスが開始されれば、Aspell/Ispell/Hunspellのサブプロセスは待機状態で実行を続けるので、一連のスペルチェックコマンドは素早く完了します。プロセスを終了させたいときは@kbd{M-x ispell-kill-ispell}を使います。スペルの訂正を行うとき以外プロセスがCPU時間を使うことはないので、これは通常必要ありません。"
 
 #. type: vindex
 #: fixit.texi.orig:372
 #, no-wrap
 msgid "ispell-dictionary"
-msgstr ""
+msgstr "ispell-dictionary"
 
 #. type: vindex
 #: fixit.texi.orig:373
 #, no-wrap
 msgid "ispell-local-dictionary"
-msgstr ""
+msgstr "ispell-local-dictionary"
 
 #. type: vindex
 #: fixit.texi.orig:374
 #, no-wrap
 msgid "ispell-personal-dictionary"
-msgstr ""
+msgstr "ispell-personal-dictionary"
 
 #. type: findex
 #: fixit.texi.orig:375
 #, no-wrap
 msgid "ispell-change-dictionary"
-msgstr ""
+msgstr "ispell-change-dictionary"
 
 #. type: Plain text
 #: fixit.texi.orig:388
@@ -988,13 +983,13 @@ msgid ""
 "standard dictionary.  Your personal dictionary is specified by the variable "
 "@code{ispell-personal-dictionary}.  If that is @code{nil}, the spelling "
 "program looks for a personal dictionary in a default location."
-msgstr ""
+msgstr "Ispell/Aspell/Hunspellは、スペルを2つの辞書から探します。それは標準辞書と個人用辞書です。標準辞書は変数@code{ispell-local-dictionary}で指定されます。これが@code{nil}のときは、変数@code{ispell-dictionary}で指定されます。両方が@code{nil}のとき、スペルプログラムは既定の辞書を使います。コマンド@kbd{M-x ispell-change-dictionary}は、バッファーにたいする標準辞書をセットしてからサブプロセスを再起動することにより、これにより異なる標準辞書を使うことができます。個人用の辞書は、変数@code{ispell-personal-dictionary}で指定します。これが@code{nil}のとき、スペルプログラムは個人辞書を既定の場所から探します。"
 
 #. type: vindex
 #: fixit.texi.orig:389
 #, no-wrap
 msgid "ispell-complete-word-dict"
-msgstr ""
+msgstr "ispell-complete-word-dict"
 
 #. type: Plain text
 #: fixit.texi.orig:395
@@ -1004,25 +999,25 @@ msgid ""
 "dictionary.  The completion dictionary must be different because it cannot "
 "use root and affix information.  For some languages, there is a spell "
 "checking dictionary but no word completion dictionary."
-msgstr ""
+msgstr "単語の補完には別の辞書が使われます。変数@code{ispell-complete-word-dict}は、この辞書のファイル名を指定します。補完辞書はメインの辞書として使うことができず、追加の情報ももたないので、別のものでなければなりません。補完辞書のないスペルチェック辞書をもつ言語もいくつかあります。"
 
 #. type: cindex
 #: fixit.texi.orig:396
 #, no-wrap
 msgid "Flyspell mode"
-msgstr ""
+msgstr "Flyspell mode"
 
 #. type: cindex
 #: fixit.texi.orig:397
 #, no-wrap
 msgid "mode, Flyspell"
-msgstr ""
+msgstr "mode, Flyspell"
 
 #. type: findex
 #: fixit.texi.orig:398
 #, no-wrap
 msgid "flyspell-mode"
-msgstr ""
+msgstr "flyspell-mode"
 
 #. type: Plain text
 #: fixit.texi.orig:405
@@ -1032,7 +1027,7 @@ msgid ""
 "word.  Type @kbd{M-x flyspell-mode} to toggle Flyspell mode in the current "
 "buffer.  To enable Flyspell mode in all text mode buffers, add "
 "@code{flyspell-mode} to @code{text-mode-hook}.  @xref{Hooks}."
-msgstr ""
+msgstr "Flyspellモードは、タイプした単語のスペルを自動的にチェックするマイナーモードです。認識できない単語を見つけると、その単語をハイライトします。@kbd{M-x flyspell-mode}とタイプすると、カレントバッファーのFlyspellモードを切り替えます。すべてのTextバッファーでFlyspellモードを有効にするには、@code{text-mode-hook}に、@code{flyspell-mode}を追加します。@ref{Hooks}を参照してください。"
 
 #. type: Plain text
 #: fixit.texi.orig:410
@@ -1040,13 +1035,13 @@ msgid ""
 "When Flyspell mode highlights a word as misspelled, you can click on it with "
 "@kbd{Mouse-2} to display a menu of possible corrections and actions.  You "
 "can also correct the word by editing it manually in any way you like."
-msgstr ""
+msgstr "Flyspellモードでスペルミスした単語がハイライトされているときは、それを@kbd{Mouse-2}でクリックすることにより、利用可能な訂正とアクションのメニューを表示できます。手入力により、自分の好きな方法で単語を訂正することもできます。"
 
 #. type: findex
 #: fixit.texi.orig:411
 #, no-wrap
 msgid "flyspell-prog-mode"
-msgstr ""
+msgstr "flyspell-prog-mode"
 
 #. type: Plain text
 #: fixit.texi.orig:417
@@ -1055,6 +1050,6 @@ msgid ""
 "only checks words in comments and string constants.  This feature is useful "
 "for editing programs.  Type @kbd{M-x flyspell-prog-mode} to enable or "
 "disable this mode in the current buffer.  To enable this mode in all "
-"programming mode buffers, add @code{flyspell-prog-mode} to "
-"@code{prog-mode-hook} (@pxref{Hooks})."
-msgstr ""
+"programming mode buffers, add @code{flyspell-prog-mode} to @code{prog-mode-"
+"hook} (@pxref{Hooks})."
+msgstr "Flyspell Progモードは通常のFlyspellモードと同じように機能しますが、コメントと文字列に含まれた単語だけをチェックします。この機能はプログラムを編集する場合に便利です。@kbd{M-x flyspell-prog-mode}をタイプして、現在のバッファーにたいするこのモードの有効と無効を切り替えます。すべてのプログラミングに関連したモードでこのモードを有効にするには、@code{prog-mode-hook}に@code{flyspell-prog-mode}を追加します(@ref{Hooks}を参照してください)。"
