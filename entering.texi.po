@@ -3,52 +3,51 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-25 01:15+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-09-23 20:28+0900\n"
+"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
+"Language-Team: Japanese <h1r0p@outlook.jp>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: chapter
 #: entering.texi.orig:6
 #, no-wrap
 msgid "Entering and Exiting Emacs"
-msgstr ""
+msgstr "Entering and Exiting Emacs"
 
 #. type: iftex
 #: entering.texi.orig:9
 msgid "This chapter explains how to enter Emacs, and how to exit it."
-msgstr ""
+msgstr "この章では、Emacsを起動する方法、および終了する方法を説明します。"
 
 #. type: ifnottex
 #: entering.texi.orig:13
 msgid "@raisesections"
-msgstr ""
+msgstr "@raisesections"
 
 #. type: section
 #: entering.texi.orig:15 entering.texi.orig:16
 #, no-wrap
 msgid "Entering Emacs"
-msgstr ""
+msgstr "Entering Emacs"
 
 #. type: cindex
 #: entering.texi.orig:17
 #, no-wrap
 msgid "entering Emacs"
-msgstr ""
+msgstr "entering Emacs"
 
 #. type: cindex
 #: entering.texi.orig:18
 #, no-wrap
 msgid "starting Emacs"
-msgstr ""
+msgstr "starting Emacs"
 
 #. type: Plain text
 #: entering.texi.orig:25
@@ -57,13 +56,13 @@ msgid ""
 "From a terminal window running in the X Window System, you can run Emacs in "
 "the background with @command{emacs &}; this way, Emacs won't tie up the "
 "terminal window, so you can use it to run other shell commands."
-msgstr ""
+msgstr "Emacsを呼び出す通常の方法は、シェルコマンド@command{emacs}です。Xウィンドウシステムで実行される端末ウィンドウからは、@command{emacs &}によりEmacsをバックグラウンドで実行できます。この方法だとEmacsが端末ウィンドウに結びつけられないため、他のシェルコマンドを実行できます。"
 
 #. type: cindex
 #: entering.texi.orig:26
 #, no-wrap
 msgid "startup screen"
-msgstr ""
+msgstr "startup screen"
 
 #. type: Plain text
 #: entering.texi.orig:35
@@ -72,11 +71,10 @@ msgid ""
 "@samp{*GNU Emacs*}.  This @dfn{startup screen} contains information about "
 "Emacs and @dfn{links} to common tasks that are useful for beginning users.  "
 "For instance, activating the @samp{Emacs Tutorial} link opens the Emacs "
-"tutorial; this does the same thing as the command @kbd{C-h t} "
-"(@code{help-with-tutorial}).  To activate a link, either move point onto it "
-"and type @kbd{@key{RET}}, or click on it with @kbd{mouse-1} (the left mouse "
-"button)."
-msgstr ""
+"tutorial; this does the same thing as the command @kbd{C-h t} (@code{help-"
+"with-tutorial}).  To activate a link, either move point onto it and type "
+"@kbd{@key{RET}}, or click on it with @kbd{mouse-1} (the left mouse button)."
+msgstr "Emacsを起動すると、初期フレームは@samp{*GNU Emacs*}という名前の特別なバッファーを表示します。この@dfn{スタートアップ画面(startup screen)}には、Emacsについての情報と、初心者にとって便利な一般的タスクへのリンクが含まれています。たとえば@samp{Emacs Tutorial}というリンクはEmacsのチュートリアルを開きます。これはコマンド@kbd{C-h t} (@code{help-with-tutorial})と同じです。リンクをアクティブにするには、ポイントをそこに動かして@kbd{@key{RET}}をタイプするか、@kbd{mouse-1}(マウスの左ボタン)をクリックしてください。"
 
 #. type: Plain text
 #: entering.texi.orig:44
@@ -89,7 +87,7 @@ msgid ""
 "call Emacs this way, the initial frame is split into two windows---one "
 "showing the specified file, and the other showing the startup screen.  "
 "@xref{Windows}."
-msgstr ""
+msgstr "コマンドライン引数を使うと、Emacsが起動直後に1つ以上のファイルをアクセスするよう指示できます。たとえば@command{emacs foo.txt}は、@samp{foo.txt}の内容を表示するバッファーとともにEmacsを起動します。これは他のエディターとの互換性により存在する機能で、シェルから短い編集セッションを始めるときのためにデザインされています。Emacsをこの方法で呼び出すと、初期フレームは2つのウィンドウに分割されます。1つは指定されたファイルで、もう1つはスタートアップ画面です。@ref{Windows}を参照してください。"
 
 #. type: Plain text
 #: entering.texi.orig:53
@@ -102,7 +100,7 @@ msgid ""
 "as the kill ring, registers, undo history, and mark ring data, which "
 "together make editing more convenient.  These features are described later "
 "in the manual."
-msgstr ""
+msgstr "一般的に、ファイルを編集するたびに新たにEmacsを起動するのは不必要で無駄です。Emacsを使うときの推奨方法は、Emacsを1度だけ起動する方法で、ログインしたら起動して、同じEmacsセッションですべての編集作業を行うのです。1つ以上のファイルをアクセスする方法は、@ref{Files}を参照してください。この方法でEmacsを使うと、Emacsのセッションはキルリング(kill ring)、レジスター(registers)、アンドゥヒストリー(undo history)、マークリング(mark ring)などの、値をもつコンテキストを蓄積するので、これを共有すれば編集がより快適になります。これらの機能については、このマニュアルの後で説明します。"
 
 #. type: Plain text
 #: entering.texi.orig:57
@@ -110,7 +108,7 @@ msgid ""
 "To edit a file from another program while Emacs is running, you can use the "
 "@command{emacsclient} helper program to open a file in the existing Emacs "
 "session.  @xref{Emacs Server}."
-msgstr ""
+msgstr "Emacsを実行中に、他のプログラムからファイルを編集する場合、既存のEmacsセッションのファイルを開くために、@command{emacsclient}というヘルパープログラムを使うことができます。@ref{Emacs Server}を参照してください。"
 
 #. type: Plain text
 #: entering.texi.orig:61
@@ -118,13 +116,13 @@ msgid ""
 "Emacs accepts other command line arguments that tell it to load certain Lisp "
 "files, where to put the initial frame, and so forth.  @xref{Emacs "
 "Invocation}."
-msgstr ""
+msgstr "コマンドライン引数を使って、EmacsにLispファイルをロードして初期フレームに適用させたりできます。@ref{Emacs Invocation}を参照してください。"
 
 #. type: vindex
 #: entering.texi.orig:62
 #, no-wrap
 msgid "inhibit-startup-screen"
-msgstr ""
+msgstr "inhibit-startup-screen"
 
 #. type: Plain text
 #: entering.texi.orig:75
@@ -140,7 +138,7 @@ msgid ""
 "@file{site-start.el} doesn't work, because the startup screen is set up "
 "before reading @file{site-start.el}.  @xref{Init File}, for information "
 "about @file{site-start.el}.}"
-msgstr ""
+msgstr "変数@code{inhibit-startup-screen}が非@code{nil}の場合、Emacsはスタートアップ画面を表示しません。この場合、コマンドラインに1つ以上のファイルが指定されていれば、Emacsは単にそれらのファイルを表示し、指定されていないときはLispの式を対話的に評価できる、@file{*scratch*}という名前のバッファーを表示します。@ref{Lisp Interaction}を参照してください。変数@code{inhibit-startup-screen}のセットは、Emacsのカスタマイズ機能(@ref{Easy Customization}を参照してください)を使うか、初期設定ファイル(@ref{Init File}を参照してください)を編集して行うことができます。@footnote{@file{site-start.el}の中で@code{inhibit-startup-screen}をセットしても機能しません。なぜならスタートアップ画面は@file{site-start.el}が読み込まれる前にセットアップされるからです。@file{site-start.el}についての情報は、@ref{Init File}を参照してください。}"
 
 #. type: Plain text
 #: entering.texi.orig:81
@@ -150,7 +148,7 @@ msgid ""
 "file or directory.  The value of @code{initial-buffer-choice} may also be a "
 "function (of no arguments)  that should return a buffer which is then "
 "displayed."
-msgstr ""
+msgstr "変数@code{initial-buffer-choice}にファイルやディレクトリーの名前をセットすることにより、Emacsのスタートアップ時にファイルやディレクトリーを表示させることもできます。@code{initial-buffer-choice}の値に、その後に表示するバッファーを戻す関数(引数なし)をセットすることもできます。"
 
 #. type: Plain text
 #: entering.texi.orig:90
@@ -158,73 +156,73 @@ msgid ""
 "If @code{initial-buffer-choice} is non-@code{nil}, then if you specify any "
 "files on the command line, Emacs still visits them, but does not display "
 "them initially."
-msgstr ""
+msgstr "@code{initial-buffer-choice}が非@code{nil}の場合、コマンドラインにファイルを指定しても、それらのファイルは表示されますが、初期画面としては表示されません。"
 
 #. type: node
 #: entering.texi.orig:91
 #, no-wrap
 msgid "Exiting"
-msgstr ""
+msgstr "Exiting"
 
 #. type: section
 #: entering.texi.orig:92
 #, no-wrap
 msgid "Exiting Emacs"
-msgstr ""
+msgstr "Exiting Emacs"
 
 #. type: cindex
 #: entering.texi.orig:93
 #, no-wrap
 msgid "exiting"
-msgstr ""
+msgstr "exiting"
 
 #. type: cindex
 #: entering.texi.orig:94
 #, no-wrap
 msgid "killing Emacs"
-msgstr ""
+msgstr "killing Emacs"
 
 #. type: cindex
 #: entering.texi.orig:95
 #, no-wrap
 msgid "leaving Emacs"
-msgstr ""
+msgstr "leaving Emacs"
 
 #. type: cindex
 #: entering.texi.orig:96
 #, no-wrap
 msgid "quitting Emacs"
-msgstr ""
+msgstr "quitting Emacs"
 
 #. type: kindex
 #: entering.texi.orig:99 entering.texi.orig:106
 #, no-wrap
 msgid "C-x C-c"
-msgstr ""
+msgstr "C-x C-c"
 
 #. type: table
 #: entering.texi.orig:101
 msgid "Kill Emacs (@code{save-buffers-kill-terminal})."
-msgstr ""
+msgstr "Emacsをkill(終了)します。(@code{save-buffers-kill-terminal})。"
 
 #. type: kindex
 #: entering.texi.orig:101 entering.texi.orig:140
 #, no-wrap
 msgid "C-z"
-msgstr ""
+msgstr "C-z"
 
 #. type: table
 #: entering.texi.orig:104
 msgid ""
 "On a text terminal, suspend Emacs; on a graphical display, ``minimize'' the "
 "selected frame (@code{suspend-emacs})."
-msgstr ""
+msgstr "テキスト端末ではEmacsをサスペンドします。グラフィカルなディスプレーでは選択されたフレームを``最小化''します。(@code{suspend-emacs})。"
 
 #. type: findex
 #: entering.texi.orig:107
 #, no-wrap
 msgid "save-buffers-kill-terminal"
-msgstr ""
+msgstr "save-buffers-kill-terminal"
 
 #. type: Plain text
 #: entering.texi.orig:117
@@ -237,7 +235,7 @@ msgid ""
 "confirmation again, since the unsaved changes will be lost.  Emacs also asks "
 "for confirmation if any subprocesses are still running, since killing Emacs "
 "will also kill the subprocesses (@pxref{Shell})."
-msgstr ""
+msgstr "Emacsを@dfn{Kill}するというのは、Emacsプログラムを終了するという意味です。これを行うには、@kbd{C-x C-c} (@code{save-buffers-kill-terminal})とタイプします。2文字キーシーケンスが使われているのは、アクシデントにより間違ってタイプしづらくするためです。もし変更されたファイルがある場合、@kbd{C-x C-c}をタイプすると、Emacsとそれらのバッファーを巡回して、バッファーを保存するか問い合わせます。それらすべてを保存しない場合、未保存の変更が失われてしまう前に、もう一度問い合わせます。サブプロセスがまだ実行中の場合にも、Emacsをkillするとサブプロセスもkillされるので、問い合わせを行います(@ref{Shell}を参照してください)。"
 
 #. type: Plain text
 #: entering.texi.orig:121
@@ -245,7 +243,7 @@ msgid ""
 "@kbd{C-x C-c} behaves specially if you are using Emacs as a server.  If you "
 "type it from a ``client frame'', it closes the client connection.  "
 "@xref{Emacs Server}."
-msgstr ""
+msgstr "もしEmacsをサーバーとして使っている場合、@kbd{C-x C-c}は特別に振る舞います。もし``クライアントフレーム''からタイプした場合は、クライアントのコネクションをクローズします。@ref{Emacs Server}を参照してください。"
 
 #. type: Plain text
 #: entering.texi.orig:126
@@ -253,13 +251,13 @@ msgid ""
 "Emacs can, optionally, record certain session information when you kill it, "
 "such as the files you were visiting at the time.  This information is then "
 "available the next time you start Emacs.  @xref{Saving Emacs Sessions}."
-msgstr ""
+msgstr "Emacsはオプションで、killしたときに表示していたファイルなどの、セッション情報を記録することができます。この情報は次回Emacsを起動するとき利用可能です。@ref{Saving Emacs Sessions}を参照してください。"
 
 #. type: vindex
 #: entering.texi.orig:127
 #, no-wrap
 msgid "confirm-kill-emacs"
-msgstr ""
+msgstr "confirm-kill-emacs"
 
 #. type: Plain text
 #: entering.texi.orig:135
@@ -268,47 +266,45 @@ msgid ""
 "@kbd{C-x C-c} assumes that its value is a predicate function, and calls that "
 "function.  If the result of the function call is non-@code{nil}, the session "
 "is killed, otherwise Emacs continues to run.  One convenient function to use "
-"as the value of @code{confirm-kill-emacs} is the function "
-"@code{yes-or-no-p}.  The default value of @code{confirm-kill-emacs} is "
-"@code{nil}."
-msgstr ""
+"as the value of @code{confirm-kill-emacs} is the function @code{yes-or-no-"
+"p}.  The default value of @code{confirm-kill-emacs} is @code{nil}."
+msgstr "変数@code{confirm-kill-emacs}の値が非@code{nil}の場合、@kbd{C-x C-c}はその値が関数だとみなして、その関数を呼び出します。その関数呼び出しの結果が非@code{nil}の場合、セッションはkillされ、そうでない場合、Emacsは実行を続けます。@code{confirm-kill-emacs}の値として使うのに適した関数の1つが、@code{yes-or-no-p}です。@code{confirm-kill-emacs}のデフォルト値は@code{nil}です。"
 
 #. type: findex
 #: entering.texi.orig:136
 #, no-wrap
 msgid "kill-emacs"
-msgstr ""
+msgstr "kill-emacs"
 
 #. type: Plain text
 #: entering.texi.orig:139
 msgid ""
-"To kill Emacs without being prompted about saving, type @kbd{M-x "
-"kill-emacs}."
-msgstr ""
+"To kill Emacs without being prompted about saving, type @kbd{M-x kill-emacs}."
+msgstr "保存の問い合わせを行わずにEmacsをkillするときは、@kbd{M-x kill-emacs}とタイプします。"
 
 #. type: findex
 #: entering.texi.orig:141
 #, no-wrap
 msgid "suspend-frame"
-msgstr ""
+msgstr "suspend-frame"
 
 #. type: cindex
 #: entering.texi.orig:142
 #, no-wrap
 msgid "minimizing"
-msgstr ""
+msgstr "minimizing"
 
 #. type: cindex
 #: entering.texi.orig:143
 #, no-wrap
 msgid "iconifying"
-msgstr ""
+msgstr "iconifying"
 
 #. type: cindex
 #: entering.texi.orig:144
 #, no-wrap
 msgid "suspending"
-msgstr ""
+msgstr "suspending"
 
 #. type: Plain text
 #: entering.texi.orig:153
@@ -316,27 +312,27 @@ msgid ""
 "@kbd{C-z} runs the command @code{suspend-frame}.  On a graphical display, "
 "this command @dfn{minimizes} (or @dfn{iconifies}) the selected Emacs frame, "
 "hiding it in a way that lets you bring it back later (exactly how this "
-"hiding occurs depends on the window system).  On a text terminal, the "
-"@kbd{C-z} command @dfn{suspends} Emacs, stopping the program temporarily and "
+"hiding occurs depends on the window system).  On a text terminal, the @kbd{C-"
+"z} command @dfn{suspends} Emacs, stopping the program temporarily and "
 "returning control to the parent process (usually a shell); in most shells, "
 "you can resume Emacs after suspending it with the shell command "
 "@command{%emacs}."
-msgstr ""
+msgstr "@kbd{C-z}は、コマンド@code{suspend-frame}を実行します。グラフィカルなディスプレーでは、このコマンドは選択されたEmacsのフレームを後で戻れるように、@dfn{最小化}(または@dfn{アイコン化})して隠します(どのように隠されるかはウィンドウシステムに依存します)。テキスト端末では、@kbd{C-z}はEmacsを@dfn{サスペンド(休止)}します。プログラムは一時的に停止し、制御は親プロセス(通常はシェル)に戻ります。ほとんどのシェルではシェルのコマンド@command{%emacs}で、サスペンド中のEmacsを再開できます。"
 
 #. type: Plain text
 #: entering.texi.orig:162
 msgid ""
 "Text terminals usually listen for certain special characters whose meaning "
 "is to kill or suspend the program you are running.  @b{This terminal feature "
-"is turned off while you are in Emacs.} The meanings of @kbd{C-z} and "
-"@kbd{C-x C-c} as keys in Emacs were inspired by the use of @kbd{C-z} and "
-"@kbd{C-c} on several operating systems as the characters for stopping or "
-"killing a program, but that is their only relationship with the operating "
-"system.  You can customize these keys to run any commands of your choice "
+"is turned off while you are in Emacs.} The meanings of @kbd{C-z} and @kbd{C-"
+"x C-c} as keys in Emacs were inspired by the use of @kbd{C-z} and @kbd{C-c} "
+"on several operating systems as the characters for stopping or killing a "
+"program, but that is their only relationship with the operating system.  You "
+"can customize these keys to run any commands of your choice "
 "(@pxref{Keymaps})."
-msgstr ""
+msgstr "テキスト端末は、通常、実行中のプログラムをkillしたりサスペンドする、特定の特殊文字を監視しています。@b{この端末の機能は、Emacsではオフになっています。}Emacsでの@kbd{C-z}や@kbd{C-x C-c}のキーの意味は、いくつかのオペレーティングシステムでプログラムを休止させたり終了させたりするために用いる文字、@kbd{C-z}と@kbd{C-c}にヒントを得たものですが、オペレーティングシステムとの関係はそれだけです。これらのキーは、他のコマンドを実行するようにカスタマイズできます(@ref{Keymaps}を参照してください)。"
 
 #. type: ifnottex
 #: entering.texi.orig:165
 msgid "@lowersections"
-msgstr ""
+msgstr "@lowersections"
