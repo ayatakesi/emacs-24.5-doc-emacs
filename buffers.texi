@@ -218,7 +218,7 @@ kill-some-buffers}は、各バッファーについて1つずつ確認を求め�
 
 @findex kill-matching-buffers
   コマンド@kbd{M-x
-kill-matching-buffers}は、正規表現の入力を求め、名前がその正規表現にマッチするすべてのバッファーをkillします。@xref{Regexps}.を参照してください。@code{kill-some-buffers}と同様、このコマンドはkillする前に確認を求めます。このコマンドは通常、名前がスペースで始まる、Emacsが内部的に使うバッファーを無視します。内部的なバッファーも同じようにkillするには、プレフィクス引数を指定して@code{kill-matching-buffers}を呼び出します。
+kill-matching-buffers}は、正規表現の入力を求め、名前がその正規表現にマッチするすべてのバッファーをkillします。@xref{Regexps}を参照してください。@code{kill-some-buffers}と同様、このコマンドはkillする前に確認を求めます。このコマンドは通常、名前がスペースで始まる、Emacsが内部的に使うバッファーを無視します。内部的なバッファーも同じようにkillするには、プレフィクス引数を指定して@code{kill-matching-buffers}を呼び出します。
 
   さまざまなバッファーをkillするにはBuffer Menu機能も便利です。@ref{Several Buffers}を参照してください。
 

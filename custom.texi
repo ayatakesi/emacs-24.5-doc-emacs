@@ -832,7 +832,7 @@ Multibyte Characters, elisp, GNU Emacs Lisp Reference Manual}を参照してく�
 これら4つのキーワードは、実際には変数ではありません。他のコンテキストでこれらをセットしても、特別な意味はありません。
 
   マイナーモードにたいして@code{mode}キーワードを使用しないでください。ローカル変数リストでマイナーモードを有効または無効にするには、@code{eval}でモードコマンドを実行するLisp式を指定します(@xref{Minor
-Modes}.を参照してください)。たとえば以下のローカル変数リストは、引数なし(引数に1を指定しても同じことを行ないます)で@code{eldoc-mode}を呼び出すことにより、Eldocモード(@ref{Lisp
+Modes}を参照してください)。たとえば以下のローカル変数リストは、引数なし(引数に1を指定しても同じことを行ないます)で@code{eldoc-mode}を呼び出すことにより、Eldocモード(@ref{Lisp
 Doc}を参照してください)を有効にし、引数-1で@code{font-lock-mode}を呼び出すことにより、Font
 Lockモードを無効にする例です。
 
