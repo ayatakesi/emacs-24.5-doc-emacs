@@ -11,7 +11,7 @@
 @c version.
 @iftex
 @node Advanced VC Usage
-@section Advanced VC Usage
+@section VCの上級の使用法
 
   一般的に使用されるEmacsのバージョンコントロール(VC)サポートの仕様については、メインのEmacsマニュアル(@ref{Version
 Control,,,emacs, the Emacs

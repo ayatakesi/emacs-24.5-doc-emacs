@@ -331,7 +331,7 @@ Control}を参照してください)で管理されているファイルにた�
 @ref{General VC Options,,,emacs-xtra, Specialized Emacs Features}を参照してください。
 @end iftex
 @ifnottex
-@xref{General VC Options}を参照してください。
+@xref{General VC Options}.を参照してください。
 @end ifnottex
 
   選択できるオプションは、Emacsにファイルごとに1つのバックアップを作らせる方法と、編集するファイルごとに番号がついた、一連のファイルを作る方法があります。@ref{Backup
