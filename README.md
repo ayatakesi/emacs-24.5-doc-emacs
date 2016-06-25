@@ -6,7 +6,7 @@
 [emacs24.5.texis.tar.gz](http://ayatakesi.html.xdomain.jp/emacs/24.5/emacs24.5.texis.tar.gz)
 
 706559byte、*.texiです。emacs.texiが大元のtexiです(makeinfoでinfoつくったり、
-emacsでvisitして texinfoモードのmakeinfo-bufferでinfoで見ることもできます)
+emacsでvisitして texinfoモードのtexinfo-bufferでinfoで見ることもできます)
 
 ## HTMLファイル(分割ファイル)
 [makeinfo_htmls.tar.gz](http://ayatakesi.html.xdomain.jp/emacs/24.5/makeinfo_htmls.tar.gz)
