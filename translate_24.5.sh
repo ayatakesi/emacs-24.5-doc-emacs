@@ -4,18 +4,18 @@ s/\@chapter The Organization of the Screen$/\@chapter 画面の構成/;\
 s/\@section Point$/\@section ポイント/;\
 s/\@section The Echo Area$/\@section エコーアリア/;\
 s/\@section The Mode Line$/\@section モードライン/;\
-s/\@section The Menu Bar$/\@section メニューバー/' -i.bak screen.texi
+s/\@section The Menu Bar$/\@section メニューバー/' -i screen.texi
 
 perl -pe '
 s/\@chapter Characters, Keys and Commands$/\@chapter 文字、キー、コマンド/;\
 s/\@section Kinds of User Input$/\@section ユーザーインプットの種類/;\
 s/\@section Keys$/\@section キー/;\
-s/\@section Keys and Commands$/\@section キーとコマンド/' -i.bak commands.texi
+s/\@section Keys and Commands$/\@section キーとコマンド/' -i commands.texi
 
 perl -pe '
 s/\@chapter Entering and Exiting Emacs$/\@chapter Emacsの起動と終了/;\
 s/\@section Entering Emacs$/\@section Emacsの起動/;\
-s/\@section Exiting Emacs$/\@section Emacsの終了/' -i.bak entering.texi
+s/\@section Exiting Emacs$/\@section Emacsの終了/' -i entering.texi
 
 perl -pe '
 s/\@chapter Basic Editing Commands/\@chapter 基本的な編集コマンド/;
@@ -29,7 +29,7 @@ s/\@section Blank Lines/\@section 空行/;
 s/\@section Continuation Lines/\@section 継続行/;
 s/\@section Cursor Position Information/\@section カーソル位置の情報/;
 s/\@section Numeric Arguments/\@section 数引数/;
-s/\@section Repeating a Command/\@section コマンドの繰り返し/;' -i.bak basic.texi
+s/\@section Repeating a Command/\@section コマンドの繰り返し/;' -i basic.texi
 
 perl -pe '
 s/\@chapter The Minibuffer/\@chapter ミニバッファー/;
@@ -45,10 +45,10 @@ s/\@subsection Completion Options/\@subsection 補完オプション/;
 s/\@section Minibuffer History/\@section ミニバッファーヒストリー/;
 s/\@section Repeating Minibuffer Commands/\@section ミニバッファーでのコマンドの繰り返し/;
 s/\@section Entering passwords/\@section パスワードの入力/;
-s/\@section Yes or No Prompts/\@section Yes or No プロンプト/;' -i.bak mini.texi
+s/\@section Yes or No Prompts/\@section Yes or No プロンプト/;' -i mini.texi
 
 perl -pe '
-s/\@chapter Running Commands by Name/\@chapter 名前を指定してコマンドを実行する/' -i.bak m-x.texi
+s/\@chapter Running Commands by Name/\@chapter 名前を指定してコマンドを実行する/' -i m-x.texi
 
 perl -pe '
 s/\@chapter Help$/\@chapter ヘルプ/;
@@ -61,7 +61,7 @@ s/\@section Keyword Search for Packages$/\@section パッケージのキーワ�
 s/\@section Help for International Language Support$/\@section 国際化言語のサポートに関するヘルプ/;
 s/\@section Other Help Commands$/\@section その他のヘルプコマンド/;
 s/\@section Help Files$/\@section ヘルプファイル/;
-s/\@section Help on Active Text and Tooltips$/\@section アクティブテキストのヘルプとツールチップ/;' -i.bak help.texi
+s/\@section Help on Active Text and Tooltips$/\@section アクティブテキストのヘルプとツールチップ/;' -i help.texi
 
 perl -pe '
 s/\@chapter The Mark and the Region$/\@chapter マークとリージョン/;
@@ -71,7 +71,7 @@ s/\@section Operating on the Region$/\@section リージョンを操作する/;
 s/\@section The Mark Ring$/\@section マークリング/;
 s/\@section The Global Mark Ring$/\@section グローバルマークリング/;
 s/\@section Shift Selection$/\@section シフト選択/;
-s/\@section Disabling Transient Mark Mode$/\@section Transient Markモードを無効にする/;' -i.bak mark.texi
+s/\@section Disabling Transient Mark Mode$/\@section Transient Markモードを無効にする/;' -i mark.texi
 
 perl -pe "
 s/\@chapter Killing and Moving Text$/\@chapter テキストのkillと移動/;
@@ -90,7 +90,7 @@ s/\@subsection Cut and Paste with Other Window Applications$/\@subsection 他の
 s/\@subsection Secondary Selection$/\@subsection セカンダリー選択/;
 s/\@section Accumulating Text$/\@section テキストの追加/;
 s/\@section Rectangles$/\@section 矩形領域(Rectangles)/;
-s/\@section CUA Bindings$/\@section CUAバインド/;" -i.bak killing.texi
+s/\@section CUA Bindings$/\@section CUAバインド/;" -i killing.texi
 
 perl -pe '
 s/\@chapter Registers$/\@chapter レジスター/;
@@ -101,7 +101,7 @@ s/\@section Saving Window Configurations in Registers/\@section レジスター�
 s/\@section Keeping Numbers in Registers/\@section レジスターに数字を保存する/;
 s/\@section Keeping File Names in Registers/\@section レジスターにファイル名を保存する/;
 s/\@section Keyboard Macro Registers/\@section キーボードマクロのレジスター/;
-s/\@section Bookmarks/\@section ブックマーク/;' -i.bak regs.texi
+s/\@section Bookmarks/\@section ブックマーク/;' -i regs.texi
 
 perl -pe '
 s/\@chapter Controlling the Display$/\@chapter ディスプレーの制御/;
@@ -127,7 +127,7 @@ s/\@section How Text Is Displayed$/\@section テキストが表示される方�
 s/\@section Displaying the Cursor$/\@section カーソルの表示/;
 s/\@section Line Truncation$/\@section 行の切り詰め/;
 s/\@section Visual Line Mode$/\@section Visual Lineモード/;
-s/\@section Customization of Display$/\@section ディスプレーのカスタマイズ/;' -i.bak display.texi
+s/\@section Customization of Display$/\@section ディスプレーのカスタマイズ/;' -i display.texi
 
 perl -pe '
 s/\@chapter Searching and Replacement$/\@chapter 検索と置換/;
@@ -152,14 +152,14 @@ s/\@subsection Unconditional Replacement$/\@subsection 無条件の置換/;
 s/\@subsection Regexp Replacement$/\@subsection 正規表現の置換/;
 s/\@subsection Replace Commands and Case$/\@subsection 置換コマンドと大文字小文字/;
 s/\@subsection Query Replace$/\@subsection 問い合わせつき置換/;
-s/\@section Other Search-and-Loop Commands$/\@section その他の検索およびループコマンド/;' -i.bak search.texi
+s/\@section Other Search-and-Loop Commands$/\@section その他の検索およびループコマンド/;' -i search.texi
 
 perl -pe '
 s/\@chapter Commands for Fixing Typos$/\@chapter タイプミスを訂正するコマンド/;
 s/\@section Undo$/\@section Undo(取り消し)/;
 s/\@section Transposing Text$/\@section テキストの入れ替え/;
 s/\@section Case Conversion$/\@section 大文字小文字の変換/;
-s/\@section Checking and Correcting Spelling$/\@section スペルのチェックと訂正/;' -i.bak fixit.texi
+s/\@section Checking and Correcting Spelling$/\@section スペルのチェックと訂正/;' -i fixit.texi
 
 perl -pe '
 s/\@chapter Keyboard Macros$/\@chapter キーボードマクロ/;
@@ -169,13 +169,13 @@ s/\@section The Keyboard Macro Counter$/\@section キーボードマクロカウ
 s/\@section Executing Macros with Variations$/\@section 変化のあるマクロの実行/;
 s/\@section Naming and Saving Keyboard Macros$/\@section キーボードマクロの命名と保存/;
 s/\@section Editing a Keyboard Macro$/\@section キーボードマクロの編集/;
-s/\@section Stepwise Editing a Keyboard Macro$/\@section キーボードマクロのステップ編集/;' -i.bak kmacro.texi
+s/\@section Stepwise Editing a Keyboard Macro$/\@section キーボードマクロのステップ編集/;' -i kmacro.texi
 
 perl -pe '
 s/\@section Auto Reverting Non-File Buffers$/\@section 非ファイルバッファーの自動リバート/;
 s/\@subsection Auto Reverting the Buffer Menu$/\@subsection Buffer Menuの自動リバート/;
 s/\@subsection Auto Reverting Dired buffers$/\@subsection Diredバッファーの自動リバート/;
-s/\@subsection Adding Support for Auto-Reverting additional Buffers.$/\@subsection 追加のバッファーにたいする自動リバートのサポートの追加/;' -i.bak arevert-xtra.texi
+s/\@subsection Adding Support for Auto-Reverting additional Buffers.$/\@subsection 追加のバッファーにたいする自動リバートのサポートの追加/;' -i arevert-xtra.texi
 
 perl -pe '
 s/\@chapter File Handling$/\@chapter ファイルの処理/;
@@ -207,7 +207,7 @@ s/\@section Remote Files$/\@section リモートファイル/;
 s/\@section Quoted File Names$/\@section ファイル名のクォート/;
 s/\@section File Name Cache$/\@section ファイル名キャッシュ/;
 s/\@section Convenience Features for Finding Files$/\@section ファイル検索の便利な機能/;
-s/\@section Filesets$/\@section ファイルセット/;' -i.bak files.texi
+s/\@section Filesets$/\@section ファイルセット/;' -i files.texi
 
 perl -pe '
 s/\@chapter Using Multiple Buffers$/\@chapter 複数バッファーの使用/;
@@ -220,7 +220,7 @@ s/\@section Indirect Buffers$/\@section インダイレクトバッファー/;
 s/\@section Convenience Features and Customization of Buffer Handling$/\@section バッファー処理の便利な機能とカスタマイズ/;
 s/\@subsection Making Buffer Names Unique$/\@subsection バッファー名を一意にする/;
 s/\@subsection Fast minibuffer selection$/\@subsection 素早いミニバッファーの選択/;
-s/\@subsection Customizing Buffer Menus$/\@subsection バッファーメニューのカスタマイズ/;' -i.bak buffers.texi
+s/\@subsection Customizing Buffer Menus$/\@subsection バッファーメニューのカスタマイズ/;' -i buffers.texi
 
 perl -pe '
 s/\@chapter Multiple Windows$/\@chapter 複数ウィンドウ/;
@@ -231,7 +231,7 @@ s/\@section Displaying in Another Window$/\@section 他のウィンドウでの�
 s/\@section Deleting and Rearranging Windows$/\@section ウィンドウの削除と再配置/;
 s/\@section Displaying a Buffer in a Window$/\@section ウィンドウでのバッファーの表示/;
 s/\@subsection How \@code\{display-buffer\} works$/\@subsection \@code\{display-buffer\}が機能する方法/;
-s/\@section Convenience Features for Window Handling$/\@section ウィンドウ処理のための便利な機能/;' -i.bak windows.texi
+s/\@section Convenience Features for Window Handling$/\@section ウィンドウ処理のための便利な機能/;' -i windows.texi
 
 perl -pe '
 s/\@chapter Frames and Graphical Displays$/\@chapter フレームとグラフィカルなディスプレー/;
@@ -254,7 +254,7 @@ s/\@section Using Dialog Boxes$/\@section ダイアログボックスの使用/;
 s/\@section Tooltips$/\@section ツールチップ/;
 s/\@section Mouse Avoidance$/\@section マウスの回避/;
 s/\@section Non-Window Terminals$/\@section 非ウィンドウ端末/;
-s/\@section Using a Mouse in Text Terminals$/\@section テキスト端末でのマウスの使用/;' -i.bak frames.texi
+s/\@section Using a Mouse in Text Terminals$/\@section テキスト端末でのマウスの使用/;' -i frames.texi
 
 perl -pe '
 s/\@chapter International Character Set Support$/\@chapter 国際化文字セットのサポート/;
@@ -276,20 +276,20 @@ s/\@section Modifying Fontsets$/\@section フォントセットの修正/;
 s/\@section Undisplayable Characters$/\@section 表示できない文字/;
 s/\@section Unibyte Editing Mode$/\@section Unibyte編集モード/;
 s/\@section Charsets$/\@section 文字セット/;
-s/\@section Bidirectional Editing$/\@section 双方向の編集/;' -i.bak mule.texi
+s/\@section Bidirectional Editing$/\@section 双方向の編集/;' -i mule.texi
 
 perl -pe '
 s/\@chapter Major and Minor Modes$/\@chapter メジャーモードとマイナーモード/;
 s/\@section Major Modes$/\@section メジャーモード/;
 s/\@section Minor Modes$/\@section マイナーモード/;
-s/\@section Choosing File Modes$/\@section ファイルのモードを選択する/;' -i.bak modes.texi
+s/\@section Choosing File Modes$/\@section ファイルのモードを選択する/;' -i modes.texi
 
 perl -pe '
 s/\@chapter Indentation$/\@chapter インデント/;
 s/\@section Indentation Commands$/\@section インデントコマンド/;
 s/\@section Tab Stops$/\@section タブストップ/;
 s/\@section Tabs vs. Spaces$/\@section タブ vs. スペース/;
-s/\@section Convenience Features for Indentation$/\@section インデントの便利な機能/;' -i.bak indent.texi
+s/\@section Convenience Features for Indentation$/\@section インデントの便利な機能/;' -i indent.texi
 
 perl -pe '
 s/\@chapter Commands for Human Languages$/\@chapter 人間の言語のためのコマンド/;
@@ -337,7 +337,7 @@ s/\@subsection Cell Justification$/\@subsection セルの位置調整/;
 s/\@subsection Table Rows and Columns$/\@subsection テーブルの行と列/;
 s/\@subsection Converting Between Plain Text and Tables$/\@subsection プレーンテキストとテーブルの変換/;
 s/\@subsection Table Miscellany$/\@subsection テーブル、その他/;
-s/\@section Two-Column Editing$/\@section 2列編集/;' -i.bak text.texi
+s/\@section Two-Column Editing$/\@section 2列編集/;' -i text.texi
 
 perl -pe '
 s/\@chapter Editing Programs$/\@chapter プログラムの編集/;
@@ -375,7 +375,7 @@ s/\@subsection C Mode Motion Commands$/\@subsection Cモードの移動コマン
 s/\@subsection Electric C Characters$/\@subsection エレクトリックC文字/;
 s/\@subsection Hungry Delete Feature in C$/\@subsection Cの欲張りな削除機能/;
 s/\@subsection Other Commands for C Mode$/\@subsection Cモードのその他のコマンド/;
-s/\@section Asm Mode$/\@section Asmモード/;' -i.bak programs.texi
+s/\@section Asm Mode$/\@section Asmモード/;' -i programs.texi
 
 perl -pe '
 s/\@section Fortran Mode$/\@section Fortranモード/;
@@ -389,7 +389,7 @@ s/\@subsubsection Variables for Fortran Indentation$/\@subsubsection Fortranの�
 s/\@subsection Fortran Comments$/\@subsection Fortranのコメント/;
 s/\@subsection Auto Fill in Fortran Mode$/\@subsection FortranモードでのAuto Fill/;
 s/\@subsection Checking Columns in Fortran$/\@subsection Fortranでの列のチェック/;
-s/\@subsection Fortran Keyword Abbrevs$/\@subsection FortranキーワードのAbbrev/;' -i.bak fortran-xtra.texi
+s/\@subsection Fortran Keyword Abbrevs$/\@subsection FortranキーワードのAbbrev/;' -i fortran-xtra.texi
 
 perl -pe '
 s/\@chapter Compiling and Testing Programs$/\@chapter プログラムのコンパイルとテスト/;
@@ -416,7 +416,7 @@ s/\@section Executing Lisp Expressions$/\@section Lisp式の実行/;
 s/\@section Libraries of Lisp Code for Emacs$/\@section EmacsのためのLispコードによるライブラリー/;
 s/\@section Evaluating Emacs Lisp Expressions$/\@section Emacs Lisp式の評価/;
 s/\@section Lisp Interaction Buffers$/\@section Lisp Interactionバッファー/;
-s/\@section Running an External Lisp$/\@section 外部Lispの実行/;' -i.bak building.texi
+s/\@section Running an External Lisp$/\@section 外部Lispの実行/;' -i building.texi
 
 perl -pe '
 s/\@chapter Maintaining Large Programs$/\@chapter 大きなプログラムの保守/;
@@ -459,9 +459,9 @@ s/\@subsection Selecting a Tags Table$/\@subsection タグテーブルの選択/
 s/\@subsection Finding a Tag$/\@subsection タグの検索/;
 s/\@subsection Searching and Replacing with Tags Tables$/\@subsection タグテーブルの検索と置換/;
 s/\@subsection Tags Table Inquiries$/\@subsection タグテーブルの照会/;
-s/\@section Emacs Development Environment$/\@section Emacs開発環境/;'  -i.bak maintaining.texi
+s/\@section Emacs Development Environment$/\@section Emacs開発環境/;'  -i maintaining.texi
 
-perl -pe 's/\@section Advanced VC Usage$/\@section VCの上級の使用法/;' -i.bak vc-xtra.texi.orig 
+perl -pe 's/\@section Advanced VC Usage$/\@section VCの上級の使用法/;' -i vc-xtra.texi.orig 
 
 perl -pe '
 s/\@subsection Miscellaneous Commands and Features of VC$/\@subsection VCのその他のコマンドと機能/;
@@ -472,7 +472,7 @@ s/\@subsubsection Inserting Version Control Headers$/\@subsubsection バージ�
 s/\@subsection Customizing VC$/\@subsection VCのカスタマイズ/;
 s/\@subsubsection General Options$/\@subsubsection 一般的なオプション/;
 s/\@subsubsection Options for RCS and SCCS$/\@subsubsection RCSとSCCSにたいするオプション/;
-s/\@subsubsection Options specific for CVS$/\@subsubsection CVSに特有のオプション/;' -i.bak vc1-xtra.texi
+s/\@subsubsection Options specific for CVS$/\@subsubsection CVSに特有のオプション/;' -i vc1-xtra.texi
 
 perl -pe '
 s/\@section Merging Files with Emerge$/\@section Emergeでのファイルのマージ/;
@@ -482,7 +482,7 @@ s/\@subsection State of a Difference$/\@subsection 相違の状態/;
 s/\@subsection Merge Commands$/\@subsection マージコマンド/;
 s/\@subsection Exiting Emerge$/\@subsection Emergeの終了/;
 s/\@subsection Combining the Two Versions$/\@subsection 2つのバージョンの合成/;
-s/\@subsection Fine Points of Emerge$/\@subsection Emergeの細かい注意点/;' -i.bak emerge-xtra.texi
+s/\@subsection Fine Points of Emerge$/\@subsection Emergeの細かい注意点/;' -i emerge-xtra.texi
 
 perl -pe '
 s/\@chapter Abbrevs$/\@chapter abbrev\(略語\)/;
@@ -492,7 +492,7 @@ s/\@section Controlling Abbrev Expansion$/\@section abbrev展開の制御/;
 s/\@section Examining and Editing Abbrevs$/\@section abbrevのテストと編集/;
 s/\@section Saving Abbrevs$/\@section abbrevの保存/;
 s/\@section Dynamic Abbrev Expansion$/\@section 動的abbrev展開/;
-s/\@section Customizing Dynamic Abbreviation$/\@section 動的abbrevのカスタマイズ/;' -i.bak abbrevs.texi
+s/\@section Customizing Dynamic Abbreviation$/\@section 動的abbrevのカスタマイズ/;' -i abbrevs.texi
 
 perl -pe '
 s/\@chapter Dired, the Directory Editor$/\@chapter Dired \(ディレクトリーエディター\)/;
@@ -513,10 +513,10 @@ s/\@section Updating the Dired Buffer$/\@section Diredバッファーの更新/;
 s/\@section Dired and \@code\{find\}$/\@section Diredと\@code\{find\}/;
 s/\@section Editing the Dired Buffer$/\@section Diredバッファーの編集/;
 s/\@section Viewing Image Thumbnails in Dired$/\@section Diredでのイメージとサムネイルの閲覧/;
-s/\@section Other Dired Features$/\@section その他のDiredの機能/;' -i.bak dired.texi
+s/\@section Other Dired Features$/\@section その他のDiredの機能/;' -i dired.texi
 
 perl -pe '
-s/\@section Subdirectory Switches in Dired$/\@section Diredでのサブディレクトリーにたいするスイッチ/;' -i.bak dired-xtra.texi
+s/\@section Subdirectory Switches in Dired$/\@section Diredでのサブディレクトリーにたいするスイッチ/;' -i dired-xtra.texi
 
 perl -pe '
 s/\@chapter The Calendar and the Diary$/\@chapter カレンダーとダイアリー/;
@@ -544,7 +544,7 @@ s/\@subsection Special Diary Entries$/\@subsection 特別なダイアリーエ�
 s/\@section Appointments$/\@section アポイントメント/;
 s/\@section Importing and Exporting Diary Entries$/\@section ダイアリーエントリーのインポートとエクスポート/;
 s/\@section Daylight Saving Time$/\@section サマータイム/;
-s/\@section Summing Time Intervals$/\@section 時間間隔の加算/;' -i.bak calendar.texi
+s/\@section Summing Time Intervals$/\@section 時間間隔の加算/;' -i calendar.texi
 
 perl -pe '
 s/\@section More advanced features of the Calendar and Diary$/\@section カレンダーとダイアリーの上級な機能/;
@@ -557,7 +557,7 @@ s/\@subsection Customizing the Diary$/\@subsection ダイアリーのカスタ�
 s/\@subsection Diary Entries Using non-Gregorian Calendars$/\@subsection 非グレゴリオ暦を使用するカレンダーエントリー/;
 s/\@subsection Diary Display$/\@subsection ダイアリーの表示/;
 s/\@subsection Fancy Diary Display$/\@subsection Fancy Diary表示/;
-s/\@subsection Sexp Entries and the Fancy Diary Display$/\@subsection sexpエントリーとFancy Diary表示/;' -i.bak cal-xtra.texi
+s/\@subsection Sexp Entries and the Fancy Diary Display$/\@subsection sexpエントリーとFancy Diary表示/;' -i cal-xtra.texi
 
 perl -pe '
 s/\@chapter Sending Mail$/\@chapter メールの送信/;
@@ -571,7 +571,7 @@ s/\@subsection Citing Mail$/\@subsection メールの引用/;
 s/\@subsection Mail Miscellany$/\@subsection メール、その他/;
 s/\@section Mail Signature$/\@section メール署名/;
 s/\@section Mail Amusements$/\@section アミューズメント/;
-s/\@section Mail-Composition Methods$/\@section メール作成方法/;' -i.bak sending.texi
+s/\@section Mail-Composition Methods$/\@section メール作成方法/;' -i sending.texi
 
 perl -pe '
 s/\@chapter Reading Mail with Rmail$/\@chapter Rmailでメールを読む/;
@@ -596,7 +596,7 @@ s/\@section Digest Messages$/\@section ダイジェストメッセージ/;
 s/\@section Reading Rot13 Messages$/\@section Rot13メッセージを読む/;
 s/\@section \@code\{movemail\} program$/\@section \@code\{movemail\}プログラム/;
 s/\@section Retrieving Mail from Remote Mailboxes$/\@section リモートmailboxからのメールの取得/;
-s/\@section Retrieving Mail from Local Mailboxes in Various Formats$/\@section さまざまな形式のローカルmailboxからのメールの取得/;' -i.bak rmail.texi
+s/\@section Retrieving Mail from Local Mailboxes in Various Formats$/\@section さまざまな形式のローカルmailboxからのメールの取得/;' -i rmail.texi
 
 perl -pe '
 s/\@chapter Miscellaneous Commands$/\@chapter その他のコマンド/;
@@ -642,20 +642,20 @@ s/\@section Hyperlinking and Navigation Features$/\@section ハイパーリン�
 s/\@subsection Following URLs$/\@subsection URLのフォロー/;
 s/\@subsection Activating URLs$/\@subsection URLのアクティブ化/;
 s/\@subsection Finding Files and URLs at Point$/\@subsection ポイント位置のファイルやURLを開く/;
-s/\@section Other Amusements$/\@section その他の娯楽/;' -i.bak misc.texi
+s/\@section Other Amusements$/\@section その他の娯楽/;' -i misc.texi
 
 perl -pe '
 s/\@section Editing Pictures$/\@section ピクチャーの編集/;
 s/\@subsection Basic Editing in Picture Mode$/\@subsection Pictureモードでの基本的な編集/;
 s/\@subsection Controlling Motion after Insert$/\@subsection 挿入後の移動の制御/;
 s/\@subsection Picture Mode Tabs$/\@subsection Pictureモードでのタブ/;
-s/\@subsection Picture Mode Rectangle Commands$/\@subsection Pictureモードの矩形領域コマンド/;' -i.bak picture-xtra.texi
+s/\@subsection Picture Mode Rectangle Commands$/\@subsection Pictureモードの矩形領域コマンド/;' -i picture-xtra.texi
 
 perl -pe '
 s/\@chapter Emacs Lisp Packages$/\@chapter Emacs Lispパッケージ/;
 s/\@section The Package Menu Buffer$/\@section Package Menuバッファー/;
 s/\@section Package Installation$/\@section パッケージのインストール/;
-s/\@section Package Files and Directory Layout$/\@section パッケージのファイルとディレクトリー/;' -i.bak package.texi
+s/\@section Package Files and Directory Layout$/\@section パッケージのファイルとディレクトリー/;' -i package.texi
 
 perl -pe '
 s/\@chapter Customization$/\@chapter カスタマイズ/;
@@ -693,7 +693,7 @@ s/\@subsection Init File Syntax$/\@subsection initファイルの構文/;
 s/\@subsection Init File Examples$/\@subsection initファイルの例/;
 s/\@subsection Terminal-specific Initialization$/\@subsection 端末固有の初期化/;
 s/\@subsection How Emacs Finds Your Init File$/\@subsection Emacsがinitファイルを探す方法/;
-s/\@subsection Non-\@acronym\{ASCII\} Characters in Init Files$/\@subsection initファイル内の非\@acronym\{ASCII\}文字/;' -i.bak custom.texi
+s/\@subsection Non-\@acronym\{ASCII\} Characters in Init Files$/\@subsection initファイル内の非\@acronym\{ASCII\}文字/;' -i custom.texi
 
 perl -pe '
 s/\@chapter Dealing with Common Problems$/\@chapter 一般的な問題への対処/;
@@ -714,7 +714,7 @@ s/\@subsection Understanding Bug Reporting$/\@subsection バグレポートの�
 s/\@subsection Checklist for Bug Reports$/\@subsection バグレポートのためのチェックリスト/;
 s/\@subsection Sending Patches for GNU Emacs$/\@subsection GNU Emacsへのパッチの送付/;
 s/\@section Contributing to Emacs Development$/\@section Emacs開発への貢献/;
-s/\@section How To Get Help with GNU Emacs$/\@section GNU Emacsにたいして助けを得る方法/;' -i.bak trouble.texi
+s/\@section How To Get Help with GNU Emacs$/\@section GNU Emacsにたいして助けを得る方法/;' -i trouble.texi
 
 perl -pe '
 s/\@appendix Command Line Arguments for Emacs Invocation$/\@appendix Emacs呼び出しにたいするコマンドライン引数/;
@@ -732,7 +732,7 @@ s/\@appendixsec Options for Window Size and Position$/\@appendixsec ウィンド
 s/\@appendixsec Internal and External Borders$/\@appendixsec 内枠ボーダーと外枠ボーダー/;
 s/\@appendixsec Frame Titles$/\@appendixsec フレームタイトル/;
 s/\@appendixsec Icons$/\@appendixsec アイコン/;
-s/\@appendixsec Other Display Options$/\@appendixsec その他のディスプレーオプション/;' -i.bak cmdargs.texi
+s/\@appendixsec Other Display Options$/\@appendixsec その他のディスプレーオプション/;' -i cmdargs.texi
 
 perl -pe '
 s/\@appendix X Options and Resources$/\@appendix Xのオプションとリソース/;
@@ -744,10 +744,10 @@ s/\@appendixsec GTK resources$/\@appendixsec GTKリソース/;
 s/\@appendixsubsec GTK Resource Basics$/\@appendixsubsec GTKリソースの基本/;
 s/\@appendixsubsec GTK widget names$/\@appendixsubsec GTKウィジェット名/;
 s/\@appendixsubsec GTK Widget Names in Emacs$/\@appendixsubsec EmacsでのGTKウィジェット名/;
-s/\@appendixsubsec GTK styles$/\@appendixsubsec GTKスタイル/;' -i.bak xresources.texi
+s/\@appendixsubsec GTK styles$/\@appendixsubsec GTKスタイル/;' -i xresources.texi
 
 perl -pe '
-s/\@appendix Emacs 23 Antinews$/\@appendix Emacs 23 アンチニュース/;' -i.bak anti.texi
+s/\@appendix Emacs 23 Antinews$/\@appendix Emacs 23 アンチニュース/;' -i anti.texi
 
 perl -pe '
 s/\@appendix Emacs and Mac OS \/ GNUstep$/\@appendix EmacsとMac OS/;
@@ -756,7 +756,7 @@ s/\@subsection Grabbing environment variables$/\@subsection 環境変数の取�
 s/\@section Mac \/ GNUstep Customization$/\@section GNUstepでのカスタマイズ/;
 s/\@subsection Font and Color Panels$/\@subsection フォントパネルとカラーパネル/;
 s/\@section Windowing System Events under Mac OS \/ GNUstep$/\@section Mac OSおよびGNUstepでのウィンドウシステムイベント/;
-s/\@section GNUstep Support$/\@section GNUstepにたいするサポート/;' -i.bak macos.texi
+s/\@section GNUstep Support$/\@section GNUstepにたいするサポート/;' -i macos.texi
 
 perl -pe '
 s/\@appendix Emacs and Microsoft Windows\/MS-DOS$/\@appendix EmacsとMicrosoft Windows\/MS-DOS/;
@@ -770,7 +770,7 @@ s/\@section Mouse Usage on MS-Windows$/\@section MS-Windowsでのマウスの使
 s/\@section Subprocesses on Windows 9X\/ME and Windows NT\/2K\/XP$/\@section Windows 9X\/MEおよびWindows NT\/2000\/XPでのサブプロセス/;
 s/\@section Printing and MS-Windows$/\@section MS-Windowsでの印刷/;
 s/\@section Specifying Fonts on MS-Windows$/\@section MS-Windowsでのフォント指定/;
-s/\@section Miscellaneous Windows-specific features$/\@section その他のWindows固有の機能/;' -i.bak msdog.texi 
+s/\@section Miscellaneous Windows-specific features$/\@section その他のWindows固有の機能/;' -i msdog.texi 
 
 perl -pe '
 s/\@section Emacs and MS-DOS$/\@section EmacsとMS-DOS/;
@@ -780,4 +780,4 @@ s/\@subsection Display on MS-DOS$/\@subsection MS-DOSでの表示/;
 s/\@subsection File Names on MS-DOS$/\@subsection MS-DOSでのファイル名/;
 s/\@subsection Printing and MS-DOS$/\@subsection 印刷とMS-DOS/;
 s/\@subsection International Support on MS-DOS$/\@subsection MS-DOSでの国際化サポート/;
-s/\@subsection Subprocesses on MS-DOS$/\@subsection MS-DOSでのサブプロセス/;' -i.bak msdog-xtra.texi 
+s/\@subsection Subprocesses on MS-DOS$/\@subsection MS-DOSでのサブプロセス/;' -i msdog-xtra.texi 
