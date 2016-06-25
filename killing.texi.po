@@ -2133,7 +2133,7 @@ msgid ""
 "You can use this rectangle support without activating CUA by calling the "
 "@code{cua-rectangle-mark-mode} command.  But see also the standard "
 "@code{rectangle-mark-mode}.  @xref{Rectangles}."
-msgstr "この矩形領域サポートは、@code{cua-rectangle-mark-mode}コマンドを呼び出すことにより、CUAモードを有効にせずに使うこともできます。しかし標準の@code{rectangle-mark-mode}も参照してください。@xref{Rectangles}を参照してください。"
+msgstr "この矩形領域サポートは、@code{cua-rectangle-mark-mode}コマンドを呼び出すことにより、CUAモードを有効にせずに使うこともできます。しかし標準の@code{rectangle-mark-mode}も参照してください。@xref{Rectangles}.を参照してください。"
 
 #. type: Plain text
 #: killing.texi.orig:904

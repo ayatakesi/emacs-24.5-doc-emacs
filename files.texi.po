@@ -1320,7 +1320,7 @@ msgstr "@ref{General VC Options,,,emacs-xtra, Specialized Emacs Features}を参�
 #. type: ifnottex
 #: files.texi.orig:502
 msgid "@xref{General VC Options}."
-msgstr "@xref{General VC Options}を参照してください。"
+msgstr "@xref{General VC Options}.を参照してください。"
 
 #. type: Plain text
 #: files.texi.orig:507
