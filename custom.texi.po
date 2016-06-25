@@ -2547,7 +2547,7 @@ msgid ""
 "Doc}) by calling @code{eldoc-mode} with no argument (calling it with an "
 "argument of 1 would do the same), and disables Font Lock mode (@pxref{Font "
 "Lock}) by calling @code{font-lock-mode} with an argument of -1."
-msgstr "マイナーモードにたいして@code{mode}キーワードを使用しないでください。ローカル変数リストでマイナーモードを有効または無効にするには、@code{eval}でモードコマンドを実行するLisp式を指定します(@pxref{Minor Modes}を参照してください)。たとえば以下のローカル変数リストは、引数なし(引数に1を指定しても同じことを行ないます)で@code{eldoc-mode}を呼び出すことにより、Eldocモード(@pxref{Lisp Doc}を参照してください)を有効にし、引数-1で@code{font-lock-mode}を呼び出すことにより、Font Lockモード(@pxref{Font Lock})})を無効にする例です。"
+msgstr "マイナーモードにたいして@code{mode}キーワードを使用しないでください。ローカル変数リストでマイナーモードを有効または無効にするには、@code{eval}でモードコマンドを実行するLisp式を指定します(@pxref{Minor Modes}を参照してください)。たとえば以下のローカル変数リストは、引数なし(引数に1を指定しても同じことを行ないます)で@code{eldoc-mode}を呼び出すことにより、Eldocモード(@pxref{Lisp Doc}を参照してください)を有効にし、引数-1で@code{font-lock-mode}を呼び出すことにより、Font Lockモード(@pxref{Font Lock})を無効にする例です。"
 
 #. type: example
 #: custom.texi.orig:1190
