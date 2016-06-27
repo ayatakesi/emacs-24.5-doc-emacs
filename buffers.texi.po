@@ -793,7 +793,7 @@ msgid ""
 "This command normally ignores buffers whose names begin with a space, which "
 "are used internally by Emacs.  To kill internal buffers as well, call "
 "@code{kill-matching-buffers} with a prefix argument."
-msgstr "コマンド@kbd{M-x kill-matching-buffers}は、正規表現の入力を求め、名前がその正規表現にマッチするすべてのバッファーをkillします。@xref{Regexps}を参照してください。@code{kill-some-buffers}と同様、このコマンドはkillする前に確認を求めます。このコマンドは通常、名前がスペースで始まる、Emacsが内部的に使うバッファーを無視します。内部的なバッファーも同じようにkillするには、プレフィクス引数を指定して@code{kill-matching-buffers}を呼び出します。"
+msgstr "コマンド@kbd{M-x kill-matching-buffers}は、正規表現の入力を求め、名前がその正規表現にマッチするすべてのバッファーをkillします。@xref{Regexps}.を参照してください。@code{kill-some-buffers}と同様、このコマンドはkillする前に確認を求めます。このコマンドは通常、名前がスペースで始まる、Emacsが内部的に使うバッファーを無視します。内部的なバッファーも同じようにkillするには、プレフィクス引数を指定して@code{kill-matching-buffers}を呼び出します。"
 
 #. type: Plain text
 #: buffers.texi.orig:319
