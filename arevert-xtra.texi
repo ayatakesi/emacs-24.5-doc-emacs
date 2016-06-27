@@ -61,7 +61,7 @@ Diredバッファーがmodifiedとマークされ、残したい変更がない�
 
 バッファーに自動リバートのサポートを追加するには、まず最初に適切な@code{revert-buffer-function}をもつことです。@xref{Definition
 of revert-buffer-function,, Reverting, elisp, the Emacs Lisp Reference
-Manual}を参照してください。
+Manual}.を参照してください。
 
 それに加えて、適切な@code{buffer-stale-function}をもたなければなりません。
 

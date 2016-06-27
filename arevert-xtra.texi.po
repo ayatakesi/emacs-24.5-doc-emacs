@@ -202,7 +202,7 @@ msgid ""
 "To support auto-reverting the buffer must first of all have a suitable "
 "@code{revert-buffer-function}.  @xref{Definition of revert-buffer-function,, "
 "Reverting, elisp, the Emacs Lisp Reference Manual}."
-msgstr "バッファーに自動リバートのサポートを追加するには、まず最初に適切な@code{revert-buffer-function}をもつことです。@xref{Definition of revert-buffer-function,, Reverting, elisp, the Emacs Lisp Reference Manual}を参照してください。"
+msgstr "バッファーに自動リバートのサポートを追加するには、まず最初に適切な@code{revert-buffer-function}をもつことです。@xref{Definition of revert-buffer-function,, Reverting, elisp, the Emacs Lisp Reference Manual}.を参照してください。"
 
 #. type: Plain text
 #: arevert-xtra.texi.orig:111
