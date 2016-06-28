@@ -1,5 +1,7 @@
-#!/bin/sh
-TEXIS_FOR_TRANSLATE="\
+.PHONY: clean
+all: info
+info: info/emacs_ja
+TEXIS_FOR_TRANSLATE := \
 		   abbrevs.texi \
 		   anti.texi \
 		   arevert-xtra.texi \
@@ -49,9 +51,17 @@ TEXIS_FOR_TRANSLATE="\
 		   vc-xtra.texi \
 		   vc1-xtra.texi \
 		   windows.texi \
-		   xresources.texi"
+		   xresources.texi
 
-for TEXI in ${TEXIS_FOR_TRANSLATE}
-do
-    po4a-translate -f texinfo -k 0 -M utf8 -m ${TEXI}.orig -p ${TEXI}.po -l ${TEXI}
-done
+PO_FOR_TRANSLATE = $(subst ,.po $(TEXIS_FOR_TRANSLATE))
+
+clean:
+	$(RM) -f info/emacs_ja* $(TEXIS_FOR_TRANSLATE)
+
+%.texi: %.texi.po
+	po4a-translate -f texinfo -k 0 -M utf8 -m $@.orig -p $< -l $@
+
+info/emacs_ja: $(TEXIS_FOR_TRANSLATE)
+	./translate_24.5.sh
+	makeinfo -o info/emacs_ja emacs.texi
+
