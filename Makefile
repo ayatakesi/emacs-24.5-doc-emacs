@@ -1,6 +1,9 @@
 .PHONY: clean
-all: info
+all: single-html multi-html info
 info: info/emacs_ja
+single-html: emacs.html
+multi-html: html/index.html
+
 TEXIS_FOR_TRANSLATE := \
 		   abbrevs.texi \
 		   anti.texi \
@@ -56,7 +59,7 @@ TEXIS_FOR_TRANSLATE := \
 PO_FOR_TRANSLATE = $(subst ,.po $(TEXIS_FOR_TRANSLATE))
 
 clean:
-	$(RM) -f info/emacs_ja* $(TEXIS_FOR_TRANSLATE)
+	$(RM) -f info/emacs_ja* emacs.html html/*.html $(TEXIS_FOR_TRANSLATE)
 
 %.texi: %.texi.po
 	po4a-translate -f texinfo -k 0 -M utf8 -m $@.orig -p $< -l $@
@@ -65,3 +68,10 @@ info/emacs_ja: $(TEXIS_FOR_TRANSLATE)
 	./translate_24.5.sh
 	makeinfo -o info/emacs_ja emacs.texi
 
+emacs.html: $(TEXIS_FOR_TRANSLATE)
+	./translate_24.5.sh
+	texi2html emacs.texi
+
+html/index.html: $(TEXIS_FOR_TRANSLATE)
+	./translate_24.5.sh
+	makeinfo -o html/ --html emacs.texi
