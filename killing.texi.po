@@ -1692,7 +1692,7 @@ msgid ""
 "out, fill them with blanks or text, or delete them.  Rectangle commands are "
 "useful with text in multicolumn formats, and for changing text into or out "
 "of such formats."
-msgstr "@dfn{矩形領域(rectangle)}コマンドは、テキストの矩形領域を操作します。矩形領域のテキストとは、特定の行範囲内にある、特定の2つの列の間にある文字すべての文字です。Emacsには矩形領域にたいしてkill、yank、クリアー、スペースやテキストでんpフィル、削除を行うコマンドがあります。矩形領域コマンドは、複数列のテキストを操作したり、テキストをそのように変更したり戻したりする場合に便利です。"
+msgstr "@dfn{矩形領域(rectangle)}コマンドは、テキストの矩形領域を操作します。矩形領域のテキストとは、特定の行範囲内にある、特定の2つの列の間にある文字すべての文字です。Emacsには矩形領域にたいしてkill、yank、クリアー、スペースやテキストでフィル、削除を行うコマンドがあります。矩形領域コマンドは、複数列のテキストを操作したり、テキストをそのように変更したり戻したりする場合に便利です。"
 
 #. type: cindex
 #: killing.texi.orig:715
