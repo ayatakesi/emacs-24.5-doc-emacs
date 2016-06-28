@@ -461,7 +461,7 @@ s/\@subsection Searching and Replacing with Tags Tables$/\@subsection タグテ�
 s/\@subsection Tags Table Inquiries$/\@subsection タグテーブルの照会/;
 s/\@section Emacs Development Environment$/\@section Emacs開発環境/;'  -i maintaining.texi
 
-perl -pe 's/\@section Advanced VC Usage$/\@section VCの上級の使用法/;' -i vc-xtra.texi.orig 
+perl -pe 's/\@section Advanced VC Usage$/\@section VCの上級の使用法/;' -i vc-xtra.texi
 
 perl -pe '
 s/\@subsection Miscellaneous Commands and Features of VC$/\@subsection VCのその他のコマンドと機能/;
