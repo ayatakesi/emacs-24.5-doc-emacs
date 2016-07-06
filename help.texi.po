@@ -129,7 +129,7 @@ msgid ""
 "This searches for @var{topic} in the indices of the Emacs Info manual, "
 "displaying the first match found.  Press @kbd{,} to see subsequent matches.  "
 "You can use a regular expression as @var{topic}."
-msgstr "Emacsのinfoマニュアルのインデックスから、@var{topic}を検索して最初にマッチしたものを標示します。@kbd{,}を押すと次にマッチしたものを標示します。@var{topic}には正規表現を指定できます。"
+msgstr "Emacsのinfoマニュアルのインデックスから、@var{topic}を検索して最初にマッチしたものを表示します。@kbd{,}を押すと次にマッチしたものを表示します。@var{topic}には正規表現を指定できます。"
 
 #. type: item
 #: help.texi.orig:46
@@ -152,7 +152,7 @@ msgstr "C-h C-f"
 #. type: table
 #: help.texi.orig:52
 msgid "This displays the Emacs FAQ, using Info."
-msgstr "Infoを使ってEmacs FAQを標示します。"
+msgstr "Infoを使ってEmacs FAQを表示します。"
 
 #. type: kindex
 #: help.texi.orig:53 help.texi.orig:128 help.texi.orig:447
