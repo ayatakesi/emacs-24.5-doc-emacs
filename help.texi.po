@@ -1504,7 +1504,7 @@ msgid ""
 "To review recent echo area messages, use @kbd{C-h e} (@code{view-echo-area-"
 "messages}).  This displays the buffer @file{*Messages*}, where those "
 "messages are kept."
-msgstr "最近のエコーアリアのメッセージを調べるには、@kbd{C-h e} (@code{view-echo-area-messages})を使います。これはそれらのメッセージを保持するバッファー、@file{*Messages*}を表示します。"
+msgstr "最近のエコーエリアのメッセージを調べるには、@kbd{C-h e} (@code{view-echo-area-messages})を使います。これはそれらのメッセージを保持するバッファー、@file{*Messages*}を表示します。"
 
 #. type: findex
 #: help.texi.orig:533
