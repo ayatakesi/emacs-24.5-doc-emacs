@@ -2,6 +2,9 @@
 ライセンスは元文書のライセンス、GFDLです。 翻訳に当たってweb上にある既存の邦訳を
 参考にさせていただきました。 ありがとうございます m(_ _)m
 
+## オンラインで参照用のHTMLドキュメントなど
+[https://ayatakesi.github.io/](https://ayatakesi.github.io/)
+
 ## texinfoファイル
 [emacs24.5.texis.tar.gz](http://ayatakesi.html.xdomain.jp/emacs/24.5/emacs24.5.texis.tar.gz)
 
