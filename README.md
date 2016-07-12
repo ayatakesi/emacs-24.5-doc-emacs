@@ -37,3 +37,6 @@ upします。
 [emacs.html.gz](http://ayatakesi.html.xdomain.jp/emacs/25.0.93/emacs.html.gz)
 [emacs.pdf](http://ayatakesi.html.xdomain.jp/emacs/25.0.93/emacs.pdf)
 [emacs-xtra.pdf](http://ayatakesi.html.xdomain.jp/emacs/25.0.93/emacs-xtra.pdf)
+
+## オンラインで参照用のHTMLドキュメントなど
+[https://ayatakesi.github.io/](https://ayatakesi.github.io/)
