@@ -1767,7 +1767,7 @@ msgstr "C-x r y"
 msgid ""
 "Yank the last killed rectangle with its upper left corner at point "
 "(@code{yank-rectangle})."
-msgstr "最後にkillされた矩形領域の左上隅をがポイント位置になるようにyankします(@code{yank-rectangle})。"
+msgstr "最後にkillされた矩形領域の左上隅がポイント位置になるようにyankします(@code{yank-rectangle})。"
 
 #. type: kindex
 #: killing.texi.orig:739 killing.texi.orig:807

@@ -948,7 +948,7 @@ msgid ""
 "the entire buffer once again accessible, is called @dfn{widening}.  The "
 "bounds of narrowing in effect in a buffer are called the buffer's "
 "@dfn{restriction}."
-msgstr "@dfn{ナローイング(Narrowing)}とはバッファーのある範囲にフォーカスを置き、他の部分を一時的にアクセス不能にすることを意味します。扱うことのできる範囲のことを、@dfn{アクセス可能範囲(accessible portion)}と呼びます。ナローイングを取り消すと。バッファー全体に再びアクセスできるようになります。これを@dfn{ワイドニング(widening)}と呼びます。バッファーにたいして、ナローイングにより境界を設けることを、バッファーの@dfn{制限(restriction)}と呼びます。"
+msgstr "@dfn{ナローイング(Narrowing)}とはバッファーのある範囲にフォーカスを置き、他の部分を一時的にアクセス不能にすることを意味します。扱うことのできる範囲のことを、@dfn{アクセス可能範囲(accessible portion)}と呼びます。ナローイングを取り消すと、バッファー全体に再びアクセスできるようになります。これを@dfn{ワイドニング(widening)}と呼びます。バッファーにたいして、ナローイングにより境界を設けることを、バッファーの@dfn{制限(restriction)}と呼びます。"
 
 #. type: Plain text
 #: display.texi.orig:370
@@ -2314,7 +2314,7 @@ msgid ""
 "fontification for a changed text must rescan buffer text from the beginning "
 "of the buffer.  This can considerably slow down redisplay while scrolling, "
 "particularly if you are close to the end of a large buffer."
-msgstr "常にバッファーローカルな変数@code{font-lock-beginning-of-syntax-function}は、Font Lockモードがコメント、もしくは文字列の外であることが保証される位置を探す方法を指定します。それが最左列がカッコであるという慣習をもつモードでは、変数のデフォルト値は@code{beginning-of-defun}で、Font Lockモードがその慣習にしたがうよう指定します。この変数に@code{nil}をセットすると、Font Lockモードはもはや慣習には依存しなくなります。これでまちがった結果を避けられますが、その代償はとして、変更したテキストをフォント表示化するに、バッファのテキストをバッファの先頭から再走査しなければならない場合もあります。これはスクロールに相当な速度低下を招きかねず、大きなバッファーの最後に近い位置では、それが特に顕著になります。"
+msgstr "常にバッファーローカルな変数@code{font-lock-beginning-of-syntax-function}は、Font Lockモードがコメント、もしくは文字列の外であることが保証される位置を探す方法を指定します。それが最左列がカッコであるという慣習をもつモードでは、変数のデフォルト値は@code{beginning-of-defun}で、Font Lockモードがその慣習にしたがうよう指定します。この変数に@code{nil}をセットすると、Font Lockモードはもはや慣習には依存しなくなります。これでまちがった結果を避けられますが、その代償は時として、変更したテキストをフォント表示化するのに、バッファのテキストをバッファの先頭から再走査しなければならない場合もあります。これはスクロールに相当な速度低下を招きかねず、大きなバッファーの最後に近い位置では、それが特に顕著になります。"
 
 #. type: findex
 #: display.texi.orig:869
