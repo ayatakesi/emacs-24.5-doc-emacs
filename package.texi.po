@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2016-02-16 21:49+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-07-15 12:28+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -541,7 +541,7 @@ msgid ""
 "processing the init file.  Alternatively, you may choose to completely "
 "inhibit package loading at startup, and invoke the command @kbd{M-x package-"
 "initialize} to load your packages manually."
-msgstr "自動的なパッケージのロードがinitファイルのロード後である理由は、(パッケージシステムに影響するものも含む)ユーザーオプションが、カスタマイズされた値を受けとるのがinitファイルののロード後だからです。initファイルの中で明示的にパッケージをロードしたい状況があるかもしれません(たいていは、initファイルの他のコードが、あるパッケージに依存する等の理由により)。そのような場合、initファイルで関数@code{package-initialize}を呼び出す必要があります。@code{package-initialize}の呼び出しの前に、@code{package-load-list}(以下参照)などの関連するユーザーオプションをセットアップするのは、あなたの責任です。initファイルを処理した後に、パッケージを重複してロードするのを避けるために、@code{package-enable-at-startup}も@code{nil}にセットするべきです。かわりに、開始時にパッケージのロードを完全に抑止して、後でコマンド@kbd{M-x package-initialize}を呼び出して手動でパッケージをロードする方法を選択したいと思うかもしれません。"
+msgstr "自動的なパッケージのロードがinitファイルのロード後である理由は、(パッケージシステムに影響するものも含む)ユーザーオプションが、カスタマイズされた値を受けとるのがinitファイルのロード後だからです。initファイルの中で明示的にパッケージをロードしたい状況があるかもしれません(たいていは、initファイルの他のコードが、あるパッケージに依存する等の理由により)。そのような場合、initファイルで関数@code{package-initialize}を呼び出す必要があります。@code{package-initialize}の呼び出しの前に、@code{package-load-list}(以下参照)などの関連するユーザーオプションをセットアップするのは、あなたの責任です。initファイルを処理した後に、パッケージを重複してロードするのを避けるために、@code{package-enable-at-startup}も@code{nil}にセットするべきです。かわりに、開始時にパッケージのロードを完全に抑止して、後でコマンド@kbd{M-x package-initialize}を呼び出して手動でパッケージをロードする方法を選択したいと思うかもしれません。"
 
 #. type: vindex
 #: package.texi.orig:243

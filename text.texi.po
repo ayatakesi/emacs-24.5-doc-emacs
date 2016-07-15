@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-11-29 23:48+0900\n"
-"PO-Revision-Date: 2016-06-20 23:32+0900\n"
+"PO-Revision-Date: 2016-07-15 12:29+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -2064,7 +2064,7 @@ msgid ""
 "@kbd{M-x paragraph-indent-minor-mode} to enable an equivalent minor mode for "
 "situations where you shouldn't change the major mode---in mail composition, "
 "for instance."
-msgstr "パラグラフの最初の行をインデントしている場合は、TextモードではなくParagraph-Indent Textモード(@kbd{M-x paragraph-indent-text-mode})を使用するべきでしょう。このモーででは、パラグラフの間に空行を入れる必要はありません。最初の行のインデントだけでパラグラフの開始を判断するのに充分だからです。しかしパラグラフのすべてのの行がインデントされている場合は、サポートされません。メジャーモードを変更したくないとき(たとえばメール作成時など)は、@kbd{M-x paragraph-indent-minor-mode}を使って、等価なマイナーモードを有効にしてください。"
+msgstr "パラグラフの最初の行をインデントしている場合は、TextモードではなくParagraph-Indent Textモード(@kbd{M-x paragraph-indent-text-mode})を使用するべきでしょう。このモーででは、パラグラフの間に空行を入れる必要はありません。最初の行のインデントだけでパラグラフの開始を判断するのに充分だからです。しかしパラグラフのすべての行がインデントされている場合は、サポートされません。メジャーモードを変更したくないとき(たとえばメール作成時など)は、@kbd{M-x paragraph-indent-minor-mode}を使って、等価なマイナーモードを有効にしてください。"
 
 #. type: kindex
 #: text.texi.orig:842

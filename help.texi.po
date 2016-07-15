@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-10-03 23:21+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-07-15 12:27+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -416,7 +416,7 @@ msgstr "C-h l"
 #: help.texi.orig:124
 msgid ""
 "Display a description of your last 300 keystrokes (@code{view-lossage})."
-msgstr "最近のキーストローク300回分のの説明を表示します(@code{view-lossage})。"
+msgstr "最近のキーストローク300回分の説明を表示します(@code{view-lossage})。"
 
 #. type: kindex
 #: help.texi.orig:124 help.texi.orig:532

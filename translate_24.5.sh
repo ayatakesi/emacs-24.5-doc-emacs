@@ -2,7 +2,7 @@
 perl -pe '
 s/\@chapter The Organization of the Screen$/\@chapter 画面の構成/;\
 s/\@section Point$/\@section ポイント/;\
-s/\@section The Echo Area$/\@section エコーアリア/;\
+s/\@section The Echo Area$/\@section エコーエリア/;\
 s/\@section The Mode Line$/\@section モードライン/;\
 s/\@section The Menu Bar$/\@section メニューバー/' -i screen.texi
 

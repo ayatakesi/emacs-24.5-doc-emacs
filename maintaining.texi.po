@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-12-27 00:26+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-07-15 12:30+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -664,7 +664,7 @@ msgid ""
 "made in each revision.  Each revision is named by a @dfn{revision ID}, whose "
 "format depends on the version control system; in the simplest case, it is "
 "just an integer."
-msgstr "co８mmitするたびに、リポジトリーに新しい@dfn{リビジョン(revision)}が作成されます。バージョンコントロールシステムは、過去のすべてのリビジョンと、各リビジョンで行われた変更を記録します。各リビジョンには、@dfn{リビジョンID(revision ID)}により名前がつけられます。リビジョンIDのフォーマットは、バージョンコントロールシステムに依存します。もっとも簡単なケースでは、リビジョンIDは単なる整数です。"
+msgstr "commitするたびに、リポジトリーに新しい@dfn{リビジョン(revision)}が作成されます。バージョンコントロールシステムは、過去のすべてのリビジョンと、各リビジョンで行われた変更を記録します。各リビジョンには、@dfn{リビジョンID(revision ID)}により名前がつけられます。リビジョンIDのフォーマットは、バージョンコントロールシステムに依存します。もっとも簡単なケースでは、リビジョンIDは単なる整数です。"
 
 #. type: Plain text
 #: maintaining.texi.orig:232
