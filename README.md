@@ -1,42 +1,32 @@
 # emacs24.5のマニュアル
-ライセンスは元文書のライセンス、GFDLです。 翻訳に当たってweb上にある既存の邦訳を
-参考にさせていただきました。 ありがとうございます m(_ _)m
-
-## texinfoファイル
-[emacs24.5.texis.tar.gz](http://ayatakesi.html.xdomain.jp/emacs/24.5/emacs24.5.texis.tar.gz)
-
-706559byte、*.texiです。emacs.texiが大元のtexiです(makeinfoでinfoつくったり、
-emacsでvisitして texinfoモードのtexinfo-bufferでinfoで見ることもできます)
-
-## HTMLファイル(分割ファイル)
-[makeinfo_htmls.tar.gz](http://ayatakesi.html.xdomain.jp/emacs/24.5/makeinfo_htmls.tar.gz)
-
-1162963byte、700個iの*.html。起点はindex.htmlです
-(makeinfo --html emacs.texiで作成)
-
-## HTMLファイル(単一ファイル)
-[emacs.html.gz](http://ayatakesi.html.xdomain.jp/emacs/24.5/emacs.html.gz)
-
-939599byte。1つの巨大(5MB)なhtml
-(texi2html emacs.texiで作成)
-
-## PDFファイル
-[emacs.pdf](http://ayatakesi.html.xdomain.jp/emacs/24.5/emacs.pdf)
-[emacs-xtra.pdf](http://ayatakesi.html.xdomain.jp/emacs/25.0.93/emacs-xtra.pdf)
-
-2264125byte。pdfです。texlive入れてから
-TEX=/usr/local/texlive/2015/bin/i386-linux/ptex texi2dvi emacs.texi
-/usr/local/texlive/2015/bin/i386-linux/dvipdfmx emacs.dvi
-で作成
-
-# emacs25.0.93のマニュアル(試供品)
-
-間近にリリースの25のマニュアル(pretestバージョン)。 release版がでたらtexiとかも
-upします。
-
-[emacs.html.gz](http://ayatakesi.html.xdomain.jp/emacs/25.0.93/emacs.html.gz)
-[emacs.pdf](http://ayatakesi.html.xdomain.jp/emacs/25.0.93/emacs.pdf)
-[emacs-xtra.pdf](http://ayatakesi.html.xdomain.jp/emacs/25.0.93/emacs-xtra.pdf)
+ライセンスは元文書のライセンス(GFDL)です。
+翻訳に当たってweb上にある既存の邦訳を参考にさせていただきました。
+ありがとうございます m(_ _)m
 
 ## オンラインで参照用のHTMLドキュメントなど
+このリポジトリには翻訳済みのtexiは含まれていません。
+翻訳済みのドキュメントを自分で生成するには、その種類に応じたコマンドが必要になります(詳細はMakefileのコメントを参照してください)。
+
+翻訳済みのドキュメントは以下のURLから入手できます。
 [https://ayatakesi.github.io/](https://ayatakesi.github.io/)
+
+## ファイル説明
+このリポジトリには以下のファイルが含まれます
+
+### Makefile
+翻訳前のtexiと翻訳済みpoから、翻訳済み各種ドキュメントをコンパイルするためのGNUmakeファイルです。
+
+### *.texi
+GNU Emacsに元から含まれる英語のtexiファイルです。
+
+### *.po
+英語のtexiファイルから日本語のtexiを生成するためのPOファイルです。
+
+### initialize-po.sh
+翻訳者作業用のシェルです。
+英語のtexiファイルから、翻訳前POファイルを生成します。
+po4aが必要です。
+
+### translate_24.5.sh
+POファイルとpo4aでは翻訳が難しい(ときがある)英文を翻訳するためのシェルです。
+perlが必要です。
