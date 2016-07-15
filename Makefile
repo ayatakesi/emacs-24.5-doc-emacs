@@ -6,11 +6,11 @@
 #
 # tar(https://www.gnu.org/software/tar/)が必要です(オプション)
 # 理由:		texiファイルをアーカイブするため
-# コンパイル:	make tar
+# コンパイル:	makeの後make tar
 #
 # texlive(http://www.tug.org/texlive/)が必要です(オプション)
 # 理由:		texiファイルから日本語PDFを作成するため
-# コンパイル:	make pdf
+# コンパイル:	makeの後make pdf
 
 .PHONY: clean
 
