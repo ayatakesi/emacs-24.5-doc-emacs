@@ -1,3 +1,9 @@
+# 使い方
+# 	html(単一、複数)、infoを作成する場合は、make
+# 	全部(pdf、tarを含む)を作成する場合は、make && make pdf && make tar
+
+# 必要なもの
+#
 # po4a(https://po4a.alioth.debian.org/index.php.ja)が必要です
 # 理由:	翻訳前のtexiとpoファイルから翻訳済みのtexiを生成するため
 #
@@ -6,11 +12,11 @@
 #
 # tar(https://www.gnu.org/software/tar/)が必要です(オプション)
 # 理由:		texiファイルをアーカイブするため
-# コンパイル:	makeの後make tar
+# コンパイル:	makeの後にmake tar
 #
 # texlive(http://www.tug.org/texlive/)が必要です(オプション)
 # 理由:		texiファイルから日本語PDFを作成するため
-# コンパイル:	makeの後make pdf
+# コンパイル:	makeの後にmake pdf
 
 .PHONY: clean
 
@@ -85,9 +91,6 @@ TEXIS_FOR_TRANSLATE := \
 		   windows.texi \
 		   xresources.texi
 
-PO_FOR_TRANSLATE = $(subst ,.po $(TEXIS_FOR_TRANSLATE))
-ORIG_FOR_TRANSLATE = $(subst ,.orig $(TEXIS_FOR_TRANSLATE))
-
 clean:
 	rm -f emacs.html
 	rm -fR html/
@@ -116,17 +119,15 @@ clean:
 		fi; \
 		po4a-translate -f texinfo -k 0 -M utf8 -m $@.orig -p $< -l $@; \
 	fi
+	./translate_24.5.sh
 
 emacs.html: $(TEXIS_FOR_TRANSLATE)
-	./translate_24.5.sh
 	texi2any --set-customization-variable TEXI2HTML=1 emacs.texi
 
 html/index.html: $(TEXIS_FOR_TRANSLATE)
-	./translate_24.5.sh
 	makeinfo -o html/ --html emacs.texi
 
 emacs245-ja.info: $(TEXIS_FOR_TRANSLATE)
-	./translate_24.5.sh
 	makeinfo --no-split -o emacs245-ja.info emacs.texi
 
 emacs.pdf emacs-xtra.pdf: $(TEXIS_FOR_TRANSLATE)
@@ -139,11 +140,10 @@ emacs.pdf emacs-xtra.pdf: $(TEXIS_FOR_TRANSLATE)
 	rm emacs-xtra.dvi
 
 emacs.texis.tar.gz: $(TEXIS_FOR_TRANSLATE)
-	./translate_24.5.sh
-
 	if [ ! -d emacs.texis ]; \
 	then \
 		mkdir emacs.texis/; \
 	fi
+
 	cp -fp *.texi emacs.texis
 	tar cvfz ./emacs.texis.tar.gz ./emacs.texis
