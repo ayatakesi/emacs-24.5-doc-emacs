@@ -39,59 +39,66 @@ pdf: emacs.pdf emacs-xtra.pdf
 # tar.gz用のターゲット(オプション)
 tar: emacs.texis.tar.gz
 
-TEXIS_FOR_TRANSLATE := \
-		   abbrevs.texi \
-		   anti.texi \
-		   arevert-xtra.texi \
-		   basic.texi \
-		   buffers.texi \
-		   building.texi \
-		   cal-xtra.texi \
-		   calendar.texi \
-		   cmdargs.texi \
-		   commands.texi \
-		   custom.texi \
-		   dired-xtra.texi \
-		   dired.texi \
-		   display.texi \
-		   emacs-xtra.texi \
-		   emacs.texi \
-		   emerge-xtra.texi \
-		   entering.texi \
-		   files.texi \
-		   fixit.texi \
-		   fortran-xtra.texi \
-		   frames.texi \
-		   help.texi \
-		   indent.texi \
-		   killing.texi \
-		   kmacro.texi \
-		   m-x.texi \
-		   macos.texi \
-		   maintaining.texi \
-		   mark.texi \
-		   mini.texi \
-		   misc.texi \
-		   modes.texi \
-		   msdog-xtra.texi \
-		   msdog.texi \
-		   mule.texi \
-		   package.texi \
-		   picture-xtra.texi \
-		   programs.texi \
-		   regs.texi \
-		   rmail.texi \
-		   screen.texi \
-		   search.texi \
-		   sending.texi \
-		   text.texi \
-		   trouble.texi \
-		   vc-xtra.texi \
-		   vc1-xtra.texi \
-		   windows.texi \
-		   xresources.texi
+TEXIS := \
+abbrevs.texi \
+ack.texi \
+anti.texi \
+arevert-xtra.texi \
+basic.texi \
+buffers.texi \
+building.texi \
+cal-xtra.texi \
+calendar.texi \
+cmdargs.texi \
+commands.texi \
+custom.texi \
+dired-xtra.texi \
+dired.texi \
+display.texi \
+doclicense.texi \
+emacs-xtra.texi \
+emacs.texi \
+emacsver.texi \
+emerge-xtra.texi \
+entering.texi \
+files.texi \
+fixit.texi \
+fortran-xtra.texi \
+frames.texi \
+glossary.texi \
+gnu.texi \
+gpl.texi \
+help.texi \
+indent.texi \
+killing.texi \
+kmacro.texi \
+m-x.texi \
+macos.texi \
+maintaining.texi \
+mark.texi \
+mini.texi \
+misc.texi \
+modes.texi \
+msdog-xtra.texi \
+msdog.texi \
+mule.texi \
+package.texi \
+picture-xtra.texi \
+programs.texi \
+regs.texi \
+rmail.texi \
+screen.texi \
+search.texi \
+sending.texi \
+text.texi \
+trouble.texi \
+vc-xtra.texi \
+vc1-xtra.texi \
+windows.texi \
+xresources.texi
 
 clean:
+	rm -f *.texi
 	rm -f emacs.html
 	rm -fR html/
 	rm -f emacs245-ja.info
@@ -100,37 +107,28 @@ clean:
 	rm -f emacs.texis.tar.gz
 	rm -fR emacs.texis/
 
-	TEXIS="$(TEXIS_FOR_TRANSLATE)"; \
-	for TEXI in $${TEXIS}; \
-	do \
-		if [ -f "$${TEXI}.orig" ]; \
-		then \
-			rm -f "$${TEXI}"; \
-			mv "$${TEXI}.orig" "$${TEXI}"; \
-		fi; \
-	done
-
-%.texi: %.texi.po
+%.texi:
 	if [ -f $@.po ]; \
 	then \
-		if [ ! -f $@.orig ]; \
-		then \
-			mv $@ $@.orig; \
-		fi; \
-		po4a-translate -f texinfo -k 0 -M utf8 -m $@.orig -p $< -l $@; \
-	fi
-	./translate_24.5.sh
+		po4a-translate -f texinfo -k 0 -M utf8 -m original_texis/$@ -p $@.po -l $@; \
+	else \
+		cp -pf original_texis/$@ $@; \
+	fi; \
 
-emacs.html: $(TEXIS_FOR_TRANSLATE)
+emacs.html: $(TEXIS)
+	./translate_24.5.sh
 	texi2any --set-customization-variable TEXI2HTML=1 emacs.texi
 
-html/index.html: $(TEXIS_FOR_TRANSLATE)
+html/index.html: $(TEXIS)
+	./translate_24.5.sh
 	makeinfo -o html/ --html emacs.texi
 
-emacs245-ja.info: $(TEXIS_FOR_TRANSLATE)
+emacs245-ja.info: $(TEXIS)
+	./translate_24.5.sh
 	makeinfo --no-split -o emacs245-ja.info emacs.texi
 
-emacs.pdf emacs-xtra.pdf: $(TEXIS_FOR_TRANSLATE)
+emacs.pdf emacs-xtra.pdf: $(TEXIS)
+	./translate_24.5.sh
 	TEX=ptex texi2dvi -c emacs.texi
 	dvipdfmx emacs.dvi
 	rm -f emacs.dvi
@@ -139,7 +137,8 @@ emacs.pdf emacs-xtra.pdf: $(TEXIS_FOR_TRANSLATE)
 	dvipdfmx emacs-xtra.dvi
 	rm emacs-xtra.dvi
 
-emacs.texis.tar.gz: $(TEXIS_FOR_TRANSLATE)
+emacs.texis.tar.gz: $(TEXIS)
+	./translate_24.5.sh
 	if [ ! -d emacs.texis ]; \
 	then \
 		mkdir emacs.texis/; \
