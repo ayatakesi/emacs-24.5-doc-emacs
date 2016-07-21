@@ -53,12 +53,6 @@ TEXIS_FOR_TRANSLATE="\
 
 for TEXI in ${TEXIS_FOR_TRANSLATE}
 do
-    # 初回は元ファイルを*.origで退避
-    if [ ! -f ${TEXI}.orig ]
-    then
-	cp -p ${TEXI} ${TEXI}.orig
-    fi
-
     # POファイルの作成
-    po4a-gettextize -M utf8 -f texinfo -m ${TEXI}.orig -p ${TEXI}.po
+    po4a-gettextize -M utf8 -f texinfo -m original_texis/${TEXI} -p ${TEXI}.po
 done
