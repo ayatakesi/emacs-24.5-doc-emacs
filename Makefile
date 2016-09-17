@@ -33,6 +33,9 @@ multi-html: html/index.html
 # info用のターゲット
 info: emacs245-ja.info
 
+# ASCII text用のターゲット
+txt: emacs.txt
+
 # pdf用のターゲット(オプション)
 pdf: emacs.pdf emacs-xtra.pdf
 
@@ -104,6 +107,7 @@ clean:
 	rm -f emacs245-ja.info
 	rm -f emacs.pdf
 	rm -f emacs-xtra.pdf
+	rm -f emacs.txt
 	rm -f emacs.texis.tar.gz
 	rm -fR emacs.texis/
 
@@ -136,6 +140,10 @@ emacs.pdf emacs-xtra.pdf: $(TEXIS)
 	TEX=ptex texi2dvi -c emacs-xtra.texi
 	dvipdfmx emacs-xtra.dvi
 	rm emacs-xtra.dvi
+
+emacs.txt: $(TEXI)
+	./translate_24.5.sh
+	texi2any --plaintext emacs.texi > emacs.txt
 
 emacs.texis.tar.gz: $(TEXIS)
 	./translate_24.5.sh
