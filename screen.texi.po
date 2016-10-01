@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-10-01 20:53+0900\n"
+"PO-Revision-Date: 2016-10-01 22:35+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Screen"
 #: original_texis/screen.texi:6
 #, no-wrap
 msgid "The Organization of the Screen"
-msgstr "The Organization of the Screen"
+msgstr "画面の構成"
 
 #. type: cindex
 #: original_texis/screen.texi:7
@@ -263,7 +263,7 @@ msgstr ""
 #: original_texis/screen.texi:98
 #, no-wrap
 msgid "The Echo Area"
-msgstr "The Echo Area"
+msgstr "エコーエリア"
 
 #. type: cindex
 #: original_texis/screen.texi:99
@@ -435,7 +435,7 @@ msgstr ""
 #: original_texis/screen.texi:162
 #, no-wrap
 msgid "The Mode Line"
-msgstr "The Mode Line"
+msgstr "モードライン"
 
 #. type: cindex
 #: original_texis/screen.texi:163
@@ -720,7 +720,7 @@ msgstr ""
 #: original_texis/screen.texi:281
 #, no-wrap
 msgid "The Menu Bar"
-msgstr "The Menu Bar"
+msgstr "メニューバー"
 
 #. type: cindex
 #: original_texis/screen.texi:282
