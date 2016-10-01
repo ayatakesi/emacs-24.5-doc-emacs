@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 00:23+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Buffers"
 #: original_texis/buffers.texi:6
 #, no-wrap
 msgid "Using Multiple Buffers"
-msgstr "Using Multiple Buffers"
+msgstr "複数バッファーの使用"
 
 #. type: cindex
 #: original_texis/buffers.texi:8
@@ -228,7 +228,7 @@ msgstr "バッファー操作のための便利な機能とカスタマイズ。
 #: original_texis/buffers.texi:64
 #, no-wrap
 msgid "Creating and Selecting Buffers"
-msgstr "Creating and Selecting Buffers"
+msgstr "バッファーの作成と選択"
 
 #. type: cindex
 #: original_texis/buffers.texi:65
@@ -539,7 +539,7 @@ msgstr ""
 #: original_texis/buffers.texi:166
 #, no-wrap
 msgid "Listing Existing Buffers"
-msgstr "Listing Existing Buffers"
+msgstr "既存のバッファーを一覧する"
 
 #. type: kindex
 #: original_texis/buffers.texi:169 original_texis/buffers.texi:174
@@ -647,7 +647,7 @@ msgstr ""
 #: original_texis/buffers.texi:211
 #, no-wrap
 msgid "Miscellaneous Buffer Operations"
-msgstr "Miscellaneous Buffer Operations"
+msgstr "その他のバッファー操作"
 
 #. type: kindex
 #: original_texis/buffers.texi:214 original_texis/buffers.texi:224
@@ -820,7 +820,7 @@ msgstr ""
 #: original_texis/buffers.texi:269
 #, no-wrap
 msgid "Killing Buffers"
-msgstr "Killing Buffers"
+msgstr "バッファーのkill"
 
 #. type: cindex
 #: original_texis/buffers.texi:271
@@ -1054,7 +1054,7 @@ msgstr ""
 #: original_texis/buffers.texi:346
 #, no-wrap
 msgid "Operating on Several Buffers"
-msgstr "Operating on Several Buffers"
+msgstr "複数バッファーにたいする操作"
 
 #. type: cindex
 #: original_texis/buffers.texi:347
@@ -1926,7 +1926,7 @@ msgstr ""
 #: original_texis/buffers.texi:599
 #, no-wrap
 msgid "Convenience Features and Customization of Buffer Handling"
-msgstr "Convenience Features and Customization of Buffer Handling"
+msgstr "バッファー処理の便利な機能とカスタマイズ"
 
 #. type: Plain text
 #: original_texis/buffers.texi:603
@@ -1974,7 +1974,7 @@ msgstr "バッファーメニューの設定。"
 #: original_texis/buffers.texi:611
 #, no-wrap
 msgid "Making Buffer Names Unique"
-msgstr "Making Buffer Names Unique"
+msgstr "バッファー名を一意にする"
 
 #. type: cindex
 #: original_texis/buffers.texi:613
@@ -2082,7 +2082,7 @@ msgstr ""
 #: original_texis/buffers.texi:654
 #, no-wrap
 msgid "Fast minibuffer selection"
-msgstr "Fast minibuffer selection"
+msgstr "素早いミニバッファーの選択"
 
 #. type: findex
 #: original_texis/buffers.texi:656
@@ -2153,7 +2153,7 @@ msgstr ""
 #: original_texis/buffers.texi:682
 #, no-wrap
 msgid "Customizing Buffer Menus"
-msgstr "Customizing Buffer Menus"
+msgstr "バッファーメニューのカスタマイズ"
 
 #. type: findex
 #: original_texis/buffers.texi:684
