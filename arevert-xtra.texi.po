@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-10-01 21:08+0900\n"
+"PO-Revision-Date: 2016-10-01 23:59+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Autorevert"
 #: original_texis/arevert-xtra.texi:8
 #, no-wrap
 msgid "Auto Reverting Non-File Buffers"
-msgstr "Auto Reverting Non-File Buffers"
+msgstr "非ファイルバッファーの自動リバート"
 
 #. type: Plain text
 #: original_texis/arevert-xtra.texi:16
@@ -164,7 +164,7 @@ msgstr ""
 #: original_texis/arevert-xtra.texi:62
 #, no-wrap
 msgid "Auto Reverting Dired buffers"
-msgstr "Auto Reverting Dired buffers"
+msgstr "Diredバッファーの自動リバート"
 
 #. type: Plain text
 #: original_texis/arevert-xtra.texi:67
@@ -245,7 +245,7 @@ msgstr ""
 #: original_texis/arevert-xtra.texi:101
 #, no-wrap
 msgid "Adding Support for Auto-Reverting additional Buffers."
-msgstr "Adding Support for Auto-Reverting additional Buffers."
+msgstr "追加のバッファーにたいする自動リバートのサポートの追加"
 
 #. type: Plain text
 #: original_texis/arevert-xtra.texi:105
