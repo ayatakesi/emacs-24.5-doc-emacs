@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 00:57+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -572,7 +572,7 @@ msgstr ""
 #: original_texis/indent.texi:201
 #, no-wrap
 msgid "Tabs vs. Spaces"
-msgstr "Tabs vs. Spaces"
+msgstr "タブ vs. スペース"
 
 #. type: vindex
 #: original_texis/indent.texi:203
@@ -665,7 +665,7 @@ msgstr ""
 #: original_texis/indent.texi:235
 #, no-wrap
 msgid "Convenience Features for Indentation"
-msgstr "Convenience Features for Indentation"
+msgstr "インデントの便利な機能"
 
 #. type: vindex
 #: original_texis/indent.texi:237
