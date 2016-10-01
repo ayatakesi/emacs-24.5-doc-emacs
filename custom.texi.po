@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 07:59+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -119,7 +119,7 @@ msgstr "初期化ファイルで一般的なカスタマイズを記述する方
 #: original_texis/custom.texi:37
 #, no-wrap
 msgid "Easy Customization Interface"
-msgstr "Easy Customization Interface"
+msgstr "Easy Customizationインターフェース"
 
 #. type: cindex
 #: original_texis/custom.texi:39
@@ -469,7 +469,7 @@ msgstr ""
 #: original_texis/custom.texi:135
 #, no-wrap
 msgid "Browsing and Searching for Settings"
-msgstr "Browsing and Searching for Settings"
+msgstr "セッティングのブラウズと検索"
 
 #. type: findex
 #: original_texis/custom.texi:136
@@ -2066,7 +2066,7 @@ msgstr "ディレクトリーにより変数の値を指定する方法。"
 #: original_texis/custom.texi:742
 #, no-wrap
 msgid "Examining and Setting Variables"
-msgstr "Examining and Setting Variables"
+msgstr "変数の確認とセット"
 
 #. type: cindex
 #: original_texis/custom.texi:743
@@ -2537,7 +2537,7 @@ msgstr ""
 #: original_texis/custom.texi:936
 #, no-wrap
 msgid "Local Variables"
-msgstr "Local Variables"
+msgstr "ローカル変数"
 
 #. type: item
 #: original_texis/custom.texi:939
@@ -2773,7 +2773,7 @@ msgstr "(default-value 'fill-column)\n"
 #: original_texis/custom.texi:1022
 #, no-wrap
 msgid "Local Variables in Files"
-msgstr "Local Variables in Files"
+msgstr "ファイル内のローカル変数"
 
 #. type: cindex
 #: original_texis/custom.texi:1023
@@ -3197,7 +3197,7 @@ msgstr ""
 #: original_texis/custom.texi:1205
 #, no-wrap
 msgid "Safety of File Variables"
-msgstr "Safety of File Variables"
+msgstr "安全なファイル変数"
 
 #. type: Plain text
 #: original_texis/custom.texi:1212
@@ -3352,7 +3352,7 @@ msgstr ""
 #: original_texis/custom.texi:1267
 #, no-wrap
 msgid "Per-Directory Local Variables"
-msgstr "Per-Directory Local Variables"
+msgstr "ディレクトリーごとのローカル変数"
 
 #. type: cindex
 #: original_texis/custom.texi:1268
@@ -3604,7 +3604,7 @@ msgstr ""
 #: original_texis/custom.texi:1365
 #, no-wrap
 msgid "Customizing Key Bindings"
-msgstr "Customizing Key Bindings"
+msgstr "キーバインディングのカスタマイズ"
 
 #. type: cindex
 #: original_texis/custom.texi:1366
@@ -4078,7 +4078,7 @@ msgstr ""
 #: original_texis/custom.texi:1522
 #, no-wrap
 msgid "Minibuffer Keymaps"
-msgstr "Minibuffer Keymaps"
+msgstr "ミニバッファーキーマップ"
 
 #. type: cindex
 #: original_texis/custom.texi:1524
@@ -4176,7 +4176,7 @@ msgstr ""
 #: original_texis/custom.texi:1553
 #, no-wrap
 msgid "Changing Key Bindings Interactively"
-msgstr "Changing Key Bindings Interactively"
+msgstr "対話的なキーバインディングの変更"
 
 #. type: cindex
 #: original_texis/custom.texi:1554
@@ -4420,7 +4420,7 @@ msgstr ""
 #: original_texis/custom.texi:1640
 #, no-wrap
 msgid "Rebinding Keys in Your Init File"
-msgstr "Rebinding Keys in Your Init File"
+msgstr "キーのリバインド"
 
 #. type: cindex
 #: original_texis/custom.texi:1641
@@ -4742,7 +4742,7 @@ msgstr ""
 #: original_texis/custom.texi:1785
 #, no-wrap
 msgid "Rebinding Function Keys"
-msgstr "Rebinding Function Keys"
+msgstr "ファンクションキーのリバインド"
 
 #. type: Plain text
 #: original_texis/custom.texi:1793
@@ -4937,7 +4937,7 @@ msgstr ""
 #: original_texis/custom.texi:1853
 #, no-wrap
 msgid "Named @acronym{ASCII} Control Characters"
-msgstr "Named @acronym{ASCII} Control Characters"
+msgstr "名前のある@acronym{ASCII}コントロール文字"
 
 #. type: Plain text
 #: original_texis/custom.texi:1863
@@ -5005,7 +5005,7 @@ msgstr ""
 #: original_texis/custom.texi:1882
 #, no-wrap
 msgid "Rebinding Mouse Buttons"
-msgstr "Rebinding Mouse Buttons"
+msgstr "マウスボタンのリバインド"
 
 #. type: cindex
 #: original_texis/custom.texi:1883
@@ -5371,7 +5371,7 @@ msgstr ""
 #: original_texis/custom.texi:2014
 #, no-wrap
 msgid "Disabling Commands"
-msgstr "Disabling Commands"
+msgstr "コマンドの無効化"
 
 #. type: cindex
 #: original_texis/custom.texi:2015
@@ -5505,7 +5505,7 @@ msgstr ""
 #: original_texis/custom.texi:2067
 #, no-wrap
 msgid "The Emacs Initialization File"
-msgstr "The Emacs Initialization File"
+msgstr "Emacs初期化ファイル"
 
 #. type: cindex
 #: original_texis/custom.texi:2068
@@ -5756,7 +5756,7 @@ msgstr "initファイルでの非@acronym{ASCII}文字の使用。"
 #: original_texis/custom.texi:2143
 #, no-wrap
 msgid "Init File Syntax"
-msgstr "Init File Syntax"
+msgstr "initファイルの構文"
 
 #. type: Plain text
 #: original_texis/custom.texi:2150
@@ -5971,7 +5971,7 @@ msgstr "シングルクォートに続けてLispオブジェクトを記述し�
 #: original_texis/custom.texi:2217
 #, no-wrap
 msgid "Init File Examples"
-msgstr "Init File Examples"
+msgstr "initファイルの例"
 
 #. type: Plain text
 #: original_texis/custom.texi:2221
@@ -6427,7 +6427,7 @@ msgstr ""
 #: original_texis/custom.texi:2443
 #, no-wrap
 msgid "Terminal-specific Initialization"
-msgstr "Terminal-specific Initialization"
+msgstr "端末固有の初期化"
 
 #. type: Plain text
 #: original_texis/custom.texi:2452
@@ -6521,7 +6521,7 @@ msgstr ""
 #: original_texis/custom.texi:2483
 #, no-wrap
 msgid "How Emacs Finds Your Init File"
-msgstr "How Emacs Finds Your Init File"
+msgstr "Emacsがinitファイルを探す方法"
 
 #. type: Plain text
 #: original_texis/custom.texi:2491
@@ -6572,7 +6572,7 @@ msgstr ""
 #: original_texis/custom.texi:2506
 #, no-wrap
 msgid "Non-@acronym{ASCII} Characters in Init Files"
-msgstr "Non-@acronym{ASCII} Characters in Init Files"
+msgstr "initファイル内の非@acronym{ASCII}文字"
 
 #. type: cindex
 #: original_texis/custom.texi:2507
