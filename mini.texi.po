@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-01 23:01+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Minibuffer"
 #: original_texis/mini.texi:6
 #, no-wrap
 msgid "The Minibuffer"
-msgstr "The Minibuffer"
+msgstr "ミニバッファー"
 
 #. type: cindex
 #: original_texis/mini.texi:7
@@ -143,7 +143,7 @@ msgstr "エコーエリアでyes/noにこたえる。"
 #: original_texis/mini.texi:28
 #, no-wrap
 msgid "Using the Minibuffer"
-msgstr "Using the Minibuffer"
+msgstr "ミニバッファーを使う"
 
 #. type: cindex
 #: original_texis/mini.texi:30
@@ -265,7 +265,7 @@ msgstr ""
 #: original_texis/mini.texi:72
 #, no-wrap
 msgid "Minibuffers for File Names"
-msgstr "Minibuffers for File Names"
+msgstr "ミニバッファーでのファイル名"
 
 #. type: cindex
 #: original_texis/mini.texi:74
@@ -469,7 +469,7 @@ msgstr ""
 #: original_texis/mini.texi:152
 #, no-wrap
 msgid "Editing in the Minibuffer"
-msgstr "Editing in the Minibuffer"
+msgstr "ミニバッファーでの編集"
 
 #. type: Plain text
 #: original_texis/mini.texi:157
@@ -1265,7 +1265,7 @@ msgstr ""
 #: original_texis/mini.texi:434
 #, no-wrap
 msgid "How Completion Alternatives Are Chosen"
-msgstr "How Completion Alternatives Are Chosen"
+msgstr "補完候補が選択される方法"
 
 #. type: cindex
 #: original_texis/mini.texi:435
@@ -1920,7 +1920,7 @@ msgstr ""
 #: original_texis/mini.texi:669
 #, no-wrap
 msgid "Repeating Minibuffer Commands"
-msgstr "Repeating Minibuffer Commands"
+msgstr "ミニバッファーでのコマンドの繰り返し"
 
 #. type: cindex
 #: original_texis/mini.texi:670
@@ -2085,7 +2085,7 @@ msgstr ""
 #: original_texis/mini.texi:727
 #, no-wrap
 msgid "Entering passwords"
-msgstr "Entering passwords"
+msgstr "パスワードの入力"
 
 #. type: Plain text
 #: original_texis/mini.texi:733
