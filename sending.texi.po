@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:32+0900\n"
+"PO-Revision-Date: 2016-10-02 03:40+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -261,7 +261,7 @@ msgstr "Mail Format"
 #: original_texis/sending.texi:67
 #, no-wrap
 msgid "The Format of the Mail Buffer"
-msgstr "The Format of the Mail Buffer"
+msgstr "メールバッファーのフォーマット"
 
 #. type: Plain text
 #: original_texis/sending.texi:70
@@ -342,7 +342,7 @@ msgstr "Mail Headers"
 #: original_texis/sending.texi:102
 #, no-wrap
 msgid "Mail Header Fields"
-msgstr "Mail Header Fields"
+msgstr "メールヘッダーフィールド"
 
 #. type: cindex
 #: original_texis/sending.texi:103
@@ -1222,7 +1222,7 @@ msgstr ""
 #: original_texis/sending.texi:411
 #, no-wrap
 msgid "Mail Header Editing"
-msgstr "Mail Header Editing"
+msgstr "メールヘッダーの編集"
 
 #. type: Plain text
 #: original_texis/sending.texi:415
@@ -1624,7 +1624,7 @@ msgstr ""
 #: original_texis/sending.texi:521
 #, no-wrap
 msgid "Mail Miscellany"
-msgstr "Mail Miscellany"
+msgstr "メール、その他"
 
 #. type: kindex
 #: original_texis/sending.texi:523
@@ -2026,7 +2026,7 @@ msgstr "Mail Methods"
 #: original_texis/sending.texi:664
 #, no-wrap
 msgid "Mail-Composition Methods"
-msgstr "Mail-Composition Methods"
+msgstr "メール作成方法"
 
 #. type: cindex
 #: original_texis/sending.texi:665
