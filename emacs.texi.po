@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2015-09-19 21:45+0900\n"
-"PO-Revision-Date: 2016-07-15 12:39+0900\n"
+"PO-Revision-Date: 2016-10-01 19:38+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -19,7 +19,7 @@ msgstr ""
 #: emacs.texi.orig:4 emacs.texi.orig:79 emacs.texi.orig:84
 #, no-wrap
 msgid "GNU Emacs Manual"
-msgstr "GNU Emacs Manual(日本語訳)"
+msgstr "GNU Emacs Manual(Japanese Translation)"
 
 #. type: include
 #: emacs.texi.orig:18
