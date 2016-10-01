@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-07-15 12:27+0900\n"
+"PO-Revision-Date: 2016-10-02 08:29+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Microsoft Windows"
 #: original_texis/msdog.texi:6
 #, no-wrap
 msgid "Emacs and Microsoft Windows/MS-DOS"
-msgstr "Emacs and Microsoft Windows/MS-DOS"
+msgstr "EmacsとMicrosoft Windows/MS-DOS"
 
 #. type: cindex
 #: original_texis/msdog.texi:8
@@ -201,7 +201,7 @@ msgstr "* MS-DOS:: MS-DOSでのEmacsの使用。"
 #: original_texis/msdog.texi:48
 #, no-wrap
 msgid "How to Start Emacs on MS-Windows"
-msgstr "How to Start Emacs on MS-Windows"
+msgstr "MS-WindowsでEmacsを開始する方法"
 
 #. type: cindex
 #: original_texis/msdog.texi:49
@@ -395,7 +395,7 @@ msgstr ""
 #: original_texis/msdog.texi:128
 #, no-wrap
 msgid "Text Files and Binary Files"
-msgstr "Text Files and Binary Files"
+msgstr "テキストファイルとバイナリーファイル"
 
 #. type: cindex
 #: original_texis/msdog.texi:129
@@ -631,7 +631,7 @@ msgstr ""
 #: original_texis/msdog.texi:222
 #, no-wrap
 msgid "File Names on MS-Windows"
-msgstr "File Names on MS-Windows"
+msgstr "MS-Windowsのファイル名"
 
 #. type: cindex
 #: original_texis/msdog.texi:223
@@ -786,7 +786,7 @@ msgstr ""
 #: original_texis/msdog.texi:290
 #, no-wrap
 msgid "Emulation of @code{ls} on MS-Windows"
-msgstr "Emulation of @code{ls} on MS-Windows"
+msgstr "MS-Windowsでの@code{ls}のエミュレーション"
 
 #. type: cindex
 #: original_texis/msdog.texi:291
@@ -1152,7 +1152,7 @@ msgstr ""
 #: original_texis/msdog.texi:427
 #, no-wrap
 msgid "HOME and Startup Directories on MS-Windows"
-msgstr "HOME and Startup Directories on MS-Windows"
+msgstr "MS-WindowsでのHOMEディレクトリーと開始ディレクトリー"
 
 #. type: cindex
 #: original_texis/msdog.texi:428
@@ -1288,7 +1288,7 @@ msgstr ""
 #: original_texis/msdog.texi:481
 #, no-wrap
 msgid "Keyboard Usage on MS-Windows"
-msgstr "Keyboard Usage on MS-Windows"
+msgstr "MS-Windowsでのキーボードの使用方法"
 
 #. type: cindex
 #: original_texis/msdog.texi:482
@@ -1704,7 +1704,7 @@ msgstr ""
 #: original_texis/msdog.texi:631
 #, no-wrap
 msgid "Mouse Usage on MS-Windows"
-msgstr "Mouse Usage on MS-Windows"
+msgstr "MS-Windowsでのマウスの使用方法"
 
 #. type: cindex
 #: original_texis/msdog.texi:632
@@ -1784,7 +1784,7 @@ msgstr ""
 #: original_texis/msdog.texi:658
 #, no-wrap
 msgid "Subprocesses on Windows 9X/ME and Windows NT/2K/XP"
-msgstr "Subprocesses on Windows 9X/ME and Windows NT/2K/XP"
+msgstr "Windows 9X/MEおよびWindows NT/2000/XPでのサブプロセス"
 
 #. type: cindex
 #: original_texis/msdog.texi:659
@@ -1959,7 +1959,7 @@ msgstr ""
 #: original_texis/msdog.texi:727
 #, no-wrap
 msgid "Printing and MS-Windows"
-msgstr "Printing and MS-Windows"
+msgstr "MS-Windowsでの印刷"
 
 #. type: Plain text
 #: original_texis/msdog.texi:735
@@ -2336,7 +2336,7 @@ msgstr ""
 #: original_texis/msdog.texi:873
 #, no-wrap
 msgid "Specifying Fonts on MS-Windows"
-msgstr "Specifying Fonts on MS-Windows"
+msgstr "MS-Windowsでのフォント指定"
 
 #. type: cindex
 #: original_texis/msdog.texi:874
@@ -2680,7 +2680,7 @@ msgstr ""
 #: original_texis/msdog.texi:993
 #, no-wrap
 msgid "Miscellaneous Windows-specific features"
-msgstr "Miscellaneous Windows-specific features"
+msgstr "その他のWindows固有の機能"
 
 #. type: Plain text
 #: original_texis/msdog.texi:996
