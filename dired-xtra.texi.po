@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 03:23+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Subdir Switches"
 #: original_texis/dired-xtra.texi:8
 #, no-wrap
 msgid "Subdirectory Switches in Dired"
-msgstr "Subdirectory Switches in Dired"
+msgstr "Diredでのサブディレクトリーにたいするスイッチ"
 
 #. type: Plain text
 #: original_texis/dired-xtra.texi:13
