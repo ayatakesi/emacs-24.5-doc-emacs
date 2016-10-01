@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:32+0900\n"
+"PO-Revision-Date: 2016-10-02 08:06+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -19,7 +19,7 @@ msgstr ""
 #: original_texis/trouble.texi:6
 #, no-wrap
 msgid "Dealing with Common Problems"
-msgstr "Dealing with Common Problems"
+msgstr "一般的な問題への対処"
 
 #. type: iftex
 #: original_texis/trouble.texi:12
@@ -48,7 +48,7 @@ msgstr "Quitting"
 #: original_texis/trouble.texi:19
 #, no-wrap
 msgid "Quitting and Aborting"
-msgstr "Quitting and Aborting"
+msgstr "中止と中断"
 
 #. type: cindex
 #: original_texis/trouble.texi:20 original_texis/trouble.texi:46
@@ -381,7 +381,7 @@ msgstr "Lossage"
 #: original_texis/trouble.texi:137
 #, no-wrap
 msgid "Dealing with Emacs Trouble"
-msgstr "Dealing with Emacs Trouble"
+msgstr "Emacsのトラブルへの対処"
 
 #. type: cindex
 #: original_texis/trouble.texi:138
@@ -501,7 +501,7 @@ msgstr "Emacsが応答しなくなったとき、何を行なうべきか。"
 #: original_texis/trouble.texi:159
 #, no-wrap
 msgid "If @key{DEL} Fails to Delete"
-msgstr "If @key{DEL} Fails to Delete"
+msgstr "@key{DEL}で削除できない場合"
 
 #. type: cindex
 #: original_texis/trouble.texi:160
@@ -645,7 +645,7 @@ msgstr ""
 #: original_texis/trouble.texi:216
 #, no-wrap
 msgid "Recursive Editing Levels"
-msgstr "Recursive Editing Levels"
+msgstr "再帰編集レベル"
 
 #. type: cindex
 #: original_texis/trouble.texi:217
@@ -687,7 +687,7 @@ msgstr ""
 #: original_texis/trouble.texi:231
 #, no-wrap
 msgid "Garbage on the Screen"
-msgstr "Garbage on the Screen"
+msgstr "スクリーン上のゴミ"
 
 #. type: cindex
 #: original_texis/trouble.texi:232
@@ -744,7 +744,7 @@ msgstr ""
 #: original_texis/trouble.texi:251
 #, no-wrap
 msgid "Garbage in the Text"
-msgstr "Garbage in the Text"
+msgstr "テキスト内のゴミ"
 
 #. type: cindex
 #: original_texis/trouble.texi:252
@@ -789,7 +789,7 @@ msgstr ""
 #: original_texis/trouble.texi:267
 #, no-wrap
 msgid "Running out of Memory"
-msgstr "Running out of Memory"
+msgstr "メモリー不足"
 
 #. type: cindex
 #: original_texis/trouble.texi:268
@@ -852,7 +852,7 @@ msgstr ""
 #: original_texis/trouble.texi:291
 #, no-wrap
 msgid "When Emacs Crashes"
-msgstr "When Emacs Crashes"
+msgstr "Emacsがクラッシュしたとき"
 
 #. type: cindex
 #: original_texis/trouble.texi:293
@@ -1005,7 +1005,7 @@ msgstr ""
 #: original_texis/trouble.texi:359
 #, no-wrap
 msgid "Recovery After a Crash"
-msgstr "Recovery After a Crash"
+msgstr "クラッシュ後のリカバリー"
 
 #. type: cindex
 #: original_texis/trouble.texi:360
@@ -1245,7 +1245,7 @@ msgstr "Bugs"
 #: original_texis/trouble.texi:457
 #, no-wrap
 msgid "Reporting Bugs"
-msgstr "Reporting Bugs"
+msgstr "バグの報告"
 
 #. type: cindex
 #: original_texis/trouble.texi:459
@@ -1326,7 +1326,7 @@ msgstr "GNU Emacsにパッチを送る方法。"
 #: original_texis/trouble.texi:475
 #, no-wrap
 msgid "Reading Existing Bug Reports and Known Problems"
-msgstr "Reading Existing Bug Reports and Known Problems"
+msgstr "既存のバグレポートの既知の問題を読む"
 
 #. type: Plain text
 #: original_texis/trouble.texi:481
@@ -1472,7 +1472,7 @@ msgstr "Bug Criteria"
 #: original_texis/trouble.texi:541
 #, no-wrap
 msgid "When Is There a Bug"
-msgstr "When Is There a Bug"
+msgstr "バグがあったとき"
 
 #. type: cindex
 #: original_texis/trouble.texi:542
@@ -1733,7 +1733,7 @@ msgstr ""
 #: original_texis/trouble.texi:653
 #, no-wrap
 msgid "Checklist for Bug Reports"
-msgstr "Checklist for Bug Reports"
+msgstr "バグレポートのためのチェックリスト"
 
 #. type: cindex
 #: original_texis/trouble.texi:654
@@ -2688,7 +2688,7 @@ msgstr ""
 #: original_texis/trouble.texi:1051
 #, no-wrap
 msgid "Sending Patches for GNU Emacs"
-msgstr "Sending Patches for GNU Emacs"
+msgstr "GNU Emacsへのパッチの送付"
 
 #. type: cindex
 #: original_texis/trouble.texi:1053
@@ -2953,7 +2953,7 @@ msgstr "Contributing"
 #: original_texis/trouble.texi:1165
 #, no-wrap
 msgid "Contributing to Emacs Development"
-msgstr "Contributing to Emacs Development"
+msgstr "Emacs開発への貢献"
 
 #. type: cindex
 #: original_texis/trouble.texi:1166
@@ -3059,7 +3059,7 @@ msgstr "Service"
 #: original_texis/trouble.texi:1209
 #, no-wrap
 msgid "How To Get Help with GNU Emacs"
-msgstr "How To Get Help with GNU Emacs"
+msgstr "GNU Emacsにたいして助けを得る方法"
 
 #. type: cindex
 #: original_texis/trouble.texi:1210
