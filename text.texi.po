@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-10-01 20:53+0900\n"
+"PO-Revision-Date: 2016-10-02 01:11+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Text"
 #: original_texis/text.texi:6
 #, no-wrap
 msgid "Commands for Human Languages"
-msgstr "Commands for Human Languages"
+msgstr "人間の言語のためのコマンド"
 
 #. type: cindex
 #: original_texis/text.texi:7
@@ -1258,7 +1258,7 @@ msgstr ""
 #: original_texis/text.texi:408
 #, no-wrap
 msgid "Filling Text"
-msgstr "Filling Text"
+msgstr "テキストのフィル"
 
 #. type: cindex
 #: original_texis/text.texi:409
@@ -1327,7 +1327,7 @@ msgstr "Emacsがフィルプレフィクスを自動的に決定する方法。"
 #: original_texis/text.texi:425
 #, no-wrap
 msgid "Auto Fill Mode"
-msgstr "Auto Fill Mode"
+msgstr "Auto Fillモード"
 
 #. type: cindex
 #: original_texis/text.texi:426
@@ -1469,7 +1469,7 @@ msgstr "(@ref{Fill Commands}を参照してください)。"
 #: original_texis/text.texi:480
 #, no-wrap
 msgid "Explicit Fill Commands"
-msgstr "Explicit Fill Commands"
+msgstr "明示的なフィルコマンド"
 
 #. type: item
 #: original_texis/text.texi:483 original_texis/text.texi:495
@@ -1735,7 +1735,7 @@ msgstr ""
 #: original_texis/text.texi:572
 #, no-wrap
 msgid "The Fill Prefix"
-msgstr "The Fill Prefix"
+msgstr "フィルプレフィクス"
 
 #. type: cindex
 #: original_texis/text.texi:574
@@ -1982,7 +1982,7 @@ msgstr ""
 #: original_texis/text.texi:668
 #, no-wrap
 msgid "Adaptive Filling"
-msgstr "Adaptive Filling"
+msgstr "適応型フィル"
 
 #. type: cindex
 #: original_texis/text.texi:670
@@ -2145,7 +2145,7 @@ msgstr ""
 #: original_texis/text.texi:734
 #, no-wrap
 msgid "Case Conversion Commands"
-msgstr "Case Conversion Commands"
+msgstr "大文字小文字変換コマンド"
 
 #. type: cindex
 #: original_texis/text.texi:735
@@ -2696,7 +2696,7 @@ msgstr "アウトラインをズームする折り畳み。"
 #: original_texis/text.texi:914
 #, no-wrap
 msgid "Format of Outlines"
-msgstr "Format of Outlines"
+msgstr "アウトラインのフォーマット"
 
 #. type: cindex
 #: original_texis/text.texi:916
@@ -2880,7 +2880,7 @@ msgstr ""
 #: original_texis/text.texi:981
 #, no-wrap
 msgid "Outline Motion Commands"
-msgstr "Outline Motion Commands"
+msgstr "アウトライン移動コマンド"
 
 #. type: Plain text
 #: original_texis/text.texi:985
@@ -3057,7 +3057,7 @@ msgstr ""
 #: original_texis/text.texi:1026
 #, no-wrap
 msgid "Outline Visibility Commands"
-msgstr "Outline Visibility Commands"
+msgstr "アウトライン表示コマンド"
 
 #. type: Plain text
 #: original_texis/text.texi:1032
@@ -3492,7 +3492,7 @@ msgstr ""
 #: original_texis/text.texi:1141
 #, no-wrap
 msgid "Viewing One Outline in Multiple Views"
-msgstr "Viewing One Outline in Multiple Views"
+msgstr "複数ビューによるアウトラインの閲覧"
 
 #. type: cindex
 #: original_texis/text.texi:1143
@@ -3553,7 +3553,7 @@ msgstr ""
 #: original_texis/text.texi:1161
 #, no-wrap
 msgid "Folding Editing"
-msgstr "Folding Editing"
+msgstr "折り畳み編集"
 
 #. type: cindex
 #: original_texis/text.texi:1163
@@ -4003,7 +4003,7 @@ msgstr "Orgバッファーをさまざまなフォーマットでエクスポー
 #: original_texis/text.texi:1327
 #, no-wrap
 msgid "Org as an organizer"
-msgstr "Org as an organizer"
+msgstr "オーガナイザーとしてのOrg"
 
 #. type: cindex
 #: original_texis/text.texi:1328
@@ -4153,7 +4153,7 @@ msgstr "詳細は、@ref{Agenda Views,,,org, The Org Manual}を参照してく�
 #: original_texis/text.texi:1373
 #, no-wrap
 msgid "Org as an authoring system"
-msgstr "Org as an authoring system"
+msgstr "オーサリングシステムとしてのOrg"
 
 #. type: cindex
 #: original_texis/text.texi:1374
@@ -4271,7 +4271,7 @@ msgstr ""
 #: original_texis/text.texi:1413
 #, no-wrap
 msgid "@TeX{} Mode"
-msgstr "@TeX{} Mode"
+msgstr "@TeX{}モード"
 
 #. type: cindex
 #: original_texis/text.texi:1414
@@ -4529,7 +4529,7 @@ msgstr "TeXモードのカスタマイズと関連する機能。"
 #: original_texis/text.texi:1498
 #, no-wrap
 msgid "@TeX{} Editing Commands"
-msgstr "@TeX{} Editing Commands"
+msgstr "@TeX{}編集コマンド"
 
 #. type: item
 #: original_texis/text.texi:1501
@@ -4765,7 +4765,7 @@ msgstr ""
 #: original_texis/text.texi:1571
 #, no-wrap
 msgid "@LaTeX{} Editing Commands"
-msgstr "@LaTeX{} Editing Commands"
+msgstr "@LaTeX{}編集コマンド"
 
 #. type: Plain text
 #: original_texis/text.texi:1575
@@ -4881,7 +4881,7 @@ msgstr ""
 #: original_texis/text.texi:1613
 #, no-wrap
 msgid "@TeX{} Printing Commands"
-msgstr "@TeX{} Printing Commands"
+msgstr "@TeX{}印刷コマンド"
 
 #. type: Plain text
 #: original_texis/text.texi:1618
@@ -5432,7 +5432,7 @@ msgstr ""
 #: original_texis/text.texi:1800
 #, no-wrap
 msgid "@TeX{} Mode Miscellany"
-msgstr "@TeX{} Mode Miscellany"
+msgstr "@TeX{}モード、その他"
 
 #. type: vindex
 #: original_texis/text.texi:1802
@@ -5530,7 +5530,7 @@ msgstr ""
 #: original_texis/text.texi:1824
 #, no-wrap
 msgid "SGML and HTML Modes"
-msgstr "SGML and HTML Modes"
+msgstr "SGMLモードとHTMLモード"
 
 #. type: cindex
 #: original_texis/text.texi:1825
@@ -6409,7 +6409,7 @@ msgstr ""
 #: original_texis/text.texi:2106
 #, no-wrap
 msgid "Editing Format Information"
-msgstr "Editing Format Information"
+msgstr "フォーマット情報の編集"
 
 #. type: Plain text
 #: original_texis/text.texi:2114
@@ -6550,7 +6550,7 @@ msgstr "他のメニューエントリーについては、以下のセクショ
 #: original_texis/text.texi:2148
 #, no-wrap
 msgid "Faces in Enriched Text"
-msgstr "Faces in Enriched Text"
+msgstr "Enrichedテキストのフェイス"
 
 #. type: Plain text
 #: original_texis/text.texi:2155
@@ -6784,7 +6784,7 @@ msgstr ""
 #: original_texis/text.texi:2215
 #, no-wrap
 msgid "Indentation in Enriched Text"
-msgstr "Indentation in Enriched Text"
+msgstr "Enrichedテキストのインデント"
 
 #. type: Plain text
 #: original_texis/text.texi:2221
@@ -6942,7 +6942,7 @@ msgstr ""
 #: original_texis/text.texi:2266
 #, no-wrap
 msgid "Justification in Enriched Text"
-msgstr "Justification in Enriched Text"
+msgstr "Enrichedテキストの位置調整"
 
 #. type: cindex
 #: original_texis/text.texi:2267
@@ -7125,7 +7125,7 @@ msgstr ""
 #: original_texis/text.texi:2315
 #, no-wrap
 msgid "Setting Other Text Properties"
-msgstr "Setting Other Text Properties"
+msgstr "その他のテキストプロパティーのセッティング"
 
 #. type: Plain text
 #: original_texis/text.texi:2323
@@ -7153,7 +7153,7 @@ msgstr "プロパティー@code{invisible}および@code{intangible}は保存さ
 #: original_texis/text.texi:2327
 #, no-wrap
 msgid "Editing Text-based Tables"
-msgstr "Editing Text-based Tables"
+msgstr "テキストベーステーブルの編集"
 
 #. type: cindex
 #: original_texis/text.texi:2328
@@ -7329,7 +7329,7 @@ msgstr "テーブル、その他。"
 #: original_texis/text.texi:2372
 #, no-wrap
 msgid "What is a Text-based Table?"
-msgstr "What is a Text-based Table?"
+msgstr "テキストベーステーブルとは?"
 
 #. type: cindex
 #: original_texis/text.texi:2373
@@ -7446,7 +7446,7 @@ msgstr "セルは最小でも1文字分の幅と高さがなければなりま�
 #: original_texis/text.texi:2425
 #, no-wrap
 msgid "Creating a Table"
-msgstr "Creating a Table"
+msgstr "テーブルの作成"
 
 #. type: cindex
 #: original_texis/text.texi:2426
@@ -7662,7 +7662,7 @@ msgstr ""
 #: original_texis/text.texi:2495
 #, no-wrap
 msgid "Commands for Table Cells"
-msgstr "Commands for Table Cells"
+msgstr "テーブルセルにたいするコマンド"
 
 #. type: findex
 #: original_texis/text.texi:2497
@@ -7988,7 +7988,7 @@ msgstr ""
 #: original_texis/text.texi:2612
 #, no-wrap
 msgid "Converting Between Plain Text and Tables"
-msgstr "Converting Between Plain Text and Tables"
+msgstr "プレーンテキストとテーブルの変換"
 
 #. type: cindex
 #: original_texis/text.texi:2613
@@ -8198,7 +8198,7 @@ msgstr ""
 #: original_texis/text.texi:2701
 #, no-wrap
 msgid "Table Miscellany"
-msgstr "Table Miscellany"
+msgstr "テーブル、その他"
 
 #. type: cindex
 #: original_texis/text.texi:2703
@@ -8285,7 +8285,7 @@ msgstr ""
 #: original_texis/text.texi:2733
 #, no-wrap
 msgid "Two-Column Editing"
-msgstr "Two-Column Editing"
+msgstr "2列編集"
 
 #. type: cindex
 #: original_texis/text.texi:2734
