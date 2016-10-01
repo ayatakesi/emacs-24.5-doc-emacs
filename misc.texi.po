@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-10-01 20:52+0900\n"
+"PO-Revision-Date: 2016-10-02 04:12+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -19,7 +19,7 @@ msgstr ""
 #: original_texis/misc.texi:6
 #, no-wrap
 msgid "Miscellaneous Commands"
-msgstr "Miscellaneous Commands"
+msgstr "その他のコマンド"
 
 #. type: iftex
 #: original_texis/misc.texi:15
@@ -139,7 +139,7 @@ msgstr "Gnusサマリーコマンドの短い説明。"
 #: original_texis/misc.texi:48
 #, no-wrap
 msgid "Gnus Buffers"
-msgstr "Gnus Buffers"
+msgstr "Gnusバッファー"
 
 #. type: Plain text
 #: original_texis/misc.texi:54
@@ -220,7 +220,7 @@ msgstr ""
 #: original_texis/misc.texi:82
 #, no-wrap
 msgid "When Gnus Starts Up"
-msgstr "When Gnus Starts Up"
+msgstr "Gnusを起動した時"
 
 #. type: findex
 #: original_texis/misc.texi:84
@@ -330,7 +330,7 @@ msgstr ""
 #: original_texis/misc.texi:126
 #, no-wrap
 msgid "Using the Gnus Group Buffer"
-msgstr "Using the Gnus Group Buffer"
+msgstr "Gnus Groupバッファーの使用"
 
 #. type: Plain text
 #: original_texis/misc.texi:129
@@ -643,7 +643,7 @@ msgstr "Gnusのセッティングを更新してGnusを終了します。"
 #: original_texis/misc.texi:202
 #, no-wrap
 msgid "Using the Gnus Summary Buffer"
-msgstr "Using the Gnus Summary Buffer"
+msgstr "Gnus Summaryバッファーの使用"
 
 #. type: Plain text
 #: original_texis/misc.texi:205
@@ -787,7 +787,7 @@ msgstr "Document View"
 #: original_texis/misc.texi:253
 #, no-wrap
 msgid "Document Viewing"
-msgstr "Document Viewing"
+msgstr "ドキュメントの閲覧"
 
 #. type: cindex
 #: original_texis/misc.texi:254
@@ -1445,7 +1445,7 @@ msgstr "EWW"
 #: original_texis/misc.texi:456
 #, no-wrap
 msgid "Web Browsing with EWW"
-msgstr "Web Browsing with EWW"
+msgstr "EWWによるウェブブラウズ"
 
 #. type: findex
 #: original_texis/misc.texi:458
@@ -1487,7 +1487,7 @@ msgstr "Shell"
 #: original_texis/misc.texi:468
 #, no-wrap
 msgid "Running Shell Commands from Emacs"
-msgstr "Running Shell Commands from Emacs"
+msgstr "Emacsからのシェルコマンドの実行"
 
 #. type: cindex
 #: original_texis/misc.texi:469
@@ -1757,7 +1757,7 @@ msgstr "シリアルポートへの接続。"
 #: original_texis/misc.texi:530
 #, no-wrap
 msgid "Single Shell Commands"
-msgstr "Single Shell Commands"
+msgstr "単一のシェルコマンド"
 
 #. type: kindex
 #: original_texis/misc.texi:532
@@ -1982,7 +1982,7 @@ msgstr ""
 #: original_texis/misc.texi:613
 #, no-wrap
 msgid "Interactive Subshell"
-msgstr "Interactive Subshell"
+msgstr "対話的なサブシェル"
 
 #. type: findex
 #: original_texis/misc.texi:615
@@ -2990,7 +2990,7 @@ msgstr "Shell History"
 #: original_texis/misc.texi:925
 #, no-wrap
 msgid "Shell Command History"
-msgstr "Shell Command History"
+msgstr "Shellコマンドヒストリー"
 
 #. type: Plain text
 #: original_texis/misc.texi:934
@@ -3050,7 +3050,7 @@ msgstr "Shell Ring"
 #: original_texis/misc.texi:942
 #, no-wrap
 msgid "Shell History Ring"
-msgstr "Shell History Ring"
+msgstr "Shellヒストリーリング"
 
 #. type: findex
 #: original_texis/misc.texi:945
@@ -3458,7 +3458,7 @@ msgstr ""
 #: original_texis/misc.texi:1076
 #, no-wrap
 msgid "Shell History References"
-msgstr "Shell History References"
+msgstr "Shellヒストリーの参照"
 
 #. type: cindex
 #: original_texis/misc.texi:1077
@@ -3658,7 +3658,7 @@ msgstr "Shell Options"
 #: original_texis/misc.texi:1147
 #, no-wrap
 msgid "Shell Mode Options"
-msgstr "Shell Mode Options"
+msgstr "Shellモードのオプション"
 
 #. type: vindex
 #: original_texis/misc.texi:1149
@@ -3896,7 +3896,7 @@ msgstr ""
 #: original_texis/misc.texi:1226
 #, no-wrap
 msgid "Emacs Terminal Emulator"
-msgstr "Emacs Terminal Emulator"
+msgstr "Emacsの端末エミュレーター"
 
 #. type: findex
 #: original_texis/misc.texi:1227
@@ -4182,7 +4182,7 @@ msgstr ""
 #: original_texis/misc.texi:1335
 #, no-wrap
 msgid "Remote Host Shell"
-msgstr "Remote Host Shell"
+msgstr "リモートホストのシェル"
 
 #. type: cindex
 #: original_texis/misc.texi:1336
@@ -4318,7 +4318,7 @@ msgstr "Emacs Server"
 #: original_texis/misc.texi:1384
 #, no-wrap
 msgid "Using Emacs as a Server"
-msgstr "Using Emacs as a Server"
+msgstr "サーバーとしてのEmacsの使用"
 
 #. type: pindex
 #: original_texis/misc.texi:1385
@@ -4515,7 +4515,7 @@ msgstr "Emacsクライアントの開始オプション。"
 #: original_texis/misc.texi:1457
 #, no-wrap
 msgid "Invoking @code{emacsclient}"
-msgstr "Invoking @code{emacsclient}"
+msgstr "@code{emacsclient}の呼び出し"
 
 #. type: cindex
 #: original_texis/misc.texi:1458
@@ -4695,7 +4695,7 @@ msgstr ""
 #: original_texis/misc.texi:1527
 #, no-wrap
 msgid "@code{emacsclient} Options"
-msgstr "@code{emacsclient} Options"
+msgstr "@code{emacsclient}のオプション"
 
 #. type: cindex
 #: original_texis/misc.texi:1528
@@ -5176,7 +5176,7 @@ msgstr "Printing"
 #: original_texis/misc.texi:1684
 #, no-wrap
 msgid "Printing Hard Copies"
-msgstr "Printing Hard Copies"
+msgstr "ハードコピーの印刷"
 
 #. type: cindex
 #: original_texis/misc.texi:1685
@@ -5423,7 +5423,7 @@ msgstr "オプションの上級向け印刷インターフェース。"
 #: original_texis/misc.texi:1752
 #, no-wrap
 msgid "PostScript Hardcopy"
-msgstr "PostScript Hardcopy"
+msgstr "PostScriptのハードコピー"
 
 #. type: Plain text
 #: original_texis/misc.texi:1756
@@ -5699,7 +5699,7 @@ msgstr ""
 #: original_texis/misc.texi:1821
 #, no-wrap
 msgid "Variables for PostScript Hardcopy"
-msgstr "Variables for PostScript Hardcopy"
+msgstr "PostScriptハードコピーにたいする変数"
 
 #. type: vindex
 #: original_texis/misc.texi:1823
@@ -6048,7 +6048,7 @@ msgstr "Sorting"
 #: original_texis/misc.texi:1943
 #, no-wrap
 msgid "Sorting Text"
-msgstr "Sorting Text"
+msgstr "テキストのソート"
 
 #. type: cindex
 #: original_texis/misc.texi:1944
@@ -6826,7 +6826,7 @@ msgstr "Recursive Edit"
 #: original_texis/misc.texi:2218
 #, no-wrap
 msgid "Recursive Editing Levels"
-msgstr "Recursive Editing Levels"
+msgstr "再帰編集レベル"
 
 #. type: cindex
 #: original_texis/misc.texi:2219
@@ -7348,7 +7348,7 @@ msgstr "Hyperlinking"
 #: original_texis/misc.texi:2380
 #, no-wrap
 msgid "Hyperlinking and Navigation Features"
-msgstr "Hyperlinking and Navigation Features"
+msgstr "ハイパーリンクと操作機能"
 
 #. type: Plain text
 #: original_texis/misc.texi:2384
@@ -7398,7 +7398,7 @@ msgstr "ポイント位置のファイルを探す、など。"
 #: original_texis/misc.texi:2392
 #, no-wrap
 msgid "Following URLs"
-msgstr "Following URLs"
+msgstr "URLのフォロー"
 
 #. type: cindex
 #: original_texis/misc.texi:2393
@@ -7507,7 +7507,7 @@ msgstr ""
 #: original_texis/misc.texi:2428
 #, no-wrap
 msgid "Activating URLs"
-msgstr "Activating URLs"
+msgstr "URLのアクティブ化"
 
 #. type: findex
 #: original_texis/misc.texi:2429
@@ -7588,7 +7588,7 @@ msgstr ""
 #: original_texis/misc.texi:2458
 #, no-wrap
 msgid "Finding Files and URLs at Point"
-msgstr "Finding Files and URLs at Point"
+msgstr "ポイント位置のファイルやURLを開く"
 
 #. type: findex
 #: original_texis/misc.texi:2459
@@ -7919,7 +7919,7 @@ msgstr "Amusements"
 #: original_texis/misc.texi:2531
 #, no-wrap
 msgid "Other Amusements"
-msgstr "Other Amusements"
+msgstr "その他の娯楽"
 
 #. type: cindex
 #: original_texis/misc.texi:2532
