@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-10-01 20:48+0900\n"
+"PO-Revision-Date: 2016-10-01 23:22+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Killing"
 #: original_texis/killing.texi:7
 #, no-wrap
 msgid "Killing and Moving Text"
-msgstr "Killing and Moving Text"
+msgstr "テキストのkillと移動"
 
 #. type: Plain text
 #: original_texis/killing.texi:15
@@ -776,7 +776,7 @@ msgstr ""
 #: original_texis/killing.texi:252
 #, no-wrap
 msgid "Options for Killing"
-msgstr "Options for Killing"
+msgstr "killのオプション"
 
 #. type: vindex
 #: original_texis/killing.texi:254
@@ -995,7 +995,7 @@ msgstr "数回のkillを一緒にまとめてyankする。"
 #: original_texis/killing.texi:321
 #, no-wrap
 msgid "The Kill Ring"
-msgstr "The Kill Ring"
+msgstr "killリング"
 
 #. type: Plain text
 #: original_texis/killing.texi:330
@@ -1054,7 +1054,7 @@ msgstr ""
 #: original_texis/killing.texi:343
 #, no-wrap
 msgid "Yanking Earlier Kills"
-msgstr "Yanking Earlier Kills"
+msgstr "過去にkillしたテキストをyankする"
 
 #. type: cindex
 #: original_texis/killing.texi:344
@@ -1294,7 +1294,7 @@ msgstr ""
 #: original_texis/killing.texi:448
 #, no-wrap
 msgid "``Cut and Paste'' Operations on Graphical Displays"
-msgstr "``Cut and Paste'' Operations on Graphical Displays"
+msgstr "グラフィカルなディスプレーでのカットアンドペースト"
 
 #. type: cindex
 #: original_texis/killing.texi:449
@@ -1387,7 +1387,7 @@ msgstr "ポイントとマークを変化させずに切り取る。"
 #: original_texis/killing.texi:475
 #, no-wrap
 msgid "Using the Clipboard"
-msgstr "Using the Clipboard"
+msgstr "クリップボードを使う"
 
 #. type: cindex
 #: original_texis/killing.texi:476
@@ -1568,7 +1568,7 @@ msgstr ""
 #: original_texis/killing.texi:538
 #, no-wrap
 msgid "Cut and Paste with Other Window Applications"
-msgstr "Cut and Paste with Other Window Applications"
+msgstr "他のウィンドウアプリケーションにたいするカットアンドペースト"
 
 #. type: cindex
 #: original_texis/killing.texi:539
