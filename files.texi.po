@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 00:11+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Files"
 #: original_texis/files.texi:6
 #, no-wrap
 msgid "File Handling"
-msgstr "File Handling"
+msgstr "ファイルの処理"
 
 #. type: cindex
 #: original_texis/files.texi:7
@@ -495,7 +495,7 @@ msgstr ""
 #: original_texis/files.texi:130
 #, no-wrap
 msgid "Visiting Files"
-msgstr "Visiting Files"
+msgstr "ファイルのvisit(訪問)"
 
 #. type: cindex
 #: original_texis/files.texi:131
@@ -1074,7 +1074,7 @@ msgstr ""
 #: original_texis/files.texi:332
 #, no-wrap
 msgid "Saving Files"
-msgstr "Saving Files"
+msgstr "ファイルの保存"
 
 #. type: Plain text
 #: original_texis/files.texi:336
@@ -1155,7 +1155,7 @@ msgstr "Emacsによる保存されたファイルのタイムスタンプの更�
 #: original_texis/files.texi:348
 #, no-wrap
 msgid "Commands for Saving Files"
-msgstr "Commands for Saving Files"
+msgstr "ファイルを保存するコマンド"
 
 #. type: Plain text
 #: original_texis/files.texi:351
@@ -1526,7 +1526,7 @@ msgstr ""
 #: original_texis/files.texi:472
 #, no-wrap
 msgid "Backup Files"
-msgstr "Backup Files"
+msgstr "バックアップファイル"
 
 #. type: cindex
 #: original_texis/files.texi:473
@@ -1712,7 +1712,7 @@ msgstr "Backup Names"
 #: original_texis/files.texi:532
 #, no-wrap
 msgid "Single or Numbered Backups"
-msgstr "Single or Numbered Backups"
+msgstr "単一または番号つきバックアップ"
 
 #. type: Plain text
 #: original_texis/files.texi:537
@@ -1905,7 +1905,7 @@ msgstr "Backup Deletion"
 #: original_texis/files.texi:602
 #, no-wrap
 msgid "Automatic Deletion of Backups"
-msgstr "Automatic Deletion of Backups"
+msgstr "バックアップの自動削除"
 
 #. type: Plain text
 #: original_texis/files.texi:608
@@ -1992,7 +1992,7 @@ msgstr "Backup Copying"
 #: original_texis/files.texi:632
 #, no-wrap
 msgid "Copying vs.@: Renaming"
-msgstr "Copying vs.@: Renaming"
+msgstr "コピー vs. リネーム"
 
 #. type: Plain text
 #: original_texis/files.texi:641
@@ -2136,7 +2136,7 @@ msgstr ""
 #: original_texis/files.texi:689
 #, no-wrap
 msgid "Customizing Saving of Files"
-msgstr "Customizing Saving of Files"
+msgstr "ファイル保存のカスタマイズ"
 
 #. type: vindex
 #: original_texis/files.texi:691
@@ -2251,7 +2251,7 @@ msgstr ""
 #: original_texis/files.texi:735
 #, no-wrap
 msgid "Protection against Simultaneous Editing"
-msgstr "Protection against Simultaneous Editing"
+msgstr "同時編集からの保護"
 
 #. type: cindex
 #: original_texis/files.texi:737
@@ -2475,7 +2475,7 @@ msgstr "File Shadowing"
 #: original_texis/files.texi:810
 #, no-wrap
 msgid "Shadowing Files"
-msgstr "Shadowing Files"
+msgstr "ファイルのシャドーイング"
 
 #. type: cindex
 #: original_texis/files.texi:811
@@ -2630,7 +2630,7 @@ msgstr ""
 #: original_texis/files.texi:858
 #, no-wrap
 msgid "Updating Time Stamps Automatically"
-msgstr "Updating Time Stamps Automatically"
+msgstr "タイムスタンプの自動更新"
 
 #. type: cindex
 #: original_texis/files.texi:859
@@ -2706,7 +2706,7 @@ msgstr ""
 #: original_texis/files.texi:889
 #, no-wrap
 msgid "Reverting a Buffer"
-msgstr "Reverting a Buffer"
+msgstr "バッファーのリバート"
 
 #. type: findex
 #: original_texis/files.texi:890
@@ -2914,7 +2914,7 @@ msgstr "arevert-xtra.texi"
 #: original_texis/files.texi:962
 #, no-wrap
 msgid "Auto-Saving: Protection Against Disasters"
-msgstr "Auto-Saving: Protection Against Disasters"
+msgstr "自動保存－災害にたいする防御"
 
 #. type: cindex
 #: original_texis/files.texi:963
@@ -3008,7 +3008,7 @@ msgstr "Auto Save Files"
 #: original_texis/files.texi:988
 #, no-wrap
 msgid "Auto-Save Files"
-msgstr "Auto-Save Files"
+msgstr "自動保存ファイル"
 
 #. type: Plain text
 #: original_texis/files.texi:995
@@ -3146,7 +3146,7 @@ msgstr "Auto Save Control"
 #: original_texis/files.texi:1041
 #, no-wrap
 msgid "Controlling Auto-Saving"
-msgstr "Controlling Auto-Saving"
+msgstr "自動保存の制御"
 
 #. type: vindex
 #: original_texis/files.texi:1043
@@ -3258,7 +3258,7 @@ msgstr ""
 #: original_texis/files.texi:1084
 #, no-wrap
 msgid "Recovering Data from Auto-Saves"
-msgstr "Recovering Data from Auto-Saves"
+msgstr "自動保存からのデータ復旧"
 
 #. type: findex
 #: original_texis/files.texi:1086
@@ -3377,7 +3377,7 @@ msgstr ""
 #: original_texis/files.texi:1131
 #, no-wrap
 msgid "File Name Aliases"
-msgstr "File Name Aliases"
+msgstr "ファイルのエイリアス"
 
 #. type: cindex
 #: original_texis/files.texi:1132
@@ -3533,7 +3533,7 @@ msgstr "((\"\\\\`/home/fsf\" . \"/fsf\"))\n"
 #: original_texis/files.texi:1190
 #, no-wrap
 msgid "File Directories"
-msgstr "File Directories"
+msgstr "ファイルディレクトリー"
 
 #. type: cindex
 #: original_texis/files.texi:1192
@@ -4518,7 +4518,7 @@ msgstr ""
 #: original_texis/files.texi:1514
 #, no-wrap
 msgid "Miscellaneous File Operations"
-msgstr "Miscellaneous File Operations"
+msgstr "その他のファイル操作"
 
 #. type: Plain text
 #: original_texis/files.texi:1518
@@ -4879,7 +4879,7 @@ msgstr ""
 #: original_texis/files.texi:1642
 #, no-wrap
 msgid "Accessing Compressed Files"
-msgstr "Accessing Compressed Files"
+msgstr "圧縮ファイルへのアクセス"
 
 #. type: cindex
 #: original_texis/files.texi:1643
@@ -5665,7 +5665,7 @@ msgstr ""
 #: original_texis/files.texi:1925
 #, no-wrap
 msgid "Convenience Features for Finding Files"
-msgstr "Convenience Features for Finding Files"
+msgstr "ファイル検索の便利な機能"
 
 #. type: Plain text
 #: original_texis/files.texi:1930
