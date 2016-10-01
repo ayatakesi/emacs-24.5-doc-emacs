@@ -1,92 +1,39 @@
 #!/bin/sh
-perl -pe '
-s/\@chapter The Organization of the Screen$/\@chapter 画面の構成/;\
-s/\@section Point$/\@section ポイント/;\
-s/\@section The Echo Area$/\@section エコーエリア/;\
-s/\@section The Mode Line$/\@section モードライン/;\
-s/\@section The Menu Bar$/\@section メニューバー/' -i screen.texi
+perl -pe 's/\@section Point$/\@section ポイント/' -i screen.texi
+
+perl -pe 's/\@section Keys$/\@section キー/' -i commands.texi
+
+perl -pe 's/\@section Entering Emacs$/\@section Emacsの起動/' -i entering.texi
 
 perl -pe '
-s/\@chapter Characters, Keys and Commands$/\@chapter 文字、キー、コマンド/;\
-s/\@section Kinds of User Input$/\@section ユーザーインプットの種類/;\
-s/\@section Keys$/\@section キー/;\
-s/\@section Keys and Commands$/\@section キーとコマンド/' -i commands.texi
-
-perl -pe '
-s/\@chapter Entering and Exiting Emacs$/\@chapter Emacsの起動と終了/;\
-s/\@section Entering Emacs$/\@section Emacsの起動/;\
-s/\@section Exiting Emacs$/\@section Emacsの終了/' -i entering.texi
-
-perl -pe '
-s/\@chapter Basic Editing Commands/\@chapter 基本的な編集コマンド/;
 s/\@section Inserting Text/\@section テキストの挿入/;
-s/\@section Changing the Location of Point/\@section ポイント位置の変更/;
-s/\@section Erasing Text/\@section テキストの消去/;
-s/\@section Undoing Changes/\@section 変更のアンドゥ/;
-s/\@section Files/\@section ファイル/;
-s/\@section Help/\@section ヘルプ/;
 s/\@section Blank Lines/\@section 空行/;
-s/\@section Continuation Lines/\@section 継続行/;
-s/\@section Cursor Position Information/\@section カーソル位置の情報/;
-s/\@section Numeric Arguments/\@section 数引数/;
-s/\@section Repeating a Command/\@section コマンドの繰り返し/;' -i basic.texi
+s/\@section Continuation Lines/\@section 継続行/;' -i basic.texi
 
 perl -pe '
-s/\@chapter The Minibuffer/\@chapter ミニバッファー/;
-s/\@section Using the Minibuffer/\@section ミニバッファーを使う/;
-s/\@section Minibuffers for File Names/\@section ミニバッファーでのファイル名/;
-s/\@section Editing in the Minibuffer/\@section ミニバッファーでの編集/;
 s/\@section Completion/\@section 補完/;
 s/\@subsection Completion Example/\@subsection 補完の例/;
 s/\@subsection Completion Commands/\@subsection 補完コマンド/;
 s/\@subsection Completion Exit/\@subsection 補完の終了/;
-s/\@subsection How Completion Alternatives Are Chosen/\@subsection 補完候補が選択される方法/;
 s/\@subsection Completion Options/\@subsection 補完オプション/;
 s/\@section Minibuffer History/\@section ミニバッファーヒストリー/;
-s/\@section Repeating Minibuffer Commands/\@section ミニバッファーでのコマンドの繰り返し/;
-s/\@section Entering passwords/\@section パスワードの入力/;
 s/\@section Yes or No Prompts/\@section Yes or No プロンプト/;' -i mini.texi
-
-perl -pe '
-s/\@chapter Running Commands by Name/\@chapter 名前を指定してコマンドを実行する/' -i m-x.texi
 
 perl -pe '
 s/\@chapter Help$/\@chapter ヘルプ/;
 s/\@section Help Summary$/\@section ヘルプの概要/;
-s/\@section Documentation for a Key$/\@section キーのドキュメント/;
-s/\@section Help by Command or Variable Name$/\@section コマンドと変数名のヘルプ/;
-s/\@section Apropos$/\@section Apropos/;
-s/\@section Help Mode Commands$/\@section ヘルプモードのコマンド/;
-s/\@section Keyword Search for Packages$/\@section パッケージのキーワード検索/;
-s/\@section Help for International Language Support$/\@section 国際化言語のサポートに関するヘルプ/;
-s/\@section Other Help Commands$/\@section その他のヘルプコマンド/;
-s/\@section Help Files$/\@section ヘルプファイル/;
-s/\@section Help on Active Text and Tooltips$/\@section アクティブテキストのヘルプとツールチップ/;' -i help.texi
+s/\@section Apropos$/\@section Apropos(適切な)/;
+s/\@section Help Files$/\@section ヘルプファイル/;' -i help.texi
 
-perl -pe '
-s/\@chapter The Mark and the Region$/\@chapter マークとリージョン/;
-s/\@section Setting the Mark$/\@section マークのセット/;
-s/\@section Commands to Mark Textual Objects$/\@section テキストオブジェクトをマークするコマンド/;
-s/\@section Operating on the Region$/\@section リージョンを操作する/;
-s/\@section The Mark Ring$/\@section マークリング/;
-s/\@section The Global Mark Ring$/\@section グローバルマークリング/;
-s/\@section Shift Selection$/\@section シフト選択/;
-s/\@section Disabling Transient Mark Mode$/\@section Transient Markモードを無効にする/;' -i mark.texi
+perl -pe 's/\@section Shift Selection$/\@section シフト選択/' -i mark.texi
 
 perl -pe "
-s/\@chapter Killing and Moving Text$/\@chapter テキストのkillと移動/;
 s/\@section Deletion and Killing$/\@section 削除とkill/;
 s/\@subsection Deletion$/\@subsection 削除/;
 s/\@subsection Killing by Lines$/\@subsection 行のkill/;
 s/\@subsection Other Kill Commands$/\@subsection その他のkillコマンド/;
-s/\@subsection Options for Killing$/\@subsection killのオプション/;
 s/\@section Yanking$/\@section yank/;
-s/\@subsection The Kill Ring$/\@subsection killリング/;
-s/\@subsection Yanking Earlier Kills$/\@subsection 過去にkillしたテキストをyankする/;
 s/\@subsection Appending Kills$/\@subsection killしたテキストの追加/;
-s/\@section \`\`Cut and Paste\'' Operations on Graphical Displays$/\@section グラフィカルなディスプレーでのカットアンドペースト/;
-s/\@subsection Using the Clipboard$/\@subsection クリップボードを使う/;
-s/\@subsection Cut and Paste with Other Window Applications$/\@subsection 他のウィンドウアプリケーションにたいするカットアンドペースト/;
 s/\@subsection Secondary Selection$/\@subsection セカンダリー選択/;
 s/\@section Accumulating Text$/\@section テキストの追加/;
 s/\@section Rectangles$/\@section 矩形領域(Rectangles)/;
@@ -94,72 +41,34 @@ s/\@section CUA Bindings$/\@section CUAバインド/;" -i killing.texi
 
 perl -pe '
 s/\@chapter Registers$/\@chapter レジスター/;
-s/\@section Saving Positions in Registers/\@section レジスターに位置を保存する/;
-s/\@section Saving Text in Registers/\@section レジスターにテキストを保存する/;
-s/\@section Saving Rectangles in Registers/\@section レジスターに矩形領域を保存する/;
-s/\@section Saving Window Configurations in Registers/\@section レジスターにウィンドウ設定を保存する/;
-s/\@section Keeping Numbers in Registers/\@section レジスターに数字を保存する/;
-s/\@section Keeping File Names in Registers/\@section レジスターにファイル名を保存する/;
 s/\@section Keyboard Macro Registers/\@section キーボードマクロのレジスター/;
 s/\@section Bookmarks/\@section ブックマーク/;' -i regs.texi
 
 perl -pe '
-s/\@chapter Controlling the Display$/\@chapter ディスプレーの制御/;
 s/\@section Scrolling$/\@section スクロール/;
 s/\@section Recentering$/\@section センタリング/;
-s/\@section Automatic Scrolling$/\@section 自動スクロール/;
 s/\@section Horizontal Scrolling$/\@section 水平スクロール/;
 s/\@section Narrowing$/\@section ナローイング/;
 s/\@section View Mode$/\@section Viewモード/;
 s/\@section Follow Mode$/\@section Followモード/;
-s/\@section Text Faces$/\@section テキストのフェイス/;
-s/\@section Colors for Faces$/\@section フェイスのカラー/;
 s/\@section Standard Faces$/\@section 標準フェイス/;
 s/\@section Text Scale$/\@section テキストのスケール/;
 s/\@section Font Lock mode$/\@section Font Lockモード/;
-s/\@section Interactive Highlighting$/\@section インタラクティブなハイライト/;
-s/\@section Window Fringes$/\@section ウィンドウのフリンジ/;
 s/\@section Displaying Boundaries$/\@section バウンダリーの表示/;
 s/\@section Useless Whitespace$/\@section 不要なスペース/;
 s/\@section Selective Display$/\@section 選択的な表示/;
-s/\@section Optional Mode Line Features$/\@section モードラインのオプション/;
-s/\@section How Text Is Displayed$/\@section テキストが表示される方法/;
-s/\@section Displaying the Cursor$/\@section カーソルの表示/;
 s/\@section Line Truncation$/\@section 行の切り詰め/;
 s/\@section Visual Line Mode$/\@section Visual Lineモード/;
 s/\@section Customization of Display$/\@section ディスプレーのカスタマイズ/;' -i display.texi
 
 perl -pe '
-s/\@chapter Searching and Replacement$/\@chapter 検索と置換/;
 s/\@section Incremental Search$/\@section インクリメンタル検索/;
-s/\@subsection Basics of Incremental Search$/\@subsection インクリメンタル検索の基本/;
-s/\@subsection Repeating Incremental Search$/\@subsection インクリメンタル検索の繰り返し/;
-s/\@subsection Errors in Incremental Search$/\@subsection インクリメンタル検索でのエラー/;
-s/\@subsection Special Input for Incremental Search$/\@subsection インクリメンタル検索の特別な入力/;
-s/\@subsection Isearch Yanking$/\@subsection インクリメンタル検索でのyank/;
-s/\@subsection Not Exiting Incremental Search$/\@subsection インクリメンタル検索を終了させない/;
-s/\@subsection Searching the Minibuffer$/\@subsection ミニバッファーの検索/;
 s/\@section Nonincremental Search$/\@section 非インクリメンタル検索/;
 s/\@section Word Search$/\@section 単語検索/;
 s/\@section Symbol Search$/\@section シンボル検索/;
-s/\@section Regular Expression Search$/\@section 正規表現検索/;
-s/\@section Syntax of Regular Expressions$/\@section 正規表現の構文/;
-s/\@section Backslash in Regular Expressions$/\@section 正規表現でのバックスラッシュ/;
-s/\@section Regular Expression Example$/\@section 正規表現の例/;
-s/\@section Searching and Case$/\@section 検索と大文字小文字/;
-s/\@section Replacement Commands$/\@section 置換コマンド/;
-s/\@subsection Unconditional Replacement$/\@subsection 無条件の置換/;
-s/\@subsection Regexp Replacement$/\@subsection 正規表現の置換/;
-s/\@subsection Replace Commands and Case$/\@subsection 置換コマンドと大文字小文字/;
-s/\@subsection Query Replace$/\@subsection 問い合わせつき置換/;
-s/\@section Other Search-and-Loop Commands$/\@section その他の検索およびループコマンド/;' -i search.texi
+s/\@subsection Query Replace$/\@subsection 問い合わせつき置換/;' -i search.texi
 
-perl -pe '
-s/\@chapter Commands for Fixing Typos$/\@chapter タイプミスを訂正するコマンド/;
-s/\@section Undo$/\@section Undo(取り消し)/;
-s/\@section Transposing Text$/\@section テキストの入れ替え/;
-s/\@section Case Conversion$/\@section 大文字小文字の変換/;
-s/\@section Checking and Correcting Spelling$/\@section スペルのチェックと訂正/;' -i fixit.texi
+perl -pe 's/\@section Undo$/\@section Undo(取り消し)/' -i fixit.texi
 
 perl -pe '
 s/\@chapter Keyboard Macros$/\@chapter キーボードマクロ/;
