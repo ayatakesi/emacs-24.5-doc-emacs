@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-09-22 00:04+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,89 +16,96 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: chapter
-#: commands.texi.orig:6
+#: original_texis/commands.texi:6
 #, no-wrap
 msgid "Characters, Keys and Commands"
 msgstr "Characters, Keys and Commands"
 
 #. type: iftex
-#: commands.texi.orig:12
+#: original_texis/commands.texi:12
 msgid ""
 "This chapter explains the character sets used by Emacs for input commands, "
 "and the fundamental concepts of @dfn{keys} and @dfn{commands}, whereby Emacs "
 "interprets your keyboard and mouse input."
-msgstr "この章では、Emacsがコマンド入力に使う文字セット、および@dfn{キー(keys)}と@dfn{コマンド(commands)}の基本的な概念と、それによってEmacsがどのようにキーボードやマウス入力を解釈するかを説明します。"
+msgstr ""
+"この章では、Emacsがコマンド入力に使う文字セット、および@dfn{キー(keys)}と"
+"@dfn{コマンド(commands)}の基本的な概念と、それによってEmacsがどのようにキー"
+"ボードやマウス入力を解釈するかを説明します。"
 
 #. type: ifnottex
-#: commands.texi.orig:16
+#: original_texis/commands.texi:16
 msgid "@raisesections"
 msgstr "@raisesections"
 
 #. type: node
-#: commands.texi.orig:18
+#: original_texis/commands.texi:18
 #, no-wrap
 msgid "User Input"
 msgstr "User Input"
 
 #. type: section
-#: commands.texi.orig:19
+#: original_texis/commands.texi:19
 #, no-wrap
 msgid "Kinds of User Input"
 msgstr "Kinds of User Input"
 
 #. type: cindex
-#: commands.texi.orig:20
+#: original_texis/commands.texi:20
 #, no-wrap
 msgid "input with the keyboard"
 msgstr "input with the keyboard"
 
 #. type: cindex
-#: commands.texi.orig:21
+#: original_texis/commands.texi:21
 #, no-wrap
 msgid "keyboard input"
 msgstr "keyboard input"
 
 #. type: cindex
-#: commands.texi.orig:22
+#: original_texis/commands.texi:22
 #, no-wrap
 msgid "character set (keyboard)"
 msgstr "character set (keyboard)"
 
 #. type: acronym{#1}
-#: commands.texi.orig:23
+#: original_texis/commands.texi:23
 #, no-wrap
 msgid "ASCII"
 msgstr "ASCII"
 
 #. type: cindex
-#: commands.texi.orig:24 commands.texi.orig:44
+#: original_texis/commands.texi:24 original_texis/commands.texi:44
 #, no-wrap
 msgid "C-"
 msgstr "C-"
 
 #. type: cindex
-#: commands.texi.orig:25 commands.texi.orig:43
+#: original_texis/commands.texi:25 original_texis/commands.texi:43
 #, no-wrap
 msgid "Control"
 msgstr "Control"
 
 #. type: Plain text
-#: commands.texi.orig:31
+#: original_texis/commands.texi:31
 msgid ""
 "GNU Emacs is primarily designed for use with the keyboard.  While it is "
 "possible to use the mouse to issue editing commands through the menu bar and "
 "tool bar, that is not as efficient as using the keyboard.  Therefore, this "
 "manual mainly documents how to edit with the keyboard."
-msgstr "GNU Emacsは、主にキーボードを使うようにデザインされています。マウスを使ってメニューバーやツールバーの編集コマンドを実行することはできますが、キーボードを使う場合に比べて効率的ではありません。したがって、このマニュアルには主にキーボードで編集する方法を記します。"
+msgstr ""
+"GNU Emacsは、主にキーボードを使うようにデザインされています。マウスを使ってメ"
+"ニューバーやツールバーの編集コマンドを実行することはできますが、キーボードを"
+"使う場合に比べて効率的ではありません。したがって、このマニュアルには主にキー"
+"ボードで編集する方法を記します。"
 
 #. type: cindex
-#: commands.texi.orig:32
+#: original_texis/commands.texi:32
 #, no-wrap
 msgid "control character"
 msgstr "control character"
 
 #. type: Plain text
-#: commands.texi.orig:41
+#: original_texis/commands.texi:41
 msgid ""
 "Keyboard input into Emacs is based on a heavily-extended version of "
 "@acronym{ASCII}.  Simple characters, like @samp{a}, @samp{B}, @samp{3}, "
@@ -107,28 +114,34 @@ msgid ""
 "@key{TAB}, @key{DEL}, @key{ESC}, @key{F1}, @key{Home}, and @key{LEFT}, are "
 "also entered this way, as are certain characters found on non-English "
 "keyboards (@pxref{International})."
-msgstr "Emacsにたいするキーボード入力は、@acronym{ASCII}を大きく拡張したバージョンが基本となっています。@samp{a}、@samp{B}、@samp{3}、@samp{=}や空白文字(@key{SPC})と表記します)などの単純な文字は、それぞれに対応するキーをタイプして入力します。@key{RET}、@key{TAB}、@key{DEL}、@key{ESC}、@key{F1}、@key{Home}、@key{LEFT}などの制御文字なども、この方法で入力できますし、非英語キーボードの特定の文字も同様です(@ref{International}を参照してください)。"
+msgstr ""
+"Emacsにたいするキーボード入力は、@acronym{ASCII}を大きく拡張したバージョンが"
+"基本となっています。@samp{a}、@samp{B}、@samp{3}、@samp{=}や空白文字"
+"(@key{SPC})と表記します)などの単純な文字は、それぞれに対応するキーをタイプし"
+"て入力します。@key{RET}、@key{TAB}、@key{DEL}、@key{ESC}、@key{F1}、"
+"@key{Home}、@key{LEFT}などの制御文字なども、この方法で入力できますし、非英語"
+"キーボードの特定の文字も同様です(@ref{International}を参照してください)。"
 
 #. type: cindex
-#: commands.texi.orig:42
+#: original_texis/commands.texi:42
 #, no-wrap
 msgid "modifier keys"
 msgstr "modifier keys"
 
 #. type: cindex
-#: commands.texi.orig:45
+#: original_texis/commands.texi:45
 #, no-wrap
 msgid "META"
 msgstr "META"
 
 #. type: cindex
-#: commands.texi.orig:46
+#: original_texis/commands.texi:46
 #, no-wrap
 msgid "M-"
 msgstr "M-"
 
 #. type: Plain text
-#: commands.texi.orig:57
+#: original_texis/commands.texi:57
 msgid ""
 "Emacs also recognizes control characters that are entered using "
 "@dfn{modifier keys}.  Two commonly-used modifier keys are @key{Control} "
@@ -140,16 +153,24 @@ msgid ""
 "by holding down the @key{Alt} key and pressing @kbd{a}.  Modifier keys can "
 "also be applied to non-alphanumerical characters, e.g., @kbd{C-@key{F1}} or "
 "@kbd{M-@key{LEFT}}."
-msgstr "Emacsは@dfn{修飾キー(modifier keys)}を用いて入力された制御文字も認識します。よく使用される修飾キーは、@key{Control}(通常@key{Ctrl})というラベル)と、@key{META}(通常@key{Alt}@footnote{歴史的な理由により、@key{Alt}のことを@key{META}という名前で参照します。}というラベル)の2つです。たとえば、@kbd{Control-a}は@key{Ctrl}を押したままで@kbd{a}を押して入力しますが、これを短く@kbd{C-a}と記します。同様に、@kbd{@key{META}-a}または短く@kbd{M-a}は、@key{Alt}を押したまま@kbd{a}を押すことです。修飾キーは英数文字以外のキーにも適用できます。例: @kbd{C-@key{F1}}、@kbd{M-@key{LEFT}}"
+msgstr ""
+"Emacsは@dfn{修飾キー(modifier keys)}を用いて入力された制御文字も認識します。"
+"よく使用される修飾キーは、@key{Control}(通常@key{Ctrl})というラベル)と、"
+"@key{META}(通常@key{Alt}@footnote{歴史的な理由により、@key{Alt}のことを"
+"@key{META}という名前で参照します。}というラベル)の2つです。たとえば、"
+"@kbd{Control-a}は@key{Ctrl}を押したままで@kbd{a}を押して入力しますが、これを"
+"短く@kbd{C-a}と記します。同様に、@kbd{@key{META}-a}または短く@kbd{M-a}は、"
+"@key{Alt}を押したまま@kbd{a}を押すことです。修飾キーは英数文字以外のキーにも"
+"適用できます。例: @kbd{C-@key{F1}}、@kbd{M-@key{LEFT}}"
 
 #. type: cindex
-#: commands.texi.orig:58
+#: original_texis/commands.texi:58
 #, no-wrap
 msgid "@key{ESC} replacing @key{META} key"
 msgstr "@key{ESC} replacing @key{META} key"
 
 #. type: Plain text
-#: commands.texi.orig:67
+#: original_texis/commands.texi:67
 msgid ""
 "You can also type Meta characters using two-character sequences starting "
 "with @key{ESC}.  Thus, you can enter @kbd{M-a} by typing @kbd{@key{ESC} a}.  "
@@ -158,85 +179,104 @@ msgid ""
 "while typing the next character; instead, press @key{ESC} and release it, "
 "then enter the next character.  This feature is useful on certain text "
 "terminals where the @key{META} key does not function reliably."
-msgstr "@key{ESC}で始まる2文字キーシーケンスを使って、Meta文字を入力することもできます。したがって@kbd{M-a}を@kbd{@key{ESC} a}と入力することができます。@kbd{C-M-a}は@kbd{@key{ESC} C-a}と入力できます。@key{META}と違い、@key{ESC}は切り離された文字です。次の文字を押すとき@key{ESC}を押しっぱなしにするのではなく、@key{ESC}を押して離してから次の文字を入力します。この機能は@key{META}キーをあてにできない、一部のテキスト端末で有用です。"
+msgstr ""
+"@key{ESC}で始まる2文字キーシーケンスを使って、Meta文字を入力することもできま"
+"す。したがって@kbd{M-a}を@kbd{@key{ESC} a}と入力することができます。@kbd{C-M-"
+"a}は@kbd{@key{ESC} C-a}と入力できます。@key{META}と違い、@key{ESC}は切り離さ"
+"れた文字です。次の文字を押すとき@key{ESC}を押しっぱなしにするのではなく、"
+"@key{ESC}を押して離してから次の文字を入力します。この機能は@key{META}キーをあ"
+"てにできない、一部のテキスト端末で有用です。"
 
 #. type: cindex
-#: commands.texi.orig:68
+#: original_texis/commands.texi:68
 #, no-wrap
 msgid "keys stolen by window manager"
 msgstr "keys stolen by window manager"
 
 #. type: cindex
-#: commands.texi.orig:69
+#: original_texis/commands.texi:69
 #, no-wrap
 msgid "window manager, keys stolen by"
 msgstr "window manager, keys stolen by"
 
 #. type: Plain text
-#: commands.texi.orig:75
+#: original_texis/commands.texi:75
 msgid ""
 "On graphical displays, the window manager might block some keyboard inputs, "
 "including @kbd{M-@key{TAB}}, @kbd{M-@key{SPC}}, @kbd{C-M-d} and @kbd{C-M-"
 "l}.  If you have this problem, you can either customize your window manager "
 "to not block those keys, or ``rebind'' the affected Emacs commands "
 "(@pxref{Customization})."
-msgstr "グラフィカルなディスプレーでは、ウィンドウマネージャーが@kbd{M-@key{TAB}}、@kbd{M-@key{SPC}}、@kbd{C-M-d}、@kbd{C-M-l}などのキーボード入力をブロックするかもしれません。このような問題がある場合、ウィンドウマネージャーがこれらのキーをブロックしないようにカスタマイズしたり、影響を受けるEmacsのコマンドを``リバインド(rebind)''したりできます(@ref{Customization}を参照してください)。"
+msgstr ""
+"グラフィカルなディスプレーでは、ウィンドウマネージャーが@kbd{M-@key{TAB}}、"
+"@kbd{M-@key{SPC}}、@kbd{C-M-d}、@kbd{C-M-l}などのキーボード入力をブロックする"
+"かもしれません。このような問題がある場合、ウィンドウマネージャーがこれらの"
+"キーをブロックしないようにカスタマイズしたり、影響を受けるEmacsのコマンドを``"
+"リバインド(rebind)''したりできます(@ref{Customization}を参照してください)。"
 
 #. type: cindex
-#: commands.texi.orig:76
+#: original_texis/commands.texi:76
 #, no-wrap
 msgid "input event"
 msgstr "input event"
 
 #. type: Plain text
-#: commands.texi.orig:82
+#: original_texis/commands.texi:82
 msgid ""
 "Simple characters and control characters, as well as certain non-keyboard "
 "inputs such as mouse clicks, are collectively referred to as @dfn{input "
 "events}.  For details about how Emacs internally handles input events, see "
 "@ref{Input Events,,, elisp, The Emacs Lisp Reference Manual}."
-msgstr "単純な文字や制御文字、同様にマウスのクリックなどの非キーボード入力は、総じて@dfn{入力イベント(input events)}と呼ばれます。Emacsが内部で入力イベントをどのように処理するかについての詳細は、@ref{Input Events,,, elisp, The Emacs Lisp Reference Manual}を参照してください."
+msgstr ""
+"単純な文字や制御文字、同様にマウスのクリックなどの非キーボード入力は、総じて"
+"@dfn{入力イベント(input events)}と呼ばれます。Emacsが内部で入力イベントをどの"
+"ように処理するかについての詳細は、@ref{Input Events,,, elisp, The Emacs Lisp "
+"Reference Manual}を参照してください."
 
 #. type: section
-#: commands.texi.orig:83 commands.texi.orig:84
+#: original_texis/commands.texi:83 original_texis/commands.texi:84
 #, no-wrap
 msgid "Keys"
 msgstr "Keys"
 
 #. type: Plain text
-#: commands.texi.orig:90
+#: original_texis/commands.texi:90
 msgid ""
 "Some Emacs commands are invoked by just one input event; for example, @kbd{C-"
 "f} moves forward one character in the buffer.  Other commands take two or "
 "more input events to invoke, such as @kbd{C-x C-f} and @kbd{C-x 4 C-f}."
-msgstr "Emacsコマンドには、ただ1つの入力イベントで呼び出されるものが、いくつかあります。たとえば@kbd{C-f}はバッファーを1文字前方に移動します。他のコマンドは、@kbd{C-x C-f}や@kbd{C-x 4 C-f}のように、2つ以上の入力イベントにより呼び出されます。"
+msgstr ""
+"Emacsコマンドには、ただ1つの入力イベントで呼び出されるものが、いくつかありま"
+"す。たとえば@kbd{C-f}はバッファーを1文字前方に移動します。他のコマンドは、"
+"@kbd{C-x C-f}や@kbd{C-x 4 C-f}のように、2つ以上の入力イベントにより呼び出され"
+"ます。"
 
 #. type: cindex
-#: commands.texi.orig:91
+#: original_texis/commands.texi:91
 #, no-wrap
 msgid "key"
 msgstr "key"
 
 #. type: cindex
-#: commands.texi.orig:92
+#: original_texis/commands.texi:92
 #, no-wrap
 msgid "key sequence"
 msgstr "key sequence"
 
 #. type: cindex
-#: commands.texi.orig:93
+#: original_texis/commands.texi:93
 #, no-wrap
 msgid "complete key"
 msgstr "complete key"
 
 #. type: cindex
-#: commands.texi.orig:94
+#: original_texis/commands.texi:94
 #, no-wrap
 msgid "prefix key"
 msgstr "prefix key"
 
 #. type: Plain text
-#: commands.texi.orig:103
+#: original_texis/commands.texi:103
 msgid ""
 "A @dfn{key sequence}, or @dfn{key} for short, is a sequence of one or more "
 "input events that is meaningful as a unit.  If a key sequence invokes a "
@@ -245,10 +285,19 @@ msgid ""
 "enough to invoke a command, we call it a @dfn{prefix key}; from the "
 "preceding example, we see that @kbd{C-x} and @kbd{C-x 4} are prefix keys.  "
 "Every key sequence is either a complete key or a prefix key."
-msgstr "@dfn{キーシーケンス(key sequence)}、短く書くと@dfn{キー(key)}は、1つの単位として考えることのできる、1つまたはそれ以上の一連の入力イベントの集まりのことです。もし、あるキーシーケンスがコマンドを呼び出すような場合、それを@dfn{コンプリートキー(complete key)}と呼ぶことにします。たとえば@kbd{C-f}、@kbd{C-x C-f}、@kbd{C-x 4 C-f}などはコンプリートキーです。もし、あるキーシーケンスがコマンドを呼び出すほど十分長くないとき、それを@dfn{プレフィクスキー(prefix key)}と呼ぶことにします。たとえば前の例でいうと、@kbd{C-x}や@kbd{C-x 4}はプレフィクスキーです。すべてのキーシーケンスは、コンプリートキーかプレフィクスキーのどちらかになります。"
+msgstr ""
+"@dfn{キーシーケンス(key sequence)}、短く書くと@dfn{キー(key)}は、1つの単位と"
+"して考えることのできる、1つまたはそれ以上の一連の入力イベントの集まりのことで"
+"す。もし、あるキーシーケンスがコマンドを呼び出すような場合、それを@dfn{コンプ"
+"リートキー(complete key)}と呼ぶことにします。たとえば@kbd{C-f}、@kbd{C-x C-"
+"f}、@kbd{C-x 4 C-f}などはコンプリートキーです。もし、あるキーシーケンスがコマ"
+"ンドを呼び出すほど十分長くないとき、それを@dfn{プレフィクスキー(prefix key)}"
+"と呼ぶことにします。たとえば前の例でいうと、@kbd{C-x}や@kbd{C-x 4}はプレフィ"
+"クスキーです。すべてのキーシーケンスは、コンプリートキーかプレフィクスキーの"
+"どちらかになります。"
 
 #. type: Plain text
-#: commands.texi.orig:114
+#: original_texis/commands.texi:114
 msgid ""
 "A prefix key combines with the following input event to make a longer key "
 "sequence.  For example, @kbd{C-x} is a prefix key, so typing @kbd{C-x} alone "
@@ -259,18 +308,30 @@ msgid ""
 "(such as @kbd{C-x 4}), or a complete key (such as @kbd{C-x C-f}).  There is "
 "no limit to the length of key sequences, but in practice they are seldom "
 "longer than three or four input events."
-msgstr "プレフィクスキーは、その後の入力イベントと組み合わせて、もっと長いキーシーケンスを作るためのものです。たとえば@kbd{C-x} はプレフィクスキーなので、@kbd{C-x}と入力しただけではコマンドは呼び出されません。かわりにEmacsは更なる入力を待ちます(もし１秒以上入力がない場合、入力を促すために@kbd{C-x}がエコーされます。@ref{Echo Area}を参照してください)。@kbd{C-x}は、それに続く次の入力イベントと組み合わされる、2イベントのキーシーケンスで、それはプレフィクスキー(@kbd{C-x 4})など)のときもあれば、コンプリートキー(@kbd{C-x C-f}など)のときもあります。キーシーケンスの長さに制限はありませんが、実際に3つ、4つ以上の入力イベントの場合は、ほとんどありません。"
+msgstr ""
+"プレフィクスキーは、その後の入力イベントと組み合わせて、もっと長いキーシーケ"
+"ンスを作るためのものです。たとえば@kbd{C-x} はプレフィクスキーなので、@kbd{C-"
+"x}と入力しただけではコマンドは呼び出されません。かわりにEmacsは更なる入力を待"
+"ちます(もし１秒以上入力がない場合、入力を促すために@kbd{C-x}がエコーされま"
+"す。@ref{Echo Area}を参照してください)。@kbd{C-x}は、それに続く次の入力イベン"
+"トと組み合わされる、2イベントのキーシーケンスで、それはプレフィクスキー"
+"(@kbd{C-x 4})など)のときもあれば、コンプリートキー(@kbd{C-x C-f}など)のときも"
+"あります。キーシーケンスの長さに制限はありませんが、実際に3つ、4つ以上の入力"
+"イベントの場合は、ほとんどありません。"
 
 #. type: Plain text
-#: commands.texi.orig:118
+#: original_texis/commands.texi:118
 msgid ""
 "You can't add input events onto a complete key.  For example, because @kbd{C-"
 "f} is a complete key, the two-event sequence @kbd{C-f C-k} is two key "
 "sequences, not one."
-msgstr "コンプリートキーに入力イベントを付け加えることはできません。たとえば、@kbd{C-f}はコンプリートキーなので、2イベントのシーケンス@kbd{C-f C-k}は、1つではなく2つのキーシーケンスです。"
+msgstr ""
+"コンプリートキーに入力イベントを付け加えることはできません。たとえば、@kbd{C-"
+"f}はコンプリートキーなので、2イベントのシーケンス@kbd{C-f C-k}は、1つではなく"
+"2つのキーシーケンスです。"
 
 #. type: Plain text
-#: commands.texi.orig:129
+#: original_texis/commands.texi:129
 msgid ""
 "By default, the prefix keys in Emacs are @kbd{C-c}, @kbd{C-h}, @kbd{C-x}, "
 "@kbd{C-x @key{RET}}, @kbd{C-x @@}, @kbd{C-x a}, @kbd{C-x n}, @kbd{C-x r}, "
@@ -281,53 +342,71 @@ msgid ""
 "this is not recommended for most users; for example, if you remove the "
 "prefix definition of @kbd{C-x 4}, then @kbd{C-x 4 C-f} becomes an invalid "
 "key sequence.  @xref{Key Bindings}."
-msgstr "デフォルトではEmacsのプレフィクスキーは@kbd{C-c}、@kbd{C-h}、@kbd{C-x}、@kbd{C-x @key{RET}}、@kbd{C-x @@}、@kbd{C-x a}、@kbd{C-x n}、@kbd{C-x r}、@kbd{C-x v}、@kbd{C-x 4}、@kbd{C-x 5}、@kbd{C-x 6}、@key{ESC}、@kbd{M-g}、@kbd{M-o}です(@key{F1}と@key{F2}は、@kbd{C-h}と@kbd{C-x 6}のエイリアスです)。このリストは不変のものではありません。Emacsをカスタマイズすれば、新しいプレフィクスキーを作ることができます。標準のプレフィクスキーを無効にすることさえできますが、これはほとんどのユーザーにたいして推奨はできません。たとえばプレフィクス定義@kbd{C-x 4}を削除すると、@kbd{C-x 4 C-f}は無効なキーシーケンスになります。@ref{Key Bindings}を参照してください。"
+msgstr ""
+"デフォルトではEmacsのプレフィクスキーは@kbd{C-c}、@kbd{C-h}、@kbd{C-x}、"
+"@kbd{C-x @key{RET}}、@kbd{C-x @@}、@kbd{C-x a}、@kbd{C-x n}、@kbd{C-x r}、"
+"@kbd{C-x v}、@kbd{C-x 4}、@kbd{C-x 5}、@kbd{C-x 6}、@key{ESC}、@kbd{M-g}、"
+"@kbd{M-o}です(@key{F1}と@key{F2}は、@kbd{C-h}と@kbd{C-x 6}のエイリアスです)。"
+"このリストは不変のものではありません。Emacsをカスタマイズすれば、新しいプレ"
+"フィクスキーを作ることができます。標準のプレフィクスキーを無効にすることさえ"
+"できますが、これはほとんどのユーザーにたいして推奨はできません。たとえばプレ"
+"フィクス定義@kbd{C-x 4}を削除すると、@kbd{C-x 4 C-f}は無効なキーシーケンスに"
+"なります。@ref{Key Bindings}を参照してください。"
 
 #. type: Plain text
-#: commands.texi.orig:135
+#: original_texis/commands.texi:135
 msgid ""
 "Typing the help character (@kbd{C-h} or @key{F1}) after a prefix key "
 "displays a list of the commands starting with that prefix.  The sole "
 "exception to this rule is @key{ESC}: @kbd{@key{ESC} C-h} is equivalent to "
 "@kbd{C-M-h}, which does something else entirely.  You can, however, use "
 "@key{F1} to display a list of commands starting with @key{ESC}."
-msgstr "プレフィックスキーのあとにヘルプ文字(@kbd{C-h}や@key{F1})を押すと、そのプレフィックスで始まるコマンド一覧を表示できます。唯一の例外は@key{ESC}です。@kbd{@key{ESC} C-h}は@kbd{C-M-h}と同じで、これは何かまったく別のことを行うコマンドです。しかし@key{F1}ならば、@key{ESC}で始まるコマンドの一覧を表示できます。"
+msgstr ""
+"プレフィックスキーのあとにヘルプ文字(@kbd{C-h}や@key{F1})を押すと、そのプレ"
+"フィックスで始まるコマンド一覧を表示できます。唯一の例外は@key{ESC}です。"
+"@kbd{@key{ESC} C-h}は@kbd{C-M-h}と同じで、これは何かまったく別のことを行うコ"
+"マンドです。しかし@key{F1}ならば、@key{ESC}で始まるコマンドの一覧を表示できま"
+"す。"
 
 #. type: node
-#: commands.texi.orig:136
+#: original_texis/commands.texi:136
 #, no-wrap
 msgid "Commands"
 msgstr "Commands"
 
 #. type: section
-#: commands.texi.orig:137
+#: original_texis/commands.texi:137
 #, no-wrap
 msgid "Keys and Commands"
 msgstr "Keys and Commands"
 
 #. type: cindex
-#: commands.texi.orig:139
+#: original_texis/commands.texi:139
 #, no-wrap
 msgid "binding"
 msgstr "binding"
 
 #. type: cindex
-#: commands.texi.orig:140
+#: original_texis/commands.texi:140
 #, no-wrap
 msgid "command"
 msgstr "command"
 
 #. type: Plain text
-#: commands.texi.orig:145
+#: original_texis/commands.texi:145
 msgid ""
 "This manual is full of passages that tell you what particular keys do.  But "
 "Emacs does not assign meanings to keys directly.  Instead, Emacs assigns "
 "meanings to named @dfn{commands}, and then gives keys their meanings by "
 "@dfn{binding} them to commands."
-msgstr "このマニュアルは、特定のキーが何を行うかを説明するページばかりです。しかし、Emacsは直接キーに意味を与えてはいません。そのかわりに、Emacsは名前を付けた@dfn{コマンド(commands)}に意味を持たせ、キーとコマンドを@dfn{バインディング(binding)}することによって、キーに意味を与えています。"
+msgstr ""
+"このマニュアルは、特定のキーが何を行うかを説明するページばかりです。しかし、"
+"Emacsは直接キーに意味を与えてはいません。そのかわりに、Emacsは名前を付けた"
+"@dfn{コマンド(commands)}に意味を持たせ、キーとコマンドを@dfn{バインディング"
+"(binding)}することによって、キーに意味を与えています。"
 
 #. type: Plain text
-#: commands.texi.orig:153
+#: original_texis/commands.texi:153
 msgid ""
 "Every command has a name chosen by a programmer.  The name is usually made "
 "of a few English words separated by dashes; for example, @code{next-line} or "
@@ -335,17 +414,25 @@ msgid ""
 "@dfn{function}, and the actions associated with the command are performed by "
 "running the function.  @xref{What Is a Function,, What Is a Function, elisp, "
 "The Emacs Lisp Reference Manual}."
-msgstr "すべてのコマンドには、プログラマーが選んだ名前が付いています。名前は、たとえば@code{next-line}、@code{forward-word}のように、いくつかの英単語をダッシュで区切って作られます。内部的には、それぞれのコマンドはLispの@dfn{関数(function)}の特別な型で、コマンドに関連付けられたアクションは、関数を実行することによって機能します。@ref{What Is a Function,, What Is a Function, elisp, The Emacs Lisp Reference Manual}を参照してください。"
+msgstr ""
+"すべてのコマンドには、プログラマーが選んだ名前が付いています。名前は、たとえ"
+"ば@code{next-line}、@code{forward-word}のように、いくつかの英単語をダッシュで"
+"区切って作られます。内部的には、それぞれのコマンドはLispの@dfn{関数"
+"(function)}の特別な型で、コマンドに関連付けられたアクションは、関数を実行する"
+"ことによって機能します。@ref{What Is a Function,, What Is a Function, elisp, "
+"The Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: Plain text
-#: commands.texi.orig:156
+#: original_texis/commands.texi:156
 msgid ""
 "The bindings between keys and commands are recorded in tables called "
 "@dfn{keymaps}.  @xref{Keymaps}."
-msgstr "キーとコマンドの間のバインディングは、@dfn{keymaps}というテーブルに記憶されます。@ref{Keymaps}を参照してください。"
+msgstr ""
+"キーとコマンドの間のバインディングは、@dfn{keymaps}というテーブルに記憶されま"
+"す。@ref{Keymaps}を参照してください。"
 
 #. type: Plain text
-#: commands.texi.orig:163
+#: original_texis/commands.texi:163
 msgid ""
 "When we say that ``@kbd{C-n} moves down vertically one line'' we are "
 "glossing over a subtle distinction that is irrelevant in ordinary use, but "
@@ -353,10 +440,15 @@ msgid ""
 "move downward.  @kbd{C-n} has this effect @emph{because} it is bound to "
 "@code{next-line}.  If you rebind @kbd{C-n} to the command @code{forward-"
 "word}, @kbd{C-n} will move forward one word instead."
-msgstr "``@kbd{C-n}は下に1行動きます''という言い方は、通常の使用では関係ないが、Emacsをカスタマイズする上では重要になる点を隠蔽しています。1行下に移動するコマンドは@code{next-line}です。@kbd{C-n}が@code{next-line}にバインドされているから効果があるのです。もし@kbd{C-n}をコマンド@code{forward-word}にリバインドしたら、@kbd{C-n}で1語前方に動くことになります。"
+msgstr ""
+"``@kbd{C-n}は下に1行動きます''という言い方は、通常の使用では関係ないが、Emacs"
+"をカスタマイズする上では重要になる点を隠蔽しています。1行下に移動するコマンド"
+"は@code{next-line}です。@kbd{C-n}が@code{next-line}にバインドされているから効"
+"果があるのです。もし@kbd{C-n}をコマンド@code{forward-word}にリバインドした"
+"ら、@kbd{C-n}で1語前方に動くことになります。"
 
 #. type: Plain text
-#: commands.texi.orig:171
+#: original_texis/commands.texi:171
 msgid ""
 "In this manual, we will often speak of keys like @kbd{C-n} as commands, even "
 "though strictly speaking the key is bound to a command.  Usually we state "
@@ -365,10 +457,16 @@ msgid ""
 "command @kbd{C-n} (@code{next-line}) moves point vertically down'', meaning "
 "that the command @code{next-line} moves vertically down, and the key @kbd{C-"
 "n} is normally bound to it."
-msgstr "厳密に言えばキーはコマンドにバインドされているだけですが、このマニュアルでは@kbd{C-n}をコマンドであるかのような言い回しをするときがあります。そのようなときは、処理を実行させるキーの後ろに、本当に処理を行うコマンドの名前をカッコ内に記します。たとえば、``コマンド@kbd{C-n} (@code{next-line})は、ポイントを垂直下方に移動します''というときは、コマンド@code{next-line}がポイントを垂直下方に移動し、それは通常@kbd{C-n}にバインドされている、ということを意味します。"
+msgstr ""
+"厳密に言えばキーはコマンドにバインドされているだけですが、このマニュアルでは"
+"@kbd{C-n}をコマンドであるかのような言い回しをするときがあります。そのようなと"
+"きは、処理を実行させるキーの後ろに、本当に処理を行うコマンドの名前をカッコ内"
+"に記します。たとえば、``コマンド@kbd{C-n} (@code{next-line})は、ポイントを垂"
+"直下方に移動します''というときは、コマンド@code{next-line}がポイントを垂直下"
+"方に移動し、それは通常@kbd{C-n}にバインドされている、ということを意味します。"
 
 #. type: Plain text
-#: commands.texi.orig:182
+#: original_texis/commands.texi:182
 msgid ""
 "Since we are discussing customization, we should tell you about "
 "@dfn{variables}.  Often the description of a command will say, ``To change "
@@ -379,9 +477,18 @@ msgid ""
 "the information about variables until you are interested in customizing "
 "them.  Then read the basic information on variables (@pxref{Variables}) and "
 "the information about specific variables will make sense."
-msgstr "カスタマイズについて議論したので、@dfn{変数(variables)}にもふれておくべきでしょう。コマンドの説明で、``これを変更する場合、変数 @code{mumble-foo}をセットしてください''というときがあります。変数とは、値を保存するときに使用する名前のことです。このマニュアルに記載されている変数は、ほとんどがカスタマイズに関するものです。いくつかのコマンド、およびEmacsのある部分は、変数調べてその変数にセットされた値により、動作がかわります。カスタマイズに興味がでるまでは、、変数に関する情報は無視してかまいません。その後で変数(@ref{Variables}を参照してください)の基本を読めば、特定の変数についての情報に合点がいくでしょう。"
+msgstr ""
+"カスタマイズについて議論したので、@dfn{変数(variables)}にもふれておくべきで"
+"しょう。コマンドの説明で、``これを変更する場合、変数 @code{mumble-foo}をセッ"
+"トしてください''というときがあります。変数とは、値を保存するときに使用する名"
+"前のことです。このマニュアルに記載されている変数は、ほとんどがカスタマイズに"
+"関するものです。いくつかのコマンド、およびEmacsのある部分は、変数調べてその変"
+"数にセットされた値により、動作がかわります。カスタマイズに興味がでるまで"
+"は、、変数に関する情報は無視してかまいません。その後で変数(@ref{Variables}を"
+"参照してください)の基本を読めば、特定の変数についての情報に合点がいくでしょ"
+"う。"
 
 #. type: ifnottex
-#: commands.texi.orig:185
+#: original_texis/commands.texi:185
 msgid "@lowersections"
 msgstr "@lowersections"

@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-05-17 19:54+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:32+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,61 +16,65 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: section
-#: vc-xtra.texi.orig:8 vc-xtra.texi.orig:9
+#: original_texis/vc-xtra.texi:8 original_texis/vc-xtra.texi:9
 #, no-wrap
 msgid "Advanced VC Usage"
 msgstr "Advanced VC Usage"
 
 #. type: iftex
-#: vc-xtra.texi.orig:14
+#: original_texis/vc-xtra.texi:14
 msgid ""
 "Commonly used features of Emacs's version control (VC) support are described "
 "in the main Emacs manual (@pxref{Version Control,,,emacs, the Emacs "
 "Manual}).  This chapter describes more advanced VC usage."
-msgstr "一般的に使用されるEmacsのバージョンコントロール(VC)サポートの仕様については、メインのEmacsマニュアル(@ref{Version Control,,,emacs, the Emacs Manual}を参照してください)に記述されています。このチャプターでは、より上級のVCの使用法について説明します。"
+msgstr ""
+"一般的に使用されるEmacsのバージョンコントロール(VC)サポートの仕様については、"
+"メインのEmacsマニュアル(@ref{Version Control,,,emacs, the Emacs Manual}を参照"
+"してください)に記述されています。このチャプターでは、より上級のVCの使用法につ"
+"いて説明します。"
 
 #. type: menuentry
-#: vc-xtra.texi.orig:20
+#: original_texis/vc-xtra.texi:20
 msgid "Remote Repositories"
 msgstr "Remote Repositories"
 
 #. type: menuentry
-#: vc-xtra.texi.orig:20
+#: original_texis/vc-xtra.texi:20
 msgid "Efficient access to remote VCS servers."
 msgstr "Efficient access to remote VCS servers."
 
 #. type: menuentry
-#: vc-xtra.texi.orig:20
+#: original_texis/vc-xtra.texi:20
 msgid "Revision Tags"
 msgstr "Revision Tags"
 
 #. type: menuentry
-#: vc-xtra.texi.orig:20
+#: original_texis/vc-xtra.texi:20
 msgid "Symbolic names for revisions."
 msgstr "Symbolic names for revisions."
 
 #. type: menuentry
-#: vc-xtra.texi.orig:20
+#: original_texis/vc-xtra.texi:20
 msgid "Miscellaneous VC"
 msgstr "Miscellaneous VC"
 
 #. type: menuentry
-#: vc-xtra.texi.orig:20
+#: original_texis/vc-xtra.texi:20
 msgid "Various other commands and features of VC."
 msgstr "Various other commands and features of VC."
 
 #. type: menuentry
-#: vc-xtra.texi.orig:20
+#: original_texis/vc-xtra.texi:20
 msgid "Customizing VC"
 msgstr "Customizing VC"
 
 #. type: menuentry
-#: vc-xtra.texi.orig:20
+#: original_texis/vc-xtra.texi:20
 msgid "Variables that change VC's behavior."
 msgstr "Variables that change VC's behavior."
 
 #. type: include
-#: vc-xtra.texi.orig:24
+#: original_texis/vc-xtra.texi:24
 #, no-wrap
 msgid "vc1-xtra.texi"
 msgstr "vc1-xtra.texi"

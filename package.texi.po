@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-02-16 21:49+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-07-15 12:28+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,366 +16,437 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
-#: package.texi.orig:5
+#: original_texis/package.texi:5
 #, no-wrap
 msgid "Packages"
 msgstr "Packages"
 
 #. type: chapter
-#: package.texi.orig:6
+#: original_texis/package.texi:6
 #, no-wrap
 msgid "Emacs Lisp Packages"
 msgstr "Emacs Lisp Packages"
 
 #. type: cindex
-#: package.texi.orig:7
+#: original_texis/package.texi:7
 #, no-wrap
 msgid "Package"
 msgstr "Package"
 
 #. type: cindex
-#: package.texi.orig:8
+#: original_texis/package.texi:8
 #, no-wrap
 msgid "Emacs Lisp package archive"
 msgstr "Emacs Lisp package archive"
 
 #. type: cindex
-#: package.texi.orig:9
+#: original_texis/package.texi:9
 #, no-wrap
 msgid "Package archive"
 msgstr "Package archive"
 
 #. type: cindex
-#: package.texi.orig:10
+#: original_texis/package.texi:10
 #, no-wrap
 msgid "Emacs Lisp package"
 msgstr "Emacs Lisp package"
 
 #. type: Plain text
-#: package.texi.orig:16
+#: original_texis/package.texi:16
 msgid ""
 "Emacs includes a facility that lets you easily download and install "
 "@dfn{packages} that implement additional features.  Each package is a "
 "separate Emacs Lisp program, sometimes including other components such as an "
 "Info manual."
-msgstr "Emacsには、追加の機能を実装する@dfn{パッケージ(packages)}を、簡単にダウンロードしてインストールする機能が含まれています。それぞれのパッケージは個別のEmacs Lispプログラムで、Infoマニュアルのような他の構成要素が含まれているときもあります。"
+msgstr ""
+"Emacsには、追加の機能を実装する@dfn{パッケージ(packages)}を、簡単にダウンロー"
+"ドしてインストールする機能が含まれています。それぞれのパッケージは個別の"
+"Emacs Lispプログラムで、Infoマニュアルのような他の構成要素が含まれているとき"
+"もあります。"
 
 #. type: Plain text
-#: package.texi.orig:20
+#: original_texis/package.texi:20
 msgid ""
 "@kbd{M-x list-packages} brings up a buffer named @file{*Packages*} with a "
 "list of all packages.  You can install or uninstall packages via this "
 "buffer.  @xref{Package Menu}."
-msgstr "@kbd{M-x list-packages}により、すべてのパッケージのリストを含む、@file{*Packages*}という名前のバッファーが表示されます。このバッファーを通じてパッケージをインストールしたりアンインストールできます。@ref{Package Menu}を参照してください。"
+msgstr ""
+"@kbd{M-x list-packages}により、すべてのパッケージのリストを含む、"
+"@file{*Packages*}という名前のバッファーが表示されます。このバッファーを通じて"
+"パッケージをインストールしたりアンインストールできます。@ref{Package Menu}を"
+"参照してください。"
 
 #. type: findex
-#: package.texi.orig:21
+#: original_texis/package.texi:21
 #, no-wrap
 msgid "describe-package"
 msgstr "describe-package"
 
 #. type: Plain text
-#: package.texi.orig:25
+#: original_texis/package.texi:25
 msgid ""
 "The command @kbd{C-h P} (@code{describe-package}) prompts for the name of a "
 "package, and displays a help buffer describing the attributes of the package "
 "and the features that it implements."
-msgstr "コマンド@kbd{C-h P} (@code{describe-package})はパッケージ名の入力を求め、そのパッケージの属性や、実装する機能を説明するヘルプバッファーを表示します。"
+msgstr ""
+"コマンド@kbd{C-h P} (@code{describe-package})はパッケージ名の入力を求め、その"
+"パッケージの属性や、実装する機能を説明するヘルプバッファーを表示します。"
 
 #. type: Plain text
-#: package.texi.orig:30
+#: original_texis/package.texi:30
 msgid ""
 "By default, Emacs downloads packages from a @dfn{package archive} maintained "
 "by the Emacs developers and hosted by the GNU project.  Optionally, you can "
 "also download packages from archives maintained by third parties.  "
 "@xref{Package Installation}."
-msgstr "デフォルトでは、Emacsはemacs開発者により保守されGNUプロジェクトによりホスティングされる、@dfn{パッケージアーカイブ(package archive)}からパッケージをダウンロードします。オプションでサードパーティーにより保守されるアーカイブから、パッケージをダウンロードすることもできます。@ref{Package Installation}を参照してください。"
+msgstr ""
+"デフォルトでは、Emacsはemacs開発者により保守されGNUプロジェクトによりホスティ"
+"ングされる、@dfn{パッケージアーカイブ(package archive)}からパッケージをダウン"
+"ロードします。オプションでサードパーティーにより保守されるアーカイブから、"
+"パッケージをダウンロードすることもできます。@ref{Package Installation}を参照"
+"してください。"
 
 #. type: Plain text
-#: package.texi.orig:36
+#: original_texis/package.texi:36
 msgid ""
 "For information about turning an Emacs Lisp program into an installable "
 "package, @xref{Packaging,,,elisp, The Emacs Lisp Reference Manual}.  For "
 "information about finding third-party packages and other Emacs Lisp "
 "extensions, @xref{Packages that do not come with Emacs,,,efaq, GNU Emacs "
 "FAQ}."
-msgstr "Emacs Lispプログラムをインストール可能なパッケージにチューニングする情報については、@ref{Packaging,,,elisp, The Emacs Lisp Reference Manual}を参照してください。サードパーティーのパッケージや、その他のEmacs Lisp拡張については、@ref{Packages that do not come with Emacs,,,efaq, GNU Emacs FAQ}を参照してください。"
+msgstr ""
+"Emacs Lispプログラムをインストール可能なパッケージにチューニングする情報につ"
+"いては、@ref{Packaging,,,elisp, The Emacs Lisp Reference Manual}を参照してく"
+"ださい。サードパーティーのパッケージや、その他のEmacs Lisp拡張については、"
+"@ref{Packages that do not come with Emacs,,,efaq, GNU Emacs FAQ}を参照してく"
+"ださい。"
 
 #. type: node
-#: package.texi.orig:41 package.texi.orig:43
+#: original_texis/package.texi:41 original_texis/package.texi:43
 #, no-wrap
 msgid "Package Menu"
 msgstr "Package Menu"
 
 #. type: menuentry
-#: package.texi.orig:41
+#: original_texis/package.texi:41
 msgid "Buffer for viewing and managing packages."
 msgstr "パッケージを閲覧・管理するためのバッファー。"
 
 #. type: section
-#: package.texi.orig:41 package.texi.orig:142 package.texi.orig:143
+#: original_texis/package.texi:41 original_texis/package.texi:142
+#: original_texis/package.texi:143
 #, no-wrap
 msgid "Package Installation"
 msgstr "Package Installation"
 
 #. type: menuentry
-#: package.texi.orig:41
+#: original_texis/package.texi:41
 msgid "Options for package installation."
 msgstr "パッケージのインストールにたいするオプション。"
 
 #. type: node
-#: package.texi.orig:41 package.texi.orig:263
+#: original_texis/package.texi:41 original_texis/package.texi:263
 #, no-wrap
 msgid "Package Files"
 msgstr "Package Files"
 
 #. type: menuentry
-#: package.texi.orig:41
+#: original_texis/package.texi:41
 msgid "Where packages are installed."
 msgstr "パッケージがインストールされる場所。"
 
 #. type: section
-#: package.texi.orig:44
+#: original_texis/package.texi:44
 #, no-wrap
 msgid "The Package Menu Buffer"
 msgstr "The Package Menu Buffer"
 
 #. type: cindex
-#: package.texi.orig:45
+#: original_texis/package.texi:45
 #, no-wrap
 msgid "package menu"
 msgstr "package menu"
 
 #. type: cindex
-#: package.texi.orig:46
+#: original_texis/package.texi:46
 #, no-wrap
 msgid "built-in package"
 msgstr "built-in package"
 
 #. type: findex
-#: package.texi.orig:47
+#: original_texis/package.texi:47
 #, no-wrap
 msgid "list-packages"
 msgstr "list-packages"
 
 #. type: Plain text
-#: package.texi.orig:52
+#: original_texis/package.texi:52
 msgid ""
 "The command @kbd{M-x list-packages} brings up the @dfn{package menu}.  This "
 "is a buffer listing all the packages that Emacs knows about, one on each "
 "line, with the following information:"
-msgstr "コマンド@kbd{M-x list-packages}は、@dfn{パッケージメニュー(package menu)}を立ち上げます。これはEmacsが把握するすべてのパッケージをリストするバッファーです。リストの各行には以下の情報が表示されます:"
+msgstr ""
+"コマンド@kbd{M-x list-packages}は、@dfn{パッケージメニュー(package menu)}を立"
+"ち上げます。これはEmacsが把握するすべてのパッケージをリストするバッファーで"
+"す。リストの各行には以下の情報が表示されます:"
 
 #. type: itemize
-#: package.texi.orig:56
+#: original_texis/package.texi:56
 msgid "The package name (e.g., @samp{auctex})."
 msgstr "パッケージ名(例: @samp{auctex})。"
 
 #. type: itemize
-#: package.texi.orig:59
+#: original_texis/package.texi:59
 msgid "The package's version number (e.g., @samp{11.86})."
 msgstr "パッケージのバージョン番号(例: @samp{11.86})。"
 
 #. type: itemize
-#: package.texi.orig:65
+#: original_texis/package.texi:65
 msgid ""
 "The package's status---normally one of @samp{available} (can be downloaded "
 "from the package archive), @samp{installed}, or @samp{built-in} (included in "
 "Emacs by default)."
-msgstr "パッケージのステータス(status: 状態) --- 通常は、@samp{available}(利用可能。パッケージアーカイブからダウンロードできます)、@samp{installed}(インストール済み)、@samp{built-in}(ビルトイン、組み込み。デフォルトでEmacsに含まれます)のうちの1つです。"
+msgstr ""
+"パッケージのステータス(status: 状態) --- 通常は、@samp{available}(利用可能。"
+"パッケージアーカイブからダウンロードできます)、@samp{installed}(インストール"
+"済み)、@samp{built-in}(ビルトイン、組み込み。デフォルトでEmacsに含まれます)の"
+"うちの1つです。"
 
 #. type: itemize
-#: package.texi.orig:72
+#: original_texis/package.texi:72
 msgid ""
 "The status can also be @samp{new}.  This is equivalent to @samp{available}, "
 "except that it means the package became newly available on the package "
 "archive after your last invocation of @kbd{M-x list-packages}.  In other "
 "instances, a package may have the status @samp{held}, @samp{disabled}, or "
 "@samp{obsolete}.  @xref{Package Installation}."
-msgstr "ステータスが@samp{new}のこともあります。これは@samp{available}と同じですが、最後に@kbd{M-x list-packages}を呼び出した後に、そのパッケージがパッケージアーカイブで新たに利用可能になったことを意味します。他にもパッケージは@samp{held}、@samp{disabled}、@samp{obsolete}のステータスをもつかもしれません。@ref{Package Installation}を参照してください。"
+msgstr ""
+"ステータスが@samp{new}のこともあります。これは@samp{available}と同じですが、"
+"最後に@kbd{M-x list-packages}を呼び出した後に、そのパッケージがパッケージアー"
+"カイブで新たに利用可能になったことを意味します。他にもパッケージは"
+"@samp{held}、@samp{disabled}、@samp{obsolete}のステータスをもつかもしれませ"
+"ん。@ref{Package Installation}を参照してください。"
 
 #. type: itemize
-#: package.texi.orig:75
+#: original_texis/package.texi:75
 msgid "A short description of the package."
 msgstr "パッケージの短い説明。"
 
 #. type: Plain text
-#: package.texi.orig:82
+#: original_texis/package.texi:82
 msgid ""
 "The @code{list-packages} command accesses the network, to retrieve the list "
 "of available packages from the package archive server.  If the network is "
 "unavailable, it falls back on the most recently retrieved list."
-msgstr "@code{list-packages}は、パッケージアーカイブサーバーから利用可能なパッケージのリストを取得するために、ネットワークにアクセスします。ネットワークが利用できない場合、一番最近取得したリストにフォールバックします。"
+msgstr ""
+"@code{list-packages}は、パッケージアーカイブサーバーから利用可能なパッケージ"
+"のリストを取得するために、ネットワークにアクセスします。ネットワークが利用で"
+"きない場合、一番最近取得したリストにフォールバックします。"
 
 #. type: Plain text
-#: package.texi.orig:84
+#: original_texis/package.texi:84
 msgid "The following commands are available in the package menu:"
 msgstr "パッケージメニューでは、以下のコマンドが利用可能です:"
 
 #. type: item
-#: package.texi.orig:86
+#: original_texis/package.texi:86
 #, no-wrap
 msgid "h"
 msgstr "h"
 
 #. type: table
-#: package.texi.orig:89
+#: original_texis/package.texi:89
 msgid ""
 "Print a short message summarizing how to use the package menu (@code{package-"
 "menu-quick-help})."
-msgstr "パッケージメニューの使い方を要約した短いメッセージを表示します(@code{package-menu-quick-help})。"
+msgstr ""
+"パッケージメニューの使い方を要約した短いメッセージを表示します(@code{package-"
+"menu-quick-help})。"
 
 #. type: item
-#: package.texi.orig:90
+#: original_texis/package.texi:90
 #, no-wrap
 msgid "?"
 msgstr "?"
 
 #. type: key{#1}
-#: package.texi.orig:91
+#: original_texis/package.texi:91
 #, no-wrap
 msgid "RET"
 msgstr "RET"
 
 #. type: table
-#: package.texi.orig:95
+#: original_texis/package.texi:95
 msgid ""
 "Display a help buffer for the package on the current line (@code{package-"
 "menu-describe-package}), similar to the help window displayed by the @kbd{C-"
 "h P} command (@pxref{Packages})."
-msgstr "カレント行のパッケージにたいして、@kbd{C-h P}コマンド(@ref{Packages}を参照してください)により表示されるヘルプウィンドウと同様の、ヘルプバッファーを表示します(@code{package-menu-describe-package})。"
+msgstr ""
+"カレント行のパッケージにたいして、@kbd{C-h P}コマンド(@ref{Packages}を参照し"
+"てください)により表示されるヘルプウィンドウと同様の、ヘルプバッファーを表示し"
+"ます(@code{package-menu-describe-package})。"
 
 #. type: item
-#: package.texi.orig:96
+#: original_texis/package.texi:96
 #, no-wrap
 msgid "i"
 msgstr "i"
 
 #. type: table
-#: package.texi.orig:102
+#: original_texis/package.texi:102
 msgid ""
 "Mark the package on the current line for installation (@code{package-menu-"
 "mark-install}).  If the package status is @samp{available}, this adds an "
 "@samp{I} character to the start of the line; typing @kbd{x} (see below) will "
 "download and install the package."
-msgstr "カレント行のパッケージをインストールのためにマークします(@code{package-menu-mark-install})。パッケージのステータスが@samp{available}の場合、行の先頭に文字@samp{I}を追加します。@kbd{x}とタイプすると、パッケージをダウンロードしてインストールします(以下参照)。"
+msgstr ""
+"カレント行のパッケージをインストールのためにマークします(@code{package-menu-"
+"mark-install})。パッケージのステータスが@samp{available}の場合、行の先頭に文"
+"字@samp{I}を追加します。@kbd{x}とタイプすると、パッケージをダウンロードしてイ"
+"ンストールします(以下参照)。"
 
 #. type: item
-#: package.texi.orig:103
+#: original_texis/package.texi:103
 #, no-wrap
 msgid "d"
 msgstr "d"
 
 #. type: table
-#: package.texi.orig:110
+#: original_texis/package.texi:110
 msgid ""
 "Mark the package on the current line for deletion (@code{package-menu-mark-"
 "delete}).  If the package status is @samp{installed}, this adds a @samp{D} "
 "character to the start of the line; typing @kbd{x} (see below) will delete "
 "the package.  @xref{Package Files}, for information about what package "
 "deletion entails."
-msgstr "カレント行のパッケージを削除のためにマークします(@code{package-menu-mark-delete})。パッケージのステータスが@samp{installed}の場合、行の先頭に文字@samp{D}を追加します。@kbd{x}とタイプすると、パッケージを削除します(以下参照)。パッケージ削除の結果、何が起こるかについての情報は、@ref{Package Files}を参照してください。"
+msgstr ""
+"カレント行のパッケージを削除のためにマークします(@code{package-menu-mark-"
+"delete})。パッケージのステータスが@samp{installed}の場合、行の先頭に文字"
+"@samp{D}を追加します。@kbd{x}とタイプすると、パッケージを削除します(以下参"
+"照)。パッケージ削除の結果、何が起こるかについての情報は、@ref{Package Files}"
+"を参照してください。"
 
 #. type: item
-#: package.texi.orig:111
+#: original_texis/package.texi:111
 #, no-wrap
 msgid "u"
 msgstr "u"
 
 #. type: table
-#: package.texi.orig:114
+#: original_texis/package.texi:114
 msgid ""
 "Remove any installation or deletion mark previously added to the current "
 "line by an @kbd{i} or @kbd{d} command."
-msgstr "@kbd{i}や@kbd{d}コマンドにより、でカレント行に追加された、以前のインストールまたは削除のマークを外します。"
+msgstr ""
+"@kbd{i}や@kbd{d}コマンドにより、でカレント行に追加された、以前のインストール"
+"または削除のマークを外します。"
 
 #. type: item
-#: package.texi.orig:115
+#: original_texis/package.texi:115
 #, no-wrap
 msgid "U"
 msgstr "U"
 
 #. type: table
-#: package.texi.orig:120
+#: original_texis/package.texi:120
 msgid ""
 "Mark all package with a newer available version for "
 "``upgrading'' (@code{package-menu-mark-upgrades}).  This places an "
 "installation mark on the new available versions, and a deletion mark on the "
 "old installed versions."
-msgstr "新たに利用可能になったすべてのパッケージを、``更新''のためにマークします(@code{package-menu-mark-upgrades})。これは新たに利用可能になったバージョンにインストールのマークをつけ、インストール済みの古いバージョンに削除のマークをつけます。"
+msgstr ""
+"新たに利用可能になったすべてのパッケージを、``更新''のためにマークします"
+"(@code{package-menu-mark-upgrades})。これは新たに利用可能になったバージョンに"
+"インストールのマークをつけ、インストール済みの古いバージョンに削除のマークを"
+"つけます。"
 
 #. type: item
-#: package.texi.orig:121
+#: original_texis/package.texi:121
 #, no-wrap
 msgid "x"
 msgstr "x"
 
 #. type: table
-#: package.texi.orig:125
+#: original_texis/package.texi:125
 msgid ""
 "Download and install all packages marked with @kbd{i}, and their "
 "dependencies; also, delete all packages marked with @kbd{d} (@code{package-"
 "menu-execute}).  This also removes the marks."
-msgstr "@kbd{i}でマークされたすべてのパッケージをダウンロードしてインストールするとともに、@kbd{d}でマークされたすべてのパッケージを削除します(@code{package-menu-execute})。これによりマークは削除されます。"
+msgstr ""
+"@kbd{i}でマークされたすべてのパッケージをダウンロードしてインストールするとと"
+"もに、@kbd{d}でマークされたすべてのパッケージを削除します(@code{package-menu-"
+"execute})。これによりマークは削除されます。"
 
 #. type: item
-#: package.texi.orig:126
+#: original_texis/package.texi:126
 #, no-wrap
 msgid "r"
 msgstr "r"
 
 #. type: table
-#: package.texi.orig:130
+#: original_texis/package.texi:130
 msgid ""
 "Refresh the package list (@code{package-menu-refresh}).  This fetches the "
 "list of available packages from the package archive again, and recomputes "
 "the package list."
-msgstr "パッケージリストを更新します(@code{package-menu-refresh})。これは再度パッケージアーカイブから利用可能なパッケージのリストを取得して、パッケージリストを再計算します。"
+msgstr ""
+"パッケージリストを更新します(@code{package-menu-refresh})。これは再度パッケー"
+"ジアーカイブから利用可能なパッケージのリストを取得して、パッケージリストを再"
+"計算します。"
 
 #. type: item
-#: package.texi.orig:131
+#: original_texis/package.texi:131
 #, no-wrap
 msgid "f"
 msgstr "f"
 
 #. type: table
-#: package.texi.orig:136
+#: original_texis/package.texi:136
 msgid ""
 "Filter the package list (@code{package-menu-filter}).  This prompts for a "
 "keyword (e.g., @samp{games}), then shows only the packages that relate to "
 "that keyword.  To restore the full package list, type @kbd{q}."
-msgstr "パッケージリストをフィルターします(@code{package-menu-filter})。これはキーワード(例: @samp{games})の入力を求め、そのキーワードに関連するパッケージだけを表示します。完全なパッケージリストを復元するには、@kbd{q}をタイプします。"
+msgstr ""
+"パッケージリストをフィルターします(@code{package-menu-filter})。これはキー"
+"ワード(例: @samp{games})の入力を求め、そのキーワードに関連するパッケージだけ"
+"を表示します。完全なパッケージリストを復元するには、@kbd{q}をタイプします。"
 
 #. type: Plain text
-#: package.texi.orig:141
+#: original_texis/package.texi:141
 msgid ""
 "For example, you can install a package by typing @kbd{i} on the line listing "
 "that package, followed by @kbd{x}."
-msgstr "たとえばパッケージをインストールするには、そのパッケージの行で@kbd{i}をタイプしてから、@kbd{x}をタイプします。"
+msgstr ""
+"たとえばパッケージをインストールするには、そのパッケージの行で@kbd{i}をタイプ"
+"してから、@kbd{x}をタイプします。"
 
 #. type: findex
-#: package.texi.orig:145
+#: original_texis/package.texi:145
 #, no-wrap
 msgid "package-install"
 msgstr "package-install"
 
 #. type: Plain text
-#: package.texi.orig:150
+#: original_texis/package.texi:150
 msgid ""
 "Packages are most conveniently installed using the package menu "
 "(@pxref{Package Menu}), but you can also use the command @kbd{M-x package-"
 "install}.  This prompts for the name of a package with the @samp{available} "
 "status, then downloads and installs it."
-msgstr "パッケージを一番便利にインストールするのはパッケージメニューを使う方法(@ref{Package Menu}を参照してください)ですが、コマンド@kbd{M-x package-install}を使用することもできます。これはステータスが@samp{available}のパッケージ名の入力を求め、それをダウンロードしてインストールします。"
+msgstr ""
+"パッケージを一番便利にインストールするのはパッケージメニューを使う方法"
+"(@ref{Package Menu}を参照してください)ですが、コマンド@kbd{M-x package-"
+"install}を使用することもできます。これはステータスが@samp{available}のパッ"
+"ケージ名の入力を求め、それをダウンロードしてインストールします。"
 
 #. type: cindex
-#: package.texi.orig:151
+#: original_texis/package.texi:151
 #, no-wrap
 msgid "package requirements"
 msgstr "package requirements"
 
 #. type: Plain text
-#: package.texi.orig:159
+#: original_texis/package.texi:159
 msgid ""
 "A package may @dfn{require} certain other packages to be installed, because "
 "it relies on functionality provided by them.  When Emacs installs such a "
@@ -383,16 +454,23 @@ msgid ""
 "that is not already installed.  (If a required package is somehow "
 "unavailable, Emacs signals an error and stops installation.)  A package's "
 "requirements list is shown in its help buffer."
-msgstr "他のパッケージが提供する機能に依存するために、それらのパッケージがインストール済みであることを@dfn{必要(require)}とするパッケージもあるでしょう。Emacsがそのようなパッケージをインストールするときは、必要なパッケージがインストールされていなければ、それらのパッケージのダウンロードとインストールも自動に行ないます(必要なパッケージが何らかの理由で利用できない場合、Emacsはエラーをシグナルしてインストールを中止します)。パッケージの必要条件リスト(requirements list)は、そのパッケージのヘルプバッファーに表示されます。"
+msgstr ""
+"他のパッケージが提供する機能に依存するために、それらのパッケージがインストー"
+"ル済みであることを@dfn{必要(require)}とするパッケージもあるでしょう。Emacsが"
+"そのようなパッケージをインストールするときは、必要なパッケージがインストール"
+"されていなければ、それらのパッケージのダウンロードとインストールも自動に行な"
+"います(必要なパッケージが何らかの理由で利用できない場合、Emacsはエラーをシグ"
+"ナルしてインストールを中止します)。パッケージの必要条件リスト(requirements "
+"list)は、そのパッケージのヘルプバッファーに表示されます。"
 
 #. type: vindex
-#: package.texi.orig:160
+#: original_texis/package.texi:160
 #, no-wrap
 msgid "package-archives"
 msgstr "package-archives"
 
 #. type: Plain text
-#: package.texi.orig:170
+#: original_texis/package.texi:170
 msgid ""
 "By default, packages are downloaded from a single package archive maintained "
 "by the Emacs developers.  This is controlled by the variable @code{package-"
@@ -402,27 +480,35 @@ msgid ""
 "@acronym{HTTP} address or directory name of the package archive.  You can "
 "alter this list if you wish to use third party package archives---but do so "
 "at your own risk, and use only third parties that you think you can trust!"
-msgstr "デフォルトでは、パッケージはEmacs開発者により保守される単一のパッケージアーカイブからダウンロードされます。これは変数@code{package-archives}により制御されます。この変数の値は、Emacsが認識するパッケージアーカイブのリストです。リストの各要素は@code{(@var{id} . @var{location})}という形式でなければなりません。ここで、@var{id}はパッケージアーカイブの名前、@var{location}はパッケージアーカイブの@acronym{HTTP}アドレスかディレクトリー名です。サードパーティーのアーカイブを使用したい場合はこのリストを変更できます --- が、自己責任で行い、信用できるサードパーティーだけを使用してください!"
+msgstr ""
+"デフォルトでは、パッケージはEmacs開発者により保守される単一のパッケージアーカ"
+"イブからダウンロードされます。これは変数@code{package-archives}により制御され"
+"ます。この変数の値は、Emacsが認識するパッケージアーカイブのリストです。リスト"
+"の各要素は@code{(@var{id} . @var{location})}という形式でなければなりません。"
+"ここで、@var{id}はパッケージアーカイブの名前、@var{location}はパッケージアー"
+"カイブの@acronym{HTTP}アドレスかディレクトリー名です。サードパーティーのアー"
+"カイブを使用したい場合はこのリストを変更できます --- が、自己責任で行い、信用"
+"できるサードパーティーだけを使用してください!"
 
 #. type: anchor{#1}
-#: package.texi.orig:172
+#: original_texis/package.texi:172
 msgid "Package Signing"
 msgstr "Package Signing"
 
 #. type: cindex
-#: package.texi.orig:172
+#: original_texis/package.texi:172
 #, no-wrap
 msgid "package security"
 msgstr "package security"
 
 #. type: cindex
-#: package.texi.orig:173
+#: original_texis/package.texi:173
 #, no-wrap
 msgid "package signing"
 msgstr "package signing"
 
 #. type: Plain text
-#: package.texi.orig:189
+#: original_texis/package.texi:189
 msgid ""
 "The maintainers of package archives can increase the trust that you can have "
 "in their packages by @dfn{signing} them.  They generate a private/public "
@@ -437,56 +523,83 @@ msgid ""
 "package keys in the @file{gnupg} subdirectory of @code{package-user-dir}.  "
 "The public key for the GNU package archive is distributed with Emacs, in the "
 "@file{etc/package-keyring.gpg}.  Emacs uses it automatically."
-msgstr "パッケージアーカイブのメンテナーは、パッケージに@dfn{サイン(signing)}を付して、信頼度を増すことができます。これらはプライベートとパブリックの対になる暗号化キーにより生成されます。プライベートキーは各パッケージにたいする@dfn{署名ファイル(signature file)}を作成するのに使用されます。パブリックキーにより、署名ファイルを使用してそのパッケージを作成したのが誰か、そしてそれが変更されていないかを検証できます。有効な署名であっても、それが悪意がないパッケージであることを厳正に保証する訳ではなく、用心するべきです。パッケージアーカイブは、パブリックキーの入手方法について、説明を提供するべきです。@url{http://pgp.mit.edu/}のようなサーバーからキーをダウンロードするのも1つの方法です。Emacsにキーをインポートするには、@kbd{M-x package-import-keyring}を使用します。Emacsは@code{package-user-dir}のサブディレクトリー@file{gnupg}に、パッケージのキーを保管します。GNUパッケージアーカイブにたいするパブリックキーはEmacsと共に配布され、@file{etc/package-keyring.gpg}にあります。Emacsはこれを自動的に使用します。"
+msgstr ""
+"パッケージアーカイブのメンテナーは、パッケージに@dfn{サイン(signing)}を付し"
+"て、信頼度を増すことができます。これらはプライベートとパブリックの対になる暗"
+"号化キーにより生成されます。プライベートキーは各パッケージにたいする@dfn{署名"
+"ファイル(signature file)}を作成するのに使用されます。パブリックキーにより、署"
+"名ファイルを使用してそのパッケージを作成したのが誰か、そしてそれが変更されて"
+"いないかを検証できます。有効な署名であっても、それが悪意がないパッケージであ"
+"ることを厳正に保証する訳ではなく、用心するべきです。パッケージアーカイブは、"
+"パブリックキーの入手方法について、説明を提供するべきです。@url{http://pgp."
+"mit.edu/}のようなサーバーからキーをダウンロードするのも1つの方法です。Emacsに"
+"キーをインポートするには、@kbd{M-x package-import-keyring}を使用します。Emacs"
+"は@code{package-user-dir}のサブディレクトリー@file{gnupg}に、パッケージのキー"
+"を保管します。GNUパッケージアーカイブにたいするパブリックキーはEmacsと共に配"
+"布され、@file{etc/package-keyring.gpg}にあります。Emacsはこれを自動的に使用し"
+"ます。"
 
 #. type: vindex
-#: package.texi.orig:190
+#: original_texis/package.texi:190
 #, no-wrap
 msgid "package-check-signature"
 msgstr "package-check-signature"
 
 #. type: vindex
-#: package.texi.orig:191
+#: original_texis/package.texi:191
 #, no-wrap
 msgid "package-unsigned-archives"
 msgstr "package-unsigned-archives"
 
 #. type: Plain text
-#: package.texi.orig:197
+#: original_texis/package.texi:197
 msgid ""
 "If the user option @code{package-check-signature} is non-@code{nil}, Emacs "
 "attempts to verify signatures when you install packages.  If the option has "
 "the value @code{allow-unsigned}, you can still install a package that is not "
 "signed.  If you use some archives that do not sign their packages, you can "
 "add them to the list @code{package-unsigned-archives}."
-msgstr "ユーザーオプション@code{package-check-signature}が非@code{nil}の場合、Emacsはパッケージのインストール時に書名の検証を試みます。このオプションが値@code{allow-unsigned}をもつ場合、サインされていないパッケージのインストールができます。パッケージにサインしないアーカイブを使用する場合、それらを@code{package-unsigned-archives}に追加できます。"
+msgstr ""
+"ユーザーオプション@code{package-check-signature}が非@code{nil}の場合、Emacsは"
+"パッケージのインストール時に書名の検証を試みます。このオプションが値"
+"@code{allow-unsigned}をもつ場合、サインされていないパッケージのインストールが"
+"できます。パッケージにサインしないアーカイブを使用する場合、それらを"
+"@code{package-unsigned-archives}に追加できます。"
 
 #. type: Plain text
-#: package.texi.orig:202
+#: original_texis/package.texi:202
 msgid ""
 "For more information on cryptographic keys and signing, @pxref{Top,, Top, "
 "gnupg, The GNU Privacy Guard Manual}.  Emacs comes with an interface to GNU "
 "Privacy Guard, @pxref{Top,, EasyPG, epa, Emacs EasyPG Assistant Manual}."
-msgstr "暗号化キーとサインについての詳細は、@ref{Top,, Top, gnupg, The GNU Privacy Guard Manual}を参照してください。EmacsのGNU Privacy Guardにたいするインターフェースについては、@ref{Top,, EasyPG, epa, Emacs EasyPG Assistant Manual}を参照してください。"
+msgstr ""
+"暗号化キーとサインについての詳細は、@ref{Top,, Top, gnupg, The GNU Privacy "
+"Guard Manual}を参照してください。EmacsのGNU Privacy Guardにたいするインター"
+"フェースについては、@ref{Top,, EasyPG, epa, Emacs EasyPG Assistant Manual}を"
+"参照してください。"
 
 #. type: vindex
-#: package.texi.orig:203
+#: original_texis/package.texi:203
 #, no-wrap
 msgid "package-pinned-packages"
 msgstr "package-pinned-packages"
 
 #. type: Plain text
-#: package.texi.orig:209
+#: original_texis/package.texi:209
 msgid ""
 "If you have more than one package archive enabled, and some of them offer "
 "different versions of the same package, you may find the option "
 "@code{package-pinned-packages} useful.  You can add package/archive pairs to "
 "this list, to ensure that the specified package is only ever downloaded from "
 "the specified archive."
-msgstr "複数のパッケージアーカイブが有効で、同じパッケージにたいして異なるバージョンを提供する場合は、オプション@code{package-pinned-packages}が便利かもしれません。指定したパッケージが指定されたアーカイブだけからダウンロードされるように、このリストにパッケージとアーカイブのペアーを追加できます。"
+msgstr ""
+"複数のパッケージアーカイブが有効で、同じパッケージにたいして異なるバージョン"
+"を提供する場合は、オプション@code{package-pinned-packages}が便利かもしれませ"
+"ん。指定したパッケージが指定されたアーカイブだけからダウンロードされるよう"
+"に、このリストにパッケージとアーカイブのペアーを追加できます。"
 
 #. type: Plain text
-#: package.texi.orig:216
+#: original_texis/package.texi:216
 msgid ""
 "Once a package is downloaded and installed, it is @dfn{loaded} into the "
 "current Emacs session.  Loading a package is not quite the same as loading a "
@@ -494,39 +607,53 @@ msgid ""
 "package.  Most packages just make some new commands available, while others "
 "have more wide-ranging effects on the Emacs session.  For such information, "
 "consult the package's help buffer."
-msgstr "1度パッケージをダウンロードしてインストールすると、そのパッケージはカレントEmacsセッションに@dfn{ロード}されます。パッケージのロードは、Lispライブラリーのロード(@ref{Lisp Libraries}を参照してください)とまったく同一ではありません。その効果はパッケージごとにさまざまです。ほとんどのパッケージは、いくつかの新たなコマンドを利用可能にするだけですが、Emacsセッションにたいして広範な影響を及ぼすものもあります。この種の情報については、パッケージのヘルプバッファーを参照してください。"
+msgstr ""
+"1度パッケージをダウンロードしてインストールすると、そのパッケージはカレント"
+"Emacsセッションに@dfn{ロード}されます。パッケージのロードは、Lispライブラリー"
+"のロード(@ref{Lisp Libraries}を参照してください)とまったく同一ではありませ"
+"ん。その効果はパッケージごとにさまざまです。ほとんどのパッケージは、いくつか"
+"の新たなコマンドを利用可能にするだけですが、Emacsセッションにたいして広範な影"
+"響を及ぼすものもあります。この種の情報については、パッケージのヘルプバッ"
+"ファーを参照してください。"
 
 #. type: Plain text
-#: package.texi.orig:222
+#: original_texis/package.texi:222
 msgid ""
 "By default, Emacs also automatically loads all installed packages in "
 "subsequent Emacs sessions.  This happens at startup, after processing the "
 "init file (@pxref{Init File}).  As an exception, Emacs does not load "
 "packages at startup if invoked with the @samp{-q} or @samp{--no-init-file} "
 "options (@pxref{Initial Options})."
-msgstr "デフォルトでは、インストールされたパッケージは、Emacsその後のはセッションで、自動的にロードされます。これはEmacs開始時、initファイル処理後(@ref{Init File}を参照してください)に行なわれます。例外として、@samp{-q}または@samp{--no-init-file}オプション(@ref{Initial Options}を参照してください)で呼び出されたときは、Emacs開始時のパッケージのロードは行なわれません。"
+msgstr ""
+"デフォルトでは、インストールされたパッケージは、Emacsその後のはセッションで、"
+"自動的にロードされます。これはEmacs開始時、initファイル処理後(@ref{Init File}"
+"を参照してください)に行なわれます。例外として、@samp{-q}または@samp{--no-"
+"init-file}オプション(@ref{Initial Options}を参照してください)で呼び出されたと"
+"きは、Emacs開始時のパッケージのロードは行なわれません。"
 
 #. type: vindex
-#: package.texi.orig:223
+#: original_texis/package.texi:223
 #, no-wrap
 msgid "package-enable-at-startup"
 msgstr "package-enable-at-startup"
 
 #. type: Plain text
-#: package.texi.orig:226
+#: original_texis/package.texi:226
 msgid ""
 "To disable automatic package loading, change the variable @code{package-"
 "enable-at-startup} to @code{nil}."
-msgstr "自動的なパッケージのロードを無効にするには、変数@code{package-enable-at-startup}を@code{nil}に変更してください。"
+msgstr ""
+"自動的なパッケージのロードを無効にするには、変数@code{package-enable-at-"
+"startup}を@code{nil}に変更してください。"
 
 #. type: findex
-#: package.texi.orig:227
+#: original_texis/package.texi:227
 #, no-wrap
 msgid "package-initialize"
 msgstr "package-initialize"
 
 #. type: Plain text
-#: package.texi.orig:242
+#: original_texis/package.texi:242
 msgid ""
 "The reason automatic package loading occurs after loading the init file is "
 "that user options only receive their customized values after loading the "
@@ -541,16 +668,28 @@ msgid ""
 "processing the init file.  Alternatively, you may choose to completely "
 "inhibit package loading at startup, and invoke the command @kbd{M-x package-"
 "initialize} to load your packages manually."
-msgstr "自動的なパッケージのロードがinitファイルのロード後である理由は、(パッケージシステムに影響するものも含む)ユーザーオプションが、カスタマイズされた値を受けとるのがinitファイルのロード後だからです。initファイルの中で明示的にパッケージをロードしたい状況があるかもしれません(たいていは、initファイルの他のコードが、あるパッケージに依存する等の理由により)。そのような場合、initファイルで関数@code{package-initialize}を呼び出す必要があります。@code{package-initialize}の呼び出しの前に、@code{package-load-list}(以下参照)などの関連するユーザーオプションをセットアップするのは、あなたの責任です。initファイルを処理した後に、パッケージを重複してロードするのを避けるために、@code{package-enable-at-startup}も@code{nil}にセットするべきです。かわりに、開始時にパッケージのロードを完全に抑止して、後でコマンド@kbd{M-x package-initialize}を呼び出して手動でパッケージをロードする方法を選択したいと思うかもしれません。"
+msgstr ""
+"自動的なパッケージのロードがinitファイルのロード後である理由は、(パッケージシ"
+"ステムに影響するものも含む)ユーザーオプションが、カスタマイズされた値を受けと"
+"るのがinitファイルのロード後だからです。initファイルの中で明示的にパッケージ"
+"をロードしたい状況があるかもしれません(たいていは、initファイルの他のコード"
+"が、あるパッケージに依存する等の理由により)。そのような場合、initファイルで関"
+"数@code{package-initialize}を呼び出す必要があります。@code{package-"
+"initialize}の呼び出しの前に、@code{package-load-list}(以下参照)などの関連する"
+"ユーザーオプションをセットアップするのは、あなたの責任です。initファイルを処"
+"理した後に、パッケージを重複してロードするのを避けるために、@code{package-"
+"enable-at-startup}も@code{nil}にセットするべきです。かわりに、開始時にパッ"
+"ケージのロードを完全に抑止して、後でコマンド@kbd{M-x package-initialize}を呼"
+"び出して手動でパッケージをロードする方法を選択したいと思うかもしれません。"
 
 #. type: vindex
-#: package.texi.orig:243
+#: original_texis/package.texi:243
 #, no-wrap
 msgid "package-load-list"
 msgstr "package-load-list"
 
 #. type: Plain text
-#: package.texi.orig:255
+#: original_texis/package.texi:255
 msgid ""
 "For finer control over package loading, you can use the variable "
 "@code{package-load-list}.  Its value should be a list.  A list element of "
@@ -562,10 +701,21 @@ msgid ""
 "loaded).  A list element can also be the symbol @code{all}, which means to "
 "load the latest installed version of any package not named by the other list "
 "elements.  The default value is just @code{'(all)}."
-msgstr "パッケージのロードをより精密に制御するために、変数@code{package-load-list}を使用することができます。この変数の値にはリストを指定します。リストの要素は@code{(@var{name} @var{version})}という形式で、これはEmacsにパッケージ名@var{name}のバージョン@var{version}をロードするよう指示します。ここで、@var{version}には、(そのパッケージの特定のバージョンに対応する)バージョン文字列か、@code{t}(これは任意のインストール済みのバージョンを意味します)、または@code{nil}(これはバージョンを意味しません。パッケージがロードされるのを防いで、そのパッケージを``無効''にします)を指定します。リストの要素にはシンボル@code{all}も指定でき、これは他のリスト要素で名前指定されていない、任意のパッケージのインストール済みバージョンをロードすることを意味します。デフォルト値は、単に@code{'(all)}となっています。"
+msgstr ""
+"パッケージのロードをより精密に制御するために、変数@code{package-load-list}を"
+"使用することができます。この変数の値にはリストを指定します。リストの要素は"
+"@code{(@var{name} @var{version})}という形式で、これはEmacsにパッケージ名"
+"@var{name}のバージョン@var{version}をロードするよう指示します。ここで、"
+"@var{version}には、(そのパッケージの特定のバージョンに対応する)バージョン文字"
+"列か、@code{t}(これは任意のインストール済みのバージョンを意味します)、または"
+"@code{nil}(これはバージョンを意味しません。パッケージがロードされるのを防い"
+"で、そのパッケージを``無効''にします)を指定します。リストの要素にはシンボル"
+"@code{all}も指定でき、これは他のリスト要素で名前指定されていない、任意のパッ"
+"ケージのインストール済みバージョンをロードすることを意味します。デフォルト値"
+"は、単に@code{'(all)}となっています。"
 
 #. type: Plain text
-#: package.texi.orig:262
+#: original_texis/package.texi:262
 msgid ""
 "For example, if you set @code{package-load-list} to @code{'((muse \"3.20\") "
 "all)}, then Emacs only loads version 3.20 of the @samp{muse} package, plus "
@@ -573,34 +723,39 @@ msgid ""
 "of @samp{muse} that happens to be installed will be ignored.  The "
 "@samp{muse} package will be listed in the package menu with the @samp{held} "
 "status."
-msgstr "たとえば@code{package-load-list}を@code{'((muse \"3.20\") all)}にセットした場合、Emacsは@samp{muse}のバージョン3.20と、@samp{muse}以外のパッケージのインストール済みの任意のバージョンをロードします。@samp{muse}の他のバージョンがインストールされていたとしても、それらは無視されます。@samp{muse}パッケージは、@samp{held}というステータスでパッケージメニューにリストされるはずです。"
+msgstr ""
+"たとえば@code{package-load-list}を@code{'((muse \"3.20\") all)}にセットした場"
+"合、Emacsは@samp{muse}のバージョン3.20と、@samp{muse}以外のパッケージのインス"
+"トール済みの任意のバージョンをロードします。@samp{muse}の他のバージョンがイン"
+"ストールされていたとしても、それらは無視されます。@samp{muse}パッケージは、"
+"@samp{held}というステータスでパッケージメニューにリストされるはずです。"
 
 #. type: section
-#: package.texi.orig:264
+#: original_texis/package.texi:264
 #, no-wrap
 msgid "Package Files and Directory Layout"
 msgstr "Package Files and Directory Layout"
 
 #. type: cindex
-#: package.texi.orig:265
+#: original_texis/package.texi:265
 #, no-wrap
 msgid "package directory"
 msgstr "package directory"
 
 #. type: cindex
-#: package.texi.orig:267
+#: original_texis/package.texi:267
 #, no-wrap
 msgid "package file"
 msgstr "package file"
 
 #. type: findex
-#: package.texi.orig:268
+#: original_texis/package.texi:268
 #, no-wrap
 msgid "package-install-file"
 msgstr "package-install-file"
 
 #. type: Plain text
-#: package.texi.orig:278
+#: original_texis/package.texi:278
 msgid ""
 "Each package is downloaded from the package archive in the form of a single "
 "@dfn{package file}---either an Emacs Lisp source file, or a tar file "
@@ -610,38 +765,50 @@ msgid ""
 "them, unless you are making a package (@pxref{Packaging,,,elisp, The Emacs "
 "Lisp Reference Manual}).  Should you ever need to install a package directly "
 "from a package file, use the command @kbd{M-x package-install-file}."
-msgstr "各パッケージはパッケージアーカイブから単一ファイル形式 －－－ 1つのEmacs Lispソースファイル、または複数のEmacs Lispソースと他のファイルを含むtarファイル --- でダウンロードされます。パッケージファイルは、パッケージをインストールするEmacsコマンドにより自動的に取得、処理、配置されます。パッケージを作成する(@ref{Packaging,,,elisp, The Emacs Lisp Reference Manual}を参照してください)のでない限り、通常これらを直接扱う必要はないでしょう。パッケージファイルから直接パッケージをインストールする必要があるときは、コマンド@kbd{M-x package-install-file}を使用してください。"
+msgstr ""
+"各パッケージはパッケージアーカイブから単一ファイル形式 －－－ 1つのEmacs Lisp"
+"ソースファイル、または複数のEmacs Lispソースと他のファイルを含むtarファイル "
+"--- でダウンロードされます。パッケージファイルは、パッケージをインストールす"
+"るEmacsコマンドにより自動的に取得、処理、配置されます。パッケージを作成する"
+"(@ref{Packaging,,,elisp, The Emacs Lisp Reference Manual}を参照してください)"
+"のでない限り、通常これらを直接扱う必要はないでしょう。パッケージファイルから"
+"直接パッケージをインストールする必要があるときは、コマンド@kbd{M-x package-"
+"install-file}を使用してください。"
 
 #. type: vindex
-#: package.texi.orig:279
+#: original_texis/package.texi:279
 #, no-wrap
 msgid "package-user-dir"
 msgstr "package-user-dir"
 
 #. type: Plain text
-#: package.texi.orig:286
+#: original_texis/package.texi:286
 msgid ""
 "Once installed, the contents of a package are placed in a subdirectory of "
 "@file{~/.emacs.d/elpa/} (you can change the name of that directory by "
 "changing the variable @code{package-user-dir}).  The package subdirectory is "
 "named @file{@var{name}-@var{version}}, where @var{name} is the package name "
 "and @var{version} is its version string."
-msgstr "1度インストールされると、パッケージの内容はそのサブディレクトリーに配置されます(変数@code{package-user-dir}を変更することにより、ディレクトリーの名前を変更できます)。パッケージのサブディレクトリーは@file{@var{name}-@var{version}}という名前で、@var{name}はパッケージ名、@var{version}はバージョン文字列です。"
+msgstr ""
+"1度インストールされると、パッケージの内容はそのサブディレクトリーに配置されま"
+"す(変数@code{package-user-dir}を変更することにより、ディレクトリーの名前を変"
+"更できます)。パッケージのサブディレクトリーは@file{@var{name}-@var{version}}"
+"という名前で、@var{name}はパッケージ名、@var{version}はバージョン文字列です。"
 
 #. type: cindex
-#: package.texi.orig:287
+#: original_texis/package.texi:287
 #, no-wrap
 msgid "system-wide packages"
 msgstr "system-wide packages"
 
 #. type: vindex
-#: package.texi.orig:288
+#: original_texis/package.texi:288
 #, no-wrap
 msgid "package-directory-list"
 msgstr "package-directory-list"
 
 #. type: Plain text
-#: package.texi.orig:295
+#: original_texis/package.texi:295
 msgid ""
 "In addition to @code{package-user-dir}, Emacs looks for installed packages "
 "in the directories listed in @code{package-directory-list}.  These "
@@ -649,13 +816,24 @@ msgid ""
 "available system-wide; Emacs itself never installs packages there.  The "
 "package subdirectories for @code{package-directory-list} are laid out in the "
 "same way as in @code{package-user-dir}."
-msgstr "@code{package-user-dir}に加えて、Emacsは@code{package-directory-list}にリストされたディレクトリーからインストール済みパッケージを探します。これらのディレクトリーはシステム管理者のためのディレクトリーで、Emacsパッケージをシステムワイドに利用可能にするためのものです。Emacs自身がこれらのディレクトリーにパッケージをインストールすることはありません。@code{package-directory-list}にたいするパッケージのサブディレクトリーは、@code{package-user-dir}と同じ方法で配置されます。"
+msgstr ""
+"@code{package-user-dir}に加えて、Emacsは@code{package-directory-list}にリスト"
+"されたディレクトリーからインストール済みパッケージを探します。これらのディレ"
+"クトリーはシステム管理者のためのディレクトリーで、Emacsパッケージをシステムワ"
+"イドに利用可能にするためのものです。Emacs自身がこれらのディレクトリーにパッ"
+"ケージをインストールすることはありません。@code{package-directory-list}にたい"
+"するパッケージのサブディレクトリーは、@code{package-user-dir}と同じ方法で配置"
+"されます。"
 
 #. type: Plain text
-#: package.texi.orig:299
+#: original_texis/package.texi:299
 msgid ""
 "Deleting a package (@pxref{Package Menu}) involves deleting the "
 "corresponding package subdirectory.  This only works for packages installed "
 "in @code{package-user-dir}; if told to act on a package in a system-wide "
 "package directory, the deletion command signals an error."
-msgstr "パッケージの削除(@ref{Package Menu}を参照してください)は、対応するパッケージのサブディレクトリーを削除します。これは@code{package-user-dir}にインストールされたパッケージだけに機能します。システムワイドなパッケージディレクトリーにたいして呼び出された場合、削除コマンドはエラーをシグナルします。"
+msgstr ""
+"パッケージの削除(@ref{Package Menu}を参照してください)は、対応するパッケージ"
+"のサブディレクトリーを削除します。これは@code{package-user-dir}にインストール"
+"されたパッケージだけに機能します。システムワイドなパッケージディレクトリーに"
+"たいして呼び出された場合、削除コマンドはエラーをシグナルします。"

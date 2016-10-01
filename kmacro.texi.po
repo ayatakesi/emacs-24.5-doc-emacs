@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-11-02 00:54+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,41 +16,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: chapter
-#: kmacro.texi.orig:5 kmacro.texi.orig:6
+#: original_texis/kmacro.texi:5 original_texis/kmacro.texi:6
 #, no-wrap
 msgid "Keyboard Macros"
 msgstr "Keyboard Macros"
 
 #. type: cindex
-#: kmacro.texi.orig:7
+#: original_texis/kmacro.texi:7
 #, no-wrap
 msgid "defining keyboard macros"
 msgstr "defining keyboard macros"
 
 #. type: cindex
-#: kmacro.texi.orig:8
+#: original_texis/kmacro.texi:8
 #, no-wrap
 msgid "keyboard macro"
 msgstr "keyboard macro"
 
 #. type: Plain text
-#: kmacro.texi.orig:12
+#: original_texis/kmacro.texi:12
 msgid ""
 "In this chapter we describe how to record a sequence of editing commands so "
 "you can repeat it conveniently later."
-msgstr "このチャプターでは一連の編集コマンドを記録して、後で簡単に繰り返す方法を説明します。"
+msgstr ""
+"このチャプターでは一連の編集コマンドを記録して、後で簡単に繰り返す方法を説明"
+"します。"
 
 #. type: Plain text
-#: kmacro.texi.orig:18
+#: original_texis/kmacro.texi:18
 msgid ""
 "A @dfn{keyboard macro} is a command defined by an Emacs user to stand for "
 "another sequence of keys.  For example, if you discover that you are about "
 "to type @kbd{C-n M-d C-d} forty times, you can speed your work by defining a "
 "keyboard macro to do @kbd{C-n M-d C-d}, and then executing it 39 more times."
-msgstr "@dfn{キーボードマクロ(keyboard macro)}とは、Emacsのユーザーにより定義される、一連のキー入力からなるコマンドです。たとえば@kbd{C-n M-d C-d}を40回繰り返しタイプしていることに気付いたとしましょう。@kbd{C-n M-d C-d}を行うキーボードマクロを定義して、それを39回以上繰り返すことにより、作業スピードをあげることができます。"
+msgstr ""
+"@dfn{キーボードマクロ(keyboard macro)}とは、Emacsのユーザーにより定義される、"
+"一連のキー入力からなるコマンドです。たとえば@kbd{C-n M-d C-d}を40回繰り返しタ"
+"イプしていることに気付いたとしましょう。@kbd{C-n M-d C-d}を行うキーボードマク"
+"ロを定義して、それを39回以上繰り返すことにより、作業スピードをあげることがで"
+"きます。"
 
 #. type: Plain text
-#: kmacro.texi.orig:26
+#: original_texis/kmacro.texi:26
 msgid ""
 "You define a keyboard macro by executing and recording the commands which "
 "are its definition.  Put differently, as you define a keyboard macro, the "
@@ -59,10 +66,17 @@ msgid ""
 "head.  When you close the definition, the keyboard macro is defined and also "
 "has been, in effect, executed once.  You can then do the whole thing over "
 "again by invoking the macro."
-msgstr "キーボードマクロは、コマンドを実行・記録することにより定義します。違う言い方をすると、キーボードマクロの定義では、初回はマクロの定義が実行されるということです。この方法により、頭だけで考えるのではなく、コマンドの影響を目で見ることができます。コマンド列の入力を終了して定義を終了するときは、キーボードマクロが定義されるとともに、入力したコマンド列の影響としてマクロが1回実行されたことになります。その後はマクロを呼び出すことにより、コマンド列全体を実行することができます。"
+msgstr ""
+"キーボードマクロは、コマンドを実行・記録することにより定義します。違う言い方"
+"をすると、キーボードマクロの定義では、初回はマクロの定義が実行されるというこ"
+"とです。この方法により、頭だけで考えるのではなく、コマンドの影響を目で見るこ"
+"とができます。コマンド列の入力を終了して定義を終了するときは、キーボードマク"
+"ロが定義されるとともに、入力したコマンド列の影響としてマクロが1回実行されたこ"
+"とになります。その後はマクロを呼び出すことにより、コマンド列全体を実行するこ"
+"とができます。"
 
 #. type: Plain text
-#: kmacro.texi.orig:33
+#: original_texis/kmacro.texi:33
 msgid ""
 "Keyboard macros differ from ordinary Emacs commands in that they are written "
 "in the Emacs command language rather than in Lisp.  This makes it easier for "
@@ -70,195 +84,213 @@ msgid ""
 "hacks.  However, the Emacs command language is not powerful enough as a "
 "programming language to be useful for writing anything intelligent or "
 "general.  For such things, Lisp must be used."
-msgstr "キーボードマクロは、LispではなくEmacsコマンド言語(Emacs command language)で記述されている点が、通常のEmacsコマンドと異なります。しかしEmacsコマンド言語は、高度なことや一般的なことを記述するプログラム言語として、充分にパワフルとはいえません。そのような事項には、Lispを使わなければなりません。"
+msgstr ""
+"キーボードマクロは、LispではなくEmacsコマンド言語(Emacs command language)で記"
+"述されている点が、通常のEmacsコマンドと異なります。しかしEmacsコマンド言語"
+"は、高度なことや一般的なことを記述するプログラム言語として、充分にパワフルと"
+"はいえません。そのような事項には、Lispを使わなければなりません。"
 
 #. type: node
-#: kmacro.texi.orig:45 kmacro.texi.orig:47
+#: original_texis/kmacro.texi:45 original_texis/kmacro.texi:47
 #, no-wrap
 msgid "Basic Keyboard Macro"
 msgstr "Basic Keyboard Macro"
 
 #. type: menuentry
-#: kmacro.texi.orig:45
+#: original_texis/kmacro.texi:45
 msgid "Defining and running keyboard macros."
 msgstr "キーボードマクロの定義と実行。"
 
 #. type: node
-#: kmacro.texi.orig:45 kmacro.texi.orig:170
+#: original_texis/kmacro.texi:45 original_texis/kmacro.texi:170
 #, no-wrap
 msgid "Keyboard Macro Ring"
 msgstr "Keyboard Macro Ring"
 
 #. type: menuentry
-#: kmacro.texi.orig:45
+#: original_texis/kmacro.texi:45
 msgid "Where previous keyboard macros are saved."
 msgstr "以前のキーボードマクロが保存される場所。"
 
 #. type: node
-#: kmacro.texi.orig:45 kmacro.texi.orig:235
+#: original_texis/kmacro.texi:45 original_texis/kmacro.texi:235
 #, no-wrap
 msgid "Keyboard Macro Counter"
 msgstr "Keyboard Macro Counter"
 
 #. type: menuentry
-#: kmacro.texi.orig:45
+#: original_texis/kmacro.texi:45
 msgid "Inserting incrementing numbers in macros."
 msgstr "マクロに増加する番号を挿入する。"
 
 #. type: node
-#: kmacro.texi.orig:45 kmacro.texi.orig:340
+#: original_texis/kmacro.texi:45 original_texis/kmacro.texi:340
 #, no-wrap
 msgid "Keyboard Macro Query"
 msgstr "Keyboard Macro Query"
 
 #. type: menuentry
-#: kmacro.texi.orig:45
+#: original_texis/kmacro.texi:45
 msgid "Making keyboard macros do different things each time."
 msgstr "毎回違うことを行うマクロの作成。"
 
 #. type: node
-#: kmacro.texi.orig:45 kmacro.texi.orig:391
+#: original_texis/kmacro.texi:45 original_texis/kmacro.texi:391
 #, no-wrap
 msgid "Save Keyboard Macro"
 msgstr "Save Keyboard Macro"
 
 #. type: menuentry
-#: kmacro.texi.orig:45
+#: original_texis/kmacro.texi:45
 msgid "Giving keyboard macros names; saving them in files."
 msgstr "キーボードマクロの命名とファイルへの保存。"
 
 #. type: node
-#: kmacro.texi.orig:45 kmacro.texi.orig:468
+#: original_texis/kmacro.texi:45 original_texis/kmacro.texi:468
 #, no-wrap
 msgid "Edit Keyboard Macro"
 msgstr "Edit Keyboard Macro"
 
 #. type: menuentry
-#: kmacro.texi.orig:45
+#: original_texis/kmacro.texi:45
 msgid "Editing keyboard macros."
 msgstr "キーボードマクロを編集するには。"
 
 #. type: node
-#: kmacro.texi.orig:45 kmacro.texi.orig:503
+#: original_texis/kmacro.texi:45 original_texis/kmacro.texi:503
 #, no-wrap
 msgid "Keyboard Macro Step-Edit"
 msgstr "Keyboard Macro Step-Edit"
 
 #. type: menuentry
-#: kmacro.texi.orig:45
+#: original_texis/kmacro.texi:45
 msgid "Interactively executing and editing a keyboard macro."
 msgstr "キーボードマクロのインタラクティブな実行と編集。"
 
 #. type: section
-#: kmacro.texi.orig:48
+#: original_texis/kmacro.texi:48
 #, no-wrap
 msgid "Basic Use"
 msgstr "Basic Use"
 
 #. type: key{#1}
-#: kmacro.texi.orig:51 kmacro.texi.orig:67 kmacro.texi.orig:245
+#: original_texis/kmacro.texi:51 original_texis/kmacro.texi:67
+#: original_texis/kmacro.texi:245
 #, no-wrap
 msgid "F3"
 msgstr "F3"
 
 #. type: table
-#: kmacro.texi.orig:54
+#: original_texis/kmacro.texi:54
 msgid ""
 "Start defining a keyboard macro (@code{kmacro-start-macro-or-insert-"
 "counter})."
-msgstr "キーボードマクロの定義を開始します(@code{kmacro-start-macro-or-insert-counter})。"
+msgstr ""
+"キーボードマクロの定義を開始します(@code{kmacro-start-macro-or-insert-"
+"counter})。"
 
 #. type: kindex
-#: kmacro.texi.orig:54 kmacro.texi.orig:68
+#: original_texis/kmacro.texi:54 original_texis/kmacro.texi:68
 #, no-wrap
 msgid "F4"
 msgstr "F4"
 
 #. type: table
-#: kmacro.texi.orig:58
+#: original_texis/kmacro.texi:58
 msgid ""
 "If a keyboard macro is being defined, end the definition; otherwise, execute "
 "the most recent keyboard macro (@code{kmacro-end-or-call-macro})."
-msgstr "キーボードマクロを定義しているときは定義を終了します。それ以外の場合は一番最近のキーボードマクロを実行します(@code{kmacro-end-or-call-macro})。"
+msgstr ""
+"キーボードマクロを定義しているときは定義を終了します。それ以外の場合は一番最"
+"近のキーボードマクロを実行します(@code{kmacro-end-or-call-macro})。"
 
 #. type: item
-#: kmacro.texi.orig:58
+#: original_texis/kmacro.texi:58
 #, no-wrap
 msgid "C-u @key{F3}"
 msgstr "C-u @key{F3}"
 
 #. type: table
-#: kmacro.texi.orig:60
+#: original_texis/kmacro.texi:60
 msgid "Re-execute last keyboard macro, then append keys to its definition."
 msgstr "最後のキーボードマクロを再実行してから、キーをマクロ定義に追加します。"
 
 #. type: item
-#: kmacro.texi.orig:60
+#: original_texis/kmacro.texi:60
 #, no-wrap
 msgid "C-u C-u @key{F3}"
 msgstr "C-u C-u @key{F3}"
 
 #. type: table
-#: kmacro.texi.orig:62
+#: original_texis/kmacro.texi:62
 msgid "Append keys to the last keyboard macro without re-executing it."
 msgstr "最後のキーボードマクロを再実行せずに、キーをマクロ定義に追加します。"
 
 #. type: kindex
-#: kmacro.texi.orig:62 kmacro.texi.orig:140
+#: original_texis/kmacro.texi:62 original_texis/kmacro.texi:140
 #, no-wrap
 msgid "C-x C-k r"
 msgstr "C-x C-k r"
 
 #. type: table
-#: kmacro.texi.orig:65
+#: original_texis/kmacro.texi:65
 msgid ""
 "Run the last keyboard macro on each line that begins in the region "
 "(@code{apply-macro-to-region-lines})."
-msgstr "リージョンの中の各行の行頭にたいして、最後のキーボードマクロを実行します(@code{apply-macro-to-region-lines})。"
+msgstr ""
+"リージョンの中の各行の行頭にたいして、最後のキーボードマクロを実行します"
+"(@code{apply-macro-to-region-lines})。"
 
 #. type: findex
-#: kmacro.texi.orig:69
+#: original_texis/kmacro.texi:69
 #, no-wrap
 msgid "kmacro-start-macro-or-insert-counter"
 msgstr "kmacro-start-macro-or-insert-counter"
 
 #. type: findex
-#: kmacro.texi.orig:70
+#: original_texis/kmacro.texi:70
 #, no-wrap
 msgid "kmacro-end-or-call-macro"
 msgstr "kmacro-end-or-call-macro"
 
 #. type: findex
-#: kmacro.texi.orig:71
+#: original_texis/kmacro.texi:71
 #, no-wrap
 msgid "kmacro-end-and-call-macro"
 msgstr "kmacro-end-and-call-macro"
 
 #. type: Plain text
-#: kmacro.texi.orig:78
+#: original_texis/kmacro.texi:78
 msgid ""
 "To start defining a keyboard macro, type @key{F3}.  From then on, your keys "
 "continue to be executed, but also become part of the definition of the "
 "macro.  @samp{Def} appears in the mode line to remind you of what is going "
 "on.  When you are finished, type @key{F4} (@code{kmacro-end-or-call-macro}) "
 "to terminate the definition.  For example,"
-msgstr "キーボードマクロの定義を開始するには、@key{F3}をタイプします。それからはキーを入力して実行を続けますが、それは同時にマクロ定義の一部になります。その間は、モードラインに@samp{Def}が表示されて、マクロの定義中であることを示します。終了するときは@key{F4} (@code{kmacro-end-or-call-macro})をタイプして、定義を終了します。たとえば、"
+msgstr ""
+"キーボードマクロの定義を開始するには、@key{F3}をタイプします。それからはキー"
+"を入力して実行を続けますが、それは同時にマクロ定義の一部になります。その間"
+"は、モードラインに@samp{Def}が表示されて、マクロの定義中であることを示しま"
+"す。終了するときは@key{F4} (@code{kmacro-end-or-call-macro})をタイプして、定"
+"義を終了します。たとえば、"
 
 #. type: example
-#: kmacro.texi.orig:81
+#: original_texis/kmacro.texi:81
 #, no-wrap
 msgid "@key{F3} M-f foo @key{F4}\n"
 msgstr "@key{F3} M-f foo @key{F4}\n"
 
 #. type: Plain text
-#: kmacro.texi.orig:86
+#: original_texis/kmacro.texi:86
 msgid ""
 "defines a macro to move forward a word and then insert @samp{foo}.  Note "
 "that @key{F3} and @key{F4} do not become part of the macro."
-msgstr "これは1単語前方に移動してから、@samp{foo}を挿入するマクロを定義します。@key{F3}と@key{F4}は、マクロの一部とはならないことに注意してください。"
+msgstr ""
+"これは1単語前方に移動してから、@samp{foo}を挿入するマクロを定義します。"
+"@key{F3}と@key{F4}は、マクロの一部とはならないことに注意してください。"
 
 #. type: Plain text
-#: kmacro.texi.orig:95
+#: original_texis/kmacro.texi:95
 msgid ""
 "After defining the macro, you can call it with @key{F4}.  For the above "
 "example, this has the same effect as typing @kbd{M-f foo} again.  (Note the "
@@ -268,20 +300,31 @@ msgid ""
 "invoke the macro @samp{n} times.  An argument of zero repeats the macro "
 "indefinitely, until it gets an error or you type @kbd{C-g} (or, on MS-DOS, "
 "@kbd{C-@key{BREAK}})."
-msgstr "マクロを定義した後は、@key{F4}でそれを呼び出すことができます。上記の例では、それは@kbd{M-f foo} againをタイプしたのと同じ効果をもちます(@key{F4}コマンドの2つの役割に注意してください。これはマクロを定義しているときはマクロの定義を終了し、そうでないときは最後のマクロを呼び出します)。@key{F4}に数引数@samp{n}を与えることもできます。これはマクロを@samp{n}回呼び出すことを意味します。引数に0を与えると、エラーになるか、@kbd{C-g}(MS-DOSでは@kbd{C-@key{BREAK}})をタイプするまで、マクロを永久に繰り返します。"
+msgstr ""
+"マクロを定義した後は、@key{F4}でそれを呼び出すことができます。上記の例では、"
+"それは@kbd{M-f foo} againをタイプしたのと同じ効果をもちます(@key{F4}コマンド"
+"の2つの役割に注意してください。これはマクロを定義しているときはマクロの定義を"
+"終了し、そうでないときは最後のマクロを呼び出します)。@key{F4}に数引数@samp{n}"
+"を与えることもできます。これはマクロを@samp{n}回呼び出すことを意味します。引"
+"数に0を与えると、エラーになるか、@kbd{C-g}(MS-DOSでは@kbd{C-@key{BREAK}})をタ"
+"イプするまで、マクロを永久に繰り返します。"
 
 #. type: Plain text
-#: kmacro.texi.orig:101
+#: original_texis/kmacro.texi:101
 msgid ""
 "The above example demonstrates a handy trick that you can employ with "
 "keyboard macros: if you wish to repeat an operation at regularly spaced "
 "places in the text, include a motion command as part of the macro.  In this "
 "case, repeating the macro inserts the string @samp{foo} after each "
 "successive word."
-msgstr "上記の例は、キーボードマクロを使った便利なトリックをデモンストレイトする例です。テキストの一定間隔の位置にたいして繰り返し操作を行いたいときは、マクロの一部に移動コマンドを含めます。この例ではマクロの繰り返しにより、連続する単語の後ろに文字列@samp{foo}を挿入していきます。"
+msgstr ""
+"上記の例は、キーボードマクロを使った便利なトリックをデモンストレイトする例で"
+"す。テキストの一定間隔の位置にたいして繰り返し操作を行いたいときは、マクロの"
+"一部に移動コマンドを含めます。この例ではマクロの繰り返しにより、連続する単語"
+"の後ろに文字列@samp{foo}を挿入していきます。"
 
 #. type: Plain text
-#: kmacro.texi.orig:112
+#: original_texis/kmacro.texi:112
 msgid ""
 "After terminating the definition of a keyboard macro, you can append more "
 "keystrokes to its definition by typing @kbd{C-u @key{F3}}.  This is "
@@ -291,32 +334,45 @@ msgid ""
 "the existing macro will not be re-executed before appending to it (the "
 "default is @code{t}).  You can also add to the end of the definition of the "
 "last keyboard macro without re-executing it by typing @kbd{C-u C-u @key{F3}}."
-msgstr "キーボードマクロの定義を終了した後でも、@kbd{C-u @key{F3}}をタイプすることにより、マクロの定義にキーストロークを追加できます。これは@key{F3}に続けてマクロの定義を再タイプするのと同じです。結果として、そのマクロの以前の定義が再実行されることになります。変数@code{kmacro-execute-before-append}を@code{nil}に変更すると、既存のマクロにキーストロークが追加されるまでは実行されません(デフォルトは@code{t})。最後に実行したキーボードマクロを再実行することなく、定義の最後にキーストロークを追加するには、@kbd{C-u C-u @key{F3}}をタイプしてください。"
+msgstr ""
+"キーボードマクロの定義を終了した後でも、@kbd{C-u @key{F3}}をタイプすることに"
+"より、マクロの定義にキーストロークを追加できます。これは@key{F3}に続けてマク"
+"ロの定義を再タイプするのと同じです。結果として、そのマクロの以前の定義が再実"
+"行されることになります。変数@code{kmacro-execute-before-append}を@code{nil}に"
+"変更すると、既存のマクロにキーストロークが追加されるまでは実行されません(デ"
+"フォルトは@code{t})。最後に実行したキーボードマクロを再実行することなく、定義"
+"の最後にキーストロークを追加するには、@kbd{C-u C-u @key{F3}}をタイプしてくだ"
+"さい。"
 
 #. type: Plain text
-#: kmacro.texi.orig:117
+#: original_texis/kmacro.texi:117
 msgid ""
 "When a command reads an argument with the minibuffer, your minibuffer input "
 "becomes part of the macro along with the command.  So when you replay the "
 "macro, the command gets the same argument as when you entered the macro.  "
 "For example,"
-msgstr "コマンドがミニバッファーから引数を読みとる場合、ミニバッファーにたいする入力は、コマンドと一緒にマクロの一部となります。したがってマクロを再生すると、そのコマンドの引数は入力されたのと同じになります。たとえば、"
+msgstr ""
+"コマンドがミニバッファーから引数を読みとる場合、ミニバッファーにたいする入力"
+"は、コマンドと一緒にマクロの一部となります。したがってマクロを再生すると、そ"
+"のコマンドの引数は入力されたのと同じになります。たとえば、"
 
 #. type: example
-#: kmacro.texi.orig:120
+#: original_texis/kmacro.texi:120
 #, no-wrap
 msgid "@key{F3} C-a C-k C-x b foo @key{RET} C-y C-x b @key{RET} @key{F4}\n"
 msgstr "@key{F3} C-a C-k C-x b foo @key{RET} C-y C-x b @key{RET} @key{F4}\n"
 
 #. type: Plain text
-#: kmacro.texi.orig:125
+#: original_texis/kmacro.texi:125
 msgid ""
 "defines a macro that kills the current line, yanks it into the buffer "
 "@samp{foo}, then returns to the original buffer."
-msgstr "これはカレント行をkillして、バッファー@samp{foo}にそれをyankした後、元のバッファーに戻ります。"
+msgstr ""
+"これはカレント行をkillして、バッファー@samp{foo}にそれをyankした後、元のバッ"
+"ファーに戻ります。"
 
 #. type: Plain text
-#: kmacro.texi.orig:138
+#: original_texis/kmacro.texi:138
 msgid ""
 "Most keyboard commands work as usual in a keyboard macro definition, with "
 "some exceptions.  Typing @kbd{C-g} (@code{keyboard-quit}) quits the keyboard "
@@ -329,55 +385,67 @@ msgid ""
 "uses the original mouse position of that event, the position that the mouse "
 "had while you were defining the macro.  The effect of this may be hard to "
 "predict."
-msgstr "ほとんどのキーボードコマンドは、キーボードマクロの定義で普通に機能しますが、いくつか例外があります。@kbd{C-g} (@code{keyboard-quit})をタイプすると、キーボードマクロの定義が終了します。@kbd{C-M-c} (@code{exit-recursive-edit})は信頼できません。これはマクロの中で再帰編集(recursive edit)を開始したときは期待通りに再帰編集から抜け出しますが、キーボードマクロの呼び出し前に開始された再帰編集を抜け出すには、キーボードマクロからも抜け出す必要があります。同様に、マウスイベントもキーボードマクロで使用できますが。信頼はできません。マクロによりマウスイベントが再生されるときは、マクロを定義したときのマウス位置が使用されます。この効果は予測が困難です。"
+msgstr ""
+"ほとんどのキーボードコマンドは、キーボードマクロの定義で普通に機能しますが、"
+"いくつか例外があります。@kbd{C-g} (@code{keyboard-quit})をタイプすると、キー"
+"ボードマクロの定義が終了します。@kbd{C-M-c} (@code{exit-recursive-edit})は信"
+"頼できません。これはマクロの中で再帰編集(recursive edit)を開始したときは期待"
+"通りに再帰編集から抜け出しますが、キーボードマクロの呼び出し前に開始された再"
+"帰編集を抜け出すには、キーボードマクロからも抜け出す必要があります。同様に、"
+"マウスイベントもキーボードマクロで使用できますが。信頼はできません。マクロに"
+"よりマウスイベントが再生されるときは、マクロを定義したときのマウス位置が使用"
+"されます。この効果は予測が困難です。"
 
 #. type: findex
-#: kmacro.texi.orig:139
+#: original_texis/kmacro.texi:139
 #, no-wrap
 msgid "apply-macro-to-region-lines"
 msgstr "apply-macro-to-region-lines"
 
 #. type: Plain text
-#: kmacro.texi.orig:145
+#: original_texis/kmacro.texi:145
 msgid ""
 "The command @kbd{C-x C-k r} (@code{apply-macro-to-region-lines})  repeats "
 "the last defined keyboard macro on each line that begins in the region.  It "
 "does this line by line, by moving point to the beginning of the line and "
 "then executing the macro."
-msgstr "コマンド@kbd{C-x C-k r} (@code{apply-macro-to-region-lines})は、リージョン内の各行のにたいして、最後に定義されたキーボードマクロを繰り返します。これは1行ずつポイントをリージョン内の行頭に移動してからマクロを実行します。"
+msgstr ""
+"コマンド@kbd{C-x C-k r} (@code{apply-macro-to-region-lines})は、リージョン内"
+"の各行のにたいして、最後に定義されたキーボードマクロを繰り返します。これは1行"
+"ずつポイントをリージョン内の行頭に移動してからマクロを実行します。"
 
 #. type: kindex
-#: kmacro.texi.orig:146
+#: original_texis/kmacro.texi:146
 #, no-wrap
 msgid "C-x ("
 msgstr "C-x ("
 
 #. type: kindex
-#: kmacro.texi.orig:147
+#: original_texis/kmacro.texi:147
 #, no-wrap
 msgid "C-x )"
 msgstr "C-x )"
 
 #. type: kindex
-#: kmacro.texi.orig:148
+#: original_texis/kmacro.texi:148
 #, no-wrap
 msgid "C-x e"
 msgstr "C-x e"
 
 #. type: findex
-#: kmacro.texi.orig:149
+#: original_texis/kmacro.texi:149
 #, no-wrap
 msgid "kmacro-start-macro"
 msgstr "kmacro-start-macro"
 
 #. type: findex
-#: kmacro.texi.orig:150
+#: original_texis/kmacro.texi:150
 #, no-wrap
 msgid "kmacro-end-macro"
 msgstr "kmacro-end-macro"
 
 #. type: Plain text
-#: kmacro.texi.orig:163
+#: original_texis/kmacro.texi:163
 msgid ""
 "In addition to the @key{F3} and @key{F4} commands described above, Emacs "
 "also supports an older set of key bindings for defining and executing "
@@ -390,131 +458,170 @@ msgid ""
 "immediately.  Immediately after typing @kbd{C-x e}, you can type @key{e} "
 "repeatedly to immediately repeat the macro one or more times.  You can also "
 "give @kbd{C-x e} a repeat argument, just like @key{F4}."
-msgstr "上記で説明した@key{F3}と@key{F4}に加えて、Emacsはキーボードマクロを定義したり実行するための、古いキーバインドもサポートします。@key{F3}と同様ににマクロ定義を開始するには、@kbd{C-x (} (@code{kmacro-start-macro})とタイプします。プレフィクス引数を指定すると、最後のキーボードマクロの定義に追加します。マクロ定義を終了するには@kbd{C-x )} (@code{kmacro-end-macro})とタイプします。一番最近のマクロを実行するには、@kbd{C-x e} (@code{kmacro-end-and-call-macro})とタイプします。マクロ定義中に@kbd{C-x e}を入力すると、マクロ定義を終了してからすぐに実行されます。@kbd{C-x e}をタイプした後すぐに@key{e}をタイプすることにより、そのマクロを１回以上繰り返すことができます。@key{F4}と同様、@kbd{C-x e}には繰り返し回数を引数指定できます。"
+msgstr ""
+"上記で説明した@key{F3}と@key{F4}に加えて、Emacsはキーボードマクロを定義したり"
+"実行するための、古いキーバインドもサポートします。@key{F3}と同様ににマクロ定"
+"義を開始するには、@kbd{C-x (} (@code{kmacro-start-macro})とタイプします。プレ"
+"フィクス引数を指定すると、最後のキーボードマクロの定義に追加します。マクロ定"
+"義を終了するには@kbd{C-x )} (@code{kmacro-end-macro})とタイプします。一番最近"
+"のマクロを実行するには、@kbd{C-x e} (@code{kmacro-end-and-call-macro})とタイ"
+"プします。マクロ定義中に@kbd{C-x e}を入力すると、マクロ定義を終了してからすぐ"
+"に実行されます。@kbd{C-x e}をタイプした後すぐに@key{e}をタイプすることによ"
+"り、そのマクロを１回以上繰り返すことができます。@key{F4}と同様、@kbd{C-x e}に"
+"は繰り返し回数を引数指定できます。"
 
 #. type: Plain text
-#: kmacro.texi.orig:169
+#: original_texis/kmacro.texi:169
 msgid ""
 "@kbd{C-x )} can be given a repeat count as an argument.  This means to "
 "repeat the macro right after defining it.  The macro definition itself "
 "counts as the first repetition, since it is executed as you define it, so "
 "@kbd{C-u 4 C-x )} executes the macro immediately 3 additional times."
-msgstr "@kbd{C-x )}に、繰り返し回数を引数として与えることができます。これはマクロを定義した後、すぐにマクロが繰り返されることを意味します。マクロの定義は、定義することによりマクロが実行されるので、最初の1回として数えられます。したがって@kbd{C-u 4 C-x )}は、マクロを3回すぐに追加実行します。"
+msgstr ""
+"@kbd{C-x )}に、繰り返し回数を引数として与えることができます。これはマクロを定"
+"義した後、すぐにマクロが繰り返されることを意味します。マクロの定義は、定義す"
+"ることによりマクロが実行されるので、最初の1回として数えられます。したがって"
+"@kbd{C-u 4 C-x )}は、マクロを3回すぐに追加実行します。"
 
 #. type: section
-#: kmacro.texi.orig:171
+#: original_texis/kmacro.texi:171
 #, no-wrap
 msgid "The Keyboard Macro Ring"
 msgstr "The Keyboard Macro Ring"
 
 #. type: Plain text
-#: kmacro.texi.orig:175
+#: original_texis/kmacro.texi:175
 msgid ""
 "All defined keyboard macros are recorded in the @dfn{keyboard macro ring}.  "
 "There is only one keyboard macro ring, shared by all buffers."
-msgstr "すべての定義されたキーボードマクロは、@dfn{キーボードマクロリング(keyboard macro ring)}に記録されます。キーボードマクロリングはすべてのバッファーで共有され、1つだけしかありません。"
+msgstr ""
+"すべての定義されたキーボードマクロは、@dfn{キーボードマクロリング(keyboard "
+"macro ring)}に記録されます。キーボードマクロリングはすべてのバッファーで共有"
+"され、1つだけしかありません。"
 
 #. type: kindex
-#: kmacro.texi.orig:177 kmacro.texi.orig:203
+#: original_texis/kmacro.texi:177 original_texis/kmacro.texi:203
 #, no-wrap
 msgid "C-x C-k C-k"
 msgstr "C-x C-k C-k"
 
 #. type: table
-#: kmacro.texi.orig:179
+#: original_texis/kmacro.texi:179
 msgid ""
 "Execute the keyboard macro at the head of the ring (@code{kmacro-end-or-call-"
 "macro-repeat})."
-msgstr "リングの先頭にあるキーボードマクロを実行します(@code{kmacro-end-or-call-macro-repeat})。"
+msgstr ""
+"リングの先頭にあるキーボードマクロを実行します(@code{kmacro-end-or-call-"
+"macro-repeat})。"
 
 #. type: kindex
-#: kmacro.texi.orig:179 kmacro.texi.orig:215
+#: original_texis/kmacro.texi:179 original_texis/kmacro.texi:215
 #, no-wrap
 msgid "C-x C-k C-n"
 msgstr "C-x C-k C-n"
 
 #. type: table
-#: kmacro.texi.orig:182
+#: original_texis/kmacro.texi:182
 msgid ""
 "Rotate the keyboard macro ring to the next macro (defined earlier)  "
 "(@code{kmacro-cycle-ring-next})."
-msgstr "キーボードマクロリングを、次のマクロ(古く定義されたもの)にローテートします(@code{kmacro-cycle-ring-next})。"
+msgstr ""
+"キーボードマクロリングを、次のマクロ(古く定義されたもの)にローテートします"
+"(@code{kmacro-cycle-ring-next})。"
 
 #. type: kindex
-#: kmacro.texi.orig:182 kmacro.texi.orig:217
+#: original_texis/kmacro.texi:182 original_texis/kmacro.texi:217
 #, no-wrap
 msgid "C-x C-k C-p"
 msgstr "C-x C-k C-p"
 
 #. type: table
-#: kmacro.texi.orig:185
+#: original_texis/kmacro.texi:185
 msgid ""
 "Rotate the keyboard macro ring to the previous macro (defined later)  "
 "(@code{kmacro-cycle-ring-previous})."
-msgstr "キーボードマクロリングを前のマクロ(新しく定義されたもの)にローテートします(@code{kmacro-cycle-ring-previous})。"
+msgstr ""
+"キーボードマクロリングを前のマクロ(新しく定義されたもの)にローテートします"
+"(@code{kmacro-cycle-ring-previous})。"
 
 #. type: Plain text
-#: kmacro.texi.orig:191
+#: original_texis/kmacro.texi:191
 msgid ""
 "All commands which operate on the keyboard macro ring use the same @kbd{C-x "
 "C-k} prefix.  Most of these commands can be executed and repeated "
 "immediately after each other without repeating the @kbd{C-x C-k} prefix.  "
 "For example,"
-msgstr "キーボードマクロリングを操作するすべてのコマンドは、同じ@kbd{C-x C-k}を使います。これらのコマンドでは、すぐ後にコマンドを実行して繰り返す場合には、互いに@kbd{C-x C-k}プレフィクスを必要としません。たとえば、"
+msgstr ""
+"キーボードマクロリングを操作するすべてのコマンドは、同じ@kbd{C-x C-k}を使いま"
+"す。これらのコマンドでは、すぐ後にコマンドを実行して繰り返す場合には、互いに"
+"@kbd{C-x C-k}プレフィクスを必要としません。たとえば、"
 
 #. type: example
-#: kmacro.texi.orig:194
+#: original_texis/kmacro.texi:194
 #, no-wrap
 msgid "C-x C-k C-p C-p C-k C-k C-k C-n C-n C-k C-p C-k C-d\n"
 msgstr "C-x C-k C-p C-p C-k C-k C-k C-n C-n C-k C-p C-k C-d\n"
 
 #. type: Plain text
-#: kmacro.texi.orig:201
+#: original_texis/kmacro.texi:201
 msgid ""
 "will rotate the keyboard macro ring to the ``second previous'' macro, "
 "execute the resulting head macro three times, rotate back to the original "
 "head macro, execute that once, rotate to the ``previous'' macro, execute "
 "that, and finally delete it from the macro ring."
-msgstr "これは、キーボードマクロリングを``2つ前''のマクロが先頭にくるようにローテートして、3回実行します。次にキーボードマクロリングをローテートして、元は先頭だったマクロを先頭に戻して１回実行します。次にキーボードマクロリングを``1つ前''のマクロが先頭にくるようにローテートして、それを実行します。そして最後にそれを削除しています。"
+msgstr ""
+"これは、キーボードマクロリングを``2つ前''のマクロが先頭にくるようにローテート"
+"して、3回実行します。次にキーボードマクロリングをローテートして、元は先頭だっ"
+"たマクロを先頭に戻して１回実行します。次にキーボードマクロリングを``1つ前''の"
+"マクロが先頭にくるようにローテートして、それを実行します。そして最後にそれを"
+"削除しています。"
 
 #. type: findex
-#: kmacro.texi.orig:202
+#: original_texis/kmacro.texi:202
 #, no-wrap
 msgid "kmacro-end-or-call-macro-repeat"
 msgstr "kmacro-end-or-call-macro-repeat"
 
 #. type: Plain text
-#: kmacro.texi.orig:208
+#: original_texis/kmacro.texi:208
 msgid ""
 "The command @kbd{C-x C-k C-k} (@code{kmacro-end-or-call-macro-repeat})  "
 "executes the keyboard macro at the head of the macro ring.  You can repeat "
 "the macro immediately by typing another @kbd{C-k}, or you can rotate the "
 "macro ring immediately by typing @kbd{C-n} or @kbd{C-p}."
-msgstr "コマンド@kbd{C-x C-k C-k} (@code{kmacro-end-or-call-macro-repeat})は、マクロリングの先頭にあるキーボードマクロを実行します。もう一度すぐに@kbd{C-k}をタイプすると、マクロを繰り返すことができます。すぐに@kbd{C-n}か@kbd{C-p}をタイプすれば、マクロリングをローテートすることができます。"
+msgstr ""
+"コマンド@kbd{C-x C-k C-k} (@code{kmacro-end-or-call-macro-repeat})は、マクロ"
+"リングの先頭にあるキーボードマクロを実行します。もう一度すぐに@kbd{C-k}をタイ"
+"プすると、マクロを繰り返すことができます。すぐに@kbd{C-n}か@kbd{C-p}をタイプ"
+"すれば、マクロリングをローテートすることができます。"
 
 #. type: Plain text
-#: kmacro.texi.orig:213
+#: original_texis/kmacro.texi:213
 msgid ""
 "When a keyboard macro is being defined, @kbd{C-x C-k C-k} behaves like "
 "@key{F4} except that, immediately afterward, you can use most key bindings "
 "of this section without the @kbd{C-x C-k} prefix.  For instance, another "
 "@kbd{C-k} will re-execute the macro."
-msgstr "キーボードマクロを定義しているとき、@kbd{C-x C-k C-k}は@key{F4}と同様に振る舞いますが、すぐ後にタイプされた場合は異なります。このセクションで説明するほとんどのキーバインドは、@kbd{C-x C-k}プレフィクスが必要ない場合があります。たとえば、すぐに@kbd{C-k}をタイプした場合は、マクロを再実行します。"
+msgstr ""
+"キーボードマクロを定義しているとき、@kbd{C-x C-k C-k}は@key{F4}と同様に振る舞"
+"いますが、すぐ後にタイプされた場合は異なります。このセクションで説明するほと"
+"んどのキーバインドは、@kbd{C-x C-k}プレフィクスが必要ない場合があります。たと"
+"えば、すぐに@kbd{C-k}をタイプした場合は、マクロを再実行します。"
 
 #. type: findex
-#: kmacro.texi.orig:214
+#: original_texis/kmacro.texi:214
 #, no-wrap
 msgid "kmacro-cycle-ring-next"
 msgstr "kmacro-cycle-ring-next"
 
 #. type: findex
-#: kmacro.texi.orig:216
+#: original_texis/kmacro.texi:216
 #, no-wrap
 msgid "kmacro-cycle-ring-previous"
 msgstr "kmacro-cycle-ring-previous"
 
 #. type: Plain text
-#: kmacro.texi.orig:226
+#: original_texis/kmacro.texi:226
 msgid ""
 "The commands @kbd{C-x C-k C-n} (@code{kmacro-cycle-ring-next}) and @kbd{C-x "
 "C-k C-p} (@code{kmacro-cycle-ring-previous}) rotate the macro ring, bringing "
@@ -523,109 +630,133 @@ msgid ""
 "continue to rotate the macro ring immediately by repeating just @kbd{C-n} "
 "and @kbd{C-p} until the desired macro is at the head of the ring.  To "
 "execute the new macro ring head immediately, just type @kbd{C-k}."
-msgstr "コマンド@kbd{C-x C-k C-n} (@code{kmacro-cycle-ring-next})および@kbd{C-x C-k C-p} (@code{kmacro-cycle-ring-previous})は、マクロリングをローテートして、次または前のキーボードマクロをリングの先頭に移動させます。新しく先頭となったマクロの定義は、エコーエリアに表示されます。お望みのマクロが先頭にくるまで、すぐに@kbd{C-n}または@kbd{C-p}を繰り返しタイプすれば、マクロリングのローテートを続けることができます。新しくマクロリングの先頭にきたマクロを実行するには、単に@kbd{C-k}をタイプします。"
+msgstr ""
+"コマンド@kbd{C-x C-k C-n} (@code{kmacro-cycle-ring-next})および@kbd{C-x C-k "
+"C-p} (@code{kmacro-cycle-ring-previous})は、マクロリングをローテートして、次"
+"または前のキーボードマクロをリングの先頭に移動させます。新しく先頭となったマ"
+"クロの定義は、エコーエリアに表示されます。お望みのマクロが先頭にくるまで、す"
+"ぐに@kbd{C-n}または@kbd{C-p}を繰り返しタイプすれば、マクロリングのローテート"
+"を続けることができます。新しくマクロリングの先頭にきたマクロを実行するには、"
+"単に@kbd{C-k}をタイプします。"
 
 #. type: Plain text
-#: kmacro.texi.orig:230
+#: original_texis/kmacro.texi:230
 msgid ""
 "Note that Emacs treats the head of the macro ring as the ``last defined "
 "keyboard macro''.  For instance, @key{F4} will execute that macro, and "
 "@kbd{C-x C-k n} will give it a name."
-msgstr "Emacsはマクロリングの先頭を、``最後に定義されたキーボードマクロ''として扱います。たとえば、そのマクロは@key{F4}で実行でき、@kbd{C-x C-k n}で名前をつけることができます。"
+msgstr ""
+"Emacsはマクロリングの先頭を、``最後に定義されたキーボードマクロ''として扱いま"
+"す。たとえば、そのマクロは@key{F4}で実行でき、@kbd{C-x C-k n}で名前をつけるこ"
+"とができます。"
 
 #. type: vindex
-#: kmacro.texi.orig:231
+#: original_texis/kmacro.texi:231
 #, no-wrap
 msgid "kmacro-ring-max"
 msgstr "kmacro-ring-max"
 
 #. type: Plain text
-#: kmacro.texi.orig:234
+#: original_texis/kmacro.texi:234
 msgid ""
 "The maximum number of macros stored in the keyboard macro ring is determined "
 "by the customizable variable @code{kmacro-ring-max}."
-msgstr "キーボードマクロリングに格納できるマクロの最大数は、カスタマイズ可能な変数@code{kmacro-ring-max}により決定されます。"
+msgstr ""
+"キーボードマクロリングに格納できるマクロの最大数は、カスタマイズ可能な変数"
+"@code{kmacro-ring-max}により決定されます。"
 
 #. type: section
-#: kmacro.texi.orig:236
+#: original_texis/kmacro.texi:236
 #, no-wrap
 msgid "The Keyboard Macro Counter"
 msgstr "The Keyboard Macro Counter"
 
 #. type: Plain text
-#: kmacro.texi.orig:243
+#: original_texis/kmacro.texi:243
 msgid ""
 "Each keyboard macro has an associated counter, which is initialized to 0 "
 "when you start defining the macro.  This counter allows you to insert a "
 "number into the buffer that depends on the number of times the macro has "
 "been called.  The counter is incremented each time its value is inserted "
 "into the buffer."
-msgstr "キーボードマクロには、それぞれカウンターが割り当てられています。これはマクロの定義を開始したとき0に初期化されます。カウンターの数値をバッファーに挿入することもできます。カウンターの数値は、マクロが呼び出された回数にもとづきます。バッファーにカウンターの値が挿入される度に、カウンターは増加します。"
+msgstr ""
+"キーボードマクロには、それぞれカウンターが割り当てられています。これはマクロ"
+"の定義を開始したとき0に初期化されます。カウンターの数値をバッファーに挿入する"
+"こともできます。カウンターの数値は、マクロが呼び出された回数にもとづきます。"
+"バッファーにカウンターの値が挿入される度に、カウンターは増加します。"
 
 #. type: table
-#: kmacro.texi.orig:248
+#: original_texis/kmacro.texi:248
 msgid ""
 "In a keyboard macro definition, insert the keyboard macro counter value in "
 "the buffer (@code{kmacro-start-macro-or-insert-counter})."
-msgstr "キーボードマクロの定義では、キーボードマクロカウンターの値をバッファーに挿入します(@code{kmacro-start-macro-or-insert-counter})。"
+msgstr ""
+"キーボードマクロの定義では、キーボードマクロカウンターの値をバッファーに挿入"
+"します(@code{kmacro-start-macro-or-insert-counter})。"
 
 #. type: kindex
-#: kmacro.texi.orig:248 kmacro.texi.orig:261
+#: original_texis/kmacro.texi:248 original_texis/kmacro.texi:261
 #, no-wrap
 msgid "C-x C-k C-i"
 msgstr "C-x C-k C-i"
 
 #. type: table
-#: kmacro.texi.orig:251
+#: original_texis/kmacro.texi:251
 msgid ""
 "Insert the keyboard macro counter value in the buffer (@code{kmacro-insert-"
 "counter})."
-msgstr "キーボードマクロカウンターの値をバッファーに挿入します(@code{kmacro-insert-counter})。"
+msgstr ""
+"キーボードマクロカウンターの値をバッファーに挿入します(@code{kmacro-insert-"
+"counter})。"
 
 #. type: kindex
-#: kmacro.texi.orig:251 kmacro.texi.orig:292
+#: original_texis/kmacro.texi:251 original_texis/kmacro.texi:292
 #, no-wrap
 msgid "C-x C-k C-c"
 msgstr "C-x C-k C-c"
 
 #. type: table
-#: kmacro.texi.orig:253
+#: original_texis/kmacro.texi:253
 msgid "Set the keyboard macro counter (@code{kmacro-set-counter})."
 msgstr "キーボードマクロカウンターをセットします(@code{kmacro-set-counter})。"
 
 #. type: kindex
-#: kmacro.texi.orig:253 kmacro.texi.orig:302
+#: original_texis/kmacro.texi:253 original_texis/kmacro.texi:302
 #, no-wrap
 msgid "C-x C-k C-a"
 msgstr "C-x C-k C-a"
 
 #. type: table
-#: kmacro.texi.orig:255
+#: original_texis/kmacro.texi:255
 msgid ""
 "Add the prefix arg to the keyboard macro counter (@code{kmacro-add-counter})."
-msgstr "プレフィクス引数をキーボードマクロカウンターに加えます(@code{kmacro-add-counter})。"
+msgstr ""
+"プレフィクス引数をキーボードマクロカウンターに加えます(@code{kmacro-add-"
+"counter})。"
 
 #. type: kindex
-#: kmacro.texi.orig:255 kmacro.texi.orig:310
+#: original_texis/kmacro.texi:255 original_texis/kmacro.texi:310
 #, no-wrap
 msgid "C-x C-k C-f"
 msgstr "C-x C-k C-f"
 
 #. type: table
-#: kmacro.texi.orig:258
+#: original_texis/kmacro.texi:258
 msgid ""
 "Specify the format for inserting the keyboard macro counter (@code{kmacro-"
 "set-format})."
-msgstr "挿入するキーボードマクロカウンターの書式を指定します(@code{kmacro-set-format})。"
+msgstr ""
+"挿入するキーボードマクロカウンターの書式を指定します(@code{kmacro-set-"
+"format})。"
 
 #. type: findex
-#: kmacro.texi.orig:260
+#: original_texis/kmacro.texi:260
 #, no-wrap
 msgid "kmacro-insert-counter"
 msgstr "kmacro-insert-counter"
 
 #. type: Plain text
-#: kmacro.texi.orig:270
+#: original_texis/kmacro.texi:270
 msgid ""
 "When you are defining a keyboard macro, the command @key{F3} (@code{kmacro-"
 "start-macro-or-insert-counter}) inserts the current value of the keyboard "
@@ -635,48 +766,65 @@ msgid ""
 "specify a different increment.  If you just specify a @kbd{C-u} prefix, that "
 "is the same as an increment of zero: it inserts the current counter value "
 "without changing it."
-msgstr "キーボードマクロを定義しているとき、コマンド@key{F3} (@code{kmacro-start-macro-or-insert-counter})は、キーボードマクロカウンターの現在の値をバッファーに挿入して、カウンターを1増加させます(マクロを定義していないとき、@key{F3}はマクロの定義を開始します。@ref{Basic Keyboard Macro}を参照してください)。異なる増分の指定には、数引数を使うことができます。単にプレフィクス@kbd{C-u}を指定すると、それは0増加させるのと同じです。つまり現在のカウンターの値を挿入しますが、カウンターの値は変化しません。"
+msgstr ""
+"キーボードマクロを定義しているとき、コマンド@key{F3} (@code{kmacro-start-"
+"macro-or-insert-counter})は、キーボードマクロカウンターの現在の値をバッファー"
+"に挿入して、カウンターを1増加させます(マクロを定義していないとき、@key{F3}は"
+"マクロの定義を開始します。@ref{Basic Keyboard Macro}を参照してください)。異な"
+"る増分の指定には、数引数を使うことができます。単にプレフィクス@kbd{C-u}を指定"
+"すると、それは0増加させるのと同じです。つまり現在のカウンターの値を挿入します"
+"が、カウンターの値は変化しません。"
 
 #. type: Plain text
-#: kmacro.texi.orig:273
+#: original_texis/kmacro.texi:273
 msgid ""
 "As an example, let us show how the keyboard macro counter can be used to "
 "build a numbered list.  Consider the following key sequence:"
-msgstr "例として数字が振られたリストを構築するために、キーボードマクロカウンターを使う方法を見てみましょう。以下のキーシーケンスを考えてください:"
+msgstr ""
+"例として数字が振られたリストを構築するために、キーボードマクロカウンターを使"
+"う方法を見てみましょう。以下のキーシーケンスを考えてください:"
 
 #. type: example
-#: kmacro.texi.orig:276
+#: original_texis/kmacro.texi:276
 #, no-wrap
 msgid "@key{F3} C-a @key{F3} . @key{SPC} @key{F4}\n"
 msgstr "@key{F3} C-a @key{F3} . @key{SPC} @key{F4}\n"
 
 #. type: Plain text
-#: kmacro.texi.orig:284
+#: original_texis/kmacro.texi:284
 msgid ""
 "As part of this keyboard macro definition, the string @samp{0. } was "
 "inserted into the beginning of the current line.  If you now move somewhere "
 "else in the buffer and type @key{F4} to invoke the macro, the string "
 "@samp{1. } is inserted at the beginning of that line.  Subsequent "
 "invocations insert @samp{2. }, @samp{3. }, and so forth."
-msgstr "マクロ定義の一部として、現在の行の先頭に文字列@samp{0. }が挿入されます。バッファーの他の箇所で@key{F4}でマクロを呼び出すと、その行の先頭に文字列@samp{1. }が挿入されます。その後に呼び出すと@samp{2. }、@samp{3. }、...が挿入されます。"
+msgstr ""
+"マクロ定義の一部として、現在の行の先頭に文字列@samp{0. }が挿入されます。バッ"
+"ファーの他の箇所で@key{F4}でマクロを呼び出すと、その行の先頭に文字列"
+"@samp{1. }が挿入されます。その後に呼び出すと@samp{2. }、@samp{3. }、...が挿入"
+"されます。"
 
 #. type: Plain text
-#: kmacro.texi.orig:290
+#: original_texis/kmacro.texi:290
 msgid ""
 "The command @kbd{C-x C-k C-i} (@code{kmacro-insert-counter}) does the same "
 "thing as @key{F3}, but it can be used outside a keyboard macro definition.  "
 "When no keyboard macro is being defined or executed, it inserts and "
 "increments the counter of the macro at the head of the keyboard macro ring."
-msgstr "コマンド@kbd{C-x C-k C-i} (@code{kmacro-insert-counter})は、@key{F3}と同様のことを行いますが、これはキーボードマクロの定義外でも使用できます。キーボードマクロが定義中でなく実行もされていない場合、これはキーボードマクロリングの先頭にあるマクロのカウンター値を挿入および増加します。"
+msgstr ""
+"コマンド@kbd{C-x C-k C-i} (@code{kmacro-insert-counter})は、@key{F3}と同様の"
+"ことを行いますが、これはキーボードマクロの定義外でも使用できます。キーボード"
+"マクロが定義中でなく実行もされていない場合、これはキーボードマクロリングの先"
+"頭にあるマクロのカウンター値を挿入および増加します。"
 
 #. type: findex
-#: kmacro.texi.orig:291
+#: original_texis/kmacro.texi:291
 #, no-wrap
 msgid "kmacro-set-counter"
 msgstr "kmacro-set-counter"
 
 #. type: Plain text
-#: kmacro.texi.orig:300
+#: original_texis/kmacro.texi:300
 msgid ""
 "The command @kbd{C-x C-k C-c} (@code{kmacro-set-counter}) sets the current "
 "macro counter to the value of the numeric argument.  If you use it inside "
@@ -684,32 +832,41 @@ msgid ""
 "@kbd{C-u} as the prefix, while executing the macro, that resets the counter "
 "to the value it had at the beginning of the current repetition of the macro "
 "(undoing any increments so far in this repetition)."
-msgstr "コマンド@kbd{C-x C-k C-c} (@code{kmacro-set-counter})は現在のマクロカウンターを、数引数の値にセットします。マクロ内で使用した場合、マクロ実行ごとに処理します。プレフィクス引数に単に@kbd{C-u}を指定した場合、マクロの現在の繰り返し実行おいて、カウンターが最初にもっていた値に、カウンターをリセットします(この繰り返しにおける増加を取り消します)。"
+msgstr ""
+"コマンド@kbd{C-x C-k C-c} (@code{kmacro-set-counter})は現在のマクロカウンター"
+"を、数引数の値にセットします。マクロ内で使用した場合、マクロ実行ごとに処理し"
+"ます。プレフィクス引数に単に@kbd{C-u}を指定した場合、マクロの現在の繰り返し実"
+"行おいて、カウンターが最初にもっていた値に、カウンターをリセットします(この繰"
+"り返しにおける増加を取り消します)。"
 
 #. type: findex
-#: kmacro.texi.orig:301
+#: original_texis/kmacro.texi:301
 #, no-wrap
 msgid "kmacro-add-counter"
 msgstr "kmacro-add-counter"
 
 #. type: Plain text
-#: kmacro.texi.orig:308
+#: original_texis/kmacro.texi:308
 msgid ""
 "The command @kbd{C-x C-k C-a} (@code{kmacro-add-counter}) adds the prefix "
 "argument to the current macro counter.  With just @kbd{C-u} as argument, it "
 "resets the counter to the last value inserted by any keyboard macro.  "
 "(Normally, when you use this, the last insertion will be in the same macro "
 "and it will be the same counter.)"
-msgstr "コマンド@kbd{C-x C-k C-a} (@code{kmacro-add-counter})は、プレフィクス引数を現在のマクロカウンターに加えます。単に@kbd{C-u}を引数に指定すると、任意のキーボードマクロにより最後に挿入された値に、カウンターをリセットします(通常これを使うときは、最後の挿入は同じマクロによる同じカウンターです)。"
+msgstr ""
+"コマンド@kbd{C-x C-k C-a} (@code{kmacro-add-counter})は、プレフィクス引数を現"
+"在のマクロカウンターに加えます。単に@kbd{C-u}を引数に指定すると、任意のキー"
+"ボードマクロにより最後に挿入された値に、カウンターをリセットします(通常これを"
+"使うときは、最後の挿入は同じマクロによる同じカウンターです)。"
 
 #. type: findex
-#: kmacro.texi.orig:309
+#: original_texis/kmacro.texi:309
 #, no-wrap
 msgid "kmacro-set-format"
 msgstr "kmacro-set-format"
 
 #. type: Plain text
-#: kmacro.texi.orig:320
+#: original_texis/kmacro.texi:320
 msgid ""
 "The command @kbd{C-x C-k C-f} (@code{kmacro-set-format}) prompts for the "
 "format to use when inserting the macro counter.  The default format is "
@@ -719,10 +876,18 @@ msgid ""
 "that makes sense with a single integer extra argument (@pxref{Formatting "
 "Strings,,, elisp, The Emacs Lisp Reference Manual}).  Do not put the format "
 "string inside double quotes when you insert it in the minibuffer."
-msgstr "コマンド@kbd{C-x C-k C-f} (@code{kmacro-set-format})は、マクロカウンターを挿入するときに使われる書式の入力を求めます。デフォルトの書式は@samp{%d}で、これはパディングなしの10進数字が挿入されることを意味します。ミニバッファーに何も入力せずにexitすることにより、このデフォルト書式にリセットできます。@code{format}関数(この関数はさらに1つの整数の引数をとります)が受け入れる書式文字列を指定できます(@ref{Formatting Strings,,, elisp, The Emacs Lisp Reference Manual}を参照してください)。ミニバッファーに書式文字列を入力するときは、書式文字列をダブルクォーテーションで括らないでください。"
+msgstr ""
+"コマンド@kbd{C-x C-k C-f} (@code{kmacro-set-format})は、マクロカウンターを挿"
+"入するときに使われる書式の入力を求めます。デフォルトの書式は@samp{%d}で、これ"
+"はパディングなしの10進数字が挿入されることを意味します。ミニバッファーに何も"
+"入力せずにexitすることにより、このデフォルト書式にリセットできます。"
+"@code{format}関数(この関数はさらに1つの整数の引数をとります)が受け入れる書式"
+"文字列を指定できます(@ref{Formatting Strings,,, elisp, The Emacs Lisp "
+"Reference Manual}を参照してください)。ミニバッファーに書式文字列を入力すると"
+"きは、書式文字列をダブルクォーテーションで括らないでください。"
 
 #. type: Plain text
-#: kmacro.texi.orig:331
+#: original_texis/kmacro.texi:331
 msgid ""
 "If you use this command while no keyboard macro is being defined or "
 "executed, the new format affects all subsequent macro definitions.  Existing "
@@ -733,114 +898,135 @@ msgid ""
 "step during its definition.  Changes to the macro format during execution of "
 "a macro, like the corresponding changes during its definition, have no "
 "effect on subsequent macros."
-msgstr "キーボードマクロの定義および実行がされていないときにこのコマンドを使うと、新しい書式はそれ以降のマクロ定義すべてに影響を及ぼします。既存のマクロは、それが定義されたときの書式を使いつづけます。キーボードマクロ定義中に書式をセットすると、そのマクロが定義されている箇所に影響を及ぼしますが、それ以降のマクロには影響を与えません。マクロの実行においては、そのマクロ定義の時点の書式が使われます。マクロの実行中にマクロ書式を変更すると、これは定義中における書式の変更と同様、それ以降のマクロに影響を与えません。"
+msgstr ""
+"キーボードマクロの定義および実行がされていないときにこのコマンドを使うと、新"
+"しい書式はそれ以降のマクロ定義すべてに影響を及ぼします。既存のマクロは、それ"
+"が定義されたときの書式を使いつづけます。キーボードマクロ定義中に書式をセット"
+"すると、そのマクロが定義されている箇所に影響を及ぼしますが、それ以降のマクロ"
+"には影響を与えません。マクロの実行においては、そのマクロ定義の時点の書式が使"
+"われます。マクロの実行中にマクロ書式を変更すると、これは定義中における書式の"
+"変更と同様、それ以降のマクロに影響を与えません。"
 
 #. type: Plain text
-#: kmacro.texi.orig:334
+#: original_texis/kmacro.texi:334
 msgid ""
 "The format set by @kbd{C-x C-k C-f} does not affect insertion of numbers "
 "stored in registers."
-msgstr "@kbd{C-x C-k C-f}によりセットされた書式は、レジスターに格納された数字の挿入には影響しません。"
+msgstr ""
+"@kbd{C-x C-k C-f}によりセットされた書式は、レジスターに格納された数字の挿入に"
+"は影響しません。"
 
 #. type: Plain text
-#: kmacro.texi.orig:339
+#: original_texis/kmacro.texi:339
 msgid ""
 "If you use a register as a counter, incrementing it on each repetition of "
 "the macro, that accomplishes the same thing as a keyboard macro counter.  "
 "@xref{Number Registers}.  For most purposes, it is simpler to use a keyboard "
 "macro counter."
-msgstr "マクロの繰り返しにおいてレジスターを増加してカウンターとして使う場合、これはキーボードマクロカウンターと同じことです。@ref{Number Registers}を参照してください。大抵の用途では、キーボードマクロカウンターを使う方が単純です。"
+msgstr ""
+"マクロの繰り返しにおいてレジスターを増加してカウンターとして使う場合、これは"
+"キーボードマクロカウンターと同じことです。@ref{Number Registers}を参照してく"
+"ださい。大抵の用途では、キーボードマクロカウンターを使う方が単純です。"
 
 #. type: section
-#: kmacro.texi.orig:341
+#: original_texis/kmacro.texi:341
 #, no-wrap
 msgid "Executing Macros with Variations"
 msgstr "Executing Macros with Variations"
 
 #. type: Plain text
-#: kmacro.texi.orig:346
+#: original_texis/kmacro.texi:346
 msgid ""
 "In a keyboard macro, you can create an effect similar to that of @code{query-"
 "replace}, in that the macro asks you each time around whether to make a "
 "change."
-msgstr "キーボードマクロで、@code{query-replace}のように変更を行うか応答を求める効果を作ることができます。"
+msgstr ""
+"キーボードマクロで、@code{query-replace}のように変更を行うか応答を求める効果"
+"を作ることができます。"
 
 #. type: kindex
-#: kmacro.texi.orig:348 kmacro.texi.orig:353
+#: original_texis/kmacro.texi:348 original_texis/kmacro.texi:353
 #, no-wrap
 msgid "C-x q"
 msgstr "C-x q"
 
 #. type: table
-#: kmacro.texi.orig:351
+#: original_texis/kmacro.texi:351
 msgid ""
 "When this point is reached during macro execution, ask for confirmation "
 "(@code{kbd-macro-query})."
-msgstr "マクロ実行中にこの箇所に到達すると確認を求めます(@code{kbd-macro-query})。"
+msgstr ""
+"マクロ実行中にこの箇所に到達すると確認を求めます(@code{kbd-macro-query})。"
 
 #. type: findex
-#: kmacro.texi.orig:354
+#: original_texis/kmacro.texi:354
 #, no-wrap
 msgid "kbd-macro-query"
 msgstr "kbd-macro-query"
 
 #. type: Plain text
-#: kmacro.texi.orig:359
+#: original_texis/kmacro.texi:359
 msgid ""
 "While defining the macro, type @kbd{C-x q} at the point where you want the "
 "query to occur.  During macro definition, the @kbd{C-x q} does nothing, but "
 "when you run the macro later, @kbd{C-x q} asks you interactively whether to "
 "continue."
-msgstr "マクロ定義中に問い合わせを行いたい箇所で@kbd{C-x q}をタイプします。マクロ定義中は@kbd{C-x q}は何も行いませんが、後でマクロを実行すると@kbd{C-x q}は実行を続けるか対話的に確認を求めます。"
+msgstr ""
+"マクロ定義中に問い合わせを行いたい箇所で@kbd{C-x q}をタイプします。マクロ定義"
+"中は@kbd{C-x q}は何も行いませんが、後でマクロを実行すると@kbd{C-x q}は実行を"
+"続けるか対話的に確認を求めます。"
 
 #. type: Plain text
-#: kmacro.texi.orig:361
+#: original_texis/kmacro.texi:361
 msgid "The valid responses when @kbd{C-x q} asks are:"
 msgstr "以下は@kbd{C-x q}にたいする有効な応答です:"
 
 #. type: item
-#: kmacro.texi.orig:363
+#: original_texis/kmacro.texi:363
 #, no-wrap
 msgid "@key{SPC} (or @kbd{y})"
 msgstr "@key{SPC} (または@kbd{y})"
 
 #. type: table
-#: kmacro.texi.orig:365
+#: original_texis/kmacro.texi:365
 msgid "Continue executing the keyboard macro."
 msgstr "キーボードマクロの実行を続けます。"
 
 #. type: item
-#: kmacro.texi.orig:366
+#: original_texis/kmacro.texi:366
 #, no-wrap
 msgid "@key{DEL} (or @kbd{n})"
 msgstr "@key{DEL} (または@kbd{n})"
 
 #. type: table
-#: kmacro.texi.orig:369
+#: original_texis/kmacro.texi:369
 msgid ""
 "Skip the remainder of this repetition of the macro, and start right away "
 "with the next repetition."
-msgstr "マクロのこの繰り返しでの残りの部分をスキップして、次の繰り返しを開始します。"
+msgstr ""
+"マクロのこの繰り返しでの残りの部分をスキップして、次の繰り返しを開始します。"
 
 #. type: item
-#: kmacro.texi.orig:370
+#: original_texis/kmacro.texi:370
 #, no-wrap
 msgid "@key{RET} (or @kbd{q})"
 msgstr "@key{RET} (または@kbd{q})"
 
 #. type: table
-#: kmacro.texi.orig:372
+#: original_texis/kmacro.texi:372
 msgid "Skip the remainder of this repetition and cancel further repetitions."
-msgstr "マクロのこの繰り返しでの残りの部分をスキップして、これ以上の繰り返しを取り消します。"
+msgstr ""
+"マクロのこの繰り返しでの残りの部分をスキップして、これ以上の繰り返しを取り消"
+"します。"
 
 #. type: kbd{#1}
-#: kmacro.texi.orig:373
+#: original_texis/kmacro.texi:373
 #, no-wrap
 msgid "C-r"
 msgstr "C-r"
 
 #. type: table
-#: kmacro.texi.orig:380
+#: original_texis/kmacro.texi:380
 msgid ""
 "Enter a recursive editing level, in which you can perform editing which is "
 "not part of the macro.  When you exit the recursive edit using @kbd{C-M-c}, "
@@ -848,10 +1034,15 @@ msgid ""
 "@key{SPC} at this time, the rest of the macro definition is executed.  It is "
 "up to you to leave point and the text in a state such that the rest of the "
 "macro will do what you want."
-msgstr "マクロの一部ではない編集を行うことができる、再帰編集レベル(recursive editing level)に入ります。@kbd{C-M-c}を使って再帰編集を抜けると、キーボードマクロを続行するか再び確認を求められます。ここで@key{SPC}をタイプすると、マクロ定義の残りの部分が実行されます。マクロの残りの部分が期待したように動作するためにポイントとテキストを残すのは、ユーザーの責任です。"
+msgstr ""
+"マクロの一部ではない編集を行うことができる、再帰編集レベル(recursive editing "
+"level)に入ります。@kbd{C-M-c}を使って再帰編集を抜けると、キーボードマクロを続"
+"行するか再び確認を求められます。ここで@key{SPC}をタイプすると、マクロ定義の残"
+"りの部分が実行されます。マクロの残りの部分が期待したように動作するためにポイ"
+"ントとテキストを残すのは、ユーザーの責任です。"
 
 #. type: Plain text
-#: kmacro.texi.orig:390
+#: original_texis/kmacro.texi:390
 msgid ""
 "@kbd{C-u C-x q}, which is @kbd{C-x q} with a numeric argument, performs a "
 "completely different function.  It enters a recursive edit reading input "
@@ -860,65 +1051,74 @@ msgid ""
 "do inside the recursive edit does not become part of the macro.  During "
 "macro execution, the recursive edit gives you a chance to do some "
 "particularized editing on each repetition.  @xref{Recursive Edit}."
-msgstr "@kbd{C-x q}に数引数を指定した@kbd{C-u C-x q}は、完全に異なる関数を実行します。これはマクロ定義中およびマクロ実行中の両方で、キーボード入力を読みとる再帰編集に入ります。定義中のときは、再帰編集の中で行った編集はマクロの一部とはなりません。マクロ実行中は、再帰編集により各繰り返しにおいて特別な編集を行う機会が与えられます。@ref{Recursive Edit}を参照してください。"
+msgstr ""
+"@kbd{C-x q}に数引数を指定した@kbd{C-u C-x q}は、完全に異なる関数を実行しま"
+"す。これはマクロ定義中およびマクロ実行中の両方で、キーボード入力を読みとる再"
+"帰編集に入ります。定義中のときは、再帰編集の中で行った編集はマクロの一部とは"
+"なりません。マクロ実行中は、再帰編集により各繰り返しにおいて特別な編集を行う"
+"機会が与えられます。@ref{Recursive Edit}を参照してください。"
 
 #. type: section
-#: kmacro.texi.orig:392
+#: original_texis/kmacro.texi:392
 #, no-wrap
 msgid "Naming and Saving Keyboard Macros"
 msgstr "Naming and Saving Keyboard Macros"
 
 #. type: kindex
-#: kmacro.texi.orig:395 kmacro.texi.orig:407
+#: original_texis/kmacro.texi:395 original_texis/kmacro.texi:407
 #, no-wrap
 msgid "C-x C-k n"
 msgstr "C-x C-k n"
 
 #. type: table
-#: kmacro.texi.orig:398
+#: original_texis/kmacro.texi:398
 msgid ""
 "Give a command name (for the duration of the Emacs session) to the most "
 "recently defined keyboard macro (@code{kmacro-name-last-macro})."
-msgstr "一番最近定義したキーボードマクロに、名前(持続期間はEmacsセッション中)を与えます(@code{kmacro-name-last-macro})。"
+msgstr ""
+"一番最近定義したキーボードマクロに、名前(持続期間はEmacsセッション中)を与えま"
+"す(@code{kmacro-name-last-macro})。"
 
 #. type: kindex
-#: kmacro.texi.orig:398 kmacro.texi.orig:422
+#: original_texis/kmacro.texi:398 original_texis/kmacro.texi:422
 #, no-wrap
 msgid "C-x C-k b"
 msgstr "C-x C-k b"
 
 #. type: table
-#: kmacro.texi.orig:401
+#: original_texis/kmacro.texi:401
 msgid ""
 "Bind the most recently defined keyboard macro to a key sequence (for the "
 "duration of the session) (@code{kmacro-bind-to-key})."
-msgstr "一番最近定義したキーボードマクロを、キーにバインド(持続期間はEmacsセッション中)します(@code{kmacro-bind-to-key})。"
+msgstr ""
+"一番最近定義したキーボードマクロを、キーにバインド(持続期間はEmacsセッション"
+"中)します(@code{kmacro-bind-to-key})。"
 
 #. type: item
-#: kmacro.texi.orig:401
+#: original_texis/kmacro.texi:401
 #, no-wrap
 msgid "M-x insert-kbd-macro"
 msgstr "M-x insert-kbd-macro"
 
 #. type: table
-#: kmacro.texi.orig:403
+#: original_texis/kmacro.texi:403
 msgid "Insert in the buffer a keyboard macro's definition, as Lisp code."
 msgstr "キーボードマクロの定義を、Lispコードとしてバッファーに挿入します。"
 
 #. type: cindex
-#: kmacro.texi.orig:405
+#: original_texis/kmacro.texi:405
 #, no-wrap
 msgid "saving keyboard macros"
 msgstr "saving keyboard macros"
 
 #. type: findex
-#: kmacro.texi.orig:406
+#: original_texis/kmacro.texi:406
 #, no-wrap
 msgid "kmacro-name-last-macro"
 msgstr "kmacro-name-last-macro"
 
 #. type: Plain text
-#: kmacro.texi.orig:419
+#: original_texis/kmacro.texi:419
 msgid ""
 "If you wish to save a keyboard macro for later use, you can give it a name "
 "using @kbd{C-x C-k n} (@code{kmacro-name-last-macro}).  This reads a name as "
@@ -930,22 +1130,30 @@ msgid ""
 "@code{global-set-key} (@pxref{Keymaps}).  If you specify a name that has a "
 "prior definition other than a keyboard macro, an error message is shown and "
 "nothing is changed."
-msgstr "キーボードマクロを後で使うために保存するには、@kbd{C-x C-k n} (@code{kmacro-name-last-macro})を使って、それに名前を与えることができます。これはミニバッファーを使って名前を引数として読み取り、最後のキーボードマクロの現在の定義を実行するための、名前を定義します(後でこのマクロの定義を追加した場合、その名前のマクロ定義は変更されません)。マクロ名はLispシンボルで、@kbd{M-x}で呼び出せ、@code{global-set-key}でキーにバインドできる有効な名前をつけます。キーボードマクロ以外に定義されている名前を指定すると、エラーメッセージが表示され何も変更はされません。"
+msgstr ""
+"キーボードマクロを後で使うために保存するには、@kbd{C-x C-k n} (@code{kmacro-"
+"name-last-macro})を使って、それに名前を与えることができます。これはミニバッ"
+"ファーを使って名前を引数として読み取り、最後のキーボードマクロの現在の定義を"
+"実行するための、名前を定義します(後でこのマクロの定義を追加した場合、その名前"
+"のマクロ定義は変更されません)。マクロ名はLispシンボルで、@kbd{M-x}で呼び出"
+"せ、@code{global-set-key}でキーにバインドできる有効な名前をつけます。キーボー"
+"ドマクロ以外に定義されている名前を指定すると、エラーメッセージが表示され何も"
+"変更はされません。"
 
 #. type: cindex
-#: kmacro.texi.orig:420
+#: original_texis/kmacro.texi:420
 #, no-wrap
 msgid "binding keyboard macros"
 msgstr "binding keyboard macros"
 
 #. type: findex
-#: kmacro.texi.orig:421
+#: original_texis/kmacro.texi:421
 #, no-wrap
 msgid "kmacro-bind-to-key"
 msgstr "kmacro-bind-to-key"
 
 #. type: Plain text
-#: kmacro.texi.orig:430
+#: original_texis/kmacro.texi:430
 msgid ""
 "You can also bind the last keyboard macro (in its current form) to a key, "
 "using @kbd{C-x C-k b} (@code{kmacro-bind-to-key}) followed by the key "
@@ -954,51 +1162,67 @@ msgid ""
 "select the key sequence carefully.  If you try to bind to a key sequence "
 "with an existing binding (in any keymap), this command asks you for "
 "confirmation before replacing the existing binding."
-msgstr "@kbd{C-x C-k b} (@code{kmacro-bind-to-key})の後に、バインドしたいキーシーケンスを続けることにより、最後のキーボードマクロ(の現在の定義)をキーにバインドすることもできます。グローバルキーマップ(global keymap)の任意のキーシーケンスにバインドできますが、大部分のキーシーケンスはすでに他のバインドをもっているので、キーシーケンスの選択は慎重に行う必要があります。任意のキーマップで既存のバインドをもつキーシーケンスにバインドしようとすると、既存のバインドを置き換える前に確認を求めます。"
+msgstr ""
+"@kbd{C-x C-k b} (@code{kmacro-bind-to-key})の後に、バインドしたいキーシーケン"
+"スを続けることにより、最後のキーボードマクロ(の現在の定義)をキーにバインドす"
+"ることもできます。グローバルキーマップ(global keymap)の任意のキーシーケンスに"
+"バインドできますが、大部分のキーシーケンスはすでに他のバインドをもっているの"
+"で、キーシーケンスの選択は慎重に行う必要があります。任意のキーマップで既存の"
+"バインドをもつキーシーケンスにバインドしようとすると、既存のバインドを置き換"
+"える前に確認を求めます。"
 
 #. type: Plain text
-#: kmacro.texi.orig:437
+#: original_texis/kmacro.texi:437
 msgid ""
 "To avoid problems caused by overriding existing bindings, the key sequences "
 "@kbd{C-x C-k 0} through @kbd{C-x C-k 9} and @kbd{C-x C-k A} through @kbd{C-x "
 "C-k Z} are reserved for your own keyboard macro bindings.  In fact, to bind "
 "to one of these key sequences, you only need to type the digit or letter "
 "rather than the whole key sequences.  For example,"
-msgstr "既存のバインドの上書きに起因する問題を避けるには、キーシーケンス@kbd{C-x C-k 0}から@kbd{C-x C-k 9}と、@kbd{C-x C-k A}から@kbd{C-x C-k Z}を使います。これらのキーシーケンスは、キーボードマクロのバインド用に予約されています。これらのキーシーケンスにバインドするには、キーシーケンス全体ではなく数字か文字だけをタイプすればバインドできます。たとえば、"
+msgstr ""
+"既存のバインドの上書きに起因する問題を避けるには、キーシーケンス@kbd{C-x C-k "
+"0}から@kbd{C-x C-k 9}と、@kbd{C-x C-k A}から@kbd{C-x C-k Z}を使います。これら"
+"のキーシーケンスは、キーボードマクロのバインド用に予約されています。これらの"
+"キーシーケンスにバインドするには、キーシーケンス全体ではなく数字か文字だけを"
+"タイプすればバインドできます。たとえば、"
 
 #. type: example
-#: kmacro.texi.orig:440
+#: original_texis/kmacro.texi:440
 #, no-wrap
 msgid "C-x C-k b 4\n"
 msgstr "C-x C-k b 4\n"
 
 #. type: Plain text
-#: kmacro.texi.orig:444
+#: original_texis/kmacro.texi:444
 msgid "will bind the last keyboard macro to the key sequence @kbd{C-x C-k 4}."
-msgstr "これは最後のキーボードマクロをキーシーケンス@kbd{C-x C-k 4}にバインドします。"
+msgstr ""
+"これは最後のキーボードマクロをキーシーケンス@kbd{C-x C-k 4}にバインドします。"
 
 #. type: findex
-#: kmacro.texi.orig:445
+#: original_texis/kmacro.texi:445
 #, no-wrap
 msgid "insert-kbd-macro"
 msgstr "insert-kbd-macro"
 
 #. type: Plain text
-#: kmacro.texi.orig:449
+#: original_texis/kmacro.texi:449
 msgid ""
 "Once a macro has a command name, you can save its definition in a file.  "
 "Then it can be used in another editing session.  First, visit the file you "
 "want to save the definition in.  Then use this command:"
-msgstr "1度マクロにコマンド名をつければ、その定義をファイルに保存できます。それは他の編集セッションでも使用できます。最初に定義を保存したいファイルをvisitします。次に以下のコマンドを使います:"
+msgstr ""
+"1度マクロにコマンド名をつければ、その定義をファイルに保存できます。それは他の"
+"編集セッションでも使用できます。最初に定義を保存したいファイルをvisitします。"
+"次に以下のコマンドを使います:"
 
 #. type: example
-#: kmacro.texi.orig:452
+#: original_texis/kmacro.texi:452
 #, no-wrap
 msgid "M-x insert-kbd-macro @key{RET} @var{macroname} @key{RET}\n"
 msgstr "M-x insert-kbd-macro @key{RET} @var{macroname} @key{RET}\n"
 
 #. type: Plain text
-#: kmacro.texi.orig:462
+#: original_texis/kmacro.texi:462
 msgid ""
 "This inserts some Lisp code that, when executed later, will define the same "
 "macro with the same definition it has now.  (You need not understand Lisp "
@@ -1007,248 +1231,315 @@ msgid ""
 "file} (@pxref{Lisp Libraries}).  If the file you save in is your init file "
 "@file{~/.emacs} (@pxref{Init File}) then the macro will be defined each time "
 "you run Emacs."
-msgstr "これは後で実行するとき、今と同じ定義のマクロとなるLispコードをバッファーに挿入します(これを行うためにLispコードを理解する必要はありません。なぜならあなたのかわりに@code{insert-kbd-macro}がLispコードを記述するからです)。それからファイルを保存します。後でそのファイルを@code{load-file} (@ref{Lisp Libraries}を参照してください)でロードできます。initファイル@file{~/.emacs} (@ref{Init File}を参照してください)に保存すれば、そのマクロはEmacsを実行する度に定義されます。"
+msgstr ""
+"これは後で実行するとき、今と同じ定義のマクロとなるLispコードをバッファーに挿"
+"入します(これを行うためにLispコードを理解する必要はありません。なぜならあなた"
+"のかわりに@code{insert-kbd-macro}がLispコードを記述するからです)。それから"
+"ファイルを保存します。後でそのファイルを@code{load-file} (@ref{Lisp "
+"Libraries}を参照してください)でロードできます。initファイル@file{~/.emacs} "
+"(@ref{Init File}を参照してください)に保存すれば、そのマクロはEmacsを実行する"
+"度に定義されます。"
 
 #. type: Plain text
-#: kmacro.texi.orig:467
+#: original_texis/kmacro.texi:467
 msgid ""
 "If you give @code{insert-kbd-macro} a numeric argument, it makes additional "
 "Lisp code to record the keys (if any) that you have bound to "
 "@var{macroname}, so that the macro will be reassigned the same keys when you "
 "load the file."
-msgstr "@code{insert-kbd-macro}に数引数を与えると、(もしあれば)@var{macroname}にバインドしたキーを記録するためのLispコードが追加されるので、ファイルをロードしたとき同じキーにマクロが割り当てられます。"
+msgstr ""
+"@code{insert-kbd-macro}に数引数を与えると、(もしあれば)@var{macroname}にバイ"
+"ンドしたキーを記録するためのLispコードが追加されるので、ファイルをロードした"
+"とき同じキーにマクロが割り当てられます。"
 
 #. type: section
-#: kmacro.texi.orig:469
+#: original_texis/kmacro.texi:469
 #, no-wrap
 msgid "Editing a Keyboard Macro"
 msgstr "Editing a Keyboard Macro"
 
 #. type: kindex
-#: kmacro.texi.orig:472 kmacro.texi.orig:482
+#: original_texis/kmacro.texi:472 original_texis/kmacro.texi:482
 #, no-wrap
 msgid "C-x C-k C-e"
 msgstr "C-x C-k C-e"
 
 #. type: table
-#: kmacro.texi.orig:474
+#: original_texis/kmacro.texi:474
 msgid "Edit the last defined keyboard macro (@code{kmacro-edit-macro})."
-msgstr "最後に定義されたキーボードマクロを編集します(@code{kmacro-edit-macro})。"
+msgstr ""
+"最後に定義されたキーボードマクロを編集します(@code{kmacro-edit-macro})。"
 
 #. type: item
-#: kmacro.texi.orig:474
+#: original_texis/kmacro.texi:474
 #, no-wrap
 msgid "C-x C-k e @var{name} @key{RET}"
 msgstr "C-x C-k e @var{name} @key{RET}"
 
 #. type: table
-#: kmacro.texi.orig:476
+#: original_texis/kmacro.texi:476
 msgid ""
 "Edit a previously defined keyboard macro @var{name} (@code{edit-kbd-macro})."
-msgstr "以前に定義されたキーボードマクロ@var{name}を編集します(@code{edit-kbd-macro})。"
+msgstr ""
+"以前に定義されたキーボードマクロ@var{name}を編集します(@code{edit-kbd-"
+"macro})。"
 
 #. type: kindex
-#: kmacro.texi.orig:476 kmacro.texi.orig:499
+#: original_texis/kmacro.texi:476 original_texis/kmacro.texi:499
 #, no-wrap
 msgid "C-x C-k l"
 msgstr "C-x C-k l"
 
 #. type: table
-#: kmacro.texi.orig:479
+#: original_texis/kmacro.texi:479
 msgid ""
 "Edit the last 300 keystrokes as a keyboard macro (@code{kmacro-edit-"
 "lossage})."
-msgstr "過去300回分のキーストロークを、キーボードマクロとして編集します(@code{kmacro-edit-lossage})。"
+msgstr ""
+"過去300回分のキーストロークを、キーボードマクロとして編集します(@code{kmacro-"
+"edit-lossage})。"
 
 #. type: findex
-#: kmacro.texi.orig:481
+#: original_texis/kmacro.texi:481
 #, no-wrap
 msgid "kmacro-edit-macro"
 msgstr "kmacro-edit-macro"
 
 #. type: kindex
-#: kmacro.texi.orig:483
+#: original_texis/kmacro.texi:483
 #, no-wrap
 msgid "C-x C-k RET"
 msgstr "C-x C-k RET"
 
 #. type: Plain text
-#: kmacro.texi.orig:490
+#: original_texis/kmacro.texi:490
 msgid ""
 "You can edit the last keyboard macro by typing @kbd{C-x C-k C-e} or @kbd{C-x "
 "C-k @key{RET}} (@code{kmacro-edit-macro}).  This formats the macro "
 "definition in a buffer and enters a specialized major mode for editing it.  "
 "Type @kbd{C-h m} once in that buffer to display details of how to edit the "
 "macro.  When you are finished editing, type @kbd{C-c C-c}."
-msgstr "@kbd{C-x C-k C-e}または@kbd{C-x C-k @key{RET}} (@code{kmacro-edit-macro})をとタイプして、最後のキーボードマクロを編集できます。これはマクロ定義をバッファーに整形出力して、それを編集するために特化したモードに入ります。そのバッファーで@kbd{C-h m}をタイプすると、マクロを編集する方法の詳細が表示されます。編集を終了するには@kbd{C-c C-c}をタイプしてください。"
+msgstr ""
+"@kbd{C-x C-k C-e}または@kbd{C-x C-k @key{RET}} (@code{kmacro-edit-macro})をと"
+"タイプして、最後のキーボードマクロを編集できます。これはマクロ定義をバッ"
+"ファーに整形出力して、それを編集するために特化したモードに入ります。そのバッ"
+"ファーで@kbd{C-h m}をタイプすると、マクロを編集する方法の詳細が表示されます。"
+"編集を終了するには@kbd{C-c C-c}をタイプしてください。"
 
 #. type: findex
-#: kmacro.texi.orig:491
+#: original_texis/kmacro.texi:491
 #, no-wrap
 msgid "edit-kbd-macro"
 msgstr "edit-kbd-macro"
 
 #. type: kindex
-#: kmacro.texi.orig:492
+#: original_texis/kmacro.texi:492
 #, no-wrap
 msgid "C-x C-k e"
 msgstr "C-x C-k e"
 
 #. type: Plain text
-#: kmacro.texi.orig:497
+#: original_texis/kmacro.texi:497
 msgid ""
 "You can edit a named keyboard macro or a macro bound to a key by typing "
 "@kbd{C-x C-k e} (@code{edit-kbd-macro}).  Follow that with the keyboard "
 "input that you would use to invoke the macro---@kbd{C-x e} or @kbd{M-x "
 "@var{name}} or some other key sequence."
-msgstr "名前をつけたキーボードマクロ、またはキーにバインドしたマクロは、@kbd{C-x C-k e} (@code{edit-kbd-macro})とタイプして編集できます。このコマンドに続けてそのマクロを呼び出すときのキー入力(@kbd{C-x e}、@kbd{M-x @var{name}}、またはその他のキーシーケンス)を入力します。"
+msgstr ""
+"名前をつけたキーボードマクロ、またはキーにバインドしたマクロは、@kbd{C-x C-k "
+"e} (@code{edit-kbd-macro})とタイプして編集できます。このコマンドに続けてその"
+"マクロを呼び出すときのキー入力(@kbd{C-x e}、@kbd{M-x @var{name}}、またはその"
+"他のキーシーケンス)を入力します。"
 
 #. type: findex
-#: kmacro.texi.orig:498
+#: original_texis/kmacro.texi:498
 #, no-wrap
 msgid "kmacro-edit-lossage"
 msgstr "kmacro-edit-lossage"
 
 #. type: Plain text
-#: kmacro.texi.orig:502
+#: original_texis/kmacro.texi:502
 msgid ""
 "You can edit the last 300 keystrokes as a macro by typing @kbd{C-x C-k l} "
 "(@code{kmacro-edit-lossage})."
-msgstr "@kbd{C-x C-k l} (@code{kmacro-edit-lossage})とタイプして、最近300回のキーストロークをマクロとして編集できます。"
+msgstr ""
+"@kbd{C-x C-k l} (@code{kmacro-edit-lossage})とタイプして、最近300回のキースト"
+"ロークをマクロとして編集できます。"
 
 #. type: section
-#: kmacro.texi.orig:504
+#: original_texis/kmacro.texi:504
 #, no-wrap
 msgid "Stepwise Editing a Keyboard Macro"
 msgstr "Stepwise Editing a Keyboard Macro"
 
 #. type: findex
-#: kmacro.texi.orig:506
+#: original_texis/kmacro.texi:506
 #, no-wrap
 msgid "kmacro-step-edit-macro"
 msgstr "kmacro-step-edit-macro"
 
 #. type: kindex
-#: kmacro.texi.orig:507
+#: original_texis/kmacro.texi:507
 #, no-wrap
 msgid "C-x C-k SPC"
 msgstr "C-x C-k SPC"
 
 #. type: Plain text
-#: kmacro.texi.orig:513
+#: original_texis/kmacro.texi:513
 msgid ""
 "You can interactively replay and edit the last keyboard macro, one command "
 "at a time, by typing @kbd{C-x C-k @key{SPC}} (@code{kmacro-step-edit-"
 "macro}).  Unless you quit the macro using @kbd{q} or @kbd{C-g}, the edited "
 "macro replaces the last macro on the macro ring."
-msgstr "@kbd{C-x C-k @key{SPC}} (@code{kmacro-step-edit-macro})とタイプして、最後のキーボードマクロをインタラクティブに1コマンドずつ再生および編集できます。マクロを@kbd{q}または@kbd{C-g}で終了しなければ、編集されたマクロでマクロリングの最後のマクロを置き換えます。"
+msgstr ""
+"@kbd{C-x C-k @key{SPC}} (@code{kmacro-step-edit-macro})とタイプして、最後の"
+"キーボードマクロをインタラクティブに1コマンドずつ再生および編集できます。マク"
+"ロを@kbd{q}または@kbd{C-g}で終了しなければ、編集されたマクロでマクロリングの"
+"最後のマクロを置き換えます。"
 
 #. type: Plain text
-#: kmacro.texi.orig:518
+#: original_texis/kmacro.texi:518
 msgid ""
 "This macro editing feature shows the last macro in the minibuffer together "
 "with the first (or next) command to be executed, and prompts you for an "
 "action.  You can enter @kbd{?} to get a summary of your options.  These "
 "actions are available:"
-msgstr "このマクロ編集機能は、最初(または次)に実行されるコマンドと、それにたいする操作を尋ねるプロンプトをミニバッファーに表示します。@kbd{?}を入力すれば、オプションの要約を表示できます。以下のオプションが利用可能です:"
+msgstr ""
+"このマクロ編集機能は、最初(または次)に実行されるコマンドと、それにたいする操"
+"作を尋ねるプロンプトをミニバッファーに表示します。@kbd{?}を入力すれば、オプ"
+"ションの要約を表示できます。以下のオプションが利用可能です:"
 
 #. type: itemize
-#: kmacro.texi.orig:523
+#: original_texis/kmacro.texi:523
 msgid ""
 "@key{SPC} and @kbd{y} execute the current command, and advance to the next "
 "command in the keyboard macro."
-msgstr "@key{SPC}および@kbd{y}は、現在のコマンドを実行して、キーボードマクロの次のコマンドに進みます。"
+msgstr ""
+"@key{SPC}および@kbd{y}は、現在のコマンドを実行して、キーボードマクロの次のコ"
+"マンドに進みます。"
 
 #. type: itemize
-#: kmacro.texi.orig:525
+#: original_texis/kmacro.texi:525
 msgid "@kbd{n}, @kbd{d}, and @key{DEL} skip and delete the current command."
-msgstr "@kbd{n}、@kbd{d}、および@key{DEL}は、現在のコマンドをスキップして削除します。"
+msgstr ""
+"@kbd{n}、@kbd{d}、および@key{DEL}は、現在のコマンドをスキップして削除します。"
 
 #. type: itemize
-#: kmacro.texi.orig:528
+#: original_texis/kmacro.texi:528
 msgid ""
 "@kbd{f} skips the current command in this execution of the keyboard macro, "
 "but doesn't delete it from the macro."
-msgstr "@kbd{f}は、キーボードマクロの実行において現在のコマンドをスキップしますが、マクロから削除はしません。"
+msgstr ""
+"@kbd{f}は、キーボードマクロの実行において現在のコマンドをスキップしますが、マ"
+"クロから削除はしません。"
 
 #. type: itemize
-#: kmacro.texi.orig:533
+#: original_texis/kmacro.texi:533
 msgid ""
 "@key{TAB} executes the current command, as well as all similar commands "
 "immediately following the current command; for example, @key{TAB} may be "
 "used to insert a sequence of characters (corresponding to a sequence of "
 "@code{self-insert-command} commands)."
-msgstr "@key{TAB}は、現在のコマンドと、現在のコマンドのすぐ後に続く同じようなコマンドを実行します。たとえば連続する文字の挿入(@code{self-insert-command}に相当)には、@key{TAB}が使われます。"
+msgstr ""
+"@key{TAB}は、現在のコマンドと、現在のコマンドのすぐ後に続く同じようなコマンド"
+"を実行します。たとえば連続する文字の挿入(@code{self-insert-command}に相当)に"
+"は、@key{TAB}が使われます。"
 
 #. type: itemize
-#: kmacro.texi.orig:537
+#: original_texis/kmacro.texi:537
 msgid ""
 "@kbd{c} continues execution (without further editing) until the end of the "
 "keyboard macro.  If execution terminates normally, the edited macro replaces "
 "the original keyboard macro."
-msgstr "@kbd{c}は、(これ以上の編集は行わずに)キーボードマクロの最後まで実行を続けます。実行が正常に終了した場合、編集されたマクロで元のキーボードマクロを置き換えます。"
+msgstr ""
+"@kbd{c}は、(これ以上の編集は行わずに)キーボードマクロの最後まで実行を続けま"
+"す。実行が正常に終了した場合、編集されたマクロで元のキーボードマクロを置き換"
+"えます。"
 
 #. type: itemize
-#: kmacro.texi.orig:541
+#: original_texis/kmacro.texi:541
 msgid ""
 "@kbd{C-k} skips and deletes the rest of the keyboard macro, terminates step-"
 "editing, and replaces the original keyboard macro with the edited macro."
-msgstr "@kbd{C-k}は、キーボードマクロの残りの部分をスキップおよび削除して、ステップ編集を終了し、編集されたマクロで元のキーボードマクロを置き換えます。"
+msgstr ""
+"@kbd{C-k}は、キーボードマクロの残りの部分をスキップおよび削除して、ステップ編"
+"集を終了し、編集されたマクロで元のキーボードマクロを置き換えます。"
 
 #. type: itemize
-#: kmacro.texi.orig:544
+#: original_texis/kmacro.texi:544
 msgid ""
 "@kbd{q} and @kbd{C-g} cancels the step-editing of the keyboard macro; "
 "discarding any changes made to the keyboard macro."
-msgstr "@kbd{q}および@kbd{C-g}は、キーボードマクロのステップ編集を取り消して、キーボードマクロにたいして行った編集を破棄します。"
+msgstr ""
+"@kbd{q}および@kbd{C-g}は、キーボードマクロのステップ編集を取り消して、キー"
+"ボードマクロにたいして行った編集を破棄します。"
 
 #. type: itemize
-#: kmacro.texi.orig:549
+#: original_texis/kmacro.texi:549
 msgid ""
 "@kbd{i @var{key}@dots{} C-j} reads and executes a series of key sequences "
 "(not including the final @kbd{C-j}), and inserts them before the current "
 "command in the keyboard macro, without advancing over the current command."
-msgstr "@kbd{i @var{key}@dots{} C-j}は、一連のキーシーケンス(最後の@kbd{C-j}は含まれません)を読み取って実行し、キーボードマクロの現在のコマンドの前に挿入します(現在のコマンドはスキップしません)。"
+msgstr ""
+"@kbd{i @var{key}@dots{} C-j}は、一連のキーシーケンス(最後の@kbd{C-j}は含まれ"
+"ません)を読み取って実行し、キーボードマクロの現在のコマンドの前に挿入します"
+"(現在のコマンドはスキップしません)。"
 
 #. type: itemize
-#: kmacro.texi.orig:553
+#: original_texis/kmacro.texi:553
 msgid ""
 "@kbd{I @var{key}@dots{}} reads one key sequence, executes it, and inserts it "
 "before the current command in the keyboard macro, without advancing over the "
 "current command."
-msgstr "@kbd{I @var{key}@dots{}}は、1つのキーシーケンスを読み取って実行し、キーボードマクロの現在のコマンドの前に挿入します(現在のコマンドはスキップしません)。"
+msgstr ""
+"@kbd{I @var{key}@dots{}}は、1つのキーシーケンスを読み取って実行し、キーボード"
+"マクロの現在のコマンドの前に挿入します(現在のコマンドはスキップしません)。"
 
 #. type: itemize
-#: kmacro.texi.orig:558
+#: original_texis/kmacro.texi:558
 msgid ""
 "@kbd{r @var{key}@dots{} C-j} reads and executes a series of key sequences "
 "(not including the final @kbd{C-j}), and replaces the current command in the "
 "keyboard macro with them, advancing over the inserted key sequences."
-msgstr "@kbd{r @var{key}@dots{} C-j}は、一連のキーシーケンス(最後の@kbd{C-j}は含まれません)を読み取って実行し、現在のコマンドをそれで置き換えます(実行は挿入されたキーシーケンスの次に移ります)。"
+msgstr ""
+"@kbd{r @var{key}@dots{} C-j}は、一連のキーシーケンス(最後の@kbd{C-j}は含まれ"
+"ません)を読み取って実行し、現在のコマンドをそれで置き換えます(実行は挿入され"
+"たキーシーケンスの次に移ります)。"
 
 #. type: itemize
-#: kmacro.texi.orig:562
+#: original_texis/kmacro.texi:562
 msgid ""
 "@kbd{R @var{key}@dots{}} reads one key sequence, executes it, and replaces "
 "the current command in the keyboard macro with that key sequence, advancing "
 "over the inserted key sequence."
-msgstr "@kbd{R @var{key}@dots{}}は、1つのキーシーケンスを読み取って実行し、キーボードマクロの現在のコマンドを、そのキーシーケンスで置き換えます(実行は挿入されたキーシーケンスの次に移ります)。"
+msgstr ""
+"@kbd{R @var{key}@dots{}}は、1つのキーシーケンスを読み取って実行し、キーボード"
+"マクロの現在のコマンドを、そのキーシーケンスで置き換えます(実行は挿入された"
+"キーシーケンスの次に移ります)。"
 
 #. type: itemize
-#: kmacro.texi.orig:568
+#: original_texis/kmacro.texi:568
 msgid ""
 "@kbd{a @var{key}@dots{} C-j} executes the current command, then reads and "
 "executes a series of key sequences (not including the final @kbd{C-j}), and "
 "inserts them after the current command in the keyboard macro; it then "
 "advances over the current command and the inserted key sequences."
-msgstr "@kbd{a @var{key}@dots{} C-j}は、現在のコマンドを実行してから、一連のキーシーケンス(最後の@kbd{C-j}は含まれません)を読み取って実行してから、それをキーボードマクロの現在のコマンドの後ろに挿入します(実行は現在のコマンドと、その後ろに挿入されたキーシーケンスの次に移ります)。"
+msgstr ""
+"@kbd{a @var{key}@dots{} C-j}は、現在のコマンドを実行してから、一連のキーシー"
+"ケンス(最後の@kbd{C-j}は含まれません)を読み取って実行してから、それをキーボー"
+"ドマクロの現在のコマンドの後ろに挿入します(実行は現在のコマンドと、その後ろに"
+"挿入されたキーシーケンスの次に移ります)。"
 
 #. type: itemize
-#: kmacro.texi.orig:574
+#: original_texis/kmacro.texi:574
 msgid ""
 "@kbd{A @var{key}@dots{} C-j} executes the rest of the commands in the "
 "keyboard macro, then reads and executes a series of key sequences (not "
 "including the final @kbd{C-j}), and appends them at the end of the keyboard "
 "macro; it then terminates the step-editing and replaces the original "
 "keyboard macro with the edited macro."
-msgstr "@kbd{A @var{key}@dots{} C-j}は、キーボードマクロの残りのコマンドを実行してから、一連のキーシーケンス(最後の@kbd{C-j}は含まれません)を読み取って実行し、それらをキーボードマクロの最後に追加します。それからステップ編集を終了し、編集されたマクロで元の元のキーボードマクロを置き換えます。"
+msgstr ""
+"@kbd{A @var{key}@dots{} C-j}は、キーボードマクロの残りのコマンドを実行してか"
+"ら、一連のキーシーケンス(最後の@kbd{C-j}は含まれません)を読み取って実行し、そ"
+"れらをキーボードマクロの最後に追加します。それからステップ編集を終了し、編集"
+"されたマクロで元の元のキーボードマクロを置き換えます。"

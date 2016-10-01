@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-03-07 00:20+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,28 +16,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
-#: anti.texi.orig:5
+#: original_texis/anti.texi:5
 #, no-wrap
 msgid "Antinews"
 msgstr "Antinews"
 
 #. type: appendix
-#: anti.texi.orig:6
+#: original_texis/anti.texi:6
 #, no-wrap
 msgid "Emacs 23 Antinews"
 msgstr "Emacs 23 Antinews"
 
 #. type: Plain text
-#: anti.texi.orig:13
+#: original_texis/anti.texi:13
 msgid ""
 "For those users who live backwards in time, here is information about "
 "downgrading to Emacs version 23.4.  We hope you will enjoy the greater "
 "simplicity that results from the absence of many Emacs @value{EMACSVER} "
 "features."
-msgstr "時代に逆らって生きるユーザーのために、以下はEmacsバージョン23.4へのダウングレードに関する情報です。Emacs @value{EMACSVER}機能の不在による結果としての偉大なる単純さを、ぜひ堪能してください。"
+msgstr ""
+"時代に逆らって生きるユーザーのために、以下はEmacsバージョン23.4へのダウング"
+"レードに関する情報です。Emacs @value{EMACSVER}機能の不在による結果としての偉"
+"大なる単純さを、ぜひ堪能してください。"
 
 #. type: itemize
-#: anti.texi.orig:24
+#: original_texis/anti.texi:24
 msgid ""
 "Support for displaying and editing ``bidirectional'' text has been removed.  "
 "Text is now always displayed on the screen in a single consistent "
@@ -46,17 +49,26 @@ msgid ""
 "respectively.  Also, @key{RIGHT} and @key{LEFT} are now equivalent to @kbd{C-"
 "f} and @kbd{C-b}, as you might expect, rather than moving forward or "
 "backward based on the underlying ``paragraph direction''."
-msgstr "``双方向(bidirectional)''テキストの表示と編集にたいするサポートは削除されました。テキストは背景にあるスクリプトとは無関係に、スクリーン上で常に単一の方向 --- つまり左から右に表示されます。同様に@kbd{C-f}と@kbd{C-b}は、常にテキストカーソルを右または左に移動します。また@key{RIGHT}と@key{LEFT}は、あなたが期待するとおり、背景にある``パラグラフの方向(paragraph direction)''にもとづいて前方や後方に移動するのではなく、@kbd{C-f}と@kbd{C-b}に等価になりました。"
+msgstr ""
+"``双方向(bidirectional)''テキストの表示と編集にたいするサポートは削除されまし"
+"た。テキストは背景にあるスクリプトとは無関係に、スクリーン上で常に単一の方向 "
+"--- つまり左から右に表示されます。同様に@kbd{C-f}と@kbd{C-b}は、常にテキスト"
+"カーソルを右または左に移動します。また@key{RIGHT}と@key{LEFT}は、あなたが期待"
+"するとおり、背景にある``パラグラフの方向(paragraph direction)''にもとづいて前"
+"方や後方に移動するのではなく、@kbd{C-f}と@kbd{C-b}に等価になりました。"
 
 #. type: itemize
-#: anti.texi.orig:27
+#: original_texis/anti.texi:27
 msgid ""
 "Users of ``right-to-left'' languages, like Arabic and Hebrew, may adapt by "
 "reading and/or editing text in left-to-right order."
-msgstr "おそらくアラビア語やヘブライ語のような``right-to-left(右から左に記述する)''言語のユーザーは、テキストの読み取りおよび/または編集をleft-to-right(左から右)の方向に適合させることでしょう。"
+msgstr ""
+"おそらくアラビア語やヘブライ語のような``right-to-left(右から左に記述する)''言"
+"語のユーザーは、テキストの読み取りおよび/または編集をleft-to-right(左から右)"
+"の方向に適合させることでしょう。"
 
 #. type: itemize
-#: anti.texi.orig:36
+#: original_texis/anti.texi:36
 msgid ""
 "The Emacs Lisp package manager has been removed.  Instead of using a ``user "
 "interface'' (@kbd{M-x list-packages}), additional Lisp packages must now be "
@@ -64,18 +76,28 @@ msgid ""
 "Typically, this just involves editing your init file to add the package "
 "installation directory to the load path and defining some autoloads; see "
 "each package's commentary section and/or README file for details."
-msgstr "Emacs Lispパッケージマネージャーは削除されました。追加のLispパッケージは``ユーザーインターフェース''(@kbd{M-x list-packages})を使用するのではなく、もっとも柔軟かつ``Lispっぽい''手法、すなわち手作業でインストールしなければなりません。これは通常、そのパッケージをインストールしたディレクトリーをload-pathに追加して、いくつかのautoloadを定義するための、initファイル編集を伴うだけです。詳細はそのパッケージのコメントセクションおよび/またはREADMEファイルを参照してください。"
+msgstr ""
+"Emacs Lispパッケージマネージャーは削除されました。追加のLispパッケージは``"
+"ユーザーインターフェース''(@kbd{M-x list-packages})を使用するのではなく、もっ"
+"とも柔軟かつ``Lispっぽい''手法、すなわち手作業でインストールしなければなりま"
+"せん。これは通常、そのパッケージをインストールしたディレクトリーをload-pathに"
+"追加して、いくつかのautoloadを定義するための、initファイル編集を伴うだけで"
+"す。詳細はそのパッケージのコメントセクションおよび/またはREADMEファイルを参照"
+"してください。"
 
 #. type: itemize
-#: anti.texi.orig:41
+#: original_texis/anti.texi:41
 msgid ""
 "The option @code{delete-active-region} has been deleted.  When the region is "
 "active, typing @key{DEL} or @key{Delete} no longer deletes the text in the "
 "region; it deletes a single character instead."
-msgstr "オプション@code{delete-active-region}は削除されました。リージョンがアクティブのとき、@key{DEL}または@key{Delete}とタイプしても、もはやそのリージョンのテキストは削除されず、1文字だけを削除します。"
+msgstr ""
+"オプション@code{delete-active-region}は削除されました。リージョンがアクティブ"
+"のとき、@key{DEL}または@key{Delete}とタイプしても、もはやそのリージョンのテキ"
+"ストは削除されず、1文字だけを削除します。"
 
 #. type: itemize
-#: anti.texi.orig:50
+#: original_texis/anti.texi:50
 msgid ""
 "We have reworked how Emacs handles the clipboard and the X primary "
 "selection.  Commands for killing and yanking, like @kbd{C-w} and @kbd{C-y}, "
@@ -84,30 +106,46 @@ msgid ""
 "programs.  The @samp{Cut}/@samp{Copy}/@samp{Paste} menu items are bound to "
 "separate clipboard commands, not to the same commands as @kbd{C-w}/@kbd{M-w}/"
 "@kbd{C-y}."
-msgstr "わたしたちは、EmacsがクリップボードとXのプライマリー選択(primary selection)を扱う方法を書き直しました。@kbd{C-w}や@kbd{C-y}のような、killとyankを行なうコマンドは、クリップボードではなくプライマリー選択を使用するので、他のプログラムに``カット''や``ペースト''してしまう恐れなく、これらのコマンドを使用できます。メニューアイテム@samp{Cut}/@samp{Copy}/@samp{Paste}は、@kbd{C-w}/@kbd{M-w}/@kbd{C-y}と同じコマンドではなく、それとは別のクリップボードコマンドにバインドされます。"
+msgstr ""
+"わたしたちは、EmacsがクリップボードとXのプライマリー選択(primary selection)を"
+"扱う方法を書き直しました。@kbd{C-w}や@kbd{C-y}のような、killとyankを行なうコ"
+"マンドは、クリップボードではなくプライマリー選択を使用するので、他のプログラ"
+"ムに``カット''や``ペースト''してしまう恐れなく、これらのコマンドを使用できま"
+"す。メニューアイテム@samp{Cut}/@samp{Copy}/@samp{Paste}は、@kbd{C-w}/@kbd{M-"
+"w}/@kbd{C-y}と同じコマンドではなく、それとは別のクリップボードコマンドにバイ"
+"ンドされます。"
 
 #. type: itemize
-#: anti.texi.orig:56
+#: original_texis/anti.texi:56
 msgid ""
 "Selecting text by dragging with the mouse now puts the text in the kill "
 "ring, in addition to the primary selection.  But note that selecting an "
 "active region with @kbd{C-@key{SPC}} does @emph{not} alter the kill ring nor "
 "the primary selection, even though the text highlighting is visually "
 "identical."
-msgstr "マウスでテキストをドラッグして選択すると、そのテキストはプライマリー選択に加えてkillリングに置かれるようになりました。しかしテキストのハイライト表示が同じでも、@kbd{C-@key{SPC}}によるリージョンのアクティブ化による選択では、そのテキストはkillリングにもプライマリー選択にも置かないことに注意してください。"
+msgstr ""
+"マウスでテキストをドラッグして選択すると、そのテキストはプライマリー選択に加"
+"えてkillリングに置かれるようになりました。しかしテキストのハイライト表示が同"
+"じでも、@kbd{C-@key{SPC}}によるリージョンのアクティブ化による選択では、そのテ"
+"キストはkillリングにもプライマリー選択にも置かないことに注意してください。"
 
 #. type: itemize
-#: anti.texi.orig:64
+#: original_texis/anti.texi:64
 msgid ""
 "In Isearch, @kbd{C-y} and @kbd{M-y} are no longer bound to @code{isearch-"
 "yank-kill} and @code{isearch-yank-pop} respectively.  Instead, @kbd{C-y} "
 "yanks the rest of the current line into the search string (@code{isearch-"
 "yank-line}), whereas @kbd{M-y} does @code{isearch-yank-kill}.  The mismatch "
 "with the usual meanings of @kbd{C-y} and @kbd{M-y} is unintended."
-msgstr "isearch(インクリメンタル検索)での@kbd{C-y}と@kbd{M-y}は、もはや@code{isearch-yank-kill}と@code{isearch-yank-pop}にバインドされません。かわりに@kbd{C-y}はカレント行の残りを検索文字列にyankし(@code{isearch-yank-line})、@kbd{M-y}が@code{isearch-yank-kill}にバインドされます。@kbd{C-y}と@kbd{M-y}がもつ通常の意味との不整合は、意図したものではありません。"
+msgstr ""
+"isearch(インクリメンタル検索)での@kbd{C-y}と@kbd{M-y}は、もはや@code{isearch-"
+"yank-kill}と@code{isearch-yank-pop}にバインドされません。かわりに@kbd{C-y}は"
+"カレント行の残りを検索文字列にyankし(@code{isearch-yank-line})、@kbd{M-y}が"
+"@code{isearch-yank-kill}にバインドされます。@kbd{C-y}と@kbd{M-y}がもつ通常の"
+"意味との不整合は、意図したものではありません。"
 
 #. type: itemize
-#: anti.texi.orig:72
+#: original_texis/anti.texi:72
 msgid ""
 "Various completion features have been simplified.  The option "
 "@code{completion-category-overrides} has been removed, so Emacs uses a "
@@ -115,65 +153,95 @@ msgid ""
 "separate scheme for (say) buffer name completion.  Several major modes, such "
 "as Shell mode, now implement their own inline completion commands instead of "
 "using @code{completion-at-point}."
-msgstr "さまざまな補完機能は単純化されました。オプション@code{completion-category-overrides}は削除されたので、Emacsは補完の生成、(たとえば)バッファー名補完にたいして別のスキームを使用するのではなく、1つの一貫したスキームを使用します。Shellモードのようないくつかのメジャーモードは、@code{completion-at-point}を使用するかわりに、独自のインライン補完コマンドを実装するようになりました。"
+msgstr ""
+"さまざまな補完機能は単純化されました。オプション@code{completion-category-"
+"overrides}は削除されたので、Emacsは補完の生成、(たとえば)バッファー名補完にた"
+"いして別のスキームを使用するのではなく、1つの一貫したスキームを使用します。"
+"Shellモードのようないくつかのメジャーモードは、@code{completion-at-point}を使"
+"用するかわりに、独自のインライン補完コマンドを実装するようになりました。"
 
 #. type: itemize
-#: anti.texi.orig:78
+#: original_texis/anti.texi:78
 msgid ""
 "We have removed several options for controlling how windows are used, such "
 "as @code{display-buffer-base-action}, @code{display-buffer-alist}, "
 "@code{window-combination-limit}, and @code{window-combination-resize}."
-msgstr "ウィンドウが使用される方法を制御する@code{display-buffer-base-action}、@code{display-buffer-alist}、@code{window-combination-limit}、@code{window-combination-resize}のような、いくつかのオプションは削除されました。"
+msgstr ""
+"ウィンドウが使用される方法を制御する@code{display-buffer-base-action}、"
+"@code{display-buffer-alist}、@code{window-combination-limit}、@code{window-"
+"combination-resize}のような、いくつかのオプションは削除されました。"
 
 #. type: itemize
-#: anti.texi.orig:82
+#: original_texis/anti.texi:82
 msgid ""
 "The command @kbd{M-x customize-themes} has been removed.  Emacs no longer "
 "comes with pre-defined themes (you can write your own)."
-msgstr "コマンド@kbd{M-x customize-themes}は削除されました。Emacsにはもはや事前定義されたテーマはありません(あなたが自分で記述できます)。"
+msgstr ""
+"コマンド@kbd{M-x customize-themes}は削除されました。Emacsにはもはや事前定義さ"
+"れたテーマはありません(あなたが自分で記述できます)。"
 
 #. type: itemize
-#: anti.texi.orig:89
+#: original_texis/anti.texi:89
 msgid ""
 "Emacs no longer adapts various aspects of its display to GTK+ settings, "
 "opting instead for a uniform toolkit-independent look.  GTK+ scroll bars are "
 "placed on the left, the same position as non-GTK+ X scroll bars.  Emacs no "
 "longer refers to GTK+ to set the default @code{region} face, nor for drawing "
 "tooltips."
-msgstr "Emacsは、GTK+セッティングにたいしてEmacs表示のさまざまな様相を適応させなくなり、それを選択するかわりに統一性のあるツールキットとは独立した外見をもちます。GTK+スクロールバーは、非GTK+のXスクロールバーと同じ位置の、左側に配されます。もはやEmacsはデフォルトの@code{region}フェイスをセットしたり、ツールチップを描画するために、GTK+を参照しません。"
+msgstr ""
+"Emacsは、GTK+セッティングにたいしてEmacs表示のさまざまな様相を適応させなくな"
+"り、それを選択するかわりに統一性のあるツールキットとは独立した外見をもちま"
+"す。GTK+スクロールバーは、非GTK+のXスクロールバーと同じ位置の、左側に配されま"
+"す。もはやEmacsはデフォルトの@code{region}フェイスをセットしたり、ツールチッ"
+"プを描画するために、GTK+を参照しません。"
 
 #. type: itemize
-#: anti.texi.orig:96
+#: original_texis/anti.texi:96
 msgid ""
 "Setting the option @code{delete-by-moving-to-trash} to a non-@code{nil} "
 "value now causes all file deletions to use the system trash, even temporary "
 "files created by Lisp programs; furthermore, the @kbd{M-x delete-file} and "
 "@kbd{M-x delete-directory} commands no longer accept prefix arguments to "
 "force true deletion."
-msgstr "オプション@code{delete-by-moving-to-trash}を非@code{nil}値にセットすることにより、それがLispプログラムにより作成された一時ファイルでも、すべてのファイル削除にシステムのゴミ箱(trash)を使用するようになりました。さらにコマンド@kbd{M-x delete-file}と@kbd{M-x delete-directory}は、もはや完全な削除を行なわせるためのプレフィクス引数を受け付けません。"
+msgstr ""
+"オプション@code{delete-by-moving-to-trash}を非@code{nil}値にセットすることに"
+"より、それがLispプログラムにより作成された一時ファイルでも、すべてのファイル"
+"削除にシステムのゴミ箱(trash)を使用するようになりました。さらにコマンド"
+"@kbd{M-x delete-file}と@kbd{M-x delete-directory}は、もはや完全な削除を行なわ"
+"せるためのプレフィクス引数を受け付けません。"
 
 #. type: itemize
-#: anti.texi.orig:103
+#: original_texis/anti.texi:103
 msgid ""
 "On GNU/Linux and Unix, the default method for sending mail (as specified by "
 "@code{send-mail-function}) is to use the @command{sendmail} program.  Emacs "
 "no longer asks for a delivery method the first time you try to send mail, "
 "trusting instead that the system is configured for mail delivery, as it "
 "ought to be."
-msgstr "GNU/LinuxおよびUnixでは、(@code{send-mail-function}により指定される)デフォルトのメール送信方法は、@command{sendmail}プログラムを使用するようになりました。Emacsは最初にメールを送るときに配信方法を尋ねず、かわりにそのシステムがメール送信のために設定されたシステムだと信じるようになりました。"
+msgstr ""
+"GNU/LinuxおよびUnixでは、(@code{send-mail-function}により指定される)デフォル"
+"トのメール送信方法は、@command{sendmail}プログラムを使用するようになりまし"
+"た。Emacsは最初にメールを送るときに配信方法を尋ねず、かわりにそのシステムが"
+"メール送信のために設定されたシステムだと信じるようになりました。"
 
 #. type: itemize
-#: anti.texi.orig:109
+#: original_texis/anti.texi:109
 msgid ""
 "Several VC features have been removed, including the @kbd{C-x v +} and "
 "@kbd{C-x v m} commands for pulling and merging on distributed version "
 "control systems, and the ability to view inline log entries in the log "
 "buffers made by @kbd{C-x v L}."
-msgstr "配付版のバージョンコントロールシステムでプル(@kbd{C-x v +})やマージ(@kbd{C-x v m})を行なうコマンドを含め、いくつかのVC機能は削除され、@kbd{C-x v L}で作成されるログバッファーのログエントリーをインラインで閲覧する機能も削除されました。"
+msgstr ""
+"配付版のバージョンコントロールシステムでプル(@kbd{C-x v +})やマージ(@kbd{C-x "
+"v m})を行なうコマンドを含め、いくつかのVC機能は削除され、@kbd{C-x v L}で作成"
+"されるログバッファーのログエントリーをインラインで閲覧する機能も削除されまし"
+"た。"
 
 #. type: itemize
-#: anti.texi.orig:113
+#: original_texis/anti.texi:113
 msgid ""
 "To keep up with decreasing computer memory capacity and disk space, many "
 "other functions and files have been eliminated in Emacs 23.4."
-msgstr "Emacs 23.4では、コンピューターのメモリー容量とディスク容量を削減して、良好な状態に保つために、その他多くの機能とファイルが削除されました。"
+msgstr ""
+"Emacs 23.4では、コンピューターのメモリー容量とディスク容量を削減して、良好な"
+"状態に保つために、その他多くの機能とファイルが削除されました。"

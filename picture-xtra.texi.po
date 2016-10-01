@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-02-14 18:32+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,73 +16,88 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
-#: picture-xtra.texi.orig:7
+#: original_texis/picture-xtra.texi:7
 #, no-wrap
 msgid "Picture Mode"
 msgstr "Picture Mode"
 
 #. type: section
-#: picture-xtra.texi.orig:8
+#: original_texis/picture-xtra.texi:8
 #, no-wrap
 msgid "Editing Pictures"
 msgstr "Editing Pictures"
 
 #. type: cindex
-#: picture-xtra.texi.orig:9
+#: original_texis/picture-xtra.texi:9
 #, no-wrap
 msgid "pictures"
 msgstr "pictures"
 
 #. type: cindex
-#: picture-xtra.texi.orig:10
+#: original_texis/picture-xtra.texi:10
 #, no-wrap
 msgid "making pictures out of text characters"
 msgstr "making pictures out of text characters"
 
 #. type: findex
-#: picture-xtra.texi.orig:11
+#: original_texis/picture-xtra.texi:11
 #, no-wrap
 msgid "picture-mode"
 msgstr "picture-mode"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:16
+#: original_texis/picture-xtra.texi:16
 msgid ""
 "To edit a picture made out of text characters (for example, a picture of the "
 "division of a register into fields, as a comment in a program), use the "
 "command @kbd{M-x picture-mode} to enter Picture mode."
-msgstr "テキスト文字で作られたピクチャー(たとえばプログラムのコメントにあるような、レジスターをフィールドに分割したピクチャーなど)を編集するには、コマンド@kbd{M-x picture-mode}を使用してPictureモードに入ります。"
+msgstr ""
+"テキスト文字で作られたピクチャー(たとえばプログラムのコメントにあるような、レ"
+"ジスターをフィールドに分割したピクチャーなど)を編集するには、コマンド@kbd{M-"
+"x picture-mode}を使用してPictureモードに入ります。"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:22
+#: original_texis/picture-xtra.texi:22
 msgid ""
 "In Picture mode, editing is based on the @dfn{quarter-plane} model of text, "
 "according to which the text characters lie studded on an area that stretches "
 "infinitely far to the right and downward.  The concept of the end of a line "
 "does not exist in this model; the most you can say is where the last "
 "nonblank character on the line is found."
-msgstr "Pictureモードでは、編集はテキストの@dfn{quarter-plane(1/4平面)}モデルにもとづき、テキスト文字は、右方および下方に無限に広がる領域に点在します。このモデルには、行の終端という概念は存在しません。せいぜい言えるのは、その行の空白でない最後の文字がどこにあるかぐらいです。"
+msgstr ""
+"Pictureモードでは、編集はテキストの@dfn{quarter-plane(1/4平面)}モデルにもとづ"
+"き、テキスト文字は、右方および下方に無限に広がる領域に点在します。このモデル"
+"には、行の終端という概念は存在しません。せいぜい言えるのは、その行の空白でな"
+"い最後の文字がどこにあるかぐらいです。"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:28
+#: original_texis/picture-xtra.texi:28
 msgid ""
 "Of course, Emacs really always considers text as a sequence of characters, "
 "and lines really do have ends.  But Picture mode replaces the most "
 "frequently-used commands with variants that simulate the quarter-plane model "
 "of text.  They do this by inserting spaces or by converting tabs to spaces."
-msgstr "もちろん、実際にはEmacsはテキストを文字シーケンスとして考え、行は終端をもちます。しかしPictureモードは、もっともよく使われるコマンドを、テキストのquarter-planeモデルをシミュレートする変種に置き換えます。これらのコマンドはスペースの挿入、またはタブをスペースに置き換えることにより、これを行ないます。"
+msgstr ""
+"もちろん、実際にはEmacsはテキストを文字シーケンスとして考え、行は終端をもちま"
+"す。しかしPictureモードは、もっともよく使われるコマンドを、テキストのquarter-"
+"planeモデルをシミュレートする変種に置き換えます。これらのコマンドはスペースの"
+"挿入、またはタブをスペースに置き換えることにより、これを行ないます。"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:33
+#: original_texis/picture-xtra.texi:33
 msgid ""
 "Most of the basic editing commands of Emacs are redefined by Picture mode to "
 "do essentially the same thing but in a quarter-plane way.  In addition, "
 "Picture mode defines various keys starting with the @kbd{C-c} prefix to run "
 "special picture editing commands."
-msgstr "Emacsのほとんどの基本的な編集コマンドは、本質的には同等なことをquarter-planeの方法で行なうように、Pictureモードにより再定義されます。それに加えてPictureモードは、@kbd{C-c}プレフィクスで始まる、特別なピクチャー編集コマンドを実行する、さまざまなキーを定義します。"
+msgstr ""
+"Emacsのほとんどの基本的な編集コマンドは、本質的には同等なことをquarter-plane"
+"の方法で行なうように、Pictureモードにより再定義されます。それに加えてPicture"
+"モードは、@kbd{C-c}プレフィクスで始まる、特別なピクチャー編集コマンドを実行す"
+"る、さまざまなキーを定義します。"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:41
+#: original_texis/picture-xtra.texi:41
 msgid ""
 "One of these keys, @kbd{C-c C-c}, is particularly important.  Often a "
 "picture is part of a larger file that is usually edited in some other major "
@@ -90,114 +105,127 @@ msgid ""
 "use the @kbd{C-c C-c} command (@code{picture-mode-exit}) later to go back to "
 "that mode.  @kbd{C-c C-c} also deletes spaces from the ends of lines, unless "
 "given a numeric argument."
-msgstr "これらのキーのうち特に重要なのは@kbd{C-c C-c}です。ピクチャーが、通常は他のメジャーモードで編集する、大きなファイルの一部ということもあります。Pictureモードは以前のメジャーモードを記録するので、後で@kbd{C-c C-c} (@code{picture-mode-exit})コマンドでそのモードに戻ることができます。@kbd{C-c C-c}は数引数を与えなければ、行末のスペースの削除も行ないます。"
+msgstr ""
+"これらのキーのうち特に重要なのは@kbd{C-c C-c}です。ピクチャーが、通常は他のメ"
+"ジャーモードで編集する、大きなファイルの一部ということもあります。Pictureモー"
+"ドは以前のメジャーモードを記録するので、後で@kbd{C-c C-c} (@code{picture-"
+"mode-exit})コマンドでそのモードに戻ることができます。@kbd{C-c C-c}は数引数を"
+"与えなければ、行末のスペースの削除も行ないます。"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:47
+#: original_texis/picture-xtra.texi:47
 msgid ""
 "The special commands of Picture mode all work in other modes (provided the "
 "@file{picture} library is loaded), but are not bound to keys except in "
 "Picture mode.  The descriptions below talk of moving ``one column'' and so "
 "on, but all the picture mode commands handle numeric arguments as their "
 "normal equivalents do."
-msgstr "Pictureモードの特別なコマンドのすべては、(@file{picture}ライブラリーがロードされていれば)他のモードでも機能しますが、Pictureモード以外ではキーにバインドされません。以下の説明では、``1列''移動...のような言い方をしますが、通常の同等なコマンドと同じように、Pictureモードのコマンドは数引数を扱うことができます。"
+msgstr ""
+"Pictureモードの特別なコマンドのすべては、(@file{picture}ライブラリーがロード"
+"されていれば)他のモードでも機能しますが、Pictureモード以外ではキーにバインド"
+"されません。以下の説明では、``1列''移動...のような言い方をしますが、通常の同"
+"等なコマンドと同じように、Pictureモードのコマンドは数引数を扱うことができま"
+"す。"
 
 #. type: vindex
-#: picture-xtra.texi.orig:48
+#: original_texis/picture-xtra.texi:48
 #, no-wrap
 msgid "picture-mode-hook"
 msgstr "picture-mode-hook"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:52
+#: original_texis/picture-xtra.texi:52
 msgid ""
 "Turning on Picture mode runs the hook @code{picture-mode-hook}.  Additional "
 "extensions to Picture mode can be found in @file{artist.el}."
-msgstr "Pictureモードをオンにすることにより、フック@code{picture-mode-hook}が実行されます。Pictureモードにたいする追加の拡張は、@file{artist.el}で見ることができます。"
+msgstr ""
+"Pictureモードをオンにすることにより、フック@code{picture-mode-hook}が実行され"
+"ます。Pictureモードにたいする追加の拡張は、@file{artist.el}で見ることができま"
+"す。"
 
 #. type: node
-#: picture-xtra.texi.orig:59 picture-xtra.texi.orig:61
+#: original_texis/picture-xtra.texi:59 original_texis/picture-xtra.texi:61
 #, no-wrap
 msgid "Basic Picture"
 msgstr "Basic Picture"
 
 #. type: menuentry
-#: picture-xtra.texi.orig:59
+#: original_texis/picture-xtra.texi:59
 msgid "Basic concepts and simple commands of Picture Mode."
 msgstr "Pictureモードの基本概念と簡単なコマンド。"
 
 #. type: node
-#: picture-xtra.texi.orig:59 picture-xtra.texi.orig:127
+#: original_texis/picture-xtra.texi:59 original_texis/picture-xtra.texi:127
 #, no-wrap
 msgid "Insert in Picture"
 msgstr "Insert in Picture"
 
 #. type: menuentry
-#: picture-xtra.texi.orig:59
+#: original_texis/picture-xtra.texi:59
 msgid ""
 "Controlling direction of cursor motion after \"self-inserting\" characters."
 msgstr "自己挿入文字の後のカーソル移動方向の制御。"
 
 #. type: node
-#: picture-xtra.texi.orig:59 picture-xtra.texi.orig:191
+#: original_texis/picture-xtra.texi:59 original_texis/picture-xtra.texi:191
 #, no-wrap
 msgid "Tabs in Picture"
 msgstr "Tabs in Picture"
 
 #. type: menuentry
-#: picture-xtra.texi.orig:59
+#: original_texis/picture-xtra.texi:59
 msgid "Various features for tab stops and indentation."
 msgstr "タブストップとインデントにたいするさまざまな機能。"
 
 #. type: node
-#: picture-xtra.texi.orig:59 picture-xtra.texi.orig:231
+#: original_texis/picture-xtra.texi:59 original_texis/picture-xtra.texi:231
 #, no-wrap
 msgid "Rectangles in Picture"
 msgstr "Rectangles in Picture"
 
 #. type: menuentry
-#: picture-xtra.texi.orig:59
+#: original_texis/picture-xtra.texi:59
 msgid "Clearing and superimposing rectangles."
 msgstr "矩形領域のクリアーと重ね合わせ。"
 
 #. type: subsection
-#: picture-xtra.texi.orig:62
+#: original_texis/picture-xtra.texi:62
 #, no-wrap
 msgid "Basic Editing in Picture Mode"
 msgstr "Basic Editing in Picture Mode"
 
 #. type: findex
-#: picture-xtra.texi.orig:64
+#: original_texis/picture-xtra.texi:64
 #, no-wrap
 msgid "picture-forward-column"
 msgstr "picture-forward-column"
 
 #. type: findex
-#: picture-xtra.texi.orig:65
+#: original_texis/picture-xtra.texi:65
 #, no-wrap
 msgid "picture-backward-column"
 msgstr "picture-backward-column"
 
 #. type: findex
-#: picture-xtra.texi.orig:66
+#: original_texis/picture-xtra.texi:66
 #, no-wrap
 msgid "picture-move-down"
 msgstr "picture-move-down"
 
 #. type: findex
-#: picture-xtra.texi.orig:67
+#: original_texis/picture-xtra.texi:67
 #, no-wrap
 msgid "picture-move-up"
 msgstr "picture-move-up"
 
 #. type: cindex
-#: picture-xtra.texi.orig:68
+#: original_texis/picture-xtra.texi:68
 #, no-wrap
 msgid "editing in Picture mode"
 msgstr "editing in Picture mode"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:85
+#: original_texis/picture-xtra.texi:85
 msgid ""
 "Most keys do the same thing in Picture mode that they usually do, but do it "
 "in a quarter-plane style.  For example, @kbd{C-f} is rebound to run "
@@ -213,60 +241,76 @@ msgid ""
 "beginning-of-line}.  (The choice of screen model does not affect beginnings "
 "of lines; the only extra thing this command does is update the current "
 "picture column to 0.)"
-msgstr "ほとんどのキーは、Pictureモードでも通常と同じことを、quarter-planeスタイルで行ないます。たとえば@kbd{C-f}は、@code{picture-forward-column}を実行するようにリバインドされます。これはポイントを1列右に移動します。必要ならスペースを挿入するので実際の行末は関係ありません。@kbd{C-b}は、@code{picture-backward-column}を実行するようにリバインドされます。必要ならタブを複数のスペースに変換して、常に1列ポイントを左に移動します。@kbd{C-n}と@kbd{C-p}は、@code{picture-move-down}と@code{picture-move-up}を実行するようにリバインドされ、どちらもポイントが同じ列に留まるように、必要に応じてスペースの挿入とタブの変換を行ないます。@kbd{C-e}は、@code{picture-end-of-line}を実行します。これは、その行の最後の非空白文字の後に移動します。@kbd{C-a}は、@code{picture-beginning-of-line}を実行します(スクリーンモデルの選択は行の開始に影響を与えません。このコマンドが行なう追加事項は、カレントピクチャー列を0に更新することです)。"
+msgstr ""
+"ほとんどのキーは、Pictureモードでも通常と同じことを、quarter-planeスタイルで"
+"行ないます。たとえば@kbd{C-f}は、@code{picture-forward-column}を実行するよう"
+"にリバインドされます。これはポイントを1列右に移動します。必要ならスペースを挿"
+"入するので実際の行末は関係ありません。@kbd{C-b}は、@code{picture-backward-"
+"column}を実行するようにリバインドされます。必要ならタブを複数のスペースに変換"
+"して、常に1列ポイントを左に移動します。@kbd{C-n}と@kbd{C-p}は、@code{picture-"
+"move-down}と@code{picture-move-up}を実行するようにリバインドされ、どちらもポ"
+"イントが同じ列に留まるように、必要に応じてスペースの挿入とタブの変換を行ない"
+"ます。@kbd{C-e}は、@code{picture-end-of-line}を実行します。これは、その行の最"
+"後の非空白文字の後に移動します。@kbd{C-a}は、@code{picture-beginning-of-line}"
+"を実行します(スクリーンモデルの選択は行の開始に影響を与えません。このコマンド"
+"が行なう追加事項は、カレントピクチャー列を0に更新することです)。"
 
 #. type: findex
-#: picture-xtra.texi.orig:86
+#: original_texis/picture-xtra.texi:86
 #, no-wrap
 msgid "picture-newline"
 msgstr "picture-newline"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:89
+#: original_texis/picture-xtra.texi:89
 msgid ""
 "Insertion of text is adapted to the quarter-plane screen model through the "
 "use of Overwrite mode"
-msgstr "テキストの挿入は、Overwriteモードを通じてquarter-planeモデルに適合されます"
+msgstr ""
+"テキストの挿入は、Overwriteモードを通じてquarter-planeモデルに適合されます"
 
 #. type: iftex
-#: picture-xtra.texi.orig:91
+#: original_texis/picture-xtra.texi:91
 msgid "(@pxref{Minor Modes,,, emacs, the Emacs Manual}.)"
 msgstr "(@ref{Minor Modes,,, emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: picture-xtra.texi.orig:94
+#: original_texis/picture-xtra.texi:94
 msgid "(@pxref{Minor Modes}.)"
 msgstr "(@ref{Minor Modes}を参照してください)。"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:99
+#: original_texis/picture-xtra.texi:99
 msgid ""
 "Self-inserting characters replace existing text, column by column, rather "
 "than pushing existing text to the right.  @key{RET} runs @code{picture-"
 "newline}, which just moves to the beginning of the following line so that "
 "new text will replace that line."
-msgstr "自己挿入文字は既存のテキストを右にずらすのではなく、列ごとに既存のテキストを置き換えます。@key{RET}は@code{picture-newline}を実行し、これは単に次の行の先頭に移動するので、新しいテキストでその行を置き換えることができます。"
+msgstr ""
+"自己挿入文字は既存のテキストを右にずらすのではなく、列ごとに既存のテキストを"
+"置き換えます。@key{RET}は@code{picture-newline}を実行し、これは単に次の行の先"
+"頭に移動するので、新しいテキストでその行を置き換えることができます。"
 
 #. type: findex
-#: picture-xtra.texi.orig:100
+#: original_texis/picture-xtra.texi:100
 #, no-wrap
 msgid "picture-backward-clear-column"
 msgstr "picture-backward-clear-column"
 
 #. type: findex
-#: picture-xtra.texi.orig:101
+#: original_texis/picture-xtra.texi:101
 #, no-wrap
 msgid "picture-clear-column"
 msgstr "picture-clear-column"
 
 #. type: findex
-#: picture-xtra.texi.orig:102
+#: original_texis/picture-xtra.texi:102
 #, no-wrap
 msgid "picture-clear-line"
 msgstr "picture-clear-line"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:112
+#: original_texis/picture-xtra.texi:112
 msgid ""
 "In Picture mode, the commands that normally delete or kill text, instead "
 "erase text (replacing it with spaces).  @key{DEL} (@code{picture-backward-"
@@ -277,353 +321,377 @@ msgid ""
 "over them, use @key{SPC}.)  @kbd{C-k} (@code{picture-clear-line}) really "
 "kills the contents of lines, but does not delete the newlines from the "
 "buffer."
-msgstr "Pictureモードでは、通常は削除やkillを行なうコマンドは、かわりにテキストを消去(スペースで置き換え)します。@key{DEL} (@code{picture-backward-clear-column})は、前の文字を削除するのではなく、スペースで置き換えます。これはポイントを後方に移動します。@kbd{C-d} (@code{picture-clear-column})は、次の文字をスペースで置き換えますが、ポイントは移動しません(文字をクリアーして前方に移動したいときは@key{SPC}を使用します)。@kbd{C-k} (@code{picture-clear-line})は、実際に行の内容をkillしますが、バッファーから改行は削除しません。"
+msgstr ""
+"Pictureモードでは、通常は削除やkillを行なうコマンドは、かわりにテキストを消去"
+"(スペースで置き換え)します。@key{DEL} (@code{picture-backward-clear-column})"
+"は、前の文字を削除するのではなく、スペースで置き換えます。これはポイントを後"
+"方に移動します。@kbd{C-d} (@code{picture-clear-column})は、次の文字をスペース"
+"で置き換えますが、ポイントは移動しません(文字をクリアーして前方に移動したいと"
+"きは@key{SPC}を使用します)。@kbd{C-k} (@code{picture-clear-line})は、実際に行"
+"の内容をkillしますが、バッファーから改行は削除しません。"
 
 #. type: findex
-#: picture-xtra.texi.orig:113
+#: original_texis/picture-xtra.texi:113
 #, no-wrap
 msgid "picture-open-line"
 msgstr "picture-open-line"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:120
+#: original_texis/picture-xtra.texi:120
 msgid ""
 "To do actual insertion, you must use special commands.  @kbd{C-o} "
 "(@code{picture-open-line}) creates a blank line after the current line; it "
 "never splits a line.  @kbd{C-M-o} (@code{split-line}) makes sense in Picture "
 "mode, so it is not changed.  @kbd{C-j} (@code{picture-duplicate-line}) "
 "inserts another line with the same contents below the current line."
-msgstr "実際に挿入を行なうには、特別なコマンドを使わなければなりません。@kbd{C-o} (@code{picture-open-line})は、カレント行の後に空行を作成します。行の分割はしません。Pictureモードでも@kbd{C-M-o} (@code{split-line})は意味があるので、変更されていません。@kbd{C-j} (@code{picture-duplicate-line})は、カレント行の下に同じ内容の行を挿入します。"
+msgstr ""
+"実際に挿入を行なうには、特別なコマンドを使わなければなりません。@kbd{C-o} "
+"(@code{picture-open-line})は、カレント行の後に空行を作成します。行の分割はし"
+"ません。Pictureモードでも@kbd{C-M-o} (@code{split-line})は意味があるので、変"
+"更されていません。@kbd{C-j} (@code{picture-duplicate-line})は、カレント行の下"
+"に同じ内容の行を挿入します。"
 
 #. type: kindex
-#: picture-xtra.texi.orig:121
+#: original_texis/picture-xtra.texi:121
 #, no-wrap
 msgid "C-c C-d @r{(Picture mode)}"
 msgstr "C-c C-d @r{(Picture mode)}"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:126
+#: original_texis/picture-xtra.texi:126
 msgid ""
 "To do actual deletion in Picture mode, use @kbd{C-w}, @kbd{C-c C-d} (which "
 "is defined as @code{delete-char}, as @kbd{C-d} is in other modes), or one of "
 "the picture rectangle commands (@pxref{Rectangles in Picture})."
-msgstr "Pictureモードで実際の削除を行なうには、@kbd{C-w}、@kbd{C-c C-d}(これは他のモードでは@kbd{C-d}にバインドされている@code{delete-char}にバインドされています)、またはピクチャー矩形コマンドの1つを使用します(@ref{Rectangles in Picture}を参照してください)。"
+msgstr ""
+"Pictureモードで実際の削除を行なうには、@kbd{C-w}、@kbd{C-c C-d}(これは他の"
+"モードでは@kbd{C-d}にバインドされている@code{delete-char}にバインドされていま"
+"す)、またはピクチャー矩形コマンドの1つを使用します(@ref{Rectangles in "
+"Picture}を参照してください)。"
 
 #. type: subsection
-#: picture-xtra.texi.orig:128
+#: original_texis/picture-xtra.texi:128
 #, no-wrap
 msgid "Controlling Motion after Insert"
 msgstr "Controlling Motion after Insert"
 
 #. type: findex
-#: picture-xtra.texi.orig:130
+#: original_texis/picture-xtra.texi:130
 #, no-wrap
 msgid "picture-movement-up"
 msgstr "picture-movement-up"
 
 #. type: findex
-#: picture-xtra.texi.orig:131
+#: original_texis/picture-xtra.texi:131
 #, no-wrap
 msgid "picture-movement-down"
 msgstr "picture-movement-down"
 
 #. type: findex
-#: picture-xtra.texi.orig:132
+#: original_texis/picture-xtra.texi:132
 #, no-wrap
 msgid "picture-movement-left"
 msgstr "picture-movement-left"
 
 #. type: findex
-#: picture-xtra.texi.orig:133
+#: original_texis/picture-xtra.texi:133
 #, no-wrap
 msgid "picture-movement-right"
 msgstr "picture-movement-right"
 
 #. type: findex
-#: picture-xtra.texi.orig:134
+#: original_texis/picture-xtra.texi:134
 #, no-wrap
 msgid "picture-movement-nw"
 msgstr "picture-movement-nw"
 
 #. type: findex
-#: picture-xtra.texi.orig:135
+#: original_texis/picture-xtra.texi:135
 #, no-wrap
 msgid "picture-movement-ne"
 msgstr "picture-movement-ne"
 
 #. type: findex
-#: picture-xtra.texi.orig:136
+#: original_texis/picture-xtra.texi:136
 #, no-wrap
 msgid "picture-movement-sw"
 msgstr "picture-movement-sw"
 
 #. type: findex
-#: picture-xtra.texi.orig:137
+#: original_texis/picture-xtra.texi:137
 #, no-wrap
 msgid "picture-movement-se"
 msgstr "picture-movement-se"
 
 #. type: kindex
-#: picture-xtra.texi.orig:138
+#: original_texis/picture-xtra.texi:138
 #, no-wrap
 msgid "C-c < @r{(Picture mode)}"
 msgstr "C-c < @r{(Picture mode)}"
 
 #. type: kindex
-#: picture-xtra.texi.orig:139
+#: original_texis/picture-xtra.texi:139
 #, no-wrap
 msgid "C-c > @r{(Picture mode)}"
 msgstr "C-c > @r{(Picture mode)}"
 
 #. type: kindex
-#: picture-xtra.texi.orig:140
+#: original_texis/picture-xtra.texi:140
 #, no-wrap
 msgid "C-c ^ @r{(Picture mode)}"
 msgstr "C-c ^ @r{(Picture mode)}"
 
 #. type: kindex
-#: picture-xtra.texi.orig:141
+#: original_texis/picture-xtra.texi:141
 #, no-wrap
 msgid "C-c . @r{(Picture mode)}"
 msgstr "C-c . @r{(Picture mode)}"
 
 #. type: kindex
-#: picture-xtra.texi.orig:142
+#: original_texis/picture-xtra.texi:142
 #, no-wrap
 msgid "C-c ` @r{(Picture mode)}"
 msgstr "C-c ` @r{(Picture mode)}"
 
 #. type: kindex
-#: picture-xtra.texi.orig:143
+#: original_texis/picture-xtra.texi:143
 #, no-wrap
 msgid "C-c ' @r{(Picture mode)}"
 msgstr "C-c ' @r{(Picture mode)}"
 
 #. type: kindex
-#: picture-xtra.texi.orig:144
+#: original_texis/picture-xtra.texi:144
 #, no-wrap
 msgid "C-c / @r{(Picture mode)}"
 msgstr "C-c / @r{(Picture mode)}"
 
 #. type: kindex
-#: picture-xtra.texi.orig:145
+#: original_texis/picture-xtra.texi:145
 #, no-wrap
 msgid "C-c \\ @r{(Picture mode)}"
 msgstr "C-c \\ @r{(Picture mode)}"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:151
+#: original_texis/picture-xtra.texi:151
 msgid ""
 "Since ``self-inserting'' characters in Picture mode overwrite and move "
 "point, there is no essential restriction on how point should be moved.  "
 "Normally point moves right, but you can specify any of the eight orthogonal "
 "or diagonal directions for motion after a ``self-inserting'' character.  "
 "This is useful for drawing lines in the buffer."
-msgstr "Pictureモードでは、``自己挿入''文字は上書きとポイント移動を行なうので、ポイントを移動する方法に、本質的に制限はありません。ポイントは通常右に移動しますが、``自己挿入''文字の後に移動する方向は、直行方向と対角方向の8つのうちから任意の方向を指定できます。これはバッファーに線を描くとき便利です。"
+msgstr ""
+"Pictureモードでは、``自己挿入''文字は上書きとポイント移動を行なうので、ポイン"
+"トを移動する方法に、本質的に制限はありません。ポイントは通常右に移動します"
+"が、``自己挿入''文字の後に移動する方向は、直行方向と対角方向の8つのうちから任"
+"意の方向を指定できます。これはバッファーに線を描くとき便利です。"
 
 #. type: item
-#: picture-xtra.texi.orig:153
+#: original_texis/picture-xtra.texi:153
 #, no-wrap
 msgid "C-c <"
 msgstr "C-c <"
 
 #. type: itemx
-#: picture-xtra.texi.orig:154
+#: original_texis/picture-xtra.texi:154
 #, no-wrap
 msgid "C-c @key{LEFT}"
 msgstr "C-c @key{LEFT}"
 
 #. type: table
-#: picture-xtra.texi.orig:156
+#: original_texis/picture-xtra.texi:156
 msgid "Move left after insertion (@code{picture-movement-left})."
 msgstr "挿入の後、左に移動します(@code{picture-movement-left})。"
 
 #. type: item
-#: picture-xtra.texi.orig:156
+#: original_texis/picture-xtra.texi:156
 #, no-wrap
 msgid "C-c >"
 msgstr "C-c >"
 
 #. type: itemx
-#: picture-xtra.texi.orig:157
+#: original_texis/picture-xtra.texi:157
 #, no-wrap
 msgid "C-c @key{RIGHT}"
 msgstr "C-c @key{RIGHT}"
 
 #. type: table
-#: picture-xtra.texi.orig:159
+#: original_texis/picture-xtra.texi:159
 msgid "Move right after insertion (@code{picture-movement-right})."
 msgstr "挿入の後、右に移動します(@code{picture-movement-right})。"
 
 #. type: item
-#: picture-xtra.texi.orig:159
+#: original_texis/picture-xtra.texi:159
 #, no-wrap
 msgid "C-c ^"
 msgstr "C-c ^"
 
 #. type: itemx
-#: picture-xtra.texi.orig:160
+#: original_texis/picture-xtra.texi:160
 #, no-wrap
 msgid "C-c @key{UP}"
 msgstr "C-c @key{UP}"
 
 #. type: table
-#: picture-xtra.texi.orig:162
+#: original_texis/picture-xtra.texi:162
 msgid "Move up after insertion (@code{picture-movement-up})."
 msgstr "挿入の後、上に移動します(@code{picture-movement-up})。"
 
 #. type: item
-#: picture-xtra.texi.orig:162
+#: original_texis/picture-xtra.texi:162
 #, no-wrap
 msgid "C-c ."
 msgstr "C-c ."
 
 #. type: itemx
-#: picture-xtra.texi.orig:163
+#: original_texis/picture-xtra.texi:163
 #, no-wrap
 msgid "C-c @key{DOWN}"
 msgstr "C-c @key{DOWN}"
 
 #. type: table
-#: picture-xtra.texi.orig:165
+#: original_texis/picture-xtra.texi:165
 msgid "Move down after insertion (@code{picture-movement-down})."
 msgstr "挿入の後、下に移動します(@code{picture-movement-down})。"
 
 #. type: item
-#: picture-xtra.texi.orig:165
+#: original_texis/picture-xtra.texi:165
 #, no-wrap
 msgid "C-c `"
 msgstr "C-c `"
 
 #. type: itemx
-#: picture-xtra.texi.orig:166
+#: original_texis/picture-xtra.texi:166
 #, no-wrap
 msgid "C-c @key{Home}"
 msgstr "C-c @key{Home}"
 
 #. type: table
-#: picture-xtra.texi.orig:168
+#: original_texis/picture-xtra.texi:168
 msgid ""
 "Move up and left (``northwest'') after insertion (@code{picture-movement-"
 "nw})."
 msgstr "挿入の後、左上(``北西'')に移動します(@code{picture-movement-nw})。"
 
 #. type: item
-#: picture-xtra.texi.orig:168
+#: original_texis/picture-xtra.texi:168
 #, no-wrap
 msgid "C-c '"
 msgstr "C-c '"
 
 #. type: itemx
-#: picture-xtra.texi.orig:169
+#: original_texis/picture-xtra.texi:169
 #, no-wrap
 msgid "C-c @key{prior}"
 msgstr "C-c @key{prior}"
 
 #. type: table
-#: picture-xtra.texi.orig:172
+#: original_texis/picture-xtra.texi:172
 msgid ""
 "Move up and right (``northeast'') after insertion (@code{picture-movement-"
 "ne})."
 msgstr "挿入の後、右上(``北東'')に移動します(@code{picture-movement-ne})。"
 
 #. type: item
-#: picture-xtra.texi.orig:172
+#: original_texis/picture-xtra.texi:172
 #, no-wrap
 msgid "C-c /"
 msgstr "C-c /"
 
 #. type: itemx
-#: picture-xtra.texi.orig:173
+#: original_texis/picture-xtra.texi:173
 #, no-wrap
 msgid "C-c @key{End}"
 msgstr "C-c @key{End}"
 
 #. type: table
-#: picture-xtra.texi.orig:176
+#: original_texis/picture-xtra.texi:176
 msgid ""
 "Move down and left (``southwest'') after insertion @*(@code{picture-movement-"
 "sw})."
 msgstr "挿入の後、左下(``南西'')に移動します(@code{picture-movement-sw})。"
 
 #. type: item
-#: picture-xtra.texi.orig:176
+#: original_texis/picture-xtra.texi:176
 #, no-wrap
 msgid "C-c \\"
 msgstr "C-c \\"
 
 #. type: itemx
-#: picture-xtra.texi.orig:177
+#: original_texis/picture-xtra.texi:177
 #, no-wrap
 msgid "C-c @key{next}"
 msgstr "C-c @key{next}"
 
 #. type: table
-#: picture-xtra.texi.orig:180
+#: original_texis/picture-xtra.texi:180
 msgid ""
 "Move down and right (``southeast'') after insertion @*(@code{picture-"
 "movement-se})."
 msgstr "挿入の後、右下(``南東'')に移動します(@code{picture-movement-se})。"
 
 #. type: kindex
-#: picture-xtra.texi.orig:182
+#: original_texis/picture-xtra.texi:182
 #, no-wrap
 msgid "C-c C-f @r{(Picture mode)}"
 msgstr "C-c C-f @r{(Picture mode)}"
 
 #. type: kindex
-#: picture-xtra.texi.orig:183
+#: original_texis/picture-xtra.texi:183
 #, no-wrap
 msgid "C-c C-b @r{(Picture mode)}"
 msgstr "C-c C-b @r{(Picture mode)}"
 
 #. type: findex
-#: picture-xtra.texi.orig:184
+#: original_texis/picture-xtra.texi:184
 #, no-wrap
 msgid "picture-motion"
 msgstr "picture-motion"
 
 #. type: findex
-#: picture-xtra.texi.orig:185
+#: original_texis/picture-xtra.texi:185
 #, no-wrap
 msgid "picture-motion-reverse"
 msgstr "picture-motion-reverse"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:190
+#: original_texis/picture-xtra.texi:190
 msgid ""
 "Two motion commands move based on the current Picture insertion direction.  "
 "The command @kbd{C-c C-f} (@code{picture-motion}) moves in the same "
 "direction as motion after ``insertion'' currently does, while @kbd{C-c C-b} "
 "(@code{picture-motion-reverse}) moves in the opposite direction."
-msgstr "カレントPicture挿入方向にもとづき移動を行なうコマンドは2つです。1つはコマンド@kbd{C-c C-f} (@code{picture-motion})で、その時点で``挿入''後に移動すると定められた方向と同じ方向に移動するのが@kbd{C-c C-f} (@code{picture-motion})で、逆方向へは@kbd{C-c C-b} (@code{picture-motion-reverse})です。"
+msgstr ""
+"カレントPicture挿入方向にもとづき移動を行なうコマンドは2つです。1つはコマンド"
+"@kbd{C-c C-f} (@code{picture-motion})で、その時点で``挿入''後に移動すると定め"
+"られた方向と同じ方向に移動するのが@kbd{C-c C-f} (@code{picture-motion})で、逆"
+"方向へは@kbd{C-c C-b} (@code{picture-motion-reverse})です。"
 
 #. type: subsection
-#: picture-xtra.texi.orig:192
+#: original_texis/picture-xtra.texi:192
 #, no-wrap
 msgid "Picture Mode Tabs"
 msgstr "Picture Mode Tabs"
 
 #. type: kindex
-#: picture-xtra.texi.orig:194
+#: original_texis/picture-xtra.texi:194
 #, no-wrap
 msgid "M-TAB @r{(Picture mode)}"
 msgstr "M-TAB @r{(Picture mode)}"
 
 #. type: findex
-#: picture-xtra.texi.orig:195
+#: original_texis/picture-xtra.texi:195
 #, no-wrap
 msgid "picture-tab-search"
 msgstr "picture-tab-search"
 
 #. type: vindex
-#: picture-xtra.texi.orig:196
+#: original_texis/picture-xtra.texi:196
 #, no-wrap
 msgid "picture-tab-chars"
 msgstr "picture-tab-chars"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:210
+#: original_texis/picture-xtra.texi:210
 msgid ""
 "Two kinds of tab-like action are provided in Picture mode.  Use @kbd{M-"
 "@key{TAB}} (@code{picture-tab-search}) for context-based tabbing.  With no "
@@ -637,37 +705,51 @@ msgid ""
 "set of characters.  The syntax for this variable is like the syntax used "
 "inside of @samp{[@dots{}]} in a regular expression---but without the "
 "@samp{[} and the @samp{]}.  Its default value is @code{\"!-~\"}."
-msgstr "Pictureモードでは、タブのような動作が2つ提供されます。コンテキストベースのタブ動作には、@kbd{M-@key{TAB}} (@code{picture-tab-search})を使用します。引数を与えないと、前の空でない行で、空白の後の次の``意味をもつ''文字の下にポイントを移動します。ここで``次''とは、``開始した位置から水平方向に大な位置''という意味です。@kbd{C-u M-@key{TAB}}のように引数を指定した場合、このコマンドはカレント行で次の意味のある文字に移動します。@kbd{M-@key{TAB}}はテキストを変更せず、ポイントだけを移動します。``意味のある''文字は変数@code{picture-tab-chars}により定義され、これは一連の文字で定義されます。この変数の構文は正規表現での@samp{[@dots{}]}の内側で使用される構文と似ていますが、@samp{[}と@samp{]}はありません。デフォルト値は@code{\"!-~\"}です。"
+msgstr ""
+"Pictureモードでは、タブのような動作が2つ提供されます。コンテキストベースのタ"
+"ブ動作には、@kbd{M-@key{TAB}} (@code{picture-tab-search})を使用します。引数を"
+"与えないと、前の空でない行で、空白の後の次の``意味をもつ''文字の下にポイント"
+"を移動します。ここで``次''とは、``開始した位置から水平方向に大な位置''という"
+"意味です。@kbd{C-u M-@key{TAB}}のように引数を指定した場合、このコマンドはカレ"
+"ント行で次の意味のある文字に移動します。@kbd{M-@key{TAB}}はテキストを変更せ"
+"ず、ポイントだけを移動します。``意味のある''文字は変数@code{picture-tab-"
+"chars}により定義され、これは一連の文字で定義されます。この変数の構文は正規表"
+"現での@samp{[@dots{}]}の内側で使用される構文と似ていますが、@samp{[}と"
+"@samp{]}はありません。デフォルト値は@code{\"!-~\"}です。"
 
 #. type: findex
-#: picture-xtra.texi.orig:211
+#: original_texis/picture-xtra.texi:211
 #, no-wrap
 msgid "picture-tab"
 msgstr "picture-tab"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:216
+#: original_texis/picture-xtra.texi:216
 msgid ""
 "@key{TAB} itself runs @code{picture-tab}, which operates based on the "
 "current tab stop settings; it is the Picture mode equivalent of @code{tab-to-"
 "tab-stop}.  Normally it just moves point, but with a numeric argument it "
 "clears the text that it moves over."
-msgstr "@key{TAB}は@code{picture-tab}を実行し、これはカレントのタブストップの設定にもとづき動作します。Pictureモードでは@code{tab-to-tab-stop}と等価です。通常はポイントを移動するだけですが、数引数を指定した場合は、移動先までのテキストをクリアーします。"
+msgstr ""
+"@key{TAB}は@code{picture-tab}を実行し、これはカレントのタブストップの設定にも"
+"とづき動作します。Pictureモードでは@code{tab-to-tab-stop}と等価です。通常はポ"
+"イントを移動するだけですが、数引数を指定した場合は、移動先までのテキストをク"
+"リアーします。"
 
 #. type: kindex
-#: picture-xtra.texi.orig:217
+#: original_texis/picture-xtra.texi:217
 #, no-wrap
 msgid "C-c TAB @r{(Picture mode)}"
 msgstr "C-c TAB @r{(Picture mode)}"
 
 #. type: findex
-#: picture-xtra.texi.orig:218
+#: original_texis/picture-xtra.texi:218
 #, no-wrap
 msgid "picture-set-tab-stops"
 msgstr "picture-set-tab-stops"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:225
+#: original_texis/picture-xtra.texi:225
 msgid ""
 "The context-based and tab-stop-based forms of tabbing are brought together "
 "by the command @kbd{C-c @key{TAB}} (@code{picture-set-tab-stops}).  This "
@@ -675,175 +757,202 @@ msgid ""
 "consider significant in the current line.  The use of this command, together "
 "with @key{TAB}, can get the effect of context-based tabbing.  But @kbd{M-"
 "@key{TAB}} is more convenient in the cases where it is sufficient."
-msgstr "コンテキストベースとタブストップベースのタブ動作形式は、@kbd{C-c @key{TAB}} (@code{picture-set-tab-stops})で合わせることができます。このコマンドは、カレント行にたいして、@kbd{M-@key{TAB}}が意味をもつと判断するであろう位置に、タブストップをセットします。このコマンドの使い方としては、@key{TAB}と合わせて、コンテキストベースの効果を得ることができます。しかし@kbd{M-@key{TAB}}で充分な場合は、そちらのほうが便利です。"
+msgstr ""
+"コンテキストベースとタブストップベースのタブ動作形式は、@kbd{C-c @key{TAB}} "
+"(@code{picture-set-tab-stops})で合わせることができます。このコマンドは、カレ"
+"ント行にたいして、@kbd{M-@key{TAB}}が意味をもつと判断するであろう位置に、タブ"
+"ストップをセットします。このコマンドの使い方としては、@key{TAB}と合わせて、コ"
+"ンテキストベースの効果を得ることができます。しかし@kbd{M-@key{TAB}}で充分な場"
+"合は、そちらのほうが便利です。"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:230
+#: original_texis/picture-xtra.texi:230
 msgid ""
 "It may be convenient to prevent use of actual tab characters in pictures.  "
 "For example, this prevents @kbd{C-x @key{TAB}} from messing up the picture.  "
 "You can do this by setting the variable @code{indent-tabs-mode} to "
 "@code{nil}."
-msgstr "ピクチャー内では、実際のタブ文字を抑止するほうが便利かもしれません。たとえば、これにより@kbd{C-x @key{TAB}}がピクチャーをめちゃくちゃにするのを防ぐことができます。変数@code{indent-tabs-mode}を@code{nil}にセットすることにより、これを行なうことができます。"
+msgstr ""
+"ピクチャー内では、実際のタブ文字を抑止するほうが便利かもしれません。たとえ"
+"ば、これにより@kbd{C-x @key{TAB}}がピクチャーをめちゃくちゃにするのを防ぐこと"
+"ができます。変数@code{indent-tabs-mode}を@code{nil}にセットすることにより、こ"
+"れを行なうことができます。"
 
 #. type: subsection
-#: picture-xtra.texi.orig:232
+#: original_texis/picture-xtra.texi:232
 #, no-wrap
 msgid "Picture Mode Rectangle Commands"
 msgstr "Picture Mode Rectangle Commands"
 
 #. type: cindex
-#: picture-xtra.texi.orig:233
+#: original_texis/picture-xtra.texi:233
 #, no-wrap
 msgid "rectangles and Picture mode"
 msgstr "rectangles and Picture mode"
 
 #. type: cindex
-#: picture-xtra.texi.orig:234
+#: original_texis/picture-xtra.texi:234
 #, no-wrap
 msgid "Picture mode and rectangles"
 msgstr "Picture mode and rectangles"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:239
+#: original_texis/picture-xtra.texi:239
 msgid ""
 "Picture mode defines commands for working on rectangular pieces of the text "
 "in ways that fit with the quarter-plane model.  The standard rectangle "
 "commands may also be useful."
-msgstr "Pictureモードは、quarter-planeモデルに適合する方法で、テキストの矩形部分に作用するコマンドを定義します。標準の矩形領域コマンドも便利でしょう"
+msgstr ""
+"Pictureモードは、quarter-planeモデルに適合する方法で、テキストの矩形部分に作"
+"用するコマンドを定義します。標準の矩形領域コマンドも便利でしょう"
 
 #. type: iftex
-#: picture-xtra.texi.orig:241
+#: original_texis/picture-xtra.texi:241
 msgid "@xref{Rectangles,,, emacs, the Emacs Manual}."
 msgstr "@ref{Rectangles,,, emacs, the Emacs Manual}を参照してください。"
 
 #. type: ifnottex
-#: picture-xtra.texi.orig:244
+#: original_texis/picture-xtra.texi:244
 msgid "@xref{Rectangles}."
 msgstr "@ref{Rectangles}を参照してください。"
 
 #. type: item
-#: picture-xtra.texi.orig:247
+#: original_texis/picture-xtra.texi:247
 #, no-wrap
 msgid "C-c C-k"
 msgstr "C-c C-k"
 
 #. type: table
-#: picture-xtra.texi.orig:251
+#: original_texis/picture-xtra.texi:251
 msgid ""
 "Clear out the region-rectangle with spaces (@code{picture-clear-"
 "rectangle}).  With a prefix argument, delete the text."
-msgstr "矩形領域をスペースでクリアーします(@code{picture-clear-rectangle})。プレフィクス引数を指定した場合、テキストを削除します。"
+msgstr ""
+"矩形領域をスペースでクリアーします(@code{picture-clear-rectangle})。プレフィ"
+"クス引数を指定した場合、テキストを削除します。"
 
 #. type: item
-#: picture-xtra.texi.orig:251
+#: original_texis/picture-xtra.texi:251
 #, no-wrap
 msgid "C-c C-w @var{r}"
 msgstr "C-c C-w @var{r}"
 
 #. type: table
-#: picture-xtra.texi.orig:254
+#: original_texis/picture-xtra.texi:254
 msgid ""
 "Similar, but save rectangle contents in register @var{r} first "
 "(@code{picture-clear-rectangle-to-register})."
-msgstr "同様ですが、最初にレジスター@var{r}に矩形領域の内容を保存します(@code{picture-clear-rectangle-to-register})。"
+msgstr ""
+"同様ですが、最初にレジスター@var{r}に矩形領域の内容を保存します"
+"(@code{picture-clear-rectangle-to-register})。"
 
 #. type: item
-#: picture-xtra.texi.orig:254
+#: original_texis/picture-xtra.texi:254
 #, no-wrap
 msgid "C-c C-y"
 msgstr "C-c C-y"
 
 #. type: table
-#: picture-xtra.texi.orig:258
+#: original_texis/picture-xtra.texi:258
 msgid ""
 "Copy last killed rectangle into the buffer by overwriting, with upper left "
 "corner at point (@code{picture-yank-rectangle}).  With argument, insert "
 "instead."
-msgstr "ポイント位置を左上隅として、最後にkillされた矩形領域をバッファーに上書きコピーします。引数を指定した場合は、上書きではなく挿入します。"
+msgstr ""
+"ポイント位置を左上隅として、最後にkillされた矩形領域をバッファーに上書きコ"
+"ピーします。引数を指定した場合は、上書きではなく挿入します。"
 
 #. type: item
-#: picture-xtra.texi.orig:258
+#: original_texis/picture-xtra.texi:258
 #, no-wrap
 msgid "C-c C-x @var{r}"
 msgstr "C-c C-x @var{r}"
 
 #. type: table
-#: picture-xtra.texi.orig:261
+#: original_texis/picture-xtra.texi:261
 msgid ""
 "Similar, but use the rectangle in register @var{r} (@code{picture-yank-"
 "rectangle-from-register})."
-msgstr "同様ですが、レジスター@var{r}の矩形領域を使用します(@code{picture-yank-rectangle-from-register})。"
+msgstr ""
+"同様ですが、レジスター@var{r}の矩形領域を使用します(@code{picture-yank-"
+"rectangle-from-register})。"
 
 #. type: kindex
-#: picture-xtra.texi.orig:263
+#: original_texis/picture-xtra.texi:263
 #, no-wrap
 msgid "C-c C-k @r{(Picture mode)}"
 msgstr "C-c C-k @r{(Picture mode)}"
 
 #. type: kindex
-#: picture-xtra.texi.orig:264
+#: original_texis/picture-xtra.texi:264
 #, no-wrap
 msgid "C-c C-w @r{(Picture mode)}"
 msgstr "C-c C-w @r{(Picture mode)}"
 
 #. type: findex
-#: picture-xtra.texi.orig:265
+#: original_texis/picture-xtra.texi:265
 #, no-wrap
 msgid "picture-clear-rectangle"
 msgstr "picture-clear-rectangle"
 
 #. type: findex
-#: picture-xtra.texi.orig:266
+#: original_texis/picture-xtra.texi:266
 #, no-wrap
 msgid "picture-clear-rectangle-to-register"
 msgstr "picture-clear-rectangle-to-register"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:273
+#: original_texis/picture-xtra.texi:273
 msgid ""
 "The picture rectangle commands @kbd{C-c C-k} (@code{picture-clear-"
 "rectangle}) and @kbd{C-c C-w} (@code{picture-clear-rectangle-to-register}) "
 "differ from the standard rectangle commands in that they normally clear the "
 "rectangle instead of deleting it; this is analogous with the way @kbd{C-d} "
 "is changed in Picture mode."
-msgstr "ピクチャー矩形領域コマンドの@kbd{C-c C-k} (@code{picture-clear-rectangle})と@kbd{C-c C-w} (@code{picture-clear-rectangle-to-register})が、標準の矩形領域コマンドと異なる点は、通常は矩形領域を削除するかわりにクリアーすることです。これはPictureモードで@kbd{C-d}が変更された方法と類似しています。"
+msgstr ""
+"ピクチャー矩形領域コマンドの@kbd{C-c C-k} (@code{picture-clear-rectangle})と"
+"@kbd{C-c C-w} (@code{picture-clear-rectangle-to-register})が、標準の矩形領域"
+"コマンドと異なる点は、通常は矩形領域を削除するかわりにクリアーすることです。"
+"これはPictureモードで@kbd{C-d}が変更された方法と類似しています。"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:278
+#: original_texis/picture-xtra.texi:278
 msgid ""
 "However, deletion of rectangles can be useful in Picture mode, so these "
 "commands delete the rectangle if given a numeric argument.  @kbd{C-c C-k} "
 "either with or without a numeric argument saves the rectangle for @kbd{C-c C-"
 "y}."
-msgstr "しかしPictureモードで矩形領域を削除するのが便利なときもあるかもしれないので、これらのコマンドは数引数を与えたときは矩形領域を削除します。数引数の指定の有無に関わらず、@kbd{C-c C-k}は@kbd{C-c C-y}のために矩形領域を保存します。"
+msgstr ""
+"しかしPictureモードで矩形領域を削除するのが便利なときもあるかもしれないので、"
+"これらのコマンドは数引数を与えたときは矩形領域を削除します。数引数の指定の有"
+"無に関わらず、@kbd{C-c C-k}は@kbd{C-c C-y}のために矩形領域を保存します。"
 
 #. type: kindex
-#: picture-xtra.texi.orig:279
+#: original_texis/picture-xtra.texi:279
 #, no-wrap
 msgid "C-c C-y @r{(Picture mode)}"
 msgstr "C-c C-y @r{(Picture mode)}"
 
 #. type: kindex
-#: picture-xtra.texi.orig:280
+#: original_texis/picture-xtra.texi:280
 #, no-wrap
 msgid "C-c C-x @r{(Picture mode)}"
 msgstr "C-c C-x @r{(Picture mode)}"
 
 #. type: findex
-#: picture-xtra.texi.orig:281
+#: original_texis/picture-xtra.texi:281
 #, no-wrap
 msgid "picture-yank-rectangle"
 msgstr "picture-yank-rectangle"
 
 #. type: findex
-#: picture-xtra.texi.orig:282
+#: original_texis/picture-xtra.texi:282
 #, no-wrap
 msgid "picture-yank-rectangle-from-register"
 msgstr "picture-yank-rectangle-from-register"
 
 #. type: Plain text
-#: picture-xtra.texi.orig:289
+#: original_texis/picture-xtra.texi:289
 msgid ""
 "The Picture mode commands for yanking rectangles differ from the standard "
 "ones in that they overwrite instead of inserting.  This is the same way that "
@@ -852,4 +961,10 @@ msgid ""
 "that was most recently killed, while @kbd{C-c C-x} (@code{picture-yank-"
 "rectangle-from-register}) does likewise for the rectangle found in a "
 "specified register."
-msgstr "矩形領域をyankするPictureモードのコマンドは、挿入ではなく上書きするという点で、標準の矩形領域コマンドと異なります。これはPictureモードでのテキストの挿入方法が他のモードと異なるのと同じです。@kbd{C-c C-y} (@code{picture-yank-rectangle})は、一番最近killされた矩形領域を(上書きにより)挿入し、@kbd{C-c C-x} (@code{picture-yank-rectangle-from-register})は、指定されたレジスターの矩形領域で同様のことを行ないます。"
+msgstr ""
+"矩形領域をyankするPictureモードのコマンドは、挿入ではなく上書きするという点"
+"で、標準の矩形領域コマンドと異なります。これはPictureモードでのテキストの挿入"
+"方法が他のモードと異なるのと同じです。@kbd{C-c C-y} (@code{picture-yank-"
+"rectangle})は、一番最近killされた矩形領域を(上書きにより)挿入し、@kbd{C-c C-"
+"x} (@code{picture-yank-rectangle-from-register})は、指定されたレジスターの矩"
+"形領域で同様のことを行ないます。"

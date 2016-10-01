@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-02-27 00:13+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,65 +16,70 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
-#: cmdargs.texi.orig:5
+#: original_texis/cmdargs.texi:5
 #, no-wrap
 msgid "Emacs Invocation"
 msgstr "Emacs Invocation"
 
 #. type: appendix
-#: cmdargs.texi.orig:6
+#: original_texis/cmdargs.texi:6
 #, no-wrap
 msgid "Command Line Arguments for Emacs Invocation"
 msgstr "Command Line Arguments for Emacs Invocation"
 
 #. type: cindex
-#: cmdargs.texi.orig:7
+#: original_texis/cmdargs.texi:7
 #, no-wrap
 msgid "command line arguments"
 msgstr "command line arguments"
 
 #. type: cindex
-#: cmdargs.texi.orig:8
+#: original_texis/cmdargs.texi:8
 #, no-wrap
 msgid "arguments (command line)"
 msgstr "arguments (command line)"
 
 #. type: cindex
-#: cmdargs.texi.orig:9
+#: original_texis/cmdargs.texi:9
 #, no-wrap
 msgid "options (command line)"
 msgstr "options (command line)"
 
 #. type: cindex
-#: cmdargs.texi.orig:10
+#: original_texis/cmdargs.texi:10
 #, no-wrap
 msgid "switches (command line)"
 msgstr "switches (command line)"
 
 #. type: cindex
-#: cmdargs.texi.orig:11
+#: original_texis/cmdargs.texi:11
 #, no-wrap
 msgid "startup (command line arguments)"
 msgstr "startup (command line arguments)"
 
 #. type: cindex
-#: cmdargs.texi.orig:12
+#: original_texis/cmdargs.texi:12
 #, no-wrap
 msgid "invocation (command line arguments)"
 msgstr "invocation (command line arguments)"
 
 #. type: Plain text
-#: cmdargs.texi.orig:20
+#: original_texis/cmdargs.texi:20
 msgid ""
 "Emacs supports command line arguments to request various actions when "
 "invoking Emacs.  These are for compatibility with other editors and for "
 "sophisticated activities.  We don't recommend using them for ordinary "
 "editing (@xref{Emacs Server}, for a way to access an existing Emacs job from "
 "the command line)."
-msgstr "Emacsは、Emacsを開始するとき、様々な動作を要求するための、コマンドライン引数をサポートします。これらのコマンド引数の中には、他のエディターとの互換性のためのものや、高度な動作を指定するものがあります。通常の編集にこれらを使用することはお勧めしません(コマンドラインから既存のEmacsジョブにアクセスする方法は、@ref{Emacs Server}を参照してください)。"
+msgstr ""
+"Emacsは、Emacsを開始するとき、様々な動作を要求するための、コマンドライン引数"
+"をサポートします。これらのコマンド引数の中には、他のエディターとの互換性のた"
+"めのものや、高度な動作を指定するものがあります。通常の編集にこれらを使用する"
+"ことはお勧めしません(コマンドラインから既存のEmacsジョブにアクセスする方法"
+"は、@ref{Emacs Server}を参照してください)。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:28
+#: original_texis/cmdargs.texi:28
 msgid ""
 "Arguments starting with @samp{-} are @dfn{options}, and so is "
 "@samp{+@var{linenum}}.  All other arguments specify files to visit.  Emacs "
@@ -83,29 +88,43 @@ msgid ""
 "visited in other buffers.  As with most programs, the special argument "
 "@samp{--} says that all subsequent arguments are file names, not options, "
 "even if they start with @samp{-}."
-msgstr "@samp{-}で始まる引数は@dfn{オプションで}、@samp{+@var{linenum}}もオプションです。Emacsは、スタートアップ時に指定されたファイルをvisitします。コマンドラインで最後に指定されたファイルがカレントバッファーになり、それ以外のファイルも別のバッファーでvisitされます。ほとんどのプログラムと同様に、特別な引数@samp{--}は、それ以降のすべての引数が、(名前が@samp{-}で始まっていても)オプションではなくファイル名であることを指定します。"
+msgstr ""
+"@samp{-}で始まる引数は@dfn{オプションで}、@samp{+@var{linenum}}もオプションで"
+"す。Emacsは、スタートアップ時に指定されたファイルをvisitします。コマンドライ"
+"ンで最後に指定されたファイルがカレントバッファーになり、それ以外のファイルも"
+"別のバッファーでvisitされます。ほとんどのプログラムと同様に、特別な引数"
+"@samp{--}は、それ以降のすべての引数が、(名前が@samp{-}で始まっていても)オプ"
+"ションではなくファイル名であることを指定します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:34
+#: original_texis/cmdargs.texi:34
 msgid ""
 "Emacs command options can specify many things, such as the size and position "
 "of the X window Emacs uses, its colors, and so on.  A few options support "
 "advanced usage, such as running Lisp functions on files in batch mode.  The "
 "sections of this chapter describe the available options, arranged according "
 "to their purpose."
-msgstr "Emacsのコマンドオプションは、XウィンドウでEmacsが使用するウィンドウのサイズや位置、カラーなど、多くのことを指定できます。多くはありませんが、ファイルのLisp関数をバッチモードで実行するなど、高度な使い方をサポートするためのオプションもあります。このチャプターの各セクションでは、利用可能なオプションを、その目的に合わせて整理して説明します。"
+msgstr ""
+"Emacsのコマンドオプションは、XウィンドウでEmacsが使用するウィンドウのサイズや"
+"位置、カラーなど、多くのことを指定できます。多くはありませんが、ファイルの"
+"Lisp関数をバッチモードで実行するなど、高度な使い方をサポートするためのオプ"
+"ションもあります。このチャプターの各セクションでは、利用可能なオプションを、"
+"その目的に合わせて整理して説明します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:39
+#: original_texis/cmdargs.texi:39
 msgid ""
 "There are two ways of writing options: the short forms that start with a "
 "single @samp{-}, and the long forms that start with @samp{--}.  For example, "
 "@samp{-d} is a short form and @samp{--display} is the corresponding long "
 "form."
-msgstr "オプションを記述するには2つの方法があります。それは1つの@samp{-}で始まる短い形式と、@samp{--}で始まる長い形式です。たとえば、短い形式が@samp{-d}で、それに対応する長い形式は@samp{--display}です。"
+msgstr ""
+"オプションを記述するには2つの方法があります。それは1つの@samp{-}で始まる短い"
+"形式と、@samp{--}で始まる長い形式です。たとえば、短い形式が@samp{-d}で、それ"
+"に対応する長い形式は@samp{--display}です。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:48
+#: original_texis/cmdargs.texi:48
 msgid ""
 "The long forms with @samp{--} are easier to remember, but longer to type.  "
 "However, you don't have to spell out the whole option name; any unambiguous "
@@ -115,28 +134,35 @@ msgid ""
 "@samp{--display=sugar-bombs:0.0}.  We recommend an equal sign because it "
 "makes the relationship clearer, and the tables below always show an equal "
 "sign."
-msgstr "@samp{--}の長い形式は、覚えるのが簡単ですが、多くタイプしなければなりません。しかしオプション名全体を綴る必要はありません。あいまいさのない省略形で充分です。長いオプションが引数をとる場合、オプション名と、そのオプションにたいする引数を区切るには、スペースとイコール記号の両方を使用することができます。したがって@samp{--display sugar-bombs:0.0}と@samp{--display=sugar-bombs:0.0}の、どちらでも記述することができます。関連性が明確になるのでイコール記号を推奨します。以下の表では、常にイコール記号で記すことにします。"
+msgstr ""
+"@samp{--}の長い形式は、覚えるのが簡単ですが、多くタイプしなければなりません。"
+"しかしオプション名全体を綴る必要はありません。あいまいさのない省略形で充分で"
+"す。長いオプションが引数をとる場合、オプション名と、そのオプションにたいする"
+"引数を区切るには、スペースとイコール記号の両方を使用することができます。した"
+"がって@samp{--display sugar-bombs:0.0}と@samp{--display=sugar-bombs:0.0}の、"
+"どちらでも記述することができます。関連性が明確になるのでイコール記号を推奨し"
+"ます。以下の表では、常にイコール記号で記すことにします。"
 
 #. type: cindex
-#: cmdargs.texi.orig:49
+#: original_texis/cmdargs.texi:49
 #, no-wrap
 msgid "initial options (command line)"
 msgstr "initial options (command line)"
 
 #. type: cindex
-#: cmdargs.texi.orig:50
+#: original_texis/cmdargs.texi:50
 #, no-wrap
 msgid "action options (command line)"
 msgstr "action options (command line)"
 
 #. type: vindex
-#: cmdargs.texi.orig:51
+#: original_texis/cmdargs.texi:51
 #, no-wrap
 msgid "command-line-args"
 msgstr "command-line-args"
 
 #. type: Plain text
-#: cmdargs.texi.orig:63
+#: original_texis/cmdargs.texi:63
 msgid ""
 "Most options specify how to initialize Emacs, or set parameters for the "
 "Emacs session.  We call them @dfn{initial options}.  A few options specify "
@@ -147,216 +173,234 @@ msgid ""
 "starts up, @code{command-line-args} contains all the arguments passed from "
 "the command line; during initialization, the initial arguments are removed "
 "from this list when they are processed, leaving only the action arguments.)"
-msgstr "ほとんどのオプションは、Emacsを初期化する方法や、Emacsセッションのパラメーターを指定します。これらを@dfn{初期化オプション(initial options)}と呼びます。多くはありませんが、ライブラリーのロードや、Lisp関数の呼び出しなど、動作を指定するオプションもあります。これらを@dfn{動作オプション(action options)}と呼びます。これらとファイル名を合わせたものを、@dfn{動作引数(action arguments)}と呼びます。動作引数は、変数@code{command-line-args}に、文字列のリストとして保管されます(実際のところ、Emacsスタートアップ時には、コマンドラインで渡されたすべての引数が、@code{command-line-args}に含まれていますが、初期化を行なう間に、初期化引数は処理されるごとにこのリストから削除され、動作引数だけが残ります)。"
+msgstr ""
+"ほとんどのオプションは、Emacsを初期化する方法や、Emacsセッションのパラメー"
+"ターを指定します。これらを@dfn{初期化オプション(initial options)}と呼びます。"
+"多くはありませんが、ライブラリーのロードや、Lisp関数の呼び出しなど、動作を指"
+"定するオプションもあります。これらを@dfn{動作オプション(action options)}と呼"
+"びます。これらとファイル名を合わせたものを、@dfn{動作引数(action arguments)}"
+"と呼びます。動作引数は、変数@code{command-line-args}に、文字列のリストとして"
+"保管されます(実際のところ、Emacsスタートアップ時には、コマンドラインで渡され"
+"たすべての引数が、@code{command-line-args}に含まれていますが、初期化を行なう"
+"間に、初期化引数は処理されるごとにこのリストから削除され、動作引数だけが残り"
+"ます)。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:80 cmdargs.texi.orig:81
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:80
+#: original_texis/cmdargs.texi:81
 #, no-wrap
 msgid "Action Arguments"
 msgstr "Action Arguments"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Arguments to visit files, load libraries, and call functions."
 msgstr "ファイルのvisit、ライブラリーのロード、関数を呼び出す引数。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:189 cmdargs.texi.orig:190
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:189
+#: original_texis/cmdargs.texi:190
 #, no-wrap
 msgid "Initial Options"
 msgstr "Initial Options"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Arguments that take effect while starting Emacs."
 msgstr "Emacsの開始に影響する引数。"
 
 #. type: node
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:362
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:362
 #, no-wrap
 msgid "Command Example"
 msgstr "Command Example"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Examples of using command line arguments."
 msgstr "コマンドライン引数の使用例。"
 
 #. type: node
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:383
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:383
 #, no-wrap
 msgid "Environment"
 msgstr "Environment"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Environment variables that Emacs uses."
 msgstr "Emacsが使用する環境変数。"
 
 #. type: node
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:743
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:743
 #, no-wrap
 msgid "Display X"
 msgstr "Display X"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Changing the default display and using remote login."
 msgstr "デフォルトディスプレーの変更と、リモートログインの使用。"
 
 #. type: node
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:793
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:793
 #, no-wrap
 msgid "Font X"
 msgstr "Font X"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Choosing a font for text, under X."
 msgstr "Xでのテキストのフォント選択。"
 
 #. type: node
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:822
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:822
 #, no-wrap
 msgid "Colors X"
 msgstr "Colors X"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Choosing display colors."
 msgstr "ディスプレーカラーの選択。"
 
 #. type: node
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:923
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:923
 #, no-wrap
 msgid "Window Size X"
 msgstr "Window Size X"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Start-up window size, under X."
 msgstr "Xでのスタートアップウィンドウのサイズ。"
 
 #. type: node
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:1045
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:1045
 #, no-wrap
 msgid "Borders X"
 msgstr "Borders X"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Internal and external borders, under X."
 msgstr "Xでの内枠ボーダーと外枠ボーダー。"
 
 #. type: node
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:1083
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:1083
 #, no-wrap
 msgid "Title X"
 msgstr "Title X"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Specifying the initial frame's title."
 msgstr "初期フレームのタイトルの指定。"
 
 #. type: node
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:1108
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:1108
 #, no-wrap
 msgid "Icons X"
 msgstr "Icons X"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Choosing what sort of icon to use, under X."
 msgstr "Xで使用するアイコンの選択。"
 
 #. type: node
-#: cmdargs.texi.orig:78 cmdargs.texi.orig:1143
+#: original_texis/cmdargs.texi:78 original_texis/cmdargs.texi:1143
 #, no-wrap
 msgid "Misc X"
 msgstr "Misc X"
 
 #. type: menuentry
-#: cmdargs.texi.orig:78
+#: original_texis/cmdargs.texi:78
 msgid "Other display options."
 msgstr "その他のディスプレーオプション。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:84
+#: original_texis/cmdargs.texi:84
 msgid "Here is a table of action arguments:"
 msgstr "以下は動作引数の表です:"
 
 #. type: var{#1}
-#: cmdargs.texi.orig:86
+#: original_texis/cmdargs.texi:86
 #, no-wrap
 msgid "file"
 msgstr "file"
 
 #. type: opindex
-#: cmdargs.texi.orig:87
+#: original_texis/cmdargs.texi:87
 #, no-wrap
 msgid "--file"
 msgstr "--file"
 
 #. type: itemx
-#: cmdargs.texi.orig:88
+#: original_texis/cmdargs.texi:88
 #, no-wrap
 msgid "--file=@var{file}"
 msgstr "--file=@var{file}"
 
 #. type: opindex
-#: cmdargs.texi.orig:89
+#: original_texis/cmdargs.texi:89
 #, no-wrap
 msgid "--find-file"
 msgstr "--find-file"
 
 #. type: itemx
-#: cmdargs.texi.orig:90
+#: original_texis/cmdargs.texi:90
 #, no-wrap
 msgid "--find-file=@var{file}"
 msgstr "--find-file=@var{file}"
 
 #. type: opindex
-#: cmdargs.texi.orig:91
+#: original_texis/cmdargs.texi:91
 #, no-wrap
 msgid "--visit"
 msgstr "--visit"
 
 #. type: itemx
-#: cmdargs.texi.orig:92
+#: original_texis/cmdargs.texi:92
 #, no-wrap
 msgid "--visit=@var{file}"
 msgstr "--visit=@var{file}"
 
 #. type: cindex
-#: cmdargs.texi.orig:93
+#: original_texis/cmdargs.texi:93
 #, no-wrap
 msgid "visiting files, command-line argument"
 msgstr "visiting files, command-line argument"
 
 #. type: vindex
-#: cmdargs.texi.orig:94
+#: original_texis/cmdargs.texi:94
 #, no-wrap
 msgid "inhibit-startup-buffer-menu"
 msgstr "inhibit-startup-buffer-menu"
 
 #. type: table
-#: cmdargs.texi.orig:96
+#: original_texis/cmdargs.texi:96
 msgid "Visit @var{file} using @code{find-file}.  @xref{Visiting}."
-msgstr "@code{find-file}を使用して、@var{file}をvisitします。@ref{Visiting}を参照してください。"
+msgstr ""
+"@code{find-file}を使用して、@var{file}をvisitします。@ref{Visiting}を参照して"
+"ください。"
 
 #. type: table
-#: cmdargs.texi.orig:102
+#: original_texis/cmdargs.texi:102
 msgid ""
 "When Emacs starts up, it displays the startup buffer in one window, and the "
 "buffer visiting @var{file} in another window (@pxref{Windows}).  If you "
 "supply more than one file argument, the displayed file is the last one "
 "specified on the command line; the other files are visited but their buffers "
 "are not shown."
-msgstr "Emacsスタートアップ時、1つのウィンドウでスタートアップバッファーを表示し、@var{file}をvisitするバッファーを別のウィンドウで表示します(@ref{Windows}を参照してください)。複数のファイル引数を与えた場合、コマンドラインの最後に指定されたファイルが表示され、他のファイルもvisitされますが、表示はされません。"
+msgstr ""
+"Emacsスタートアップ時、1つのウィンドウでスタートアップバッファーを表示し、"
+"@var{file}をvisitするバッファーを別のウィンドウで表示します(@ref{Windows}を参"
+"照してください)。複数のファイル引数を与えた場合、コマンドラインの最後に指定さ"
+"れたファイルが表示され、他のファイルもvisitされますが、表示はされません。"
 
 #. type: table
-#: cmdargs.texi.orig:111
+#: original_texis/cmdargs.texi:111
 msgid ""
 "If the startup buffer is disabled (@pxref{Entering Emacs}), then @var{file} "
 "is visited in a single window if one file argument was supplied; with two "
@@ -365,112 +409,129 @@ msgid ""
 "window, plus a Buffer Menu in a different window (@pxref{Several Buffers}).  "
 "To inhibit using the Buffer Menu for this, change the variable @code{inhibit-"
 "startup-buffer-menu} to @code{t}."
-msgstr "スタートアップバッファーが無効(@ref{Entering Emacs}を参照してください)の場合、ファイル引数が1つのときは1つのウィンドウだけで@var{file}がvisitされ、ファイル引数が2つのときは、Emacsはファイルを2つの別のウィンドウに表示します。ファイル引数が3つ以上の場合、Emacsは最後に指定されたファイルを1つのウィンドウに表示して、別のウィンドウにバッファーメニュー(@ref{Several Buffers}を参照してください)を表示します。このバッファーメニューの使用を抑制するには、変数@code{inhibit-startup-buffer-menu}を@code{t}に変更してください。"
+msgstr ""
+"スタートアップバッファーが無効(@ref{Entering Emacs}を参照してください)の場"
+"合、ファイル引数が1つのときは1つのウィンドウだけで@var{file}がvisitされ、ファ"
+"イル引数が2つのときは、Emacsはファイルを2つの別のウィンドウに表示します。ファ"
+"イル引数が3つ以上の場合、Emacsは最後に指定されたファイルを1つのウィンドウに表"
+"示して、別のウィンドウにバッファーメニュー(@ref{Several Buffers}を参照してく"
+"ださい)を表示します。このバッファーメニューの使用を抑制するには、変数"
+"@code{inhibit-startup-buffer-menu}を@code{t}に変更してください。"
 
 #. type: item
-#: cmdargs.texi.orig:112
+#: original_texis/cmdargs.texi:112
 #, no-wrap
 msgid "+@var{linenum} @var{file}"
 msgstr "+@var{linenum} @var{file}"
 
 #. type: opindex
-#: cmdargs.texi.orig:113
+#: original_texis/cmdargs.texi:113
 #, no-wrap
 msgid "+@var{linenum}"
 msgstr "+@var{linenum}"
 
 #. type: table
-#: cmdargs.texi.orig:116
+#: original_texis/cmdargs.texi:116
 msgid ""
 "Visit @var{file} using @code{find-file}, then go to line number "
 "@var{linenum} in it."
-msgstr "@code{find-file}を使用して@var{file}をvisitし、行番号@var{linenum}に移動します。"
+msgstr ""
+"@code{find-file}を使用して@var{file}をvisitし、行番号@var{linenum}に移動しま"
+"す。"
 
 #. type: item
-#: cmdargs.texi.orig:117
+#: original_texis/cmdargs.texi:117
 #, no-wrap
 msgid "+@var{linenum}:@var{columnnum} @var{file}"
 msgstr "+@var{linenum}:@var{columnnum} @var{file}"
 
 #. type: table
-#: cmdargs.texi.orig:120
+#: original_texis/cmdargs.texi:120
 msgid ""
 "Visit @var{file} using @code{find-file}, then go to line number "
 "@var{linenum} and put point at column number @var{columnnum}."
-msgstr "@code{find-file}を使用して@var{file}をvisitし、行番号@var{linenum}に移動して、列番号@var{columnnum}にポイントを置きます。"
+msgstr ""
+"@code{find-file}を使用して@var{file}をvisitし、行番号@var{linenum}に移動し"
+"て、列番号@var{columnnum}にポイントを置きます。"
 
 #. type: item
-#: cmdargs.texi.orig:121
+#: original_texis/cmdargs.texi:121
 #, no-wrap
 msgid "-l @var{file}"
 msgstr "-l @var{file}"
 
 #. type: opindex
-#: cmdargs.texi.orig:122
+#: original_texis/cmdargs.texi:122
 #, no-wrap
 msgid "-l"
 msgstr "-l"
 
 #. type: itemx
-#: cmdargs.texi.orig:123
+#: original_texis/cmdargs.texi:123
 #, no-wrap
 msgid "--load=@var{file}"
 msgstr "--load=@var{file}"
 
 #. type: opindex
-#: cmdargs.texi.orig:124
+#: original_texis/cmdargs.texi:124
 #, no-wrap
 msgid "--load"
 msgstr "--load"
 
 #. type: cindex
-#: cmdargs.texi.orig:125
+#: original_texis/cmdargs.texi:125
 #, no-wrap
 msgid "loading Lisp libraries, command-line argument"
 msgstr "loading Lisp libraries, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:130
+#: original_texis/cmdargs.texi:130
 msgid ""
 "Load a Lisp library named @var{file} with the function @code{load}.  If "
 "@var{file} is not an absolute file name, Emacs first looks for it in the "
 "current directory, then in the directories listed in @code{load-path} "
 "(@pxref{Lisp Libraries})."
-msgstr "関数@code{load}で、@var{file}という名前のLispライブラリーをロードします。@var{file}が絶対ファイル名でない場合、Emacsは最初にカレントディレクトリーを探して、次に@code{load-path} (@ref{Lisp Libraries}を参照してください)にリストされたディレクトリーを探します。"
+msgstr ""
+"関数@code{load}で、@var{file}という名前のLispライブラリーをロードします。"
+"@var{file}が絶対ファイル名でない場合、Emacsは最初にカレントディレクトリーを探"
+"して、次に@code{load-path} (@ref{Lisp Libraries}を参照してください)にリストさ"
+"れたディレクトリーを探します。"
 
 #. type: table
-#: cmdargs.texi.orig:134
+#: original_texis/cmdargs.texi:134
 msgid ""
 "@strong{Warning:} If previous command-line arguments have visited files, the "
 "current directory is the directory of the last file visited."
-msgstr "@strong{警告: }前のコマンドライン引数にvisitされたファイルがある場合、カレントディレクトリーは最後にvisitされたファイルのディレクトリーになります。"
+msgstr ""
+"@strong{警告: }前のコマンドライン引数にvisitされたファイルがある場合、カレン"
+"トディレクトリーは最後にvisitされたファイルのディレクトリーになります。"
 
 #. type: item
-#: cmdargs.texi.orig:135
+#: original_texis/cmdargs.texi:135
 #, no-wrap
 msgid "-L @var{dir}"
 msgstr "-L @var{dir}"
 
 #. type: opindex
-#: cmdargs.texi.orig:136
+#: original_texis/cmdargs.texi:136
 #, no-wrap
 msgid "-L"
 msgstr "-L"
 
 #. type: itemx
-#: cmdargs.texi.orig:137
+#: original_texis/cmdargs.texi:137
 #, no-wrap
 msgid "--directory=@var{dir}"
 msgstr "--directory=@var{dir}"
 
 #. type: opindex
-#: cmdargs.texi.orig:138
+#: original_texis/cmdargs.texi:138
 #, no-wrap
 msgid "--directory"
 msgstr "--directory"
 
 #. type: table
-#: cmdargs.texi.orig:147
+#: original_texis/cmdargs.texi:147
 msgid ""
 "Prepend directory @var{dir} to the variable @code{load-path}.  If you "
 "specify multiple @samp{-L} options, Emacs preserves the relative order; i."
@@ -479,102 +540,112 @@ msgid ""
 "Emacs removes the @samp{:} and appends (rather than prepends) the remainder "
 "to @code{load-path}.  (On MS Windows, use @samp{;} instead of @samp{:}; i."
 "e., use the value of @code{path-separator}.)"
-msgstr "変数@code{load-path}にリストされたディレクトリーの前に、ディレクトリー@var{dir}を追加します。複数の@samp{-L}オプションを指定した場合、Emacsはその順番を保持します。たとえば@samp{-L /foo -L /bar}を使用すると、@code{load-path}は@code{(\"/foo\" \"/bar\" @dots{})}となります。@var{dir}が@samp{:}で始まる場合、Emacsは@samp{:}を削除した残りを、@code{load-path}にリストされたディレクトリーの(前ではなく)後ろに追加します(MS Windowsでは@samp{:}のかわりに、@code{path-separator}の値@samp{;}を使用します)。"
+msgstr ""
+"変数@code{load-path}にリストされたディレクトリーの前に、ディレクトリー"
+"@var{dir}を追加します。複数の@samp{-L}オプションを指定した場合、Emacsはその順"
+"番を保持します。たとえば@samp{-L /foo -L /bar}を使用すると、@code{load-path}"
+"は@code{(\"/foo\" \"/bar\" @dots{})}となります。@var{dir}が@samp{:}で始まる場"
+"合、Emacsは@samp{:}を削除した残りを、@code{load-path}にリストされたディレクト"
+"リーの(前ではなく)後ろに追加します(MS Windowsでは@samp{:}のかわりに、"
+"@code{path-separator}の値@samp{;}を使用します)。"
 
 #. type: item
-#: cmdargs.texi.orig:148
+#: original_texis/cmdargs.texi:148
 #, no-wrap
 msgid "-f @var{function}"
 msgstr "-f @var{function}"
 
 #. type: opindex
-#: cmdargs.texi.orig:149
+#: original_texis/cmdargs.texi:149
 #, no-wrap
 msgid "-f"
 msgstr "-f"
 
 #. type: itemx
-#: cmdargs.texi.orig:150
+#: original_texis/cmdargs.texi:150
 #, no-wrap
 msgid "--funcall=@var{function}"
 msgstr "--funcall=@var{function}"
 
 #. type: opindex
-#: cmdargs.texi.orig:151
+#: original_texis/cmdargs.texi:151
 #, no-wrap
 msgid "--funcall"
 msgstr "--funcall"
 
 #. type: cindex
-#: cmdargs.texi.orig:152
+#: original_texis/cmdargs.texi:152
 #, no-wrap
 msgid "call Lisp functions, command-line argument"
 msgstr "call Lisp functions, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:157
+#: original_texis/cmdargs.texi:157
 msgid ""
 "Call Lisp function @var{function}.  If it is an interactive function (a "
 "command), it reads the arguments interactively just as if you had called the "
 "same function with a key sequence.  Otherwise, it calls the function with no "
 "arguments."
-msgstr "Lisp関数@var{function}を呼び出します。それがインタラクティブな関数(コマンド)の場合、同じ関数をキーシーケンスで呼び出したときのように、引数を対話的に読み取ります。そうでない場合は、その関数を引数なしで呼び出します。"
+msgstr ""
+"Lisp関数@var{function}を呼び出します。それがインタラクティブな関数(コマンド)"
+"の場合、同じ関数をキーシーケンスで呼び出したときのように、引数を対話的に読み"
+"取ります。そうでない場合は、その関数を引数なしで呼び出します。"
 
 #. type: item
-#: cmdargs.texi.orig:158
+#: original_texis/cmdargs.texi:158
 #, no-wrap
 msgid "--eval=@var{expression}"
 msgstr "--eval=@var{expression}"
 
 #. type: opindex
-#: cmdargs.texi.orig:159
+#: original_texis/cmdargs.texi:159
 #, no-wrap
 msgid "--eval"
 msgstr "--eval"
 
 #. type: itemx
-#: cmdargs.texi.orig:160
+#: original_texis/cmdargs.texi:160
 #, no-wrap
 msgid "--execute=@var{expression}"
 msgstr "--execute=@var{expression}"
 
 #. type: opindex
-#: cmdargs.texi.orig:161
+#: original_texis/cmdargs.texi:161
 #, no-wrap
 msgid "--execute"
 msgstr "--execute"
 
 #. type: cindex
-#: cmdargs.texi.orig:162
+#: original_texis/cmdargs.texi:162
 #, no-wrap
 msgid "evaluate expression, command-line argument"
 msgstr "evaluate expression, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:164
+#: original_texis/cmdargs.texi:164
 msgid "Evaluate Lisp expression @var{expression}."
 msgstr "Lisp式@var{expression}を評価します。"
 
 #. type: item
-#: cmdargs.texi.orig:165
+#: original_texis/cmdargs.texi:165
 #, no-wrap
 msgid "--insert=@var{file}"
 msgstr "--insert=@var{file}"
 
 #. type: opindex
-#: cmdargs.texi.orig:166
+#: original_texis/cmdargs.texi:166
 #, no-wrap
 msgid "--insert"
 msgstr "--insert"
 
 #. type: cindex
-#: cmdargs.texi.orig:167
+#: original_texis/cmdargs.texi:167
 #, no-wrap
 msgid "insert file contents, command-line argument"
 msgstr "insert file contents, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:174
+#: original_texis/cmdargs.texi:174
 msgid ""
 "Insert the contents of @var{file} into the buffer that is current when this "
 "command-line argument is processed.  Usually, this is the @file{*scratch*} "
@@ -582,228 +653,263 @@ msgid ""
 "line visit files or switch buffers, that might be a different buffer.  The "
 "effect of this command-line argument is like what @kbd{M-x insert-file} does "
 "(@pxref{Misc File Ops})."
-msgstr "@var{file}の内容を、コマンドライン引数が処理されるときにカレントのバッファーに挿入します。これは通常、@file{*scratch*}バッファー(@ref{Lisp Interaction}を参照してください)ですが、コマンドラインの前の引数がファイルをvisitしたりバッファーを切り替えるときは、別のバッファーになるでしょう。このコマンドライン引数の効果は、@kbd{M-x insert-file}が行なうのと同様です(@ref{Misc File Ops}を参照してください)。"
+msgstr ""
+"@var{file}の内容を、コマンドライン引数が処理されるときにカレントのバッファー"
+"に挿入します。これは通常、@file{*scratch*}バッファー(@ref{Lisp Interaction}を"
+"参照してください)ですが、コマンドラインの前の引数がファイルをvisitしたりバッ"
+"ファーを切り替えるときは、別のバッファーになるでしょう。このコマンドライン引"
+"数の効果は、@kbd{M-x insert-file}が行なうのと同様です(@ref{Misc File Ops}を参"
+"照してください)。"
 
 #. type: opindex
-#: cmdargs.texi.orig:175 cmdargs.texi.orig:176
+#: original_texis/cmdargs.texi:175 original_texis/cmdargs.texi:176
 #, no-wrap
 msgid "--kill"
 msgstr "--kill"
 
 #. type: table
-#: cmdargs.texi.orig:178
+#: original_texis/cmdargs.texi:178
 msgid "Exit from Emacs without asking for confirmation."
 msgstr "確認なしでEmacsを終了します。"
 
 #. type: opindex
-#: cmdargs.texi.orig:179 cmdargs.texi.orig:180
+#: original_texis/cmdargs.texi:179 original_texis/cmdargs.texi:180
 #, no-wrap
 msgid "--help"
 msgstr "--help"
 
 #. type: table
-#: cmdargs.texi.orig:183
+#: original_texis/cmdargs.texi:183
 msgid ""
 "Print a usage message listing all available options, then exit successfully."
-msgstr "利用可能なすべてのオプションがリストされたUsageメッセージをプリントしてから、正常終了します。"
+msgstr ""
+"利用可能なすべてのオプションがリストされたUsageメッセージをプリントしてから、"
+"正常終了します。"
 
 #. type: opindex
-#: cmdargs.texi.orig:184 cmdargs.texi.orig:185
+#: original_texis/cmdargs.texi:184 original_texis/cmdargs.texi:185
 #, no-wrap
 msgid "--version"
 msgstr "--version"
 
 #. type: table
-#: cmdargs.texi.orig:187
+#: original_texis/cmdargs.texi:187
 msgid "Print Emacs version, then exit successfully."
 msgstr "Emacsのバージョンをプリントしてから、正常終了します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:196
+#: original_texis/cmdargs.texi:196
 msgid ""
 "The initial options specify parameters for the Emacs session.  This section "
 "describes the more general initial options; some other options specifically "
 "related to the X Window System appear in the following sections."
-msgstr "初期化オプションは、Emacsセッションにたいするパラメーターを指定します。このセクションでは、より一般的な初期化オプションを説明します。いくつかのオプションは、厳密には以降のセクションで説明するXウィンドウシステムに関連したオプションです。"
+msgstr ""
+"初期化オプションは、Emacsセッションにたいするパラメーターを指定します。このセ"
+"クションでは、より一般的な初期化オプションを説明します。いくつかのオプション"
+"は、厳密には以降のセクションで説明するXウィンドウシステムに関連したオプション"
+"です。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:203
+#: original_texis/cmdargs.texi:203
 msgid ""
 "Some initial options affect the loading of the initialization file.  "
 "Normally, Emacs first loads @file{site-start.el} if it exists, then your own "
 "initialization file if it exists, and finally the default initialization "
 "file @file{default.el} if it exists (@pxref{Init File}).  Certain options "
 "prevent loading of some of these files or substitute other files for them."
-msgstr "いくつかの初期化オプションは、初期化ファイルのロードに影響します。Emacsは通常、@file{site-start.el}が存在する場合は最初にそれをロードし、ユーザーの初期化ファイルが存在すれば次にそれをロードして、デフォルト初期化ファイル@file{default.el}が存在すれば最後にそれをロードします(@ref{Init File}を参照してください)。それらのファイルのロードを抑制したり、それらのファイルを別のファイルで置き換えるオプションもあります。"
+msgstr ""
+"いくつかの初期化オプションは、初期化ファイルのロードに影響します。Emacsは通"
+"常、@file{site-start.el}が存在する場合は最初にそれをロードし、ユーザーの初期"
+"化ファイルが存在すれば次にそれをロードして、デフォルト初期化ファイル"
+"@file{default.el}が存在すれば最後にそれをロードします(@ref{Init File}を参照し"
+"てください)。それらのファイルのロードを抑制したり、それらのファイルを別のファ"
+"イルで置き換えるオプションもあります。"
 
 #. type: item
-#: cmdargs.texi.orig:205
+#: original_texis/cmdargs.texi:205
 #, no-wrap
 msgid "-chdir @var{directory}"
 msgstr "-chdir @var{directory}"
 
 #. type: opindex
-#: cmdargs.texi.orig:206
+#: original_texis/cmdargs.texi:206
 #, no-wrap
 msgid "-chdir"
 msgstr "-chdir"
 
 #. type: itemx
-#: cmdargs.texi.orig:207
+#: original_texis/cmdargs.texi:207
 #, no-wrap
 msgid "--chdir=@var{directory}"
 msgstr "--chdir=@var{directory}"
 
 #. type: opindex
-#: cmdargs.texi.orig:208
+#: original_texis/cmdargs.texi:208
 #, no-wrap
 msgid "--chdir"
 msgstr "--chdir"
 
 #. type: cindex
-#: cmdargs.texi.orig:209
+#: original_texis/cmdargs.texi:209
 #, no-wrap
 msgid "change Emacs directory"
 msgstr "change Emacs directory"
 
 #. type: table
-#: cmdargs.texi.orig:213
+#: original_texis/cmdargs.texi:213
 msgid ""
 "Change to @var{directory} before doing anything else.  This is mainly used "
 "by session management in X so that Emacs starts in the same directory as it "
 "stopped.  This makes desktop saving and restoring easier."
-msgstr "他のことを行なう前にまず、カレントディレクトリーを@var{directory}に変更します。これはEmacsが停止したのと同じディレクトリーで開始されるように、主にXでのセッション管理に使用されます。これによりデスクトップの保存と復元が簡単になります。"
+msgstr ""
+"他のことを行なう前にまず、カレントディレクトリーを@var{directory}に変更しま"
+"す。これはEmacsが停止したのと同じディレクトリーで開始されるように、主にXでの"
+"セッション管理に使用されます。これによりデスクトップの保存と復元が簡単になり"
+"ます。"
 
 #. type: item
-#: cmdargs.texi.orig:214
+#: original_texis/cmdargs.texi:214
 #, no-wrap
 msgid "-t @var{device}"
 msgstr "-t @var{device}"
 
 #. type: opindex
-#: cmdargs.texi.orig:215
+#: original_texis/cmdargs.texi:215
 #, no-wrap
 msgid "-t"
 msgstr "-t"
 
 #. type: itemx
-#: cmdargs.texi.orig:216
+#: original_texis/cmdargs.texi:216
 #, no-wrap
 msgid "--terminal=@var{device}"
 msgstr "--terminal=@var{device}"
 
 #. type: opindex
-#: cmdargs.texi.orig:217
+#: original_texis/cmdargs.texi:217
 #, no-wrap
 msgid "--terminal"
 msgstr "--terminal"
 
 #. type: cindex
-#: cmdargs.texi.orig:218
+#: original_texis/cmdargs.texi:218
 #, no-wrap
 msgid "device for Emacs terminal I/O"
 msgstr "device for Emacs terminal I/O"
 
 #. type: table
-#: cmdargs.texi.orig:221
+#: original_texis/cmdargs.texi:221
 msgid ""
 "Use @var{device} as the device for terminal input and output.  This option "
 "implies @samp{--no-window-system}."
-msgstr "端末の入出力に@var{device}をデバイスとして使用します。このオプションは暗に@samp{--no-window-system}を含みます。"
+msgstr ""
+"端末の入出力に@var{device}をデバイスとして使用します。このオプションは暗に"
+"@samp{--no-window-system}を含みます。"
 
 #. type: item
-#: cmdargs.texi.orig:222
+#: original_texis/cmdargs.texi:222
 #, no-wrap
 msgid "-d @var{display}"
 msgstr "-d @var{display}"
 
 #. type: opindex
-#: cmdargs.texi.orig:223
+#: original_texis/cmdargs.texi:223
 #, no-wrap
 msgid "-d"
 msgstr "-d"
 
 #. type: itemx
-#: cmdargs.texi.orig:224
+#: original_texis/cmdargs.texi:224
 #, no-wrap
 msgid "--display=@var{display}"
 msgstr "--display=@var{display}"
 
 #. type: opindex
-#: cmdargs.texi.orig:225
+#: original_texis/cmdargs.texi:225
 #, no-wrap
 msgid "--display"
 msgstr "--display"
 
 #. type: cindex
-#: cmdargs.texi.orig:226
+#: original_texis/cmdargs.texi:226
 #, no-wrap
 msgid "display for Emacs frame"
 msgstr "display for Emacs frame"
 
 #. type: table
-#: cmdargs.texi.orig:229
+#: original_texis/cmdargs.texi:229
 msgid ""
 "Use the X Window System and use the display named @var{display} to open the "
 "initial Emacs frame.  @xref{Display X}, for more details."
-msgstr "Emacs初期フレームを開くために、Xウィンドウシステムと@var{display}という名前のディスプレーを使用します。詳細は、@ref{Display X}を参照してください。"
+msgstr ""
+"Emacs初期フレームを開くために、Xウィンドウシステムと@var{display}という名前の"
+"ディスプレーを使用します。詳細は、@ref{Display X}を参照してください。"
 
 #. type: opindex
-#: cmdargs.texi.orig:230 cmdargs.texi.orig:231
+#: original_texis/cmdargs.texi:230 original_texis/cmdargs.texi:231
 #, no-wrap
 msgid "-nw"
 msgstr "-nw"
 
 #. type: opindex
-#: cmdargs.texi.orig:232 cmdargs.texi.orig:233
+#: original_texis/cmdargs.texi:232 original_texis/cmdargs.texi:233
 #, no-wrap
 msgid "--no-window-system"
 msgstr "--no-window-system"
 
 #. type: cindex
-#: cmdargs.texi.orig:234
+#: original_texis/cmdargs.texi:234
 #, no-wrap
 msgid "disable window system"
 msgstr "disable window system"
 
 #. type: table
-#: cmdargs.texi.orig:239
+#: original_texis/cmdargs.texi:239
 msgid ""
 "Don't communicate directly with the window system, disregarding the "
 "@env{DISPLAY} environment variable even if it is set.  This means that Emacs "
 "uses the terminal from which it was launched for all its display and input."
-msgstr "環境変数@env{DISPLAY}がセットされていても、ウィンドウシステムと直接やりとりしません。これはEmacsが、Emacsのすべての表示と出力のために、開始された端末を使用することを意味します。"
+msgstr ""
+"環境変数@env{DISPLAY}がセットされていても、ウィンドウシステムと直接やりとりし"
+"ません。これはEmacsが、Emacsのすべての表示と出力のために、開始された端末を使"
+"用することを意味します。"
 
 #. type: cindex
-#: cmdargs.texi.orig:240
+#: original_texis/cmdargs.texi:240
 #, no-wrap
 msgid "batch mode"
 msgstr "batch mode"
 
 #. type: item
-#: cmdargs.texi.orig:241
+#: original_texis/cmdargs.texi:241
 #, no-wrap
 msgid "-batch"
 msgstr "-batch"
 
 #. type: itemx
-#: cmdargs.texi.orig:242 cmdargs.texi.orig:243
+#: original_texis/cmdargs.texi:242 original_texis/cmdargs.texi:243
 #, no-wrap
 msgid "--batch"
 msgstr "--batch"
 
 #. type: table
-#: cmdargs.texi.orig:249
+#: original_texis/cmdargs.texi:249
 msgid ""
 "Run Emacs in @dfn{batch mode}.  Batch mode is used for running programs "
 "written in Emacs Lisp from shell scripts, makefiles, and so on.  To invoke a "
 "Lisp program, use the @samp{-batch} option in conjunction with one or more "
 "of @samp{-l}, @samp{-f} or @samp{--eval} (@pxref{Action Arguments}).  "
 "@xref{Command Example}, for an example."
-msgstr "Emacsを@dfn{バッチモード(batch mode)}で実行します。バッチモードは、シェルスクリプトやmakeファイルから、Emacs Lispで記述されたプログラムを実行するために使用されます。Lispプログラムを呼び出すには、@samp{-batch}オプションと併せて、1つ以上の@samp{-l}、@samp{-f}、@samp{--eval}を使用します(@ref{Action Arguments}を参照してください)。使用例は、@ref{Command Example}を参照してください。"
+msgstr ""
+"Emacsを@dfn{バッチモード(batch mode)}で実行します。バッチモードは、シェルスク"
+"リプトやmakeファイルから、Emacs Lispで記述されたプログラムを実行するために使"
+"用されます。Lispプログラムを呼び出すには、@samp{-batch}オプションと併せて、1"
+"つ以上の@samp{-l}、@samp{-f}、@samp{--eval}を使用します(@ref{Action "
+"Arguments}を参照してください)。使用例は、@ref{Command Example}を参照してくだ"
+"さい。"
 
 #. type: table
-#: cmdargs.texi.orig:260
+#: original_texis/cmdargs.texi:260
 msgid ""
 "In batch mode, Emacs does not display the text being edited, and the "
 "standard terminal interrupt characters such as @kbd{C-z} and @kbd{C-c} have "
@@ -815,10 +921,18 @@ msgid ""
 "@code{stderr}.)  Functions that normally read keyboard input from the "
 "minibuffer take their input from the terminal's standard input stream "
 "(@code{stdin}) instead."
-msgstr "バッチモードでは、Emacsは編集されるテキストを表示せず、@kbd{C-z}や@kbd{C-c}のような、標準の端末割り込みが通常の効果をもちます。通常はエコーエリアにメッセージをプリントするEmacs関数は、かわりに標準出力ストリーム(@code{stdout})、または標準エラーストリーム(@code{stderr})にメッセージをプリントします(正確に言うと、@code{prin1}、@code{princ}、@code{print}のような関数は@code{stdout}にプリントし、@code{message}や@code{error}は@code{stderr}にプリントします)。通常はミニバッファーからキーボード入力を読み取る関数は、かわりに端末の標準入力ストリーム(@code{stdin})から入力を受け取ります。"
+msgstr ""
+"バッチモードでは、Emacsは編集されるテキストを表示せず、@kbd{C-z}や@kbd{C-c}の"
+"ような、標準の端末割り込みが通常の効果をもちます。通常はエコーエリアにメッ"
+"セージをプリントするEmacs関数は、かわりに標準出力ストリーム(@code{stdout})、"
+"または標準エラーストリーム(@code{stderr})にメッセージをプリントします(正確に"
+"言うと、@code{prin1}、@code{princ}、@code{print}のような関数は@code{stdout}に"
+"プリントし、@code{message}や@code{error}は@code{stderr}にプリントします)。通"
+"常はミニバッファーからキーボード入力を読み取る関数は、かわりに端末の標準入力"
+"ストリーム(@code{stdin})から入力を受け取ります。"
 
 #. type: table
-#: cmdargs.texi.orig:267
+#: original_texis/cmdargs.texi:267
 msgid ""
 "@samp{--batch} implies @samp{-q} (do not load an initialization file), but "
 "@file{site-start.el} is loaded nonetheless.  It also causes Emacs to exit "
@@ -826,303 +940,348 @@ msgid ""
 "saving except in buffers for which auto-saving is explicitly requested, and "
 "when saving files it omits the @code{fsync} system call unless otherwise "
 "requested."
-msgstr "@samp{--batch}は暗に@samp{-q}(初期化ファイルをロードしません)を含みますが、それでも@file{site-start.el}はロードされます。これはすべてのコマンドオプションを処理した後に、Emacsを終了します。それに加えて、自動保存が明示的に要求された場合を除き、自動保存を無効にします。また自動保存が要求されていない場合は、ファイルの保存での@code{fsync}システムコールを省略します。"
+msgstr ""
+"@samp{--batch}は暗に@samp{-q}(初期化ファイルをロードしません)を含みますが、そ"
+"れでも@file{site-start.el}はロードされます。これはすべてのコマンドオプション"
+"を処理した後に、Emacsを終了します。それに加えて、自動保存が明示的に要求された"
+"場合を除き、自動保存を無効にします。また自動保存が要求されていない場合は、"
+"ファイルの保存での@code{fsync}システムコールを省略します。"
 
 #. type: item
-#: cmdargs.texi.orig:268
+#: original_texis/cmdargs.texi:268
 #, no-wrap
 msgid "--script @var{file}"
 msgstr "--script @var{file}"
 
 #. type: opindex
-#: cmdargs.texi.orig:269
+#: original_texis/cmdargs.texi:269
 #, no-wrap
 msgid "--script"
 msgstr "--script"
 
 #. type: cindex
-#: cmdargs.texi.orig:270
+#: original_texis/cmdargs.texi:270
 #, no-wrap
 msgid "script mode"
 msgstr "script mode"
 
 #. type: table
-#: cmdargs.texi.orig:273
+#: original_texis/cmdargs.texi:273
 msgid ""
 "Run Emacs in batch mode, like @samp{--batch}, and then read and execute the "
 "Lisp code in @var{file}."
-msgstr "@samp{--batch}と同様に、Emacsをバッチモードで実行してから、@var{file}のLispコードを読み込み実行します。"
+msgstr ""
+"@samp{--batch}と同様に、Emacsをバッチモードで実行してから、@var{file}のLisp"
+"コードを読み込み実行します。"
 
 #. type: table
-#: cmdargs.texi.orig:276
+#: original_texis/cmdargs.texi:276
 msgid ""
 "The normal use of this option is in executable script files that run Emacs.  "
 "They can start with this text on the first line"
-msgstr "このオプションは通常、Emacsを実行する実行可能スクリプトの中で使用します。これは以下のテキストを最初の行に記述します:"
+msgstr ""
+"このオプションは通常、Emacsを実行する実行可能スクリプトの中で使用します。これ"
+"は以下のテキストを最初の行に記述します:"
 
 #. type: example
-#: cmdargs.texi.orig:279
+#: original_texis/cmdargs.texi:279
 #, no-wrap
 msgid "#!/usr/bin/emacs --script\n"
 msgstr "#!/usr/bin/emacs --script\n"
 
 #. type: table
-#: cmdargs.texi.orig:285
+#: original_texis/cmdargs.texi:285
 msgid ""
 "which will invoke Emacs with @samp{--script} and supply the name of the "
 "script file as @var{file}.  Emacs Lisp then treats the @samp{#!} on this "
 "first line as a comment delimiter."
-msgstr "これは@samp{--script}でEmacsを呼び出し、スクリプトファイル名は@var{file}です。それからEmacs Lispは最初の行の@samp{#!}をコメント区切りとして扱います。"
+msgstr ""
+"これは@samp{--script}でEmacsを呼び出し、スクリプトファイル名は@var{file}で"
+"す。それからEmacs Lispは最初の行の@samp{#!}をコメント区切りとして扱います。"
 
 #. type: opindex
-#: cmdargs.texi.orig:286 cmdargs.texi.orig:287
+#: original_texis/cmdargs.texi:286 original_texis/cmdargs.texi:287
 #, no-wrap
 msgid "-q"
 msgstr "-q"
 
 #. type: opindex
-#: cmdargs.texi.orig:288 cmdargs.texi.orig:289
+#: original_texis/cmdargs.texi:288 original_texis/cmdargs.texi:289
 #, no-wrap
 msgid "--no-init-file"
 msgstr "--no-init-file"
 
 #. type: cindex
-#: cmdargs.texi.orig:290
+#: original_texis/cmdargs.texi:290
 #, no-wrap
 msgid "bypassing init and @file{default.el} file"
 msgstr "bypassing init and @file{default.el} file"
 
 #. type: cindex
-#: cmdargs.texi.orig:291
+#: original_texis/cmdargs.texi:291
 #, no-wrap
 msgid "init file, not loading"
 msgstr "init file, not loading"
 
 #. type: cindex
-#: cmdargs.texi.orig:292
+#: original_texis/cmdargs.texi:292
 #, no-wrap
 msgid "@file{default.el} file, not loading"
 msgstr "@file{default.el} file, not loading"
 
 #. type: table
-#: cmdargs.texi.orig:297
+#: original_texis/cmdargs.texi:297
 msgid ""
 "Do not load any initialization file (@pxref{Init File}).  When Emacs is "
 "invoked with this option, the Customize facility does not allow options to "
 "be saved (@pxref{Easy Customization}).  This option does not disable loading "
 "@file{site-start.el}."
-msgstr "初期化ファイルをロードしません(@ref{Init File}を参照してください)。Emacsがこのオプションで呼び出された場合、Customize機能は、保存のオプションを受け付けません(@ref{Easy Customization}を参照してください)。このオプションは@file{site-start.el}のロードは無効にしません。"
+msgstr ""
+"初期化ファイルをロードしません(@ref{Init File}を参照してください)。Emacsがこ"
+"のオプションで呼び出された場合、Customize機能は、保存のオプションを受け付けま"
+"せん(@ref{Easy Customization}を参照してください)。このオプションは@file{site-"
+"start.el}のロードは無効にしません。"
 
 #. type: opindex
-#: cmdargs.texi.orig:298 cmdargs.texi.orig:299
+#: original_texis/cmdargs.texi:298 original_texis/cmdargs.texi:299
 #, no-wrap
 msgid "--no-site-file"
 msgstr "--no-site-file"
 
 #. type: cindex
-#: cmdargs.texi.orig:300 cmdargs.texi.orig:306
+#: original_texis/cmdargs.texi:300 original_texis/cmdargs.texi:306
 #, no-wrap
 msgid "@file{site-start.el} file, not loading"
 msgstr "@file{site-start.el} file, not loading"
 
 #. type: table
-#: cmdargs.texi.orig:303
+#: original_texis/cmdargs.texi:303
 msgid ""
 "Do not load @file{site-start.el} (@pxref{Init File}).  The @samp{-Q} option "
 "does this too, but other options like @samp{-q} do not."
-msgstr "@file{site-start.el}をロードしません(@ref{Init File}を参照してください)。@samp{-Q}オプションもこれを行ないますが、@samp{-q}のような他のオプションはこれを行ないません。"
+msgstr ""
+"@file{site-start.el}をロードしません(@ref{Init File}を参照してください)。"
+"@samp{-Q}オプションもこれを行ないますが、@samp{-q}のような他のオプションはこ"
+"れを行ないません。"
 
 #. type: opindex
-#: cmdargs.texi.orig:304 cmdargs.texi.orig:305
+#: original_texis/cmdargs.texi:304 original_texis/cmdargs.texi:305
 #, no-wrap
 msgid "--no-site-lisp"
 msgstr "--no-site-lisp"
 
 #. type: table
-#: cmdargs.texi.orig:309
+#: original_texis/cmdargs.texi:309
 msgid ""
 "Do not include the @file{site-lisp} directories in @code{load-path} "
 "(@pxref{Init File}).  The @samp{-Q} option does this too."
-msgstr "@code{load-path}に@file{site-lisp}ディレクトリーを含めません(@ref{Init File}を参照してください)。@samp{-Q}オプションもこれを行ないます。"
+msgstr ""
+"@code{load-path}に@file{site-lisp}ディレクトリーを含めません(@ref{Init File}"
+"を参照してください)。@samp{-Q}オプションもこれを行ないます。"
 
 #. type: opindex
-#: cmdargs.texi.orig:310 cmdargs.texi.orig:311
+#: original_texis/cmdargs.texi:310 original_texis/cmdargs.texi:311
 #, no-wrap
 msgid "--no-splash"
 msgstr "--no-splash"
 
 #. type: vindex
-#: cmdargs.texi.orig:312
+#: original_texis/cmdargs.texi:312
 #, no-wrap
 msgid "inhibit-startup-screen"
 msgstr "inhibit-startup-screen"
 
 #. type: cindex
-#: cmdargs.texi.orig:313
+#: original_texis/cmdargs.texi:313
 #, no-wrap
 msgid "splash screen"
 msgstr "splash screen"
 
 #. type: cindex
-#: cmdargs.texi.orig:314
+#: original_texis/cmdargs.texi:314
 #, no-wrap
 msgid "startup message"
 msgstr "startup message"
 
 #. type: table
-#: cmdargs.texi.orig:318
+#: original_texis/cmdargs.texi:318
 msgid ""
 "Do not display a startup screen.  You can also achieve this effect by "
 "setting the variable @code{inhibit-startup-screen} to non-@code{nil} in your "
 "initialization file (@pxref{Entering Emacs})."
-msgstr "スタートアップ画面を表示しません。初期化ファイルで変数@code{inhibit-startup-screen}を非@code{nil}にセットしても、この効果を得ることができます(@ref{Entering Emacs}を参照してください)。"
+msgstr ""
+"スタートアップ画面を表示しません。初期化ファイルで変数@code{inhibit-startup-"
+"screen}を非@code{nil}にセットしても、この効果を得ることができます"
+"(@ref{Entering Emacs}を参照してください)。"
 
 #. type: opindex
-#: cmdargs.texi.orig:319 cmdargs.texi.orig:320
+#: original_texis/cmdargs.texi:319 original_texis/cmdargs.texi:320
 #, no-wrap
 msgid "-Q"
 msgstr "-Q"
 
 #. type: opindex
-#: cmdargs.texi.orig:321 cmdargs.texi.orig:322
+#: original_texis/cmdargs.texi:321 original_texis/cmdargs.texi:322
 #, no-wrap
 msgid "--quick"
 msgstr "--quick"
 
 #. type: table
-#: cmdargs.texi.orig:327
+#: original_texis/cmdargs.texi:327
 msgid ""
 "Start emacs with minimum customizations.  This is similar to using @samp{-"
 "q}, @samp{--no-site-file}, @samp{--no-site-lisp}, and @samp{--no-splash} "
 "together.  This also stops Emacs from processing X resources by setting "
 "@code{inhibit-x-resources} to @code{t} (@pxref{Resources})."
-msgstr "最小のカスタマイズでEmacsを開始します。これは@samp{-q}、@samp{--no-site-file}、@samp{--no-site-lisp}、@samp{--no-splash}を一緒に使用したのと同様です。これは@code{inhibit-x-resources}を@code{t}にセットすることにより、EmacsがXリソースの処理を行なうことも停止します(@ref{Resources}を参照してください)。"
+msgstr ""
+"最小のカスタマイズでEmacsを開始します。これは@samp{-q}、@samp{--no-site-"
+"file}、@samp{--no-site-lisp}、@samp{--no-splash}を一緒に使用したのと同様で"
+"す。これは@code{inhibit-x-resources}を@code{t}にセットすることにより、Emacsが"
+"Xリソースの処理を行なうことも停止します(@ref{Resources}を参照してください)。"
 
 #. type: opindex
-#: cmdargs.texi.orig:328 cmdargs.texi.orig:329
+#: original_texis/cmdargs.texi:328 original_texis/cmdargs.texi:329
 #, no-wrap
 msgid "-daemon"
 msgstr "-daemon"
 
 #. type: opindex
-#: cmdargs.texi.orig:330 cmdargs.texi.orig:331
+#: original_texis/cmdargs.texi:330 original_texis/cmdargs.texi:331
 #, no-wrap
 msgid "--daemon"
 msgstr "--daemon"
 
 #. type: table
-#: cmdargs.texi.orig:337
+#: original_texis/cmdargs.texi:337
 msgid ""
 "Start Emacs as a daemon---after Emacs starts up, it starts the Emacs server "
 "and disconnects from the terminal without opening any frames.  You can then "
 "use the @command{emacsclient} command to connect to Emacs for editing.  "
 "@xref{Emacs Server}, for information about using Emacs as a daemon."
-msgstr "Emacsをデーモンとして開始します。これはフレームをオープンせずに、まずEmacsを開始した後、Emacsサーバーを開始してから、端末との接続を切断します。@command{emacsclient}コマンドを使用して、編集のためにEmacsに接続できます。デーモンとしてのEmacsの使用についての情報は、@ref{Emacs Server}を参照してください。"
+msgstr ""
+"Emacsをデーモンとして開始します。これはフレームをオープンせずに、まずEmacsを"
+"開始した後、Emacsサーバーを開始してから、端末との接続を切断します。"
+"@command{emacsclient}コマンドを使用して、編集のためにEmacsに接続できます。"
+"デーモンとしてのEmacsの使用についての情報は、@ref{Emacs Server}を参照してくだ"
+"さい。"
 
 #. type: item
-#: cmdargs.texi.orig:338
+#: original_texis/cmdargs.texi:338
 #, no-wrap
 msgid "-daemon=@var{SERVER-NAME}"
 msgstr "-daemon=@var{SERVER-NAME}"
 
 #. type: table
-#: cmdargs.texi.orig:341
+#: original_texis/cmdargs.texi:341
 msgid ""
 "Start emacs in background as a daemon, and use @var{SERVER-NAME} as the "
 "server name."
-msgstr "バックグラウンドでEmacsをデーモンとして開始して、サーバー名には@var{SERVER-NAME}を使用します。"
+msgstr ""
+"バックグラウンドでEmacsをデーモンとして開始して、サーバー名には@var{SERVER-"
+"NAME}を使用します。"
 
 #. type: opindex
-#: cmdargs.texi.orig:342 cmdargs.texi.orig:343
+#: original_texis/cmdargs.texi:342 original_texis/cmdargs.texi:343
 #, no-wrap
 msgid "--no-desktop"
 msgstr "--no-desktop"
 
 #. type: table
-#: cmdargs.texi.orig:345
+#: original_texis/cmdargs.texi:345
 msgid "Do not reload any saved desktop.  @xref{Saving Emacs Sessions}."
-msgstr "保存されたデスクトップをリロードしません。@ref{Saving Emacs Sessions}を参照してください。"
+msgstr ""
+"保存されたデスクトップをリロードしません。@ref{Saving Emacs Sessions}を参照し"
+"てください。"
 
 #. type: item
-#: cmdargs.texi.orig:346
+#: original_texis/cmdargs.texi:346
 #, no-wrap
 msgid "-u @var{user}"
 msgstr "-u @var{user}"
 
 #. type: opindex
-#: cmdargs.texi.orig:347
+#: original_texis/cmdargs.texi:347
 #, no-wrap
 msgid "-u"
 msgstr "-u"
 
 #. type: itemx
-#: cmdargs.texi.orig:348
+#: original_texis/cmdargs.texi:348
 #, no-wrap
 msgid "--user=@var{user}"
 msgstr "--user=@var{user}"
 
 #. type: opindex
-#: cmdargs.texi.orig:349
+#: original_texis/cmdargs.texi:349
 #, no-wrap
 msgid "--user"
 msgstr "--user"
 
 #. type: cindex
-#: cmdargs.texi.orig:350
+#: original_texis/cmdargs.texi:350
 #, no-wrap
 msgid "load init file of another user"
 msgstr "load init file of another user"
 
 #. type: table
-#: cmdargs.texi.orig:353
+#: original_texis/cmdargs.texi:353
 msgid ""
 "Load @var{user}'s initialization file instead of your own@footnote{This "
 "option has no effect on MS-Windows.}."
-msgstr "あなたの初期化ファイルのかわりに、@var{user}の初期化ファイルをロードします。@footnote{このオプションはMS-Windowsでは効果がありません。}"
+msgstr ""
+"あなたの初期化ファイルのかわりに、@var{user}の初期化ファイルをロードします。"
+"@footnote{このオプションはMS-Windowsでは効果がありません。}"
 
 #. type: opindex
-#: cmdargs.texi.orig:354 cmdargs.texi.orig:355
+#: original_texis/cmdargs.texi:354 original_texis/cmdargs.texi:355
 #, no-wrap
 msgid "--debug-init"
 msgstr "--debug-init"
 
 #. type: cindex
-#: cmdargs.texi.orig:356
+#: original_texis/cmdargs.texi:356
 #, no-wrap
 msgid "errors in init file"
 msgstr "errors in init file"
 
 #. type: table
-#: cmdargs.texi.orig:360
+#: original_texis/cmdargs.texi:360
 msgid ""
 "Enable the Emacs Lisp debugger for errors in the init file.  @xref{Error "
 "Debugging,, Entering the Debugger on an Error, elisp, The GNU Emacs Lisp "
 "Reference Manual}."
-msgstr "initファイルのエラーにたいして、Emacs Lispデバッガーを有効にします。@ref{Error Debugging,, Entering the Debugger on an Error, elisp, The GNU Emacs Lisp Reference Manual}を参照してください。"
+msgstr ""
+"initファイルのエラーにたいして、Emacs Lispデバッガーを有効にします。"
+"@ref{Error Debugging,, Entering the Debugger on an Error, elisp, The GNU "
+"Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:363
+#: original_texis/cmdargs.texi:363
 #, no-wrap
 msgid "Command Argument Example"
 msgstr "Command Argument Example"
 
 #. type: Plain text
-#: cmdargs.texi.orig:369
+#: original_texis/cmdargs.texi:369
 msgid ""
 "Here is an example of using Emacs with arguments and options.  It assumes "
 "you have a Lisp program file called @file{hack-c.el} which, when loaded, "
 "performs some useful operation on the current buffer, expected to be a C "
 "program."
-msgstr "以下は、引数とオプションを指定してEmacsを使用する例です。ここでは、ロードすることにより、Cプログラムをvisitしたカレントバッファーにたいして、何か便利な操作を行なう、@file{hack-c.el}という名前のLispプログラムファイルがあるとしましょう。"
+msgstr ""
+"以下は、引数とオプションを指定してEmacsを使用する例です。ここでは、ロードする"
+"ことにより、Cプログラムをvisitしたカレントバッファーにたいして、何か便利な操"
+"作を行なう、@file{hack-c.el}という名前のLispプログラムファイルがあるとしま"
+"しょう。"
 
 #. type: example
-#: cmdargs.texi.orig:372
+#: original_texis/cmdargs.texi:372
 #, no-wrap
 msgid "emacs --batch foo.c -l hack-c -f save-buffer >& log\n"
 msgstr "emacs --batch foo.c -l hack-c -f save-buffer >& log\n"
 
 #. type: Plain text
-#: cmdargs.texi.orig:382
+#: original_texis/cmdargs.texi:382
 msgid ""
 "This says to visit @file{foo.c}, load @file{hack-c.el} (which makes changes "
 "in the visited file), save @file{foo.c} (note that @code{save-buffer} is the "
@@ -1130,32 +1289,42 @@ msgid ""
 "(because of @samp{--batch}).  @samp{--batch} also guarantees there will be "
 "no problem redirecting output to @file{log}, because Emacs will not assume "
 "that it has a display terminal to work with."
-msgstr "これは@file{foo.c}をvisitしてから、@file{hack-c.el}(これはvisitされたファイルに何らかの変更を行ないます)をロードし、@file{foo.c}を保存(@code{save-buffer}は@kbd{C-x C-s}にバインドされた関数であることに注意してください)した後に、(@samp{--batch}オプションなので)Emacsを終了してシェルに戻ります。@samp{--batch}は、出力を@file{log}にリダイレクトしても問題がないことが保証されます。なぜならEmacsは作業するためのディスプレー端末をもたないと想定されるからです。"
+msgstr ""
+"これは@file{foo.c}をvisitしてから、@file{hack-c.el}(これはvisitされたファイル"
+"に何らかの変更を行ないます)をロードし、@file{foo.c}を保存(@code{save-buffer}"
+"は@kbd{C-x C-s}にバインドされた関数であることに注意してください)した後に、"
+"(@samp{--batch}オプションなので)Emacsを終了してシェルに戻ります。@samp{--"
+"batch}は、出力を@file{log}にリダイレクトしても問題がないことが保証されます。"
+"なぜならEmacsは作業するためのディスプレー端末をもたないと想定されるからです。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:384
+#: original_texis/cmdargs.texi:384
 #, no-wrap
 msgid "Environment Variables"
 msgstr "Environment Variables"
 
 #. type: cindex
-#: cmdargs.texi.orig:385
+#: original_texis/cmdargs.texi:385
 #, no-wrap
 msgid "environment variables"
 msgstr "environment variables"
 
 #. type: Plain text
-#: cmdargs.texi.orig:392
+#: original_texis/cmdargs.texi:392
 msgid ""
 "The @dfn{environment} is a feature of the operating system; it consists of a "
 "collection of variables with names and values.  Each variable is called an "
 "@dfn{environment variable}; environment variable names are case-sensitive, "
 "and it is conventional to use upper case letters only.  The values are all "
 "text strings."
-msgstr "@dfn{環境(environment)}とは、オペレーティングシステムの機能です。これは値と名前をもつ変数のコレクションからなります。それぞれの変数は@dfn{環境変数(environment variable)}と呼ばれます。環境変数名は大文字小文字を区別し、慣習では大文字だけを使用します。値はすべてテキスト文字列です。"
+msgstr ""
+"@dfn{環境(environment)}とは、オペレーティングシステムの機能です。これは値と名"
+"前をもつ変数のコレクションからなります。それぞれの変数は@dfn{環境変数"
+"(environment variable)}と呼ばれます。環境変数名は大文字小文字を区別し、慣習で"
+"は大文字だけを使用します。値はすべてテキスト文字列です。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:399
+#: original_texis/cmdargs.texi:399
 msgid ""
 "What makes the environment useful is that subprocesses inherit the "
 "environment automatically from their parent process.  This means you can set "
@@ -1163,28 +1332,33 @@ msgid ""
 "(including Emacs) will automatically see it.  Subprocesses of Emacs (such as "
 "shells, compilers, and version control programs) inherit the environment "
 "from Emacs, too."
-msgstr "何が環境を便利にしているかというと、それはサブプロセスが親プロセスから自動的に環境を継承できることです。これはログインシェルで環境変数をセットして、実行するすべて(Emacsを含む)のプログラムが、それを参照できることを意味します。Emacsのサブプロセス(シェル、コンパイラー、バージョンコントロールシステムなど)も、Emacsから環境を継承します。"
+msgstr ""
+"何が環境を便利にしているかというと、それはサブプロセスが親プロセスから自動的"
+"に環境を継承できることです。これはログインシェルで環境変数をセットして、実行"
+"するすべて(Emacsを含む)のプログラムが、それを参照できることを意味します。"
+"Emacsのサブプロセス(シェル、コンパイラー、バージョンコントロールシステムなど)"
+"も、Emacsから環境を継承します。"
 
 #. type: findex
-#: cmdargs.texi.orig:400
+#: original_texis/cmdargs.texi:400
 #, no-wrap
 msgid "setenv"
 msgstr "setenv"
 
 #. type: findex
-#: cmdargs.texi.orig:401
+#: original_texis/cmdargs.texi:401
 #, no-wrap
 msgid "getenv"
 msgstr "getenv"
 
 #. type: vindex
-#: cmdargs.texi.orig:402
+#: original_texis/cmdargs.texi:402
 #, no-wrap
 msgid "initial-environment"
 msgstr "initial-environment"
 
 #. type: Plain text
-#: cmdargs.texi.orig:410
+#: original_texis/cmdargs.texi:410
 msgid ""
 "Inside Emacs, the command @kbd{M-x getenv} reads the name of an environment "
 "variable, and prints its value in the echo area.  @kbd{M-x setenv} sets a "
@@ -1192,167 +1366,192 @@ msgid ""
 "variable.  (Environment variable substitutions with @samp{$} work in the "
 "value just as in file names; see @ref{File Names with $}.)  The variable "
 "@code{initial-environment} stores the initial environment inherited by Emacs."
-msgstr "Emacsの中では、コマンド@kbd{M-x getenv}は環境変数の名前を読み取って、その値をエコーエリアにプリントします。@kbd{M-x setenv}はEmacs環境で変数をセットし、@kbd{C-u M-x setenv}は変数を削除します(@samp{$}による環境変数の置き換えは、ファイル名にたいする値と同様に機能します。@ref{File Names with $}を参照してください)。変数@code{initial-environment}は、Emacsにより継承された初期環境を保管します。"
+msgstr ""
+"Emacsの中では、コマンド@kbd{M-x getenv}は環境変数の名前を読み取って、その値を"
+"エコーエリアにプリントします。@kbd{M-x setenv}はEmacs環境で変数をセットし、"
+"@kbd{C-u M-x setenv}は変数を削除します(@samp{$}による環境変数の置き換えは、"
+"ファイル名にたいする値と同様に機能します。@ref{File Names with $}を参照してく"
+"ださい)。変数@code{initial-environment}は、Emacsにより継承された初期環境を保"
+"管します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:415
+#: original_texis/cmdargs.texi:415
 msgid ""
 "The way to set environment variables outside of Emacs depends on the "
 "operating system, and especially the shell that you are using.  For example, "
 "here's how to set the environment variable @env{ORGANIZATION} to @samp{not "
 "very much} using Bash:"
-msgstr "Emacsの外で環境変数をセットする方法は、オペレーティングシステム、特に使用しているシェルに依存します。たとえば以下はBashを使用して、環境変数@env{ORGANIZATION}に@samp{not very much}をセットする例です:"
+msgstr ""
+"Emacsの外で環境変数をセットする方法は、オペレーティングシステム、特に使用して"
+"いるシェルに依存します。たとえば以下はBashを使用して、環境変数"
+"@env{ORGANIZATION}に@samp{not very much}をセットする例です:"
 
 #. type: example
-#: cmdargs.texi.orig:418
+#: original_texis/cmdargs.texi:418
 #, no-wrap
 msgid "export ORGANIZATION=\"not very much\"\n"
 msgstr "export ORGANIZATION=\"not very much\"\n"
 
 #. type: Plain text
-#: cmdargs.texi.orig:422
+#: original_texis/cmdargs.texi:422
 msgid "and here's how to do it in csh or tcsh:"
 msgstr "以下はcshまたはtcshでこれを行なう方法の例です:"
 
 #. type: example
-#: cmdargs.texi.orig:425
+#: original_texis/cmdargs.texi:425
 #, no-wrap
 msgid "setenv ORGANIZATION \"not very much\"\n"
 msgstr "setenv ORGANIZATION \"not very much\"\n"
 
 #. type: Plain text
-#: cmdargs.texi.orig:430
+#: original_texis/cmdargs.texi:430
 msgid ""
 "When Emacs is using the X Window System, various environment variables that "
 "control X work for Emacs as well.  See the X documentation for more "
 "information."
-msgstr "EmacsがXウィンドウシステムを使用している場合、Xを制御するさまざまな環境変数は、Emacsも同様に制御します。詳細は、Xのドキュメントを参照してください。"
+msgstr ""
+"EmacsがXウィンドウシステムを使用している場合、Xを制御するさまざまな環境変数"
+"は、Emacsも同様に制御します。詳細は、Xのドキュメントを参照してください。"
 
 #. type: appendixsubsec
-#: cmdargs.texi.orig:435 cmdargs.texi.orig:437 cmdargs.texi.orig:438
+#: original_texis/cmdargs.texi:435 original_texis/cmdargs.texi:437
+#: original_texis/cmdargs.texi:438
 #, no-wrap
 msgid "General Variables"
 msgstr "General Variables"
 
 #. type: menuentry
-#: cmdargs.texi.orig:435
+#: original_texis/cmdargs.texi:435
 msgid "Environment variables that all versions of Emacs use."
 msgstr "すべてのバージョンのEmacsが使用する環境変数。"
 
 #. type: node
-#: cmdargs.texi.orig:435 cmdargs.texi.orig:651
+#: original_texis/cmdargs.texi:435 original_texis/cmdargs.texi:651
 #, no-wrap
 msgid "Misc Variables"
 msgstr "Misc Variables"
 
 #. type: menuentry
-#: cmdargs.texi.orig:435
+#: original_texis/cmdargs.texi:435
 msgid "Certain system-specific variables."
 msgstr "システム固有の変数。"
 
 #. type: node
-#: cmdargs.texi.orig:435 cmdargs.texi.orig:710
+#: original_texis/cmdargs.texi:435 original_texis/cmdargs.texi:710
 #, no-wrap
 msgid "MS-Windows Registry"
 msgstr "MS-Windows Registry"
 
 #. type: menuentry
-#: cmdargs.texi.orig:435
+#: original_texis/cmdargs.texi:435
 msgid "An alternative to the environment on MS-Windows."
 msgstr "MS-Windowsでの環境の代用。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:444
+#: original_texis/cmdargs.texi:444
 msgid ""
 "Here is an alphabetical list of environment variables that have special "
 "meanings in Emacs.  Most of these variables are also used by some other "
 "programs.  Emacs does not require any of these environment variables to be "
 "set, but it uses their values if they are set."
-msgstr "以下は、Emacsで特別な意味をもつ環境変数の、アルファベット順のリストです。これらの変数のほとんどは、他のプログラムでも使用されます。Emacsはこれらの環境変数がセットされていることを要求しませんが、セットされている場合はその値を使用します。"
+msgstr ""
+"以下は、Emacsで特別な意味をもつ環境変数の、アルファベット順のリストです。これ"
+"らの変数のほとんどは、他のプログラムでも使用されます。Emacsはこれらの環境変数"
+"がセットされていることを要求しませんが、セットされている場合はその値を使用し"
+"ます。"
 
 #. type: item
-#: cmdargs.texi.orig:450
+#: original_texis/cmdargs.texi:450
 #, no-wrap
 msgid "CDPATH"
 msgstr "CDPATH"
 
 #. type: vindex
-#: cmdargs.texi.orig:451
+#: original_texis/cmdargs.texi:451
 #, no-wrap
 msgid "CDPATH, environment variable"
 msgstr "CDPATH, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:454
+#: original_texis/cmdargs.texi:454
 msgid ""
 "Used by the @code{cd} command to search for the directory you specify, when "
 "you specify a relative directory name."
-msgstr "相対ディレクトリー名を指定したときに、指定したディレクトリーを検索するために、@code{cd}コマンドにより使用されます。"
+msgstr ""
+"相対ディレクトリー名を指定したときに、指定したディレクトリーを検索するため"
+"に、@code{cd}コマンドにより使用されます。"
 
 #. type: item
-#: cmdargs.texi.orig:454
+#: original_texis/cmdargs.texi:454
 #, no-wrap
 msgid "DBUS_SESSION_BUS_ADDRESS"
 msgstr "DBUS_SESSION_BUS_ADDRESS"
 
 #. type: vindex
-#: cmdargs.texi.orig:455
+#: original_texis/cmdargs.texi:455
 #, no-wrap
 msgid "DBUS_SESSION_BUS_ADDRESS, environment variable"
 msgstr "DBUS_SESSION_BUS_ADDRESS, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:460
+#: original_texis/cmdargs.texi:460
 msgid ""
 "Used by D-Bus when Emacs is compiled with it.  Usually, there is no need to "
 "change it.  Setting it to a dummy address, like @samp{unix:path=/dev/null}, "
 "suppresses connections to the D-Bus session bus as well as autolaunching the "
 "D-Bus session bus if not running yet."
-msgstr "D-BusサポートつきでEmacsがコンパイルされている場合、D-Busにより使用されます。通常これを変更する必要はありません。@samp{unix:path=/dev/null}のようなダミーアドレスをセットすることにより、D-Busセッションバスとの接続を抑止し、同様にD-Busセッションバスがまだ実行されていないときは自動的に開始します。"
+msgstr ""
+"D-BusサポートつきでEmacsがコンパイルされている場合、D-Busにより使用されます。"
+"通常これを変更する必要はありません。@samp{unix:path=/dev/null}のようなダミー"
+"アドレスをセットすることにより、D-Busセッションバスとの接続を抑止し、同様にD-"
+"Busセッションバスがまだ実行されていないときは自動的に開始します。"
 
 #. type: item
-#: cmdargs.texi.orig:460
+#: original_texis/cmdargs.texi:460
 #, no-wrap
 msgid "EMACSDATA"
 msgstr "EMACSDATA"
 
 #. type: vindex
-#: cmdargs.texi.orig:461
+#: original_texis/cmdargs.texi:461
 #, no-wrap
 msgid "EMACSDATA, environment variable"
 msgstr "EMACSDATA, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:464
+#: original_texis/cmdargs.texi:464
 msgid ""
 "Directory for the architecture-independent files that come with Emacs.  This "
 "is used to initialize the variable @code{data-directory}."
-msgstr "Emacsに含まれるアーキテクチャーに独立なファイルのディレクトリーです。これは変数@code{data-directory}の初期化に使用されます。"
+msgstr ""
+"Emacsに含まれるアーキテクチャーに独立なファイルのディレクトリーです。これは変"
+"数@code{data-directory}の初期化に使用されます。"
 
 #. type: item
-#: cmdargs.texi.orig:464
+#: original_texis/cmdargs.texi:464
 #, no-wrap
 msgid "EMACSDOC"
 msgstr "EMACSDOC"
 
 #. type: table
-#: cmdargs.texi.orig:468
+#: original_texis/cmdargs.texi:468
 msgid ""
 "#vindex EMACSDOC, environment variable Directory for the documentation "
 "string file, which is used to initialize the Lisp variable @code{doc-"
 "directory}."
 msgstr ""
 "@vindex EMACSDOC, environment variable\n"
-"ドキュメント文字列ファイルのディレクトリーで、Lisp変数@code{doc-directory}の初期化に使用されます。"
+"ドキュメント文字列ファイルのディレクトリーで、Lisp変数@code{doc-directory}の"
+"初期化に使用されます。"
 
 #. type: item
-#: cmdargs.texi.orig:468
+#: original_texis/cmdargs.texi:468
 #, no-wrap
 msgid "EMACSLOADPATH"
 msgstr "EMACSLOADPATH"
 
 #. type: table
-#: cmdargs.texi.orig:482
+#: original_texis/cmdargs.texi:482
 msgid ""
 "#vindex EMACSLOADPATH, environment variable A colon-separated list of "
 "directories@footnote{Here and below, whenever we say ``colon-separated list "
@@ -1367,107 +1566,127 @@ msgid ""
 "row, as in @samp{EMACSLOADPATH=\"/tmp::/foo\"}."
 msgstr ""
 "@vindex EMACSLOADPATH, environment variable\n"
-"Emacs Lispファイルを検索する、コロンで区切られたディレクトリーのリスト@footnote{これ以降、``コロンで区切られたディレクトリーのリスト''という場合は、UnixおよびGNU/Linuxシステムの場合を指します。MS-DOSおよびMS-Windowsでは、DOS/Windowsファイル名にはドライブ文字の後のコロンが含まれるので、かわりにセミコロンでディレクトリーが区切られます。}です。セットされている場合は、変数@code{load-path}の初期値です(@ref{Lisp Libraries}を参照してください)。空の要素は、@code{load-path}のデフォルト値を意味します。たとえば@samp{EMACSLOADPATH=\"/tmp:\"}を使用すると、デフォルトの@code{load-path}の前に@file{/tmp}を追加します。リストの中間に空の要素を指定するには、@samp{EMACSLOADPATH=\"/tmp::/foo\"}のように、2つのコロンを続けます。"
+"Emacs Lispファイルを検索する、コロンで区切られたディレクトリーのリスト"
+"@footnote{これ以降、``コロンで区切られたディレクトリーのリスト''という場合"
+"は、UnixおよびGNU/Linuxシステムの場合を指します。MS-DOSおよびMS-Windowsでは、"
+"DOS/Windowsファイル名にはドライブ文字の後のコロンが含まれるので、かわりにセミ"
+"コロンでディレクトリーが区切られます。}です。セットされている場合は、変数"
+"@code{load-path}の初期値です(@ref{Lisp Libraries}を参照してください)。空の要"
+"素は、@code{load-path}のデフォルト値を意味します。たとえば"
+"@samp{EMACSLOADPATH=\"/tmp:\"}を使用すると、デフォルトの@code{load-path}の前"
+"に@file{/tmp}を追加します。リストの中間に空の要素を指定するには、"
+"@samp{EMACSLOADPATH=\"/tmp::/foo\"}のように、2つのコロンを続けます。"
 
 #. type: item
-#: cmdargs.texi.orig:482
+#: original_texis/cmdargs.texi:482
 #, no-wrap
 msgid "EMACSPATH"
 msgstr "EMACSPATH"
 
 #. type: vindex
-#: cmdargs.texi.orig:483
+#: original_texis/cmdargs.texi:483
 #, no-wrap
 msgid "EMACSPATH, environment variable"
 msgstr "EMACSPATH, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:487
+#: original_texis/cmdargs.texi:487
 msgid ""
 "A colon-separated list of directories to search for executable files.  If "
 "set, Emacs uses this in addition to @env{PATH} (see below) when initializing "
 "the variable @code{exec-path} (@pxref{Shell})."
-msgstr "実行可能ファイルを検索するための、コロンで区切られたディレクトリーのリストです。セットされている場合、Emacsは変数@code{exec-path}(@ref{Shell}を参照してください)を初期化するときに、@env{PATH}(以下参照)に加えてこれをを使用します。"
+msgstr ""
+"実行可能ファイルを検索するための、コロンで区切られたディレクトリーのリストで"
+"す。セットされている場合、Emacsは変数@code{exec-path}(@ref{Shell}を参照してく"
+"ださい)を初期化するときに、@env{PATH}(以下参照)に加えてこれをを使用します。"
 
 #. type: item
-#: cmdargs.texi.orig:487
+#: original_texis/cmdargs.texi:487
 #, no-wrap
 msgid "EMAIL"
 msgstr "EMAIL"
 
 #. type: vindex
-#: cmdargs.texi.orig:488
+#: original_texis/cmdargs.texi:488
 #, no-wrap
 msgid "EMAIL, environment variable"
 msgstr "EMAIL, environment variable"
 
 #. type: vindex
-#: cmdargs.texi.orig:489
+#: original_texis/cmdargs.texi:489
 #, no-wrap
 msgid "user-mail-address@r{, initialization}"
 msgstr "user-mail-address@r{, initialization}"
 
 #. type: table
-#: cmdargs.texi.orig:493
+#: original_texis/cmdargs.texi:493
 msgid ""
 "Your email address; used to initialize the Lisp variable @code{user-mail-"
 "address}, which the Emacs mail interface puts into the @samp{From} header of "
 "outgoing messages (@pxref{Mail Headers})."
-msgstr "メールアドレスです。Lisp変数@code{user-mail-address}を初期化するために使用されます。Emacsのメールインターフェースは、送信メッセージの@samp{From}ヘッダーにこれを使用します(@ref{Mail Headers}を参照してください)。"
+msgstr ""
+"メールアドレスです。Lisp変数@code{user-mail-address}を初期化するために使用さ"
+"れます。Emacsのメールインターフェースは、送信メッセージの@samp{From}ヘッダー"
+"にこれを使用します(@ref{Mail Headers}を参照してください)。"
 
 #. type: item
-#: cmdargs.texi.orig:493
+#: original_texis/cmdargs.texi:493
 #, no-wrap
 msgid "ESHELL"
 msgstr "ESHELL"
 
 #. type: vindex
-#: cmdargs.texi.orig:494
+#: original_texis/cmdargs.texi:494
 #, no-wrap
 msgid "ESHELL, environment variable"
 msgstr "ESHELL, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:497
+#: original_texis/cmdargs.texi:497
 msgid ""
 "Used for shell-mode to override the @env{SHELL} environment variable "
 "(@pxref{Interactive Shell})."
-msgstr "シェルモードで、環境変数@env{SHELL}をオーバーライドするために使用されます(@ref{Interactive Shell}を参照してください)。"
+msgstr ""
+"シェルモードで、環境変数@env{SHELL}をオーバーライドするために使用されます"
+"(@ref{Interactive Shell}を参照してください)。"
 
 #. type: item
-#: cmdargs.texi.orig:497
+#: original_texis/cmdargs.texi:497
 #, no-wrap
 msgid "HISTFILE"
 msgstr "HISTFILE"
 
 #. type: vindex
-#: cmdargs.texi.orig:498
+#: original_texis/cmdargs.texi:498
 #, no-wrap
 msgid "HISTFILE, environment variable"
 msgstr "HISTFILE, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:503
+#: original_texis/cmdargs.texi:503
 msgid ""
 "The name of the file that shell commands are saved in between logins.  This "
 "variable defaults to @file{~/.bash_history} if you use Bash, to @file{~/."
 "sh_history} if you use ksh, and to @file{~/.history} otherwise."
-msgstr "ログインしている間のシェルコマンドが保存されるファイルの名前です。この変数のデフォルトは、Bashを使用している場合は@file{~/.bash_history}、kshのときは@file{~/.sh_history}、それ以外では@file{~/.history}です。"
+msgstr ""
+"ログインしている間のシェルコマンドが保存されるファイルの名前です。この変数の"
+"デフォルトは、Bashを使用している場合は@file{~/.bash_history}、kshのときは"
+"@file{~/.sh_history}、それ以外では@file{~/.history}です。"
 
 #. type: item
-#: cmdargs.texi.orig:503
+#: original_texis/cmdargs.texi:503
 #, no-wrap
 msgid "HOME"
 msgstr "HOME"
 
 #. type: vindex
-#: cmdargs.texi.orig:504
+#: original_texis/cmdargs.texi:504
 #, no-wrap
 msgid "HOME, environment variable"
 msgstr "HOME, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:515
+#: original_texis/cmdargs.texi:515
 msgid ""
 "The location of your files in the directory tree; used for expansion of file "
 "names starting with a tilde (@file{~}).  On MS-DOS, it defaults to the "
@@ -1478,147 +1697,155 @@ msgid ""
 "Application Data}, where @var{username} is your user name), though for "
 "backwards compatibility @file{C:/} will be used instead if a @file{.emacs} "
 "file is found there."
-msgstr "ディレクトリーツリー上で、あなたのファイルがある場所です。チルダ(@file{~})で始まるファイル名の展開に使用されます。MS-DOSでは、この変数のデフォルトはEmacsが開始されたディレクトリーで、そのディレクトリー名が@samp{/bin}で終わる場合、@samp{/bin}は取り除かれます。Windowsでは、@env{HOME}のデフォルト値は、ユーザープロファイルディレクトリーの@file{Application Data}サブディレクトリー(つまり通常は@file{C:/Documents and Settings/@var{username}/Application Data}。@var{username}はユーザー名)ですが、後方互換のため、@file{C:/}に@file{.emacs}がある場合は、かわりに@file{C:/}がデフォルト値になります。"
+msgstr ""
+"ディレクトリーツリー上で、あなたのファイルがある場所です。チルダ(@file{~})で"
+"始まるファイル名の展開に使用されます。MS-DOSでは、この変数のデフォルトはEmacs"
+"が開始されたディレクトリーで、そのディレクトリー名が@samp{/bin}で終わる場合、"
+"@samp{/bin}は取り除かれます。Windowsでは、@env{HOME}のデフォルト値は、ユー"
+"ザープロファイルディレクトリーの@file{Application Data}サブディレクトリー(つ"
+"まり通常は@file{C:/Documents and Settings/@var{username}/Application Data}。"
+"@var{username}はユーザー名)ですが、後方互換のため、@file{C:/}に@file{.emacs}"
+"がある場合は、かわりに@file{C:/}がデフォルト値になります。"
 
 #. type: item
-#: cmdargs.texi.orig:515
+#: original_texis/cmdargs.texi:515
 #, no-wrap
 msgid "HOSTNAME"
 msgstr "HOSTNAME"
 
 #. type: vindex
-#: cmdargs.texi.orig:516
+#: original_texis/cmdargs.texi:516
 #, no-wrap
 msgid "HOSTNAME, environment variable"
 msgstr "HOSTNAME, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:519
+#: original_texis/cmdargs.texi:519
 msgid "The name of the machine that Emacs is running on."
 msgstr "Emacsが実行されているホストの名前です。"
 
 #. type: item
-#: cmdargs.texi.orig:520
+#: original_texis/cmdargs.texi:520
 #, no-wrap
 msgid "INCPATH"
 msgstr "INCPATH"
 
 #. type: item
-#: cmdargs.texi.orig:524
+#: original_texis/cmdargs.texi:524
 #, no-wrap
 msgid "INFOPATH"
 msgstr "INFOPATH"
 
 #. type: vindex
-#: cmdargs.texi.orig:525
+#: original_texis/cmdargs.texi:525
 #, no-wrap
 msgid "INFOPATH, environment variable"
 msgstr "INFOPATH, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:527
+#: original_texis/cmdargs.texi:527
 msgid ""
 "A colon-separated list of directories in which to search for Info files."
 msgstr "コロンで区切られた、Infoファイルを検索するディレクトリーのリストです。"
 
 #. type: item
-#: cmdargs.texi.orig:527
+#: original_texis/cmdargs.texi:527
 #, no-wrap
 msgid "LC_ALL"
 msgstr "LC_ALL"
 
 #. type: vindex
-#: cmdargs.texi.orig:528
+#: original_texis/cmdargs.texi:528
 #, no-wrap
 msgid "LC_ALL, environment variable"
 msgstr "LC_ALL, environment variable"
 
 #. type: itemx
-#: cmdargs.texi.orig:529
+#: original_texis/cmdargs.texi:529
 #, no-wrap
 msgid "LC_COLLATE"
 msgstr "LC_COLLATE"
 
 #. type: vindex
-#: cmdargs.texi.orig:530
+#: original_texis/cmdargs.texi:530
 #, no-wrap
 msgid "LC_COLLATE, environment variable"
 msgstr "LC_COLLATE, environment variable"
 
 #. type: itemx
-#: cmdargs.texi.orig:531
+#: original_texis/cmdargs.texi:531
 #, no-wrap
 msgid "LC_CTYPE"
 msgstr "LC_CTYPE"
 
 #. type: vindex
-#: cmdargs.texi.orig:532
+#: original_texis/cmdargs.texi:532
 #, no-wrap
 msgid "LC_CTYPE, environment variable"
 msgstr "LC_CTYPE, environment variable"
 
 #. type: itemx
-#: cmdargs.texi.orig:533
+#: original_texis/cmdargs.texi:533
 #, no-wrap
 msgid "LC_MESSAGES"
 msgstr "LC_MESSAGES"
 
 #. type: vindex
-#: cmdargs.texi.orig:534
+#: original_texis/cmdargs.texi:534
 #, no-wrap
 msgid "LC_MESSAGES, environment variable"
 msgstr "LC_MESSAGES, environment variable"
 
 #. type: itemx
-#: cmdargs.texi.orig:535
+#: original_texis/cmdargs.texi:535
 #, no-wrap
 msgid "LC_MONETARY"
 msgstr "LC_MONETARY"
 
 #. type: vindex
-#: cmdargs.texi.orig:536
+#: original_texis/cmdargs.texi:536
 #, no-wrap
 msgid "LC_MONETARY, environment variable"
 msgstr "LC_MONETARY, environment variable"
 
 #. type: itemx
-#: cmdargs.texi.orig:537
+#: original_texis/cmdargs.texi:537
 #, no-wrap
 msgid "LC_NUMERIC"
 msgstr "LC_NUMERIC"
 
 #. type: vindex
-#: cmdargs.texi.orig:538
+#: original_texis/cmdargs.texi:538
 #, no-wrap
 msgid "LC_NUMERIC, environment variable"
 msgstr "LC_NUMERIC, environment variable"
 
 #. type: itemx
-#: cmdargs.texi.orig:539
+#: original_texis/cmdargs.texi:539
 #, no-wrap
 msgid "LC_TIME"
 msgstr "LC_TIME"
 
 #. type: vindex
-#: cmdargs.texi.orig:540
+#: original_texis/cmdargs.texi:540
 #, no-wrap
 msgid "LC_TIME, environment variable"
 msgstr "LC_TIME, environment variable"
 
 #. type: itemx
-#: cmdargs.texi.orig:541
+#: original_texis/cmdargs.texi:541
 #, no-wrap
 msgid "LANG"
 msgstr "LANG"
 
 #. type: vindex
-#: cmdargs.texi.orig:542
+#: original_texis/cmdargs.texi:542
 #, no-wrap
 msgid "LANG, environment variable"
 msgstr "LANG, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:552
+#: original_texis/cmdargs.texi:552
 msgid ""
 "The user's preferred locale.  The locale has six categories, specified by "
 "the environment variables @env{LC_COLLATE} for sorting, @env{LC_CTYPE} for "
@@ -1629,330 +1856,371 @@ msgid ""
 "default @samp{C} locale if @env{LANG} is not set.  But if @env{LC_ALL} is "
 "specified, it overrides the settings of all the other locale environment "
 "variables."
-msgstr "そのユーザーの優先されるlocaleです。localeには6つのカテゴリーがあり、それぞれ環境変数で指定されます。ソートは@env{LC_COLLATE}、文字エンコーディングは@env{LC_CTYPE}、システムメッセージは@env{LC_MESSAGES}、通貨形式は@env{LC_MONETARY}、数字は@env{LC_NUMERIC}、日時は@env{LC_TIME}でlocaleを指定します。これらの変数の1つがセットされていない場合、そのカテゴリーのデフォルトは環境変数@env{LANG}の値、@env{LANG}がセットされていない場合は@samp{C} localeになります。しかし@env{LC_ALL}が指定された場合、これは他のすべてのlocale環境変数のセッティングをオーバーライドします。"
+msgstr ""
+"そのユーザーの優先されるlocaleです。localeには6つのカテゴリーがあり、それぞれ"
+"環境変数で指定されます。ソートは@env{LC_COLLATE}、文字エンコーディングは"
+"@env{LC_CTYPE}、システムメッセージは@env{LC_MESSAGES}、通貨形式は"
+"@env{LC_MONETARY}、数字は@env{LC_NUMERIC}、日時は@env{LC_TIME}でlocaleを指定"
+"します。これらの変数の1つがセットされていない場合、そのカテゴリーのデフォルト"
+"は環境変数@env{LANG}の値、@env{LANG}がセットされていない場合は@samp{C} locale"
+"になります。しかし@env{LC_ALL}が指定された場合、これは他のすべてのlocale環境"
+"変数のセッティングをオーバーライドします。"
 
 #. type: table
-#: cmdargs.texi.orig:557
+#: original_texis/cmdargs.texi:557
 msgid ""
 "On MS-Windows, if @env{LANG} is not already set in the environment when "
 "Emacs starts, Emacs sets it based on the system-wide default language, which "
 "you can set in the @samp{Regional Settings} Control Panel on some versions "
 "of MS-Windows."
-msgstr "MS-Windowsでは、Emacsを開始したとき環境で@env{LANG}がまだセットされていない場合、Emacsはシステムワイドなデフォルト言語にもとづき、@env{LANG}をセットします。MS-Windowsのいくつかのバージョンでは、これはコントロールパネルの@samp{Regional Settings}でセットできます。"
+msgstr ""
+"MS-Windowsでは、Emacsを開始したとき環境で@env{LANG}がまだセットされていない場"
+"合、Emacsはシステムワイドなデフォルト言語にもとづき、@env{LANG}をセットしま"
+"す。MS-Windowsのいくつかのバージョンでは、これはコントロールパネルの"
+"@samp{Regional Settings}でセットできます。"
 
 #. type: table
-#: cmdargs.texi.orig:563
+#: original_texis/cmdargs.texi:563
 msgid ""
 "The value of the @env{LC_CTYPE} category is matched against entries in "
 "@code{locale-language-names}, @code{locale-charset-language-names}, and "
 "@code{locale-preferred-coding-systems}, to select a default language "
 "environment and coding system.  @xref{Language Environments}."
-msgstr "@env{LC_CTYPE}カテゴリーの値は、デフォルトの言語環境(language environment)とコーディングシステム(coding system)を選択するために、@code{locale-language-names}、@code{locale-charset-language-names}、@code{locale-preferred-coding-systems}のエントリーにたいしてマッチされます。@ref{Language Environments}を参照してください。"
+msgstr ""
+"@env{LC_CTYPE}カテゴリーの値は、デフォルトの言語環境(language environment)と"
+"コーディングシステム(coding system)を選択するために、@code{locale-language-"
+"names}、@code{locale-charset-language-names}、@code{locale-preferred-coding-"
+"systems}のエントリーにたいしてマッチされます。@ref{Language Environments}を参"
+"照してください。"
 
 #. type: item
-#: cmdargs.texi.orig:563
+#: original_texis/cmdargs.texi:563
 #, no-wrap
 msgid "LOGNAME"
 msgstr "LOGNAME"
 
 #. type: vindex
-#: cmdargs.texi.orig:564
+#: original_texis/cmdargs.texi:564
 #, no-wrap
 msgid "LOGNAME, environment variable"
 msgstr "LOGNAME, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:566
+#: original_texis/cmdargs.texi:566
 msgid "The user's login name.  See also @env{USER}."
 msgstr "ユーザーのログイン名です。@env{USER}も参照してください。"
 
 #. type: item
-#: cmdargs.texi.orig:566
+#: original_texis/cmdargs.texi:566
 #, no-wrap
 msgid "MAIL"
 msgstr "MAIL"
 
 #. type: vindex
-#: cmdargs.texi.orig:567
+#: original_texis/cmdargs.texi:567
 #, no-wrap
 msgid "MAIL, environment variable"
 msgstr "MAIL, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:569
+#: original_texis/cmdargs.texi:569
 msgid "The name of your system mail inbox."
 msgstr "システムのメールinbox名です。"
 
 #. type: item
-#: cmdargs.texi.orig:570
+#: original_texis/cmdargs.texi:570
 #, no-wrap
 msgid "MH"
 msgstr "MH"
 
 #. type: vindex
-#: cmdargs.texi.orig:571
+#: original_texis/cmdargs.texi:571
 #, no-wrap
 msgid "MH, environment variable"
 msgstr "MH, environment variable"
 
 #. type: ifnottex
-#: cmdargs.texi.orig:574
+#: original_texis/cmdargs.texi:574
 msgid ""
 "Name of setup file for the mh system.  @xref{Top,,MH-E,mh-e, The Emacs "
 "Interface to MH}."
-msgstr "mhシステムのセットアップファイル名です。@ref{Top,,MH-E,mh-e, The Emacs Interface to MH}を参照してください。"
+msgstr ""
+"mhシステムのセットアップファイル名です。@ref{Top,,MH-E,mh-e, The Emacs "
+"Interface to MH}を参照してください。"
 
 #. type: item
-#: cmdargs.texi.orig:575 cmdargs.texi.orig:663
+#: original_texis/cmdargs.texi:575 original_texis/cmdargs.texi:663
 #, no-wrap
 msgid "NAME"
 msgstr "NAME"
 
 #. type: vindex
-#: cmdargs.texi.orig:576
+#: original_texis/cmdargs.texi:576
 #, no-wrap
 msgid "NAME, environment variable"
 msgstr "NAME, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:579
+#: original_texis/cmdargs.texi:579
 msgid ""
 "Your real-world name.  This is used to initialize the variable @code{user-"
 "full-name} (@pxref{Mail Headers})."
-msgstr "あなたの現実世界での名前です。これは変数@code{user-full-name}を初期化するために使用されます(@ref{Mail Headers}を参照してください)。"
+msgstr ""
+"あなたの現実世界での名前です。これは変数@code{user-full-name}を初期化するため"
+"に使用されます(@ref{Mail Headers}を参照してください)。"
 
 #. type: item
-#: cmdargs.texi.orig:579
+#: original_texis/cmdargs.texi:579
 #, no-wrap
 msgid "NNTPSERVER"
 msgstr "NNTPSERVER"
 
 #. type: vindex
-#: cmdargs.texi.orig:580
+#: original_texis/cmdargs.texi:580
 #, no-wrap
 msgid "NNTPSERVER, environment variable"
 msgstr "NNTPSERVER, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:582
+#: original_texis/cmdargs.texi:582
 msgid "The name of the news server.  Used by the mh and Gnus packages."
 msgstr "ニュースサーバーの名前です。Gnusパッケージで使用されます。"
 
 #. type: item
-#: cmdargs.texi.orig:582
+#: original_texis/cmdargs.texi:582
 #, no-wrap
 msgid "ORGANIZATION"
 msgstr "ORGANIZATION"
 
 #. type: vindex
-#: cmdargs.texi.orig:583
+#: original_texis/cmdargs.texi:583
 #, no-wrap
 msgid "ORGANIZATION, environment variable"
 msgstr "ORGANIZATION, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:586
+#: original_texis/cmdargs.texi:586
 msgid ""
 "The name of the organization to which you belong.  Used for setting the "
 "`Organization:' header in your posts from the Gnus package."
-msgstr "あなたが属する組織の名前です。Gnusパッケージで、ポストの`Organization:'ヘッダーをセットするために使用されます。"
+msgstr ""
+"あなたが属する組織の名前です。Gnusパッケージで、ポストの`Organization:'ヘッ"
+"ダーをセットするために使用されます。"
 
 #. type: item
-#: cmdargs.texi.orig:586
+#: original_texis/cmdargs.texi:586
 #, no-wrap
 msgid "PATH"
 msgstr "PATH"
 
 #. type: vindex
-#: cmdargs.texi.orig:587
+#: original_texis/cmdargs.texi:587
 #, no-wrap
 msgid "PATH, environment variable"
 msgstr "PATH, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:591
+#: original_texis/cmdargs.texi:591
 msgid ""
 "A colon-separated list of directories containing executable files.  This is "
 "used to initialize the variable @code{exec-path} (@pxref{Shell})."
-msgstr "コロンで区切られた、実行可能ファイルを含むディレクトリーのリストです。これは変数@code{exec-path}を初期化するために使用されます(@ref{Shell}を参照してください)。"
+msgstr ""
+"コロンで区切られた、実行可能ファイルを含むディレクトリーのリストです。これは"
+"変数@code{exec-path}を初期化するために使用されます(@ref{Shell}を参照してくだ"
+"さい)。"
 
 #. type: item
-#: cmdargs.texi.orig:591
+#: original_texis/cmdargs.texi:591
 #, no-wrap
 msgid "PWD"
 msgstr "PWD"
 
 #. type: vindex
-#: cmdargs.texi.orig:592
+#: original_texis/cmdargs.texi:592
 #, no-wrap
 msgid "PWD, environment variable"
 msgstr "PWD, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:594
+#: original_texis/cmdargs.texi:594
 msgid "If set, this should be the default directory when Emacs was started."
-msgstr "セットされている場合、これはEmacsが開始されたときのデフォルトディレクトリーになるはずです。"
+msgstr ""
+"セットされている場合、これはEmacsが開始されたときのデフォルトディレクトリーに"
+"なるはずです。"
 
 #. type: item
-#: cmdargs.texi.orig:594
+#: original_texis/cmdargs.texi:594
 #, no-wrap
 msgid "REPLYTO"
 msgstr "REPLYTO"
 
 #. type: vindex
-#: cmdargs.texi.orig:595
+#: original_texis/cmdargs.texi:595
 #, no-wrap
 msgid "REPLYTO, environment variable"
 msgstr "REPLYTO, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:598
+#: original_texis/cmdargs.texi:598
 msgid ""
 "If set, this specifies an initial value for the variable @code{mail-default-"
 "reply-to} (@pxref{Mail Headers})."
-msgstr "セットされている場合は、変数@code{mail-default-reply-to}の初期値になります(@ref{Mail Headers}を参照してください)。"
+msgstr ""
+"セットされている場合は、変数@code{mail-default-reply-to}の初期値になります"
+"(@ref{Mail Headers}を参照してください)。"
 
 #. type: item
-#: cmdargs.texi.orig:598
+#: original_texis/cmdargs.texi:598
 #, no-wrap
 msgid "SAVEDIR"
 msgstr "SAVEDIR"
 
 #. type: vindex
-#: cmdargs.texi.orig:599
+#: original_texis/cmdargs.texi:599
 #, no-wrap
 msgid "SAVEDIR, environment variable"
 msgstr "SAVEDIR, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:602
+#: original_texis/cmdargs.texi:602
 msgid ""
 "The name of a directory in which news articles are saved by default.  Used "
 "by the Gnus package."
-msgstr "新しいアーティクルがデフォルトで保存されるディレクトリーの名前です。Gnusパッケージにより使用されます。"
+msgstr ""
+"新しいアーティクルがデフォルトで保存されるディレクトリーの名前です。Gnusパッ"
+"ケージにより使用されます。"
 
 #. type: item
-#: cmdargs.texi.orig:602
+#: original_texis/cmdargs.texi:602
 #, no-wrap
 msgid "SHELL"
 msgstr "SHELL"
 
 #. type: vindex
-#: cmdargs.texi.orig:603
+#: original_texis/cmdargs.texi:603
 #, no-wrap
 msgid "SHELL, environment variable"
 msgstr "SHELL, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:606
+#: original_texis/cmdargs.texi:606
 msgid ""
 "The name of an interpreter used to parse and execute programs run from "
 "inside Emacs."
-msgstr "Emacsの中からプログラムのパースや実行に使用されるインタープリターの名前です。"
+msgstr ""
+"Emacsの中からプログラムのパースや実行に使用されるインタープリターの名前です。"
 
 #. type: item
-#: cmdargs.texi.orig:606
+#: original_texis/cmdargs.texi:606
 #, no-wrap
 msgid "SMTPSERVER"
 msgstr "SMTPSERVER"
 
 #. type: vindex
-#: cmdargs.texi.orig:607
+#: original_texis/cmdargs.texi:607
 #, no-wrap
 msgid "SMTPSERVER, environment variable"
 msgstr "SMTPSERVER, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:610
+#: original_texis/cmdargs.texi:610
 msgid ""
 "The name of the outgoing mail server.  This is used to initialize the "
 "variable @code{smtpmail-smtp-server} (@pxref{Mail Sending})."
-msgstr "送信メールサーバーの名前です。これは変数@code{smtpmail-smtp-server}を初期化するために使用されます(@ref{Mail Sending}を参照してください)。"
+msgstr ""
+"送信メールサーバーの名前です。これは変数@code{smtpmail-smtp-server}を初期化す"
+"るために使用されます(@ref{Mail Sending}を参照してください)。"
 
 #. type: cindex
-#: cmdargs.texi.orig:610
+#: original_texis/cmdargs.texi:610
 #, no-wrap
 msgid "background mode, on @command{xterm}"
 msgstr "background mode, on @command{xterm}"
 
 #. type: item
-#: cmdargs.texi.orig:611
+#: original_texis/cmdargs.texi:611
 #, no-wrap
 msgid "TERM"
 msgstr "TERM"
 
 #. type: vindex
-#: cmdargs.texi.orig:612
+#: original_texis/cmdargs.texi:612
 #, no-wrap
 msgid "TERM, environment variable"
 msgstr "TERM, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:617
+#: original_texis/cmdargs.texi:617
 msgid ""
 "The type of the terminal that Emacs is using.  This variable must be set "
 "unless Emacs is run in batch mode.  On MS-DOS, it defaults to "
 "@samp{internal}, which specifies a built-in terminal emulation that handles "
 "the machine's own display."
-msgstr "Emacsが使用する端末タイプです。Emacsがバッチモードで実行されていないとき、この変数はセットされていなければなりません。MS-DOSでは、デフォルトは@samp{internal}で、これはその機種固有のディスプレーを扱う、ビルトインの端末エミュレーションを指定します。"
+msgstr ""
+"Emacsが使用する端末タイプです。Emacsがバッチモードで実行されていないとき、こ"
+"の変数はセットされていなければなりません。MS-DOSでは、デフォルトは"
+"@samp{internal}で、これはその機種固有のディスプレーを扱う、ビルトインの端末エ"
+"ミュレーションを指定します。"
 
 #. type: item
-#: cmdargs.texi.orig:617
+#: original_texis/cmdargs.texi:617
 #, no-wrap
 msgid "TERMCAP"
 msgstr "TERMCAP"
 
 #. type: vindex
-#: cmdargs.texi.orig:618
+#: original_texis/cmdargs.texi:618
 #, no-wrap
 msgid "TERMCAP, environment variable"
 msgstr "TERMCAP, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:622
+#: original_texis/cmdargs.texi:622
 msgid ""
 "The name of the termcap library file describing how to program the terminal "
 "specified by @env{TERM}.  This defaults to @file{/etc/termcap}."
-msgstr "@env{TERM}で指定された端末をどのようにプログラムするかを記述する、termcapライブラリーファイルの名前です。デフォルトは@file{/etc/termcap}です。"
+msgstr ""
+"@env{TERM}で指定された端末をどのようにプログラムするかを記述する、termcapライ"
+"ブラリーファイルの名前です。デフォルトは@file{/etc/termcap}です。"
 
 #. type: item
-#: cmdargs.texi.orig:622
+#: original_texis/cmdargs.texi:622
 #, no-wrap
 msgid "TMPDIR"
 msgstr "TMPDIR"
 
 #. type: vindex
-#: cmdargs.texi.orig:623
+#: original_texis/cmdargs.texi:623
 #, no-wrap
 msgid "TMPDIR, environment variable"
 msgstr "TMPDIR, environment variable"
 
 #. type: itemx
-#: cmdargs.texi.orig:624
+#: original_texis/cmdargs.texi:624
 #, no-wrap
 msgid "TMP"
 msgstr "TMP"
 
 #. type: vindex
-#: cmdargs.texi.orig:625
+#: original_texis/cmdargs.texi:625
 #, no-wrap
 msgid "TMP, environment variable"
 msgstr "TMP, environment variable"
 
 #. type: itemx
-#: cmdargs.texi.orig:626
+#: original_texis/cmdargs.texi:626
 #, no-wrap
 msgid "TEMP"
 msgstr "TEMP"
 
 #. type: vindex
-#: cmdargs.texi.orig:627
+#: original_texis/cmdargs.texi:627
 #, no-wrap
 msgid "TEMP, environment variable"
 msgstr "TEMP, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:634
+#: original_texis/cmdargs.texi:634
 msgid ""
 "These environment variables are used to initialize the variable "
 "@code{temporary-file-directory}, which specifies a directory in which to put "
@@ -1960,132 +2228,153 @@ msgid ""
 "If that is unset, Emacs normally falls back on @file{/tmp}, but on MS-"
 "Windows and MS-DOS it instead falls back on @env{TMP}, then @env{TEMP}, and "
 "finally @file{c:/temp}."
-msgstr "これらの環境変数は、変数@code{temporary-file-directory}を初期化するために使用されます。これは一時ファイルを置く場所を指定します(@ref{Backup}を参照してください)。Emacsは最初に@env{TMPDIR}の使用を試みます。これがセットされていない場合、通常Emacsは@file{/tmp}にフォールバックします。しかしMS-WindowsとMS-DOSでは、かわりに@env{TMP}、次に@env{TEMP}、最後に@file{c:/temp}にフォールバックします。"
+msgstr ""
+"これらの環境変数は、変数@code{temporary-file-directory}を初期化するために使用"
+"されます。これは一時ファイルを置く場所を指定します(@ref{Backup}を参照してくだ"
+"さい)。Emacsは最初に@env{TMPDIR}の使用を試みます。これがセットされていない場"
+"合、通常Emacsは@file{/tmp}にフォールバックします。しかしMS-WindowsとMS-DOSで"
+"は、かわりに@env{TMP}、次に@env{TEMP}、最後に@file{c:/temp}にフォールバックし"
+"ます。"
 
 #. type: item
-#: cmdargs.texi.orig:634
+#: original_texis/cmdargs.texi:634
 #, no-wrap
 msgid "TZ"
 msgstr "TZ"
 
 #. type: vindex
-#: cmdargs.texi.orig:635
+#: original_texis/cmdargs.texi:635
 #, no-wrap
 msgid "TZ, environment variable"
 msgstr "TZ, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:641
+#: original_texis/cmdargs.texi:641
 msgid ""
 "This specifies the current time zone and possibly also daylight saving time "
 "information.  On MS-DOS, if @env{TZ} is not set in the environment when "
 "Emacs starts, Emacs defines a default value as appropriate for the country "
 "code returned by DOS@.  On MS-Windows, Emacs does not use @env{TZ} at all."
-msgstr "これはカレントタイムゾーン(もしかしたらサマータイムの情報も)を指定します。MS-DOSでは、Emacsを開始したときの環境で@env{TZ}がセットされていない場合、EmacsはDOSが返す国コードにたいして、適切なデフォルト値を定義します。MS-Windowsでは、Emacsは@env{TZ}を使用しません。"
+msgstr ""
+"これはカレントタイムゾーン(もしかしたらサマータイムの情報も)を指定します。MS-"
+"DOSでは、Emacsを開始したときの環境で@env{TZ}がセットされていない場合、Emacsは"
+"DOSが返す国コードにたいして、適切なデフォルト値を定義します。MS-Windowsでは、"
+"Emacsは@env{TZ}を使用しません。"
 
 #. type: item
-#: cmdargs.texi.orig:641
+#: original_texis/cmdargs.texi:641
 #, no-wrap
 msgid "USER"
 msgstr "USER"
 
 #. type: vindex
-#: cmdargs.texi.orig:642
+#: original_texis/cmdargs.texi:642
 #, no-wrap
 msgid "USER, environment variable"
 msgstr "USER, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:645
+#: original_texis/cmdargs.texi:645
 msgid ""
 "The user's login name.  See also @env{LOGNAME}.  On MS-DOS, this defaults to "
 "@samp{root}."
-msgstr "ユーザーのログイン名です。@env{LOGNAME}も参照してください。MS-DOSでは、デフォルトは@samp{root}です。"
+msgstr ""
+"ユーザーのログイン名です。@env{LOGNAME}も参照してください。MS-DOSでは、デフォ"
+"ルトは@samp{root}です。"
 
 #. type: item
-#: cmdargs.texi.orig:645
+#: original_texis/cmdargs.texi:645
 #, no-wrap
 msgid "VERSION_CONTROL"
 msgstr "VERSION_CONTROL"
 
 #. type: vindex
-#: cmdargs.texi.orig:646
+#: original_texis/cmdargs.texi:646
 #, no-wrap
 msgid "VERSION_CONTROL, environment variable"
 msgstr "VERSION_CONTROL, environment variable"
 
 #. type: table
-#: cmdargs.texi.orig:649
+#: original_texis/cmdargs.texi:649
 msgid ""
 "Used to initialize the @code{version-control} variable (@pxref{Backup "
 "Names})."
-msgstr "変数@code{version-control}の初期化に使用されます(@ref{Backup Names}を参照してください)。"
+msgstr ""
+"変数@code{version-control}の初期化に使用されます(@ref{Backup Names}を参照して"
+"ください)。"
 
 #. type: appendixsubsec
-#: cmdargs.texi.orig:652
+#: original_texis/cmdargs.texi:652
 #, no-wrap
 msgid "Miscellaneous Variables"
 msgstr "Miscellaneous Variables"
 
 #. type: Plain text
-#: cmdargs.texi.orig:655
+#: original_texis/cmdargs.texi:655
 msgid "These variables are used only on particular configurations:"
 msgstr "これらの変数は、特定の設定だけにたいして使用されます:"
 
 #. type: Plain text
-#: cmdargs.texi.orig:657
+#: original_texis/cmdargs.texi:657
 msgid "@vtable @env"
 msgstr "@vtable @env"
 
 #. type: item
-#: cmdargs.texi.orig:657
+#: original_texis/cmdargs.texi:657
 #, no-wrap
 msgid "COMSPEC"
 msgstr "COMSPEC"
 
 #. type: Plain text
-#: cmdargs.texi.orig:662
+#: original_texis/cmdargs.texi:662
 msgid ""
 "On MS-DOS and MS-Windows, the name of the command interpreter to use when "
 "invoking batch files and commands internal to the shell.  On MS-DOS this is "
 "also used to make a default value for the @env{SHELL} environment variable."
-msgstr "MS-DOSとMS-Windowsで、バッチファイルとシェルの内部コマンドを呼び出すときに使用する、コマンドインタープリターの名前です。MS-DOSでは、環境変数@env{SHELL}のデフォルト値のためにも使用されます。"
+msgstr ""
+"MS-DOSとMS-Windowsで、バッチファイルとシェルの内部コマンドを呼び出すときに使"
+"用する、コマンドインタープリターの名前です。MS-DOSでは、環境変数@env{SHELL}の"
+"デフォルト値のためにも使用されます。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:666
+#: original_texis/cmdargs.texi:666
 msgid ""
 "On MS-DOS, this variable defaults to the value of the @env{USER} variable."
 msgstr "MS-DOSで、この変数は変数@env{USER}のデフォルト値として使用されます。"
 
 #. type: item
-#: cmdargs.texi.orig:667
+#: original_texis/cmdargs.texi:667
 #, no-wrap
 msgid "EMACSTEST"
 msgstr "EMACSTEST"
 
 #. type: Plain text
-#: cmdargs.texi.orig:671
+#: original_texis/cmdargs.texi:671
 msgid ""
 "On MS-DOS, this specifies a file to use to log the operation of the internal "
 "terminal emulator.  This feature is useful for submitting bug reports."
-msgstr "MS-DOSで、内部端末エミュレーターの操作ログに使用するファイルを指定します。この機能はバグレポートを送るときに便利です。"
+msgstr ""
+"MS-DOSで、内部端末エミュレーターの操作ログに使用するファイルを指定します。こ"
+"の機能はバグレポートを送るときに便利です。"
 
 #. type: item
-#: cmdargs.texi.orig:672
+#: original_texis/cmdargs.texi:672
 #, no-wrap
 msgid "EMACSCOLORS"
 msgstr "EMACSCOLORS"
 
 #. type: Plain text
-#: cmdargs.texi.orig:676
+#: original_texis/cmdargs.texi:676
 msgid ""
 "On MS-DOS, this specifies the screen colors.  It is useful to set them this "
 "way, since otherwise Emacs would display the default colors momentarily when "
 "it starts up."
-msgstr "MS-DOSで、スクリーンカラーを指定します。Emacsは開始時の数瞬、デフォルトカラーを表示するので、それらの指定にこの方法が便利です。"
+msgstr ""
+"MS-DOSで、スクリーンカラーを指定します。Emacsは開始時の数瞬、デフォルトカラー"
+"を表示するので、それらの指定にこの方法が便利です。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:684
+#: original_texis/cmdargs.texi:684
 msgid ""
 "The value of this variable should be the two-character encoding of the "
 "foreground (the first character) and the background (the second character) "
@@ -2094,38 +2383,50 @@ msgid ""
 "get blue text on a light gray background, specify @samp{EMACSCOLORS=17}, "
 "since 1 is the code of the blue color and 7 is the code of the light gray "
 "color."
-msgstr "この変数の値は2文字のエンコーディングで指定し、それぞれデフォルトフェイスにたいして、1文字目はフォアグラウンドカラー、2文字目はバックグラウンドカラーを指定します。それぞれの文字は、標準のPCテキストモードディスプレーのカラーを記述する、16進コードを指定します。たとえばlight grayの背景色でblueのテキストを得たい場合は、@samp{EMACSCOLORS=17}を指定します。ここで1はカラーblue、7はカラーlight grayを指定しています。"
+msgstr ""
+"この変数の値は2文字のエンコーディングで指定し、それぞれデフォルトフェイスにた"
+"いして、1文字目はフォアグラウンドカラー、2文字目はバックグラウンドカラーを指"
+"定します。それぞれの文字は、標準のPCテキストモードディスプレーのカラーを記述"
+"する、16進コードを指定します。たとえばlight grayの背景色でblueのテキストを得"
+"たい場合は、@samp{EMACSCOLORS=17}を指定します。ここで1はカラーblue、7はカラー"
+"light grayを指定しています。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:689
+#: original_texis/cmdargs.texi:689
 msgid ""
 "The PC display usually supports only eight background colors.  However, "
 "Emacs switches the DOS display to a mode where all 16 colors can be used for "
 "the background, so all four bits of the background color are actually used."
-msgstr "PCディスプレーは通常、8色のバックグラウンドカラーだけをサポートします。しかしバックグラウンドカラーにたいして、16色すべてを使用できるDOSディスプレーにモードを切り替えるので、実際には4ビットのバックグラウンドカラーすべてが使用されます。"
+msgstr ""
+"PCディスプレーは通常、8色のバックグラウンドカラーだけをサポートします。しかし"
+"バックグラウンドカラーにたいして、16色すべてを使用できるDOSディスプレーにモー"
+"ドを切り替えるので、実際には4ビットのバックグラウンドカラーすべてが使用されま"
+"す。"
 
 #. type: item
-#: cmdargs.texi.orig:690
+#: original_texis/cmdargs.texi:690
 #, no-wrap
 msgid "PRELOAD_WINSOCK"
 msgstr "PRELOAD_WINSOCK"
 
 #. type: Plain text
-#: cmdargs.texi.orig:694
+#: original_texis/cmdargs.texi:694
 msgid ""
 "On MS-Windows, if you set this variable, Emacs will load and initialize the "
 "network library at startup, instead of waiting until the first time it is "
 "required."
-msgstr "MS-Windowsでこの変数をセットしている場合、Emacsは開始時に、最初に要求されたときまで待たずに、ネットワークライブラリーのロードと初期化を行ないます。"
+msgstr ""
+"MS-Windowsでこの変数をセットしている場合、Emacsは開始時に、最初に要求されたと"
+"きまで待たずに、ネットワークライブラリーのロードと初期化を行ないます。"
 
 #. type: item
-#: cmdargs.texi.orig:695
+#: original_texis/cmdargs.texi:695
 #, no-wrap
 msgid "emacs_dir"
 msgstr "emacs_dir"
 
 #. type: Plain text
-#: cmdargs.texi.orig:708
+#: original_texis/cmdargs.texi:708
 msgid ""
 "On MS-Windows, @env{emacs_dir} is a special environment variable, which "
 "indicates the full path of the directory in which Emacs is installed.  If "
@@ -2138,28 +2439,38 @@ msgid ""
 "allows multiple versions of Emacs to share the same environment variable "
 "settings, and it allows you to move the Emacs installation directory, "
 "without changing any environment or registry settings."
-msgstr "MS-Windowsでは、@env{emacs_dir}は特別な環境変数で、これはEmacsがインストールされたディレクトリーのフルパスを指します。Emacsが標準的なディレクトリー構造にインストールされた場合、この変数の値は自動的に計算されます。他の環境変数とは異なり、これは開始時にEmacsによりオーバーライドされるので、標準的なインストールをした場合には、あなた自身がこの変数のセッティングを使用することは、あまりないでしょう。@env{EMACSLOADPATH}のような他の環境変数をセットするとき、絶対パスをハードコーディングするより、@env{emacs_dir}を使う法が便利だと気づくでしょう。これにより複数バージョンのEmacsが、同じ環境変数のセッティングを共有することが可能になり、環境やレジストリーのセッティングを変更せずに、Emacsのインストールディレクトリーを変更できるようになります。"
+msgstr ""
+"MS-Windowsでは、@env{emacs_dir}は特別な環境変数で、これはEmacsがインストール"
+"されたディレクトリーのフルパスを指します。Emacsが標準的なディレクトリー構造に"
+"インストールされた場合、この変数の値は自動的に計算されます。他の環境変数とは"
+"異なり、これは開始時にEmacsによりオーバーライドされるので、標準的なインストー"
+"ルをした場合には、あなた自身がこの変数のセッティングを使用することは、あまり"
+"ないでしょう。@env{EMACSLOADPATH}のような他の環境変数をセットするとき、絶対パ"
+"スをハードコーディングするより、@env{emacs_dir}を使う法が便利だと気づくでしょ"
+"う。これにより複数バージョンのEmacsが、同じ環境変数のセッティングを共有するこ"
+"とが可能になり、環境やレジストリーのセッティングを変更せずに、Emacsのインス"
+"トールディレクトリーを変更できるようになります。"
 
 #. type: appendixsubsec
-#: cmdargs.texi.orig:711
+#: original_texis/cmdargs.texi:711
 #, no-wrap
 msgid "The MS-Windows System Registry"
 msgstr "The MS-Windows System Registry"
 
 #. type: pindex
-#: cmdargs.texi.orig:712
+#: original_texis/cmdargs.texi:712
 #, no-wrap
 msgid "addpm, MS-Windows installation program"
 msgstr "addpm, MS-Windows installation program"
 
 #. type: cindex
-#: cmdargs.texi.orig:713
+#: original_texis/cmdargs.texi:713
 #, no-wrap
 msgid "registry, setting environment variables (MS-Windows)"
 msgstr "registry, setting environment variables (MS-Windows)"
 
 #. type: Plain text
-#: cmdargs.texi.orig:726
+#: original_texis/cmdargs.texi:726
 msgid ""
 "On MS-Windows, the installation program @command{addpm.exe} adds values for "
 "@env{emacs_dir}, @env{EMACSLOADPATH}, @env{EMACSDATA}, @env{EMACSPATH}, "
@@ -2171,18 +2482,29 @@ msgid ""
 "from an older version, running @command{addpm.exe} ensures that you do not "
 "have older registry entries from a previous installation, which may not be "
 "compatible with the latest version of Emacs."
-msgstr "MS-Windowsでは、インストールプログラム@command{addpm.exe}が、システムレジストリーの@file{HKEY_LOCAL_MACHINE}セクションの、@file{/Software/GNU/Emacs}の下の@env{emacs_dir}、@env{EMACSLOADPATH}、@env{EMACSDATA}、@env{EMACSPATH}、@env{EMACSDOC}、@env{SHELL}、@env{TERM}の値を追加します。これを行なうのは、異なるバージョンのWindowsにたいして環境変数をセットする、標準的な場所がないからです。最近のバージョンのEmacsでは、@command{addpm.exe}の実行は絶対に必要ではなくなりましたが、古いバージョンからアップグレードする場合、@command{addpm.exe}は以前のインストールから、(おそらく最新のEmacsと互換性がない)古いレジストリーエントリーを取得しないことを保証します。"
+msgstr ""
+"MS-Windowsでは、インストールプログラム@command{addpm.exe}が、システムレジスト"
+"リーの@file{HKEY_LOCAL_MACHINE}セクションの、@file{/Software/GNU/Emacs}の下の"
+"@env{emacs_dir}、@env{EMACSLOADPATH}、@env{EMACSDATA}、@env{EMACSPATH}、"
+"@env{EMACSDOC}、@env{SHELL}、@env{TERM}の値を追加します。これを行なうのは、異"
+"なるバージョンのWindowsにたいして環境変数をセットする、標準的な場所がないから"
+"です。最近のバージョンのEmacsでは、@command{addpm.exe}の実行は絶対に必要では"
+"なくなりましたが、古いバージョンからアップグレードする場合、@command{addpm."
+"exe}は以前のインストールから、(おそらく最新のEmacsと互換性がない)古いレジスト"
+"リーエントリーを取得しないことを保証します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:730
+#: original_texis/cmdargs.texi:730
 msgid ""
 "When Emacs starts, as well as checking the environment, it also checks the "
 "System Registry for those variables and for @env{HOME}, @env{LANG} and "
 "@env{PRELOAD_WINSOCK}."
-msgstr "Emacsを開始したときは、環境のチェックと同様に、システムレジストリーの、これらの変数と@env{HOME}、@env{LANG}、@env{PRELOAD_WINSOCK}もチェックします。"
+msgstr ""
+"Emacsを開始したときは、環境のチェックと同様に、システムレジストリーの、これら"
+"の変数と@env{HOME}、@env{LANG}、@env{PRELOAD_WINSOCK}もチェックします。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:738
+#: original_texis/cmdargs.texi:738
 msgid ""
 "To determine the value of those variables, Emacs goes through the following "
 "procedure.  First, the environment is checked.  If the variable is not found "
@@ -2190,36 +2512,45 @@ msgid ""
 "Emacs}; first in the @file{HKEY_CURRENT_USER} section of the registry, and "
 "if not found there, in the @file{HKEY_LOCAL_MACHINE} section.  Finally, if "
 "Emacs still cannot determine the values, compiled-in defaults are used."
-msgstr "これらの変数の値を決定するために、Emacsは次の手順にしたがいます。最初に環境がチェックされます。そこで変数が見つからない場合、Emacsは@file{/Software/GNU/Emacs}のレジストリーキーを名前で探します。最初にレジストリーの@file{HKEY_CURRENT_USER}セクション、そこで見つからなければ、@file{HKEY_LOCAL_MACHINE}セクションを探します。それでもなおEmacsが値を決定できない場合、コンパイルされたときのデフォルトが使用されます。"
+msgstr ""
+"これらの変数の値を決定するために、Emacsは次の手順にしたがいます。最初に環境が"
+"チェックされます。そこで変数が見つからない場合、Emacsは@file{/Software/GNU/"
+"Emacs}のレジストリーキーを名前で探します。最初にレジストリーの"
+"@file{HKEY_CURRENT_USER}セクション、そこで見つからなければ、"
+"@file{HKEY_LOCAL_MACHINE}セクションを探します。それでもなおEmacsが値を決定で"
+"きない場合、コンパイルされたときのデフォルトが使用されます。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:742
+#: original_texis/cmdargs.texi:742
 msgid ""
 "In addition to the environment variables above, you can also add many of the "
 "settings which on X belong in the @file{.Xdefaults} file (@pxref{X "
 "Resources}) to the @file{/Software/GNU/Emacs} registry key."
-msgstr "上記の環境変数に加えて、@file{/Software/GNU/Emacs}のレジストリーキーで、Xに属する@file{.Xdefaults}ファイル(@pxref{X Resources})のセッティングの多くを追加することもできます。"
+msgstr ""
+"上記の環境変数に加えて、@file{/Software/GNU/Emacs}のレジストリーキーで、Xに属"
+"する@file{.Xdefaults}ファイル(@pxref{X Resources})のセッティングの多くを追加"
+"することもできます。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:744
+#: original_texis/cmdargs.texi:744
 #, no-wrap
 msgid "Specifying the Display Name"
 msgstr "Specifying the Display Name"
 
 #. type: cindex
-#: cmdargs.texi.orig:745
+#: original_texis/cmdargs.texi:745
 #, no-wrap
 msgid "display name (X Window System)"
 msgstr "display name (X Window System)"
 
 #. type: cindex
-#: cmdargs.texi.orig:746
+#: original_texis/cmdargs.texi:746
 #, no-wrap
 msgid "@env{DISPLAY} environment variable"
 msgstr "@env{DISPLAY} environment variable"
 
 #. type: Plain text
-#: cmdargs.texi.orig:754
+#: original_texis/cmdargs.texi:754
 msgid ""
 "The environment variable @env{DISPLAY} tells all X clients, including Emacs, "
 "where to display their windows.  Its value is set by default in ordinary "
@@ -2227,10 +2558,16 @@ msgid ""
 "specify the display yourself; one reason to do this is if you want to log "
 "into another system and run Emacs there, and have the window displayed at "
 "your local terminal."
-msgstr "環境変数@env{DISPLAY}は、Emacsを含むすべてのXクライアントに、ウィンドウをどこに表示するかを指定します。通常の状況では、この変数の値は、Xサーバーを開始してローカルでジョブを実行したとき、デフォルトにセットされます。ディスプレーを自分で指定することもできます。これを行なう理由の1つは、他のシステムにログインして、そこでEmacsを実行し、ウィンドウはローカル端末のウィンドウに表示させたい場合です。"
+msgstr ""
+"環境変数@env{DISPLAY}は、Emacsを含むすべてのXクライアントに、ウィンドウをどこ"
+"に表示するかを指定します。通常の状況では、この変数の値は、Xサーバーを開始して"
+"ローカルでジョブを実行したとき、デフォルトにセットされます。ディスプレーを自"
+"分で指定することもできます。これを行なう理由の1つは、他のシステムにログインし"
+"て、そこでEmacsを実行し、ウィンドウはローカル端末のウィンドウに表示させたい場"
+"合です。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:763
+#: original_texis/cmdargs.texi:763
 msgid ""
 "@env{DISPLAY} has the syntax @samp{@var{host}:@var{display}.@var{screen}}, "
 "where @var{host} is the host name of the X Window System server machine, "
@@ -2239,476 +2576,526 @@ msgid ""
 "is a field that allows an X server to control multiple terminal screens.  "
 "The period and the @var{screen} field are optional.  If included, "
 "@var{screen} is usually zero."
-msgstr "@env{DISPLAY}は、@samp{@var{host}:@var{display}.@var{screen}}という構文をもちます。ここで@var{host}はXウィンドウシステムのサーバー機のホスト名、@var{display}は、あなたのサーバー(Xサーバー)を、同一機種上の他のサーバーと区別するために任意に割り当てられる数字、そして@var{screen}フィールドは、Xサーバーが複数の端末スクリーンを制御することを可能にします。ピリオドと@var{screen}フィールドはオプションです。@var{screen}が含まれる場合、通常は0です。"
+msgstr ""
+"@env{DISPLAY}は、@samp{@var{host}:@var{display}.@var{screen}}という構文をもち"
+"ます。ここで@var{host}はXウィンドウシステムのサーバー機のホスト名、"
+"@var{display}は、あなたのサーバー(Xサーバー)を、同一機種上の他のサーバーと区"
+"別するために任意に割り当てられる数字、そして@var{screen}フィールドは、Xサー"
+"バーが複数の端末スクリーンを制御することを可能にします。ピリオドと"
+"@var{screen}フィールドはオプションです。@var{screen}が含まれる場合、通常は0で"
+"す。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:767
+#: original_texis/cmdargs.texi:767
 msgid ""
 "For example, if your host is named @samp{glasperle} and your server is the "
 "first (or perhaps the only) server listed in the configuration, your "
 "@env{DISPLAY} is @samp{glasperle:0.0}."
-msgstr "たとえば、あなたのホスト名が@samp{glasperle}で、あなたのサーバーが設定にリストされた最初の(もしかしたら唯一の)サーバーの場合、@env{DISPLAY}は@samp{glasperle:0.0}になります。"
+msgstr ""
+"たとえば、あなたのホスト名が@samp{glasperle}で、あなたのサーバーが設定にリス"
+"トされた最初の(もしかしたら唯一の)サーバーの場合、@env{DISPLAY}は"
+"@samp{glasperle:0.0}になります。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:771
+#: original_texis/cmdargs.texi:771
 msgid ""
 "You can specify the display name explicitly when you run Emacs, either by "
 "changing the @env{DISPLAY} variable, or with the option @samp{-d "
 "@var{display}} or @samp{--display=@var{display}}.  Here is an example:"
-msgstr "Emacsを実行するとき、変数@env{DISPLAY}を変更するか、オプション@samp{-d @var{display}}または@samp{--display=@var{display}}で、明示的にディスプレーを指定できます。以下は例です:"
+msgstr ""
+"Emacsを実行するとき、変数@env{DISPLAY}を変更するか、オプション@samp{-d "
+"@var{display}}または@samp{--display=@var{display}}で、明示的にディスプレーを"
+"指定できます。以下は例です:"
 
 #. type: smallexample
-#: cmdargs.texi.orig:774
+#: original_texis/cmdargs.texi:774
 #, no-wrap
 msgid "emacs --display=glasperle:0 &\n"
 msgstr "emacs --display=glasperle:0 &\n"
 
 #. type: Plain text
-#: cmdargs.texi.orig:779
+#: original_texis/cmdargs.texi:779
 msgid ""
 "You can inhibit the use of the X window system with the @samp{-nw} option.  "
 "Then Emacs uses its controlling text terminal for display.  @xref{Initial "
 "Options}."
-msgstr "@samp{-nw}オプションで、Xウィンドウシステムの使用を抑止できます。その場合、Emacsはディスプレーとして制御テキスト端末を使用します。@ref{Initial Options}を参照してください。"
+msgstr ""
+"@samp{-nw}オプションで、Xウィンドウシステムの使用を抑止できます。その場合、"
+"Emacsはディスプレーとして制御テキスト端末を使用します。@ref{Initial Options}"
+"を参照してください。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:783
+#: original_texis/cmdargs.texi:783
 msgid ""
 "Sometimes, security arrangements prevent a program on a remote system from "
 "displaying on your local system.  In this case, trying to run Emacs produces "
 "messages like this:"
-msgstr "セキュリティーの規制により、リモートシステムのプログラムが、ローカルシステムで表示を行なうのを禁ずることがあります。この場合、Emacsは以下のようなメッセージを出力します:"
+msgstr ""
+"セキュリティーの規制により、リモートシステムのプログラムが、ローカルシステム"
+"で表示を行なうのを禁ずることがあります。この場合、Emacsは以下のようなメッセー"
+"ジを出力します:"
 
 #. type: smallexample
-#: cmdargs.texi.orig:786
+#: original_texis/cmdargs.texi:786
 #, no-wrap
 msgid "Xlib:  connection to \"glasperle:0.0\" refused by server\n"
 msgstr "Xlib:  connection to \"glasperle:0.0\" refused by server\n"
 
 #. type: Plain text
-#: cmdargs.texi.orig:792
+#: original_texis/cmdargs.texi:792
 msgid ""
 "You might be able to overcome this problem by using the @command{xhost} "
 "command on the local system to give permission for access from your remote "
 "machine."
-msgstr "ローカル機で@command{xhost}コマンドを使用することにより、リモート機からアクセスする権限を与えれば、この問題を解決できるでしょう。"
+msgstr ""
+"ローカル機で@command{xhost}コマンドを使用することにより、リモート機からアクセ"
+"スする権限を与えれば、この問題を解決できるでしょう。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:794
+#: original_texis/cmdargs.texi:794
 #, no-wrap
 msgid "Font Specification Options"
 msgstr "Font Specification Options"
 
 #. type: cindex
-#: cmdargs.texi.orig:795
+#: original_texis/cmdargs.texi:795
 #, no-wrap
 msgid "font name (X Window System)"
 msgstr "font name (X Window System)"
 
 #. type: Plain text
-#: cmdargs.texi.orig:800
+#: original_texis/cmdargs.texi:800
 msgid ""
 "You can use the command line option @samp{-fn @var{font}} (or @samp{--font}, "
 "which is an alias for @samp{-fn}) to specify a default font:"
-msgstr "デフォルトのフォントを指定するために、コマンドラインオプション@samp{-fn @var{font}}(または@samp{--font}。これは@samp{-fn}のエイリアスです)を使用できます。"
+msgstr ""
+"デフォルトのフォントを指定するために、コマンドラインオプション@samp{-fn "
+"@var{font}}(または@samp{--font}。これは@samp{-fn}のエイリアスです)を使用でき"
+"ます。"
 
 #. type: item
-#: cmdargs.texi.orig:802
+#: original_texis/cmdargs.texi:802
 #, no-wrap
 msgid "-fn @var{font}"
 msgstr "-fn @var{font}"
 
 #. type: opindex
-#: cmdargs.texi.orig:803
+#: original_texis/cmdargs.texi:803
 #, no-wrap
 msgid "-fn"
 msgstr "-fn"
 
 #. type: itemx
-#: cmdargs.texi.orig:804
+#: original_texis/cmdargs.texi:804
 #, no-wrap
 msgid "--font=@var{font}"
 msgstr "--font=@var{font}"
 
 #. type: opindex
-#: cmdargs.texi.orig:805
+#: original_texis/cmdargs.texi:805
 #, no-wrap
 msgid "--font"
 msgstr "--font"
 
 #. type: cindex
-#: cmdargs.texi.orig:806
+#: original_texis/cmdargs.texi:806
 #, no-wrap
 msgid "specify default font from the command line"
 msgstr "specify default font from the command line"
 
 #. type: table
-#: cmdargs.texi.orig:808
+#: original_texis/cmdargs.texi:808
 msgid "Use @var{font} as the default font."
 msgstr "@var{font}をデフォルトフォントとして使用します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:814
+#: original_texis/cmdargs.texi:814
 msgid ""
 "When passing a font name to Emacs on the command line, you may need to "
 "``quote'' it, by enclosing it in quotation marks, if it contains characters "
 "that the shell treats specially (e.g., spaces).  For example:"
-msgstr "コマンドラインでフォント名をEmacsに渡す場合、フォント名にシェルが特別に扱う文字(たとえばスペース)が含まれる場合は、クォーテーションマークで囲んで``クォート''する必要があるでしょう。たとえば:"
+msgstr ""
+"コマンドラインでフォント名をEmacsに渡す場合、フォント名にシェルが特別に扱う文"
+"字(たとえばスペース)が含まれる場合は、クォーテーションマークで囲んで``クォー"
+"ト''する必要があるでしょう。たとえば:"
 
 #. type: smallexample
-#: cmdargs.texi.orig:817
+#: original_texis/cmdargs.texi:817
 #, no-wrap
 msgid "emacs -fn \"DejaVu Sans Mono-12\"\n"
 msgstr "emacs -fn \"DejaVu Sans Mono-12\"\n"
 
 #. type: Plain text
-#: cmdargs.texi.orig:821
+#: original_texis/cmdargs.texi:821
 msgid ""
 "@xref{Fonts}, for details about font names and other ways to specify the "
 "default font."
-msgstr "フォント名やデフォルトフォントを指定する別の方法についての詳細は、@ref{Fonts}を参照してください。"
+msgstr ""
+"フォント名やデフォルトフォントを指定する別の方法についての詳細は、@ref{Fonts}"
+"を参照してください。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:823
+#: original_texis/cmdargs.texi:823
 #, no-wrap
 msgid "Window Color Options"
 msgstr "Window Color Options"
 
 #. type: cindex
-#: cmdargs.texi.orig:824
+#: original_texis/cmdargs.texi:824
 #, no-wrap
 msgid "color of window, from command line"
 msgstr "color of window, from command line"
 
 #. type: cindex
-#: cmdargs.texi.orig:825
+#: original_texis/cmdargs.texi:825
 #, no-wrap
 msgid "text colors, from command line"
 msgstr "text colors, from command line"
 
 #. type: Plain text
-#: cmdargs.texi.orig:830
+#: original_texis/cmdargs.texi:830
 msgid ""
 "You can use the following command-line options to specify the colors to use "
 "for various parts of the Emacs display.  Colors may be specified using "
 "either color names or RGB triplets (@pxref{Colors})."
-msgstr "Emacsディスプレーのさまざまな場所で使用するカラーを指定するために、以下のコマンドラインオプションを使用できます。カラーは、カラーネーム(color names)か、RGBトリプレット(RGB triplets)のどちらかを使用して、指定します。"
+msgstr ""
+"Emacsディスプレーのさまざまな場所で使用するカラーを指定するために、以下のコマ"
+"ンドラインオプションを使用できます。カラーは、カラーネーム(color names)か、"
+"RGBトリプレット(RGB triplets)のどちらかを使用して、指定します。"
 
 #. type: item
-#: cmdargs.texi.orig:832
+#: original_texis/cmdargs.texi:832
 #, no-wrap
 msgid "-fg @var{color}"
 msgstr "-fg @var{color}"
 
 #. type: opindex
-#: cmdargs.texi.orig:833
+#: original_texis/cmdargs.texi:833
 #, no-wrap
 msgid "-fg"
 msgstr "-fg"
 
 #. type: itemx
-#: cmdargs.texi.orig:834
+#: original_texis/cmdargs.texi:834
 #, no-wrap
 msgid "--foreground-color=@var{color}"
 msgstr "--foreground-color=@var{color}"
 
 #. type: opindex
-#: cmdargs.texi.orig:835
+#: original_texis/cmdargs.texi:835
 #, no-wrap
 msgid "--foreground-color"
 msgstr "--foreground-color"
 
 #. type: cindex
-#: cmdargs.texi.orig:836
+#: original_texis/cmdargs.texi:836
 #, no-wrap
 msgid "foreground color, command-line argument"
 msgstr "foreground color, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:839
+#: original_texis/cmdargs.texi:839
 msgid ""
 "Specify the foreground color, overriding the color specified by the "
 "@code{default} face (@pxref{Faces})."
-msgstr "フォアグラウンドカラーを指定します。@code{default}フェイス(@ref{Faces}を参照してください)で指定されたカラーをオーバーライドします。"
+msgstr ""
+"フォアグラウンドカラーを指定します。@code{default}フェイス(@ref{Faces}を参照"
+"してください)で指定されたカラーをオーバーライドします。"
 
 #. type: item
-#: cmdargs.texi.orig:839
+#: original_texis/cmdargs.texi:839
 #, no-wrap
 msgid "-bg @var{color}"
 msgstr "-bg @var{color}"
 
 #. type: opindex
-#: cmdargs.texi.orig:840
+#: original_texis/cmdargs.texi:840
 #, no-wrap
 msgid "-bg"
 msgstr "-bg"
 
 #. type: itemx
-#: cmdargs.texi.orig:841
+#: original_texis/cmdargs.texi:841
 #, no-wrap
 msgid "--background-color=@var{color}"
 msgstr "--background-color=@var{color}"
 
 #. type: opindex
-#: cmdargs.texi.orig:842
+#: original_texis/cmdargs.texi:842
 #, no-wrap
 msgid "--background-color"
 msgstr "--background-color"
 
 #. type: cindex
-#: cmdargs.texi.orig:843
+#: original_texis/cmdargs.texi:843
 #, no-wrap
 msgid "background color, command-line argument"
 msgstr "background color, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:846
+#: original_texis/cmdargs.texi:846
 msgid ""
 "Specify the background color, overriding the color specified by the "
 "@code{default} face."
-msgstr "バックグラウンドカラーを指定します。@code{default}フェイスで指定されたカラーをオーバーライドします。"
+msgstr ""
+"バックグラウンドカラーを指定します。@code{default}フェイスで指定されたカラー"
+"をオーバーライドします。"
 
 #. type: item
-#: cmdargs.texi.orig:846
+#: original_texis/cmdargs.texi:846
 #, no-wrap
 msgid "-bd @var{color}"
 msgstr "-bd @var{color}"
 
 #. type: opindex
-#: cmdargs.texi.orig:847
+#: original_texis/cmdargs.texi:847
 #, no-wrap
 msgid "-bd"
 msgstr "-bd"
 
 #. type: itemx
-#: cmdargs.texi.orig:848
+#: original_texis/cmdargs.texi:848
 #, no-wrap
 msgid "--border-color=@var{color}"
 msgstr "--border-color=@var{color}"
 
 #. type: opindex
-#: cmdargs.texi.orig:849
+#: original_texis/cmdargs.texi:849
 #, no-wrap
 msgid "--border-color"
 msgstr "--border-color"
 
 #. type: cindex
-#: cmdargs.texi.orig:850
+#: original_texis/cmdargs.texi:850
 #, no-wrap
 msgid "border color, command-line argument"
 msgstr "border color, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:853
+#: original_texis/cmdargs.texi:853
 msgid ""
 "Specify the color of the border of the X window.  This has no effect if "
 "Emacs is compiled with GTK+ support."
-msgstr "Xウィンドウのボーダーカラーを指定します。EmacsがGTK+サポートつきでンパイルされいてる場合、効果はありません。"
+msgstr ""
+"Xウィンドウのボーダーカラーを指定します。EmacsがGTK+サポートつきでンパイルさ"
+"れいてる場合、効果はありません。"
 
 #. type: item
-#: cmdargs.texi.orig:853
+#: original_texis/cmdargs.texi:853
 #, no-wrap
 msgid "-cr @var{color}"
 msgstr "-cr @var{color}"
 
 #. type: opindex
-#: cmdargs.texi.orig:854
+#: original_texis/cmdargs.texi:854
 #, no-wrap
 msgid "-cr"
 msgstr "-cr"
 
 #. type: itemx
-#: cmdargs.texi.orig:855
+#: original_texis/cmdargs.texi:855
 #, no-wrap
 msgid "--cursor-color=@var{color}"
 msgstr "--cursor-color=@var{color}"
 
 #. type: opindex
-#: cmdargs.texi.orig:856
+#: original_texis/cmdargs.texi:856
 #, no-wrap
 msgid "--cursor-color"
 msgstr "--cursor-color"
 
 #. type: cindex
-#: cmdargs.texi.orig:857
+#: original_texis/cmdargs.texi:857
 #, no-wrap
 msgid "cursor color, command-line argument"
 msgstr "cursor color, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:859
+#: original_texis/cmdargs.texi:859
 msgid "Specify the color of the Emacs cursor which indicates where point is."
 msgstr "ポイントがある位置を示すEmacsのカーソルカラーを指定します。"
 
 #. type: item
-#: cmdargs.texi.orig:859
+#: original_texis/cmdargs.texi:859
 #, no-wrap
 msgid "-ms @var{color}"
 msgstr "-ms @var{color}"
 
 #. type: opindex
-#: cmdargs.texi.orig:860
+#: original_texis/cmdargs.texi:860
 #, no-wrap
 msgid "-ms"
 msgstr "-ms"
 
 #. type: itemx
-#: cmdargs.texi.orig:861
+#: original_texis/cmdargs.texi:861
 #, no-wrap
 msgid "--mouse-color=@var{color}"
 msgstr "--mouse-color=@var{color}"
 
 #. type: opindex
-#: cmdargs.texi.orig:862
+#: original_texis/cmdargs.texi:862
 #, no-wrap
 msgid "--mouse-color"
 msgstr "--mouse-color"
 
 #. type: cindex
-#: cmdargs.texi.orig:863
+#: original_texis/cmdargs.texi:863
 #, no-wrap
 msgid "mouse pointer color, command-line argument"
 msgstr "mouse pointer color, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:865
+#: original_texis/cmdargs.texi:865
 msgid ""
 "Specify the color for the mouse cursor when the mouse is in the Emacs window."
-msgstr "Emacsウィンドウにマウスがあるときの、マウスカーソルカラーを指定します。"
+msgstr ""
+"Emacsウィンドウにマウスがあるときの、マウスカーソルカラーを指定します。"
 
 #. type: opindex
-#: cmdargs.texi.orig:865 cmdargs.texi.orig:866
+#: original_texis/cmdargs.texi:865 original_texis/cmdargs.texi:866
 #, no-wrap
 msgid "-r"
 msgstr "-r"
 
 #. type: opindex
-#: cmdargs.texi.orig:867 cmdargs.texi.orig:868
+#: original_texis/cmdargs.texi:867 original_texis/cmdargs.texi:868
 #, no-wrap
 msgid "-rv"
 msgstr "-rv"
 
 #. type: opindex
-#: cmdargs.texi.orig:869 cmdargs.texi.orig:870
+#: original_texis/cmdargs.texi:869 original_texis/cmdargs.texi:870
 #, no-wrap
 msgid "--reverse-video"
 msgstr "--reverse-video"
 
 #. type: cindex
-#: cmdargs.texi.orig:871
+#: original_texis/cmdargs.texi:871
 #, no-wrap
 msgid "reverse video, command-line argument"
 msgstr "reverse video, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:873
+#: original_texis/cmdargs.texi:873
 msgid "Reverse video---swap the foreground and background colors."
-msgstr "フォアグラウンドカラーとバックグラウンドカラーを入れ替えて、反転表示します。"
+msgstr ""
+"フォアグラウンドカラーとバックグラウンドカラーを入れ替えて、反転表示します。"
 
 #. type: item
-#: cmdargs.texi.orig:873
+#: original_texis/cmdargs.texi:873
 #, no-wrap
 msgid "--color=@var{mode}"
 msgstr "--color=@var{mode}"
 
 #. type: opindex
-#: cmdargs.texi.orig:874
+#: original_texis/cmdargs.texi:874
 #, no-wrap
 msgid "--color"
 msgstr "--color"
 
 #. type: cindex
-#: cmdargs.texi.orig:875
+#: original_texis/cmdargs.texi:875
 #, no-wrap
 msgid "standard colors on a character terminal"
 msgstr "standard colors on a character terminal"
 
 #. type: cindex
-#: cmdargs.texi.orig:876
+#: original_texis/cmdargs.texi:876
 #, no-wrap
 msgid "override character terminal color support"
 msgstr "override character terminal color support"
 
 #. type: table
-#: cmdargs.texi.orig:881
+#: original_texis/cmdargs.texi:881
 msgid ""
 "Set the @dfn{color support mode} when Emacs is run on a text terminal.  This "
 "option overrides the number of supported colors that the character terminal "
 "advertises in its @code{termcap} or @code{terminfo} database.  The parameter "
 "@var{mode} can be one of the following:"
-msgstr "Emacsをテキスト端末で実行するときの、@dfn{カラーサポートモード(color support mode)}をセットします。その文字端末の@code{terminfo}データベースまたは@code{termcap}で示される、いくつかのサポートされたカラーをオーバーライドします。パラメーター@var{mode}には、以下の1つを指定できます:"
+msgstr ""
+"Emacsをテキスト端末で実行するときの、@dfn{カラーサポートモード(color support "
+"mode)}をセットします。その文字端末の@code{terminfo}データベースまたは"
+"@code{termcap}で示される、いくつかのサポートされたカラーをオーバーライドしま"
+"す。パラメーター@var{mode}には、以下の1つを指定できます:"
 
 #. type: item
-#: cmdargs.texi.orig:882
+#: original_texis/cmdargs.texi:882
 #, no-wrap
 msgid "never"
 msgstr "never"
 
 #. type: itemx
-#: cmdargs.texi.orig:883
+#: original_texis/cmdargs.texi:883
 #, no-wrap
 msgid "no"
 msgstr "no"
 
 #. type: table
-#: cmdargs.texi.orig:886
+#: original_texis/cmdargs.texi:886
 msgid ""
 "Don't use colors even if the terminal's capabilities specify color support."
-msgstr "端末の能力がカラーをサポートすると指定していても、カラーを使用しません。"
+msgstr ""
+"端末の能力がカラーをサポートすると指定していても、カラーを使用しません。"
 
 #. type: item
-#: cmdargs.texi.orig:886
+#: original_texis/cmdargs.texi:886
 #, no-wrap
 msgid "default"
 msgstr "default"
 
 #. type: itemx
-#: cmdargs.texi.orig:887
+#: original_texis/cmdargs.texi:887
 #, no-wrap
 msgid "auto"
 msgstr "auto"
 
 #. type: table
-#: cmdargs.texi.orig:891
+#: original_texis/cmdargs.texi:891
 msgid ""
 "Same as when @option{--color} is not used at all: Emacs detects at startup "
 "whether the terminal supports colors, and if it does, turns on colored "
 "display."
-msgstr "@option{--color}を指定しないときと同じです。Emacsは開始時に端末がカラーをサポートするか検知して、もしサポートされていれば、カラーディスプレーをオンに切り替えます。"
+msgstr ""
+"@option{--color}を指定しないときと同じです。Emacsは開始時に端末がカラーをサ"
+"ポートするか検知して、もしサポートされていれば、カラーディスプレーをオンに切"
+"り替えます。"
 
 #. type: item
-#: cmdargs.texi.orig:891
+#: original_texis/cmdargs.texi:891
 #, no-wrap
 msgid "always"
 msgstr "always"
 
 #. type: itemx
-#: cmdargs.texi.orig:892
+#: original_texis/cmdargs.texi:892
 #, no-wrap
 msgid "yes"
 msgstr "yes"
 
 #. type: itemx
-#: cmdargs.texi.orig:893
+#: original_texis/cmdargs.texi:893
 #, no-wrap
 msgid "ansi8"
 msgstr "ansi8"
 
 #. type: table
-#: cmdargs.texi.orig:896
+#: original_texis/cmdargs.texi:896
 msgid ""
 "Turn on the color support unconditionally, and use color commands specified "
 "by the ANSI escape sequences for the 8 standard colors."
-msgstr "無条件にカラーサポートをオンに切り替えて、標準的な8カラーにたいするANSIエスケープシーケンスによるカラーコマンドを使用します。"
+msgstr ""
+"無条件にカラーサポートをオンに切り替えて、標準的な8カラーにたいするANSIエス"
+"ケープシーケンスによるカラーコマンドを使用します。"
 
 #. type: var{#1}
-#: cmdargs.texi.orig:896
+#: original_texis/cmdargs.texi:896
 #, no-wrap
 msgid "num"
 msgstr "num"
 
 #. type: table
-#: cmdargs.texi.orig:906
+#: original_texis/cmdargs.texi:906
 msgid ""
 "Use color mode for @var{num} colors.  If @var{num} is -1, turn off color "
 "support (equivalent to @samp{never}); if it is 0, use the default color "
@@ -2718,215 +3105,243 @@ msgid ""
 "16, 88, or 256 as the value of @var{num}.  If there is no mode that supports "
 "@var{num} colors, Emacs acts as if @var{num} were 0, i.e., it uses the "
 "terminal's default color support mode."
-msgstr "@var{num}個のカラーにたいするカラーモードを使用します。@var{num}が-1の場合、カラーサポートをオフに切り替えます(@samp{never}と同じです)。0の場合、この端末にたいするデフォルトのカラーサポートを使用します(@samp{auto}と同じです)。そうでない場合、@var{num}個のカラーにたいする適切な標準モードを使用します。端末の能力により、@var{num}の値に応じて、Emacsは8色、16色、88色、256色のカラーモードに切り替えることができるでしょう。@var{num}カラーをサポートするモードが存在しない場合、Emacsはあたかも@var{num}に0が指定された場合のように、その端末のデフォルトのカラーサポートを使用します。"
+msgstr ""
+"@var{num}個のカラーにたいするカラーモードを使用します。@var{num}が-1の場合、"
+"カラーサポートをオフに切り替えます(@samp{never}と同じです)。0の場合、この端末"
+"にたいするデフォルトのカラーサポートを使用します(@samp{auto}と同じです)。そう"
+"でない場合、@var{num}個のカラーにたいする適切な標準モードを使用します。端末の"
+"能力により、@var{num}の値に応じて、Emacsは8色、16色、88色、256色のカラーモー"
+"ドに切り替えることができるでしょう。@var{num}カラーをサポートするモードが存在"
+"しない場合、Emacsはあたかも@var{num}に0が指定された場合のように、その端末のデ"
+"フォルトのカラーサポートを使用します。"
 
 #. type: table
-#: cmdargs.texi.orig:908
+#: original_texis/cmdargs.texi:908
 msgid "If @var{mode} is omitted, it defaults to @var{ansi8}."
 msgstr "@var{mode}が省略された場合のデフォルトは、@var{ansi8}です。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:912
+#: original_texis/cmdargs.texi:912
 msgid ""
 "For example, to use a coral mouse cursor and a slate blue text cursor, enter:"
-msgstr "たとえばcoralのマウスカーソルと、slate blueのテキストカーソルを使用するには、以下のように入力します:"
+msgstr ""
+"たとえばcoralのマウスカーソルと、slate blueのテキストカーソルを使用するには、"
+"以下のように入力します:"
 
 #. type: example
-#: cmdargs.texi.orig:915
+#: original_texis/cmdargs.texi:915
 #, no-wrap
 msgid "emacs -ms coral -cr 'slate blue' &\n"
 msgstr "emacs -ms coral -cr 'slate blue' &\n"
 
 #. type: Plain text
-#: cmdargs.texi.orig:919
+#: original_texis/cmdargs.texi:919
 msgid ""
 "You can reverse the foreground and background colors through the @samp{-rv} "
 "option or with the X resource @samp{reverseVideo}."
-msgstr "@samp{-rv}オプションを指定するか、Xリソースの@samp{reverseVideo}で、フォアグラウンドとバックグラウンドのカラーを反転できます。"
+msgstr ""
+"@samp{-rv}オプションを指定するか、Xリソースの@samp{reverseVideo}で、フォアグ"
+"ラウンドとバックグラウンドのカラーを反転できます。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:922
+#: original_texis/cmdargs.texi:922
 msgid ""
 "The @samp{-fg}, @samp{-bg}, and @samp{-rv} options function on text "
 "terminals as well as on graphical displays."
-msgstr "@samp{-fg}、@samp{-bg}、@samp{-rv}オプションの機能は、テキスト端末でも、グラフィカルなディスプレーと同様です。"
+msgstr ""
+"@samp{-fg}、@samp{-bg}、@samp{-rv}オプションの機能は、テキスト端末でも、グラ"
+"フィカルなディスプレーと同様です。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:924
+#: original_texis/cmdargs.texi:924
 #, no-wrap
 msgid "Options for Window Size and Position"
 msgstr "Options for Window Size and Position"
 
 #. type: cindex
-#: cmdargs.texi.orig:925
+#: original_texis/cmdargs.texi:925
 #, no-wrap
 msgid "geometry of Emacs window"
 msgstr "geometry of Emacs window"
 
 #. type: cindex
-#: cmdargs.texi.orig:926
+#: original_texis/cmdargs.texi:926
 #, no-wrap
 msgid "position and size of Emacs frame"
 msgstr "position and size of Emacs frame"
 
 #. type: cindex
-#: cmdargs.texi.orig:927
+#: original_texis/cmdargs.texi:927
 #, no-wrap
 msgid "width and height of Emacs frame"
 msgstr "width and height of Emacs frame"
 
 #. type: cindex
-#: cmdargs.texi.orig:928
+#: original_texis/cmdargs.texi:928
 #, no-wrap
 msgid "specifying fullscreen for Emacs frame"
 msgstr "specifying fullscreen for Emacs frame"
 
 #. type: Plain text
-#: cmdargs.texi.orig:932
+#: original_texis/cmdargs.texi:932
 msgid ""
 "Here is a list of the command-line options for specifying size and position "
 "of the initial Emacs frame:"
-msgstr "以下は、Emacsの初期フレームのサイズと位置を指定する、コマンドラインオプションのリストです:"
+msgstr ""
+"以下は、Emacsの初期フレームのサイズと位置を指定する、コマンドラインオプション"
+"のリストです:"
 
 #. type: item
-#: cmdargs.texi.orig:934
+#: original_texis/cmdargs.texi:934
 #, no-wrap
 msgid "-g @var{width}x@var{height}@r{[@{}+-@r{@}}@var{xoffset}@r{@{}+-@r{@}}@var{yoffset}@r{]]}"
 msgstr "-g @var{width}x@var{height}@r{[@{}+-@r{@}}@var{xoffset}@r{@{}+-@r{@}}@var{yoffset}@r{]]}"
 
 #. type: opindex
-#: cmdargs.texi.orig:935
+#: original_texis/cmdargs.texi:935
 #, no-wrap
 msgid "-g"
 msgstr "-g"
 
 #. type: itemx
-#: cmdargs.texi.orig:936
+#: original_texis/cmdargs.texi:936
 #, no-wrap
 msgid "--geometry=@var{width}x@var{height}@r{[@{}+-@r{@}}@var{xoffset}@r{@{}+-@r{@}}@var{yoffset}@r{]]}"
 msgstr "--geometry=@var{width}x@var{height}@r{[@{}+-@r{@}}@var{xoffset}@r{@{}+-@r{@}}@var{yoffset}@r{]]}"
 
 #. type: opindex
-#: cmdargs.texi.orig:937
+#: original_texis/cmdargs.texi:937
 #, no-wrap
 msgid "--geometry"
 msgstr "--geometry"
 
 #. type: cindex
-#: cmdargs.texi.orig:938
+#: original_texis/cmdargs.texi:938
 #, no-wrap
 msgid "geometry, command-line argument"
 msgstr "geometry, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:944
+#: original_texis/cmdargs.texi:944
 msgid ""
 "Specify the size @var{width} and @var{height} (measured in character columns "
 "and lines), and positions @var{xoffset} and @var{yoffset} (measured in "
 "pixels).  The @var{width} and @var{height} parameters apply to all frames, "
 "whereas @var{xoffset} and @var{yoffset} only to the initial frame."
-msgstr "サイズ@var{width}と@var{height}(文字の列数と行数)、および位置@var{xoffset}と@var{yoffset}(ピクセル)を指定します。パラメーター@var{width}と@var{height}はすべてのフレームに適用されますが、@var{xoffset}と@var{yoffset}は初期フレームだけに適用されます。"
+msgstr ""
+"サイズ@var{width}と@var{height}(文字の列数と行数)、および位置@var{xoffset}と"
+"@var{yoffset}(ピクセル)を指定します。パラメーター@var{width}と@var{height}は"
+"すべてのフレームに適用されますが、@var{xoffset}と@var{yoffset}は初期フレーム"
+"だけに適用されます。"
 
 #. type: opindex
-#: cmdargs.texi.orig:945 cmdargs.texi.orig:946
+#: original_texis/cmdargs.texi:945 original_texis/cmdargs.texi:946
 #, no-wrap
 msgid "-fs"
 msgstr "-fs"
 
 #. type: opindex
-#: cmdargs.texi.orig:947 cmdargs.texi.orig:948
+#: original_texis/cmdargs.texi:947 original_texis/cmdargs.texi:948
 #, no-wrap
 msgid "--fullscreen"
 msgstr "--fullscreen"
 
 #. type: cindex
-#: cmdargs.texi.orig:949
+#: original_texis/cmdargs.texi:949
 #, no-wrap
 msgid "fullscreen, command-line argument"
 msgstr "fullscreen, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:953
+#: original_texis/cmdargs.texi:953
 msgid ""
 "Specify that width and height should be that of the screen.  Normally no "
 "window manager decorations are shown.  (After starting Emacs, you can toggle "
 "this state using @key{F11}, @code{toggle-frame-fullscreen}.)"
-msgstr "スクリーンのサイズになるように、幅と高さを指定します。通常は、ウィンドウマネージャーによる装飾は表示されません(Emacsを起動した後に、@key{F11} @code{toggle-frame-fullscreen}を使用して、この状態を切り替えることができます)。"
+msgstr ""
+"スクリーンのサイズになるように、幅と高さを指定します。通常は、ウィンドウマ"
+"ネージャーによる装飾は表示されません(Emacsを起動した後に、@key{F11} "
+"@code{toggle-frame-fullscreen}を使用して、この状態を切り替えることができま"
+"す)。"
 
 #. type: opindex
-#: cmdargs.texi.orig:954 cmdargs.texi.orig:955
+#: original_texis/cmdargs.texi:954 original_texis/cmdargs.texi:955
 #, no-wrap
 msgid "-mm"
 msgstr "-mm"
 
 #. type: opindex
-#: cmdargs.texi.orig:956 cmdargs.texi.orig:957
+#: original_texis/cmdargs.texi:956 original_texis/cmdargs.texi:957
 #, no-wrap
 msgid "--maximized"
 msgstr "--maximized"
 
 #. type: cindex
-#: cmdargs.texi.orig:958
+#: original_texis/cmdargs.texi:958
 #, no-wrap
 msgid "maximized, command-line argument"
 msgstr "maximized, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:963
+#: original_texis/cmdargs.texi:963
 msgid ""
 "Specify that the Emacs frame should be maximized.  This normally means that "
 "the frame has window manager decorations.  (After starting Emacs, you can "
 "toggle this state using @kbd{M-F10}, @code{toggle-frame-maximized}.)"
-msgstr "Emacsのフレームが最大化されるよう指定します。これは通常、そのフレームがウィンドウマネージャーによる装飾をもつことを意味します(Emacsを起動した後に、@kbd{M-F10} @code{toggle-frame-maximized}を使用して、この状態を切り替えることができます)。"
+msgstr ""
+"Emacsのフレームが最大化されるよう指定します。これは通常、そのフレームがウィン"
+"ドウマネージャーによる装飾をもつことを意味します(Emacsを起動した後に、@kbd{M-"
+"F10} @code{toggle-frame-maximized}を使用して、この状態を切り替えることができ"
+"ます)。"
 
 #. type: opindex
-#: cmdargs.texi.orig:964 cmdargs.texi.orig:965
+#: original_texis/cmdargs.texi:964 original_texis/cmdargs.texi:965
 #, no-wrap
 msgid "-fh"
 msgstr "-fh"
 
 #. type: opindex
-#: cmdargs.texi.orig:966 cmdargs.texi.orig:967
+#: original_texis/cmdargs.texi:966 original_texis/cmdargs.texi:967
 #, no-wrap
 msgid "--fullheight"
 msgstr "--fullheight"
 
 #. type: cindex
-#: cmdargs.texi.orig:968
+#: original_texis/cmdargs.texi:968
 #, no-wrap
 msgid "fullheight, command-line argument"
 msgstr "fullheight, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:970
+#: original_texis/cmdargs.texi:970
 msgid "Specify that the height should be the height of the screen."
 msgstr "高さがスクリーンの高さになるように指定します。"
 
 #. type: opindex
-#: cmdargs.texi.orig:971 cmdargs.texi.orig:972
+#: original_texis/cmdargs.texi:971 original_texis/cmdargs.texi:972
 #, no-wrap
 msgid "-fw"
 msgstr "-fw"
 
 #. type: opindex
-#: cmdargs.texi.orig:973 cmdargs.texi.orig:974
+#: original_texis/cmdargs.texi:973 original_texis/cmdargs.texi:974
 #, no-wrap
 msgid "--fullwidth"
 msgstr "--fullwidth"
 
 #. type: cindex
-#: cmdargs.texi.orig:975
+#: original_texis/cmdargs.texi:975
 #, no-wrap
 msgid "fullwidth, command-line argument"
 msgstr "fullwidth, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:977
+#: original_texis/cmdargs.texi:977
 msgid "Specify that the width should be the width of the screen."
 msgstr "幅がスクリーンと同じ幅になるように指定します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:988
+#: original_texis/cmdargs.texi:988
 msgid ""
 "In the @samp{--geometry} option, @code{@r{@{}+-@r{@}}} means either a plus "
 "sign or a minus sign.  A plus sign before @var{xoffset} means it is the "
@@ -2936,30 +3351,46 @@ msgid ""
 "from the bottom.  The values @var{xoffset} and @var{yoffset} may themselves "
 "be positive or negative, but that doesn't change their meaning, only their "
 "direction."
-msgstr "@samp{--geometry}オプションでは、@code{@r{@{}+-@r{@}}}は、プラス記号かマイナス記号のどちらかを意味します。@var{xoffset}の前のプラス記号はスクリーンの左端からの距離、マイナス記号は右端からの距離を意味します。@var{yoffset}の前のプラス記号はスクリーンの上端からの距離、マイナス記号は下端からの距離を意味します。@var{xoffset}と@var{yoffset}の値自体に正または負の値を指定できますが、それはこれらの意味を変更するものではなく、方向だけを変更します。"
+msgstr ""
+"@samp{--geometry}オプションでは、@code{@r{@{}+-@r{@}}}は、プラス記号かマイナ"
+"ス記号のどちらかを意味します。@var{xoffset}の前のプラス記号はスクリーンの左端"
+"からの距離、マイナス記号は右端からの距離を意味します。@var{yoffset}の前のプラ"
+"ス記号はスクリーンの上端からの距離、マイナス記号は下端からの距離を意味しま"
+"す。@var{xoffset}と@var{yoffset}の値自体に正または負の値を指定できますが、そ"
+"れはこれらの意味を変更するものではなく、方向だけを変更します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:994
+#: original_texis/cmdargs.texi:994
 msgid ""
 "Emacs uses the same units as @command{xterm} does to interpret the "
 "geometry.  The @var{width} and @var{height} are measured in characters, so a "
 "large font creates a larger frame than a small font.  (If you specify a "
 "proportional font, Emacs uses its maximum bounds width as the width unit.)  "
 "The @var{xoffset} and @var{yoffset} are measured in pixels."
-msgstr "Emacsは、@command{xterm}がジオメトリーを解釈するのと同じ単位を使用します。@var{width}と@var{height}は文字で数えられるので、大きなフォントは、小さなフォントより大きなフレームを作成します(プロポーショナルフォントを指定した場合、Emacsは幅の単位として、そのプロポーショナルフォントの最大幅を使用します)。@var{xoffset}と@var{yoffset}はピクセルで数えます。"
+msgstr ""
+"Emacsは、@command{xterm}がジオメトリーを解釈するのと同じ単位を使用します。"
+"@var{width}と@var{height}は文字で数えられるので、大きなフォントは、小さなフォ"
+"ントより大きなフレームを作成します(プロポーショナルフォントを指定した場合、"
+"Emacsは幅の単位として、そのプロポーショナルフォントの最大幅を使用します)。"
+"@var{xoffset}と@var{yoffset}はピクセルで数えます。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1001
+#: original_texis/cmdargs.texi:1001
 msgid ""
 "You do not have to specify all of the fields in the geometry specification.  "
 "If you omit both @var{xoffset} and @var{yoffset}, the window manager decides "
 "where to put the Emacs frame, possibly by letting you place it with the "
 "mouse.  For example, @samp{164x55} specifies a window 164 columns wide, "
 "enough for two ordinary width windows side by side, and 55 lines tall."
-msgstr "ジオメトリー指定で、すべてのフィールドを指定する必要はありません。@var{xoffset}と@var{yoffset}の両方を省略した場合、ウィンドウマネージャーがEmacsフレームをどこに配置するかを決定するか、もしかしたらマウスでその場所を指定できるかもしれません。たとえば@samp{164x55}は、ウィンドウの幅が164(通常のウィンドウを横に2つ並べられる幅)で、55行分の高さを指定します。"
+msgstr ""
+"ジオメトリー指定で、すべてのフィールドを指定する必要はありません。"
+"@var{xoffset}と@var{yoffset}の両方を省略した場合、ウィンドウマネージャーが"
+"Emacsフレームをどこに配置するかを決定するか、もしかしたらマウスでその場所を指"
+"定できるかもしれません。たとえば@samp{164x55}は、ウィンドウの幅が164(通常の"
+"ウィンドウを横に2つ並べられる幅)で、55行分の高さを指定します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1008
+#: original_texis/cmdargs.texi:1008
 msgid ""
 "The default frame width is 80 characters and the default height is 40 "
 "lines.  You can omit either the width or the height or both.  If you start "
@@ -2967,28 +3398,41 @@ msgid ""
 "start with an @samp{x} followed by an integer, Emacs interprets it as the "
 "height.  Thus, @samp{81} specifies just the width; @samp{x45} specifies just "
 "the height."
-msgstr "デフォルトのフレーム幅は80文字で、デフォルトの高さは40行です。幅と高さの、どちらか一方、または両方を省略できます。ジオメトリーが整数で開始される場合、Emacsはそれを幅と解釈します。ジオメトリーの開始が@samp{x}でその後に整数が続く場合、Emacsはそれを高さと解釈します。したがって@samp{81}は幅だけを指定し、@samp{x45}は高さだけを指定します。"
+msgstr ""
+"デフォルトのフレーム幅は80文字で、デフォルトの高さは40行です。幅と高さの、ど"
+"ちらか一方、または両方を省略できます。ジオメトリーが整数で開始される場合、"
+"Emacsはそれを幅と解釈します。ジオメトリーの開始が@samp{x}でその後に整数が続く"
+"場合、Emacsはそれを高さと解釈します。したがって@samp{81}は幅だけを指定し、"
+"@samp{x45}は高さだけを指定します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1014
+#: original_texis/cmdargs.texi:1014
 msgid ""
 "If you start with @samp{+} or @samp{-}, that introduces an offset, which "
 "means both sizes are omitted.  Thus, @samp{-3} specifies the @var{xoffset} "
 "only.  (If you give just one offset, it is always @var{xoffset}.)  "
 "@samp{+3-3} specifies both the @var{xoffset} and the @var{yoffset}, placing "
 "the frame near the bottom left of the screen."
-msgstr "@samp{+}か@samp{-}で開始した場合、それはオフセットを示し、幅と高さの両方のサイズが省略されたことを意味します。したがって@samp{-3}は@var{xoffset}だけを指定します(オフセットを1つだけ与えたとき、それは常に@var{xoffset}になります)。@samp{+3-3}は@var{xoffset}と@var{yoffset}の両方を指定し、フレームをスクリーンの左下に配置します。"
+msgstr ""
+"@samp{+}か@samp{-}で開始した場合、それはオフセットを示し、幅と高さの両方のサ"
+"イズが省略されたことを意味します。したがって@samp{-3}は@var{xoffset}だけを指"
+"定します(オフセットを1つだけ与えたとき、それは常に@var{xoffset}になります)。"
+"@samp{+3-3}は@var{xoffset}と@var{yoffset}の両方を指定し、フレームをスクリーン"
+"の左下に配置します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1018
+#: original_texis/cmdargs.texi:1018
 msgid ""
 "You can specify a default for any or all of the fields in your X resource "
 "file (@pxref{Resources}), and then override selected fields with a @samp{--"
 "geometry} option."
-msgstr "Xリソースファイル(@ref{Resources}を参照してください)で、任意またはすべてのフィールドにたいするデフォルトを指定できます。それらにたいしてフィールドを選択して、@samp{--geometry}オプションでオーバーライドできます。"
+msgstr ""
+"Xリソースファイル(@ref{Resources}を参照してください)で、任意またはすべての"
+"フィールドにたいするデフォルトを指定できます。それらにたいしてフィールドを選"
+"択して、@samp{--geometry}オプションでオーバーライドできます。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1025
+#: original_texis/cmdargs.texi:1025
 msgid ""
 "Since the mode line and the echo area occupy the last 2 lines of the frame, "
 "the height of the initial text window is 2 less than the height specified in "
@@ -2996,10 +3440,15 @@ msgid ""
 "one line of the specified number.  But in the X toolkit version, the menu "
 "bar is additional and does not count against the specified height.  The tool "
 "bar, if present, is also additional."
-msgstr "モードラインとエコーエリアはフレームの2行を占めるので、初期のテキストウィンドウの高さは、ジオメトリーで指定した高さより、2つ少なくなります。非X-toolkitバージョンのEmacsでは、指定した数から、メニューバーの占める1行が引かれます。しかしX-toolkitバージョンでは、メニューバーは付加的で、指定された高さにたいして数えられません。ツールバーがある場合も、それは付加的です。"
+msgstr ""
+"モードラインとエコーエリアはフレームの2行を占めるので、初期のテキストウィンド"
+"ウの高さは、ジオメトリーで指定した高さより、2つ少なくなります。非X-toolkit"
+"バージョンのEmacsでは、指定した数から、メニューバーの占める1行が引かれます。"
+"しかしX-toolkitバージョンでは、メニューバーは付加的で、指定された高さにたいし"
+"て数えられません。ツールバーがある場合も、それは付加的です。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1035
+#: original_texis/cmdargs.texi:1035
 msgid ""
 "Enabling or disabling the menu bar or tool bar alters the amount of space "
 "available for ordinary text.  Therefore, if Emacs starts up with a tool bar "
@@ -3009,39 +3458,54 @@ msgid ""
 "for.  To get the intended size with no tool bar, use an X resource to "
 "specify ``no tool bar'' (@pxref{Table of Resources}); then Emacs will "
 "already know there's no tool bar when it processes the specified geometry."
-msgstr "メニューバーやツールバーを有効または無効にすることにより、通常のテキストが利用できるスペースが変わります。したがって、Emacsがツールバーつき(デフォルト)で開始しされ、ツールバーがあることを前提にジオメトリー指定を処理して、それを初期化ファイルでツールバーを無効にしていた場合、あなたが指定したのと異なるフレームジオメトリーになるでしょう。ツールバーがないサイズを得るには、Xリソースで``no tool bar''を指定します(@ref{Table of Resources}を参照してください)。そうすれば、Emacsは指定されたジオメトリーを処理するときに、ツールバーがないことを知ることができます。"
+msgstr ""
+"メニューバーやツールバーを有効または無効にすることにより、通常のテキストが利"
+"用できるスペースが変わります。したがって、Emacsがツールバーつき(デフォルト)で"
+"開始しされ、ツールバーがあることを前提にジオメトリー指定を処理して、それを初"
+"期化ファイルでツールバーを無効にしていた場合、あなたが指定したのと異なるフ"
+"レームジオメトリーになるでしょう。ツールバーがないサイズを得るには、Xリソース"
+"で``no tool bar''を指定します(@ref{Table of Resources}を参照してください)。そ"
+"うすれば、Emacsは指定されたジオメトリーを処理するときに、ツールバーがないこと"
+"を知ることができます。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1040
+#: original_texis/cmdargs.texi:1040
 msgid ""
 "When using one of @samp{--fullscreen}, @samp{--maximized}, @samp{--"
 "fullwidth} or @samp{--fullheight}, some window managers require you to set "
 "the variable @code{frame-resize-pixelwise} to a non-@code{nil} value to make "
 "a frame appear truly ``maximized'' or ``fullscreen''."
-msgstr "@samp{--fullscreen}、@samp{--maximized}、@samp{--fullwidth}、@samp{--fullheight}のどれか1つを使用するとき、フレームが本当に``最大化''または``フルスクリーン''に見えるようにするために、変数@code{frame-resize-pixelwise}を非@code{nil}値にすることを要求するウィンドウマネージャーがいくつかあります。"
+msgstr ""
+"@samp{--fullscreen}、@samp{--maximized}、@samp{--fullwidth}、@samp{--"
+"fullheight}のどれか1つを使用するとき、フレームが本当に``最大化''または``フル"
+"スクリーン''に見えるようにするために、変数@code{frame-resize-pixelwise}を非"
+"@code{nil}値にすることを要求するウィンドウマネージャーがいくつかあります。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1044
+#: original_texis/cmdargs.texi:1044
 msgid ""
 "Some window managers have options that can make them ignore both program-"
 "specified and user-specified positions.  If these are set, Emacs fails to "
 "position the window correctly."
-msgstr "位置にたいする、プログラム指定とユーザー指定の両方を無視するようにできるオプションをもつウィンドウマネージャーがいくつかあります。これらのオプションがセットされている場合、Emacsはウィンドウを正しく配置するのに失敗します。"
+msgstr ""
+"位置にたいする、プログラム指定とユーザー指定の両方を無視するようにできるオプ"
+"ションをもつウィンドウマネージャーがいくつかあります。これらのオプションが"
+"セットされている場合、Emacsはウィンドウを正しく配置するのに失敗します。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:1046
+#: original_texis/cmdargs.texi:1046
 #, no-wrap
 msgid "Internal and External Borders"
 msgstr "Internal and External Borders"
 
 #. type: cindex
-#: cmdargs.texi.orig:1047
+#: original_texis/cmdargs.texi:1047
 #, no-wrap
 msgid "borders (X Window System)"
 msgstr "borders (X Window System)"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1055
+#: original_texis/cmdargs.texi:1055
 msgid ""
 "An Emacs frame has an internal border and an external border.  The internal "
 "border is an extra strip of the background color around the text portion of "
@@ -3049,105 +3513,119 @@ msgid ""
 "added by the window manager outside the frame; depending on the window "
 "manager you use, it may contain various boxes you can click on to move or "
 "iconify the window."
-msgstr "Emacsフレームは内枠ボーダー(internal border)と、外枠ボーダー(external border)をもちます。内枠ボーダーはフレームのテキスト部分の周囲にある、バックグラウンドカラーによる縁取りです。内枠ボーダーはEmacs自身が描画します。外枠ボーダーはフレームの外側にあり、ウィンドウマネージャーにより追加されます。使用しているウィンドウマネージャーにより、ウィンドウを移動させたりアイコン化する様々なボックスを含む場合があります。"
+msgstr ""
+"Emacsフレームは内枠ボーダー(internal border)と、外枠ボーダー(external border)"
+"をもちます。内枠ボーダーはフレームのテキスト部分の周囲にある、バックグラウン"
+"ドカラーによる縁取りです。内枠ボーダーはEmacs自身が描画します。外枠ボーダーは"
+"フレームの外側にあり、ウィンドウマネージャーにより追加されます。使用している"
+"ウィンドウマネージャーにより、ウィンドウを移動させたりアイコン化する様々な"
+"ボックスを含む場合があります。"
 
 #. type: item
-#: cmdargs.texi.orig:1057
+#: original_texis/cmdargs.texi:1057
 #, no-wrap
 msgid "-ib @var{width}"
 msgstr "-ib @var{width}"
 
 #. type: opindex
-#: cmdargs.texi.orig:1058
+#: original_texis/cmdargs.texi:1058
 #, no-wrap
 msgid "-ib"
 msgstr "-ib"
 
 #. type: itemx
-#: cmdargs.texi.orig:1059
+#: original_texis/cmdargs.texi:1059
 #, no-wrap
 msgid "--internal-border=@var{width}"
 msgstr "--internal-border=@var{width}"
 
 #. type: opindex
-#: cmdargs.texi.orig:1060
+#: original_texis/cmdargs.texi:1060
 #, no-wrap
 msgid "--internal-border"
 msgstr "--internal-border"
 
 #. type: cindex
-#: cmdargs.texi.orig:1061
+#: original_texis/cmdargs.texi:1061
 #, no-wrap
 msgid "internal border width, command-line argument"
 msgstr "internal border width, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:1064
+#: original_texis/cmdargs.texi:1064
 msgid ""
 "Specify @var{width} as the width of the internal border (between the text "
 "and the main border), in pixels."
-msgstr "内枠ボーダー(テキストと外枠ボーダーの間)の幅に、ピクセル単位で@var{width}を指定します。"
+msgstr ""
+"内枠ボーダー(テキストと外枠ボーダーの間)の幅に、ピクセル単位で@var{width}を指"
+"定します。"
 
 #. type: item
-#: cmdargs.texi.orig:1065
+#: original_texis/cmdargs.texi:1065
 #, no-wrap
 msgid "-bw @var{width}"
 msgstr "-bw @var{width}"
 
 #. type: opindex
-#: cmdargs.texi.orig:1066
+#: original_texis/cmdargs.texi:1066
 #, no-wrap
 msgid "-bw"
 msgstr "-bw"
 
 #. type: itemx
-#: cmdargs.texi.orig:1067
+#: original_texis/cmdargs.texi:1067
 #, no-wrap
 msgid "--border-width=@var{width}"
 msgstr "--border-width=@var{width}"
 
 #. type: opindex
-#: cmdargs.texi.orig:1068
+#: original_texis/cmdargs.texi:1068
 #, no-wrap
 msgid "--border-width"
 msgstr "--border-width"
 
 #. type: cindex
-#: cmdargs.texi.orig:1069
+#: original_texis/cmdargs.texi:1069
 #, no-wrap
 msgid "main border width, command-line argument"
 msgstr "main border width, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:1071
+#: original_texis/cmdargs.texi:1071
 msgid "Specify @var{width} as the width of the main border, in pixels."
 msgstr "外枠ボーダーの幅に、ピクセル単位で@var{width}を指定します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1076
+#: original_texis/cmdargs.texi:1076
 msgid ""
 "When you specify the size of the frame, that does not count the borders.  "
 "The frame's position is measured from the outside edge of the external "
 "border."
-msgstr "フレームのサイズを指定するとき、ボーダーは含まれません。フレームの位置は、外枠ボーダーの縁端から測られます。"
+msgstr ""
+"フレームのサイズを指定するとき、ボーダーは含まれません。フレームの位置は、外"
+"枠ボーダーの縁端から測られます。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1082
+#: original_texis/cmdargs.texi:1082
 msgid ""
 "Use the @samp{-ib @var{n}} option to specify an internal border @var{n} "
 "pixels wide.  The default is 1.  Use @samp{-bw @var{n}} to specify the width "
 "of the external border (though the window manager may not pay attention to "
 "what you specify).  The default width of the external border is 2."
-msgstr "ピクセル幅@var{n}の内枠ボーダーを指定するには、@samp{-ib @var{n}}オプションを使用します。デフォルトは1です。外枠ボーダーの幅を指定するには、@samp{-bw @var{n}}を使用します(ウィンドウマネージャーはその指定に注意を払わないかもしれませんが)。外枠ボーダーのデフォルト幅は2です。"
+msgstr ""
+"ピクセル幅@var{n}の内枠ボーダーを指定するには、@samp{-ib @var{n}}オプションを"
+"使用します。デフォルトは1です。外枠ボーダーの幅を指定するには、@samp{-bw "
+"@var{n}}を使用します(ウィンドウマネージャーはその指定に注意を払わないかもしれ"
+"ませんが)。外枠ボーダーのデフォルト幅は2です。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:1084
+#: original_texis/cmdargs.texi:1084
 #, no-wrap
 msgid "Frame Titles"
 msgstr "Frame Titles"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1092
+#: original_texis/cmdargs.texi:1092
 msgid ""
 "An Emacs frame may or may not have a specified title.  The frame title, if "
 "specified, appears in window decorations and icons as the name of the "
@@ -3155,123 +3633,132 @@ msgid ""
 "form @samp{@var{invocation-name}@@@var{machine}} (if there is only one "
 "frame) or the selected window's buffer name (if there is more than one "
 "frame)."
-msgstr "Emacshフレームが指定されたタイトルをもつ場合もあり、もたない場合もあります。フレームタイトルが指定された場合、それはウィンドウ装飾とアイコンに、フレームの名前として表示されます。Emacsフレームが指定されたタイトルをもたない場合、デフォルトのタイトルは@samp{@var{invocation-name}@@@var{machine}}という形式(フレームが1つだけのとき)か、選択されたウィンドウのバッファー名(複数のフレームがある場合)になります。"
+msgstr ""
+"Emacshフレームが指定されたタイトルをもつ場合もあり、もたない場合もあります。"
+"フレームタイトルが指定された場合、それはウィンドウ装飾とアイコンに、フレーム"
+"の名前として表示されます。Emacsフレームが指定されたタイトルをもたない場合、デ"
+"フォルトのタイトルは@samp{@var{invocation-name}@@@var{machine}}という形式(フ"
+"レームが1つだけのとき)か、選択されたウィンドウのバッファー名(複数のフレームが"
+"ある場合)になります。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1095
+#: original_texis/cmdargs.texi:1095
 msgid ""
 "You can specify a title for the initial Emacs frame with a command line "
 "option:"
-msgstr "コマンドラインオプションで、Emacsの初期フレームのタイトルを指定できます:"
+msgstr ""
+"コマンドラインオプションで、Emacsの初期フレームのタイトルを指定できます:"
 
 #. type: item
-#: cmdargs.texi.orig:1097
+#: original_texis/cmdargs.texi:1097
 #, no-wrap
 msgid "-T @var{title}"
 msgstr "-T @var{title}"
 
 #. type: opindex
-#: cmdargs.texi.orig:1098
+#: original_texis/cmdargs.texi:1098
 #, no-wrap
 msgid "-T"
 msgstr "-T"
 
 #. type: itemx
-#: cmdargs.texi.orig:1099
+#: original_texis/cmdargs.texi:1099
 #, no-wrap
 msgid "--title=@var{title}"
 msgstr "--title=@var{title}"
 
 #. type: opindex
-#: cmdargs.texi.orig:1100
+#: original_texis/cmdargs.texi:1100
 #, no-wrap
 msgid "--title"
 msgstr "--title"
 
 #. type: cindex
-#: cmdargs.texi.orig:1101
+#: original_texis/cmdargs.texi:1101
 #, no-wrap
 msgid "frame title, command-line argument"
 msgstr "frame title, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:1103
+#: original_texis/cmdargs.texi:1103
 msgid "Specify @var{title} as the title for the initial Emacs frame."
 msgstr "Emacs初期フレームのタイトルとして@var{title}を指定します。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1107
+#: original_texis/cmdargs.texi:1107
 msgid ""
 "The @samp{--name} option (@pxref{Resources}) also specifies the title for "
 "the initial Emacs frame."
-msgstr "@samp{--name}オプション(@ref{Resources}を参照してください)でも、Emacs初期フレームのタイトルを指定できます。"
+msgstr ""
+"@samp{--name}オプション(@ref{Resources}を参照してください)でも、Emacs初期フ"
+"レームのタイトルを指定できます。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:1109
+#: original_texis/cmdargs.texi:1109
 #, no-wrap
 msgid "Icons"
 msgstr "Icons"
 
 #. type: cindex
-#: cmdargs.texi.orig:1110
+#: original_texis/cmdargs.texi:1110
 #, no-wrap
 msgid "icons (X Window System)"
 msgstr "icons (X Window System)"
 
 #. type: cindex
-#: cmdargs.texi.orig:1111
+#: original_texis/cmdargs.texi:1111
 #, no-wrap
 msgid "minimizing a frame at startup"
 msgstr "minimizing a frame at startup"
 
 #. type: item
-#: cmdargs.texi.orig:1114
+#: original_texis/cmdargs.texi:1114
 #, no-wrap
 msgid "-iconic"
 msgstr "-iconic"
 
 #. type: itemx
-#: cmdargs.texi.orig:1115 cmdargs.texi.orig:1116
+#: original_texis/cmdargs.texi:1115 original_texis/cmdargs.texi:1116
 #, no-wrap
 msgid "--iconic"
 msgstr "--iconic"
 
 #. type: cindex
-#: cmdargs.texi.orig:1117
+#: original_texis/cmdargs.texi:1117
 #, no-wrap
 msgid "start iconified, command-line argument"
 msgstr "start iconified, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:1119
+#: original_texis/cmdargs.texi:1119
 msgid "Start Emacs in an iconified (``minimized'') state."
 msgstr "Emacsをアイコン化(``最小化'')した状態で開始します。"
 
 #. type: opindex
-#: cmdargs.texi.orig:1120 cmdargs.texi.orig:1121
+#: original_texis/cmdargs.texi:1120 original_texis/cmdargs.texi:1121
 #, no-wrap
 msgid "-nbi"
 msgstr "-nbi"
 
 #. type: opindex
-#: cmdargs.texi.orig:1122 cmdargs.texi.orig:1123
+#: original_texis/cmdargs.texi:1122 original_texis/cmdargs.texi:1123
 #, no-wrap
 msgid "--no-bitmap-icon"
 msgstr "--no-bitmap-icon"
 
 #. type: cindex
-#: cmdargs.texi.orig:1124
+#: original_texis/cmdargs.texi:1124
 #, no-wrap
 msgid "Emacs icon, a gnu"
 msgstr "Emacs icon, a gnu"
 
 #. type: table
-#: cmdargs.texi.orig:1126
+#: original_texis/cmdargs.texi:1126
 msgid "Disable the use of the Emacs icon."
 msgstr "Emacsアイコンの使用を無効にします。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1135
+#: original_texis/cmdargs.texi:1135
 msgid ""
 "Most window managers allow you to ``iconify'' (or ``minimize'') an Emacs "
 "frame, hiding it from sight.  Some window managers replace iconified windows "
@@ -3279,143 +3766,163 @@ msgid ""
 "@samp{-iconic} option tells Emacs to begin running in an iconified state, "
 "rather than showing a frame right away.  The text frame doesn't appear until "
 "you deiconify (or ``un-minimize'')  it."
-msgstr "ほとんどのウィンドウマネージャーでは、Emacsフレームを``アイコン化''(または``最小化'')して、見えなくすることができます。いくつかのウィンドウマネージャーでは、他のウィンドウマネージャーがアイコン化されたウィンドウを完全に見えなくするのにたいして、アイコン化されたウィンドウを小さな``アイコン''でおきかえるものもあります。@samp{-iconic}オプションは、フレームをすぐに表示するのではなく、アイコン化された状態で実行を開始するよう、Emacsに指示します。テキストフレームはアイコン化の解除(または``最小化の解除'')をするまで表示されません。"
+msgstr ""
+"ほとんどのウィンドウマネージャーでは、Emacsフレームを``アイコン化''(または``"
+"最小化'')して、見えなくすることができます。いくつかのウィンドウマネージャーで"
+"は、他のウィンドウマネージャーがアイコン化されたウィンドウを完全に見えなくす"
+"るのにたいして、アイコン化されたウィンドウを小さな``アイコン''でおきかえるも"
+"のもあります。@samp{-iconic}オプションは、フレームをすぐに表示するのではな"
+"く、アイコン化された状態で実行を開始するよう、Emacsに指示します。テキストフ"
+"レームはアイコン化の解除(または``最小化の解除'')をするまで表示されません。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1142
+#: original_texis/cmdargs.texi:1142
 msgid ""
 "By default, Emacs uses an icon containing the Emacs logo.  On desktop "
 "environments such as Gnome, this icon is also displayed in other contexts, e."
 "g., when switching into an Emacs frame.  The @samp{-nbi} or @samp{--no-"
 "bitmap-icon} option tells Emacs to let the window manager choose what sort "
 "of icon to use---usually just a small rectangle containing the frame's title."
-msgstr "デフォルトでは、EmacsはEmacsロゴを含むアイコンを使用します。Gnomeのようなデスクトップ環境では、このアイコンは他のコンテキスト、たとえばEmacsフレームに切り替えるときにも表示されます。@samp{-nbi}または@samp{--no-bitmap-icon}オプションは、使用するアイコンの種類をウィンドウマネージャーに選択させるよう、Emacsに指示します。通常これはフレームのタイトルを含んだ、ただの矩形です。"
+msgstr ""
+"デフォルトでは、EmacsはEmacsロゴを含むアイコンを使用します。Gnomeのようなデス"
+"クトップ環境では、このアイコンは他のコンテキスト、たとえばEmacsフレームに切り"
+"替えるときにも表示されます。@samp{-nbi}または@samp{--no-bitmap-icon}オプショ"
+"ンは、使用するアイコンの種類をウィンドウマネージャーに選択させるよう、Emacsに"
+"指示します。通常これはフレームのタイトルを含んだ、ただの矩形です。"
 
 #. type: appendixsec
-#: cmdargs.texi.orig:1144
+#: original_texis/cmdargs.texi:1144
 #, no-wrap
 msgid "Other Display Options"
 msgstr "Other Display Options"
 
 #. type: item
-#: cmdargs.texi.orig:1155
+#: original_texis/cmdargs.texi:1155
 #, no-wrap
 msgid "--parent-id @var{id}"
 msgstr "--parent-id @var{id}"
 
 #. type: table
-#: cmdargs.texi.orig:1159
+#: original_texis/cmdargs.texi:1159
 msgid ""
 "Open Emacs as a client X window via the XEmbed protocol, with @var{id} as "
 "the parent X window id.  Currently, this option is mainly useful for "
 "developers."
-msgstr "XEmbedプロトコルを通じて、@var{id}を親XウィンドウIDとする、クライアントXウィンドウとして、Emacsを開始します。現在のところ、このオプションは開発者にとって有用です。"
+msgstr ""
+"XEmbedプロトコルを通じて、@var{id}を親XウィンドウIDとする、クライアントXウィ"
+"ンドウとして、Emacsを開始します。現在のところ、このオプションは開発者にとって"
+"有用です。"
 
 #. type: opindex
-#: cmdargs.texi.orig:1160 cmdargs.texi.orig:1161
+#: original_texis/cmdargs.texi:1160 original_texis/cmdargs.texi:1161
 #, no-wrap
 msgid "-vb"
 msgstr "-vb"
 
 #. type: opindex
-#: cmdargs.texi.orig:1162 cmdargs.texi.orig:1163
+#: original_texis/cmdargs.texi:1162 original_texis/cmdargs.texi:1163
 #, no-wrap
 msgid "--vertical-scroll-bars"
 msgstr "--vertical-scroll-bars"
 
 #. type: cindex
-#: cmdargs.texi.orig:1164
+#: original_texis/cmdargs.texi:1164
 #, no-wrap
 msgid "vertical scroll bars, command-line argument"
 msgstr "vertical scroll bars, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:1166
+#: original_texis/cmdargs.texi:1166
 msgid "Enable vertical scroll bars."
 msgstr "垂直スクロールバーを有効にします。"
 
 #. type: item
-#: cmdargs.texi.orig:1167
+#: original_texis/cmdargs.texi:1167
 #, no-wrap
 msgid "-lsp @var{pixels}"
 msgstr "-lsp @var{pixels}"
 
 #. type: opindex
-#: cmdargs.texi.orig:1168
+#: original_texis/cmdargs.texi:1168
 #, no-wrap
 msgid "-lsp"
 msgstr "-lsp"
 
 #. type: itemx
-#: cmdargs.texi.orig:1169
+#: original_texis/cmdargs.texi:1169
 #, no-wrap
 msgid "--line-spacing=@var{pixels}"
 msgstr "--line-spacing=@var{pixels}"
 
 #. type: opindex
-#: cmdargs.texi.orig:1170
+#: original_texis/cmdargs.texi:1170
 #, no-wrap
 msgid "--line-spacing"
 msgstr "--line-spacing"
 
 #. type: cindex
-#: cmdargs.texi.orig:1171
+#: original_texis/cmdargs.texi:1171
 #, no-wrap
 msgid "line spacing, command-line argument"
 msgstr "line spacing, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:1173
+#: original_texis/cmdargs.texi:1173
 msgid ""
 "Specify @var{pixels} as additional space to put between lines, in pixels."
 msgstr "行間の追加のスペース@var{pixels}を、ピクセルで指定します。"
 
 #. type: opindex
-#: cmdargs.texi.orig:1174 cmdargs.texi.orig:1175
+#: original_texis/cmdargs.texi:1174 original_texis/cmdargs.texi:1175
 #, no-wrap
 msgid "-nbc"
 msgstr "-nbc"
 
 #. type: opindex
-#: cmdargs.texi.orig:1176 cmdargs.texi.orig:1177
+#: original_texis/cmdargs.texi:1176 original_texis/cmdargs.texi:1177
 #, no-wrap
 msgid "--no-blinking-cursor"
 msgstr "--no-blinking-cursor"
 
 #. type: cindex
-#: cmdargs.texi.orig:1178
+#: original_texis/cmdargs.texi:1178
 #, no-wrap
 msgid "blinking cursor disable, command-line argument"
 msgstr "blinking cursor disable, command-line argument"
 
 #. type: table
-#: cmdargs.texi.orig:1180
+#: original_texis/cmdargs.texi:1180
 msgid "Disable the blinking cursor on graphical displays."
 msgstr "グラフィカルなディスプレーで、点滅カーソルを無効にします。"
 
 #. type: opindex
-#: cmdargs.texi.orig:1181 cmdargs.texi.orig:1182
+#: original_texis/cmdargs.texi:1181 original_texis/cmdargs.texi:1182
 #, no-wrap
 msgid "-D"
 msgstr "-D"
 
 #. type: opindex
-#: cmdargs.texi.orig:1183 cmdargs.texi.orig:1184
+#: original_texis/cmdargs.texi:1183 original_texis/cmdargs.texi:1184
 #, no-wrap
 msgid "--basic-display"
 msgstr "--basic-display"
 
 #. type: table
-#: cmdargs.texi.orig:1188
+#: original_texis/cmdargs.texi:1188
 msgid ""
 "Disable the menu-bar, the tool-bar, the scroll-bars, and tool tips, and turn "
 "off the blinking cursor.  This can be useful for making a test case that "
 "simplifies debugging of display problems."
-msgstr "メニューバー、ツールバー、スクロールバー、ツールチップを無効にして、点滅カーソルをオフに切り替えます。これは表示問題のデバッグするテストケースを簡単にするのに有用です。"
+msgstr ""
+"メニューバー、ツールバー、スクロールバー、ツールチップを無効にして、点滅カー"
+"ソルをオフに切り替えます。これは表示問題のデバッグするテストケースを簡単にす"
+"るのに有用です。"
 
 #. type: Plain text
-#: cmdargs.texi.orig:1191
+#: original_texis/cmdargs.texi:1191
 msgid ""
 "The @samp{--xrm} option (@pxref{Resources}) specifies additional X resource "
 "values."
-msgstr "@samp{--xrm}オプション(@ref{Resources}を参照してください)は、追加のXリソース値を指定します。"
+msgstr ""
+"@samp{--xrm}オプション(@ref{Resources}を参照してください)は、追加のXリソース"
+"値を指定します。"

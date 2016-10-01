@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-12-21 00:28+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,55 +16,55 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
-#: fortran-xtra.texi.orig:7
+#: original_texis/fortran-xtra.texi:7
 #, no-wrap
 msgid "Fortran"
 msgstr "Fortran"
 
 #. type: section
-#: fortran-xtra.texi.orig:8
+#: original_texis/fortran-xtra.texi:8
 #, no-wrap
 msgid "Fortran Mode"
 msgstr "Fortran Mode"
 
 #. type: cindex
-#: fortran-xtra.texi.orig:9
+#: original_texis/fortran-xtra.texi:9
 #, no-wrap
 msgid "Fortran mode"
 msgstr "Fortran mode"
 
 #. type: cindex
-#: fortran-xtra.texi.orig:10
+#: original_texis/fortran-xtra.texi:10
 #, no-wrap
 msgid "mode, Fortran"
 msgstr "mode, Fortran"
 
 #. type: cindex
-#: fortran-xtra.texi.orig:12
+#: original_texis/fortran-xtra.texi:12
 #, no-wrap
 msgid "Fortran fixed form and free form"
 msgstr "Fortran fixed form and free form"
 
 #. type: cindex
-#: fortran-xtra.texi.orig:13
+#: original_texis/fortran-xtra.texi:13
 #, no-wrap
 msgid "Fortran 77 and Fortran 90, 95, 2003, 2008"
 msgstr "Fortran 77 and Fortran 90, 95, 2003, 2008"
 
 #. type: findex
-#: fortran-xtra.texi.orig:14
+#: original_texis/fortran-xtra.texi:14
 #, no-wrap
 msgid "f90-mode"
 msgstr "f90-mode"
 
 #. type: findex
-#: fortran-xtra.texi.orig:15
+#: original_texis/fortran-xtra.texi:15
 #, no-wrap
 msgid "fortran-mode"
 msgstr "fortran-mode"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:26
+#: original_texis/fortran-xtra.texi:26
 msgid ""
 "Fortran mode is meant for editing ``fixed form'' (and also ``tab format'') "
 "source code (normally Fortran 77).  For editing more modern ``free form'' "
@@ -75,583 +75,654 @@ msgid ""
 "extensions.  GNU Fortran supports both free and fixed form.  This manual "
 "mainly documents Fortran mode, but the corresponding F90 mode features are "
 "mentioned when relevant."
-msgstr "Fortranモードは、``固定形式(fixed form)''(または``タブ形式(tab format)'')のソースコードを編集するためのモードです(通常はFortran 77)。よりモダンな``自由形式(free form)''のソースコードを編集するためには、F90モード(@code{f90-mode})を使用します。Emacsは通常、拡張子が@samp{.f}、@samp{.F}、@samp{.for}のファイルにたいしてはFortranモードを使用し、拡張子が@samp{.f90}、@samp{.f95}、@samp{.f03}、@samp{.f08}のファイルにたいしてはF90モードを使用します。@code{auto-mode-alist}をカスタマイズして、拡張子を追加することができます。GNU Fortranは、これら自由形式と固定形式の両方をサポートします。このマニュアルでは主にFortranモードを記述しますが、対応するF90モードの機能については、その都度言及します。"
+msgstr ""
+"Fortranモードは、``固定形式(fixed form)''(または``タブ形式(tab format)'')の"
+"ソースコードを編集するためのモードです(通常はFortran 77)。よりモダンな``自由"
+"形式(free form)''のソースコードを編集するためには、F90モード(@code{f90-mode})"
+"を使用します。Emacsは通常、拡張子が@samp{.f}、@samp{.F}、@samp{.for}のファイ"
+"ルにたいしてはFortranモードを使用し、拡張子が@samp{.f90}、@samp{.f95}、"
+"@samp{.f03}、@samp{.f08}のファイルにたいしてはF90モードを使用します。"
+"@code{auto-mode-alist}をカスタマイズして、拡張子を追加することができます。"
+"GNU Fortranは、これら自由形式と固定形式の両方をサポートします。このマニュアル"
+"では主にFortranモードを記述しますが、対応するF90モードの機能については、その"
+"都度言及します。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:33
+#: original_texis/fortran-xtra.texi:33
 msgid ""
 "Fortran mode provides special motion commands for Fortran statements and "
 "subprograms, and indentation commands that understand Fortran conventions of "
 "nesting, line numbers and continuation statements.  Fortran mode has support "
 "for Auto Fill mode that breaks long lines into proper Fortran continuation "
 "lines.  Fortran mode also supports Hideshow minor mode"
-msgstr "Fortranモードは、Fortran命令文およびサブプログラムにたいする特別な移動コマンドと、Fortranのネスト規則、行番号、行継続された命令文を理解する、インデントコマンドを提供します。Fortranモードは、長い行を適正なFortranの継続行にブレークする、Auto Fillモードをサポートします。FortranモードはHideshowマイナーモード"
+msgstr ""
+"Fortranモードは、Fortran命令文およびサブプログラムにたいする特別な移動コマン"
+"ドと、Fortranのネスト規則、行番号、行継続された命令文を理解する、インデントコ"
+"マンドを提供します。Fortranモードは、長い行を適正なFortranの継続行にブレーク"
+"する、Auto Fillモードをサポートします。FortranモードはHideshowマイナーモード"
 
 #. type: iftex
-#: fortran-xtra.texi.orig:35
+#: original_texis/fortran-xtra.texi:35
 msgid "(@pxref{Hideshow,,, emacs, the Emacs Manual}),"
 msgstr "(@ref{Hideshow,,, emacs, the Emacs Manual}を参照してください)、"
 
 #. type: ifnottex
-#: fortran-xtra.texi.orig:38
+#: original_texis/fortran-xtra.texi:38
 msgid "(@pxref{Hideshow}),"
 msgstr "(@ref{Hideshow}を参照してください)、"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:40
+#: original_texis/fortran-xtra.texi:40
 msgid "and Imenu"
 msgstr "、およびImenu"
 
 #. type: iftex
-#: fortran-xtra.texi.orig:42
+#: original_texis/fortran-xtra.texi:42
 msgid "(@pxref{Imenu,,, emacs, the Emacs Manual})."
-msgstr "(@ref{Imenu,,, emacs, the Emacs Manual}を参照してください)もサポートします。"
+msgstr ""
+"(@ref{Imenu,,, emacs, the Emacs Manual}を参照してください)もサポートします。"
 
 #. type: ifnottex
-#: fortran-xtra.texi.orig:45
+#: original_texis/fortran-xtra.texi:45
 msgid "(@pxref{Imenu})."
 msgstr "(@ref{Imenu}を参照してください)もサポートします。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:50
+#: original_texis/fortran-xtra.texi:50
 msgid ""
 "Special commands for comments are provided because Fortran comments are "
 "unlike those of other languages.  Built-in abbrevs optionally save typing "
 "when you insert Fortran keywords."
-msgstr "Fortranのコメントは他の言語とは異なるので、コメントのための特別なコマンドも提供されています。ビルトインのabbrev(省略形)は、Fortranキーワードをタイプする手間を削減します。"
+msgstr ""
+"Fortranのコメントは他の言語とは異なるので、コメントのための特別なコマンドも提"
+"供されています。ビルトインのabbrev(省略形)は、Fortranキーワードをタイプする手"
+"間を削減します。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:53
+#: original_texis/fortran-xtra.texi:53
 msgid ""
 "Use @kbd{M-x fortran-mode} to switch to this major mode.  This command runs "
 "the hook @code{fortran-mode-hook}."
-msgstr "@kbd{M-x fortran-mode}を使用して、このメジャーモードに切り替えます。このコマンドはフック@code{fortran-mode-hook}を実行します。"
+msgstr ""
+"@kbd{M-x fortran-mode}を使用して、このメジャーモードに切り替えます。このコマ"
+"ンドはフック@code{fortran-mode-hook}を実行します。"
 
 #. type: iftex
-#: fortran-xtra.texi.orig:55 fortran-xtra.texi.orig:483
+#: original_texis/fortran-xtra.texi:55 original_texis/fortran-xtra.texi:483
 msgid "@xref{Hooks,,, emacs, the Emacs Manual}."
 msgstr "@ref{Hooks,,, emacs, the Emacs Manual}を参照してください。"
 
 #. type: ifnottex
-#: fortran-xtra.texi.orig:58 fortran-xtra.texi.orig:486
+#: original_texis/fortran-xtra.texi:58 original_texis/fortran-xtra.texi:486
 msgid "@xref{Hooks}."
 msgstr "@ref{Hooks}を参照してください。"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Motion: Fortran Motion"
 msgstr "Motion: Fortran Motion"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Moving point by statements or subprograms."
 msgstr "命令文またはサブプログラムごとにポイントを移動する。"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Indent: Fortran Indent"
 msgstr "Indent: Fortran Indent"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Indentation commands for Fortran."
 msgstr "Fortranのためのインデントコマンド。"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Comments: Fortran Comments"
 msgstr "Comments: Fortran Comments"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Inserting and aligning comments."
 msgstr "コメントの挿入と位置揃え。"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Autofill: Fortran Autofill"
 msgstr "Autofill: Fortran Autofill"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Auto fill support for Fortran."
 msgstr "FortranをサポートするAuto Fill。"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Columns: Fortran Columns"
 msgstr "Columns: Fortran Columns"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Measuring columns for valid Fortran."
 msgstr "有効なFortranのための列の計算。"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Abbrev: Fortran Abbrev"
 msgstr "Abbrev: Fortran Abbrev"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:67
+#: original_texis/fortran-xtra.texi:67
 msgid "Built-in abbrevs for Fortran keywords."
 msgstr "Fortranキーワードのためのビルトインのabbrev。"
 
 #. type: node
-#: fortran-xtra.texi.orig:69
+#: original_texis/fortran-xtra.texi:69
 #, no-wrap
 msgid "Fortran Motion"
 msgstr "Fortran Motion"
 
 #. type: subsection
-#: fortran-xtra.texi.orig:70
+#: original_texis/fortran-xtra.texi:70
 #, no-wrap
 msgid "Motion Commands"
 msgstr "Motion Commands"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:77
+#: original_texis/fortran-xtra.texi:77
 msgid ""
 "In addition to the normal commands for moving by and operating on "
 "``defuns'' (Fortran subprograms---functions and subroutines, as well as "
 "modules for F90 mode, using the commands @code{fortran-end-of-subprogram} "
 "and @code{fortran-beginning-of-subprogram}), Fortran mode provides special "
 "commands to move by statements and other program units."
-msgstr "``defun''(Fortranのサブプログラム --- 関数、サブルーチン、同様にF90モードのモジュールには、コマンド@code{fortran-end-of-subprogram}および@code{fortran-beginning-of-subprogram}を使用します)を単位に移動、操作する通常コマンドに加えて、Fortranモードは命令文や他のプログラム単位に移動する、特別なコマンドを提供します。"
+msgstr ""
+"``defun''(Fortranのサブプログラム --- 関数、サブルーチン、同様にF90モードのモ"
+"ジュールには、コマンド@code{fortran-end-of-subprogram}および@code{fortran-"
+"beginning-of-subprogram}を使用します)を単位に移動、操作する通常コマンドに加え"
+"て、Fortranモードは命令文や他のプログラム単位に移動する、特別なコマンドを提供"
+"します。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:79
+#: original_texis/fortran-xtra.texi:79
 #, no-wrap
 msgid "C-c C-n @r{(Fortran mode)}"
 msgstr "C-c C-n @r{(Fortran mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:80
+#: original_texis/fortran-xtra.texi:80
 #, no-wrap
 msgid "fortran-next-statement"
 msgstr "fortran-next-statement"
 
 #. type: findex
-#: fortran-xtra.texi.orig:81
+#: original_texis/fortran-xtra.texi:81
 #, no-wrap
 msgid "f90-next-statement"
 msgstr "f90-next-statement"
 
 #. type: item
-#: fortran-xtra.texi.orig:82
+#: original_texis/fortran-xtra.texi:82
 #, no-wrap
 msgid "C-c C-n"
 msgstr "C-c C-n"
 
 #. type: table
-#: fortran-xtra.texi.orig:85
+#: original_texis/fortran-xtra.texi:85
 msgid ""
 "Move to the beginning of the next statement (@code{fortran-next-statement}/"
 "@code{f90-next-statement})."
-msgstr "次の命令文の先頭に移動します(@code{fortran-next-statement}/@code{f90-next-statement})。"
+msgstr ""
+"次の命令文の先頭に移動します(@code{fortran-next-statement}/@code{f90-next-"
+"statement})。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:86
+#: original_texis/fortran-xtra.texi:86
 #, no-wrap
 msgid "C-c C-p @r{(Fortran mode)}"
 msgstr "C-c C-p @r{(Fortran mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:87
+#: original_texis/fortran-xtra.texi:87
 #, no-wrap
 msgid "fortran-previous-statement"
 msgstr "fortran-previous-statement"
 
 #. type: findex
-#: fortran-xtra.texi.orig:88
+#: original_texis/fortran-xtra.texi:88
 #, no-wrap
 msgid "f90-previous-statement"
 msgstr "f90-previous-statement"
 
 #. type: item
-#: fortran-xtra.texi.orig:89
+#: original_texis/fortran-xtra.texi:89
 #, no-wrap
 msgid "C-c C-p"
 msgstr "C-c C-p"
 
 #. type: table
-#: fortran-xtra.texi.orig:94
+#: original_texis/fortran-xtra.texi:94
 msgid ""
 "Move to the beginning of the previous statement (@code{fortran-previous-"
 "statement}/@code{f90-previous-statement}).  If there is no previous "
 "statement (i.e., if called from the first statement in the buffer), move to "
 "the start of the buffer."
-msgstr "前の命令文の先頭に移動します(@code{fortran-previous-statement}/@code{f90-previous-statement})。前の命令文が存在しない場合(たとえばバッファーの最初の命令文で呼び出された場合)、バッファーの先頭に移動します。"
+msgstr ""
+"前の命令文の先頭に移動します(@code{fortran-previous-statement}/@code{f90-"
+"previous-statement})。前の命令文が存在しない場合(たとえばバッファーの最初の命"
+"令文で呼び出された場合)、バッファーの先頭に移動します。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:95
+#: original_texis/fortran-xtra.texi:95
 #, no-wrap
 msgid "C-c C-e @r{(F90 mode)}"
 msgstr "C-c C-e @r{(F90 mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:96
+#: original_texis/fortran-xtra.texi:96
 #, no-wrap
 msgid "f90-next-block"
 msgstr "f90-next-block"
 
 #. type: item
-#: fortran-xtra.texi.orig:97
+#: original_texis/fortran-xtra.texi:97
 #, no-wrap
 msgid "C-c C-e"
 msgstr "C-c C-e"
 
 #. type: table
-#: fortran-xtra.texi.orig:103
+#: original_texis/fortran-xtra.texi:103
 msgid ""
 "Move point forward to the start of the next code block, or the end of the "
 "current one, whichever comes first (@code{f90-next-block}).  A code block is "
 "a subroutine, @code{if}--@code{endif} statement, and so forth.  This command "
 "exists for F90 mode only, not Fortran mode.  With a numeric argument, it "
 "moves forward that many blocks."
-msgstr "次のコードブロックの先頭、またはカレントのコードブロックの最後に移動します(@code{f90-next-block})。コードブロックとは、サブルーチン、@code{if}--@code{endif}命令文などです。これはF90モードだけのコマンドで、Fortranモードにはありません。数引数を指定すると、複数ブロックを前方に移動します。"
+msgstr ""
+"次のコードブロックの先頭、またはカレントのコードブロックの最後に移動します"
+"(@code{f90-next-block})。コードブロックとは、サブルーチン、@code{if}--"
+"@code{endif}命令文などです。これはF90モードだけのコマンドで、Fortranモードに"
+"はありません。数引数を指定すると、複数ブロックを前方に移動します。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:104
+#: original_texis/fortran-xtra.texi:104
 #, no-wrap
 msgid "C-c C-a @r{(F90 mode)}"
 msgstr "C-c C-a @r{(F90 mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:105
+#: original_texis/fortran-xtra.texi:105
 #, no-wrap
 msgid "f90-previous-block"
 msgstr "f90-previous-block"
 
 #. type: item
-#: fortran-xtra.texi.orig:106
+#: original_texis/fortran-xtra.texi:106
 #, no-wrap
 msgid "C-c C-a"
 msgstr "C-c C-a"
 
 #. type: table
-#: fortran-xtra.texi.orig:110
+#: original_texis/fortran-xtra.texi:110
 msgid ""
 "Move point backward to the previous block (@code{f90-previous-block}).  This "
 "is like @code{f90-next-block}, but moves backwards."
-msgstr "前のブロックに、後方にポイントを移動します(@code{f90-previous-block})。これは@code{f90-next-block}と似ていますが、後方に移動します。"
+msgstr ""
+"前のブロックに、後方にポイントを移動します(@code{f90-previous-block})。これは"
+"@code{f90-next-block}と似ていますが、後方に移動します。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:111
+#: original_texis/fortran-xtra.texi:111
 #, no-wrap
 msgid "C-M-n @r{(Fortran mode)}"
 msgstr "C-M-n @r{(Fortran mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:112
+#: original_texis/fortran-xtra.texi:112
 #, no-wrap
 msgid "fortran-end-of-block"
 msgstr "fortran-end-of-block"
 
 #. type: findex
-#: fortran-xtra.texi.orig:113
+#: original_texis/fortran-xtra.texi:113
 #, no-wrap
 msgid "f90-end-of-block"
 msgstr "f90-end-of-block"
 
 #. type: item
-#: fortran-xtra.texi.orig:114
+#: original_texis/fortran-xtra.texi:114
 #, no-wrap
 msgid "C-M-n"
 msgstr "C-M-n"
 
 #. type: table
-#: fortran-xtra.texi.orig:121
+#: original_texis/fortran-xtra.texi:121
 msgid ""
 "Move to the end of the current code block (@code{fortran-end-of-block}/"
 "@code{f90-end-of-block}).  With a numeric argument, move forward that number "
 "of blocks.  The mark is set before moving point.  The F90 mode version of "
 "this command checks for consistency of block types and labels (if present), "
 "but it does not check the outermost block since that may be incomplete."
-msgstr "カレントのコードブロックの最後にポイントを移動します(@code{fortran-end-of-block}/@code{f90-end-of-block})。数引数を指定した場合、指定した数のブロックを前方に移動します。ポイントを移動する前にマークがセットされます。このコマンドのF90モードのバージョンでは、ブロックタイプと、(もしあれば)ラベルの整合性をチェックしますが、最外のブロックは不完全かもしれないのでチェックしません。"
+msgstr ""
+"カレントのコードブロックの最後にポイントを移動します(@code{fortran-end-of-"
+"block}/@code{f90-end-of-block})。数引数を指定した場合、指定した数のブロックを"
+"前方に移動します。ポイントを移動する前にマークがセットされます。このコマンド"
+"のF90モードのバージョンでは、ブロックタイプと、(もしあれば)ラベルの整合性を"
+"チェックしますが、最外のブロックは不完全かもしれないのでチェックしません。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:122
+#: original_texis/fortran-xtra.texi:122
 #, no-wrap
 msgid "C-M-p @r{(Fortran mode)}"
 msgstr "C-M-p @r{(Fortran mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:123
+#: original_texis/fortran-xtra.texi:123
 #, no-wrap
 msgid "fortran-beginning-of-block"
 msgstr "fortran-beginning-of-block"
 
 #. type: findex
-#: fortran-xtra.texi.orig:124
+#: original_texis/fortran-xtra.texi:124
 #, no-wrap
 msgid "f90-beginning-of-block"
 msgstr "f90-beginning-of-block"
 
 #. type: item
-#: fortran-xtra.texi.orig:125
+#: original_texis/fortran-xtra.texi:125
 #, no-wrap
 msgid "C-M-p"
 msgstr "C-M-p"
 
 #. type: table
-#: fortran-xtra.texi.orig:129
+#: original_texis/fortran-xtra.texi:129
 msgid ""
 "Move to the start of the current code block (@code{fortran-beginning-of-"
 "block}/@code{f90-beginning-of-block}). This is like @code{fortran-end-of-"
 "block}, but moves backwards."
-msgstr "カレントコードブロックの先頭にポイントを移動します(@code{fortran-beginning-of-block}/@code{f90-beginning-of-block})。これは@code{fortran-end-of-block}と似ていますが、後方に移動します。"
+msgstr ""
+"カレントコードブロックの先頭にポイントを移動します(@code{fortran-beginning-"
+"of-block}/@code{f90-beginning-of-block})。これは@code{fortran-end-of-block}と"
+"似ていますが、後方に移動します。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:136
+#: original_texis/fortran-xtra.texi:136
 msgid ""
 "The commands @code{fortran-beginning-of-subprogram} and @code{fortran-end-of-"
 "subprogram} move to the start or end of the current subprogram, "
 "respectively.  The commands @code{fortran-mark-do} and @code{fortran-mark-"
 "if} mark the end of the current @code{do} or @code{if} block, and move point "
 "to the start."
-msgstr "コマンド@code{fortran-beginning-of-subprogram}および@code{fortran-end-of-subprogram}は、カレントサブプログラムの先頭または後方に移動します。コマンド@code{fortran-mark-do}および@code{fortran-mark-if}は、カレントの@code{do}ブロック、または@code{if}ブロックの最後にマークをセットして、ポイントをブロックの先頭に移動します。"
+msgstr ""
+"コマンド@code{fortran-beginning-of-subprogram}および@code{fortran-end-of-"
+"subprogram}は、カレントサブプログラムの先頭または後方に移動します。コマンド"
+"@code{fortran-mark-do}および@code{fortran-mark-if}は、カレントの@code{do}ブ"
+"ロック、または@code{if}ブロックの最後にマークをセットして、ポイントをブロック"
+"の先頭に移動します。"
 
 #. type: node
-#: fortran-xtra.texi.orig:138
+#: original_texis/fortran-xtra.texi:138
 #, no-wrap
 msgid "Fortran Indent"
 msgstr "Fortran Indent"
 
 #. type: subsection
-#: fortran-xtra.texi.orig:139
+#: original_texis/fortran-xtra.texi:139
 #, no-wrap
 msgid "Fortran Indentation"
 msgstr "Fortran Indentation"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:145
+#: original_texis/fortran-xtra.texi:145
 msgid ""
 "Special commands and features are needed for indenting fixed (or tab)  form "
 "Fortran code in order to make sure various syntactic entities (line numbers, "
 "comment line indicators and continuation line flags) appear in the required "
 "columns."
-msgstr "固定形式(またはタブ形式)のFortranコードにたいしては、さまざまな構文エントリー(行番号、行インジケーター、継続行フラグ)が、要求される列に表示されるようにするために、特別なコマンドと機能が必要です。"
+msgstr ""
+"固定形式(またはタブ形式)のFortranコードにたいしては、さまざまな構文エントリー"
+"(行番号、行インジケーター、継続行フラグ)が、要求される列に表示されるようにす"
+"るために、特別なコマンドと機能が必要です。"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:152
+#: original_texis/fortran-xtra.texi:152
 msgid "Commands: ForIndent Commands"
 msgstr "Commands: ForIndent Commands"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:152
+#: original_texis/fortran-xtra.texi:152
 msgid "Commands for indenting and filling Fortran."
 msgstr "Fortranをインデントおよびフィルするコマンド。"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:152
+#: original_texis/fortran-xtra.texi:152
 msgid "Contline: ForIndent Cont"
 msgstr "Contline: ForIndent Cont"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:152
+#: original_texis/fortran-xtra.texi:152
 msgid "How continuation lines indent."
 msgstr "継続行がインデントされる方法。"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:152
+#: original_texis/fortran-xtra.texi:152
 msgid "Numbers: ForIndent Num"
 msgstr "Numbers: ForIndent Num"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:152
+#: original_texis/fortran-xtra.texi:152
 msgid "How line numbers auto-indent."
 msgstr "行番号が自動インデントされる方法。"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:152
+#: original_texis/fortran-xtra.texi:152
 msgid "Conv: ForIndent Conv"
 msgstr "Conv: ForIndent Conv"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:152
+#: original_texis/fortran-xtra.texi:152
 msgid "Conventions you must obey to avoid trouble."
 msgstr "トラブル防止のために、したがわなければならない慣習。"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:152
+#: original_texis/fortran-xtra.texi:152
 msgid "Vars: ForIndent Vars"
 msgstr "Vars: ForIndent Vars"
 
 #. type: menuentry
-#: fortran-xtra.texi.orig:152
+#: original_texis/fortran-xtra.texi:152
 msgid "Variables controlling Fortran indent style."
 msgstr "Fortranのインデントスタイルを制御する変数。"
 
 #. type: node
-#: fortran-xtra.texi.orig:154
+#: original_texis/fortran-xtra.texi:154
 #, no-wrap
 msgid "ForIndent Commands"
 msgstr "ForIndent Commands"
 
 #. type: subsubsection
-#: fortran-xtra.texi.orig:155
+#: original_texis/fortran-xtra.texi:155
 #, no-wrap
 msgid "Fortran Indentation and Filling Commands"
 msgstr "Fortran Indentation and Filling Commands"
 
 #. type: item
-#: fortran-xtra.texi.orig:158
+#: original_texis/fortran-xtra.texi:158
 #, no-wrap
 msgid "C-M-j"
 msgstr "C-M-j"
 
 #. type: table
-#: fortran-xtra.texi.orig:161
+#: original_texis/fortran-xtra.texi:161
 msgid ""
 "Break the current line at point and set up a continuation line "
 "(@code{fortran-split-line})."
-msgstr "ポイント位置でカレント行をブレークして、継続行をセットアップします(@code{fortran-split-line})。"
+msgstr ""
+"ポイント位置でカレント行をブレークして、継続行をセットアップします"
+"(@code{fortran-split-line})。"
 
 #. type: item
-#: fortran-xtra.texi.orig:161
+#: original_texis/fortran-xtra.texi:161
 #, no-wrap
 msgid "M-^"
 msgstr "M-^"
 
 #. type: table
-#: fortran-xtra.texi.orig:163
+#: original_texis/fortran-xtra.texi:163
 msgid "Join this line to the previous line (@code{fortran-join-line})."
 msgstr "その行を前の行と結合します(@code{fortran-join-line})。"
 
 #. type: item
-#: fortran-xtra.texi.orig:163
+#: original_texis/fortran-xtra.texi:163
 #, no-wrap
 msgid "C-M-q"
 msgstr "C-M-q"
 
 #. type: table
-#: fortran-xtra.texi.orig:166
+#: original_texis/fortran-xtra.texi:166
 msgid ""
 "Indent all the lines of the subprogram that point is in (@code{fortran-"
 "indent-subprogram})."
-msgstr "ポイントのあるサブプログラムの、すべての行をインデントします(@code{fortran-indent-subprogram})。"
+msgstr ""
+"ポイントのあるサブプログラムの、すべての行をインデントします(@code{fortran-"
+"indent-subprogram})。"
 
 #. type: item
-#: fortran-xtra.texi.orig:166
+#: original_texis/fortran-xtra.texi:166
 #, no-wrap
 msgid "M-q"
 msgstr "M-q"
 
 #. type: table
-#: fortran-xtra.texi.orig:169
+#: original_texis/fortran-xtra.texi:169
 msgid ""
 "Fill a comment block or statement (using @code{fortran-fill-paragraph} or "
 "@code{fortran-fill-statement})."
-msgstr "コメントブロックまたは命令文をフィルします(@code{fortran-fill-paragraph}または@code{fortran-fill-statement}を使用します)。"
+msgstr ""
+"コメントブロックまたは命令文をフィルします(@code{fortran-fill-paragraph}また"
+"は@code{fortran-fill-statement}を使用します)。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:171
+#: original_texis/fortran-xtra.texi:171
 #, no-wrap
 msgid "C-M-q @r{(Fortran mode)}"
 msgstr "C-M-q @r{(Fortran mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:172
+#: original_texis/fortran-xtra.texi:172
 #, no-wrap
 msgid "fortran-indent-subprogram"
 msgstr "fortran-indent-subprogram"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:176
+#: original_texis/fortran-xtra.texi:176
 msgid ""
 "The key @kbd{C-M-q} runs @code{fortran-indent-subprogram}, a command to "
 "reindent all the lines of the Fortran subprogram (function or subroutine) "
 "containing point."
-msgstr "キー@kbd{C-M-q}は、@code{fortran-indent-subprogram}を実行します、これはポイントを含むFortranサブプログラム(関数またはサブルーチン)の、すべての行を再インデントします。"
+msgstr ""
+"キー@kbd{C-M-q}は、@code{fortran-indent-subprogram}を実行します、これはポイン"
+"トを含むFortranサブプログラム(関数またはサブルーチン)の、すべての行を再インデ"
+"ントします。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:177
+#: original_texis/fortran-xtra.texi:177
 #, no-wrap
 msgid "C-M-j @r{(Fortran mode)}"
 msgstr "C-M-j @r{(Fortran mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:178
+#: original_texis/fortran-xtra.texi:178
 #, no-wrap
 msgid "fortran-split-line"
 msgstr "fortran-split-line"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:184
+#: original_texis/fortran-xtra.texi:184
 msgid ""
 "The key @kbd{C-M-j} runs @code{fortran-split-line}, which splits a line in "
 "the appropriate fashion for Fortran.  In a non-comment line, the second half "
 "becomes a continuation line and is indented accordingly.  In a comment line, "
 "both halves become separate comment lines."
-msgstr "キー@kbd{C-M-j}は、@code{fortran-split-line}を実行します、これはFortranの流儀にあった方法で行を分割します。非コメント行では、後半は継続行になり、それにしたがったインデントになります。コメント行の場合、両方とも別のコメント行になります。"
+msgstr ""
+"キー@kbd{C-M-j}は、@code{fortran-split-line}を実行します、これはFortranの流儀"
+"にあった方法で行を分割します。非コメント行では、後半は継続行になり、それにし"
+"たがったインデントになります。コメント行の場合、両方とも別のコメント行になり"
+"ます。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:185
+#: original_texis/fortran-xtra.texi:185
 #, no-wrap
 msgid "M-^ @r{(Fortran mode)}"
 msgstr "M-^ @r{(Fortran mode)}"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:186
+#: original_texis/fortran-xtra.texi:186
 #, no-wrap
 msgid "C-c C-d @r{(Fortran mode)}"
 msgstr "C-c C-d @r{(Fortran mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:187
+#: original_texis/fortran-xtra.texi:187
 #, no-wrap
 msgid "fortran-join-line"
 msgstr "fortran-join-line"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:192
+#: original_texis/fortran-xtra.texi:192
 msgid ""
 "@kbd{M-^} or @kbd{C-c C-d} runs the command @code{fortran-join-line}, which "
 "joins a continuation line back to the previous line, roughly as the inverse "
 "of @code{fortran-split-line}.  The point must be on a continuation line when "
 "this command is invoked."
-msgstr "@kbd{M-^}または@kbd{C-c C-d}は、コマンド@code{fortran-join-line}を実行します。これは継続行を前の行に結合します。大雑把にいうと、@code{fortran-split-line}の逆です。このコマンドを呼び出すとき、ポイントは継続行になければなりません。"
+msgstr ""
+"@kbd{M-^}または@kbd{C-c C-d}は、コマンド@code{fortran-join-line}を実行しま"
+"す。これは継続行を前の行に結合します。大雑把にいうと、@code{fortran-split-"
+"line}の逆です。このコマンドを呼び出すとき、ポイントは継続行になければなりませ"
+"ん。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:193
+#: original_texis/fortran-xtra.texi:193
 #, no-wrap
 msgid "M-q @r{(Fortran mode)}"
 msgstr "M-q @r{(Fortran mode)}"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:196
+#: original_texis/fortran-xtra.texi:196
 msgid ""
 "@kbd{M-q} in Fortran mode fills the comment block or statement that point is "
 "in.  This removes any excess statement continuations."
-msgstr "Fortranモードでの@kbd{M-q}は、ポイントのあるコメントブロックまたは命令文ブロックをフィルします。これは余分な命令文の継続を削除します。"
+msgstr ""
+"Fortranモードでの@kbd{M-q}は、ポイントのあるコメントブロックまたは命令文ブ"
+"ロックをフィルします。これは余分な命令文の継続を削除します。"
 
 #. type: node
-#: fortran-xtra.texi.orig:197
+#: original_texis/fortran-xtra.texi:197
 #, no-wrap
 msgid "ForIndent Cont"
 msgstr "ForIndent Cont"
 
 #. type: subsubsection
-#: fortran-xtra.texi.orig:198
+#: original_texis/fortran-xtra.texi:198
 #, no-wrap
 msgid "Continuation Lines"
 msgstr "Continuation Lines"
 
 #. type: cindex
-#: fortran-xtra.texi.orig:199
+#: original_texis/fortran-xtra.texi:199
 #, no-wrap
 msgid "Fortran continuation lines"
 msgstr "Fortran continuation lines"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:201
+#: original_texis/fortran-xtra.texi:201
 #, no-wrap
 msgid "fortran-continuation-string"
 msgstr "fortran-continuation-string"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:212
+#: original_texis/fortran-xtra.texi:212
 msgid ""
 "Most Fortran 77 compilers allow two ways of writing continuation lines.  If "
 "the first non-space character on a line is in column 5, then that line is a "
@@ -662,28 +733,36 @@ msgid ""
 "followed by any digit except @samp{0} is also a continuation line.  We call "
 "this style of continuation @dfn{tab format}.  (Fortran 90 introduced ``free "
 "form'', with another style of continuation lines)."
-msgstr "ほとんどのFortran77コンパイラーは、2つの方法で継続行を記述します。ある行の最初の非スペース文字が列5の場合、その行は前の行の継続行です。これを@dfn{固定形式(fixed form)}と呼びます。(GNU Emacsでは常に列は0から数えますが、Fortran標準では列1から数えることに注意してください)。変数@code{fortran-continuation-string}は、列5に配す文字を指定します。タブ文字で開始され、その後@samp{0}以外の任意の数字が記述された行も継続行です。この継続スタイルを@dfn{タブ形式(tab format)}と呼びます(Fortran 90では、``自由形式(free form)''という、他の継続行スタイルが導入されました)。"
+msgstr ""
+"ほとんどのFortran77コンパイラーは、2つの方法で継続行を記述します。ある行の最"
+"初の非スペース文字が列5の場合、その行は前の行の継続行です。これを@dfn{固定形"
+"式(fixed form)}と呼びます。(GNU Emacsでは常に列は0から数えますが、Fortran標準"
+"では列1から数えることに注意してください)。変数@code{fortran-continuation-"
+"string}は、列5に配す文字を指定します。タブ文字で開始され、その後@samp{0}以外"
+"の任意の数字が記述された行も継続行です。この継続スタイルを@dfn{タブ形式(tab "
+"format)}と呼びます(Fortran 90では、``自由形式(free form)''という、他の継続行"
+"スタイルが導入されました)。"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:213
+#: original_texis/fortran-xtra.texi:213
 #, no-wrap
 msgid "indent-tabs-mode @r{(Fortran mode)}"
 msgstr "indent-tabs-mode @r{(Fortran mode)}"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:214
+#: original_texis/fortran-xtra.texi:214
 #, no-wrap
 msgid "fortran-analyze-depth"
 msgstr "fortran-analyze-depth"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:215
+#: original_texis/fortran-xtra.texi:215
 #, no-wrap
 msgid "fortran-tab-mode-default"
 msgstr "fortran-tab-mode-default"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:228
+#: original_texis/fortran-xtra.texi:228
 msgid ""
 "Fortran mode can use either style of continuation line.  When you enter "
 "Fortran mode, it tries to deduce the proper continuation style automatically "
@@ -695,10 +774,20 @@ msgid ""
 "form, and non-@code{nil} for tab format) is used.  @samp{/t} (@code{fortran-"
 "tab-mode-string}) in the mode line indicates tab format is selected.  "
 "Fortran mode sets the value of @code{indent-tabs-mode} accordingly."
-msgstr "Fortranモードは、どちらの継続行スタイルも使用できます。Fortranモードに入ったとき、バッファー内容から、自動的に適切な継続行スタイルを推論しようと試みます。これはバッファーの開始から、@code{fortran-analyze-depth}行(デフォルトは100)をスキャンすることにより行われます。最初の行の開始がタブ文字か、6個のスペースかで選択が決定されます。スキャンが失敗した場合(たとえば、新しいバッファーで中身が空の場合)、@code{fortran-tab-mode-default}の値(@code{nil}の場合は固定形式で、非@code{nil}の場合はタブ形式)が使用されます。モードラインに@samp{/t} (@code{fortran-tab-mode-string})が表示されている場合、タブ形式が選択されていることを示します。それに応じてFortranモードは@code{indent-tabs-mode}の値をセットします。"
+msgstr ""
+"Fortranモードは、どちらの継続行スタイルも使用できます。Fortranモードに入った"
+"とき、バッファー内容から、自動的に適切な継続行スタイルを推論しようと試みま"
+"す。これはバッファーの開始から、@code{fortran-analyze-depth}行(デフォルトは"
+"100)をスキャンすることにより行われます。最初の行の開始がタブ文字か、6個のス"
+"ペースかで選択が決定されます。スキャンが失敗した場合(たとえば、新しいバッ"
+"ファーで中身が空の場合)、@code{fortran-tab-mode-default}の値(@code{nil}の場合"
+"は固定形式で、非@code{nil}の場合はタブ形式)が使用されます。モードラインに"
+"@samp{/t} (@code{fortran-tab-mode-string})が表示されている場合、タブ形式が選"
+"択されていることを示します。それに応じてFortranモードは@code{indent-tabs-"
+"mode}の値をセットします。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:236
+#: original_texis/fortran-xtra.texi:236
 msgid ""
 "If the text on a line starts with the Fortran continuation marker @samp{$}, "
 "or if it begins with any non-whitespace character in column 5, Fortran mode "
@@ -706,10 +795,15 @@ msgid ""
 "@key{TAB}, it converts the line to the current continuation style.  When you "
 "split a Fortran statement with @kbd{C-M-j}, the continuation marker on the "
 "newline is created according to the continuation style."
-msgstr "行のテキストがFortranの継続マーカー@samp{$}で始まるか、列5の非空白文字で始まる場合、Fortranモードはそれを継続行として扱います。継続行を@key{TAB}でインデントした場合、その行をカレントの継続スタイルに変換します。Fortran命令文を@kbd{C-M-j}で分割した場合、継続スタイルに応じた継続マーカーがある新しい行が作成されます。"
+msgstr ""
+"行のテキストがFortranの継続マーカー@samp{$}で始まるか、列5の非空白文字で始ま"
+"る場合、Fortranモードはそれを継続行として扱います。継続行を@key{TAB}でインデ"
+"ントした場合、その行をカレントの継続スタイルに変換します。Fortran命令文を"
+"@kbd{C-M-j}で分割した場合、継続スタイルに応じた継続マーカーがある新しい行が作"
+"成されます。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:244
+#: original_texis/fortran-xtra.texi:244
 msgid ""
 "The setting of continuation style affects several other aspects of editing "
 "in Fortran mode.  In fixed form mode, the minimum column number for the body "
@@ -717,36 +811,43 @@ msgid ""
 "larger column numbers must use only the space character for whitespace.  In "
 "tab format mode, the minimum column number for the statement body is 8, and "
 "the whitespace before column 8 must consist of one tab character."
-msgstr "継続スタイルのセッティングは、Fortranモードでの編集の他の側面に影響します。固定形式の場合、命令文の最小列は6になります。Fortranブロック内でそれより大きい列にインデントされる行には、空白文字としてスペース文字だけを使用しなければなりません。タブ形式では、命令文の最小列は8で、列8より前の空白文字は1つのタブ文字でなければなりません。"
+msgstr ""
+"継続スタイルのセッティングは、Fortranモードでの編集の他の側面に影響します。固"
+"定形式の場合、命令文の最小列は6になります。Fortranブロック内でそれより大きい"
+"列にインデントされる行には、空白文字としてスペース文字だけを使用しなければな"
+"りません。タブ形式では、命令文の最小列は8で、列8より前の空白文字は1つのタブ文"
+"字でなければなりません。"
 
 #. type: node
-#: fortran-xtra.texi.orig:245
+#: original_texis/fortran-xtra.texi:245
 #, no-wrap
 msgid "ForIndent Num"
 msgstr "ForIndent Num"
 
 #. type: subsubsection
-#: fortran-xtra.texi.orig:246
+#: original_texis/fortran-xtra.texi:246
 #, no-wrap
 msgid "Line Numbers"
 msgstr "Line Numbers"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:251
+#: original_texis/fortran-xtra.texi:251
 msgid ""
 "If a number is the first non-whitespace in the line, Fortran indentation "
 "assumes it is a line number and moves it to columns 0 through 4.  (Columns "
 "always count from 0 in Emacs.)"
-msgstr "その行の最初の非空白文字が数字の場合、Fortranのインデントはそれを行番号と判断して、列0から列4に移動します(Emacsでは列を常に0から数えます)。"
+msgstr ""
+"その行の最初の非空白文字が数字の場合、Fortranのインデントはそれを行番号と判断"
+"して、列0から列4に移動します(Emacsでは列を常に0から数えます)。"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:252
+#: original_texis/fortran-xtra.texi:252
 #, no-wrap
 msgid "fortran-line-number-indent"
 msgstr "fortran-line-number-indent"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:260
+#: original_texis/fortran-xtra.texi:260
 msgid ""
 "Line numbers of four digits or less are normally indented one space.  The "
 "variable @code{fortran-line-number-indent} controls this; it specifies the "
@@ -755,157 +856,185 @@ msgid ""
 "column 4, reducing the indentation below the specified maximum if "
 "necessary.  If @code{fortran-line-number-indent} has the value 5, line "
 "numbers are right-justified to end in column 4."
-msgstr "4桁以下の行番号は、通常1つのスペースでインデントされます。変数@code{fortran-line-number-indent}はこれを制御します。これは行番号がもてる最大のインデントを指定します。この変数のデフォルト値は1です。Fortranモードは、必要なら指定した最大列以下にインデントを減らして、行番号が列4を超えるのを防ごうと試みます。@code{fortran-line-number-indent}が5の場合、行番号は列4で終わるように右端に揃えられます。"
+msgstr ""
+"4桁以下の行番号は、通常1つのスペースでインデントされます。変数@code{fortran-"
+"line-number-indent}はこれを制御します。これは行番号がもてる最大のインデントを"
+"指定します。この変数のデフォルト値は1です。Fortranモードは、必要なら指定した"
+"最大列以下にインデントを減らして、行番号が列4を超えるのを防ごうと試みます。"
+"@code{fortran-line-number-indent}が5の場合、行番号は列4で終わるように右端に揃"
+"えられます。"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:261
+#: original_texis/fortran-xtra.texi:261
 #, no-wrap
 msgid "fortran-electric-line-number"
 msgstr "fortran-electric-line-number"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:266
+#: original_texis/fortran-xtra.texi:266
 msgid ""
 "Simply inserting a line number is enough to indent it according to these "
 "rules.  As each digit is inserted, the indentation is recomputed.  To turn "
 "off this feature, set the variable @code{fortran-electric-line-number} to "
 "@code{nil}."
-msgstr "これらのルールに応じたインデントをするには、単純に行番号を挿入するだけで充分です。各桁が挿入されるたびに、インデントは再計算されます。この機能をオフに切り替えるには、変数@code{fortran-electric-line-number}を@code{nil}にセットしてください。"
+msgstr ""
+"これらのルールに応じたインデントをするには、単純に行番号を挿入するだけで充分"
+"です。各桁が挿入されるたびに、インデントは再計算されます。この機能をオフに切"
+"り替えるには、変数@code{fortran-electric-line-number}を@code{nil}にセットして"
+"ください。"
 
 #. type: node
-#: fortran-xtra.texi.orig:268
+#: original_texis/fortran-xtra.texi:268
 #, no-wrap
 msgid "ForIndent Conv"
 msgstr "ForIndent Conv"
 
 #. type: subsubsection
-#: fortran-xtra.texi.orig:269
+#: original_texis/fortran-xtra.texi:269
 #, no-wrap
 msgid "Syntactic Conventions"
 msgstr "Syntactic Conventions"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:274
+#: original_texis/fortran-xtra.texi:274
 msgid ""
 "Fortran mode assumes that you follow certain conventions that simplify the "
 "task of understanding a Fortran program well enough to indent it properly:"
-msgstr "Fortranモードは正しくインデントを行うために、あなたが、Fortranプログラム解読を単純化する特定の慣習にしたがうと仮定します："
+msgstr ""
+"Fortranモードは正しくインデントを行うために、あなたが、Fortranプログラム解読"
+"を単純化する特定の慣習にしたがうと仮定します："
 
 #. type: itemize
-#: fortran-xtra.texi.orig:278
+#: original_texis/fortran-xtra.texi:278
 msgid "Two nested @samp{do} loops never share a @samp{continue} statement."
 msgstr "ネストされた2つの@samp{do}ループは、@samp{continue}命令を共有しない。"
 
 #. type: itemize
-#: fortran-xtra.texi.orig:282
+#: original_texis/fortran-xtra.texi:282
 msgid ""
 "Fortran keywords such as @samp{if}, @samp{else}, @samp{then}, @samp{do} and "
 "others are written without embedded whitespace or line breaks."
-msgstr "@samp{if}、@samp{else}、@samp{then}、@samp{do}、その他のFortranキーワードは、空白文字や行ブレークを含まずに記述される。"
+msgstr ""
+"@samp{if}、@samp{else}、@samp{then}、@samp{do}、その他のFortranキーワードは、"
+"空白文字や行ブレークを含まずに記述される。"
 
 #. type: itemize
-#: fortran-xtra.texi.orig:288
+#: original_texis/fortran-xtra.texi:288
 msgid ""
 "Fortran compilers generally ignore whitespace outside of string constants, "
 "but Fortran mode does not recognize these keywords if they are not "
 "contiguous.  Constructs such as @samp{else if} or @samp{end do} are "
 "acceptable, but the second word should be on the same line as the first and "
 "not on a continuation line."
-msgstr "Fortranコンパイラーは一般的に文字列定数の外の空白文字を無視しますが、Fortranモードはこれらのキーワードが隣接していない場合、それらを認識しません。@samp{else if}や@samp{end do}のような構成は許されますが、2つ目の単語は継続行ではなく、1つ目の単語と同じ行にあるべきです。"
+msgstr ""
+"Fortranコンパイラーは一般的に文字列定数の外の空白文字を無視しますが、Fortran"
+"モードはこれらのキーワードが隣接していない場合、それらを認識しません。"
+"@samp{else if}や@samp{end do}のような構成は許されますが、2つ目の単語は継続行"
+"ではなく、1つ目の単語と同じ行にあるべきです。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:295
+#: original_texis/fortran-xtra.texi:295
 msgid ""
 "If you fail to follow these conventions, the indentation commands may indent "
 "some lines unaesthetically.  However, a correct Fortran program retains its "
 "meaning when reindented even if the conventions are not followed."
-msgstr "これらの慣習にしたがわない場合、インデントコマンドは醜いインデントをするかもしれません。しかし正しいFortranプログラムなら、慣習にしたがわずにインデントされたものでも、その意味は変わりません。"
+msgstr ""
+"これらの慣習にしたがわない場合、インデントコマンドは醜いインデントをするかも"
+"しれません。しかし正しいFortranプログラムなら、慣習にしたがわずにインデントさ"
+"れたものでも、その意味は変わりません。"
 
 #. type: node
-#: fortran-xtra.texi.orig:296
+#: original_texis/fortran-xtra.texi:296
 #, no-wrap
 msgid "ForIndent Vars"
 msgstr "ForIndent Vars"
 
 #. type: subsubsection
-#: fortran-xtra.texi.orig:297
+#: original_texis/fortran-xtra.texi:297
 #, no-wrap
 msgid "Variables for Fortran Indentation"
 msgstr "Variables for Fortran Indentation"
 
 #. type: item
-#: fortran-xtra.texi.orig:299 fortran-xtra.texi.orig:308
+#: original_texis/fortran-xtra.texi:299 original_texis/fortran-xtra.texi:308
 #, no-wrap
 msgid "fortran-do-indent"
 msgstr "fortran-do-indent"
 
 #. type: item
-#: fortran-xtra.texi.orig:300 fortran-xtra.texi.orig:311
+#: original_texis/fortran-xtra.texi:300 original_texis/fortran-xtra.texi:311
 #, no-wrap
 msgid "fortran-if-indent"
 msgstr "fortran-if-indent"
 
 #. type: item
-#: fortran-xtra.texi.orig:301 fortran-xtra.texi.orig:315
+#: original_texis/fortran-xtra.texi:301 original_texis/fortran-xtra.texi:315
 #, no-wrap
 msgid "fortran-structure-indent"
 msgstr "fortran-structure-indent"
 
 #. type: item
-#: fortran-xtra.texi.orig:302 fortran-xtra.texi.orig:319
+#: original_texis/fortran-xtra.texi:302 original_texis/fortran-xtra.texi:319
 #, no-wrap
 msgid "fortran-continuation-indent"
 msgstr "fortran-continuation-indent"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:303
+#: original_texis/fortran-xtra.texi:303
 #, no-wrap
 msgid "fortran-check-all-num@dots{}"
 msgstr "fortran-check-all-num@dots{}"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:304
+#: original_texis/fortran-xtra.texi:304
 #, no-wrap
 msgid "fortran-minimum-statement-indent@dots{}"
 msgstr "fortran-minimum-statement-indent@dots{}"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:306
+#: original_texis/fortran-xtra.texi:306
 msgid "Several additional variables control how Fortran indentation works:"
-msgstr "Fortranのインデントがどのように機能するかを制御する、追加の変数がいくつかあります:"
+msgstr ""
+"Fortranのインデントがどのように機能するかを制御する、追加の変数がいくつかあり"
+"ます:"
 
 #. type: table
-#: fortran-xtra.texi.orig:310
+#: original_texis/fortran-xtra.texi:310
 msgid "Extra indentation within each level of @samp{do} statement (default 3)."
-msgstr "@samp{do}命令の各レベルにたいする、追加のインデントです(デフォルトは3)。"
+msgstr ""
+"@samp{do}命令の各レベルにたいする、追加のインデントです(デフォルトは3)。"
 
 #. type: table
-#: fortran-xtra.texi.orig:314
+#: original_texis/fortran-xtra.texi:314
 msgid ""
 "Extra indentation within each level of @samp{if}, @samp{select case}, or "
 "@samp{where} statements (default 3)."
-msgstr "@samp{if}、@samp{select case}、@samp{where}命令の各レベルにたいする、追加のインデントです(デフォルトは3)。"
+msgstr ""
+"@samp{if}、@samp{select case}、@samp{where}命令の各レベルにたいする、追加のイ"
+"ンデントです(デフォルトは3)。"
 
 #. type: table
-#: fortran-xtra.texi.orig:318
+#: original_texis/fortran-xtra.texi:318
 msgid ""
 "Extra indentation within each level of @samp{structure}, @samp{union}, "
 "@samp{map}, or @samp{interface} statements (default 3)."
-msgstr "@samp{structure}、@samp{union}、@samp{map}、@samp{interface}命令の各レベルにたいする、追加のインデントです(デフォルトは3)。"
+msgstr ""
+"@samp{structure}、@samp{union}、@samp{map}、@samp{interface}命令の各レベルに"
+"たいする、追加のインデントです(デフォルトは3)。"
 
 #. type: table
-#: fortran-xtra.texi.orig:321
+#: original_texis/fortran-xtra.texi:321
 msgid "Extra indentation for bodies of continuation lines (default 5)."
 msgstr "継続行の本文にたいする、追加のインデントです(デフォルトは3)。"
 
 #. type: item
-#: fortran-xtra.texi.orig:322
+#: original_texis/fortran-xtra.texi:322
 #, no-wrap
 msgid "fortran-check-all-num-for-matching-do"
 msgstr "fortran-check-all-num-for-matching-do"
 
 #. type: table
-#: fortran-xtra.texi.orig:331
+#: original_texis/fortran-xtra.texi:331
 msgid ""
 "In Fortran 77, a numbered @samp{do} statement is ended by any statement with "
 "a matching line number.  It is common (but not compulsory) to use a "
@@ -915,80 +1044,100 @@ msgid ""
 "@samp{continue} line (or if you use the more modern @samp{enddo}), then you "
 "can speed up indentation by setting this variable to @code{nil} (the "
 "default)."
-msgstr "Fortran 77では、番号つきの@samp{do}命令は、それにマッチする行番号をもつ任意の命令で終了します。この目的のためには@samp{continue}命令を使うのが一般的です(が、強制ではありません)。この変数が非@code{nil}値の場合、番号が付与された命令をインデントするとき、そこで終了する@samp{do}をチェックしなければなりません。@samp{do}命令を常に@samp{continue}(またはよりモダンな@samp{enddo})で終了する場合は、この変数を@code{nil}(デフォルト)にセットすることにより、インデントの速度を上げることができます。"
+msgstr ""
+"Fortran 77では、番号つきの@samp{do}命令は、それにマッチする行番号をもつ任意の"
+"命令で終了します。この目的のためには@samp{continue}命令を使うのが一般的です"
+"(が、強制ではありません)。この変数が非@code{nil}値の場合、番号が付与された命"
+"令をインデントするとき、そこで終了する@samp{do}をチェックしなければなりませ"
+"ん。@samp{do}命令を常に@samp{continue}(またはよりモダンな@samp{enddo})で終了"
+"する場合は、この変数を@code{nil}(デフォルト)にセットすることにより、インデン"
+"トの速度を上げることができます。"
 
 #. type: item
-#: fortran-xtra.texi.orig:332
+#: original_texis/fortran-xtra.texi:332
 #, no-wrap
 msgid "fortran-blink-matching-if"
 msgstr "fortran-blink-matching-if"
 
 #. type: table
-#: fortran-xtra.texi.orig:336
+#: original_texis/fortran-xtra.texi:336
 msgid ""
 "If this is @code{t}, indenting an @samp{endif} (or @samp{enddo} statement "
 "moves the cursor momentarily to the matching @samp{if} (or @samp{do}) "
 "statement to show where it is.  The default is @code{nil}."
-msgstr "この変数が@code{t}の場合、@samp{endif}(または@samp{enddo})命令のインデントにより、マッチする@samp{if}(または@samp{do})命令にカーソルが数瞬移動します。デフォルトは@code{nil}です。"
+msgstr ""
+"この変数が@code{t}の場合、@samp{endif}(または@samp{enddo})命令のインデントに"
+"より、マッチする@samp{if}(または@samp{do})命令にカーソルが数瞬移動します。デ"
+"フォルトは@code{nil}です。"
 
 #. type: item
-#: fortran-xtra.texi.orig:337
+#: original_texis/fortran-xtra.texi:337
 #, no-wrap
 msgid "fortran-minimum-statement-indent-fixed"
 msgstr "fortran-minimum-statement-indent-fixed"
 
 #. type: table
-#: fortran-xtra.texi.orig:341
+#: original_texis/fortran-xtra.texi:341
 msgid ""
 "Minimum indentation for Fortran statements when using fixed form "
 "continuation line style.  Statement bodies are never indented by less than "
 "this.  The default is 6."
-msgstr "固定形式の継続行スタイルを使用する場合の、Fortran命令にたいする最小のインデントです。命令本体はこれより小さい値でインデントされることはありません。デフォルトは6です。"
+msgstr ""
+"固定形式の継続行スタイルを使用する場合の、Fortran命令にたいする最小のインデン"
+"トです。命令本体はこれより小さい値でインデントされることはありません。デフォ"
+"ルトは6です。"
 
 #. type: item
-#: fortran-xtra.texi.orig:342
+#: original_texis/fortran-xtra.texi:342
 #, no-wrap
 msgid "fortran-minimum-statement-indent-tab"
 msgstr "fortran-minimum-statement-indent-tab"
 
 #. type: table
-#: fortran-xtra.texi.orig:346
+#: original_texis/fortran-xtra.texi:346
 msgid ""
 "Minimum indentation for Fortran statements for tab format continuation line "
 "style.  Statement bodies are never indented by less than this.  The default "
 "is 8."
-msgstr "タブ形式の継続行スタイルを使用する場合の、Fortran命令にたいする最小のインデントです。命令本体はこれより小さい値でインデントされることはありません。デフォルトは8です。"
+msgstr ""
+"タブ形式の継続行スタイルを使用する場合の、Fortran命令にたいする最小のインデン"
+"トです。命令本体はこれより小さい値でインデントされることはありません。デフォ"
+"ルトは8です。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:350
+#: original_texis/fortran-xtra.texi:350
 msgid ""
 "The following section describes the variables controlling the indentation of "
 "comments."
 msgstr "以下のセクションでは、コメントのインデントを制御する変数を説明します。"
 
 #. type: subsection
-#: fortran-xtra.texi.orig:351 fortran-xtra.texi.orig:352
+#: original_texis/fortran-xtra.texi:351 original_texis/fortran-xtra.texi:352
 #, no-wrap
 msgid "Fortran Comments"
 msgstr "Fortran Comments"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:358
+#: original_texis/fortran-xtra.texi:358
 msgid ""
 "The usual Emacs comment commands assume that a comment can follow a line of "
 "code.  In Fortran 77, the standard comment syntax requires an entire line to "
 "be just a comment.  Therefore, Fortran mode replaces the standard Emacs "
 "comment commands and defines some new variables."
-msgstr "通常のEmacsのコメントコマンドは、コード行の後にコメントを記述できると仮定します。Fortran 77では、標準のコメント構文はコメント行に行全体を要求します。したがってFortranモードは、標準のEmacsコメントコマンドを置き換え、新しい変数も定義します。"
+msgstr ""
+"通常のEmacsのコメントコマンドは、コード行の後にコメントを記述できると仮定しま"
+"す。Fortran 77では、標準のコメント構文はコメント行に行全体を要求します。した"
+"がってFortranモードは、標準のEmacsコメントコマンドを置き換え、新しい変数も定"
+"義します。"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:359
+#: original_texis/fortran-xtra.texi:359
 #, no-wrap
 msgid "fortran-comment-line-start"
 msgstr "fortran-comment-line-start"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:367
+#: original_texis/fortran-xtra.texi:367
 msgid ""
 "Fortran mode can also handle the Fortran 90 comment syntax where comments "
 "start with @samp{!} and can follow other text.  Because only some Fortran 77 "
@@ -996,65 +1145,82 @@ msgid ""
 "unless you have said in advance to do so.  To do this, set the variable "
 "@code{fortran-comment-line-start} to @samp{\"!\"}.  If you use an unusual "
 "value, you may need to change @code{fortran-comment-line-start-skip}."
-msgstr "Fortranモードは、@samp{!}で始まり、他のテキストの後に記述することができる、Fortran 90のコメント構文も処理できます。この構文を許すFortran 77コンパイラーは限られているので、Fortranモードは、あらかじめそれを行うように指示しない限り、そのようなコメントを挿入しません。これを行うには、変数@code{fortran-comment-line-start}に@samp{\"!\"}をセットします。通常とは異なる値を使う場合、@code{fortran-comment-line-start-skip}も変更する必要があるでしょう。"
+msgstr ""
+"Fortranモードは、@samp{!}で始まり、他のテキストの後に記述することができる、"
+"Fortran 90のコメント構文も処理できます。この構文を許すFortran 77コンパイラー"
+"は限られているので、Fortranモードは、あらかじめそれを行うように指示しない限"
+"り、そのようなコメントを挿入しません。これを行うには、変数@code{fortran-"
+"comment-line-start}に@samp{\"!\"}をセットします。通常とは異なる値を使う場合、"
+"@code{fortran-comment-line-start-skip}も変更する必要があるでしょう。"
 
 #. type: item
-#: fortran-xtra.texi.orig:370
+#: original_texis/fortran-xtra.texi:370
 #, no-wrap
 msgid "M-;"
 msgstr "M-;"
 
 #. type: table
-#: fortran-xtra.texi.orig:372
+#: original_texis/fortran-xtra.texi:372
 msgid "Align comment or insert new comment (@code{comment-dwim})."
-msgstr "コメントの位置揃え、または新しいコメントを挿入します(@code{comment-dwim})。"
+msgstr ""
+"コメントの位置揃え、または新しいコメントを挿入します(@code{comment-dwim})。"
 
 #. type: item
-#: fortran-xtra.texi.orig:373
+#: original_texis/fortran-xtra.texi:373
 #, no-wrap
 msgid "C-x ;"
 msgstr "C-x ;"
 
 #. type: table
-#: fortran-xtra.texi.orig:375
+#: original_texis/fortran-xtra.texi:375
 msgid ""
 "Applies to nonstandard @samp{!} comments only (@code{comment-set-column})."
 msgstr "非標準の@samp{!}だけを適用します(@code{comment-set-column})。"
 
 #. type: item
-#: fortran-xtra.texi.orig:376
+#: original_texis/fortran-xtra.texi:376
 #, no-wrap
 msgid "C-c ;"
 msgstr "C-c ;"
 
 #. type: table
-#: fortran-xtra.texi.orig:379
+#: original_texis/fortran-xtra.texi:379
 msgid ""
 "Turn all lines of the region into comments, or (with argument) turn them "
 "back into real code (@code{fortran-comment-region})."
-msgstr "リージョンのすべての行をコメントにします。または(引数を指定した場合は)コメントを実際のコードに戻します(@code{fortran-comment-region})。"
+msgstr ""
+"リージョンのすべての行をコメントにします。または(引数を指定した場合は)コメン"
+"トを実際のコードに戻します(@code{fortran-comment-region})。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:386
+#: original_texis/fortran-xtra.texi:386
 msgid ""
 "@kbd{M-;} in Fortran mode runs the standard @code{comment-dwim}.  This "
 "recognizes any kind of existing comment and aligns its text appropriately; "
 "if there is no existing comment, a comment is inserted and aligned.  "
 "Inserting and aligning comments are not the same in Fortran mode as in other "
 "modes."
-msgstr "Fortranモードで実行すると、これは標準の@code{comment-dwim}を実行します。これは任意の種類の既存のコメントを認識して、それらのテキストの位置揃えをします。既存のコメントがない場合は、コメントの挿入・位置揃えをします。Fortranモードでのコメントの挿入および位置揃えは、他のモードとは異なります。"
+msgstr ""
+"Fortranモードで実行すると、これは標準の@code{comment-dwim}を実行します。これ"
+"は任意の種類の既存のコメントを認識して、それらのテキストの位置揃えをします。"
+"既存のコメントがない場合は、コメントの挿入・位置揃えをします。Fortranモードで"
+"のコメントの挿入および位置揃えは、他のモードとは異なります。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:391
+#: original_texis/fortran-xtra.texi:391
 msgid ""
 "When a new comment must be inserted, if the current line is blank, a full-"
 "line comment is inserted.  On a non-blank line, a nonstandard @samp{!} "
 "comment is inserted if you have said you want to use them.  Otherwise a full-"
 "line comment is inserted on a new line before the current line."
-msgstr "新しいコメントが挿入されなければならない場合、カレント行が空のときは、行全体をコメントとして挿入します。その行が空でない場合、もしそれを使うことを指示していれば、非標準の@samp{!}コメントが挿入されます。そうでない場合はカレント行の前に新しい行を挿入して、その行全体をコメントにします。"
+msgstr ""
+"新しいコメントが挿入されなければならない場合、カレント行が空のときは、行全体"
+"をコメントとして挿入します。その行が空でない場合、もしそれを使うことを指示し"
+"ていれば、非標準の@samp{!}コメントが挿入されます。そうでない場合はカレント行"
+"の前に新しい行を挿入して、その行全体をコメントにします。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:398
+#: original_texis/fortran-xtra.texi:398
 msgid ""
 "Nonstandard @samp{!} comments are aligned like comments in other languages, "
 "but full-line comments are different.  In a standard full-line comment, the "
@@ -1062,88 +1228,103 @@ msgid ""
 "aligned is the text within the comment.  You can choose from three styles of "
 "alignment by setting the variable @code{fortran-comment-indent-style} to one "
 "of these values:"
-msgstr "非標準の@samp{!}コメントは、他の言語のコメントと同じように位置揃えされますが、行全体のコメントは異なります。標準の行全体のコメントは、コメント区切り自体は常に列0に出現しなければなりません。位置揃えできるのは、コメントの中のテキストです。変数@code{fortran-comment-indent-style}に、以下の3つの値のうち1つをセットすることにより、3つのスタイルの位置揃えを選択できます。"
+msgstr ""
+"非標準の@samp{!}コメントは、他の言語のコメントと同じように位置揃えされます"
+"が、行全体のコメントは異なります。標準の行全体のコメントは、コメント区切り自"
+"体は常に列0に出現しなければなりません。位置揃えできるのは、コメントの中のテキ"
+"ストです。変数@code{fortran-comment-indent-style}に、以下の3つの値のうち1つを"
+"セットすることにより、3つのスタイルの位置揃えを選択できます。"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:399
+#: original_texis/fortran-xtra.texi:399
 #, no-wrap
 msgid "fortran-comment-indent-style"
 msgstr "fortran-comment-indent-style"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:400
+#: original_texis/fortran-xtra.texi:400
 #, no-wrap
 msgid "fortran-comment-line-extra-indent"
 msgstr "fortran-comment-line-extra-indent"
 
 #. type: item
-#: fortran-xtra.texi.orig:402
+#: original_texis/fortran-xtra.texi:402
 #, no-wrap
 msgid "fixed"
 msgstr "fixed"
 
 #. type: table
-#: fortran-xtra.texi.orig:406
+#: original_texis/fortran-xtra.texi:406
 msgid ""
 "Align the text at a fixed column, which is the sum of @code{fortran-comment-"
 "line-extra-indent} and the minimum statement indentation.  This is the "
 "default."
-msgstr "テキストを固定列に位置揃えします。これは@code{fortran-comment-line-extra-indent}と命令文の最小のインデントとの和です。これがデフォルトです。"
+msgstr ""
+"テキストを固定列に位置揃えします。これは@code{fortran-comment-line-extra-"
+"indent}と命令文の最小のインデントとの和です。これがデフォルトです。"
 
 #. type: table
-#: fortran-xtra.texi.orig:411
+#: original_texis/fortran-xtra.texi:411
 msgid ""
 "The minimum indentation is @code{fortran-minimum-statement-indent-tab} for "
 "tab format continuation line style and @code{fortran-minimum-statement-"
 "indent-fixed} for fixed form style."
-msgstr "最小のインデントは、タブ形式の継続行スタイルの場合は@code{fortran-minimum-statement-indent-tab}で、固定形式スタイルの場合は@code{fortran-minimum-statement-indent-fixed}です。"
+msgstr ""
+"最小のインデントは、タブ形式の継続行スタイルの場合は@code{fortran-minimum-"
+"statement-indent-tab}で、固定形式スタイルの場合は@code{fortran-minimum-"
+"statement-indent-fixed}です。"
 
 #. type: item
-#: fortran-xtra.texi.orig:412
+#: original_texis/fortran-xtra.texi:412
 #, no-wrap
 msgid "relative"
 msgstr "relative"
 
 #. type: table
-#: fortran-xtra.texi.orig:415
+#: original_texis/fortran-xtra.texi:415
 msgid ""
 "Align the text as if it were a line of code, but with an additional "
 "@code{fortran-comment-line-extra-indent} columns of indentation."
-msgstr "そのテキストがコード行であるかのように位置揃えしますが、@code{fortran-comment-line-extra-indent}に指定した列のインデントが追加されます。"
+msgstr ""
+"そのテキストがコード行であるかのように位置揃えしますが、@code{fortran-"
+"comment-line-extra-indent}に指定した列のインデントが追加されます。"
 
 #. type: item
-#: fortran-xtra.texi.orig:416
+#: original_texis/fortran-xtra.texi:416
 #, no-wrap
 msgid "nil"
 msgstr "nil"
 
 #. type: table
-#: fortran-xtra.texi.orig:418
+#: original_texis/fortran-xtra.texi:418
 msgid "Don't move text in full-line comments automatically."
 msgstr "行全体のコメントを自動的に移動しません。"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:420
+#: original_texis/fortran-xtra.texi:420
 #, no-wrap
 msgid "fortran-comment-indent-char"
 msgstr "fortran-comment-indent-char"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:425
+#: original_texis/fortran-xtra.texi:425
 msgid ""
 "In addition, you can specify the character to be used to indent within full-"
 "line comments by setting the variable @code{fortran-comment-indent-char} to "
 "the single-character string you want to use."
-msgstr "これらに加えて、変数@code{fortran-comment-indent-char}に、使用したい1文字をセットすることにより、行全体のコメントのインデントに使用する文字を指定することができます"
+msgstr ""
+"これらに加えて、変数@code{fortran-comment-indent-char}に、使用したい1文字を"
+"セットすることにより、行全体のコメントのインデントに使用する文字を指定するこ"
+"とができます"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:426
+#: original_texis/fortran-xtra.texi:426
 #, no-wrap
 msgid "fortran-directive-re"
 msgstr "fortran-directive-re"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:434
+#: original_texis/fortran-xtra.texi:434
 msgid ""
 "Compiler directive lines, or preprocessor lines, have much the same "
 "appearance as comment lines.  It is important, though, that such lines never "
@@ -1151,30 +1332,38 @@ msgid ""
 "style}.  The variable @code{fortran-directive-re} is a regular expression "
 "that specifies which lines are directives.  Matching lines are never "
 "indented, and receive distinctive font-locking."
-msgstr "コンパイラーにたいする命令行や、プリプロセッサー行は、コメント行と同じ外観をもっています。しかし、@code{fortran-comment-indent-style}の値に関わらず、そのような行が決してインデントされないことが重要です。変数@code{fortran-directive-re}は、どのような行がそのような命令なのかを指定する正規表現です。これにマッチする行はインデントされず、特別な外観のフォントが適用されます。"
+msgstr ""
+"コンパイラーにたいする命令行や、プリプロセッサー行は、コメント行と同じ外観を"
+"もっています。しかし、@code{fortran-comment-indent-style}の値に関わらず、その"
+"ような行が決してインデントされないことが重要です。変数@code{fortran-"
+"directive-re}は、どのような行がそのような命令なのかを指定する正規表現です。こ"
+"れにマッチする行はインデントされず、特別な外観のフォントが適用されます。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:438
+#: original_texis/fortran-xtra.texi:438
 msgid ""
 "The normal Emacs comment command @kbd{C-x ;} (@code{comment-set-column})  "
 "has not been redefined.  If you use @samp{!} comments, this command can be "
 "used with them.  Otherwise it is useless in Fortran mode."
-msgstr "Emacsの通常のコメントコマンド@kbd{C-x ;} (@code{comment-set-column})は再定義されません。@samp{!}コメントを使用している場合、このコマンドをそれらに使用できます。そうでない場合、これはFortranモードでは役に立ちません。"
+msgstr ""
+"Emacsの通常のコメントコマンド@kbd{C-x ;} (@code{comment-set-column})は再定義"
+"されません。@samp{!}コメントを使用している場合、このコマンドをそれらに使用で"
+"きます。そうでない場合、これはFortranモードでは役に立ちません。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:439
+#: original_texis/fortran-xtra.texi:439
 #, no-wrap
 msgid "C-c ; @r{(Fortran mode)}"
 msgstr "C-c ; @r{(Fortran mode)}"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:440 fortran-xtra.texi.orig:441
+#: original_texis/fortran-xtra.texi:440 original_texis/fortran-xtra.texi:441
 #, no-wrap
 msgid "fortran-comment-region"
 msgstr "fortran-comment-region"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:451
+#: original_texis/fortran-xtra.texi:451
 msgid ""
 "The command @kbd{C-c ;} (@code{fortran-comment-region}) turns all the lines "
 "of the region into comments by inserting the string @samp{c$$$} at the front "
@@ -1185,22 +1374,30 @@ msgid ""
 "command and a variable with the same name; these two uses of the name never "
 "conflict because in Lisp and in Emacs it is always clear from the context "
 "which one is meant."
-msgstr "コマンド@kbd{C-c ;} (@code{fortran-comment-region})は、リージョンのすべての行の行頭に文字列@samp{c$$$}を挿入することにより、これらをコメントにします。数引数を指定した場合、各行の行頭から@samp{c$$$}を削除することにより、リージョンをコードに戻します。これらのコメントに使用する文字列は、変数@code{fortran-comment-region}をセットすることにより制御できます。これはコマンドと変数が同じ名前をもつ例であることに注意してください。同じ名前を2つの用途で使用することによる衝突はありません。なぜならLispおよびEmacsではそれが意味するものは、コンテキストにより明らかだからです。"
+msgstr ""
+"コマンド@kbd{C-c ;} (@code{fortran-comment-region})は、リージョンのすべての行"
+"の行頭に文字列@samp{c$$$}を挿入することにより、これらをコメントにします。数引"
+"数を指定した場合、各行の行頭から@samp{c$$$}を削除することにより、リージョンを"
+"コードに戻します。これらのコメントに使用する文字列は、変数@code{fortran-"
+"comment-region}をセットすることにより制御できます。これはコマンドと変数が同じ"
+"名前をもつ例であることに注意してください。同じ名前を2つの用途で使用することに"
+"よる衝突はありません。なぜならLispおよびEmacsではそれが意味するものは、コンテ"
+"キストにより明らかだからです。"
 
 #. type: node
-#: fortran-xtra.texi.orig:452
+#: original_texis/fortran-xtra.texi:452
 #, no-wrap
 msgid "Fortran Autofill"
 msgstr "Fortran Autofill"
 
 #. type: subsection
-#: fortran-xtra.texi.orig:453
+#: original_texis/fortran-xtra.texi:453
 #, no-wrap
 msgid "Auto Fill in Fortran Mode"
 msgstr "Auto Fill in Fortran Mode"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:463
+#: original_texis/fortran-xtra.texi:463
 msgid ""
 "Fortran mode has specialized support for Auto Fill mode, which is a minor "
 "mode that automatically splits statements as you insert them when they "
@@ -1209,26 +1406,33 @@ msgid ""
 "splitting happens when you type @key{SPC}, @key{RET}, or @key{TAB}, and also "
 "in the Fortran indentation commands.  You activate Auto Fill in Fortran mode "
 "in the normal way."
-msgstr "Fortranモードは、Auto Fillモードにたいする特別なサポートをもっています。これは命令文を挿入するとき、それが長くなりすぎた場合は自動的に分割するマイナーモードです。命令文の分割は、@code{fortran-continuation-string}を使用した継続行により行われます(@ref{ForIndent Cont}を参照してください)。この分割は@key{SPC}、@key{RET}、@key{TAB}、およびFortranのインデントコマンドにより発生します。FortranモードでのAuto Fillの有効化は、通常の方法で行うことができます。"
+msgstr ""
+"Fortranモードは、Auto Fillモードにたいする特別なサポートをもっています。これ"
+"は命令文を挿入するとき、それが長くなりすぎた場合は自動的に分割するマイナー"
+"モードです。命令文の分割は、@code{fortran-continuation-string}を使用した継続"
+"行により行われます(@ref{ForIndent Cont}を参照してください)。この分割は"
+"@key{SPC}、@key{RET}、@key{TAB}、およびFortranのインデントコマンドにより発生"
+"します。FortranモードでのAuto Fillの有効化は、通常の方法で行うことができま"
+"す。"
 
 #. type: iftex
-#: fortran-xtra.texi.orig:465
+#: original_texis/fortran-xtra.texi:465
 msgid "@xref{Auto Fill,,, emacs, the Emacs Manual}."
 msgstr "@ref{Auto Fill,,, emacs, the Emacs Manual}を参照してください。"
 
 #. type: ifnottex
-#: fortran-xtra.texi.orig:468
+#: original_texis/fortran-xtra.texi:468
 msgid "@xref{Auto Fill}."
 msgstr "@ref{Auto Fill}を参照してください。"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:470
+#: original_texis/fortran-xtra.texi:470
 #, no-wrap
 msgid "fortran-break-before-delimiters"
 msgstr "fortran-break-before-delimiters"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:478
+#: original_texis/fortran-xtra.texi:478
 msgid ""
 "Auto Fill breaks lines at spaces or delimiters when the lines get longer "
 "than the desired width (the value of @code{fill-column}).  The delimiters "
@@ -1237,35 +1441,43 @@ msgid ""
 "break comes after the delimiter if the variable @code{fortran-break-before-"
 "delimiters} is @code{nil}.  Otherwise (and by default), the break comes "
 "before the delimiter."
-msgstr "Auto Fillは、その行が望ましい幅(@code{fill-column}の値)より長くなった場合は、スペースおよび区切り文字で行をブレークします。Auto Fillが行をブレークする(空白文字以外の)区切り文字は@samp{+}、@samp{-}、@samp{/}、@samp{*}、@samp{=}、@samp{<}、@samp{>}、@samp{,}です。@code{fortran-break-before-delimiters}が@code{nil}の場合、区切り文字の後ろで行ブレークします。そうでない場合(デフォルト)、区切り文字の前で行ブレークします。"
+msgstr ""
+"Auto Fillは、その行が望ましい幅(@code{fill-column}の値)より長くなった場合は、"
+"スペースおよび区切り文字で行をブレークします。Auto Fillが行をブレークする(空"
+"白文字以外の)区切り文字は@samp{+}、@samp{-}、@samp{/}、@samp{*}、@samp{=}、"
+"@samp{<}、@samp{>}、@samp{,}です。@code{fortran-break-before-delimiters}が"
+"@code{nil}の場合、区切り文字の後ろで行ブレークします。そうでない場合(デフォル"
+"ト)、区切り文字の前で行ブレークします。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:481
+#: original_texis/fortran-xtra.texi:481
 msgid ""
 "To enable Auto Fill in all Fortran buffers, add @code{auto-fill-mode} to "
 "@code{fortran-mode-hook}."
-msgstr "すべてのFortranバッファーでAuto Fillを有効にするには、@code{fortran-mode-hook}に@code{auto-fill-mode}を追加します。"
+msgstr ""
+"すべてのFortranバッファーでAuto Fillを有効にするには、@code{fortran-mode-"
+"hook}に@code{auto-fill-mode}を追加します。"
 
 #. type: node
-#: fortran-xtra.texi.orig:488
+#: original_texis/fortran-xtra.texi:488
 #, no-wrap
 msgid "Fortran Columns"
 msgstr "Fortran Columns"
 
 #. type: subsection
-#: fortran-xtra.texi.orig:489
+#: original_texis/fortran-xtra.texi:489
 #, no-wrap
 msgid "Checking Columns in Fortran"
 msgstr "Checking Columns in Fortran"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:491
+#: original_texis/fortran-xtra.texi:491
 #, no-wrap
 msgid "fortran-line-length"
 msgstr "fortran-line-length"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:499
+#: original_texis/fortran-xtra.texi:499
 msgid ""
 "In standard Fortran 77, anything beyond column 72 is ignored.  Most "
 "compilers provide an option to change this (for example, @samp{-ffixed-line-"
@@ -1273,75 +1485,86 @@ msgid ""
 "to change the line length in Fortran mode.  Anything beyond this point is "
 "font-locked as a comment.  (Unless it is inside a string: strings that "
 "extend beyond @code{fortran-line-length} will confuse font-lock.)"
-msgstr "標準のFortran 77では、72列目以降は無視されます。ほとんどのコンパイラーはこれを変更するオプションを提供します(たとえばgfortranの@samp{-ffixed-line-length-N})。変数@code{fortran-line-length}をカスタマイズすることにより、Fortranモードでの行の長さを変更できます。このポイント以降はコメントにfont-lockされます(ただし文字列内の場合は除きます。@code{fortran-line-length}を超える文字列は、font-lockを混乱させるでしょう)。"
+msgstr ""
+"標準のFortran 77では、72列目以降は無視されます。ほとんどのコンパイラーはこれ"
+"を変更するオプションを提供します(たとえばgfortranの@samp{-ffixed-line-length-"
+"N})。変数@code{fortran-line-length}をカスタマイズすることにより、Fortranモー"
+"ドでの行の長さを変更できます。このポイント以降はコメントにfont-lockされます"
+"(ただし文字列内の場合は除きます。@code{fortran-line-length}を超える文字列は、"
+"font-lockを混乱させるでしょう)。"
 
 #. type: item
-#: fortran-xtra.texi.orig:501
+#: original_texis/fortran-xtra.texi:501
 #, no-wrap
 msgid "C-c C-r"
 msgstr "C-c C-r"
 
 #. type: table
-#: fortran-xtra.texi.orig:504
+#: original_texis/fortran-xtra.texi:504
 msgid ""
 "Display a ``column ruler'' momentarily above the current line (@code{fortran-"
 "column-ruler})."
 msgstr "カレント行の上に、``列目盛(column ruler)''を一時的に表示します。"
 
 #. type: item
-#: fortran-xtra.texi.orig:504
+#: original_texis/fortran-xtra.texi:504
 #, no-wrap
 msgid "C-c C-w"
 msgstr "C-c C-w"
 
 #. type: table
-#: fortran-xtra.texi.orig:509
+#: original_texis/fortran-xtra.texi:509
 msgid ""
 "Split the current window horizontally temporarily so that it is "
 "@code{fortran-line-length} columns wide (@code{fortran-window-create-"
 "momentarily}).  This may help you avoid making lines longer than the limit "
 "imposed by your Fortran compiler."
-msgstr "@code{fortran-line-length}列の幅になるように、カレントウィンドウを水平に分割します(@code{fortran-window-create-momentarily})。これは、Fortranコンパイラーにより課せられた制限を超えないようにする助けになるでしょう。"
+msgstr ""
+"@code{fortran-line-length}列の幅になるように、カレントウィンドウを水平に分割"
+"します(@code{fortran-window-create-momentarily})。これは、Fortranコンパイラー"
+"により課せられた制限を超えないようにする助けになるでしょう。"
 
 #. type: item
-#: fortran-xtra.texi.orig:509
+#: original_texis/fortran-xtra.texi:509
 #, no-wrap
 msgid "C-u C-c C-w"
 msgstr "C-u C-c C-w"
 
 #. type: table
-#: fortran-xtra.texi.orig:513
+#: original_texis/fortran-xtra.texi:513
 msgid ""
 "Split the current window horizontally so that it is @code{fortran-line-"
 "length} columns wide (@code{fortran-window-create}).  You can then continue "
 "editing."
-msgstr "(@code{fortran-window-create})列の幅になるように、カレントウィンドウを水平に分割します。その後は編集を続行できます。"
+msgstr ""
+"(@code{fortran-window-create})列の幅になるように、カレントウィンドウを水平に"
+"分割します。その後は編集を続行できます。"
 
 #. type: item
-#: fortran-xtra.texi.orig:513
+#: original_texis/fortran-xtra.texi:513
 #, no-wrap
 msgid "M-x fortran-strip-sequence-nos"
 msgstr "M-x fortran-strip-sequence-nos"
 
 #. type: table
-#: fortran-xtra.texi.orig:515
+#: original_texis/fortran-xtra.texi:515
 msgid "Delete all text in column @code{fortran-line-length} and beyond."
 msgstr "列@code{fortran-line-length}以上のすべてのテキストを削除します。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:517
+#: original_texis/fortran-xtra.texi:517
 #, no-wrap
 msgid "C-c C-r @r{(Fortran mode)}"
 msgstr "C-c C-r @r{(Fortran mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:518
+#: original_texis/fortran-xtra.texi:518
 #, no-wrap
 msgid "fortran-column-ruler"
 msgstr "fortran-column-ruler"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:525
+#: original_texis/fortran-xtra.texi:525
 msgid ""
 "The command @kbd{C-c C-r} (@code{fortran-column-ruler}) shows a column ruler "
 "momentarily above the current line.  The comment ruler is two lines of text "
@@ -1349,30 +1572,38 @@ msgid ""
 "programs.  Square brackets show the limits of the columns for line numbers, "
 "and curly brackets show the limits of the columns for the statement body.  "
 "Column numbers appear above them."
-msgstr "コマンド@kbd{C-c C-r} (@code{fortran-column-ruler})は、カレント行の上に列目盛を一時的に表示します。列目盛は2行のテキストで、Fortranプログラムにおいて特別な意味をもつ列の位置を表示します。角カッコ(square brackets)は行番号の範囲を示し、中カッコ(curly brackets)は命令文本体の範囲を示します。列番号がその上に表示されます。"
+msgstr ""
+"コマンド@kbd{C-c C-r} (@code{fortran-column-ruler})は、カレント行の上に列目盛"
+"を一時的に表示します。列目盛は2行のテキストで、Fortranプログラムにおいて特別"
+"な意味をもつ列の位置を表示します。角カッコ(square brackets)は行番号の範囲を示"
+"し、中カッコ(curly brackets)は命令文本体の範囲を示します。列番号がその上に表"
+"示されます。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:530
+#: original_texis/fortran-xtra.texi:530
 msgid ""
 "Note that the column numbers count from zero, as always in GNU Emacs.  As a "
 "result, the numbers may be one less than those you are familiar with; but "
 "the positions they indicate in the line are standard for Fortran."
-msgstr "GNU Emacsでは、列番号は常に0から数えることに注意してください。結果として、この番号はあなたが親しんでいる番号より1小さくなるかもしれません。しかしこの行で示される位置は、Fortranの標準です。"
+msgstr ""
+"GNU Emacsでは、列番号は常に0から数えることに注意してください。結果として、こ"
+"の番号はあなたが親しんでいる番号より1小さくなるかもしれません。しかしこの行で"
+"示される位置は、Fortranの標準です。"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:531
+#: original_texis/fortran-xtra.texi:531
 #, no-wrap
 msgid "fortran-column-ruler-fixed"
 msgstr "fortran-column-ruler-fixed"
 
 #. type: vindex
-#: fortran-xtra.texi.orig:532
+#: original_texis/fortran-xtra.texi:532
 #, no-wrap
 msgid "fortran-column-ruler-tabs"
 msgstr "fortran-column-ruler-tabs"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:540
+#: original_texis/fortran-xtra.texi:540
 msgid ""
 "The text used to display the column ruler depends on the value of the "
 "variable @code{indent-tabs-mode}.  If @code{indent-tabs-mode} is @code{nil}, "
@@ -1380,107 +1611,133 @@ msgid ""
 "the column ruler.  Otherwise, the value of the variable @code{fortran-column-"
 "ruler-tab} is displayed.  By changing these variables, you can change the "
 "column ruler display."
-msgstr "列目盛を表示するのに使用されるテキストは、変数@code{indent-tabs-mode}の値に依存します。@code{indent-tabs-mode}が@code{nil}の場合、変数@code{fortran-column-ruler-fixed}の値が列目盛として使用されます。それ以外は、変数@code{fortran-column-ruler-tab}の値が表示されます。これらの値を変更することにより、表示される列目盛を変更できます。"
+msgstr ""
+"列目盛を表示するのに使用されるテキストは、変数@code{indent-tabs-mode}の値に依"
+"存します。@code{indent-tabs-mode}が@code{nil}の場合、変数@code{fortran-"
+"column-ruler-fixed}の値が列目盛として使用されます。それ以外は、変数"
+"@code{fortran-column-ruler-tab}の値が表示されます。これらの値を変更することに"
+"より、表示される列目盛を変更できます。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:541
+#: original_texis/fortran-xtra.texi:541
 #, no-wrap
 msgid "C-c C-w @r{(Fortran mode)}"
 msgstr "C-c C-w @r{(Fortran mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:542
+#: original_texis/fortran-xtra.texi:542
 #, no-wrap
 msgid "fortran-window-create-momentarily"
 msgstr "fortran-window-create-momentarily"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:547
+#: original_texis/fortran-xtra.texi:547
 msgid ""
 "@kbd{C-c C-w} (@code{fortran-window-create-momentarily}) temporarily splits "
 "the current window horizontally, making a window @code{fortran-line-length} "
 "columns wide, so you can see any lines that are too long.  Type a space to "
 "restore the normal width."
-msgstr "@kbd{C-c C-w} (@code{fortran-window-create-momentarily})で、一時的にカレントウィンドウを水平方向に分割して、ウィンドウの幅を@code{fortran-line-length}列にすることにより、長くなりすぎた行を見つけることができます。スペースをタイプすると元の幅に戻ります。"
+msgstr ""
+"@kbd{C-c C-w} (@code{fortran-window-create-momentarily})で、一時的にカレント"
+"ウィンドウを水平方向に分割して、ウィンドウの幅を@code{fortran-line-length}列"
+"にすることにより、長くなりすぎた行を見つけることができます。スペースをタイプ"
+"すると元の幅に戻ります。"
 
 #. type: kindex
-#: fortran-xtra.texi.orig:548
+#: original_texis/fortran-xtra.texi:548
 #, no-wrap
 msgid "C-u C-c C-w @r{(Fortran mode)}"
 msgstr "C-u C-c C-w @r{(Fortran mode)}"
 
 #. type: findex
-#: fortran-xtra.texi.orig:549
+#: original_texis/fortran-xtra.texi:549
 #, no-wrap
 msgid "fortran-window-create"
 msgstr "fortran-window-create"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:554
+#: original_texis/fortran-xtra.texi:554
 msgid ""
 "You can also split the window horizontally and continue editing with the "
 "split in place.  To do this, use @kbd{C-u C-c C-w} (@code{M-x fortran-window-"
 "create}).  By editing in this window you can immediately see when you make a "
 "line too wide to be correct Fortran."
-msgstr "適切な位置でウィンドウを水平方向に分割して、編集を継続することもできます。これを行うには、@kbd{C-u C-c C-w} (@code{M-x fortran-window-create})を使用します。このウィンドウで編集することより、Fortranでの正しい長さを超える行をすぐに見つけることができます。"
+msgstr ""
+"適切な位置でウィンドウを水平方向に分割して、編集を継続することもできます。こ"
+"れを行うには、@kbd{C-u C-c C-w} (@code{M-x fortran-window-create})を使用しま"
+"す。このウィンドウで編集することより、Fortranでの正しい長さを超える行をすぐに"
+"見つけることができます。"
 
 #. type: findex
-#: fortran-xtra.texi.orig:555
+#: original_texis/fortran-xtra.texi:555
 #, no-wrap
 msgid "fortran-strip-sequence-nos"
 msgstr "fortran-strip-sequence-nos"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:560
+#: original_texis/fortran-xtra.texi:560
 msgid ""
 "The command @kbd{M-x fortran-strip-sequence-nos} deletes all text in column "
 "@code{fortran-line-length} and beyond, on all lines in the current buffer.  "
 "This is the easiest way to get rid of old sequence numbers."
-msgstr "コマンド@kbd{M-x fortran-strip-sequence-nos}は、カレントバッファーのすべての行にたいして、列@code{fortran-line-length}以上のテキストすべてを削除します。これは古いシーケンス番号を削除する一番簡単な方法です。"
+msgstr ""
+"コマンド@kbd{M-x fortran-strip-sequence-nos}は、カレントバッファーのすべての"
+"行にたいして、列@code{fortran-line-length}以上のテキストすべてを削除します。"
+"これは古いシーケンス番号を削除する一番簡単な方法です。"
 
 #. type: node
-#: fortran-xtra.texi.orig:561
+#: original_texis/fortran-xtra.texi:561
 #, no-wrap
 msgid "Fortran Abbrev"
 msgstr "Fortran Abbrev"
 
 #. type: subsection
-#: fortran-xtra.texi.orig:562
+#: original_texis/fortran-xtra.texi:562
 #, no-wrap
 msgid "Fortran Keyword Abbrevs"
 msgstr "Fortran Keyword Abbrevs"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:567
+#: original_texis/fortran-xtra.texi:567
 msgid ""
 "Fortran mode provides many built-in abbrevs for common keywords and "
 "declarations.  These are the same sort of abbrev that you can define "
 "yourself.  To use them, you must turn on Abbrev mode."
-msgstr "Fortranモードは、一般的なキーワードや定義にたいするabbrev(abbreviation: 省略形)を提供します。あなたが定義できるabbrevと同様なものがあります。これらを使用するには、Abbrevモードをオンに切り替えなければなりません。"
+msgstr ""
+"Fortranモードは、一般的なキーワードや定義にたいするabbrev(abbreviation: 省略"
+"形)を提供します。あなたが定義できるabbrevと同様なものがあります。これらを使用"
+"するには、Abbrevモードをオンに切り替えなければなりません。"
 
 #. type: iftex
-#: fortran-xtra.texi.orig:569
+#: original_texis/fortran-xtra.texi:569
 msgid "@xref{Abbrevs,,, emacs, the Emacs Manual}."
 msgstr "@ref{Abbrevs,,, emacs, the Emacs Manual}を参照してください。"
 
 #. type: ifnottex
-#: fortran-xtra.texi.orig:572
+#: original_texis/fortran-xtra.texi:572
 msgid "@xref{Abbrevs}."
 msgstr "@ref{Abbrevs}を参照してください。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:579
+#: original_texis/fortran-xtra.texi:579
 msgid ""
 "The built-in abbrevs are unusual in one way: they all start with a "
 "semicolon.  For example, one built-in Fortran abbrev is @samp{;c} for "
 "@samp{continue}.  If you insert @samp{;c} and then insert a punctuation "
 "character such as a space or a newline, the @samp{;c} expands automatically "
 "to @samp{continue}, provided Abbrev mode is enabled."
-msgstr "ビルトインのabbrevは、1つの点で特異です。これらはすべてセミコロンから始まります。たとえばFortranのビルトインのabbrevである@samp{;c}は、@samp{continue}にたいする省略形です。@samp{;c}を挿入してから、スペースや改行のような区切りとなる文字を挿入すると、Abbrevモードが有効な場合、@samp{;c}は自動的に@samp{continue}に展開されます。"
+msgstr ""
+"ビルトインのabbrevは、1つの点で特異です。これらはすべてセミコロンから始まりま"
+"す。たとえばFortranのビルトインのabbrevである@samp{;c}は、@samp{continue}にた"
+"いする省略形です。@samp{;c}を挿入してから、スペースや改行のような区切りとなる"
+"文字を挿入すると、Abbrevモードが有効な場合、@samp{;c}は自動的に"
+"@samp{continue}に展開されます。"
 
 #. type: Plain text
-#: fortran-xtra.texi.orig:581
+#: original_texis/fortran-xtra.texi:581
 msgid ""
 "Type @samp{;?} or @samp{;C-h} to display a list of all the built-in Fortran "
 "abbrevs and what they stand for."
-msgstr "@samp{;?}または@samp{;C-h}とタイプすると、すべてのビルトインのFortranのabbrevのリストと、それが何を意味するかが表示されます。"
+msgstr ""
+"@samp{;?}または@samp{;C-h}とタイプすると、すべてのビルトインのFortranのabbrev"
+"のリストと、それが何を意味するかが表示されます。"

@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-09-29 15:56+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,194 +16,216 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
-#: mini.texi.orig:5
+#: original_texis/mini.texi:5
 #, no-wrap
 msgid "Minibuffer"
 msgstr "Minibuffer"
 
 #. type: chapter
-#: mini.texi.orig:6
+#: original_texis/mini.texi:6
 #, no-wrap
 msgid "The Minibuffer"
 msgstr "The Minibuffer"
 
 #. type: cindex
-#: mini.texi.orig:7
+#: original_texis/mini.texi:7
 #, no-wrap
 msgid "minibuffer"
 msgstr "minibuffer"
 
 #. type: Plain text
-#: mini.texi.orig:15
+#: original_texis/mini.texi:15
 msgid ""
 "The @dfn{minibuffer} is where Emacs commands read complicated arguments, "
 "such as file names, buffer names, Emacs command names, or Lisp expressions.  "
 "We call it the ``minibuffer'' because it's a special-purpose buffer with a "
 "small amount of screen space.  You can use the usual Emacs editing commands "
 "in the minibuffer to edit the argument text."
-msgstr "@dfn{ミニバッファー(minibuffer)}とは、Emacsのコマンドがファイル名、バッファー名、Emacsコマンド名、Lisp式といった、複雑な引数を読み取るための場所です。なぜ``ミニバッファー''と呼ぶかというと、それがスクリーン上の小領域を占める、特別な目的のためのバッファーだからです。ミニバッファーで引数テキストを編集するために、通常のEmacs編集コマンドを使うことができます。"
+msgstr ""
+"@dfn{ミニバッファー(minibuffer)}とは、Emacsのコマンドがファイル名、バッファー"
+"名、Emacsコマンド名、Lisp式といった、複雑な引数を読み取るための場所です。なぜ"
+"``ミニバッファー''と呼ぶかというと、それがスクリーン上の小領域を占める、特別"
+"な目的のためのバッファーだからです。ミニバッファーで引数テキストを編集するた"
+"めに、通常のEmacs編集コマンドを使うことができます。"
 
 #. type: node
-#: mini.texi.orig:25 mini.texi.orig:27
+#: original_texis/mini.texi:25 original_texis/mini.texi:27
 #, no-wrap
 msgid "Basic Minibuffer"
 msgstr "Basic Minibuffer"
 
 #. type: menuentry
-#: mini.texi.orig:25
+#: original_texis/mini.texi:25
 msgid "Basic usage of the minibuffer."
 msgstr "ミニバッファーの基本的な使い方。"
 
 #. type: node
-#: mini.texi.orig:25 mini.texi.orig:71
+#: original_texis/mini.texi:25 original_texis/mini.texi:71
 #, no-wrap
 msgid "Minibuffer File"
 msgstr "Minibuffer File"
 
 #. type: menuentry
-#: mini.texi.orig:25
+#: original_texis/mini.texi:25
 msgid "Entering file names with the minibuffer."
 msgstr "ミニバッファーでファイル名を入力する。"
 
 #. type: node
-#: mini.texi.orig:25 mini.texi.orig:151
+#: original_texis/mini.texi:25 original_texis/mini.texi:151
 #, no-wrap
 msgid "Minibuffer Edit"
 msgstr "Minibuffer Edit"
 
 #. type: menuentry
-#: mini.texi.orig:25
+#: original_texis/mini.texi:25
 msgid "How to edit in the minibuffer."
 msgstr "ミニバッファーで編集する方法。"
 
 #. type: section
-#: mini.texi.orig:25 mini.texi.orig:225 mini.texi.orig:226
+#: original_texis/mini.texi:25 original_texis/mini.texi:225
+#: original_texis/mini.texi:226
 #, no-wrap
 msgid "Completion"
 msgstr "Completion"
 
 #. type: menuentry
-#: mini.texi.orig:25
+#: original_texis/mini.texi:25
 msgid "An abbreviation facility for minibuffer input."
 msgstr "ミニバッファーでの入力のための略語機能。"
 
 #. type: section
-#: mini.texi.orig:25 mini.texi.orig:578 mini.texi.orig:579
+#: original_texis/mini.texi:25 original_texis/mini.texi:578
+#: original_texis/mini.texi:579
 #, no-wrap
 msgid "Minibuffer History"
 msgstr "Minibuffer History"
 
 #. type: menuentry
-#: mini.texi.orig:25
+#: original_texis/mini.texi:25
 msgid "Reusing recent minibuffer arguments."
 msgstr "最近のミニバッファー引数の再使用。"
 
 #. type: node
-#: mini.texi.orig:25 mini.texi.orig:668
+#: original_texis/mini.texi:25 original_texis/mini.texi:668
 #, no-wrap
 msgid "Repetition"
 msgstr "Repetition"
 
 #. type: menuentry
-#: mini.texi.orig:25
+#: original_texis/mini.texi:25
 msgid "Re-executing commands that used the minibuffer."
 msgstr "ミニバッファーを使ったコマンドの再実行。"
 
 #. type: node
-#: mini.texi.orig:25 mini.texi.orig:726
+#: original_texis/mini.texi:25 original_texis/mini.texi:726
 #, no-wrap
 msgid "Passwords"
 msgstr "Passwords"
 
 #. type: menuentry
-#: mini.texi.orig:25
+#: original_texis/mini.texi:25
 msgid "Entering passwords in the echo area."
 msgstr "エコーエリアでパスワードを入力する。"
 
 #. type: section
-#: mini.texi.orig:25 mini.texi.orig:754 mini.texi.orig:755
+#: original_texis/mini.texi:25 original_texis/mini.texi:754
+#: original_texis/mini.texi:755
 #, no-wrap
 msgid "Yes or No Prompts"
 msgstr "Yes or No Prompts"
 
 #. type: menuentry
-#: mini.texi.orig:25
+#: original_texis/mini.texi:25
 msgid "Replying yes or no in the echo area."
 msgstr "エコーエリアでyes/noにこたえる。"
 
 #. type: section
-#: mini.texi.orig:28
+#: original_texis/mini.texi:28
 #, no-wrap
 msgid "Using the Minibuffer"
 msgstr "Using the Minibuffer"
 
 #. type: cindex
-#: mini.texi.orig:30
+#: original_texis/mini.texi:30
 #, no-wrap
 msgid "prompt"
 msgstr "prompt"
 
 #. type: Plain text
-#: mini.texi.orig:36
+#: original_texis/mini.texi:36
 msgid ""
 "When the minibuffer is in use, it appears in the echo area, with a cursor.  "
 "The minibuffer starts with a @dfn{prompt}, usually ending with a colon.  The "
 "prompt states what kind of input is expected, and how it will be used.  The "
 "prompt is highlighted using the @code{minibuffer-prompt} face "
 "(@pxref{Faces})."
-msgstr "ミニバッファーを使用中、ミニバッファーはエコーエリアにカーソルとともに表示されます。ミニバッファーは通常、コロンが最後についた@dfn{プロンプト(prompt)}から開始されます。プロンプトはどのような入力が期待されるか、そしてそれがどのように使われるのかを示します。プロンプトは、フェイス@code{minibuffer-prompt}を使ってハイライトされます。"
+msgstr ""
+"ミニバッファーを使用中、ミニバッファーはエコーエリアにカーソルとともに表示さ"
+"れます。ミニバッファーは通常、コロンが最後についた@dfn{プロンプト(prompt)}か"
+"ら開始されます。プロンプトはどのような入力が期待されるか、そしてそれがどのよ"
+"うに使われるのかを示します。プロンプトは、フェイス@code{minibuffer-prompt}を"
+"使ってハイライトされます。"
 
 #. type: Plain text
-#: mini.texi.orig:41
+#: original_texis/mini.texi:41
 msgid ""
 "The simplest way to enter a minibuffer argument is to type the text, then "
 "@key{RET} to submit the argument and exit the minibuffer.  Alternatively, "
 "you can type @kbd{C-g} to exit the minibuffer by canceling the command "
 "asking for the argument (@pxref{Quitting})."
-msgstr "ミニバッファーで入力するもっとも簡単な方法は、テキストを入力してから@key{RET}で引数入力を完了してミニバッファーを終了する方法です。かわりに@kbd{C-g}を入力して引数を求めているコマンドをキャンセルし、ミニバッファーを終了することもできます(@ref{Quitting}を参照してください)。"
+msgstr ""
+"ミニバッファーで入力するもっとも簡単な方法は、テキストを入力してから@key{RET}"
+"で引数入力を完了してミニバッファーを終了する方法です。かわりに@kbd{C-g}を入力"
+"して引数を求めているコマンドをキャンセルし、ミニバッファーを終了することもで"
+"きます(@ref{Quitting}を参照してください)。"
 
 #. type: cindex
-#: mini.texi.orig:42
+#: original_texis/mini.texi:42
 #, no-wrap
 msgid "default argument"
 msgstr "default argument"
 
 #. type: Plain text
-#: mini.texi.orig:48
+#: original_texis/mini.texi:48
 msgid ""
 "Sometimes, the prompt shows a @dfn{default argument}, inside parentheses "
 "before the colon.  This default will be used as the argument if you just "
 "type @key{RET}.  For example, commands that read buffer names usually show a "
 "buffer name as the default; you can type @key{RET} to operate on that "
 "default buffer."
-msgstr "コロンの前のカッコ内に@dfn{デフォルト引数(default argument)}を表示するプロンプトもあります。このデフォルト値は、@key{RET}だけを入力したときに、引数として使用されます。たとえばバッファー名を読み取るコマンドは、通常デフォルト値としてバッファー名を表示します。@key{RET}を入力することでデフォルトのバッファーにたいして処理を行うことができます。"
+msgstr ""
+"コロンの前のカッコ内に@dfn{デフォルト引数(default argument)}を表示するプロン"
+"プトもあります。このデフォルト値は、@key{RET}だけを入力したときに、引数として"
+"使用されます。たとえばバッファー名を読み取るコマンドは、通常デフォルト値とし"
+"てバッファー名を表示します。@key{RET}を入力することでデフォルトのバッファーに"
+"たいして処理を行うことができます。"
 
 #. type: cindex
-#: mini.texi.orig:49
+#: original_texis/mini.texi:49
 #, no-wrap
 msgid "Minibuffer Electric Default mode"
 msgstr "Minibuffer Electric Default mode"
 
 #. type: cindex
-#: mini.texi.orig:50
+#: original_texis/mini.texi:50
 #, no-wrap
 msgid "mode, Minibuffer Electric Default"
 msgstr "mode, Minibuffer Electric Default"
 
 #. type: findex
-#: mini.texi.orig:51
+#: original_texis/mini.texi:51
 #, no-wrap
 msgid "minibuffer-electric-default-mode"
 msgstr "minibuffer-electric-default-mode"
 
 #. type: vindex
-#: mini.texi.orig:52
+#: original_texis/mini.texi:52
 #, no-wrap
 msgid "minibuffer-eldef-shorten-default"
 msgstr "minibuffer-eldef-shorten-default"
 
 #. type: Plain text
-#: mini.texi.orig:63
+#: original_texis/mini.texi:63
 msgid ""
 "If you enable Minibuffer Electric Default mode, a global minor mode, Emacs "
 "hides the default argument as soon as you modify the contents of the "
@@ -214,105 +236,135 @@ msgid ""
 "displayed as @samp{[@var{default}]} instead of @samp{(default "
 "@var{default})}, saving some screen space.  To enable this minor mode, type "
 "@kbd{M-x minibuffer-electric-default-mode}."
-msgstr "Minibuffer Electric Defaultモードというグローバルマイナーモードを有効にしている場合、ミニバッファーの内容の変更を開始すると、Emacsはデフォルト引数を非表示にします。ミニバッファーのテキストを元に戻せば、ふたたびプロンプトにデフォルト値が表示されます。さらに変数@code{minibuffer-eldef-shorten-default}を非@code{nil}値に変更すると、スクリーンのスペースを節約するために、@samp{(default @var{default})}のかわりに@samp{[@var{default}]}の形式でデフォルト値を表示します。このマイナーモードを有効にするには、@kbd{M-x minibuffer-electric-default-mode}とタイプしてください。"
+msgstr ""
+"Minibuffer Electric Defaultモードというグローバルマイナーモードを有効にしてい"
+"る場合、ミニバッファーの内容の変更を開始すると、Emacsはデフォルト引数を非表示"
+"にします。ミニバッファーのテキストを元に戻せば、ふたたびプロンプトにデフォル"
+"ト値が表示されます。さらに変数@code{minibuffer-eldef-shorten-default}を非"
+"@code{nil}値に変更すると、スクリーンのスペースを節約するために、"
+"@samp{(default @var{default})}のかわりに@samp{[@var{default}]}の形式でデフォ"
+"ルト値を表示します。このマイナーモードを有効にするには、@kbd{M-x minibuffer-"
+"electric-default-mode}とタイプしてください。"
 
 #. type: Plain text
-#: mini.texi.orig:70
+#: original_texis/mini.texi:70
 msgid ""
 "Since the minibuffer appears in the echo area, it can conflict with other "
 "uses of the echo area.  If an error message or an informative message is "
 "emitted while the minibuffer is active, the message hides the minibuffer for "
 "a few seconds, or until you type something; then the minibuffer comes back.  "
 "While the minibuffer is in use, keystrokes do not echo."
-msgstr "エコーエリアにミニバッファーが表示されると、他のエコーエリアの使用と競合するかもしれません。ミニバッファーがアクティブなとき、エラーメッセージや情報メッセージは一時的な表示となります。メッセージは数秒ミニバッファーを隠すように表示されるか、なにかタイプするまでのあいだ表示され、その後ミニバッファーに戻ります。ミニバッファーの使用中、キーストロークはエコーされません。"
+msgstr ""
+"エコーエリアにミニバッファーが表示されると、他のエコーエリアの使用と競合する"
+"かもしれません。ミニバッファーがアクティブなとき、エラーメッセージや情報メッ"
+"セージは一時的な表示となります。メッセージは数秒ミニバッファーを隠すように表"
+"示されるか、なにかタイプするまでのあいだ表示され、その後ミニバッファーに戻り"
+"ます。ミニバッファーの使用中、キーストロークはエコーされません。"
 
 #. type: section
-#: mini.texi.orig:72
+#: original_texis/mini.texi:72
 #, no-wrap
 msgid "Minibuffers for File Names"
 msgstr "Minibuffers for File Names"
 
 #. type: cindex
-#: mini.texi.orig:74
+#: original_texis/mini.texi:74
 #, no-wrap
 msgid "default directory"
 msgstr "default directory"
 
 #. type: Plain text
-#: mini.texi.orig:80
+#: original_texis/mini.texi:80
 msgid ""
 "Commands such as @kbd{C-x C-f} (@code{find-file}) use the minibuffer to read "
 "a file name argument (@pxref{Basic Files}).  When the minibuffer is used to "
 "read a file name, it typically starts out with some initial text ending in a "
 "slash.  This is the @dfn{default directory}.  For example, it may start out "
 "like this:"
-msgstr "@kbd{C-x C-f} (@code{find-file})のようなコマンドは、ミニバッファーを使ってファイル名引数を読み取ります。ファイル名を読み取るためにミニバッファーを使用しているとき、通常は最後にスラッシュがついたテキストで開始されています。これは@dfn{デフォルトディレクトリー(default directory)}です。たとえば以下のように開始されていたとします:"
+msgstr ""
+"@kbd{C-x C-f} (@code{find-file})のようなコマンドは、ミニバッファーを使って"
+"ファイル名引数を読み取ります。ファイル名を読み取るためにミニバッファーを使用"
+"しているとき、通常は最後にスラッシュがついたテキストで開始されています。これ"
+"は@dfn{デフォルトディレクトリー(default directory)}です。たとえば以下のように"
+"開始されていたとします:"
 
 #. type: example
-#: mini.texi.orig:83
+#: original_texis/mini.texi:83
 #, no-wrap
 msgid "Find file: /u2/emacs/src/\n"
 msgstr "Find file: /u2/emacs/src/\n"
 
 #. type: Plain text
-#: mini.texi.orig:90
+#: original_texis/mini.texi:90
 msgid ""
 "Here, @samp{Find file:@: } is the prompt and @samp{/u2/emacs/src/} is the "
 "default directory.  If you now type @kbd{buffer.c} as input, that specifies "
 "the file @file{/u2/emacs/src/buffer.c}.  @xref{File Names}, for information "
 "about the default directory."
-msgstr "ここで@samp{Find file:@: }はプロンプト、@samp{/u2/emacs/src/}はデフォルトディレクトリーです。ここで@kbd{buffer.c}を入力すると@file{/u2/emacs/src/buffer.c}を指定したことになります。デフォルトディレクトリーについての情報は、@ref{File Names}を参照してください。"
+msgstr ""
+"ここで@samp{Find file:@: }はプロンプト、@samp{/u2/emacs/src/}はデフォルトディ"
+"レクトリーです。ここで@kbd{buffer.c}を入力すると@file{/u2/emacs/src/buffer.c}"
+"を指定したことになります。デフォルトディレクトリーについての情報は、"
+"@ref{File Names}を参照してください。"
 
 #. type: Plain text
-#: mini.texi.orig:95
+#: original_texis/mini.texi:95
 msgid ""
 "You can specify the parent directory with @file{..}: @file{/a/b/../foo.el} "
 "is equivalent to @file{/a/foo.el}.  Alternatively, you can use @kbd{M-"
 "@key{DEL}} to kill directory names backwards (@pxref{Words})."
-msgstr "@file{..}で親ディレクトリーを指定できます。つまり@file{/a/b/../foo.el}は@file{/a/foo.el}と同じです。@kbd{M-@key{DEL}}を使えば、ディレクトリー名を後方にkillできます(@ref{Words}を参照してください)。"
+msgstr ""
+"@file{..}で親ディレクトリーを指定できます。つまり@file{/a/b/../foo.el}は"
+"@file{/a/foo.el}と同じです。@kbd{M-@key{DEL}}を使えば、ディレクトリー名を後方"
+"にkillできます(@ref{Words}を参照してください)。"
 
 #. type: Plain text
-#: mini.texi.orig:101
+#: original_texis/mini.texi:101
 msgid ""
 "To specify a file in a completely different directory, you can kill the "
 "entire default with @kbd{C-a C-k} (@pxref{Minibuffer Edit}).  Alternatively, "
 "you can ignore the default, and enter an absolute file name starting with a "
 "slash or a tilde after the default directory.  For example, you can specify "
 "@file{/etc/termcap} as follows:"
-msgstr "デフォルトディレクトリーとは無関係のファイルを指定する場合、デフォルト値全部を@kbd{C-a C-k}でkillできます。かわりにデフォルト値を無視することもできます。これはスラッシュで始まる絶対パスのファイル名か、チルダで始まるファイル名をデフォルトディレクトリーに続けて入力します。たとえば以下のようにして@file{/etc/termcap}を指定できます:"
+msgstr ""
+"デフォルトディレクトリーとは無関係のファイルを指定する場合、デフォルト値全部"
+"を@kbd{C-a C-k}でkillできます。かわりにデフォルト値を無視することもできます。"
+"これはスラッシュで始まる絶対パスのファイル名か、チルダで始まるファイル名をデ"
+"フォルトディレクトリーに続けて入力します。たとえば以下のようにして@file{/etc/"
+"termcap}を指定できます:"
 
 #. type: example
-#: mini.texi.orig:104
+#: original_texis/mini.texi:104
 #, no-wrap
 msgid "Find file: /u2/emacs/src//etc/termcap\n"
 msgstr "Find file: /u2/emacs/src//etc/termcap\n"
 
 #. type: cindex
-#: mini.texi.orig:107
+#: original_texis/mini.texi:107
 #, no-wrap
 msgid "// in file name"
 msgstr "// in file name"
 
 #. type: cindex
-#: mini.texi.orig:108
+#: original_texis/mini.texi:108
 #, no-wrap
 msgid "double slash in file name"
 msgstr "double slash in file name"
 
 #. type: cindex
-#: mini.texi.orig:109
+#: original_texis/mini.texi:109
 #, no-wrap
 msgid "slashes repeated in file name"
 msgstr "slashes repeated in file name"
 
 #. type: findex
-#: mini.texi.orig:110
+#: original_texis/mini.texi:110
 #, no-wrap
 msgid "file-name-shadow-mode"
 msgstr "file-name-shadow-mode"
 
 #. type: Plain text
-#: mini.texi.orig:117
+#: original_texis/mini.texi:117
 msgid ""
 "Emacs interprets a double slash as ``ignore everything before the second "
 "slash in the pair''.  In the example above, @file{/u2/emacs/src/} is "
@@ -320,16 +372,21 @@ msgid ""
 "part of the file name is dimmed if the terminal allows it.  (To disable this "
 "dimming, turn off File Name Shadow mode with the command @kbd{M-x file-name-"
 "shadow-mode}.)"
-msgstr "Emacsはダブルスラッシュを、``2番目のスラッシュより前のすべてを無視する''と解釈します。上の例では@file{/u2/emacs/src/}は無視されるので、引数は@file{/etc/termcap}となります。無視される部分のファイル名は、端末に可能なら目立たないような表示になります(これを無効にするには、コマンド@kbd{M-x file-name-shadow-mode}でFile Name Shadowモードをオフにしてください)。"
+msgstr ""
+"Emacsはダブルスラッシュを、``2番目のスラッシュより前のすべてを無視する''と解"
+"釈します。上の例では@file{/u2/emacs/src/}は無視されるので、引数は@file{/etc/"
+"termcap}となります。無視される部分のファイル名は、端末に可能なら目立たないよ"
+"うな表示になります(これを無効にするには、コマンド@kbd{M-x file-name-shadow-"
+"mode}でFile Name Shadowモードをオフにしてください)。"
 
 #. type: cindex
-#: mini.texi.orig:118
+#: original_texis/mini.texi:118
 #, no-wrap
 msgid "home directory shorthand"
 msgstr "home directory shorthand"
 
 #. type: Plain text
-#: mini.texi.orig:126
+#: original_texis/mini.texi:126
 msgid ""
 "Emacs interprets @file{~/} as your home directory.  Thus, @file{~/foo/bar."
 "txt} specifies a file named @file{bar.txt}, inside a directory named "
@@ -338,126 +395,160 @@ msgid ""
 "is @var{user-id}.  Any leading directory name in front of the @file{~} is "
 "ignored: thus, @file{/u2/emacs/~/foo/bar.txt} is equivalent to @file{~/foo/"
 "bar.txt}."
-msgstr "Emacsは@file{~/}をホームディレクトリーと解釈します。@file{~/foo/bar.txt}はホームディレクトリーにある、@file{foo}というディレクトリーの、@file{bar.txt}という名前のファイルを指定します。さらに@file{~@var{user-id}/}はログイン名が@var{user-id}というユーザーの、ホームディレクトリーを意味します。@file{~}の前のディレクトリー名は無視されるので、@file{/u2/emacs/~/foo/bar.txt}は@file{~/foo/bar.txt}と同じです。"
+msgstr ""
+"Emacsは@file{~/}をホームディレクトリーと解釈します。@file{~/foo/bar.txt}は"
+"ホームディレクトリーにある、@file{foo}というディレクトリーの、@file{bar.txt}"
+"という名前のファイルを指定します。さらに@file{~@var{user-id}/}はログイン名が"
+"@var{user-id}というユーザーの、ホームディレクトリーを意味します。@file{~}の前"
+"のディレクトリー名は無視されるので、@file{/u2/emacs/~/foo/bar.txt}は@file{~/"
+"foo/bar.txt}と同じです。"
 
 #. type: Plain text
-#: mini.texi.orig:130
+#: original_texis/mini.texi:130
 msgid ""
 "On MS-Windows and MS-DOS systems, where a user doesn't always have a home "
 "directory, Emacs uses several alternatives.  For MS-Windows, see "
 "@ref{Windows HOME}; for MS-DOS, see"
-msgstr "MS-WindowsとMS-DOSでは、ユーザーは常にホームディレクトリーを持つとは限らないので、Emacsはいくつかの代替ディレクトリーを使います。MS-Windowsについては@ref{Windows HOME}、MS-DOSについては"
+msgstr ""
+"MS-WindowsとMS-DOSでは、ユーザーは常にホームディレクトリーを持つとは限らない"
+"ので、Emacsはいくつかの代替ディレクトリーを使います。MS-Windowsについては"
+"@ref{Windows HOME}、MS-DOSについては"
 
 #. type: ifnottex
-#: mini.texi.orig:132
+#: original_texis/mini.texi:132
 msgid "@ref{MS-DOS File Names}."
 msgstr "@ref{MS-DOS File Names}を参照してください。"
 
 #. type: iftex
-#: mini.texi.orig:136
+#: original_texis/mini.texi:136
 msgid ""
 "@ref{MS-DOS File Names, HOME on MS-DOS,, emacs, the digital version of the "
 "Emacs Manual}."
-msgstr "@ref{MS-DOS File Names, HOME on MS-DOS,, emacs, the digital version of the Emacs Manual}を参照してください。"
+msgstr ""
+"@ref{MS-DOS File Names, HOME on MS-DOS,, emacs, the digital version of the "
+"Emacs Manual}を参照してください。"
 
 #. type: Plain text
-#: mini.texi.orig:140
+#: original_texis/mini.texi:140
 msgid ""
 "On these systems, the @file{~@var{user-id}/} construct is supported only for "
 "the current user, i.e., only if @var{user-id} is the current user's login "
 "name."
-msgstr "これらのシステムでは@file{~@var{user-id}/}は現在のユーザーの場合だけ、つまり@var{user-id}が現在のユーザーのログイン名のときだけがサポートされます。"
+msgstr ""
+"これらのシステムでは@file{~@var{user-id}/}は現在のユーザーの場合だけ、つまり"
+"@var{user-id}が現在のユーザーのログイン名のときだけがサポートされます。"
 
 #. type: vindex
-#: mini.texi.orig:141
+#: original_texis/mini.texi:141
 #, no-wrap
 msgid "insert-default-directory"
 msgstr "insert-default-directory"
 
 #. type: Plain text
-#: mini.texi.orig:147
+#: original_texis/mini.texi:147
 msgid ""
 "To prevent Emacs from inserting the default directory when reading file "
 "names, change the variable @code{insert-default-directory} to @code{nil}.  "
 "In that case, the minibuffer starts out empty.  Nonetheless, relative file "
 "name arguments are still interpreted based on the same default directory."
-msgstr "Emacsがファイル名を読みとるとき、デフォルトディレクトリーを挿入しないようにするには、変数@code{insert-default-directory}を@code{nil}に変更します。この場合、ミニバッファーは空で開始されます。それでも相対パスでのファイル名引数は、同じデフォルトディレクトリーにもとづいて解釈されます。"
+msgstr ""
+"Emacsがファイル名を読みとるとき、デフォルトディレクトリーを挿入しないようにす"
+"るには、変数@code{insert-default-directory}を@code{nil}に変更します。この場"
+"合、ミニバッファーは空で開始されます。それでも相対パスでのファイル名引数は、"
+"同じデフォルトディレクトリーにもとづいて解釈されます。"
 
 #. type: Plain text
-#: mini.texi.orig:150
+#: original_texis/mini.texi:150
 msgid ""
 "You can also enter remote file names in the minibuffer.  @xref{Remote Files}."
-msgstr "ミニバッファーにリモートファイル名を入力することもできます。 @ref{Remote Files}を参照してください。"
+msgstr ""
+"ミニバッファーにリモートファイル名を入力することもできます。 @ref{Remote "
+"Files}を参照してください。"
 
 #. type: section
-#: mini.texi.orig:152
+#: original_texis/mini.texi:152
 #, no-wrap
 msgid "Editing in the Minibuffer"
 msgstr "Editing in the Minibuffer"
 
 #. type: Plain text
-#: mini.texi.orig:157
+#: original_texis/mini.texi:157
 msgid ""
 "The minibuffer is an Emacs buffer, albeit a peculiar one, and the usual "
 "Emacs commands are available for editing the argument text.  (The prompt, "
 "however, is @dfn{read-only}, and cannot be changed.)"
-msgstr "ミニバッファーは一風変わっていますがEmacsのバッファーなので、引数テキストを編集するための、通常のEmacsコマンドが利用可能です(しかしプロンプトは@dfn{読み取り専用(read-only)}なので変更できません)。"
+msgstr ""
+"ミニバッファーは一風変わっていますがEmacsのバッファーなので、引数テキストを編"
+"集するための、通常のEmacsコマンドが利用可能です(しかしプロンプトは@dfn{読み取"
+"り専用(read-only)}なので変更できません)。"
 
 #. type: Plain text
-#: mini.texi.orig:163
+#: original_texis/mini.texi:163
 msgid ""
 "Since @key{RET} in the minibuffer submits the argument, you can't use it to "
 "insert a newline.  You can do that with @kbd{C-q C-j}, which inserts a "
 "@kbd{C-j} control character, which is formally equivalent to a newline "
 "character (@pxref{Inserting Text}).  Alternatively, you can use the @kbd{C-"
 "o} (@code{open-line}) command (@pxref{Blank Lines})."
-msgstr "ミニバッファーでの@key{RET}は引数を完了させるので、これを使って改行を挿入することはできません。@kbd{C-q C-j}を使えば制御文字@kbd{C-j}(改行文字と等しい)を挿入できます(@ref{Inserting Text}を参照してください)。かわりに@kbd{C-o} (@code{open-line})を使うこともできます(@ref{Blank Lines}を参照してください)。"
+msgstr ""
+"ミニバッファーでの@key{RET}は引数を完了させるので、これを使って改行を挿入する"
+"ことはできません。@kbd{C-q C-j}を使えば制御文字@kbd{C-j}(改行文字と等しい)を"
+"挿入できます(@ref{Inserting Text}を参照してください)。かわりに@kbd{C-o} "
+"(@code{open-line})を使うこともできます(@ref{Blank Lines}を参照してください)。"
 
 #. type: Plain text
-#: mini.texi.orig:169
+#: original_texis/mini.texi:169
 msgid ""
 "Inside a minibuffer, the keys @key{TAB}, @key{SPC}, and @kbd{?} are often "
 "bound to @dfn{completion commands}, which allow you to easily fill in the "
 "desired text without typing all of it.  @xref{Completion}.  As with "
 "@key{RET}, you can use @kbd{C-q} to insert a @key{TAB}, @key{SPC}, or "
 "@samp{?} character."
-msgstr "ミニバッファーの中では@key{TAB}、@key{SPC}、@kbd{?}は@dfn{補完コマンド(completion commands)}にバインドされている場合があります。これによりテキスト全部を入力せずに、入力したいテキストを簡単に入力できます。@ref{Completion}を参照してください。@key{RET}のときと同様、@kbd{C-q}を使って@key{TAB}、@key{SPC}、@samp{?}のような文字を入力できます。"
+msgstr ""
+"ミニバッファーの中では@key{TAB}、@key{SPC}、@kbd{?}は@dfn{補完コマンド"
+"(completion commands)}にバインドされている場合があります。これによりテキスト"
+"全部を入力せずに、入力したいテキストを簡単に入力できます。@ref{Completion}を"
+"参照してください。@key{RET}のときと同様、@kbd{C-q}を使って@key{TAB}、"
+"@key{SPC}、@samp{?}のような文字を入力できます。"
 
 #. type: Plain text
-#: mini.texi.orig:174
+#: original_texis/mini.texi:174
 msgid ""
 "For convenience, @kbd{C-a} (@code{move-beginning-of-line}) in a minibuffer "
 "moves point to the beginning of the argument text, not the beginning of the "
 "prompt.  For example, this allows you to erase the entire argument with "
 "@kbd{C-a C-k}."
-msgstr "便宜上ミニバッファーでの@kbd{C-a} (@code{move-beginning-of-line})は、プロンプトの先頭ではなく引数テキストの先頭にポイントを移動します。これにより、たとえば@kbd{C-a C-k}で引数全体をkillことができます。"
+msgstr ""
+"便宜上ミニバッファーでの@kbd{C-a} (@code{move-beginning-of-line})は、プロンプ"
+"トの先頭ではなく引数テキストの先頭にポイントを移動します。これにより、たとえ"
+"ば@kbd{C-a C-k}で引数全体をkillことができます。"
 
 #. type: cindex
-#: mini.texi.orig:175
+#: original_texis/mini.texi:175
 #, no-wrap
 msgid "height of minibuffer"
 msgstr "height of minibuffer"
 
 #. type: cindex
-#: mini.texi.orig:176
+#: original_texis/mini.texi:176
 #, no-wrap
 msgid "size of minibuffer"
 msgstr "size of minibuffer"
 
 #. type: cindex
-#: mini.texi.orig:177
+#: original_texis/mini.texi:177
 #, no-wrap
 msgid "growing minibuffer"
 msgstr "growing minibuffer"
 
 #. type: cindex
-#: mini.texi.orig:178
+#: original_texis/mini.texi:178
 #, no-wrap
 msgid "resizing minibuffer"
 msgstr "resizing minibuffer"
 
 #. type: Plain text
-#: mini.texi.orig:186
+#: original_texis/mini.texi:186
 msgid ""
 "When the minibuffer is active, the echo area is treated much like an "
 "ordinary Emacs window.  For instance, you can switch to another window (with "
@@ -466,16 +557,23 @@ msgid ""
 "the minibuffer window, and yank the text into the argument.  There are some "
 "restrictions on the minibuffer window, however: for instance, you cannot "
 "split it.  @xref{Windows}."
-msgstr "ミニバッファーがアクティブのとき、エコーエリアは通常のEmacsウィンドウのように扱われます。たとえば(@kbd{C-x o}で)他のウィンドウに切り替えて、そこでテキストを編集して、またミニバッファーのウィンドウにもどって引数の入力を完了できます。ほかのウィンドウでテキストをkillしてからミニバッファーのウィンドウにもどり、引数にテキストをyankすることさえ可能です。しかしミニバッファーのウィンドウは分割(split)できないなどの制限もあります。@ref{Windows}を参照してください。"
+msgstr ""
+"ミニバッファーがアクティブのとき、エコーエリアは通常のEmacsウィンドウのように"
+"扱われます。たとえば(@kbd{C-x o}で)他のウィンドウに切り替えて、そこでテキスト"
+"を編集して、またミニバッファーのウィンドウにもどって引数の入力を完了できま"
+"す。ほかのウィンドウでテキストをkillしてからミニバッファーのウィンドウにもど"
+"り、引数にテキストをyankすることさえ可能です。しかしミニバッファーのウィンド"
+"ウは分割(split)できないなどの制限もあります。@ref{Windows}を参照してくださ"
+"い。"
 
 #. type: vindex
-#: mini.texi.orig:187
+#: original_texis/mini.texi:187
 #, no-wrap
 msgid "resize-mini-windows"
 msgstr "resize-mini-windows"
 
 #. type: Plain text
-#: mini.texi.orig:199
+#: original_texis/mini.texi:199
 msgid ""
 "Normally, the minibuffer window occupies a single screen line.  However, if "
 "you add two or more lines' worth of text into the minibuffer, it expands "
@@ -487,26 +585,40 @@ msgid ""
 "screen line.  If the value is @code{nil}, the minibuffer window never "
 "changes size automatically, but you can use the usual window-resizing "
 "commands on it (@pxref{Windows})."
-msgstr "通常ミニバッファーのウィンドウは、スクリーン行で1行を占めます。しかし2行以上のテキストをミニバッファーに追加すると、そのテキストに対応して自動的に拡張されます。変数@code{resize-mini-windows}は、ミニバッファーのサイズ調整を制御します。デフォルト値は@code{grow-only}で、これは今説明したとおりの振る舞いを意味します。もし値が@code{t}の場合、ミニバッファーから行を削除すると。ミニバッファーのウィンドウは自動的に縮小されて、スクリーン行で1行まで小さくなります。値が@code{nil}の場合、ミニバッファーのウィンドウは自動的にサイズを変更しません。しかし通常のウィンドウのサイズ調整コマンドは使用できます(@ref{Windows}を参照してください)。"
+msgstr ""
+"通常ミニバッファーのウィンドウは、スクリーン行で1行を占めます。しかし2行以上"
+"のテキストをミニバッファーに追加すると、そのテキストに対応して自動的に拡張さ"
+"れます。変数@code{resize-mini-windows}は、ミニバッファーのサイズ調整を制御し"
+"ます。デフォルト値は@code{grow-only}で、これは今説明したとおりの振る舞いを意"
+"味します。もし値が@code{t}の場合、ミニバッファーから行を削除すると。ミニバッ"
+"ファーのウィンドウは自動的に縮小されて、スクリーン行で1行まで小さくなります。"
+"値が@code{nil}の場合、ミニバッファーのウィンドウは自動的にサイズを変更しませ"
+"ん。しかし通常のウィンドウのサイズ調整コマンドは使用できます(@ref{Windows}を"
+"参照してください)。"
 
 #. type: vindex
-#: mini.texi.orig:200
+#: original_texis/mini.texi:200
 #, no-wrap
 msgid "max-mini-window-height"
 msgstr "max-mini-window-height"
 
 #. type: Plain text
-#: mini.texi.orig:206
+#: original_texis/mini.texi:206
 msgid ""
 "The variable @code{max-mini-window-height} controls the maximum height for "
 "resizing the minibuffer window.  A floating-point number specifies a "
 "fraction of the frame's height; an integer specifies the maximum number of "
 "lines; @code{nil} means do not resize the minibuffer window automatically.  "
 "The default value is 0.25."
-msgstr "変数@code{max-mini-window-height}は、ミニバッファーのウィンドウのサイズ変更するときの、最大高さを制御します。浮動少数を指定した場合は、フレームの高さにたいする比になります。整数を指定した場合は最大行数になります。@code{nil}を指定すると、ミニバッファーのウィンドウの自動サイズ調整は行われません。デフォルト値は0.25です。"
+msgstr ""
+"変数@code{max-mini-window-height}は、ミニバッファーのウィンドウのサイズ変更す"
+"るときの、最大高さを制御します。浮動少数を指定した場合は、フレームの高さにた"
+"いする比になります。整数を指定した場合は最大行数になります。@code{nil}を指定"
+"すると、ミニバッファーのウィンドウの自動サイズ調整は行われません。デフォルト"
+"値は0.25です。"
 
 #. type: Plain text
-#: mini.texi.orig:213
+#: original_texis/mini.texi:213
 msgid ""
 "The @kbd{C-M-v} command in the minibuffer scrolls the help text from "
 "commands that display help text of any sort in another window.  You can also "
@@ -514,59 +626,75 @@ msgid ""
 "equivalently, @kbd{M-@key{PageUp}} and @kbd{M-@key{PageDown}}).  This is "
 "especially useful with long lists of possible completions.  @xref{Other "
 "Window}."
-msgstr "ミニバッファーでの@kbd{C-M-v}コマンドは、他のウィンドウに表示されたコマンドのヘルプテキストをスクロールします。@kbd{M-@key{prior}}や@kbd{M-@key{next}}(または@kbd{M-@key{PageUp}}や@kbd{M-@key{PageDown}})でも、ヘルプテキストをスクロールできます。これは長い補完候補のリストを選ぶときなどに便利です。@ref{Other Window}を参照してください。"
+msgstr ""
+"ミニバッファーでの@kbd{C-M-v}コマンドは、他のウィンドウに表示されたコマンドの"
+"ヘルプテキストをスクロールします。@kbd{M-@key{prior}}や@kbd{M-@key{next}}(ま"
+"たは@kbd{M-@key{PageUp}}や@kbd{M-@key{PageDown}})でも、ヘルプテキストをスク"
+"ロールできます。これは長い補完候補のリストを選ぶときなどに便利です。"
+"@ref{Other Window}を参照してください。"
 
 #. type: vindex
-#: mini.texi.orig:214
+#: original_texis/mini.texi:214
 #, no-wrap
 msgid "enable-recursive-minibuffers"
 msgstr "enable-recursive-minibuffers"
 
 #. type: Plain text
-#: mini.texi.orig:218
+#: original_texis/mini.texi:218
 msgid ""
 "Emacs normally disallows most commands that use the minibuffer while the "
 "minibuffer is active.  To allow such commands in the minibuffer, set the "
 "variable @code{enable-recursive-minibuffers} to @code{t}."
-msgstr "通常Emacsはミニバッファーがアクティブのときは、ミニバッファーにたいして多くのコマンドを使用できないようにしています。ミニバッファーでこれらのコマンドを使えるようにするには、変数@code{enable-recursive-minibuffers}に@code{t}をセットしてください。"
+msgstr ""
+"通常Emacsはミニバッファーがアクティブのときは、ミニバッファーにたいして多くの"
+"コマンドを使用できないようにしています。ミニバッファーでこれらのコマンドを使"
+"えるようにするには、変数@code{enable-recursive-minibuffers}に@code{t}をセット"
+"してください。"
 
 #. type: findex
-#: mini.texi.orig:219
+#: original_texis/mini.texi:219
 #, no-wrap
 msgid "minibuffer-inactive-mode"
 msgstr "minibuffer-inactive-mode"
 
 #. type: Plain text
-#: mini.texi.orig:224
+#: original_texis/mini.texi:224
 msgid ""
 "When not active, the minibuffer is in @code{minibuffer-inactive-mode}, and "
 "clicking @kbd{Mouse-1} there shows the @file{*Messages*} buffer.  If you use "
 "a dedicated frame for minibuffers, Emacs also recognizes certain keys there, "
 "for example @kbd{n} to make a new frame."
-msgstr "アクティブでないとき、ミニバッファーは@code{minibuffer-inactive-mode}になっており、@kbd{Mouse-1}をクリックすると、@file{*Messages*}バッファーを表示します。ミニバッファー専用のフレームを使用している場合、Emacsはそこでのキー入力も認識します。たとえば@kbd{n}は新しいフレームを作成します。"
+msgstr ""
+"アクティブでないとき、ミニバッファーは@code{minibuffer-inactive-mode}になって"
+"おり、@kbd{Mouse-1}をクリックすると、@file{*Messages*}バッファーを表示しま"
+"す。ミニバッファー専用のフレームを使用している場合、Emacsはそこでのキー入力も"
+"認識します。たとえば@kbd{n}は新しいフレームを作成します。"
 
 #. type: cindex
-#: mini.texi.orig:229
+#: original_texis/mini.texi:229
 #, no-wrap
 msgid "completion"
 msgstr "completion"
 
 #. type: Plain text
-#: mini.texi.orig:234
+#: original_texis/mini.texi:234
 msgid ""
 "You can often use a feature called @dfn{completion} to help enter "
 "arguments.  This means that after you type part of the argument, Emacs can "
 "fill in the rest, or some of it, based on what was typed so far."
-msgstr "引数を入力する助けとなる、@dfn{補完(completion)}という機能が使えるときがあります。これは引数の一部を入力すると、それまでに何を入力したかにもとづいて、Emacsが残りあるいは残りの一部を補完してくれることを意味します。"
+msgstr ""
+"引数を入力する助けとなる、@dfn{補完(completion)}という機能が使えるときがあり"
+"ます。これは引数の一部を入力すると、それまでに何を入力したかにもとづいて、"
+"Emacsが残りあるいは残りの一部を補完してくれることを意味します。"
 
 #. type: cindex
-#: mini.texi.orig:235
+#: original_texis/mini.texi:235
 #, no-wrap
 msgid "completion alternative"
 msgstr "completion alternative"
 
 #. type: Plain text
-#: mini.texi.orig:243
+#: original_texis/mini.texi:243
 msgid ""
 "When completion is available, certain keys (usually @key{TAB}, @key{RET}, "
 "and @key{SPC}) are rebound in the minibuffer to special completion commands "
@@ -574,88 +702,105 @@ msgid ""
 "in the minibuffer, based on a set of @dfn{completion alternatives} provided "
 "by the command that requested the argument.  You can usually type @kbd{?} to "
 "see a list of completion alternatives."
-msgstr "補完が利用可能なとき、特定のキー(通常は@key{TAB}、@key{RET}、@key{SPC})が、ミニバッファーの特別な補完コマンド(@ref{Completion Commands}を参照してください)にリバインドされています。これらのコマンドは、ミニバッファーのテキストを完了させようと試みます。これは引数を要求したコマンドが提供する、@dfn{補完候補(completion alternatives)}にもとづいています。通常@kbd{?}を入力すると、補完候補のリストを見ることができます。"
+msgstr ""
+"補完が利用可能なとき、特定のキー(通常は@key{TAB}、@key{RET}、@key{SPC})が、ミ"
+"ニバッファーの特別な補完コマンド(@ref{Completion Commands}を参照してください)"
+"にリバインドされています。これらのコマンドは、ミニバッファーのテキストを完了"
+"させようと試みます。これは引数を要求したコマンドが提供する、@dfn{補完候補"
+"(completion alternatives)}にもとづいています。通常@kbd{?}を入力すると、補完候"
+"補のリストを見ることができます。"
 
 #. type: Plain text
-#: mini.texi.orig:247
+#: original_texis/mini.texi:247
 msgid ""
 "Although completion is usually done in the minibuffer, the feature is "
 "sometimes available in ordinary buffers too.  @xref{Symbol Completion}."
-msgstr "補完は通常ミニバッファー内で行われますが、通常のバッファーないでもこの機能を利用可能なときがあります。@ref{Symbol Completion}を参照してください。"
+msgstr ""
+"補完は通常ミニバッファー内で行われますが、通常のバッファーないでもこの機能を"
+"利用可能なときがあります。@ref{Symbol Completion}を参照してください。"
 
 #. type: subsection
-#: mini.texi.orig:254 mini.texi.orig:256 mini.texi.orig:257
+#: original_texis/mini.texi:254 original_texis/mini.texi:256
+#: original_texis/mini.texi:257
 #, no-wrap
 msgid "Completion Example"
 msgstr "Completion Example"
 
 #. type: menuentry
-#: mini.texi.orig:254
+#: original_texis/mini.texi:254
 msgid "Examples of using completion."
 msgstr "補完の使い方の例。"
 
 #. type: subsection
-#: mini.texi.orig:254 mini.texi.orig:289 mini.texi.orig:290
+#: original_texis/mini.texi:254 original_texis/mini.texi:289
+#: original_texis/mini.texi:290
 #, no-wrap
 msgid "Completion Commands"
 msgstr "Completion Commands"
 
 #. type: menuentry
-#: mini.texi.orig:254
+#: original_texis/mini.texi:254
 msgid "A list of completion commands."
 msgstr "補完コマンドのリスト。"
 
 #. type: subsection
-#: mini.texi.orig:254 mini.texi.orig:370 mini.texi.orig:371
+#: original_texis/mini.texi:254 original_texis/mini.texi:370
+#: original_texis/mini.texi:371
 #, no-wrap
 msgid "Completion Exit"
 msgstr "Completion Exit"
 
 #. type: menuentry
-#: mini.texi.orig:254
+#: original_texis/mini.texi:254
 msgid "Completion and minibuffer text submission."
 msgstr "補完とミニバッファーでのテキストの確定。"
 
 #. type: node
-#: mini.texi.orig:254 mini.texi.orig:433
+#: original_texis/mini.texi:254 original_texis/mini.texi:433
 #, no-wrap
 msgid "Completion Styles"
 msgstr "Completion Styles"
 
 #. type: menuentry
-#: mini.texi.orig:254
+#: original_texis/mini.texi:254
 msgid "How completion matches are chosen."
 msgstr "補完のマッチが選ばれる方法。"
 
 #. type: subsection
-#: mini.texi.orig:254 mini.texi.orig:514 mini.texi.orig:515
+#: original_texis/mini.texi:254 original_texis/mini.texi:514
+#: original_texis/mini.texi:515
 #, no-wrap
 msgid "Completion Options"
 msgstr "Completion Options"
 
 #. type: menuentry
-#: mini.texi.orig:254
+#: original_texis/mini.texi:254
 msgid "Options for completion."
 msgstr "補完のオプション。"
 
 #. type: kindex
-#: mini.texi.orig:259 mini.texi.orig:312
+#: original_texis/mini.texi:259 original_texis/mini.texi:312
 #, no-wrap
 msgid "TAB @r{(completion)}"
 msgstr "TAB @r{(completion)}"
 
 #. type: Plain text
-#: mini.texi.orig:266
+#: original_texis/mini.texi:266
 msgid ""
 "A simple example may help here.  @kbd{M-x} uses the minibuffer to read the "
 "name of a command, so completion works by matching the minibuffer text "
 "against the names of existing Emacs commands.  Suppose you wish to run the "
 "command @code{auto-fill-mode}.  You can do that by typing @kbd{M-x auto-fill-"
 "mode @key{RET}}, but it is easier to use completion."
-msgstr "ここでは簡単な例が理解しやすいでしょう。@kbd{M-x}は、コマンド名を読み取るためにミニバッファーを使います。補完はミニバッファーのテキストと、既存のEmacsコマンドの名前のマッチによって機能します。コマンドを@code{auto-fill-mode}を実行したいとします。@kbd{M-x auto-fill-mode @key{RET}}をタイプすればよいのですが、補完を使えばもっと簡単になります。"
+msgstr ""
+"ここでは簡単な例が理解しやすいでしょう。@kbd{M-x}は、コマンド名を読み取るため"
+"にミニバッファーを使います。補完はミニバッファーのテキストと、既存のEmacsコマ"
+"ンドの名前のマッチによって機能します。コマンドを@code{auto-fill-mode}を実行し"
+"たいとします。@kbd{M-x auto-fill-mode @key{RET}}をタイプすればよいのですが、"
+"補完を使えばもっと簡単になります。"
 
 #. type: Plain text
-#: mini.texi.orig:275
+#: original_texis/mini.texi:275
 msgid ""
 "If you type @kbd{M-x a u @key{TAB}}, the @key{TAB} looks for completion "
 "alternatives (in this case, command names) that start with @samp{au}.  There "
@@ -664,121 +809,150 @@ msgid ""
 "completes to @samp{auto}.  (More commands may be defined in your Emacs "
 "session.  For example, if a command called @code{authorize-me} was defined, "
 "Emacs could only complete as far as @samp{aut}.)"
-msgstr "@kbd{M-x a u @key{TAB}}とタイプすると、@key{TAB}は@samp{au}で始まる補完候補(この例ではコマンド名)を探します。@code{auto-fill-mode}、@code{autoconf-mode}などの候補がいくつかありますが、候補はすべて@code{auto}で始まるので、ミニバッファーの@samp{au}は@samp{auto}に補完されます(あなたのEmacsのセッションには、もっと多くのコマンドが定義されているかもしれません。たとえば@code{authorize-me}というコマンドが定義されている場合には、Emacsが補完できるのは@samp{aut}までです)。"
+msgstr ""
+"@kbd{M-x a u @key{TAB}}とタイプすると、@key{TAB}は@samp{au}で始まる補完候補"
+"(この例ではコマンド名)を探します。@code{auto-fill-mode}、@code{autoconf-mode}"
+"などの候補がいくつかありますが、候補はすべて@code{auto}で始まるので、ミニバッ"
+"ファーの@samp{au}は@samp{auto}に補完されます(あなたのEmacsのセッションには、"
+"もっと多くのコマンドが定義されているかもしれません。たとえば@code{authorize-"
+"me}というコマンドが定義されている場合には、Emacsが補完できるのは@samp{aut}ま"
+"でです)。"
 
 #. type: Plain text
-#: mini.texi.orig:280
+#: original_texis/mini.texi:280
 msgid ""
 "If you type @key{TAB} again immediately, it cannot determine the next "
 "character; it could be @samp{-}, @samp{a}, or @samp{c}.  So it does not add "
 "any characters; instead, @key{TAB} displays a list of all possible "
 "completions in another window."
-msgstr "もう一度@key{TAB}をタイプしても、次の文字は@samp{-}、@samp{a}、@samp{c}のどれなのか決定できません。そのため文字は追加されず、かわりに@key{TAB}は可能性のある補完候補の一覧を別のウィンドウに表示します。"
+msgstr ""
+"もう一度@key{TAB}をタイプしても、次の文字は@samp{-}、@samp{a}、@samp{c}のどれ"
+"なのか決定できません。そのため文字は追加されず、かわりに@key{TAB}は可能性のあ"
+"る補完候補の一覧を別のウィンドウに表示します。"
 
 #. type: Plain text
-#: mini.texi.orig:285
+#: original_texis/mini.texi:285
 msgid ""
 "Next, type @kbd{-f}.  The minibuffer now contains @samp{auto-f}, and the "
 "only command name that starts with this is @code{auto-fill-mode}.  If you "
 "now type @key{TAB}, completion fills in the rest of the argument @samp{auto-"
 "fill-mode} into the minibuffer."
-msgstr "次に@kbd{-f}と入力します。ミニバッファーには@samp{auto-f}が入力されました。この文字で始まるコマンド名は、@code{auto-fill-mode}だけです。ここで@key{TAB}を入力すると、残りの部分が補完されて、ミニバッファーの引数は@samp{auto-fill-mode}になります。"
+msgstr ""
+"次に@kbd{-f}と入力します。ミニバッファーには@samp{auto-f}が入力されました。こ"
+"の文字で始まるコマンド名は、@code{auto-fill-mode}だけです。ここで@key{TAB}を"
+"入力すると、残りの部分が補完されて、ミニバッファーの引数は@samp{auto-fill-"
+"mode}になります。"
 
 #. type: Plain text
-#: mini.texi.orig:288
+#: original_texis/mini.texi:288
 msgid ""
 "Hence, typing just @kbd{a u @key{TAB} - f @key{TAB}} allows you to enter "
 "@samp{auto-fill-mode}."
-msgstr "したがって@kbd{a u @key{TAB} - f @key{TAB}}と入力するだけで、@samp{auto-fill-mode}と入力できるのです。"
+msgstr ""
+"したがって@kbd{a u @key{TAB} - f @key{TAB}}と入力するだけで、@samp{auto-fill-"
+"mode}と入力できるのです。"
 
 #. type: Plain text
-#: mini.texi.orig:294
+#: original_texis/mini.texi:294
 msgid ""
 "Here is a list of the completion commands defined in the minibuffer when "
 "completion is allowed."
-msgstr "以下は補完が使えるときに、ミニバッファーで定義されている補完コマンドの一覧です。"
+msgstr ""
+"以下は補完が使えるときに、ミニバッファーで定義されている補完コマンドの一覧で"
+"す。"
 
 #. type: key{#1}
-#: mini.texi.orig:296
+#: original_texis/mini.texi:296
 #, no-wrap
 msgid "TAB"
 msgstr "TAB"
 
 #. type: findex
-#: mini.texi.orig:297 mini.texi.orig:313
+#: original_texis/mini.texi:297 original_texis/mini.texi:313
 #, no-wrap
 msgid "minibuffer-complete"
 msgstr "minibuffer-complete"
 
 #. type: table
-#: mini.texi.orig:301
+#: original_texis/mini.texi:301
 msgid ""
 "Complete the text in the minibuffer as much as possible; if unable to "
 "complete, display a list of possible completions (@code{minibuffer-"
 "complete})."
-msgstr "可能な限りミニバッファーのテキストを補完します。補完できないときは、可能性のある補完候補のリストを表示します(@code{minibuffer-complete})。"
+msgstr ""
+"可能な限りミニバッファーのテキストを補完します。補完できないときは、可能性の"
+"ある補完候補のリストを表示します(@code{minibuffer-complete})。"
 
 #. type: key{#1}
-#: mini.texi.orig:301
+#: original_texis/mini.texi:301
 #, no-wrap
 msgid "SPC"
 msgstr "SPC"
 
 #. type: table
-#: mini.texi.orig:305
+#: original_texis/mini.texi:305
 msgid ""
 "Complete up to one word from the minibuffer text before point "
 "(@code{minibuffer-complete-word}).  This command is not available for "
 "arguments that often include spaces, such as file names."
-msgstr "ミニバッファーのテキストを単語単位で補完します(@code{minibuffer-complete-word})。このコマンドは、引数にスペースが含まれる可能性のあるファイル名などでは利用できません。"
+msgstr ""
+"ミニバッファーのテキストを単語単位で補完します(@code{minibuffer-complete-"
+"word})。このコマンドは、引数にスペースが含まれる可能性のあるファイル名などで"
+"は利用できません。"
 
 #. type: key{#1}
-#: mini.texi.orig:305 mini.texi.orig:355
+#: original_texis/mini.texi:305 original_texis/mini.texi:355
 #, no-wrap
 msgid "RET"
 msgstr "RET"
 
 #. type: table
-#: mini.texi.orig:308
+#: original_texis/mini.texi:308
 msgid ""
 "Submit the text in the minibuffer as the argument, possibly completing first "
 "(@code{minibuffer-complete-and-exit}).  @xref{Completion Exit}."
-msgstr "最初に可能な限り補完した後で、ミニバッファーのテキストを引数として確定します。@ref{Completion Exit}を参照してください。"
+msgstr ""
+"最初に可能な限り補完した後で、ミニバッファーのテキストを引数として確定しま"
+"す。@ref{Completion Exit}を参照してください。"
 
 #. type: item
-#: mini.texi.orig:308
+#: original_texis/mini.texi:308
 #, no-wrap
 msgid "?"
 msgstr "?"
 
 #. type: table
-#: mini.texi.orig:310
+#: original_texis/mini.texi:310
 msgid "Display a list of completions (@code{minibuffer-completion-help})."
 msgstr "補完候補の一覧を表示します(@code{minibuffer-completion-help})。"
 
 #. type: Plain text
-#: mini.texi.orig:319
+#: original_texis/mini.texi:319
 msgid ""
 "@key{TAB} (@code{minibuffer-complete}) is the most fundamental completion "
 "command.  It searches for all possible completions that match the existing "
 "minibuffer text, and attempts to complete as much as it can.  "
 "@xref{Completion Styles}, for how completion alternatives are chosen."
-msgstr "@key{TAB} (@code{minibuffer-complete})は、もっとも基本的な補完コマンドです。これはミニバッファーのテキストとマッチする可能性のある、すべての補完候補を検索して、できるかぎりの補完を試みます。補完候補が選択される方法については、@ref{Completion Styles}を参照してください。"
+msgstr ""
+"@key{TAB} (@code{minibuffer-complete})は、もっとも基本的な補完コマンドです。"
+"これはミニバッファーのテキストとマッチする可能性のある、すべての補完候補を検"
+"索して、できるかぎりの補完を試みます。補完候補が選択される方法については、"
+"@ref{Completion Styles}を参照してください。"
 
 #. type: kindex
-#: mini.texi.orig:320
+#: original_texis/mini.texi:320
 #, no-wrap
 msgid "SPC @r{(completion)}"
 msgstr "SPC @r{(completion)}"
 
 #. type: findex
-#: mini.texi.orig:321
+#: original_texis/mini.texi:321
 #, no-wrap
 msgid "minibuffer-complete-word"
 msgstr "minibuffer-complete-word"
 
 #. type: Plain text
-#: mini.texi.orig:328
+#: original_texis/mini.texi:328
 msgid ""
 "@key{SPC} (@code{minibuffer-complete-word}) completes like @key{TAB}, but "
 "only up to the next hyphen or space.  If you have @samp{auto-f} in the "
@@ -786,161 +960,185 @@ msgid ""
 "fill-mode}, but it only inserts @samp{ill-}, giving @samp{auto-fill-}.  "
 "Another @key{SPC} at this point completes all the way to @samp{auto-fill-"
 "mode}."
-msgstr "@key{SPC} (@code{minibuffer-complete-word})は、@key{TAB}と同じように補完をおこないますが、次のハイフンまたは空白までしか補完しません。ミニバッファーが@samp{auto-f}の場合、@samp{auto-fill-mode}まで補完できますが、@samp{ill-}しか挿入しないので@samp{auto-fill-}となります。次に@key{SPC}を入力すると@samp{auto-fill-mode}が補完されます。"
+msgstr ""
+"@key{SPC} (@code{minibuffer-complete-word})は、@key{TAB}と同じように補完をお"
+"こないますが、次のハイフンまたは空白までしか補完しません。ミニバッファーが"
+"@samp{auto-f}の場合、@samp{auto-fill-mode}まで補完できますが、@samp{ill-}しか"
+"挿入しないので@samp{auto-fill-}となります。次に@key{SPC}を入力すると"
+"@samp{auto-fill-mode}が補完されます。"
 
 #. type: kindex
-#: mini.texi.orig:329
+#: original_texis/mini.texi:329
 #, no-wrap
 msgid "? @r{(completion)}"
 msgstr "? @r{(completion)}"
 
 #. type: cindex
-#: mini.texi.orig:330
+#: original_texis/mini.texi:330
 #, no-wrap
 msgid "completion list"
 msgstr "completion list"
 
 #. type: Plain text
-#: mini.texi.orig:336
+#: original_texis/mini.texi:336
 msgid ""
 "If @key{TAB} or @key{SPC} is unable to complete, it displays a list of "
 "matching completion alternatives (if there are any) in another window.  You "
 "can display the same list with @kbd{?} (@code{minibuffer-completion-help}).  "
 "The following commands can be used with the completion list:"
-msgstr "@key{TAB}や@key{SPC}が補完できない場合、マッチする補完候補のリスト(複数ある場合)を、別のウィンドウに表示します。同じリストは@kbd{?} (@code{minibuffer-completion-help})でも表示できます。以下は補完一覧で使うことができるコマンドです:"
+msgstr ""
+"@key{TAB}や@key{SPC}が補完できない場合、マッチする補完候補のリスト(複数ある場"
+"合)を、別のウィンドウに表示します。同じリストは@kbd{?} (@code{minibuffer-"
+"completion-help})でも表示できます。以下は補完一覧で使うことができるコマンドで"
+"す:"
 
 #. type: findex
-#: mini.texi.orig:338
+#: original_texis/mini.texi:338
 #, no-wrap
 msgid "mouse-choose-completion"
 msgstr "mouse-choose-completion"
 
 #. type: item
-#: mini.texi.orig:339
+#: original_texis/mini.texi:339
 #, no-wrap
 msgid "Mouse-1"
 msgstr "Mouse-1"
 
 #. type: itemx
-#: mini.texi.orig:340
+#: original_texis/mini.texi:340
 #, no-wrap
 msgid "Mouse-2"
 msgstr "Mouse-2"
 
 #. type: table
-#: mini.texi.orig:343
+#: original_texis/mini.texi:343
 msgid ""
 "Clicking mouse button 1 or 2 on a completion alternative chooses it "
 "(@code{mouse-choose-completion})."
-msgstr "マウスのボタン1もしくはボタン2で補完候補を選択します(@code{mouse-choose-completion})。"
+msgstr ""
+"マウスのボタン1もしくはボタン2で補完候補を選択します(@code{mouse-choose-"
+"completion})。"
 
 #. type: findex
-#: mini.texi.orig:344
+#: original_texis/mini.texi:344
 #, no-wrap
 msgid "switch-to-completions"
 msgstr "switch-to-completions"
 
 #. type: item
-#: mini.texi.orig:345
+#: original_texis/mini.texi:345
 #, no-wrap
 msgid "M-v"
 msgstr "M-v"
 
 #. type: key{#1}
-#: mini.texi.orig:346
+#: original_texis/mini.texi:346
 #, no-wrap
 msgid "PageUp"
 msgstr "PageUp"
 
 #. type: key{#1}
-#: mini.texi.orig:347
+#: original_texis/mini.texi:347
 #, no-wrap
 msgid "prior"
 msgstr "prior"
 
 #. type: table
-#: mini.texi.orig:353
+#: original_texis/mini.texi:353
 msgid ""
 "Typing @kbd{M-v}, while in the minibuffer, selects the window showing the "
 "completion list (@code{switch-to-completions}).  This paves the way for "
 "using the commands below.  @key{PageUp} or @key{prior} does the same.  You "
 "can also select the window in other ways (@pxref{Windows})."
-msgstr "ミニバッファーで@kbd{M-v}を入力すると、候補リストを表示しているウィンドウを選択します(@code{switch-to-completions})。以下のコマンドを使うには、この方法がよいでしょう。@key{PageUp}と@key{prior}は同じことをおこないます。他の方法でもウィンドウを選択できます(@ref{Windows}を参照してください)。"
+msgstr ""
+"ミニバッファーで@kbd{M-v}を入力すると、候補リストを表示しているウィンドウを選"
+"択します(@code{switch-to-completions})。以下のコマンドを使うには、この方法が"
+"よいでしょう。@key{PageUp}と@key{prior}は同じことをおこないます。他の方法でも"
+"ウィンドウを選択できます(@ref{Windows}を参照してください)。"
 
 #. type: findex
-#: mini.texi.orig:354
+#: original_texis/mini.texi:354
 #, no-wrap
 msgid "choose-completion"
 msgstr "choose-completion"
 
 #. type: table
-#: mini.texi.orig:358
+#: original_texis/mini.texi:358
 msgid ""
 "While in the completion list buffer, this chooses the completion at point "
 "(@code{choose-completion})."
-msgstr "補完候補リストのバッファー内では、ポイント位置の補完候補を選択します(@code{choose-completion})。"
+msgstr ""
+"補完候補リストのバッファー内では、ポイント位置の補完候補を選択します"
+"(@code{choose-completion})。"
 
 #. type: findex
-#: mini.texi.orig:359
+#: original_texis/mini.texi:359
 #, no-wrap
 msgid "next-completion"
 msgstr "next-completion"
 
 #. type: key{#1}
-#: mini.texi.orig:360
+#: original_texis/mini.texi:360
 #, no-wrap
 msgid "RIGHT"
 msgstr "RIGHT"
 
 #. type: table
-#: mini.texi.orig:363
+#: original_texis/mini.texi:363
 msgid ""
 "While in the completion list buffer, this moves point to the following "
 "completion alternative (@code{next-completion})."
-msgstr "補完候補リストのバッファー内では、次の補完候補にポイントを移動します(@code{next-completion})。"
+msgstr ""
+"補完候補リストのバッファー内では、次の補完候補にポイントを移動します"
+"(@code{next-completion})。"
 
 #. type: findex
-#: mini.texi.orig:364
+#: original_texis/mini.texi:364
 #, no-wrap
 msgid "previous-completion"
 msgstr "previous-completion"
 
 #. type: key{#1}
-#: mini.texi.orig:365
+#: original_texis/mini.texi:365
 #, no-wrap
 msgid "LEFT"
 msgstr "LEFT"
 
 #. type: table
-#: mini.texi.orig:368
+#: original_texis/mini.texi:368
 msgid ""
 "While in the completion list buffer, this moves point to the previous "
 "completion alternative (@code{previous-completion})."
-msgstr "補完候補リストのバッファー内では、前の補完候補にポイントを移動します(@code{previous-completion})。"
+msgstr ""
+"補完候補リストのバッファー内では、前の補完候補にポイントを移動します"
+"(@code{previous-completion})。"
 
 #. type: kindex
-#: mini.texi.orig:373
+#: original_texis/mini.texi:373
 #, no-wrap
 msgid "RET @r{(completion in minibuffer)}"
 msgstr "RET @r{(completion in minibuffer)}"
 
 #. type: findex
-#: mini.texi.orig:374
+#: original_texis/mini.texi:374
 #, no-wrap
 msgid "minibuffer-complete-and-exit"
 msgstr "minibuffer-complete-and-exit"
 
 #. type: Plain text
-#: mini.texi.orig:379
+#: original_texis/mini.texi:379
 msgid ""
 "When a command reads an argument using the minibuffer with completion, it "
 "also controls what happens when you type @key{RET} (@code{minibuffer-"
 "complete-and-exit}) to submit the argument.  There are four types of "
 "behavior:"
-msgstr "コマンドがミニバッファーの補完を使って引数を読みとる場合、引数を確定するために@key{RET} (@code{minibuffer-complete-and-exit})をタイプしたときに、何が起こるかも制御します。これには4種類の動作があります:"
+msgstr ""
+"コマンドがミニバッファーの補完を使って引数を読みとる場合、引数を確定するため"
+"に@key{RET} (@code{minibuffer-complete-and-exit})をタイプしたときに、何が起こ"
+"るかも制御します。これには4種類の動作があります:"
 
 #. type: itemize
-#: mini.texi.orig:389
+#: original_texis/mini.texi:389
 msgid ""
 "@dfn{Strict completion} accepts only exact completion matches.  Typing "
 "@key{RET} exits the minibuffer only if the minibuffer text is an exact "
@@ -948,53 +1146,71 @@ msgid ""
 "minibuffer; instead it tries to complete, and if no completion can be done "
 "it momentarily displays @samp{[No match]} after the minibuffer text.  (You "
 "can still leave the minibuffer by typing @kbd{C-g} to cancel the command.)"
-msgstr "@dfn{強い補完(Strict completion)}は、正確にマッチする補完のみを許します。@key{RET}でミニバッファーを抜けるのは、ミニバッファーのテキストが正確にマッチしているか、1つに補完された場合だけです。それ以外の場合、Emacsはミニバッファーからのexit(入力を完了してミニバッファーから抜け出す)を拒絶します。かわりに補完を試み、補完できなかったときは、ミニバッファーのテキストの後ろに数秒@samp{[No match]}と表示します(@kbd{C-g}を使えばミニバッファーを離れることができます)。"
+msgstr ""
+"@dfn{強い補完(Strict completion)}は、正確にマッチする補完のみを許します。"
+"@key{RET}でミニバッファーを抜けるのは、ミニバッファーのテキストが正確にマッチ"
+"しているか、1つに補完された場合だけです。それ以外の場合、Emacsはミニバッ"
+"ファーからのexit(入力を完了してミニバッファーから抜け出す)を拒絶します。かわ"
+"りに補完を試み、補完できなかったときは、ミニバッファーのテキストの後ろに数秒"
+"@samp{[No match]}と表示します(@kbd{C-g}を使えばミニバッファーを離れることがで"
+"きます)。"
 
 #. type: itemize
-#: mini.texi.orig:392
+#: original_texis/mini.texi:392
 msgid ""
 "An example of a command that uses this behavior is @kbd{M-x}, since it is "
 "meaningless for it to accept a non-existent command name."
-msgstr "この動作をおこなうコマンドの例は@kbd{M-x}で、それは存在しないコマンド名を受けとるのは無意味だからです。"
+msgstr ""
+"この動作をおこなうコマンドの例は@kbd{M-x}で、それは存在しないコマンド名を受け"
+"とるのは無意味だからです。"
 
 #. type: itemize
-#: mini.texi.orig:398
+#: original_texis/mini.texi:398
 msgid ""
 "@dfn{Cautious completion} is like strict completion, except @key{RET} exits "
 "only if the text is already an exact match.  If the text completes to an "
 "exact match, @key{RET} performs that completion but does not exit yet; you "
 "must type a second @key{RET} to exit."
-msgstr "@dfn{慎重な補完(Cautious completion)}は強い補完と似ていますが、テキストがすでに正確にマッチしているときだけexitできる点が異なります。テキストが正確なマッチに補完できるとき、@key{RET}は補完を行いますが、まだexitしません。exitするには、もう一度@key{RET}を入力しなければなりません。"
+msgstr ""
+"@dfn{慎重な補完(Cautious completion)}は強い補完と似ていますが、テキストがすで"
+"に正確にマッチしているときだけexitできる点が異なります。テキストが正確なマッ"
+"チに補完できるとき、@key{RET}は補完を行いますが、まだexitしません。exitするに"
+"は、もう一度@key{RET}を入力しなければなりません。"
 
 #. type: itemize
-#: mini.texi.orig:401
+#: original_texis/mini.texi:401
 msgid ""
 "Cautious completion is used for reading file names for files that must "
 "already exist, for example."
-msgstr "慎重な補完は、たとえば存在しなければならないファイル名を読みとるときに使用されます。"
+msgstr ""
+"慎重な補完は、たとえば存在しなければならないファイル名を読みとるときに使用さ"
+"れます。"
 
 #. type: itemize
-#: mini.texi.orig:406
+#: original_texis/mini.texi:406
 msgid ""
 "@dfn{Permissive completion} allows any input; the completion candidates are "
 "just suggestions.  Typing @key{RET} does not complete, it just submits the "
 "argument as you have entered it."
-msgstr "@dfn{寛大な補完(Permissive completion)}は、任意の入力を許容します。補完候補はあくまでも提案です。@key{RET}では補完は行われず、単に入力された引数を確定します。"
+msgstr ""
+"@dfn{寛大な補完(Permissive completion)}は、任意の入力を許容します。補完候補は"
+"あくまでも提案です。@key{RET}では補完は行われず、単に入力された引数を確定しま"
+"す。"
 
 #. type: cindex
-#: mini.texi.orig:407
+#: original_texis/mini.texi:407
 #, no-wrap
 msgid "minibuffer confirmation"
 msgstr "minibuffer confirmation"
 
 #. type: cindex
-#: mini.texi.orig:408
+#: original_texis/mini.texi:408
 #, no-wrap
 msgid "confirming in the minibuffer"
 msgstr "confirming in the minibuffer"
 
 #. type: itemize
-#: mini.texi.orig:419
+#: original_texis/mini.texi:419
 msgid ""
 "@dfn{Permissive completion with confirmation} is like permissive completion, "
 "with an exception: if you typed @key{TAB} and this completed the text up to "
@@ -1004,16 +1220,24 @@ msgid ""
 "@samp{[Confirm]} after the text; type @key{RET} again to confirm and submit "
 "the text.  This catches a common mistake, in which one types @key{RET} "
 "before realizing that @key{TAB} did not complete as far as desired."
-msgstr "@dfn{確認付きの寛大な補完(Permissive completion with confirmation)}は、寛大な補完と似ていますが例外があります。@key{TAB}を入力して、テキストがある中間的な状態まで補完されたとき(たとえばまだ正確なマッチに至らないとき)、次に@key{RET}を入力しても引数は確定されません。かわりにEmacsはテキストの後ろに@samp{[Confirm]}を数秒表示して、確認を求めます。その次の@key{RET}は確認とみなされテキストが確定されます。これにより@key{TAB}により希望するマッチまで補完されたと勘違いして、@key{RET}を押してしまうなどの一般的な間違いを捕らえることができます。"
+msgstr ""
+"@dfn{確認付きの寛大な補完(Permissive completion with confirmation)}は、寛大な"
+"補完と似ていますが例外があります。@key{TAB}を入力して、テキストがある中間的な"
+"状態まで補完されたとき(たとえばまだ正確なマッチに至らないとき)、次に@key{RET}"
+"を入力しても引数は確定されません。かわりにEmacsはテキストの後ろに"
+"@samp{[Confirm]}を数秒表示して、確認を求めます。その次の@key{RET}は確認とみな"
+"されテキストが確定されます。これにより@key{TAB}により希望するマッチまで補完さ"
+"れたと勘違いして、@key{RET}を押してしまうなどの一般的な間違いを捕らえることが"
+"できます。"
 
 #. type: vindex
-#: mini.texi.orig:420
+#: original_texis/mini.texi:420
 #, no-wrap
 msgid "confirm-nonexistent-file-or-buffer"
 msgstr "confirm-nonexistent-file-or-buffer"
 
 #. type: itemize
-#: mini.texi.orig:428
+#: original_texis/mini.texi:428
 msgid ""
 "You can tweak the confirmation behavior by customizing the variable "
 "@code{confirm-nonexistent-file-or-buffer}.  The default value, @code{after-"
@@ -1021,29 +1245,36 @@ msgid ""
 "@code{nil}, Emacs does not ask for confirmation, falling back on permissive "
 "completion.  If you change it to any other non-@code{nil} value, Emacs asks "
 "for confirmation whether or not the preceding command was @key{TAB}."
-msgstr "変数@code{confirm-nonexistent-file-or-buffer}をカスタマイズして、確認動作を微調整できます。デフォルト値の@code{after-completion}は、まさに説明したとおりに動作します。これを@code{nil}に変更すると、Emacsは確認を求めなくなり、寛大な補完にフォールバックします。他の非@code{nil}値に変更した場合、その前のコマンドが@key{TAB}かどうかにかかわらず、Emacsは確認を求めます。"
+msgstr ""
+"変数@code{confirm-nonexistent-file-or-buffer}をカスタマイズして、確認動作を微"
+"調整できます。デフォルト値の@code{after-completion}は、まさに説明したとおりに"
+"動作します。これを@code{nil}に変更すると、Emacsは確認を求めなくなり、寛大な補"
+"完にフォールバックします。他の非@code{nil}値に変更した場合、その前のコマンド"
+"が@key{TAB}かどうかにかかわらず、Emacsは確認を求めます。"
 
 #. type: itemize
-#: mini.texi.orig:431
+#: original_texis/mini.texi:431
 msgid ""
 "This behavior is used by most commands that read file names, like @kbd{C-x C-"
 "f}, and commands that read buffer names, like @kbd{C-x b}."
-msgstr "この動作はファイル名を読みとる@kbd{C-x C-f}や、バッファー名を読み取る@kbd{C-x b}など、多くのコマンドで使われています。"
+msgstr ""
+"この動作はファイル名を読みとる@kbd{C-x C-f}や、バッファー名を読み取る@kbd{C-"
+"x b}など、多くのコマンドで使われています。"
 
 #. type: subsection
-#: mini.texi.orig:434
+#: original_texis/mini.texi:434
 #, no-wrap
 msgid "How Completion Alternatives Are Chosen"
 msgstr "How Completion Alternatives Are Chosen"
 
 #. type: cindex
-#: mini.texi.orig:435
+#: original_texis/mini.texi:435
 #, no-wrap
 msgid "completion style"
 msgstr "completion style"
 
 #. type: Plain text
-#: mini.texi.orig:443
+#: original_texis/mini.texi:443
 msgid ""
 "Completion commands work by narrowing a large list of possible completion "
 "alternatives to a smaller subset that ``matches'' what you have typed in the "
@@ -1051,192 +1282,237 @@ msgid ""
 "matching.  The procedure of determining what constitutes a ``match'' is "
 "quite intricate.  Emacs attempts to offer plausible completions under most "
 "circumstances."
-msgstr "補完コマンドは、たくさんの可能性のある補完候補を、ミニバッファーに入力したものと``マッチ(match)''する、より少ないサブセットへと絞り込むことにより機能します。@ref{Completion Example}では、そのようなマッチングの簡単な例を紹介しました。どのような構成が``マッチ''なのかを決定する手続きはとても複雑です。Emacsは多くの状況下でもっとも妥当と思われる補完を試みます。"
+msgstr ""
+"補完コマンドは、たくさんの可能性のある補完候補を、ミニバッファーに入力したも"
+"のと``マッチ(match)''する、より少ないサブセットへと絞り込むことにより機能しま"
+"す。@ref{Completion Example}では、そのようなマッチングの簡単な例を紹介しまし"
+"た。どのような構成が``マッチ''なのかを決定する手続きはとても複雑です。Emacsは"
+"多くの状況下でもっとも妥当と思われる補完を試みます。"
 
 #. type: Plain text
-#: mini.texi.orig:450
+#: original_texis/mini.texi:450
 msgid ""
 "Emacs performs completion using one or more @dfn{completion styles}---sets "
 "of criteria for matching minibuffer text to completion alternatives.  During "
 "completion, Emacs tries each completion style in turn.  If a style yields "
 "one or more matches, that is used as the list of completion alternatives.  "
 "If a style produces no matches, Emacs falls back on the next style."
-msgstr "Emacsは1つ以上の@dfn{補完スタイル(completion styles)}を使って補完をおこないます。これはミニバッファーのテキストを補完候補とマッチングするための条件のセットです。補完を行うとき、Emacsは補完スタイルを順番に試します。もしあるスタイルが1つ以上のマッチを獲得した場合、それらは補完候補リストのために使用されます。もしあるスタイルがマッチを獲得できなかった場合、Emacsは次のスタイルにフォールバックします。"
+msgstr ""
+"Emacsは1つ以上の@dfn{補完スタイル(completion styles)}を使って補完をおこないま"
+"す。これはミニバッファーのテキストを補完候補とマッチングするための条件のセッ"
+"トです。補完を行うとき、Emacsは補完スタイルを順番に試します。もしあるスタイル"
+"が1つ以上のマッチを獲得した場合、それらは補完候補リストのために使用されます。"
+"もしあるスタイルがマッチを獲得できなかった場合、Emacsは次のスタイルにフォール"
+"バックします。"
 
 #. type: vindex
-#: mini.texi.orig:451
+#: original_texis/mini.texi:451
 #, no-wrap
 msgid "completion-styles"
 msgstr "completion-styles"
 
 #. type: Plain text
-#: mini.texi.orig:455
+#: original_texis/mini.texi:455
 msgid ""
 "The list variable @code{completion-styles} specifies the completion styles "
 "to use.  Each list element is the name of a completion style (a Lisp "
 "symbol).  The default completion styles are (in order):"
-msgstr "リスト変数@code{completion-styles}は、使用する補完スタイルを定義します。それぞれのリスト要素(list element)は、補完スタイルの名前(Lispシンボル)です。デフォルトの補完スタイルは、リスト変数に以下の名前の要素が順番に並んでいます。"
+msgstr ""
+"リスト変数@code{completion-styles}は、使用する補完スタイルを定義します。それ"
+"ぞれのリスト要素(list element)は、補完スタイルの名前(Lispシンボル)です。デ"
+"フォルトの補完スタイルは、リスト変数に以下の名前の要素が順番に並んでいます。"
 
 #. type: item
-#: mini.texi.orig:457
+#: original_texis/mini.texi:457
 #, no-wrap
 msgid "basic"
 msgstr "basic"
 
 #. type: table
-#: mini.texi.orig:462
+#: original_texis/mini.texi:462
 msgid ""
 "A matching completion alternative must have the same beginning as the text "
 "in the minibuffer before point.  Furthermore, if there is any text in the "
 "minibuffer after point, the rest of the completion alternative must contain "
 "that text as a substring."
-msgstr "ミニバッファーのポイントより前のテキストと、補完候補の先頭が同じでなければなりません。さらにミニバッファーのポイントより後ろのテキストがある場合、補完候補の残りそれが含まれていなければなりません。"
+msgstr ""
+"ミニバッファーのポイントより前のテキストと、補完候補の先頭が同じでなければな"
+"りません。さらにミニバッファーのポイントより後ろのテキストがある場合、補完候"
+"補の残りそれが含まれていなければなりません。"
 
 #. type: findex
-#: mini.texi.orig:463
+#: original_texis/mini.texi:463
 #, no-wrap
 msgid "partial completion"
 msgstr "partial completion"
 
 #. type: item
-#: mini.texi.orig:464
+#: original_texis/mini.texi:464
 #, no-wrap
 msgid "partial-completion"
 msgstr "partial-completion"
 
 #. type: table
-#: mini.texi.orig:469
+#: original_texis/mini.texi:469
 msgid ""
 "This aggressive completion style divides the minibuffer text into words "
 "separated by hyphens or spaces, and completes each word separately.  (For "
 "example, when completing command names, @samp{em-l-m} completes to "
 "@samp{emacs-lisp-mode}.)"
-msgstr "このアグレッシブな補完スタイルは、ミニバッファーのテキストをハイフンまたは空白で区切り、各単語ごとに補完をおこないます(たとえばコマンド名を補完する場合、@samp{em-l-m}は、@samp{emacs-lisp-mode}に補完されます)。"
+msgstr ""
+"このアグレッシブな補完スタイルは、ミニバッファーのテキストをハイフンまたは空"
+"白で区切り、各単語ごとに補完をおこないます(たとえばコマンド名を補完する場合、"
+"@samp{em-l-m}は、@samp{emacs-lisp-mode}に補完されます)。"
 
 #. type: table
-#: mini.texi.orig:473
+#: original_texis/mini.texi:473
 msgid ""
 "Furthermore, a @samp{*} in the minibuffer text is treated as a "
 "@dfn{wildcard}---it matches any character at the corresponding position in "
 "the completion alternative."
-msgstr "さらにミニバッファーのテキスト中の@samp{*}は、@dfn{ワイルドカード(wildcard)}として扱われます。これは補完候補の対応する位置にある、任意の文字とマッチします。"
+msgstr ""
+"さらにミニバッファーのテキスト中の@samp{*}は、@dfn{ワイルドカード(wildcard)}"
+"として扱われます。これは補完候補の対応する位置にある、任意の文字とマッチしま"
+"す。"
 
 #. type: item
-#: mini.texi.orig:474
+#: original_texis/mini.texi:474
 #, no-wrap
 msgid "emacs22"
 msgstr "emacs22"
 
 #. type: table
-#: mini.texi.orig:478
+#: original_texis/mini.texi:478
 msgid ""
 "This completion style is similar to @code{basic}, except that it ignores the "
 "text in the minibuffer after point.  It is so-named because it corresponds "
 "to the completion behavior in Emacs 22."
-msgstr "この補完スタイルは@code{basic}とにていますが、ミニバッファーのポイントより後のテキストを無視します。この名前は補完の動作がEmacs 22と同じだからです。"
+msgstr ""
+"この補完スタイルは@code{basic}とにていますが、ミニバッファーのポイントより後"
+"のテキストを無視します。この名前は補完の動作がEmacs 22と同じだからです。"
 
 #. type: Plain text
-#: mini.texi.orig:484
+#: original_texis/mini.texi:484
 msgid ""
 "The following additional completion styles are also defined, and you can add "
 "them to @code{completion-styles} if you wish (@pxref{Customization}):"
-msgstr "以下の追加の補完スタイルが定義されており、@code{completion-styles}に追加することもできます(@ref{Customization}を参照してください)。"
+msgstr ""
+"以下の追加の補完スタイルが定義されており、@code{completion-styles}に追加する"
+"こともできます(@ref{Customization}を参照してください)。"
 
 #. type: item
-#: mini.texi.orig:486
+#: original_texis/mini.texi:486
 #, no-wrap
 msgid "substring"
 msgstr "substring"
 
 #. type: table
-#: mini.texi.orig:490
+#: original_texis/mini.texi:490
 msgid ""
 "A matching completion alternative must contain the text in the minibuffer "
 "before point, and the text in the minibuffer after point, as substrings (in "
 "that same order)."
-msgstr "補完候補は、ミニバッファーのポイントより前のテキストと、ポイントより後のテキストが同じ順番で含まれていなければなりません。"
+msgstr ""
+"補完候補は、ミニバッファーのポイントより前のテキストと、ポイントより後のテキ"
+"ストが同じ順番で含まれていなければなりません。"
 
 #. type: table
-#: mini.texi.orig:495
+#: original_texis/mini.texi:495
 msgid ""
 "Thus, if the text in the minibuffer is @samp{foobar}, with point between "
 "@samp{foo} and @samp{bar}, that matches @samp{@var{a}foo@var{b}bar@var{c}}, "
 "where @var{a}, @var{b}, and @var{c} can be any string including the empty "
 "string."
-msgstr "したがって、ミニバッファーのテキストが@samp{foobar}で、ポイントが@samp{foo}と@samp{bar}の間にある場合、@samp{@var{a}foo@var{b}bar@var{c}}にマッチします。この場合@var{a}、@var{b}、@var{c}は空文字列を含む任意の文字列です。"
+msgstr ""
+"したがって、ミニバッファーのテキストが@samp{foobar}で、ポイントが@samp{foo}と"
+"@samp{bar}の間にある場合、@samp{@var{a}foo@var{b}bar@var{c}}にマッチします。"
+"この場合@var{a}、@var{b}、@var{c}は空文字列を含む任意の文字列です。"
 
 #. type: item
-#: mini.texi.orig:496
+#: original_texis/mini.texi:496
 #, no-wrap
 msgid "initials"
 msgstr "initials"
 
 #. type: table
-#: mini.texi.orig:500
+#: original_texis/mini.texi:500
 msgid ""
 "This very aggressive completion style attempts to complete acronyms and "
 "initialisms.  For example, when completing command names, it matches "
 "@samp{lch} to @samp{list-command-history}."
-msgstr "このとてもアグレッシブな補完スタイルは、頭文字とイニシャルで補完を試みます。たとえばコマンド名の補完をする場合、@samp{lch}は@samp{list-command-history}とマッチします。"
+msgstr ""
+"このとてもアグレッシブな補完スタイルは、頭文字とイニシャルで補完を試みます。"
+"たとえばコマンド名の補完をする場合、@samp{lch}は@samp{list-command-history}と"
+"マッチします。"
 
 #. type: Plain text
-#: mini.texi.orig:506
+#: original_texis/mini.texi:506
 msgid ""
 "There is also a very simple completion style called @code{emacs21}.  In this "
 "style, if the text in the minibuffer is @samp{foobar}, only matches starting "
 "with @samp{foobar} are considered."
-msgstr "@code{emacs21}と呼ばれる、とてもシンプルな補完スタイルもあります。このスタイルでは、ミニバッファーのテキストが@samp{foobar}の場合、@samp{foobar}で始まるものだけにマッチします。"
+msgstr ""
+"@code{emacs21}と呼ばれる、とてもシンプルな補完スタイルもあります。このスタイ"
+"ルでは、ミニバッファーのテキストが@samp{foobar}の場合、@samp{foobar}で始まる"
+"ものだけにマッチします。"
 
 #. type: vindex
-#: mini.texi.orig:507
+#: original_texis/mini.texi:507
 #, no-wrap
 msgid "completion-category-overrides"
 msgstr "completion-category-overrides"
 
 #. type: Plain text
-#: mini.texi.orig:512
+#: original_texis/mini.texi:512
 msgid ""
 "You can use different completion styles in different situations, by setting "
 "the variable @code{completion-category-overrides}.  For example, the default "
 "setting says to use only @code{basic} and @code{substring} completion for "
 "buffer names."
-msgstr "変数@code{completion-category-overrides}を設定することにより、状況に応じて異なる補完スタイルを使うことができます。たとえばバッファー名を補完するときは、デフォルトで@code{basic}と@code{substring}だけを使うよう指定できます。"
+msgstr ""
+"変数@code{completion-category-overrides}を設定することにより、状況に応じて異"
+"なる補完スタイルを使うことができます。たとえばバッファー名を補完するときは、"
+"デフォルトで@code{basic}と@code{substring}だけを使うよう指定できます。"
 
 #. type: cindex
-#: mini.texi.orig:517
+#: original_texis/mini.texi:517
 #, no-wrap
 msgid "case-sensitivity and completion"
 msgstr "case-sensitivity and completion"
 
 #. type: cindex
-#: mini.texi.orig:518
+#: original_texis/mini.texi:518
 #, no-wrap
 msgid "case in completion"
 msgstr "case in completion"
 
 #. type: Plain text
-#: mini.texi.orig:524
+#: original_texis/mini.texi:524
 msgid ""
 "Case is significant when completing case-sensitive arguments, such as "
 "command names.  For example, when completing command names, @samp{AU} does "
 "not complete to @samp{auto-fill-mode}.  Case differences are ignored when "
 "completing arguments in which case does not matter."
-msgstr "大文字小文字の違いは、コマンド名のように大文字小文字を区別する(case-sensitive)引数では重要です。たとえばコマンド名の補完では、@samp{AU}では@samp{auto-fill-mode}に補完されません。大文字小文字の違いは、それが問題にならない引数の補完では無視されます。"
+msgstr ""
+"大文字小文字の違いは、コマンド名のように大文字小文字を区別する(case-"
+"sensitive)引数では重要です。たとえばコマンド名の補完では、@samp{AU}では"
+"@samp{auto-fill-mode}に補完されません。大文字小文字の違いは、それが問題になら"
+"ない引数の補完では無視されます。"
 
 #. type: vindex
-#: mini.texi.orig:525
+#: original_texis/mini.texi:525
 #, no-wrap
 msgid "read-file-name-completion-ignore-case"
 msgstr "read-file-name-completion-ignore-case"
 
 #. type: vindex
-#: mini.texi.orig:526
+#: original_texis/mini.texi:526
 #, no-wrap
 msgid "read-buffer-completion-ignore-case"
 msgstr "read-buffer-completion-ignore-case"
 
 #. type: Plain text
-#: mini.texi.orig:535
+#: original_texis/mini.texi:535
 msgid ""
 "When completing file names, case differences are ignored if the variable "
 "@code{read-file-name-completion-ignore-case} is non-@code{nil}.  The default "
@@ -1245,22 +1521,29 @@ msgid ""
 "names, such as Microsoft Windows.  When completing buffer names, case "
 "differences are ignored if the variable @code{read-buffer-completion-ignore-"
 "case} is non-@code{nil}; the default is @code{nil}."
-msgstr "ファイル名を補完するとき、変数@code{read-file-name-completion-ignore-case}が非@code{nil}なら、大文字小文字の違いは無視されます。GNU/Linuxのように、ファイル名の大文字と小文字を区別するシステムでは、デフォルト値は@code{nil}です。Microsoft Windowsのように、ファイル名の大文字と小文字を区別しないシステムでは、非@code{nil}です。バッファー名を補完するとき、@code{read-buffer-completion-ignore-case}が非@code{nil}なら、大文字小文字の違いは無視されます。デフォルトは@code{nil}です。"
+msgstr ""
+"ファイル名を補完するとき、変数@code{read-file-name-completion-ignore-case}が"
+"非@code{nil}なら、大文字小文字の違いは無視されます。GNU/Linuxのように、ファイ"
+"ル名の大文字と小文字を区別するシステムでは、デフォルト値は@code{nil}です。"
+"Microsoft Windowsのように、ファイル名の大文字と小文字を区別しないシステムで"
+"は、非@code{nil}です。バッファー名を補完するとき、@code{read-buffer-"
+"completion-ignore-case}が非@code{nil}なら、大文字小文字の違いは無視されます。"
+"デフォルトは@code{nil}です。"
 
 #. type: vindex
-#: mini.texi.orig:536
+#: original_texis/mini.texi:536
 #, no-wrap
 msgid "completion-ignored-extensions"
 msgstr "completion-ignored-extensions"
 
 #. type: cindex
-#: mini.texi.orig:537
+#: original_texis/mini.texi:537
 #, no-wrap
 msgid "ignored file names, in completion"
 msgstr "ignored file names, in completion"
 
 #. type: Plain text
-#: mini.texi.orig:552
+#: original_texis/mini.texi:552
 msgid ""
 "When completing file names, Emacs usually omits certain alternatives that "
 "are considered unlikely to be chosen, as determined by the list variable "
@@ -1275,23 +1558,36 @@ msgid ""
 "ignored: in the previous example, @samp{foo.e} completes to @samp{foo.elc}.  "
 "Emacs disregards @code{completion-ignored-extensions} when showing "
 "completion alternatives in the completion list."
-msgstr "通常Emacsはファイル名を補完するとき、選ばれるべきではないと思われる、特定の候補を無視します。これはリスト変数@code{completion-ignored-extensions}により決定されます。リストの要素はに文字列を指定します。それらの文字列で終わるファイル名は、補完候補としては無視されます。スラッシュ(@file{/})で終わる要素は、ディレクトリー名を表します。@code{completion-ignored-extensions}の標準的な値は@code{\".o\"}、@code{\".elc\"}、@code{\"~\"}を含むいくつかの要素です。たとえばディレクトリーに@samp{foo.c}、@samp{foo.elc}があるとき、@samp{foo}は@samp{foo.c}に補完されます。しかし@emph{すべて}の補完候補が``無視すべき''文字列で終わるとき、これらの候補は無視されません。前の例でいうと@samp{foo.e}は@samp{foo.elc}に補完されます。Emacsは補完候補リストで補完候補を表示するとき、@code{completion-ignored-extensions}を無視します。"
+msgstr ""
+"通常Emacsはファイル名を補完するとき、選ばれるべきではないと思われる、特定の候"
+"補を無視します。これはリスト変数@code{completion-ignored-extensions}により決"
+"定されます。リストの要素はに文字列を指定します。それらの文字列で終わるファイ"
+"ル名は、補完候補としては無視されます。スラッシュ(@file{/})で終わる要素は、"
+"ディレクトリー名を表します。@code{completion-ignored-extensions}の標準的な値"
+"は@code{\".o\"}、@code{\".elc\"}、@code{\"~\"}を含むいくつかの要素です。たと"
+"えばディレクトリーに@samp{foo.c}、@samp{foo.elc}があるとき、@samp{foo}は"
+"@samp{foo.c}に補完されます。しかし@emph{すべて}の補完候補が``無視すべき''文字"
+"列で終わるとき、これらの候補は無視されません。前の例でいうと@samp{foo.e}は"
+"@samp{foo.elc}に補完されます。Emacsは補完候補リストで補完候補を表示するとき、"
+"@code{completion-ignored-extensions}を無視します。"
 
 #. type: Plain text
-#: mini.texi.orig:555
+#: original_texis/mini.texi:555
 msgid ""
 "Shell completion is an extended version of filename completion, @pxref{Shell "
 "Options}."
-msgstr "Shellでの補完は、ファイル名補完の拡張されたバージョンです。@ref{Shell Options}を参照してください。"
+msgstr ""
+"Shellでの補完は、ファイル名補完の拡張されたバージョンです。@ref{Shell "
+"Options}を参照してください。"
 
 #. type: vindex
-#: mini.texi.orig:556
+#: original_texis/mini.texi:556
 #, no-wrap
 msgid "completion-auto-help"
 msgstr "completion-auto-help"
 
 #. type: Plain text
-#: mini.texi.orig:564
+#: original_texis/mini.texi:564
 msgid ""
 "If @code{completion-auto-help} is set to @code{nil}, the completion commands "
 "never display the completion list buffer; you must type @kbd{?} to display "
@@ -1299,16 +1595,22 @@ msgid ""
 "buffer on the second attempt to complete.  In other words, if there is "
 "nothing to complete, the first @key{TAB} echoes @samp{Next char not unique}; "
 "the second @key{TAB} shows the completion list buffer."
-msgstr "@code{completion-auto-help}に@code{nil}がセットされていると、補完コマンドは補完リストバッファーを表示しません。表示するには@kbd{?}を入力しなければなりません。値が@code{lazy}の場合、Emacsは2度目の補完を試みたときだけ、補完リストバッファーを表示します。もし補完すべきものがない場合、1度目の@key{TAB}は@samp{Next char not unique}と表示し、2度目の@key{TAB}で補完リストバッファーが表示されます。"
+msgstr ""
+"@code{completion-auto-help}に@code{nil}がセットされていると、補完コマンドは補"
+"完リストバッファーを表示しません。表示するには@kbd{?}を入力しなければなりませ"
+"ん。値が@code{lazy}の場合、Emacsは2度目の補完を試みたときだけ、補完リストバッ"
+"ファーを表示します。もし補完すべきものがない場合、1度目の@key{TAB}は"
+"@samp{Next char not unique}と表示し、2度目の@key{TAB}で補完リストバッファーが"
+"表示されます。"
 
 #. type: vindex
-#: mini.texi.orig:565
+#: original_texis/mini.texi:565
 #, no-wrap
 msgid "completion-cycle-threshold"
 msgstr "completion-cycle-threshold"
 
 #. type: Plain text
-#: mini.texi.orig:577
+#: original_texis/mini.texi:577
 msgid ""
 "If @code{completion-cycle-threshold} is non-@code{nil}, completion commands "
 "can ``cycle'' through completion alternatives.  Normally, if there is more "
@@ -1320,131 +1622,150 @@ msgid ""
 "completion alternative, in a cyclic manner.  If you give @code{completion-"
 "cycle-threshold} a numeric value @var{n}, completion commands switch to this "
 "cycling behavior only when there are @var{n} or fewer alternatives."
-msgstr "@code{completion-cycle-threshold}が非@code{nil}のとき、補完コマンドは補完候補を``循環(cycle)''できます。通常ミニバッファーのテキストで１つ以上の補完候補がある場合、補完コマンドは補完できた文字までを表示します。@code{completion-cycle-threshold}を@code{t}に変更すると、補完コマンドは補完候補の中から最初の候補を表示します。それ以降の補完コマンドの呼び出しでは、その次の補完候補を循環的に表示します。@code{completion-cycle-threshold}を数値@var{n}にすると、補完候補が@var{n}以下のときだけ循環表示の動作をします。"
+msgstr ""
+"@code{completion-cycle-threshold}が非@code{nil}のとき、補完コマンドは補完候補"
+"を``循環(cycle)''できます。通常ミニバッファーのテキストで１つ以上の補完候補が"
+"ある場合、補完コマンドは補完できた文字までを表示します。@code{completion-"
+"cycle-threshold}を@code{t}に変更すると、補完コマンドは補完候補の中から最初の"
+"候補を表示します。それ以降の補完コマンドの呼び出しでは、その次の補完候補を循"
+"環的に表示します。@code{completion-cycle-threshold}を数値@var{n}にすると、補"
+"完候補が@var{n}以下のときだけ循環表示の動作をします。"
 
 #. type: cindex
-#: mini.texi.orig:580
+#: original_texis/mini.texi:580
 #, no-wrap
 msgid "minibuffer history"
 msgstr "minibuffer history"
 
 #. type: cindex
-#: mini.texi.orig:581
+#: original_texis/mini.texi:581
 #, no-wrap
 msgid "history of minibuffer input"
 msgstr "history of minibuffer input"
 
 #. type: Plain text
-#: mini.texi.orig:587
+#: original_texis/mini.texi:587
 msgid ""
 "Every argument that you enter with the minibuffer is saved in a "
 "@dfn{minibuffer history list} so you can easily use it again later.  You can "
 "use the following arguments to quickly fetch an earlier argument into the "
 "minibuffer:"
-msgstr "ミニバッファーで入力したすべての引数は、@dfn{ミニバッファーヒストリーリスト(minibuffer history list)}に保存されているので、簡単に後でまた使うことができます。以下のコマンドにより、前の引数をすばやく探してミニバッファーに呼び出すことができます:"
+msgstr ""
+"ミニバッファーで入力したすべての引数は、@dfn{ミニバッファーヒストリーリスト"
+"(minibuffer history list)}に保存されているので、簡単に後でまた使うことができ"
+"ます。以下のコマンドにより、前の引数をすばやく探してミニバッファーに呼び出す"
+"ことができます:"
 
 #. type: item
-#: mini.texi.orig:589
+#: original_texis/mini.texi:589
 #, no-wrap
 msgid "M-p"
 msgstr "M-p"
 
 #. type: key{#1}
-#: mini.texi.orig:590
+#: original_texis/mini.texi:590
 #, no-wrap
 msgid "UP"
 msgstr "UP"
 
 #. type: table
-#: mini.texi.orig:593
+#: original_texis/mini.texi:593
 msgid ""
 "Move to the previous item in the minibuffer history, an earlier argument "
 "(@code{previous-history-element})."
-msgstr "ミニバッファーヒストリーの前のアイテム、つまり以前のアイテムに移動します(@code{previous-history-element})。"
+msgstr ""
+"ミニバッファーヒストリーの前のアイテム、つまり以前のアイテムに移動します"
+"(@code{previous-history-element})。"
 
 #. type: item
-#: mini.texi.orig:593
+#: original_texis/mini.texi:593
 #, no-wrap
 msgid "M-n"
 msgstr "M-n"
 
 #. type: key{#1}
-#: mini.texi.orig:594
+#: original_texis/mini.texi:594
 #, no-wrap
 msgid "DOWN"
 msgstr "DOWN"
 
 #. type: table
-#: mini.texi.orig:597
+#: original_texis/mini.texi:597
 msgid ""
 "Move to the next item in the minibuffer history (@code{next-history-"
 "element})."
-msgstr "ミニバッファーヒストリーの次のアイテムに移動します(@code{next-history-element})。"
+msgstr ""
+"ミニバッファーヒストリーの次のアイテムに移動します(@code{next-history-"
+"element})。"
 
 #. type: item
-#: mini.texi.orig:597
+#: original_texis/mini.texi:597
 #, no-wrap
 msgid "M-r @var{regexp} @key{RET}"
 msgstr "M-r @var{regexp} @key{RET}"
 
 #. type: table
-#: mini.texi.orig:600
+#: original_texis/mini.texi:600
 msgid ""
 "Move to an earlier item in the minibuffer history that matches @var{regexp} "
 "(@code{previous-matching-history-element})."
-msgstr "@var{regexp}にマッチする、ミニバッファーヒストリーの以前のアイテムに移動します(@code{previous-matching-history-element})。"
+msgstr ""
+"@var{regexp}にマッチする、ミニバッファーヒストリーの以前のアイテムに移動しま"
+"す(@code{previous-matching-history-element})。"
 
 #. type: item
-#: mini.texi.orig:600
+#: original_texis/mini.texi:600
 #, no-wrap
 msgid "M-s @var{regexp} @key{RET}"
 msgstr "M-s @var{regexp} @key{RET}"
 
 #. type: table
-#: mini.texi.orig:603
+#: original_texis/mini.texi:603
 msgid ""
 "Move to a later item in the minibuffer history that matches @var{regexp} "
 "(@code{next-matching-history-element})."
-msgstr "@var{regexp}にマッチする、ミニバッファーヒストリーの以降のアイテムに移動します(@code{next-matching-history-element})。"
+msgstr ""
+"@var{regexp}にマッチする、ミニバッファーヒストリーの以降のアイテムに移動しま"
+"す(@code{next-matching-history-element})。"
 
 #. type: kindex
-#: mini.texi.orig:605
+#: original_texis/mini.texi:605
 #, no-wrap
 msgid "M-p @r{(minibuffer history)}"
 msgstr "M-p @r{(minibuffer history)}"
 
 #. type: kindex
-#: mini.texi.orig:606
+#: original_texis/mini.texi:606
 #, no-wrap
 msgid "M-n @r{(minibuffer history)}"
 msgstr "M-n @r{(minibuffer history)}"
 
 #. type: kindex
-#: mini.texi.orig:607
+#: original_texis/mini.texi:607
 #, no-wrap
 msgid "UP @r{(minibuffer history)}"
 msgstr "UP @r{(minibuffer history)}"
 
 #. type: kindex
-#: mini.texi.orig:608
+#: original_texis/mini.texi:608
 #, no-wrap
 msgid "DOWN @r{(minibuffer history)}"
 msgstr "DOWN @r{(minibuffer history)}"
 
 #. type: findex
-#: mini.texi.orig:609
+#: original_texis/mini.texi:609
 #, no-wrap
 msgid "next-history-element"
 msgstr "next-history-element"
 
 #. type: findex
-#: mini.texi.orig:610
+#: original_texis/mini.texi:610
 #, no-wrap
 msgid "previous-history-element"
 msgstr "previous-history-element"
 
 #. type: Plain text
-#: mini.texi.orig:618
+#: original_texis/mini.texi:618
 msgid ""
 "While in the minibuffer, @kbd{M-p} or @key{UP} (@code{previous-history-"
 "element}) moves through the minibuffer history list, one item at a time.  "
@@ -1452,53 +1773,66 @@ msgid ""
 "minibuffer, replacing its existing contents.  Typing @kbd{M-n} or @key{DOWN} "
 "(@code{next-history-element}) moves through the minibuffer history list in "
 "the opposite direction, fetching later entries into the minibuffer."
-msgstr "ミニバッファーでの@kbd{M-p}または@key{UP} (@code{previous-history-element})は、ミニバッファーのヒストリーリストのアイテムを1つずつ移動します。@kbd{M-p}はヒストリーリストの以前のアイテムを取り出して、ミニバッファーの既存の内容を置き換えます。@kbd{M-n}または@key{DOWN} (@code{next-history-element})は、ミニバッファーのヒストリーリストを反対方向、つまり以降のエントリーを取り出してミニバッファーの既存の内容を置き換えます。"
+msgstr ""
+"ミニバッファーでの@kbd{M-p}または@key{UP} (@code{previous-history-element})"
+"は、ミニバッファーのヒストリーリストのアイテムを1つずつ移動します。@kbd{M-p}"
+"はヒストリーリストの以前のアイテムを取り出して、ミニバッファーの既存の内容を"
+"置き換えます。@kbd{M-n}または@key{DOWN} (@code{next-history-element})は、ミニ"
+"バッファーのヒストリーリストを反対方向、つまり以降のエントリーを取り出してミ"
+"ニバッファーの既存の内容を置き換えます。"
 
 #. type: Plain text
-#: mini.texi.orig:624
+#: original_texis/mini.texi:624
 msgid ""
 "If you type @kbd{M-n} in the minibuffer when there are no later entries in "
 "the minibuffer history (e.g., if you haven't previously typed @kbd{M-p}), "
 "Emacs tries fetching from a list of default arguments: values that you are "
 "likely to enter.  You can think of this as moving through the ``future "
 "history'' list."
-msgstr "ミニバッファーヒストリーに以降のエントリーがないとき(たとえば前に1回も@kbd{M-p}を入力していないとき)、Emacsはデフォルト引数のリストから、あなたが入力するだろうと思われる値を取り出します。これは``未来のヒストリー''を移動すると考えることもできます。"
+msgstr ""
+"ミニバッファーヒストリーに以降のエントリーがないとき(たとえば前に1回も@kbd{M-"
+"p}を入力していないとき)、Emacsはデフォルト引数のリストから、あなたが入力する"
+"だろうと思われる値を取り出します。これは``未来のヒストリー''を移動すると考え"
+"ることもできます。"
 
 #. type: Plain text
-#: mini.texi.orig:629
+#: original_texis/mini.texi:629
 msgid ""
 "If you edit the text inserted by the @kbd{M-p} or @kbd{M-n} minibuffer "
 "history commands, this does not change its entry in the history list.  "
 "However, the edited argument does go at the end of the history list when you "
 "submit it."
-msgstr "ミニバッファーコマンドの@kbd{M-p}または@kbd{M-n}で挿入されたテキストを編集しても、ヒストリーリストのエントリーは変更されません。かわりに編集された引数が確定されたとき、ヒストリーリストの最後に追加されます。"
+msgstr ""
+"ミニバッファーコマンドの@kbd{M-p}または@kbd{M-n}で挿入されたテキストを編集し"
+"ても、ヒストリーリストのエントリーは変更されません。かわりに編集された引数が"
+"確定されたとき、ヒストリーリストの最後に追加されます。"
 
 #. type: findex
-#: mini.texi.orig:630
+#: original_texis/mini.texi:630
 #, no-wrap
 msgid "previous-matching-history-element"
 msgstr "previous-matching-history-element"
 
 #. type: findex
-#: mini.texi.orig:631
+#: original_texis/mini.texi:631
 #, no-wrap
 msgid "next-matching-history-element"
 msgstr "next-matching-history-element"
 
 #. type: kindex
-#: mini.texi.orig:632
+#: original_texis/mini.texi:632
 #, no-wrap
 msgid "M-r @r{(minibuffer history)}"
 msgstr "M-r @r{(minibuffer history)}"
 
 #. type: kindex
-#: mini.texi.orig:633
+#: original_texis/mini.texi:633
 #, no-wrap
 msgid "M-s @r{(minibuffer history)}"
 msgstr "M-s @r{(minibuffer history)}"
 
 #. type: Plain text
-#: mini.texi.orig:646
+#: original_texis/mini.texi:646
 msgid ""
 "You can use @kbd{M-r} (@code{previous-matching-history-element}) to search "
 "through older elements in the history list, and @kbd{M-s} (@code{next-"
@@ -1510,138 +1844,172 @@ msgid ""
 "they use the minibuffer to read the regular expression argument, even though "
 "they are invoked from the minibuffer.  An upper-case letter in the regular "
 "expression makes the search case-sensitive (@pxref{Search Case})."
-msgstr "@kbd{M-r} (@code{previous-matching-history-element})でヒストリーリストの古い要素を、@kbd{M-s} (@code{next-matching-history-element})で新しいエントリーを探すことができます。これらのコマンドはどちらも引数として@dfn{正規表現(regular expression)}を要求し、それにマッチした最初のエントリーをミニバッファーに取り出します。正規表現についての説明は、@ref{Regexps}を参照してください。数引数@var{n}を指定すると、それは@var{n}番目に一致したエントリーを取り出すことを意味します。これらのコマンドはミニバッファーから呼び出されたとはいえ、ミニバッファーを使って正規表現を読みとるという点では、変わったコマンドです。正規表現に大文字が含まれていると、大文字小文字を区別する検索(@ref{Search Case}を参照してください)となります。"
+msgstr ""
+"@kbd{M-r} (@code{previous-matching-history-element})でヒストリーリストの古い"
+"要素を、@kbd{M-s} (@code{next-matching-history-element})で新しいエントリーを"
+"探すことができます。これらのコマンドはどちらも引数として@dfn{正規表現"
+"(regular expression)}を要求し、それにマッチした最初のエントリーをミニバッ"
+"ファーに取り出します。正規表現についての説明は、@ref{Regexps}を参照してくださ"
+"い。数引数@var{n}を指定すると、それは@var{n}番目に一致したエントリーを取り出"
+"すことを意味します。これらのコマンドはミニバッファーから呼び出されたとはい"
+"え、ミニバッファーを使って正規表現を読みとるという点では、変わったコマンドで"
+"す。正規表現に大文字が含まれていると、大文字小文字を区別する検索(@ref{Search "
+"Case}を参照してください)となります。"
 
 #. type: Plain text
-#: mini.texi.orig:649
+#: original_texis/mini.texi:649
 msgid ""
 "You can also search through the history using an incremental search.  "
 "@xref{Isearch Minibuffer}."
-msgstr "ヒストリーをインクリメンタルサーチすることもできます。@ref{Isearch Minibuffer}を参照してください。"
+msgstr ""
+"ヒストリーをインクリメンタルサーチすることもできます。@ref{Isearch "
+"Minibuffer}を参照してください。"
 
 #. type: Plain text
-#: mini.texi.orig:655
+#: original_texis/mini.texi:655
 msgid ""
 "Emacs keeps separate history lists for several different kinds of "
 "arguments.  For example, there is a list for file names, used by all the "
 "commands that read file names.  Other history lists include buffer names, "
 "command names (used by @kbd{M-x}), and command arguments (used by commands "
 "like @code{query-replace})."
-msgstr "Emacsは引数の種類ごとに個別のリストを保持します。たとえばファイル名のリストは、ファイル名を読みとるすべてのコマンドで使われたファイル名、といった具合です。ほかのヒストリーリストとしてはバッファー名やコマンド名(@kbd{M-x}で使われたもの)、コマンド引数(@code{query-replace}のような引数で使われたもの)があります。"
+msgstr ""
+"Emacsは引数の種類ごとに個別のリストを保持します。たとえばファイル名のリスト"
+"は、ファイル名を読みとるすべてのコマンドで使われたファイル名、といった具合で"
+"す。ほかのヒストリーリストとしてはバッファー名やコマンド名(@kbd{M-x}で使われ"
+"たもの)、コマンド引数(@code{query-replace}のような引数で使われたもの)がありま"
+"す。"
 
 #. type: vindex
-#: mini.texi.orig:656
+#: original_texis/mini.texi:656
 #, no-wrap
 msgid "history-length"
 msgstr "history-length"
 
 #. type: Plain text
-#: mini.texi.orig:661
+#: original_texis/mini.texi:661
 msgid ""
 "The variable @code{history-length} specifies the maximum length of a "
 "minibuffer history list; adding a new element deletes the oldest element if "
 "the list gets too long.  If the value is @code{t}, there is no maximum "
 "length."
-msgstr "変数@code{history-length}には、ミニバッファーのヒストリーリストの最大の長さを指定します。リストが長くなりすぎたときは、一番古い要素を削除して新しい要素を追加します。@code{t}を指定したときは、長さは無制限になります。"
+msgstr ""
+"変数@code{history-length}には、ミニバッファーのヒストリーリストの最大の長さを"
+"指定します。リストが長くなりすぎたときは、一番古い要素を削除して新しい要素を"
+"追加します。@code{t}を指定したときは、長さは無制限になります。"
 
 #. type: vindex
-#: mini.texi.orig:662
+#: original_texis/mini.texi:662
 #, no-wrap
 msgid "history-delete-duplicates"
 msgstr "history-delete-duplicates"
 
 #. type: Plain text
-#: mini.texi.orig:667
+#: original_texis/mini.texi:667
 msgid ""
 "The variable @code{history-delete-duplicates} specifies whether to delete "
 "duplicates in history.  If it is non-@code{nil}, adding a new element "
 "deletes from the list all other elements that are equal to it.  The default "
 "is @code{nil}."
-msgstr "変数@code{history-delete-duplicates}には、重複したヒストリーを削除するかを指定します。非@code{nil}の場合、新しい要素が追加されるとリストからそれと同じ要素がすべて削除されます。デフォルトは@code{nil}です。"
+msgstr ""
+"変数@code{history-delete-duplicates}には、重複したヒストリーを削除するかを指"
+"定します。非@code{nil}の場合、新しい要素が追加されるとリストからそれと同じ要"
+"素がすべて削除されます。デフォルトは@code{nil}です。"
 
 #. type: section
-#: mini.texi.orig:669
+#: original_texis/mini.texi:669
 #, no-wrap
 msgid "Repeating Minibuffer Commands"
 msgstr "Repeating Minibuffer Commands"
 
 #. type: cindex
-#: mini.texi.orig:670
+#: original_texis/mini.texi:670
 #, no-wrap
 msgid "command history"
 msgstr "command history"
 
 #. type: cindex
-#: mini.texi.orig:671
+#: original_texis/mini.texi:671
 #, no-wrap
 msgid "history of commands"
 msgstr "history of commands"
 
 #. type: Plain text
-#: mini.texi.orig:678
+#: original_texis/mini.texi:678
 msgid ""
 "Every command that uses the minibuffer once is recorded on a special history "
 "list, the @dfn{command history}, together with the values of its arguments, "
 "so that you can repeat the entire command.  In particular, every use of "
 "@kbd{M-x} is recorded there, since @kbd{M-x} uses the minibuffer to read the "
 "command name."
-msgstr "ミニバッファーを使用したコマンドはすべて、@dfn{コマンドヒストリー(command history)}という特別なヒストリーリストに記録されます。これにはコマンドの引数の値も記録されるので、コマンド全体を再実行できます。特に@kbd{M-x}はコマンド名を読みとるので、@kbd{M-x}を使用したものはすべてそこに記録されます。"
+msgstr ""
+"ミニバッファーを使用したコマンドはすべて、@dfn{コマンドヒストリー(command "
+"history)}という特別なヒストリーリストに記録されます。これにはコマンドの引数の"
+"値も記録されるので、コマンド全体を再実行できます。特に@kbd{M-x}はコマンド名を"
+"読みとるので、@kbd{M-x}を使用したものはすべてそこに記録されます。"
 
 #. type: findex
-#: mini.texi.orig:679
+#: original_texis/mini.texi:679
 #, no-wrap
 msgid "list-command-history"
 msgstr "list-command-history"
 
 #. type: item
-#: mini.texi.orig:681
+#: original_texis/mini.texi:681
 #, no-wrap
 msgid "C-x @key{ESC} @key{ESC}"
 msgstr "C-x @key{ESC} @key{ESC}"
 
 #. type: table
-#: mini.texi.orig:684
+#: original_texis/mini.texi:684
 msgid ""
 "Re-execute a recent minibuffer command from the command history "
 "(@code{repeat-complex-command})."
-msgstr "コマンドヒストリーから最近のミニバッファーのコマンドを再実行します(@code{repeat-complex-command})。"
+msgstr ""
+"コマンドヒストリーから最近のミニバッファーのコマンドを再実行します"
+"(@code{repeat-complex-command})。"
 
 #. type: item
-#: mini.texi.orig:684
+#: original_texis/mini.texi:684
 #, no-wrap
 msgid "M-x list-command-history"
 msgstr "M-x list-command-history"
 
 #. type: table
-#: mini.texi.orig:687
+#: original_texis/mini.texi:687
 msgid ""
 "Display the entire command history, showing all the commands @kbd{C-x "
 "@key{ESC} @key{ESC}} can repeat, most recent first."
-msgstr "コマンドヒストリー全体を表示します。表示されたすべてのコマンドは@kbd{C-x @key{ESC} @key{ESC}}で再実行できます。一番最近のものが先頭に表示されます。"
+msgstr ""
+"コマンドヒストリー全体を表示します。表示されたすべてのコマンドは@kbd{C-x "
+"@key{ESC} @key{ESC}}で再実行できます。一番最近のものが先頭に表示されます。"
 
 #. type: kindex
-#: mini.texi.orig:689
+#: original_texis/mini.texi:689
 #, no-wrap
 msgid "C-x ESC ESC"
 msgstr "C-x ESC ESC"
 
 #. type: findex
-#: mini.texi.orig:690
+#: original_texis/mini.texi:690
 #, no-wrap
 msgid "repeat-complex-command"
 msgstr "repeat-complex-command"
 
 #. type: Plain text
-#: mini.texi.orig:695
+#: original_texis/mini.texi:695
 msgid ""
 "@kbd{C-x @key{ESC} @key{ESC}} re-executes a recent command that used the "
 "minibuffer.  With no argument, it repeats the last such command.  A numeric "
 "argument specifies which command to repeat; 1 means the last one, 2 the "
 "previous, and so on."
-msgstr "@kbd{C-x @key{ESC} @key{ESC}}は、ミニバッファーを使った最近のコマンドを再実行します。引数を与えないと、一番最近のコマンドを実行します。数引数で再実行したいコマンドを指定します。1は一番最近のコマンド、2はその前、といった具合です。"
+msgstr ""
+"@kbd{C-x @key{ESC} @key{ESC}}は、ミニバッファーを使った最近のコマンドを再実行"
+"します。引数を与えないと、一番最近のコマンドを実行します。数引数で再実行した"
+"いコマンドを指定します。1は一番最近のコマンド、2はその前、といった具合です。"
 
 #. type: Plain text
-#: mini.texi.orig:704
+#: original_texis/mini.texi:704
 msgid ""
 "@kbd{C-x @key{ESC} @key{ESC}} works by turning the previous command into a "
 "Lisp expression and then entering a minibuffer initialized with the text for "
@@ -1651,25 +2019,35 @@ msgid ""
 "the Lisp expression before you execute it.  The executed command is added to "
 "the front of the command history unless it is identical to the most recent "
 "item."
-msgstr "@kbd{C-x @key{ESC} @key{ESC}}は、前のコマンドをLisp式に変換して、その式でミニバッファーのテキストを初期化します。Lispを知らなくても、何のコマンドが再実行用に表示されているか明白でしょう。単に@key{RET}を入力すると、コマンドを変更せずに再実行します。実行する前にLisp式を編集して、コマンドを変更できます。実行されたコマンドは、一番最近のコマンドと等しくなければ、コマンドヒストリーの一番先頭に追加されます。"
+msgstr ""
+"@kbd{C-x @key{ESC} @key{ESC}}は、前のコマンドをLisp式に変換して、その式でミニ"
+"バッファーのテキストを初期化します。Lispを知らなくても、何のコマンドが再実行"
+"用に表示されているか明白でしょう。単に@key{RET}を入力すると、コマンドを変更せ"
+"ずに再実行します。実行する前にLisp式を編集して、コマンドを変更できます。実行"
+"されたコマンドは、一番最近のコマンドと等しくなければ、コマンドヒストリーの一"
+"番先頭に追加されます。"
 
 #. type: Plain text
-#: mini.texi.orig:710
+#: original_texis/mini.texi:710
 msgid ""
 "Once inside the minibuffer for @kbd{C-x @key{ESC} @key{ESC}}, you can use "
 "the usual minibuffer history commands (@pxref{Minibuffer History}) to move "
 "through the history list.  After finding the desired previous command, you "
 "can edit its expression as usual and then execute it by typing @key{RET}."
-msgstr "@kbd{C-x @key{ESC} @key{ESC}}で一度ミニバッファーの中に入れば、通常のミニバッファーのヒストリーコマンド(@ref{Minibuffer History}を参照してください)を使って、ヒストリーリスト中を移動できます。以前に実行したコマンドが見つけたら、式を編集して@key{RET}により実行できます。"
+msgstr ""
+"@kbd{C-x @key{ESC} @key{ESC}}で一度ミニバッファーの中に入れば、通常のミニバッ"
+"ファーのヒストリーコマンド(@ref{Minibuffer History}を参照してください)を使っ"
+"て、ヒストリーリスト中を移動できます。以前に実行したコマンドが見つけたら、式"
+"を編集して@key{RET}により実行できます。"
 
 #. type: vindex
-#: mini.texi.orig:711
+#: original_texis/mini.texi:711
 #, no-wrap
 msgid "isearch-resume-in-command-history"
 msgstr "isearch-resume-in-command-history"
 
 #. type: Plain text
-#: mini.texi.orig:718
+#: original_texis/mini.texi:718
 msgid ""
 "Incremental search does not, strictly speaking, use the minibuffer.  "
 "Therefore, although it behaves like a complex command, it normally does not "
@@ -1677,59 +2055,78 @@ msgid ""
 "incremental search commands appear in the history by setting @code{isearch-"
 "resume-in-command-history} to a non-@code{nil} value.  @xref{Incremental "
 "Search}."
-msgstr "厳密に言うとインクリメンタルサーチはミニバッファーを使いません。これが複雑なコマンドのように振る舞うとしても、通常は@kbd{C-x @key{ESC} @key{ESC}}で表示されるヒストリーリストに含まれません。ヒストリーにインクリメンタルサーチコマンドを表示させるには、@code{isearch-resume-in-command-history}に非@code{nil}をセットしてください。@ref{Incremental Search}を参照してください。"
+msgstr ""
+"厳密に言うとインクリメンタルサーチはミニバッファーを使いません。これが複雑な"
+"コマンドのように振る舞うとしても、通常は@kbd{C-x @key{ESC} @key{ESC}}で表示さ"
+"れるヒストリーリストに含まれません。ヒストリーにインクリメンタルサーチコマン"
+"ドを表示させるには、@code{isearch-resume-in-command-history}に非@code{nil}を"
+"セットしてください。@ref{Incremental Search}を参照してください。"
 
 #. type: vindex
-#: mini.texi.orig:719
+#: original_texis/mini.texi:719
 #, no-wrap
 msgid "command-history"
 msgstr "command-history"
 
 #. type: Plain text
-#: mini.texi.orig:725
+#: original_texis/mini.texi:725
 msgid ""
 "The list of previous minibuffer-using commands is stored as a Lisp list in "
 "the variable @code{command-history}.  Each element is a Lisp expression that "
 "describes one command and its arguments.  Lisp programs can re-execute a "
 "command by calling @code{eval} with the @code{command-history} element."
-msgstr "ミニバッファーを使用した以前のコマンドのリストは、Lispのリスト値として@code{command-history}に格納されています。Lisp式の各要素は、1つのコマンドとその引数をあらわしています。Lispプログラムは@code{eval}に@code{command-history}の要素を使って呼び出すことで、コマンドを再実行できます。"
+msgstr ""
+"ミニバッファーを使用した以前のコマンドのリストは、Lispのリスト値として"
+"@code{command-history}に格納されています。Lisp式の各要素は、1つのコマンドとそ"
+"の引数をあらわしています。Lispプログラムは@code{eval}に@code{command-history}"
+"の要素を使って呼び出すことで、コマンドを再実行できます。"
 
 #. type: section
-#: mini.texi.orig:727
+#: original_texis/mini.texi:727
 #, no-wrap
 msgid "Entering passwords"
 msgstr "Entering passwords"
 
 #. type: Plain text
-#: mini.texi.orig:733
+#: original_texis/mini.texi:733
 msgid ""
 "Sometimes, you may need to enter a password into Emacs.  For instance, when "
 "you tell Emacs to visit a file on another machine via a network protocol "
 "such as FTP, you often need to supply a password to gain access to the "
 "machine (@pxref{Remote Files})."
-msgstr "Emacsでパスワードを入力したい場合があります。たとえばEmacsにFTPのようなネットワークプロトコルを介して他のマシンのファイルをvisitし、マシンへのアクセスのためにパスワードを与える場合などです(@ref{Remote Files}を参照してください)。"
+msgstr ""
+"Emacsでパスワードを入力したい場合があります。たとえばEmacsにFTPのようなネット"
+"ワークプロトコルを介して他のマシンのファイルをvisitし、マシンへのアクセスのた"
+"めにパスワードを与える場合などです(@ref{Remote Files}を参照してください)。"
 
 #. type: Plain text
-#: mini.texi.orig:739
+#: original_texis/mini.texi:739
 msgid ""
 "Entering a password is similar to using a minibuffer.  Emacs displays a "
 "prompt in the echo area (such as @samp{Password: }); after you type the "
 "required password, press @key{RET} to submit it.  To prevent others from "
 "seeing your password, every character you type is displayed as a dot "
 "(@samp{.}) instead of its usual form."
-msgstr "パスワードの入力はミニバッファーの使用と似ています。Emacsは(@samp{Password: }のような)プロンプトをエコーエリアに表示します。要求されたパスワードを入力した後、それを確定するために@key{RET}を押します。他の人がパスワードを見るのを防ぐために、入力した文字は通常の形式ではなく、ドット(@samp{.})で表示されます。"
+msgstr ""
+"パスワードの入力はミニバッファーの使用と似ています。Emacsは(@samp{Password: }"
+"のような)プロンプトをエコーエリアに表示します。要求されたパスワードを入力した"
+"後、それを確定するために@key{RET}を押します。他の人がパスワードを見るのを防ぐ"
+"ために、入力した文字は通常の形式ではなく、ドット(@samp{.})で表示されます。"
 
 #. type: Plain text
-#: mini.texi.orig:744
+#: original_texis/mini.texi:744
 msgid ""
 "Most of the features and commands associated with the minibuffer can "
 "@emph{not} be used when entering a password.  There is no history or "
 "completion, and you cannot change windows or perform any other action with "
 "Emacs until you have submitted the password."
-msgstr "ミニバッファーに関連付けられた多くの機能およびコマンドは、パスワード入力では使用@emph{できません}。ヒストリーや補完はできず、ウィンドウの変更やEmacsでの他の処理も、パスワードをsubmitするまでは行うことができません。"
+msgstr ""
+"ミニバッファーに関連付けられた多くの機能およびコマンドは、パスワード入力では"
+"使用@emph{できません}。ヒストリーや補完はできず、ウィンドウの変更やEmacsでの"
+"他の処理も、パスワードをsubmitするまでは行うことができません。"
 
 #. type: Plain text
-#: mini.texi.orig:753
+#: original_texis/mini.texi:753
 msgid ""
 "While you are typing the password, you may press @key{DEL} to delete "
 "backwards, removing the last character entered.  @kbd{C-u} deletes "
@@ -1738,23 +2135,31 @@ msgid ""
 "(@pxref{Killing}).  You may type either @key{RET} or @key{ESC} to submit the "
 "password.  Any other self-inserting character key inserts the associated "
 "character into the password, and all other input is ignored."
-msgstr "パスワードのタイプ中は、@key{DEL}を押して後方に、すなわち最後に入力した文字から削除できます。@kbd{C-u}で入力したすべての文字を削除できます。@kbd{C-g}はパスワードプロンプトを閉じます(@ref{Quitting}を参照してください)。@kbd{C-y}は現在のkillリングからパスワードを挿入します(@pxref{Killing})。パスワードを確定するには、@key{RET}または@key{ESC}を入力します。他の自己挿入文字は、対応する文字をパスワードに入力します.それ以外の入力は無視されます。"
+msgstr ""
+"パスワードのタイプ中は、@key{DEL}を押して後方に、すなわち最後に入力した文字か"
+"ら削除できます。@kbd{C-u}で入力したすべての文字を削除できます。@kbd{C-g}はパ"
+"スワードプロンプトを閉じます(@ref{Quitting}を参照してください)。@kbd{C-y}は現"
+"在のkillリングからパスワードを挿入します(@pxref{Killing})。パスワードを確定す"
+"るには、@key{RET}または@key{ESC}を入力します。他の自己挿入文字は、対応する文"
+"字をパスワードに入力します.それ以外の入力は無視されます。"
 
 #. type: Plain text
-#: mini.texi.orig:760
+#: original_texis/mini.texi:760
 msgid ""
 "An Emacs command may require you to answer a ``yes or no'' question during "
 "the course of its execution.  Such queries come in two main varieties."
-msgstr "Emacsのコマンドが実行の過程で、``yes or no(はい/いいえ)''形式で質問して答えを求めるかもしれません。これらの質問は大きく2つにわけることができます。"
+msgstr ""
+"Emacsのコマンドが実行の過程で、``yes or no(はい/いいえ)''形式で質問して答えを"
+"求めるかもしれません。これらの質問は大きく2つにわけることができます。"
 
 #. type: cindex
-#: mini.texi.orig:761
+#: original_texis/mini.texi:761
 #, no-wrap
 msgid "y or n prompt"
 msgstr "y or n prompt"
 
 #. type: Plain text
-#: mini.texi.orig:769
+#: original_texis/mini.texi:769
 msgid ""
 "For the first type of ``yes or no'' query, the prompt ends with @samp{(y or "
 "n)}.  Such a query does not actually use the minibuffer; the prompt appears "
@@ -1762,16 +2167,22 @@ msgid ""
 "which immediately delivers the response.  For example, if you type @kbd{C-x "
 "C-w} (@kbd{write-file}) to save a buffer, and enter the name of an existing "
 "file, Emacs issues a prompt like this:"
-msgstr "1番目の``yes or no''形式の質問は、@samp{(y or n)}で終わるプロンプトのものです。このような質問は、実際のところミニバッファーを使用しません。プロンプトがエコーエリアに表示され、答えを@samp{y}または@samp{n}で入力すると、ただちにそれが答えとなります。たとえばバッファーの保存で@kbd{C-x C-w} (@kbd{write-file})を入力して既存のファイル名を入力すると、Emacsは以下のようなプロンプトを表示します:"
+msgstr ""
+"1番目の``yes or no''形式の質問は、@samp{(y or n)}で終わるプロンプトのもので"
+"す。このような質問は、実際のところミニバッファーを使用しません。プロンプトが"
+"エコーエリアに表示され、答えを@samp{y}または@samp{n}で入力すると、ただちにそ"
+"れが答えとなります。たとえばバッファーの保存で@kbd{C-x C-w} (@kbd{write-"
+"file})を入力して既存のファイル名を入力すると、Emacsは以下のようなプロンプトを"
+"表示します:"
 
 #. type: smallexample
-#: mini.texi.orig:772
+#: original_texis/mini.texi:772
 #, no-wrap
 msgid "File `foo.el' exists; overwrite? (y or n)\n"
 msgstr "File `foo.el' exists; overwrite? (y or n)\n"
 
 #. type: Plain text
-#: mini.texi.orig:784
+#: original_texis/mini.texi:784
 msgid ""
 "Because this query does not actually use the minibuffer, the usual "
 "minibuffer editing commands cannot be used.  However, you can perform some "
@@ -1781,36 +2192,54 @@ msgid ""
 "@kbd{C-M-v} scrolls forward in the next window; and @kbd{C-M-S-v} scrolls "
 "backward in the next window.  Typing @kbd{C-g} dismisses the query, and "
 "quits the command that issued it (@pxref{Quitting})."
-msgstr "この質問はミニバッファーを使用しないので、通常のミニバッファー編集コマンドは使えません。しかしいくつかのウィンドウをスクロールする操作は行えます。@kbd{C-l}による選択されたウィンドウの再センタリング、@kbd{M-v}(または@key{PageDown}か@key{next})による前方へのスクロール、@kbd{C-v}(または@key{PageUp}か@key{prior})による後方へのスクロール、@kbd{C-M-v}による次のウィンドウの前方へのスクロール、@kbd{C-M-S-v}による次のウィンドウの後方へのスクロールができます。@kbd{C-g}は質問を打ちきり、質問を発したコマンドを終了します(@ref{Quitting}を参照してください)。"
+msgstr ""
+"この質問はミニバッファーを使用しないので、通常のミニバッファー編集コマンドは"
+"使えません。しかしいくつかのウィンドウをスクロールする操作は行えます。@kbd{C-"
+"l}による選択されたウィンドウの再センタリング、@kbd{M-v}(または@key{PageDown}"
+"か@key{next})による前方へのスクロール、@kbd{C-v}(または@key{PageUp}か"
+"@key{prior})による後方へのスクロール、@kbd{C-M-v}による次のウィンドウの前方へ"
+"のスクロール、@kbd{C-M-S-v}による次のウィンドウの後方へのスクロールができま"
+"す。@kbd{C-g}は質問を打ちきり、質問を発したコマンドを終了します"
+"(@ref{Quitting}を参照してください)。"
 
 #. type: cindex
-#: mini.texi.orig:785
+#: original_texis/mini.texi:785
 #, no-wrap
 msgid "yes or no prompt"
 msgstr "yes or no prompt"
 
 #. type: Plain text
-#: mini.texi.orig:792
+#: original_texis/mini.texi:792
 msgid ""
 "The second type of ``yes or no'' query is typically employed if giving the "
 "wrong answer would have serious consequences; it uses the minibuffer, and "
 "features a prompt ending with @samp{(yes or no)}.  For example, if you "
 "invoke @kbd{C-x k} (@code{kill-buffer}) on a file-visiting buffer with "
 "unsaved changes, Emacs activates the minibuffer with a prompt like this:"
-msgstr "2番目の``yes or no''形式の質問は、間違った答えが深刻な事態を招くような場合に使用されます。これはミニバッファーを使い、@samp{(yes or no)}で終わるプロンプトという特徴があります。たとえば変更が保存されていないファイルをvisitしているバッファーで、@kbd{C-x k} (@code{kill-buffer})を呼び出すと、Emacsはミニバッファーをアクティブにして以下のようなプロンプトを表示します:"
+msgstr ""
+"2番目の``yes or no''形式の質問は、間違った答えが深刻な事態を招くような場合に"
+"使用されます。これはミニバッファーを使い、@samp{(yes or no)}で終わるプロンプ"
+"トという特徴があります。たとえば変更が保存されていないファイルをvisitしている"
+"バッファーで、@kbd{C-x k} (@code{kill-buffer})を呼び出すと、Emacsはミニバッ"
+"ファーをアクティブにして以下のようなプロンプトを表示します:"
 
 #. type: smallexample
-#: mini.texi.orig:795
+#: original_texis/mini.texi:795
 #, no-wrap
 msgid "Buffer foo.el modified; kill anyway? (yes or no)\n"
 msgstr "Buffer foo.el modified; kill anyway? (yes or no)\n"
 
 #. type: Plain text
-#: mini.texi.orig:802
+#: original_texis/mini.texi:802
 msgid ""
 "To answer, you must type @samp{yes} or @samp{no} into the minibuffer, "
 "followed by @key{RET}.  The minibuffer behaves as described in the previous "
 "sections; you can switch to another window with @kbd{C-x o}, use the history "
 "commands @kbd{M-p} and @kbd{M-f}, etc.  Type @kbd{C-g} to quit the "
 "minibuffer and the querying command."
-msgstr "これに答えるには、ミニバッファーに@samp{yes}または@samp{no}と入力してから、@key{RET}を押さなければなりません。ミニバッファーは前のセクションで説明したように動作します。@kbd{C-x o}による他のウィンドウへのスイッチ、ヒストリーコマンドの@kbd{M-p}や@kbd{M-f}などが使用できます。@kbd{C-g}でミニバッファーを閉じて、質問を発したコマンドを終了できます。"
+msgstr ""
+"これに答えるには、ミニバッファーに@samp{yes}または@samp{no}と入力してから、"
+"@key{RET}を押さなければなりません。ミニバッファーは前のセクションで説明したよ"
+"うに動作します。@kbd{C-x o}による他のウィンドウへのスイッチ、ヒストリーコマン"
+"ドの@kbd{M-p}や@kbd{M-f}などが使用できます。@kbd{C-g}でミニバッファーを閉じ"
+"て、質問を発したコマンドを終了できます。"

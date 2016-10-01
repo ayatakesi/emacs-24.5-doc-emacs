@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-03-03 22:40+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:31+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,137 +16,146 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: appendixsec
-#: xresources.texi.orig:5 xresources.texi.orig:35
+#: original_texis/xresources.texi:5 original_texis/xresources.texi:35
 #, no-wrap
 msgid "X Resources"
 msgstr "X Resources"
 
 #. type: appendix
-#: xresources.texi.orig:6
+#: original_texis/xresources.texi:6
 #, no-wrap
 msgid "X Options and Resources"
 msgstr "X Options and Resources"
 
 #. type: Plain text
-#: xresources.texi.orig:10
+#: original_texis/xresources.texi:10
 msgid ""
 "You can customize some X-related aspects of Emacs behavior using X "
 "resources, as is usual for programs that use X."
-msgstr "Xを使用するプログラムにたいして通常行なうように、Xリソースを使用してEmacsのXに関連する外観をカスタマイズできます。"
+msgstr ""
+"Xを使用するプログラムにたいして通常行なうように、Xリソースを使用してEmacsのX"
+"に関連する外観をカスタマイズできます。"
 
 #. type: Plain text
-#: xresources.texi.orig:14
+#: original_texis/xresources.texi:14
 msgid ""
 "When Emacs is compiled with GTK+ support, the appearance of various "
 "graphical widgets, such as the menu-bar, scroll-bar, and dialog boxes, is "
 "determined by"
-msgstr "EmacsがGTK+サポートつきでコンパイルされている場合、メニューバー、スクロールバー、ダイアログボックスなどの、さまざまなグラフィカルウィジェットの外観は"
+msgstr ""
+"EmacsがGTK+サポートつきでコンパイルされている場合、メニューバー、スクロール"
+"バー、ダイアログボックスなどの、さまざまなグラフィカルウィジェットの外観は"
 
 #. type: ifnottex
-#: xresources.texi.orig:16
+#: original_texis/xresources.texi:16
 msgid "``GTK resources'', which we will also describe."
 msgstr "``GTKリソース''で決定されるので、これについても説明します。"
 
 #. type: iftex
-#: xresources.texi.orig:19
+#: original_texis/xresources.texi:19
 msgid "``GTK resources''."
 msgstr "``GTKリソース''で決定されます。"
 
 #. type: Plain text
-#: xresources.texi.orig:22
+#: original_texis/xresources.texi:22
 msgid ""
 "When Emacs is built without GTK+ support, the appearance of these widgets is "
 "determined by additional X resources."
-msgstr "EmacsがGTK+のサポートなしでビルドされた場合、これらのウィジェットの外観は追加のXリソースにより決定されます。"
+msgstr ""
+"EmacsがGTK+のサポートなしでビルドされた場合、これらのウィジェットの外観は追加"
+"のXリソースにより決定されます。"
 
 #. type: Plain text
-#: xresources.texi.orig:25
+#: original_texis/xresources.texi:25
 msgid ""
 "On MS-Windows, you can customize some of the same aspects using the system "
 "registry (@pxref{MS-Windows Registry})."
-msgstr "MS-Windowsでは、システムレジストリー(@ref{MS-Windows Registry}を参照してください)を使用して、いくつかの外観を同じようにカスタマイズできます。"
+msgstr ""
+"MS-Windowsでは、システムレジストリー(@ref{MS-Windows Registry}を参照してくだ"
+"さい)を使用して、いくつかの外観を同じようにカスタマイズできます。"
 
 #. type: node
-#: xresources.texi.orig:32 xresources.texi.orig:34
+#: original_texis/xresources.texi:32 original_texis/xresources.texi:34
 #, no-wrap
 msgid "Resources"
 msgstr "Resources"
 
 #. type: menuentry
-#: xresources.texi.orig:32
+#: original_texis/xresources.texi:32
 msgid "Using X resources with Emacs (in general)."
 msgstr "EmacsでXリソースを使用する(概説)。"
 
 #. type: node
-#: xresources.texi.orig:32 xresources.texi.orig:138
+#: original_texis/xresources.texi:32 original_texis/xresources.texi:138
 #, no-wrap
 msgid "Table of Resources"
 msgstr "Table of Resources"
 
 #. type: menuentry
-#: xresources.texi.orig:32
+#: original_texis/xresources.texi:32
 msgid "Table of specific X resources that affect Emacs."
 msgstr "Emacsに影響する特定のXリソースの表。"
 
 #. type: node
-#: xresources.texi.orig:32 xresources.texi.orig:316
+#: original_texis/xresources.texi:32 original_texis/xresources.texi:316
 #, no-wrap
 msgid "Lucid Resources"
 msgstr "Lucid Resources"
 
 #. type: menuentry
-#: xresources.texi.orig:32
+#: original_texis/xresources.texi:32
 msgid "X resources for Lucid menus."
 msgstr "LucidメニューにたいするXリソース。"
 
 #. type: node
-#: xresources.texi.orig:32 xresources.texi.orig:373
+#: original_texis/xresources.texi:32 original_texis/xresources.texi:373
 #, no-wrap
 msgid "Motif Resources"
 msgstr "Motif Resources"
 
 #. type: menuentry
-#: xresources.texi.orig:32
+#: original_texis/xresources.texi:32
 msgid "X resources for Motif and LessTif menus."
 msgstr "MotifおよびLessTifメニューにたいするXリソース。"
 
 #. type: appendixsec
-#: xresources.texi.orig:32 xresources.texi.orig:484 xresources.texi.orig:485
+#: original_texis/xresources.texi:32 original_texis/xresources.texi:484
+#: original_texis/xresources.texi:485
 #, no-wrap
 msgid "GTK resources"
 msgstr "GTK resources"
 
 #. type: menuentry
-#: xresources.texi.orig:32
+#: original_texis/xresources.texi:32
 msgid "Resources for GTK widgets."
 msgstr "GTKウィジェットにたいするリソース。"
 
 #. type: cindex
-#: xresources.texi.orig:36
+#: original_texis/xresources.texi:36
 #, no-wrap
 msgid "resources"
 msgstr "resources"
 
 #. type: cindex
-#: xresources.texi.orig:37
+#: original_texis/xresources.texi:37
 #, no-wrap
 msgid "X resources"
 msgstr "X resources"
 
 #. type: cindex
-#: xresources.texi.orig:38
+#: original_texis/xresources.texi:38
 #, no-wrap
 msgid "@file{~/.Xdefaults} file"
 msgstr "@file{~/.Xdefaults} file"
 
 #. type: cindex
-#: xresources.texi.orig:39
+#: original_texis/xresources.texi:39
 #, no-wrap
 msgid "@file{~/.Xresources} file"
 msgstr "@file{~/.Xresources} file"
 
 #. type: Plain text
-#: xresources.texi.orig:48
+#: original_texis/xresources.texi:48
 msgid ""
 "Programs running under the X Window System organize their user options under "
 "a hierarchy of classes and resources.  You can specify default values for "
@@ -155,16 +164,23 @@ msgid ""
 "immediately, because the X server stores its own list of resources; to "
 "update it, use the command @command{xrdb}---for instance, @samp{xrdb ~/."
 "Xdefaults}."
-msgstr "Xウィンドウシステムの下で実行されているプログラムは、クラスとリソースの階層の下にユーザーオプションを組織化します。これらのオプションにたいして、@dfn{Xリソースファイル(X resource file)}でデフォルト値を指定できます。Xリソースファイルは、通常@file{~/.Xdefaults}または@file{~/.Xresources}という名前です。このファイルの内容を変更しても、変更は即座に効果をもちません。これはXサーバーが独自にリソースのリストを保持しているからです。これを更新するには、たとえば@samp{xrdb ~/.Xdefaults}のように、コマンド@command{xrdb}を使用します。"
+msgstr ""
+"Xウィンドウシステムの下で実行されているプログラムは、クラスとリソースの階層の"
+"下にユーザーオプションを組織化します。これらのオプションにたいして、@dfn{Xリ"
+"ソースファイル(X resource file)}でデフォルト値を指定できます。Xリソースファイ"
+"ルは、通常@file{~/.Xdefaults}または@file{~/.Xresources}という名前です。この"
+"ファイルの内容を変更しても、変更は即座に効果をもちません。これはXサーバーが独"
+"自にリソースのリストを保持しているからです。これを更新するには、たとえば"
+"@samp{xrdb ~/.Xdefaults}のように、コマンド@command{xrdb}を使用します。"
 
 #. type: cindex
-#: xresources.texi.orig:49
+#: original_texis/xresources.texi:49
 #, no-wrap
 msgid "registry, setting resources (MS-Windows)"
 msgstr "registry, setting resources (MS-Windows)"
 
 #. type: Plain text
-#: xresources.texi.orig:59
+#: original_texis/xresources.texi:59
 msgid ""
 "(MS-Windows systems do not support X resource files; on such systems, Emacs "
 "looks for X resources in the Windows Registry, first under the key "
@@ -175,159 +191,203 @@ msgid ""
 "they are only customizable via the system-wide settings in the Display "
 "Control Panel.  You can also set resources using the @samp{-xrm} command "
 "line option, as explained below.)"
-msgstr "(MS-WindowsシステムはXリソースファイルをサポートしません。そのようなシステムでは、EmacsはWindowsレジストリーの中からXリソースを探します。最初にキー@samp{HKEY_CURRENT_USER\\SOFTWARE\\GNU\\Emacs}の下を探します。これはカレントユーザーだけに影響し、システムワイドなセッティングをオーバーライドします。次にキー@samp{HKEY_LOCAL_MACHINE\\SOFTWARE\\GNU\\Emacs}の下を探します。これはシステムのすべてのユーザーに影響します。メニューとスクロールバーは、MS-Windowsのネイティブなウィジェットなので、Display Control Panelのシステムワイドなセッティングからしかカスタマイズできません。以下で説明するように、コマンドラインオプション@samp{-xrm}を使用して、リソースをセットすることもできます。)"
+msgstr ""
+"(MS-WindowsシステムはXリソースファイルをサポートしません。そのようなシステム"
+"では、EmacsはWindowsレジストリーの中からXリソースを探します。最初にキー"
+"@samp{HKEY_CURRENT_USER\\SOFTWARE\\GNU\\Emacs}の下を探します。これはカレント"
+"ユーザーだけに影響し、システムワイドなセッティングをオーバーライドします。次"
+"にキー@samp{HKEY_LOCAL_MACHINE\\SOFTWARE\\GNU\\Emacs}の下を探します。これはシ"
+"ステムのすべてのユーザーに影響します。メニューとスクロールバーは、MS-Windows"
+"のネイティブなウィジェットなので、Display Control Panelのシステムワイドなセッ"
+"ティングからしかカスタマイズできません。以下で説明するように、コマンドライン"
+"オプション@samp{-xrm}を使用して、リソースをセットすることもできます。)"
 
 #. type: Plain text
-#: xresources.texi.orig:66
+#: original_texis/xresources.texi:66
 msgid ""
 "Each line in the X resource file specifies a value for one option or for a "
 "collection of related options.  The order in which the lines appear in the "
 "file does not matter.  Each resource specification consists of a "
 "@dfn{program name} and a @dfn{resource name}.  Case distinctions are "
 "significant in each of these names.  Here is an example:"
-msgstr "Xリソースファイルの各行は、1つのオプション、または関連するオプションのコレクションにたいして値を指定します。ファイル内で行が出現する順番に意味はありません。各リソース指定は、@dfn{プログラム名(program name)}と@dfn{リソース名(resource name)}から構成されます。これらの名前の大文字小文字は区別されます。以下は例です:"
+msgstr ""
+"Xリソースファイルの各行は、1つのオプション、または関連するオプションのコレク"
+"ションにたいして値を指定します。ファイル内で行が出現する順番に意味はありませ"
+"ん。各リソース指定は、@dfn{プログラム名(program name)}と@dfn{リソース名"
+"(resource name)}から構成されます。これらの名前の大文字小文字は区別されます。"
+"以下は例です:"
 
 #. type: example
-#: xresources.texi.orig:69
+#: original_texis/xresources.texi:69
 #, no-wrap
 msgid "emacs.cursorColor: dark green\n"
 msgstr "emacs.cursorColor: dark green\n"
 
 #. type: Plain text
-#: xresources.texi.orig:75
+#: original_texis/xresources.texi:75
 msgid ""
 "The program name is the name of the executable file to which the resource "
 "applies.  For Emacs, this is normally @samp{emacs}.  To specify a definition "
 "that applies to all instances of Emacs, regardless of the name of the Emacs "
 "executable, use @samp{Emacs}."
-msgstr "プログラム名は、そのリソースが適用される実行可能ファイルの名前です。Emacsでは通常、@samp{emacs}です。Emacsの実行可能ファイル名の如何にかかわらずに、Emacsのすべてのインスタンスに適用される定義を指定するには、@samp{Emacs}を使用します。"
+msgstr ""
+"プログラム名は、そのリソースが適用される実行可能ファイルの名前です。Emacsでは"
+"通常、@samp{emacs}です。Emacsの実行可能ファイル名の如何にかかわらずに、Emacs"
+"のすべてのインスタンスに適用される定義を指定するには、@samp{Emacs}を使用しま"
+"す。"
 
 #. type: Plain text
-#: xresources.texi.orig:79
+#: original_texis/xresources.texi:79
 msgid ""
 "The resource name is the name of a program setting.  For instance, Emacs "
 "recognizes a @samp{cursorColor} resource that controls the color of the text "
 "cursor."
-msgstr "リソース名はプログラムセッティングの名前です。たとえばEmacsは、@samp{cursorColor}リソースを、テキストカーソルのカラーを制御するリソースと認識します。"
+msgstr ""
+"リソース名はプログラムセッティングの名前です。たとえばEmacsは、"
+"@samp{cursorColor}リソースを、テキストカーソルのカラーを制御するリソースと認"
+"識します。"
 
 #. type: Plain text
-#: xresources.texi.orig:86
+#: original_texis/xresources.texi:86
 msgid ""
 "Resources are grouped into named classes.  For instance, the "
 "@samp{Foreground} class contains the @samp{cursorColor}, @samp{foreground} "
 "and @samp{pointerColor} resources (@pxref{Table of Resources}).  Instead of "
 "using a resource name, you can use a class name to specify the default value "
 "for all resources in that class, like this:"
-msgstr "リソースは、名前のついたクラスにグループ化されます。たとえば@samp{Foreground}クラスには、リソース@samp{cursorColor}、@samp{foreground}、@samp{pointerColor}が含まれます(@ref{Table of Resources}を参照してください)。以下のように、リソース名を使用するかわりに、クラス内のすべてのリソースにたいしてデフォルト値を指定するのに、クラス名を使用できます:"
+msgstr ""
+"リソースは、名前のついたクラスにグループ化されます。たとえば@samp{Foreground}"
+"クラスには、リソース@samp{cursorColor}、@samp{foreground}、"
+"@samp{pointerColor}が含まれます(@ref{Table of Resources}を参照してください)。"
+"以下のように、リソース名を使用するかわりに、クラス内のすべてのリソースにたい"
+"してデフォルト値を指定するのに、クラス名を使用できます:"
 
 #. type: example
-#: xresources.texi.orig:89
+#: original_texis/xresources.texi:89
 #, no-wrap
 msgid "emacs.Foreground: dark green\n"
 msgstr "emacs.Foreground: dark green\n"
 
 #. type: Plain text
-#: xresources.texi.orig:96
+#: original_texis/xresources.texi:96
 msgid ""
 "Emacs does not process X resources at all if you set the variable "
 "@code{inhibit-x-resources} to a non-@code{nil} value.  If you invoke Emacs "
 "with the @samp{-Q} (or @samp{--quick}) command-line option, @code{inhibit-x-"
 "resources} is automatically set to @code{t} (@pxref{Initial Options})."
-msgstr "変数@code{inhibit-x-resources}を非@code{nil}値にセットした場合、EmacsはXリソースを処理しません。コマンドラインオプション@samp{-Q} (または@samp{--quick})でEmacsを呼び出した場合、@code{inhibit-x-resources}は自動的に@code{t}にセットされます(@ref{Initial Options}を参照してください)。"
+msgstr ""
+"変数@code{inhibit-x-resources}を非@code{nil}値にセットした場合、EmacsはXリ"
+"ソースを処理しません。コマンドラインオプション@samp{-Q} (または@samp{--"
+"quick})でEmacsを呼び出した場合、@code{inhibit-x-resources}は自動的に@code{t}"
+"にセットされます(@ref{Initial Options}を参照してください)。"
 
 #. type: ifnottex
-#: xresources.texi.orig:100
+#: original_texis/xresources.texi:100
 msgid ""
 "In addition, you can use the following command-line options to override the "
 "X resources file:"
-msgstr "これに加えて、Xリソースファイルをオーバーライドするために、以下のコマンドラインオプションが使用できます:"
+msgstr ""
+"これに加えて、Xリソースファイルをオーバーライドするために、以下のコマンドライ"
+"ンオプションが使用できます:"
 
 #. type: item
-#: xresources.texi.orig:102
+#: original_texis/xresources.texi:102
 #, no-wrap
 msgid "-name @var{name}"
 msgstr "-name @var{name}"
 
 #. type: opindex
-#: xresources.texi.orig:103
+#: original_texis/xresources.texi:103
 #, no-wrap
 msgid "--name"
 msgstr "--name"
 
 #. type: itemx
-#: xresources.texi.orig:104
+#: original_texis/xresources.texi:104
 #, no-wrap
 msgid "--name=@var{name}"
 msgstr "--name=@var{name}"
 
 #. type: cindex
-#: xresources.texi.orig:105
+#: original_texis/xresources.texi:105
 #, no-wrap
 msgid "resource name, command-line argument"
 msgstr "resource name, command-line argument"
 
 #. type: table
-#: xresources.texi.orig:109
+#: original_texis/xresources.texi:109
 msgid ""
 "This option sets the program name of the initial Emacs frame to @var{name}.  "
 "It also sets the title of the initial frame to @var{name}.  This option does "
 "not affect subsequent frames."
-msgstr "このオプションは初期Emacsフレームのプログラム名を@var{name}にセットします。これは初期フレームのタイトルも@var{name}にセットします。このオプションは、それ以降のフレームには影響しません。"
+msgstr ""
+"このオプションは初期Emacsフレームのプログラム名を@var{name}にセットします。こ"
+"れは初期フレームのタイトルも@var{name}にセットします。このオプションは、それ"
+"以降のフレームには影響しません。"
 
 #. type: table
-#: xresources.texi.orig:112
+#: original_texis/xresources.texi:112
 msgid ""
 "If you don't specify this option, the default is to use the Emacs "
 "executable's name as the program name."
-msgstr "このオプションを指定しない場合、プログラム名としてEmacs実行可能ファイル名をデフォルトとして使用されます。"
+msgstr ""
+"このオプションを指定しない場合、プログラム名としてEmacs実行可能ファイル名をデ"
+"フォルトとして使用されます。"
 
 #. type: table
-#: xresources.texi.orig:115
+#: original_texis/xresources.texi:115
 msgid ""
 "For consistency, @samp{-name} also specifies the name to use for other "
 "resource values that do not belong to any particular frame."
-msgstr "整合性のため、@samp{-name}は、特定のフレームに属さない、他のリソース値にたいして使用する名前も指定します。"
+msgstr ""
+"整合性のため、@samp{-name}は、特定のフレームに属さない、他のリソース値にたい"
+"して使用する名前も指定します。"
 
 #. type: table
-#: xresources.texi.orig:121
+#: original_texis/xresources.texi:121
 msgid ""
 "The resources that name Emacs invocations also belong to a class, named "
 "@samp{Emacs}.  If you write @samp{Emacs} instead of @samp{emacs}, the "
 "resource applies to all frames in all Emacs jobs, regardless of frame titles "
 "and regardless of the name of the executable file."
-msgstr "Emacs呼び出しの名前がつくリソースは、@samp{Emacs}という名前のクラスにも所属します。@samp{emacs}のかわりに@samp{Emacs}と記述した場合、実行可能ファイル名にかかわらず、そのリソースは、すべてのEmacsジョブのすべてのフレームに適用されます。"
+msgstr ""
+"Emacs呼び出しの名前がつくリソースは、@samp{Emacs}という名前のクラスにも所属し"
+"ます。@samp{emacs}のかわりに@samp{Emacs}と記述した場合、実行可能ファイル名に"
+"かかわらず、そのリソースは、すべてのEmacsジョブのすべてのフレームに適用されま"
+"す。"
 
 #. type: item
-#: xresources.texi.orig:122
+#: original_texis/xresources.texi:122
 #, no-wrap
 msgid "-xrm @var{resource-values}"
 msgstr "-xrm @var{resource-values}"
 
 #. type: opindex
-#: xresources.texi.orig:123
+#: original_texis/xresources.texi:123
 #, no-wrap
 msgid "--xrm"
 msgstr "--xrm"
 
 #. type: itemx
-#: xresources.texi.orig:124
+#: original_texis/xresources.texi:124
 #, no-wrap
 msgid "--xrm=@var{resource-values}"
 msgstr "--xrm=@var{resource-values}"
 
 #. type: cindex
-#: xresources.texi.orig:125
+#: original_texis/xresources.texi:125
 #, no-wrap
 msgid "resource values, command-line argument"
 msgstr "resource values, command-line argument"
 
 #. type: table
-#: xresources.texi.orig:127
+#: original_texis/xresources.texi:127
 msgid "This option specifies X resource values for the present Emacs job."
-msgstr "このオプションは、現在のEmacsジョブにたいして、Xリソース値を指定します。"
+msgstr ""
+"このオプションは、現在のEmacsジョブにたいして、Xリソース値を指定します。"
 
 #. type: table
-#: xresources.texi.orig:135
+#: original_texis/xresources.texi:135
 msgid ""
 "@var{resource-values} should have the same format that you would use inside "
 "a file of X resources.  To include multiple resource specifications in "
@@ -335,525 +395,603 @@ msgid ""
 "file.  You can also use @samp{#include \"@var{filename}\"} to include a file "
 "full of resource specifications.  Resource values specified with @samp{-xrm} "
 "take precedence over all other resource specifications."
-msgstr "@var{resource-values}は、Xリソースファイルの内部で使用するのと同じ形式をもつ必要があります。@var{resource-values}に複数のリソース指定を含めるには、ファイルに記述するときのように、リソース間に改行を置きます。ファイルのリソース指定をすべてインクルードするために、@samp{#include \"@var{filename}\"}を使用することもできます。@samp{-xrm}で指定されたリソース値は、他のすべてのリソース指定に優先します。"
+msgstr ""
+"@var{resource-values}は、Xリソースファイルの内部で使用するのと同じ形式をもつ"
+"必要があります。@var{resource-values}に複数のリソース指定を含めるには、ファイ"
+"ルに記述するときのように、リソース間に改行を置きます。ファイルのリソース指定"
+"をすべてインクルードするために、@samp{#include \"@var{filename}\"}を使用する"
+"こともできます。@samp{-xrm}で指定されたリソース値は、他のすべてのリソース指定"
+"に優先します。"
 
 #. type: appendixsec
-#: xresources.texi.orig:139
+#: original_texis/xresources.texi:139
 #, no-wrap
 msgid "Table of X Resources for Emacs"
 msgstr "Table of X Resources for Emacs"
 
 #. type: Plain text
-#: xresources.texi.orig:144
+#: original_texis/xresources.texi:144
 msgid ""
 "This table lists the X resource names that Emacs recognizes, excluding those "
 "that control the appearance of graphical widgets like the menu bar:"
-msgstr "以下の表は、メニューバーのようなグラフィカルなウィジェットの外観を制御するものを除いた、Emacsが認識するXリソース名です:"
+msgstr ""
+"以下の表は、メニューバーのようなグラフィカルなウィジェットの外観を制御するも"
+"のを除いた、Emacsが認識するXリソース名です:"
 
 #. type: item
-#: xresources.texi.orig:146
+#: original_texis/xresources.texi:146
 #, no-wrap
 msgid "@code{background} (class @code{Background})"
 msgstr "@code{background} (class @code{Background})"
 
 #. type: table
-#: xresources.texi.orig:148
+#: original_texis/xresources.texi:148
 msgid "Background color (@pxref{Colors})."
 msgstr "バックグラウンドカラーです(@ref{Colors}を参照してください)。"
 
 #. type: item
-#: xresources.texi.orig:149
+#: original_texis/xresources.texi:149
 #, no-wrap
 msgid "@code{bitmapIcon} (class @code{BitmapIcon})"
 msgstr "@code{bitmapIcon} (class @code{BitmapIcon})"
 
 #. type: table
-#: xresources.texi.orig:152
+#: original_texis/xresources.texi:152
 msgid ""
 "Tell the window manager to display the Emacs icon if @samp{on}; don't do so "
 "if @samp{off}.  @xref{Icons X}, for a description of the icon."
-msgstr "@samp{on}のときはEmacsアイコンを表示し、@samp{off}のときは表示しないように、ウィンドウマネージャーに指示します。アイコンの説明は、@ref{Icons X}を参照してください。"
+msgstr ""
+"@samp{on}のときはEmacsアイコンを表示し、@samp{off}のときは表示しないように、"
+"ウィンドウマネージャーに指示します。アイコンの説明は、@ref{Icons X}を参照して"
+"ください。"
 
 #. type: item
-#: xresources.texi.orig:154
+#: original_texis/xresources.texi:154
 #, no-wrap
 msgid "@code{borderColor} (class @code{BorderColor})"
 msgstr "@code{borderColor} (class @code{BorderColor})"
 
 #. type: ifnottex
-#: xresources.texi.orig:157
+#: original_texis/xresources.texi:157
 msgid ""
 "Color of the frame's external border.  This has no effect if Emacs is "
 "compiled with GTK+ support."
-msgstr "フレームの外枠ボーダーのカラーです。EmacsがGTK+サポートつきでコンパイルされている場合、効果はありません。"
+msgstr ""
+"フレームの外枠ボーダーのカラーです。EmacsがGTK+サポートつきでコンパイルされて"
+"いる場合、効果はありません。"
 
 #. type: item
-#: xresources.texi.orig:158
+#: original_texis/xresources.texi:158
 #, no-wrap
 msgid "@code{borderWidth} (class @code{BorderWidth})"
 msgstr "@code{borderWidth} (class @code{BorderWidth})"
 
 #. type: ifnottex
-#: xresources.texi.orig:161
+#: original_texis/xresources.texi:161
 msgid ""
 "Width of the frame's external border, in pixels.  This has no effect if "
 "Emacs is compiled with GTK+ support."
-msgstr "フレームの外枠ボーダーの幅(ピクセル)です。EmacsがGTK+サポートつきでコンパイルされている場合、効果はありません。"
+msgstr ""
+"フレームの外枠ボーダーの幅(ピクセル)です。EmacsがGTK+サポートつきでコンパイル"
+"されている場合、効果はありません。"
 
 #. type: item
-#: xresources.texi.orig:163
+#: original_texis/xresources.texi:163
 #, no-wrap
 msgid "@code{cursorColor} (class @code{Foreground})"
 msgstr "@code{cursorColor} (class @code{Foreground})"
 
 #. type: table
-#: xresources.texi.orig:167
+#: original_texis/xresources.texi:167
 msgid ""
 "Text cursor color.  If this resource is specified when Emacs starts up, "
 "Emacs sets its value as the background color of the @code{cursor} face "
 "(@pxref{Faces})."
-msgstr "テキストカーソルのカラーです。Emacs開始時にこのリソースが指定されている場合、Emacsはその値を@code{cursor}フェイス(@ref{Faces}を参照してください)のバックグラウンドカラーとしてセットします。"
+msgstr ""
+"テキストカーソルのカラーです。Emacs開始時にこのリソースが指定されている場合、"
+"Emacsはその値を@code{cursor}フェイス(@ref{Faces}を参照してください)のバックグ"
+"ラウンドカラーとしてセットします。"
 
 #. type: item
-#: xresources.texi.orig:168
+#: original_texis/xresources.texi:168
 #, no-wrap
 msgid "@code{cursorBlink} (class @code{CursorBlink})"
 msgstr "@code{cursorBlink} (class @code{CursorBlink})"
 
 #. type: table
-#: xresources.texi.orig:172
+#: original_texis/xresources.texi:172
 msgid ""
 "If the value of this resource is @samp{off} or @samp{false} or @samp{0} at "
 "startup, Emacs disables Blink Cursor mode (@pxref{Cursor Display})."
-msgstr "開始時に、このリソースの値が@samp{off}、@samp{false}、@samp{0}の場合、EmacsはBlink Cursorモードを無効にします(@ref{Cursor Display}を参照してください)。"
+msgstr ""
+"開始時に、このリソースの値が@samp{off}、@samp{false}、@samp{0}の場合、Emacsは"
+"Blink Cursorモードを無効にします(@ref{Cursor Display}を参照してください)。"
 
 #. type: item
-#: xresources.texi.orig:173
+#: original_texis/xresources.texi:173
 #, no-wrap
 msgid "@code{font} (class @code{Font})"
 msgstr "@code{font} (class @code{Font})"
 
 #. type: table
-#: xresources.texi.orig:176
+#: original_texis/xresources.texi:176
 msgid ""
 "Font name for the @code{default} face (@pxref{Fonts}).  You can also specify "
 "a fontset name (@pxref{Fontsets})."
-msgstr "@code{default}フェイスにたいするフォント名です(@ref{Fonts}を参照してください)。フォントセット名(@ref{Fontsets}を参照してください)を指定することもできます。"
+msgstr ""
+"@code{default}フェイスにたいするフォント名です(@ref{Fonts}を参照してくださ"
+"い)。フォントセット名(@ref{Fontsets}を参照してください)を指定することもできま"
+"す。"
 
 #. type: item
-#: xresources.texi.orig:177
+#: original_texis/xresources.texi:177
 #, no-wrap
 msgid "@code{fontBackend} (class @code{FontBackend})"
 msgstr "@code{fontBackend} (class @code{FontBackend})"
 
 #. type: table
-#: xresources.texi.orig:183
+#: original_texis/xresources.texi:183
 msgid ""
 "Comma-delimited list of backend(s) to use for drawing fonts, in order of "
 "precedence.  For instance, the value @samp{x,xft} tells Emacs to draw fonts "
 "using the X core font driver, falling back on the Xft font driver if that "
 "fails.  Normally, you should leave this resource unset, in which case Emacs "
 "tries using all available font backends."
-msgstr "フォントの描画に使用するバックエンドを、優先順にカンマ区切りで記述したリストです。たとえば値@samp{x,xft}は、EmacsにXコアフォントドライバー(X core font driver)を使用してフォントを描画し、それに失敗したときはXftフォントドライバー(Xft font driver)にフォールバックするよう指示します。このリソースは通常、セットしないでおくべきです。その場合、Emacsは利用可能なすべてのバックエンドの使用を試みます。"
+msgstr ""
+"フォントの描画に使用するバックエンドを、優先順にカンマ区切りで記述したリスト"
+"です。たとえば値@samp{x,xft}は、EmacsにXコアフォントドライバー(X core font "
+"driver)を使用してフォントを描画し、それに失敗したときはXftフォントドライバー"
+"(Xft font driver)にフォールバックするよう指示します。このリソースは通常、セッ"
+"トしないでおくべきです。その場合、Emacsは利用可能なすべてのバックエンドの使用"
+"を試みます。"
 
 #. type: item
-#: xresources.texi.orig:184
+#: original_texis/xresources.texi:184
 #, no-wrap
 msgid "@code{foreground} (class @code{Foreground})"
 msgstr "@code{foreground} (class @code{Foreground})"
 
 #. type: table
-#: xresources.texi.orig:186
+#: original_texis/xresources.texi:186
 msgid "Default foreground color for text."
 msgstr "Default foreground color for text."
 
 #. type: item
-#: xresources.texi.orig:187
+#: original_texis/xresources.texi:187
 #, no-wrap
 msgid "@code{geometry} (class @code{Geometry})"
 msgstr "@code{geometry} (class @code{Geometry})"
 
 #. type: table
-#: xresources.texi.orig:191
+#: original_texis/xresources.texi:191
 msgid ""
 "Window size and position.  The value should be a size and position "
 "specification, of the same form as in the @samp{-g} or @samp{--geometry} "
 "command-line option (@pxref{Window Size X})."
-msgstr "ウィンドウのサイズと位置です。値にはコマンドラインオプション@samp{-g}または@samp{--geometry}と同じ形式で、サイズと位置を指定します。"
+msgstr ""
+"ウィンドウのサイズと位置です。値にはコマンドラインオプション@samp{-g}または"
+"@samp{--geometry}と同じ形式で、サイズと位置を指定します。"
 
 #. type: table
-#: xresources.texi.orig:195
+#: original_texis/xresources.texi:195
 msgid ""
 "The size applies to all frames in the Emacs session, but the position "
 "applies only to the initial Emacs frame (or, in the case of a resource for a "
 "specific frame name, only that frame)."
-msgstr "サイズはEmacsセッションのすべてのフレームに適用されますが、位置は初期フレーム(特定のフレームにたいするリソースの場合は、そのフレーム)だけに適用されます。"
+msgstr ""
+"サイズはEmacsセッションのすべてのフレームに適用されますが、位置は初期フレーム"
+"(特定のフレームにたいするリソースの場合は、そのフレーム)だけに適用されます。"
 
 #. type: table
-#: xresources.texi.orig:199
+#: original_texis/xresources.texi:199
 msgid ""
 "Be careful not to specify this resource as @samp{emacs*geometry}, as that "
 "may affect individual menus as well as the main Emacs frame."
-msgstr "このリソースを、@samp{emacs*geometry}のように指定しないように気をつけてください。これはEmacsのメインのフレームと同じように、個別のメニューにも影響します。"
+msgstr ""
+"このリソースを、@samp{emacs*geometry}のように指定しないように気をつけてくださ"
+"い。これはEmacsのメインのフレームと同じように、個別のメニューにも影響します。"
 
 #. type: item
-#: xresources.texi.orig:200
+#: original_texis/xresources.texi:200
 #, no-wrap
 msgid "@code{fullscreen} (class @code{Fullscreen})"
 msgstr "@code{fullscreen} (class @code{Fullscreen})"
 
 #. type: table
-#: xresources.texi.orig:206
+#: original_texis/xresources.texi:206
 msgid ""
 "The desired fullscreen size.  The value can be one of @code{fullboth}, "
 "@code{maximized}, @code{fullwidth} or @code{fullheight}, which correspond to "
 "the command-line options @samp{-fs}, @samp{-mm}, @samp{-fw}, and @samp{-fh} "
 "(@pxref{Window Size X}).  Note that this applies to the initial frame only."
-msgstr "望ましいフルスクリーンサイズを指定します。値は@code{fullboth}、@code{maximized}、@code{fullwidth}、@code{fullheight}のうちどれか1つを指定でき、これらはコマンドラインオプションの@samp{-fs}、@samp{-mm}、@samp{-fw}、@samp{-fh}に相当します(@ref{Window Size X}を参照してください)。これは初期フレームだけに適用されることに注意してください。"
+msgstr ""
+"望ましいフルスクリーンサイズを指定します。値は@code{fullboth}、"
+"@code{maximized}、@code{fullwidth}、@code{fullheight}のうちどれか1つを指定で"
+"き、これらはコマンドラインオプションの@samp{-fs}、@samp{-mm}、@samp{-fw}、"
+"@samp{-fh}に相当します(@ref{Window Size X}を参照してください)。これは初期フ"
+"レームだけに適用されることに注意してください。"
 
 #. type: item
-#: xresources.texi.orig:208
+#: original_texis/xresources.texi:208
 #, no-wrap
 msgid "@code{iconName} (class @code{Title})"
 msgstr "@code{iconName} (class @code{Title})"
 
 #. type: ifnottex
-#: xresources.texi.orig:210
+#: original_texis/xresources.texi:210
 msgid "Name to display in the icon."
 msgstr "アイコンに表示する名前です。"
 
 #. type: item
-#: xresources.texi.orig:211
+#: original_texis/xresources.texi:211
 #, no-wrap
 msgid "@code{internalBorder} (class @code{BorderWidth})"
 msgstr "@code{internalBorder} (class @code{BorderWidth})"
 
 #. type: ifnottex
-#: xresources.texi.orig:213
+#: original_texis/xresources.texi:213
 msgid "Width of the internal frame border, in pixels."
 msgstr "フレームの内枠ボーダーの幅(ピクセル)です。"
 
 #. type: item
-#: xresources.texi.orig:215
+#: original_texis/xresources.texi:215
 #, no-wrap
 msgid "@code{lineSpacing} (class @code{LineSpacing})"
 msgstr "@code{lineSpacing} (class @code{LineSpacing})"
 
 #. type: cindex
-#: xresources.texi.orig:216
+#: original_texis/xresources.texi:216
 #, no-wrap
 msgid "line spacing"
 msgstr "line spacing"
 
 #. type: table
-#: xresources.texi.orig:218
+#: original_texis/xresources.texi:218
 msgid "Additional space between lines, in pixels."
 msgstr "行間の追加のスペース(ピクセル)です。"
 
 #. type: item
-#: xresources.texi.orig:219
+#: original_texis/xresources.texi:219
 #, no-wrap
 msgid "@code{menuBar} (class @code{MenuBar})"
 msgstr "@code{menuBar} (class @code{MenuBar})"
 
 #. type: cindex
-#: xresources.texi.orig:220
+#: original_texis/xresources.texi:220
 #, no-wrap
 msgid "menu bar"
 msgstr "menu bar"
 
 #. type: table
-#: xresources.texi.orig:223
+#: original_texis/xresources.texi:223
 msgid ""
 "If the value of this resource is @samp{off} or @samp{false} or @samp{0}, "
 "Emacs disables Menu Bar mode at startup (@pxref{Menu Bars})."
-msgstr "このリソースの値が@samp{off}、@samp{false}、@samp{0}の場合、Emacsは開始時にMenu Barモードを無効にします(@ref{Menu Bars}を参照してください)。"
+msgstr ""
+"このリソースの値が@samp{off}、@samp{false}、@samp{0}の場合、Emacsは開始時に"
+"Menu Barモードを無効にします(@ref{Menu Bars}を参照してください)。"
 
 #. type: item
-#: xresources.texi.orig:225
+#: original_texis/xresources.texi:225
 #, no-wrap
 msgid "@code{minibuffer} (class @code{Minibuffer})"
 msgstr "@code{minibuffer} (class @code{Minibuffer})"
 
 #. type: ifnottex
-#: xresources.texi.orig:228
+#: original_texis/xresources.texi:228
 msgid ""
 "If @samp{none}, Emacs will not make a minibuffer in this frame; it will use "
 "a separate minibuffer frame instead."
-msgstr "@samp{none}の場合、Emacsはこのフレームにミニバッファーを作成しません。かわりに別のミニバッファーフレームを使用します。"
+msgstr ""
+"@samp{none}の場合、Emacsはこのフレームにミニバッファーを作成しません。かわり"
+"に別のミニバッファーフレームを使用します。"
 
 #. type: item
-#: xresources.texi.orig:229
+#: original_texis/xresources.texi:229
 #, no-wrap
 msgid "@code{paneFont} (class @code{Font})"
 msgstr "@code{paneFont} (class @code{Font})"
 
 #. type: cindex
-#: xresources.texi.orig:230
+#: original_texis/xresources.texi:230
 #, no-wrap
 msgid "font for menus"
 msgstr "font for menus"
 
 #. type: ifnottex
-#: xresources.texi.orig:232
+#: original_texis/xresources.texi:232
 msgid "Font name for menu pane titles, in non-toolkit versions of Emacs."
 msgstr "ツールキット版ではない、Emacsのメニューのタイトルのフォント名です。"
 
 #. type: item
-#: xresources.texi.orig:234
+#: original_texis/xresources.texi:234
 #, no-wrap
 msgid "@code{pointerColor} (class @code{Foreground})"
 msgstr "@code{pointerColor} (class @code{Foreground})"
 
 #. type: table
-#: xresources.texi.orig:238
+#: original_texis/xresources.texi:238
 msgid ""
 "Color of the mouse cursor.  This has no effect in many graphical desktop "
 "environments, as they do not let Emacs change the mouse cursor this way."
-msgstr "マウスカーソルのカラーです。多くのグラフィカルなデスクトップ環境では、この方法でEmacsがマウスカーソルを変更するのを許さないので、効果はありません。"
+msgstr ""
+"マウスカーソルのカラーです。多くのグラフィカルなデスクトップ環境では、この方"
+"法でEmacsがマウスカーソルを変更するのを許さないので、効果はありません。"
 
 #. type: item
-#: xresources.texi.orig:240
+#: original_texis/xresources.texi:240
 #, no-wrap
 msgid "@code{privateColormap} (class @code{PrivateColormap})"
 msgstr "@code{privateColormap} (class @code{PrivateColormap})"
 
 #. type: ifnottex
-#: xresources.texi.orig:243
+#: original_texis/xresources.texi:243
 msgid ""
 "If @samp{on}, use a private color map, in the case where the ``default "
 "visual'' of class PseudoColor and Emacs is using it."
-msgstr "@samp{on}の場合、Emacsが使用するクラスPseudoColorの``default visual''が使用されている場所で、プライベートなカラーマップを使用します。"
+msgstr ""
+"@samp{on}の場合、Emacsが使用するクラスPseudoColorの``default visual''が使用さ"
+"れている場所で、プライベートなカラーマップを使用します。"
 
 #. type: item
-#: xresources.texi.orig:244
+#: original_texis/xresources.texi:244
 #, no-wrap
 msgid "@code{reverseVideo} (class @code{ReverseVideo})"
 msgstr "@code{reverseVideo} (class @code{ReverseVideo})"
 
 #. type: ifnottex
-#: xresources.texi.orig:247
+#: original_texis/xresources.texi:247
 msgid ""
 "Switch foreground and background default colors if @samp{on}, use colors as "
 "specified if @samp{off}."
-msgstr "@samp{on}の場合はデフォルトのフォア九ラウンドカラーとバックグラウンドカラーを切り替え、@samp{off}の場合は指定されたカラーを使用します。"
+msgstr ""
+"@samp{on}の場合はデフォルトのフォア九ラウンドカラーとバックグラウンドカラーを"
+"切り替え、@samp{off}の場合は指定されたカラーを使用します。"
 
 #. type: item
-#: xresources.texi.orig:248
+#: original_texis/xresources.texi:248
 #, no-wrap
 msgid "@code{screenGamma} (class @code{ScreenGamma})"
 msgstr "@code{screenGamma} (class @code{ScreenGamma})"
 
 #. type: cindex
-#: xresources.texi.orig:249
+#: original_texis/xresources.texi:249
 #, no-wrap
 msgid "gamma correction"
 msgstr "gamma correction"
 
 #. type: ifnottex
-#: xresources.texi.orig:252
+#: original_texis/xresources.texi:252
 msgid ""
 "Gamma correction for colors, equivalent to the frame parameter @code{screen-"
 "gamma}."
-msgstr "カラーのガンマ補正で、フレームパラメーターの@code{screen-gamma}と等価です。"
+msgstr ""
+"カラーのガンマ補正で、フレームパラメーターの@code{screen-gamma}と等価です。"
 
 #. type: item
-#: xresources.texi.orig:253
+#: original_texis/xresources.texi:253
 #, no-wrap
 msgid "@code{scrollBarWidth} (class @code{ScrollBarWidth})"
 msgstr "@code{scrollBarWidth} (class @code{ScrollBarWidth})"
 
 #. type: cindex
-#: xresources.texi.orig:254
+#: original_texis/xresources.texi:254
 #, no-wrap
 msgid "scrollbar width"
 msgstr "scrollbar width"
 
 #. type: ifnottex
-#: xresources.texi.orig:258
+#: original_texis/xresources.texi:258
 msgid ""
 "The scroll bar width in pixels, equivalent to the frame parameter "
 "@code{scroll-bar-width}.  Do not set this resource if Emacs is compiled with "
 "GTK+ support."
-msgstr "スクロールバーの幅(ピクセル)で、フレームパラメーターの@code{scroll-bar-width}と等価です。EmacsがGTK+サポートつきでコンパイルされている場合は、このリソースをセットしないでください。"
+msgstr ""
+"スクロールバーの幅(ピクセル)で、フレームパラメーターの@code{scroll-bar-width}"
+"と等価です。EmacsがGTK+サポートつきでコンパイルされている場合は、このリソース"
+"をセットしないでください。"
 
 #. type: item
-#: xresources.texi.orig:261
+#: original_texis/xresources.texi:261
 #, no-wrap
 msgid "@code{selectionFont} (class @code{SelectionFont})"
 msgstr "@code{selectionFont} (class @code{SelectionFont})"
 
 #. type: ifnottex
-#: xresources.texi.orig:265
+#: original_texis/xresources.texi:265
 msgid ""
 "Font name for pop-up menu items, in non-toolkit versions of Emacs.  (For "
 "toolkit versions, see @ref{Lucid Resources}, also see @ref{Motif Resources}.)"
-msgstr "ツールキット版でないEmacsの、ポップアップメニューのフォント名です(ツールキット版の場合は@ref{Lucid Resources}と@ref{Motif Resources}を参照してください)。"
+msgstr ""
+"ツールキット版でないEmacsの、ポップアップメニューのフォント名です(ツールキッ"
+"ト版の場合は@ref{Lucid Resources}と@ref{Motif Resources}を参照してください)。"
 
 #. type: item
-#: xresources.texi.orig:266
+#: original_texis/xresources.texi:266
 #, no-wrap
 msgid "@code{selectionTimeout} (class @code{SelectionTimeout})"
 msgstr "@code{selectionTimeout} (class @code{SelectionTimeout})"
 
 #. type: ifnottex
-#: xresources.texi.orig:270
+#: original_texis/xresources.texi:270
 msgid ""
 "Number of milliseconds to wait for a selection reply.  If the selection "
 "owner doesn't reply in this time, we give up.  A value of 0 means wait as "
 "long as necessary."
-msgstr "選択にたいする応答を待つ時間(ミリ秒)です。選択したオーナーが、この時間内に応答しない場合は諦めます。値0は必要なだけ待つことを意味します。"
+msgstr ""
+"選択にたいする応答を待つ時間(ミリ秒)です。選択したオーナーが、この時間内に応"
+"答しない場合は諦めます。値0は必要なだけ待つことを意味します。"
 
 #. type: item
-#: xresources.texi.orig:271
+#: original_texis/xresources.texi:271
 #, no-wrap
 msgid "@code{synchronous} (class @code{Synchronous})"
 msgstr "@code{synchronous} (class @code{Synchronous})"
 
 #. type: cindex
-#: xresources.texi.orig:272
+#: original_texis/xresources.texi:272
 #, no-wrap
 msgid "debugging X problems"
 msgstr "debugging X problems"
 
 #. type: cindex
-#: xresources.texi.orig:273
+#: original_texis/xresources.texi:273
 #, no-wrap
 msgid "synchronous X mode"
 msgstr "synchronous X mode"
 
 #. type: ifnottex
-#: xresources.texi.orig:276
+#: original_texis/xresources.texi:276
 msgid ""
 "Run Emacs in synchronous mode if @samp{on}.  Synchronous mode is useful for "
 "debugging X problems."
-msgstr "@samp{on}の場合、Emacsを同期モード(synchronous mode)で実行します。同期モードはXに関する問題のデバッグに有用です。"
+msgstr ""
+"@samp{on}の場合、Emacsを同期モード(synchronous mode)で実行します。同期モード"
+"はXに関する問題のデバッグに有用です。"
 
 #. type: item
-#: xresources.texi.orig:278
+#: original_texis/xresources.texi:278
 #, no-wrap
 msgid "@code{title} (class @code{Title})"
 msgstr "@code{title} (class @code{Title})"
 
 #. type: table
-#: xresources.texi.orig:280
+#: original_texis/xresources.texi:280
 msgid "Name to display in the title bar of the initial Emacs frame."
 msgstr "初期Emacsフレームのタイトルバーに表示する名前です。"
 
 #. type: item
-#: xresources.texi.orig:281
+#: original_texis/xresources.texi:281
 #, no-wrap
 msgid "@code{toolBar} (class @code{ToolBar})"
 msgstr "@code{toolBar} (class @code{ToolBar})"
 
 #. type: cindex
-#: xresources.texi.orig:282
+#: original_texis/xresources.texi:282
 #, no-wrap
 msgid "tool bar"
 msgstr "tool bar"
 
 #. type: table
-#: xresources.texi.orig:285
+#: original_texis/xresources.texi:285
 msgid ""
 "If the value of this resource is @samp{off} or @samp{false} or @samp{0}, "
 "Emacs disables Tool Bar mode at startup (@pxref{Tool Bars})."
-msgstr "このリソースの値が@samp{off}、@samp{false}、@samp{0}の場合、Emacsは開始時にTool Barモードを無効にします(@ref{Tool Bars}を参照してください)。"
+msgstr ""
+"このリソースの値が@samp{off}、@samp{false}、@samp{0}の場合、Emacsは開始時に"
+"Tool Barモードを無効にします(@ref{Tool Bars}を参照してください)。"
 
 #. type: item
-#: xresources.texi.orig:286
+#: original_texis/xresources.texi:286
 #, no-wrap
 msgid "@code{useXIM} (class @code{UseXIM})"
 msgstr "@code{useXIM} (class @code{UseXIM})"
 
 #. type: cindex
-#: xresources.texi.orig:287
+#: original_texis/xresources.texi:287
 #, no-wrap
 msgid "XIM"
 msgstr "XIM"
 
 #. type: cindex
-#: xresources.texi.orig:288
+#: original_texis/xresources.texi:288
 #, no-wrap
 msgid "X input methods"
 msgstr "X input methods"
 
 #. type: cindex
-#: xresources.texi.orig:289
+#: original_texis/xresources.texi:289
 #, no-wrap
 msgid "input methods, X"
 msgstr "input methods, X"
 
 #. type: table
-#: xresources.texi.orig:293
+#: original_texis/xresources.texi:293
 msgid ""
 "Disable use of X input methods (XIM) if @samp{false} or @samp{off}.  This is "
 "only relevant if your Emacs is built with XIM support.  It might be useful "
 "to turn off XIM on slow X client/server links."
-msgstr "@samp{false}または@samp{off}の場合、X入力メソッド(XIM: X input methods)の使用を無効にします。これはEmacsがXIMサポートつきでビルドされた場合だけ関係があります。Xのクライアント/サーバーのリンクが遅いときは、XIMをオフにするのが便利かもしれません。"
+msgstr ""
+"@samp{false}または@samp{off}の場合、X入力メソッド(XIM: X input methods)の使用"
+"を無効にします。これはEmacsがXIMサポートつきでビルドされた場合だけ関係があり"
+"ます。Xのクライアント/サーバーのリンクが遅いときは、XIMをオフにするのが便利か"
+"もしれません。"
 
 #. type: item
-#: xresources.texi.orig:294
+#: original_texis/xresources.texi:294
 #, no-wrap
 msgid "@code{verticalScrollBars} (class @code{ScrollBars})"
 msgstr "@code{verticalScrollBars} (class @code{ScrollBars})"
 
 #. type: table
-#: xresources.texi.orig:297
+#: original_texis/xresources.texi:297
 msgid ""
 "Give frames scroll bars if @samp{on}; don't have scroll bars if @samp{off}."
-msgstr "@samp{on}の場合はフレームはスクロールバーをもち、@samp{off}のときはスクロールバーをもちません。"
+msgstr ""
+"@samp{on}の場合はフレームはスクロールバーをもち、@samp{off}のときはスクロール"
+"バーをもちません。"
 
 #. type: item
-#: xresources.texi.orig:299
+#: original_texis/xresources.texi:299
 #, no-wrap
 msgid "@code{visualClass} (class @code{VisualClass})"
 msgstr "@code{visualClass} (class @code{VisualClass})"
 
 #. type: ifnottex
-#: xresources.texi.orig:305
+#: original_texis/xresources.texi:305
 msgid ""
 "The @dfn{visual class} for X color display.  If specified, the value should "
 "start with one of @samp{TrueColor}, @samp{PseudoColor}, @samp{DirectColor}, "
 "@samp{StaticColor}, @samp{GrayScale}, and @samp{StaticGray}, followed by "
 "@samp{-@var{depth}}, where @var{depth} is the number of color planes."
-msgstr "Xカラーディスプレーの@dfn{visual class}です。指定する場合、値は@samp{TrueColor}、@samp{PseudoColor}、@samp{DirectColor}、@samp{StaticColor}、@samp{GrayScale}、@samp{StaticGray}で始まり、その後に@samp{-@var{depth}}が続きます。ここで@var{depth}は色平面の数です。"
+msgstr ""
+"Xカラーディスプレーの@dfn{visual class}です。指定する場合、値は"
+"@samp{TrueColor}、@samp{PseudoColor}、@samp{DirectColor}、"
+"@samp{StaticColor}、@samp{GrayScale}、@samp{StaticGray}で始まり、その後に"
+"@samp{-@var{depth}}が続きます。ここで@var{depth}は色平面の数です。"
 
 #. type: Plain text
-#: xresources.texi.orig:314
+#: original_texis/xresources.texi:314
 msgid ""
 "You can also use X resources to customize individual Emacs faces "
 "(@pxref{Faces}).  For example, setting the resource @samp{@var{face}."
 "attributeForeground} is equivalent to customizing the @samp{foreground} "
 "attribute of the face @var{face}.  However, we recommend customizing faces "
 "from within Emacs, instead of using X resources.  @xref{Face Customization}."
-msgstr "特定のEmacsフェイスのカスタマイズに、Xリソースを使用することもできます(@ref{Faces}を参照してください)。たとえば@samp{@var{face}.attributeForeground}をセットするのは、フェイス@var{face}の@samp{foreground}属性をカスタマイズするのと等価です。しかし、わたしたちはXリソースを使用してフェイスのカスタマイズするかわりに、Emacs内でフェイスをカスタマイズする方法を推奨します。@ref{Face Customization}を参照してください。"
+msgstr ""
+"特定のEmacsフェイスのカスタマイズに、Xリソースを使用することもできます"
+"(@ref{Faces}を参照してください)。たとえば@samp{@var{face}."
+"attributeForeground}をセットするのは、フェイス@var{face}の@samp{foreground}属"
+"性をカスタマイズするのと等価です。しかし、わたしたちはXリソースを使用してフェ"
+"イスのカスタマイズするかわりに、Emacs内でフェイスをカスタマイズする方法を推奨"
+"します。@ref{Face Customization}を参照してください。"
 
 #. type: appendixsec
-#: xresources.texi.orig:317
+#: original_texis/xresources.texi:317
 #, no-wrap
 msgid "Lucid Menu And Dialog X Resources"
 msgstr "Lucid Menu And Dialog X Resources"
 
 #. type: cindex
-#: xresources.texi.orig:318
+#: original_texis/xresources.texi:318
 #, no-wrap
 msgid "Menu X Resources (Lucid widgets)"
 msgstr "Menu X Resources (Lucid widgets)"
 
 #. type: cindex
-#: xresources.texi.orig:319
+#: original_texis/xresources.texi:319
 #, no-wrap
 msgid "Dialog X Resources (Lucid widgets)"
 msgstr "Dialog X Resources (Lucid widgets)"
 
 #. type: cindex
-#: xresources.texi.orig:320
+#: original_texis/xresources.texi:320
 #, no-wrap
 msgid "Lucid Widget X Resources"
 msgstr "Lucid Widget X Resources"
 
 #. type: ifnottex
-#: xresources.texi.orig:330
+#: original_texis/xresources.texi:330
 msgid ""
 "If Emacs is compiled with the X toolkit support using Lucid widgets, you can "
 "use X resources to customize the appearance of the menu bar, pop-up menus, "
@@ -862,280 +1000,326 @@ msgid ""
 "executable or @samp{Emacs} for all Emacs invocations).  The resources for "
 "the pop-up menu are in the @samp{menu*} class.  The resources for dialog "
 "boxes are in the @samp{dialog*} class."
-msgstr "EmacsがLucidウィジェットを使用したXツールキットサポートつきでコンパイルされた場合、メニューバー、ポップアップメニュー、ダイアログボックスの外観をカスタマイズするために、Xリソースを使用できます。メニューバーにたいするリソースは、@samp{pane.menubar}クラスの中に集められています(例のごとくEmacs実行可能ファイル名または、すべてのEmacs呼び出しに対応する@samp{Emacs}の後に続けて記述します)。ポップアップメニューにたいするリソースは、@samp{menu*}クラスの中です。ダイアログボックスにたいするリソースは、@samp{dialog*}クラスの中です。"
+msgstr ""
+"EmacsがLucidウィジェットを使用したXツールキットサポートつきでコンパイルされた"
+"場合、メニューバー、ポップアップメニュー、ダイアログボックスの外観をカスタマ"
+"イズするために、Xリソースを使用できます。メニューバーにたいするリソースは、"
+"@samp{pane.menubar}クラスの中に集められています(例のごとくEmacs実行可能ファイ"
+"ル名または、すべてのEmacs呼び出しに対応する@samp{Emacs}の後に続けて記述しま"
+"す)。ポップアップメニューにたいするリソースは、@samp{menu*}クラスの中です。ダ"
+"イアログボックスにたいするリソースは、@samp{dialog*}クラスの中です。"
 
 #. type: ifnottex
-#: xresources.texi.orig:333
+#: original_texis/xresources.texi:333
 msgid ""
 "For example, to display menu bar entries with the @samp{Courier-12} font "
 "(@pxref{Fonts}), write this:"
-msgstr "たとえばメニューバーエントリーを@samp{Courier-12}フォントで表示するには、以下のように記述します:"
+msgstr ""
+"たとえばメニューバーエントリーを@samp{Courier-12}フォントで表示するには、以下"
+"のように記述します:"
 
 #. type: example
-#: xresources.texi.orig:336
+#: original_texis/xresources.texi:336
 #, no-wrap
 msgid "Emacs.pane.menubar.font: Courier-12\n"
 msgstr "Emacs.pane.menubar.font: Courier-12\n"
 
 #. type: ifnottex
-#: xresources.texi.orig:343
+#: original_texis/xresources.texi:343
 msgid ""
 "Lucid widgets can display multilingual text in your locale.  To enable this, "
 "specify a @code{fontSet} resource instead of a @code{font} resource.  "
 "@xref{Fontsets}.  If both @code{font} and @code{fontSet} resources are "
 "specified, the @code{fontSet} resource is used."
-msgstr "Lucidウィジェットは、あなたのlocaleで他国語テキストを表示できます。これを有効にするには、@code{font}リソースのかわりに、@code{fontSet}リソースを指定します。@code{font}と@code{fontSet}の両方のリソースが指定された場合は、@code{fontSet}リソースが使用されます。"
+msgstr ""
+"Lucidウィジェットは、あなたのlocaleで他国語テキストを表示できます。これを有効"
+"にするには、@code{font}リソースのかわりに、@code{fontSet}リソースを指定しま"
+"す。@code{font}と@code{fontSet}の両方のリソースが指定された場合は、"
+"@code{fontSet}リソースが使用されます。"
 
 #. type: ifnottex
-#: xresources.texi.orig:345
+#: original_texis/xresources.texi:345
 msgid "Here is a list of resources for menu bars, pop-up menus, and dialogs:"
-msgstr "以下はメニューバー、ポップアップメニュー、ダイアログにたいするリソースのリストです:"
+msgstr ""
+"以下はメニューバー、ポップアップメニュー、ダイアログにたいするリソースのリス"
+"トです:"
 
 #. type: item
-#: xresources.texi.orig:347
+#: original_texis/xresources.texi:347
 #, no-wrap
 msgid "font"
 msgstr "font"
 
 #. type: table
-#: xresources.texi.orig:349
+#: original_texis/xresources.texi:349
 msgid "Font for menu item text."
 msgstr "メニューアイテムのテキストにたいするフォントです。"
 
 #. type: item
-#: xresources.texi.orig:349
+#: original_texis/xresources.texi:349
 #, no-wrap
 msgid "fontSet"
 msgstr "fontSet"
 
 #. type: table
-#: xresources.texi.orig:351
+#: original_texis/xresources.texi:351
 msgid "Fontset for menu item text."
 msgstr "メニューアイテムのテキストにたいするフォントセットです。"
 
 #. type: item
-#: xresources.texi.orig:351
+#: original_texis/xresources.texi:351
 #, no-wrap
 msgid "foreground"
 msgstr "foreground"
 
 #. type: table
-#: xresources.texi.orig:353
+#: original_texis/xresources.texi:353
 msgid "Foreground color."
 msgstr "フォアグラウンドカラーです。"
 
 #. type: item
-#: xresources.texi.orig:353
+#: original_texis/xresources.texi:353
 #, no-wrap
 msgid "background"
 msgstr "background"
 
 #. type: table
-#: xresources.texi.orig:355
+#: original_texis/xresources.texi:355
 msgid "Background color."
 msgstr "バックグラウンドカラーです。"
 
 #. type: item
-#: xresources.texi.orig:355
+#: original_texis/xresources.texi:355
 #, no-wrap
 msgid "buttonForeground"
 msgstr "buttonForeground"
 
 #. type: table
-#: xresources.texi.orig:357
+#: original_texis/xresources.texi:357
 msgid "Foreground color for a selected item."
 msgstr "選択されたアイテムのフォアグラウンドカラーです。"
 
 #. type: item
-#: xresources.texi.orig:358
+#: original_texis/xresources.texi:358
 #, no-wrap
 msgid "horizontalSpacing"
 msgstr "horizontalSpacing"
 
 #. type: ifnottex
-#: xresources.texi.orig:360
+#: original_texis/xresources.texi:360
 msgid "Horizontal spacing in pixels between items.  Default is 3."
 msgstr "アイテム間の水平間隔(ピクセル)です。デフォルトは3です。"
 
 #. type: item
-#: xresources.texi.orig:360
+#: original_texis/xresources.texi:360
 #, no-wrap
 msgid "verticalSpacing"
 msgstr "verticalSpacing"
 
 #. type: ifnottex
-#: xresources.texi.orig:362
+#: original_texis/xresources.texi:362
 msgid "Vertical spacing in pixels between items.  Default is 2."
 msgstr "アイテム間の垂直間隔(ピクセル)です。デフォルトは2です。"
 
 #. type: item
-#: xresources.texi.orig:362
+#: original_texis/xresources.texi:362
 #, no-wrap
 msgid "arrowSpacing"
 msgstr "arrowSpacing"
 
 #. type: ifnottex
-#: xresources.texi.orig:365
+#: original_texis/xresources.texi:365
 msgid ""
 "Horizontal spacing between the arrow (which indicates a submenu) and the "
 "associated text.  Default is 10."
-msgstr "(サブメニューを示す)矢印と、それに付随するテキストの間の水平間隔です。デフォルトは10です。"
+msgstr ""
+"(サブメニューを示す)矢印と、それに付随するテキストの間の水平間隔です。デフォ"
+"ルトは10です。"
 
 #. type: item
-#: xresources.texi.orig:365 xresources.texi.orig:475
+#: original_texis/xresources.texi:365 original_texis/xresources.texi:475
 #, no-wrap
 msgid "shadowThickness"
 msgstr "shadowThickness"
 
 #. type: ifnottex
-#: xresources.texi.orig:368
+#: original_texis/xresources.texi:368
 msgid ""
 "Thickness of shadow lines for 3D buttons, arrows, and other graphical "
 "elements.  Default is 1."
-msgstr "3Dのボタン、矢印、その他グラフィカルな要素の陰線(shadow lines)の厚さです。デフォルトは1です。"
+msgstr ""
+"3Dのボタン、矢印、その他グラフィカルな要素の陰線(shadow lines)の厚さです。デ"
+"フォルトは1です。"
 
 #. type: item
-#: xresources.texi.orig:369
+#: original_texis/xresources.texi:369
 #, no-wrap
 msgid "margin"
 msgstr "margin"
 
 #. type: table
-#: xresources.texi.orig:371
+#: original_texis/xresources.texi:371
 msgid "Margin of the menu bar, in characters.  Default is 1."
 msgstr "メニューバーの余白(文字数)です。デフォルトは1です。"
 
 #. type: appendixsec
-#: xresources.texi.orig:374
+#: original_texis/xresources.texi:374
 #, no-wrap
 msgid "Motif Menu X Resources"
 msgstr "Motif Menu X Resources"
 
 #. type: cindex
-#: xresources.texi.orig:375
+#: original_texis/xresources.texi:375
 #, no-wrap
 msgid "Menu X Resources (Motif widgets)"
 msgstr "Menu X Resources (Motif widgets)"
 
 #. type: cindex
-#: xresources.texi.orig:376
+#: original_texis/xresources.texi:376
 #, no-wrap
 msgid "Motif Widget X Resources"
 msgstr "Motif Widget X Resources"
 
 #. type: ifnottex
-#: xresources.texi.orig:382
+#: original_texis/xresources.texi:382
 msgid ""
 "If Emacs is compiled with the X toolkit support using Motif or LessTif "
 "widgets, you can use X resources to customize the appearance of the menu "
 "bar, pop-up menus, and dialog boxes.  However, the resources are organized "
 "differently from Lucid widgets."
-msgstr "EmacsがMotifまたはLessTifのウィジェットを使用するXツールキットサポートつきでコンパイルされた場合、メニューバー、ポップアップメニュー、ダイアログボックスの外観をカスタマイズするために、Xリソースを使用できます。しかし、これらのリソースは、Lucidウィジェットとは組織方法が異なります。"
+msgstr ""
+"EmacsがMotifまたはLessTifのウィジェットを使用するXツールキットサポートつきで"
+"コンパイルされた場合、メニューバー、ポップアップメニュー、ダイアログボックス"
+"の外観をカスタマイズするために、Xリソースを使用できます。しかし、これらのリ"
+"ソースは、Lucidウィジェットとは組織方法が異なります。"
 
 #. type: ifnottex
-#: xresources.texi.orig:385
+#: original_texis/xresources.texi:385
 msgid ""
 "The resource names for the menu bar are in the @samp{pane.menubar} class, "
 "and they must be specified in this form:"
-msgstr "メニューバーにたいするリソース名は@samp{pane.menubar}クラスの中にあり、それらは以下の形式で指定しなければなりません:"
+msgstr ""
+"メニューバーにたいするリソース名は@samp{pane.menubar}クラスの中にあり、それら"
+"は以下の形式で指定しなければなりません:"
 
 #. type: smallexample
-#: xresources.texi.orig:388
+#: original_texis/xresources.texi:388
 #, no-wrap
 msgid "Emacs.pane.menubar.@var{subwidget}.@var{resource}:  @var{value}\n"
 msgstr "Emacs.pane.menubar.@var{subwidget}.@var{resource}:  @var{value}\n"
 
 #. type: ifnottex
-#: xresources.texi.orig:397
+#: original_texis/xresources.texi:397
 msgid ""
 "For pop-up menus, the resources are in the @samp{menu*} class, instead of "
 "@samp{pane.menubar}.  For dialog boxes, they are in @samp{dialog}.  In each "
 "case, each individual menu string is a subwidget; the subwidget's name is "
 "the same as the menu item string.  For example, the @samp{File} menu in the "
 "menu bar is a subwidget named @samp{emacs.pane.menubar.File}."
-msgstr "ポップアップメニューにたいするリソースは、@samp{pane.menubar}ではなく、@samp{menu*}クラスの中にあります。ダイアログボックスにたいするリソースは@samp{dialog}クラスの中です。どの場合でも、それぞれのメニュー文字列がサブウィジェットです。サブウィジェットの名前は、メニューアイテム文字列と同じです。たとえば、メニューバーの中の@samp{File}メニューは、@samp{emacs.pane.menubar.File}という名前のサブウィジェットです。"
+msgstr ""
+"ポップアップメニューにたいするリソースは、@samp{pane.menubar}ではなく、"
+"@samp{menu*}クラスの中にあります。ダイアログボックスにたいするリソースは"
+"@samp{dialog}クラスの中です。どの場合でも、それぞれのメニュー文字列がサブウィ"
+"ジェットです。サブウィジェットの名前は、メニューアイテム文字列と同じです。た"
+"とえば、メニューバーの中の@samp{File}メニューは、@samp{emacs.pane.menubar."
+"File}という名前のサブウィジェットです。"
 
 #. type: ifnottex
-#: xresources.texi.orig:402
+#: original_texis/xresources.texi:402
 msgid ""
 "Typically, you want to specify the same resources for the whole menu bar.  "
 "To do this, use @samp{*} instead of a specific subwidget name.  For example, "
 "to specify the font @samp{8x16} for all menu bar items, including submenus, "
 "write this:"
-msgstr "通常は、メニューバー全体に同じリソースを指定したいでしょう。これを行なうには、特定のウィジェット名のかわりに@samp{*}を使用します。たとえば、サブメニューを含むすべてのメニューバーアイテムに、フォント@samp{8x16}を指定するには、以下のように記述します:"
+msgstr ""
+"通常は、メニューバー全体に同じリソースを指定したいでしょう。これを行なうに"
+"は、特定のウィジェット名のかわりに@samp{*}を使用します。たとえば、サブメ"
+"ニューを含むすべてのメニューバーアイテムに、フォント@samp{8x16}を指定するに"
+"は、以下のように記述します:"
 
 #. type: smallexample
-#: xresources.texi.orig:405
+#: original_texis/xresources.texi:405
 #, no-wrap
 msgid "Emacs.pane.menubar.*.fontList:  8x16\n"
 msgstr "Emacs.pane.menubar.*.fontList:  8x16\n"
 
 #. type: ifnottex
-#: xresources.texi.orig:411
+#: original_texis/xresources.texi:411
 msgid ""
 "Each item in a submenu also has its own name for X resources; for example, "
 "the @samp{File} submenu has an item named @samp{Save (current buffer)}.  A "
 "resource specification for a submenu item looks like this:"
-msgstr "サブメニューの中の各アイテムは、Xリソースにたいする独自の名前をもちます。たとえば@samp{File}サブメニューは、@samp{Save (current buffer)}という名前のアイテムをもちます。サブメニューアイテムにたいするリソース指定は以下のようになります:"
+msgstr ""
+"サブメニューの中の各アイテムは、Xリソースにたいする独自の名前をもちます。たと"
+"えば@samp{File}サブメニューは、@samp{Save (current buffer)}という名前のアイテ"
+"ムをもちます。サブメニューアイテムにたいするリソース指定は以下のようになりま"
+"す:"
 
 #. type: smallexample
-#: xresources.texi.orig:414
+#: original_texis/xresources.texi:414
 #, no-wrap
 msgid "Emacs.pane.menubar.popup_*.@var{menu}.@var{item}.@var{resource}: @var{value}\n"
 msgstr "Emacs.pane.menubar.popup_*.@var{menu}.@var{item}.@var{resource}: @var{value}\n"
 
 #. type: ifnottex
-#: xresources.texi.orig:419
+#: original_texis/xresources.texi:419
 msgid ""
 "For example, here's how to specify the font for the @samp{Save (current "
 "buffer)} item:"
-msgstr "たとえば、以下は@samp{Save (current buffer)}アイテムにフォントを指定する方法です:"
+msgstr ""
+"たとえば、以下は@samp{Save (current buffer)}アイテムにフォントを指定する方法"
+"です:"
 
 #. type: smallexample
-#: xresources.texi.orig:422
+#: original_texis/xresources.texi:422
 #, no-wrap
 msgid "Emacs.pane.menubar.popup_*.File.Save (current buffer).fontList: 8x16\n"
 msgstr "Emacs.pane.menubar.popup_*.File.Save (current buffer).fontList: 8x16\n"
 
 #. type: ifnottex
-#: xresources.texi.orig:428
+#: original_texis/xresources.texi:428
 msgid ""
 "For an item in a second-level submenu, such as @samp{Complete Word} under "
 "@samp{Spell Checking} under @samp{Tools}, the resource fits this template:"
-msgstr "@samp{Tools}の下の、@samp{Spell Checking}の下の@samp{Complete Word}のような、第2レベルのアイテムには、以下のテンプレートが当てはまります:"
+msgstr ""
+"@samp{Tools}の下の、@samp{Spell Checking}の下の@samp{Complete Word}のような、"
+"第2レベルのアイテムには、以下のテンプレートが当てはまります:"
 
 #. type: smallexample
-#: xresources.texi.orig:431
+#: original_texis/xresources.texi:431
 #, no-wrap
 msgid "Emacs.pane.menubar.popup_*.popup_*.@var{menu}.@var{resource}: @var{value}\n"
 msgstr "Emacs.pane.menubar.popup_*.popup_*.@var{menu}.@var{resource}: @var{value}\n"
 
 #. type: ifnottex
-#: xresources.texi.orig:435
+#: original_texis/xresources.texi:435
 msgid "For example,"
 msgstr "たとえば、"
 
 #. type: smallexample
-#: xresources.texi.orig:438
+#: original_texis/xresources.texi:438
 #, no-wrap
 msgid "Emacs.pane.menubar.popup_*.popup_*.Spell Checking.Complete Word: @var{value}\n"
 msgstr "Emacs.pane.menubar.popup_*.popup_*.Spell Checking.Complete Word: @var{value}\n"
 
 #. type: ifnottex
-#: xresources.texi.orig:442
+#: original_texis/xresources.texi:442
 msgid "(This should be one long line.)"
 msgstr "(これは長い1行で記述する必要があります。)"
 
 #. type: ifnottex
-#: xresources.texi.orig:446
+#: original_texis/xresources.texi:446
 msgid ""
 "If you want the submenu items to look different from the menu bar itself, "
 "you must first specify the resource for all of them, then override the value "
 "for submenus alone.  Here is an example:"
-msgstr "サブメニューアイテムにメニューバー自体とは異なる外観を与えたい場合、最初にすべてにたいしてリソースを指定してから、そのサブメニューにたいする値をオーバーライドしなければなりません。以下は例です:"
+msgstr ""
+"サブメニューアイテムにメニューバー自体とは異なる外観を与えたい場合、最初にす"
+"べてにたいしてリソースを指定してから、そのサブメニューにたいする値をオーバー"
+"ライドしなければなりません。以下は例です:"
 
 #. type: smallexample
-#: xresources.texi.orig:450
+#: original_texis/xresources.texi:450
 #, no-wrap
 msgid ""
 "Emacs.pane.menubar.*.fontList:  8x16\n"
@@ -1145,159 +1329,168 @@ msgstr ""
 "Emacs.pane.menubar.popup_*.fontList: 8x16\n"
 
 #. type: ifnottex
-#: xresources.texi.orig:454
+#: original_texis/xresources.texi:454
 msgid ""
 "To specify resources for the LessTif file-selection box, use @samp{fsb*}, "
 "like this:"
-msgstr "LessTifのファイル選択ボックスにたいしてリソースを指定するには、以下のように@samp{fsb*}を使用します:"
+msgstr ""
+"LessTifのファイル選択ボックスにたいしてリソースを指定するには、以下のように"
+"@samp{fsb*}を使用します:"
 
 #. type: example
-#: xresources.texi.orig:457
+#: original_texis/xresources.texi:457
 #, no-wrap
 msgid "Emacs.fsb*.fontList: 8x16\n"
 msgstr "Emacs.fsb*.fontList: 8x16\n"
 
 #. type: ifnottex
-#: xresources.texi.orig:460
+#: original_texis/xresources.texi:460
 msgid "Here is a list of resources for LessTif menu bars and pop-up menus:"
-msgstr "以下はLessTifのメニューバーとポップアップメニューにたいするリソースのリストです:"
+msgstr ""
+"以下はLessTifのメニューバーとポップアップメニューにたいするリソースのリストで"
+"す:"
 
 #. type: item
-#: xresources.texi.orig:462
+#: original_texis/xresources.texi:462
 #, no-wrap
 msgid "armColor"
 msgstr "armColor"
 
 #. type: table
-#: xresources.texi.orig:464
+#: original_texis/xresources.texi:464
 msgid "The color to show in an armed button."
-msgstr "アームドボタン(armed button: 押されてまだ離されていないボタン)を表示するカラーです。"
+msgstr ""
+"アームドボタン(armed button: 押されてまだ離されていないボタン)を表示するカ"
+"ラーです。"
 
 #. type: item
-#: xresources.texi.orig:464
+#: original_texis/xresources.texi:464
 #, no-wrap
 msgid "fontList"
 msgstr "fontList"
 
 #. type: table
-#: xresources.texi.orig:466
+#: original_texis/xresources.texi:466
 msgid "The font to use."
 msgstr "使用するフォントです。"
 
 #. type: item
-#: xresources.texi.orig:466
+#: original_texis/xresources.texi:466
 #, no-wrap
 msgid "marginBottom"
 msgstr "marginBottom"
 
 #. type: itemx
-#: xresources.texi.orig:467
+#: original_texis/xresources.texi:467
 #, no-wrap
 msgid "marginHeight"
 msgstr "marginHeight"
 
 #. type: itemx
-#: xresources.texi.orig:468
+#: original_texis/xresources.texi:468
 #, no-wrap
 msgid "marginLeft"
 msgstr "marginLeft"
 
 #. type: itemx
-#: xresources.texi.orig:469
+#: original_texis/xresources.texi:469
 #, no-wrap
 msgid "marginRight"
 msgstr "marginRight"
 
 #. type: itemx
-#: xresources.texi.orig:470
+#: original_texis/xresources.texi:470
 #, no-wrap
 msgid "marginTop"
 msgstr "marginTop"
 
 #. type: itemx
-#: xresources.texi.orig:471
+#: original_texis/xresources.texi:471
 #, no-wrap
 msgid "marginWidth"
 msgstr "marginWidth"
 
 #. type: table
-#: xresources.texi.orig:473
+#: original_texis/xresources.texi:473
 msgid "Amount of space to leave around the item, within the border."
 msgstr "アイテムの周囲に残すスペースの量を、ボーダーも含めて指定します。"
 
 #. type: item
-#: xresources.texi.orig:473
+#: original_texis/xresources.texi:473
 #, no-wrap
 msgid "borderWidth"
 msgstr "borderWidth"
 
 #. type: table
-#: xresources.texi.orig:475
+#: original_texis/xresources.texi:475
 msgid "The width of the border around the menu item, on all sides."
 msgstr "メニューアイテムの各辺のボーダーの幅です。"
 
 #. type: table
-#: xresources.texi.orig:477
+#: original_texis/xresources.texi:477
 msgid "The width of the border shadow."
 msgstr "ボーダーの影の幅です。"
 
 #. type: item
-#: xresources.texi.orig:477
+#: original_texis/xresources.texi:477
 #, no-wrap
 msgid "bottomShadowColor"
 msgstr "bottomShadowColor"
 
 #. type: table
-#: xresources.texi.orig:479
+#: original_texis/xresources.texi:479
 msgid "The color for the border shadow, on the bottom and the right."
 msgstr "ボーダーの影の底辺と右辺のカラーです。"
 
 #. type: item
-#: xresources.texi.orig:479
+#: original_texis/xresources.texi:479
 #, no-wrap
 msgid "topShadowColor"
 msgstr "topShadowColor"
 
 #. type: table
-#: xresources.texi.orig:481
+#: original_texis/xresources.texi:481
 msgid "The color for the border shadow, on the top and the left."
 msgstr "ボーダーの影の上辺と左辺のカラーです。"
 
 #. type: cindex
-#: xresources.texi.orig:486
+#: original_texis/xresources.texi:486
 #, no-wrap
 msgid "GTK+ resources"
 msgstr "GTK+ resources"
 
 #. type: cindex
-#: xresources.texi.orig:487
+#: original_texis/xresources.texi:487
 #, no-wrap
 msgid "resource files for GTK"
 msgstr "resource files for GTK"
 
 #. type: cindex
-#: xresources.texi.orig:488
+#: original_texis/xresources.texi:488
 #, no-wrap
 msgid "@file{~/.gtkrc-2.0} file"
 msgstr "@file{~/.gtkrc-2.0} file"
 
 #. type: cindex
-#: xresources.texi.orig:489
+#: original_texis/xresources.texi:489
 #, no-wrap
 msgid "@file{~/.emacs.d/gtkrc} file"
 msgstr "@file{~/.emacs.d/gtkrc} file"
 
 #. type: Plain text
-#: xresources.texi.orig:495
+#: original_texis/xresources.texi:495
 msgid ""
 "If Emacs is compiled with GTK+ toolkit support, the simplest way to "
 "customize its GTK+ widgets (e.g., menus, dialogs, tool bars and scroll bars) "
 "is to choose an appropriate GTK+ theme, for example with the GNOME theme "
 "selector."
-msgstr "EmacsがGTK+サポートつきでコンパイルされた場合、EmacsのGTK+ウィジェット(例: メニュー、ダイアログ、ツールバー、スクロールバー)をカスタマイズする一番簡単な方法は、たとえばGNOME theme selectorなどで適切なGTK+テーマを選択する方法です。"
+msgstr ""
+"EmacsがGTK+サポートつきでコンパイルされた場合、EmacsのGTK+ウィジェット(例: メ"
+"ニュー、ダイアログ、ツールバー、スクロールバー)をカスタマイズする一番簡単な方"
+"法は、たとえばGNOME theme selectorなどで適切なGTK+テーマを選択する方法です。"
 
 #. type: Plain text
-#: xresources.texi.orig:507
+#: original_texis/xresources.texi:507
 msgid ""
 "In GTK+ version 2, you can also use @dfn{GTK+ resources} to customize the "
 "appearance of GTK+ widgets used by Emacs.  These resources are specified in "
@@ -1309,18 +1502,32 @@ msgid ""
 "this.  GTK+ resources do not affect aspects of Emacs unrelated to GTK+ "
 "widgets, such as fonts and colors in the main Emacs window; those are "
 "governed by normal X resources (@pxref{Resources})."
-msgstr "GTK+バージョン2では、Emacsで使用されるGTK+ウィジェットの外観をカスタマイズするために、@dfn{GTK+リソース}も使用できます。これらのリソースは、ファイル@file{~/.emacs.d/gtkrc}(Emacs固有のGTK+リソース用)、またはファイル@file{~/.gtkrc-2.0}(一般的なGTK+リソース用)のどちらかで指定されます。GTK+は、GNOMEでGConfを実行するとき@file{~/.gtkrc-2.0}を無視するように思われるため、わたしたちは@file{~/.emacs.d/gtkrc}の使用を推奨します。しかし@file{~/.emacs.d/gtkrc}によるカスタマイズをオーバーライドするGTKテーマがあることに注意してください。これにたいして、わたしたちができることはありません。GTK+リソースは、EmacsのGTK+ウィジェットと関係のない側面、たとえばEmacsのメインウィンドウのフォントやカラーにたいしては影響しません。これらは通常のXリソースに管理されます(@ref{Resources}を参照してください)。"
+msgstr ""
+"GTK+バージョン2では、Emacsで使用されるGTK+ウィジェットの外観をカスタマイズす"
+"るために、@dfn{GTK+リソース}も使用できます。これらのリソースは、ファイル"
+"@file{~/.emacs.d/gtkrc}(Emacs固有のGTK+リソース用)、またはファイル@file{~/."
+"gtkrc-2.0}(一般的なGTK+リソース用)のどちらかで指定されます。GTK+は、GNOMEで"
+"GConfを実行するとき@file{~/.gtkrc-2.0}を無視するように思われるため、わたした"
+"ちは@file{~/.emacs.d/gtkrc}の使用を推奨します。しかし@file{~/.emacs.d/gtkrc}"
+"によるカスタマイズをオーバーライドするGTKテーマがあることに注意してください。"
+"これにたいして、わたしたちができることはありません。GTK+リソースは、Emacsの"
+"GTK+ウィジェットと関係のない側面、たとえばEmacsのメインウィンドウのフォントや"
+"カラーにたいしては影響しません。これらは通常のXリソースに管理されます"
+"(@ref{Resources}を参照してください)。"
 
 #. type: Plain text
-#: xresources.texi.orig:511
+#: original_texis/xresources.texi:511
 msgid ""
 "The following sections describe how to customize GTK+ resources for Emacs.  "
 "For details about GTK+ resources, see the GTK+ API document at @uref{http://"
 "developer.gnome.org/gtk2/stable/gtk2-Resource-Files.html}."
-msgstr "以下のセクションでは、EmacsにたいしてGTK+リソースをカスタマイズする方法を説明します。GTK+リソースについての詳細は、@uref{http://developer.gnome.org/gtk2/stable/gtk2-Resource-Files.html}のGTK+ APIドキュメントを参照してください。"
+msgstr ""
+"以下のセクションでは、EmacsにたいしてGTK+リソースをカスタマイズする方法を説明"
+"します。GTK+リソースについての詳細は、@uref{http://developer.gnome.org/gtk2/"
+"stable/gtk2-Resource-Files.html}のGTK+ APIドキュメントを参照してください。"
 
 #. type: Plain text
-#: xresources.texi.orig:521
+#: original_texis/xresources.texi:521
 msgid ""
 "In GTK+ version 3, GTK+ resources have been replaced by a completely "
 "different system.  The appearance of GTK+ widgets is now determined by CSS-"
@@ -1330,86 +1537,105 @@ msgid ""
 "description of GTK+ resources in this section does not apply to GTK+ 3.  For "
 "details about the GTK+ 3 styling system, see @uref{http://developer.gnome."
 "org/gtk3/3.0/GtkCssProvider.html}."
-msgstr "GTK+バージョン3では、GTK+リソースは完全に異なるシステムに置き換えられました。GTK+ウィジェットの外観は、今やCSS-likeなスタイルのファイル、すなわちGTK+をインストールしたディレクトリーの@file{gtk-3.0/gtk.css}、およびローカルなスタイルセッティングにたいしては@file{~/.themes/@var{theme}/gtk-3.0/gtk.css}で決定されます(@var{theme}はカレントGTK+テーマの名前です)。したがってこのセクションのGTK+リソースの説明は、GTK+3に適合しません。GTK+3スタイリングシステムについての詳細は、@uref{http://developer.gnome.org/gtk3/3.0/GtkCssProvider.html}を参照してください。"
+msgstr ""
+"GTK+バージョン3では、GTK+リソースは完全に異なるシステムに置き換えられました。"
+"GTK+ウィジェットの外観は、今やCSS-likeなスタイルのファイル、すなわちGTK+をイ"
+"ンストールしたディレクトリーの@file{gtk-3.0/gtk.css}、およびローカルなスタイ"
+"ルセッティングにたいしては@file{~/.themes/@var{theme}/gtk-3.0/gtk.css}で決定"
+"されます(@var{theme}はカレントGTK+テーマの名前です)。したがってこのセクション"
+"のGTK+リソースの説明は、GTK+3に適合しません。GTK+3スタイリングシステムについ"
+"ての詳細は、@uref{http://developer.gnome.org/gtk3/3.0/GtkCssProvider.html}を"
+"参照してください。"
 
 #. type: appendixsubsec
-#: xresources.texi.orig:527 xresources.texi.orig:529 xresources.texi.orig:530
+#: original_texis/xresources.texi:527 original_texis/xresources.texi:529
+#: original_texis/xresources.texi:530
 #, no-wrap
 msgid "GTK Resource Basics"
 msgstr "GTK Resource Basics"
 
 #. type: menuentry
-#: xresources.texi.orig:527
+#: original_texis/xresources.texi:527
 msgid "Basic usage of GTK+ resources."
 msgstr "GTK+リソースの基本的な使い方。"
 
 #. type: node
-#: xresources.texi.orig:527 xresources.texi.orig:587
+#: original_texis/xresources.texi:527 original_texis/xresources.texi:587
 #, no-wrap
 msgid "GTK Widget Names"
 msgstr "GTK Widget Names"
 
 #. type: menuentry
-#: xresources.texi.orig:527
+#: original_texis/xresources.texi:527
 msgid "How GTK+ widgets are named."
 msgstr "GTK+ウィジェットの命名方法。"
 
 #. type: node
-#: xresources.texi.orig:527 xresources.texi.orig:632
+#: original_texis/xresources.texi:527 original_texis/xresources.texi:632
 #, no-wrap
 msgid "GTK Names in Emacs"
 msgstr "GTK Names in Emacs"
 
 #. type: menuentry
-#: xresources.texi.orig:527
+#: original_texis/xresources.texi:527
 msgid "GTK widgets used by Emacs."
 msgstr "Emacsが使用するGTK+ウィジェット。"
 
 #. type: cindex
-#: xresources.texi.orig:527 xresources.texi.orig:696 xresources.texi.orig:697
-#: xresources.texi.orig:698
+#: original_texis/xresources.texi:527 original_texis/xresources.texi:696
+#: original_texis/xresources.texi:697 original_texis/xresources.texi:698
 #, no-wrap
 msgid "GTK styles"
 msgstr "GTK styles"
 
 #. type: menuentry
-#: xresources.texi.orig:527
+#: original_texis/xresources.texi:527
 msgid "What can be customized in a GTK widget."
 msgstr "GTK+ウィジェットの何がカスタマイズできるか。"
 
 #. type: Plain text
-#: xresources.texi.orig:536
+#: original_texis/xresources.texi:536
 msgid ""
 "In a GTK+ 2 resource file (usually @file{~/.emacs.d/gtkrc}), the simplest "
 "kinds of resource settings simply assign a value to a variable.  For "
 "example, putting the following line in the resource file changes the font on "
 "all GTK+ widgets to @samp{courier-12}:"
-msgstr "GTK+2リソースファイル(通常は@file{~/.emacs.d/gtkrc})で、リソースをセットする一番簡単な方法は、単に変数に値を割り当てる方法です。たとえば以下の行を利ソースファイルに置くことにより、すべてのGTK+ウィジェットのフォントが@samp{courier-12}に変更されます:"
+msgstr ""
+"GTK+2リソースファイル(通常は@file{~/.emacs.d/gtkrc})で、リソースをセットする"
+"一番簡単な方法は、単に変数に値を割り当てる方法です。たとえば以下の行を利ソー"
+"スファイルに置くことにより、すべてのGTK+ウィジェットのフォントが"
+"@samp{courier-12}に変更されます:"
 
 #. type: smallexample
-#: xresources.texi.orig:539
+#: original_texis/xresources.texi:539
 #, no-wrap
 msgid "gtk-font-name = \"courier 12\"\n"
 msgstr "gtk-font-name = \"courier 12\"\n"
 
 #. type: Plain text
-#: xresources.texi.orig:545
+#: original_texis/xresources.texi:545
 msgid ""
 "Note that in this case the font name must be supplied as a GTK font pattern "
 "(also called a @dfn{Pango font name}), not as a Fontconfig-style font name "
 "or XLFD@.  @xref{Fonts}."
-msgstr "この場合、フォント名はFontconfigスタイルのフォント名やXLFDではなく、GTKフォントパターン(@dfn{Pangoフォント名}とも呼ばれます)で記述しなければなりません。@ref{Fonts}を参照してください。"
+msgstr ""
+"この場合、フォント名はFontconfigスタイルのフォント名やXLFDではなく、GTKフォン"
+"トパターン(@dfn{Pangoフォント名}とも呼ばれます)で記述しなければなりません。"
+"@ref{Fonts}を参照してください。"
 
 #. type: Plain text
-#: xresources.texi.orig:549
+#: original_texis/xresources.texi:549
 msgid ""
 "To customize widgets you first define a @dfn{style}, and then apply the "
 "style to the widgets.  Here is an example that sets the font for menus "
 "(@samp{#} characters indicate comments):"
-msgstr "ウィジェットをカスタマイズするには、最初に@dfn{スタイル}を定義して、そのスタイルをウィジェットに適用します。以下はメニューにたいしてフォントをセットする例です(文字@samp{#}はコメントを示します):"
+msgstr ""
+"ウィジェットをカスタマイズするには、最初に@dfn{スタイル}を定義して、そのスタ"
+"イルをウィジェットに適用します。以下はメニューにたいしてフォントをセットする"
+"例です(文字@samp{#}はコメントを示します):"
 
 #. type: smallexample
-#: xresources.texi.orig:556
+#: original_texis/xresources.texi:556
 #, no-wrap
 msgid ""
 "# @r{Define the style @samp{my_style}.}\n"
@@ -1427,7 +1653,7 @@ msgstr ""
 "\n"
 
 #. type: smallexample
-#: xresources.texi.orig:559
+#: original_texis/xresources.texi:559
 #, no-wrap
 msgid ""
 "# @r{Specify that widget type @samp{*emacs-menuitem*} uses @samp{my_style}.}\n"
@@ -1437,30 +1663,35 @@ msgstr ""
 "widget \"*emacs-menuitem*\" style \"my_style\"\n"
 
 #. type: Plain text
-#: xresources.texi.orig:567
+#: original_texis/xresources.texi:567
 msgid ""
 "The widget name in this example contains wildcards, so the style is applied "
 "to all widgets matching @samp{*emacs-menuitem*}.  The widgets are named by "
 "the way they are contained, from the outer widget to the inner widget.  Here "
 "is another example that applies @samp{my_style} specifically to the Emacs "
 "menu bar:"
-msgstr "この例のウィジェット名にはワイルドカードが含まれるので、このスタイルは@samp{*emacs-menuitem*}にマッチするすべてのウィジェットに適用されます。ウィジェットは、外側のウィジェットから内側のウィジェットへと、それが含まれる方法により、名前がつけられます。以下はEmacsメニューバーに@samp{my_style}を指定して適用する例です:"
+msgstr ""
+"この例のウィジェット名にはワイルドカードが含まれるので、このスタイルは"
+"@samp{*emacs-menuitem*}にマッチするすべてのウィジェットに適用されます。ウィ"
+"ジェットは、外側のウィジェットから内側のウィジェットへと、それが含まれる方法"
+"により、名前がつけられます。以下はEmacsメニューバーに@samp{my_style}を指定し"
+"て適用する例です:"
 
 #. type: smallexample
-#: xresources.texi.orig:570
+#: original_texis/xresources.texi:570
 #, no-wrap
 msgid "widget \"Emacs.pane.menubar.*\" style \"my_style\"\n"
 msgstr "widget \"Emacs.pane.menubar.*\" style \"my_style\"\n"
 
 #. type: Plain text
-#: xresources.texi.orig:574
+#: original_texis/xresources.texi:574
 msgid ""
 "Here is a more elaborate example, showing how to change the parts of the "
 "scroll bar:"
 msgstr "以下はスクロールバーを部分的に変更する方法を示す、より複雑な例です:"
 
 #. type: smallexample
-#: xresources.texi.orig:583
+#: original_texis/xresources.texi:583
 #, no-wrap
 msgid ""
 "style \"scroll\"\n"
@@ -1482,28 +1713,34 @@ msgstr ""
 "\n"
 
 #. type: smallexample
-#: xresources.texi.orig:585
+#: original_texis/xresources.texi:585
 #, no-wrap
 msgid "widget \"*verticalScrollBar*\" style \"scroll\"\n"
 msgstr "widget \"*verticalScrollBar*\" style \"scroll\"\n"
 
 #. type: cindex
-#: xresources.texi.orig:588 xresources.texi.orig:589 xresources.texi.orig:634
+#: original_texis/xresources.texi:588 original_texis/xresources.texi:589
+#: original_texis/xresources.texi:634
 #, no-wrap
 msgid "GTK widget names"
 msgstr "GTK widget names"
 
 #. type: Plain text
-#: xresources.texi.orig:596
+#: original_texis/xresources.texi:596
 msgid ""
 "A GTK+ widget is specified by a @dfn{widget name} and a @dfn{widget class}.  "
 "The widget name refers to a specific widget (e.g., @samp{emacs-menuitem}), "
 "while the widget class refers to a collection of similar widgets (e.g., "
 "@samp{GtkMenuItem}).  A widget always has a class, but need not have a name."
-msgstr "GTK+ウィジェットは@dfn{ウィジェット名(widget name)}と@dfn{ウィジェットクラス(widget class)}により指定されます。ウィジェット名は特定のウィジェット(たとえば@samp{emacs-menuitem})を参照し、ウィジェットクラスは似通ったウィジェット(たとえば@samp{GtkMenuItem})のコレクションを参照します。ウィジェットは常にクラスをもちますが、名前をもつ必要はありません。"
+msgstr ""
+"GTK+ウィジェットは@dfn{ウィジェット名(widget name)}と@dfn{ウィジェットクラス"
+"(widget class)}により指定されます。ウィジェット名は特定のウィジェット(たとえ"
+"ば@samp{emacs-menuitem})を参照し、ウィジェットクラスは似通ったウィジェット(た"
+"とえば@samp{GtkMenuItem})のコレクションを参照します。ウィジェットは常にクラス"
+"をもちますが、名前をもつ必要はありません。"
 
 #. type: Plain text
-#: xresources.texi.orig:604
+#: original_texis/xresources.texi:604
 msgid ""
 "@dfn{Absolute names} are sequences of widget names or widget classes, "
 "corresponding to hierarchies of widgets embedded within other widgets.  For "
@@ -1512,147 +1749,168 @@ msgid ""
 "@code{menubar}, the absolute class name of the menu-bar widget is "
 "@code{GtkWindow.GtkVBox.GtkMenuBar}, and its absolute widget name is "
 "@code{top.box.menubar}."
-msgstr "@dfn{絶対名(absolute names)}とは、一連のウィジェット名またはウィジェットクラスで、他のウィジェットに埋め込まれたウィジェットの階層に対応します。たとえば、@code{top}という名前の@code{GtkWindow}が、@code{box}という名前の@code{GtkVBox}を含み、それがさらに@code{menubar}という名前の@code{GtkMenuBar}を含む場合、メニューバーウィジェットの完全クラス名は@code{GtkWindow.GtkVBox.GtkMenuBar}で、完全ウィジェット名は@code{top.box.menubar}になります。"
+msgstr ""
+"@dfn{絶対名(absolute names)}とは、一連のウィジェット名またはウィジェットクラ"
+"スで、他のウィジェットに埋め込まれたウィジェットの階層に対応します。たとえ"
+"ば、@code{top}という名前の@code{GtkWindow}が、@code{box}という名前の"
+"@code{GtkVBox}を含み、それがさらに@code{menubar}という名前の@code{GtkMenuBar}"
+"を含む場合、メニューバーウィジェットの完全クラス名は@code{GtkWindow.GtkVBox."
+"GtkMenuBar}で、完全ウィジェット名は@code{top.box.menubar}になります。"
 
 #. type: Plain text
-#: xresources.texi.orig:607
+#: original_texis/xresources.texi:607
 msgid ""
 "GTK+ resource files can contain two types of commands for specifying widget "
 "appearances:"
-msgstr "GTK+リソースファイルには、ウィジェットの外観を指定する2種類のコマンドを含めることができます:"
+msgstr ""
+"GTK+リソースファイルには、ウィジェットの外観を指定する2種類のコマンドを含める"
+"ことができます:"
 
 #. type: item
-#: xresources.texi.orig:609
+#: original_texis/xresources.texi:609
 #, no-wrap
 msgid "widget"
 msgstr "widget"
 
 #. type: table
-#: xresources.texi.orig:612
+#: original_texis/xresources.texi:612
 msgid ""
 "specifies a style for widgets based on the class name, or just the class."
-msgstr "クラス名または単にクラスにもとづいてウィジェットのスタイルを指定します。"
+msgstr ""
+"クラス名または単にクラスにもとづいてウィジェットのスタイルを指定します。"
 
 #. type: item
-#: xresources.texi.orig:613
+#: original_texis/xresources.texi:613
 #, no-wrap
 msgid "widget_class"
 msgstr "widget_class"
 
 #. type: table
-#: xresources.texi.orig:615
+#: original_texis/xresources.texi:615
 msgid "specifies a style for widgets based on the class name."
 msgstr "クラス名にもとづいてウィジェットのスタイルを指定します。"
 
 #. type: Plain text
-#: xresources.texi.orig:622
+#: original_texis/xresources.texi:622
 msgid ""
 "See the previous subsection for examples of using the @code{widget} command; "
 "the @code{widget_class} command is used similarly.  Note that the widget "
 "name/class and the style must be enclosed in double-quotes, and these "
 "commands must be at the top level in the GTK+ resource file."
-msgstr "@code{widget}コマンドを使用する例は、前のセクションを参照してください。@code{widget_class}コマンドも同じように使用されます。ウィジェット名/ウィジェットクラスとスタイルはダブルクォートで囲わなければならないこと、そしてこれらのコマンドはGTK+リソースファイルのトップレベルに記述しなければならないことに注意してください。"
+msgstr ""
+"@code{widget}コマンドを使用する例は、前のセクションを参照してください。"
+"@code{widget_class}コマンドも同じように使用されます。ウィジェット名/ウィ"
+"ジェットクラスとスタイルはダブルクォートで囲わなければならないこと、そしてこ"
+"れらのコマンドはGTK+リソースファイルのトップレベルに記述しなければならないこ"
+"とに注意してください。"
 
 #. type: Plain text
-#: xresources.texi.orig:627
+#: original_texis/xresources.texi:627
 msgid ""
 "As previously noted, you may specify a widget name or class with shell "
 "wildcard syntax: @samp{*} matches zero or more characters and @samp{?} "
 "matches one character.  This example assigns a style to all widgets:"
-msgstr "前に記したように、ウィジェット名とウィジェットクラスはシェルのワイルドカード構文で指定することができます。@samp{*}は0文字以上にマッチし、@samp{?}は1文字にマッチします。以下はすべてのウィジェットにスタイルを割り当てる例です:"
+msgstr ""
+"前に記したように、ウィジェット名とウィジェットクラスはシェルのワイルドカード"
+"構文で指定することができます。@samp{*}は0文字以上にマッチし、@samp{?}は1文字"
+"にマッチします。以下はすべてのウィジェットにスタイルを割り当てる例です:"
 
 #. type: smallexample
-#: xresources.texi.orig:630
+#: original_texis/xresources.texi:630
 #, no-wrap
 msgid "widget \"*\" style \"my_style\"\n"
 msgstr "widget \"*\" style \"my_style\"\n"
 
 #. type: appendixsubsec
-#: xresources.texi.orig:633
+#: original_texis/xresources.texi:633
 #, no-wrap
 msgid "GTK Widget Names in Emacs"
 msgstr "GTK Widget Names in Emacs"
 
 #. type: cindex
-#: xresources.texi.orig:635
+#: original_texis/xresources.texi:635
 #, no-wrap
 msgid "GTK widget classes"
 msgstr "GTK widget classes"
 
 #. type: Plain text
-#: xresources.texi.orig:638
+#: original_texis/xresources.texi:638
 msgid "The GTK+ widgets used by an Emacs frame are listed below:"
 msgstr "Emacsフレームが使用するGTK+ウィジェットを以下にリストします:"
 
 #. type: item
-#: xresources.texi.orig:640
+#: original_texis/xresources.texi:640
 #, no-wrap
 msgid "@code{Emacs} (class @code{GtkWindow})"
 msgstr "@code{Emacs} (class @code{GtkWindow})"
 
 #. type: item
-#: xresources.texi.orig:642
+#: original_texis/xresources.texi:642
 #, no-wrap
 msgid "@code{pane} (class @code{GtkVBox})"
 msgstr "@code{pane} (class @code{GtkVBox})"
 
 #. type: item
-#: xresources.texi.orig:644
+#: original_texis/xresources.texi:644
 #, no-wrap
 msgid "@code{menubar} (class @code{GtkMenuBar})"
 msgstr "@code{menubar} (class @code{GtkMenuBar})"
 
 #. type: item
-#: xresources.texi.orig:646
+#: original_texis/xresources.texi:646
 #, no-wrap
 msgid "[menu item widgets]"
 msgstr "[menu item widgets]"
 
 #. type: item
-#: xresources.texi.orig:648
+#: original_texis/xresources.texi:648
 #, no-wrap
 msgid "[unnamed widget] (class @code{GtkHandleBox})"
 msgstr "[unnamed widget] (class @code{GtkHandleBox})"
 
 #. type: item
-#: xresources.texi.orig:650
+#: original_texis/xresources.texi:650
 #, no-wrap
 msgid "@code{emacs-toolbar} (class @code{GtkToolbar})"
 msgstr "@code{emacs-toolbar} (class @code{GtkToolbar})"
 
 #. type: item
-#: xresources.texi.orig:652
+#: original_texis/xresources.texi:652
 #, no-wrap
 msgid "[tool bar item widgets]"
 msgstr "[tool bar item widgets]"
 
 #. type: item
-#: xresources.texi.orig:655
+#: original_texis/xresources.texi:655
 #, no-wrap
 msgid "@code{emacs} (class @code{GtkFixed})"
 msgstr "@code{emacs} (class @code{GtkFixed})"
 
 #. type: item
-#: xresources.texi.orig:657
+#: original_texis/xresources.texi:657
 #, no-wrap
 msgid "@code{verticalScrollBar} (class @code{GtkVScrollbar})"
 msgstr "@code{verticalScrollBar} (class @code{GtkVScrollbar})"
 
 #. type: Plain text
-#: xresources.texi.orig:667
+#: original_texis/xresources.texi:667
 msgid ""
 "The contents of Emacs windows are drawn in the @code{emacs} widget.  Note "
 "that even if there are multiple Emacs windows, each scroll bar widget is "
 "named @code{verticalScrollBar}."
-msgstr "Emacsウィンドウの内容は、@code{emacs}ウィジェットにより描画されます。複数のEmacsウィンドウがある場合でも、それぞれのスクロールバーウィジェットの名前は@code{verticalScrollBar}であることに注意してください。"
+msgstr ""
+"Emacsウィンドウの内容は、@code{emacs}ウィジェットにより描画されます。複数の"
+"Emacsウィンドウがある場合でも、それぞれのスクロールバーウィジェットの名前は"
+"@code{verticalScrollBar}であることに注意してください。"
 
 #. type: Plain text
-#: xresources.texi.orig:669
+#: original_texis/xresources.texi:669
 msgid "For example, here are two different ways to set the menu bar style:"
-msgstr "たとえば、以下はメニューバーのスタイルをセットする、2つの異なる方法の例です:"
+msgstr ""
+"たとえば、以下はメニューバーのスタイルをセットする、2つの異なる方法の例です:"
 
 #. type: smallexample
-#: xresources.texi.orig:673
+#: original_texis/xresources.texi:673
 #, no-wrap
 msgid ""
 "widget \"Emacs.pane.menubar.*\" style \"my_style\"\n"
@@ -1662,24 +1920,32 @@ msgstr ""
 "widget_class \"GtkWindow.GtkVBox.GtkMenuBar.*\" style \"my_style\"\n"
 
 #. type: Plain text
-#: xresources.texi.orig:678
+#: original_texis/xresources.texi:678
 msgid ""
 "For GTK+ dialogs, Emacs uses a widget named @code{emacs-dialog}, of class "
 "@code{GtkDialog}.  For file selection, Emacs uses a widget named @code{emacs-"
 "filedialog}, of class @code{GtkFileSelection}."
-msgstr "GTK+ダイアログにたいしては、Emacsはクラス@code{GtkDialog}の、@code{emacs-dialog}という名前のウィジェットを使用します。ファイル選択にたいしては、Emacsはクラス@code{GtkFileSelection}の、@code{emacs-filedialog}という名前のウィジェットを使用します。"
+msgstr ""
+"GTK+ダイアログにたいしては、Emacsはクラス@code{GtkDialog}の、@code{emacs-"
+"dialog}という名前のウィジェットを使用します。ファイル選択にたいしては、Emacs"
+"はクラス@code{GtkFileSelection}の、@code{emacs-filedialog}という名前のウィ"
+"ジェットを使用します。"
 
 #. type: Plain text
-#: xresources.texi.orig:683
+#: original_texis/xresources.texi:683
 msgid ""
 "Because the widgets for pop-up menus and dialogs are free-standing windows "
 "and not ``contained'' in the @code{Emacs} widget, their GTK+ absolute names "
 "do not start with @samp{Emacs}.  To customize these widgets, use wildcards "
 "like this:"
-msgstr "ポップアップメニューとダイアログのウィジェットは独立したウィンドウであり、@code{Emacs}ウィジェットに``含まれ''ていないので、それらのGTK+完全名は@samp{Emacs}で始まりません。これらのウィジェットをカスタマイズするには、以下のようにワイルドカードを使用します:"
+msgstr ""
+"ポップアップメニューとダイアログのウィジェットは独立したウィンドウであり、"
+"@code{Emacs}ウィジェットに``含まれ''ていないので、それらのGTK+完全名は"
+"@samp{Emacs}で始まりません。これらのウィジェットをカスタマイズするには、以下"
+"のようにワイルドカードを使用します:"
 
 #. type: smallexample
-#: xresources.texi.orig:688
+#: original_texis/xresources.texi:688
 #, no-wrap
 msgid ""
 "widget \"*emacs-dialog*\" style \"my_dialog_style\"\n"
@@ -1691,23 +1957,23 @@ msgstr ""
 "widget \"*emacs-menuitem* style \"my_menu_style\"\n"
 
 #. type: Plain text
-#: xresources.texi.orig:691
+#: original_texis/xresources.texi:691
 msgid "If you want to apply a style to all menus in Emacs, use this:"
 msgstr "Emacsのすべてのメニューにスタイルを適用したい場合は、以下を使用します:"
 
 #. type: smallexample
-#: xresources.texi.orig:694
+#: original_texis/xresources.texi:694
 #, no-wrap
 msgid "widget_class \"*Menu*\" style \"my_menu_style\"\n"
 msgstr "widget_class \"*Menu*\" style \"my_menu_style\"\n"
 
 #. type: Plain text
-#: xresources.texi.orig:701
+#: original_texis/xresources.texi:701
 msgid "Here is an example of two GTK+ style declarations:"
 msgstr "以下は2つのGTK+スタイル宣言の例です:"
 
 #. type: smallexample
-#: xresources.texi.orig:704
+#: original_texis/xresources.texi:704
 #, no-wrap
 msgid ""
 "pixmap_path \"/usr/share/pixmaps:/usr/include/X11/pixmaps\"\n"
@@ -1717,7 +1983,7 @@ msgstr ""
 "\n"
 
 #. type: smallexample
-#: xresources.texi.orig:708
+#: original_texis/xresources.texi:708
 #, no-wrap
 msgid ""
 "style \"default\"\n"
@@ -1731,7 +1997,7 @@ msgstr ""
 "\n"
 
 #. type: smallexample
-#: xresources.texi.orig:714
+#: original_texis/xresources.texi:714
 #, no-wrap
 msgid ""
 "  bg[NORMAL] = @{ 0.83, 0.80, 0.73 @}\n"
@@ -1749,7 +2015,7 @@ msgstr ""
 "\n"
 
 #. type: smallexample
-#: xresources.texi.orig:719
+#: original_texis/xresources.texi:719
 #, no-wrap
 msgid ""
 "  fg[NORMAL] = \"black\"\n"
@@ -1765,7 +2031,7 @@ msgstr ""
 "\n"
 
 #. type: smallexample
-#: xresources.texi.orig:722
+#: original_texis/xresources.texi:722
 #, no-wrap
 msgid ""
 "  base[INSENSITIVE] = \"#777766\"\n"
@@ -1777,7 +2043,7 @@ msgstr ""
 "\n"
 
 #. type: smallexample
-#: xresources.texi.orig:727
+#: original_texis/xresources.texi:727
 #, no-wrap
 msgid ""
 "  bg_pixmap[NORMAL] = \"background.xpm\"\n"
@@ -1793,7 +2059,7 @@ msgstr ""
 "\n"
 
 #. type: smallexample
-#: xresources.texi.orig:729
+#: original_texis/xresources.texi:729
 #, no-wrap
 msgid ""
 "@}\n"
@@ -1803,7 +2069,7 @@ msgstr ""
 "\n"
 
 #. type: smallexample
-#: xresources.texi.orig:734
+#: original_texis/xresources.texi:734
 #, no-wrap
 msgid ""
 "style \"ruler\" = \"default\"\n"
@@ -1819,128 +2085,152 @@ msgstr ""
 "\n"
 
 #. type: Plain text
-#: xresources.texi.orig:739
+#: original_texis/xresources.texi:739
 msgid ""
 "The style @samp{ruler} inherits from @samp{default}.  This way you can build "
 "on existing styles.  The syntax for fonts and colors is described below."
-msgstr "スタイル@samp{ruler}は@samp{default}を継承します。この方法により、既存のスタイルを元にすることができます。フォントとカラーの構文は以下に記述されています。"
+msgstr ""
+"スタイル@samp{ruler}は@samp{default}を継承します。この方法により、既存のスタ"
+"イルを元にすることができます。フォントとカラーの構文は以下に記述されていま"
+"す。"
 
 #. type: Plain text
-#: xresources.texi.orig:743
+#: original_texis/xresources.texi:743
 msgid ""
 "As this example shows, it is possible to specify several values for "
 "foreground and background depending on the widget's @dfn{state}.  The "
 "possible states are:"
-msgstr "この例が示すように、ウィジェットの@dfn{状態}にもとづいてフォアグラウンドとバックグラウンドのカラーに複数の値を指定することが可能です。以下の状態が利用できます:"
+msgstr ""
+"この例が示すように、ウィジェットの@dfn{状態}にもとづいてフォアグラウンドと"
+"バックグラウンドのカラーに複数の値を指定することが可能です。以下の状態が利用"
+"できます:"
 
 #. type: item
-#: xresources.texi.orig:745
+#: original_texis/xresources.texi:745
 #, no-wrap
 msgid "NORMAL"
 msgstr "NORMAL"
 
 #. type: table
-#: xresources.texi.orig:747
+#: original_texis/xresources.texi:747
 msgid "This is the default state for widgets."
 msgstr "ウィジェットのフォルトの状態です。"
 
 #. type: item
-#: xresources.texi.orig:747
+#: original_texis/xresources.texi:747
 #, no-wrap
 msgid "ACTIVE"
 msgstr "ACTIVE"
 
 #. type: table
-#: xresources.texi.orig:752
+#: original_texis/xresources.texi:752
 msgid ""
 "This is the state for a widget that is ready to do something.  It is also "
 "for the trough of a scroll bar, i.e., @code{bg[ACTIVE] = \"red\"} sets the "
 "scroll bar trough to red.  Buttons that have been pressed but not released "
 "yet (``armed'') are in this state."
-msgstr "ウィジェットが何かを行なう準備ができた状態です。これはスクロールバーの溝(trough)にも適用できます。たとえば@code{bg[ACTIVE] = \"red\"}はスクロールバーの溝を赤にセットします。ボタンが押されてまだ離されていない状態(``armed'')も、この状態です。"
+msgstr ""
+"ウィジェットが何かを行なう準備ができた状態です。これはスクロールバーの溝"
+"(trough)にも適用できます。たとえば@code{bg[ACTIVE] = \"red\"}はスクロールバー"
+"の溝を赤にセットします。ボタンが押されてまだ離されていない状態(``armed'')も、"
+"この状態です。"
 
 #. type: item
-#: xresources.texi.orig:752
+#: original_texis/xresources.texi:752
 #, no-wrap
 msgid "PRELIGHT"
 msgstr "PRELIGHT"
 
 #. type: table
-#: xresources.texi.orig:757
+#: original_texis/xresources.texi:757
 msgid ""
 "This is the state for a widget that can be manipulated, when the mouse "
 "pointer is over it---for example when the mouse is over the thumb in the "
 "scroll bar or over a menu item.  When the mouse is over a button that is not "
 "pressed, the button is in this state."
-msgstr "マウスポインターがその上にきたとき、ウィジェットが操作可能な状態です --- たとえばマウスがスクロールバーのハンドルの上やメニューアイテムの上にきたときの状態です。押されていないボタンの上にマウスがくると、そのボタンはこの状態になります。"
+msgstr ""
+"マウスポインターがその上にきたとき、ウィジェットが操作可能な状態です --- たと"
+"えばマウスがスクロールバーのハンドルの上やメニューアイテムの上にきたときの状"
+"態です。押されていないボタンの上にマウスがくると、そのボタンはこの状態になり"
+"ます。"
 
 #. type: item
-#: xresources.texi.orig:757
+#: original_texis/xresources.texi:757
 #, no-wrap
 msgid "SELECTED"
 msgstr "SELECTED"
 
 #. type: table
-#: xresources.texi.orig:761
+#: original_texis/xresources.texi:761
 msgid ""
 "This is the state for data that has been selected by the user.  It can be "
 "selected text or items selected in a list.  This state is not used in Emacs."
-msgstr "ユーザーにより選択されたデータにたいする状態です。それは選択されたテキストやリストの選択されたアイテムの場合もあります。この状態はEmacsでは使用されません。"
+msgstr ""
+"ユーザーにより選択されたデータにたいする状態です。それは選択されたテキストや"
+"リストの選択されたアイテムの場合もあります。この状態はEmacsでは使用されませ"
+"ん。"
 
 #. type: item
-#: xresources.texi.orig:761
+#: original_texis/xresources.texi:761
 #, no-wrap
 msgid "INSENSITIVE"
 msgstr "INSENSITIVE"
 
 #. type: table
-#: xresources.texi.orig:766
+#: original_texis/xresources.texi:766
 msgid ""
 "This is the state for widgets that are visible, but they can not be "
 "manipulated in the usual way---for example, buttons that can't be pressed, "
 "and disabled menu items.  To display disabled menu items in yellow, use "
 "@code{fg[INSENSITIVE] = \"yellow\"}."
-msgstr "ウィジェットが可視だが通常の方法では操作できない状態 --- たとえば押せないボタンや、無効なメニューアイテムなどです。無効なメニューアイテムを黄色で表示するには、@code{fg[INSENSITIVE] = \"yellow\"}を使用します。"
+msgstr ""
+"ウィジェットが可視だが通常の方法では操作できない状態 --- たとえば押せないボタ"
+"ンや、無効なメニューアイテムなどです。無効なメニューアイテムを黄色で表示する"
+"には、@code{fg[INSENSITIVE] = \"yellow\"}を使用します。"
 
 #. type: Plain text
-#: xresources.texi.orig:769
+#: original_texis/xresources.texi:769
 msgid "Here are the things that can go in a style declaration:"
 msgstr "以下をスタイル宣言に記述できます:"
 
 #. type: item
-#: xresources.texi.orig:771
+#: original_texis/xresources.texi:771
 #, no-wrap
 msgid "bg[@var{state}] = @var{color}"
 msgstr "bg[@var{state}] = @var{color}"
 
 #. type: table
-#: xresources.texi.orig:774
+#: original_texis/xresources.texi:774
 msgid ""
 "This specifies the background color for the widget.  Note that editable text "
 "doesn't use @code{bg}; it uses @code{base} instead."
-msgstr "ウィジェットのバックグラウンドカラーを指定します。編集可能なテキストは@code{bg}ではなく@code{base}を使用することに注意してください。"
+msgstr ""
+"ウィジェットのバックグラウンドカラーを指定します。編集可能なテキストは"
+"@code{bg}ではなく@code{base}を使用することに注意してください。"
 
 #. type: item
-#: xresources.texi.orig:775
+#: original_texis/xresources.texi:775
 #, no-wrap
 msgid "base[@var{state}] = @var{color}"
 msgstr "base[@var{state}] = @var{color}"
 
 #. type: table
-#: xresources.texi.orig:779
+#: original_texis/xresources.texi:779
 msgid ""
 "This specifies the background color for editable text.  In Emacs, this color "
 "is used for the background of the text fields in the file dialog."
-msgstr "編集可能なテキストのバックグラウンドカラーを指定します。Emacsでは、ファイルダイアログのテキストフィールドのバックグラウンドに、このカラーが使用されます。"
+msgstr ""
+"編集可能なテキストのバックグラウンドカラーを指定します。Emacsでは、ファイルダ"
+"イアログのテキストフィールドのバックグラウンドに、このカラーが使用されます。"
 
 #. type: item
-#: xresources.texi.orig:780
+#: original_texis/xresources.texi:780
 #, no-wrap
 msgid "bg_pixmap[@var{state}] = \"@var{pixmap}\""
 msgstr "bg_pixmap[@var{state}] = \"@var{pixmap}\""
 
 #. type: table
-#: xresources.texi.orig:788
+#: original_texis/xresources.texi:788
 msgid ""
 "This specifies an image background (instead of a background color).  "
 "@var{pixmap} should be the image file name.  GTK can use a number of image "
@@ -1948,67 +2238,86 @@ msgid ""
 "to use the same image as its parent, use @samp{<parent>}.  If you don't want "
 "any image, use @samp{<none>}.  @samp{<none>} is the way to cancel a "
 "background image inherited from a parent style."
-msgstr "(バックグラウンドカラーのかわりに)バックグラウンドイメージを指定します。@var{pixmap}はイメージファイル名です。GTKはXPM、XBM、GIF、JPEG、PNGヲ含む、いくつかのイメージファイルを使用することができます。親ウィジェットと同じイメージをウィジェットに使用したい場合は、@samp{<parent>}を使用します。イメージを使わない場合は、@samp{<none>}を使用します。@samp{<none>}で、親スタイルから継承されたバックグラウンドイメージをキャンセルできます。"
+msgstr ""
+"(バックグラウンドカラーのかわりに)バックグラウンドイメージを指定します。"
+"@var{pixmap}はイメージファイル名です。GTKはXPM、XBM、GIF、JPEG、PNGヲ含む、い"
+"くつかのイメージファイルを使用することができます。親ウィジェットと同じイメー"
+"ジをウィジェットに使用したい場合は、@samp{<parent>}を使用します。イメージを使"
+"わない場合は、@samp{<none>}を使用します。@samp{<none>}で、親スタイルから継承"
+"されたバックグラウンドイメージをキャンセルできます。"
 
 #. type: table
-#: xresources.texi.orig:794
+#: original_texis/xresources.texi:794
 msgid ""
 "You can't specify the file by its absolute file name.  GTK looks for the "
 "pixmap file in directories specified in @code{pixmap_path}.  "
 "@code{pixmap_path} is a colon-separated list of directories within double "
 "quotes, specified at the top level in a @file{gtkrc} file (i.e., not inside "
 "a style definition; see example above):"
-msgstr "ファイル名は絶対ファイル名で指定できません。GTKは@code{pixmap_path}で指定されたディレクトリーのpixmapファイルを探します。@code{pixmap_path}は、ダブルクォートされたファイルをコロンで区切ったリストで、@file{gtkrc}ファイルのトップレベルで指定します(スタイル定義の中ではありません。上記の例を参照してください)。"
+msgstr ""
+"ファイル名は絶対ファイル名で指定できません。GTKは@code{pixmap_path}で指定され"
+"たディレクトリーのpixmapファイルを探します。@code{pixmap_path}は、ダブル"
+"クォートされたファイルをコロンで区切ったリストで、@file{gtkrc}ファイルのトッ"
+"プレベルで指定します(スタイル定義の中ではありません。上記の例を参照してくださ"
+"い)。"
 
 #. type: smallexample
-#: xresources.texi.orig:797
+#: original_texis/xresources.texi:797
 #, no-wrap
 msgid "pixmap_path \"/usr/share/pixmaps:/usr/include/X11/pixmaps\"\n"
 msgstr "pixmap_path \"/usr/share/pixmaps:/usr/include/X11/pixmaps\"\n"
 
 #. type: item
-#: xresources.texi.orig:799
+#: original_texis/xresources.texi:799
 #, no-wrap
 msgid "fg[@var{state}] = @var{color}"
 msgstr "fg[@var{state}] = @var{color}"
 
 #. type: table
-#: xresources.texi.orig:803
+#: original_texis/xresources.texi:803
 msgid ""
 "This specifies the foreground color for widgets to use.  It is the color of "
 "text in menus and buttons, and the color for the arrows in the scroll bar.  "
 "For editable text, use @code{text}."
-msgstr "使用するウィジェットのフォアグラウンドカラーを指定します。これはメニューやボタンのテキストのカラー、スクロールバーの矢印のカラーです。編集可能なテキストにたいしては、@code{text}を使用します。"
+msgstr ""
+"使用するウィジェットのフォアグラウンドカラーを指定します。これはメニューやボ"
+"タンのテキストのカラー、スクロールバーの矢印のカラーです。編集可能なテキスト"
+"にたいしては、@code{text}を使用します。"
 
 #. type: item
-#: xresources.texi.orig:804
+#: original_texis/xresources.texi:804
 #, no-wrap
 msgid "text[@var{state}] = @var{color}"
 msgstr "text[@var{state}] = @var{color}"
 
 #. type: table
-#: xresources.texi.orig:807
+#: original_texis/xresources.texi:807
 msgid ""
 "This is the color for editable text.  In Emacs, this color is used for the "
 "text fields in the file dialog."
-msgstr "編集可能なテキストのカラーです。Emacsでは、ファイルダイアログのテキストフィールドに使用されるカラーです。"
+msgstr ""
+"編集可能なテキストのカラーです。Emacsでは、ファイルダイアログのテキストフィー"
+"ルドに使用されるカラーです。"
 
 #. type: item
-#: xresources.texi.orig:808
+#: original_texis/xresources.texi:808
 #, no-wrap
 msgid "font_name = \"@var{font}\""
 msgstr "font_name = \"@var{font}\""
 
 #. type: table
-#: xresources.texi.orig:812
+#: original_texis/xresources.texi:812
 msgid ""
 "This specifies the font for text in the widget.  @var{font} is a GTK-style "
 "(or Pango) font name, like @samp{Sans Italic 10}.  @xref{Fonts}.  The names "
 "are case insensitive."
-msgstr "ウィジェット内のテキストのフォントを指定します。@var{font}は、@samp{Sans Italic 10}のような、GTK(Pango)スタイルのフォント名です。@ref{Fonts}を参照してください。名前は大文字小文字を区別しません。"
+msgstr ""
+"ウィジェット内のテキストのフォントを指定します。@var{font}は、@samp{Sans "
+"Italic 10}のような、GTK(Pango)スタイルのフォント名です。@ref{Fonts}を参照して"
+"ください。名前は大文字小文字を区別しません。"
 
 #. type: Plain text
-#: xresources.texi.orig:821
+#: original_texis/xresources.texi:821
 msgid ""
 "There are three ways to specify a color: a color name, an RGB triplet, or a "
 "GTK-style RGB triplet.  @xref{Colors}, for a description of color names and "
@@ -2017,4 +2326,11 @@ msgid ""
 "@samp{#ff0000}.  GTK-style RGB triplets have the form @w{@code{@{ @var{r}, "
 "@var{g}, @var{b} @}}}, where @var{r}, @var{g} and @var{b} are either "
 "integers in the range 0--65535 or floats in the range 0.0--1.0."
-msgstr "カラーを指定する3つの方法があります。それはカラーネーム、RGBトリプレット、GTKスタイルRGBトリプレットです。カラーネームとRGBトリプレットについては、@ref{Colors}を参照してください。カラーネームは@samp{\"red\"}のように、ダブルクォートで囲む必要があります。RGBトリプレットは@samp{#ff0000}のように、ダブルクォートで囲う必要がありません。GTKスタイルRGBトリプレットは@w{@code{@{ @var{r}, @var{g}, @var{b} @}}}という形式をもち、@var{r}、@var{g}、@var{b}は、0から65535の整数か、0.0から1.0の浮動小数点数です。"
+msgstr ""
+"カラーを指定する3つの方法があります。それはカラーネーム、RGBトリプレット、GTK"
+"スタイルRGBトリプレットです。カラーネームとRGBトリプレットについては、"
+"@ref{Colors}を参照してください。カラーネームは@samp{\"red\"}のように、ダブル"
+"クォートで囲む必要があります。RGBトリプレットは@samp{#ff0000}のように、ダブル"
+"クォートで囲う必要がありません。GTKスタイルRGBトリプレットは"
+"@w{@code{@{ @var{r}, @var{g}, @var{b} @}}}という形式をもち、@var{r}、"
+"@var{g}、@var{b}は、0から65535の整数か、0.0から1.0の浮動小数点数です。"

@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-10-26 11:53+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:32+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,181 +16,193 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
-#: search.texi.orig:5
+#: original_texis/search.texi:5
 #, no-wrap
 msgid "Search"
 msgstr "Search"
 
 #. type: chapter
-#: search.texi.orig:6
+#: original_texis/search.texi:6
 #, no-wrap
 msgid "Searching and Replacement"
 msgstr "Searching and Replacement"
 
 #. type: cindex
-#: search.texi.orig:7
+#: original_texis/search.texi:7
 #, no-wrap
 msgid "searching"
 msgstr "searching"
 
 #. type: cindex
-#: search.texi.orig:8
+#: original_texis/search.texi:8
 #, no-wrap
 msgid "finding strings within text"
 msgstr "finding strings within text"
 
 #. type: Plain text
-#: search.texi.orig:14
+#: original_texis/search.texi:14
 msgid ""
 "Like other editors, Emacs has commands to search for occurrences of a "
 "string.  Emacs also has commands to replace occurrences of a string with a "
 "different string.  There are also commands that do the same thing, but "
 "search for patterns instead of fixed strings."
-msgstr "他のエディターと同様、Emacsには文字列を検索(search)するコマンドがあります。Emacsには、文字列を違う文字列で置き換える(replace)コマンドもあります。また、同じことを行いますが、固定文字列ではなくパターンを検索するコマンドもあります。"
+msgstr ""
+"他のエディターと同様、Emacsには文字列を検索(search)するコマンドがあります。"
+"Emacsには、文字列を違う文字列で置き換える(replace)コマンドもあります。また、"
+"同じことを行いますが、固定文字列ではなくパターンを検索するコマンドもありま"
+"す。"
 
 #. type: Plain text
-#: search.texi.orig:19
+#: original_texis/search.texi:19
 msgid ""
 "You can also search multiple files under the control of a tags table "
 "(@pxref{Tags Search}) or through the Dired @kbd{A} command (@pxref{Operating "
 "on Files}), or ask the @code{grep} program to do it (@pxref{Grep Searching})."
-msgstr "tagsテーブルの制御下にある複数ファイルにたいして検索したり(@ref{Tags Search}を参照してください)、Diredの@kbd{A}コマンドを通じて検索したり(@ref{Operating on Files}を参照してください)、@code{grep}コマンドを使った検索(@ref{Grep Searching}を参照してください)も可能です。"
+msgstr ""
+"tagsテーブルの制御下にある複数ファイルにたいして検索したり(@ref{Tags Search}"
+"を参照してください)、Diredの@kbd{A}コマンドを通じて検索したり(@ref{Operating "
+"on Files}を参照してください)、@code{grep}コマンドを使った検索(@ref{Grep "
+"Searching}を参照してください)も可能です。"
 
 #. type: section
-#: search.texi.orig:32 search.texi.orig:34 search.texi.orig:35
+#: original_texis/search.texi:32 original_texis/search.texi:34
+#: original_texis/search.texi:35
 #, no-wrap
 msgid "Incremental Search"
 msgstr "Incremental Search"
 
 #. type: menuentry
-#: search.texi.orig:32
+#: original_texis/search.texi:32
 msgid "Search happens as you type the string."
 msgstr "文字列をタイプすることにより始まる検索。"
 
 #. type: section
-#: search.texi.orig:32 search.texi.orig:439 search.texi.orig:440
+#: original_texis/search.texi:32 original_texis/search.texi:439
+#: original_texis/search.texi:440
 #, no-wrap
 msgid "Nonincremental Search"
 msgstr "Nonincremental Search"
 
 #. type: menuentry
-#: search.texi.orig:32
+#: original_texis/search.texi:32
 msgid "Specify entire string and then search."
 msgstr "文字列全体を指定してから検索する。"
 
 #. type: section
-#: search.texi.orig:32 search.texi.orig:467 search.texi.orig:468
+#: original_texis/search.texi:32 original_texis/search.texi:467
+#: original_texis/search.texi:468
 #, no-wrap
 msgid "Word Search"
 msgstr "Word Search"
 
 #. type: menuentry
-#: search.texi.orig:32
+#: original_texis/search.texi:32
 msgid "Search for sequence of words."
 msgstr "単語の並びを検索する。"
 
 #. type: section
-#: search.texi.orig:32 search.texi.orig:517 search.texi.orig:518
+#: original_texis/search.texi:32 original_texis/search.texi:517
+#: original_texis/search.texi:518
 #, no-wrap
 msgid "Symbol Search"
 msgstr "Symbol Search"
 
 #. type: menuentry
-#: search.texi.orig:32
+#: original_texis/search.texi:32
 msgid "Search for a source code symbol."
 msgstr "ソースコードのシンボルを検索する。"
 
 #. type: node
-#: search.texi.orig:32 search.texi.orig:564
+#: original_texis/search.texi:32 original_texis/search.texi:564
 #, no-wrap
 msgid "Regexp Search"
 msgstr "Regexp Search"
 
 #. type: menuentry
-#: search.texi.orig:32
+#: original_texis/search.texi:32
 msgid "Search for match for a regexp."
 msgstr "正規表現にマッチする検索。"
 
 #. type: node
-#: search.texi.orig:32 search.texi.orig:639
+#: original_texis/search.texi:32 original_texis/search.texi:639
 #, no-wrap
 msgid "Regexps"
 msgstr "Regexps"
 
 #. type: menuentry
-#: search.texi.orig:32
+#: original_texis/search.texi:32
 msgid "Syntax of regular expressions."
 msgstr "正規表現の構文について。"
 
 #. type: node
-#: search.texi.orig:32 search.texi.orig:849
+#: original_texis/search.texi:32 original_texis/search.texi:849
 #, no-wrap
 msgid "Regexp Backslash"
 msgstr "Regexp Backslash"
 
 #. type: menuentry
-#: search.texi.orig:32
+#: original_texis/search.texi:32
 msgid "Regular expression constructs starting with `\\'."
 msgstr "`\\'で開始される正規表現の構築。"
 
 #. type: node
-#: search.texi.orig:32 search.texi.orig:1015
+#: original_texis/search.texi:32 original_texis/search.texi:1015
 #, no-wrap
 msgid "Regexp Example"
 msgstr "Regexp Example"
 
 #. type: menuentry
-#: search.texi.orig:32
+#: original_texis/search.texi:32
 msgid "A complex regular expression explained."
 msgstr "複雑な正規表現の解説。"
 
 #. type: node
-#: search.texi.orig:32 search.texi.orig:1033
+#: original_texis/search.texi:32 original_texis/search.texi:1033
 #, no-wrap
 msgid "Search Case"
 msgstr "Search Case"
 
 #. type: menuentry
-#: search.texi.orig:32
+#: original_texis/search.texi:32
 msgid "To ignore case while searching, or not."
 msgstr "検索で大文字小文字を無視または区別するには。"
 
 #. type: node
-#: search.texi.orig:32 search.texi.orig:1071
+#: original_texis/search.texi:32 original_texis/search.texi:1071
 #, no-wrap
 msgid "Replace"
 msgstr "Replace"
 
 #. type: menuentry
-#: search.texi.orig:32
+#: original_texis/search.texi:32
 msgid "Search, and replace some or all matches."
 msgstr "一部またはすべてのマッチを検索または置換する。"
 
 #. type: node
-#: search.texi.orig:32 search.texi.orig:1409
+#: original_texis/search.texi:32 original_texis/search.texi:1409
 #, no-wrap
 msgid "Other Repeating Search"
 msgstr "Other Repeating Search"
 
 #. type: menuentry
-#: search.texi.orig:32
+#: original_texis/search.texi:32
 msgid "Operating on all matches for some regexp."
 msgstr "いくつかの正規表現にマッチするすべてを処理する。"
 
 #. type: cindex
-#: search.texi.orig:36
+#: original_texis/search.texi:36
 #, no-wrap
 msgid "incremental search"
 msgstr "incremental search"
 
 #. type: cindex
-#: search.texi.orig:37
+#: original_texis/search.texi:37
 #, no-wrap
 msgid "isearch"
 msgstr "isearch"
 
 #. type: Plain text
-#: search.texi.orig:46
+#: original_texis/search.texi:46
 msgid ""
 "The principal search command in Emacs is @dfn{incremental}: it begins "
 "searching as soon as you type the first character of the search string.  As "
@@ -199,142 +211,152 @@ msgid ""
 "identify the place you want, you can stop.  Depending on what you plan to do "
 "next, you may or may not need to terminate the search explicitly with "
 "@key{RET}."
-msgstr "Emacsにおける重要な検索コマンドは、@dfn{インクリメンタル検索(isearch: incremental search)}です。これは検索する文字列の最初の文字をタイプすると、すぐに検索が開始されます。検索文字列をタイプしていくにつれて、Emacsはその文字列(それまでに入力した文字列)がどこにあるかを表示します。望む場所を特定するのに充分な文字列をタイプしたところで、検索をストップできます。次に何をするかによって、明示的な@key{RET}により検索を終えたり、続けることができます。"
+msgstr ""
+"Emacsにおける重要な検索コマンドは、@dfn{インクリメンタル検索(isearch: "
+"incremental search)}です。これは検索する文字列の最初の文字をタイプすると、す"
+"ぐに検索が開始されます。検索文字列をタイプしていくにつれて、Emacsはその文字列"
+"(それまでに入力した文字列)がどこにあるかを表示します。望む場所を特定するのに"
+"充分な文字列をタイプしたところで、検索をストップできます。次に何をするかに"
+"よって、明示的な@key{RET}により検索を終えたり、続けることができます。"
 
 #. type: kindex
-#: search.texi.orig:48 search.texi.orig:69 search.texi.orig:75
+#: original_texis/search.texi:48 original_texis/search.texi:69
+#: original_texis/search.texi:75
 #, no-wrap
 msgid "C-s"
 msgstr "C-s"
 
 #. type: table
-#: search.texi.orig:50
+#: original_texis/search.texi:50
 msgid "Incremental search forward (@code{isearch-forward})."
 msgstr "前方にインクリメンタル検索します(@code{isearch-forward})。"
 
 #. type: item
-#: search.texi.orig:50 search.texi.orig:71 search.texi.orig:118
-#: search.texi.orig:1359
+#: original_texis/search.texi:50 original_texis/search.texi:71
+#: original_texis/search.texi:118 original_texis/search.texi:1359
 #, no-wrap
 msgid "C-r"
 msgstr "C-r"
 
 #. type: table
-#: search.texi.orig:52
+#: original_texis/search.texi:52
 msgid "Incremental search backward (@code{isearch-backward})."
 msgstr "後方にインクリメンタル検索します(@code{isearch-backward})。"
 
 #. type: node
-#: search.texi.orig:63 search.texi.orig:65
+#: original_texis/search.texi:63 original_texis/search.texi:65
 #, no-wrap
 msgid "Basic Isearch"
 msgstr "Basic Isearch"
 
 #. type: menuentry
-#: search.texi.orig:63
+#: original_texis/search.texi:63
 msgid "Basic incremental search commands."
 msgstr "基本的なインクリメンタル検索コマンド。"
 
 #. type: node
-#: search.texi.orig:63 search.texi.orig:125
+#: original_texis/search.texi:63 original_texis/search.texi:125
 #, no-wrap
 msgid "Repeat Isearch"
 msgstr "Repeat Isearch"
 
 #. type: menuentry
-#: search.texi.orig:63
+#: original_texis/search.texi:63
 msgid "Searching for the same string again."
 msgstr "同じ文字列を再度検索する。"
 
 #. type: node
-#: search.texi.orig:63 search.texi.orig:182
+#: original_texis/search.texi:63 original_texis/search.texi:182
 #, no-wrap
 msgid "Error in Isearch"
 msgstr "Error in Isearch"
 
 #. type: menuentry
-#: search.texi.orig:63
+#: original_texis/search.texi:63
 msgid "When your string is not found."
 msgstr "文字列が見つからなかったとき。"
 
 #. type: node
-#: search.texi.orig:63 search.texi.orig:216
+#: original_texis/search.texi:63 original_texis/search.texi:216
 #, no-wrap
 msgid "Special Isearch"
 msgstr "Special Isearch"
 
 #. type: menuentry
-#: search.texi.orig:63
+#: original_texis/search.texi:63
 msgid "Special input in incremental search."
 msgstr "インクリメンタル検索での特別な入力。"
 
 #. type: node
-#: search.texi.orig:63 search.texi.orig:317
+#: original_texis/search.texi:63 original_texis/search.texi:317
 #, no-wrap
 msgid "Isearch Yank"
 msgstr "Isearch Yank"
 
 #. type: menuentry
-#: search.texi.orig:63
+#: original_texis/search.texi:63
 msgid ""
 "Commands that grab text into the search string or else edit the search "
 "string."
 msgstr "検索文字列にテキストを取り込んだり、検索文字列を編集するコマンド。"
 
 #. type: node
-#: search.texi.orig:63 search.texi.orig:360
+#: original_texis/search.texi:63 original_texis/search.texi:360
 #, no-wrap
 msgid "Not Exiting Isearch"
 msgstr "Not Exiting Isearch"
 
 #. type: menuentry
-#: search.texi.orig:63
+#: original_texis/search.texi:63
 msgid "Prefix argument and scrolling commands."
 msgstr "プレフィクス引数とスクロールコマンド。"
 
 #. type: node
-#: search.texi.orig:63 search.texi.orig:415
+#: original_texis/search.texi:63 original_texis/search.texi:415
 #, no-wrap
 msgid "Isearch Minibuffer"
 msgstr "Isearch Minibuffer"
 
 #. type: menuentry
-#: search.texi.orig:63
+#: original_texis/search.texi:63
 msgid "Incremental search of the minibuffer history."
 msgstr "ミニバッファーヒストリーのインクリメンタル検索。"
 
 #. type: subsection
-#: search.texi.orig:66
+#: original_texis/search.texi:66
 #, no-wrap
 msgid "Basics of Incremental Search"
 msgstr "Basics of Incremental Search"
 
 #. type: table
-#: search.texi.orig:71
+#: original_texis/search.texi:71
 msgid "Begin incremental search (@code{isearch-forward})."
 msgstr "インクリメンタル検索を開始します(@code{isearch-forward})。"
 
 #. type: table
-#: search.texi.orig:73
+#: original_texis/search.texi:73
 msgid "Begin reverse incremental search (@code{isearch-backward})."
 msgstr "逆向きのインクリメンタル検索を開始します(@code{isearch-backward})。"
 
 #. type: findex
-#: search.texi.orig:76
+#: original_texis/search.texi:76
 #, no-wrap
 msgid "isearch-forward"
 msgstr "isearch-forward"
 
 #. type: Plain text
-#: search.texi.orig:80
+#: original_texis/search.texi:80
 msgid ""
 "@kbd{C-s} (@code{isearch-forward}) starts a forward incremental search.  It "
 "reads characters from the keyboard, and moves point just past the end of the "
 "next occurrence of those characters in the buffer."
-msgstr "@kbd{C-s} (@code{isearch-forward})は、前方へのインクリメンタル検索を開始します。これはキーボードから文字を読み取り、タイプした文字が最初に出現するバッファーの位置に、ポイントを移動します。"
+msgstr ""
+"@kbd{C-s} (@code{isearch-forward})は、前方へのインクリメンタル検索を開始しま"
+"す。これはキーボードから文字を読み取り、タイプした文字が最初に出現するバッ"
+"ファーの位置に、ポイントを移動します。"
 
 #. type: Plain text
-#: search.texi.orig:87
+#: original_texis/search.texi:87
 msgid ""
 "For instance, if you type @kbd{C-s} and then @kbd{F}, that puts the cursor "
 "after the first @samp{F} that occurs in the buffer after the starting "
@@ -342,38 +364,50 @@ msgid ""
 "first @samp{FO}; the @samp{F} in that @samp{FO} might not be the first "
 "@samp{F} previously found.  After another @kbd{O}, the cursor moves to just "
 "after the first @samp{FOO}."
-msgstr "たとえば@kbd{C-s}とタイプした後に@kbd{F}をタイプすると、検索を開始したバッファーのポイント位置より前方にある、最初の@kbd{F}にカーソルを移動します。つぎに@kbd{O}をタイプすると、前方にある最初の@samp{FO}にカーソルが移動します。この場合、@samp{FO}の@samp{F}は、前に見つかった@samp{F}と同じ位置である必要はありません。もう一度@kbd{O}をタイプすると、カーソルは最初の@samp{FOO}に移動します。"
+msgstr ""
+"たとえば@kbd{C-s}とタイプした後に@kbd{F}をタイプすると、検索を開始したバッ"
+"ファーのポイント位置より前方にある、最初の@kbd{F}にカーソルを移動します。つぎ"
+"に@kbd{O}をタイプすると、前方にある最初の@samp{FO}にカーソルが移動します。こ"
+"の場合、@samp{FO}の@samp{F}は、前に見つかった@samp{F}と同じ位置である必要はあ"
+"りません。もう一度@kbd{O}をタイプすると、カーソルは最初の@samp{FOO}に移動しま"
+"す。"
 
 #. type: cindex
-#: search.texi.orig:88
+#: original_texis/search.texi:88
 #, no-wrap
 msgid "faces for highlighting search matches"
 msgstr "faces for highlighting search matches"
 
 #. type: cindex
-#: search.texi.orig:89
+#: original_texis/search.texi:89
 #, no-wrap
 msgid "isearch face"
 msgstr "isearch face"
 
 #. type: Plain text
-#: search.texi.orig:94
+#: original_texis/search.texi:94
 msgid ""
 "At each step, Emacs highlights the @dfn{current match}---the buffer text "
 "that matches the search string---using the @code{isearch} face "
 "(@pxref{Faces}).  The current search string is also displayed in the echo "
 "area."
-msgstr "各ステップでEmacsは@dfn{カレントマッチ(current match: 現在のマッチ)}(検索文字列にマッチしたバッファーのテキスト)を、@code{isearch}フェイスでハイライトします(@ref{Faces}を参照してください)。その時点での検索文字列はエコーエリアにも表示されます。"
+msgstr ""
+"各ステップでEmacsは@dfn{カレントマッチ(current match: 現在のマッチ)}(検索文字"
+"列にマッチしたバッファーのテキスト)を、@code{isearch}フェイスでハイライトしま"
+"す(@ref{Faces}を参照してください)。その時点での検索文字列はエコーエリアにも表"
+"示されます。"
 
 #. type: Plain text
-#: search.texi.orig:97
+#: original_texis/search.texi:97
 msgid ""
 "If you make a mistake typing the search string, type @key{DEL}.  Each "
 "@key{DEL} cancels the last character of the search string."
-msgstr "検索文字列を間違ってタイプしたときは、@key{DEL}をタイプします。@key{DEL}をタイプするごとに、検索文字列の最後の文字が取り消されます。"
+msgstr ""
+"検索文字列を間違ってタイプしたときは、@key{DEL}をタイプします。@key{DEL}をタ"
+"イプするごとに、検索文字列の最後の文字が取り消されます。"
 
 #. type: Plain text
-#: search.texi.orig:108
+#: original_texis/search.texi:108
 msgid ""
 "When you are satisfied with the place you have reached, type @key{RET}.  "
 "This stops searching, leaving the cursor where the search brought it.  Also, "
@@ -384,47 +418,66 @@ msgid ""
 "character that is special within searches (@kbd{C-q}, @kbd{C-w}, @kbd{C-r}, "
 "@kbd{C-s}, @kbd{C-y}, @kbd{M-y}, @kbd{M-r}, @kbd{M-c}, @kbd{M-e}, and some "
 "others described below)."
-msgstr "検索により到達した位置に満足したら、@key{RET}をタイプします。これは検索をストップして、検索により移動した位置にカーソルを残します。検索とは関係ないコマンドも、検索をストップして、そのコマンドが実行されます。つまり@kbd{C-a}は検索を中止して、行の先頭に移動します。@key{RET}で検索を終える必要があるのは、次のコマンドが印字文字をタイプするコマンドのときだけです。@key{DEL}、@key{RET}および他のいくつかの文字(@kbd{C-q}、@kbd{C-w}、@kbd{C-r}、@kbd{C-s}、@kbd{C-y}、@kbd{M-y}、@kbd{M-r}、@kbd{M-c}、@kbd{M-e}、および以下で説明する文字)は、検索で特別な意味を持っています。"
+msgstr ""
+"検索により到達した位置に満足したら、@key{RET}をタイプします。これは検索をス"
+"トップして、検索により移動した位置にカーソルを残します。検索とは関係ないコマ"
+"ンドも、検索をストップして、そのコマンドが実行されます。つまり@kbd{C-a}は検索"
+"を中止して、行の先頭に移動します。@key{RET}で検索を終える必要があるのは、次の"
+"コマンドが印字文字をタイプするコマンドのときだけです。@key{DEL}、@key{RET}お"
+"よび他のいくつかの文字(@kbd{C-q}、@kbd{C-w}、@kbd{C-r}、@kbd{C-s}、@kbd{C-"
+"y}、@kbd{M-y}、@kbd{M-r}、@kbd{M-c}、@kbd{M-e}、および以下で説明する文字)は、"
+"検索で特別な意味を持っています。"
 
 #. type: Plain text
-#: search.texi.orig:111
+#: original_texis/search.texi:111
 msgid ""
 "As a special exception, entering @key{RET} when the search string is empty "
 "launches nonincremental search (@pxref{Nonincremental Search})."
-msgstr "特別な例外として、検索文字列が空のときに@key{RET}を入力すると、非インクリメンタル検索を開始します(@ref{Nonincremental Search}を参照してください)。"
+msgstr ""
+"特別な例外として、検索文字列が空のときに@key{RET}を入力すると、非インクリメン"
+"タル検索を開始します(@ref{Nonincremental Search}を参照してください)。"
 
 #. type: Plain text
-#: search.texi.orig:117
+#: original_texis/search.texi:117
 msgid ""
 "When you exit the incremental search, it adds the original value of point to "
 "the mark ring, without activating the mark; you can thus use @kbd{C-u C-"
 "@key{SPC}} to return to where you were before beginning the search.  "
 "@xref{Mark Ring}.  It only does this if the mark was not already active."
-msgstr "インクリメンタル検索を終了するとき、ポイントの元の位置をマークをアクティブにせず(ただしマークがすでにアクティブではなかったときだけ)に、マークリングに追加します。これにより、@kbd{C-u C-@key{SPC}}を使って、検索を開始する前の位置に戻ることができます。@ref{Mark Ring}を参照してください。これはマークがすでにアクティブでないときだけ行なわれます。"
+msgstr ""
+"インクリメンタル検索を終了するとき、ポイントの元の位置をマークをアクティブに"
+"せず(ただしマークがすでにアクティブではなかったときだけ)に、マークリングに追"
+"加します。これにより、@kbd{C-u C-@key{SPC}}を使って、検索を開始する前の位置に"
+"戻ることができます。@ref{Mark Ring}を参照してください。これはマークがすでにア"
+"クティブでないときだけ行なわれます。"
 
 #. type: findex
-#: search.texi.orig:119
+#: original_texis/search.texi:119
 #, no-wrap
 msgid "isearch-backward"
 msgstr "isearch-backward"
 
 #. type: Plain text
-#: search.texi.orig:124
+#: original_texis/search.texi:124
 msgid ""
 "To search backwards, use @kbd{C-r} (@code{isearch-backward}) instead of "
 "@kbd{C-s} to start the search.  A backward search finds matches that end "
 "before the starting point, just as a forward search finds matches that begin "
 "after it."
-msgstr "後方に検索するには、@kbd{C-s}で検索を開始するかわりに、@kbd{C-r} (@code{isearch-backward})を使います。前方検索が検索を開始した位置より前方にある最初のマッチを探すように、後方検索は検索を開始した位置より後方にある最後のマッチを探します。"
+msgstr ""
+"後方に検索するには、@kbd{C-s}で検索を開始するかわりに、@kbd{C-r} "
+"(@code{isearch-backward})を使います。前方検索が検索を開始した位置より前方にあ"
+"る最初のマッチを探すように、後方検索は検索を開始した位置より後方にある最後の"
+"マッチを探します。"
 
 #. type: subsection
-#: search.texi.orig:126
+#: original_texis/search.texi:126
 #, no-wrap
 msgid "Repeating Incremental Search"
 msgstr "Repeating Incremental Search"
 
 #. type: Plain text
-#: search.texi.orig:135
+#: original_texis/search.texi:135
 msgid ""
 "Suppose you search forward for @samp{FOO} and find a match, but not the one "
 "you expected to find: the @samp{FOO} you were aiming for occurs later in the "
@@ -433,22 +486,28 @@ msgid ""
 "If you overshoot, you can cancel some @kbd{C-s} characters with @key{DEL}.  "
 "Similarly, each @kbd{C-r} in a backward incremental search repeats the "
 "backward search."
-msgstr "前方に@samp{FOO}を検索してマッチしたが、それは探しているマッチではなく、探しているのはバッファーのもっと前方に出現する@samp{FOO}だとしましょう。ここでもう1度@kbd{C-s}をタイプすることにより、検索文字列が次に出現する場所に移動します。これは何回でも繰り返すことができます。もしタイプしすぎたときは、@kbd{C-s}を@key{DEL}で取り消すことができます。同様に後方へのインクリメンタル検索では、@kbd{C-r}により後方検索が繰り返されます。"
+msgstr ""
+"前方に@samp{FOO}を検索してマッチしたが、それは探しているマッチではなく、探し"
+"ているのはバッファーのもっと前方に出現する@samp{FOO}だとしましょう。ここでも"
+"う1度@kbd{C-s}をタイプすることにより、検索文字列が次に出現する場所に移動しま"
+"す。これは何回でも繰り返すことができます。もしタイプしすぎたときは、@kbd{C-s}"
+"を@key{DEL}で取り消すことができます。同様に後方へのインクリメンタル検索では、"
+"@kbd{C-r}により後方検索が繰り返されます。"
 
 #. type: cindex
-#: search.texi.orig:136
+#: original_texis/search.texi:136
 #, no-wrap
 msgid "lazy search highlighting"
 msgstr "lazy search highlighting"
 
 #. type: vindex
-#: search.texi.orig:137
+#: original_texis/search.texi:137
 #, no-wrap
 msgid "isearch-lazy-highlight"
 msgstr "isearch-lazy-highlight"
 
 #. type: Plain text
-#: search.texi.orig:146
+#: original_texis/search.texi:146
 msgid ""
 "If you pause for a little while during incremental search, Emacs highlights "
 "all the other possible matches for the search string that are present on the "
@@ -457,10 +516,17 @@ msgid ""
 "differently from the current match, using the customizable face @code{lazy-"
 "highlight} (@pxref{Faces}).  If you don't like this feature, you can disable "
 "it by setting @code{isearch-lazy-highlight} to @code{nil}."
-msgstr "インクリメンタル検索中に手を止めて眺めてみると、検索文字列にたいするカレントマッチ以外に、スクリーンに表示されている他のマッチもハイライトされていることがわかります。これは検索するために、何回@kbd{C-s}または@kbd{C-r}を繰り返せばよいのか予測しやすくするためです。その他のマッチは、カスタマイズ可能なフェイス@code{lazy-highlight} (@ref{Faces}を参照してください)を使って、現在のマッチとは異なってハイライトされます。この機能を無効にするには、@code{isearch-lazy-highlight}に@code{nil}をセットしてください。"
+msgstr ""
+"インクリメンタル検索中に手を止めて眺めてみると、検索文字列にたいするカレント"
+"マッチ以外に、スクリーンに表示されている他のマッチもハイライトされていること"
+"がわかります。これは検索するために、何回@kbd{C-s}または@kbd{C-r}を繰り返せば"
+"よいのか予測しやすくするためです。その他のマッチは、カスタマイズ可能なフェイ"
+"ス@code{lazy-highlight} (@ref{Faces}を参照してください)を使って、現在のマッチ"
+"とは異なってハイライトされます。この機能を無効にするには、@code{isearch-lazy-"
+"highlight}に@code{nil}をセットしてください。"
 
 #. type: Plain text
-#: search.texi.orig:154
+#: original_texis/search.texi:154
 msgid ""
 "After exiting a search, you can search for the same string again by typing "
 "just @kbd{C-s C-s}.  The first @kbd{C-s} is the key that invokes incremental "
@@ -468,19 +534,27 @@ msgid ""
 "r C-r} searches backward for the last search string.  In determining the "
 "last search string, it doesn't matter whether the string was searched for "
 "with @kbd{C-s} or @kbd{C-r}."
-msgstr "検索を終了した後、同じ文字列を再度検索するには、@kbd{C-s C-s}とタイプします。最初の@kbd{C-s}はインクリメンタル検索を呼び出し、2回目の@kbd{C-s}は``再検索''を意味します。同様に、@kbd{C-r C-r}は最後に検索した文字列を後方に検索します。最後に検索された文字列の決定では、文字列が@kbd{C-s}で検索されたのか、@kbd{C-r}で検索されたのかは問題ではありません。"
+msgstr ""
+"検索を終了した後、同じ文字列を再度検索するには、@kbd{C-s C-s}とタイプします。"
+"最初の@kbd{C-s}はインクリメンタル検索を呼び出し、2回目の@kbd{C-s}は``再検"
+"索''を意味します。同様に、@kbd{C-r C-r}は最後に検索した文字列を後方に検索しま"
+"す。最後に検索された文字列の決定では、文字列が@kbd{C-s}で検索されたのか、"
+"@kbd{C-r}で検索されたのかは問題ではありません。"
 
 #. type: Plain text
-#: search.texi.orig:159
+#: original_texis/search.texi:159
 msgid ""
 "If you are searching forward but you realize you were looking for something "
 "before the starting point, type @kbd{C-r} to switch to a backward search, "
 "leaving the search string unchanged.  Similarly, @kbd{C-s} in a backward "
 "search switches to a forward search."
-msgstr "前方に検索していて、検索している対象が検索開始点より後方にあるのに気付いたときは、検索文字列を変更すること無く、@kbd{C-r}で後方検索に切り替えることができます。同様に後方検索で@kbd{C-s}をタイプすると、前方検索に切り替わります。"
+msgstr ""
+"前方に検索していて、検索している対象が検索開始点より後方にあるのに気付いたと"
+"きは、検索文字列を変更すること無く、@kbd{C-r}で後方検索に切り替えることができ"
+"ます。同様に後方検索で@kbd{C-s}をタイプすると、前方検索に切り替わります。"
 
 #. type: Plain text
-#: search.texi.orig:168
+#: original_texis/search.texi:168
 msgid ""
 "If a search is failing and you ask to repeat it by typing another @kbd{C-s}, "
 "it starts again from the beginning of the buffer.  Repeating a failing "
@@ -489,57 +563,70 @@ msgid ""
 "this has happened.  If you keep on going past the original starting point of "
 "the search, it changes to @samp{Overwrapped}, which means that you are "
 "revisiting matches that you have already seen."
-msgstr "検索が失敗したとき、バッファーの先頭から検索を再開するには、もう一度@kbd{C-s}をタイプします。逆向きの繰り返し検索が失敗したときは、@kbd{C-r}でバッファーの最後から検索を再開します。これは@dfn{wrapping around(巻き直し)}と呼ばれ、これが発生すると、@samp{Wrapped}という単語が検索プロンプトに表示されます。検索を続けて元の検索開始ポイントを通過すると、@samp{Overwrapped}に変化します。これはすでに見たマッチを再訪していることを意味します。"
+msgstr ""
+"検索が失敗したとき、バッファーの先頭から検索を再開するには、もう一度@kbd{C-s}"
+"をタイプします。逆向きの繰り返し検索が失敗したときは、@kbd{C-r}でバッファーの"
+"最後から検索を再開します。これは@dfn{wrapping around(巻き直し)}と呼ばれ、これ"
+"が発生すると、@samp{Wrapped}という単語が検索プロンプトに表示されます。検索を"
+"続けて元の検索開始ポイントを通過すると、@samp{Overwrapped}に変化します。これ"
+"はすでに見たマッチを再訪していることを意味します。"
 
 #. type: cindex
-#: search.texi.orig:169
+#: original_texis/search.texi:169
 #, no-wrap
 msgid "search ring"
 msgstr "search ring"
 
 #. type: kindex
-#: search.texi.orig:170
+#: original_texis/search.texi:170
 #, no-wrap
 msgid "M-n @r{(Incremental search)}"
 msgstr "M-n @r{(Incremental search)}"
 
 #. type: kindex
-#: search.texi.orig:171
+#: original_texis/search.texi:171
 #, no-wrap
 msgid "M-p @r{(Incremental search)}"
 msgstr "M-p @r{(Incremental search)}"
 
 #. type: Plain text
-#: search.texi.orig:176
+#: original_texis/search.texi:176
 msgid ""
 "To reuse earlier search strings, use the @dfn{search ring}.  The commands "
 "@kbd{M-p} and @kbd{M-n} move through the ring to pick a search string to "
 "reuse.  These commands leave the selected search ring element in the "
 "minibuffer, where you can edit it."
-msgstr "以前に検索した文字列を再利用するには、@dfn{サーチリング(search ring)}を使います。コマンド@kbd{M-p}または@kbd{M-n}で、リングを移動して再使用したい文字列を取り出します。これらのコマンドは、選択されたリング要素の文字列をミニバッファーに残すので、それを編集することができます。"
+msgstr ""
+"以前に検索した文字列を再利用するには、@dfn{サーチリング(search ring)}を使いま"
+"す。コマンド@kbd{M-p}または@kbd{M-n}で、リングを移動して再使用したい文字列を"
+"取り出します。これらのコマンドは、選択されたリング要素の文字列をミニバッ"
+"ファーに残すので、それを編集することができます。"
 
 #. type: kindex
-#: search.texi.orig:177
+#: original_texis/search.texi:177
 #, no-wrap
 msgid "M-e @r{(Incremental search)}"
 msgstr "M-e @r{(Incremental search)}"
 
 #. type: Plain text
-#: search.texi.orig:181
+#: original_texis/search.texi:181
 msgid ""
 "To edit the current search string in the minibuffer without replacing it "
 "with items from the search ring, type @kbd{M-e}.  Type @key{RET}, @kbd{C-s} "
 "or @kbd{C-r} to finish editing the string and search for it."
-msgstr "ミニバッファーの現在の検索文字列を、サーチリングのアイテムで置き換えずに編集するときは、@kbd{M-e}をタイプします。@key{RET}、@kbd{C-s}、@kbd{C-r}をタイプすれば編集を終了して、それを検索できます。"
+msgstr ""
+"ミニバッファーの現在の検索文字列を、サーチリングのアイテムで置き換えずに編集"
+"するときは、@kbd{M-e}をタイプします。@key{RET}、@kbd{C-s}、@kbd{C-r}をタイプ"
+"すれば編集を終了して、それを検索できます。"
 
 #. type: subsection
-#: search.texi.orig:183
+#: original_texis/search.texi:183
 #, no-wrap
 msgid "Errors in Incremental Search"
 msgstr "Errors in Incremental Search"
 
 #. type: Plain text
-#: search.texi.orig:192
+#: original_texis/search.texi:192
 msgid ""
 "If your string is not found at all, the echo area says @samp{Failing I-"
 "Search}, and the cursor moves past the place where Emacs found as much of "
@@ -547,10 +634,15 @@ msgid ""
 "no @samp{FOOT}, you might see the cursor after the @samp{FOO} in "
 "@samp{FOOL}.  In the echo area, the part of the search string that failed to "
 "match is highlighted using the face @code{isearch-fail}."
-msgstr "文字列が見つからなかった場合、エコーエリアに@samp{Failing I-Search}と表示されて、文字列とできるかぎりマッチした位置に、カーソルが移動します。つまり@samp{FOOT}を検索して@samp{FOOT}がない場合、カーソルは@samp{FOOL}という文字列の@samp{FOO}の後ろに移動します。エコーエリアではマッチに失敗した検索文字列の一部が、フェイス@code{isearch-fail}を使ってハイライトされます。"
+msgstr ""
+"文字列が見つからなかった場合、エコーエリアに@samp{Failing I-Search}と表示され"
+"て、文字列とできるかぎりマッチした位置に、カーソルが移動します。つまり"
+"@samp{FOOT}を検索して@samp{FOOT}がない場合、カーソルは@samp{FOOL}という文字列"
+"の@samp{FOO}の後ろに移動します。エコーエリアではマッチに失敗した検索文字列の"
+"一部が、フェイス@code{isearch-fail}を使ってハイライトされます。"
 
 #. type: Plain text
-#: search.texi.orig:201
+#: original_texis/search.texi:201
 msgid ""
 "At this point, there are several things you can do.  If your string was "
 "mistyped, you can use @key{DEL} to erase some of it and correct it.  If you "
@@ -560,22 +652,29 @@ msgid ""
 "were found (the @samp{FOO} in @samp{FOOT}).  A second @kbd{C-g} at that "
 "point cancels the search entirely, returning point to where it was when the "
 "search started."
-msgstr "その時に行うことができる、いくつかの選択肢があります。もし文字列が間違っている場合は、文字列を訂正するため@key{DEL}でテキストを削除できます。もし見つかった位置が望む位置なら、@key{RET}をタイプしてその位置に留まることができます。または@kbd{C-g}をタイプして、検索文字列から検索できなかった文字(@samp{FOOT}の中の@samp{T})を取り除き、検索された部分の文字列(@samp{FOOT}の中の@samp{FOO})を残します。その位置でもう1回@kbd{C-g}をタイプすると、検索全体を取り消し、ポイントは検索を開始した位置に戻ります。"
+msgstr ""
+"その時に行うことができる、いくつかの選択肢があります。もし文字列が間違ってい"
+"る場合は、文字列を訂正するため@key{DEL}でテキストを削除できます。もし見つかっ"
+"た位置が望む位置なら、@key{RET}をタイプしてその位置に留まることができます。ま"
+"たは@kbd{C-g}をタイプして、検索文字列から検索できなかった文字(@samp{FOOT}の中"
+"の@samp{T})を取り除き、検索された部分の文字列(@samp{FOOT}の中の@samp{FOO})を"
+"残します。その位置でもう1回@kbd{C-g}をタイプすると、検索全体を取り消し、ポイ"
+"ントは検索を開始した位置に戻ります。"
 
 #. type: cindex
-#: search.texi.orig:202
+#: original_texis/search.texi:202
 #, no-wrap
 msgid "quitting (in search)"
 msgstr "quitting (in search)"
 
 #. type: kindex
-#: search.texi.orig:203
+#: original_texis/search.texi:203
 #, no-wrap
 msgid "C-g @r{(Incremental search)}"
 msgstr "C-g @r{(Incremental search)}"
 
 #. type: Plain text
-#: search.texi.orig:215
+#: original_texis/search.texi:215
 msgid ""
 "The quit command, @kbd{C-g}, does special things during searches; just what "
 "it does depends on the status of the search.  If the search has found what "
@@ -587,53 +686,62 @@ msgid ""
 "are discarded from the search string.  With them gone, the search is now "
 "successful and waiting for more input, so a second @kbd{C-g} will cancel the "
 "entire search."
-msgstr "終了コマンドの@kbd{C-g}は、検索において特別な処理を行います。このコマンドの動作は、検索の状況に依存します。もし指定した文字列の検索が成功して、さらに検索文字の入力を待っているとき、@kbd{C-g}は検索全体を取り消して、カーソルを検索を開始したときの位置に移動します。検索文字列に検索に失敗した文字が含まれているときに、@kbd{C-g}がタイプされたときは、検索文字列から検索に失敗した文字が取り除かれます。後に残るのは検索に成功した文字列で、さらに検索文字の入力を待っているので、先のケースと同様、2回目の@kbd{C-g}で検索全体が取り消されます。"
+msgstr ""
+"終了コマンドの@kbd{C-g}は、検索において特別な処理を行います。このコマンドの動"
+"作は、検索の状況に依存します。もし指定した文字列の検索が成功して、さらに検索"
+"文字の入力を待っているとき、@kbd{C-g}は検索全体を取り消して、カーソルを検索を"
+"開始したときの位置に移動します。検索文字列に検索に失敗した文字が含まれている"
+"ときに、@kbd{C-g}がタイプされたときは、検索文字列から検索に失敗した文字が取り"
+"除かれます。後に残るのは検索に成功した文字列で、さらに検索文字の入力を待って"
+"いるので、先のケースと同様、2回目の@kbd{C-g}で検索全体が取り消されます。"
 
 #. type: subsection
-#: search.texi.orig:217
+#: original_texis/search.texi:217
 #, no-wrap
 msgid "Special Input for Incremental Search"
 msgstr "Special Input for Incremental Search"
 
 #. type: Plain text
-#: search.texi.orig:221
+#: original_texis/search.texi:221
 msgid ""
 "Some of the characters you type during incremental search have special "
 "effects."
-msgstr "インクリメンタル検索のときタイプする文字列の中には、特別な効果をもつものがあります。"
+msgstr ""
+"インクリメンタル検索のときタイプする文字列の中には、特別な効果をもつものがあ"
+"ります。"
 
 #. type: cindex
-#: search.texi.orig:222
+#: original_texis/search.texi:222
 #, no-wrap
 msgid "lax space matching"
 msgstr "lax space matching"
 
 #. type: kindex
-#: search.texi.orig:223
+#: original_texis/search.texi:223
 #, no-wrap
 msgid "M-s SPC @r{(Incremental search)}"
 msgstr "M-s SPC @r{(Incremental search)}"
 
 #. type: kindex
-#: search.texi.orig:224
+#: original_texis/search.texi:224
 #, no-wrap
 msgid "SPC @r{(Incremental search)}"
 msgstr "SPC @r{(Incremental search)}"
 
 #. type: findex
-#: search.texi.orig:225
+#: original_texis/search.texi:225
 #, no-wrap
 msgid "isearch-toggle-lax-whitespace"
 msgstr "isearch-toggle-lax-whitespace"
 
 #. type: vindex
-#: search.texi.orig:226
+#: original_texis/search.texi:226
 #, no-wrap
 msgid "search-whitespace-regexp"
 msgstr "search-whitespace-regexp"
 
 #. type: Plain text
-#: search.texi.orig:236
+#: original_texis/search.texi:236
 msgid ""
 "By default, incremental search performs @dfn{lax space matching}: each "
 "space, or sequence of spaces, matches any sequence of one or more spaces in "
@@ -643,84 +751,111 @@ msgid ""
 "expression specified by the variable @code{search-whitespace-regexp}.  For "
 "example, to make spaces match sequences of newlines as well as spaces, set "
 "it to @samp{\"[[:space:]\\n]+\"}."
-msgstr "デフォルトでは、インクリメンタル検索は@dfn{緩いスペースマッチング(lax space matching)}を行います。これはスペースおよび一連のスペースは、テキスト中の1つまたはそれ以上のスペースにマッチします。したがって@samp{foo bar}は@samp{foo bar}、@samp{foo@ @ bar}、@samp{foo@ @ @ bar}、...にマッチします(@samp{foobar}にはマッチしません)。正確にいうと、Emacsは検索文字列中の一連のスペースを、変数@code{search-whitespace-regexp}で指定された正規表現にマッチさせます。たとえばスペースを一連の改行とスペースにマッチさせるには、変数に@samp{\"[[:space:]\\n]+\"}をセットします。"
+msgstr ""
+"デフォルトでは、インクリメンタル検索は@dfn{緩いスペースマッチング(lax space "
+"matching)}を行います。これはスペースおよび一連のスペースは、テキスト中の1つま"
+"たはそれ以上のスペースにマッチします。したがって@samp{foo bar}は@samp{foo "
+"bar}、@samp{foo@ @ bar}、@samp{foo@ @ @ bar}、...にマッチします(@samp{foobar}"
+"にはマッチしません)。正確にいうと、Emacsは検索文字列中の一連のスペースを、変"
+"数@code{search-whitespace-regexp}で指定された正規表現にマッチさせます。たとえ"
+"ばスペースを一連の改行とスペースにマッチさせるには、変数に@samp{\"[[:"
+"space:]\\n]+\"}をセットします。"
 
 #. type: Plain text
-#: search.texi.orig:241
+#: original_texis/search.texi:241
 msgid ""
 "To toggle lax space matching, type @kbd{M-s @key{SPC}} (@code{isearch-toggle-"
 "lax-whitespace}).  To disable this feature entirely, change @code{search-"
 "whitespace-regexp} to @code{nil}; then each space in the search string "
 "matches exactly one space."
-msgstr "緩いスペースマッチングを切り替えるには、@kbd{M-s @key{SPC}} (@code{isearch-toggle-lax-whitespace})をタイプします。この機能全体を無効にするには、@code{search-whitespace-regexp}を@code{nil}に変更します。これにより検索文字列中のスペースは、正確に1つのスペースにマッチします。"
+msgstr ""
+"緩いスペースマッチングを切り替えるには、@kbd{M-s @key{SPC}} (@code{isearch-"
+"toggle-lax-whitespace})をタイプします。この機能全体を無効にするには、"
+"@code{search-whitespace-regexp}を@code{nil}に変更します。これにより検索文字列"
+"中のスペースは、正確に1つのスペースにマッチします。"
 
 #. type: Plain text
-#: search.texi.orig:247
+#: original_texis/search.texi:247
 msgid ""
 "If the search string you entered contains only lower-case letters, the "
 "search is case-insensitive; as long as an upper-case letter exists in the "
 "search string, the search becomes case-sensitive.  If you delete the upper-"
 "case character from the search string, it ceases to have this effect.  "
 "@xref{Search Case}."
-msgstr "検索文字列に小文字しか含まれていないとき、検索は大文字小文字を区別しません。検索文字列に大文字が含まれているとき、検索は大文字小文字を区別します。検索文字列から大文字を削除すると、この効果はなくなります。@ref{Search Case}を参照してください。"
+msgstr ""
+"検索文字列に小文字しか含まれていないとき、検索は大文字小文字を区別しません。"
+"検索文字列に大文字が含まれているとき、検索は大文字小文字を区別します。検索文"
+"字列から大文字を削除すると、この効果はなくなります。@ref{Search Case}を参照し"
+"てください。"
 
 #. type: cindex
-#: search.texi.orig:248
+#: original_texis/search.texi:248
 #, no-wrap
 msgid "invisible text, searching for"
 msgstr "invisible text, searching for"
 
 #. type: kindex
-#: search.texi.orig:249
+#: original_texis/search.texi:249
 #, no-wrap
 msgid "M-s i @r{(Incremental search)}"
 msgstr "M-s i @r{(Incremental search)}"
 
 #. type: findex
-#: search.texi.orig:250
+#: original_texis/search.texi:250
 #, no-wrap
 msgid "isearch-toggle-invisible"
 msgstr "isearch-toggle-invisible"
 
 #. type: Plain text
-#: search.texi.orig:253
+#: original_texis/search.texi:253
 msgid ""
 "To toggle whether or not invisible text is searched, type @kbd{M-s i} "
 "(@code{isearch-toggle-invisible}).  @xref{Outline Search}."
-msgstr "非表示のテキストを検索するかしないかは、@kbd{M-s i} (@code{isearch-toggle-invisible})とタイプして切り替えることができます。@ref{Outline Search}を参照してください。"
+msgstr ""
+"非表示のテキストを検索するかしないかは、@kbd{M-s i} (@code{isearch-toggle-"
+"invisible})とタイプして切り替えることができます。@ref{Outline Search}を参照し"
+"てください。"
 
 #. type: Plain text
-#: search.texi.orig:255
+#: original_texis/search.texi:255
 msgid "To search for a newline character, type @kbd{C-j}."
 msgstr "改行文字を検索するには@kbd{C-j}とタイプします。"
 
 #. type: Plain text
-#: search.texi.orig:258
+#: original_texis/search.texi:258
 msgid ""
 "To search for non-@acronym{ASCII} characters, use one of the following "
 "methods:"
 msgstr "非@acronym{ASCII}文字を検索するには、以下の方法の1つを使います:"
 
 #. type: itemize
-#: search.texi.orig:266
+#: original_texis/search.texi:266
 msgid ""
 "Type @kbd{C-q}, followed by a non-graphic character or a sequence of octal "
 "digits.  This adds a character to the search string, similar to inserting "
 "into a buffer using @kbd{C-q} (@pxref{Inserting Text}).  For example, @kbd{C-"
 "q C-s} during incremental search adds the @samp{control-S} character to the "
 "search string."
-msgstr "@kbd{C-q}に続けて、非グラフィック文字か8進数字をタイプします。これは@kbd{C-q}を使ってバッファーに文字を挿入するのと同様に、検索文字列にタイプする文字を追加します(@ref{Inserting Text}を参照してください)。たとえばインクリメンタル検索で@kbd{C-q C-s}をタイプすると、検索文字列に文字@samp{control-S}が追加されます。"
+msgstr ""
+"@kbd{C-q}に続けて、非グラフィック文字か8進数字をタイプします。これは@kbd{C-q}"
+"を使ってバッファーに文字を挿入するのと同様に、検索文字列にタイプする文字を追"
+"加します(@ref{Inserting Text}を参照してください)。たとえばインクリメンタル検"
+"索で@kbd{C-q C-s}をタイプすると、検索文字列に文字@samp{control-S}が追加されま"
+"す。"
 
 #. type: itemize
-#: search.texi.orig:271
+#: original_texis/search.texi:271
 msgid ""
 "Type @kbd{C-x 8 @key{RET}}, followed by a Unicode name or code-point.  This "
 "adds the specified character into the search string, similar to the usual "
 "@code{insert-char} command (@pxref{Inserting Text})."
-msgstr "@kbd{C-x 8 @key{RET}}に続けて、Unicode名かコードポイントをタイプします。これは通常の@code{insert-char}コマンドと同様に、検索文字列に指定した文字を追加します(@ref{Inserting Text}を参照してください)。"
+msgstr ""
+"@kbd{C-x 8 @key{RET}}に続けて、Unicode名かコードポイントをタイプします。これ"
+"は通常の@code{insert-char}コマンドと同様に、検索文字列に指定した文字を追加し"
+"ます(@ref{Inserting Text}を参照してください)。"
 
 #. type: itemize
-#: search.texi.orig:283
+#: original_texis/search.texi:283
 msgid ""
 "Use an input method (@pxref{Input Methods}).  If an input method is enabled "
 "in the current buffer when you start the search, you can use it in the "
@@ -730,57 +865,72 @@ msgid ""
 "specified-input-method}), which prompts for the name of the input method.  "
 "When an input method is active during incremental search, the search prompt "
 "includes the input method mnemonic, like this:"
-msgstr "入力メソッド(IM: input method)を使います(@ref{Input Methods}を参照してください)。検索を開始したとき、カレントバッファーで入力メソッドが有効の場合、検索文字列にもそれを使うことができます。検索文字列をタイプするとき、@kbd{C-\\} (@code{isearch-toggle-input-method})で、入力メソッドを切り替えることができます。非デフォルトの入力メソッドに切り替えるには、@kbd{C-^} (@code{isearch-toggle-specified-input-method})を使います。これは入力メソッドの名前を尋ねます。インクリメンタル検索で入力メソッドがアクティブのとき、検索プロンプトには以下のようなニーモニックが含まれます。"
+msgstr ""
+"入力メソッド(IM: input method)を使います(@ref{Input Methods}を参照してくださ"
+"い)。検索を開始したとき、カレントバッファーで入力メソッドが有効の場合、検索文"
+"字列にもそれを使うことができます。検索文字列をタイプするとき、@kbd{C-\\} "
+"(@code{isearch-toggle-input-method})で、入力メソッドを切り替えることができま"
+"す。非デフォルトの入力メソッドに切り替えるには、@kbd{C-^} (@code{isearch-"
+"toggle-specified-input-method})を使います。これは入力メソッドの名前を尋ねま"
+"す。インクリメンタル検索で入力メソッドがアクティブのとき、検索プロンプトには"
+"以下のようなニーモニックが含まれます。"
 
 #. type: example
-#: search.texi.orig:286
+#: original_texis/search.texi:286
 #, no-wrap
 msgid "I-search [@var{im}]:\n"
 msgstr "I-search [@var{im}]:\n"
 
 #. type: findex
-#: search.texi.orig:289
+#: original_texis/search.texi:289
 #, no-wrap
 msgid "isearch-toggle-input-method"
 msgstr "isearch-toggle-input-method"
 
 #. type: findex
-#: search.texi.orig:290
+#: original_texis/search.texi:290
 #, no-wrap
 msgid "isearch-toggle-specified-input-method"
 msgstr "isearch-toggle-specified-input-method"
 
 #. type: itemize
-#: search.texi.orig:294
+#: original_texis/search.texi:294
 msgid ""
 "where @var{im} is the mnemonic of the active input method.  Any input method "
 "you enable during incremental search remains enabled in the current buffer "
 "afterwards."
-msgstr "@var{im}はアクティブな入力メソッドのニーモニックです。インクリメンタル検索で入力メソッドを有効にすると、カレントバッファーでも入力メソッドが有効のまま残ります。"
+msgstr ""
+"@var{im}はアクティブな入力メソッドのニーモニックです。インクリメンタル検索で"
+"入力メソッドを有効にすると、カレントバッファーでも入力メソッドが有効のまま残"
+"ります。"
 
 #. type: kindex
-#: search.texi.orig:296
+#: original_texis/search.texi:296
 #, no-wrap
 msgid "M-% @r{(Incremental search)}"
 msgstr "M-% @r{(Incremental search)}"
 
 #. type: Plain text
-#: search.texi.orig:301
+#: original_texis/search.texi:301
 msgid ""
 "Typing @kbd{M-%} in incremental search invokes @code{query-replace} or "
 "@code{query-replace-regexp} (depending on search mode) with the current "
 "search string used as the string to replace.  A negative prefix argument "
 "means to replace backward.  @xref{Query Replace}."
-msgstr "インクリメンタル検索で@kbd{M-%}をタイプすると、@code{query-replace}または@code{query-replace-regexp}が呼び出され(検索モードに依存します)、現在の検索文字が置換対象になります。負のプレフィクス引数は、後方への置換を意味します。@ref{Query Replace}を参照してください。"
+msgstr ""
+"インクリメンタル検索で@kbd{M-%}をタイプすると、@code{query-replace}または"
+"@code{query-replace-regexp}が呼び出され(検索モードに依存します)、現在の検索文"
+"字が置換対象になります。負のプレフィクス引数は、後方への置換を意味します。"
+"@ref{Query Replace}を参照してください。"
 
 #. type: kindex
-#: search.texi.orig:302
+#: original_texis/search.texi:302
 #, no-wrap
 msgid "M-TAB @r{(Incremental search)}"
 msgstr "M-TAB @r{(Incremental search)}"
 
 #. type: Plain text
-#: search.texi.orig:310
+#: original_texis/search.texi:310
 msgid ""
 "Typing @kbd{M-@key{TAB}} in incremental search invokes @code{isearch-"
 "complete}, which attempts to complete the search string using the search "
@@ -788,139 +938,165 @@ msgid ""
 "operating systems, the @kbd{M-@key{TAB}} key sequence is captured by the "
 "window manager; you then need to rebind @code{isearch-complete} to another "
 "key sequence if you want to use it (@pxref{Rebinding})."
-msgstr "インクリメンタル検索で@kbd{M-@key{TAB}}をタイプすると、@code{isearch-complete}が呼び出され、サーチリングを補完リストとして使って、検索文字列の補完を試みます。@ref{Completion}を参照してください。多くのオペレーティングシステムでは、キーシーケンス@kbd{M-@key{TAB}}はウィンドウマネージャーに捕えられます。その場合、これを使うには@code{isearch-complete}を、他のキーシーケンスに再バインドする必要があります(@ref{Rebinding}を参照してください)。"
+msgstr ""
+"インクリメンタル検索で@kbd{M-@key{TAB}}をタイプすると、@code{isearch-"
+"complete}が呼び出され、サーチリングを補完リストとして使って、検索文字列の補完"
+"を試みます。@ref{Completion}を参照してください。多くのオペレーティングシステ"
+"ムでは、キーシーケンス@kbd{M-@key{TAB}}はウィンドウマネージャーに捕えられま"
+"す。その場合、これを使うには@code{isearch-complete}を、他のキーシーケンスに再"
+"バインドする必要があります(@ref{Rebinding}を参照してください)。"
 
 #. type: vindex
-#: search.texi.orig:311
+#: original_texis/search.texi:311
 #, no-wrap
 msgid "isearch-mode-map"
 msgstr "isearch-mode-map"
 
 #. type: Plain text
-#: search.texi.orig:316
+#: original_texis/search.texi:316
 msgid ""
 "When incremental search is active, you can type @kbd{C-h C-h} to access "
 "interactive help options, including a list of special key bindings.  These "
 "key bindings are part of the keymap @code{isearch-mode-map} "
 "(@pxref{Keymaps})."
-msgstr "インクリメンタル検索がアクティブのとき、@kbd{C-h C-h}とタイプすると、特別なキーバインドのリストを含む、対話的なヘルプにアクセスできます。これらのキーバインドは、キーマップ@code{isearch-mode-map}の一部です(@ref{Keymaps}を参照してください)。"
+msgstr ""
+"インクリメンタル検索がアクティブのとき、@kbd{C-h C-h}とタイプすると、特別な"
+"キーバインドのリストを含む、対話的なヘルプにアクセスできます。これらのキーバ"
+"インドは、キーマップ@code{isearch-mode-map}の一部です(@ref{Keymaps}を参照して"
+"ください)。"
 
 #. type: subsection
-#: search.texi.orig:318
+#: original_texis/search.texi:318
 #, no-wrap
 msgid "Isearch Yanking"
 msgstr "Isearch Yanking"
 
 #. type: kindex
-#: search.texi.orig:320
+#: original_texis/search.texi:320
 #, no-wrap
 msgid "C-y @r{(Incremental search)}"
 msgstr "C-y @r{(Incremental search)}"
 
 #. type: kindex
-#: search.texi.orig:321
+#: original_texis/search.texi:321
 #, no-wrap
 msgid "M-y @r{(Incremental search)}"
 msgstr "M-y @r{(Incremental search)}"
 
 #. type: findex
-#: search.texi.orig:322
+#: original_texis/search.texi:322
 #, no-wrap
 msgid "isearch-yank-kill"
 msgstr "isearch-yank-kill"
 
 #. type: findex
-#: search.texi.orig:323
+#: original_texis/search.texi:323
 #, no-wrap
 msgid "isearch-yank-pop"
 msgstr "isearch-yank-pop"
 
 #. type: Plain text
-#: search.texi.orig:330
+#: original_texis/search.texi:330
 msgid ""
 "Within incremental search, @kbd{C-y} (@code{isearch-yank-kill})  appends the "
 "current kill to the search string.  @kbd{M-y} (@code{isearch-yank-pop}), if "
 "called after @kbd{C-y}, replaces that appended text with an earlier kill, "
 "similar to the usual @kbd{M-y} (@code{yank-pop}) command (@pxref{Yanking}).  "
 "@kbd{Mouse-2} appends the current X selection (@pxref{Primary Selection})."
-msgstr "インクリメンタル検索での@kbd{C-y} (@code{isearch-yank-kill})は、カレントkillを検索文字列に追加します。@kbd{C-y}の後に@kbd{M-y} (@code{isearch-yank-pop})が呼び出されると、追加するテキストを、もっと前にkillされたものに置き換えます。これは通常の@kbd{M-y} (@code{yank-pop})コマンドと似ています(@ref{Yanking}を参照してください)。@kbd{Mouse-2}はカレントのX選択を追加します(@ref{Primary Selection}を参照してください)。"
+msgstr ""
+"インクリメンタル検索での@kbd{C-y} (@code{isearch-yank-kill})は、カレントkill"
+"を検索文字列に追加します。@kbd{C-y}の後に@kbd{M-y} (@code{isearch-yank-pop})"
+"が呼び出されると、追加するテキストを、もっと前にkillされたものに置き換えま"
+"す。これは通常の@kbd{M-y} (@code{yank-pop})コマンドと似ています(@ref{Yanking}"
+"を参照してください)。@kbd{Mouse-2}はカレントのX選択を追加します(@ref{Primary "
+"Selection}を参照してください)。"
 
 #. type: kindex
-#: search.texi.orig:331
+#: original_texis/search.texi:331
 #, no-wrap
 msgid "C-w @r{(Incremental search)}"
 msgstr "C-w @r{(Incremental search)}"
 
 #. type: findex
-#: search.texi.orig:332
+#: original_texis/search.texi:332
 #, no-wrap
 msgid "isearch-yank-word-or-char"
 msgstr "isearch-yank-word-or-char"
 
 #. type: Plain text
-#: search.texi.orig:337
+#: original_texis/search.texi:337
 msgid ""
 "@kbd{C-w} (@code{isearch-yank-word-or-char}) appends the next character or "
 "word at point to the search string.  This is an easy way to search for "
 "another occurrence of the text at point.  (The decision of whether to copy a "
 "character or a word is heuristic.)"
-msgstr "@kbd{C-w} (@code{isearch-yank-word-or-char})は、検索された文字列のポイントの次の文字または単語を、検索文字列に追加します。これはポイント位置にあるテキストを検索する、簡単な方法です(コピーする対象を文字または単語のどちらにするかの決定は、発見的に行われます)。"
+msgstr ""
+"@kbd{C-w} (@code{isearch-yank-word-or-char})は、検索された文字列のポイントの"
+"次の文字または単語を、検索文字列に追加します。これはポイント位置にあるテキス"
+"トを検索する、簡単な方法です(コピーする対象を文字または単語のどちらにするかの"
+"決定は、発見的に行われます)。"
 
 #. type: kindex
-#: search.texi.orig:338
+#: original_texis/search.texi:338
 #, no-wrap
 msgid "M-s C-e @r{(Incremental search)}"
 msgstr "M-s C-e @r{(Incremental search)}"
 
 #. type: findex
-#: search.texi.orig:339
+#: original_texis/search.texi:339
 #, no-wrap
 msgid "isearch-yank-line"
 msgstr "isearch-yank-line"
 
 #. type: Plain text
-#: search.texi.orig:344
+#: original_texis/search.texi:344
 msgid ""
 "Similarly, @kbd{M-s C-e} (@code{isearch-yank-line}) appends the rest of the "
 "current line to the search string.  If point is already at the end of a "
 "line, it appends the next line.  With a prefix argument @var{n}, it appends "
 "the next @var{n} lines."
-msgstr "同様に@kbd{M-s C-e} (@code{isearch-yank-line})は、検索文字列にカレント行の残りの部分を追加します。ポイントが既に行末にある場合、次の行が追加されます。プレフィクス引数@var{n}を指定すると、次の@var{n}行を追加します。"
+msgstr ""
+"同様に@kbd{M-s C-e} (@code{isearch-yank-line})は、検索文字列にカレント行の残"
+"りの部分を追加します。ポイントが既に行末にある場合、次の行が追加されます。プ"
+"レフィクス引数@var{n}を指定すると、次の@var{n}行を追加します。"
 
 #. type: Plain text
-#: search.texi.orig:348
+#: original_texis/search.texi:348
 msgid ""
 "If the search is currently case-insensitive, both @kbd{C-w} and @kbd{M-s C-"
 "e} convert the text they copy to lower case, so that the search remains case-"
 "insensitive."
-msgstr "もし大文字小文字を区別せずに検索している場合、@kbd{C-w}と@kbd{M-s C-e}はテキストを小文字に変換してからコピーするので、それ以降も検索は大文字小文字を区別せずに行われます。"
+msgstr ""
+"もし大文字小文字を区別せずに検索している場合、@kbd{C-w}と@kbd{M-s C-e}はテキ"
+"ストを小文字に変換してからコピーするので、それ以降も検索は大文字小文字を区別"
+"せずに行われます。"
 
 #. type: kindex
-#: search.texi.orig:349
+#: original_texis/search.texi:349
 #, no-wrap
 msgid "C-M-w @r{(Incremental search)}"
 msgstr "C-M-w @r{(Incremental search)}"
 
 #. type: kindex
-#: search.texi.orig:350
+#: original_texis/search.texi:350
 #, no-wrap
 msgid "C-M-y @r{(Incremental search)}"
 msgstr "C-M-y @r{(Incremental search)}"
 
 #. type: findex
-#: search.texi.orig:351
+#: original_texis/search.texi:351
 #, no-wrap
 msgid "isearch-del-char"
 msgstr "isearch-del-char"
 
 #. type: findex
-#: search.texi.orig:352
+#: original_texis/search.texi:352
 #, no-wrap
 msgid "isearch-yank-char"
 msgstr "isearch-yank-char"
 
 #. type: Plain text
-#: search.texi.orig:359
+#: original_texis/search.texi:359
 msgid ""
 "@kbd{C-M-w} (@code{isearch-del-char}) deletes the last character from the "
 "search string, and @kbd{C-M-y} (@code{isearch-yank-char})  appends the "
@@ -928,71 +1104,86 @@ msgid ""
 "the character after point is to enter the minibuffer with @kbd{M-e} "
 "(@pxref{Repeat Isearch}) and type @kbd{C-f} at the end of the search string "
 "in the minibuffer."
-msgstr "@kbd{C-M-w} (@code{isearch-del-char})は検索文字列の最後の文字を削除し、@kbd{C-M-y} (@code{isearch-yank-char})は検索されたポイントの後ろの文字を追加します。ポイントの後ろの文字を追加する他の方法は、@kbd{M-e}(@ref{Repeat Isearch}を参照してください)でミニバッファーに移動してから、検索文字列の最後で@kbd{C-f}をタイプします。"
+msgstr ""
+"@kbd{C-M-w} (@code{isearch-del-char})は検索文字列の最後の文字を削除し、"
+"@kbd{C-M-y} (@code{isearch-yank-char})は検索されたポイントの後ろの文字を追加"
+"します。ポイントの後ろの文字を追加する他の方法は、@kbd{M-e}(@ref{Repeat "
+"Isearch}を参照してください)でミニバッファーに移動してから、検索文字列の最後で"
+"@kbd{C-f}をタイプします。"
 
 #. type: subsection
-#: search.texi.orig:361
+#: original_texis/search.texi:361
 #, no-wrap
 msgid "Not Exiting Incremental Search"
 msgstr "Not Exiting Incremental Search"
 
 #. type: Plain text
-#: search.texi.orig:366
+#: original_texis/search.texi:366
 msgid ""
 "This subsection describes two categories of commands which you can type "
 "without exiting the current incremental search, even though they are not "
 "themselves part of incremental search."
-msgstr "このサブセクションでは、2つのカテゴリーに属するコマンドを説明します。これらのコマンドはインクリメンタル検索の一部ではありませんが、現在のインクリメンタル検索を終了させずにタイプできます。"
+msgstr ""
+"このサブセクションでは、2つのカテゴリーに属するコマンドを説明します。これらの"
+"コマンドはインクリメンタル検索の一部ではありませんが、現在のインクリメンタル"
+"検索を終了させずにタイプできます。"
 
 #. type: item
-#: search.texi.orig:368
+#: original_texis/search.texi:368
 #, no-wrap
 msgid "Prefix Arguments"
 msgstr "プレフィクス引数"
 
 #. type: vindex
-#: search.texi.orig:369
+#: original_texis/search.texi:369
 #, no-wrap
 msgid "isearch-allow-prefix"
 msgstr "isearch-allow-prefix"
 
 #. type: table
-#: search.texi.orig:373
+#: original_texis/search.texi:373
 msgid ""
 "In incremental search, when you enter a prefix argument (@pxref{Arguments}), "
 "by default it will apply either to the next action in the search or to the "
 "command that exits the search."
-msgstr "インクリメンタル検索でプレフィクス引数を入力すると、デフォルトではその引数は次の検索アクションに適用されるか、検索を終了させるコマンドに渡されます。"
+msgstr ""
+"インクリメンタル検索でプレフィクス引数を入力すると、デフォルトではその引数は"
+"次の検索アクションに適用されるか、検索を終了させるコマンドに渡されます。"
 
 #. type: table
-#: search.texi.orig:377
+#: original_texis/search.texi:377
 msgid ""
 "In previous versions of Emacs, entering a prefix argument always terminated "
 "the search.  You can revert to this behavior by setting the variable "
 "@code{isearch-allow-prefix} to @code{nil}."
-msgstr "以前のバージョンのEmacsでは、プレフィクス引数の入力は常に検索を終了させていました。この振る舞いに戻すには、変数@code{isearch-allow-prefix}に@code{nil}をセットしてください。"
+msgstr ""
+"以前のバージョンのEmacsでは、プレフィクス引数の入力は常に検索を終了させていま"
+"した。この振る舞いに戻すには、変数@code{isearch-allow-prefix}に@code{nil}を"
+"セットしてください。"
 
 #. type: table
-#: search.texi.orig:380
+#: original_texis/search.texi:380
 msgid ""
 "When @code{isearch-allow-scroll} is non-@code{nil} (see below), prefix "
 "arguments always have the default behavior described above."
-msgstr "@code{isearch-allow-scroll}が非@code{nil}のとき(以下を参照)、プレフィクス引数は上で説明したようなデフォルト動作をします。"
+msgstr ""
+"@code{isearch-allow-scroll}が非@code{nil}のとき(以下を参照)、プレフィクス引数"
+"は上で説明したようなデフォルト動作をします。"
 
 #. type: item
-#: search.texi.orig:381
+#: original_texis/search.texi:381
 #, no-wrap
 msgid "Scrolling Commands"
 msgstr "スクロールコマンド"
 
 #. type: vindex
-#: search.texi.orig:382
+#: original_texis/search.texi:382
 #, no-wrap
 msgid "isearch-allow-scroll"
 msgstr "isearch-allow-scroll"
 
 #. type: table
-#: search.texi.orig:391
+#: original_texis/search.texi:391
 msgid ""
 "Normally, scrolling commands exit incremental search.  If you change the "
 "variable @code{isearch-allow-scroll} to a non-@code{nil} value, that enables "
@@ -1002,10 +1193,18 @@ msgid ""
 "will still exit the search.  You can give prefix arguments to these commands "
 "in the usual way.  This feature won't let you scroll the current match out "
 "of visibility, however."
-msgstr "通常スクロールコマンドは、インクリメンタル検索を終了させます。変数@code{isearch-allow-scroll}を非@code{nil}値に変更すると、スクロールバーや@kbd{C-v}、@kbd{M-v}、@kbd{C-l}のようなスクロールコマンド(@ref{Scrolling}を参照してください)が利用可能になります。これは、これらのコマンドをバウンドされたキーシーケンスで呼び出したときだけ適用されます。つまり@kbd{M-x}は依然として検索を終了させます。これらのコマンドには、通常の方法でプレフィクス引数を与えることができます。この機能ではカレントマッチが表示されない位置にスクロールすることはできません。"
+msgstr ""
+"通常スクロールコマンドは、インクリメンタル検索を終了させます。変数"
+"@code{isearch-allow-scroll}を非@code{nil}値に変更すると、スクロールバーや"
+"@kbd{C-v}、@kbd{M-v}、@kbd{C-l}のようなスクロールコマンド(@ref{Scrolling}を参"
+"照してください)が利用可能になります。これは、これらのコマンドをバウンドされた"
+"キーシーケンスで呼び出したときだけ適用されます。つまり@kbd{M-x}は依然として検"
+"索を終了させます。これらのコマンドには、通常の方法でプレフィクス引数を与える"
+"ことができます。この機能ではカレントマッチが表示されない位置にスクロールする"
+"ことはできません。"
 
 #. type: table
-#: search.texi.orig:398
+#: original_texis/search.texi:398
 msgid ""
 "The @code{isearch-allow-scroll} feature also affects some other commands, "
 "such as @kbd{C-x 2} (@code{split-window-below}) and @kbd{C-x ^} "
@@ -1013,55 +1212,72 @@ msgid ""
 "text appears on the screen.  It applies to any command whose name has a non-"
 "@code{nil} @code{isearch-scroll} property.  So you can control which "
 "commands are affected by changing these properties."
-msgstr "@code{isearch-allow-scroll}の機能は、正確にはスクロールではないが、テキストが表示されるスクリーン位置に影響する、@kbd{C-x 2} (@code{split-window-below})や@kbd{C-x ^} (@code{enlarge-window})のような、コマンドにも効果を及ぼします。これはコマンド名の@code{isearch-scroll}プロパティが非@code{nil}のコマンドに適用されます。そのため、どのコマンドが影響を受けるかは、それらのプロパティを変更して制御できます。"
+msgstr ""
+"@code{isearch-allow-scroll}の機能は、正確にはスクロールではないが、テキストが"
+"表示されるスクリーン位置に影響する、@kbd{C-x 2} (@code{split-window-below})や"
+"@kbd{C-x ^} (@code{enlarge-window})のような、コマンドにも効果を及ぼします。こ"
+"れはコマンド名の@code{isearch-scroll}プロパティが非@code{nil}のコマンドに適用"
+"されます。そのため、どのコマンドが影響を受けるかは、それらのプロパティを変更"
+"して制御できます。"
 
 #. type: table
-#: search.texi.orig:403
+#: original_texis/search.texi:403
 msgid ""
 "For example, to make @kbd{C-h l} usable within an incremental search in all "
 "future Emacs sessions, use @kbd{C-h c} to find what command it runs "
 "(@pxref{Key Help}), which is @code{view-lossage}.  Then you can put the "
 "following line in your init file (@pxref{Init File}):"
-msgstr "たとえば将来のEmacsセッションも含めて、インクリメンタル検索中に@kbd{C-h l}を使えれば便利だと思ったら、まず@kbd{C-h c}で何のコマンドが実行されるか調べて(@ref{Key Help}を参照してください)、それが@code{view-lossage}だとわかります。その後はinitファイルに以下を追加します(@ref{Init File}を参照してください)。"
+msgstr ""
+"たとえば将来のEmacsセッションも含めて、インクリメンタル検索中に@kbd{C-h l}を"
+"使えれば便利だと思ったら、まず@kbd{C-h c}で何のコマンドが実行されるか調べて"
+"(@ref{Key Help}を参照してください)、それが@code{view-lossage}だとわかります。"
+"その後はinitファイルに以下を追加します(@ref{Init File}を参照してください)。"
 
 #. type: example
-#: search.texi.orig:406
+#: original_texis/search.texi:406
 #, no-wrap
 msgid "(put 'view-lossage 'isearch-scroll t)\n"
 msgstr "(put 'view-lossage 'isearch-scroll t)\n"
 
 #. type: table
-#: search.texi.orig:413
+#: original_texis/search.texi:413
 msgid ""
 "This feature can be applied to any command that doesn't permanently change "
 "point, the buffer contents, the match data, the current buffer, or the "
 "selected window and frame.  The command must not itself attempt an "
 "incremental search."
-msgstr "この機能はポイント、バッファー内容、マッチデータ、カレントバッファーや選択されているウィンドウ・フレームを変更しない任意のコマンドに適用できます。そして、そのコマンド自体がインクリメンタル検索を行ってはなりません。"
+msgstr ""
+"この機能はポイント、バッファー内容、マッチデータ、カレントバッファーや選択さ"
+"れているウィンドウ・フレームを変更しない任意のコマンドに適用できます。そし"
+"て、そのコマンド自体がインクリメンタル検索を行ってはなりません。"
 
 #. type: subsection
-#: search.texi.orig:416
+#: original_texis/search.texi:416
 #, no-wrap
 msgid "Searching the Minibuffer"
 msgstr "Searching the Minibuffer"
 
 #. type: cindex
-#: search.texi.orig:417
+#: original_texis/search.texi:417
 #, no-wrap
 msgid "minibuffer history, searching"
 msgstr "minibuffer history, searching"
 
 #. type: Plain text
-#: search.texi.orig:423
+#: original_texis/search.texi:423
 msgid ""
 "If you start an incremental search while the minibuffer is active, Emacs "
 "searches the contents of the minibuffer.  Unlike searching an ordinary "
 "buffer, the search string is not shown in the echo area, because that is "
 "used to display the minibuffer."
-msgstr "ミニバッファーがアクティブのときインクリメンタル検索を開始すると、Emacsはミニバッファーの内容を検索します。通常のバッファーにたいする検索とは異なり、エコーエリアはミニバッファーの表示に使われているので、検索文字列はエコーエリアには表示されません。"
+msgstr ""
+"ミニバッファーがアクティブのときインクリメンタル検索を開始すると、Emacsはミニ"
+"バッファーの内容を検索します。通常のバッファーにたいする検索とは異なり、エ"
+"コーエリアはミニバッファーの表示に使われているので、検索文字列はエコーエリア"
+"には表示されません。"
 
 #. type: Plain text
-#: search.texi.orig:432
+#: original_texis/search.texi:432
 msgid ""
 "If an incremental search fails in the minibuffer, it tries searching the "
 "minibuffer history.  @xref{Minibuffer History}.  You can visualize the "
@@ -1071,92 +1287,114 @@ msgid ""
 "reverse search, @kbd{C-r}, searches backwards to earlier pages.  Like in "
 "ordinary buffer search, a failing search can wrap around, going from the "
 "last page to the first page or vice versa."
-msgstr "ミニバッファーでのインクリメンタル検索が失敗すると、ミニバッファーヒストリーを検索します。@ref{Minibuffer History}を参照してください。ミニバッファーとミニバッファーのヒストリーは、一番古いヒストリー要素が最初で、カレントのミニバッファーが最後にある、一連の``ページ''として視覚化することができます。前方検索の@kbd{C-s}は前方、つまり新しいページを検索し、後方検索の@kbd{C-r}は後方、つまり古いページを検索します。普通のバッファーの検索と同様、検索が失敗すると、最後から最初のページ、またはその逆に巻き直して検索します。"
+msgstr ""
+"ミニバッファーでのインクリメンタル検索が失敗すると、ミニバッファーヒストリー"
+"を検索します。@ref{Minibuffer History}を参照してください。ミニバッファーとミ"
+"ニバッファーのヒストリーは、一番古いヒストリー要素が最初で、カレントのミニ"
+"バッファーが最後にある、一連の``ページ''として視覚化することができます。前方"
+"検索の@kbd{C-s}は前方、つまり新しいページを検索し、後方検索の@kbd{C-r}は後"
+"方、つまり古いページを検索します。普通のバッファーの検索と同様、検索が失敗す"
+"ると、最後から最初のページ、またはその逆に巻き直して検索します。"
 
 #. type: Plain text
-#: search.texi.orig:438
+#: original_texis/search.texi:438
 msgid ""
 "When the current match is on a history element, that history element is "
 "pulled into the minibuffer.  If you exit the incremental search normally (e."
 "g., by typing @key{RET}), it remains in the minibuffer afterwards.  "
 "Canceling the search, with @kbd{C-g}, restores the contents of the "
 "minibuffer when you began the search."
-msgstr "カレントマッチがヒストリーの要素にあった場合、ヒストリーの要素はミニバッファーに取り出されます。インクリメンタル検索を正常に終了(たとえば@key{RET}をタイプ)すれば、それはミニバッファーに残ります。検索を取り消すのは@kbd{C-g}で、これによりミニバッファーの内容は検索を開始したときのものに復元されます。"
+msgstr ""
+"カレントマッチがヒストリーの要素にあった場合、ヒストリーの要素はミニバッ"
+"ファーに取り出されます。インクリメンタル検索を正常に終了(たとえば@key{RET}を"
+"タイプ)すれば、それはミニバッファーに残ります。検索を取り消すのは@kbd{C-g}"
+"で、これによりミニバッファーの内容は検索を開始したときのものに復元されます。"
 
 #. type: cindex
-#: search.texi.orig:441
+#: original_texis/search.texi:441
 #, no-wrap
 msgid "nonincremental search"
 msgstr "nonincremental search"
 
 #. type: Plain text
-#: search.texi.orig:445
+#: original_texis/search.texi:445
 msgid ""
 "Emacs also has conventional nonincremental search commands, which require "
 "you to type the entire search string before searching begins."
-msgstr "Emacsには、従来式の非インクリメンタル検索もあります。これは検索を開始する前に、検索文字列全体を入力する必要があります。"
+msgstr ""
+"Emacsには、従来式の非インクリメンタル検索もあります。これは検索を開始する前"
+"に、検索文字列全体を入力する必要があります。"
 
 #. type: item
-#: search.texi.orig:447
+#: original_texis/search.texi:447
 #, no-wrap
 msgid "C-s @key{RET} @var{string} @key{RET}"
 msgstr "C-s @key{RET} @var{string} @key{RET}"
 
 #. type: table
-#: search.texi.orig:449
+#: original_texis/search.texi:449
 msgid "Search for @var{string}."
 msgstr "@var{string}を検索します。"
 
 #. type: item
-#: search.texi.orig:449
+#: original_texis/search.texi:449
 #, no-wrap
 msgid "C-r @key{RET} @var{string} @key{RET}"
 msgstr "C-r @key{RET} @var{string} @key{RET}"
 
 #. type: table
-#: search.texi.orig:451
+#: original_texis/search.texi:451
 msgid "Search backward for @var{string}."
 msgstr "後方に@var{string}を検索します。"
 
 #. type: Plain text
-#: search.texi.orig:457
+#: original_texis/search.texi:457
 msgid ""
 "To start a nonincremental search, first type @kbd{C-s @key{RET}}.  This "
 "enters the minibuffer to read the search string; terminate the string with "
 "@key{RET}, and then the search takes place.  If the string is not found, the "
 "search command signals an error."
-msgstr "非インクリメンタル検索を開始するには、最初に@kbd{C-s @key{RET}}をタイプします。これにより、検索文字列を読みとるために、ミニバッファーに移動します。検索文字列の入力を終了して検索を開始するには、@key{RET}をタイプします。文字列が見つからなかったとき、検索コマンドはエラーをシグナルします。"
+msgstr ""
+"非インクリメンタル検索を開始するには、最初に@kbd{C-s @key{RET}}をタイプしま"
+"す。これにより、検索文字列を読みとるために、ミニバッファーに移動します。検索"
+"文字列の入力を終了して検索を開始するには、@key{RET}をタイプします。文字列が見"
+"つからなかったとき、検索コマンドはエラーをシグナルします。"
 
 #. type: findex
-#: search.texi.orig:458
+#: original_texis/search.texi:458
 #, no-wrap
 msgid "search-forward"
 msgstr "search-forward"
 
 #. type: findex
-#: search.texi.orig:459
+#: original_texis/search.texi:459
 #, no-wrap
 msgid "search-backward"
 msgstr "search-backward"
 
 #. type: Plain text
-#: search.texi.orig:466
+#: original_texis/search.texi:466
 msgid ""
 "When you type @kbd{C-s @key{RET}}, the @kbd{C-s} invokes incremental search "
 "as usual.  That command is specially programmed to invoke the command for "
 "nonincremental search, @code{search-forward}, if the string you specify is "
 "empty.  (Such an empty argument would otherwise be useless.)  @kbd{C-r "
 "@key{RET}} does likewise, invoking the command @code{search-backward}."
-msgstr "@kbd{C-s @key{RET}}とタイプすると、@kbd{C-s}は通常どおりインクリメンタル検索を呼び出します。しかし、このコマンドは指定した文字列が空のとき、非インクリメンタル検索を行うコマンド@code{search-forward}を呼び出すよう、プログラムされています(そのような用途以外に空の引数は無意味です)。@kbd{C-r @key{RET}}も同様に、コマンド@code{search-backward}を呼び出します。"
+msgstr ""
+"@kbd{C-s @key{RET}}とタイプすると、@kbd{C-s}は通常どおりインクリメンタル検索"
+"を呼び出します。しかし、このコマンドは指定した文字列が空のとき、非インクリメ"
+"ンタル検索を行うコマンド@code{search-forward}を呼び出すよう、プログラムされて"
+"います(そのような用途以外に空の引数は無意味です)。@kbd{C-r @key{RET}}も同様"
+"に、コマンド@code{search-backward}を呼び出します。"
 
 #. type: cindex
-#: search.texi.orig:469
+#: original_texis/search.texi:469
 #, no-wrap
 msgid "word search"
 msgstr "word search"
 
 #. type: Plain text
-#: search.texi.orig:479
+#: original_texis/search.texi:479
 msgid ""
 "A @dfn{word search} finds a sequence of words without regard to the type of "
 "punctuation between them.  For instance, if you enter a search string that "
@@ -1165,52 +1403,61 @@ msgid ""
 "other punctuation characters.  This is particularly useful for searching "
 "text documents, because you don't have to worry whether the words you are "
 "looking for are separated by newlines or spaces."
-msgstr "@dfn{単語検索(word search)}は、単語の並びを、その間にある区切り文字の種類とは無関係に検索します。たとえば検索文字列に、1つのスペースで区切られた2つの単語を入力すると、2つの単語を区切るのが、1つまたはそれ以上のスペース、改行文字、およびそれ以外の区切り文字の場合にもマッチします。これはテキスト文書を検索するとき特に有用です。なぜなら検索する単語が改行で区切られているのか、スペースで区切られているのか考慮しなくてもよいからです。"
+msgstr ""
+"@dfn{単語検索(word search)}は、単語の並びを、その間にある区切り文字の種類とは"
+"無関係に検索します。たとえば検索文字列に、1つのスペースで区切られた2つの単語"
+"を入力すると、2つの単語を区切るのが、1つまたはそれ以上のスペース、改行文字、"
+"およびそれ以外の区切り文字の場合にもマッチします。これはテキスト文書を検索す"
+"るとき特に有用です。なぜなら検索する単語が改行で区切られているのか、スペース"
+"で区切られているのか考慮しなくてもよいからです。"
 
 #. type: kindex
-#: search.texi.orig:481 search.texi.orig:491
+#: original_texis/search.texi:481 original_texis/search.texi:491
 #, no-wrap
 msgid "M-s w"
 msgstr "M-s w"
 
 #. type: table
-#: search.texi.orig:485
+#: original_texis/search.texi:485
 msgid ""
 "If incremental search is active, toggle word search mode (@code{isearch-"
 "toggle-word}); otherwise, begin an incremental forward word search "
 "(@code{isearch-forward-word})."
-msgstr "インクリメンタル検索がアクティブのとき、単語検索モードに切り替えます(@code{isearch-toggle-word})。非アクティブのときは、前方へのインクリメンタルな単語検索を開始します(@code{isearch-forward-word})。"
+msgstr ""
+"インクリメンタル検索がアクティブのとき、単語検索モードに切り替えます"
+"(@code{isearch-toggle-word})。非アクティブのときは、前方へのインクリメンタル"
+"な単語検索を開始します(@code{isearch-forward-word})。"
 
 #. type: item
-#: search.texi.orig:485
+#: original_texis/search.texi:485
 #, no-wrap
 msgid "M-s w @key{RET} @var{words} @key{RET}"
 msgstr "M-s w @key{RET} @var{words} @key{RET}"
 
 #. type: table
-#: search.texi.orig:487
+#: original_texis/search.texi:487
 msgid "Search for @var{words}, using a forward nonincremental word search."
 msgstr "非インクリメンタルな単語検索を使って、@var{words}を前方検索します。"
 
 #. type: item
-#: search.texi.orig:487
+#: original_texis/search.texi:487
 #, no-wrap
 msgid "M-s w C-r @key{RET} @var{words} @key{RET}"
 msgstr "M-s w C-r @key{RET} @var{words} @key{RET}"
 
 #. type: table
-#: search.texi.orig:489
+#: original_texis/search.texi:489
 msgid "Search backward for @var{words}, using a nonincremental word search."
 msgstr "非インクリメンタルな単語検索を使って、@var{words}を後方検索します。"
 
 #. type: findex
-#: search.texi.orig:492
+#: original_texis/search.texi:492
 #, no-wrap
 msgid "isearch-forward-word"
 msgstr "isearch-forward-word"
 
 #. type: Plain text
-#: search.texi.orig:500
+#: original_texis/search.texi:500
 msgid ""
 "To begin a forward incremental word search, type @kbd{M-s w}.  If "
 "incremental search is not already active, this runs the command "
@@ -1219,31 +1466,40 @@ msgid ""
 "search while keeping the direction of the search and the current search "
 "string unchanged.  You can toggle word search back off by typing @kbd{M-s w} "
 "again."
-msgstr "前方へのインクリメンタルな単語検索を開始するには、@kbd{M-s w}とタイプします。インクリメンタル検索が非アクティブの場合、これはコマンド@code{isearch-forward-word}を実行します。インクリメンタル検索がすでにアクティブの場合(前方か後方かにかかわらず)、@kbd{M-s w}は検索の方向と現在の検索文字列は変更せずに、単語検索に切り替えます。単語検索をオフに切り替えるには、再度@kbd{M-s w}をタイプしてください。"
+msgstr ""
+"前方へのインクリメンタルな単語検索を開始するには、@kbd{M-s w}とタイプします。"
+"インクリメンタル検索が非アクティブの場合、これはコマンド@code{isearch-"
+"forward-word}を実行します。インクリメンタル検索がすでにアクティブの場合(前方"
+"か後方かにかかわらず)、@kbd{M-s w}は検索の方向と現在の検索文字列は変更せず"
+"に、単語検索に切り替えます。単語検索をオフに切り替えるには、再度@kbd{M-s w}を"
+"タイプしてください。"
 
 #. type: findex
-#: search.texi.orig:501
+#: original_texis/search.texi:501
 #, no-wrap
 msgid "word-search-forward"
 msgstr "word-search-forward"
 
 #. type: findex
-#: search.texi.orig:502
+#: original_texis/search.texi:502
 #, no-wrap
 msgid "word-search-backward"
 msgstr "word-search-backward"
 
 #. type: Plain text
-#: search.texi.orig:507
+#: original_texis/search.texi:507
 msgid ""
 "To begin a nonincremental word search, type @kbd{M-s w @key{RET}} for a "
 "forward search, or @kbd{M-s w C-r @key{RET}} for a backward search.  These "
 "run the commands @code{word-search-forward} and @code{word-search-backward} "
 "respectively."
-msgstr "非インクリメンタルな単語検索を開始する場合、前方検索は@kbd{M-s w @key{RET}}、後方検索は@kbd{M-s w C-r @key{RET}}をタイプします。これらはコマンド@code{word-search-forward}、または@code{word-search-backward}を実行します。"
+msgstr ""
+"非インクリメンタルな単語検索を開始する場合、前方検索は@kbd{M-s w @key{RET}}、"
+"後方検索は@kbd{M-s w C-r @key{RET}}をタイプします。これらはコマンド"
+"@code{word-search-forward}、または@code{word-search-backward}を実行します。"
 
 #. type: Plain text
-#: search.texi.orig:516
+#: original_texis/search.texi:516
 msgid ""
 "Incremental and nonincremental word searches differ slightly in the way they "
 "find a match.  In a nonincremental word search, each word in the search "
@@ -1252,16 +1508,24 @@ msgid ""
 "last words need not match whole words.  This is so that the matching can "
 "proceed incrementally as you type.  This additional laxity does not apply to "
 "the lazy highlight, which always matches whole words."
-msgstr "インクリメンタルな単語検索と、非インクリメンタルな単語検索では、マッチを見つける方法に若干の違いがあります。非インクリメンタルな単語検索では、検索文字列の各単語は、単語全体に厳密に一致しなければなりません。インクリメンタルな単語検索では、マッチの規則は緩くなります。検索文字列をタイプするとき、最初と最後の単語は、単語全体にマッチする必要はありません。これはタイプする度にマッチを処理するためです。これは(カーソルがある)カレントマッチ以外のマッチ(lazy matches)には適用されません。それらは単語全体がマッチしなければハイライトされません。"
+msgstr ""
+"インクリメンタルな単語検索と、非インクリメンタルな単語検索では、マッチを見つ"
+"ける方法に若干の違いがあります。非インクリメンタルな単語検索では、検索文字列"
+"の各単語は、単語全体に厳密に一致しなければなりません。インクリメンタルな単語"
+"検索では、マッチの規則は緩くなります。検索文字列をタイプするとき、最初と最後"
+"の単語は、単語全体にマッチする必要はありません。これはタイプする度にマッチを"
+"処理するためです。これは(カーソルがある)カレントマッチ以外のマッチ(lazy "
+"matches)には適用されません。それらは単語全体がマッチしなければハイライトされ"
+"ません。"
 
 #. type: cindex
-#: search.texi.orig:519
+#: original_texis/search.texi:519
 #, no-wrap
 msgid "symbol search"
 msgstr "symbol search"
 
 #. type: Plain text
-#: search.texi.orig:529
+#: original_texis/search.texi:529
 msgid ""
 "A @dfn{symbol search} is much like an ordinary search, except that the "
 "boundaries of the search must match the boundaries of a symbol.  The meaning "
@@ -1270,71 +1534,83 @@ msgid ""
 "For instance, if you perform an incremental symbol search for the Lisp "
 "symbol @code{forward-word}, it would not match @code{isearch-forward-word}.  "
 "This feature is thus mainly useful for searching source code."
-msgstr "@dfn{シンボル検索(symbol search)}は、通常の検索と似ていますが、検索の境界がシンボルの境界にマッチしていなければなりません。@dfn{シンボル}の意味は、メジャーモードのコンテキストに依存しており、Emacs LispモードでのLispシンボルのように、通常はソースコードのトークンを参照します。たとえばLispシンボル@code{forward-word}をインクリメンタルなシンボル検索すると、これは@code{isearch-forward-word}にはマッチしません。そのため、この機能は主にソースコードの検索に有用です。"
+msgstr ""
+"@dfn{シンボル検索(symbol search)}は、通常の検索と似ていますが、検索の境界がシ"
+"ンボルの境界にマッチしていなければなりません。@dfn{シンボル}の意味は、メ"
+"ジャーモードのコンテキストに依存しており、Emacs LispモードでのLispシンボルの"
+"ように、通常はソースコードのトークンを参照します。たとえばLispシンボル"
+"@code{forward-word}をインクリメンタルなシンボル検索すると、これは"
+"@code{isearch-forward-word}にはマッチしません。そのため、この機能は主にソース"
+"コードの検索に有用です。"
 
 #. type: kindex
-#: search.texi.orig:531 search.texi.orig:544
+#: original_texis/search.texi:531 original_texis/search.texi:544
 #, no-wrap
 msgid "M-s _"
 msgstr "M-s _"
 
 #. type: table
-#: search.texi.orig:535
+#: original_texis/search.texi:535
 msgid ""
 "If incremental search is active, toggle symbol search mode (@code{isearch-"
 "toggle-symbol}); otherwise, begin an incremental forward symbol search "
 "(@code{isearch-forward-symbol})."
-msgstr "インクリメンタル検索がアクティブのとき、シンボル検索モードに切り替えます(@code{isearch-toggle-symbol})。非アクティブのときは、前方へのインクリメンタルなシンボル検索を開始します(@code{isearch-forward-symbol})。"
+msgstr ""
+"インクリメンタル検索がアクティブのとき、シンボル検索モードに切り替えます"
+"(@code{isearch-toggle-symbol})。非アクティブのときは、前方へのインクリメンタ"
+"ルなシンボル検索を開始します(@code{isearch-forward-symbol})。"
 
 #. type: kindex
-#: search.texi.orig:535 search.texi.orig:545
+#: original_texis/search.texi:535 original_texis/search.texi:545
 #, no-wrap
 msgid "M-s ."
 msgstr "M-s ."
 
 #. type: table
-#: search.texi.orig:538
+#: original_texis/search.texi:538
 msgid ""
 "Start a symbol incremental search forward with the symbol found near point "
 "added to the search string initially."
-msgstr "ポイントの近くにあるシンボルを、検索文字列の初期値に追加して、前方へのインクリメンタルなシンボル検索を開始します。"
+msgstr ""
+"ポイントの近くにあるシンボルを、検索文字列の初期値に追加して、前方へのインク"
+"リメンタルなシンボル検索を開始します。"
 
 #. type: item
-#: search.texi.orig:538
+#: original_texis/search.texi:538
 #, no-wrap
 msgid "M-s _ @key{RET} @var{symbol} @key{RET}"
 msgstr "M-s _ @key{RET} @var{symbol} @key{RET}"
 
 #. type: table
-#: search.texi.orig:540
+#: original_texis/search.texi:540
 msgid "Search forward for @var{symbol}, nonincrementally."
 msgstr "@var{symbol}にたいして、前方への非インクリメンタルな検索をします。"
 
 #. type: item
-#: search.texi.orig:540
+#: original_texis/search.texi:540
 #, no-wrap
 msgid "M-s _ C-r @key{RET} @var{symbol} @key{RET}"
 msgstr "M-s _ C-r @key{RET} @var{symbol} @key{RET}"
 
 #. type: table
-#: search.texi.orig:542
+#: original_texis/search.texi:542
 msgid "Search backward for @var{symbol}, nonincrementally."
 msgstr "@var{symbol}にたいして、後方への非インクリメンタルな検索をします。"
 
 #. type: findex
-#: search.texi.orig:546
+#: original_texis/search.texi:546
 #, no-wrap
 msgid "isearch-forward-symbol"
 msgstr "isearch-forward-symbol"
 
 #. type: findex
-#: search.texi.orig:547
+#: original_texis/search.texi:547
 #, no-wrap
 msgid "isearch-forward-symbol-at-point"
 msgstr "isearch-forward-symbol-at-point"
 
 #. type: Plain text
-#: search.texi.orig:557
+#: original_texis/search.texi:557
 msgid ""
 "To begin a forward incremental symbol search, type @kbd{M-s _} (or @kbd{M-"
 "s .} if the symbol to search is near point).  If incremental search is not "
@@ -1344,81 +1620,98 @@ msgid ""
 "string; you can disable symbol search by typing @kbd{M-s _} again.  In "
 "incremental symbol search, only the beginning of the search string is "
 "required to match the beginning of a symbol."
-msgstr "前方へのインクリメンタルなシンボル検索を開始するには、@kbd{M-s _}(ポイントの近くにシンボルがあるときは@kbd{M-s .})をタイプします。インクリメンタル検索が非アクティブのときは、コマンド@code{isearch-forward-symbol}が実行されます。すでにインクリメンタル検索がアクティブのとき、@kbd{M-s _}は検索方向と現在の検索文字列を維持した状態で、シンボル検索に切り替えます(もう一度@kbd{M-s _}をタイプすると、シンボル検索を無効にできます)。インクリメンタルなシンボル検索では、検索文字列の先頭がシンボルの先頭にマッチする必要があります。"
+msgstr ""
+"前方へのインクリメンタルなシンボル検索を開始するには、@kbd{M-s _}(ポイントの"
+"近くにシンボルがあるときは@kbd{M-s .})をタイプします。インクリメンタル検索が"
+"非アクティブのときは、コマンド@code{isearch-forward-symbol}が実行されます。す"
+"でにインクリメンタル検索がアクティブのとき、@kbd{M-s _}は検索方向と現在の検索"
+"文字列を維持した状態で、シンボル検索に切り替えます(もう一度@kbd{M-s _}をタイ"
+"プすると、シンボル検索を無効にできます)。インクリメンタルなシンボル検索では、"
+"検索文字列の先頭がシンボルの先頭にマッチする必要があります。"
 
 #. type: Plain text
-#: search.texi.orig:563
+#: original_texis/search.texi:563
 msgid ""
 "To begin a nonincremental symbol search, type @kbd{M-s _ @key{RET}} for a "
 "forward search, or @kbd{M-s _ C-r @key{RET}} or a backward search.  In "
 "nonincremental symbol searches, the beginning and end of the search string "
 "are required to match the beginning and end of a symbol, respectively."
-msgstr "非インクリメンタルなシンボル検索は、前方への検索は@kbd{M-s _ @key{RET}}、後方への検索は@kbd{M-s _ C-r @key{RET}}をタイプします。非インクリメンタル検索では、文字列の先頭と最後が、シンボルの先頭と最後にマッチする必要があります。"
+msgstr ""
+"非インクリメンタルなシンボル検索は、前方への検索は@kbd{M-s _ @key{RET}}、後方"
+"への検索は@kbd{M-s _ C-r @key{RET}}をタイプします。非インクリメンタル検索で"
+"は、文字列の先頭と最後が、シンボルの先頭と最後にマッチする必要があります。"
 
 #. type: section
-#: search.texi.orig:565
+#: original_texis/search.texi:565
 #, no-wrap
 msgid "Regular Expression Search"
 msgstr "Regular Expression Search"
 
 #. type: cindex
-#: search.texi.orig:566
+#: original_texis/search.texi:566
 #, no-wrap
 msgid "regexp search"
 msgstr "regexp search"
 
 #. type: cindex
-#: search.texi.orig:567
+#: original_texis/search.texi:567
 #, no-wrap
 msgid "search for a regular expression"
 msgstr "search for a regular expression"
 
 #. type: Plain text
-#: search.texi.orig:574
+#: original_texis/search.texi:574
 msgid ""
 "A @dfn{regular expression} (or @dfn{regexp} for short) is a pattern that "
 "denotes a class of alternative strings to match.  Emacs provides both "
 "incremental and nonincremental ways to search for a match for a regexp.  The "
 "syntax of regular expressions is explained in the next section."
-msgstr "@dfn{正規表現}(regular expression: @dfn{regexp}と略します)とは、文字列にマッチさせるための代替の文字列クラスを示すパターンです。Emacsはregexpにマッチする検索を、インクリメンタル、非インクリメンタルの両方で提供します。正規表現の構文は、次のセクションで説明します。"
+msgstr ""
+"@dfn{正規表現}(regular expression: @dfn{regexp}と略します)とは、文字列にマッ"
+"チさせるための代替の文字列クラスを示すパターンです。Emacsはregexpにマッチする"
+"検索を、インクリメンタル、非インクリメンタルの両方で提供します。正規表現の構"
+"文は、次のセクションで説明します。"
 
 #. type: kindex
-#: search.texi.orig:576 search.texi.orig:582
+#: original_texis/search.texi:576 original_texis/search.texi:582
 #, no-wrap
 msgid "C-M-s"
 msgstr "C-M-s"
 
 #. type: table
-#: search.texi.orig:578
+#: original_texis/search.texi:578
 msgid "Begin incremental regexp search (@code{isearch-forward-regexp})."
-msgstr "インクリメンタルなregexp検索を開始します(@code{isearch-forward-regexp})。"
+msgstr ""
+"インクリメンタルなregexp検索を開始します(@code{isearch-forward-regexp})。"
 
 #. type: kindex
-#: search.texi.orig:578 search.texi.orig:584
+#: original_texis/search.texi:578 original_texis/search.texi:584
 #, no-wrap
 msgid "C-M-r"
 msgstr "C-M-r"
 
 #. type: table
-#: search.texi.orig:580
+#: original_texis/search.texi:580
 msgid ""
 "Begin reverse incremental regexp search (@code{isearch-backward-regexp})."
-msgstr "逆方向のインクリメンタルなregexp検索を開始します(@code{isearch-backward-regexp})。"
+msgstr ""
+"逆方向のインクリメンタルなregexp検索を開始します(@code{isearch-backward-"
+"regexp})。"
 
 #. type: findex
-#: search.texi.orig:583
+#: original_texis/search.texi:583
 #, no-wrap
 msgid "isearch-forward-regexp"
 msgstr "isearch-forward-regexp"
 
 #. type: findex
-#: search.texi.orig:585
+#: original_texis/search.texi:585
 #, no-wrap
 msgid "isearch-backward-regexp"
 msgstr "isearch-backward-regexp"
 
 #. type: Plain text
-#: search.texi.orig:597
+#: original_texis/search.texi:597
 msgid ""
 "Incremental search for a regexp is done by typing @kbd{C-M-s} (@code{isearch-"
 "forward-regexp}), by invoking @kbd{C-s} with a prefix argument (whose value "
@@ -1430,10 +1723,19 @@ msgid ""
 "for.  To search backward for a regexp, use @kbd{C-M-r} (@code{isearch-"
 "backward-regexp}), @kbd{C-r} with a prefix argument, or @kbd{M-r} within a "
 "backward incremental search."
-msgstr "regexpにたいするインクリメンタル検索は、@kbd{C-M-s} (@code{isearch-forward-regexp}をタイプするか、プレフィクス引数(引数の値は何でもよい)を指定して、@kbd{C-s}を呼び出します。前方へのインクリメンタル検索中は、@kbd{M-r}をタイプします。このコマンドは@kbd{C-s}と同様に、検索文字列をインクリメンタルに読みとりますが、検索文字列に正確に一致するバッファーのテキストを検索するのではなく、検索文字列をregexpとして扱います。検索文字列にテキストを追加する度に、regexpは長くなり、新しいregexpを検索します。後方へのregexp検索には、@kbd{C-M-r}(@code{isearch-backward-regexp})またはプレフィクス引数を指定した@kbd{C-r}を使います。後方へのインクリメンタル検索中は@kbd{M-r}を使います。"
+msgstr ""
+"regexpにたいするインクリメンタル検索は、@kbd{C-M-s} (@code{isearch-forward-"
+"regexp}をタイプするか、プレフィクス引数(引数の値は何でもよい)を指定して、"
+"@kbd{C-s}を呼び出します。前方へのインクリメンタル検索中は、@kbd{M-r}をタイプ"
+"します。このコマンドは@kbd{C-s}と同様に、検索文字列をインクリメンタルに読みと"
+"りますが、検索文字列に正確に一致するバッファーのテキストを検索するのではな"
+"く、検索文字列をregexpとして扱います。検索文字列にテキストを追加する度に、"
+"regexpは長くなり、新しいregexpを検索します。後方へのregexp検索には、@kbd{C-M-"
+"r}(@code{isearch-backward-regexp})またはプレフィクス引数を指定した@kbd{C-r}を"
+"使います。後方へのインクリメンタル検索中は@kbd{M-r}を使います。"
 
 #. type: Plain text
-#: search.texi.orig:605
+#: original_texis/search.texi:605
 msgid ""
 "All of the special key sequences in an ordinary incremental search do "
 "similar things in an incremental regexp search.  For instance, typing @kbd{C-"
@@ -1441,10 +1743,16 @@ msgid ""
 "search regexp used and searches forward for it.  Incremental regexp and non-"
 "regexp searches have independent defaults.  They also have separate search "
 "rings, which you can access with @kbd{M-p} and @kbd{M-n}."
-msgstr "通常のインクリメンタル検索の特別なキーシーケンスは、インクリメンタルなregexp検索でも同じようなことを行います。たとえば検索開始直後に@kbd{C-s}をタイプすると、最後に行ったインクリメンタル検索で使ったregexpで、前方検索を行います。インクリメンタルなregexpと非regexp検索は、独立したデフォルトを持ちます。これらは別のサーチリングも持っており、これには@kbd{M-p}と@kbd{M-n}でアクセスできます。"
+msgstr ""
+"通常のインクリメンタル検索の特別なキーシーケンスは、インクリメンタルなregexp"
+"検索でも同じようなことを行います。たとえば検索開始直後に@kbd{C-s}をタイプする"
+"と、最後に行ったインクリメンタル検索で使ったregexpで、前方検索を行います。イ"
+"ンクリメンタルなregexpと非regexp検索は、独立したデフォルトを持ちます。これら"
+"は別のサーチリングも持っており、これには@kbd{M-p}と@kbd{M-n}でアクセスできま"
+"す。"
 
 #. type: Plain text
-#: search.texi.orig:613
+#: original_texis/search.texi:613
 msgid ""
 "Unlike ordinary incremental search, incremental regexp search do not use lax "
 "space matching by default.  To toggle this feature use @kbd{M-s @key{SPC}} "
@@ -1452,19 +1760,30 @@ msgid ""
 "incremental regexp search will match any sequence of one or more whitespace "
 "characters.  The variable @code{search-whitespace-regexp} specifies the "
 "regexp for the lax space matching.  @xref{Special Isearch}."
-msgstr "通常のインクリメンタル検索とは異なり、インクリメンタルregexp検索は、デフォルトでは緩いスペースマッチング(lax space matching)を使いません。この機能を切り替えるには、@kbd{M-s @key{SPC}} (@code{isearch-toggle-lax-whitespace})を使います。そうするとインクリメンタルregexp検索での@key{SPC}は、1つ以上の空白文字の並びにマッチするようになります。変数@code{search-whitespace-regexp}は、緩いスペースマッチングにたいするregexpを指定します。@ref{Special Isearch}を参照してください。"
+msgstr ""
+"通常のインクリメンタル検索とは異なり、インクリメンタルregexp検索は、デフォル"
+"トでは緩いスペースマッチング(lax space matching)を使いません。この機能を切り"
+"替えるには、@kbd{M-s @key{SPC}} (@code{isearch-toggle-lax-whitespace})を使い"
+"ます。そうするとインクリメンタルregexp検索での@key{SPC}は、1つ以上の空白文字"
+"の並びにマッチするようになります。変数@code{search-whitespace-regexp}は、緩い"
+"スペースマッチングにたいするregexpを指定します。@ref{Special Isearch}を参照し"
+"てください。"
 
 #. type: Plain text
-#: search.texi.orig:619
+#: original_texis/search.texi:619
 msgid ""
 "In some cases, adding characters to the regexp in an incremental regexp "
 "search can make the cursor move back and start again.  For example, if you "
 "have searched for @samp{foo} and you add @samp{\\|bar}, the cursor backs up "
 "in case the first @samp{bar} precedes the first @samp{foo}.  @xref{Regexps}."
-msgstr "インクリメンタルregexp検索では、検索文字列の追加によりカーソルが前に戻され、最初から検索しなおされることがありえます。たとえば検索文字列@samp{foo}に@samp{\\|bar}を追加すると、カーソルは@samp{foo}から、それより前にある最初の@samp{bar}に戻ります。@ref{Regexps}を参照してください。"
+msgstr ""
+"インクリメンタルregexp検索では、検索文字列の追加によりカーソルが前に戻され、"
+"最初から検索しなおされることがありえます。たとえば検索文字列@samp{foo}に"
+"@samp{\\|bar}を追加すると、カーソルは@samp{foo}から、それより前にある最初の"
+"@samp{bar}に戻ります。@ref{Regexps}を参照してください。"
 
 #. type: Plain text
-#: search.texi.orig:626
+#: original_texis/search.texi:626
 msgid ""
 "Forward and backward regexp search are not symmetrical, because regexp "
 "matching in Emacs always operates forward, starting with the beginning of "
@@ -1472,71 +1791,87 @@ msgid ""
 "match at each possible starting position.  Backward regexp search scans "
 "backward, trying a forward match at each possible starting position.  These "
 "search methods are not mirror images."
-msgstr "前方および後方へのregexp検索は、対照的ではありません。なぜならEmacsでのregexpに対するマッチは常に前方へ処理され、regexpの先頭から開始されるからです。したがって前方へのregexp検索は前方にスキャンし、可能性のある開始位置から前方へとマッチを試みます。後方へのregexp検索は後方へスキャンし、可能性のある開始位置から前方へとマッチを試みます。これらの検索手法はミラーイメージではありません。"
+msgstr ""
+"前方および後方へのregexp検索は、対照的ではありません。なぜならEmacsでのregexp"
+"に対するマッチは常に前方へ処理され、regexpの先頭から開始されるからです。した"
+"がって前方へのregexp検索は前方にスキャンし、可能性のある開始位置から前方へと"
+"マッチを試みます。後方へのregexp検索は後方へスキャンし、可能性のある開始位置"
+"から前方へとマッチを試みます。これらの検索手法はミラーイメージではありませ"
+"ん。"
 
 #. type: findex
-#: search.texi.orig:627
+#: original_texis/search.texi:627
 #, no-wrap
 msgid "re-search-forward"
 msgstr "re-search-forward"
 
 #. type: findex
-#: search.texi.orig:628
+#: original_texis/search.texi:628
 #, no-wrap
 msgid "re-search-backward"
 msgstr "re-search-backward"
 
 #. type: Plain text
-#: search.texi.orig:633
+#: original_texis/search.texi:633
 msgid ""
 "Nonincremental search for a regexp is done with the commands @code{re-search-"
 "forward} and @code{re-search-backward}.  You can invoke these with @kbd{M-"
 "x}, or by way of incremental regexp search with @kbd{C-M-s @key{RET}} and "
 "@kbd{C-M-r @key{RET}}."
-msgstr "regexpにたいする非インクリメンタルな検索は、コマンド@code{re-search-forward}および@code{re-search-backward}で行われます。これらのコマンドは@kbd{M-x}から呼び出すか、インクリメンタルregexp検索からの@kbd{C-M-s @key{RET}}および@kbd{C-M-r @key{RET}}で呼び出します。"
+msgstr ""
+"regexpにたいする非インクリメンタルな検索は、コマンド@code{re-search-forward}"
+"および@code{re-search-backward}で行われます。これらのコマンドは@kbd{M-x}から"
+"呼び出すか、インクリメンタルregexp検索からの@kbd{C-M-s @key{RET}}および"
+"@kbd{C-M-r @key{RET}}で呼び出します。"
 
 #. type: Plain text
-#: search.texi.orig:638
+#: original_texis/search.texi:638
 msgid ""
 "If you use the incremental regexp search commands with a prefix argument, "
 "they perform ordinary string search, like @code{isearch-forward} and "
 "@code{isearch-backward}.  @xref{Incremental Search}."
-msgstr "プレフィクス引数を指定したインクリメンタルregexp検索は、@code{isearch-forward}や@code{isearch-backward}のような、通常の文字列を検索します。@ref{Incremental Search}を参照してください。"
+msgstr ""
+"プレフィクス引数を指定したインクリメンタルregexp検索は、@code{isearch-"
+"forward}や@code{isearch-backward}のような、通常の文字列を検索します。"
+"@ref{Incremental Search}を参照してください。"
 
 #. type: section
-#: search.texi.orig:640
+#: original_texis/search.texi:640
 #, no-wrap
 msgid "Syntax of Regular Expressions"
 msgstr "Syntax of Regular Expressions"
 
 #. type: cindex
-#: search.texi.orig:641
+#: original_texis/search.texi:641
 #, no-wrap
 msgid "syntax of regexps"
 msgstr "syntax of regexps"
 
 #. type: cindex
-#: search.texi.orig:642
+#: original_texis/search.texi:642
 #, no-wrap
 msgid "regular expression"
 msgstr "regular expression"
 
 #. type: cindex
-#: search.texi.orig:643
+#: original_texis/search.texi:643
 #, no-wrap
 msgid "regexp"
 msgstr "regexp"
 
 #. type: Plain text
-#: search.texi.orig:649
+#: original_texis/search.texi:649
 msgid ""
 "This manual describes regular expression features that users typically use.  "
 "@xref{Regular Expressions,,, elisp, The Emacs Lisp Reference Manual}, for "
 "additional features used mainly in Lisp programs."
-msgstr "このマニュアルでは、ユーザーが通常使う正規表現の機能を説明します。主にLispプログラムで使用される追加の機能については、@ref{Regular Expressions,,, elisp, The Emacs Lisp Reference Manual}を参照してください。"
+msgstr ""
+"このマニュアルでは、ユーザーが通常使う正規表現の機能を説明します。主にLispプ"
+"ログラムで使用される追加の機能については、@ref{Regular Expressions,,, elisp, "
+"The Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: Plain text
-#: search.texi.orig:660
+#: original_texis/search.texi:660
 msgid ""
 "Regular expressions have a syntax in which a few characters are special "
 "constructs and the rest are @dfn{ordinary}.  An ordinary character matches "
@@ -1547,10 +1882,17 @@ msgid ""
 "expression is ordinary, unless a @samp{\\} precedes it.  (When you use "
 "regular expressions in a Lisp program, each @samp{\\} must be doubled, see "
 "the example near the end of this section.)"
-msgstr "正規表現は、いくつかの特殊文字と、それ以外の@dfn{普通}の文字からなる構文を持ちます。通常の文字はそれと同じ文字にマッチし、それ以外の文字にはマッチしません。特殊文字は、@samp{$^.*+?[\\}です。文字@samp{]}は、文字候補を終了させる場合は特殊文字です(以下参照)。文字@samp{-}は、文字候補の中では特殊文字です。正規表現の中に現れるその他の文字は、前に@samp{\\}がついてない限り普通の文字です(Lispプログラム内で正規表現を使う場合、@samp{\\}は2つ記述しなければなりません。このセクションの最後にある例を参照してください)。"
+msgstr ""
+"正規表現は、いくつかの特殊文字と、それ以外の@dfn{普通}の文字からなる構文を持"
+"ちます。通常の文字はそれと同じ文字にマッチし、それ以外の文字にはマッチしませ"
+"ん。特殊文字は、@samp{$^.*+?[\\}です。文字@samp{]}は、文字候補を終了させる場"
+"合は特殊文字です(以下参照)。文字@samp{-}は、文字候補の中では特殊文字です。正"
+"規表現の中に現れるその他の文字は、前に@samp{\\}がついてない限り普通の文字です"
+"(Lispプログラム内で正規表現を使う場合、@samp{\\}は2つ記述しなければなりませ"
+"ん。このセクションの最後にある例を参照してください)。"
 
 #. type: Plain text
-#: search.texi.orig:668
+#: original_texis/search.texi:668
 msgid ""
 "For example, @samp{f} is not a special character, so it is ordinary, and "
 "therefore @samp{f} is a regular expression that matches the string @samp{f} "
@@ -1559,10 +1901,15 @@ msgid ""
 "(When case distinctions are being ignored, these regexps also match @samp{F} "
 "and @samp{O}, but we consider this a generalization of ``the same string'', "
 "rather than an exception.)"
-msgstr "たとえば@samp{f}は特殊文字ではなく普通の文字なので、正規表現中の@samp{f}は文字列@samp{f}にマッチし、他の文字列にはマッチしません(文字列@samp{ff}にはマッチ@emph{しません})。同様に正規表現中の@samp{o}は、@samp{o}だけにマッチします(大文字小文字を区別しない場合、これらのregexpは@samp{F}や@samp{O}にもマッチしますが、これを例外としてではなく、``同じ文字列''を一般化したものと考えます)。"
+msgstr ""
+"たとえば@samp{f}は特殊文字ではなく普通の文字なので、正規表現中の@samp{f}は文"
+"字列@samp{f}にマッチし、他の文字列にはマッチしません(文字列@samp{ff}にはマッ"
+"チ@emph{しません})。同様に正規表現中の@samp{o}は、@samp{o}だけにマッチします"
+"(大文字小文字を区別しない場合、これらのregexpは@samp{F}や@samp{O}にもマッチし"
+"ますが、これを例外としてではなく、``同じ文字列''を一般化したものと考えます)。"
 
 #. type: Plain text
-#: search.texi.orig:677
+#: original_texis/search.texi:677
 msgid ""
 "Any two regular expressions @var{a} and @var{b} can be concatenated.  The "
 "result is a regular expression which matches a string if @var{a} matches "
@@ -1571,47 +1918,60 @@ msgid ""
 "@samp{o} gives the regular expression @samp{fo}, which matches only the "
 "string @samp{fo}.  Still trivial.  To do something nontrivial, you need to "
 "use one of the special characters.  Here is a list of them."
-msgstr "2つの正規表現@var{a}と@var{b}を結合できます。結合した結果は、@var{a}が先頭の適当な部分に一致して、@var{b}が残りの部分に一致する正規表現となります。たとえば@samp{f}と@samp{o}という正規表現を結合すると、正規表現@samp{fo}となり、これは文字列@samp{fo}だけにマッチします。ここまでは普通です。普通でないことを行うには、特殊文字を使う必要があります。以下にリストを示します。"
+msgstr ""
+"2つの正規表現@var{a}と@var{b}を結合できます。結合した結果は、@var{a}が先頭の"
+"適当な部分に一致して、@var{b}が残りの部分に一致する正規表現となります。たとえ"
+"ば@samp{f}と@samp{o}という正規表現を結合すると、正規表現@samp{fo}となり、これ"
+"は文字列@samp{fo}だけにマッチします。ここまでは普通です。普通でないことを行う"
+"には、特殊文字を使う必要があります。以下にリストを示します。"
 
 #. type: item
-#: search.texi.orig:679
+#: original_texis/search.texi:679
 #, no-wrap
 msgid "@kbd{.}@: @r{(Period)}"
 msgstr "@kbd{.}@: @r{(ピリオド)}"
 
 #. type: table
-#: search.texi.orig:684
+#: original_texis/search.texi:684
 msgid ""
 "is a special character that matches any single character except a newline.  "
 "For example, the regular expressions @samp{a.b} matches any three-character "
 "string that begins with @samp{a} and ends with @samp{b}."
-msgstr "これは改行文字以外の任意の1文字にマッチする特殊文字です。たとえば正規表現@samp{a.b}は、最初が@samp{a}で最後が@samp{b}の3文字の文字列にマッチします。"
+msgstr ""
+"これは改行文字以外の任意の1文字にマッチする特殊文字です。たとえば正規表現"
+"@samp{a.b}は、最初が@samp{a}で最後が@samp{b}の3文字の文字列にマッチします。"
 
 #. type: kbd{#1}
-#: search.texi.orig:685
+#: original_texis/search.texi:685
 #, no-wrap
 msgid "*"
 msgstr "*"
 
 #. type: table
-#: search.texi.orig:690
+#: original_texis/search.texi:690
 msgid ""
 "is not a construct by itself; it is a postfix operator that means to match "
 "the preceding regular expression repetitively any number of times, as many "
 "times as possible.  Thus, @samp{o*} matches any number of @samp{o}s, "
 "including no @samp{o}s."
-msgstr "単独では使用されません。これは接尾演算子で、前の正規表現の任意の回数、可能な限り多くの回数を含めた繰り返しを意味します。したがって@samp{o*}は任意の個数の@samp{o}にマッチし、@samp{o}がない場合(0個の場合)も含めてマッチします。"
+msgstr ""
+"単独では使用されません。これは接尾演算子で、前の正規表現の任意の回数、可能な"
+"限り多くの回数を含めた繰り返しを意味します。したがって@samp{o*}は任意の個数の"
+"@samp{o}にマッチし、@samp{o}がない場合(0個の場合)も含めてマッチします。"
 
 #. type: table
-#: search.texi.orig:694
+#: original_texis/search.texi:694
 msgid ""
 "@samp{*} always applies to the @emph{smallest} possible preceding "
 "expression.  Thus, @samp{fo*} has a repeating @samp{o}, not a repeating "
 "@samp{fo}.  It matches @samp{f}, @samp{fo}, @samp{foo}, and so on."
-msgstr "@samp{*}は常に可能な限り@emph{小さな}、前置表現に適用されます。したがって@samp{fo*}は@samp{fo}の繰り返しではなく@samp{o}の繰り返しです。この正規表現は@samp{f}、@samp{fo}、@samp{foo}、...にマッチします。"
+msgstr ""
+"@samp{*}は常に可能な限り@emph{小さな}、前置表現に適用されます。したがって"
+"@samp{fo*}は@samp{fo}の繰り返しではなく@samp{o}の繰り返しです。この正規表現は"
+"@samp{f}、@samp{fo}、@samp{foo}、...にマッチします。"
 
 #. type: table
-#: search.texi.orig:705
+#: original_texis/search.texi:705
 msgid ""
 "The matcher processes a @samp{*} construct by matching, immediately, as many "
 "repetitions as can be found.  Then it continues with the rest of the "
@@ -1623,99 +1983,131 @@ msgid ""
 "match, so this try fails.  The next alternative is for @samp{a*} to match "
 "only two @samp{a}s.  With this choice, the rest of the regexp matches "
 "successfully."
-msgstr "マッチングにより構成される@samp{*}は、見つけられるだけの反復回数へと、直ちに処理されます。その後でパターンの残りの部分の処理を続けます。これが失敗すると、バックトラッキングが発生します。@samp{*}の反復回数をいくつか捨てて、パターンの残りの部分がマッチするように構成を変更します。たとえば文字列@samp{caaar}にたいして@samp{ca*ar}をマッチさせる場合、まず最初に@samp{a*}を、3つすべての@samp{a}にマッチさせます。しかしパターンの残りの部分は@samp{ar}ですが、マッチさせるために残っているのは@samp{r}だけなので、このマッチは失敗します。かわりに@samp{a*}を2つの@samp{a*}だけにマッチさせます。この選択により、regexpの残りの部分のマッチが成功します。"
+msgstr ""
+"マッチングにより構成される@samp{*}は、見つけられるだけの反復回数へと、直ちに"
+"処理されます。その後でパターンの残りの部分の処理を続けます。これが失敗する"
+"と、バックトラッキングが発生します。@samp{*}の反復回数をいくつか捨てて、パ"
+"ターンの残りの部分がマッチするように構成を変更します。たとえば文字列"
+"@samp{caaar}にたいして@samp{ca*ar}をマッチさせる場合、まず最初に@samp{a*}を、"
+"3つすべての@samp{a}にマッチさせます。しかしパターンの残りの部分は@samp{ar}で"
+"すが、マッチさせるために残っているのは@samp{r}だけなので、このマッチは失敗し"
+"ます。かわりに@samp{a*}を2つの@samp{a*}だけにマッチさせます。この選択により、"
+"regexpの残りの部分のマッチが成功します。"
 
 #. type: kbd{#1}
-#: search.texi.orig:706
+#: original_texis/search.texi:706
 #, no-wrap
 msgid "+"
 msgstr "+"
 
 #. type: table
-#: search.texi.orig:711
+#: original_texis/search.texi:711
 msgid ""
 "is a postfix operator, similar to @samp{*} except that it must match the "
 "preceding expression at least once.  Thus, @samp{ca+r} matches the strings "
 "@samp{car} and @samp{caaaar} but not the string @samp{cr}, whereas "
 "@samp{ca*r} matches all three strings."
-msgstr "これは@samp{*}と同様に接尾演算子ですが、前置表現に最低1回マッチしなければならない点が異なります。したがって@samp{ca+r}は@samp{car}、@samp{caaaar}にマッチしますが、@samp{cr}にはマッチしません。一方@samp{ca*r}は、これら3つすべての文字列にマッチします。"
+msgstr ""
+"これは@samp{*}と同様に接尾演算子ですが、前置表現に最低1回マッチしなければなら"
+"ない点が異なります。したがって@samp{ca+r}は@samp{car}、@samp{caaaar}にマッチ"
+"しますが、@samp{cr}にはマッチしません。一方@samp{ca*r}は、これら3つすべての文"
+"字列にマッチします。"
 
 #. type: kbd{#1}
-#: search.texi.orig:712
+#: original_texis/search.texi:712
 #, no-wrap
 msgid "?"
 msgstr "?"
 
 #. type: table
-#: search.texi.orig:716
+#: original_texis/search.texi:716
 msgid ""
 "is a postfix operator, similar to @samp{*} except that it can match the "
 "preceding expression either once or not at all.  Thus, @samp{ca?r} matches "
 "@samp{car} or @samp{cr}, and nothing else."
-msgstr "これは@samp{*}と同様に接尾演算子ですが、前置表現が1回出現するか、出現しないかいずれかという点が異なります。したがって@samp{ca?r}は、@samp{car}または@samp{cr}のいずれかになります。"
+msgstr ""
+"これは@samp{*}と同様に接尾演算子ですが、前置表現が1回出現するか、出現しないか"
+"いずれかという点が異なります。したがって@samp{ca?r}は、@samp{car}または"
+"@samp{cr}のいずれかになります。"
 
 #. type: item
-#: search.texi.orig:717
+#: original_texis/search.texi:717
 #, no-wrap
 msgid "@kbd{*?}, @kbd{+?}, @kbd{??}"
 msgstr "@kbd{*?}, @kbd{+?}, @kbd{??}"
 
 #. type: cindex
-#: search.texi.orig:718
+#: original_texis/search.texi:718
 #, no-wrap
 msgid "non-greedy regexp matching"
 msgstr "non-greedy regexp matching"
 
 #. type: table
-#: search.texi.orig:723
+#: original_texis/search.texi:723
 msgid ""
 "are non-@dfn{greedy} variants of the operators above.  The normal operators "
 "@samp{*}, @samp{+}, @samp{?} match as much as they can, as long as the "
 "overall regexp can still match.  With a following @samp{?}, they will match "
 "as little as possible."
-msgstr "これらは上述した演算子の、非@dfn{貪欲(greedy)}なタイプの演算子です。通常の演算子@samp{*}、@samp{+}、@samp{?}は、regexpがマッチする、できる限り長いマッチを行います。しかしこれらの演算子に@samp{?}を後置すると、できる限り短いマッチを行います。"
+msgstr ""
+"これらは上述した演算子の、非@dfn{貪欲(greedy)}なタイプの演算子です。通常の演"
+"算子@samp{*}、@samp{+}、@samp{?}は、regexpがマッチする、できる限り長いマッチ"
+"を行います。しかしこれらの演算子に@samp{?}を後置すると、できる限り短いマッチ"
+"を行います。"
 
 #. type: table
-#: search.texi.orig:729
+#: original_texis/search.texi:729
 msgid ""
 "Thus, both @samp{ab*} and @samp{ab*?} can match the string @samp{a} and the "
 "string @samp{abbbb}; but if you try to match them both against the text "
 "@samp{abbb}, @samp{ab*} will match it all (the longest valid match), while "
 "@samp{ab*?} will match just @samp{a} (the shortest valid match)."
-msgstr "したがって@samp{ab*}と@samp{ab*?}は、両方とも文字列@samp{a}と文字列@samp{abbbb}にマッチしますが、文字列@samp{abbb}にマッチさせたとき、@samp{ab*}は文字列全体(有効な最長マッチ)にマッチしますが、@samp{ab*?}は@samp{a}(有効な最短マッチ)だけにマッチします。"
+msgstr ""
+"したがって@samp{ab*}と@samp{ab*?}は、両方とも文字列@samp{a}と文字列"
+"@samp{abbbb}にマッチしますが、文字列@samp{abbb}にマッチさせたとき、@samp{ab*}"
+"は文字列全体(有効な最長マッチ)にマッチしますが、@samp{ab*?}は@samp{a}(有効な"
+"最短マッチ)だけにマッチします。"
 
 #. type: table
-#: search.texi.orig:736
+#: original_texis/search.texi:736
 msgid ""
 "Non-greedy operators match the shortest possible string starting at a given "
 "starting point; in a forward search, though, the earliest possible starting "
 "point for match is always the one chosen.  Thus, if you search for @samp{a.*?"
 "$} against the text @samp{abbab} followed by a newline, it matches the whole "
 "string.  Since it @emph{can} match starting at the first @samp{a}, it does."
-msgstr "非貪欲な演算子は、与えられた開始位置から開始される、できるだけ短い文字列にマッチします。前方検索では、利用できる一番最初の開始位置は、常にカーソルの位置となります。したがって末尾が改行のテキスト@samp{abbab}にたいして@samp{a.*?$}を検索すると、文字列全体にマッチします。これはマッチが最初の@samp{a}から開始されので、マッチさせることが@emph{できる}のです。"
+msgstr ""
+"非貪欲な演算子は、与えられた開始位置から開始される、できるだけ短い文字列に"
+"マッチします。前方検索では、利用できる一番最初の開始位置は、常にカーソルの位"
+"置となります。したがって末尾が改行のテキスト@samp{abbab}にたいして@samp{a.*?"
+"$}を検索すると、文字列全体にマッチします。これはマッチが最初の@samp{a}から開"
+"始されので、マッチさせることが@emph{できる}のです。"
 
 #. type: kbd{#1}
-#: search.texi.orig:737
+#: original_texis/search.texi:737
 #, no-wrap
 msgid "\\@{@var{n}\\@}"
 msgstr "\\@{@var{n}\\@}"
 
 #. type: table
-#: search.texi.orig:742
+#: original_texis/search.texi:742
 msgid ""
 "is a postfix operator specifying @var{n} repetitions---that is, the "
 "preceding regular expression must match exactly @var{n} times in a row.  For "
 "example, @samp{x\\@{4\\@}} matches the string @samp{xxxx} and nothing else."
-msgstr "これは@var{n}回の繰り返しを指定する接尾演算子です。つまり前置される正規表現に、正確に@var{n}回連続でマッチしなければなりません。たとえば@samp{x\\@{4\\@}}は、文字列@samp{xxxx}だけにマッチします。"
+msgstr ""
+"これは@var{n}回の繰り返しを指定する接尾演算子です。つまり前置される正規表現"
+"に、正確に@var{n}回連続でマッチしなければなりません。たとえば@samp{x"
+"\\@{4\\@}}は、文字列@samp{xxxx}だけにマッチします。"
 
 #. type: kbd{#1}
-#: search.texi.orig:743
+#: original_texis/search.texi:743
 #, no-wrap
 msgid "\\@{@var{n},@var{m}\\@}"
 msgstr "\\@{@var{n},@var{m}\\@}"
 
 #. type: table
-#: search.texi.orig:751
+#: original_texis/search.texi:751
 msgid ""
 "is a postfix operator specifying between @var{n} and @var{m} repetitions---"
 "that is, the preceding regular expression must match at least @var{n} times, "
@@ -1724,180 +2116,234 @@ msgid ""
 "@var{n} times.@* @samp{\\@{0,1\\@}} is equivalent to @samp{?}. @* "
 "@samp{\\@{0,\\@}} is equivalent to @samp{*}. @* @samp{\\@{1,\\@}} is "
 "equivalent to @samp{+}."
-msgstr "これは@var{n}回から@var{m}回の繰り返しを指定する接尾演算子です。つまり前置される正規表現が、最低@var{n}回、最大@var{m}回マッチしなければなりません。@var{m}が省略されたときは、マッチ回数の上限はありませんが、前置される正規表現は少なくとも@var{n}回マッチしなければなりません。@* @samp{\\@{0,1\\@}}は、@samp{?}と同じです。@* @samp{\\@{0,\\@}}は、@samp{*}と同じです.@* @samp{\\@{1,\\@}}は、@samp{+}と同じです。"
+msgstr ""
+"これは@var{n}回から@var{m}回の繰り返しを指定する接尾演算子です。つまり前置さ"
+"れる正規表現が、最低@var{n}回、最大@var{m}回マッチしなければなりません。"
+"@var{m}が省略されたときは、マッチ回数の上限はありませんが、前置される正規表現"
+"は少なくとも@var{n}回マッチしなければなりません。@* @samp{\\@{0,1\\@}}は、"
+"@samp{?}と同じです。@* @samp{\\@{0,\\@}}は、@samp{*}と同じです.@* "
+"@samp{\\@{1,\\@}}は、@samp{+}と同じです。"
 
 #. type: kbd{#1}
-#: search.texi.orig:752
+#: original_texis/search.texi:752
 #, no-wrap
 msgid "[ @dots{} ]"
 msgstr "[ @dots{} ]"
 
 #. type: table
-#: search.texi.orig:755
+#: original_texis/search.texi:755
 msgid ""
 "is a @dfn{character set}, beginning with @samp{[} and terminated by @samp{]}."
-msgstr "これは@samp{[}で始まり@samp{]}で終わる、@dfn{文字集合(character set)}です。"
+msgstr ""
+"これは@samp{[}で始まり@samp{]}で終わる、@dfn{文字集合(character set)}です。"
 
 #. type: table
-#: search.texi.orig:762
+#: original_texis/search.texi:762
 msgid ""
 "In the simplest case, the characters between the two brackets are what this "
 "set can match.  Thus, @samp{[ad]} matches either one @samp{a} or one "
 "@samp{d}, and @samp{[ad]*} matches any string composed of just @samp{a}s and "
 "@samp{d}s (including the empty string).  It follows that @samp{c[ad]*r} "
 "matches @samp{cr}, @samp{car}, @samp{cdr}, @samp{caddaar}, etc."
-msgstr "もっとも簡単なケースでは、2つのカッコの間に指定された文字が、マッチできる文字集合となります。したがって@samp{[ad]}は1つの@samp{a}か1つの@samp{d}にマッチし、@samp{[ad]*}は@samp{a}と@samp{d}からなる任意の文字列にマッチします(空の文字列を含む)。結果として@samp{c[ad]*r}は、@samp{cr}、@samp{car}、@samp{cdr}、@samp{caddaar}、...にマッチします。"
+msgstr ""
+"もっとも簡単なケースでは、2つのカッコの間に指定された文字が、マッチできる文字"
+"集合となります。したがって@samp{[ad]}は1つの@samp{a}か1つの@samp{d}にマッチ"
+"し、@samp{[ad]*}は@samp{a}と@samp{d}からなる任意の文字列にマッチします(空の文"
+"字列を含む)。結果として@samp{c[ad]*r}は、@samp{cr}、@samp{car}、@samp{cdr}、"
+"@samp{caddaar}、...にマッチします。"
 
 #. type: table
-#: search.texi.orig:769
+#: original_texis/search.texi:769
 msgid ""
 "You can also include character ranges in a character set, by writing the "
 "starting and ending characters with a @samp{-} between them.  Thus, @samp{[a-"
 "z]} matches any lower-case @acronym{ASCII} letter.  Ranges may be intermixed "
 "freely with individual characters, as in @samp{[a-z$%.]}, which matches any "
 "lower-case @acronym{ASCII} letter or @samp{$}, @samp{%} or period."
-msgstr "文字集合には、開始文字と終了文字の間に@samp{-}を記述することにより、文字の範囲を含めることもできます。したがって@samp{[a-z]}は、@acronym{ASCII}小文字となります。文字の範囲と特定の文字の指定を混ぜることもできます。@samp{[a-z$%.]}は任意の@acronym{ASCII}小文字と@samp{$}、@samp{%}、@samp{.}にマッチします。"
+msgstr ""
+"文字集合には、開始文字と終了文字の間に@samp{-}を記述することにより、文字の範"
+"囲を含めることもできます。したがって@samp{[a-z]}は、@acronym{ASCII}小文字とな"
+"ります。文字の範囲と特定の文字の指定を混ぜることもできます。@samp{[a-z$%.]}は"
+"任意の@acronym{ASCII}小文字と@samp{$}、@samp{%}、@samp{.}にマッチします。"
 
 #. type: table
-#: search.texi.orig:776
+#: original_texis/search.texi:776
 msgid ""
 "You can also include certain special @dfn{character classes} in a character "
 "set.  A @samp{[:} and balancing @samp{:]} enclose a character class inside a "
 "character alternative.  For instance, @samp{[[:alnum:]]} matches any letter "
 "or digit.  @xref{Char Classes,,, elisp, The Emacs Lisp Reference Manual}, "
 "for a list of character classes."
-msgstr "いくつかの特別な@dfn{文字クラス(character classes)}を、文字集合に含めることもできます。文字の候補を含む文字クラスを@samp{[:}と@samp{:]}で囲んで指定します。たとえば@samp{[[:alnum:]]}は、任意のアルファベットと数字にマッチします。文字クラスのリストは、@ref{Char Classes,,, elisp, The Emacs Lisp Reference Manual}を参照してください。"
+msgstr ""
+"いくつかの特別な@dfn{文字クラス(character classes)}を、文字集合に含めることも"
+"できます。文字の候補を含む文字クラスを@samp{[:}と@samp{:]}で囲んで指定しま"
+"す。たとえば@samp{[[:alnum:]]}は、任意のアルファベットと数字にマッチします。"
+"文字クラスのリストは、@ref{Char Classes,,, elisp, The Emacs Lisp Reference "
+"Manual}を参照してください。"
 
 #. type: table
-#: search.texi.orig:782
+#: original_texis/search.texi:782
 msgid ""
 "To include a @samp{]} in a character set, you must make it the first "
 "character.  For example, @samp{[]a]} matches @samp{]} or @samp{a}.  To "
 "include a @samp{-}, write @samp{-} as the first or last character of the "
 "set, or put it after a range.  Thus, @samp{[]-]} matches both @samp{]} and "
 "@samp{-}."
-msgstr "文字集合に@samp{]}を含めるには、それを最初に記述しなければなりません。たとえば@samp{[]a]}は、@samp{]}または@samp{a}にマッチします。文字集合に@samp{-}を含めるには、@samp{-}を、文字集合の最初または最後に記述するか、文字範囲の外に記述します。したがって@samp{[]-]}は、@samp{]}と@samp{-}の両方にマッチします。"
+msgstr ""
+"文字集合に@samp{]}を含めるには、それを最初に記述しなければなりません。たとえ"
+"ば@samp{[]a]}は、@samp{]}または@samp{a}にマッチします。文字集合に@samp{-}を含"
+"めるには、@samp{-}を、文字集合の最初または最後に記述するか、文字範囲の外に記"
+"述します。したがって@samp{[]-]}は、@samp{]}と@samp{-}の両方にマッチします。"
 
 #. type: table
-#: search.texi.orig:785
+#: original_texis/search.texi:785
 msgid ""
 "To include @samp{^} in a set, put it anywhere but at the beginning of the "
 "set.  (At the beginning, it complements the set---see below.)"
-msgstr "文字集合に@samp{^}を含めるには、集合の最初以外に記述します(最初に記述した場合、補集合を指定したことになります。以下を参照してください)。"
+msgstr ""
+"文字集合に@samp{^}を含めるには、集合の最初以外に記述します(最初に記述した場"
+"合、補集合を指定したことになります。以下を参照してください)。"
 
 #. type: table
-#: search.texi.orig:790
+#: original_texis/search.texi:790
 msgid ""
 "When you use a range in case-insensitive search, you should write both ends "
 "of the range in upper case, or both in lower case, or both should be non-"
 "letters.  The behavior of a mixed-case range such as @samp{A-z} is somewhat "
 "ill-defined, and it may change in future Emacs versions."
-msgstr "大文字小文字を区別しない検索で文字の範囲を使う場合、範囲の先頭と最後を、大文字だけ、または小文字だけで記述するか、先頭と最後をアルファベット以外で記述するべきです。@samp{A-z}のような大文字小文字を混成した範囲指定は不正な定義で、Emacsの将来のバージョンで変更されるかもしれません。"
+msgstr ""
+"大文字小文字を区別しない検索で文字の範囲を使う場合、範囲の先頭と最後を、大文"
+"字だけ、または小文字だけで記述するか、先頭と最後をアルファベット以外で記述す"
+"るべきです。@samp{A-z}のような大文字小文字を混成した範囲指定は不正な定義で、"
+"Emacsの将来のバージョンで変更されるかもしれません。"
 
 #. type: kbd{#1}
-#: search.texi.orig:791
+#: original_texis/search.texi:791
 #, no-wrap
 msgid "[^ @dots{} ]"
 msgstr "[^ @dots{} ]"
 
 #. type: table
-#: search.texi.orig:795
+#: original_texis/search.texi:795
 msgid ""
 "@samp{[^} begins a @dfn{complemented character set}, which matches any "
 "character except the ones specified.  Thus, @samp{[^a-z0-9A-Z]} matches all "
 "characters @emph{except} @acronym{ASCII} letters and digits."
-msgstr "@samp{[^}は@dfn{文字の補集合complemented character set}を開始します。つまり指定された文字以外がマッチします。したがって@samp{[^a-z0-9A-Z]}は、@acronym{ASCII}文字と数字@emph{以外}にマッチします。"
+msgstr ""
+"@samp{[^}は@dfn{文字の補集合complemented character set}を開始します。つまり指"
+"定された文字以外がマッチします。したがって@samp{[^a-z0-9A-Z]}は、"
+"@acronym{ASCII}文字と数字@emph{以外}にマッチします。"
 
 #. type: table
-#: search.texi.orig:799
+#: original_texis/search.texi:799
 msgid ""
 "@samp{^} is not special in a character set unless it is the first "
 "character.  The character following the @samp{^} is treated as if it were "
 "first (in other words, @samp{-} and @samp{]} are not special there)."
-msgstr "@samp{^}は文字集合で最初以外で使用された場合、特別な意味をもちません。@samp{^}に続く文字は、先頭にあるものとして扱われます(いいかえると@samp{-}と@samp{]}は、ここでは特別な意味をもちません)。"
+msgstr ""
+"@samp{^}は文字集合で最初以外で使用された場合、特別な意味をもちません。"
+"@samp{^}に続く文字は、先頭にあるものとして扱われます(いいかえると@samp{-}と"
+"@samp{]}は、ここでは特別な意味をもちません)。"
 
 #. type: table
-#: search.texi.orig:803
+#: original_texis/search.texi:803
 msgid ""
 "A complemented character set can match a newline, unless newline is "
 "mentioned as one of the characters not to match.  This is in contrast to the "
 "handling of regexps in programs such as @code{grep}."
-msgstr "もしマッチしない文字として改行が記述されていなければ、文字の補集合を改行にマッチさせることができます。これは@code{grep}のようなプログラムにおける、regexpにたいする処理とは対照的です。"
+msgstr ""
+"もしマッチしない文字として改行が記述されていなければ、文字の補集合を改行に"
+"マッチさせることができます。これは@code{grep}のようなプログラムにおける、"
+"regexpにたいする処理とは対照的です。"
 
 #. type: item
-#: search.texi.orig:804 search.texi.orig:1354
+#: original_texis/search.texi:804 original_texis/search.texi:1354
 #, no-wrap
 msgid "^"
 msgstr "^"
 
 #. type: table
-#: search.texi.orig:809
+#: original_texis/search.texi:809
 msgid ""
 "is a special character that matches the empty string, but only at the "
 "beginning of a line in the text being matched.  Otherwise it fails to match "
 "anything.  Thus, @samp{^foo} matches a @samp{foo} that occurs at the "
 "beginning of a line."
-msgstr "これは空文字列、ただしテキストの行頭だけにマッチする特殊文字です。それ以外ではマッチに失敗します。したがって@samp{^foo}は行の先頭にある@samp{foo}にマッチします。"
+msgstr ""
+"これは空文字列、ただしテキストの行頭だけにマッチする特殊文字です。それ以外で"
+"はマッチに失敗します。したがって@samp{^foo}は行の先頭にある@samp{foo}にマッチ"
+"します。"
 
 #. type: table
-#: search.texi.orig:813
+#: original_texis/search.texi:813
 msgid ""
 "For historical compatibility reasons, @samp{^} can be used with this meaning "
 "only at the beginning of the regular expression, or after @samp{\\(} or "
 "@samp{\\|}."
-msgstr "歴史的な互換性により、この意味での@samp{^}の使用は、正規表現の先頭か、@samp{\\(}または@samp{\\|}の後に記述された場合に限ります。"
+msgstr ""
+"歴史的な互換性により、この意味での@samp{^}の使用は、正規表現の先頭か、"
+"@samp{\\(}または@samp{\\|}の後に記述された場合に限ります。"
 
 #. type: kbd{#1}
-#: search.texi.orig:814
+#: original_texis/search.texi:814
 #, no-wrap
 msgid "$"
 msgstr "$"
 
 #. type: table
-#: search.texi.orig:817
+#: original_texis/search.texi:817
 msgid ""
 "is similar to @samp{^} but matches only at the end of a line.  Thus, @samp{x+"
 "$} matches a string of one @samp{x} or more at the end of a line."
-msgstr "@samp{^}と似ていますが、行末だけにマッチします。したがって@samp{x+$}は、行末にある1つ以上の@samp{x}にマッチします。"
+msgstr ""
+"@samp{^}と似ていますが、行末だけにマッチします。したがって@samp{x+$}は、行末"
+"にある1つ以上の@samp{x}にマッチします。"
 
 #. type: table
-#: search.texi.orig:821
+#: original_texis/search.texi:821
 msgid ""
 "For historical compatibility reasons, @samp{$} can be used with this meaning "
 "only at the end of the regular expression, or before @samp{\\)} or "
 "@samp{\\|}."
-msgstr "歴史的な互換性により、この意味での@samp{$}の使用は、正規表現の最後か、@samp{\\)}または@samp{\\|}の後に記述された場合に限ります。"
+msgstr ""
+"歴史的な互換性により、この意味での@samp{$}の使用は、正規表現の最後か、"
+"@samp{\\)}または@samp{\\|}の後に記述された場合に限ります。"
 
 #. type: kbd{#1}
-#: search.texi.orig:822
+#: original_texis/search.texi:822
 #, no-wrap
 msgid "\\"
 msgstr "\\"
 
 #. type: table
-#: search.texi.orig:825
+#: original_texis/search.texi:825
 msgid ""
 "has two functions: it quotes the special characters (including @samp{\\}), "
 "and it introduces additional special constructs."
-msgstr "これには2つの機能があります。まず特殊文字(@samp{\\}を含む)をクォートすることと、追加の特別な構成を導入することです。"
+msgstr ""
+"これには2つの機能があります。まず特殊文字(@samp{\\}を含む)をクォートすること"
+"と、追加の特別な構成を導入することです。"
 
 #. type: table
-#: search.texi.orig:829
+#: original_texis/search.texi:829
 msgid ""
 "Because @samp{\\} quotes special characters, @samp{\\$} is a regular "
 "expression that matches only @samp{$}, and @samp{\\[} is a regular "
 "expression that matches only @samp{[}, and so on."
-msgstr "@samp{\\}は特殊文字をクォートするので、正規表現中の@samp{\\$}は@samp{$}だけにマッチし、@samp{\\[}は@samp{[}だけにマッチします。"
+msgstr ""
+"@samp{\\}は特殊文字をクォートするので、正規表現中の@samp{\\$}は@samp{$}だけに"
+"マッチし、@samp{\\[}は@samp{[}だけにマッチします。"
 
 #. type: table
-#: search.texi.orig:832
+#: original_texis/search.texi:832
 msgid ""
 "See the following section for the special constructs that begin with "
 "@samp{\\}."
-msgstr "@samp{\\}で始まる特別な構成については、以下のセクションを参照してください。"
+msgstr ""
+"@samp{\\}で始まる特別な構成については、以下のセクションを参照してください。"
 
 #. type: Plain text
-#: search.texi.orig:840
+#: original_texis/search.texi:840
 msgid ""
 "Note: for historical compatibility, special characters are treated as "
 "ordinary ones if they are in contexts where their special meanings make no "
@@ -1905,10 +2351,15 @@ msgid ""
 "no preceding expression on which the @samp{*} can act.  It is poor practice "
 "to depend on this behavior; it is better to quote the special character "
 "anyway, regardless of where it appears."
-msgstr "注意: 歴史的な互換性から、特殊文字はそれが特殊な意味をもたないようなコンテキストで使用された場合は、通常の文字として扱われます。たとえば@samp{*foo}は、@samp{*}が特殊文字として動作するための前置された表現がないので、普通の文字として扱われます。このような振る舞いに依存することは、よい習慣ではありません。特殊文字を記述する場合、それがどこに記述されようとクォートするべきです。"
+msgstr ""
+"注意: 歴史的な互換性から、特殊文字はそれが特殊な意味をもたないようなコンテキ"
+"ストで使用された場合は、通常の文字として扱われます。たとえば@samp{*foo}は、"
+"@samp{*}が特殊文字として動作するための前置された表現がないので、普通の文字と"
+"して扱われます。このような振る舞いに依存することは、よい習慣ではありません。"
+"特殊文字を記述する場合、それがどこに記述されようとクォートするべきです。"
 
 #. type: Plain text
-#: search.texi.orig:848
+#: original_texis/search.texi:848
 msgid ""
 "As a @samp{\\} is not special inside a character alternative, it can never "
 "remove the special meaning of @samp{-} or @samp{]}.  So you should not quote "
@@ -1917,473 +2368,571 @@ msgid ""
 "characters where they @emph{have} special meaning, as in @samp{[^\\]} "
 "(@code{\"[^\\\\]\"} for Lisp string syntax), which matches any single "
 "character except a backslash."
-msgstr "文字集合の候補中では@samp{\\}は特別ではなく、@samp{-}と@samp{]}のもつ特別な意味を除去することはありません。したがって、これらの文字が特別な意味をもたないような場所にあるときは、これらの文字をクォートすべきではありません。これでは明確ではないかもしれません。これらの特殊文字が特別な意味を@emph{もつ}場所にあるとき、バックスラッシュを前置することによりクォートされるのです。たとえば@samp{[^\\]}(Lispの文字記法では@code{\"[^\\\\]\"})は、バックスラッシュ以外の任意の一文字にマッチします。"
+msgstr ""
+"文字集合の候補中では@samp{\\}は特別ではなく、@samp{-}と@samp{]}のもつ特別な意"
+"味を除去することはありません。したがって、これらの文字が特別な意味をもたない"
+"ような場所にあるときは、これらの文字をクォートすべきではありません。これでは"
+"明確ではないかもしれません。これらの特殊文字が特別な意味を@emph{もつ}場所にあ"
+"るとき、バックスラッシュを前置することによりクォートされるのです。たとえば"
+"@samp{[^\\]}(Lispの文字記法では@code{\"[^\\\\]\"})は、バックスラッシュ以外の"
+"任意の一文字にマッチします。"
 
 #. type: section
-#: search.texi.orig:850
+#: original_texis/search.texi:850
 #, no-wrap
 msgid "Backslash in Regular Expressions"
 msgstr "Backslash in Regular Expressions"
 
 #. type: Plain text
-#: search.texi.orig:857
+#: original_texis/search.texi:857
 msgid ""
 "For the most part, @samp{\\} followed by any character matches only that "
 "character.  However, there are several exceptions: two-character sequences "
 "starting with @samp{\\} that have special meanings.  The second character in "
 "the sequence is always an ordinary character when used on its own.  Here is "
 "a table of @samp{\\} constructs."
-msgstr "多くの場合、任意の文字を伴う@samp{\\}はその文字だけに一致します。しかしいくつか例外があって、@samp{\\}で始まる2文字のシーケンスが、特別な意味を持つ場合があります。シーケンス内の2文字目にくる文字は、単独で使った場合には普通の文字として扱われるものです。以下は@samp{\\}の構成の表です。"
+msgstr ""
+"多くの場合、任意の文字を伴う@samp{\\}はその文字だけに一致します。しかしいくつ"
+"か例外があって、@samp{\\}で始まる2文字のシーケンスが、特別な意味を持つ場合が"
+"あります。シーケンス内の2文字目にくる文字は、単独で使った場合には普通の文字と"
+"して扱われるものです。以下は@samp{\\}の構成の表です。"
 
 #. type: item
-#: search.texi.orig:859
+#: original_texis/search.texi:859
 #, no-wrap
 msgid "\\|"
 msgstr "\\|"
 
 #. type: table
-#: search.texi.orig:864
+#: original_texis/search.texi:864
 msgid ""
 "specifies an alternative.  Two regular expressions @var{a} and @var{b} with "
 "@samp{\\|} in between form an expression that matches some text if either "
 "@var{a} matches it or @var{b} matches it.  It works by trying to match "
 "@var{a}, and if that fails, by trying to match @var{b}."
-msgstr "選択肢を指定します。2つの正規表現@var{a}と@var{b}の間に@samp{\\|}を記述すると、それは@var{a}または@var{b}のいずれかにマッチする表現を形成します。これはまず@var{a}とのマッチを試み、失敗した場合に@var{b}とのマッチを試みます。"
+msgstr ""
+"選択肢を指定します。2つの正規表現@var{a}と@var{b}の間に@samp{\\|}を記述する"
+"と、それは@var{a}または@var{b}のいずれかにマッチする表現を形成します。これは"
+"まず@var{a}とのマッチを試み、失敗した場合に@var{b}とのマッチを試みます。"
 
 #. type: table
-#: search.texi.orig:867
+#: original_texis/search.texi:867
 msgid ""
 "Thus, @samp{foo\\|bar} matches either @samp{foo} or @samp{bar} but no other "
 "string."
-msgstr "したがって@samp{foo\\|bar}は、@samp{foo}または@samp{bar}のいずれかにマッチし、それ以外の文字列にはマッチしません。"
+msgstr ""
+"したがって@samp{foo\\|bar}は、@samp{foo}または@samp{bar}のいずれかにマッチ"
+"し、それ以外の文字列にはマッチしません。"
 
 #. type: table
-#: search.texi.orig:871
+#: original_texis/search.texi:871
 msgid ""
 "@samp{\\|} applies to the largest possible surrounding expressions.  Only a "
 "surrounding @samp{\\( @dots{} \\)} grouping can limit the grouping power of "
 "@samp{\\|}."
-msgstr "@samp{\\|}は、周囲の一番大きな表現に適用されます。@samp{\\|}のグループ化の能力に制限をかけることができるのは、周囲の@samp{\\( @dots{} \\)}によるグループ化だけです。"
+msgstr ""
+"@samp{\\|}は、周囲の一番大きな表現に適用されます。@samp{\\|}のグループ化の能"
+"力に制限をかけることができるのは、周囲の@samp{\\( @dots{} \\)}によるグループ"
+"化だけです。"
 
 #. type: table
-#: search.texi.orig:873
+#: original_texis/search.texi:873
 msgid ""
 "Full backtracking capability exists to handle multiple uses of @samp{\\|}."
-msgstr "複数の@samp{\\|}使用を処理するための、完全なバックトラッキング能力が存在します。"
+msgstr ""
+"複数の@samp{\\|}使用を処理するための、完全なバックトラッキング能力が存在しま"
+"す。"
 
 #. type: item
-#: search.texi.orig:874
+#: original_texis/search.texi:874
 #, no-wrap
 msgid "\\( @dots{} \\)"
 msgstr "\\( @dots{} \\)"
 
 #. type: table
-#: search.texi.orig:876
+#: original_texis/search.texi:876
 msgid "is a grouping construct that serves three purposes:"
 msgstr "3つの目的のためのグループ化構成です:"
 
 #. type: enumerate
-#: search.texi.orig:881
+#: original_texis/search.texi:881
 msgid ""
 "To enclose a set of @samp{\\|} alternatives for other operations.  Thus, "
 "@samp{\\(foo\\|bar\\)x} matches either @samp{foox} or @samp{barx}."
-msgstr "他の操作に使うために、一連の選択肢@samp{\\|}を括ります。したがって@samp{\\(foo\\|bar\\)x}は、@samp{foox}または@samp{barx}のいずれかにマッチします。"
+msgstr ""
+"他の操作に使うために、一連の選択肢@samp{\\|}を括ります。したがって"
+"@samp{\\(foo\\|bar\\)x}は、@samp{foox}または@samp{barx}のいずれかにマッチしま"
+"す。"
 
 #. type: enumerate
-#: search.texi.orig:887
+#: original_texis/search.texi:887
 msgid ""
 "To enclose a complicated expression for the postfix operators @samp{*}, "
 "@samp{+} and @samp{?} to operate on.  Thus, @samp{ba\\(na\\)*} matches "
 "@samp{bananana}, etc., with any (zero or more) number of @samp{na} strings."
-msgstr "接尾演算子@samp{*}、@samp{+}、@samp{?}を適用できるように、複雑な正規表現を括ります。したがって@samp{ba\\(na\\)*}は、@samp{bananana}のように、(0個以上の)文字列@samp{na}にマッチします。"
+msgstr ""
+"接尾演算子@samp{*}、@samp{+}、@samp{?}を適用できるように、複雑な正規表現を括"
+"ります。したがって@samp{ba\\(na\\)*}は、@samp{bananana}のように、(0個以上の)"
+"文字列@samp{na}にマッチします。"
 
 #. type: enumerate
-#: search.texi.orig:890
+#: original_texis/search.texi:890
 msgid "To record a matched substring for future reference."
 msgstr "あとで参照できるように、マッチした部分文字列を記録します。"
 
 #. type: table
-#: search.texi.orig:897
+#: original_texis/search.texi:897
 msgid ""
 "This last application is not a consequence of the idea of a parenthetical "
 "grouping; it is a separate feature that is assigned as a second meaning to "
 "the same @samp{\\( @dots{} \\)} construct.  In practice there is usually no "
 "conflict between the two meanings; when there is a conflict, you can use a "
 "``shy'' group."
-msgstr "この最後の使い方は、カッコでグループ化することが重要なのではありません。これは@samp{\\( @dots{} \\)}構成の、2番目の意味とは異なる機能です。実際には、これら2つの機能が衝突することは、通常はありません。もし衝突するようなら、``内気(shy)''なグループ化を使うことができます。"
+msgstr ""
+"この最後の使い方は、カッコでグループ化することが重要なのではありません。これ"
+"は@samp{\\( @dots{} \\)}構成の、2番目の意味とは異なる機能です。実際には、これ"
+"ら2つの機能が衝突することは、通常はありません。もし衝突するようなら、``内気"
+"(shy)''なグループ化を使うことができます。"
 
 #. type: item
-#: search.texi.orig:898
+#: original_texis/search.texi:898
 #, no-wrap
 msgid "\\(?: @dots{} \\)"
 msgstr "\\(?: @dots{} \\)"
 
 #. type: cindex
-#: search.texi.orig:899
+#: original_texis/search.texi:899
 #, no-wrap
 msgid "shy group, in regexp"
 msgstr "shy group, in regexp"
 
 #. type: table
-#: search.texi.orig:905
+#: original_texis/search.texi:905
 msgid ""
 "specifies a ``shy'' group that does not record the matched substring; you "
 "can't refer back to it with @samp{\\@var{d}}.  This is useful in "
 "mechanically combining regular expressions, so that you can add groups for "
 "syntactic purposes without interfering with the numbering of the groups that "
 "are meant to be referred to."
-msgstr "マッチした部分文字列を記録しない、``内気(shy)''なグループ化を指定します。マッチした部分文字列は、@samp{\\@var{d}}により後方参照できません。この機能は正規表現を機械的にまとめるときに役立ちます。これにより後方参照するためのグループにたいする番号づけに影響することなく、文法的な目的によるグループ化を行うことができます。"
+msgstr ""
+"マッチした部分文字列を記録しない、``内気(shy)''なグループ化を指定します。マッ"
+"チした部分文字列は、@samp{\\@var{d}}により後方参照できません。この機能は正規"
+"表現を機械的にまとめるときに役立ちます。これにより後方参照するためのグループ"
+"にたいする番号づけに影響することなく、文法的な目的によるグループ化を行うこと"
+"ができます。"
 
 #. type: item
-#: search.texi.orig:906
+#: original_texis/search.texi:906
 #, no-wrap
 msgid "\\@var{d}"
 msgstr "\\@var{d}"
 
 #. type: cindex
-#: search.texi.orig:907
+#: original_texis/search.texi:907
 #, no-wrap
 msgid "back reference, in regexp"
 msgstr "back reference, in regexp"
 
 #. type: table
-#: search.texi.orig:911
+#: original_texis/search.texi:911
 msgid ""
 "matches the same text that matched the @var{d}th occurrence of a "
 "@samp{\\( @dots{} \\)} construct.  This is called a @dfn{back reference}."
-msgstr "@var{d}番目に@samp{\\( @dots{} \\)}構成にマッチしたテキストと同じテキストにマッチします。これは@dfn{後方参照(back reference)}と呼ばれます。"
+msgstr ""
+"@var{d}番目に@samp{\\( @dots{} \\)}構成にマッチしたテキストと同じテキストに"
+"マッチします。これは@dfn{後方参照(back reference)}と呼ばれます。"
 
 #. type: table
-#: search.texi.orig:917
+#: original_texis/search.texi:917
 msgid ""
 "After the end of a @samp{\\( @dots{} \\)} construct, the matcher remembers "
 "the beginning and end of the text matched by that construct.  Then, later on "
 "in the regular expression, you can use @samp{\\} followed by the digit "
 "@var{d} to mean ``match the same text matched the @var{d}th time by the "
 "@samp{\\( @dots{} \\)} construct''."
-msgstr "最後の@samp{\\( @dots{} \\)}構成の後で、マッチ処理はこの構成にマッチしたテキストの最初と最後を記録します。そして正規表現の後の部分で@samp{\\}の後に数字@var{d}を使うことにより、@var{d}番目の@samp{\\( @dots{} \\)}構成にマッチしたテキストと同じテキストにマッチさせることができます。"
+msgstr ""
+"最後の@samp{\\( @dots{} \\)}構成の後で、マッチ処理はこの構成にマッチしたテキ"
+"ストの最初と最後を記録します。そして正規表現の後の部分で@samp{\\}の後に数字"
+"@var{d}を使うことにより、@var{d}番目の@samp{\\( @dots{} \\)}構成にマッチした"
+"テキストと同じテキストにマッチさせることができます。"
 
 #. type: table
-#: search.texi.orig:923
+#: original_texis/search.texi:923
 msgid ""
 "The strings matching the first nine @samp{\\( @dots{} \\)} constructs "
 "appearing in a regular expression are assigned numbers 1 through 9 in the "
 "order that the open-parentheses appear in the regular expression.  So you "
 "can use @samp{\\1} through @samp{\\9} to refer to the text matched by the "
 "corresponding @samp{\\( @dots{} \\)} constructs."
-msgstr "正規表現に記述された最初の9つの@samp{\\( @dots{} \\)}にマッチしたテキストは、正規表現で開きカッコが出現した順に、1から9までの数字が割り当てられます。そのため@samp{\\1}から@samp{\\9}を使うことにより、@samp{\\( @dots{} \\)}構成にマッチした、対応するテキストを参照することができます。"
+msgstr ""
+"正規表現に記述された最初の9つの@samp{\\( @dots{} \\)}にマッチしたテキストは、"
+"正規表現で開きカッコが出現した順に、1から9までの数字が割り当てられます。その"
+"ため@samp{\\1}から@samp{\\9}を使うことにより、@samp{\\( @dots{} \\)}構成に"
+"マッチした、対応するテキストを参照することができます。"
 
 #. type: table
-#: search.texi.orig:928
+#: original_texis/search.texi:928
 msgid ""
 "For example, @samp{\\(.*\\)\\1} matches any newline-free string that is "
 "composed of two identical halves.  The @samp{\\(.*\\)} matches the first "
 "half, which may be anything, but the @samp{\\1} that follows must match the "
 "same exact text."
-msgstr "たとえば@samp{\\(.*\\)\\1}は改行を含まない、前半と後半が同一の文字列にマッチします。@samp{\\(.*\\)}は、そのテキストが何であろうと前半にマッチしますが、@samp{\\1}は前半と正確に同じテキストにマッチしなければなりません。"
+msgstr ""
+"たとえば@samp{\\(.*\\)\\1}は改行を含まない、前半と後半が同一の文字列にマッチ"
+"します。@samp{\\(.*\\)}は、そのテキストが何であろうと前半にマッチしますが、"
+"@samp{\\1}は前半と正確に同じテキストにマッチしなければなりません。"
 
 #. type: table
-#: search.texi.orig:932
+#: original_texis/search.texi:932
 msgid ""
 "If a particular @samp{\\( @dots{} \\)} construct matches more than once "
 "(which can easily happen if it is followed by @samp{*}), only the last match "
 "is recorded."
-msgstr "もし特定の@samp{\\( @dots{} \\)}構成が１回以上マッチする場合(これは@samp{*}が後置されているとき簡単に発生します)、最後のマッチだけが記録されます。"
+msgstr ""
+"もし特定の@samp{\\( @dots{} \\)}構成が１回以上マッチする場合(これは@samp{*}が"
+"後置されているとき簡単に発生します)、最後のマッチだけが記録されます。"
 
 #. type: item
-#: search.texi.orig:933
+#: original_texis/search.texi:933
 #, no-wrap
 msgid "\\`"
 msgstr "\\`"
 
 #. type: table
-#: search.texi.orig:936
+#: original_texis/search.texi:936
 msgid ""
 "matches the empty string, but only at the beginning of the string or buffer "
 "(or its accessible portion) being matched against."
-msgstr "空の文字列にマッチしますが、文字列またはバッファー(またはアクセスできる部分)の先頭に限定されます。"
+msgstr ""
+"空の文字列にマッチしますが、文字列またはバッファー(またはアクセスできる部分)"
+"の先頭に限定されます。"
 
 #. type: item
-#: search.texi.orig:937
+#: original_texis/search.texi:937
 #, no-wrap
 msgid "\\'"
 msgstr "\\'"
 
 #. type: table
-#: search.texi.orig:940
+#: original_texis/search.texi:940
 msgid ""
 "matches the empty string, but only at the end of the string or buffer (or "
 "its accessible portion) being matched against."
-msgstr "空の文字列にマッチしますが、文字列またはバッファー(またはアクセスできる部分)の最後に限定されます。"
+msgstr ""
+"空の文字列にマッチしますが、文字列またはバッファー(またはアクセスできる部分)"
+"の最後に限定されます。"
 
 #. type: item
-#: search.texi.orig:941
+#: original_texis/search.texi:941
 #, no-wrap
 msgid "\\="
 msgstr "\\="
 
 #. type: table
-#: search.texi.orig:943
+#: original_texis/search.texi:943
 msgid "matches the empty string, but only at point."
 msgstr "空の文字列にマッチしますが、ポイント位置に限定されます。"
 
 #. type: item
-#: search.texi.orig:944
+#: original_texis/search.texi:944
 #, no-wrap
 msgid "\\b"
 msgstr "\\b"
 
 #. type: table
-#: search.texi.orig:949
+#: original_texis/search.texi:949
 msgid ""
 "matches the empty string, but only at the beginning or end of a word.  Thus, "
 "@samp{\\bfoo\\b} matches any occurrence of @samp{foo} as a separate word.  "
 "@samp{\\bballs?\\b} matches @samp{ball} or @samp{balls} as a separate word."
-msgstr "空の文字列にマッチしますが単語の先頭または最後に限定されます。したがって@samp{\\bfoo\\b}は、区切られた単語@samp{foo}にマッチします。@samp{\\bballs?\\b}は、別々の単語@samp{ball}または@samp{balls}にマッチします。"
+msgstr ""
+"空の文字列にマッチしますが単語の先頭または最後に限定されます。したがって"
+"@samp{\\bfoo\\b}は、区切られた単語@samp{foo}にマッチします。@samp{\\bballs?"
+"\\b}は、別々の単語@samp{ball}または@samp{balls}にマッチします。"
 
 #. type: table
-#: search.texi.orig:952
+#: original_texis/search.texi:952
 msgid ""
 "@samp{\\b} matches at the beginning or end of the buffer regardless of what "
 "text appears next to it."
-msgstr "@samp{\\b}は、そこにどんなテキストが出現しようと、バッファーの先頭または最後にもマッチします。"
+msgstr ""
+"@samp{\\b}は、そこにどんなテキストが出現しようと、バッファーの先頭または最後"
+"にもマッチします。"
 
 #. type: item
-#: search.texi.orig:953
+#: original_texis/search.texi:953
 #, no-wrap
 msgid "\\B"
 msgstr "\\B"
 
 #. type: table
-#: search.texi.orig:956
+#: original_texis/search.texi:956
 msgid ""
 "matches the empty string, but @emph{not} at the beginning or end of a word."
-msgstr "空の文字列にマッチしますが、単語の最初と最後@emph{以外}にマッチします。"
+msgstr ""
+"空の文字列にマッチしますが、単語の最初と最後@emph{以外}にマッチします。"
 
 #. type: item
-#: search.texi.orig:957
+#: original_texis/search.texi:957
 #, no-wrap
 msgid "\\<"
 msgstr "\\<"
 
 #. type: table
-#: search.texi.orig:961
+#: original_texis/search.texi:961
 msgid ""
 "matches the empty string, but only at the beginning of a word.  @samp{\\<} "
 "matches at the beginning of the buffer only if a word-constituent character "
 "follows."
-msgstr "空の文字列にマッチしますが、単語の先頭に限定されます。@samp{\\<}は単語の構成文字が続く場合に限り、バッファーの先頭にマッチします。"
+msgstr ""
+"空の文字列にマッチしますが、単語の先頭に限定されます。@samp{\\<}は単語の構成"
+"文字が続く場合に限り、バッファーの先頭にマッチします。"
 
 #. type: item
-#: search.texi.orig:962
+#: original_texis/search.texi:962
 #, no-wrap
 msgid "\\>"
 msgstr "\\>"
 
 #. type: table
-#: search.texi.orig:966
+#: original_texis/search.texi:966
 msgid ""
 "matches the empty string, but only at the end of a word.  @samp{\\>} matches "
 "at the end of the buffer only if the contents end with a word-constituent "
 "character."
-msgstr "空の文字列にマッチしますが、単語の最後に限定されます。@samp{\\<}は内容が単語の構成文字で終わる場合に限りバッファーの最後にマッチします。"
+msgstr ""
+"空の文字列にマッチしますが、単語の最後に限定されます。@samp{\\<}は内容が単語"
+"の構成文字で終わる場合に限りバッファーの最後にマッチします。"
 
 #. type: item
-#: search.texi.orig:967
+#: original_texis/search.texi:967
 #, no-wrap
 msgid "\\w"
 msgstr "\\w"
 
 #. type: table
-#: search.texi.orig:971
+#: original_texis/search.texi:971
 msgid ""
 "matches any word-constituent character.  The syntax table determines which "
 "characters these are.  @xref{Syntax Tables,, Syntax Tables, elisp, The Emacs "
 "Lisp Reference Manual}."
-msgstr "任意の単語構成文字にマッチします。どの文字が該当するかは、構文テーブル(syntax table)により決定されます。@ref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}を参照してください。"
+msgstr ""
+"任意の単語構成文字にマッチします。どの文字が該当するかは、構文テーブル"
+"(syntax table)により決定されます。@ref{Syntax Tables,, Syntax Tables, elisp, "
+"The Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: item
-#: search.texi.orig:972
+#: original_texis/search.texi:972
 #, no-wrap
 msgid "\\W"
 msgstr "\\W"
 
 #. type: table
-#: search.texi.orig:974
+#: original_texis/search.texi:974
 msgid "matches any character that is not a word-constituent."
 msgstr "単語構成文字以外の任意の文字にマッチします。"
 
 #. type: item
-#: search.texi.orig:975
+#: original_texis/search.texi:975
 #, no-wrap
 msgid "\\_<"
 msgstr "\\_<"
 
 #. type: table
-#: search.texi.orig:981
+#: original_texis/search.texi:981
 msgid ""
 "matches the empty string, but only at the beginning of a symbol.  A symbol "
 "is a sequence of one or more symbol-constituent characters.  A symbol-"
 "constituent character is a character whose syntax is either @samp{w} or "
 "@samp{_}.  @samp{\\_<} matches at the beginning of the buffer only if a "
 "symbol-constituent character follows."
-msgstr "空の文字列にマッチしますが、シンボルの先頭に限られます。シンボルは１文字以上のシンボル構成文字からなります。シンボル構成文字は、@samp{w}と@samp{_}の構文をもつ文字です。@samp{\\_<}はシンボル構成文字が続く場合に限り、バッファーの先頭にもマッチします。"
+msgstr ""
+"空の文字列にマッチしますが、シンボルの先頭に限られます。シンボルは１文字以上"
+"のシンボル構成文字からなります。シンボル構成文字は、@samp{w}と@samp{_}の構文"
+"をもつ文字です。@samp{\\_<}はシンボル構成文字が続く場合に限り、バッファーの先"
+"頭にもマッチします。"
 
 #. type: item
-#: search.texi.orig:982
+#: original_texis/search.texi:982
 #, no-wrap
 msgid "\\_>"
 msgstr "\\_>"
 
 #. type: table
-#: search.texi.orig:986
+#: original_texis/search.texi:986
 msgid ""
 "matches the empty string, but only at the end of a symbol.  @samp{\\_>} "
 "matches at the end of the buffer only if the contents end with a symbol-"
 "constituent character."
-msgstr "空の文字列にマッチしますが、シンボルの最後に限定されます。@samp{\\_>}は内容がシンボル構成文字で終わる場合に限り、バッファーの最後にマッチします。"
+msgstr ""
+"空の文字列にマッチしますが、シンボルの最後に限定されます。@samp{\\_>}は内容が"
+"シンボル構成文字で終わる場合に限り、バッファーの最後にマッチします。"
 
 #. type: item
-#: search.texi.orig:987
+#: original_texis/search.texi:987
 #, no-wrap
 msgid "\\s@var{c}"
 msgstr "\\s@var{c}"
 
 #. type: table
-#: search.texi.orig:993
+#: original_texis/search.texi:993
 msgid ""
 "matches any character whose syntax is @var{c}.  Here @var{c} is a character "
 "that designates a particular syntax class: thus, @samp{w} for word "
 "constituent, @samp{-} or @samp{ } for whitespace, @samp{.} for ordinary "
 "punctuation, etc.  @xref{Syntax Tables,, Syntax Tables, elisp, The Emacs "
 "Lisp Reference Manual}."
-msgstr "構文が@var{c}である、任意の文字にマッチします。ここで@var{c}とは、特定の構文クラスを表す文字です。したがって@samp{w}は単語構成文字、@samp{-}または@samp{ }は空白文字、@samp{.}は通常の区切り文字、などとなります。@ref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}を参照してください。"
+msgstr ""
+"構文が@var{c}である、任意の文字にマッチします。ここで@var{c}とは、特定の構文"
+"クラスを表す文字です。したがって@samp{w}は単語構成文字、@samp{-}または"
+"@samp{ }は空白文字、@samp{.}は通常の区切り文字、などとなります。@ref{Syntax "
+"Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}を参照してくだ"
+"さい。"
 
 #. type: item
-#: search.texi.orig:994
+#: original_texis/search.texi:994
 #, no-wrap
 msgid "\\S@var{c}"
 msgstr "\\S@var{c}"
 
 #. type: table
-#: search.texi.orig:996
+#: original_texis/search.texi:996
 msgid "matches any character whose syntax is not @var{c}."
 msgstr "構文が@var{c}以外の、任意の文字にマッチします。"
 
 #. type: cindex
-#: search.texi.orig:997
+#: original_texis/search.texi:997
 #, no-wrap
 msgid "categories of characters"
 msgstr "categories of characters"
 
 #. type: cindex
-#: search.texi.orig:998
+#: original_texis/search.texi:998
 #, no-wrap
 msgid "characters which belong to a specific language"
 msgstr "characters which belong to a specific language"
 
 #. type: findex
-#: search.texi.orig:999
+#: original_texis/search.texi:999
 #, no-wrap
 msgid "describe-categories"
 msgstr "describe-categories"
 
 #. type: item
-#: search.texi.orig:1000
+#: original_texis/search.texi:1000
 #, no-wrap
 msgid "\\c@var{c}"
 msgstr "\\c@var{c}"
 
 #. type: table
-#: search.texi.orig:1005
+#: original_texis/search.texi:1005
 msgid ""
 "matches any character that belongs to the category @var{c}.  For example, "
 "@samp{\\cc} matches Chinese characters, @samp{\\cg} matches Greek "
 "characters, etc.  For the description of the known categories, type @kbd{M-x "
 "describe-categories @key{RET}}."
-msgstr "カテゴリー@var{c}に属する、任意の文字にマッチします。たとえば@samp{\\cc}は中国文字、@samp{\\cg}はギリシャ文字にマッチします。既知のカテゴリーについての説明は、@kbd{M-x describe-categories @key{RET}}をタイプしてください。"
+msgstr ""
+"カテゴリー@var{c}に属する、任意の文字にマッチします。たとえば@samp{\\cc}は中"
+"国文字、@samp{\\cg}はギリシャ文字にマッチします。既知のカテゴリーについての説"
+"明は、@kbd{M-x describe-categories @key{RET}}をタイプしてください。"
 
 #. type: item
-#: search.texi.orig:1006
+#: original_texis/search.texi:1006
 #, no-wrap
 msgid "\\C@var{c}"
 msgstr "\\C@var{c}"
 
 #. type: table
-#: search.texi.orig:1009
+#: original_texis/search.texi:1009
 msgid "matches any character that does @emph{not} belong to category @var{c}."
 msgstr "カテゴリー@var{c}に@emph{属さない}、任意の文字にマッチします。"
 
 #. type: Plain text
-#: search.texi.orig:1014
+#: original_texis/search.texi:1014
 msgid ""
 "The constructs that pertain to words and syntax are controlled by the "
 "setting of the syntax table.  @xref{Syntax Tables,, Syntax Tables, elisp, "
 "The Emacs Lisp Reference Manual}."
-msgstr "単語と構文に関係する構成は構文テーブルのセッティングにより制御されます。@xref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}."
+msgstr ""
+"単語と構文に関係する構成は構文テーブルのセッティングにより制御されます。"
+"@xref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}."
 
 #. type: section
-#: search.texi.orig:1016
+#: original_texis/search.texi:1016
 #, no-wrap
 msgid "Regular Expression Example"
 msgstr "Regular Expression Example"
 
 #. type: Plain text
-#: search.texi.orig:1021
+#: original_texis/search.texi:1021
 msgid ""
 "Here is an example of a regexp---similar to the regexp that Emacs uses, by "
 "default, to recognize the end of a sentence, not including the following "
 "space (i.e., the variable @code{sentence-end-base}):"
-msgstr "以下にregexpの例を示します。これはEmacsがセンテンスの最後(末尾の空白は含まない)を認識するために、デフォルトで使用するregexp(たとえば変数@code{sentence-end-base})と似ています。"
+msgstr ""
+"以下にregexpの例を示します。これはEmacsがセンテンスの最後(末尾の空白は含まな"
+"い)を認識するために、デフォルトで使用するregexp(たとえば変数@code{sentence-"
+"end-base})と似ています。"
 
 #. type: verbatim
-#: search.texi.orig:1025
+#: original_texis/search.texi:1025
 #, no-wrap
 msgid "[.?!][]\\\"')}]*\n"
 msgstr "[.?!][]\\\"')}]*\n"
 
 #. type: Plain text
-#: search.texi.orig:1032
+#: original_texis/search.texi:1032
 msgid ""
 "This contains two parts in succession: a character set matching period, "
 "@samp{?}, or @samp{!}, and a character set matching close-brackets, quotes, "
 "or parentheses, repeated zero or more times."
-msgstr "これには2つの連続する部分があります。1つは@samp{.}、@samp{?}、@samp{!}にマッチする文字です。もう1つは閉じカッコ、クォート、カッコの0回以上の繰り返しです。"
+msgstr ""
+"これには2つの連続する部分があります。1つは@samp{.}、@samp{?}、@samp{!}にマッ"
+"チする文字です。もう1つは閉じカッコ、クォート、カッコの0回以上の繰り返しで"
+"す。"
 
 #. type: section
-#: search.texi.orig:1034
+#: original_texis/search.texi:1034
 #, no-wrap
 msgid "Searching and Case"
 msgstr "Searching and Case"
 
 #. type: Plain text
-#: search.texi.orig:1042
+#: original_texis/search.texi:1042
 msgid ""
 "Searches in Emacs normally ignore the case of the text they are searching "
 "through, if you specify the text in lower case.  Thus, if you specify "
 "searching for @samp{foo}, then @samp{Foo} and @samp{foo} also match.  "
 "Regexps, and in particular character sets, behave likewise: @samp{[ab]} "
 "matches @samp{a} or @samp{A} or @samp{b} or @samp{B}."
-msgstr "Emacsでの検索では、テキストを小文字で指定した場合、通常は検索するテキストの大文字小文字は区別されません。したがって@samp{foo}を検索すると、@samp{Foo}や@samp{foo}もマッチします。regexp、特に文字集合でも同様に振る舞います。つまり@samp{[ab]}は、@samp{a}、@samp{A}、@samp{b}、@samp{B}もマッチします。"
+msgstr ""
+"Emacsでの検索では、テキストを小文字で指定した場合、通常は検索するテキストの大"
+"文字小文字は区別されません。したがって@samp{foo}を検索すると、@samp{Foo}や"
+"@samp{foo}もマッチします。regexp、特に文字集合でも同様に振る舞います。つまり"
+"@samp{[ab]}は、@samp{a}、@samp{A}、@samp{b}、@samp{B}もマッチします。"
 
 #. type: Plain text
-#: search.texi.orig:1048
+#: original_texis/search.texi:1048
 msgid ""
 "An upper-case letter anywhere in the incremental search string makes the "
 "search case-sensitive.  Thus, searching for @samp{Foo} does not find "
 "@samp{foo} or @samp{FOO}.  This applies to regular expression search as well "
 "as to string search.  The effect ceases if you delete the upper-case letter "
 "from the search string."
-msgstr "インクリメンタル検索する文字列のどこかに大文字があると、検索は大文字小文字を区別するようになります。したがって@samp{Foo}を検索すると、@samp{foo}や@samp{FOO}は検索されません。これは正規表現検索でも文字列検索と同様に適用されます。検索文字列から大文字を削除すると、効果はなくなります。"
+msgstr ""
+"インクリメンタル検索する文字列のどこかに大文字があると、検索は大文字小文字を"
+"区別するようになります。したがって@samp{Foo}を検索すると、@samp{foo}や"
+"@samp{FOO}は検索されません。これは正規表現検索でも文字列検索と同様に適用され"
+"ます。検索文字列から大文字を削除すると、効果はなくなります。"
 
 #. type: vindex
-#: search.texi.orig:1049
+#: original_texis/search.texi:1049
 #, no-wrap
 msgid "case-fold-search"
 msgstr "case-fold-search"
 
 #. type: Plain text
-#: search.texi.orig:1057
+#: original_texis/search.texi:1057
 msgid ""
 "If you set the variable @code{case-fold-search} to @code{nil}, then all "
 "letters must match exactly, including case.  This is a per-buffer variable; "
@@ -2392,68 +2941,87 @@ msgid ""
 "nonincremental searches also, including those performed by the replace "
 "commands (@pxref{Replace}) and the minibuffer history matching commands "
 "(@pxref{Minibuffer History})."
-msgstr "変数@code{case-fold-search}に@code{nil}をセットすると、すべての文字は大文字小文字を含めて、完全にマッチしなければなりません。これはバッファーごとの変数で、変数の変更はデフォルト値を変えない限り、通常はカレントバッファーだけが影響を受けます。@ref{Locals}を参照してください。これは置換コマンド(@ref{Replace}を参照してください)や、ミニバッファーのヒストリー検索(@ref{Minibuffer History}を参照してください)を処理する、非インクリメンタル検索にも適用されます。"
+msgstr ""
+"変数@code{case-fold-search}に@code{nil}をセットすると、すべての文字は大文字小"
+"文字を含めて、完全にマッチしなければなりません。これはバッファーごとの変数"
+"で、変数の変更はデフォルト値を変えない限り、通常はカレントバッファーだけが影"
+"響を受けます。@ref{Locals}を参照してください。これは置換コマンド"
+"(@ref{Replace}を参照してください)や、ミニバッファーのヒストリー検索"
+"(@ref{Minibuffer History}を参照してください)を処理する、非インクリメンタル検"
+"索にも適用されます。"
 
 #. type: Plain text
-#: search.texi.orig:1064
+#: original_texis/search.texi:1064
 msgid ""
 "Typing @kbd{M-c} within an incremental search toggles the case sensitivity "
 "of that search.  The effect does not extend beyond the current incremental "
 "search to the next one, but it does override the effect of adding or "
 "removing an upper-case letter in the current search."
-msgstr "インクリメンタル検索で@kbd{M-c}をタイプすると、検索が大文字小文字を区別するかが、切り替わります。この効果は、現在の検索を超えて次の検索には引き継がれませんが、現在の検索にたいして大文字を追加・削除したときの効果をオーバーライドします."
+msgstr ""
+"インクリメンタル検索で@kbd{M-c}をタイプすると、検索が大文字小文字を区別するか"
+"が、切り替わります。この効果は、現在の検索を超えて次の検索には引き継がれませ"
+"んが、現在の検索にたいして大文字を追加・削除したときの効果をオーバーライドし"
+"ます."
 
 #. type: Plain text
-#: search.texi.orig:1070
+#: original_texis/search.texi:1070
 msgid ""
 "Several related variables control case-sensitivity of searching and matching "
 "for specific commands or activities.  For instance, @code{tags-case-fold-"
 "search} controls case sensitivity for @code{find-tag}.  To find these "
 "variables, do @kbd{M-x apropos-variable @key{RET} case-fold-search "
 "@key{RET}}."
-msgstr "特定のコマンドや操作にたいする検索やマッチングにおいて、大文字小文字の区別を制御する変数がいくつかあります。たとえば@code{tags-case-fold-search}は、@code{find-tag}での大文字小文字の区別を制御します。これらの変数を探すには、@kbd{M-x apropos-variable @key{RET} case-fold-search @key{RET}}とタイプしてください。"
+msgstr ""
+"特定のコマンドや操作にたいする検索やマッチングにおいて、大文字小文字の区別を"
+"制御する変数がいくつかあります。たとえば@code{tags-case-fold-search}は、"
+"@code{find-tag}での大文字小文字の区別を制御します。これらの変数を探すには、"
+"@kbd{M-x apropos-variable @key{RET} case-fold-search @key{RET}}とタイプしてく"
+"ださい。"
 
 #. type: section
-#: search.texi.orig:1072
+#: original_texis/search.texi:1072
 #, no-wrap
 msgid "Replacement Commands"
 msgstr "Replacement Commands"
 
 #. type: cindex
-#: search.texi.orig:1073
+#: original_texis/search.texi:1073
 #, no-wrap
 msgid "replacement"
 msgstr "replacement"
 
 #. type: cindex
-#: search.texi.orig:1074
+#: original_texis/search.texi:1074
 #, no-wrap
 msgid "search-and-replace commands"
 msgstr "search-and-replace commands"
 
 #. type: cindex
-#: search.texi.orig:1075
+#: original_texis/search.texi:1075
 #, no-wrap
 msgid "string substitution"
 msgstr "string substitution"
 
 #. type: cindex
-#: search.texi.orig:1076
+#: original_texis/search.texi:1076
 #, no-wrap
 msgid "global substitution"
 msgstr "global substitution"
 
 #. type: Plain text
-#: search.texi.orig:1082
+#: original_texis/search.texi:1082
 msgid ""
 "Emacs provides several commands for performing search-and-replace "
 "operations.  In addition to the simple @kbd{M-x replace-string} command, "
 "there is @kbd{M-%} (@code{query-replace}), which presents each occurrence of "
 "the pattern and asks you whether to replace it."
-msgstr "Emacsは検索と置換を行うコマンドをいくつか提供します。単純な@kbd{M-x replace-string}コマンドに加えて、出現するパターンごとに置換するかを問い合わせる@kbd{M-%} (@code{query-replace})も提供します。"
+msgstr ""
+"Emacsは検索と置換を行うコマンドをいくつか提供します。単純な@kbd{M-x replace-"
+"string}コマンドに加えて、出現するパターンごとに置換するかを問い合わせる"
+"@kbd{M-%} (@code{query-replace})も提供します。"
 
 #. type: Plain text
-#: search.texi.orig:1089
+#: original_texis/search.texi:1089
 msgid ""
 "The replace commands normally operate on the text from point to the end of "
 "the buffer.  When the region is active, they operate on it instead "
@@ -2461,93 +3029,105 @@ msgid ""
 "(or regexp) with one @dfn{replacement string}.  It is possible to perform "
 "several replacements in parallel, using the command @code{expand-region-"
 "abbrevs} (@pxref{Expanding Abbrevs})."
-msgstr "通常、置換コマンドはポイント位置から、バッファーの最後までのテキストにたいして、処理を行います。リージョンがアクティブのときは、リージョンにたいして処理を行います(@ref{Mark}を参照してください)。基本的な置換コマンドは1つの@dfn{検索文字列}(またはregexp)を、1つの@dfn{置換文字列}で置き換えます。コマンド@code{expand-region-abbrevs}を使用して、複数の置換を並行して処理することが可能です(@ref{Expanding Abbrevs}を参照してください)。"
+msgstr ""
+"通常、置換コマンドはポイント位置から、バッファーの最後までのテキストにたいし"
+"て、処理を行います。リージョンがアクティブのときは、リージョンにたいして処理"
+"を行います(@ref{Mark}を参照してください)。基本的な置換コマンドは1つの@dfn{検"
+"索文字列}(またはregexp)を、1つの@dfn{置換文字列}で置き換えます。コマンド"
+"@code{expand-region-abbrevs}を使用して、複数の置換を並行して処理することが可"
+"能です(@ref{Expanding Abbrevs}を参照してください)。"
 
 #. type: vindex
-#: search.texi.orig:1090
+#: original_texis/search.texi:1090
 #, no-wrap
 msgid "replace-lax-whitespace"
 msgstr "replace-lax-whitespace"
 
 #. type: Plain text
-#: search.texi.orig:1096
+#: original_texis/search.texi:1096
 msgid ""
 "Unlike incremental search, the replacement commands do not use lax space "
 "matching (@pxref{Special Isearch}) by default.  To enable lax space matching "
 "for replacement, change the variable @code{replace-lax-whitespace} to "
 "@code{t}.  (This only affects how Emacs finds the text to replace, not the "
 "replacement text.)"
-msgstr "インクリメンタル検索とは異なり、置換コマンドはデフォルトでは緩いスペースマッチング(lax space matching)を行いません(@ref{Special Isearch}を参照してください)。置換で緩いスペースマッチングを有効にするには、変数@code{replace-lax-whitespace}を@code{t}に変更してください(これはEmacsが置換文字列ではなく、置換するテキストを検索する方法だけに影響を与えます)。"
+msgstr ""
+"インクリメンタル検索とは異なり、置換コマンドはデフォルトでは緩いスペースマッ"
+"チング(lax space matching)を行いません(@ref{Special Isearch}を参照してくださ"
+"い)。置換で緩いスペースマッチングを有効にするには、変数@code{replace-lax-"
+"whitespace}を@code{t}に変更してください(これはEmacsが置換文字列ではなく、置換"
+"するテキストを検索する方法だけに影響を与えます)。"
 
 #. type: node
-#: search.texi.orig:1102 search.texi.orig:1104
+#: original_texis/search.texi:1102 original_texis/search.texi:1104
 #, no-wrap
 msgid "Unconditional Replace"
 msgstr "Unconditional Replace"
 
 #. type: menuentry
-#: search.texi.orig:1102
+#: original_texis/search.texi:1102
 msgid "Replacing all matches for a string."
 msgstr "文字列にマッチするすべて置換する。"
 
 #. type: node
-#: search.texi.orig:1102 search.texi.orig:1134
+#: original_texis/search.texi:1102 original_texis/search.texi:1134
 #, no-wrap
 msgid "Regexp Replace"
 msgstr "Regexp Replace"
 
 #. type: menuentry
-#: search.texi.orig:1102
+#: original_texis/search.texi:1102
 msgid "Replacing all matches for a regexp."
 msgstr "regexpにマッチするすべてを置換する。"
 
 #. type: node
-#: search.texi.orig:1102 search.texi.orig:1221
+#: original_texis/search.texi:1102 original_texis/search.texi:1221
 #, no-wrap
 msgid "Replacement and Case"
 msgstr "Replacement and Case"
 
 #. type: menuentry
-#: search.texi.orig:1102
+#: original_texis/search.texi:1102
 msgid "How replacements preserve case of letters."
 msgstr "置換が大文字小文字を維持する方法。"
 
 #. type: subsection
-#: search.texi.orig:1102 search.texi.orig:1253 search.texi.orig:1254
+#: original_texis/search.texi:1102 original_texis/search.texi:1253
+#: original_texis/search.texi:1254
 #, no-wrap
 msgid "Query Replace"
 msgstr "Query Replace"
 
 #. type: menuentry
-#: search.texi.orig:1102
+#: original_texis/search.texi:1102
 msgid "How to use querying."
 msgstr "問い合わせの使い方。"
 
 #. type: subsection
-#: search.texi.orig:1105
+#: original_texis/search.texi:1105
 #, no-wrap
 msgid "Unconditional Replacement"
 msgstr "Unconditional Replacement"
 
 #. type: findex
-#: search.texi.orig:1106
+#: original_texis/search.texi:1106
 #, no-wrap
 msgid "replace-string"
 msgstr "replace-string"
 
 #. type: item
-#: search.texi.orig:1109
+#: original_texis/search.texi:1109
 #, no-wrap
 msgid "M-x replace-string @key{RET} @var{string} @key{RET} @var{newstring} @key{RET}"
 msgstr "M-x replace-string @key{RET} @var{string} @key{RET} @var{newstring} @key{RET}"
 
 #. type: table
-#: search.texi.orig:1111
+#: original_texis/search.texi:1111
 msgid "Replace every occurrence of @var{string} with @var{newstring}."
 msgstr "すべての@var{string}を@var{newstring}で置換します。"
 
 #. type: Plain text
-#: search.texi.orig:1121
+#: original_texis/search.texi:1121
 msgid ""
 "To replace every instance of @samp{foo} after point with @samp{bar}, use the "
 "command @kbd{M-x replace-string} with the two arguments @samp{foo} and "
@@ -2556,70 +3136,86 @@ msgid ""
 "occurrences up to the end of the buffer are replaced; to limit replacement "
 "to part of the buffer, activate the region around that part.  When the "
 "region is active, replacement is limited to the region (@pxref{Mark})."
-msgstr "ポイントの後にある@samp{foo}のすべてのインスタンスを@samp{bar}に置換するには、コマンド@kbd{M-x replace-string}に2つの引数@samp{foo}と@samp{bar}を指定します。置換はポイントの後だけで発生するので、バッファー全体を置換したい場合は、最初にバッファーの先頭に移動しなければなりません。バッファーの最後までのすべてが置換されます。置換をバッファーの一部に制限したいときは、そのリージョン部分をアクティブにします。リージョンがアクティブのときは、置換はそのリージョンに制限されます(@ref{Mark}を参照してください)。"
+msgstr ""
+"ポイントの後にある@samp{foo}のすべてのインスタンスを@samp{bar}に置換するに"
+"は、コマンド@kbd{M-x replace-string}に2つの引数@samp{foo}と@samp{bar}を指定し"
+"ます。置換はポイントの後だけで発生するので、バッファー全体を置換したい場合"
+"は、最初にバッファーの先頭に移動しなければなりません。バッファーの最後までの"
+"すべてが置換されます。置換をバッファーの一部に制限したいときは、そのリージョ"
+"ン部分をアクティブにします。リージョンがアクティブのときは、置換はそのリー"
+"ジョンに制限されます(@ref{Mark}を参照してください)。"
 
 #. type: Plain text
-#: search.texi.orig:1127
+#: original_texis/search.texi:1127
 msgid ""
 "When @code{replace-string} exits, it leaves point at the last occurrence "
 "replaced.  It adds the prior position of point (where the @code{replace-"
 "string} command was issued) to the mark ring, without activating the mark; "
 "use @kbd{C-u C-@key{SPC}} to move back there.  @xref{Mark Ring}."
-msgstr "@code{replace-string}が終了したとき、ポイントは最後に置換された位置に留まります。以前のポイント位置(@code{replace-string}コマンドを実行した場所)はマークリングに追加されるので(マークは非アクティブ)、@kbd{C-u C-@key{SPC}}で戻ることができます。@ref{Mark Ring}を参照してください。"
+msgstr ""
+"@code{replace-string}が終了したとき、ポイントは最後に置換された位置に留まりま"
+"す。以前のポイント位置(@code{replace-string}コマンドを実行した場所)はマークリ"
+"ングに追加されるので(マークは非アクティブ)、@kbd{C-u C-@key{SPC}}で戻ることが"
+"できます。@ref{Mark Ring}を参照してください。"
 
 #. type: Plain text
-#: search.texi.orig:1130
+#: original_texis/search.texi:1130
 msgid ""
 "A prefix argument restricts replacement to matches that are surrounded by "
 "word boundaries."
 msgstr "プレフィクス引数を指定すると、置換対象は単語単位に制限されます。"
 
 #. type: Plain text
-#: search.texi.orig:1133
+#: original_texis/search.texi:1133
 msgid ""
 "@xref{Replacement and Case}, for details about case-sensitivity in replace "
 "commands."
-msgstr "置換コマンドでの大文字小文字の区別については、@ref{Replacement and Case}を参照してください。"
+msgstr ""
+"置換コマンドでの大文字小文字の区別については、@ref{Replacement and Case}を参"
+"照してください。"
 
 #. type: subsection
-#: search.texi.orig:1135
+#: original_texis/search.texi:1135
 #, no-wrap
 msgid "Regexp Replacement"
 msgstr "Regexp Replacement"
 
 #. type: findex
-#: search.texi.orig:1136
+#: original_texis/search.texi:1136
 #, no-wrap
 msgid "replace-regexp"
 msgstr "replace-regexp"
 
 #. type: Plain text
-#: search.texi.orig:1141
+#: original_texis/search.texi:1141
 msgid ""
 "The @kbd{M-x replace-string} command replaces exact matches for a single "
 "string.  The similar command @kbd{M-x replace-regexp} replaces any match for "
 "a specified pattern."
-msgstr "@kbd{M-x replace-string}コマンドは、正確にマッチする単一の文字列を置換します。コマンド@kbd{M-x replace-regexp}は指定したパターンにマッチするすべてを置換します。"
+msgstr ""
+"@kbd{M-x replace-string}コマンドは、正確にマッチする単一の文字列を置換しま"
+"す。コマンド@kbd{M-x replace-regexp}は指定したパターンにマッチするすべてを置"
+"換します。"
 
 #. type: item
-#: search.texi.orig:1143
+#: original_texis/search.texi:1143
 #, no-wrap
 msgid "M-x replace-regexp @key{RET} @var{regexp} @key{RET} @var{newstring} @key{RET}"
 msgstr "M-x replace-regexp @key{RET} @var{regexp} @key{RET} @var{newstring} @key{RET}"
 
 #. type: table
-#: search.texi.orig:1145
+#: original_texis/search.texi:1145
 msgid "Replace every match for @var{regexp} with @var{newstring}."
 msgstr "@var{regexp}にマッチするすべてを@var{newstring}で置換します。"
 
 #. type: cindex
-#: search.texi.orig:1147
+#: original_texis/search.texi:1147
 #, no-wrap
 msgid "back reference, in regexp replacement"
 msgstr "back reference, in regexp replacement"
 
 #. type: Plain text
-#: search.texi.orig:1158
+#: original_texis/search.texi:1158
 msgid ""
 "In @code{replace-regexp}, the @var{newstring} need not be constant: it can "
 "refer to all or part of what is matched by the @var{regexp}.  @samp{\\&} in "
@@ -2630,52 +3226,69 @@ msgid ""
 "replacements already made in this command, as a decimal number.  In the "
 "first replacement, @samp{\\#} stands for @samp{0}; in the second, for "
 "@samp{1}; and so on.  For example,"
-msgstr "@code{replace-regexp}では、@var{newstring}が定数である必要はありません。@var{regexp}にマッチした全体、または部分を参照することができます。@var{newstring}での@samp{\\&}は、置換されるマッチ全体を表します。@var{newstring}での@samp{\\@var{d}}(@var{d}は数字)は、@var{regexp}内でカッコでグループ化されたものの、@var{d}番目にマッチします(これは``後方参照(back reference)と呼ばれます'')。@samp{\\#}は、このコマンドですでに置換された件数を10進数で参照します。最初の置換では@samp{\\#}は@samp{0}で、2番目の置換では@samp{1}、...のようになります。たとえば、"
+msgstr ""
+"@code{replace-regexp}では、@var{newstring}が定数である必要はありません。"
+"@var{regexp}にマッチした全体、または部分を参照することができます。"
+"@var{newstring}での@samp{\\&}は、置換されるマッチ全体を表します。"
+"@var{newstring}での@samp{\\@var{d}}(@var{d}は数字)は、@var{regexp}内でカッコ"
+"でグループ化されたものの、@var{d}番目にマッチします(これは``後方参照(back "
+"reference)と呼ばれます'')。@samp{\\#}は、このコマンドですでに置換された件数を"
+"10進数で参照します。最初の置換では@samp{\\#}は@samp{0}で、2番目の置換では"
+"@samp{1}、...のようになります。たとえば、"
 
 #. type: example
-#: search.texi.orig:1161
+#: original_texis/search.texi:1161
 #, no-wrap
 msgid "M-x replace-regexp @key{RET} c[ad]+r @key{RET} \\&-safe @key{RET}\n"
 msgstr "M-x replace-regexp @key{RET} c[ad]+r @key{RET} \\&-safe @key{RET}\n"
 
 #. type: Plain text
-#: search.texi.orig:1166
+#: original_texis/search.texi:1166
 msgid ""
 "replaces (for example) @samp{cadr} with @samp{cadr-safe} and @samp{cddr} "
 "with @samp{cddr-safe}."
-msgstr "これは@samp{cadr}を@samp{cadr-safe}に、@samp{cddr}を@samp{cddr-safe}に置き換えます。"
+msgstr ""
+"これは@samp{cadr}を@samp{cadr-safe}に、@samp{cddr}を@samp{cddr-safe}に置き換"
+"えます。"
 
 #. type: example
-#: search.texi.orig:1169
+#: original_texis/search.texi:1169
 #, no-wrap
 msgid "M-x replace-regexp @key{RET} \\(c[ad]+r\\)-safe @key{RET} \\1 @key{RET}\n"
 msgstr "M-x replace-regexp @key{RET} \\(c[ad]+r\\)-safe @key{RET} \\1 @key{RET}\n"
 
 #. type: Plain text
-#: search.texi.orig:1174
+#: original_texis/search.texi:1174
 msgid ""
 "performs the inverse transformation.  To include a @samp{\\} in the text to "
 "replace with, you must enter @samp{\\\\}."
-msgstr "これは逆向きの置換をします。置換するテキストに@samp{\\}を含めるときは、@samp{\\\\}と入力しなければなりません。"
+msgstr ""
+"これは逆向きの置換をします。置換するテキストに@samp{\\}を含めるときは、"
+"@samp{\\\\}と入力しなければなりません。"
 
 #. type: Plain text
-#: search.texi.orig:1179
+#: original_texis/search.texi:1179
 msgid ""
 "If you want to enter part of the replacement string by hand each time, use "
 "@samp{\\?} in the replacement string.  Each replacement will ask you to edit "
 "the replacement string in the minibuffer, putting point where the @samp{\\?} "
 "was."
-msgstr "置換する文字列の一部を毎回手入力したいときは、置換文字列で@samp{\\?}を使用します。すると置換ごとにミニバッファーで置換文字列を編集できます(ポイント位置は@samp{\\?}を記述した場所です。)"
+msgstr ""
+"置換する文字列の一部を毎回手入力したいときは、置換文字列で@samp{\\?}を使用し"
+"ます。すると置換ごとにミニバッファーで置換文字列を編集できます(ポイント位置は"
+"@samp{\\?}を記述した場所です。)"
 
 #. type: Plain text
-#: search.texi.orig:1182
+#: original_texis/search.texi:1182
 msgid ""
 "The remainder of this subsection is intended for specialized tasks and "
 "requires knowledge of Lisp.  Most readers can skip it."
-msgstr "このサブセクションの残りの部分は、Lispの知識が必要となる特別な処理を念頭に書かれています。大半の読者はスキップしても構いません。"
+msgstr ""
+"このサブセクションの残りの部分は、Lispの知識が必要となる特別な処理を念頭に書"
+"かれています。大半の読者はスキップしても構いません。"
 
 #. type: Plain text
-#: search.texi.orig:1192
+#: original_texis/search.texi:1192
 msgid ""
 "You can use Lisp expressions to calculate parts of the replacement string.  "
 "To do this, write @samp{\\,} followed by the expression in the replacement "
@@ -2685,10 +3298,17 @@ msgid ""
 "expression itself.  If the expression is a symbol, one space in the "
 "replacement string after the symbol name goes with the symbol name, so the "
 "value replaces them both."
-msgstr "置換文字列の一部を計算するために、Lisp式を使うことができます。これを行うには、置換文字列の中で、@samp{\\,}に続けてLisp式を記述します。各置換において式の値が計算され、それをクォートされていない文字列に変換します(もし文字列の場合は、その文字列の内容が使われることを意味します)。そしてそれを置換文字列内で、式が記述された場所に使用します。もし式がシンボルのときは、シンボル名と、置換文字列中のシンボル名の後にあるの間に1つスペースは、両方シンボルの値に置換されます。"
+msgstr ""
+"置換文字列の一部を計算するために、Lisp式を使うことができます。これを行うに"
+"は、置換文字列の中で、@samp{\\,}に続けてLisp式を記述します。各置換において式"
+"の値が計算され、それをクォートされていない文字列に変換します(もし文字列の場合"
+"は、その文字列の内容が使われることを意味します)。そしてそれを置換文字列内で、"
+"式が記述された場所に使用します。もし式がシンボルのときは、シンボル名と、置換"
+"文字列中のシンボル名の後にあるの間に1つスペースは、両方シンボルの値に置換され"
+"ます。"
 
 #. type: Plain text
-#: search.texi.orig:1201
+#: original_texis/search.texi:1201
 msgid ""
 "Inside such an expression, you can use some special sequences.  @samp{\\&} "
 "and @samp{\\@var{n}} refer here, as usual, to the entire match as a string, "
@@ -2698,17 +3318,24 @@ msgid ""
 "matches as numbers (this is valid when the match or submatch has the form of "
 "a numeral).  @samp{\\#} here too stands for the number of already-completed "
 "replacements."
-msgstr "このような式の中では、いくつかの特別なシーケンスを使うことができます。式の中での@samp{\\&}や@samp{\\@var{n}}は、通常のようにマッチした文字列全体と、部分マッチした文字列を参照します。@var{n}には複数桁の数字を記述でき、@var{n}番目の正規表現がマッチしなかったとき、@samp{\\@var{n}}は@code{nil}になります。@samp{\\#&}と@samp{\\#@var{n}}を使って、それらのマッチを数字で参照することもできます(これはマッチまたは部分マッチが数字書式の場合に有効です)。ここでの@samp{\\#}も、すでに置換された数を意味します。"
+msgstr ""
+"このような式の中では、いくつかの特別なシーケンスを使うことができます。式の中"
+"での@samp{\\&}や@samp{\\@var{n}}は、通常のようにマッチした文字列全体と、部分"
+"マッチした文字列を参照します。@var{n}には複数桁の数字を記述でき、@var{n}番目"
+"の正規表現がマッチしなかったとき、@samp{\\@var{n}}は@code{nil}になります。"
+"@samp{\\#&}と@samp{\\#@var{n}}を使って、それらのマッチを数字で参照することも"
+"できます(これはマッチまたは部分マッチが数字書式の場合に有効です)。ここでの"
+"@samp{\\#}も、すでに置換された数を意味します。"
 
 #. type: Plain text
-#: search.texi.orig:1204
+#: original_texis/search.texi:1204
 msgid ""
 "Repeating our example to exchange @samp{x} and @samp{y}, we can thus do it "
 "also this way:"
 msgstr "@samp{x}と@samp{y}の入れ替えは、以下の方法で行うことができます:"
 
 #. type: example
-#: search.texi.orig:1208
+#: original_texis/search.texi:1208
 #, no-wrap
 msgid ""
 "M-x replace-regexp @key{RET} \\(x\\)\\|y @key{RET}\n"
@@ -2718,17 +3345,21 @@ msgstr ""
 "\\,(if \\1 \"y\" \"x\") @key{RET}\n"
 
 #. type: Plain text
-#: search.texi.orig:1215
+#: original_texis/search.texi:1215
 msgid ""
 "For computing replacement strings for @samp{\\,}, the @code{format} function "
 "is often useful (@pxref{Formatting Strings,,, elisp, The Emacs Lisp "
 "Reference Manual}).  For example, to add consecutively numbered strings like "
 "@samp{ABC00042} to columns 73 @w{to 80} (unless they are already occupied), "
 "you can use"
-msgstr "@samp{\\,}により置換する文字列を計算するには、@code{format}関数が便利なときがあります(@ref{Formatting Strings,,, elisp, The Emacs Lisp Reference Manual}を参照してください)。たとえば73列目@w{から80列目}(もしそこに何もなければ)に、@samp{ABC00042}のような連番を振りたいときは、以下を使うことができます。"
+msgstr ""
+"@samp{\\,}により置換する文字列を計算するには、@code{format}関数が便利なときが"
+"あります(@ref{Formatting Strings,,, elisp, The Emacs Lisp Reference Manual}を"
+"参照してください)。たとえば73列目@w{から80列目}(もしそこに何もなければ)に、"
+"@samp{ABC00042}のような連番を振りたいときは、以下を使うことができます。"
 
 #. type: example
-#: search.texi.orig:1219
+#: original_texis/search.texi:1219
 #, no-wrap
 msgid ""
 "M-x replace-regexp @key{RET} ^.\\@{0,72\\@}$ @key{RET}\n"
@@ -2738,51 +3369,61 @@ msgstr ""
 "\\,(format \"%-72sABC%05d\" \\& \\#) @key{RET}\n"
 
 #. type: subsection
-#: search.texi.orig:1222
+#: original_texis/search.texi:1222
 #, no-wrap
 msgid "Replace Commands and Case"
 msgstr "Replace Commands and Case"
 
 #. type: Plain text
-#: search.texi.orig:1229
+#: original_texis/search.texi:1229
 msgid ""
 "If the first argument of a replace command is all lower case, the command "
 "ignores case while searching for occurrences to replace---provided "
 "@code{case-fold-search} is non-@code{nil}.  If @code{case-fold-search} is "
 "set to @code{nil}, case is always significant in all searches."
-msgstr "置換コマンドの最初の引数がすべて小文字の場合、置換のための検索において大文字小文字の違いを無視します。これは@code{case-fold-search}が非@code{nil}の場合です。@code{case-fold-search}を@code{nil}にセットすると、すべての検索において常に大文字小文字の違いが有効になります。"
+msgstr ""
+"置換コマンドの最初の引数がすべて小文字の場合、置換のための検索において大文字"
+"小文字の違いを無視します。これは@code{case-fold-search}が非@code{nil}の場合で"
+"す。@code{case-fold-search}を@code{nil}にセットすると、すべての検索において常"
+"に大文字小文字の違いが有効になります。"
 
 #. type: vindex
-#: search.texi.orig:1230
+#: original_texis/search.texi:1230
 #, no-wrap
 msgid "case-replace"
 msgstr "case-replace"
 
 #. type: Plain text
-#: search.texi.orig:1234
+#: original_texis/search.texi:1234
 msgid ""
 "In addition, when the @var{newstring} argument is all or partly lower case, "
 "replacement commands try to preserve the case pattern of each occurrence.  "
 "Thus, the command"
-msgstr "さらに@var{newstring}のすべて、または一部が小文字の場合、置換コマンドは大文字小文字が出現するパターンを維持しようと試みます。したがって以下のコマンド、"
+msgstr ""
+"さらに@var{newstring}のすべて、または一部が小文字の場合、置換コマンドは大文字"
+"小文字が出現するパターンを維持しようと試みます。したがって以下のコマンド、"
 
 #. type: example
-#: search.texi.orig:1237
+#: original_texis/search.texi:1237
 #, no-wrap
 msgid "M-x replace-string @key{RET} foo @key{RET} bar @key{RET}\n"
 msgstr "M-x replace-string @key{RET} foo @key{RET} bar @key{RET}\n"
 
 #. type: Plain text
-#: search.texi.orig:1245
+#: original_texis/search.texi:1245
 msgid ""
 "replaces a lower case @samp{foo} with a lower case @samp{bar}, an all-caps "
 "@samp{FOO} with @samp{BAR}, and a capitalized @samp{Foo} with @samp{Bar}.  "
 "(These three alternatives---lower case, all caps, and capitalized, are the "
 "only ones that @code{replace-string} can distinguish.)"
-msgstr "は小文字の@samp{foo}を小文字の@samp{bar}で置換し、すべて大文字の@samp{FOO}を@samp{BAR}、そして最初が大文字の@samp{Foo}を@samp{Bar}に置換します。(これら3つの候補、すなわち小文字、すべて大文字、先頭が大文字は、@code{replace-string}が認識できる唯一のパターンです)。"
+msgstr ""
+"は小文字の@samp{foo}を小文字の@samp{bar}で置換し、すべて大文字の@samp{FOO}を"
+"@samp{BAR}、そして最初が大文字の@samp{Foo}を@samp{Bar}に置換します。(これら3"
+"つの候補、すなわち小文字、すべて大文字、先頭が大文字は、@code{replace-string}"
+"が認識できる唯一のパターンです)。"
 
 #. type: Plain text
-#: search.texi.orig:1252
+#: original_texis/search.texi:1252
 msgid ""
 "If upper-case letters are used in the replacement string, they remain upper "
 "case every time that text is inserted.  If upper-case letters are used in "
@@ -2790,50 +3431,55 @@ msgid ""
 "given, with no case conversion.  Likewise, if either @code{case-replace} or "
 "@code{case-fold-search} is set to @code{nil}, replacement is done without "
 "case conversion."
-msgstr "置換文字列に大文字が使われている場合、テキストが挿入されるときは、常に大文字のままとなります。大文字が最初の引数で使用されている場合、大文字小文字の変換なしで、2番目の引数に与えられたとおりに置換されます。同様に@code{case-replace}と@code{case-fold-search}の両方が@code{nil}にセットされている場合、大文字小文字の変換なしで置換されます。"
+msgstr ""
+"置換文字列に大文字が使われている場合、テキストが挿入されるときは、常に大文字"
+"のままとなります。大文字が最初の引数で使用されている場合、大文字小文字の変換"
+"なしで、2番目の引数に与えられたとおりに置換されます。同様に@code{case-"
+"replace}と@code{case-fold-search}の両方が@code{nil}にセットされている場合、大"
+"文字小文字の変換なしで置換されます。"
 
 #. type: cindex
-#: search.texi.orig:1255
+#: original_texis/search.texi:1255
 #, no-wrap
 msgid "query replace"
 msgstr "query replace"
 
 #. type: item
-#: search.texi.orig:1258
+#: original_texis/search.texi:1258
 #, no-wrap
 msgid "M-% @var{string} @key{RET} @var{newstring} @key{RET}"
 msgstr "M-% @var{string} @key{RET} @var{newstring} @key{RET}"
 
 #. type: table
-#: search.texi.orig:1260
+#: original_texis/search.texi:1260
 msgid "Replace some occurrences of @var{string} with @var{newstring}."
 msgstr "任意の@var{string}を@var{newstring}で置換します。"
 
 #. type: item
-#: search.texi.orig:1260
+#: original_texis/search.texi:1260
 #, no-wrap
 msgid "C-M-% @var{regexp} @key{RET} @var{newstring} @key{RET}"
 msgstr "C-M-% @var{regexp} @key{RET} @var{newstring} @key{RET}"
 
 #. type: table
-#: search.texi.orig:1262
+#: original_texis/search.texi:1262
 msgid "Replace some matches for @var{regexp} with @var{newstring}."
 msgstr "@var{regexp}にたいする任意のマッチを@var{newstring}で置換します。"
 
 #. type: kindex
-#: search.texi.orig:1264
+#: original_texis/search.texi:1264
 #, no-wrap
 msgid "M-%"
 msgstr "M-%"
 
 #. type: findex
-#: search.texi.orig:1265
+#: original_texis/search.texi:1265
 #, no-wrap
 msgid "query-replace"
 msgstr "query-replace"
 
 #. type: Plain text
-#: search.texi.orig:1276
+#: original_texis/search.texi:1276
 msgid ""
 "If you want to change only some of the occurrences of @samp{foo} to "
 "@samp{bar}, not all of them, use @kbd{M-%} (@code{query-replace}).  This "
@@ -2844,48 +3490,59 @@ msgid ""
 "non-@code{nil}, as it normally is (@pxref{Replacement and Case}).  A numeric "
 "argument means to consider only occurrences that are bounded by word-"
 "delimiter characters.  A negative prefix argument replaces backward."
-msgstr "@samp{foo}を@samp{bar}に置換するとき、すべてではなく、そのうちのいくつかだけを置換したいときは、@kbd{M-%} (@code{query-replace})を使います。このコマンドは@samp{foo}を1つずつ検索して、それを置換するかを毎回尋ねます。この問い合わせを別とすれば、@code{query-replace}は@code{replace-string}と同様に機能します(@ref{Unconditional Replace}を参照してください)。通常のように、@code{case-replace}が非@code{nil}のときは、大文字小文字を区別します(@ref{Replacement and Case}を参照してください)。数引数を指定すると、単語区切り文字で区切られた単語だけを考慮します。負のプレフィクス引数は後方に置換します。"
+msgstr ""
+"@samp{foo}を@samp{bar}に置換するとき、すべてではなく、そのうちのいくつかだけ"
+"を置換したいときは、@kbd{M-%} (@code{query-replace})を使います。このコマンド"
+"は@samp{foo}を1つずつ検索して、それを置換するかを毎回尋ねます。この問い合わせ"
+"を別とすれば、@code{query-replace}は@code{replace-string}と同様に機能します"
+"(@ref{Unconditional Replace}を参照してください)。通常のように、@code{case-"
+"replace}が非@code{nil}のときは、大文字小文字を区別します(@ref{Replacement "
+"and Case}を参照してください)。数引数を指定すると、単語区切り文字で区切られた"
+"単語だけを考慮します。負のプレフィクス引数は後方に置換します。"
 
 #. type: kindex
-#: search.texi.orig:1277
+#: original_texis/search.texi:1277
 #, no-wrap
 msgid "C-M-%"
 msgstr "C-M-%"
 
 #. type: findex
-#: search.texi.orig:1278
+#: original_texis/search.texi:1278
 #, no-wrap
 msgid "query-replace-regexp"
 msgstr "query-replace-regexp"
 
 #. type: Plain text
-#: search.texi.orig:1282
+#: original_texis/search.texi:1282
 msgid ""
 "@kbd{C-M-%} performs regexp search and replace (@code{query-replace-"
 "regexp}).  It works like @code{replace-regexp} except that it queries like "
 "@code{query-replace}."
-msgstr "@kbd{C-M-%} (@code{query-replace-regexp})は、regexpの検索と置換を行います。これは@code{query-replace}のように問い合わせを行う以外は、@code{replace-regexp}と同様に機能します。"
+msgstr ""
+"@kbd{C-M-%} (@code{query-replace-regexp})は、regexpの検索と置換を行います。こ"
+"れは@code{query-replace}のように問い合わせを行う以外は、@code{replace-regexp}"
+"と同様に機能します。"
 
 #. type: cindex
-#: search.texi.orig:1283
+#: original_texis/search.texi:1283
 #, no-wrap
 msgid "faces for highlighting query replace"
 msgstr "faces for highlighting query replace"
 
 #. type: cindex
-#: search.texi.orig:1284
+#: original_texis/search.texi:1284
 #, no-wrap
 msgid "query-replace face"
 msgstr "query-replace face"
 
 #. type: cindex
-#: search.texi.orig:1285
+#: original_texis/search.texi:1285
 #, no-wrap
 msgid "lazy-highlight face"
 msgstr "lazy-highlight face"
 
 #. type: Plain text
-#: search.texi.orig:1294
+#: original_texis/search.texi:1294
 msgid ""
 "These commands highlight the current match using the face @code{query-"
 "replace}.  They highlight other matches using @code{lazy-highlight} just "
@@ -2894,438 +3551,511 @@ msgid ""
 "the current match in the minibuffer.  If you want to keep special sequences "
 "@samp{\\&} and @samp{\\@var{n}} unexpanded, customize @code{query-replace-"
 "show-replacement} variable."
-msgstr "これらのコマンドは、カレントのマッチを、フェイス@code{query-replace}を使ってハイライトします。他のマッチのハイライトにはインクリメンタル検索と同様に、フェイス@code{lazy-highlight}が使われます(@ref{Incremental Search}を参照してください)。デフォルトでは@code{query-replace-regexp}は、カレントマッチを置換する展開後の文字列を、ミニバッファーに表示します。特別なシーケンス@samp{\\&}および@samp{\\@var{n}}を展開せずに維持するには、@code{query-replace-show-replacement}変数をカスタマイズしてください。"
+msgstr ""
+"これらのコマンドは、カレントのマッチを、フェイス@code{query-replace}を使って"
+"ハイライトします。他のマッチのハイライトにはインクリメンタル検索と同様に、"
+"フェイス@code{lazy-highlight}が使われます(@ref{Incremental Search}を参照して"
+"ください)。デフォルトでは@code{query-replace-regexp}は、カレントマッチを置換"
+"する展開後の文字列を、ミニバッファーに表示します。特別なシーケンス@samp{\\&}"
+"および@samp{\\@var{n}}を展開せずに維持するには、@code{query-replace-show-"
+"replacement}変数をカスタマイズしてください。"
 
 #. type: Plain text
-#: search.texi.orig:1297
+#: original_texis/search.texi:1297
 msgid ""
 "The characters you can type when you are shown a match for the string or "
 "regexp are:"
-msgstr "以下は文字列またはregexpにたいするマッチが表示されているときにタイプできる文字です:"
+msgstr ""
+"以下は文字列またはregexpにたいするマッチが表示されているときにタイプできる文"
+"字です:"
 
 #. type: kindex
-#: search.texi.orig:1299
+#: original_texis/search.texi:1299
 #, no-wrap
 msgid "SPC @r{(query-replace)}"
 msgstr "SPC @r{(query-replace)}"
 
 #. type: kindex
-#: search.texi.orig:1300
+#: original_texis/search.texi:1300
 #, no-wrap
 msgid "DEL @r{(query-replace)}"
 msgstr "DEL @r{(query-replace)}"
 
 #. type: kindex
-#: search.texi.orig:1301
+#: original_texis/search.texi:1301
 #, no-wrap
 msgid ", @r{(query-replace)}"
 msgstr ", @r{(query-replace)}"
 
 #. type: kindex
-#: search.texi.orig:1302
+#: original_texis/search.texi:1302
 #, no-wrap
 msgid "RET @r{(query-replace)}"
 msgstr "RET @r{(query-replace)}"
 
 #. type: kindex
-#: search.texi.orig:1303
+#: original_texis/search.texi:1303
 #, no-wrap
 msgid ". @r{(query-replace)}"
 msgstr ". @r{(query-replace)}"
 
 #. type: kindex
-#: search.texi.orig:1304
+#: original_texis/search.texi:1304
 #, no-wrap
 msgid "! @r{(query-replace)}"
 msgstr "! @r{(query-replace)}"
 
 #. type: kindex
-#: search.texi.orig:1305
+#: original_texis/search.texi:1305
 #, no-wrap
 msgid "^ @r{(query-replace)}"
 msgstr "^ @r{(query-replace)}"
 
 #. type: kindex
-#: search.texi.orig:1306
+#: original_texis/search.texi:1306
 #, no-wrap
 msgid "C-r @r{(query-replace)}"
 msgstr "C-r @r{(query-replace)}"
 
 #. type: kindex
-#: search.texi.orig:1307
+#: original_texis/search.texi:1307
 #, no-wrap
 msgid "C-w @r{(query-replace)}"
 msgstr "C-w @r{(query-replace)}"
 
 #. type: kindex
-#: search.texi.orig:1308
+#: original_texis/search.texi:1308
 #, no-wrap
 msgid "C-l @r{(query-replace)}"
 msgstr "C-l @r{(query-replace)}"
 
 #. type: key{#1}
-#: search.texi.orig:1313
+#: original_texis/search.texi:1313
 #, no-wrap
 msgid "SPC"
 msgstr "SPC"
 
 #. type: table
-#: search.texi.orig:1315
+#: original_texis/search.texi:1315
 msgid "to replace the occurrence with @var{newstring}."
 msgstr "マッチを@var{newstring}で置き換えます。"
 
 #. type: key{#1}
-#: search.texi.orig:1316
+#: original_texis/search.texi:1316
 #, no-wrap
 msgid "DEL"
 msgstr "DEL"
 
 #. type: table
-#: search.texi.orig:1318
+#: original_texis/search.texi:1318
 msgid "to skip to the next occurrence without replacing this one."
 msgstr "カレントマッチを置換せずに次のマッチへスキップします。"
 
 #. type: item
-#: search.texi.orig:1319
+#: original_texis/search.texi:1319
 #, no-wrap
 msgid ", @r{(Comma)}"
 msgstr ", @r{(カンマ)}"
 
 #. type: table
-#: search.texi.orig:1324
+#: original_texis/search.texi:1324
 msgid ""
 "to replace this occurrence and display the result.  You are then asked for "
 "another input character to say what to do next.  Since the replacement has "
 "already been made, @key{DEL} and @key{SPC} are equivalent in this situation; "
 "both move to the next occurrence."
-msgstr "カレントマッチを置換して、結果を表示します。そして次に何をするかを文字入力するよう促します。置換がすでに行われているので、この状況では@key{DEL}と@key{SPC}は等価で、どちらも次のマッチへ移動します。"
+msgstr ""
+"カレントマッチを置換して、結果を表示します。そして次に何をするかを文字入力す"
+"るよう促します。置換がすでに行われているので、この状況では@key{DEL}と"
+"@key{SPC}は等価で、どちらも次のマッチへ移動します。"
 
 #. type: table
-#: search.texi.orig:1330
+#: original_texis/search.texi:1330
 msgid ""
 "You can type @kbd{C-r} at this point (see below) to alter the replaced "
 "text.  You can also type @kbd{C-x u} to undo the replacement; this exits the "
 "@code{query-replace}, so if you want to do further replacement you must use "
 "@kbd{C-x @key{ESC} @key{ESC} @key{RET}} to restart (@pxref{Repetition})."
-msgstr "ここで@kbd{C-r}(以下を参照)をタイプして、置換されたテキストを編集できます。@kbd{C-x u}をタイプして、置換を取り消すこともできます。これは@code{query-replace}を終了させるので、さらに置換を行う場合は、@kbd{C-x @key{ESC} @key{ESC} @key{RET}}で置換を再開しなければなりません(@ref{Repetition}を参照してください)。"
+msgstr ""
+"ここで@kbd{C-r}(以下を参照)をタイプして、置換されたテキストを編集できます。"
+"@kbd{C-x u}をタイプして、置換を取り消すこともできます。これは@code{query-"
+"replace}を終了させるので、さらに置換を行う場合は、@kbd{C-x @key{ESC} "
+"@key{ESC} @key{RET}}で置換を再開しなければなりません(@ref{Repetition}を参照し"
+"てください)。"
 
 #. type: key{#1}
-#: search.texi.orig:1331
+#: original_texis/search.texi:1331
 #, no-wrap
 msgid "RET"
 msgstr "RET"
 
 #. type: table
-#: search.texi.orig:1333
+#: original_texis/search.texi:1333
 msgid "to exit without doing any more replacements."
 msgstr "これ以上の置換を行わずに終了します。"
 
 #. type: item
-#: search.texi.orig:1334
+#: original_texis/search.texi:1334
 #, no-wrap
 msgid ".@: @r{(Period)}"
 msgstr ".@: @r{(ピリオド)}"
 
 #. type: table
-#: search.texi.orig:1337
+#: original_texis/search.texi:1337
 msgid ""
 "to replace this occurrence and then exit without searching for more "
 "occurrences."
 msgstr "カレントマッチを置換してから、これ以上の検索を行わずに終了します。"
 
 #. type: item
-#: search.texi.orig:1338
+#: original_texis/search.texi:1338
 #, no-wrap
 msgid "!"
 msgstr "!"
 
 #. type: table
-#: search.texi.orig:1340
+#: original_texis/search.texi:1340
 msgid "to replace all remaining occurrences without asking again."
 msgstr "これ以上の問い合わせをせずに、残りのマッチをすべて置換します。"
 
 #. type: item
-#: search.texi.orig:1341
+#: original_texis/search.texi:1341
 #, no-wrap
 msgid "Y @r{(Upper-case)}"
 msgstr "Y @r{(大文字)}"
 
 #. type: table
-#: search.texi.orig:1347
+#: original_texis/search.texi:1347
 msgid ""
 "to replace all remaining occurrences in all remaining buffers in multi-"
 "buffer replacements (like the Dired @key{Q} command that performs query "
 "replace on selected files).  It answers this question and all subsequent "
 "questions in the series with \"yes\", without further user interaction."
-msgstr "複数バッファーの置換で、残りのバッファーの、残りのマッチをすべて置換します(これは選択したファイルにたいして問い合わせつきの置換を行う、Diredの@key{Q}コマンドと似ています)。これはすべての一連の問い合わせにたいして、これ以上のユーザーとの対話なしに\"yes\"を答えます。"
+msgstr ""
+"複数バッファーの置換で、残りのバッファーの、残りのマッチをすべて置換します(こ"
+"れは選択したファイルにたいして問い合わせつきの置換を行う、Diredの@key{Q}コマ"
+"ンドと似ています)。これはすべての一連の問い合わせにたいして、これ以上のユー"
+"ザーとの対話なしに\"yes\"を答えます。"
 
 #. type: item
-#: search.texi.orig:1348
+#: original_texis/search.texi:1348
 #, no-wrap
 msgid "N @r{(Upper-case)}"
 msgstr "N @r{(大文字)}"
 
 #. type: table
-#: search.texi.orig:1353
+#: original_texis/search.texi:1353
 msgid ""
 "to skip to the next buffer in multi-buffer replacements without replacing "
 "remaining occurrences in the current buffer.  It answers this question \"no"
 "\", gives up on the questions for the current buffer, and continues to the "
 "next buffer in the sequence."
-msgstr "複数バッファーの置換で、カレントバッファーの残りのマッチを置換せずに、次のバッファーへスキップします。これはカレントバッファーのマッチにたいする問い合わせに\"no\"を答えて、次のバッファーへと処理を続けます。"
+msgstr ""
+"複数バッファーの置換で、カレントバッファーの残りのマッチを置換せずに、次の"
+"バッファーへスキップします。これはカレントバッファーのマッチにたいする問い合"
+"わせに\"no\"を答えて、次のバッファーへと処理を続けます。"
 
 #. type: table
-#: search.texi.orig:1358
+#: original_texis/search.texi:1358
 msgid ""
 "to go back to the position of the previous occurrence (or what used to be an "
 "occurrence), in case you changed it by mistake or want to reexamine it."
-msgstr "前のマッチの位置に戻ります。これは間違えて変更したときや、再検証したい場合に使います。"
+msgstr ""
+"前のマッチの位置に戻ります。これは間違えて変更したときや、再検証したい場合に"
+"使います。"
 
 #. type: table
-#: search.texi.orig:1364
+#: original_texis/search.texi:1364
 msgid ""
 "to enter a recursive editing level, in case the occurrence needs to be "
 "edited rather than just replaced with @var{newstring}.  When you are done, "
 "exit the recursive editing level with @kbd{C-M-c} to proceed to the next "
 "occurrence.  @xref{Recursive Edit}."
-msgstr "再帰編集レベル(recursive editing level)に入ります。これはマッチを@var{newstring}で置換するだけでなく、編集したい場合に使用します。編集を終えたら@kbd{C-M-c}で再帰編集レベルを抜けて、次のマッチを処理します。@ref{Recursive Edit}を参照してください。"
+msgstr ""
+"再帰編集レベル(recursive editing level)に入ります。これはマッチを"
+"@var{newstring}で置換するだけでなく、編集したい場合に使用します。編集を終えた"
+"ら@kbd{C-M-c}で再帰編集レベルを抜けて、次のマッチを処理します。"
+"@ref{Recursive Edit}を参照してください。"
 
 #. type: item
-#: search.texi.orig:1365
+#: original_texis/search.texi:1365
 #, no-wrap
 msgid "C-w"
 msgstr "C-w"
 
 #. type: table
-#: search.texi.orig:1370
+#: original_texis/search.texi:1370
 msgid ""
 "to delete the occurrence, and then enter a recursive editing level as in "
 "@kbd{C-r}.  Use the recursive edit to insert text to replace the deleted "
 "occurrence of @var{string}.  When done, exit the recursive editing level "
 "with @kbd{C-M-c} to proceed to the next occurrence."
-msgstr "マッチを削除してから、@kbd{C-r}と同様に再帰編集レベルに入ります。これは@var{string}を削除してから、テキストを挿入することにより置換を行う場合に使用します。編集を終えたら@kbd{C-M-c}で再帰編集レベルを抜けて、次のマッチを処理します。"
+msgstr ""
+"マッチを削除してから、@kbd{C-r}と同様に再帰編集レベルに入ります。これは"
+"@var{string}を削除してから、テキストを挿入することにより置換を行う場合に使用"
+"します。編集を終えたら@kbd{C-M-c}で再帰編集レベルを抜けて、次のマッチを処理し"
+"ます。"
 
 #. type: item
-#: search.texi.orig:1371
+#: original_texis/search.texi:1371
 #, no-wrap
 msgid "e"
 msgstr "e"
 
 #. type: table
-#: search.texi.orig:1376
+#: original_texis/search.texi:1376
 msgid ""
 "to edit the replacement string in the minibuffer.  When you exit the "
 "minibuffer by typing @key{RET}, the minibuffer contents replace the current "
 "occurrence of the pattern.  They also become the new replacement string for "
 "any further occurrences."
-msgstr "置換文字列をミニバッファーで編集します。@key{RET}でミニバッファーを抜けると、カレントマッチをミニバッファーの内容で置換します。この新しい置換文字列は、残りのマッチにたいしても適用されます。"
+msgstr ""
+"置換文字列をミニバッファーで編集します。@key{RET}でミニバッファーを抜けると、"
+"カレントマッチをミニバッファーの内容で置換します。この新しい置換文字列は、残"
+"りのマッチにたいしても適用されます。"
 
 #. type: item
-#: search.texi.orig:1377
+#: original_texis/search.texi:1377
 #, no-wrap
 msgid "C-l"
 msgstr "C-l"
 
 #. type: table
-#: search.texi.orig:1380
+#: original_texis/search.texi:1380
 msgid ""
 "to redisplay the screen.  Then you must type another character to specify "
 "what to do with this occurrence."
-msgstr "スクリーンを再描画します。その後でカレントマッチにたいして何を行うか、別の文字をタイプして指定しなければなりません。"
+msgstr ""
+"スクリーンを再描画します。その後でカレントマッチにたいして何を行うか、別の文"
+"字をタイプして指定しなければなりません。"
 
 #. type: item
-#: search.texi.orig:1381
+#: original_texis/search.texi:1381
 #, no-wrap
 msgid "C-h"
 msgstr "C-h"
 
 #. type: table
-#: search.texi.orig:1384
+#: original_texis/search.texi:1384
 msgid ""
 "to display a message summarizing these options.  Then you must type another "
 "character to specify what to do with this occurrence."
-msgstr "上述したオプションの要約を表示します。その後でカレントマッチにたいして何を行うか、別の文字をタイプして指定しなければなりません。"
+msgstr ""
+"上述したオプションの要約を表示します。その後でカレントマッチにたいして何を行"
+"うか、別の文字をタイプして指定しなければなりません。"
 
 #. type: Plain text
-#: search.texi.orig:1389
+#: original_texis/search.texi:1389
 msgid ""
 "Some other characters are aliases for the ones listed above: @kbd{y}, "
 "@kbd{n} and @kbd{q} are equivalent to @key{SPC}, @key{DEL} and @key{RET}."
-msgstr "上述した文字以外は、上述の文字リストのエイリアスです。たとえば@kbd{y}、@kbd{n}、@kbd{q}は、@key{SPC}、@key{DEL}、@key{RET}と等価です。"
+msgstr ""
+"上述した文字以外は、上述の文字リストのエイリアスです。たとえば@kbd{y}、"
+"@kbd{n}、@kbd{q}は、@key{SPC}、@key{DEL}、@key{RET}と等価です。"
 
 #. type: Plain text
-#: search.texi.orig:1394
+#: original_texis/search.texi:1394
 msgid ""
 "Aside from this, any other character exits the @code{query-replace}, and is "
 "then reread as part of a key sequence.  Thus, if you type @kbd{C-k}, it "
 "exits the @code{query-replace} and then kills to end of line."
-msgstr "これらのエイリアス文字以外の文字は、@code{query-replace}を終了してから、キーシーケンスの残りの部分を読みとります。したがって@kbd{C-k}とタイプすると、@code{query-replace}を終了してから、行末までをkillします。"
+msgstr ""
+"これらのエイリアス文字以外の文字は、@code{query-replace}を終了してから、キー"
+"シーケンスの残りの部分を読みとります。したがって@kbd{C-k}とタイプすると、"
+"@code{query-replace}を終了してから、行末までをkillします。"
 
 #. type: Plain text
-#: search.texi.orig:1399
+#: original_texis/search.texi:1399
 msgid ""
 "To restart a @code{query-replace} once it is exited, use @kbd{C-x @key{ESC} "
 "@key{ESC}}, which repeats the @code{query-replace} because it used the "
 "minibuffer to read its arguments.  @xref{Repetition, C-x ESC ESC}."
-msgstr "一度終了した@code{query-replace}を再開するには、@kbd{C-x @key{ESC} @key{ESC}}を使います。@code{query-replace}は引数の読み取りにミニバッファーを使っているので、このキーシーケンスで再開させることができます。@ref{Repetition, C-x ESC ESC}を参照してください。"
+msgstr ""
+"一度終了した@code{query-replace}を再開するには、@kbd{C-x @key{ESC} @key{ESC}}"
+"を使います。@code{query-replace}は引数の読み取りにミニバッファーを使っている"
+"ので、このキーシーケンスで再開させることができます。@ref{Repetition, C-x ESC "
+"ESC}を参照してください。"
 
 #. type: cindex
-#: search.texi.orig:1400
+#: original_texis/search.texi:1400
 #, no-wrap
 msgid "invisible text, and query-replace"
 msgstr "invisible text, and query-replace"
 
 #. type: Plain text
-#: search.texi.orig:1403
+#: original_texis/search.texi:1403
 msgid ""
 "The option @code{search-invisible} determines how @code{query-replace} "
 "treats invisible text.  @xref{Outline Search}."
-msgstr "オプション@code{search-invisible}は、@code{query-replace}が非表示のテキストを扱う方法を決定します。@ref{Outline Search}を参照してください。"
+msgstr ""
+"オプション@code{search-invisible}は、@code{query-replace}が非表示のテキストを"
+"扱う方法を決定します。@ref{Outline Search}を参照してください。"
 
 #. type: Plain text
-#: search.texi.orig:1408
+#: original_texis/search.texi:1408
 msgid ""
 "@xref{Operating on Files}, for the Dired @kbd{Q} command which performs "
 "query replace on selected files.  See also @ref{Transforming File Names}, "
 "for Dired commands to rename, copy, or link files by replacing regexp "
 "matches in file names."
-msgstr "選択されたファイルにたいして問い合わせつきの置換を行う、Diredの@kbd{Q}コマンドについては、@ref{Operating on Files}を参照してください。regexpにマッチするファイル名にたいして、ファイル名の変更、ファイルのコピー、ファイルのリンクを行うDiredのコマンドについては、@ref{Transforming File Names}を参照してください。"
+msgstr ""
+"選択されたファイルにたいして問い合わせつきの置換を行う、Diredの@kbd{Q}コマン"
+"ドについては、@ref{Operating on Files}を参照してください。regexpにマッチする"
+"ファイル名にたいして、ファイル名の変更、ファイルのコピー、ファイルのリンクを"
+"行うDiredのコマンドについては、@ref{Transforming File Names}を参照してくださ"
+"い。"
 
 #. type: section
-#: search.texi.orig:1410
+#: original_texis/search.texi:1410
 #, no-wrap
 msgid "Other Search-and-Loop Commands"
 msgstr "Other Search-and-Loop Commands"
 
 #. type: Plain text
-#: search.texi.orig:1417
+#: original_texis/search.texi:1417
 msgid ""
 "Here are some other commands that find matches for a regular expression.  "
 "They all ignore case in matching, if the pattern contains no upper-case "
 "letters and @code{case-fold-search} is non-@code{nil}.  Aside from "
 "@code{occur} and its variants, all operate on the text from point to the end "
 "of the buffer, or on the region if it is active."
-msgstr "ここでは正規表現にたいするマッチを検索する、その他のコマンドを説明します。これらのコマンドは、パターンに大文字が含まれていないカ、@code{case-fold-search}が非@code{nil}のときは、マッチングで大文字小文字を区別しません。@code{occur}とその変種をのぞき、これらはすべて、ポイント位置からバッファーの最後まで、リージョンがアクティブなときはリージョンにたいして処理を行います。"
+msgstr ""
+"ここでは正規表現にたいするマッチを検索する、その他のコマンドを説明します。こ"
+"れらのコマンドは、パターンに大文字が含まれていないカ、@code{case-fold-search}"
+"が非@code{nil}のときは、マッチングで大文字小文字を区別しません。@code{occur}"
+"とその変種をのぞき、これらはすべて、ポイント位置からバッファーの最後まで、"
+"リージョンがアクティブなときはリージョンにたいして処理を行います。"
 
 #. type: findex
-#: search.texi.orig:1418
+#: original_texis/search.texi:1418
 #, no-wrap
 msgid "list-matching-lines"
 msgstr "list-matching-lines"
 
 #. type: findex
-#: search.texi.orig:1419
+#: original_texis/search.texi:1419
 #, no-wrap
 msgid "occur"
 msgstr "occur"
 
 #. type: findex
-#: search.texi.orig:1420
+#: original_texis/search.texi:1420
 #, no-wrap
 msgid "multi-occur"
 msgstr "multi-occur"
 
 #. type: findex
-#: search.texi.orig:1421
+#: original_texis/search.texi:1421
 #, no-wrap
 msgid "multi-occur-in-matching-buffers"
 msgstr "multi-occur-in-matching-buffers"
 
 #. type: findex
-#: search.texi.orig:1422
+#: original_texis/search.texi:1422
 #, no-wrap
 msgid "how-many"
 msgstr "how-many"
 
 #. type: findex
-#: search.texi.orig:1423
+#: original_texis/search.texi:1423
 #, no-wrap
 msgid "flush-lines"
 msgstr "flush-lines"
 
 #. type: findex
-#: search.texi.orig:1424
+#: original_texis/search.texi:1424
 #, no-wrap
 msgid "keep-lines"
 msgstr "keep-lines"
 
 #. type: item
-#: search.texi.orig:1427
+#: original_texis/search.texi:1427
 #, no-wrap
 msgid "M-x multi-isearch-buffers"
 msgstr "M-x multi-isearch-buffers"
 
 #. type: table
-#: search.texi.orig:1434
+#: original_texis/search.texi:1434
 msgid ""
 "Prompt for one or more buffer names, ending with @key{RET}; then, begin a "
 "multi-buffer incremental search in those buffers.  (If the search fails in "
 "one buffer, the next @kbd{C-s} tries searching the next specified buffer, "
 "and so forth.)  With a prefix argument, prompt for a regexp and begin a "
 "multi-buffer incremental search in buffers matching that regexp."
-msgstr "１つ以上のバッファー名の入力を求め(@key{RET}で終了)、それらのバッファーにたいして複数バッファーのインクリメンタル検索を開始します(あるバッファーでの検索に失敗すると、次の@kbd{C-s}により、指定された次のバッファーへと検索を試みます)。プレフィクス引数を指定すると、regexpの入力を求め、regexpにマッチするバッファーにたいして、複数バッファーでのインクリメンタル検索を開始します。"
+msgstr ""
+"１つ以上のバッファー名の入力を求め(@key{RET}で終了)、それらのバッファーにたい"
+"して複数バッファーのインクリメンタル検索を開始します(あるバッファーでの検索に"
+"失敗すると、次の@kbd{C-s}により、指定された次のバッファーへと検索を試みま"
+"す)。プレフィクス引数を指定すると、regexpの入力を求め、regexpにマッチするバッ"
+"ファーにたいして、複数バッファーでのインクリメンタル検索を開始します。"
 
 #. type: item
-#: search.texi.orig:1435
+#: original_texis/search.texi:1435
 #, no-wrap
 msgid "M-x multi-isearch-buffers-regexp"
 msgstr "M-x multi-isearch-buffers-regexp"
 
 #. type: table
-#: search.texi.orig:1438
+#: original_texis/search.texi:1438
 msgid ""
 "This command is just like @code{multi-isearch-buffers}, except it performs "
 "an incremental regexp search."
-msgstr "このコマンドは@code{multi-isearch-buffers}と同様ですが、インクリメンタルなregexp検索を行います。"
+msgstr ""
+"このコマンドは@code{multi-isearch-buffers}と同様ですが、インクリメンタルな"
+"regexp検索を行います。"
 
 #. type: cindex
-#: search.texi.orig:1439
+#: original_texis/search.texi:1439
 #, no-wrap
 msgid "Occur mode"
 msgstr "Occur mode"
 
 #. type: cindex
-#: search.texi.orig:1440
+#: original_texis/search.texi:1440
 #, no-wrap
 msgid "mode, Occur"
 msgstr "mode, Occur"
 
 #. type: item
-#: search.texi.orig:1441
+#: original_texis/search.texi:1441
 #, no-wrap
 msgid "M-x occur"
 msgstr "M-x occur"
 
 #. type: table
-#: search.texi.orig:1447
+#: original_texis/search.texi:1447
 msgid ""
 "Prompt for a regexp, and display a list showing each line in the buffer that "
 "contains a match for it.  To limit the search to part of the buffer, narrow "
 "to that part (@pxref{Narrowing}).  A numeric argument @var{n} specifies that "
 "@var{n} lines of context are to be displayed before and after each matching "
 "line."
-msgstr "regexpの入力を求め、それへのマッチを含むバッファー内の各行を一覧表示します。検索をバッファーの一部に制限するには、その部分にナローイングします(@ref{Narrowing}を参照してください)。数引数@var{n}を指定すると、そのコンテキストでマッチした各行の、前後@var{n}行を表示します。"
+msgstr ""
+"regexpの入力を求め、それへのマッチを含むバッファー内の各行を一覧表示します。"
+"検索をバッファーの一部に制限するには、その部分にナローイングします"
+"(@ref{Narrowing}を参照してください)。数引数@var{n}を指定すると、そのコンテキ"
+"ストでマッチした各行の、前後@var{n}行を表示します。"
 
 #. type: kindex
-#: search.texi.orig:1448
+#: original_texis/search.texi:1448
 #, no-wrap
 msgid "RET @r{(Occur mode)}"
 msgstr "RET @r{(Occur mode)}"
 
 #. type: kindex
-#: search.texi.orig:1449
+#: original_texis/search.texi:1449
 #, no-wrap
 msgid "o @r{(Occur mode)}"
 msgstr "o @r{(Occur mode)}"
 
 #. type: kindex
-#: search.texi.orig:1450
+#: original_texis/search.texi:1450
 #, no-wrap
 msgid "C-o @r{(Occur mode)}"
 msgstr "C-o @r{(Occur mode)}"
 
 #. type: table
-#: search.texi.orig:1457
+#: original_texis/search.texi:1457
 msgid ""
 "In the @file{*Occur*} buffer, you can click on each entry, or move point "
 "there and type @key{RET}, to visit the corresponding position in the buffer "
@@ -3333,122 +4063,152 @@ msgid ""
 "window; @kbd{C-o} does not select it.  Alternatively, you can use the @kbd{C-"
 "x `} (@code{next-error}) command to visit the occurrences one by one "
 "(@pxref{Compilation Mode})."
-msgstr "@file{*Occur*}バッファーでは、エントリーをクリックするか、ポイントをそこに移動して@key{RET}をタイプすることにより、検索されたバッファーの対応する位置をvisitします。@kbd{o}と@kbd{C-o}はマッチを他のウィンドウに表示します(@kbd{C-o}はそのウィンドウを選択しません)。かわりに@kbd{C-x `} (@code{next-error})コマンドを使うことにより、マッチした場所を1つ1つvisitできます(@ref{Compilation Mode}を参照してください)。"
+msgstr ""
+"@file{*Occur*}バッファーでは、エントリーをクリックするか、ポイントをそこに移"
+"動して@key{RET}をタイプすることにより、検索されたバッファーの対応する位置を"
+"visitします。@kbd{o}と@kbd{C-o}はマッチを他のウィンドウに表示します(@kbd{C-o}"
+"はそのウィンドウを選択しません)。かわりに@kbd{C-x `} (@code{next-error})コマ"
+"ンドを使うことにより、マッチした場所を1つ1つvisitできます(@ref{Compilation "
+"Mode}を参照してください)。"
 
 #. type: cindex
-#: search.texi.orig:1458
+#: original_texis/search.texi:1458
 #, no-wrap
 msgid "Occur Edit mode"
 msgstr "Occur Edit mode"
 
 #. type: cindex
-#: search.texi.orig:1459
+#: original_texis/search.texi:1459
 #, no-wrap
 msgid "mode, Occur Edit"
 msgstr "mode, Occur Edit"
 
 #. type: table
-#: search.texi.orig:1464
+#: original_texis/search.texi:1464
 msgid ""
 "Typing @kbd{e} in the @file{*Occur*} buffer switches to Occur Edit mode, in "
 "which edits made to the entries are also applied to the text in the "
 "originating buffer.  Type @kbd{C-c C-c} to return to Occur mode."
-msgstr "@file{*Occur*}バッファーで@kbd{e}をタイプすることにより、Occur Editモードに切り替えます。このモードではエントリーにたいする編集結果が、元のバッファーのテキストに適用されます。@kbd{C-c C-c}とタイプすることにより、Occurモードに戻ります。"
+msgstr ""
+"@file{*Occur*}バッファーで@kbd{e}をタイプすることにより、Occur Editモードに切"
+"り替えます。このモードではエントリーにたいする編集結果が、元のバッファーのテ"
+"キストに適用されます。@kbd{C-c C-c}とタイプすることにより、Occurモードに戻り"
+"ます。"
 
 #. type: table
-#: search.texi.orig:1467
+#: original_texis/search.texi:1467
 msgid ""
 "The command @kbd{M-x list-matching-lines} is a synonym for @kbd{M-x occur}."
 msgstr "コマンド@kbd{M-x list-matching-lines}は、@kbd{M-x occur}の別名です。"
 
 #. type: item
-#: search.texi.orig:1468 search.texi.orig:1469
+#: original_texis/search.texi:1468 original_texis/search.texi:1469
 #, no-wrap
 msgid "M-s o"
 msgstr "M-s o"
 
 #. type: table
-#: search.texi.orig:1473
+#: original_texis/search.texi:1473
 msgid ""
 "Run @code{occur} using the search string of the last incremental string "
 "search.  You can also run @kbd{M-s o} when an incremental search is active; "
 "this uses the current search string."
-msgstr "最後にインクリメンタル検索で使った文字列を検索文字列として、@code{occur}を実行します。インクリメンタル検索がアクティブのときは@kbd{M-s o}を実行して、カレントのサーチリングを使うこともできます。"
+msgstr ""
+"最後にインクリメンタル検索で使った文字列を検索文字列として、@code{occur}を実"
+"行します。インクリメンタル検索がアクティブのときは@kbd{M-s o}を実行して、カレ"
+"ントのサーチリングを使うこともできます。"
 
 #. type: item
-#: search.texi.orig:1474
+#: original_texis/search.texi:1474
 #, no-wrap
 msgid "M-x multi-occur"
 msgstr "M-x multi-occur"
 
 #. type: table
-#: search.texi.orig:1478
+#: original_texis/search.texi:1478
 msgid ""
 "This command is just like @code{occur}, except it is able to search through "
 "multiple buffers.  It asks you to specify the buffer names one by one."
-msgstr "このコマンドは@code{occur}と同じですが、複数のバッファーを検索する点が異なります。このコマンドは、1つずつバッファー名の入力を求めます。"
+msgstr ""
+"このコマンドは@code{occur}と同じですが、複数のバッファーを検索する点が異なり"
+"ます。このコマンドは、1つずつバッファー名の入力を求めます。"
 
 #. type: item
-#: search.texi.orig:1479
+#: original_texis/search.texi:1479
 #, no-wrap
 msgid "M-x multi-occur-in-matching-buffers"
 msgstr "M-x multi-occur-in-matching-buffers"
 
 #. type: table
-#: search.texi.orig:1484
+#: original_texis/search.texi:1484
 msgid ""
 "This command is similar to @code{multi-occur}, except the buffers to search "
 "are specified by a regular expression that matches visited file names.  With "
 "a prefix argument, it uses the regular expression to match buffer names "
 "instead."
-msgstr "このコマンドは@code{multi-occur}と似ていますが、visitしているファイル名にマッチする正規表現を指定することにより、検索するバッファーを指定する点が異なります。プレフィクス引数を指定すると、正規表現にマッチするバッファー名となります。"
+msgstr ""
+"このコマンドは@code{multi-occur}と似ていますが、visitしているファイル名にマッ"
+"チする正規表現を指定することにより、検索するバッファーを指定する点が異なりま"
+"す。プレフィクス引数を指定すると、正規表現にマッチするバッファー名となりま"
+"す。"
 
 #. type: item
-#: search.texi.orig:1485
+#: original_texis/search.texi:1485
 #, no-wrap
 msgid "M-x how-many"
 msgstr "M-x how-many"
 
 #. type: table
-#: search.texi.orig:1489
+#: original_texis/search.texi:1489
 msgid ""
 "Prompt for a regexp, and print the number of matches for it in the buffer "
 "after point.  If the region is active, this operates on the region instead."
-msgstr "regexpの入力を求め、バッファーのポイント位置以降に、何個のマッチがあるか表示します。リージョンがアクティブのときは、リージョンにたいして操作を行います。"
+msgstr ""
+"regexpの入力を求め、バッファーのポイント位置以降に、何個のマッチがあるか表示"
+"します。リージョンがアクティブのときは、リージョンにたいして操作を行います。"
 
 #. type: item
-#: search.texi.orig:1490
+#: original_texis/search.texi:1490
 #, no-wrap
 msgid "M-x flush-lines"
 msgstr "M-x flush-lines"
 
 #. type: table
-#: search.texi.orig:1497
+#: original_texis/search.texi:1497
 msgid ""
 "Prompt for a regexp, and delete each line that contains a match for it, "
 "operating on the text after point.  This command deletes the current line if "
 "it contains a match starting after point.  If the region is active, it "
 "operates on the region instead; if a line partially contained in the region "
 "contains a match entirely contained in the region, it is deleted."
-msgstr "regexpの入力を求め、ポイント以降にあるテキストにたいして、マッチが含まれている行を削除します。カレント行のポイント以降にマッチする文字列が含まれているときは、カレント行を削除します。リージョンがアクティブのときは、リージョンにたいして操作を行います。行の一部ににリージョンが含まれていて、さらにマッチの全体がリージョンに含まれているとき、その行は削除されます。"
+msgstr ""
+"regexpの入力を求め、ポイント以降にあるテキストにたいして、マッチが含まれてい"
+"る行を削除します。カレント行のポイント以降にマッチする文字列が含まれていると"
+"きは、カレント行を削除します。リージョンがアクティブのときは、リージョンにた"
+"いして操作を行います。行の一部ににリージョンが含まれていて、さらにマッチの全"
+"体がリージョンに含まれているとき、その行は削除されます。"
 
 #. type: table
-#: search.texi.orig:1502
+#: original_texis/search.texi:1502
 msgid ""
 "If a match is split across lines, @code{flush-lines} deletes all those "
 "lines.  It deletes the lines before starting to look for the next match; "
 "hence, it ignores a match starting on the same line at which another match "
 "ended."
-msgstr "マッチが行をまたいでいる場合、@code{flush-lines}はそれらの行すべてを削除します。このコマンドは行を削除してから、次のマッチを検索します。したがって、1行にマッチ全体と、次の行にまたがるマッチが両方含まれるとき、次の行にまたがるマッチは無視されます。"
+msgstr ""
+"マッチが行をまたいでいる場合、@code{flush-lines}はそれらの行すべてを削除しま"
+"す。このコマンドは行を削除してから、次のマッチを検索します。したがって、1行に"
+"マッチ全体と、次の行にまたがるマッチが両方含まれるとき、次の行にまたがるマッ"
+"チは無視されます。"
 
 #. type: item
-#: search.texi.orig:1503
+#: original_texis/search.texi:1503
 #, no-wrap
 msgid "M-x keep-lines"
 msgstr "M-x keep-lines"
 
 #. type: table
-#: search.texi.orig:1510
+#: original_texis/search.texi:1510
 msgid ""
 "Prompt for a regexp, and delete each line that @emph{does not} contain a "
 "match for it, operating on the text after point.  If point is not at the "
@@ -3456,9 +4216,14 @@ msgid ""
 "region is active, the command operates on the region instead; it never "
 "deletes lines that are only partially contained in the region (a newline "
 "that ends a line counts as part of that line)."
-msgstr "regexpの入力を求め、ポイント以降にあるテキストにたいして、マッチを@emph{含まない}行を削除します。ポイントが行の先頭でない場合、このコマンドは常にカレント行を維持します。リージョンがアクティブのときは、リージョンにたいして操作を行います。このコマンドは一部がリージョンに含まれるだけの行は削除しません(行を終端する改行は、その行の一部と判断します)。"
+msgstr ""
+"regexpの入力を求め、ポイント以降にあるテキストにたいして、マッチを@emph{含ま"
+"ない}行を削除します。ポイントが行の先頭でない場合、このコマンドは常にカレント"
+"行を維持します。リージョンがアクティブのときは、リージョンにたいして操作を行"
+"います。このコマンドは一部がリージョンに含まれるだけの行は削除しません(行を終"
+"端する改行は、その行の一部と判断します)。"
 
 #. type: table
-#: search.texi.orig:1512
+#: original_texis/search.texi:1512
 msgid "If a match is split across lines, this command keeps all those lines."
 msgstr "マッチが行をまたぐ場合、このコマンドはそれらすべての行を維持します。"

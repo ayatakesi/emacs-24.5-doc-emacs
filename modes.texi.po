@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-11-27 16:13+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,126 +16,148 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
-#: modes.texi.orig:5
+#: original_texis/modes.texi:5
 #, no-wrap
 msgid "Modes"
 msgstr "Modes"
 
 #. type: chapter
-#: modes.texi.orig:6
+#: original_texis/modes.texi:6
 #, no-wrap
 msgid "Major and Minor Modes"
 msgstr "Major and Minor Modes"
 
 #. type: Plain text
-#: modes.texi.orig:11
+#: original_texis/modes.texi:11
 msgid ""
 "Emacs contains many @dfn{editing modes} that alter its basic behavior in "
 "useful ways.  These are divided into @dfn{major modes} and @dfn{minor modes}."
-msgstr "Emacsには多くの@dfn{編集用モード(editing modes)}が含まれており、これは基本的な振る舞いを、編集に便利な方法に変更します。これらの編集用モードは@dfn{メジャーモード(major modes)}と@dfn{マイナーモード(minor modes)}に分けられます。"
+msgstr ""
+"Emacsには多くの@dfn{編集用モード(editing modes)}が含まれており、これは基本的"
+"な振る舞いを、編集に便利な方法に変更します。これらの編集用モードは@dfn{メ"
+"ジャーモード(major modes)}と@dfn{マイナーモード(minor modes)}に分けられます。"
 
 #. type: Plain text
-#: modes.texi.orig:17
+#: original_texis/modes.texi:17
 msgid ""
 "Major modes provide specialized facilities for working on a particular file "
 "type, such as a C source file (@pxref{Programs}), or a particular type of "
 "non-file buffer, such as a shell buffer (@pxref{Shell}).  Major modes are "
 "mutually exclusive; each buffer has one and only one major mode at any time."
-msgstr "メジャーモードは、Cソースファイル(@ref{Programs}を参照してください)などの特定のファイルタイプや、shellバッファー(@ref{Shell}を参照してください)などの、特別なタイプの非ファイルバッファーにたいして作業するための特別な機能を提供します。メジャーモードは互いに排他であり、各バッファーは常に1つのメジャーモードをもちます。"
+msgstr ""
+"メジャーモードは、Cソースファイル(@ref{Programs}を参照してください)などの特定"
+"のファイルタイプや、shellバッファー(@ref{Shell}を参照してください)などの、特"
+"別なタイプの非ファイルバッファーにたいして作業するための特別な機能を提供しま"
+"す。メジャーモードは互いに排他であり、各バッファーは常に1つのメジャーモードを"
+"もちます。"
 
 #. type: Plain text
-#: modes.texi.orig:23
+#: original_texis/modes.texi:23
 msgid ""
 "Minor modes are optional features which you can turn on or off, not "
 "necessarily specific to a type of file or buffer.  For example, Auto Fill "
 "mode is a minor mode in which @key{SPC} breaks lines between words as you "
 "type (@pxref{Auto Fill}).  Minor modes are independent of one another, and "
 "of the selected major mode."
-msgstr "マイナーモードはオンとオフを切り替えることができるオプションの機能で、ファイルやバッファーのタイプに特定する必要はありません。たとえばAuto Fillモードは、単語の間にタイプした@key{SPC}で行を区切るマイナーモードです(@ref{Auto Fill}を参照してください)。マイナーモードは互いに独立していて、選択されたメジャーモードからも独立しています。"
+msgstr ""
+"マイナーモードはオンとオフを切り替えることができるオプションの機能で、ファイ"
+"ルやバッファーのタイプに特定する必要はありません。たとえばAuto Fillモードは、"
+"単語の間にタイプした@key{SPC}で行を区切るマイナーモードです(@ref{Auto Fill}を"
+"参照してください)。マイナーモードは互いに独立していて、選択されたメジャーモー"
+"ドからも独立しています。"
 
 #. type: section
-#: modes.texi.orig:29 modes.texi.orig:31 modes.texi.orig:32
+#: original_texis/modes.texi:29 original_texis/modes.texi:31
+#: original_texis/modes.texi:32
 #, no-wrap
 msgid "Major Modes"
 msgstr "Major Modes"
 
 #. type: menuentry
-#: modes.texi.orig:29
+#: original_texis/modes.texi:29
 msgid "Text mode vs. Lisp mode vs. C mode..."
 msgstr "Textモード vs. Lispモード vs. Cモード..."
 
 #. type: section
-#: modes.texi.orig:29 modes.texi.orig:131 modes.texi.orig:132
+#: original_texis/modes.texi:29 original_texis/modes.texi:131
+#: original_texis/modes.texi:132
 #, no-wrap
 msgid "Minor Modes"
 msgstr "Minor Modes"
 
 #. type: menuentry
-#: modes.texi.orig:29
+#: original_texis/modes.texi:29
 msgid ""
 "Each minor mode is a feature you can turn on independently of any others."
 msgstr "マイナーモードは他と独立して有効にできる機能です。"
 
 #. type: node
-#: modes.texi.orig:29 modes.texi.orig:292
+#: original_texis/modes.texi:29 original_texis/modes.texi:292
 #, no-wrap
 msgid "Choosing Modes"
 msgstr "Choosing Modes"
 
 #. type: menuentry
-#: modes.texi.orig:29
+#: original_texis/modes.texi:29
 msgid "How modes are chosen when visiting files."
 msgstr "ファイルをvisitしたときにモードが選択される方法。"
 
 #. type: cindex
-#: modes.texi.orig:33
+#: original_texis/modes.texi:33
 #, no-wrap
 msgid "major modes"
 msgstr "major modes"
 
 #. type: cindex
-#: modes.texi.orig:34
+#: original_texis/modes.texi:34
 #, no-wrap
 msgid "mode, major"
 msgstr "mode, major"
 
 #. type: kindex
-#: modes.texi.orig:35
+#: original_texis/modes.texi:35
 #, no-wrap
 msgid "TAB @r{(and major modes)}"
 msgstr "TAB @r{(and major modes)}"
 
 #. type: kindex
-#: modes.texi.orig:36
+#: original_texis/modes.texi:36
 #, no-wrap
 msgid "DEL @r{(and major modes)}"
 msgstr "DEL @r{(and major modes)}"
 
 #. type: kindex
-#: modes.texi.orig:37
+#: original_texis/modes.texi:37
 #, no-wrap
 msgid "C-j @r{(and major modes)}"
 msgstr "C-j @r{(and major modes)}"
 
 #. type: Plain text
-#: modes.texi.orig:43
+#: original_texis/modes.texi:43
 msgid ""
 "Every buffer possesses a major mode, which determines the editing behavior "
 "of Emacs while that buffer is current.  The mode line normally shows the "
 "name of the current major mode, in parentheses (@pxref{Mode Line})."
-msgstr "すべてのバッファーはメジャーモードをもっており、そのバッファーがカレントである間の編集の動作を決定します。モードラインには通常カレントのメジャーモード名がカッコ内に表示されます(@ref{Mode Line}を参照してください)。"
+msgstr ""
+"すべてのバッファーはメジャーモードをもっており、そのバッファーがカレントであ"
+"る間の編集の動作を決定します。モードラインには通常カレントのメジャーモード名"
+"がカッコ内に表示されます(@ref{Mode Line}を参照してください)。"
 
 #. type: Plain text
-#: modes.texi.orig:48
+#: original_texis/modes.texi:48
 msgid ""
 "The least specialized major mode is called @dfn{Fundamental mode}.  This "
 "mode has no mode-specific redefinitions or variable settings, so that each "
 "Emacs command behaves in its most general manner, and each user option "
 "variable is in its default state."
-msgstr "もっとも特殊化されていないメジャーモードは、@dfn{Fundamental(基本)モード}と呼ばれます。このモードには、モード独自の再定義や変数設定がないので、各Emacsコマンドはもっとも一般的な振る舞いをし、各ユーザーオプションはデフォルトの状態になっています。"
+msgstr ""
+"もっとも特殊化されていないメジャーモードは、@dfn{Fundamental(基本)モード}と呼"
+"ばれます。このモードには、モード独自の再定義や変数設定がないので、各Emacsコマ"
+"ンドはもっとも一般的な振る舞いをし、各ユーザーオプションはデフォルトの状態に"
+"なっています。"
 
 #. type: Plain text
-#: modes.texi.orig:63
+#: original_texis/modes.texi:63
 msgid ""
 "For editing text of a specific type that Emacs knows about, such as Lisp "
 "code or English text, you typically use a more specialized major mode, such "
@@ -150,34 +172,55 @@ msgid ""
 "Message mode for buffers made by @kbd{C-x m} (@pxref{Sending Mail}), and "
 "Shell mode for buffers used to communicate with an inferior shell process "
 "(@pxref{Interactive Shell})."
-msgstr "Lispや英文テキストのように、Emacsが認識できる特定のタイプのテキスト編集には、LispモードやTextモードのような、より特殊化されたメジャーモードを通常は使用します。ほとんどのメジャーモードは3つのグループに分けられます。最初のグループはプレインまたはマークアップされた通常テキストのためのモードを含みます。これにはTextモード、HTMLモード、SGMLモード、@TeX{}モードやOutlineモードなどが含まれます。2番目のグループはプログラミング言語特有のモードです。これらは、Lispモード(いくつかの変種を有する)、Cモード、Fortranモードなどが含まれます。3番目のグループはファイルに直接関連付けられていないメジャーモードが含まれます。これらはEmacsが特別の目的のために作るバッファーで使用されるもので、Diredが作成するバッファーのためのDiredモード(@ref{Dired}を参照してください)、@kbd{C-x m}で作成されるバッファーのためのMessageモード(@ref{Sending Mail}を参照してください)、下位のシェルプロセスとの通信用のバッファーのためのShellモード(@ref{Interactive Shell}を参照してください)などが含まれます。"
+msgstr ""
+"Lispや英文テキストのように、Emacsが認識できる特定のタイプのテキスト編集には、"
+"LispモードやTextモードのような、より特殊化されたメジャーモードを通常は使用し"
+"ます。ほとんどのメジャーモードは3つのグループに分けられます。最初のグループは"
+"プレインまたはマークアップされた通常テキストのためのモードを含みます。これに"
+"はTextモード、HTMLモード、SGMLモード、@TeX{}モードやOutlineモードなどが含まれ"
+"ます。2番目のグループはプログラミング言語特有のモードです。これらは、Lispモー"
+"ド(いくつかの変種を有する)、Cモード、Fortranモードなどが含まれます。3番目のグ"
+"ループはファイルに直接関連付けられていないメジャーモードが含まれます。これら"
+"はEmacsが特別の目的のために作るバッファーで使用されるもので、Diredが作成する"
+"バッファーのためのDiredモード(@ref{Dired}を参照してください)、@kbd{C-x m}で作"
+"成されるバッファーのためのMessageモード(@ref{Sending Mail}を参照してくださ"
+"い)、下位のシェルプロセスとの通信用のバッファーのためのShellモード"
+"(@ref{Interactive Shell}を参照してください)などが含まれます。"
 
 #. type: Plain text
-#: modes.texi.orig:69
+#: original_texis/modes.texi:69
 msgid ""
 "Usually, the major mode is automatically set by Emacs, when you first visit "
 "a file or create a buffer (@pxref{Choosing Modes}).  You can explicitly "
 "select a new major mode by using an @kbd{M-x} command.  Take the name of the "
 "mode and add @code{-mode} to get the name of the command to select that mode "
 "(e.g., @kbd{M-x lisp-mode} enters Lisp mode)."
-msgstr "通常、メジャーモードは最初にファイルをvisitしたとき、またはバッファーを作成したときに、Emacsにより自動的にセットされます。@kbd{M-x}コマンドを使うことにより、新しいメジャーモードを明示的に選択することができます。モードの名前に@code{-mode}を追加することにより、モードを選択するコマンド名を得ることができます(たとえば、Lispモードを選択する場合は@kbd{M-x lisp-mode})。"
+msgstr ""
+"通常、メジャーモードは最初にファイルをvisitしたとき、またはバッファーを作成し"
+"たときに、Emacsにより自動的にセットされます。@kbd{M-x}コマンドを使うことによ"
+"り、新しいメジャーモードを明示的に選択することができます。モードの名前に"
+"@code{-mode}を追加することにより、モードを選択するコマンド名を得ることができ"
+"ます(たとえば、Lispモードを選択する場合は@kbd{M-x lisp-mode})。"
 
 #. type: vindex
-#: modes.texi.orig:70
+#: original_texis/modes.texi:70
 #, no-wrap
 msgid "major-mode"
 msgstr "major-mode"
 
 #. type: Plain text
-#: modes.texi.orig:74
+#: original_texis/modes.texi:74
 msgid ""
 "The value of the buffer-local variable @code{major-mode} is a symbol with "
 "the same name as the major mode command (e.g., @code{lisp-mode}).  This "
 "variable is set automatically; you should not change it yourself."
-msgstr "バッファーローカルな変数@code{major-mode}の値は、メジャーモードコマンドと同じ名前のシンボル(たとえば@code{lisp-mode})です。この変数は自動的にセットされます。あなた自身が変更するべきではありません。"
+msgstr ""
+"バッファーローカルな変数@code{major-mode}の値は、メジャーモードコマンドと同じ"
+"名前のシンボル(たとえば@code{lisp-mode})です。この変数は自動的にセットされま"
+"す。あなた自身が変更するべきではありません。"
 
 #. type: Plain text
-#: modes.texi.orig:82
+#: original_texis/modes.texi:82
 msgid ""
 "The default value of @code{major-mode} determines the major mode to use for "
 "files that do not specify a major mode, and for new buffers created with "
@@ -185,23 +228,32 @@ msgid ""
 "mode}, which specifies Fundamental mode.  You can change this default value "
 "via the Customization interface (@pxref{Easy Customization}), or by adding a "
 "line like this to your init file (@pxref{Init File}):"
-msgstr "@code{major-mode}のデフォルト値は、メジャーモードが指定されていないファイルを使うときや、@kbd{C-x b}で作成した新しいバッファーのメジャーモードを決定します。通常、デフォルト値はFundamentalモードを指定する、シンボル@code{fundamental-mode}です。Customizationインターフェースを通じて、このデフォルト値を変更できます(@ref{Easy Customization}を参照してください)。initファイルに以下のような行を追加しても変更できます(@ref{Init File}を参照してください):"
+msgstr ""
+"@code{major-mode}のデフォルト値は、メジャーモードが指定されていないファイルを"
+"使うときや、@kbd{C-x b}で作成した新しいバッファーのメジャーモードを決定しま"
+"す。通常、デフォルト値はFundamentalモードを指定する、シンボル"
+"@code{fundamental-mode}です。Customizationインターフェースを通じて、このデ"
+"フォルト値を変更できます(@ref{Easy Customization}を参照してください)。init"
+"ファイルに以下のような行を追加しても変更できます(@ref{Init File}を参照してく"
+"ださい):"
 
 #. type: example
-#: modes.texi.orig:85
+#: original_texis/modes.texi:85
 #, no-wrap
 msgid "(setq-default major-mode 'text-mode)\n"
 msgstr "(setq-default major-mode 'text-mode)\n"
 
 #. type: Plain text
-#: modes.texi.orig:90
+#: original_texis/modes.texi:90
 msgid ""
 "If the default value of @code{major-mode} is @code{nil}, the major mode is "
 "taken from the previously current buffer."
-msgstr "@code{major-mode}のデフォルト値が@code{nil}の場合、メジャーモードは前のカレントバッファーから引き継がれます。"
+msgstr ""
+"@code{major-mode}のデフォルト値が@code{nil}の場合、メジャーモードは前のカレン"
+"トバッファーから引き継がれます。"
 
 #. type: Plain text
-#: modes.texi.orig:101
+#: original_texis/modes.texi:101
 msgid ""
 "Specialized major modes often change the meanings of certain keys to do "
 "something more suitable for the mode.  For instance, programming language "
@@ -213,47 +265,59 @@ msgid ""
 "language modes typically set a buffer-local value for the variable "
 "@code{comment-start}, which determines how source code comments are "
 "delimited (@pxref{Comments})."
-msgstr "特殊化されたメジャーモードは、特定のキーにたいして、そのモードにより適した何かを行うよう、意味づけが変更される場合があります。たとえばプログラミングに関連するモードでは、@key{TAB}には、カレント行をその言語のルールにしたがってインデントする機能がバインドされます(@ref{Indentation}を参照してください)。一般的に変更されるキーは@key{TAB}、@key{DEL}、@kbd{C-j}です。多くのモードがモード自身の特別なコマンドを定義しており、それらは通常、プレフィクスキーが@kbd{C-c}のコマンドにバインドされます。メジャーモードはユーザーオプションと変数も変更できます。たとえばプログラミングに間するモードは通常、変数@code{comment-start}にバッファーローカルな値をセットします。これはソースコードのコメントがどのように区切られるかを決定します(@ref{Comments}を参照してください)。"
+msgstr ""
+"特殊化されたメジャーモードは、特定のキーにたいして、そのモードにより適した何"
+"かを行うよう、意味づけが変更される場合があります。たとえばプログラミングに関"
+"連するモードでは、@key{TAB}には、カレント行をその言語のルールにしたがってイン"
+"デントする機能がバインドされます(@ref{Indentation}を参照してください)。一般的"
+"に変更されるキーは@key{TAB}、@key{DEL}、@kbd{C-j}です。多くのモードがモード自"
+"身の特別なコマンドを定義しており、それらは通常、プレフィクスキーが@kbd{C-c}の"
+"コマンドにバインドされます。メジャーモードはユーザーオプションと変数も変更で"
+"きます。たとえばプログラミングに間するモードは通常、変数@code{comment-start}"
+"にバッファーローカルな値をセットします。これはソースコードのコメントがどのよ"
+"うに区切られるかを決定します(@ref{Comments}を参照してください)。"
 
 #. type: findex
-#: modes.texi.orig:102
+#: original_texis/modes.texi:102
 #, no-wrap
 msgid "describe-mode"
 msgstr "describe-mode"
 
 #. type: kindex
-#: modes.texi.orig:103
+#: original_texis/modes.texi:103
 #, no-wrap
 msgid "C-h m"
 msgstr "C-h m"
 
 #. type: Plain text
-#: modes.texi.orig:106
+#: original_texis/modes.texi:106
 msgid ""
 "To view the documentation for the current major mode, including a list of "
 "its key bindings, type @code{C-h m} (@code{describe-mode})."
-msgstr "カレントメジャーモードのキーバインディング一覧も含めたドキュメントを閲覧するには、@code{C-h m} (@code{describe-mode})とタイプします。"
+msgstr ""
+"カレントメジャーモードのキーバインディング一覧も含めたドキュメントを閲覧する"
+"には、@code{C-h m} (@code{describe-mode})とタイプします。"
 
 #. type: cindex
-#: modes.texi.orig:107
+#: original_texis/modes.texi:107
 #, no-wrap
 msgid "mode hook"
 msgstr "mode hook"
 
 #. type: vindex
-#: modes.texi.orig:108
+#: original_texis/modes.texi:108
 #, no-wrap
 msgid "text-mode-hook"
 msgstr "text-mode-hook"
 
 #. type: vindex
-#: modes.texi.orig:109
+#: original_texis/modes.texi:109
 #, no-wrap
 msgid "prog-mode-hook"
 msgstr "prog-mode-hook"
 
 #. type: Plain text
-#: modes.texi.orig:119
+#: original_texis/modes.texi:119
 msgid ""
 "Every major mode, apart from Fundamental mode, defines a @dfn{mode hook}, a "
 "customizable list of Lisp functions to run each time the mode is enabled in "
@@ -263,19 +327,33 @@ msgid ""
 "and all programming language modes run @code{prog-mode-hook}, prior to "
 "running their own mode hooks.  Hook functions can look at the value of the "
 "variable @code{major-mode} to see which mode is actually being entered."
-msgstr "Fundamentalモード以外のすべてのメジャーモードは、@dfn{モードフック(mode hook)}を定義します。これはバッファーでそのモードが有効になるたびに実行される、カスタマイズ可能なLisp関数のリストです。フックに間する詳細は、@ref{Hooks}を参照してください。各モードフックはメジャーモード名の後に名前がつけられます。たとえばFortranモードのモードフックは、@code{fortran-mode-hook}です。さらにすべてのテキストベースのメジャーモードは、@code{text-mode-hook}、すべてのプログラミング言語のモードは、その言語モード自身のモードフックの前に、@code{prog-mode-hook}を実行します。フック関数は変数@code{major-mode}の値を調べて、どのモードに入ろうとしているか調べることができます。"
+msgstr ""
+"Fundamentalモード以外のすべてのメジャーモードは、@dfn{モードフック(mode "
+"hook)}を定義します。これはバッファーでそのモードが有効になるたびに実行され"
+"る、カスタマイズ可能なLisp関数のリストです。フックに間する詳細は、@ref{Hooks}"
+"を参照してください。各モードフックはメジャーモード名の後に名前がつけられま"
+"す。たとえばFortranモードのモードフックは、@code{fortran-mode-hook}です。さら"
+"にすべてのテキストベースのメジャーモードは、@code{text-mode-hook}、すべてのプ"
+"ログラミング言語のモードは、その言語モード自身のモードフックの前に、"
+"@code{prog-mode-hook}を実行します。フック関数は変数@code{major-mode}の値を調"
+"べて、どのモードに入ろうとしているか調べることができます。"
 
 #. type: Plain text
-#: modes.texi.orig:125
+#: original_texis/modes.texi:125
 msgid ""
 "Mode hooks are commonly used to enable minor modes (@pxref{Minor Modes}).  "
 "For example, you can put the following lines in your init file to enable "
 "Flyspell minor mode in all text-based major modes (@pxref{Spelling}), and "
 "Eldoc minor mode in Emacs Lisp mode (@pxref{Lisp Doc}):"
-msgstr "モードフックは、一般的にマイナーモードを有効にするために使用されます(@ref{Minor Modes}を参照してください)。たとえば以下の行をinitファイルに記述すると、すべてのテキストベースのメジャーモードでFlyspellマイナーモード(@ref{Spelling}を参照してください)を、Emacs LispモードでEldocマイナーモード(@ref{Lisp Doc}を参照してください)を有効にすることができます:"
+msgstr ""
+"モードフックは、一般的にマイナーモードを有効にするために使用されます"
+"(@ref{Minor Modes}を参照してください)。たとえば以下の行をinitファイルに記述す"
+"ると、すべてのテキストベースのメジャーモードでFlyspellマイナーモード"
+"(@ref{Spelling}を参照してください)を、Emacs LispモードでEldocマイナーモード"
+"(@ref{Lisp Doc}を参照してください)を有効にすることができます:"
 
 #. type: example
-#: modes.texi.orig:129
+#: original_texis/modes.texi:129
 #, no-wrap
 msgid ""
 "(add-hook 'text-mode-hook 'flyspell-mode)\n"
@@ -285,19 +363,19 @@ msgstr ""
 "(add-hook 'emacs-lisp-mode-hook 'eldoc-mode)\n"
 
 #. type: cindex
-#: modes.texi.orig:133
+#: original_texis/modes.texi:133
 #, no-wrap
 msgid "minor modes"
 msgstr "minor modes"
 
 #. type: cindex
-#: modes.texi.orig:134
+#: original_texis/modes.texi:134
 #, no-wrap
 msgid "mode, minor"
 msgstr "mode, minor"
 
 #. type: Plain text
-#: modes.texi.orig:144
+#: original_texis/modes.texi:144
 msgid ""
 "A minor mode is an optional editing mode that alters the behavior of Emacs "
 "in some well-defined way.  Unlike major modes, any number of minor modes can "
@@ -306,61 +384,90 @@ msgid ""
 "Other minor modes are @dfn{global}: while enabled, they affect everything "
 "you do in the Emacs session, in all buffers.  Most minor modes are disabled "
 "by default, but a few are enabled by default."
-msgstr "マイナーモードは明確な方法でEmacsの動作を変更する、オプションの編集用モードです。メジャーモードとは異なり、いつでも任意の数のマイナーモードを有効にできます。いくつかのマイナーモードは@dfn{バッファーローカル(buffer-local)}で、特定のバッファーにたいしてオン(有効)にして、他のバッファーではオフ(無効)に切り替えることができます。それ以外のマイナーモードは@dfn{グローバル(global)}で、それが有効な間はEmacsセッションのすべてのバッファーで行う、すべての操作に影響します。ほとんどのマイナーモードはデフォルトで無効ですが、デフォルトで有効なものもいくつかあります。"
+msgstr ""
+"マイナーモードは明確な方法でEmacsの動作を変更する、オプションの編集用モードで"
+"す。メジャーモードとは異なり、いつでも任意の数のマイナーモードを有効にできま"
+"す。いくつかのマイナーモードは@dfn{バッファーローカル(buffer-local)}で、特定"
+"のバッファーにたいしてオン(有効)にして、他のバッファーではオフ(無効)に切り替"
+"えることができます。それ以外のマイナーモードは@dfn{グローバル(global)}で、そ"
+"れが有効な間はEmacsセッションのすべてのバッファーで行う、すべての操作に影響し"
+"ます。ほとんどのマイナーモードはデフォルトで無効ですが、デフォルトで有効なも"
+"のもいくつかあります。"
 
 #. type: Plain text
-#: modes.texi.orig:149
+#: original_texis/modes.texi:149
 msgid ""
 "Most buffer-local minor modes say in the mode line when they are enabled, "
 "just after the major mode indicator.  For example, @samp{Fill} in the mode "
 "line means that Auto Fill mode is enabled.  @xref{Mode Line}."
-msgstr "ほとんどのバッファーローカルなマイナーモードは、モードラインのメジャーモード標識のすぐ後ろに有効であることを示します。たとえばモードラインに@samp{Fill}と表示されているとき、それはAuto Fillモードが有効であることを意味します。@ref{Mode Line}を参照してください。"
+msgstr ""
+"ほとんどのバッファーローカルなマイナーモードは、モードラインのメジャーモード"
+"標識のすぐ後ろに有効であることを示します。たとえばモードラインに@samp{Fill}と"
+"表示されているとき、それはAuto Fillモードが有効であることを意味します。"
+"@ref{Mode Line}を参照してください。"
 
 #. type: cindex
-#: modes.texi.orig:150
+#: original_texis/modes.texi:150
 #, no-wrap
 msgid "mode commands for minor modes"
 msgstr "mode commands for minor modes"
 
 #. type: Plain text
-#: modes.texi.orig:157
+#: original_texis/modes.texi:157
 msgid ""
 "Like major modes, each minor mode is associated with a @dfn{mode command}, "
 "whose name consists of the mode name followed by @samp{-mode}.  For "
 "instance, the mode command for Auto Fill mode is @code{auto-fill-mode}.  But "
 "unlike a major mode command, which simply enables the mode, the mode command "
 "for a minor mode can either enable or disable it:"
-msgstr "メジャーモードと同様に、各マイナーモードは@dfn{モードコマンド(mode command)}に関連付けられていて、それはモード名の後ろに@samp{-mode}を付けた名前です。たとえばAuto Fillモードのモードコマンドは@code{auto-fill-mode}です。しかしメジャーモードのコマンドは、単純にそのモードを有効にするだけですが、マイナーモードのモードコマンドは、モードを有効または無効にすることができます。"
+msgstr ""
+"メジャーモードと同様に、各マイナーモードは@dfn{モードコマンド(mode command)}"
+"に関連付けられていて、それはモード名の後ろに@samp{-mode}を付けた名前です。た"
+"とえばAuto Fillモードのモードコマンドは@code{auto-fill-mode}です。しかしメ"
+"ジャーモードのコマンドは、単純にそのモードを有効にするだけですが、マイナー"
+"モードのモードコマンドは、モードを有効または無効にすることができます。"
 
 #. type: itemize
-#: modes.texi.orig:164
+#: original_texis/modes.texi:164
 msgid ""
 "If you invoke the mode command directly with no prefix argument (either via "
 "@kbd{M-x}, or by binding it to a key and typing that key; @pxref{Key "
 "Bindings}), that @dfn{toggles} the minor mode.  The minor mode is turned on "
 "if it was off, and turned off if it was on."
-msgstr "@kbd{M-x}を通じて、またはバインドしたキー(@ref{Key Bindings}を参照してください)をタイプすることにより、モードコマンドをプレフィクスキーなしで直接呼び出すと、それはマイナーモードを@dfn{切り替え(toggles)}ます。つまり、マイナーモードがオフのときはオンに、オンのときはオフに切り替えます。"
+msgstr ""
+"@kbd{M-x}を通じて、またはバインドしたキー(@ref{Key Bindings}を参照してくださ"
+"い)をタイプすることにより、モードコマンドをプレフィクスキーなしで直接呼び出す"
+"と、それはマイナーモードを@dfn{切り替え(toggles)}ます。つまり、マイナーモード"
+"がオフのときはオンに、オンのときはオフに切り替えます。"
 
 #. type: itemize
-#: modes.texi.orig:169
+#: original_texis/modes.texi:169
 msgid ""
 "If you invoke the mode command with a prefix argument, the minor mode is "
 "unconditionally turned off if that argument is zero or negative; otherwise, "
 "it is unconditionally turned on."
-msgstr "プレフィクス引数を指定してモードコマンドを呼び出すと、引数が0または負のときは無条件にマイナーモードをオフにし、それ以外のときは無条件にオンに切り替えます。"
+msgstr ""
+"プレフィクス引数を指定してモードコマンドを呼び出すと、引数が0または負のときは"
+"無条件にマイナーモードをオフにし、それ以外のときは無条件にオンに切り替えま"
+"す。"
 
 #. type: itemize
-#: modes.texi.orig:176
+#: original_texis/modes.texi:176
 msgid ""
 "If the mode command is called via Lisp, the minor mode is unconditionally "
 "turned on if the argument is omitted or @code{nil}.  This makes it easy to "
 "turn on a minor mode from a major mode's mode hook (@pxref{Major Modes}).  A "
 "non-@code{nil} argument is handled like an interactive prefix argument, as "
 "described above."
-msgstr "Lispからモードコマンドが呼び出された場合、引数が省略されているか@code{nil}のとき、マイナーモードは無条件にオンになります。これはメジャーモードのモードフックからマイナーモードをオンに切り替えるのを簡単にします(@ref{Major Modes}を参照してください)。非@code{nil}の引数は、上で説明したインタラクティブなプレフィクス引数と同様に処理されます。"
+msgstr ""
+"Lispからモードコマンドが呼び出された場合、引数が省略されているか@code{nil}の"
+"とき、マイナーモードは無条件にオンになります。これはメジャーモードのモード"
+"フックからマイナーモードをオンに切り替えるのを簡単にします(@ref{Major Modes}"
+"を参照してください)。非@code{nil}の引数は、上で説明したインタラクティブなプレ"
+"フィクス引数と同様に処理されます。"
 
 #. type: Plain text
-#: modes.texi.orig:186
+#: original_texis/modes.texi:186
 msgid ""
 "Most minor modes also have a @dfn{mode variable}, with the same name as the "
 "mode command.  Its value is non-@code{nil} if the mode is enabled, and "
@@ -370,106 +477,128 @@ msgid ""
 "variable through the Customize interface (@pxref{Easy Customization}) will "
 "always properly enable or disable the mode, since Customize automatically "
 "runs the mode command for you."
-msgstr "ほとんどのマイナーモードは、モードコマンドと同じ名前の@dfn{モード変数(mode variable)}をもっています。変数の値が非@code{nil}のときはモードが有効で、@code{nil}なら無効です。一般的に、Lispから直接モード変数を変更して、モードを有効または無効にするべきではありません。かわりにモードコマンドを使うべきです。しかしCustomizeインターフェース(@ref{Easy Customization}を参照してください)を通じてのノード変数のセットは、Customizeが自動的にモードコマンドを実行するので、常に正しくモードを有効または無効にします。"
+msgstr ""
+"ほとんどのマイナーモードは、モードコマンドと同じ名前の@dfn{モード変数(mode "
+"variable)}をもっています。変数の値が非@code{nil}のときはモードが有効で、"
+"@code{nil}なら無効です。一般的に、Lispから直接モード変数を変更して、モードを"
+"有効または無効にするべきではありません。かわりにモードコマンドを使うべきで"
+"す。しかしCustomizeインターフェース(@ref{Easy Customization}を参照してくださ"
+"い)を通じてのノード変数のセットは、Customizeが自動的にモードコマンドを実行す"
+"るので、常に正しくモードを有効または無効にします。"
 
 #. type: Plain text
-#: modes.texi.orig:188
+#: original_texis/modes.texi:188
 msgid "The following is a list of some buffer-local minor modes:"
 msgstr "以下にいくつかのバッファーローカルなマイナーモードのリストを示します:"
 
 #. type: itemize
-#: modes.texi.orig:193
+#: original_texis/modes.texi:193
 msgid ""
 "Abbrev mode automatically expands text based on pre-defined abbreviation "
 "definitions.  @xref{Abbrevs}."
-msgstr "Abbrevモードは、事前に定義された省略形(abbreviation)の定義にもとづいて、テキストを自動的に展開します。@ref{Abbrevs}を参照してください。"
+msgstr ""
+"Abbrevモードは、事前に定義された省略形(abbreviation)の定義にもとづいて、テキ"
+"ストを自動的に展開します。@ref{Abbrevs}を参照してください。"
 
 #. type: itemize
-#: modes.texi.orig:197
+#: original_texis/modes.texi:197
 msgid ""
 "Auto Fill mode inserts newlines as you type to prevent lines from becoming "
 "too long.  @xref{Filling}."
-msgstr "Auto Fillモードは、行が長くなりすぎるのを防ぐため、タイプされた文字にしたがって改行を挿入します。@ref{Filling}を参照してください。"
+msgstr ""
+"Auto Fillモードは、行が長くなりすぎるのを防ぐため、タイプされた文字にしたがっ"
+"て改行を挿入します。@ref{Filling}を参照してください。"
 
 #. type: itemize
-#: modes.texi.orig:201
+#: original_texis/modes.texi:201
 msgid ""
 "Auto Save mode saves the buffer contents periodically to reduce the amount "
 "of work you can lose in case of a crash.  @xref{Auto Save}."
-msgstr "Auto Saveモードはバッファー内容を定期的に保存して、クラッシュした場合等に失われる作業量を減らします。@ref{Auto Save}を参照してください。"
+msgstr ""
+"Auto Saveモードはバッファー内容を定期的に保存して、クラッシュした場合等に失わ"
+"れる作業量を減らします。@ref{Auto Save}を参照してください。"
 
 #. type: itemize
-#: modes.texi.orig:205
+#: original_texis/modes.texi:205
 msgid ""
 "Enriched mode enables editing and saving of formatted text.  @xref{Enriched "
 "Text}."
-msgstr "Enrichedモードは、書式つきのテキストの編集と保存を可能にします。@ref{Enriched Text}を参照してください。"
+msgstr ""
+"Enrichedモードは、書式つきのテキストの編集と保存を可能にします。"
+"@ref{Enriched Text}を参照してください。"
 
 #. type: itemize
-#: modes.texi.orig:209
+#: original_texis/modes.texi:209
 msgid ""
 "Flyspell mode automatically highlights misspelled words.  @xref{Spelling}."
-msgstr "Flyspellモードは、自動的に間違ったスペルの単語をハイライトします。@ref{Spelling}を参照してください。"
+msgstr ""
+"Flyspellモードは、自動的に間違ったスペルの単語をハイライトします。"
+"@ref{Spelling}を参照してください。"
 
 #. type: itemize
-#: modes.texi.orig:214
+#: original_texis/modes.texi:214
 msgid ""
 "Font-Lock mode automatically highlights certain textual units found in "
 "programs.  It is enabled globally by default, but you can disable it in "
 "individual buffers.  @xref{Faces}."
-msgstr "Font-Lockモードは、プログラム内で見つかった特定のテキスト単位を自動的にハイライトします。このモードはデフォルトでグローバルに有効になっていますが、個別のバッファーで無効にすることができます。@ref{Faces}を参照してください。"
+msgstr ""
+"Font-Lockモードは、プログラム内で見つかった特定のテキスト単位を自動的にハイラ"
+"イトします。このモードはデフォルトでグローバルに有効になっていますが、個別の"
+"バッファーで無効にすることができます。@ref{Faces}を参照してください。"
 
 #. type: findex
-#: modes.texi.orig:215
+#: original_texis/modes.texi:215
 #, no-wrap
 msgid "linum-mode"
 msgstr "linum-mode"
 
 #. type: cindex
-#: modes.texi.orig:216
+#: original_texis/modes.texi:216
 #, no-wrap
 msgid "Linum mode"
 msgstr "Linum mode"
 
 #. type: itemize
-#: modes.texi.orig:219
+#: original_texis/modes.texi:219
 msgid ""
 "Linum mode displays each line's line number in the window's left margin."
 msgstr "Linumモードは、各行の行番号をウィンドウの左端に表示します。"
 
 #. type: itemize
-#: modes.texi.orig:223
+#: original_texis/modes.texi:223
 msgid ""
 "Outline minor mode provides similar facilities to the major mode called "
 "Outline mode.  @xref{Outline Mode}."
-msgstr "Outline minorモードは、Outlineモードと呼ばれるメジャーモードと同様な機能を提供します。@ref{Outline Mode}を参照してください。"
+msgstr ""
+"Outline minorモードは、Outlineモードと呼ばれるメジャーモードと同様な機能を提"
+"供します。@ref{Outline Mode}を参照してください。"
 
 #. type: cindex
-#: modes.texi.orig:224
+#: original_texis/modes.texi:224
 #, no-wrap
 msgid "Overwrite mode"
 msgstr "Overwrite mode"
 
 #. type: cindex
-#: modes.texi.orig:225
+#: original_texis/modes.texi:225
 #, no-wrap
 msgid "mode, Overwrite"
 msgstr "mode, Overwrite"
 
 #. type: findex
-#: modes.texi.orig:226
+#: original_texis/modes.texi:226
 #, no-wrap
 msgid "overwrite-mode"
 msgstr "overwrite-mode"
 
 #. type: kindex
-#: modes.texi.orig:227
+#: original_texis/modes.texi:227
 #, no-wrap
 msgid "INSERT"
 msgstr "INSERT"
 
 #. type: itemize
-#: modes.texi.orig:238
+#: original_texis/modes.texi:238
 msgid ""
 "Overwrite mode causes ordinary printing characters to replace existing text "
 "instead of shoving it to the right.  For example, if point is in front of "
@@ -479,135 +608,174 @@ msgid ""
 "it may be, even if it is a digit---this gives you a way to insert a "
 "character instead of replacing an existing character.  The mode command, "
 "@code{overwrite-mode}, is bound to the @key{Insert} key."
-msgstr "Overwriteモードは、通常のプリント文字の挿入により、後の文字をずらすかわりに、既存のテキストを置き換えます。たとえば、ポイントが@samp{FOOBAR}の@samp{B}の前にある場合、@kbd{G}をタイプすると通常は@samp{FOOGBAR}となりますが、Overwriteモードでは@samp{FOOGAR}になります。Overwriteモードでは、コマンド@kbd{C-q}は次の文字が何であれ、たとえそれが数字であってもその文字を挿入します --- これにより既存のテキストを置き換える代わりに文字を挿入する方法が与えられます。モードコマンド@code{overwrite-mode}は、@key{Insert}キーにバインドされています。"
+msgstr ""
+"Overwriteモードは、通常のプリント文字の挿入により、後の文字をずらすかわりに、"
+"既存のテキストを置き換えます。たとえば、ポイントが@samp{FOOBAR}の@samp{B}の前"
+"にある場合、@kbd{G}をタイプすると通常は@samp{FOOGBAR}となりますが、Overwrite"
+"モードでは@samp{FOOGAR}になります。Overwriteモードでは、コマンド@kbd{C-q}は次"
+"の文字が何であれ、たとえそれが数字であってもその文字を挿入します --- これによ"
+"り既存のテキストを置き換える代わりに文字を挿入する方法が与えられます。モード"
+"コマンド@code{overwrite-mode}は、@key{Insert}キーにバインドされています。"
 
 #. type: findex
-#: modes.texi.orig:239
+#: original_texis/modes.texi:239
 #, no-wrap
 msgid "binary-overwrite-mode"
 msgstr "binary-overwrite-mode"
 
 #. type: itemize
-#: modes.texi.orig:246
+#: original_texis/modes.texi:246
 msgid ""
 "Binary Overwrite mode is a variant of Overwrite mode for editing binary "
 "files; it treats newlines and tabs like other characters, so that they "
 "overwrite other characters and can be overwritten by them.  In Binary "
 "Overwrite mode, digits after @kbd{C-q} specify an octal character code, as "
 "usual."
-msgstr "Binary Overwriteモードは、バイナリーファイルを編集するための、Overwriteモードの変種です。このモードは改行とタブを他の文字と同じように扱うので、他の文字を上書きしたり、他の文字で上書きさせたりすることができます。Binary Overwriteモードでは@kbd{C-q}の後の数字は、通常どおり8進文字コードを指定します。"
+msgstr ""
+"Binary Overwriteモードは、バイナリーファイルを編集するための、Overwriteモード"
+"の変種です。このモードは改行とタブを他の文字と同じように扱うので、他の文字を"
+"上書きしたり、他の文字で上書きさせたりすることができます。Binary Overwrite"
+"モードでは@kbd{C-q}の後の数字は、通常どおり8進文字コードを指定します。"
 
 #. type: itemize
-#: modes.texi.orig:250
+#: original_texis/modes.texi:250
 msgid ""
 "Visual Line mode performs ``word wrapping'', causing long lines to be "
 "wrapped at word boundaries.  @xref{Visual Line Mode}."
-msgstr "Visual Lineモードは、 ``単語単位の折り返し(word wrapping)''を処理します。これにより長い行は単語境界で折り返されます。@ref{Visual Line Mode}を参照してください。"
+msgstr ""
+"Visual Lineモードは、 ``単語単位の折り返し(word wrapping)''を処理します。これ"
+"により長い行は単語境界で折り返されます。@ref{Visual Line Mode}を参照してくだ"
+"さい。"
 
 #. type: Plain text
-#: modes.texi.orig:254
+#: original_texis/modes.texi:254
 msgid "And here are some useful global minor modes:"
 msgstr "以下に便利なグローバルマイナーモードをいくつか示します:"
 
 #. type: itemize
-#: modes.texi.orig:259
+#: original_texis/modes.texi:259
 msgid ""
 "Column Number mode enables display of the current column number in the mode "
 "line.  @xref{Mode Line}."
-msgstr "Column Numberモードは、現在の列番号をモードラインに表示します。@ref{Mode Line}を参照してください。"
+msgstr ""
+"Column Numberモードは、現在の列番号をモードラインに表示します。@ref{Mode "
+"Line}を参照してください。"
 
 #. type: itemize
-#: modes.texi.orig:263
+#: original_texis/modes.texi:263
 msgid ""
 "Delete Selection mode causes text insertion to first delete the text in the "
 "region, if the region is active.  @xref{Using Region}."
-msgstr "Delete Selectionモードでは、リージョンがアクティブの場合、最初にリージョンのテキストを削除してからテキストを挿入します。@ref{Using Region}を参照してください。"
+msgstr ""
+"Delete Selectionモードでは、リージョンがアクティブの場合、最初にリージョンの"
+"テキストを削除してからテキストを挿入します。@ref{Using Region}を参照してくだ"
+"さい。"
 
 #. type: itemize
-#: modes.texi.orig:267
+#: original_texis/modes.texi:267
 msgid ""
 "Icomplete mode displays an indication of available completions when you are "
 "in the minibuffer and completion is active.  @xref{Icomplete}."
-msgstr "Icompleteモードは、ミニバッファーで補完がアクティブのとき、利用可能な候補を表示します。@ref{Icomplete}を参照してください。"
+msgstr ""
+"Icompleteモードは、ミニバッファーで補完がアクティブのとき、利用可能な候補を表"
+"示します。@ref{Icomplete}を参照してください。"
 
 #. type: itemize
-#: modes.texi.orig:271
+#: original_texis/modes.texi:271
 msgid ""
 "Line Number mode enables display of the current line number in the mode "
 "line.  It is enabled by default.  @xref{Mode Line}."
-msgstr "Line Numberモードは、現在の行番号をモードラインに表示します。このモードはデフォルトで有効です。@ref{Mode Line}を参照してください。"
+msgstr ""
+"Line Numberモードは、現在の行番号をモードラインに表示します。このモードはデ"
+"フォルトで有効です。@ref{Mode Line}を参照してください。"
 
 #. type: itemize
-#: modes.texi.orig:275
+#: original_texis/modes.texi:275
 msgid ""
 "Menu Bar mode gives each frame a menu bar.  It is enabled by default.  "
 "@xref{Menu Bars}."
-msgstr "Menu Barモードは、各フレームにメニューバーを表示します。このモードはデフォルトで有効です。@ref{Menu Bars}を参照してください。"
+msgstr ""
+"Menu Barモードは、各フレームにメニューバーを表示します。このモードはデフォル"
+"トで有効です。@ref{Menu Bars}を参照してください。"
 
 #. type: itemize
-#: modes.texi.orig:280
+#: original_texis/modes.texi:280
 msgid ""
 "Scroll Bar mode gives each window a scroll bar.  It is enabled by default, "
 "but the scroll bar is only displayed on graphical terminals.  @xref{Scroll "
 "Bars}."
-msgstr "Scroll Barモードは、各ウィンドウにスクロールバーを表示します。このモードはデフォルトで有効ですが、スクロールバーが表示されるのはグラフィカルな端末だけです。@ref{Scroll Bars}を参照してください。"
+msgstr ""
+"Scroll Barモードは、各ウィンドウにスクロールバーを表示します。このモードはデ"
+"フォルトで有効ですが、スクロールバーが表示されるのはグラフィカルな端末だけで"
+"す。@ref{Scroll Bars}を参照してください。"
 
 #. type: itemize
-#: modes.texi.orig:285
+#: original_texis/modes.texi:285
 msgid ""
 "Tool Bar mode gives each frame a tool bar.  It is enabled by default, but "
 "the tool bar is only displayed on graphical terminals.  @xref{Tool Bars}."
-msgstr "Tool Barモードは、各フレームにツールバーを表示します。このモードはデフォルトで有効ですが、ツールバーが表示されるのはグラフィカルな端末だけです。@ref{Tool Bars}を参照してください。"
+msgstr ""
+"Tool Barモードは、各フレームにツールバーを表示します。このモードはデフォルト"
+"で有効ですが、ツールバーが表示されるのはグラフィカルな端末だけです。"
+"@ref{Tool Bars}を参照してください。"
 
 #. type: itemize
-#: modes.texi.orig:290
+#: original_texis/modes.texi:290
 msgid ""
 "Transient Mark mode highlights the region, and makes many Emacs commands "
 "operate on the region when the mark is active.  It is enabled by default.  "
 "@xref{Mark}."
-msgstr "Transient Markモードはリージョンをハイライトして、マークがアクティブなときはEmacsの多くのコマンドがリージョンにたいして操作を行うようになります。このモードはデフォルトで有効です。@ref{Mark}を参照してください。"
+msgstr ""
+"Transient Markモードはリージョンをハイライトして、マークがアクティブなときは"
+"Emacsの多くのコマンドがリージョンにたいして操作を行うようになります。このモー"
+"ドはデフォルトで有効です。@ref{Mark}を参照してください。"
 
 #. type: section
-#: modes.texi.orig:293
+#: original_texis/modes.texi:293
 #, no-wrap
 msgid "Choosing File Modes"
 msgstr "Choosing File Modes"
 
 #. type: cindex
-#: modes.texi.orig:295
+#: original_texis/modes.texi:295
 #, no-wrap
 msgid "choosing a major mode"
 msgstr "choosing a major mode"
 
 #. type: cindex
-#: modes.texi.orig:296
+#: original_texis/modes.texi:296
 #, no-wrap
 msgid "choosing a minor mode"
 msgstr "choosing a minor mode"
 
 #. type: vindex
-#: modes.texi.orig:297
+#: original_texis/modes.texi:297
 #, no-wrap
 msgid "auto-mode-alist"
 msgstr "auto-mode-alist"
 
 #. type: Plain text
-#: modes.texi.orig:303
+#: original_texis/modes.texi:303
 msgid ""
 "When you visit a file, Emacs chooses a major mode automatically.  Normally, "
 "it makes the choice based on the file name---for example, files whose names "
 "end in @samp{.c} are normally edited in C mode---but sometimes it chooses "
 "the major mode based on special text in the file.  This special text can "
 "also be used to enable buffer-local minor modes."
-msgstr "ファイルをvisitしたとき、Emacsは自動的にメジャーモードを選択します。これは通常、ファイル名にもとづいて選択されます---たとえば名前が@samp{.c}で終わるファイルは通常、Cモードで編集されます --- が、ファイル内の特別なテキストにもとづいてメジャーモードが選択されるときもあります。この特別なテキストは、バッファーローカルなマイナーモードを有効にするためにも使用されます。"
+msgstr ""
+"ファイルをvisitしたとき、Emacsは自動的にメジャーモードを選択します。これは通"
+"常、ファイル名にもとづいて選択されます---たとえば名前が@samp{.c}で終わるファ"
+"イルは通常、Cモードで編集されます --- が、ファイル内の特別なテキストにもとづ"
+"いてメジャーモードが選択されるときもあります。この特別なテキストは、バッ"
+"ファーローカルなマイナーモードを有効にするためにも使用されます。"
 
 #. type: Plain text
-#: modes.texi.orig:305
+#: original_texis/modes.texi:305
 msgid "Here is the exact procedure:"
 msgstr "以下は、これの正確な手順です:"
 
 #. type: Plain text
-#: modes.texi.orig:313
+#: original_texis/modes.texi:313
 msgid ""
 "First, Emacs checks whether the file contains file-local mode variables.  "
 "@xref{File Variables}.  If there is a file-local variable that specifies a "
@@ -616,58 +784,76 @@ msgid ""
 "variable; the simplest is to put the mode name in the first nonblank line, "
 "preceded and followed by @samp{-*-}.  Other text may appear on the line as "
 "well.  For example,"
-msgstr "最初にEmacsは、ファイルにファイルローカル(file-local)なモード変数が含まれているかチェックします。@ref{File Variables}を参照してください。メジャーモードを指定するファイルローカル変数が存在する場合、Emacsは他の条件をすべて無視してそのメジャーモードを使用します。ファイルローカル変数を使用してメジャーモードを指定する方法はいくつかあります。一番単純なのは、空行でない最初の行に、そのモードの名前と、モード名の前後に@samp{-*-}を記述する方法です。他のテキストがその行にあっても問題はありません。たとえば、"
+msgstr ""
+"最初にEmacsは、ファイルにファイルローカル(file-local)なモード変数が含まれてい"
+"るかチェックします。@ref{File Variables}を参照してください。メジャーモードを"
+"指定するファイルローカル変数が存在する場合、Emacsは他の条件をすべて無視してそ"
+"のメジャーモードを使用します。ファイルローカル変数を使用してメジャーモードを"
+"指定する方法はいくつかあります。一番単純なのは、空行でない最初の行に、その"
+"モードの名前と、モード名の前後に@samp{-*-}を記述する方法です。他のテキストが"
+"その行にあっても問題はありません。たとえば、"
 
 #. type: example
-#: modes.texi.orig:316
+#: original_texis/modes.texi:316
 #, no-wrap
 msgid "; -*-Lisp-*-\n"
 msgstr "; -*-Lisp-*-\n"
 
 #. type: Plain text
-#: modes.texi.orig:321
+#: original_texis/modes.texi:321
 msgid ""
 "tells Emacs to use Lisp mode.  Note how the semicolon is used to make Lisp "
 "treat this line as a comment.  You could equivalently write"
-msgstr "これはEmacsにLispモードを使用するよう指示します。Lispがこの行をコメントとして扱うように、セミコロンがどのように使われているか注意してください。以下のように書くこともできます"
+msgstr ""
+"これはEmacsにLispモードを使用するよう指示します。Lispがこの行をコメントとして"
+"扱うように、セミコロンがどのように使われているか注意してください。以下のよう"
+"に書くこともできます"
 
 #. type: example
-#: modes.texi.orig:324
+#: original_texis/modes.texi:324
 #, no-wrap
 msgid "; -*- mode: Lisp;-*-\n"
 msgstr "; -*- mode: Lisp;-*-\n"
 
 #. type: Plain text
-#: modes.texi.orig:330
+#: original_texis/modes.texi:330
 msgid ""
 "You can also use file-local variables to specify buffer-local minor modes, "
 "by using @code{eval} specifications.  For example, this first nonblank line "
 "puts the buffer in Lisp mode and enables Auto-Fill mode:"
-msgstr "ファイルローカル変数を使用して、バッファーローカルなマイナーモードを指定することもできます。これは@code{eval}指定を使用して行います。たとえば、空行でない最初の行に以下を記述すると、これはバッファーをLispモードにして、Auto-Fillモードを有効にします。"
+msgstr ""
+"ファイルローカル変数を使用して、バッファーローカルなマイナーモードを指定する"
+"こともできます。これは@code{eval}指定を使用して行います。たとえば、空行でない"
+"最初の行に以下を記述すると、これはバッファーをLispモードにして、Auto-Fillモー"
+"ドを有効にします。"
 
 #. type: example
-#: modes.texi.orig:333
+#: original_texis/modes.texi:333
 #, no-wrap
 msgid "; -*- mode: Lisp; eval: (auto-fill-mode 1); -*-\n"
 msgstr "; -*- mode: Lisp; eval: (auto-fill-mode 1); -*-\n"
 
 #. type: Plain text
-#: modes.texi.orig:341
+#: original_texis/modes.texi:341
 msgid ""
 "Note, however, that it is usually inappropriate to enable minor modes this "
 "way, since most minor modes represent individual user preferences.  If you "
 "personally want to use a minor mode for a particular file type, it is better "
 "to enable the minor mode via a major mode hook (@pxref{Major Modes})."
-msgstr "しかし、ほとんどのマイナーモードはユーザー個人の好みが表れるものなので、この方法でマイナーモードを有効にするのは、通常は不適切です。特定のファイルタイプにたいしてマイナーモードを個人的に使用したい場合は、メジャーモードフックを通じてマイナーモードを有効にするのが、より良い方法です。"
+msgstr ""
+"しかし、ほとんどのマイナーモードはユーザー個人の好みが表れるものなので、この"
+"方法でマイナーモードを有効にするのは、通常は不適切です。特定のファイルタイプ"
+"にたいしてマイナーモードを個人的に使用したい場合は、メジャーモードフックを通"
+"じてマイナーモードを有効にするのが、より良い方法です。"
 
 #. type: vindex
-#: modes.texi.orig:342
+#: original_texis/modes.texi:342
 #, no-wrap
 msgid "interpreter-mode-alist"
 msgstr "interpreter-mode-alist"
 
 #. type: Plain text
-#: modes.texi.orig:352
+#: original_texis/modes.texi:352
 msgid ""
 "Second, if there is no file variable specifying a major mode, Emacs checks "
 "whether the file's contents begin with @samp{#!}.  If so, that indicates "
@@ -678,10 +864,18 @@ msgid ""
 "@samp{#!/usr/bin/perl} is opened in Perl mode.  The variable "
 "@code{interpreter-mode-alist} specifies the correspondence between "
 "interpreter program names and major modes."
-msgstr "2番目に、メジャーモードを指定するファイル変数が存在しない場合、Emacsは最初の行が@samp{#!}で開始されていないかチェックします。もし該当したら、それはそのファイルがファイルの最初の行に記述された名前のインタープリターを実行する(ファイルの残りはインタープリターへの入力として使用されます)ことにより機能する、実行可能なシェルコマンドであることを示します。したがってEmacsはインタープリター名を使って、モードの選択を試みます。たとえば、@samp{#!/usr/bin/perl}で始まるファイルは、Perlモードで開かれます。変数@code{interpreter-mode-alist}は、インタープリター名とメジャーモードの対応を指定します。"
+msgstr ""
+"2番目に、メジャーモードを指定するファイル変数が存在しない場合、Emacsは最初の"
+"行が@samp{#!}で開始されていないかチェックします。もし該当したら、それはその"
+"ファイルがファイルの最初の行に記述された名前のインタープリターを実行する(ファ"
+"イルの残りはインタープリターへの入力として使用されます)ことにより機能する、実"
+"行可能なシェルコマンドであることを示します。したがってEmacsはインタープリター"
+"名を使って、モードの選択を試みます。たとえば、@samp{#!/usr/bin/perl}で始まる"
+"ファイルは、Perlモードで開かれます。変数@code{interpreter-mode-alist}は、イン"
+"タープリター名とメジャーモードの対応を指定します。"
 
 #. type: Plain text
-#: modes.texi.orig:359
+#: original_texis/modes.texi:359
 msgid ""
 "When the first line starts with @samp{#!}, you usually cannot use the @samp{-"
 "*-} feature on the first line, because the system would get confused when "
@@ -689,80 +883,100 @@ msgid ""
 "in such files as well as on the first line.  The same is true for man pages "
 "which start with the magic string @samp{'\\\"} to specify a list of troff "
 "preprocessors."
-msgstr "最初の行が@samp{#!}で開始されている場合、最初の行で@samp{-*-}の機能は通常は使用できません。なぜならインタープリターを実行するときにシステムが混乱するからです。そのため、Emacsはそのようなファイルにたいしては、1行目と同じように2行目の@samp{-*-}を探します。これはマジック文字列@samp{'\\\"}で開始されるman pageで、troffプリプロセッサーのリストを指定することと同じです。"
+msgstr ""
+"最初の行が@samp{#!}で開始されている場合、最初の行で@samp{-*-}の機能は通常は使"
+"用できません。なぜならインタープリターを実行するときにシステムが混乱するから"
+"です。そのため、Emacsはそのようなファイルにたいしては、1行目と同じように2行目"
+"の@samp{-*-}を探します。これはマジック文字列@samp{'\\\"}で開始されるman page"
+"で、troffプリプロセッサーのリストを指定することと同じです。"
 
 #. type: vindex
-#: modes.texi.orig:360
+#: original_texis/modes.texi:360
 #, no-wrap
 msgid "magic-mode-alist"
 msgstr "magic-mode-alist"
 
 #. type: Plain text
-#: modes.texi.orig:367
+#: original_texis/modes.texi:367
 msgid ""
 "Third, Emacs tries to determine the major mode by looking at the text at the "
 "start of the buffer, based on the variable @code{magic-mode-alist}.  By "
 "default, this variable is @code{nil} (an empty list), so Emacs skips this "
 "step; however, you can customize it in your init file (@pxref{Init File}).  "
 "The value should be a list of elements of the form"
-msgstr "3番目に、Emacsは変数@code{magic-mode-alist}にもとづいて、バッファーの先頭のテキストを調べて、メジャーモードの決定を試みます。デフォルトではこの変数は@code{nil}(空のリスト)なので、Emacsはこのステップをスキップしますが、initファイルでこれをカスタマイズできます(@ref{Init File}を参照してください)。変数の値には、以下の形式のリスト要素を指定します"
+msgstr ""
+"3番目に、Emacsは変数@code{magic-mode-alist}にもとづいて、バッファーの先頭のテ"
+"キストを調べて、メジャーモードの決定を試みます。デフォルトではこの変数は"
+"@code{nil}(空のリスト)なので、Emacsはこのステップをスキップしますが、initファ"
+"イルでこれをカスタマイズできます(@ref{Init File}を参照してください)。変数の値"
+"には、以下の形式のリスト要素を指定します"
 
 #. type: example
-#: modes.texi.orig:370 modes.texi.orig:396
+#: original_texis/modes.texi:370 original_texis/modes.texi:396
 #, no-wrap
 msgid "(@var{regexp} . @var{mode-function})\n"
 msgstr "(@var{regexp} . @var{mode-function})\n"
 
 #. type: Plain text
-#: modes.texi.orig:377
+#: original_texis/modes.texi:377
 msgid ""
 "where @var{regexp} is a regular expression (@pxref{Regexps}), and @var{mode-"
 "function} is a major mode command.  If the text at the beginning of the file "
 "matches @var{regexp}, Emacs chooses the major mode specified by @var{mode-"
 "function}."
-msgstr "ここで@var{regexp}は正規表現(@ref{Regexps}を参照してください)で、@var{mode-function}はメジャーモード関数です。ファイルの先頭のテキストが@var{regexp}にマッチした場合、Emacsは@var{mode-function}で指定したメジャーモードを選択します。"
+msgstr ""
+"ここで@var{regexp}は正規表現(@ref{Regexps}を参照してください)で、@var{mode-"
+"function}はメジャーモード関数です。ファイルの先頭のテキストが@var{regexp}に"
+"マッチした場合、Emacsは@var{mode-function}で指定したメジャーモードを選択しま"
+"す。"
 
 #. type: Plain text
-#: modes.texi.orig:379
+#: original_texis/modes.texi:379
 msgid "Alternatively, an element of @code{magic-mode-alist} may have the form"
 msgstr "@code{magic-mode-alist}の要素は、以下の形式でも指定できます"
 
 #. type: example
-#: modes.texi.orig:382
+#: original_texis/modes.texi:382
 #, no-wrap
 msgid "(@var{match-function} . @var{mode-function})\n"
 msgstr "(@var{match-function} . @var{mode-function})\n"
 
 #. type: Plain text
-#: modes.texi.orig:388
+#: original_texis/modes.texi:388
 msgid ""
 "where @var{match-function} is a Lisp function that is called at the "
 "beginning of the buffer; if the function returns non-@code{nil}, Emacs set "
 "the major mode with @var{mode-function}."
-msgstr "ここで@var{match-function}は、バッファーの先頭で呼び出されるLisp関数です。この関数が非@code{nil}を返した場合、Emacsはメジャーモードを@var{mode-function}にセットします。"
+msgstr ""
+"ここで@var{match-function}は、バッファーの先頭で呼び出されるLisp関数です。こ"
+"の関数が非@code{nil}を返した場合、Emacsはメジャーモードを@var{mode-function}"
+"にセットします。"
 
 #. type: Plain text
-#: modes.texi.orig:393
+#: original_texis/modes.texi:393
 msgid ""
 "Fourth---if Emacs still hasn't found a suitable major mode---it looks at the "
 "file's name.  The correspondence between file names and major modes is "
 "controlled by the variable @code{auto-mode-alist}.  Its value is a list in "
 "which each element has this form,"
-msgstr "4番目に ---Emacsが適正なメジャーモードをまだ見つけていない場合 --- 今度はファイル名を調べます。ファイル名とメジャーモードの対応付けは、変数@code{auto-mode-alist}で制御されます。この変数の値は、各要素が以下の形式のリストです。"
+msgstr ""
+"4番目に ---Emacsが適正なメジャーモードをまだ見つけていない場合 --- 今度はファ"
+"イル名を調べます。ファイル名とメジャーモードの対応付けは、変数@code{auto-"
+"mode-alist}で制御されます。この変数の値は、各要素が以下の形式のリストです。"
 
 #. type: Plain text
-#: modes.texi.orig:400
+#: original_texis/modes.texi:400
 msgid "or this form,"
 msgstr "または以下の形式です"
 
 #. type: example
-#: modes.texi.orig:403
+#: original_texis/modes.texi:403
 #, no-wrap
 msgid "(@var{regexp} @var{mode-function} @var{flag})\n"
 msgstr "(@var{regexp} @var{mode-function} @var{flag})\n"
 
 #. type: Plain text
-#: modes.texi.orig:415
+#: original_texis/modes.texi:415
 msgid ""
 "For example, one element normally found in the list has the form "
 "@code{(@t{\"\\\\.c\\\\'\"} . c-mode)}, and it is responsible for selecting C "
@@ -773,16 +987,24 @@ msgid ""
 "and @var{flag} is non-@code{nil}, then after calling @var{mode-function}, "
 "Emacs discards the suffix that matched @var{regexp} and searches the list "
 "again for another match."
-msgstr "たとえば、通常見られるようなリストの要素は、@code{(@t{\"\\\\.c\\\\'\"} . c-mode)}のような形式で、これは名前が@file{.c}で終わるファイルにたいして、Cモードを選択する役目を負っています(正規表現で@samp{.}がもつ特別な意味を打ち消すために、文字列に@samp{\\}を含めなければなりません。これはLisp構文では@samp{\\\\}と記述する必要があります)。要素が@code{(@var{regexp} @var{mode-function} @var{flag})}の形式をもち、@var{flag}が非@code{nil}の場合、Emacsは@var{mode-function}を呼び出した後、Emacsは@var{regexp}とマッチした接尾辞を捨てて、ほかのマッチを検索します。"
+msgstr ""
+"たとえば、通常見られるようなリストの要素は、@code{(@t{\"\\\\.c\\\\'\"} . c-"
+"mode)}のような形式で、これは名前が@file{.c}で終わるファイルにたいして、Cモー"
+"ドを選択する役目を負っています(正規表現で@samp{.}がもつ特別な意味を打ち消すた"
+"めに、文字列に@samp{\\}を含めなければなりません。これはLisp構文では@samp{\\"
+"\\}と記述する必要があります)。要素が@code{(@var{regexp} @var{mode-function} "
+"@var{flag})}の形式をもち、@var{flag}が非@code{nil}の場合、Emacsは@var{mode-"
+"function}を呼び出した後、Emacsは@var{regexp}とマッチした接尾辞を捨てて、ほか"
+"のマッチを検索します。"
 
 #. type: vindex
-#: modes.texi.orig:416
+#: original_texis/modes.texi:416
 #, no-wrap
 msgid "auto-mode-case-fold"
 msgstr "auto-mode-case-fold"
 
 #. type: Plain text
-#: modes.texi.orig:424
+#: original_texis/modes.texi:424
 msgid ""
 "On GNU/Linux and other systems with case-sensitive file names, Emacs "
 "performs a case-sensitive search through @code{auto-mode-alist}; if this "
@@ -791,16 +1013,22 @@ msgid ""
 "case-fold} to @code{nil}.  On systems with case-insensitive file names, such "
 "as Microsoft Windows, Emacs performs a single case-insensitive search "
 "through @code{auto-mode-alist}."
-msgstr "GNU/Linuxおよび、ファイル名の大文字小文字を区別する他のシステムでは、Emacsは@code{auto-mode-alist}の検索で大文字小文字を区別します。この検索が失敗すると、2回目は大文字小文字を区別せずにalistを再検索します。2回目の検索を行わないようにするには、変数@code{auto-mode-case-fold}を@code{nil}に変更します。Microsoft Windowsのような、ファイル名の大文字小文字を区別しないシステムでは、Emacsは大文字小文字を区別しないで@code{auto-mode-alist}を検索します。"
+msgstr ""
+"GNU/Linuxおよび、ファイル名の大文字小文字を区別する他のシステムでは、Emacsは"
+"@code{auto-mode-alist}の検索で大文字小文字を区別します。この検索が失敗する"
+"と、2回目は大文字小文字を区別せずにalistを再検索します。2回目の検索を行わない"
+"ようにするには、変数@code{auto-mode-case-fold}を@code{nil}に変更します。"
+"Microsoft Windowsのような、ファイル名の大文字小文字を区別しないシステムでは、"
+"Emacsは大文字小文字を区別しないで@code{auto-mode-alist}を検索します。"
 
 #. type: vindex
-#: modes.texi.orig:425
+#: original_texis/modes.texi:425
 #, no-wrap
 msgid "magic-fallback-mode-alist"
 msgstr "magic-fallback-mode-alist"
 
 #. type: Plain text
-#: modes.texi.orig:433
+#: original_texis/modes.texi:433
 msgid ""
 "Finally, if Emacs @emph{still} hasn't found a major mode to use, it compares "
 "the text at the start of the buffer to the variable @code{magic-fallback-"
@@ -808,32 +1036,43 @@ msgid ""
 "above, except that is consulted only after @code{auto-mode-alist}.  By "
 "default, @code{magic-fallback-mode-alist} contains forms that check for "
 "image files, HTML/XML/SGML files, and PostScript files."
-msgstr "最後に、Emacsが@emph{まだ}使用するメジャーモードを見つけられない場合、Emacsはバッファーの先頭のテキストと、変数@code{magic-fallback-mode-alist}を比較します。この変数は上述した@code{magic-mode-alist}と同じように機能しますが、@code{auto-mode-alist}の後に調べられるという点が異なります。デフォルトでは@code{magic-fallback-mode-alist}にはイメージファイル、HTML/XML/SGMLファイル、PostScriptファイルをチェックする形式が含まれています。"
+msgstr ""
+"最後に、Emacsが@emph{まだ}使用するメジャーモードを見つけられない場合、Emacsは"
+"バッファーの先頭のテキストと、変数@code{magic-fallback-mode-alist}を比較しま"
+"す。この変数は上述した@code{magic-mode-alist}と同じように機能しますが、"
+"@code{auto-mode-alist}の後に調べられるという点が異なります。デフォルトでは"
+"@code{magic-fallback-mode-alist}にはイメージファイル、HTML/XML/SGMLファイル、"
+"PostScriptファイルをチェックする形式が含まれています。"
 
 #. type: findex
-#: modes.texi.orig:434
+#: original_texis/modes.texi:434
 #, no-wrap
 msgid "normal-mode"
 msgstr "normal-mode"
 
 #. type: Plain text
-#: modes.texi.orig:441
+#: original_texis/modes.texi:441
 msgid ""
 "If you have changed the major mode of a buffer, you can return to the major "
 "mode Emacs would have chosen automatically, by typing @kbd{M-x normal-"
 "mode}.  This is the same function that @code{find-file} calls to choose the "
 "major mode.  It also processes the file's @samp{-*-} line or local variables "
 "list (if any).  @xref{File Variables}."
-msgstr "バッファーのメジャーモードを変更したとき、@kbd{M-x normal-mode}とタイプすると、Emacsが自動的に選択するメジャーモードに戻ることができます。この関数は@code{find-file}がメジャーモードを選択するために呼び出す関数と同じです。この関数は、(もしあれば)ファイルの@samp{-*-} 行およびローカル変数リストも処理します。@ref{File Variables}を参照してください。"
+msgstr ""
+"バッファーのメジャーモードを変更したとき、@kbd{M-x normal-mode}とタイプする"
+"と、Emacsが自動的に選択するメジャーモードに戻ることができます。この関数は"
+"@code{find-file}がメジャーモードを選択するために呼び出す関数と同じです。この"
+"関数は、(もしあれば)ファイルの@samp{-*-} 行およびローカル変数リストも処理しま"
+"す。@ref{File Variables}を参照してください。"
 
 #. type: vindex
-#: modes.texi.orig:442
+#: original_texis/modes.texi:442
 #, no-wrap
 msgid "change-major-mode-with-file-name"
 msgstr "change-major-mode-with-file-name"
 
 #. type: Plain text
-#: modes.texi.orig:449
+#: original_texis/modes.texi:449
 msgid ""
 "The commands @kbd{C-x C-w} and @code{set-visited-file-name} change to a new "
 "major mode if the new file name implies a mode (@pxref{Saving}).  (@kbd{C-x "
@@ -842,4 +1081,10 @@ msgid ""
 "``special'' major modes do not allow the mode to change.  You can turn off "
 "this mode-changing feature by setting @code{change-major-mode-with-file-"
 "name} to @code{nil}."
-msgstr "コマンド@kbd{C-x C-w}および@code{set-visited-file-name}は、新しいファイル名が何らかのモードに関係がある場合は、新しいメジャーコードに変更します(そのバッファーがファイルをvisitしていない場合、@kbd{C-x C-s}も同じことを行います)。しかしバッファーの内容がメジャーモードを指定していて、ある種の``特別''なメジャーモードはモードの変更を許しません。このモード変更機能をオフにするには、@code{change-major-mode-with-file-name}を@code{nil}にセットして下さい。"
+msgstr ""
+"コマンド@kbd{C-x C-w}および@code{set-visited-file-name}は、新しいファイル名が"
+"何らかのモードに関係がある場合は、新しいメジャーコードに変更します(そのバッ"
+"ファーがファイルをvisitしていない場合、@kbd{C-x C-s}も同じことを行います)。し"
+"かしバッファーの内容がメジャーモードを指定していて、ある種の``特別''なメ"
+"ジャーモードはモードの変更を許しません。このモード変更機能をオフにするには、"
+"@code{change-major-mode-with-file-name}を@code{nil}にセットして下さい。"

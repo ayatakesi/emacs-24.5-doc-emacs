@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-01-18 00:08+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,156 +16,164 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
-#: cal-xtra.texi.orig:9
+#: original_texis/cal-xtra.texi:9
 #, no-wrap
 msgid "Advanced Calendar/Diary Usage"
 msgstr "Advanced Calendar/Diary Usage"
 
 #. type: section
-#: cal-xtra.texi.orig:10
+#: original_texis/cal-xtra.texi:10
 #, no-wrap
 msgid "More advanced features of the Calendar and Diary"
 msgstr "More advanced features of the Calendar and Diary"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:16
+#: original_texis/cal-xtra.texi:16
 msgid ""
 "This section describes some of the more advanced/specialized features of the "
 "calendar and diary.  It starts with some of the many ways in which you can "
 "customize the calendar and diary to suit your personal tastes."
-msgstr "このセクションでは、カレンダーとダイアリーの、より上級で特別な機能をいくつか説明します。まず最初に、個人的な好みに合うようにカレンダーをカスタマイズする、多くの方法を紹介します。"
+msgstr ""
+"このセクションでは、カレンダーとダイアリーの、より上級で特別な機能をいくつか"
+"説明します。まず最初に、個人的な好みに合うようにカレンダーをカスタマイズす"
+"る、多くの方法を紹介します。"
 
 #. type: node
-#: cal-xtra.texi.orig:28 cal-xtra.texi.orig:30
+#: original_texis/cal-xtra.texi:28 original_texis/cal-xtra.texi:30
 #, no-wrap
 msgid "Calendar Customizing"
 msgstr "Calendar Customizing"
 
 #. type: menuentry
-#: cal-xtra.texi.orig:28
+#: original_texis/cal-xtra.texi:28
 msgid "Calendar layout and hooks."
 msgstr "カレンダーのレイアウトとフック。"
 
 #. type: node
-#: cal-xtra.texi.orig:28 cal-xtra.texi.orig:98
+#: original_texis/cal-xtra.texi:28 original_texis/cal-xtra.texi:98
 #, no-wrap
 msgid "Holiday Customizing"
 msgstr "Holiday Customizing"
 
 #. type: menuentry
-#: cal-xtra.texi.orig:28
+#: original_texis/cal-xtra.texi:28
 msgid "Defining your own holidays."
 msgstr "独自の休日を定義する。"
 
 #. type: node
-#: cal-xtra.texi.orig:28 cal-xtra.texi.orig:267
+#: original_texis/cal-xtra.texi:28 original_texis/cal-xtra.texi:267
 #, no-wrap
 msgid "Mayan Calendar"
 msgstr "Mayan Calendar"
 
 #. type: menuentry
-#: cal-xtra.texi.orig:28
+#: original_texis/cal-xtra.texi:28
 msgid "Moving to a date specified in a Mayan calendar."
 msgstr "マヤ暦で指定された日付への移動。"
 
 #. type: subsection
-#: cal-xtra.texi.orig:28 cal-xtra.texi.orig:360 cal-xtra.texi.orig:361
+#: original_texis/cal-xtra.texi:28 original_texis/cal-xtra.texi:360
+#: original_texis/cal-xtra.texi:361
 #, no-wrap
 msgid "Date Display Format"
 msgstr "Date Display Format"
 
 #. type: menuentry
-#: cal-xtra.texi.orig:28
+#: original_texis/cal-xtra.texi:28
 msgid "Changing the format."
 msgstr "フォーマットの変更。"
 
 #. type: subsection
-#: cal-xtra.texi.orig:28 cal-xtra.texi.orig:398 cal-xtra.texi.orig:399
+#: original_texis/cal-xtra.texi:28 original_texis/cal-xtra.texi:398
+#: original_texis/cal-xtra.texi:399
 #, no-wrap
 msgid "Time Display Format"
 msgstr "Time Display Format"
 
 #. type: node
-#: cal-xtra.texi.orig:28 cal-xtra.texi.orig:428
+#: original_texis/cal-xtra.texi:28 original_texis/cal-xtra.texi:428
 #, no-wrap
 msgid "Diary Customizing"
 msgstr "Diary Customizing"
 
 #. type: menuentry
-#: cal-xtra.texi.orig:28
+#: original_texis/cal-xtra.texi:28
 msgid "Defaults you can set."
 msgstr "セットできるデフォルト。"
 
 #. type: node
-#: cal-xtra.texi.orig:28 cal-xtra.texi.orig:516
+#: original_texis/cal-xtra.texi:28 original_texis/cal-xtra.texi:516
 #, no-wrap
 msgid "Non-Gregorian Diary"
 msgstr "Non-Gregorian Diary"
 
 #. type: menuentry
-#: cal-xtra.texi.orig:28
+#: original_texis/cal-xtra.texi:28
 msgid "Diary entries based on other calendars."
 msgstr "他のカレンダーにもとづくダイアリーエントリー。"
 
 #. type: subsection
-#: cal-xtra.texi.orig:28 cal-xtra.texi.orig:617 cal-xtra.texi.orig:618
+#: original_texis/cal-xtra.texi:28 original_texis/cal-xtra.texi:617
+#: original_texis/cal-xtra.texi:618
 #, no-wrap
 msgid "Diary Display"
 msgstr "Diary Display"
 
 #. type: menuentry
-#: cal-xtra.texi.orig:28
+#: original_texis/cal-xtra.texi:28
 msgid "A choice of ways to display the diary."
 msgstr "ダイアリーを表示する方法の選択。"
 
 #. type: subsection
-#: cal-xtra.texi.orig:28 cal-xtra.texi.orig:702 cal-xtra.texi.orig:703
+#: original_texis/cal-xtra.texi:28 original_texis/cal-xtra.texi:702
+#: original_texis/cal-xtra.texi:703
 #, no-wrap
 msgid "Fancy Diary Display"
 msgstr "Fancy Diary Display"
 
 #. type: menuentry
-#: cal-xtra.texi.orig:28
+#: original_texis/cal-xtra.texi:28
 msgid "Sorting diary entries, using included diary files."
-msgstr "インクルードされたダイアリーファイルを使ったダイアリーエントリーのソート。"
+msgstr ""
+"インクルードされたダイアリーファイルを使ったダイアリーエントリーのソート。"
 
 #. type: node
-#: cal-xtra.texi.orig:28 cal-xtra.texi.orig:765
+#: original_texis/cal-xtra.texi:28 original_texis/cal-xtra.texi:765
 #, no-wrap
 msgid "Sexp Diary Entries"
 msgstr "Sexp Diary Entries"
 
 #. type: menuentry
-#: cal-xtra.texi.orig:28
+#: original_texis/cal-xtra.texi:28
 msgid "More flexible diary entries."
 msgstr "より柔軟なダイアリーエントリー。"
 
 #. type: subsection
-#: cal-xtra.texi.orig:31
+#: original_texis/cal-xtra.texi:31
 #, no-wrap
 msgid "Customizing the Calendar"
 msgstr "Customizing the Calendar"
 
 #. type: vindex
-#: cal-xtra.texi.orig:33
+#: original_texis/cal-xtra.texi:33
 #, no-wrap
 msgid "calendar-intermonth-text"
 msgstr "calendar-intermonth-text"
 
 #. type: cindex
-#: cal-xtra.texi.orig:34
+#: original_texis/cal-xtra.texi:34
 #, no-wrap
 msgid "calendar layout"
 msgstr "calendar layout"
 
 #. type: cindex
-#: cal-xtra.texi.orig:35
+#: original_texis/cal-xtra.texi:35
 #, no-wrap
 msgid "calendar week numbers"
 msgstr "calendar week numbers"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:44
+#: original_texis/cal-xtra.texi:44
 msgid ""
 "The calendar display unfortunately cannot be changed from three months, but "
 "you can customize the whitespace used by setting the variables: "
@@ -175,50 +183,61 @@ msgid ""
 "months, for example week numbers, customize the variables @code{calendar-"
 "intermonth-header} and @code{calendar-intermonth-text} as described in their "
 "documentation."
-msgstr "残念ながら、カレンダーの表示が3ヶ月であるのを変更することはできませんが、変数@code{calendar-left-margin}、@code{calendar-day-header-width}、@code{calendar-day-digit-width}、@code{calendar-column-width}、@code{calendar-intermonth-spacing}をカスタマイズすることにより、使用される空白文字をカスタマイズすることはできます。各月の間に、たとえば週の番号を表示するには、変数@code{calendar-intermonth-header}と@code{calendar-intermonth-text}を、変数のドキュメントに記載されているようにカスタマイズします。"
+msgstr ""
+"残念ながら、カレンダーの表示が3ヶ月であるのを変更することはできませんが、変数"
+"@code{calendar-left-margin}、@code{calendar-day-header-width}、"
+"@code{calendar-day-digit-width}、@code{calendar-column-width}、"
+"@code{calendar-intermonth-spacing}をカスタマイズすることにより、使用される空"
+"白文字をカスタマイズすることはできます。各月の間に、たとえば週の番号を表示す"
+"るには、変数@code{calendar-intermonth-header}と@code{calendar-intermonth-"
+"text}を、変数のドキュメントに記載されているようにカスタマイズします。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:45
+#: original_texis/cal-xtra.texi:45
 #, no-wrap
 msgid "calendar-month-header"
 msgstr "calendar-month-header"
 
 #. type: vindex
-#: cal-xtra.texi.orig:46
+#: original_texis/cal-xtra.texi:46
 #, no-wrap
 msgid "calendar-day-header-array"
 msgstr "calendar-day-header-array"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:52
+#: original_texis/cal-xtra.texi:52
 msgid ""
 "The variable @code{calendar-month-header} controls the text that appears "
 "above each month in the calendar.  By default, it shows the month and year.  "
 "The variable @code{calendar-day-header-array} controls the text that appears "
 "above each day's column in every month.  By default, it shows the first two "
 "letters of each day's name."
-msgstr "変数@code{calendar-month-header}は、カレンダーの各月の上に表示されるテキストを制御します。デフォルトでは月と年を表示します。変数@code{calendar-day-header-array}は、各月の各曜日の上に表示されるテキストを制御します。デフォルトでは、各曜日の名前の最初の2文字を表示します。"
+msgstr ""
+"変数@code{calendar-month-header}は、カレンダーの各月の上に表示されるテキスト"
+"を制御します。デフォルトでは月と年を表示します。変数@code{calendar-day-"
+"header-array}は、各月の各曜日の上に表示されるテキストを制御します。デフォルト"
+"では、各曜日の名前の最初の2文字を表示します。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:53
+#: original_texis/cal-xtra.texi:53
 #, no-wrap
 msgid "calendar-holiday-marker"
 msgstr "calendar-holiday-marker"
 
 #. type: vindex
-#: cal-xtra.texi.orig:54
+#: original_texis/cal-xtra.texi:54
 #, no-wrap
 msgid "diary-entry-marker"
 msgstr "diary-entry-marker"
 
 #. type: vindex
-#: cal-xtra.texi.orig:55
+#: original_texis/cal-xtra.texi:55
 #, no-wrap
 msgid "calendar-today-marker"
 msgstr "calendar-today-marker"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:64
+#: original_texis/cal-xtra.texi:64
 msgid ""
 "The variable @code{calendar-holiday-marker} specifies how to mark a date "
 "that is a holiday.  Its value may be a single-character string to insert "
@@ -228,123 +247,145 @@ msgid ""
 "today-marker} to mark today's date.  By default, the calendar uses faces "
 "named @code{holiday}, @code{diary}, and @code{calendar-today} for these "
 "purposes."
-msgstr "変数@code{calendar-holiday-marker}は、休日をどのようにマークするか指定します。この変数は、日付の隣に挿入する1文字の文字列か、その日付を表示するのに使用するフェイス名です。同様に、変数@code{diary-entry-marker}は、ダイアリーエントリーをもつ日を、どのようにマークするか指定します。関数@code{calendar-mark-today}は、今日の日付をマークするのに@code{calendar-today-marker}を使用します。デフォルトでは、この目的のためにカレンダーは@code{holiday}、@code{diary}、@code{calendar-today}という名前のフェイスを使います。"
+msgstr ""
+"変数@code{calendar-holiday-marker}は、休日をどのようにマークするか指定しま"
+"す。この変数は、日付の隣に挿入する1文字の文字列か、その日付を表示するのに使用"
+"するフェイス名です。同様に、変数@code{diary-entry-marker}は、ダイアリーエント"
+"リーをもつ日を、どのようにマークするか指定します。関数@code{calendar-mark-"
+"today}は、今日の日付をマークするのに@code{calendar-today-marker}を使用しま"
+"す。デフォルトでは、この目的のためにカレンダーは@code{holiday}、"
+"@code{diary}、@code{calendar-today}という名前のフェイスを使います。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:65
+#: original_texis/cal-xtra.texi:65
 #, no-wrap
 msgid "calendar-load-hook"
 msgstr "calendar-load-hook"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:69
+#: original_texis/cal-xtra.texi:69
 msgid ""
 "The variable @code{calendar-load-hook} is a normal hook run when the "
 "calendar package is first loaded (before actually starting to display the "
 "calendar)."
-msgstr "変数@code{calendar-load-hook}は、calendarパッケージが最初にロードされたとき(実際にカレンダーの表示が開始される前)に実行されるノーマルフックです。"
+msgstr ""
+"変数@code{calendar-load-hook}は、calendarパッケージが最初にロードされたとき"
+"(実際にカレンダーの表示が開始される前)に実行されるノーマルフックです。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:70
+#: original_texis/cal-xtra.texi:70
 #, no-wrap
 msgid "calendar-initial-window-hook"
 msgstr "calendar-initial-window-hook"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:75
+#: original_texis/cal-xtra.texi:75
 msgid ""
 "Starting the calendar runs the normal hook @code{calendar-initial-window-"
 "hook}.  Recomputation of the calendar display does not run this hook.  But "
 "if you leave the calendar with the @kbd{q} command and reenter it, the hook "
 "runs again."
-msgstr "カレンダーの開始により、ノーマルフック@code{calendar-initial-window-hook}が実行されます。カレンダー表示の再計算では、このフックは実行されません。しかし@kbd{q}でカレンダーを離れ、再度カレンダーに入ると、このフックが再び実行されます。"
+msgstr ""
+"カレンダーの開始により、ノーマルフック@code{calendar-initial-window-hook}が実"
+"行されます。カレンダー表示の再計算では、このフックは実行されません。しかし"
+"@kbd{q}でカレンダーを離れ、再度カレンダーに入ると、このフックが再び実行されま"
+"す。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:76
+#: original_texis/cal-xtra.texi:76
 #, no-wrap
 msgid "calendar-today-visible-hook"
 msgstr "calendar-today-visible-hook"
 
 #. type: findex
-#: cal-xtra.texi.orig:77
+#: original_texis/cal-xtra.texi:77
 #, no-wrap
 msgid "calendar-star-date"
 msgstr "calendar-star-date"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:83
+#: original_texis/cal-xtra.texi:83
 msgid ""
 "The variable @code{calendar-today-visible-hook} is a normal hook run after "
 "the calendar buffer has been prepared with the calendar, when the current "
 "date is visible in the window.  One use of this hook is to mark today's "
 "date; to do that use either of the functions @code{calendar-mark-today} or "
 "@code{calendar-star-date}:"
-msgstr "変数@code{calendar-today-visible-hook}は、カレンダーバッファーがカレンダーのために準備された後、カレント日付がウィンドウで表示されるときに実行されるノーマルフックです。このフックの用途の1つは、今日の日付のマークです。これを行なうには、関数@code{calendar-mark-today}または@code{calendar-star-date}を使います:"
+msgstr ""
+"変数@code{calendar-today-visible-hook}は、カレンダーバッファーがカレンダーの"
+"ために準備された後、カレント日付がウィンドウで表示されるときに実行されるノー"
+"マルフックです。このフックの用途の1つは、今日の日付のマークです。これを行なう"
+"には、関数@code{calendar-mark-today}または@code{calendar-star-date}を使いま"
+"す:"
 
 #. type: findex
-#: cal-xtra.texi.orig:84
+#: original_texis/cal-xtra.texi:84
 #, no-wrap
 msgid "calendar-mark-today"
 msgstr "calendar-mark-today"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:87
+#: original_texis/cal-xtra.texi:87
 #, no-wrap
 msgid "(add-hook 'calendar-today-visible-hook 'calendar-mark-today)\n"
 msgstr "(add-hook 'calendar-today-visible-hook 'calendar-mark-today)\n"
 
 #. type: vindex
-#: cal-xtra.texi.orig:89
+#: original_texis/cal-xtra.texi:89
 #, no-wrap
 msgid "calendar-today-invisible-hook"
 msgstr "calendar-today-invisible-hook"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:93
+#: original_texis/cal-xtra.texi:93
 msgid ""
 "A similar normal hook, @code{calendar-today-invisible-hook} is run if the "
 "current date is @emph{not} visible in the window."
-msgstr "同様のノーマルフック@code{calendar-today-invisible-hook}は、カレント日付がウィンドウに表示されなくなるとき実行されます。"
+msgstr ""
+"同様のノーマルフック@code{calendar-today-invisible-hook}は、カレント日付が"
+"ウィンドウに表示されなくなるとき実行されます。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:94
+#: original_texis/cal-xtra.texi:94
 #, no-wrap
 msgid "calendar-move-hook"
 msgstr "calendar-move-hook"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:97
+#: original_texis/cal-xtra.texi:97
 msgid ""
 "Each of the calendar cursor motion commands runs the hook @code{calendar-"
 "move-hook} after it moves the cursor."
-msgstr "カレンダーのカーソル移動コマンドは、カーソルを移動した後に、フック@code{calendar-move-hook}を実行します。"
+msgstr ""
+"カレンダーのカーソル移動コマンドは、カーソルを移動した後に、フック"
+"@code{calendar-move-hook}を実行します。"
 
 #. type: subsection
-#: cal-xtra.texi.orig:99
+#: original_texis/cal-xtra.texi:99
 #, no-wrap
 msgid "Customizing the Holidays"
 msgstr "Customizing the Holidays"
 
 #. type: vindex
-#: cal-xtra.texi.orig:101
+#: original_texis/cal-xtra.texi:101
 #, no-wrap
 msgid "calendar-holidays"
 msgstr "calendar-holidays"
 
 #. type: vindex
-#: cal-xtra.texi.orig:102
+#: original_texis/cal-xtra.texi:102
 #, no-wrap
 msgid "holiday-oriental-holidays"
 msgstr "holiday-oriental-holidays"
 
 #. type: vindex
-#: cal-xtra.texi.orig:103
+#: original_texis/cal-xtra.texi:103
 #, no-wrap
 msgid "holiday-solar-holidays"
 msgstr "holiday-solar-holidays"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:112
+#: original_texis/cal-xtra.texi:112
 msgid ""
 "There are several variables listing the default holidays that Emacs knows "
 "about.  These are: @code{holiday-general-holidays}, @code{holiday-local-"
@@ -353,93 +394,107 @@ msgid ""
 "@code{holiday-islamic-holidays}, @code{holiday-oriental-holidays}, and "
 "@code{holiday-other-holidays}.  The names should be self-explanatory; e.g., "
 "@code{holiday-solar-holidays} lists sun- and moon-related holidays."
-msgstr "Emacsが知る、デフォルト休日のリスト変数がいくつかあります。それは@code{holiday-general-holidays}、@code{holiday-local-holidays}、@code{holiday-solar-holidays}、@code{holiday-bahai-holidays}、@code{holiday-christian-holidays}、@code{holiday-hebrew-holidays}、@code{holiday-islamic-holidays}、@code{holiday-oriental-holidays}、@code{holiday-other-holidays}です。変数の名前は自己説明的であるべきです。たとえば、@code{holiday-solar-holidays}は、太陽と月に関連した休日のリストです。"
+msgstr ""
+"Emacsが知る、デフォルト休日のリスト変数がいくつかあります。それは"
+"@code{holiday-general-holidays}、@code{holiday-local-holidays}、"
+"@code{holiday-solar-holidays}、@code{holiday-bahai-holidays}、@code{holiday-"
+"christian-holidays}、@code{holiday-hebrew-holidays}、@code{holiday-islamic-"
+"holidays}、@code{holiday-oriental-holidays}、@code{holiday-other-holidays}で"
+"す。変数の名前は自己説明的であるべきです。たとえば、@code{holiday-solar-"
+"holidays}は、太陽と月に関連した休日のリストです。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:116
+#: original_texis/cal-xtra.texi:116
 msgid ""
 "You can customize these lists of holidays to your own needs, deleting or "
 "adding holidays as described below.  Set any of them to @code{nil} to not "
 "show the associated holidays."
-msgstr "これらの休日リストにたいして、必要に応じて、下記で説明しているように休日を削除したり追加してカスタマイズできます。これらを@code{nil}にセットすると、関連する休日は表示されなくなります。"
+msgstr ""
+"これらの休日リストにたいして、必要に応じて、下記で説明しているように休日を削"
+"除したり追加してカスタマイズできます。これらを@code{nil}にセットすると、関連"
+"する休日は表示されなくなります。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:117
+#: original_texis/cal-xtra.texi:117
 #, no-wrap
 msgid "holiday-general-holidays"
 msgstr "holiday-general-holidays"
 
 #. type: vindex
-#: cal-xtra.texi.orig:118
+#: original_texis/cal-xtra.texi:118
 #, no-wrap
 msgid "holiday-local-holidays"
 msgstr "holiday-local-holidays"
 
 #. type: vindex
-#: cal-xtra.texi.orig:119
+#: original_texis/cal-xtra.texi:119
 #, no-wrap
 msgid "holiday-other-holidays"
 msgstr "holiday-other-holidays"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:125
+#: original_texis/cal-xtra.texi:125
 msgid ""
 "The general holidays are, by default, holidays common throughout the United "
 "States.  In contrast, @code{holiday-local-holidays} and @code{holiday-other-"
 "holidays} are both empty by default.  These are intended for system-wide "
 "settings and your individual use, respectively."
-msgstr "一般的な休日、すなわちholiday-general-holidaysは、デフォルトではUnited Statesで一般的な休日です。対照的に、@code{holiday-local-holidays}と@code{holiday-other-holidays}は、デフォルトでは空です。前者はシステムワイドなセッティング、後者は個人的な使用を意図しています。"
+msgstr ""
+"一般的な休日、すなわちholiday-general-holidaysは、デフォルトではUnited States"
+"で一般的な休日です。対照的に、@code{holiday-local-holidays}と@code{holiday-"
+"other-holidays}は、デフォルトでは空です。前者はシステムワイドなセッティング、"
+"後者は個人的な使用を意図しています。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:126
+#: original_texis/cal-xtra.texi:126
 #, no-wrap
 msgid "holiday-bahai-holidays"
 msgstr "holiday-bahai-holidays"
 
 #. type: vindex
-#: cal-xtra.texi.orig:127
+#: original_texis/cal-xtra.texi:127
 #, no-wrap
 msgid "holiday-christian-holidays"
 msgstr "holiday-christian-holidays"
 
 #. type: vindex
-#: cal-xtra.texi.orig:128
+#: original_texis/cal-xtra.texi:128
 #, no-wrap
 msgid "holiday-hebrew-holidays"
 msgstr "holiday-hebrew-holidays"
 
 #. type: vindex
-#: cal-xtra.texi.orig:129
+#: original_texis/cal-xtra.texi:129
 #, no-wrap
 msgid "holiday-islamic-holidays"
 msgstr "holiday-islamic-holidays"
 
 #. type: vindex
-#: cal-xtra.texi.orig:130
+#: original_texis/cal-xtra.texi:130
 #, no-wrap
 msgid "calendar-bahai-all-holidays-flag"
 msgstr "calendar-bahai-all-holidays-flag"
 
 #. type: vindex
-#: cal-xtra.texi.orig:131
+#: original_texis/cal-xtra.texi:131
 #, no-wrap
 msgid "calendar-christian-all-holidays-flag"
 msgstr "calendar-christian-all-holidays-flag"
 
 #. type: vindex
-#: cal-xtra.texi.orig:132
+#: original_texis/cal-xtra.texi:132
 #, no-wrap
 msgid "calendar-hebrew-all-holidays-flag"
 msgstr "calendar-hebrew-all-holidays-flag"
 
 #. type: vindex
-#: cal-xtra.texi.orig:133
+#: original_texis/cal-xtra.texi:133
 #, no-wrap
 msgid "calendar-islamic-all-holidays-flag"
 msgstr "calendar-islamic-all-holidays-flag"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:141
+#: original_texis/cal-xtra.texi:141
 msgid ""
 "By default, Emacs does not include all the holidays of the religions that it "
 "knows, only those commonly found in secular calendars.  For a more extensive "
@@ -447,180 +502,207 @@ msgid ""
 "@code{calendar-bahai-all-holidays-flag}, @code{calendar-christian-all-"
 "holidays-flag}, @code{calendar-hebrew-all-holidays-flag}, or @code{calendar-"
 "islamic-all-holidays-flag} to @code{t}."
-msgstr "デフォルトでは、Emacsは世俗的なカレンダーに一般的に見出されるものを除き、宗教的な休日のすべてを含んではいません。宗教的な休日の、より広範なコレクションのために、変数@code{calendar-bahai-all-holidays-flag}、@code{calendar-christian-all-holidays-flag}、@code{calendar-hebrew-all-holidays-flag}。@code{calendar-islamic-all-holidays-flag}のどれか(またはすべて)を@code{t}にセットできます。"
+msgstr ""
+"デフォルトでは、Emacsは世俗的なカレンダーに一般的に見出されるものを除き、宗教"
+"的な休日のすべてを含んではいません。宗教的な休日の、より広範なコレクションの"
+"ために、変数@code{calendar-bahai-all-holidays-flag}、@code{calendar-"
+"christian-all-holidays-flag}、@code{calendar-hebrew-all-holidays-flag}。"
+"@code{calendar-islamic-all-holidays-flag}のどれか(またはすべて)を@code{t}に"
+"セットできます。"
 
 #. type: cindex
-#: cal-xtra.texi.orig:142
+#: original_texis/cal-xtra.texi:142
 #, no-wrap
 msgid "holiday forms"
 msgstr "holiday forms"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:149
+#: original_texis/cal-xtra.texi:149
 msgid ""
 "Each of the holiday variables is a list of @dfn{holiday forms}, each form "
 "describing a holiday (or sometimes a list of holidays).  Here is a table of "
 "the possible kinds of holiday form.  Day numbers and month numbers count "
 "starting from 1, but ``dayname'' numbers count Sunday as 0.  The argument "
 "@var{string} is always the description of the holiday, as a string."
-msgstr "それぞれの休日の変数は@dfn{holiday forms}のリストです。各formは休日(休日のリストの場合もある)を記述します。以下は利用可能なholiday formの表です。日付と月は1から数えますが、``曜日名(dayname)''は日曜日を0として数えます。引数@var{string}は、その休日を説明する文字列です。"
+msgstr ""
+"それぞれの休日の変数は@dfn{holiday forms}のリストです。各formは休日(休日のリ"
+"ストの場合もある)を記述します。以下は利用可能なholiday formの表です。日付と月"
+"は1から数えますが、``曜日名(dayname)''は日曜日を0として数えます。引数"
+"@var{string}は、その休日を説明する文字列です。"
 
 #. type: item
-#: cal-xtra.texi.orig:151
+#: original_texis/cal-xtra.texi:151
 #, no-wrap
 msgid "(holiday-fixed @var{month} @var{day} @var{string})"
 msgstr "(holiday-fixed @var{month} @var{day} @var{string})"
 
 #. type: table
-#: cal-xtra.texi.orig:153
+#: original_texis/cal-xtra.texi:153
 msgid "A fixed date on the Gregorian calendar."
 msgstr "グレゴリオ暦(Gregorian calendar)の固定日付です。"
 
 #. type: item
-#: cal-xtra.texi.orig:154
+#: original_texis/cal-xtra.texi:154
 #, no-wrap
 msgid "(holiday-float @var{month} @var{dayname} @var{k} @var{string}"
 msgstr "(holiday-float @var{month} @var{dayname} @var{k} @var{string} &optional @var{day})"
 
 #. type: table
-#: cal-xtra.texi.orig:160
+#: original_texis/cal-xtra.texi:160
 msgid ""
 "&optional @var{day})  The @var{k}th @var{dayname} (@var{dayname}=0 for "
 "Sunday, and so on)  after or before Gregorian date @var{month}, @var{day}.  "
 "Negative @var{k} means count back from the end of the month.  Optional "
 "@var{day} defaults to 1 if @var{k} is positive, and the last day of "
 "@var{month} otherwise."
-msgstr "グレゴリオ暦の@var{month}月@var{day}日の前または後の@var{k}番目の曜日@var{dayname}(@var{dayname}=0の場合は日曜日)です。@var{k}が負の場合、月の最後から数えます。オプションの@var{day}のデフォルトは、@var{k}が正のときは1、負のときは@var{month}の最後の日になります。"
+msgstr ""
+"グレゴリオ暦の@var{month}月@var{day}日の前または後の@var{k}番目の曜日"
+"@var{dayname}(@var{dayname}=0の場合は日曜日)です。@var{k}が負の場合、月の最後"
+"から数えます。オプションの@var{day}のデフォルトは、@var{k}が正のときは1、負の"
+"ときは@var{month}の最後の日になります。"
 
 #. type: item
-#: cal-xtra.texi.orig:161
+#: original_texis/cal-xtra.texi:161
 #, no-wrap
 msgid "(holiday-chinese @var{month} @var{day} @var{string})"
 msgstr "(holiday-chinese @var{month} @var{day} @var{string})"
 
 #. type: table
-#: cal-xtra.texi.orig:163
+#: original_texis/cal-xtra.texi:163
 msgid "A fixed date on the Chinese calendar."
 msgstr "旧暦(Chinese calendar)の固定日付です。"
 
 #. type: item
-#: cal-xtra.texi.orig:164
+#: original_texis/cal-xtra.texi:164
 #, no-wrap
 msgid "(holiday-hebrew @var{month} @var{day} @var{string})"
 msgstr "(holiday-hebrew @var{month} @var{day} @var{string})"
 
 #. type: table
-#: cal-xtra.texi.orig:166
+#: original_texis/cal-xtra.texi:166
 msgid "A fixed date on the Hebrew calendar."
 msgstr "ヘブライ暦(Hebrew calendar)の固定日付です。"
 
 #. type: item
-#: cal-xtra.texi.orig:167
+#: original_texis/cal-xtra.texi:167
 #, no-wrap
 msgid "(holiday-islamic @var{month} @var{day} @var{string})"
 msgstr "(holiday-islamic @var{month} @var{day} @var{string})"
 
 #. type: table
-#: cal-xtra.texi.orig:169
+#: original_texis/cal-xtra.texi:169
 msgid "A fixed date on the Islamic calendar."
 msgstr "イスラム暦(Islamic calendar)の固定日付です。"
 
 #. type: item
-#: cal-xtra.texi.orig:170
+#: original_texis/cal-xtra.texi:170
 #, no-wrap
 msgid "(holiday-julian @var{month} @var{day} @var{string})"
 msgstr "(holiday-julian @var{month} @var{day} @var{string})"
 
 #. type: table
-#: cal-xtra.texi.orig:172
+#: original_texis/cal-xtra.texi:172
 msgid "A fixed date on the Julian calendar."
 msgstr "ユリウス暦(Julian calendar)の固定日付です。"
 
 #. type: item
-#: cal-xtra.texi.orig:173
+#: original_texis/cal-xtra.texi:173
 #, no-wrap
 msgid "(holiday-sexp @var{sexp} @var{string})"
 msgstr "(holiday-sexp @var{sexp} @var{string})"
 
 #. type: table
-#: cal-xtra.texi.orig:178
+#: original_texis/cal-xtra.texi:178
 msgid ""
 "A date calculated by the Lisp expression @var{sexp}.  The expression should "
 "use the variable @code{year} to compute and return the date of a holiday in "
 "the form of a list @code{(@var{month} @var{day} @var{year})}, or @code{nil} "
 "if the holiday doesn't happen this year."
-msgstr "Lisp式@var{sexp}により計算される日付です。式は計算に変数@code{year}を使い、@code{(@var{month} @var{day} @var{year})}の形式のリストを返すか、その年に休日が発生しない場合は@code{nil}を返すべきです。"
+msgstr ""
+"Lisp式@var{sexp}により計算される日付です。式は計算に変数@code{year}を使い、"
+"@code{(@var{month} @var{day} @var{year})}の形式のリストを返すか、その年に休日"
+"が発生しない場合は@code{nil}を返すべきです。"
 
 #. type: item
-#: cal-xtra.texi.orig:179
+#: original_texis/cal-xtra.texi:179
 #, no-wrap
 msgid "(if @var{condition} @var{holiday-form})"
 msgstr "(if @var{condition} @var{holiday-form})"
 
 #. type: table
-#: cal-xtra.texi.orig:181
+#: original_texis/cal-xtra.texi:181
 msgid "A holiday that happens only if @var{condition} is true."
 msgstr "条件@var{condition}が真のときだけ休日が発生します。"
 
 #. type: item
-#: cal-xtra.texi.orig:182
+#: original_texis/cal-xtra.texi:182
 #, no-wrap
 msgid "(@var{function} @r{[}@var{args}@r{]})"
 msgstr "(@var{function} @r{[}@var{args}@r{]})"
 
 #. type: table
-#: cal-xtra.texi.orig:185
+#: original_texis/cal-xtra.texi:185
 msgid ""
 "A list of dates calculated by the function @var{function}, called with "
 "arguments @var{args}."
-msgstr "引数@var{args}を指定して関数@var{function}を呼び出すことにより計算される日付のリストです。"
+msgstr ""
+"引数@var{args}を指定して関数@var{function}を呼び出すことにより計算される日付"
+"のリストです。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:190
+#: original_texis/cal-xtra.texi:190
 msgid ""
 "For example, suppose you want to add Bastille Day, celebrated in France on "
 "July 14 (i.e., the fourteenth day of the seventh month).  You can do this as "
 "follows:"
-msgstr "たとえばフランスで有名な7月14日のパリ革命記念日(Bastille Day)を追加したいとしましょう。以下でこれを行なうことができます:"
+msgstr ""
+"たとえばフランスで有名な7月14日のパリ革命記念日(Bastille Day)を追加したいとし"
+"ましょう。以下でこれを行なうことができます:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:193
+#: original_texis/cal-xtra.texi:193
 #, no-wrap
 msgid "(setq holiday-other-holidays '((holiday-fixed 7 14 \"Bastille Day\")))\n"
 msgstr "(setq holiday-other-holidays '((holiday-fixed 7 14 \"Bastille Day\")))\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:198
+#: original_texis/cal-xtra.texi:198
 msgid ""
 "Many holidays occur on a specific day of the week, at a specific time of "
 "month.  Here is a holiday form describing Hurricane Supplication Day, "
 "celebrated in the Virgin Islands on the fourth Monday in August:"
-msgstr "多くの休日は、特定の月の特定の曜日に発生します。以下はVirgin Islandsで有名な8月第4月曜日のHurricane Supplication Dayを記述します。"
+msgstr ""
+"多くの休日は、特定の月の特定の曜日に発生します。以下はVirgin Islandsで有名な8"
+"月第4月曜日のHurricane Supplication Dayを記述します。"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:201
+#: original_texis/cal-xtra.texi:201
 #, no-wrap
 msgid "(holiday-float 8 1 4 \"Hurricane Supplication Day\")\n"
 msgstr "(holiday-float 8 1 4 \"Hurricane Supplication Day\")\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:209
+#: original_texis/cal-xtra.texi:209
 msgid ""
 "Here the 8 specifies August, the 1 specifies Monday (Sunday is 0, Tuesday is "
 "2, and so on), and the 4 specifies the fourth occurrence in the month (1 "
 "specifies the first occurrence, 2 the second occurrence, @minus{}1 the last "
 "occurrence, @minus{}2 the second-to-last occurrence, and so on)."
-msgstr "ここで8は8月、1は月曜日(日曜日は0、火曜日は2です)、4はその月の4番目(1は1番目、2は2番目、@minus{}1は最後、@minus{}2は最後から2番目)を指定しています。"
+msgstr ""
+"ここで8は8月、1は月曜日(日曜日は0、火曜日は2です)、4はその月の4番目(1は1番"
+"目、2は2番目、@minus{}1は最後、@minus{}2は最後から2番目)を指定しています。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:212
+#: original_texis/cal-xtra.texi:212
 msgid ""
 "You can specify holidays that occur on fixed days of the Bahá'í, Chinese, "
 "Hebrew, Islamic, and Julian calendars too.  For example,"
-msgstr "Bahá'í暦、旧暦、ヘブライ暦、イスラム暦、ユリウス暦の固定日付に発生する休日を指定することもできます。たとえば、"
+msgstr ""
+"Bahá'í暦、旧暦、ヘブライ暦、イスラム暦、ユリウス暦の固定日付に発生する休日を"
+"指定することもできます。たとえば、"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:218
+#: original_texis/cal-xtra.texi:218
 #, no-wrap
 msgid ""
 "(setq holiday-other-holidays\n"
@@ -634,25 +716,32 @@ msgstr ""
 "        (holiday-julian 4 2 \"Jefferson's Birthday\")))\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:226
+#: original_texis/cal-xtra.texi:226
 msgid ""
 "adds the last day of Hanukkah (since the Hebrew months are numbered with 1 "
 "starting from Nisan), the Islamic feast celebrating Mohammed's birthday "
 "(since the Islamic months are numbered from 1 starting with Muharram), and "
 "Thomas Jefferson's birthday, which is 2 April 1743 on the Julian calendar."
-msgstr "これは、Hanukkahの最後の日(ヘブライ暦の月はNisanを1として数えられます)、Mohammedの誕生日を祝うイスラムの祭日(イスラム暦の月はMuharramを1として数えられます)、そしてユリウス暦の1743年4月2日のThomas Jeffersonの誕生日を記述したものです。"
+msgstr ""
+"これは、Hanukkahの最後の日(ヘブライ暦の月はNisanを1として数えられます)、"
+"Mohammedの誕生日を祝うイスラムの祭日(イスラム暦の月はMuharramを1として数えら"
+"れます)、そしてユリウス暦の1743年4月2日のThomas Jeffersonの誕生日を記述したも"
+"のです。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:231
+#: original_texis/cal-xtra.texi:231
 msgid ""
 "To include a holiday conditionally, use either Emacs Lisp's @code{if} or the "
 "@code{holiday-sexp} form.  For example, American presidential elections "
 "occur on the first Tuesday after the first Monday in November of years "
 "divisible by 4:"
-msgstr "条件付きの休日を含めるには、Emacs Lispの@code{if}か、@code{holiday-sexp}形式を使用します。たとえばアメリカ大統領選挙は、4で割りきれる年の11月の第1月曜日の後の、最初の火曜日に発生します:"
+msgstr ""
+"条件付きの休日を含めるには、Emacs Lispの@code{if}か、@code{holiday-sexp}形式"
+"を使用します。たとえばアメリカ大統領選挙は、4で割りきれる年の11月の第1月曜日"
+"の後の、最初の火曜日に発生します:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:239
+#: original_texis/cal-xtra.texi:239
 #, no-wrap
 msgid ""
 "(holiday-sexp '(if (zerop (% year 4))\n"
@@ -670,12 +759,12 @@ msgstr ""
 "              \"US Presidential Election\")\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:243
+#: original_texis/cal-xtra.texi:243
 msgid "or"
 msgstr "または"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:253
+#: original_texis/cal-xtra.texi:253
 #, no-wrap
 msgid ""
 "(if (zerop (% displayed-year 4))\n"
@@ -697,7 +786,7 @@ msgstr ""
 "           \"US Presidential Election\"))\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:262
+#: original_texis/cal-xtra.texi:262
 msgid ""
 "Some holidays just don't fit into any of these forms because special "
 "calculations are involved in their determination.  In such cases you must "
@@ -706,137 +795,159 @@ msgid ""
 "Emacs Lisp function @code{eclipses} that returns a (possibly empty) list of "
 "the relevant Gregorian dates among the range visible in the calendar window, "
 "with descriptive strings, like this:"
-msgstr "休日の決定に特別な計算が含まれるために、上記の形式に当てはまらない休日もあります。そのような場合は、その計算を行なうLisp関数を記述しなければなりません。たとえば食(eclipses)を含めるには@code{holiday-other-holidays}に@code{(eclipses)}を追加して、以下のような、カレンダーウィンドウに表示されている月に関連するグレゴリオ暦の日付のリスト(空の場合もあり得る)を返す、Emacs Lisp関数@code{(eclipses)}を記述します。"
+msgstr ""
+"休日の決定に特別な計算が含まれるために、上記の形式に当てはまらない休日もあり"
+"ます。そのような場合は、その計算を行なうLisp関数を記述しなければなりません。"
+"たとえば食(eclipses)を含めるには@code{holiday-other-holidays}に"
+"@code{(eclipses)}を追加して、以下のような、カレンダーウィンドウに表示されてい"
+"る月に関連するグレゴリオ暦の日付のリスト(空の場合もあり得る)を返す、Emacs "
+"Lisp関数@code{(eclipses)}を記述します。"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:265
+#: original_texis/cal-xtra.texi:265
 #, no-wrap
 msgid "(((6 4 2012) \"Lunar Eclipse\") ((11 13 2012) \"Solar Eclipse\") ... )\n"
 msgstr "(((6 4 2012) \"Lunar Eclipse\") ((11 13 2012) \"Solar Eclipse\") ... )\n"
 
 #. type: subsection
-#: cal-xtra.texi.orig:268
+#: original_texis/cal-xtra.texi:268
 #, no-wrap
 msgid "Converting from the Mayan Calendar"
 msgstr "Converting from the Mayan Calendar"
 
 #. type: cindex
-#: cal-xtra.texi.orig:269
+#: original_texis/cal-xtra.texi:269
 #, no-wrap
 msgid "Mayan calendar"
 msgstr "Mayan calendar"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:272
+#: original_texis/cal-xtra.texi:272
 msgid "Here are the commands to select dates based on the Mayan calendar:"
 msgstr "以下は、マヤ暦(Mayan calendar)にもとづく日付を選択するコマンドです:"
 
 #. type: item
-#: cal-xtra.texi.orig:274
+#: original_texis/cal-xtra.texi:274
 #, no-wrap
 msgid "g m l"
 msgstr "g m l"
 
 #. type: table
-#: cal-xtra.texi.orig:277
+#: original_texis/cal-xtra.texi:277
 msgid ""
 "Move to a date specified by the long count calendar (@code{calendar-mayan-"
 "goto-long-count-date})."
-msgstr "long countカレンダーで指定された日付に移動します(@code{calendar-mayan-goto-long-count-date})。"
+msgstr ""
+"long countカレンダーで指定された日付に移動します(@code{calendar-mayan-goto-"
+"long-count-date})。"
 
 #. type: item
-#: cal-xtra.texi.orig:277
+#: original_texis/cal-xtra.texi:277
 #, no-wrap
 msgid "g m n t"
 msgstr "g m n t"
 
 #. type: table
-#: cal-xtra.texi.orig:280
+#: original_texis/cal-xtra.texi:280
 msgid ""
 "Move to the next occurrence of a place in the tzolkin calendar "
 "(@code{calendar-mayan-next-tzolkin-date})."
-msgstr "tzolkinカレンダーの次の周期の日付に移動します(@code{calendar-mayan-next-tzolkin-date})。"
+msgstr ""
+"tzolkinカレンダーの次の周期の日付に移動します(@code{calendar-mayan-next-"
+"tzolkin-date})。"
 
 #. type: item
-#: cal-xtra.texi.orig:280
+#: original_texis/cal-xtra.texi:280
 #, no-wrap
 msgid "g m p t"
 msgstr "g m p t"
 
 #. type: table
-#: cal-xtra.texi.orig:283
+#: original_texis/cal-xtra.texi:283
 msgid ""
 "Move to the previous occurrence of a place in the tzolkin calendar "
 "(@code{calendar-mayan-previous-tzolkin-date})."
-msgstr "tzolkinカレンダーの前の周期の日付に移動します(@code{calendar-mayan-previous-tzolkin-date})。"
+msgstr ""
+"tzolkinカレンダーの前の周期の日付に移動します(@code{calendar-mayan-previous-"
+"tzolkin-date})。"
 
 #. type: item
-#: cal-xtra.texi.orig:283
+#: original_texis/cal-xtra.texi:283
 #, no-wrap
 msgid "g m n h"
 msgstr "g m n h"
 
 #. type: table
-#: cal-xtra.texi.orig:286
+#: original_texis/cal-xtra.texi:286
 msgid ""
 "Move to the next occurrence of a place in the haab calendar (@code{calendar-"
 "mayan-next-haab-date})."
-msgstr "haabカレンダーの次の周期の日付に移動します(@code{calendar-mayan-next-haab-date})。"
+msgstr ""
+"haabカレンダーの次の周期の日付に移動します(@code{calendar-mayan-next-haab-"
+"date})。"
 
 #. type: item
-#: cal-xtra.texi.orig:286
+#: original_texis/cal-xtra.texi:286
 #, no-wrap
 msgid "g m p h"
 msgstr "g m p h"
 
 #. type: table
-#: cal-xtra.texi.orig:289
+#: original_texis/cal-xtra.texi:289
 msgid ""
 "Move to the previous occurrence of a place in the haab calendar "
 "(@code{calendar-mayan-previous-haab-date})."
-msgstr "haabカレンダーの前の周期の日付に移動します(@code{calendar-mayan-previous-haab-date})。"
+msgstr ""
+"haabカレンダーの前の周期の日付に移動します(@code{calendar-mayan-previous-"
+"haab-date})。"
 
 #. type: item
-#: cal-xtra.texi.orig:289
+#: original_texis/cal-xtra.texi:289
 #, no-wrap
 msgid "g m n c"
 msgstr "g m n c"
 
 #. type: table
-#: cal-xtra.texi.orig:292
+#: original_texis/cal-xtra.texi:292
 msgid ""
 "Move to the next occurrence of a place in the calendar round (@code{calendar-"
 "mayan-next-calendar-round-date})."
-msgstr "マヤ暦の次の周期の日付に移動します(@code{calendar-mayan-next-calendar-round-date})。"
+msgstr ""
+"マヤ暦の次の周期の日付に移動します(@code{calendar-mayan-next-calendar-round-"
+"date})。"
 
 #. type: item
-#: cal-xtra.texi.orig:292
+#: original_texis/cal-xtra.texi:292
 #, no-wrap
 msgid "g m p c"
 msgstr "g m p c"
 
 #. type: table
-#: cal-xtra.texi.orig:295
+#: original_texis/cal-xtra.texi:295
 msgid ""
 "Move to the previous occurrence of a place in the calendar round "
 "(@code{calendar-mayan-previous-calendar-round-date})."
-msgstr "マヤ暦の前の周期の日付に移動します(@code{calendar-mayan-previous-calendar-round-date})。"
+msgstr ""
+"マヤ暦の前の周期の日付に移動します(@code{calendar-mayan-previous-calendar-"
+"round-date})。"
 
 #. type: cindex
-#: cal-xtra.texi.orig:297
+#: original_texis/cal-xtra.texi:297
 #, no-wrap
 msgid "Mayan long count"
 msgstr "Mayan long count"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:300
+#: original_texis/cal-xtra.texi:300
 msgid ""
 "To understand these commands, you need to understand the Mayan calendars.  "
 "The @dfn{long count} is a counting of days with these units:"
-msgstr "これらのコマンドを理解するためには、マヤ暦(Mayan calendars)を理解する必要があります。@dfn{long count}は以下の単位にもとづいて日数を計算します:"
+msgstr ""
+"これらのコマンドを理解するためには、マヤ暦(Mayan calendars)を理解する必要があ"
+"ります。@dfn{long count}は以下の単位にもとづいて日数を計算します:"
 
 #. type: display
-#: cal-xtra.texi.orig:304
+#: original_texis/cal-xtra.texi:304
 #, no-wrap
 msgid ""
 "1 kin = 1 day@ @ @ 1 uinal = 20 kin@ @ @ 1 tun = 18 uinal\n"
@@ -846,47 +957,51 @@ msgstr ""
 "1 katun = 20 tun@ @ @ 1 baktun = 20 katun\n"
 
 #. type: kindex
-#: cal-xtra.texi.orig:306
+#: original_texis/cal-xtra.texi:306
 #, no-wrap
 msgid "g m @r{(Calendar mode)}"
 msgstr "g m @r{(Calendar mode)}"
 
 #. type: findex
-#: cal-xtra.texi.orig:307
+#: original_texis/cal-xtra.texi:307
 #, no-wrap
 msgid "calendar-mayan-goto-long-count-date"
 msgstr "calendar-mayan-goto-long-count-date"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:314
+#: original_texis/cal-xtra.texi:314
 msgid ""
 "Thus, the long count date 12.16.11.16.6 means 12 baktun, 16 katun, 11 tun, "
 "16 uinal, and 6 kin.  The Emacs calendar can handle Mayan long count dates "
 "as early as 7.17.18.13.3, but no earlier.  When you use the @kbd{g m l} "
 "command, type the Mayan long count date with the baktun, katun, tun, uinal, "
 "and kin separated by periods."
-msgstr "したがってlong countの日付12.16.11.16.6は、12baktunの16katunの11tunの16uinalの6kinを意味します。Emacsのカレンダーはマヤ暦のlong countを7.17.18.13.3まで遡ることができます。@kbd{g m l}コマンドを使うときはマヤ暦のlong countの日付baktun、katun、tun、uinal、kinをピリオドで区切って入力します。"
+msgstr ""
+"したがってlong countの日付12.16.11.16.6は、12baktunの16katunの11tunの16uinal"
+"の6kinを意味します。Emacsのカレンダーはマヤ暦のlong countを7.17.18.13.3まで遡"
+"ることができます。@kbd{g m l}コマンドを使うときはマヤ暦のlong countの日付"
+"baktun、katun、tun、uinal、kinをピリオドで区切って入力します。"
 
 #. type: findex
-#: cal-xtra.texi.orig:315
+#: original_texis/cal-xtra.texi:315
 #, no-wrap
 msgid "calendar-mayan-previous-tzolkin-date"
 msgstr "calendar-mayan-previous-tzolkin-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:316
+#: original_texis/cal-xtra.texi:316
 #, no-wrap
 msgid "calendar-mayan-next-tzolkin-date"
 msgstr "calendar-mayan-next-tzolkin-date"
 
 #. type: cindex
-#: cal-xtra.texi.orig:317
+#: original_texis/cal-xtra.texi:317
 #, no-wrap
 msgid "Mayan tzolkin calendar"
 msgstr "Mayan tzolkin calendar"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:325
+#: original_texis/cal-xtra.texi:325
 msgid ""
 "The Mayan tzolkin calendar is a cycle of 260 days formed by a pair of "
 "independent cycles of 13 and 20 days.  Since this cycle repeats endlessly, "
@@ -895,28 +1010,34 @@ msgid ""
 "Emacs asks you for a tzolkin date and moves point to the previous occurrence "
 "of that date.  Similarly, type @kbd{g m n t} to go to the next occurrence of "
 "a tzolkin date."
-msgstr "マヤ暦のtzolkinは、13日と20日の独立した周期を組み合わせた形式からなる260日周期のカレンダーです。この周期が永遠に繰り替えされるので、Emacsはこのサイクルの前または次の位置に、後方または前方に移動するコマンドを提供します。@kbd{g m p t}は前のtzolkin日付に移動します。Emacsはtzolkin日付の入力を求め、前の周期のその日付にポイントを移動します。同様に、@kbd{g m n t}とタイプすると、次の周期のtzolkin日付に移動します。"
+msgstr ""
+"マヤ暦のtzolkinは、13日と20日の独立した周期を組み合わせた形式からなる260日周"
+"期のカレンダーです。この周期が永遠に繰り替えされるので、Emacsはこのサイクルの"
+"前または次の位置に、後方または前方に移動するコマンドを提供します。@kbd{g m p "
+"t}は前のtzolkin日付に移動します。Emacsはtzolkin日付の入力を求め、前の周期のそ"
+"の日付にポイントを移動します。同様に、@kbd{g m n t}とタイプすると、次の周期の"
+"tzolkin日付に移動します。"
 
 #. type: findex
-#: cal-xtra.texi.orig:326
+#: original_texis/cal-xtra.texi:326
 #, no-wrap
 msgid "calendar-mayan-previous-haab-date"
 msgstr "calendar-mayan-previous-haab-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:327
+#: original_texis/cal-xtra.texi:327
 #, no-wrap
 msgid "calendar-mayan-next-haab-date"
 msgstr "calendar-mayan-next-haab-date"
 
 #. type: cindex
-#: cal-xtra.texi.orig:328
+#: original_texis/cal-xtra.texi:328
 #, no-wrap
 msgid "Mayan haab calendar"
 msgstr "Mayan haab calendar"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:337
+#: original_texis/cal-xtra.texi:337
 msgid ""
 "The Mayan haab calendar is a cycle of 365 days arranged as 18 months of 20 "
 "days each, followed by a 5-day monthless period.  Like the tzolkin cycle, "
@@ -925,22 +1046,28 @@ msgid ""
 "go to the previous haab date; Emacs asks you for a haab date and moves point "
 "to the previous occurrence of that date.  Similarly, type @kbd{g m n h} to "
 "go to the next occurrence of a haab date."
-msgstr "マヤ暦のhaabは、20日からなる18の月と、月に属さない5日間からなる365日周期のカレンダーです。tzolkinの周期と同様に、この周期は永遠に繰り返されるので、この周期の前または次の位置へ後方または前方に移動するコマンドがあります。@kbd{g m p h}は前のhaab日付に移動します。Emacsはhaab日付の入力を求め、前の周期のその日付にポイントを移動します。同様に、@kbd{g m n h}とタイプすると次の周期のhaab日付に移動します。"
+msgstr ""
+"マヤ暦のhaabは、20日からなる18の月と、月に属さない5日間からなる365日周期のカ"
+"レンダーです。tzolkinの周期と同様に、この周期は永遠に繰り返されるので、この周"
+"期の前または次の位置へ後方または前方に移動するコマンドがあります。@kbd{g m p "
+"h}は前のhaab日付に移動します。Emacsはhaab日付の入力を求め、前の周期のその日付"
+"にポイントを移動します。同様に、@kbd{g m n h}とタイプすると次の周期のhaab日付"
+"に移動します。"
 
 #. type: findex
-#: cal-xtra.texi.orig:340
+#: original_texis/cal-xtra.texi:340
 #, no-wrap
 msgid "calendar-mayan-next-calendar-round-date"
 msgstr "calendar-mayan-next-calendar-round-date"
 
 #. type: cindex
-#: cal-xtra.texi.orig:341
+#: original_texis/cal-xtra.texi:341
 #, no-wrap
 msgid "Mayan calendar round"
 msgstr "Mayan calendar round"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:349
+#: original_texis/cal-xtra.texi:349
 msgid ""
 "The Maya also used the combination of the tzolkin date and the haab date.  "
 "This combination is a cycle of about 52 years called a @emph{calendar "
@@ -949,38 +1076,44 @@ msgid ""
 "combination.  Use @kbd{g m n c} to move point to the next occurrence of a "
 "combination.  These commands signal an error if the haab/tzolkin date "
 "combination you have typed is impossible."
-msgstr "マヤ暦ではtzolkin日付とhaab日付を組み合わせた日付も使用されていました。この組み合わせや@emph{calendar round}と呼ばれる、約52年の周期です。@kbd{g m p c}とタイプすると、Emacsはhaab日付とtzolkin日付の入力を求め、前の周期のその組み合わせの日付にポイントを移動します。@kbd{g m n c}を使用すると、次の周期のsぽの組み合わせの日付にポイントを移動します。あり得ないhaab日付とtzolkin日付の組み合わせをタイプした場合は、エラーをシグナルします。"
+msgstr ""
+"マヤ暦ではtzolkin日付とhaab日付を組み合わせた日付も使用されていました。この組"
+"み合わせや@emph{calendar round}と呼ばれる、約52年の周期です。@kbd{g m p c}と"
+"タイプすると、Emacsはhaab日付とtzolkin日付の入力を求め、前の周期のその組み合"
+"わせの日付にポイントを移動します。@kbd{g m n c}を使用すると、次の周期のsぽの"
+"組み合わせの日付にポイントを移動します。あり得ないhaab日付とtzolkin日付の組み"
+"合わせをタイプした場合は、エラーをシグナルします。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:351
+#: original_texis/cal-xtra.texi:351
 msgid "Emacs uses strict completion"
 msgstr "EmacsはMaya暦の名前の入力を求めるときは強い補完"
 
 #. type: iftex
-#: cal-xtra.texi.orig:353
+#: original_texis/cal-xtra.texi:353
 msgid "(@pxref{Completion Exit,,, emacs, the Emacs Manual})"
 msgstr "(@ref{Completion Exit,,, emacs, the Emacs Manual}を参照してください)"
 
 #. type: ifnottex
-#: cal-xtra.texi.orig:356
+#: original_texis/cal-xtra.texi:356
 msgid "(@pxref{Completion Exit})"
 msgstr "(@ref{Completion Exit}を参照してください)"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:359
+#: original_texis/cal-xtra.texi:359
 msgid ""
 "whenever it asks you to type a Mayan name, so you don't have to worry about "
 "spelling."
 msgstr "を使うので、スペルについて心配する必要はありません。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:362
+#: original_texis/cal-xtra.texi:362
 #, no-wrap
 msgid "calendar-date-display-form"
 msgstr "calendar-date-display-form"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:371
+#: original_texis/cal-xtra.texi:371
 msgid ""
 "You can customize the way dates are displayed in the diary, mode lines, and "
 "messages by setting @code{calendar-date-display-form}.  This variable holds "
@@ -988,32 +1121,37 @@ msgid ""
 "@code{day}, and @code{year}, which are all numbers in string form, and "
 "@code{monthname} and @code{dayname}, which are both alphabetic strings.  In "
 "the American style, the default value of this list is as follows:"
-msgstr "@code{calendar-date-display-form}をセットすることにより、ダイアリー、モードライン、メッセージに表示される日付をカスタマイズできます。この変数は、文字列形式の数字をもつ変数@code{month}、@code{day}、@code{year}と、アルファベット文字列をもつ@code{monthname}、@code{dayname}を含む式のリストを保持します。アメリカ様式では、このリストのデフォルト値は以下のようになります:"
+msgstr ""
+"@code{calendar-date-display-form}をセットすることにより、ダイアリー、モードラ"
+"イン、メッセージに表示される日付をカスタマイズできます。この変数は、文字列形"
+"式の数字をもつ変数@code{month}、@code{day}、@code{year}と、アルファベット文字"
+"列をもつ@code{monthname}、@code{dayname}を含む式のリストを保持します。アメリ"
+"カ様式では、このリストのデフォルト値は以下のようになります:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:374
+#: original_texis/cal-xtra.texi:374
 #, no-wrap
 msgid "((if dayname (concat dayname \", \")) monthname \" \" day \", \" year)\n"
 msgstr "((if dayname (concat dayname \", \")) monthname \" \" day \", \" year)\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:378
+#: original_texis/cal-xtra.texi:378
 msgid "while in the European style this value is the default:"
 msgstr "ヨーロッパ様式では、この値のデフォルトは以下のようになります:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:381
+#: original_texis/cal-xtra.texi:381
 #, no-wrap
 msgid "((if dayname (concat dayname \", \")) day \" \" monthname \" \" year)\n"
 msgstr "((if dayname (concat dayname \", \")) day \" \" monthname \" \" year)\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:385
+#: original_texis/cal-xtra.texi:385
 msgid "The default ISO date representation is:"
 msgstr "デフォルトのISO日付は以下のようになります:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:389
+#: original_texis/cal-xtra.texi:389
 #, no-wrap
 msgid ""
 "((format \"%s-%.2d-%.2d\" year (string-to-number month)\n"
@@ -1023,24 +1161,24 @@ msgstr ""
 "         (string-to-number day)))\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:393
+#: original_texis/cal-xtra.texi:393
 msgid "Another typical American format is:"
 msgstr "他の典型的なアメリカ様式は以下のものです:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:396
+#: original_texis/cal-xtra.texi:396
 #, no-wrap
 msgid "(month \"/\" day \"/\" (substring year -2))\n"
 msgstr "(month \"/\" day \"/\" (substring year -2))\n"
 
 #. type: vindex
-#: cal-xtra.texi.orig:400
+#: original_texis/cal-xtra.texi:400
 #, no-wrap
 msgid "calendar-time-display-form"
 msgstr "calendar-time-display-form"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:411
+#: original_texis/cal-xtra.texi:411
 msgid ""
 "The calendar and diary by default display times of day in the conventional "
 "American style with the hours from 1 through 12, minutes, and either "
@@ -1051,10 +1189,17 @@ msgid ""
 "and @code{minutes}, which are all numbers in string form, and @code{am-pm} "
 "and @code{time-zone}, which are both alphabetic strings.  The default value "
 "is:"
-msgstr "カレンダーとダイアリーは、デフォルトで1日の時刻を、@samp{am}または@samp{pm}と、1から12の時刻と分によるアメリカ様式の慣習にしたがって表示します。00から23の時刻による、ヨーロッパ様式(US軍用様式とも呼ばれる)にしたい場合は、変数@code{calendar-time-display-form}を変更することができます。この変数は式のリストです。このリストには文字列形式の数字をもつ変数@code{12-hours}、@code{24-hours}、@code{minutes}と、アルファベット文字列をもつ@code{am-pm}、@code{time-zone}を含めることができます。デフォルト値は以下のとおりです:"
+msgstr ""
+"カレンダーとダイアリーは、デフォルトで1日の時刻を、@samp{am}または@samp{pm}"
+"と、1から12の時刻と分によるアメリカ様式の慣習にしたがって表示します。00から23"
+"の時刻による、ヨーロッパ様式(US軍用様式とも呼ばれる)にしたい場合は、変数"
+"@code{calendar-time-display-form}を変更することができます。この変数は式のリス"
+"トです。このリストには文字列形式の数字をもつ変数@code{12-hours}、@code{24-"
+"hours}、@code{minutes}と、アルファベット文字列をもつ@code{am-pm}、@code{time-"
+"zone}を含めることができます。デフォルト値は以下のとおりです:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:415
+#: original_texis/cal-xtra.texi:415
 #, no-wrap
 msgid ""
 "(12-hours \":\" minutes am-pm\n"
@@ -1064,12 +1209,12 @@ msgstr ""
 "          (if time-zone \" (\") time-zone (if time-zone \")\"))\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:419
+#: original_texis/cal-xtra.texi:419
 msgid "Here is a value that provides European style times:"
 msgstr "以下の値はヨーロッパ形式の時刻を提供します:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:423
+#: original_texis/cal-xtra.texi:423
 #, no-wrap
 msgid ""
 "(24-hours \":\" minutes\n"
@@ -1079,42 +1224,49 @@ msgstr ""
 "          (if time-zone \" (\") time-zone (if time-zone \")\"))\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:427
+#: original_texis/cal-xtra.texi:427
 msgid ""
 "Note that few calendar functions return a time of day (at present, only "
 "solar functions)."
-msgstr "1日の時刻を返すカレンダー関数は少ないことに注意してください(現在のところsolar関数のみ)。"
+msgstr ""
+"1日の時刻を返すカレンダー関数は少ないことに注意してください(現在のところsolar"
+"関数のみ)。"
 
 #. type: subsection
-#: cal-xtra.texi.orig:429
+#: original_texis/cal-xtra.texi:429
 #, no-wrap
 msgid "Customizing the Diary"
 msgstr "Customizing the Diary"
 
 #. type: vindex
-#: cal-xtra.texi.orig:431
+#: original_texis/cal-xtra.texi:431
 #, no-wrap
 msgid "diary-show-holidays-flag"
 msgstr "diary-show-holidays-flag"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:437
+#: original_texis/cal-xtra.texi:437
 msgid ""
 "Ordinarily, the diary window indicates any holidays that fall on the date of "
 "the diary entries, either in the mode line or the buffer itself.  The "
 "process of checking for holidays can be slow, depending on the defined "
 "holidays.  In that case, setting @code{diary-show-holidays-flag} to "
 "@code{nil} will speed up the diary display."
-msgstr "ダイアリーウィンドウは通常、ダイアリーエントリーの日付が休日に相当する場合は、モードラインとバッファー自身にそれを示します。休日をチェックするプロセスは時間がかかることがあり、それは定義された休日に依存します。このような場合、@code{diary-show-holidays-flag}を@code{nil}にセットすることにより、ダイアリーの表示を速くすることができます。"
+msgstr ""
+"ダイアリーウィンドウは通常、ダイアリーエントリーの日付が休日に相当する場合"
+"は、モードラインとバッファー自身にそれを示します。休日をチェックするプロセス"
+"は時間がかかることがあり、それは定義された休日に依存します。このような場合、"
+"@code{diary-show-holidays-flag}を@code{nil}にセットすることにより、ダイアリー"
+"の表示を速くすることができます。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:438
+#: original_texis/cal-xtra.texi:438
 #, no-wrap
 msgid "diary-number-of-entries"
 msgstr "diary-number-of-entries"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:450
+#: original_texis/cal-xtra.texi:450
 msgid ""
 "The variable @code{diary-number-of-entries} controls the number of days of "
 "diary entries to be displayed at one time.  It affects the initial display "
@@ -1126,16 +1278,24 @@ msgid ""
 "appear on Sunday, the current date's and the next day's diary entries appear "
 "Monday through Thursday, Friday through Monday's entries appear on Friday, "
 "while on Saturday only that day's entries appear."
-msgstr "変数@code{diary-number-of-entries}は、1度に表示されるダイアリーエントリーの日数を制御します。これは@code{calendar-view-diary-initially-flag}が@code{t}のときの初期表示と、コマンド@kbd{M-x diary}に影響します。たとえば値1(デフォルト)は、その日のダイアリーエントリーだけを表示し、値2は翌日のエントリーも表示します。値には7つの整数のvectorも指定できます。たとえば値が@code{[0 2 2 2 2 4 1]}の場合、日曜日にはダイアリーエントリーは表示されず、月曜日から木曜日までは当日と翌日のダイアリーエントリーが表示され、金曜日には金曜日から月曜日のエントリーが表示され、土曜日にはその日のエントリーだけが表示されます。"
+msgstr ""
+"変数@code{diary-number-of-entries}は、1度に表示されるダイアリーエントリーの日"
+"数を制御します。これは@code{calendar-view-diary-initially-flag}が@code{t}のと"
+"きの初期表示と、コマンド@kbd{M-x diary}に影響します。たとえば値1(デフォルト)"
+"は、その日のダイアリーエントリーだけを表示し、値2は翌日のエントリーも表示しま"
+"す。値には7つの整数のvectorも指定できます。たとえば値が@code{[0 2 2 2 2 4 1]}"
+"の場合、日曜日にはダイアリーエントリーは表示されず、月曜日から木曜日までは当"
+"日と翌日のダイアリーエントリーが表示され、金曜日には金曜日から月曜日のエント"
+"リーが表示され、土曜日にはその日のエントリーだけが表示されます。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:451
+#: original_texis/cal-xtra.texi:451
 #, no-wrap
 msgid "diary-date-forms"
 msgstr "diary-date-forms"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:461
+#: original_texis/cal-xtra.texi:461
 msgid ""
 "You can customize the form of dates in your diary file by setting the "
 "variable @code{diary-date-forms}.  This variable is a list of patterns for "
@@ -1145,17 +1305,27 @@ msgid ""
 "@code{monthname}, and @code{dayname}.  All these elements serve as patterns "
 "that match certain kinds of text in the diary file.  In order for the date "
 "pattern as a whole to match, all of its elements must match consecutively."
-msgstr "変数@code{diary-date-forms}をセットすることにより、ダイアリーファイルの日付形式をカスタマイズできます。この変数は日付を認識するパターンのリストです。各日付パターンは、要素が正規表現(@ref{Regular Expressions,,, elisp, the Emacs Lisp Reference Manual}を参照してください)、またはシンボル@code{month}、@code{day}、@code{year}、@code{monthname}、@code{dayname}のリストです。これらすべての要素は、ダイアリーファイルの特定の種類のテキストにマッチするパターンに供されます。日付パターン全体がマッチするためには、リストの各要素が連続してマッチしなければなりません。"
+msgstr ""
+"変数@code{diary-date-forms}をセットすることにより、ダイアリーファイルの日付形"
+"式をカスタマイズできます。この変数は日付を認識するパターンのリストです。各日"
+"付パターンは、要素が正規表現(@ref{Regular Expressions,,, elisp, the Emacs "
+"Lisp Reference Manual}を参照してください)、またはシンボル@code{month}、"
+"@code{day}、@code{year}、@code{monthname}、@code{dayname}のリストです。これら"
+"すべての要素は、ダイアリーファイルの特定の種類のテキストにマッチするパターン"
+"に供されます。日付パターン全体がマッチするためには、リストの各要素が連続して"
+"マッチしなければなりません。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:465
+#: original_texis/cal-xtra.texi:465
 msgid ""
 "A regular expression in a date pattern matches in its usual fashion, using "
 "the standard syntax table altered so that @samp{*} is a word constituent."
-msgstr "日付パターンの正規表現は、標準の構文テーブルを変更してそれ自身の通常の方法でマッチするので、@samp{*}は単語の構成要素になります。"
+msgstr ""
+"日付パターンの正規表現は、標準の構文テーブルを変更してそれ自身の通常の方法で"
+"マッチするので、@samp{*}は単語の構成要素になります。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:475
+#: original_texis/cal-xtra.texi:475
 msgid ""
 "The symbols @code{month}, @code{day}, @code{year}, @code{monthname}, and "
 "@code{dayname} match the month number, day number, year number, month name, "
@@ -1165,17 +1335,27 @@ msgid ""
 "@code{calendar-day-abbrev-array}).  All the symbols can match @samp{*}; "
 "since @samp{*} in a diary entry means ``any day'', ``any month'', and so on, "
 "it should match regardless of the date being considered."
-msgstr "シンボル@code{month}、@code{day}、@code{year}、@code{monthname}、@code{dayname}は、日付と考えられる月番号、日付番号、年番号、月の名前、曜日名にマッチします。数字にマッチするシンボルは、0で開始することもできます。名前にマッチするものは、大文字名と、(@code{calendar-month-abbrev-array}と@code{calendar-day-abbrev-array}で指定されるような)省略形を許容します。ダイアリーエントリーの@samp{*}は``任意の月''の`任意の日付''などを意味するので、すべてのシンボルは@samp{*}にマッチすることができ、日付とみなされないものにもマッチするべきです。"
+msgstr ""
+"シンボル@code{month}、@code{day}、@code{year}、@code{monthname}、"
+"@code{dayname}は、日付と考えられる月番号、日付番号、年番号、月の名前、曜日名"
+"にマッチします。数字にマッチするシンボルは、0で開始することもできます。名前に"
+"マッチするものは、大文字名と、(@code{calendar-month-abbrev-array}と"
+"@code{calendar-day-abbrev-array}で指定されるような)省略形を許容します。ダイア"
+"リーエントリーの@samp{*}は``任意の月''の`任意の日付''などを意味するので、すべ"
+"てのシンボルは@samp{*}にマッチすることができ、日付とみなされないものにもマッ"
+"チするべきです。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:478
+#: original_texis/cal-xtra.texi:478
 msgid ""
 "The default value of @code{diary-date-forms} in the American style is "
 "provided by @code{diary-american-date-forms}:"
-msgstr "アメリカ様式での@code{diary-date-forms}のデフォルト値は、@code{diary-american-date-forms}により提供されます:"
+msgstr ""
+"アメリカ様式での@code{diary-date-forms}のデフォルト値は、@code{diary-"
+"american-date-forms}により提供されます:"
 
 #. type: example
-#: cal-xtra.texi.orig:485
+#: original_texis/cal-xtra.texi:485
 #, no-wrap
 msgid ""
 "((month \"/\" day \"[^/0-9]\")\n"
@@ -1191,14 +1371,16 @@ msgstr ""
 " (dayname \"\\\\W\"))\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:490
+#: original_texis/cal-xtra.texi:490
 msgid ""
 "The variables @code{diary-european-date-forms} and @code{diary-iso-date-"
 "forms} provide other default styles."
-msgstr "変数@code{diary-european-date-forms}および@code{diary-iso-date-forms}は、他のデフォルト様式を提供します。"
+msgstr ""
+"変数@code{diary-european-date-forms}および@code{diary-iso-date-forms}は、他の"
+"デフォルト様式を提供します。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:502
+#: original_texis/cal-xtra.texi:502
 msgid ""
 "The date patterns in the list must be @emph{mutually exclusive} and must not "
 "match any portion of the diary entry itself, just the date and one character "
@@ -1210,10 +1392,19 @@ msgid ""
 "@code{backup}, the date pattern must absolutely not match more than a "
 "portion of the first word of the diary entry.  For example, the default "
 "value of @code{diary-european-date-forms} is:"
-msgstr "このリストの日付パターンは、@emph{相互排他的(mutually exclusive)}でなければならず、ダイアリーエントリーの任意の部分にマッチせず、日付と1文字の空白文字だけにマッチしなければなりません。相互排他的であるならば、パターンは日付を終端する空白文字を越えて、ダイアリーエントリーの一部にマッチしなければならず、日付パターンの最初の要素は@code{バックアップ(backup)}されなければなりません。これにより日付識別処理はマッチお終えた後、ダイアリーエントリーの先頭の単語をバックアップします。@code{backup}を使う場合でも、日付パターンはダイアリーエントリーの最初の単語の部分を越えてマッチしてはなりません。たとえば@code{diary-european-date-forms}は以下のようなデフォルト値です:"
+msgstr ""
+"このリストの日付パターンは、@emph{相互排他的(mutually exclusive)}でなければな"
+"らず、ダイアリーエントリーの任意の部分にマッチせず、日付と1文字の空白文字だけ"
+"にマッチしなければなりません。相互排他的であるならば、パターンは日付を終端す"
+"る空白文字を越えて、ダイアリーエントリーの一部にマッチしなければならず、日付"
+"パターンの最初の要素は@code{バックアップ(backup)}されなければなりません。これ"
+"により日付識別処理はマッチお終えた後、ダイアリーエントリーの先頭の単語をバッ"
+"クアップします。@code{backup}を使う場合でも、日付パターンはダイアリーエント"
+"リーの最初の単語の部分を越えてマッチしてはなりません。たとえば@code{diary-"
+"european-date-forms}は以下のようなデフォルト値です:"
 
 #. type: example
-#: cal-xtra.texi.orig:509
+#: original_texis/cal-xtra.texi:509
 #, no-wrap
 msgid ""
 "((day \"/\" month \"[^/0-9]\")\n"
@@ -1229,79 +1420,88 @@ msgstr ""
 " (dayname \"\\\\W\"))\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:515
+#: original_texis/cal-xtra.texi:515
 msgid ""
 "Notice the use of @code{backup} in the third pattern, because it needs to "
 "match part of a word beyond the date itself to distinguish it from the "
 "fourth pattern."
-msgstr "3番目のパターンでの@code{backup}の使用に注目してください。これは4番目のパターンと区別するために、日付自体を越えて単語の一部にマッチする必要があるからです。"
+msgstr ""
+"3番目のパターンでの@code{backup}の使用に注目してください。これは4番目のパター"
+"ンと区別するために、日付自体を越えて単語の一部にマッチする必要があるからで"
+"す。"
 
 #. type: subsection
-#: cal-xtra.texi.orig:517
+#: original_texis/cal-xtra.texi:517
 #, no-wrap
 msgid "Diary Entries Using non-Gregorian Calendars"
 msgstr "Diary Entries Using non-Gregorian Calendars"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:525
+#: original_texis/cal-xtra.texi:525
 msgid ""
 "As well as entries based on the standard Gregorian calendar, your diary can "
 "have entries based on Bahá'í, Hebrew, or Islamic dates.  Recognition of such "
 "entries can be time-consuming, however, and since most people don't use "
 "them, you must explicitly enable their use.  If you want the diary to "
 "recognize Hebrew-date diary entries, for example, you must do this:"
-msgstr "グレゴリオ暦にもとづくエントリーと同様に、ダイアリーはBahá'í、Hebrew、Islamicの日付にもとづくエントリーをもつことができます。そのようなエントリーの識別は時間がかかる場合がありますが、これらを使用する人はほとんどいないので、使用する場合は明示的に有効にしなければなりません。ダイアリーが、ダイアリーエントリーのHebrew日付を識別するようにしたい場合、たとえば以下のようにして、これを行なわなければなりません:"
+msgstr ""
+"グレゴリオ暦にもとづくエントリーと同様に、ダイアリーはBahá'í、Hebrew、Islamic"
+"の日付にもとづくエントリーをもつことができます。そのようなエントリーの識別は"
+"時間がかかる場合がありますが、これらを使用する人はほとんどいないので、使用す"
+"る場合は明示的に有効にしなければなりません。ダイアリーが、ダイアリーエント"
+"リーのHebrew日付を識別するようにしたい場合、たとえば以下のようにして、これを"
+"行なわなければなりません:"
 
 #. type: vindex
-#: cal-xtra.texi.orig:526
+#: original_texis/cal-xtra.texi:526
 #, no-wrap
 msgid "diary-nongregorian-listing-hook"
 msgstr "diary-nongregorian-listing-hook"
 
 #. type: vindex
-#: cal-xtra.texi.orig:527
+#: original_texis/cal-xtra.texi:527
 #, no-wrap
 msgid "diary-nongregorian-marking-hook"
 msgstr "diary-nongregorian-marking-hook"
 
 #. type: findex
-#: cal-xtra.texi.orig:528
+#: original_texis/cal-xtra.texi:528
 #, no-wrap
 msgid "diary-hebrew-list-entries"
 msgstr "diary-hebrew-list-entries"
 
 #. type: findex
-#: cal-xtra.texi.orig:529
+#: original_texis/cal-xtra.texi:529
 #, no-wrap
 msgid "diary-hebrew-mark-entries"
 msgstr "diary-hebrew-mark-entries"
 
 #. type: findex
-#: cal-xtra.texi.orig:530
+#: original_texis/cal-xtra.texi:530
 #, no-wrap
 msgid "diary-islamic-list-entries"
 msgstr "diary-islamic-list-entries"
 
 #. type: findex
-#: cal-xtra.texi.orig:531
+#: original_texis/cal-xtra.texi:531
 #, no-wrap
 msgid "diary-islamic-mark-entries"
 msgstr "diary-islamic-mark-entries"
 
 #. type: findex
-#: cal-xtra.texi.orig:532
+#: original_texis/cal-xtra.texi:532
 #, no-wrap
 msgid "diary-bahai-list-entries"
 msgstr "diary-bahai-list-entries"
 
 #. type: findex
-#: cal-xtra.texi.orig:533
+#: original_texis/cal-xtra.texi:533
 #, no-wrap
 msgid "diary-bahai-mark-entries"
 msgstr "diary-bahai-mark-entries"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:537
+#: original_texis/cal-xtra.texi:537
 #, no-wrap
 msgid ""
 "(add-hook 'diary-nongregorian-listing-hook 'diary-hebrew-list-entries)\n"
@@ -1311,33 +1511,36 @@ msgstr ""
 "(add-hook 'diary-nongregorian-marking-hook 'diary-hebrew-mark-entries)\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:543
+#: original_texis/cal-xtra.texi:543
 msgid ""
 "Similarly, for Islamic and Bahá'í entries, add @code{diary-islamic-list-"
 "entries} and @code{diary-islamic-mark-entries}, or @code{diary-bahai-list-"
 "entries} and @code{diary-bahai-mark-entries}."
-msgstr "同様にIslamicとBahá'íのエントリーにたいしては、@code{diary-islamic-list-entries}と@code{diary-islamic-mark-entries}、または@code{diary-bahai-list-entries}と@code{diary-bahai-mark-entries}を追加します。"
+msgstr ""
+"同様にIslamicとBahá'íのエントリーにたいしては、@code{diary-islamic-list-"
+"entries}と@code{diary-islamic-mark-entries}、または@code{diary-bahai-list-"
+"entries}と@code{diary-bahai-mark-entries}を追加します。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:544
+#: original_texis/cal-xtra.texi:544
 #, no-wrap
 msgid "diary-bahai-entry-symbol"
 msgstr "diary-bahai-entry-symbol"
 
 #. type: vindex
-#: cal-xtra.texi.orig:545
+#: original_texis/cal-xtra.texi:545
 #, no-wrap
 msgid "diary-hebrew-entry-symbol"
 msgstr "diary-hebrew-entry-symbol"
 
 #. type: vindex
-#: cal-xtra.texi.orig:546
+#: original_texis/cal-xtra.texi:546
 #, no-wrap
 msgid "diary-islamic-entry-symbol"
 msgstr "diary-islamic-entry-symbol"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:556
+#: original_texis/cal-xtra.texi:556
 msgid ""
 "These diary entries have the same formats as Gregorian-date diary entries; "
 "except that @code{diary-bahai-entry-symbol} (default @samp{B})  must precede "
@@ -1347,153 +1550,169 @@ msgid ""
 "the first three letters are often not unique).  (Note also that you must use "
 "``Adar I'' if you want Adar of a common Hebrew year.)  For example, a diary "
 "entry for the Hebrew date Heshvan 25 could look like this:"
-msgstr "これらのダイアリーエントリーは、グレゴリオ日付のダイアリーエントリーと同じフォーマットをもちます。例外は、Bahá'í日付の前には@code{diary-bahai-entry-symbol}(デフォルトは@samp{B})、Hebrew日付の前には@code{diary-hebrew-entry-symbol}(デフォルトは@samp{H})、Islamic日付の前には@code{diary-islamic-entry-symbol}(デフォルトは@samp{I})が前置されなければならないことです。さらに、非グレゴリオの月の名前は省略できません(最初の3文字では一意にならないものがあるからです。一般的なHebrew年のAdarを使いたい場合は、``Adar I''を使わなければならないことにも注意してください。)  たとえばHebrew日付のHeshvan 25にたいするダイアリーエントリーは、以下のようになります:"
+msgstr ""
+"これらのダイアリーエントリーは、グレゴリオ日付のダイアリーエントリーと同じ"
+"フォーマットをもちます。例外は、Bahá'í日付の前には@code{diary-bahai-entry-"
+"symbol}(デフォルトは@samp{B})、Hebrew日付の前には@code{diary-hebrew-entry-"
+"symbol}(デフォルトは@samp{H})、Islamic日付の前には@code{diary-islamic-entry-"
+"symbol}(デフォルトは@samp{I})が前置されなければならないことです。さらに、非グ"
+"レゴリオの月の名前は省略できません(最初の3文字では一意にならないものがあるか"
+"らです。一般的なHebrew年のAdarを使いたい場合は、``Adar I''を使わなければなら"
+"ないことにも注意してください。)  たとえばHebrew日付のHeshvan 25にたいするダイ"
+"アリーエントリーは、以下のようになります:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:559
+#: original_texis/cal-xtra.texi:559
 #, no-wrap
 msgid "HHeshvan 25 Happy Hebrew birthday!\n"
 msgstr "HHeshvan 25 Happy Hebrew birthday!\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:565
+#: original_texis/cal-xtra.texi:565
 msgid ""
 "and would appear in the diary for any date that corresponds to Heshvan 25 on "
 "the Hebrew calendar.  And here is an Islamic-date diary entry that matches "
 "Dhu al-Qada 25:"
-msgstr "これはヘブライ暦のHeshvan 25に対応する日付のダイアリーに表示されます。以下はIslamic日付のDhu al-Qada 25にマッチするダイアリーエントリーです:"
+msgstr ""
+"これはヘブライ暦のHeshvan 25に対応する日付のダイアリーに表示されます。以下は"
+"Islamic日付のDhu al-Qada 25にマッチするダイアリーエントリーです:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:568
+#: original_texis/cal-xtra.texi:568
 #, no-wrap
 msgid "IDhu al-Qada 25 Happy Islamic birthday!\n"
 msgstr "IDhu al-Qada 25 Happy Islamic birthday!\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:573
+#: original_texis/cal-xtra.texi:573
 msgid ""
 "As with Gregorian-date diary entries, non-Gregorian entries are nonmarking "
 "if preceded by @code{diary-nonmarking-symbol} (default @samp{&})."
-msgstr "グレゴリオ日付のダイアリーエントリーのように、非グレゴリオのエントリーも前に@code{diary-nonmarking-symbol}(デフォルトは@samp{&})が前置されている場合はマークされません。"
+msgstr ""
+"グレゴリオ日付のダイアリーエントリーのように、非グレゴリオのエントリーも前に"
+"@code{diary-nonmarking-symbol}(デフォルトは@samp{&})が前置されている場合は"
+"マークされません。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:577
+#: original_texis/cal-xtra.texi:577
 msgid ""
 "Here is a table of commands used in the calendar to create diary entries "
 "that match the selected date and other dates that are similar in the Bahá'í, "
 "Hebrew, or Islamic calendars:"
-msgstr "以下は、選択された日付または他の日付にたいして、Bahá'í、Hebrew、Islamicの日付によるダイアリーエントリーを作成するコマンドの表です:"
+msgstr ""
+"以下は、選択された日付または他の日付にたいして、Bahá'í、Hebrew、Islamicの日付"
+"によるダイアリーエントリーを作成するコマンドの表です:"
 
 #. type: item
-#: cal-xtra.texi.orig:579
+#: original_texis/cal-xtra.texi:579
 #, no-wrap
 msgid "i h d"
 msgstr "i h d"
 
 #. type: findex
-#: cal-xtra.texi.orig:581 cal-xtra.texi.orig:599
+#: original_texis/cal-xtra.texi:581 original_texis/cal-xtra.texi:599
 #, no-wrap
 msgid "diary-hebrew-insert-entry"
 msgstr "diary-hebrew-insert-entry"
 
 #. type: item
-#: cal-xtra.texi.orig:581
+#: original_texis/cal-xtra.texi:581
 #, no-wrap
 msgid "i h m"
 msgstr "i h m"
 
 #. type: findex
-#: cal-xtra.texi.orig:583 cal-xtra.texi.orig:600
+#: original_texis/cal-xtra.texi:583 original_texis/cal-xtra.texi:600
 #, no-wrap
 msgid "diary-hebrew-insert-monthly-entry"
 msgstr "diary-hebrew-insert-monthly-entry"
 
 #. type: item
-#: cal-xtra.texi.orig:583
+#: original_texis/cal-xtra.texi:583
 #, no-wrap
 msgid "i h y"
 msgstr "i h y"
 
 #. type: findex
-#: cal-xtra.texi.orig:585 cal-xtra.texi.orig:601
+#: original_texis/cal-xtra.texi:585 original_texis/cal-xtra.texi:601
 #, no-wrap
 msgid "diary-hebrew-insert-yearly-entry"
 msgstr "diary-hebrew-insert-yearly-entry"
 
 #. type: item
-#: cal-xtra.texi.orig:585
+#: original_texis/cal-xtra.texi:585
 #, no-wrap
 msgid "i i d"
 msgstr "i i d"
 
 #. type: findex
-#: cal-xtra.texi.orig:587 cal-xtra.texi.orig:602
+#: original_texis/cal-xtra.texi:587 original_texis/cal-xtra.texi:602
 #, no-wrap
 msgid "diary-islamic-insert-entry"
 msgstr "diary-islamic-insert-entry"
 
 #. type: item
-#: cal-xtra.texi.orig:587
+#: original_texis/cal-xtra.texi:587
 #, no-wrap
 msgid "i i m"
 msgstr "i i m"
 
 #. type: findex
-#: cal-xtra.texi.orig:589 cal-xtra.texi.orig:603
+#: original_texis/cal-xtra.texi:589 original_texis/cal-xtra.texi:603
 #, no-wrap
 msgid "diary-islamic-insert-monthly-entry"
 msgstr "diary-islamic-insert-monthly-entry"
 
 #. type: item
-#: cal-xtra.texi.orig:589
+#: original_texis/cal-xtra.texi:589
 #, no-wrap
 msgid "i i y"
 msgstr "i i y"
 
 #. type: findex
-#: cal-xtra.texi.orig:591 cal-xtra.texi.orig:604
+#: original_texis/cal-xtra.texi:591 original_texis/cal-xtra.texi:604
 #, no-wrap
 msgid "diary-islamic-insert-yearly-entry"
 msgstr "diary-islamic-insert-yearly-entry"
 
 #. type: item
-#: cal-xtra.texi.orig:591
+#: original_texis/cal-xtra.texi:591
 #, no-wrap
 msgid "i B d"
 msgstr "i B d"
 
 #. type: findex
-#: cal-xtra.texi.orig:593 cal-xtra.texi.orig:605
+#: original_texis/cal-xtra.texi:593 original_texis/cal-xtra.texi:605
 #, no-wrap
 msgid "diary-bahai-insert-entry"
 msgstr "diary-bahai-insert-entry"
 
 #. type: item
-#: cal-xtra.texi.orig:593
+#: original_texis/cal-xtra.texi:593
 #, no-wrap
 msgid "i B m"
 msgstr "i B m"
 
 #. type: findex
-#: cal-xtra.texi.orig:595 cal-xtra.texi.orig:606
+#: original_texis/cal-xtra.texi:595 original_texis/cal-xtra.texi:606
 #, no-wrap
 msgid "diary-bahai-insert-monthly-entry"
 msgstr "diary-bahai-insert-monthly-entry"
 
 #. type: item
-#: cal-xtra.texi.orig:595
+#: original_texis/cal-xtra.texi:595
 #, no-wrap
 msgid "i B y"
 msgstr "i B y"
 
 #. type: findex
-#: cal-xtra.texi.orig:597 cal-xtra.texi.orig:607
+#: original_texis/cal-xtra.texi:597 original_texis/cal-xtra.texi:607
 #, no-wrap
 msgid "diary-bahai-insert-yearly-entry"
 msgstr "diary-bahai-insert-yearly-entry"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:616
+#: original_texis/cal-xtra.texi:616
 msgid ""
 "These commands work much like the corresponding commands for ordinary diary "
 "entries: they apply to the date that point is on in the calendar window, and "
@@ -1503,34 +1722,41 @@ msgid ""
 "@samp{monthly} commands for the given non-Gregorian day-within-month in "
 "every month, and the @samp{yearly} commands for the given non-Gregorian day "
 "and month in every year."
-msgstr "これらのコマンドは、通常のダイアリーエントリーの対応するコマンドに似ています。これらはカレンダーウィンドウのポイント位置の日付に適用され、これらのコマンドが行なうのはダイアリーファイルの最後にダイアリーエントリーの日付部分を挿入することだけです。その後、ダイアリーエントリーの残りを挿入しなければなりません。特定の非グレゴリオ日付のエントリーを追加する基本的なコマンドとして、与えられた非グレゴリオ日を各月に追加する@samp{monthly}コマンド、与えられた非グレゴリオの月日を各年に追加する@samp{yearly}コマンドがあります。"
+msgstr ""
+"これらのコマンドは、通常のダイアリーエントリーの対応するコマンドに似ていま"
+"す。これらはカレンダーウィンドウのポイント位置の日付に適用され、これらのコマ"
+"ンドが行なうのはダイアリーファイルの最後にダイアリーエントリーの日付部分を挿"
+"入することだけです。その後、ダイアリーエントリーの残りを挿入しなければなりま"
+"せん。特定の非グレゴリオ日付のエントリーを追加する基本的なコマンドとして、与"
+"えられた非グレゴリオ日を各月に追加する@samp{monthly}コマンド、与えられた非グ"
+"レゴリオの月日を各年に追加する@samp{yearly}コマンドがあります。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:619
+#: original_texis/cal-xtra.texi:619
 #, no-wrap
 msgid "diary-display-function"
 msgstr "diary-display-function"
 
 #. type: findex
-#: cal-xtra.texi.orig:620
+#: original_texis/cal-xtra.texi:620
 #, no-wrap
 msgid "diary-simple-display"
 msgstr "diary-simple-display"
 
 #. type: findex
-#: cal-xtra.texi.orig:621
+#: original_texis/cal-xtra.texi:621
 #, no-wrap
 msgid "diary-fancy-display"
 msgstr "diary-fancy-display"
 
 #. type: cindex
-#: cal-xtra.texi.orig:622
+#: original_texis/cal-xtra.texi:622
 #, no-wrap
 msgid "diary buffer"
 msgstr "diary buffer"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:632
+#: original_texis/cal-xtra.texi:632
 msgid ""
 "Diary display works by preparing the list of diary entries and then running "
 "the function specified by the variable @code{diary-display-function}.  The "
@@ -1539,40 +1765,51 @@ msgid ""
 "display.  Copying diary entries to a separate buffer provides an opportunity "
 "to change the displayed text to make it prettier---for example, to sort the "
 "entries by the dates they apply to."
-msgstr "ダイアリーの表示は、ダイアリーエントリーのリストを準備して、変数@code{diary-display-function}で指定された関数を実行することにより機能します。デフォルト値の@code{diary-fancy-display}は、ダイアリーエントリーを表示するためだけに存在する特別なバッファーにコピーして、ダイアリーエントリーと休日を表示します。ダイアリーエントリーを別のバッファーにコピーすることにより、表示されるテキストの見栄えをよくする機会  --- たとえばダイアリーエントリーに適用される日付順にソートするなど --- が提供されます。"
+msgstr ""
+"ダイアリーの表示は、ダイアリーエントリーのリストを準備して、変数@code{diary-"
+"display-function}で指定された関数を実行することにより機能します。デフォルト値"
+"の@code{diary-fancy-display}は、ダイアリーエントリーを表示するためだけに存在"
+"する特別なバッファーにコピーして、ダイアリーエントリーと休日を表示します。ダ"
+"イアリーエントリーを別のバッファーにコピーすることにより、表示されるテキスト"
+"の見栄えをよくする機会  --- たとえばダイアリーエントリーに適用される日付順に"
+"ソートするなど --- が提供されます。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:633
+#: original_texis/cal-xtra.texi:633
 #, no-wrap
 msgid "diary-list-include-blanks"
 msgstr "diary-list-include-blanks"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:638
+#: original_texis/cal-xtra.texi:638
 msgid ""
 "Ordinarily, the fancy diary buffer does not show days for which there are no "
 "diary entries, even if that day is a holiday.  If you want such days to be "
 "shown in the fancy diary buffer, set the variable @code{diary-list-include-"
 "blanks} to @code{t}."
-msgstr "通常、fancy diary(装飾的なダイアリー)バッファーは、たとえその日が休日であっても、ダイアリーエントリーがない日は表示しません。そのような日をfancy diaryバッファーに表示したいときは、変数@code{diary-list-include-blanks}を@code{t}にセットします。"
+msgstr ""
+"通常、fancy diary(装飾的なダイアリー)バッファーは、たとえその日が休日であって"
+"も、ダイアリーエントリーがない日は表示しません。そのような日をfancy diaryバッ"
+"ファーに表示したいときは、変数@code{diary-list-include-blanks}を@code{t}に"
+"セットします。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:640
+#: original_texis/cal-xtra.texi:640
 msgid "The fancy diary buffer enables View mode"
 msgstr "fancy diaryバッファーはViewモードを有効にします"
 
 #. type: iftex
-#: cal-xtra.texi.orig:642
+#: original_texis/cal-xtra.texi:642
 msgid "(@pxref{View Mode,,, emacs, the Emacs Manual})."
 msgstr "(@ref{View Mode,,, emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: cal-xtra.texi.orig:645
+#: original_texis/cal-xtra.texi:645
 msgid "(@pxref{View Mode})."
 msgstr "(@ref{View Mode}を参照してください)。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:657
+#: original_texis/cal-xtra.texi:657
 msgid ""
 "The alternative display method @code{diary-simple-display} shows the actual "
 "diary buffer, and uses invisible text to hide entries that don't apply.  "
@@ -1584,22 +1821,32 @@ msgid ""
 "elsewhere, invisible text may be included.  Similarly, since the diary "
 "buffer as you see it is an illusion, simply printing the buffer may not "
 "print what you see on your screen."
-msgstr "他の表示方法の@code{diary-simple-display}は、実際のダイアリーバッファーを表示して、適合しないエントリーを隠すために非表示のテキストを使います。休日はモードラインに表示されます。この方法の有利な点は、ダイアリーファイルを直接編集して、変更を保存できることです。しかし、この方法はfancy方式のように柔軟ではありません。たとえば、これはエントリーのソートはできません。他の不利な点としては、非表示のテキストが混乱の元となることがある点です。たとえば、他の場所に張り付けるためにリージョンのテキストをコピーした場合、非表示のテキストも含まれます。同様に、目に見えるダイアリーバッファーは一種の幻影なので、単にバッファーを印刷しても、スクリーンで表示されているものが印刷されるわけではありません。"
+msgstr ""
+"他の表示方法の@code{diary-simple-display}は、実際のダイアリーバッファーを表示"
+"して、適合しないエントリーを隠すために非表示のテキストを使います。休日はモー"
+"ドラインに表示されます。この方法の有利な点は、ダイアリーファイルを直接編集し"
+"て、変更を保存できることです。しかし、この方法はfancy方式のように柔軟ではあり"
+"ません。たとえば、これはエントリーのソートはできません。他の不利な点として"
+"は、非表示のテキストが混乱の元となることがある点です。たとえば、他の場所に張"
+"り付けるためにリージョンのテキストをコピーした場合、非表示のテキストも含まれ"
+"ます。同様に、目に見えるダイアリーバッファーは一種の幻影なので、単にバッ"
+"ファーを印刷しても、スクリーンで表示されているものが印刷されるわけではありま"
+"せん。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:658
+#: original_texis/cal-xtra.texi:658
 #, no-wrap
 msgid "diary-print-entries-hook"
 msgstr "diary-print-entries-hook"
 
 #. type: findex
-#: cal-xtra.texi.orig:659
+#: original_texis/cal-xtra.texi:659
 #, no-wrap
 msgid "diary-print-entries"
 msgstr "diary-print-entries"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:669
+#: original_texis/cal-xtra.texi:669
 msgid ""
 "For this reason, there is a special command to print hard copy of the diary "
 "buffer @emph{as it appears}; this command is @kbd{M-x diary-print-entries}.  "
@@ -1609,10 +1856,18 @@ msgid ""
 "d}, and then do @kbd{M-x diary-print-entries}.  As usual, the inclusion of "
 "the holidays slows down the display slightly; you can speed things up by "
 "setting the variable @code{diary-show-holidays-flag} to @code{nil}."
-msgstr "この理由により、ダイアリーバッファーのハードコピーを@emph{見た通りに}印刷する特別なコマンド@kbd{M-x diary-print-entries}があります。これは、どちらの表示方式でも機能します(たとえfancy displayバッファーが他のバッファーと同じようにプリントできるとしても)。週の各曜日のハードコピーを印刷するには、ポイントを週の初めの曜日に移動して@kbd{7 d}とタイプし、それから@kbd{M-x diary-print-entries}を実行します。通常のように、休日が含まれる場合、表示は若干遅くなります。変数@code{diary-show-holidays-flag}を@code{nil}にセットすることにより、速度を改善することができます。"
+msgstr ""
+"この理由により、ダイアリーバッファーのハードコピーを@emph{見た通りに}印刷する"
+"特別なコマンド@kbd{M-x diary-print-entries}があります。これは、どちらの表示方"
+"式でも機能します(たとえfancy displayバッファーが他のバッファーと同じようにプ"
+"リントできるとしても)。週の各曜日のハードコピーを印刷するには、ポイントを週の"
+"初めの曜日に移動して@kbd{7 d}とタイプし、それから@kbd{M-x diary-print-"
+"entries}を実行します。通常のように、休日が含まれる場合、表示は若干遅くなりま"
+"す。変数@code{diary-show-holidays-flag}を@code{nil}にセットすることにより、速"
+"度を改善することができます。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:676
+#: original_texis/cal-xtra.texi:676
 msgid ""
 "This command prepares a temporary buffer that contains only the diary "
 "entries currently visible in the diary buffer.  Unlike with the simple "
@@ -1620,28 +1875,36 @@ msgid ""
 "After preparing the buffer, it runs the hook @code{diary-print-entries-"
 "hook}.  The default value of this hook sends the data directly to the "
 "printer with the command @code{lpr-buffer}"
-msgstr "このコマンドは、ダイアリーバッファーで現在可視なダイアリーエントリーだけを含んだ一時的なバッファーを作成します。単なる表示とは異なり、他の無関係なエントリーは隠されるだけではなく、まったく含まれません。バッファーを作成したら、フック@code{diary-print-entries-hook}が実行されます。このフックのデフォルト値はコマンド@code{lpr-buffer}で、これはデータを直接プリンターに送信します"
+msgstr ""
+"このコマンドは、ダイアリーバッファーで現在可視なダイアリーエントリーだけを含"
+"んだ一時的なバッファーを作成します。単なる表示とは異なり、他の無関係なエント"
+"リーは隠されるだけではなく、まったく含まれません。バッファーを作成したら、"
+"フック@code{diary-print-entries-hook}が実行されます。このフックのデフォルト値"
+"はコマンド@code{lpr-buffer}で、これはデータを直接プリンターに送信します"
 
 #. type: iftex
-#: cal-xtra.texi.orig:678
+#: original_texis/cal-xtra.texi:678
 msgid "(@pxref{Printing,,, emacs, the Emacs Manual})."
 msgstr "(@ref{Printing,,, emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: cal-xtra.texi.orig:681
+#: original_texis/cal-xtra.texi:681
 msgid "(@pxref{Printing})."
 msgstr "(@ref{Printing}を参照してください)。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:685
+#: original_texis/cal-xtra.texi:685
 msgid ""
 "If you want to use a different command to do the printing, just change the "
 "value of this hook.  Other uses might include, for example, rearranging the "
 "lines into order by day and time."
-msgstr "違うコマンドを印刷に使いたい場合は、単にこのフックの値を変更するだけです。他のコマンドには、たとえば行を日付と時刻順に再配置することなどが含まれるかもしれません。"
+msgstr ""
+"違うコマンドを印刷に使いたい場合は、単にこのフックの値を変更するだけです。他"
+"のコマンドには、たとえば行を日付と時刻順に再配置することなどが含まれるかもし"
+"れません。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:693
+#: original_texis/cal-xtra.texi:693
 msgid ""
 "You can edit the diary entries as they appear in the simple diary window, "
 "but it is important to remember that the buffer displayed contains the "
@@ -1649,10 +1912,15 @@ msgid ""
 "means, for instance, that the @kbd{C-f} (@code{forward-char}) command can "
 "put point at what appears to be the end of the line, but what is in reality "
 "the middle of some concealed line."
-msgstr "simpleダイアリーウィンドウで表示されているときと同じように、ダイアリーエントリーを編集できますが、表示されているバッファーには、表示から隠されている部分が含まれていることを覚えておくのは重要です。これは、たとえば@kbd{C-f} (@code{forward-char})は表示されている最後の行にポイントを移動できますが、実際は隠されている行の途中かもしれないことを意味します。"
+msgstr ""
+"simpleダイアリーウィンドウで表示されているときと同じように、ダイアリーエント"
+"リーを編集できますが、表示されているバッファーには、表示から隠されている部分"
+"が含まれていることを覚えておくのは重要です。これは、たとえば@kbd{C-f} "
+"(@code{forward-char})は表示されている最後の行にポイントを移動できますが、実際"
+"は隠されている行の途中かもしれないことを意味します。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:701
+#: original_texis/cal-xtra.texi:701
 msgid ""
 "@emph{Be careful when editing the diary entries in the simple display!} "
 "Inserting additional lines or adding/deleting characters in the middle of a "
@@ -1660,134 +1928,160 @@ msgid ""
 "do what you expect.  Deleting a line may delete other invisible entries that "
 "follow it.  Before editing the simple diary buffer, it is best to display "
 "the entire file with @kbd{s} (@code{diary-show-all-entries})."
-msgstr "@emph{simple表示でダイアリーエントリーを編集するときは注意してください。}表示されている行の途中での行の追加、文字の追加や削除は問題になりませんが、行の最後で編集する場合は、意図した通りにはならないでしょう。行の削除は、それに続く他の非表示のエントリーを削除するかもしれません。simple diaryバッファーで編集する前に、@kbd{s} (@code{diary-show-all-entries})でファイル全体を表示するのが最善です。"
+msgstr ""
+"@emph{simple表示でダイアリーエントリーを編集するときは注意してください。}表示"
+"されている行の途中での行の追加、文字の追加や削除は問題になりませんが、行の最"
+"後で編集する場合は、意図した通りにはならないでしょう。行の削除は、それに続く"
+"他の非表示のエントリーを削除するかもしれません。simple diaryバッファーで編集"
+"する前に、@kbd{s} (@code{diary-show-all-entries})でファイル全体を表示するのが"
+"最善です。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:706
+#: original_texis/cal-xtra.texi:706
 msgid "The following features only work with the fancy diary display."
 msgstr "以下の機能は、fancy diary表示だけで機能します。"
 
 #. type: cindex
-#: cal-xtra.texi.orig:707
+#: original_texis/cal-xtra.texi:707
 #, no-wrap
 msgid "sorting diary entries"
 msgstr "sorting diary entries"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:710
+#: original_texis/cal-xtra.texi:710
 msgid ""
 "You can use the normal hook @code{diary-list-entries-hook} to sort each "
 "day's diary entries by their time of day.  Here's how:"
-msgstr "ノーマルフック@code{diary-list-entries-hook}を使用して、各曜日のダイアリーエントリーを日時順でソートできます。以下はその方法です:"
+msgstr ""
+"ノーマルフック@code{diary-list-entries-hook}を使用して、各曜日のダイアリーエ"
+"ントリーを日時順でソートできます。以下はその方法です:"
 
 #. type: findex
-#: cal-xtra.texi.orig:711
+#: original_texis/cal-xtra.texi:711
 #, no-wrap
 msgid "diary-sort-entries"
 msgstr "diary-sort-entries"
 
 #. type: example
-#: cal-xtra.texi.orig:714
+#: original_texis/cal-xtra.texi:714
 #, no-wrap
 msgid "(add-hook 'diary-list-entries-hook 'diary-sort-entries t)\n"
 msgstr "(add-hook 'diary-list-entries-hook 'diary-sort-entries t)\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:722
+#: original_texis/cal-xtra.texi:722
 msgid ""
 "For each day, this sorts diary entries that begin with a recognizable time "
 "of day according to their times.  Diary entries without times come first "
 "within each day.  Note how the sort command is placed at the end of the hook "
 "list, in case earlier members of the list change the order of the diary "
 "entries, or add items."
-msgstr "これは各曜日にたいして、認識可能は日時で始まるダイアリーエントリーをソートします。時刻がないダイアリーエントリーは、各曜日の最初に配置されます。ソートコマンドがフックリストの最後に配置されているわけに注意してください。リストの最初の方に配置されている場合、これはダイアリーエントリーの順序を変更したり、アイテムを追加します。"
+msgstr ""
+"これは各曜日にたいして、認識可能は日時で始まるダイアリーエントリーをソートし"
+"ます。時刻がないダイアリーエントリーは、各曜日の最初に配置されます。ソートコ"
+"マンドがフックリストの最後に配置されているわけに注意してください。リストの最"
+"初の方に配置されている場合、これはダイアリーエントリーの順序を変更したり、ア"
+"イテムを追加します。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:723
+#: original_texis/cal-xtra.texi:723
 #, no-wrap
 msgid "diary-comment-start"
 msgstr "diary-comment-start"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:729
+#: original_texis/cal-xtra.texi:729
 msgid ""
 "You can write @samp{comments} in diary entries, by setting the variables "
 "@code{diary-comment-start} and @code{diary-comment-end} to strings that "
 "delimit comments.  The fancy display does not print comments.  You might "
 "want to put meta-data for the use of other packages (e.g., the appointment "
 "package,"
-msgstr "コメント区切りとなる文字列を@code{diary-comment-start}と@code{diary-comment-end}にセットすることにより、ダイアリーエントリーに@samp{コメント}を記述できます。fancy表示はコメントを印刷しません。他のパッケージ(たとえばappointmentパッケージ。"
+msgstr ""
+"コメント区切りとなる文字列を@code{diary-comment-start}と@code{diary-comment-"
+"end}にセットすることにより、ダイアリーエントリーに@samp{コメント}を記述できま"
+"す。fancy表示はコメントを印刷しません。他のパッケージ(たとえばappointmentパッ"
+"ケージ。"
 
 #. type: iftex
-#: cal-xtra.texi.orig:731
+#: original_texis/cal-xtra.texi:731
 msgid "@pxref{Appointments,,,emacs, the Emacs Manual})"
 msgstr "@ref{Appointments,,,emacs, the Emacs Manual}を参照してください)"
 
 #. type: ifnottex
-#: cal-xtra.texi.orig:734
+#: original_texis/cal-xtra.texi:734
 msgid "@pxref{Appointments})"
 msgstr "@ref{Appointments}を参照してください)"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:736
+#: original_texis/cal-xtra.texi:736
 msgid "inside comments."
 msgstr "で使用するメタデータをコメント内に記述したいと思うかもしれません。"
 
 #. type: vindex
-#: cal-xtra.texi.orig:737
+#: original_texis/cal-xtra.texi:737
 #, no-wrap
 msgid "diary-include-string"
 msgstr "diary-include-string"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:741
+#: original_texis/cal-xtra.texi:741
 msgid ""
 "Your main diary file can include other files.  This permits a group of "
 "people to share a diary file for events that apply to all of them.  Lines in "
 "the diary file starting with @code{diary-include-string}:"
-msgstr "メインとなるダイアリーファイルに、他のファイルをインクルードできます。これにより、グループのメンバー全員に適用されるイベント用のダイアリーファイルを、共有することができます。ダイアリーファイルで、@code{diary-include-string}で開始される行:"
+msgstr ""
+"メインとなるダイアリーファイルに、他のファイルをインクルードできます。これに"
+"より、グループのメンバー全員に適用されるイベント用のダイアリーファイルを、共"
+"有することができます。ダイアリーファイルで、@code{diary-include-string}で開始"
+"される行:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:744
+#: original_texis/cal-xtra.texi:744
 #, no-wrap
 msgid "#include \"@var{filename}\"\n"
 msgstr "#include \"@var{filename}\"\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:752
+#: original_texis/cal-xtra.texi:752
 msgid ""
 "include the diary entries from the file @var{filename} in the fancy diary "
 "buffer.  The include mechanism is recursive, so that included files can "
 "include other files, and so on (you must be careful not to have a cycle of "
 "inclusions, of course).  Here is how to enable the include facility:"
-msgstr "は、ファイル@var{filename}からダイアリーエントリーをfancy diaryバッファーにインクルードします。インクルードの仕組みは再帰的なので、インクルードされたファイルは他のファイルをインクルードできます(もちろん循環的なインクルードについては注意しなければなりません)。インクルード機能を有効にするには、以下のようにします:"
+msgstr ""
+"は、ファイル@var{filename}からダイアリーエントリーをfancy diaryバッファーにイ"
+"ンクルードします。インクルードの仕組みは再帰的なので、インクルードされたファ"
+"イルは他のファイルをインクルードできます(もちろん循環的なインクルードについて"
+"は注意しなければなりません)。インクルード機能を有効にするには、以下のようにし"
+"ます:"
 
 #. type: vindex
-#: cal-xtra.texi.orig:753
+#: original_texis/cal-xtra.texi:753
 #, no-wrap
 msgid "diary-list-entries-hook"
 msgstr "diary-list-entries-hook"
 
 #. type: vindex
-#: cal-xtra.texi.orig:754
+#: original_texis/cal-xtra.texi:754
 #, no-wrap
 msgid "diary-mark-entries-hook"
 msgstr "diary-mark-entries-hook"
 
 #. type: findex
-#: cal-xtra.texi.orig:755
+#: original_texis/cal-xtra.texi:755
 #, no-wrap
 msgid "diary-include-other-diary-files"
 msgstr "diary-include-other-diary-files"
 
 #. type: findex
-#: cal-xtra.texi.orig:756
+#: original_texis/cal-xtra.texi:756
 #, no-wrap
 msgid "diary-mark-included-diary-files"
 msgstr "diary-mark-included-diary-files"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:760
+#: original_texis/cal-xtra.texi:760
 #, no-wrap
 msgid ""
 "(add-hook 'diary-list-entries-hook 'diary-include-other-diary-files)\n"
@@ -1797,202 +2091,224 @@ msgstr ""
 "(add-hook 'diary-mark-entries-hook 'diary-mark-included-diary-files)\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:764
+#: original_texis/cal-xtra.texi:764
 msgid ""
 "The include mechanism works only with the fancy diary display, because "
 "simple diary display shows the entries directly from your diary file."
-msgstr "インクルード機能はfancy diaryだけで機能します。なぜならsimple diary表示は、エントリーをダイアリーファイルから直接表示するからです。"
+msgstr ""
+"インクルード機能はfancy diaryだけで機能します。なぜならsimple diary表示は、エ"
+"ントリーをダイアリーファイルから直接表示するからです。"
 
 #. type: subsection
-#: cal-xtra.texi.orig:766
+#: original_texis/cal-xtra.texi:766
 #, no-wrap
 msgid "Sexp Entries and the Fancy Diary Display"
 msgstr "Sexp Entries and the Fancy Diary Display"
 
 #. type: cindex
-#: cal-xtra.texi.orig:767
+#: original_texis/cal-xtra.texi:767
 #, no-wrap
 msgid "sexp diary entries"
 msgstr "sexp diary entries"
 
 #. type: vindex
-#: cal-xtra.texi.orig:769
+#: original_texis/cal-xtra.texi:769
 #, no-wrap
 msgid "diary-sexp-entry-symbol"
 msgstr "diary-sexp-entry-symbol"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:775
+#: original_texis/cal-xtra.texi:775
 msgid ""
 "Sexp diary entries allow you to do more than just have complicated "
 "conditions under which a diary entry applies.  Sexp entries should be "
 "preceded by @code{diary-sexp-entry-symbol} (default @samp{%%}) in the diary "
 "file.  With the fancy diary display, sexp entries can generate the text of "
 "the entry depending on the date itself."
-msgstr "sexp( s-expression: S式)ダイアリーエントリーにより、どのダイアリーエントリーに適用するか、複雑な条件判定以上のことができます。sexpエントリーは、ダイアリーファイルで@code{diary-sexp-entry-symbol}(デフォルトは@samp{%%})が前置されている行です。fancy diary表示では、sexpエントリーはエントリーの日付に応じて、エントリーのテキストを生成できます。"
+msgstr ""
+"sexp( s-expression: S式)ダイアリーエントリーにより、どのダイアリーエントリー"
+"に適用するか、複雑な条件判定以上のことができます。sexpエントリーは、ダイア"
+"リーファイルで@code{diary-sexp-entry-symbol}(デフォルトは@samp{%%})が前置され"
+"ている行です。fancy diary表示では、sexpエントリーはエントリーの日付に応じて、"
+"エントリーのテキストを生成できます。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:779
+#: original_texis/cal-xtra.texi:779
 msgid ""
 "For example, an anniversary diary entry can insert the number of years since "
 "the anniversary date into the text of the diary entry.  Thus the @samp{%d} "
 "in this diary entry:"
-msgstr "たとえば記念日のダイアリーエントリーでは、記念日から経過した年数をダイアリーエントリーのテキストに挿入できます。したがって、以下のダイアリーエントリーの@samp{%d}:"
+msgstr ""
+"たとえば記念日のダイアリーエントリーでは、記念日から経過した年数をダイアリー"
+"エントリーのテキストに挿入できます。したがって、以下のダイアリーエントリーの"
+"@samp{%d}:"
 
 #. type: findex
-#: cal-xtra.texi.orig:780
+#: original_texis/cal-xtra.texi:780
 #, no-wrap
 msgid "diary-anniversary"
 msgstr "diary-anniversary"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:783
+#: original_texis/cal-xtra.texi:783
 #, no-wrap
 msgid "%%(diary-anniversary 10 31 1948) Arthur's birthday (%d years old)\n"
 msgstr "%%(diary-anniversary 10 31 1948) Arthur's birthday (%d years old)\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:788
+#: original_texis/cal-xtra.texi:788
 msgid ""
 "gets replaced by the age, so on October 31, 1990 the entry appears in the "
 "fancy diary buffer like this:"
-msgstr "は年齢に置換されるので、1990年10月31日のfancy diaryバッファーでは、以下のように表示されます:"
+msgstr ""
+"は年齢に置換されるので、1990年10月31日のfancy diaryバッファーでは、以下のよう"
+"に表示されます:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:791
+#: original_texis/cal-xtra.texi:791
 #, no-wrap
 msgid "Arthur's birthday (42 years old)\n"
 msgstr "Arthur's birthday (42 years old)\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:795
+#: original_texis/cal-xtra.texi:795
 msgid "If the diary file instead contains this entry:"
-msgstr "かわりに、ダイアリーファイルに以下のようなエントリーが含まれている場合:"
+msgstr ""
+"かわりに、ダイアリーファイルに以下のようなエントリーが含まれている場合:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:798
+#: original_texis/cal-xtra.texi:798
 #, no-wrap
 msgid "%%(diary-anniversary 10 31 1948) Arthur's %d%s birthday\n"
 msgstr "%%(diary-anniversary 10 31 1948) Arthur's %d%s birthday\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:802
+#: original_texis/cal-xtra.texi:802
 msgid ""
 "the entry in the fancy diary buffer for October 31, 1990 appears like this:"
 msgstr "は1990年10月31日のfancy diaryバッファーで、以下のように表示されます:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:805
+#: original_texis/cal-xtra.texi:805
 #, no-wrap
 msgid "Arthur's 42nd birthday\n"
 msgstr "Arthur's 42nd birthday\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:809
+#: original_texis/cal-xtra.texi:809
 msgid ""
 "Similarly, cyclic diary entries can interpolate the number of repetitions "
 "that have occurred:"
-msgstr "同様に、周期的なダイアリーエントリーは、それが繰り返し発生した回数を挿入できます:"
+msgstr ""
+"同様に、周期的なダイアリーエントリーは、それが繰り返し発生した回数を挿入でき"
+"ます:"
 
 #. type: findex
-#: cal-xtra.texi.orig:810
+#: original_texis/cal-xtra.texi:810
 #, no-wrap
 msgid "diary-cyclic"
 msgstr "diary-cyclic"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:813
+#: original_texis/cal-xtra.texi:813
 #, no-wrap
 msgid "%%(diary-cyclic 50 1 1 2012) Renew medication (%d%s time)\n"
 msgstr "%%(diary-cyclic 50 1 1 2012) Renew medication (%d%s time)\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:817
+#: original_texis/cal-xtra.texi:817
 msgid "looks like this:"
 msgstr "これは以下のように表示されます:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:820
+#: original_texis/cal-xtra.texi:820
 #, no-wrap
 msgid "Renew medication (5th time)\n"
 msgstr "Renew medication (5th time)\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:824
+#: original_texis/cal-xtra.texi:824
 msgid "in the fancy diary display on September 7, 2012."
 msgstr "これは2012年9月7日のfancy diary表示です。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:829
+#: original_texis/cal-xtra.texi:829
 msgid ""
 "There is an ``early reminder'' diary sexp that includes its entry in the "
 "diary not only on the date of occurrence, but also on earlier dates.  For "
 "example, if you want a reminder a week before your anniversary, you can use"
-msgstr "発生する日付だけでなく、それより前のダイアリーエントリーを含めるための、``事前リマインダー''となるsexpダイアリーエントリーもあります。たとえば記念日の1週間前にリマインダーが欲しいときは、以下を使用します"
+msgstr ""
+"発生する日付だけでなく、それより前のダイアリーエントリーを含めるための、``事"
+"前リマインダー''となるsexpダイアリーエントリーもあります。たとえば記念日の1週"
+"間前にリマインダーが欲しいときは、以下を使用します"
 
 #. type: findex
-#: cal-xtra.texi.orig:830
+#: original_texis/cal-xtra.texi:830
 #, no-wrap
 msgid "diary-remind"
 msgstr "diary-remind"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:833
+#: original_texis/cal-xtra.texi:833
 #, no-wrap
 msgid "%%(diary-remind '(diary-anniversary 12 22 1968) 7) Ed's anniversary\n"
 msgstr "%%(diary-remind '(diary-anniversary 12 22 1968) 7) Ed's anniversary\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:838
+#: original_texis/cal-xtra.texi:838
 msgid ""
 "and the fancy diary will show @samp{Ed's anniversary} both on December 15 "
 "and on December 22."
-msgstr "これにより、fancy diaryは12月15日と12月22日に、@samp{Ed's anniversary}を表示します。"
+msgstr ""
+"これにより、fancy diaryは12月15日と12月22日に、@samp{Ed's anniversary}を表示"
+"します。"
 
 #. type: findex
-#: cal-xtra.texi.orig:839
+#: original_texis/cal-xtra.texi:839
 #, no-wrap
 msgid "diary-date"
 msgstr "diary-date"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:843
+#: original_texis/cal-xtra.texi:843
 msgid ""
 "The function @code{diary-date} applies to dates described by a month, day, "
 "year combination, each of which can be an integer, a list of integers, or "
 "@code{t} (meaning all values).  For example,"
-msgstr "関数@code{diary-date}は、整数または@code{t}(すべての値を意味します)からなるmonth、day、yearの組み合わせで日付を指定します。たとえば、"
+msgstr ""
+"関数@code{diary-date}は、整数または@code{t}(すべての値を意味します)からなる"
+"month、day、yearの組み合わせで日付を指定します。たとえば、"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:846
+#: original_texis/cal-xtra.texi:846
 #, no-wrap
 msgid "%%(diary-date '(10 11 12) 22 t) Rake leaves\n"
 msgstr "%%(diary-date '(10 11 12) 22 t) Rake leaves\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:850 cal-xtra.texi.orig:878
+#: original_texis/cal-xtra.texi:850 original_texis/cal-xtra.texi:878
 msgid "causes the fancy diary to show"
 msgstr "これによりfancy diaryは"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:853
+#: original_texis/cal-xtra.texi:853
 #, no-wrap
 msgid "Rake leaves\n"
 msgstr "Rake leaves\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:857
+#: original_texis/cal-xtra.texi:857
 msgid "on October 22, November 22, and December 22 of every year."
 msgstr "を毎年10月22日、11月22日、12月22日に表示します。"
 
 #. type: findex
-#: cal-xtra.texi.orig:858
+#: original_texis/cal-xtra.texi:858
 #, no-wrap
 msgid "diary-float"
 msgstr "diary-float"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:871
+#: original_texis/cal-xtra.texi:871
 msgid ""
 "The function @code{diary-float} allows you to describe diary entries that "
 "apply to dates like the third Friday of November, or the last Tuesday in "
@@ -2006,27 +2322,37 @@ msgid ""
 "before @var{day} of @var{month}; the value of @var{day} defaults to 1 if "
 "@var{n} is positive and to the last day of @var{month} if @var{n} is "
 "negative.  For example,"
-msgstr "関数@code{diary-float}を使って、11月の第3金曜日や、4月の最後の火曜日といった日付をダイアリーエントリーに記述することができます。パラメーターは@var{month}、@var{dayname}、およびインデックス@var{n}です。エントリーは@var{month}の最初の日の後の@var{n}番目の曜日@var{dayname}に表示されます。ここで@var{dayname}=0は日曜日、1は月曜日、@dots{}です。@var{n}が負の場合、@var{month}の最後から後方に数えます。@var{month}の値に指定できるのは、月のリスト、単一の月、@code{t}の場合はすべての月を意味します。オプションのパラメーター@var{day}を使用して、@var{month}の@var{day}日目の後または前の、@var{n}番目の曜日@var{dayname}を指定することもできます。@var{day}のデフォルト値は、@var{n}が正のときは1で、@var{n}が負のときはと気はの最後の日です。たとえば、"
+msgstr ""
+"関数@code{diary-float}を使って、11月の第3金曜日や、4月の最後の火曜日といった"
+"日付をダイアリーエントリーに記述することができます。パラメーターは"
+"@var{month}、@var{dayname}、およびインデックス@var{n}です。エントリーは"
+"@var{month}の最初の日の後の@var{n}番目の曜日@var{dayname}に表示されます。ここ"
+"で@var{dayname}=0は日曜日、1は月曜日、@dots{}です。@var{n}が負の場合、"
+"@var{month}の最後から後方に数えます。@var{month}の値に指定できるのは、月のリ"
+"スト、単一の月、@code{t}の場合はすべての月を意味します。オプションのパラメー"
+"ター@var{day}を使用して、@var{month}の@var{day}日目の後または前の、@var{n}番"
+"目の曜日@var{dayname}を指定することもできます。@var{day}のデフォルト値は、"
+"@var{n}が正のときは1で、@var{n}が負のときはと気はの最後の日です。たとえば、"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:874
+#: original_texis/cal-xtra.texi:874
 #, no-wrap
 msgid "%%(diary-float t 1 -1) Pay rent\n"
 msgstr "%%(diary-float t 1 -1) Pay rent\n"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:881
+#: original_texis/cal-xtra.texi:881
 #, no-wrap
 msgid "Pay rent\n"
 msgstr "Pay rent\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:885
+#: original_texis/cal-xtra.texi:885
 msgid "on the last Monday of every month."
 msgstr "を毎月最後の月曜日に表示します。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:894
+#: original_texis/cal-xtra.texi:894
 msgid ""
 "The generality of sexp diary entries lets you specify any diary entry that "
 "you can describe algorithmically.  A sexp diary entry contains an expression "
@@ -2035,10 +2361,16 @@ msgid ""
 "expression can use the variable @code{date} to find the date being "
 "considered; its value is a list (@var{month} @var{day} @var{year}) that "
 "refers to the Gregorian calendar."
-msgstr "sexpダイアリーエントリーの一般性により、アルゴリズム的に記述したダイアリーエントリーを指定できます。sexpダイアリーエントリーには、任意の与えられた日付にたいして、エントリーを適用するかどうかを計算する式が含まれます。値が非@code{nil}の場合はその日付にエントリーが適用され、そうでない場合は適用されません。式では判定する日付を変数@code{date}で使用することができます。この変数の値は、グレゴリオ暦を参照するリスト(@var{month} @var{day} @var{year})です。"
+msgstr ""
+"sexpダイアリーエントリーの一般性により、アルゴリズム的に記述したダイアリーエ"
+"ントリーを指定できます。sexpダイアリーエントリーには、任意の与えられた日付に"
+"たいして、エントリーを適用するかどうかを計算する式が含まれます。値が非"
+"@code{nil}の場合はその日付にエントリーが適用され、そうでない場合は適用されま"
+"せん。式では判定する日付を変数@code{date}で使用することができます。この変数の"
+"値は、グレゴリオ暦を参照するリスト(@var{month} @var{day} @var{year})です。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:905
+#: original_texis/cal-xtra.texi:905
 msgid ""
 "The sexp diary entry applies to a date when the expression's value is non-"
 "@code{nil}, but some values have more specific meanings.  If the value is a "
@@ -2050,18 +2382,29 @@ msgid ""
 "If @var{mark} is a face name, the date is displayed in that face.  If "
 "@var{mark} is @code{nil}, that specifies no particular highlighting for the "
 "date."
-msgstr "sexpダイアリーエントリーは、式の値が非@code{nil}のときはその日付に適用されますが、いくつかの値は特別な意味をもちます。値が文字列の場合、その文字列はその日に発生するイベントを説明する文字列です。値は@code{(@var{mark} . @var{string})}という形式をもつこともできます。@var{mark}は、カレンダーでその日をどのようにマークするかを指定し、@var{string}はそのイベントの説明です。@var{mark}が1文字の文字列の場合、その文字はカレンダーの日付の隣に表示されます。@var{mark}がフェイス名の場合、その日はそのフェイスで表示されます。@var{mark}が@code{nil}の場合、その日を特にハイライト表示しません。"
+msgstr ""
+"sexpダイアリーエントリーは、式の値が非@code{nil}のときはその日付に適用されま"
+"すが、いくつかの値は特別な意味をもちます。値が文字列の場合、その文字列はその"
+"日に発生するイベントを説明する文字列です。値は@code{(@var{mark} . "
+"@var{string})}という形式をもつこともできます。@var{mark}は、カレンダーでその"
+"日をどのようにマークするかを指定し、@var{string}はそのイベントの説明です。"
+"@var{mark}が1文字の文字列の場合、その文字はカレンダーの日付の隣に表示されま"
+"す。@var{mark}がフェイス名の場合、その日はそのフェイスで表示されます。"
+"@var{mark}が@code{nil}の場合、その日を特にハイライト表示しません。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:909
+#: original_texis/cal-xtra.texi:909
 msgid ""
 "Suppose you get paid on the 21st of the month if it is a weekday, and on the "
 "Friday before if the 21st is on a weekend.  Here is how to write a sexp "
 "diary entry that matches those dates:"
-msgstr "21日がウィークデイのときは21日、21日が週末のときは前の日の金曜日に給料が支払われるとしましょう。以下はそのような日付にマッチするsexpダイアリーエントリーです:"
+msgstr ""
+"21日がウィークデイのときは21日、21日が週末のときは前の日の金曜日に給料が支払"
+"われるとしましょう。以下はそのような日付にマッチするsexpダイアリーエントリー"
+"です:"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:916
+#: original_texis/cal-xtra.texi:916
 #, no-wrap
 msgid ""
 "&%%(let ((dayname (calendar-day-of-week date))\n"
@@ -2077,447 +2420,472 @@ msgstr ""
 "         ) Pay check deposited\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:920
+#: original_texis/cal-xtra.texi:920
 msgid ""
 "The following sexp diary entries take advantage of the ability (in the fancy "
 "diary display) to concoct diary entries whose text varies based on the date:"
-msgstr "以下のsexpダイアリーエントリーは、(fancy diary表示において)日付により異なるテキストをもつダイアリーエントリーを作成することができます:"
+msgstr ""
+"以下のsexpダイアリーエントリーは、(fancy diary表示において)日付により異なるテ"
+"キストをもつダイアリーエントリーを作成することができます:"
 
 #. type: findex
-#: cal-xtra.texi.orig:921
+#: original_texis/cal-xtra.texi:921
 #, no-wrap
 msgid "diary-sunrise-sunset"
 msgstr "diary-sunrise-sunset"
 
 #. type: findex
-#: cal-xtra.texi.orig:922
+#: original_texis/cal-xtra.texi:922
 #, no-wrap
 msgid "diary-lunar-phases"
 msgstr "diary-lunar-phases"
 
 #. type: findex
-#: cal-xtra.texi.orig:923
+#: original_texis/cal-xtra.texi:923
 #, no-wrap
 msgid "diary-day-of-year"
 msgstr "diary-day-of-year"
 
 #. type: findex
-#: cal-xtra.texi.orig:924
+#: original_texis/cal-xtra.texi:924
 #, no-wrap
 msgid "diary-iso-date"
 msgstr "diary-iso-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:925
+#: original_texis/cal-xtra.texi:925
 #, no-wrap
 msgid "diary-julian-date"
 msgstr "diary-julian-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:926
+#: original_texis/cal-xtra.texi:926
 #, no-wrap
 msgid "diary-astro-day-number"
 msgstr "diary-astro-day-number"
 
 #. type: findex
-#: cal-xtra.texi.orig:927
+#: original_texis/cal-xtra.texi:927
 #, no-wrap
 msgid "diary-bahai-date"
 msgstr "diary-bahai-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:928
+#: original_texis/cal-xtra.texi:928
 #, no-wrap
 msgid "diary-chinese-date"
 msgstr "diary-chinese-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:929
+#: original_texis/cal-xtra.texi:929
 #, no-wrap
 msgid "diary-coptic-date"
 msgstr "diary-coptic-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:930
+#: original_texis/cal-xtra.texi:930
 #, no-wrap
 msgid "diary-ethiopic-date"
 msgstr "diary-ethiopic-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:931
+#: original_texis/cal-xtra.texi:931
 #, no-wrap
 msgid "diary-hebrew-date"
 msgstr "diary-hebrew-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:932
+#: original_texis/cal-xtra.texi:932
 #, no-wrap
 msgid "diary-islamic-date"
 msgstr "diary-islamic-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:933
+#: original_texis/cal-xtra.texi:933
 #, no-wrap
 msgid "diary-french-date"
 msgstr "diary-french-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:934
+#: original_texis/cal-xtra.texi:934
 #, no-wrap
 msgid "diary-mayan-date"
 msgstr "diary-mayan-date"
 
 #. type: findex
-#: cal-xtra.texi.orig:935
+#: original_texis/cal-xtra.texi:935
 #, no-wrap
 msgid "diary-persian-date"
 msgstr "diary-persian-date"
 
 #. type: item
-#: cal-xtra.texi.orig:937
+#: original_texis/cal-xtra.texi:937
 #, no-wrap
 msgid "%%(diary-sunrise-sunset)"
 msgstr "%%(diary-sunrise-sunset)"
 
 #. type: table
-#: cal-xtra.texi.orig:939
+#: original_texis/cal-xtra.texi:939
 msgid "Make a diary entry for today's local times of sunrise and sunset."
-msgstr "地方時で、今日の日の出と日の入りの時刻のダイアリーエントリーを作成します。"
+msgstr ""
+"地方時で、今日の日の出と日の入りの時刻のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:939
+#: original_texis/cal-xtra.texi:939
 #, no-wrap
 msgid "%%(diary-lunar-phases)"
 msgstr "%%(diary-lunar-phases)"
 
 #. type: table
-#: cal-xtra.texi.orig:941
+#: original_texis/cal-xtra.texi:941
 msgid "Make a diary entry for the phases (quarters) of the moon."
 msgstr "月の位相にたいするダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:941
+#: original_texis/cal-xtra.texi:941
 #, no-wrap
 msgid "%%(diary-day-of-year)"
 msgstr "%%(diary-day-of-year)"
 
 #. type: table
-#: cal-xtra.texi.orig:944
+#: original_texis/cal-xtra.texi:944
 msgid ""
 "Make a diary entry with today's day number in the current year and the "
 "number of days remaining in the current year."
-msgstr "その年での通算日数と、その年の残り日数でダイアリーエントリーを作成します。"
+msgstr ""
+"その年での通算日数と、その年の残り日数でダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:944
+#: original_texis/cal-xtra.texi:944
 #, no-wrap
 msgid "%%(diary-iso-date)"
 msgstr "%%(diary-iso-date)"
 
 #. type: table
-#: cal-xtra.texi.orig:946
+#: original_texis/cal-xtra.texi:946
 msgid "Make a diary entry with today's equivalent ISO commercial date."
 msgstr "今日と等価な、ISO商用日付のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:946
+#: original_texis/cal-xtra.texi:946
 #, no-wrap
 msgid "%%(diary-julian-date)"
 msgstr "%%(diary-julian-date)"
 
 #. type: table
-#: cal-xtra.texi.orig:948
+#: original_texis/cal-xtra.texi:948
 msgid "Make a diary entry with today's equivalent Julian calendar date."
 msgstr "今日と等価な、ユリウス暦日のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:948
+#: original_texis/cal-xtra.texi:948
 #, no-wrap
 msgid "%%(diary-astro-day-number)"
 msgstr "%%(diary-astro-day-number)"
 
 #. type: table
-#: cal-xtra.texi.orig:950
+#: original_texis/cal-xtra.texi:950
 msgid ""
 "Make a diary entry with today's equivalent astronomical (Julian) day number."
 msgstr "今日と等価な、天文日(ユリウス日)のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:950
+#: original_texis/cal-xtra.texi:950
 #, no-wrap
 msgid "%%(diary-bahai-date)"
 msgstr "%%(diary-bahai-date)"
 
 #. type: table
-#: cal-xtra.texi.orig:952
+#: original_texis/cal-xtra.texi:952
 msgid "Make a diary entry with today's equivalent Bahá'í calendar date."
 msgstr "今日と等価な、Bahá'í暦日のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:952
+#: original_texis/cal-xtra.texi:952
 #, no-wrap
 msgid "%%(diary-chinese-date)"
 msgstr "%%(diary-chinese-date)"
 
 #. type: table
-#: cal-xtra.texi.orig:954
+#: original_texis/cal-xtra.texi:954
 msgid "Make a diary entry with today's equivalent Chinese calendar date."
 msgstr "今日と等価な、旧暦日のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:954
+#: original_texis/cal-xtra.texi:954
 #, no-wrap
 msgid "%%(diary-coptic-date)"
 msgstr "%%(diary-coptic-date)"
 
 #. type: table
-#: cal-xtra.texi.orig:956
+#: original_texis/cal-xtra.texi:956
 msgid "Make a diary entry with today's equivalent Coptic calendar date."
 msgstr "今日と等価な、Copticカレンダー日のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:956
+#: original_texis/cal-xtra.texi:956
 #, no-wrap
 msgid "%%(diary-ethiopic-date)"
 msgstr "%%(diary-ethiopic-date)"
 
 #. type: table
-#: cal-xtra.texi.orig:958
+#: original_texis/cal-xtra.texi:958
 msgid "Make a diary entry with today's equivalent Ethiopic calendar date."
 msgstr "今日と等価な、エチオピア暦日のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:958
+#: original_texis/cal-xtra.texi:958
 #, no-wrap
 msgid "%%(diary-french-date)"
 msgstr "%%(diary-french-date)"
 
 #. type: table
-#: cal-xtra.texi.orig:961
+#: original_texis/cal-xtra.texi:961
 msgid ""
 "Make a diary entry with today's equivalent date on the French Revolutionary "
 "calendar."
 msgstr "今日と等価な、フランス革命暦の日付のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:961
+#: original_texis/cal-xtra.texi:961
 #, no-wrap
 msgid "%%(diary-hebrew-date)"
 msgstr "%%(diary-hebrew-date)"
 
 #. type: table
-#: cal-xtra.texi.orig:963
+#: original_texis/cal-xtra.texi:963
 msgid "Make a diary entry with today's equivalent Hebrew calendar date."
 msgstr "今日と等価な、ヘブライ暦の日付のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:963
+#: original_texis/cal-xtra.texi:963
 #, no-wrap
 msgid "%%(diary-islamic-date)"
 msgstr "%%(diary-islamic-date)"
 
 #. type: table
-#: cal-xtra.texi.orig:965
+#: original_texis/cal-xtra.texi:965
 msgid "Make a diary entry with today's equivalent Islamic calendar date."
 msgstr "今日と等価な、イスラム暦の非助のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:965
+#: original_texis/cal-xtra.texi:965
 #, no-wrap
 msgid "%%(diary-mayan-date)"
 msgstr "%%(diary-mayan-date)"
 
 #. type: table
-#: cal-xtra.texi.orig:967
+#: original_texis/cal-xtra.texi:967
 msgid "Make a diary entry with today's equivalent Mayan calendar date."
 msgstr "今日と等価な、マヤ暦の日付のダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:967
+#: original_texis/cal-xtra.texi:967
 #, no-wrap
 msgid "%%(diary-persian-date)"
 msgstr "%%(diary-persian-date)"
 
 #. type: table
-#: cal-xtra.texi.orig:969
+#: original_texis/cal-xtra.texi:969
 msgid "Make a diary entry with today's equivalent Persian calendar date."
-msgstr "今日と等価な、Persian calendarの日付のダイアリーエントリーを作成します。"
+msgstr ""
+"今日と等価な、Persian calendarの日付のダイアリーエントリーを作成します。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:973
+#: original_texis/cal-xtra.texi:973
 msgid "For example, including the diary entry"
 msgstr "例えば、以下のようなダイアリーエントリーを含めると"
 
 #. type: smallexample
-#: cal-xtra.texi.orig:976
+#: original_texis/cal-xtra.texi:976
 #, no-wrap
 msgid "&%%(diary-hebrew-date)\n"
 msgstr "&%%(diary-hebrew-date)\n"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:983
+#: original_texis/cal-xtra.texi:983
 msgid ""
 "causes every day's diary display to contain the equivalent date on the "
 "Hebrew calendar, if you are using the fancy diary display.  (With simple "
 "diary display, the literal line @samp{&%%(diary-hebrew-date)} appears in the "
 "diary for any date.)"
-msgstr "fancy diary表示を使用している場合は、毎日のダイアリー表示に、その日に対応するヘブライ暦の日付が含まれるようになります(simple diary表示を使用している場合は、任意の日付のダイアリーにリテラル行@samp{&%%(diary-hebrew-date)}が表示されます)。"
+msgstr ""
+"fancy diary表示を使用している場合は、毎日のダイアリー表示に、その日に対応する"
+"ヘブライ暦の日付が含まれるようになります(simple diary表示を使用している場合"
+"は、任意の日付のダイアリーにリテラル行@samp{&%%(diary-hebrew-date)}が表示され"
+"ます)。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:986
+#: original_texis/cal-xtra.texi:986
 msgid ""
 "This function has been used to construct certain standard Hebrew sexp diary "
 "entries:"
-msgstr "以下の関数は、特定の標準的なヘブライsexpダイアリーエントリーを構築するために使用されます:"
+msgstr ""
+"以下の関数は、特定の標準的なヘブライsexpダイアリーエントリーを構築するために"
+"使用されます:"
 
 #. type: cindex
-#: cal-xtra.texi.orig:987
+#: original_texis/cal-xtra.texi:987
 #, no-wrap
 msgid "rosh hodesh"
 msgstr "rosh hodesh"
 
 #. type: findex
-#: cal-xtra.texi.orig:988
+#: original_texis/cal-xtra.texi:988
 #, no-wrap
 msgid "diary-hebrew-rosh-hodesh"
 msgstr "diary-hebrew-rosh-hodesh"
 
 #. type: cindex
-#: cal-xtra.texi.orig:989
+#: original_texis/cal-xtra.texi:989
 #, no-wrap
 msgid "parasha, weekly"
 msgstr "parasha, weekly"
 
 #. type: findex
-#: cal-xtra.texi.orig:990
+#: original_texis/cal-xtra.texi:990
 #, no-wrap
 msgid "diary-hebrew-parasha"
 msgstr "diary-hebrew-parasha"
 
 #. type: cindex
-#: cal-xtra.texi.orig:991
+#: original_texis/cal-xtra.texi:991
 #, no-wrap
 msgid "candle lighting times"
 msgstr "candle lighting times"
 
 #. type: findex
-#: cal-xtra.texi.orig:992
+#: original_texis/cal-xtra.texi:992
 #, no-wrap
 msgid "diary-hebrew-sabbath-candles"
 msgstr "diary-hebrew-sabbath-candles"
 
 #. type: cindex
-#: cal-xtra.texi.orig:993
+#: original_texis/cal-xtra.texi:993
 #, no-wrap
 msgid "omer count"
 msgstr "omer count"
 
 #. type: findex
-#: cal-xtra.texi.orig:994
+#: original_texis/cal-xtra.texi:994
 #, no-wrap
 msgid "diary-hebrew-omer"
 msgstr "diary-hebrew-omer"
 
 #. type: cindex
-#: cal-xtra.texi.orig:995
+#: original_texis/cal-xtra.texi:995
 #, no-wrap
 msgid "yahrzeits"
 msgstr "yahrzeits"
 
 #. type: findex
-#: cal-xtra.texi.orig:996
+#: original_texis/cal-xtra.texi:996
 #, no-wrap
 msgid "diary-hebrew-yahrzeit"
 msgstr "diary-hebrew-yahrzeit"
 
 #. type: findex
-#: cal-xtra.texi.orig:997
+#: original_texis/cal-xtra.texi:997
 #, no-wrap
 msgid "diary-hebrew-birthday"
 msgstr "diary-hebrew-birthday"
 
 #. type: item
-#: cal-xtra.texi.orig:999
+#: original_texis/cal-xtra.texi:999
 #, no-wrap
 msgid "%%(diary-hebrew-rosh-hodesh)"
 msgstr "%%(diary-hebrew-rosh-hodesh)"
 
 #. type: table
-#: cal-xtra.texi.orig:1002
+#: original_texis/cal-xtra.texi:1002
 msgid ""
 "Make a diary entry that tells the occurrence and ritual announcement of each "
 "new Hebrew month."
-msgstr "新しいヘブライ月にたいして、礼拝の発生と告知を告げるダイアリーエントリーを作成します。"
+msgstr ""
+"新しいヘブライ月にたいして、礼拝の発生と告知を告げるダイアリーエントリーを作"
+"成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:1002
+#: original_texis/cal-xtra.texi:1002
 #, no-wrap
 msgid "%%(diary-hebrew-parasha)"
 msgstr "%%(diary-hebrew-parasha)"
 
 #. type: table
-#: cal-xtra.texi.orig:1004
+#: original_texis/cal-xtra.texi:1004
 msgid ""
 "Make a Saturday diary entry that tells the weekly synagogue scripture "
 "reading."
-msgstr "毎週のシナゴーグ経典(synagogue scripture)の読書会を告げる、土曜日のダイアリーエントリーを作成します。"
+msgstr ""
+"毎週のシナゴーグ経典(synagogue scripture)の読書会を告げる、土曜日のダイアリー"
+"エントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:1004
+#: original_texis/cal-xtra.texi:1004
 #, no-wrap
 msgid "%%(diary-hebrew-sabbath-candles)"
 msgstr "%%(diary-hebrew-sabbath-candles)"
 
 #. type: table
-#: cal-xtra.texi.orig:1007
+#: original_texis/cal-xtra.texi:1007
 msgid ""
 "Make a Friday diary entry that tells the @emph{local time} of Sabbath candle "
 "lighting."
-msgstr "安息日のキャンドルライトを告げる、@emph{地方時}のダイアリーエントリーを作成します。"
+msgstr ""
+"安息日のキャンドルライトを告げる、@emph{地方時}のダイアリーエントリーを作成し"
+"ます。"
 
 #. type: item
-#: cal-xtra.texi.orig:1007
+#: original_texis/cal-xtra.texi:1007
 #, no-wrap
 msgid "%%(diary-hebrew-omer)"
 msgstr "%%(diary-hebrew-omer)"
 
 #. type: table
-#: cal-xtra.texi.orig:1009
+#: original_texis/cal-xtra.texi:1009
 msgid "Make a diary entry that gives the omer count, when appropriate."
 msgstr "適切な場合は、omerを数えるダイアリーエントリーを作成します。"
 
 #. type: item
-#: cal-xtra.texi.orig:1009
+#: original_texis/cal-xtra.texi:1009
 #, no-wrap
 msgid "%%(diary-hebrew-yahrzeit @var{month} @var{day} @var{year}) @var{name}"
 msgstr "%%(diary-hebrew-yahrzeit @var{month} @var{day} @var{year}) @var{name}"
 
 #. type: table
-#: cal-xtra.texi.orig:1015
+#: original_texis/cal-xtra.texi:1015
 msgid ""
 "Make a diary entry marking the anniversary of a date of death.  The date is "
 "the @emph{Gregorian} (civil) date of death.  The diary entry appears on the "
 "proper Hebrew calendar anniversary and on the day before.  (The order of the "
 "parameters changes according to the calendar date style; for example in the "
 "European style to @var{day}, @var{month}, @var{year}.)"
-msgstr "命日をマークするダイアリーエントリーを作成します。命日の日付はグレゴリオ暦の日付です。ダイアリーエントリーは適切なヘブライ暦の命日、およびその前日に表示されます(カレンダーの日付様式に対応してパラメーターの順序は変化します。たとえばヨーロッパ標識では@var{day}、@var{month}、@var{year}の順です)。"
+msgstr ""
+"命日をマークするダイアリーエントリーを作成します。命日の日付はグレゴリオ暦の"
+"日付です。ダイアリーエントリーは適切なヘブライ暦の命日、およびその前日に表示"
+"されます(カレンダーの日付様式に対応してパラメーターの順序は変化します。たとえ"
+"ばヨーロッパ標識では@var{day}、@var{month}、@var{year}の順です)。"
 
 #. type: item
-#: cal-xtra.texi.orig:1015
+#: original_texis/cal-xtra.texi:1015
 #, no-wrap
 msgid "%%(diary-hebrew-birthday @var{month} @var{day} @var{year})"
 msgstr "%%(diary-hebrew-birthday @var{month} @var{day} @var{year})"
 
 #. type: table
-#: cal-xtra.texi.orig:1017
+#: original_texis/cal-xtra.texi:1017
 msgid "Make a diary entry for a birthday on the Hebrew calendar."
 msgstr "ヘブライ暦での誕生日のダイアリーエントリーを作成します。"
 
 #. type: Plain text
-#: cal-xtra.texi.orig:1022
+#: original_texis/cal-xtra.texi:1022
 msgid ""
 "All the functions documented above take an optional argument @var{mark} "
 "which specifies how to mark the date in the calendar display.  If one of "
 "these functions decides that it applies to a certain date, it returns a "
 "value that contains @var{mark}, as described above."
-msgstr "上記でドキュメントされたすべての関数は、オプションの引数@var{mark}を受け取ります。これはカレンダー表示で、その日をどのようにマークするかを指定します。上記の関数の1つが特定の日付に適用されると決定された場合、上述したように@var{mark}を含んだ値を戻します。"
+msgstr ""
+"上記でドキュメントされたすべての関数は、オプションの引数@var{mark}を受け取り"
+"ます。これはカレンダー表示で、その日をどのようにマークするかを指定します。上"
+"記の関数の1つが特定の日付に適用されると決定された場合、上述したように"
+"@var{mark}を含んだ値を戻します。"

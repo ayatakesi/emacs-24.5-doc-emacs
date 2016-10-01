@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-10-03 22:22+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,37 +16,45 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: kindex
-#: m-x.texi.orig:5 m-x.texi.orig:19
+#: original_texis/m-x.texi:5 original_texis/m-x.texi:19
 #, no-wrap
 msgid "M-x"
 msgstr "M-x"
 
 #. type: chapter
-#: m-x.texi.orig:6
+#: original_texis/m-x.texi:6
 #, no-wrap
 msgid "Running Commands by Name"
 msgstr "Running Commands by Name"
 
 #. type: Plain text
-#: m-x.texi.orig:13
+#: original_texis/m-x.texi:13
 msgid ""
 "Every Emacs command has a name that you can use to run it.  For convenience, "
 "many commands also have key bindings.  You can run those commands by typing "
 "the keys, or run them by name.  Most Emacs commands have no key bindings, so "
 "the only way to run them is by name.  (@xref{Key Bindings}, for how to set "
 "up key bindings.)"
-msgstr "すべてのEmacsコマンドは、それを使えば実行できるような名前を持っています。使いやすいようにキーバインディングされているコマンドも、たくさんあります。これらのコマンドはキーまたは名前で実行できます。キーがバインドされていないコマンドもたくさんあり、そのようなコマンドは名前でしか実行できません(キーバインドをセットアップする方法については、@ref{Key Bindings}を参照してください)。"
+msgstr ""
+"すべてのEmacsコマンドは、それを使えば実行できるような名前を持っています。使い"
+"やすいようにキーバインディングされているコマンドも、たくさんあります。これら"
+"のコマンドはキーまたは名前で実行できます。キーがバインドされていないコマンド"
+"もたくさんあり、そのようなコマンドは名前でしか実行できません(キーバインドを"
+"セットアップする方法については、@ref{Key Bindings}を参照してください)。"
 
 #. type: Plain text
-#: m-x.texi.orig:18
+#: original_texis/m-x.texi:18
 msgid ""
 "By convention, a command name consists of one or more words, separated by "
 "hyphens; for example, @code{auto-fill-mode} or @code{manual-entry}.  Command "
 "names mostly use complete English words to make them easier to remember."
-msgstr "慣例によりコマンド名は@code{auto-fill-mode}や@code{manual-entry}のように、ハイフンで区切られた、1つ以上の単語となっています。コマンド名は覚えやすいように、略されていない英単語が主に使われます。"
+msgstr ""
+"慣例によりコマンド名は@code{auto-fill-mode}や@code{manual-entry}のように、ハ"
+"イフンで区切られた、1つ以上の単語となっています。コマンド名は覚えやすいよう"
+"に、略されていない英単語が主に使われます。"
 
 #. type: Plain text
-#: m-x.texi.orig:26
+#: original_texis/m-x.texi:26
 msgid ""
 "To run a command by name, start with @kbd{M-x}, type the command name, then "
 "terminate it with @key{RET}.  @kbd{M-x} uses the minibuffer to read the "
@@ -54,91 +62,118 @@ msgid ""
 "minibuffer as a @dfn{prompt} to remind you to enter a command name to be "
 "run.  @key{RET} exits the minibuffer and runs the command.  "
 "@xref{Minibuffer}, for more information on the minibuffer."
-msgstr "コマンドを名前で実行するには、最初に@kbd{M-x}をタイプしてから、コマンド名をタイプして@key{RET}で実行します。@kbd{M-x}はミニバッファーを使ってコマンド名を読みとります。ミニバッファーの先頭には、実行のために名前の入力が必要なことを気付かせるため、@samp{M-x}という文字が@dfn{プロンプト}として表示されます。@key{RET}でミニバッファーを抜けだしコマンドを実行します。ミニバッファーについての詳細は、@ref{Minibuffer}を参照してください。"
+msgstr ""
+"コマンドを名前で実行するには、最初に@kbd{M-x}をタイプしてから、コマンド名をタ"
+"イプして@key{RET}で実行します。@kbd{M-x}はミニバッファーを使ってコマンド名を"
+"読みとります。ミニバッファーの先頭には、実行のために名前の入力が必要なことを"
+"気付かせるため、@samp{M-x}という文字が@dfn{プロンプト}として表示されます。"
+"@key{RET}でミニバッファーを抜けだしコマンドを実行します。ミニバッファーについ"
+"ての詳細は、@ref{Minibuffer}を参照してください。"
 
 #. type: Plain text
-#: m-x.texi.orig:29
+#: original_texis/m-x.texi:29
 msgid ""
 "You can use completion to enter the command name.  For example, to invoke "
 "the command @code{forward-char}, you can type"
-msgstr "コマンド名の入力には補完が使用できます。たとえば@code{forward-char}を呼び出すには以下のように入力できます"
+msgstr ""
+"コマンド名の入力には補完が使用できます。たとえば@code{forward-char}を呼び出す"
+"には以下のように入力できます"
 
 #. type: example
-#: m-x.texi.orig:32
+#: original_texis/m-x.texi:32
 #, no-wrap
 msgid "M-x forward-char @key{RET}\n"
 msgstr "M-x forward-char @key{RET}\n"
 
 #. type: Plain text
-#: m-x.texi.orig:36
+#: original_texis/m-x.texi:36
 msgid "or"
 msgstr "または"
 
 #. type: example
-#: m-x.texi.orig:39
+#: original_texis/m-x.texi:39
 #, no-wrap
 msgid "M-x forw @key{TAB} c @key{RET}\n"
 msgstr "M-x forw @key{TAB} c @key{RET}\n"
 
 #. type: Plain text
-#: m-x.texi.orig:45
+#: original_texis/m-x.texi:45
 msgid ""
 "Note that @code{forward-char} is the same command that you invoke with the "
 "key @kbd{C-f}.  The existence of a key binding does not stop you from "
 "running the command by name."
-msgstr "@code{forward-char}は、キー@kbd{C-f}で呼び出されるのと同じコマンドであることに注意してください。キーバインドの存在は、名前によるコマンドの実行を妨げません。"
+msgstr ""
+"@code{forward-char}は、キー@kbd{C-f}で呼び出されるのと同じコマンドであること"
+"に注意してください。キーバインドの存在は、名前によるコマンドの実行を妨げませ"
+"ん。"
 
 #. type: Plain text
-#: m-x.texi.orig:48
+#: original_texis/m-x.texi:48
 msgid ""
 "To cancel the @kbd{M-x} and not run a command, type @kbd{C-g} instead of "
 "entering the command name.  This takes you back to command level."
-msgstr "@kbd{M-x}とコマンドの実行をキャンセルするには、コマンド名の入力のかわりに@kbd{C-g}を入力します。これによりコマンドを呼び出したレベルまで戻ります。"
+msgstr ""
+"@kbd{M-x}とコマンドの実行をキャンセルするには、コマンド名の入力のかわりに"
+"@kbd{C-g}を入力します。これによりコマンドを呼び出したレベルまで戻ります。"
 
 #. type: Plain text
-#: m-x.texi.orig:53
+#: original_texis/m-x.texi:53
 msgid ""
 "To pass a numeric argument to the command you are invoking with @kbd{M-x}, "
 "specify the numeric argument before @kbd{M-x}.  The argument value appears "
 "in the prompt while the command name is being read, and finally @kbd{M-x} "
 "passes the argument to that command."
-msgstr "@kbd{M-x}で呼び出すコマンドに数引数を渡すには、@kbd{M-x}の前に数引数を指定します。引数の値はコマンド名が読みとられるときにプロンプトとして表示され、最終的に@kbd{M-x}は引数をコマンドに渡します。"
+msgstr ""
+"@kbd{M-x}で呼び出すコマンドに数引数を渡すには、@kbd{M-x}の前に数引数を指定し"
+"ます。引数の値はコマンド名が読みとられるときにプロンプトとして表示され、最終"
+"的に@kbd{M-x}は引数をコマンドに渡します。"
 
 #. type: vindex
-#: m-x.texi.orig:54
+#: original_texis/m-x.texi:54
 #, no-wrap
 msgid "suggest-key-bindings"
 msgstr "suggest-key-bindings"
 
 #. type: Plain text
-#: m-x.texi.orig:61
+#: original_texis/m-x.texi:61
 msgid ""
 "When the command you run with @kbd{M-x} has a key binding, Emacs mentions "
 "this in the echo area after running the command.  For example, if you type "
 "@kbd{M-x forward-word}, the message says that you can run the same command "
 "by typing @kbd{M-f}.  You can turn off these messages by setting the "
 "variable @code{suggest-key-bindings} to @code{nil}."
-msgstr "@kbd{M-x}で実行するコマンドがキーバインディングを持つ場合、Emacsはコマンド実行後にその旨をエコーエリアに表示します。たとえば@kbd{M-x forward-word}と入力すると、同じコマンドを@kbd{M-f}で実行できるというメッセージが表示されます。このメッセージは変数@code{suggest-key-bindings}に@code{nil}にセットすればオフにできます。"
+msgstr ""
+"@kbd{M-x}で実行するコマンドがキーバインディングを持つ場合、Emacsはコマンド実"
+"行後にその旨をエコーエリアに表示します。たとえば@kbd{M-x forward-word}と入力"
+"すると、同じコマンドを@kbd{M-f}で実行できるというメッセージが表示されます。こ"
+"のメッセージは変数@code{suggest-key-bindings}に@code{nil}にセットすればオフに"
+"できます。"
 
 #. type: Plain text
-#: m-x.texi.orig:67
+#: original_texis/m-x.texi:67
 msgid ""
 "In this manual, when we speak of running a command by name, we often omit "
 "the @key{RET} that terminates the name.  Thus we might say @kbd{M-x auto-"
 "fill-mode} rather than @kbd{M-x auto-fill-mode @key{RET}}.  We mention the "
 "@key{RET} only for emphasis, such as when the command is followed by "
 "arguments."
-msgstr "このマニュアルではコマンドを名前で実行するとき、名前を終了させるための@key{RET}を省くことがあります。つまり@kbd{M-x auto-fill-mode @key{RET}}ではなく@kbd{M-x auto-fill-mode}と表記します。@key{RET}はコマンドに引数がある場合に強調させる意味で使用します。"
+msgstr ""
+"このマニュアルではコマンドを名前で実行するとき、名前を終了させるための"
+"@key{RET}を省くことがあります。つまり@kbd{M-x auto-fill-mode @key{RET}}ではな"
+"く@kbd{M-x auto-fill-mode}と表記します。@key{RET}はコマンドに引数がある場合に"
+"強調させる意味で使用します。"
 
 #. type: findex
-#: m-x.texi.orig:68
+#: original_texis/m-x.texi:68
 #, no-wrap
 msgid "execute-extended-command"
 msgstr "execute-extended-command"
 
 #. type: Plain text
-#: m-x.texi.orig:71
+#: original_texis/m-x.texi:71
 msgid ""
 "@kbd{M-x} works by running the command @code{execute-extended-command}, "
 "which is responsible for reading the name of another command and invoking it."
-msgstr "@kbd{M-x}は@code{execute-extended-command}を実行します。これは他のコマンドの名前を読み取って実行するコマンドです。"
+msgstr ""
+"@kbd{M-x}は@code{execute-extended-command}を実行します。これは他のコマンドの"
+"名前を読み取って実行するコマンドです。"

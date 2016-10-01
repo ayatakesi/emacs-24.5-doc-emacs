@@ -5,8 +5,8 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-03-16 21:04+0900\n"
+"Project-Id-Version: Emacs-24.5\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
 "PO-Revision-Date: 2016-06-20 23:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
@@ -16,268 +16,295 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
-#: msdog-xtra.texi.orig:7
+#: original_texis/msdog-xtra.texi:7
 #, no-wrap
 msgid "MS-DOS"
 msgstr "MS-DOS"
 
 #. type: section
-#: msdog-xtra.texi.orig:8
+#: original_texis/msdog-xtra.texi:8
 #, no-wrap
 msgid "Emacs and MS-DOS"
 msgstr "Emacs and MS-DOS"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:9
+#: original_texis/msdog-xtra.texi:9
 #, no-wrap
 msgid "MS-DOG"
 msgstr "MS-DOG"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:10
+#: original_texis/msdog-xtra.texi:10
 #, no-wrap
 msgid "MS-DOS peculiarities"
 msgstr "MS-DOS peculiarities"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:14
+#: original_texis/msdog-xtra.texi:14
 msgid ""
 "This section briefly describes the peculiarities of using Emacs on the MS-"
 "DOS ``operating system'' (also known as ``MS-DOG'')."
-msgstr "このセクションでは、EmacsをMS-DOS``オペレーティングシステム''(``MS-DOG''としても知られています)で使用する際の特質を、簡単に説明します。"
+msgstr ""
+"このセクションでは、EmacsをMS-DOS``オペレーティングシステム''(``MS-DOG''とし"
+"ても知られています)で使用する際の特質を、簡単に説明します。"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:18
+#: original_texis/msdog-xtra.texi:18
 msgid ""
 "Information about Emacs and Microsoft's current operating system Windows "
 "(also known as ``Losedows'') is in the main Emacs manual (@pxref{Microsoft "
 "Windows,,, emacs, the Emacs Manual})."
-msgstr "EmacsとMicrosoftの現在のオペレーティングシステムのWindows(``Losedows''としても知られています)についての情報は、Emacsのメインマニュアル(@ref{Microsoft Windows,,, emacs, the Emacs Manual}を参照してください)の中にあります。"
+msgstr ""
+"EmacsとMicrosoftの現在のオペレーティングシステムのWindows(``Losedows''として"
+"も知られています)についての情報は、Emacsのメインマニュアル(@ref{Microsoft "
+"Windows,,, emacs, the Emacs Manual}を参照してください)の中にあります。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:23
+#: original_texis/msdog-xtra.texi:23
 msgid ""
 "Information about peculiarities common to MS-DOS and Microsoft's current "
 "operating systems Windows (also known as ``Losedows'') is in @ref{Microsoft "
 "Windows}."
-msgstr "MS-DOSとMicrosoftの現在のオペレーティングシステムのWindows(``Losedows''としても知られています)についての情報は、@ref{Microsoft Windows}の中にあります。"
+msgstr ""
+"MS-DOSとMicrosoftの現在のオペレーティングシステムのWindows(``Losedows''として"
+"も知られています)についての情報は、@ref{Microsoft Windows}の中にあります。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:29
+#: original_texis/msdog-xtra.texi:29
 msgid ""
 "If you build Emacs for MS-DOS, the binary will also run on Windows 3.X, "
 "Windows NT, Windows 9X/ME, Windows 2000/XP, or OS/2 as a DOS application; "
 "all of this chapter applies for all of those systems, if you use an Emacs "
 "that was built for MS-DOS."
-msgstr "EmacsをMS-DOSにたいしてビルドした場合、そのバイナリーはWindows 3.X、Windows NT、Windows 9X/ME、Windows 2000/XP、またはOS/2でも、DOSアプリケーションとして実行されます。MS-DOSにたいしてビルドされたEmacsを使用する場合、このチャプターの内容は、それらすべてのシステムに適用されます。"
+msgstr ""
+"EmacsをMS-DOSにたいしてビルドした場合、そのバイナリーはWindows 3.X、Windows "
+"NT、Windows 9X/ME、Windows 2000/XP、またはOS/2でも、DOSアプリケーションとして"
+"実行されます。MS-DOSにたいしてビルドされたEmacsを使用する場合、このチャプター"
+"の内容は、それらすべてのシステムに適用されます。"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:32
+#: original_texis/msdog-xtra.texi:32
 msgid "@xref{Text and Binary,,,emacs, the Emacs Manual}, for information"
-msgstr "MS-DOS(およびWindows)でのテキストファイルにたいするEmacsの特別な処理については、@ref{Text and Binary,,,emacs, the Emacs Manual}を参照してください。"
+msgstr ""
+"MS-DOS(およびWindows)でのテキストファイルにたいするEmacsの特別な処理について"
+"は、@ref{Text and Binary,,,emacs, the Emacs Manual}を参照してください。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:35
+#: original_texis/msdog-xtra.texi:35
 msgid "@xref{Text and Binary}, for information"
-msgstr "MS-DOS(およびWindows)でのテキストファイルにたいするEmacsの特別な処理については、@ref{Text and Binary}を参照してください"
+msgstr ""
+"MS-DOS(およびWindows)でのテキストファイルにたいするEmacsの特別な処理について"
+"は、@ref{Text and Binary}を参照してください"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:37
+#: original_texis/msdog-xtra.texi:37
 msgid ""
 "about Emacs's special handling of text files under MS-DOS (and Windows)."
 msgstr "。"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Keyboard: MS-DOS Keyboard"
 msgstr "Keyboard: MS-DOS Keyboard"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Keyboard conventions on MS-DOS."
 msgstr "MS-DOSでのキーボードの慣習。"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Mouse: MS-DOS Mouse"
 msgstr "Mouse: MS-DOS Mouse"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Mouse conventions on MS-DOS."
 msgstr "MS-DOSでのマウスの慣習。"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Display: MS-DOS Display"
 msgstr "Display: MS-DOS Display"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Fonts, frames and display size on MS-DOS."
 msgstr "MS-DOSでのフォント、フレーム、ディスプレーのサイズ。"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Files: MS-DOS File Names"
 msgstr "Files: MS-DOS File Names"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "File name conventions on MS-DOS."
 msgstr "MS-DOSでのファイル名の慣習。"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Printing: MS-DOS Printing"
 msgstr "Printing: MS-DOS Printing"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Printing specifics on MS-DOS."
 msgstr "MS-DOSでの印刷の特性。"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "I18N: MS-DOS and MULE"
 msgstr "I18N: MS-DOS and MULE"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Support for internationalization on MS-DOS."
 msgstr "MS-DOSでの国際化のサポート。"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Processes: MS-DOS Processes"
 msgstr "Processes: MS-DOS Processes"
 
 #. type: menuentry
-#: msdog-xtra.texi.orig:46
+#: original_texis/msdog-xtra.texi:46
 msgid "Running subprocesses on MS-DOS."
 msgstr "MS-DOSでのサブプロセスの実行。"
 
 #. type: node
-#: msdog-xtra.texi.orig:48
+#: original_texis/msdog-xtra.texi:48
 #, no-wrap
 msgid "MS-DOS Keyboard"
 msgstr "MS-DOS Keyboard"
 
 #. type: subsection
-#: msdog-xtra.texi.orig:49
+#: original_texis/msdog-xtra.texi:49
 #, no-wrap
 msgid "Keyboard Usage on MS-DOS"
 msgstr "Keyboard Usage on MS-DOS"
 
 #. type: kindex
-#: msdog-xtra.texi.orig:51
+#: original_texis/msdog-xtra.texi:51
 #, no-wrap
 msgid "DEL @r{(MS-DOS)}"
 msgstr "DEL @r{(MS-DOS)}"
 
 #. type: kindex
-#: msdog-xtra.texi.orig:52
+#: original_texis/msdog-xtra.texi:52
 #, no-wrap
 msgid "BS @r{(MS-DOS)}"
 msgstr "BS @r{(MS-DOS)}"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:58
+#: original_texis/msdog-xtra.texi:58
 msgid ""
 "The key that is called @key{DEL} in Emacs (because that's how it is "
 "designated on most workstations) is known as @key{BS} (backspace) on a PC@.  "
 "That is why the PC-specific terminal initialization remaps the @key{BS} key "
 "to act as @key{DEL}; the @key{Delete} key is remapped to act as @kbd{C-d} "
 "for the same reasons."
-msgstr "Emacsで@key{DEL}と呼ばれるキー(ほとんどのワークステーションでそれが指定されているのが由来です)は、PCでは@key{BS}(バックスペース)として知られています。PC固有の端末の初期化で、@key{BS}が@key{DEL}として動作するよう再マップされるのは、これが理由です。同じ理由により、@key{Delete}キーは@kbd{C-d}として動作するように、再マップされます。"
+msgstr ""
+"Emacsで@key{DEL}と呼ばれるキー(ほとんどのワークステーションでそれが指定されて"
+"いるのが由来です)は、PCでは@key{BS}(バックスペース)として知られています。PC固"
+"有の端末の初期化で、@key{BS}が@key{DEL}として動作するよう再マップされるのは、"
+"これが理由です。同じ理由により、@key{Delete}キーは@kbd{C-d}として動作するよう"
+"に、再マップされます。"
 
 #. type: kindex
-#: msdog-xtra.texi.orig:59
+#: original_texis/msdog-xtra.texi:59
 #, no-wrap
 msgid "C-g @r{(MS-DOS)}"
 msgstr "C-g @r{(MS-DOS)}"
 
 #. type: kindex
-#: msdog-xtra.texi.orig:60
+#: original_texis/msdog-xtra.texi:60
 #, no-wrap
 msgid "C-Break @r{(MS-DOS)}"
 msgstr "C-Break @r{(MS-DOS)}"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:61
+#: original_texis/msdog-xtra.texi:61
 #, no-wrap
 msgid "quitting on MS-DOS"
 msgstr "quitting on MS-DOS"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:66
+#: original_texis/msdog-xtra.texi:66
 msgid ""
 "Emacs built for MS-DOS recognizes @kbd{C-@key{Break}} as a quit character, "
 "just like @kbd{C-g}.  This is because Emacs cannot detect that you have "
 "typed @kbd{C-g} until it is ready for more input.  As a consequence, you "
 "cannot use @kbd{C-g} to stop a running command"
-msgstr "MS-DOSにたいしてビルドされたEmacsは、@kbd{C-@key{Break}}を@kbd{C-g}のような、中止(quit)文字として認識します。新たな入力にたいして準備ができるまで、@kbd{C-g}をタイプしてもEmacsが検知できないのは、これが理由です。そのため、実行中のコマンドを停止させるために、@kbd{C-g}を使用することはできません"
+msgstr ""
+"MS-DOSにたいしてビルドされたEmacsは、@kbd{C-@key{Break}}を@kbd{C-g}のような、"
+"中止(quit)文字として認識します。新たな入力にたいして準備ができるまで、@kbd{C-"
+"g}をタイプしてもEmacsが検知できないのは、これが理由です。そのため、実行中のコ"
+"マンドを停止させるために、@kbd{C-g}を使用することはできません"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:68
+#: original_texis/msdog-xtra.texi:68
 msgid "(@pxref{Quitting,,,emacs, the Emacs Manual})."
 msgstr "(@ref{Quitting,,,emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:71
+#: original_texis/msdog-xtra.texi:71
 msgid "(@pxref{Quitting})."
 msgstr "(@ref{Quitting}を参照してください)。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:75
+#: original_texis/msdog-xtra.texi:75
 msgid ""
 "By contrast, @kbd{C-@key{Break}} @emph{is} detected as soon as you type it "
 "(as @kbd{C-g} is on other systems), so it can be used to stop a running "
 "command and for emergency escape"
-msgstr "対照的に@kbd{C-@key{Break}}は、(他のシステムでの@kbd{C-g}のように)、タイプされるとすぐに検知されるので、実行中のコマンドを停止したり、緊急エスケープのために使用されます"
+msgstr ""
+"対照的に@kbd{C-@key{Break}}は、(他のシステムでの@kbd{C-g}のように)、タイプさ"
+"れるとすぐに検知されるので、実行中のコマンドを停止したり、緊急エスケープのた"
+"めに使用されます"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:77
+#: original_texis/msdog-xtra.texi:77
 msgid "(@pxref{Emergency Escape,,,emacs, the Emacs Manual})."
 msgstr "(@ref{Emergency Escape,,,emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:80
+#: original_texis/msdog-xtra.texi:80
 msgid "(@pxref{Emergency Escape})."
 msgstr "(@ref{Emergency Escape}を参照してください)。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:82
+#: original_texis/msdog-xtra.texi:82
 #, no-wrap
 msgid "Meta (under MS-DOS)"
 msgstr "Meta (under MS-DOS)"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:83
+#: original_texis/msdog-xtra.texi:83
 #, no-wrap
 msgid "Hyper (under MS-DOS)"
 msgstr "Hyper (under MS-DOS)"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:84
+#: original_texis/msdog-xtra.texi:84
 #, no-wrap
 msgid "Super (under MS-DOS)"
 msgstr "Super (under MS-DOS)"
 
 #. type: vindex
-#: msdog-xtra.texi.orig:85
+#: original_texis/msdog-xtra.texi:85
 #, no-wrap
 msgid "dos-super-key"
 msgstr "dos-super-key"
 
 #. type: vindex
-#: msdog-xtra.texi.orig:86
+#: original_texis/msdog-xtra.texi:86
 #, no-wrap
 msgid "dos-hyper-key"
 msgstr "dos-hyper-key"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:99
+#: original_texis/msdog-xtra.texi:99
 msgid ""
 "The PC keyboard maps use the left @key{Alt} key as the @key{META} key.  You "
 "have two choices for emulating the @key{SUPER} and @key{HYPER} keys: choose "
@@ -290,31 +317,44 @@ msgid ""
 "to @key{META}, since it is used for accessing characters like @kbd{~} and "
 "@kbd{@@} on non-US keyboard layouts; in this case, you may only use the left "
 "@key{Alt} as @key{META} key."
-msgstr "PCのキーボードマップは、左@key{Alt}キーを@key{META}キーとして使用します。@key{SUPER}キーと@key{HYPER}キーをエミュレートするために、2つの選択肢があります。変数@code{dos-hyper-key}および@code{dos-super-key}に、1または2をセットすることにより、右@key{Ctrl}キーと右@key{Alt}キーのどちらかを選択します。@code{dos-super-key}と@code{dos-hyper-key}がどちらも1以外の場合、デフォルトにより右@key{Alt}キーも@key{META}キーにマップされます。しかしMSｰDOSの国際化キーボードサポートプログラム@file{KEYB.COM}がインストールされている場合、非US配列のキーボードでは右@key{Alt}は@kbd{~}や@kbd{@@}のような文字を入力するために使用されるので、Emacsは右@key{Alt}を@key{META}にマップしません。この場合、左@key{Alt}キーだけを@key{META}キーとして使用することになるでしょう。"
+msgstr ""
+"PCのキーボードマップは、左@key{Alt}キーを@key{META}キーとして使用します。"
+"@key{SUPER}キーと@key{HYPER}キーをエミュレートするために、2つの選択肢がありま"
+"す。変数@code{dos-hyper-key}および@code{dos-super-key}に、1または2をセットす"
+"ることにより、右@key{Ctrl}キーと右@key{Alt}キーのどちらかを選択します。"
+"@code{dos-super-key}と@code{dos-hyper-key}がどちらも1以外の場合、デフォルトに"
+"より右@key{Alt}キーも@key{META}キーにマップされます。しかしMSｰDOSの国際化キー"
+"ボードサポートプログラム@file{KEYB.COM}がインストールされている場合、非US配列"
+"のキーボードでは右@key{Alt}は@kbd{~}や@kbd{@@}のような文字を入力するために使"
+"用されるので、Emacsは右@key{Alt}を@key{META}にマップしません。この場合、左"
+"@key{Alt}キーだけを@key{META}キーとして使用することになるでしょう。"
 
 #. type: kindex
-#: msdog-xtra.texi.orig:100
+#: original_texis/msdog-xtra.texi:100
 #, no-wrap
 msgid "C-j @r{(MS-DOS)}"
 msgstr "C-j @r{(MS-DOS)}"
 
 #. type: vindex
-#: msdog-xtra.texi.orig:101
+#: original_texis/msdog-xtra.texi:101
 #, no-wrap
 msgid "dos-keypad-mode"
 msgstr "dos-keypad-mode"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:106
+#: original_texis/msdog-xtra.texi:106
 msgid ""
 "The variable @code{dos-keypad-mode} is a flag variable that controls what "
 "key codes are returned by keys in the numeric keypad.  You can also define "
 "the keypad @key{ENTER} key to act like @kbd{C-j}, by putting the following "
 "line into your @file{_emacs} file:"
-msgstr "変数@code{dos-keypad-mode}は、テンキーにより返されるキーコードを制御するフラグ変数です。以下の行を@file{_emacs}ファイルに記述して、テンキーの@key{ENTER}キーを、@kbd{C-j}のように定義することもできます:"
+msgstr ""
+"変数@code{dos-keypad-mode}は、テンキーにより返されるキーコードを制御するフラ"
+"グ変数です。以下の行を@file{_emacs}ファイルに記述して、テンキーの@key{ENTER}"
+"キーを、@kbd{C-j}のように定義することもできます:"
 
 #. type: smallexample
-#: msdog-xtra.texi.orig:110
+#: original_texis/msdog-xtra.texi:110
 #, no-wrap
 msgid ""
 ";; @r{Make the @key{ENTER} key from the numeric keypad act as @kbd{C-j}.}\n"
@@ -324,87 +364,97 @@ msgstr ""
 "(define-key function-key-map [kp-enter] [?\\C-j])\n"
 
 #. type: node
-#: msdog-xtra.texi.orig:112
+#: original_texis/msdog-xtra.texi:112
 #, no-wrap
 msgid "MS-DOS Mouse"
 msgstr "MS-DOS Mouse"
 
 #. type: subsection
-#: msdog-xtra.texi.orig:113
+#: original_texis/msdog-xtra.texi:113
 #, no-wrap
 msgid "Mouse Usage on MS-DOS"
 msgstr "Mouse Usage on MS-DOS"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:115
+#: original_texis/msdog-xtra.texi:115
 #, no-wrap
 msgid "mouse support under MS-DOS"
 msgstr "mouse support under MS-DOS"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:119
+#: original_texis/msdog-xtra.texi:119
 msgid ""
 "Emacs on MS-DOS supports a mouse (on the default terminal only).  The mouse "
 "commands work as documented, including those that use menus and the menu bar"
-msgstr "MS-DOSのEmacsはマウスをサポートします(デフォルト端末のみ)。メニューやメニューバーの使用を含めて、マウスコマンドはドキュメントされているように機能します"
+msgstr ""
+"MS-DOSのEmacsはマウスをサポートします(デフォルト端末のみ)。メニューやメニュー"
+"バーの使用を含めて、マウスコマンドはドキュメントされているように機能します"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:121
+#: original_texis/msdog-xtra.texi:121
 msgid "(@pxref{Menu Bar,,,emacs, the Emacs Manual})."
 msgstr "(@ref{Menu Bar,,,emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:124
+#: original_texis/msdog-xtra.texi:124
 msgid "(@pxref{Menu Bar})."
 msgstr "(@ref{Menu Bar}を参照してください)。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:130
+#: original_texis/msdog-xtra.texi:130
 msgid ""
 "Scroll bars don't work in MS-DOS Emacs.  PC mice usually have only two "
 "buttons; these act as @kbd{Mouse-1} and @kbd{Mouse-2}, but if you press both "
 "of them together, that has the effect of @kbd{Mouse-3}.  If the mouse does "
 "have 3 buttons, Emacs detects that at startup, and all the 3 buttons "
 "function normally, as on X."
-msgstr "MS-DOSのEmacsではスクロールバーは機能しません。PCマウスには通常2つしかボタンがありません。これらは@kbd{Mouse-1}、@kbd{Mouse-2}として機能しますが、これらのボタンを一緒に押すと、@kbd{Mouse-3}の効果をもちます。マウスにボタンが3つある場合、Emacsは開始時にそれを検知し、Xのようにすべての3ボタンは通常のように機能します。"
+msgstr ""
+"MS-DOSのEmacsではスクロールバーは機能しません。PCマウスには通常2つしかボタン"
+"がありません。これらは@kbd{Mouse-1}、@kbd{Mouse-2}として機能しますが、これら"
+"のボタンを一緒に押すと、@kbd{Mouse-3}の効果をもちます。マウスにボタンが3つあ"
+"る場合、Emacsは開始時にそれを検知し、Xのようにすべての3ボタンは通常のように機"
+"能します。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:134
+#: original_texis/msdog-xtra.texi:134
 msgid ""
 "Help strings for menu-bar and pop-up menus are displayed in the echo area "
 "when the mouse pointer moves across the menu items.  Highlighting of mouse-"
 "sensitive text"
-msgstr "メニューアイテムの上にマウスポインターが移動すると、メニューバーとポップアップメニューにたいするヘルプ文字列が、エコーエリアに表示されます。マウスに反応するテキストはハイライト"
+msgstr ""
+"メニューアイテムの上にマウスポインターが移動すると、メニューバーとポップアッ"
+"プメニューにたいするヘルプ文字列が、エコーエリアに表示されます。マウスに反応"
+"するテキストはハイライト"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:136
+#: original_texis/msdog-xtra.texi:136
 msgid "(@pxref{Mouse References,,,emacs, the Emacs Manual})"
 msgstr "(@ref{Mouse References,,,emacs, the Emacs Manual}を参照してください)"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:139
+#: original_texis/msdog-xtra.texi:139
 msgid "(@pxref{Mouse References})"
 msgstr "(@ref{Mouse References}を参照してください)"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:141
+#: original_texis/msdog-xtra.texi:141
 msgid "is also supported."
 msgstr "もサポートされます。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:142
+#: original_texis/msdog-xtra.texi:142
 #, no-wrap
 msgid "mouse, set number of buttons"
 msgstr "mouse, set number of buttons"
 
 #. type: findex
-#: msdog-xtra.texi.orig:143
+#: original_texis/msdog-xtra.texi:143
 #, no-wrap
 msgid "msdos-set-mouse-buttons"
 msgstr "msdos-set-mouse-buttons"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:152
+#: original_texis/msdog-xtra.texi:152
 msgid ""
 "Some versions of mouse drivers don't report the number of mouse buttons "
 "correctly.  For example, mice with a wheel report that they have 3 buttons, "
@@ -413,10 +463,17 @@ msgid ""
 "the @kbd{M-x msdos-set-mouse-buttons} command to tell Emacs how many mouse "
 "buttons to expect.  You could make such a setting permanent by adding this "
 "fragment to your @file{_emacs} init file:"
-msgstr "マウスドライバーのいくつかのバージョンは、マウスのボタン数を正しく報告しません。たとえばホイールつきのマウスは3つボタンがあると報告されますが、Emacsに渡されるのはそのうち2つだけです。真ん中のボタンとして使用されるホイールのクリックも渡されません。このような場合、マウスボタンがいくつあるかEmacsに指示するために、@kbd{M-x msdos-set-mouse-buttons}コマンドを使用できます。initファイル@file{_emacs}に以下の行を追加することにより、そのようなセッティングを永続化できます:"
+msgstr ""
+"マウスドライバーのいくつかのバージョンは、マウスのボタン数を正しく報告しませ"
+"ん。たとえばホイールつきのマウスは3つボタンがあると報告されますが、Emacsに渡"
+"されるのはそのうち2つだけです。真ん中のボタンとして使用されるホイールのクリッ"
+"クも渡されません。このような場合、マウスボタンがいくつあるかEmacsに指示するた"
+"めに、@kbd{M-x msdos-set-mouse-buttons}コマンドを使用できます。initファイル"
+"@file{_emacs}に以下の行を追加することにより、そのようなセッティングを永続化で"
+"きます:"
 
 #. type: example
-#: msdog-xtra.texi.orig:156
+#: original_texis/msdog-xtra.texi:156
 #, no-wrap
 msgid ""
 ";; @r{Treat the mouse like a 2-button mouse.}\n"
@@ -426,39 +483,45 @@ msgstr ""
 "(msdos-set-mouse-buttons 2)\n"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:158
+#: original_texis/msdog-xtra.texi:158
 #, no-wrap
 msgid "Windows clipboard support"
 msgstr "Windows clipboard support"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:163
+#: original_texis/msdog-xtra.texi:163
 msgid ""
 "Emacs built for MS-DOS supports clipboard operations when it runs on "
 "Windows.  Commands that put text on the kill ring, or yank text from the "
 "ring, check the Windows clipboard first, just as Emacs does on the X Window "
 "System"
-msgstr "MS-DOSにたいしてビルドされたEmacsは、Windows上で実行されているときは、クリップボード操作をサポートします。killリングにテキストを置くコマンド、またはkillリングからテキストをyankするコマンドは、EmacsがXウィンドウシステムで行なうように、最初にWindowsのクリップボードをチェックします"
+msgstr ""
+"MS-DOSにたいしてビルドされたEmacsは、Windows上で実行されているときは、クリッ"
+"プボード操作をサポートします。killリングにテキストを置くコマンド、またはkill"
+"リングからテキストをyankするコマンドは、EmacsがXウィンドウシステムで行なうよ"
+"うに、最初にWindowsのクリップボードをチェックします"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:165
+#: original_texis/msdog-xtra.texi:165
 msgid "(@pxref{Mouse Commands,,,emacs, the Emacs Manual})."
 msgstr "(@ref{Mouse Commands,,,emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:168
+#: original_texis/msdog-xtra.texi:168
 msgid "(@pxref{Mouse Commands})."
 msgstr "(@ref{Mouse Commands}を参照してください)。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:171
+#: original_texis/msdog-xtra.texi:171
 msgid ""
 "Only the primary selection and the cut buffer are supported by MS-DOS Emacs "
 "on Windows; the secondary selection always appears as empty."
-msgstr "Windows上でのMS-DOS版のEmacsは、プライマリー選択とカットバッファーだけをサポートします。セカンダリー選択は常に空になります。"
+msgstr ""
+"Windows上でのMS-DOS版のEmacsは、プライマリー選択とカットバッファーだけをサ"
+"ポートします。セカンダリー選択は常に空になります。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:179
+#: original_texis/msdog-xtra.texi:179
 msgid ""
 "Due to the way clipboard access is implemented by Windows, the length of "
 "text you can put into the clipboard is limited by the amount of free DOS "
@@ -467,57 +530,70 @@ msgid ""
 "is lower if you run Emacs as a subprocess of another program.  If the killed "
 "text does not fit, Emacs outputs a message saying so, and does not put the "
 "text into the clipboard."
-msgstr "クリップボードに対するアクセス方法はWindowsにより実装されているため、クリップボードに置くことができるテキストの長さは、Emacsが利用可能なDOSメモリー量により制限されます。通常はクリップボードに最大620KBのテキストを置くことができますが、この制限はシステム設定に依存し、Emacsを他のプログラムのサブプロセスとして実行している場合は、もっと少なくなります。killしたテキストが一致しない場合、Emacsはその旨を告げるメッセージを出力して、クリップボードにテキストを置きません。"
+msgstr ""
+"クリップボードに対するアクセス方法はWindowsにより実装されているため、クリップ"
+"ボードに置くことができるテキストの長さは、Emacsが利用可能なDOSメモリー量によ"
+"り制限されます。通常はクリップボードに最大620KBのテキストを置くことができます"
+"が、この制限はシステム設定に依存し、Emacsを他のプログラムのサブプロセスとして"
+"実行している場合は、もっと少なくなります。killしたテキストが一致しない場合、"
+"Emacsはその旨を告げるメッセージを出力して、クリップボードにテキストを置きませ"
+"ん。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:183
+#: original_texis/msdog-xtra.texi:183
 msgid ""
 "Null characters also cannot be put into the Windows clipboard.  If the "
 "killed text includes null characters, Emacs does not put such text into the "
 "clipboard, and displays in the echo area a message to that effect."
-msgstr "ヌル文字をWindowsクリップボードに置くこともできません。killされたテキストにヌル文字が含まれる場合、Emacsはそのようなテキストをクリップボードに置かず、その結果にたいするメッセージをエコーエリアに表示します。"
+msgstr ""
+"ヌル文字をWindowsクリップボードに置くこともできません。killされたテキストにヌ"
+"ル文字が含まれる場合、Emacsはそのようなテキストをクリップボードに置かず、その"
+"結果にたいするメッセージをエコーエリアに表示します。"
 
 #. type: vindex
-#: msdog-xtra.texi.orig:184
+#: original_texis/msdog-xtra.texi:184
 #, no-wrap
 msgid "dos-display-scancodes"
 msgstr "dos-display-scancodes"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:189
+#: original_texis/msdog-xtra.texi:189
 msgid ""
 "The variable @code{dos-display-scancodes}, when non-@code{nil}, directs "
 "Emacs to display the @acronym{ASCII} value and the keyboard scan code of "
 "each keystroke; this feature serves as a complement to the @code{view-"
 "lossage} command, for debugging."
-msgstr "変数@code{dos-display-scancodes}が非@code{nil}の場合、Emacsは各キーストロークの@acronym{ASCII}値とキーボードのスキャンコードを表示します。この機能は、デバッグのための@code{view-lossage}コマンドを補足するためのものです。"
+msgstr ""
+"変数@code{dos-display-scancodes}が非@code{nil}の場合、Emacsは各キーストローク"
+"の@acronym{ASCII}値とキーボードのスキャンコードを表示します。この機能は、デ"
+"バッグのための@code{view-lossage}コマンドを補足するためのものです。"
 
 #. type: node
-#: msdog-xtra.texi.orig:190
+#: original_texis/msdog-xtra.texi:190
 #, no-wrap
 msgid "MS-DOS Display"
 msgstr "MS-DOS Display"
 
 #. type: subsection
-#: msdog-xtra.texi.orig:191
+#: original_texis/msdog-xtra.texi:191
 #, no-wrap
 msgid "Display on MS-DOS"
 msgstr "Display on MS-DOS"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:192
+#: original_texis/msdog-xtra.texi:192
 #, no-wrap
 msgid "faces under MS-DOS"
 msgstr "faces under MS-DOS"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:193
+#: original_texis/msdog-xtra.texi:193
 #, no-wrap
 msgid "fonts, emulating under MS-DOS"
 msgstr "fonts, emulating under MS-DOS"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:201
+#: original_texis/msdog-xtra.texi:201
 msgid ""
 "Display on MS-DOS cannot use font variants, like bold or italic, but it does "
 "support multiple faces, each of which can specify a foreground and a "
@@ -525,73 +601,87 @@ msgid ""
 "packages that use fonts (such as @code{font-lock}, Enriched Text mode, and "
 "others) by defining the relevant faces to use different colors.  Use the "
 "@code{list-colors-display} command"
-msgstr "MS-DOSのディスプレーでは、boldやitalicのようなフォントの変種が使用できませんが、複数のフェイスをサポートしており、それぞれのフェイスでフォアグラウンドとバックグラウンドのカラーを指定できます。したがってm異なるカラーを使用するために関連するフェイスを定義することにより、フォントを使用するEmacsパッケージ(@code{font-lock}やEnriched Textモードなそ)の完全な機能を使用することができます。利用できるカラーとフェイスと、それらの外観を確認するには、@code{list-colors-display}コマンド"
+msgstr ""
+"MS-DOSのディスプレーでは、boldやitalicのようなフォントの変種が使用できません"
+"が、複数のフェイスをサポートしており、それぞれのフェイスでフォアグラウンドと"
+"バックグラウンドのカラーを指定できます。したがってm異なるカラーを使用するため"
+"に関連するフェイスを定義することにより、フォントを使用するEmacsパッケージ"
+"(@code{font-lock}やEnriched Textモードなそ)の完全な機能を使用することができま"
+"す。利用できるカラーとフェイスと、それらの外観を確認するには、@code{list-"
+"colors-display}コマンド"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:203
+#: original_texis/msdog-xtra.texi:203
 msgid "(@pxref{Colors,,,emacs, the Emacs Manual})"
 msgstr "(@ref{Colors,,,emacs, the Emacs Manual}を参照してください)"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:206
+#: original_texis/msdog-xtra.texi:206
 msgid "(@pxref{Colors})"
 msgstr "(@ref{Colors}を参照してください)"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:208
+#: original_texis/msdog-xtra.texi:208
 msgid "and the @code{list-faces-display} command"
 msgstr "、および@code{list-faces-display}"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:210
+#: original_texis/msdog-xtra.texi:210
 msgid "(@pxref{Faces,,,emacs, the Emacs Manual})"
 msgstr "(@ref{Faces,,,emacs, the Emacs Manual}を参照してください)"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:213
+#: original_texis/msdog-xtra.texi:213
 msgid "(@pxref{Faces})"
 msgstr "(@ref{Faces}を参照してください)"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:215
+#: original_texis/msdog-xtra.texi:215
 msgid "to see what colors and faces are available and what they look like."
 msgstr "を使用してください。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:219
+#: original_texis/msdog-xtra.texi:219
 msgid ""
 "@xref{MS-DOS and MULE}, later in this chapter, for information on how Emacs "
 "displays glyphs and characters that aren't supported by the native font "
 "built into the DOS display."
-msgstr "DOSディスプレーでネイティブにサポートされていないグリフと文字をEmacsが表示する方法については、このチャプターの後のほうの、@ref{MS-DOS and MULE}を参照してください。"
+msgstr ""
+"DOSディスプレーでネイティブにサポートされていないグリフと文字をEmacsが表示す"
+"る方法については、このチャプターの後のほうの、@ref{MS-DOS and MULE}を参照して"
+"ください。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:220
+#: original_texis/msdog-xtra.texi:220
 #, no-wrap
 msgid "cursor shape on MS-DOS"
 msgstr "cursor shape on MS-DOS"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:226
+#: original_texis/msdog-xtra.texi:226
 msgid ""
 "When Emacs starts, it changes the cursor shape to a solid box.  This is for "
 "compatibility with other systems, where the box cursor is the default in "
 "Emacs.  This default shape can be changed to a bar by specifying the "
 "@code{cursor-type} parameter in the variable @code{default-frame-alist}"
-msgstr "Emacsを開始したとき、Emacsはカーソルの形状を塗りつぶしたボックスに変更します。他のシステムではボックスカーソルがEmacsのデフォルトなので、これは互換性のためです。デフォルトのカーソル形状は、変数@code{default-frame-alist}の中の@code{cursor-type}パラメーターでbarを指定することにより変更できます"
+msgstr ""
+"Emacsを開始したとき、Emacsはカーソルの形状を塗りつぶしたボックスに変更しま"
+"す。他のシステムではボックスカーソルがEmacsのデフォルトなので、これは互換性の"
+"ためです。デフォルトのカーソル形状は、変数@code{default-frame-alist}の中の"
+"@code{cursor-type}パラメーターでbarを指定することにより変更できます"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:228
+#: original_texis/msdog-xtra.texi:228
 msgid "(@pxref{Creating Frames,,,emacs, the Emacs Manual})."
 msgstr "(@ref{Creating Frames,,,emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:231
+#: original_texis/msdog-xtra.texi:231
 msgid "(@pxref{Creating Frames})."
 msgstr "(@ref{Creating Frames}を参照してください)。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:239
+#: original_texis/msdog-xtra.texi:239
 msgid ""
 "The MS-DOS terminal doesn't support a vertical-bar cursor, so the bar cursor "
 "is horizontal, and the @code{@var{width}} parameter, if specified by the "
@@ -599,80 +689,95 @@ msgid ""
 "@code{bar} and @code{hbar} cursor types produce the same effect on MS-DOS@.  "
 "As an extension, the bar cursor specification can include the starting scan "
 "line of the cursor as well as its width, like this:"
-msgstr "MS-DOS端末は垂直バーのカーソルをサポートしないので、カーソルは水平バーになり、フレームのパラメターで@code{@var{width}}パラメーターが指定された場合、それは実際には水平バーの高さになります。この理由により、MS-DOSではカーソルタイプ@code{bar}と@code{hbar}は同じ効果を生みます。拡張として、以下のようにして、バーカーソル指定にはwidthと同様に、カーソルが行を読み取る開始位置を含めることができます:"
+msgstr ""
+"MS-DOS端末は垂直バーのカーソルをサポートしないので、カーソルは水平バーにな"
+"り、フレームのパラメターで@code{@var{width}}パラメーターが指定された場合、そ"
+"れは実際には水平バーの高さになります。この理由により、MS-DOSではカーソルタイ"
+"プ@code{bar}と@code{hbar}は同じ効果を生みます。拡張として、以下のようにして、"
+"バーカーソル指定にはwidthと同様に、カーソルが行を読み取る開始位置を含めること"
+"ができます:"
 
 #. type: example
-#: msdog-xtra.texi.orig:242
+#: original_texis/msdog-xtra.texi:242
 #, no-wrap
 msgid " '(cursor-type bar @var{width} . @var{start})\n"
 msgstr " '(cursor-type bar @var{width} . @var{start})\n"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:247
+#: original_texis/msdog-xtra.texi:247
 msgid ""
 "In addition, if the @var{width} parameter is negative, the cursor bar begins "
 "at the top of the character cell."
-msgstr "これに加えて、@var{width}パラメーターが負の場合、カーソルバーはその文字セルの最上部から開始されます。"
+msgstr ""
+"これに加えて、@var{width}パラメーターが負の場合、カーソルバーはその文字セルの"
+"最上部から開始されます。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:248
+#: original_texis/msdog-xtra.texi:248
 #, no-wrap
 msgid "frames on MS-DOS"
 msgstr "frames on MS-DOS"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:252
+#: original_texis/msdog-xtra.texi:252
 msgid ""
 "The MS-DOS terminal can only display a single frame at a time.  The Emacs "
 "frame facilities work on MS-DOS much as they do on text terminals"
-msgstr "MS-DOS端末は1度に1つのフレームだけを表示できます。MS-DOSで動作するEmacsのフレーム機能は、Emacsがテキスト端末で動作する場合と同じように機能します"
+msgstr ""
+"MS-DOS端末は1度に1つのフレームだけを表示できます。MS-DOSで動作するEmacsのフ"
+"レーム機能は、Emacsがテキスト端末で動作する場合と同じように機能します"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:254
+#: original_texis/msdog-xtra.texi:254
 msgid "(@pxref{Frames,,,emacs, the Emacs Manual})."
 msgstr "(@ref{Frames,,,emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:257
+#: original_texis/msdog-xtra.texi:257
 msgid "(@pxref{Frames})."
 msgstr "(@ref{Frames}を参照してください)。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:261
+#: original_texis/msdog-xtra.texi:261
 msgid ""
 "When you run Emacs from a DOS window on MS-Windows, you can make the visible "
 "frame smaller than the full screen, but Emacs still cannot display more than "
 "a single frame at a time."
-msgstr "MS-WindowsでDOS窓からEmacsを実行した場合、フルスクリーンより小さい可視フレームを作成できますが、それでもEmacsは1度に1つのフレームしか表示できません。"
+msgstr ""
+"MS-WindowsでDOS窓からEmacsを実行した場合、フルスクリーンより小さい可視フレー"
+"ムを作成できますが、それでもEmacsは1度に1つのフレームしか表示できません。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:262
+#: original_texis/msdog-xtra.texi:262
 #, no-wrap
 msgid "frame size under MS-DOS"
 msgstr "frame size under MS-DOS"
 
 #. type: findex
-#: msdog-xtra.texi.orig:263
+#: original_texis/msdog-xtra.texi:263
 #, no-wrap
 msgid "dos-mode4350"
 msgstr "dos-mode4350"
 
 #. type: findex
-#: msdog-xtra.texi.orig:264
+#: original_texis/msdog-xtra.texi:264
 #, no-wrap
 msgid "dos-mode25"
 msgstr "dos-mode25"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:268
+#: original_texis/msdog-xtra.texi:268
 msgid ""
 "The @code{dos-mode4350} command switches the display to 43 or 50 lines, "
 "depending on your hardware; the @code{dos-mode25} command switches to the "
 "default 80x25 screen size."
-msgstr "@code{dos-mode4350}コマンドはディスプレーを43行または50行に切り替え、それはハードウェアーに依存します。@code{dos-mode25}コマンドはスクリーンサイズをデフォルトの80x25に切り替えます。"
+msgstr ""
+"@code{dos-mode4350}コマンドはディスプレーを43行または50行に切り替え、それは"
+"ハードウェアーに依存します。@code{dos-mode25}コマンドはスクリーンサイズをデ"
+"フォルトの80x25に切り替えます。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:282
+#: original_texis/msdog-xtra.texi:282
 msgid ""
 "By default, Emacs only knows how to set screen sizes of 80 columns by 25, "
 "28, 35, 40, 43 or 50 rows.  However, if your video adapter has special video "
@@ -686,26 +791,43 @@ msgid ""
 "example, suppose your adapter will switch to 66x80 dimensions when put into "
 "video mode 85.  Then you can make Emacs support this screen size by putting "
 "the following into your @file{_emacs} file:"
-msgstr "デフォルトではEmacsが理解するするスクリーンサイズは、列を80列、行を25、28、35、40、43、50行にセットする方法だけです。しかしビデオアダプターが、ディスプレーを他のサイズに切り替える特別なビデオモードをもつ場合、Emacsもそれをサポートするようにできます。Emacsにフレームを@var{n}行@var{m}列のサイズに切り替えるように指示した場合、Emacsは@code{screen-dimensions-@var{n}x@var{m}}という名前があるかチェックして、もしあれば切り替えるビデオモードの値(整数でなければなりません)としてそれを使用します(Emacsは@code{AL}レジスターに@code{screen-dimensions-@var{n}x@var{m}}の値をセットして、BIOS関数の@code{Set Video Mode}を呼び出すことによりそのビデオモードに切り替えます)。たとえばビデオアダプターがビデオモードを85にしたとき、サイズ66x80に切り替わるとしましょう。その場合、以下を@file{_emacs}ファイルに記述して、Emacsにそれをサポートさせることができます:"
+msgstr ""
+"デフォルトではEmacsが理解するするスクリーンサイズは、列を80列、行を25、28、"
+"35、40、43、50行にセットする方法だけです。しかしビデオアダプターが、ディスプ"
+"レーを他のサイズに切り替える特別なビデオモードをもつ場合、Emacsもそれをサポー"
+"トするようにできます。Emacsにフレームを@var{n}行@var{m}列のサイズに切り替える"
+"ように指示した場合、Emacsは@code{screen-dimensions-@var{n}x@var{m}}という名前"
+"があるかチェックして、もしあれば切り替えるビデオモードの値(整数でなければなり"
+"ません)としてそれを使用します(Emacsは@code{AL}レジスターに@code{screen-"
+"dimensions-@var{n}x@var{m}}の値をセットして、BIOS関数の@code{Set Video Mode}"
+"を呼び出すことによりそのビデオモードに切り替えます)。たとえばビデオアダプター"
+"がビデオモードを85にしたとき、サイズ66x80に切り替わるとしましょう。その場合、"
+"以下を@file{_emacs}ファイルに記述して、Emacsにそれをサポートさせることができ"
+"ます:"
 
 #. type: example
-#: msdog-xtra.texi.orig:285
+#: original_texis/msdog-xtra.texi:285
 #, no-wrap
 msgid "(setq screen-dimensions-66x80 85)\n"
 msgstr "(setq screen-dimensions-66x80 85)\n"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:292
+#: original_texis/msdog-xtra.texi:292
 msgid ""
 "Since Emacs on MS-DOS can only set the frame size to specific supported "
 "dimensions, it cannot honor every possible frame resizing request.  When an "
 "unsupported size is requested, Emacs chooses the next larger supported size "
 "beyond the specified size.  For example, if you ask for 36x80 frame, you "
 "will get 40x80 instead."
-msgstr "MS-DOSのEmacsは特定のサポートされたフレームサイズだけしかセットできないので、可能性のあるすべてのフレームのサイズ変更要求に従うことはできません。サポートされていないサイズが要求された場合、Emacsは指定されたサイズを越える、次に大きなサポートされたサイズを選択します。この場合、たとえば36x80フレームを要求して、かわりに40x80を得ることになります。"
+msgstr ""
+"MS-DOSのEmacsは特定のサポートされたフレームサイズだけしかセットできないので、"
+"可能性のあるすべてのフレームのサイズ変更要求に従うことはできません。サポート"
+"されていないサイズが要求された場合、Emacsは指定されたサイズを越える、次に大き"
+"なサポートされたサイズを選択します。この場合、たとえば36x80フレームを要求し"
+"て、かわりに40x80を得ることになります。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:302
+#: original_texis/msdog-xtra.texi:302
 msgid ""
 "The variables @code{screen-dimensions-@var{n}x@var{m}} are used only when "
 "they exactly match the specified size; the search for the next larger "
@@ -716,41 +838,50 @@ msgid ""
 "case, you can do it by setting the variable named @code{screen-"
 "dimensions-36x80} with the same video mode value as @code{screen-"
 "dimensions-38x80}."
-msgstr "変数@code{screen-dimensions-@var{n}x@var{m}}は、指定されたサイズに正確にマッチするときだけ使用され、サポートされた次に大きなサイズを検索するときには、無視されます。上記の例ではVGAは38x80のサイズをサポートし、@code{screen-dimensions-38x80}を適切な値で定義していても、36x80フレームを要求すると40x80のスクリーンになります。この場合サイズを38x80にするには、@code{screen-dimensions-36x80}という名前の変数に、@code{screen-dimensions-38x80}と同じビデオもーどの値をセットして、これを行なうことができます。"
+msgstr ""
+"変数@code{screen-dimensions-@var{n}x@var{m}}は、指定されたサイズに正確にマッ"
+"チするときだけ使用され、サポートされた次に大きなサイズを検索するときには、無"
+"視されます。上記の例ではVGAは38x80のサイズをサポートし、@code{screen-"
+"dimensions-38x80}を適切な値で定義していても、36x80フレームを要求すると40x80の"
+"スクリーンになります。この場合サイズを38x80にするには、@code{screen-"
+"dimensions-36x80}という名前の変数に、@code{screen-dimensions-38x80}と同じビデ"
+"オもーどの値をセットして、これを行なうことができます。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:305
+#: original_texis/msdog-xtra.texi:305
 msgid ""
 "Changing frame dimensions on MS-DOS has the effect of changing all the other "
 "frames to the new dimensions."
-msgstr "MS-DOSでフレームサイズを変更すると、他のすべてのフレームも新しいサイズに変更されます。"
+msgstr ""
+"MS-DOSでフレームサイズを変更すると、他のすべてのフレームも新しいサイズに変更"
+"されます。"
 
 #. type: node
-#: msdog-xtra.texi.orig:306
+#: original_texis/msdog-xtra.texi:306
 #, no-wrap
 msgid "MS-DOS File Names"
 msgstr "MS-DOS File Names"
 
 #. type: subsection
-#: msdog-xtra.texi.orig:307
+#: original_texis/msdog-xtra.texi:307
 #, no-wrap
 msgid "File Names on MS-DOS"
 msgstr "File Names on MS-DOS"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:308
+#: original_texis/msdog-xtra.texi:308
 #, no-wrap
 msgid "file names under MS-DOS"
 msgstr "file names under MS-DOS"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:309
+#: original_texis/msdog-xtra.texi:309
 #, no-wrap
 msgid "init file, default name under MS-DOS"
 msgstr "init file, default name under MS-DOS"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:317
+#: original_texis/msdog-xtra.texi:317
 msgid ""
 "On MS-DOS, file names are case-insensitive and limited to eight characters, "
 "plus optionally a period and three more characters.  Emacs knows enough "
@@ -758,20 +889,26 @@ msgid ""
 "operating systems.  For instance, leading dots @samp{.} in file names are "
 "invalid in MS-DOS, so Emacs transparently converts them to underscores "
 "@samp{_}; thus your default init file"
-msgstr "MS-DOSでは、ファイル名は大文字小文字を区別せず8文字に制限され、それに加えてオプションでピリオドと追加の3文字を使用できます。Emacsは他のオペレーティングシステムで、ファイル名を処理するためのこれらの制限を充分認識しています。たとえばファイル名の前のドット@samp{.}はMS-DOSでは無効なので、Emacsはそれらを透過的にアンダースコアー@samp{_}に変換します。したがって、MS-DOSではデフォルトのinitファイル"
+msgstr ""
+"MS-DOSでは、ファイル名は大文字小文字を区別せず8文字に制限され、それに加えてオ"
+"プションでピリオドと追加の3文字を使用できます。Emacsは他のオペレーティングシ"
+"ステムで、ファイル名を処理するためのこれらの制限を充分認識しています。たとえ"
+"ばファイル名の前のドット@samp{.}はMS-DOSでは無効なので、Emacsはそれらを透過的"
+"にアンダースコアー@samp{_}に変換します。したがって、MS-DOSではデフォルトの"
+"initファイル"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:319
+#: original_texis/msdog-xtra.texi:319
 msgid "(@pxref{Init File,,,emacs, the Emacs Manual})"
 msgstr "(@ref{Init File,,,emacs, the Emacs Manual}を参照してください)"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:322
+#: original_texis/msdog-xtra.texi:322
 msgid "(@pxref{Init File})"
 msgstr "(@ref{Init File}を参照してください)"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:330
+#: original_texis/msdog-xtra.texi:330
 msgid ""
 "is called @file{_emacs} on MS-DOS@.  Excess characters before or after the "
 "period are generally ignored by MS-DOS itself; thus, if you visit the file "
@@ -780,53 +917,63 @@ msgid ""
 "mode line.  Other than that, it's up to you to specify file names which are "
 "valid under MS-DOS; the transparent conversion as described above only works "
 "on file names built into Emacs."
-msgstr "は@file{_emacs}と呼ばれます。ピリオドの前後の余分な文字は、一般的にMS-DOS自身により無視されます。したがってファイル@file{LongFileName.EvenLongerExtension}をvisitした場合、それは暗黙に@file{longfile.eve}となりますが、それでもEmacsはモードラインに長いファイル名を表示し続けます。それ以外ではMS-DOSで有効なファイル名を指定するのはユーザーの責任です。上記の透過的な変換は、Emacsに組み込まれたファイル名だけにたいして機能します。"
+msgstr ""
+"は@file{_emacs}と呼ばれます。ピリオドの前後の余分な文字は、一般的にMS-DOS自身"
+"により無視されます。したがってファイル@file{LongFileName.EvenLongerExtension}"
+"をvisitした場合、それは暗黙に@file{longfile.eve}となりますが、それでもEmacsは"
+"モードラインに長いファイル名を表示し続けます。それ以外ではMS-DOSで有効なファ"
+"イル名を指定するのはユーザーの責任です。上記の透過的な変換は、Emacsに組み込ま"
+"れたファイル名だけにたいして機能します。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:331
+#: original_texis/msdog-xtra.texi:331
 #, no-wrap
 msgid "backup file names on MS-DOS"
 msgstr "backup file names on MS-DOS"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:334
+#: original_texis/msdog-xtra.texi:334
 msgid ""
 "The above restrictions on the file names on MS-DOS make it almost impossible "
 "to construct the name of a backup file"
-msgstr "MS-DOSでのファイル名にたいする上記の制限は、オリジナルのファイル名の文字を失うことなしにバックアップファイルの名前を構築するのを、ほとんど不可能にします"
+msgstr ""
+"MS-DOSでのファイル名にたいする上記の制限は、オリジナルのファイル名の文字を失"
+"うことなしにバックアップファイルの名前を構築するのを、ほとんど不可能にします"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:336
+#: original_texis/msdog-xtra.texi:336
 msgid "(@pxref{Backup Names,,,emacs, the Emacs Manual})"
 msgstr "(@ref{Backup Names,,,emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:339
+#: original_texis/msdog-xtra.texi:339
 msgid "(@pxref{Backup Names})"
 msgstr "(@ref{Backup Names}を参照してください)。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:343
+#: original_texis/msdog-xtra.texi:343
 msgid ""
 "without losing some of the original file name characters.  For example, the "
 "name of a backup file for @file{docs.txt} is @file{docs.tx~} even if single "
 "backup is used."
-msgstr "たとえば@file{docs.txt}というファイルにたいするバックアップファイルの名前は、単一のバックアップを使用しているときでさえ@file{docs.tx~}になります。"
+msgstr ""
+"たとえば@file{docs.txt}というファイルにたいするバックアップファイルの名前は、"
+"単一のバックアップを使用しているときでさえ@file{docs.tx~}になります。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:344
+#: original_texis/msdog-xtra.texi:344
 #, no-wrap
 msgid "file names under Windows 95/NT"
 msgstr "file names under Windows 95/NT"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:345
+#: original_texis/msdog-xtra.texi:345
 #, no-wrap
 msgid "long file names in DOS box under Windows 95/NT"
 msgstr "long file names in DOS box under Windows 95/NT"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:354
+#: original_texis/msdog-xtra.texi:354
 msgid ""
 "If you run Emacs as a DOS application under Windows 9X, Windows ME, or "
 "Windows 2000/XP, you can turn on support for long file names.  If you do "
@@ -836,16 +983,24 @@ msgid ""
 "starting Emacs.  Unfortunately, Windows NT doesn't allow DOS programs to "
 "access long file names, so Emacs built for MS-DOS will only see their short "
 "8+3 aliases."
-msgstr "Windows 9X、Windows ME、Windows 2000/XPでEmacsをDOSアプリケーションとして実行する場合、長いファイル名のサポートをオンに切り替えることができます。これを行なうと、Emacsはファイル名を切り詰めたり、ファイル名を小文字に変換するかわりに、指定された文字通りのファイル名を使用します。長いファイル名のサポートを有効にするには、Emacsを開始する前に、環境変数@env{LFN}を@samp{y}にセットします。残念なことにWindows NTはDOSプログラムが長いファイル名にアクセスすることを許さないので、MS-DOSにたいしてビルドされたEmacsは、短い8+3のエイリアスだけを見ることになります。"
+msgstr ""
+"Windows 9X、Windows ME、Windows 2000/XPでEmacsをDOSアプリケーションとして実行"
+"する場合、長いファイル名のサポートをオンに切り替えることができます。これを行"
+"なうと、Emacsはファイル名を切り詰めたり、ファイル名を小文字に変換するかわり"
+"に、指定された文字通りのファイル名を使用します。長いファイル名のサポートを有"
+"効にするには、Emacsを開始する前に、環境変数@env{LFN}を@samp{y}にセットしま"
+"す。残念なことにWindows NTはDOSプログラムが長いファイル名にアクセスすることを"
+"許さないので、MS-DOSにたいしてビルドされたEmacsは、短い8+3のエイリアスだけを"
+"見ることになります。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:355
+#: original_texis/msdog-xtra.texi:355
 #, no-wrap
 msgid "HOME directory under MS-DOS"
 msgstr "HOME directory under MS-DOS"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:366
+#: original_texis/msdog-xtra.texi:366
 msgid ""
 "MS-DOS has no notion of home directory, so Emacs on MS-DOS pretends that the "
 "directory where it is installed is the value of the @env{HOME} environment "
@@ -856,72 +1011,97 @@ msgid ""
 "file names as an alias for the home directory, as you would on GNU or Unix.  "
 "You can also set @env{HOME} variable in the environment before starting "
 "Emacs; its value will then override the above default behavior."
-msgstr "MS-DOSにはホームディレクトリーという概念がないので、MS-DOS上のEmacsはEmacsがインストールされた場所が、環境変数@env{HOME}の値であるかのように振る舞います。つまりEmacsのバイナリー@file{emacs.exe}がディレクトリー@file{c:/utils/emacs/bin}にある場合、Emacsは@env{HOME}が@samp{c:/utils/emacs}にセットされているかのように動作します。この場所は特に、Emacsがinitファイル@file{_emacs}を探す場所でもあります。これを念頭におけば、GNUやUnixのように、ファイル名の中で@samp{~}をホームディレクトリーのエイリアスとして使用できます。Emacsを開始する前に、その環境で@env{HOME}変数をセットすることもできます。この変数の値は、上記のデフォルトの振る舞いをオーバーライドします。"
+msgstr ""
+"MS-DOSにはホームディレクトリーという概念がないので、MS-DOS上のEmacsはEmacsが"
+"インストールされた場所が、環境変数@env{HOME}の値であるかのように振る舞いま"
+"す。つまりEmacsのバイナリー@file{emacs.exe}がディレクトリー@file{c:/utils/"
+"emacs/bin}にある場合、Emacsは@env{HOME}が@samp{c:/utils/emacs}にセットされて"
+"いるかのように動作します。この場所は特に、Emacsがinitファイル@file{_emacs}を"
+"探す場所でもあります。これを念頭におけば、GNUやUnixのように、ファイル名の中で"
+"@samp{~}をホームディレクトリーのエイリアスとして使用できます。Emacsを開始する"
+"前に、その環境で@env{HOME}変数をセットすることもできます。この変数の値は、上"
+"記のデフォルトの振る舞いをオーバーライドします。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:371
+#: original_texis/msdog-xtra.texi:371
 msgid ""
 "Emacs on MS-DOS handles the directory name @file{/dev} specially, because of "
 "a feature in the emulator libraries of DJGPP that pretends I/O devices have "
 "names in that directory.  We recommend that you avoid using an actual "
 "directory named @file{/dev} on any disk."
-msgstr "MS-DOSのEmacsは、@file{/dev}というディレクトリー名を特別に使います。なぜならGJGPPのエミュレーターライブラリーの機能は、I/Oデバイスの名前がそのディレクトリーにあるかのように振る舞うからです。わたしたちは任意のディスクにたいして、@file{/dev}という名前のディレクトリーの使用を避けることを推奨します。"
+msgstr ""
+"MS-DOSのEmacsは、@file{/dev}というディレクトリー名を特別に使います。なぜなら"
+"GJGPPのエミュレーターライブラリーの機能は、I/Oデバイスの名前がそのディレクト"
+"リーにあるかのように振る舞うからです。わたしたちは任意のディスクにたいして、"
+"@file{/dev}という名前のディレクトリーの使用を避けることを推奨します。"
 
 #. type: node
-#: msdog-xtra.texi.orig:372
+#: original_texis/msdog-xtra.texi:372
 #, no-wrap
 msgid "MS-DOS Printing"
 msgstr "MS-DOS Printing"
 
 #. type: subsection
-#: msdog-xtra.texi.orig:373
+#: original_texis/msdog-xtra.texi:373
 #, no-wrap
 msgid "Printing and MS-DOS"
 msgstr "Printing and MS-DOS"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:376 msdog-xtra.texi.orig:584
+#: original_texis/msdog-xtra.texi:376 original_texis/msdog-xtra.texi:584
 msgid "Printing commands, such as @code{lpr-buffer}"
 msgstr "@code{lpr-buffer}"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:379
+#: original_texis/msdog-xtra.texi:379
 msgid ""
 "(@pxref{Printing,,,emacs, the Emacs Manual}) and @code{ps-print-buffer} "
 "(@pxref{PostScript,,,emacs, the Emacs Manual})"
-msgstr "(@ref{Printing,,,emacs, the Emacs Manual}を参照してください)や、@code{ps-print-buffer} (@ref{PostScript,,,emacs, the Emacs Manual}を参照してください)"
+msgstr ""
+"(@ref{Printing,,,emacs, the Emacs Manual}を参照してください)や、@code{ps-"
+"print-buffer} (@ref{PostScript,,,emacs, the Emacs Manual}を参照してください)"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:382
+#: original_texis/msdog-xtra.texi:382
 msgid "(@pxref{Printing}) and @code{ps-print-buffer} (@pxref{PostScript})"
-msgstr "(@ref{Printing}を参照してください)や、@code{ps-print-buffer} (@ref{PostScript}を参照してください)"
+msgstr ""
+"(@ref{Printing}を参照してください)や、@code{ps-print-buffer} "
+"(@ref{PostScript}を参照してください)"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:387
+#: original_texis/msdog-xtra.texi:387
 msgid ""
 "can work on MS-DOS by sending the output to one of the printer ports, if a "
 "Posix-style @code{lpr} program is unavailable.  The same Emacs variables "
 "control printing on all systems, but in some cases they have different "
 "default values on MS-DOS."
-msgstr "のようなコマンドは、Posixスタイルの@code{lpr}プログラムが利用できない場合、出力を1つのプリンターポートに送ることにより、MS-DOSで機能します。同じEmacs変数がすべてのシステムでの印刷を制御しますが、MS-DOSでは異なるデフォルト値をもつ場合もあります。"
+msgstr ""
+"のようなコマンドは、Posixスタイルの@code{lpr}プログラムが利用できない場合、出"
+"力を1つのプリンターポートに送ることにより、MS-DOSで機能します。同じEmacs変数"
+"がすべてのシステムでの印刷を制御しますが、MS-DOSでは異なるデフォルト値をもつ"
+"場合もあります。"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:390
+#: original_texis/msdog-xtra.texi:390
 msgid "@xref{Windows Printing,,,emacs, the Emacs Manual},"
-msgstr "ネットワークプリンターでの印刷のセットアップに関する詳細は、@ref{Windows Printing,,,emacs, the Emacs Manual}を参照してください"
+msgstr ""
+"ネットワークプリンターでの印刷のセットアップに関する詳細は、@ref{Windows "
+"Printing,,,emacs, the Emacs Manual}を参照してください"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:393
+#: original_texis/msdog-xtra.texi:393
 msgid "@xref{Windows Printing},"
-msgstr "ネットワークプリンターでの印刷のセットアップに関する詳細は、@ref{Windows Printing}を参照してください"
+msgstr ""
+"ネットワークプリンターでの印刷のセットアップに関する詳細は、@ref{Windows "
+"Printing}を参照してください"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:395
+#: original_texis/msdog-xtra.texi:395
 msgid "for details about setting up printing to a networked printer."
 msgstr "。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:406
+#: original_texis/msdog-xtra.texi:406
 msgid ""
 "Some printers expect DOS codepage encoding of non-@acronym{ASCII} text, even "
 "though they are connected to a Windows machine that uses a different "
@@ -933,106 +1113,129 @@ msgid ""
 "specify.  For example, @kbd{C-x @key{RET} c cp850-dos @key{RET} M-x lpr-"
 "region @key{RET}} will print the region while converting it to the codepage "
 "850 encoding."
-msgstr "プリンターが同じlocaleにたいして異なるエンコーディングを使用するWindows機に接続されている場合にも、非@acronym{ASCII}テキストのDOSコードページによるエンコーディングを期待するプリンターがいくつかあります。たとえばlocaleがLatin-1のとき、Windowsはコードページ1252を使用しますが、DOSはコードページ850を使用します。@ref{MS-DOS and MULE}を参照してください。Windowsからそのようなプリンターで印刷する場合、@kbd{M-x lpr-buffer}の前に、@kbd{C-x @key{RET} c} (@code{universal-coding-system-argument})を使用することができます。その場合、Emacsは指定したDOSコードページにテキストを変換します。たとえば@kbd{C-x @key{RET} c cp850-dos @key{RET} M-x lpr-region @key{RET}}は、リージョンをコードページ850のエンコーディングに変換して印刷します。"
+msgstr ""
+"プリンターが同じlocaleにたいして異なるエンコーディングを使用するWindows機に接"
+"続されている場合にも、非@acronym{ASCII}テキストのDOSコードページによるエン"
+"コーディングを期待するプリンターがいくつかあります。たとえばlocaleがLatin-1の"
+"とき、Windowsはコードページ1252を使用しますが、DOSはコードページ850を使用しま"
+"す。@ref{MS-DOS and MULE}を参照してください。Windowsからそのようなプリンター"
+"で印刷する場合、@kbd{M-x lpr-buffer}の前に、@kbd{C-x @key{RET} c} "
+"(@code{universal-coding-system-argument})を使用することができます。その場合、"
+"Emacsは指定したDOSコードページにテキストを変換します。たとえば@kbd{C-x "
+"@key{RET} c cp850-dos @key{RET} M-x lpr-region @key{RET}}は、リージョンをコー"
+"ドページ850のエンコーディングに変換して印刷します。"
 
 #. type: vindex
-#: msdog-xtra.texi.orig:407
+#: original_texis/msdog-xtra.texi:407
 #, no-wrap
 msgid "dos-printer"
 msgstr "dos-printer"
 
 #. type: vindex
-#: msdog-xtra.texi.orig:408
+#: original_texis/msdog-xtra.texi:408
 #, no-wrap
 msgid "dos-ps-printer"
 msgstr "dos-ps-printer"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:412
+#: original_texis/msdog-xtra.texi:412
 msgid ""
 "For backwards compatibility, the value of @code{dos-printer} (@code{dos-ps-"
 "printer}), if it has a value, overrides the value of @code{printer-name} "
 "(@code{ps-printer-name}), on MS-DOS."
-msgstr "MS-DOSでは後方互換のため、@code{dos-printer} (@code{dos-ps-printer})に値がセットされている場合、@code{printer-name} (@code{ps-printer-name})の値をオーバーライドします。"
+msgstr ""
+"MS-DOSでは後方互換のため、@code{dos-printer} (@code{dos-ps-printer})に値が"
+"セットされている場合、@code{printer-name} (@code{ps-printer-name})の値をオー"
+"バーライドします。"
 
 #. type: node
-#: msdog-xtra.texi.orig:414
+#: original_texis/msdog-xtra.texi:414
 #, no-wrap
 msgid "MS-DOS and MULE"
 msgstr "MS-DOS and MULE"
 
 #. type: subsection
-#: msdog-xtra.texi.orig:415
+#: original_texis/msdog-xtra.texi:415
 #, no-wrap
 msgid "International Support on MS-DOS"
 msgstr "International Support on MS-DOS"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:416
+#: original_texis/msdog-xtra.texi:416
 #, no-wrap
 msgid "international support @r{(MS-DOS)}"
 msgstr "international support @r{(MS-DOS)}"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:420
+#: original_texis/msdog-xtra.texi:420
 msgid ""
 "Emacs on MS-DOS supports the same international character sets as it does on "
 "GNU, Unix and other platforms"
-msgstr "MS-DOSのEmacsは、異なる文字セット同士を変換するためのコーディングシステムを含む、GNU、Unix、その他のプラットフォームでサポートされているのと同じ国際化文字セットをサポートします"
+msgstr ""
+"MS-DOSのEmacsは、異なる文字セット同士を変換するためのコーディングシステムを含"
+"む、GNU、Unix、その他のプラットフォームでサポートされているのと同じ国際化文字"
+"セットをサポートします"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:422
+#: original_texis/msdog-xtra.texi:422
 msgid "(@pxref{International,,,emacs, the Emacs Manual}),"
 msgstr "(@ref{International,,,emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:425
+#: original_texis/msdog-xtra.texi:425
 msgid "(@pxref{International}),"
 msgstr "(@ref{International}を参照してください)。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:431
+#: original_texis/msdog-xtra.texi:431
 msgid ""
 "including coding systems for converting between the different character "
 "sets.  However, due to incompatibilities between MS-DOS/MS-Windows and other "
 "systems, there are several DOS-specific aspects of this support that you "
 "should be aware of.  This section describes these aspects."
-msgstr "しかしMS-DOSと、MS-Windowsや他のシステムとの間の非互換により、このサポートには知っておくべきいくつかのDOS特有の状況があります。このセクションではこれらの状況について説明します。"
+msgstr ""
+"しかしMS-DOSと、MS-Windowsや他のシステムとの間の非互換により、このサポートに"
+"は知っておくべきいくつかのDOS特有の状況があります。このセクションではこれらの"
+"状況について説明します。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:435
+#: original_texis/msdog-xtra.texi:435
 msgid ""
 "The description below is largely specific to the MS-DOS port of Emacs, "
 "especially where it talks about practical implications for Emacs users."
-msgstr "以下の説明では、主にEmacsのMS-DOSポートについて、特に経験豊富なEmacsユーザーにとって密接に関係する部分について説明します。"
+msgstr ""
+"以下の説明では、主にEmacsのMS-DOSポートについて、特に経験豊富なEmacsユーザー"
+"にとって密接に関係する部分について説明します。"
 
 #. type: item
-#: msdog-xtra.texi.orig:437
+#: original_texis/msdog-xtra.texi:437
 #, no-wrap
 msgid "M-x dos-codepage-setup"
 msgstr "M-x dos-codepage-setup"
 
 #. type: table
-#: msdog-xtra.texi.orig:440
+#: original_texis/msdog-xtra.texi:440
 msgid ""
 "Set up Emacs display and coding systems as appropriate for the current DOS "
 "codepage."
-msgstr "カレントDOSコードページにたいして、適切なEmacsディスプレーとコーディングシステムをセットアップします。"
+msgstr ""
+"カレントDOSコードページにたいして、適切なEmacsディスプレーとコーディングシス"
+"テムをセットアップします。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:442
+#: original_texis/msdog-xtra.texi:442
 #, no-wrap
 msgid "codepage, MS-DOS"
 msgstr "codepage, MS-DOS"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:443
+#: original_texis/msdog-xtra.texi:443
 #, no-wrap
 msgid "DOS codepages"
 msgstr "DOS codepages"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:451
+#: original_texis/msdog-xtra.texi:451
 msgid ""
 "MS-DOS is designed to support one character set of 256 characters at any "
 "given time, but gives you a variety of character sets to choose from.  The "
@@ -1040,10 +1243,15 @@ msgid ""
 "includes all 128 @acronym{ASCII} characters, but the other 128 characters "
 "(codes 128 through 255) vary from one codepage to another.  Each DOS "
 "codepage is identified by a 3-digit number, such as 850, 862, etc."
-msgstr "MS-DOSは常に256文字の文字セットをサポートするようにデザインされていますが、それからさまざまな文字セットを選択できます。選択できる文字セットは@dfn{DOSコードページ}として知られます。各コードページはすべて128文字の@acronym{ASCII}文字を含みますが、それ以外の128文字(コード128から255)は、コードページごとに異なります。各コードページは850、862のように3桁の数字で識別されます。"
+msgstr ""
+"MS-DOSは常に256文字の文字セットをサポートするようにデザインされていますが、そ"
+"れからさまざまな文字セットを選択できます。選択できる文字セットは@dfn{DOSコー"
+"ドページ}として知られます。各コードページはすべて128文字の@acronym{ASCII}文字"
+"を含みますが、それ以外の128文字(コード128から255)は、コードページごとに異なり"
+"ます。各コードページは850、862のように3桁の数字で識別されます。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:463
+#: original_texis/msdog-xtra.texi:463
 msgid ""
 "In contrast to X, which lets you use several fonts at the same time, MS-DOS "
 "normally doesn't allow use of several codepages in a single session.  MS-DOS "
@@ -1055,16 +1263,25 @@ msgid ""
 "codepage without rebooting, we describe here how a stock MS-DOS system "
 "behaves.}.  Much the same limitation applies when you run DOS executables on "
 "other systems such as MS-Windows."
-msgstr "同時に複数のフォントを使用できるXとは対照的に、通常MS-DOSは1つのセッションで複数のコードページを使用できません。MS-DOSはシステムの開始時に1つのコードページをロードするようにデザインされており、それを変更するには再起動が必要です@footnote{通常1つの特定のコードページがディスプレーメモリーに組み込まれていて、@file{CONFIG.SYS}のようなシステム設定ファイルを変更して再起動することにより他のコードページをインストールできます。再起動なしでコードページを変更できるサードパーティーのソフトウェアーもありますが、ここでは普通のMS-DOSシステムが振る舞う方法を説明します。}。MS-Windowsのような他のシステムでDOSの実行可能ファイルを実行するときも、ほぼ同じ制限が適用されます。"
+msgstr ""
+"同時に複数のフォントを使用できるXとは対照的に、通常MS-DOSは1つのセッションで"
+"複数のコードページを使用できません。MS-DOSはシステムの開始時に1つのコードペー"
+"ジをロードするようにデザインされており、それを変更するには再起動が必要です"
+"@footnote{通常1つの特定のコードページがディスプレーメモリーに組み込まれてい"
+"て、@file{CONFIG.SYS}のようなシステム設定ファイルを変更して再起動することによ"
+"り他のコードページをインストールできます。再起動なしでコードページを変更でき"
+"るサードパーティーのソフトウェアーもありますが、ここでは普通のMS-DOSシステム"
+"が振る舞う方法を説明します。}。MS-Windowsのような他のシステムでDOSの実行可能"
+"ファイルを実行するときも、ほぼ同じ制限が適用されます。"
 
 #. type: vindex
-#: msdog-xtra.texi.orig:464
+#: original_texis/msdog-xtra.texi:464
 #, no-wrap
 msgid "dos-codepage"
 msgstr "dos-codepage"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:474
+#: original_texis/msdog-xtra.texi:474
 msgid ""
 "For multibyte operation on MS-DOS, Emacs needs to know which characters the "
 "chosen DOS codepage can display.  So it queries the system shortly after "
@@ -1074,34 +1291,50 @@ msgid ""
 "typically happens when you use the codepage built into the display "
 "hardware.)  You can specify a different codepage for Emacs to use by setting "
 "the variable @code{dos-codepage} in your init file."
-msgstr "MS-DOSでのマルチバイト処理にたいして、Emacsは選択されたDOSコードページで表示できる文字を知る必要があります。そのため起動後に、選択されたコードページ番号を得るためにシステムに問い合わせを行い、その番号を変数@code{dos-codepage}に格納します。実際のコードページは異なっていても、カレントコードページにたいしてデフォルト値437を返すシステムがいくつかあります(通常これはディスプレーハードウェアーに組み込まれているコードページを使用しているとき発生します)。initファイルで変数@code{dos-codepage}をセットすることにより、Emacsに別のコードページを指定できます。"
+msgstr ""
+"MS-DOSでのマルチバイト処理にたいして、Emacsは選択されたDOSコードページで表示"
+"できる文字を知る必要があります。そのため起動後に、選択されたコードページ番号"
+"を得るためにシステムに問い合わせを行い、その番号を変数@code{dos-codepage}に格"
+"納します。実際のコードページは異なっていても、カレントコードページにたいして"
+"デフォルト値437を返すシステムがいくつかあります(通常これはディスプレーハード"
+"ウェアーに組み込まれているコードページを使用しているとき発生します)。initファ"
+"イルで変数@code{dos-codepage}をセットすることにより、Emacsに別のコードページ"
+"を指定できます。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:475
+#: original_texis/msdog-xtra.texi:475
 #, no-wrap
 msgid "language environment, automatic selection on @r{MS-DOS}"
 msgstr "language environment, automatic selection on @r{MS-DOS}"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:479
+#: original_texis/msdog-xtra.texi:479
 msgid ""
 "Multibyte Emacs supports only certain DOS codepages: those which can display "
 "Far-Eastern scripts, like the Japanese codepage 932, and those that encode a "
 "single ISO 8859 character set."
-msgstr "マルチバイトのEmacsは特定のDOSコードページ --- 日本語コードページ932のような極東アジアのスクリプトを表示できるものや、1つのISO 8859文字セットをエンコードするものがあります。"
+msgstr ""
+"マルチバイトのEmacsは特定のDOSコードページ --- 日本語コードページ932のような"
+"極東アジアのスクリプトを表示できるものや、1つのISO 8859文字セットをエンコード"
+"するものがあります。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:485
+#: original_texis/msdog-xtra.texi:485
 msgid ""
 "The Far-Eastern codepages can directly display one of the MULE character "
 "sets for these countries, so Emacs simply sets up to use the appropriate "
 "terminal coding system that is supported by the codepage.  The special "
 "features described in the rest of this section mostly pertain to codepages "
 "that encode ISO 8859 character sets."
-msgstr "極東アジアのコードページは、それらの国々にたいするMULE文字セットの1つを直接表示できるので、Emacsはそのコードページでサポートされる適切な端末コーディングシステムを使用するためにセットアップを行なうだけです。このセクションの残りの部分で説明する特別な機能は、主にISO 8859文字セットをエンコードするコードページに関するものです。"
+msgstr ""
+"極東アジアのコードページは、それらの国々にたいするMULE文字セットの1つを直接表"
+"示できるので、Emacsはそのコードページでサポートされる適切な端末コーディングシ"
+"ステムを使用するためにセットアップを行なうだけです。このセクションの残りの部"
+"分で説明する特別な機能は、主にISO 8859文字セットをエンコードするコードページ"
+"に関するものです。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:497
+#: original_texis/msdog-xtra.texi:497
 msgid ""
 "For the codepages that correspond to one of the ISO character sets, Emacs "
 "knows the character set based on the codepage number.  Emacs automatically "
@@ -1113,61 +1346,82 @@ msgid ""
 "standard ISO character codes.  For example, the letter @samp{@,{c}} "
 "(@samp{c} with cedilla) has code 231 in the standard Latin-1 character set, "
 "but the corresponding DOS codepage 850 uses code 135 for this glyph.}"
-msgstr "ISO文字セットの1つに対応するコードページにたいして、Emacsはそのコードページ番号にもとづいた文字セットを認識します。Emacsは、カレントコードページを使用したファイルの読み書きをサポートするためのコーディングシステムを自動的に作成して、そのコーディングシステムをデフォルトとして使用します。このコーディングシステムの名前は@code{cp@var{nnn}}で、@var{nnn}はコードページ番号です。@footnote{ISO 8859にたいすEmacsの標準コーディングシステムは、この目的に完全に沿っているとは言えません。なぜならDOSコードページは通常、標準ISO文字コードにマッチしないからです。たとえば文字@samp{@,{c}}(cedillaつきの@samp{c})は標準Latin-1文字セットのコード231ですが、それに対応するDOSコードページ850はこのグリフにコード135を使用します。}"
+msgstr ""
+"ISO文字セットの1つに対応するコードページにたいして、Emacsはそのコードページ番"
+"号にもとづいた文字セットを認識します。Emacsは、カレントコードページを使用した"
+"ファイルの読み書きをサポートするためのコーディングシステムを自動的に作成し"
+"て、そのコーディングシステムをデフォルトとして使用します。このコーディングシ"
+"ステムの名前は@code{cp@var{nnn}}で、@var{nnn}はコードページ番号です。"
+"@footnote{ISO 8859にたいすEmacsの標準コーディングシステムは、この目的に完全に"
+"沿っているとは言えません。なぜならDOSコードページは通常、標準ISO文字コードに"
+"マッチしないからです。たとえば文字@samp{@,{c}}(cedillaつきの@samp{c})は標準"
+"Latin-1文字セットのコード231ですが、それに対応するDOSコードページ850はこのグ"
+"リフにコード135を使用します。}"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:498
+#: original_texis/msdog-xtra.texi:498
 #, no-wrap
 msgid "mode line @r{(MS-DOS)}"
 msgstr "mode line @r{(MS-DOS)}"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:504
+#: original_texis/msdog-xtra.texi:504
 msgid ""
 "All the @code{cp@var{nnn}} coding systems use the letter @samp{D} (for "
 "``DOS'') as their mode-line mnemonic.  Since both the terminal coding system "
 "and the default coding system for file I/O are set to the proper "
 "@code{cp@var{nnn}} coding system at startup, it is normal for the mode line "
 "on MS-DOS to begin with @samp{-DD\\-}."
-msgstr "@code{cp@var{nnn}}というコーディングシステムはすべて、モードラインのニーモニックに文字@samp{D} (``DOS'')を使用します。端末のコーディングシステムと、ファイルI/Oにたいするデフォルトのコーディングシステムは、開始時に適切な@code{cp@var{nnn}}コーディングシステムにセットされているので、普通はMS-DOSのモードラインは@samp{-DD\\-}で始まります。"
+msgstr ""
+"@code{cp@var{nnn}}というコーディングシステムはすべて、モードラインのニーモ"
+"ニックに文字@samp{D} (``DOS'')を使用します。端末のコーディングシステムと、"
+"ファイルI/Oにたいするデフォルトのコーディングシステムは、開始時に適切な"
+"@code{cp@var{nnn}}コーディングシステムにセットされているので、普通はMS-DOSの"
+"モードラインは@samp{-DD\\-}で始まります。"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:506
+#: original_texis/msdog-xtra.texi:506
 msgid "@xref{Mode Line,,,emacs, the Emacs Manual}."
 msgstr "@ref{Mode Line,,,emacs, the Emacs Manual}を参照してください。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:509
+#: original_texis/msdog-xtra.texi:509
 msgid "@xref{Mode Line}."
 msgstr "@ref{Mode Line}を参照してください。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:513
+#: original_texis/msdog-xtra.texi:513
 msgid ""
 "Far-Eastern DOS terminals do not use the @code{cp@var{nnn}} coding systems, "
 "and thus their initial mode line looks like the Emacs default."
-msgstr "極東アジアのDOS端末は@code{cp@var{nnn}}コーディングシステムを使用しないので、Emacsデフォルトのモードラインが初期表示されます。"
+msgstr ""
+"極東アジアのDOS端末は@code{cp@var{nnn}}コーディングシステムを使用しないので、"
+"Emacsデフォルトのモードラインが初期表示されます。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:517
+#: original_texis/msdog-xtra.texi:517
 msgid ""
 "Since the codepage number also indicates which script you are using, Emacs "
 "automatically runs @code{set-language-environment} to select the language "
 "environment for that script"
-msgstr "コードページ番号は使用しているスクリプトも示すので、Emacsはそのスクリプトにたいする言語環境を選択するために、自動的に@code{set-language-environment}を実行します"
+msgstr ""
+"コードページ番号は使用しているスクリプトも示すので、Emacsはそのスクリプトにた"
+"いする言語環境を選択するために、自動的に@code{set-language-environment}を実行"
+"します"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:519
+#: original_texis/msdog-xtra.texi:519
 msgid "(@pxref{Language Environments,,,emacs, the Emacs Manual})."
-msgstr "(@ref{Language Environments,,,emacs, the Emacs Manual}を参照してください)。"
+msgstr ""
+"(@ref{Language Environments,,,emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:522
+#: original_texis/msdog-xtra.texi:522
 msgid "(@pxref{Language Environments})."
 msgstr "(@ref{Language Environments}を参照してください)。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:535
+#: original_texis/msdog-xtra.texi:535
 msgid ""
 "If a buffer contains a character belonging to some other ISO 8859 character "
 "set, not the one that the chosen DOS codepage supports, Emacs displays it "
@@ -1179,16 +1433,25 @@ msgid ""
 "but it is still readable by a person who knows the language.)  Even though "
 "the character may occupy several columns on the screen, it is really still "
 "just a single character, and all Emacs commands treat it as one."
-msgstr "バッファーにISO 8859文字セット以外の文字が含まれていて、それが選択されたDOSコードページでサポートされていない場合、Emacsは@acronym{ASCII}文字のシーケンスを使用して、それを表示します。たとえばカレントコードページが文字@samp{@`o}(grave accentつきの小文字の@samp{o})にたいするグリフをもたない場合、その文字は@samp{@{`o@}}と表示されます。ここで中カッコ(braces)はそれが1つの文字であることを示す指標です(これはギリシャ文字やヘブライのアルファベットのような非ラテン文字にたいして不格好に見えるかもしれませんが、その言語を知る人はこれを読むことができます)。その文字がスクリーンの複数列を占めていても、それは単なる1つの文字であり、Emacsコマンドは、それを1文字として扱います。"
+msgstr ""
+"バッファーにISO 8859文字セット以外の文字が含まれていて、それが選択されたDOS"
+"コードページでサポートされていない場合、Emacsは@acronym{ASCII}文字のシーケン"
+"スを使用して、それを表示します。たとえばカレントコードページが文字@samp{@`o}"
+"(grave accentつきの小文字の@samp{o})にたいするグリフをもたない場合、その文字"
+"は@samp{@{`o@}}と表示されます。ここで中カッコ(braces)はそれが1つの文字である"
+"ことを示す指標です(これはギリシャ文字やヘブライのアルファベットのような非ラテ"
+"ン文字にたいして不格好に見えるかもしれませんが、その言語を知る人はこれを読む"
+"ことができます)。その文字がスクリーンの複数列を占めていても、それは単なる1つ"
+"の文字であり、Emacsコマンドは、それを1文字として扱います。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:536
+#: original_texis/msdog-xtra.texi:536
 #, no-wrap
 msgid "MS-Windows codepages"
 msgstr "MS-Windows codepages"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:543
+#: original_texis/msdog-xtra.texi:543
 msgid ""
 "MS-Windows provides its own codepages, which are different from the DOS "
 "codepages for the same locale.  For example, DOS codepage 850 supports the "
@@ -1196,46 +1459,51 @@ msgid ""
 "same character set as Windows codepage 1251, etc.  The MS-Windows version of "
 "Emacs uses the current codepage for display when invoked with the @samp{-nw} "
 "option."
-msgstr "MS-Windowsは独自のコードページを提供し、同じロケールにたいするDOSコードページとは異なります。たとえばDOSコードページと同じ文字をサポートするWindowsコードページは1252で、DOSコードページ855と同じ文字をサポートするWindowsコードページは1252、などです。EmacsのMS-Windowsバージョンを@samp{-nw}オプションで呼び出したとき、Emacsはカレントコードページを使用して表示を行ないます。"
+msgstr ""
+"MS-Windowsは独自のコードページを提供し、同じロケールにたいするDOSコードページ"
+"とは異なります。たとえばDOSコードページと同じ文字をサポートするWindowsコード"
+"ページは1252で、DOSコードページ855と同じ文字をサポートするWindowsコードページ"
+"は1252、などです。EmacsのMS-Windowsバージョンを@samp{-nw}オプションで呼び出し"
+"たとき、Emacsはカレントコードページを使用して表示を行ないます。"
 
 #. type: node
-#: msdog-xtra.texi.orig:544
+#: original_texis/msdog-xtra.texi:544
 #, no-wrap
 msgid "MS-DOS Processes"
 msgstr "MS-DOS Processes"
 
 #. type: subsection
-#: msdog-xtra.texi.orig:545
+#: original_texis/msdog-xtra.texi:545
 #, no-wrap
 msgid "Subprocesses on MS-DOS"
 msgstr "Subprocesses on MS-DOS"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:547
+#: original_texis/msdog-xtra.texi:547
 #, no-wrap
 msgid "compilation under MS-DOS"
 msgstr "compilation under MS-DOS"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:548
+#: original_texis/msdog-xtra.texi:548
 #, no-wrap
 msgid "inferior processes under MS-DOS"
 msgstr "inferior processes under MS-DOS"
 
 #. type: findex
-#: msdog-xtra.texi.orig:549
+#: original_texis/msdog-xtra.texi:549
 #, no-wrap
 msgid "compile @r{(MS-DOS)}"
 msgstr "compile @r{(MS-DOS)}"
 
 #. type: findex
-#: msdog-xtra.texi.orig:550
+#: original_texis/msdog-xtra.texi:550
 #, no-wrap
 msgid "grep @r{(MS-DOS)}"
 msgstr "grep @r{(MS-DOS)}"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:558
+#: original_texis/msdog-xtra.texi:558
 msgid ""
 "Because MS-DOS is a single-process ``operating system'', asynchronous "
 "subprocesses are not available.  In particular, Shell mode and its variants "
@@ -1243,124 +1511,161 @@ msgid ""
 "don't work on MS-DOS, including Shell mode and GUD@.  When in doubt, try and "
 "see; commands that don't work output an error message saying that "
 "asynchronous processes aren't supported."
-msgstr "MS-DOSは単一プロセスの``オペレーティングシステム''なので、非同期サブプロセスは利用できません。特にShellモードと、その変種は機能しません。非同期サブプロセスを使用するEmacs機能のほとんどは、ShellモードやGUDを含めて、MS-DOSでは動作しません。疑わしいときは、コマンドを実行してみれば、機能しない場合は非同期プロセスがサポートされない旨を告げるメッセージが出力されます。"
+msgstr ""
+"MS-DOSは単一プロセスの``オペレーティングシステム''なので、非同期サブプロセス"
+"は利用できません。特にShellモードと、その変種は機能しません。非同期サブプロセ"
+"スを使用するEmacs機能のほとんどは、ShellモードやGUDを含めて、MS-DOSでは動作し"
+"ません。疑わしいときは、コマンドを実行してみれば、機能しない場合は非同期プロ"
+"セスがサポートされない旨を告げるメッセージが出力されます。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:564
+#: original_texis/msdog-xtra.texi:564
 msgid ""
 "Compilation under Emacs with @kbd{M-x compile}, searching files with @kbd{M-"
 "x grep} and displaying differences between files with @kbd{M-x diff} do "
 "work, by running the inferior processes synchronously.  This means you "
 "cannot do any more editing until the inferior process finishes."
-msgstr "@kbd{M-x compile}によるEmacsでのコンパイル、@kbd{M-x grep}によるファイル検索、@kbd{M-x diff}によるファイル間の相違の表示は、同期的に内部プロセスを実行することにより機能します。これはその内部プロセスが終了するまで、編集を行なうことができないことを意味します。"
+msgstr ""
+"@kbd{M-x compile}によるEmacsでのコンパイル、@kbd{M-x grep}によるファイル検"
+"索、@kbd{M-x diff}によるファイル間の相違の表示は、同期的に内部プロセスを実行"
+"することにより機能します。これはその内部プロセスが終了するまで、編集を行なう"
+"ことができないことを意味します。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:568
+#: original_texis/msdog-xtra.texi:568
 msgid ""
 "Spell checking also works, by means of special support for synchronous "
 "invocation of the @code{ispell} program.  This is slower than the "
 "asynchronous invocation on other platforms"
-msgstr "@code{ispell}プログラムの同期呼び出しにたいする特別なサポートにより、スペルチェックも機能します。これは他のプラットフォームでの非同期呼び出しより遅くなります。"
+msgstr ""
+"@code{ispell}プログラムの同期呼び出しにたいする特別なサポートにより、スペル"
+"チェックも機能します。これは他のプラットフォームでの非同期呼び出しより遅くな"
+"ります。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:572
+#: original_texis/msdog-xtra.texi:572
 msgid ""
 "Instead of the Shell mode, which doesn't work on MS-DOS, you can use the "
 "@kbd{M-x eshell} command.  This invokes the Eshell package that implements a "
 "Posix-like shell entirely in Emacs Lisp."
-msgstr "MS-DOSでは、機能しないShellモードのかわりに、@kbd{M-x eshell}コマンドを使用することができます。これはPosix-likeなシェルを、Emacs Lispで実装したEshellパッケージを呼び出します。"
+msgstr ""
+"MS-DOSでは、機能しないShellモードのかわりに、@kbd{M-x eshell}コマンドを使用す"
+"ることができます。これはPosix-likeなシェルを、Emacs Lispで実装したEshellパッ"
+"ケージを呼び出します。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:575
+#: original_texis/msdog-xtra.texi:575
 msgid ""
 "By contrast, Emacs compiled as a native Windows application @strong{does} "
 "support asynchronous subprocesses."
-msgstr "対照的に、ネイティブなWindowsアプリケーションとしてコンパイルされたEmacsは、非同期サブプロセスを@strong{サポートします}"
+msgstr ""
+"対照的に、ネイティブなWindowsアプリケーションとしてコンパイルされたEmacsは、"
+"非同期サブプロセスを@strong{サポートします}"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:577
+#: original_texis/msdog-xtra.texi:577
 msgid "@xref{Windows Processes,,,emacs, the Emacs Manual}."
 msgstr "@ref{Windows Processes,,,emacs, the Emacs Manual}を参照してください。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:580
+#: original_texis/msdog-xtra.texi:580
 msgid "@xref{Windows Processes}."
 msgstr "@ref{Windows Processes}を参照してください。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:582
+#: original_texis/msdog-xtra.texi:582
 #, no-wrap
 msgid "printing under MS-DOS"
 msgstr "printing under MS-DOS"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:589
+#: original_texis/msdog-xtra.texi:589
 msgid ""
 "(@pxref{Printing,,,emacs, the Emacs Manual}) and @code{ps-print-buffer} "
 "(@pxref{PostScript,,,emacs, the Emacs Manual}), work in MS-DOS by sending "
 "the output to one of the printer ports.  @xref{MS-DOS Printing,,,emacs, the "
 "Emacs Manual}."
-msgstr "(@ref{Printing,,,emacs, the Emacs Manual})と、@code{ps-print-buffer} (@ref{PostScript,,,emacs, the Emacs Manual}を参照してください)は、プリンターポートの1つに出力を送ることにより、MS-DOSでも機能します。@ref{MS-DOS Printing,,,emacs, the Emacs Manual}を参照してください。"
+msgstr ""
+"(@ref{Printing,,,emacs, the Emacs Manual})と、@code{ps-print-buffer} "
+"(@ref{PostScript,,,emacs, the Emacs Manual}を参照してください)は、プリンター"
+"ポートの1つに出力を送ることにより、MS-DOSでも機能します。@ref{MS-DOS "
+"Printing,,,emacs, the Emacs Manual}を参照してください。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:594
+#: original_texis/msdog-xtra.texi:594
 msgid ""
 "(@pxref{Printing}) and @code{ps-print-buffer} (@pxref{PostScript}), work in "
 "MS-DOS by sending the output to one of the printer ports.  @xref{MS-DOS "
 "Printing}."
-msgstr "(@ref{Printing}を参照してください)と、@code{ps-print-buffer} (@pxref{PostScript}を参照してください)は、プリンターポートの1つに出力を送ることにより、MS-DOSでも機能します。@ref{MS-DOS Printing}を参照してください。"
+msgstr ""
+"(@ref{Printing}を参照してください)と、@code{ps-print-buffer} "
+"(@pxref{PostScript}を参照してください)は、プリンターポートの1つに出力を送るこ"
+"とにより、MS-DOSでも機能します。@ref{MS-DOS Printing}を参照してください。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:602
+#: original_texis/msdog-xtra.texi:602
 msgid ""
 "When you run a subprocess synchronously on MS-DOS, make sure the program "
 "terminates and does not try to read keyboard input.  If the program does not "
 "terminate on its own, you will be unable to terminate it, because MS-DOS "
 "provides no general way to terminate a process.  Pressing @kbd{C-c} or "
 "@kbd{C-@key{Break}} might sometimes help in these cases."
-msgstr "MS-DOSでサブプロセスを同期実行する場合は、そのプログラムが終了することと、そのプログラムがキーボード入力の読み取りを試みないことを確認してください。プログラムが自分で終了しない場合、それを終了させることはできません。なぜならMS-DOSはプロセスを終了させる一般的な方法を提供しないからです。このような場合、@kbd{C-c}や@kbd{C-@key{Break}}を押すことが助けになる場合もあります。"
+msgstr ""
+"MS-DOSでサブプロセスを同期実行する場合は、そのプログラムが終了することと、そ"
+"のプログラムがキーボード入力の読み取りを試みないことを確認してください。プロ"
+"グラムが自分で終了しない場合、それを終了させることはできません。なぜならMS-"
+"DOSはプロセスを終了させる一般的な方法を提供しないからです。このような場合、"
+"@kbd{C-c}や@kbd{C-@key{Break}}を押すことが助けになる場合もあります。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:607
+#: original_texis/msdog-xtra.texi:607
 msgid ""
 "Accessing files on other machines is not supported on MS-DOS@.  Other "
 "network-oriented commands such as sending mail, Web browsing, remote login, "
 "etc., don't work either, unless network access is built into MS-DOS with "
 "some network redirector."
-msgstr "MS-DOSでは、他のマシンにあるファイルへのアクセスもサポートされません。何らかのネットワークリダイレクト処理により、MS-DOSにネットワークアクセス機能が組み込まれていない限り、メール送信、ウェブ閲覧、リモートログインなどのようなネットワーク指向のコマンドは機能しません。"
+msgstr ""
+"MS-DOSでは、他のマシンにあるファイルへのアクセスもサポートされません。何らか"
+"のネットワークリダイレクト処理により、MS-DOSにネットワークアクセス機能が組み"
+"込まれていない限り、メール送信、ウェブ閲覧、リモートログインなどのようなネッ"
+"トワーク指向のコマンドは機能しません。"
 
 #. type: cindex
-#: msdog-xtra.texi.orig:608
+#: original_texis/msdog-xtra.texi:608
 #, no-wrap
 msgid "directory listing on MS-DOS"
 msgstr "directory listing on MS-DOS"
 
 #. type: vindex
-#: msdog-xtra.texi.orig:609
+#: original_texis/msdog-xtra.texi:609
 #, no-wrap
 msgid "dired-listing-switches @r{(MS-DOS)}"
 msgstr "dired-listing-switches @r{(MS-DOS)}"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:611
+#: original_texis/msdog-xtra.texi:611
 msgid "Dired on MS-DOS uses the @code{ls-lisp} package"
 msgstr "MS-DOSのDiredは@code{ls-lisp}パッケージを使用します"
 
 #. type: iftex
-#: msdog-xtra.texi.orig:613
+#: original_texis/msdog-xtra.texi:613
 msgid "(@pxref{ls in Lisp,,,emacs, the Emacs Manual})."
 msgstr "(@ref{ls in Lisp,,,emacs, the Emacs Manual}を参照してください)。"
 
 #. type: ifnottex
-#: msdog-xtra.texi.orig:616
+#: original_texis/msdog-xtra.texi:616
 msgid "(@pxref{ls in Lisp})."
 msgstr "(@ref{ls in Lisp}を参照してください)。"
 
 #. type: Plain text
-#: msdog-xtra.texi.orig:620
+#: original_texis/msdog-xtra.texi:620
 msgid ""
 "Therefore, Dired on MS-DOS supports only some of the possible options you "
 "can mention in the @code{dired-listing-switches} variable.  The options that "
 "work are @samp{-A}, @samp{-a}, @samp{-c}, @samp{-i}, @samp{-r}, @samp{-S}, "
 "@samp{-s}, @samp{-t}, and @samp{-u}."
-msgstr "したがってMS-DOSのDiredは、変数@code{dired-listing-switches}に記述できる、利用可能なオプションは限られます。機能するオプションは@samp{-A}、@samp{-a}、@samp{-c}、@samp{-i}、@samp{-r}、@samp{-S}、@samp{-s}、@samp{-t}、@samp{-u}です。"
+msgstr ""
+"したがってMS-DOSのDiredは、変数@code{dired-listing-switches}に記述できる、利"
+"用可能なオプションは限られます。機能するオプションは@samp{-A}、@samp{-a}、"
+"@samp{-c}、@samp{-i}、@samp{-r}、@samp{-S}、@samp{-s}、@samp{-t}、@samp{-u}で"
+"す。"
