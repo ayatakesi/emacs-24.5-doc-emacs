@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 01:31+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Fortran"
 #: original_texis/fortran-xtra.texi:8
 #, no-wrap
 msgid "Fortran Mode"
-msgstr "Fortran Mode"
+msgstr "Fortranモード"
 
 #. type: cindex
 #: original_texis/fortran-xtra.texi:9
@@ -227,7 +227,7 @@ msgstr "Fortran Motion"
 #: original_texis/fortran-xtra.texi:70
 #, no-wrap
 msgid "Motion Commands"
-msgstr "Motion Commands"
+msgstr "移動コマンド"
 
 #. type: Plain text
 #: original_texis/fortran-xtra.texi:77
@@ -471,7 +471,7 @@ msgstr "Fortran Indent"
 #: original_texis/fortran-xtra.texi:139
 #, no-wrap
 msgid "Fortran Indentation"
-msgstr "Fortran Indentation"
+msgstr "Fortranのインデント"
 
 #. type: Plain text
 #: original_texis/fortran-xtra.texi:145
@@ -545,7 +545,7 @@ msgstr "ForIndent Commands"
 #: original_texis/fortran-xtra.texi:155
 #, no-wrap
 msgid "Fortran Indentation and Filling Commands"
-msgstr "Fortran Indentation and Filling Commands"
+msgstr "Fortranのインデントおよびフィルコマンド"
 
 #. type: item
 #: original_texis/fortran-xtra.texi:158
@@ -707,7 +707,7 @@ msgstr "ForIndent Cont"
 #: original_texis/fortran-xtra.texi:198
 #, no-wrap
 msgid "Continuation Lines"
-msgstr "Continuation Lines"
+msgstr "継続行"
 
 #. type: cindex
 #: original_texis/fortran-xtra.texi:199
@@ -828,7 +828,7 @@ msgstr "ForIndent Num"
 #: original_texis/fortran-xtra.texi:246
 #, no-wrap
 msgid "Line Numbers"
-msgstr "Line Numbers"
+msgstr "行番号"
 
 #. type: Plain text
 #: original_texis/fortran-xtra.texi:251
@@ -893,7 +893,7 @@ msgstr "ForIndent Conv"
 #: original_texis/fortran-xtra.texi:269
 #, no-wrap
 msgid "Syntactic Conventions"
-msgstr "Syntactic Conventions"
+msgstr "構文的な慣習"
 
 #. type: Plain text
 #: original_texis/fortran-xtra.texi:274
@@ -953,7 +953,7 @@ msgstr "ForIndent Vars"
 #: original_texis/fortran-xtra.texi:297
 #, no-wrap
 msgid "Variables for Fortran Indentation"
-msgstr "Variables for Fortran Indentation"
+msgstr "Fortranのインデントのための変数"
 
 #. type: item
 #: original_texis/fortran-xtra.texi:299 original_texis/fortran-xtra.texi:308
@@ -1394,7 +1394,7 @@ msgstr "Fortran Autofill"
 #: original_texis/fortran-xtra.texi:453
 #, no-wrap
 msgid "Auto Fill in Fortran Mode"
-msgstr "Auto Fill in Fortran Mode"
+msgstr "FortranモードでのAuto Fill"
 
 #. type: Plain text
 #: original_texis/fortran-xtra.texi:463
@@ -1468,7 +1468,7 @@ msgstr "Fortran Columns"
 #: original_texis/fortran-xtra.texi:489
 #, no-wrap
 msgid "Checking Columns in Fortran"
-msgstr "Checking Columns in Fortran"
+msgstr "Fortranでの列のチェック"
 
 #. type: vindex
 #: original_texis/fortran-xtra.texi:491
@@ -1695,7 +1695,7 @@ msgstr "Fortran Abbrev"
 #: original_texis/fortran-xtra.texi:562
 #, no-wrap
 msgid "Fortran Keyword Abbrevs"
-msgstr "Fortran Keyword Abbrevs"
+msgstr "FortranキーワードのAbbrev"
 
 #. type: Plain text
 #: original_texis/fortran-xtra.texi:567
