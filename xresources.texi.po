@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:31+0900\n"
+"PO-Revision-Date: 2016-10-02 08:18+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "X Resources"
 #: original_texis/xresources.texi:6
 #, no-wrap
 msgid "X Options and Resources"
-msgstr "X Options and Resources"
+msgstr "Xのオプションとリソース"
 
 #. type: Plain text
 #: original_texis/xresources.texi:10
@@ -407,7 +407,7 @@ msgstr ""
 #: original_texis/xresources.texi:139
 #, no-wrap
 msgid "Table of X Resources for Emacs"
-msgstr "Table of X Resources for Emacs"
+msgstr "EmacsにたいするXリソースの表"
 
 #. type: Plain text
 #: original_texis/xresources.texi:144
@@ -970,7 +970,7 @@ msgstr ""
 #: original_texis/xresources.texi:317
 #, no-wrap
 msgid "Lucid Menu And Dialog X Resources"
-msgstr "Lucid Menu And Dialog X Resources"
+msgstr "Lucidのメニューとダイアログ"
 
 #. type: cindex
 #: original_texis/xresources.texi:318
@@ -1166,7 +1166,7 @@ msgstr "メニューバーの余白(文字数)です。デフォルトは1です
 #: original_texis/xresources.texi:374
 #, no-wrap
 msgid "Motif Menu X Resources"
-msgstr "Motif Menu X Resources"
+msgstr "MotifメニューのXリソース"
 
 #. type: cindex
 #: original_texis/xresources.texi:375
@@ -1825,7 +1825,7 @@ msgstr "widget \"*\" style \"my_style\"\n"
 #: original_texis/xresources.texi:633
 #, no-wrap
 msgid "GTK Widget Names in Emacs"
-msgstr "GTK Widget Names in Emacs"
+msgstr "EmacsでのGTKウィジェット名"
 
 #. type: cindex
 #: original_texis/xresources.texi:635
