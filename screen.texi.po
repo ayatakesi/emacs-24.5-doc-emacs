@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-09-19 23:58+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
+"PO-Revision-Date: 2016-10-01 20:53+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -16,31 +16,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: node
-#: screen.texi.orig:5
+#: original_texis/screen.texi:5
 #, no-wrap
 msgid "Screen"
 msgstr "Screen"
 
 #. type: chapter
-#: screen.texi.orig:6
+#: original_texis/screen.texi:6
 #, no-wrap
 msgid "The Organization of the Screen"
 msgstr "The Organization of the Screen"
 
 #. type: cindex
-#: screen.texi.orig:7
+#: original_texis/screen.texi:7
 #, no-wrap
 msgid "screen"
 msgstr "screen"
 
 #. type: cindex
-#: screen.texi.orig:8
+#: original_texis/screen.texi:8
 #, no-wrap
 msgid "frame"
 msgstr "frame"
 
 #. type: Plain text
-#: screen.texi.orig:17
+#: original_texis/screen.texi:17
 msgid ""
 "On a graphical display, such as on GNU/Linux using the X Window System, "
 "Emacs occupies a ``graphical window''.  On a text terminal, Emacs occupies "
@@ -48,10 +48,17 @@ msgid ""
 "graphical window or terminal screen occupied by Emacs.  Emacs behaves very "
 "similarly on both kinds of frames.  It normally starts out with just one "
 "frame, but you can create additional frames if you wish (@pxref{Frames})."
-msgstr "Xウィンドウシステムを使うGNU/Linuxのようなグラフィカルなディスプレーの場合、Emacsは``グラフィカルなウィンドウ''に表示されます。テキスト端末の場合、Emacsは端末スクリーン全体を表示領域として使います。Emacsが占有する画面スクリーンや、グラフィカルなウィンドウを指して、@dfn{フレーム(frame)}という用語を使用します。Emacsの振る舞いは、どちらのフレームでも同じです。通常は1個のフレームだけで始まりますが、必要ならば新たにフレームを作れます(@ref{Frames}を参照してください)。"
+msgstr ""
+"Xウィンドウシステムを使うGNU/Linuxのようなグラフィカルなディスプレーの場合、"
+"Emacsは``グラフィカルなウィンドウ''に表示されます。テキスト端末の場合、Emacs"
+"は端末スクリーン全体を表示領域として使います。Emacsが占有する画面スクリーン"
+"や、グラフィカルなウィンドウを指して、@dfn{フレーム(frame)}という用語を使用し"
+"ます。Emacsの振る舞いは、どちらのフレームでも同じです。通常は1個のフレームだ"
+"けで始まりますが、必要ならば新たにフレームを作れます(@ref{Frames}を参照してく"
+"ださい)。"
 
 #. type: Plain text
-#: screen.texi.orig:25
+#: original_texis/screen.texi:25
 msgid ""
 "Each frame consists of several distinct regions.  At the top of the frame is "
 "a @dfn{menu bar}, which allows you to access commands via a series of "
@@ -60,20 +67,32 @@ msgid ""
 "the very bottom of the frame is an @dfn{echo area}, where informative "
 "messages are displayed and where you enter information when Emacs asks for "
 "it."
-msgstr "それぞれのフレームにはいくつかの領域が含まれています。いちばん上のフレームは@dfn{メニューバー(menu bar)}で、メニューにある一連のコマンドにアクセスできます。グラフィカルなディスプレーでは、メニューバーのすぐ下に@dfn{ツールバー(tool bar)}があり、アイコンをクリックすることにより編集コマンドを実行できます。いちばん下のフレームは@dfn{エコーエリア(echo area)}で、メッセージが表示されたり、Emacsが入力を求める際に使用されます。"
+msgstr ""
+"それぞれのフレームにはいくつかの領域が含まれています。いちばん上のフレームは"
+"@dfn{メニューバー(menu bar)}で、メニューにある一連のコマンドにアクセスできま"
+"す。グラフィカルなディスプレーでは、メニューバーのすぐ下に@dfn{ツールバー"
+"(tool bar)}があり、アイコンをクリックすることにより編集コマンドを実行できま"
+"す。いちばん下のフレームは@dfn{エコーエリア(echo area)}で、メッセージが表示さ"
+"れたり、Emacsが入力を求める際に使用されます。"
 
 #. type: Plain text
-#: screen.texi.orig:32
+#: original_texis/screen.texi:32
 msgid ""
 "The main area of the frame, below the tool bar (if one exists) and above the "
 "echo area, is called @dfn{the window}.  Henceforth in this manual, we will "
 "use the word ``window'' in this sense.  Graphical display systems commonly "
 "use the word ``window'' with a different meaning; but, as stated above, we "
 "refer to those ``graphical windows'' as ``frames''."
-msgstr "(もしあれば)ツールバーの下とエコーエリアの間の、フレームの主要な領域の部分を、@dfn{ウィンドウ(the window)}といいます。このマニュアルでは``ウィンドウ''という言葉を、上記のような場合に使います。グラフィカルなディスプレーのシステムでは、``ウィンドウ''という言葉を違う意味で用いますが、上述したとおり、そのような``グラフィカルなウィンドウ''のことは、``フレーム''と呼ぶことにします。"
+msgstr ""
+"(もしあれば)ツールバーの下とエコーエリアの間の、フレームの主要な領域の部分"
+"を、@dfn{ウィンドウ(the window)}といいます。このマニュアルでは``ウィンド"
+"ウ''という言葉を、上記のような場合に使います。グラフィカルなディスプレーのシ"
+"ステムでは、``ウィンドウ''という言葉を違う意味で用いますが、上述したとおり、"
+"そのような``グラフィカルなウィンドウ''のことは、``フレーム''と呼ぶことにしま"
+"す。"
 
 #. type: Plain text
-#: screen.texi.orig:40
+#: original_texis/screen.texi:40
 msgid ""
 "An Emacs window is where the @dfn{buffer}---the text you are editing---is "
 "displayed.  On a graphical display, the window possesses a @dfn{scroll bar} "
@@ -81,19 +100,29 @@ msgid ""
 "of the window is a @dfn{mode line}.  This displays various information about "
 "what is going on in the buffer, such as whether there are unsaved changes, "
 "the editing modes that are in use, the current line number, and so forth."
-msgstr "Emacsのウィンドウには、@dfn{バッファー(buffer)} --- 編集中のテキスト --- が表示されます。グラフィカルなディスプレーでは、ウィンドウの片側に@dfn{スクロールバー(scroll bar)}あり、これを使ってバッファー内をスクロールできます。ウィンドウのいちばん下の行は、@dfn{モードライン(mode line)}です。これには保存されてない変更や、使用されている編集モード、現在のライン番号など、バッファーについての様々な情報が表示されます。"
+msgstr ""
+"Emacsのウィンドウには、@dfn{バッファー(buffer)} --- 編集中のテキスト --- が表"
+"示されます。グラフィカルなディスプレーでは、ウィンドウの片側に@dfn{スクロール"
+"バー(scroll bar)}あり、これを使ってバッファー内をスクロールできます。ウィンド"
+"ウのいちばん下の行は、@dfn{モードライン(mode line)}です。これには保存されてな"
+"い変更や、使用されている編集モード、現在のライン番号など、バッファーについて"
+"の様々な情報が表示されます。"
 
 #. type: Plain text
-#: screen.texi.orig:45
+#: original_texis/screen.texi:45
 msgid ""
 "When you start Emacs, there is normally only one window in the frame.  "
 "However, you can subdivide this window horizontally or vertically to create "
 "multiple windows, each of which can independently display a buffer "
 "(@pxref{Windows})."
-msgstr "Emacsを起動すると、通常フレームには1つのウィンドウが表示されます。しかしこのウィンドウを水平方向、または垂直方向に分割して複数のウィンドウを作成し、それぞれ異なるバッファーを表示することもできます(@ref{Windows}を参照してください)。"
+msgstr ""
+"Emacsを起動すると、通常フレームには1つのウィンドウが表示されます。しかしこの"
+"ウィンドウを水平方向、または垂直方向に分割して複数のウィンドウを作成し、それ"
+"ぞれ異なるバッファーを表示することもできます(@ref{Windows}を参照してくださ"
+"い)。"
 
 #. type: Plain text
-#: screen.texi.orig:56
+#: original_texis/screen.texi:56
 msgid ""
 "At any time, one window is the @dfn{selected window}.  On a graphical "
 "display, the selected window shows a more prominent cursor (usually solid "
@@ -105,66 +134,77 @@ msgid ""
 "windows is mostly visible for reference.  If you use multiple frames on a "
 "graphical display, selecting a particular frame selects a window in that "
 "frame."
-msgstr "どんな時でも、1つのウィンドウが@dfn{選択されたウィンドウ(selected window)}となります。グラフィカルなディスプレーでは、選択されたウィンドウには目立つカーソル(通常は塗りつぶされて点滅している)が表示され、他のウィンドウには目立たないカーソル(通常はぬりつぶされていない四角)が表示されます。テキスト端末では、選択されたウィンドウのカーソルだけが表示されます。選択されたウィンドウ上に表示されているバッファーを、@dfn{カレントバッファー(current buffer)}と呼び、それが編集が行われているバッファーとなります。多くのEmacsコマンドはカレントバッファーに暗黙に適用され、選択されてないウィンドウに表示されているテキストは参照用に使用します。もしグラフィカルなディスプレーで複数のフレームを使っている場合、特定のフレームを選択すると、そのフレームのウィンドウが選択されます。"
+msgstr ""
+"どんな時でも、1つのウィンドウが@dfn{選択されたウィンドウ(selected window)}と"
+"なります。グラフィカルなディスプレーでは、選択されたウィンドウには目立つカー"
+"ソル(通常は塗りつぶされて点滅している)が表示され、他のウィンドウには目立たな"
+"いカーソル(通常はぬりつぶされていない四角)が表示されます。テキスト端末では、"
+"選択されたウィンドウのカーソルだけが表示されます。選択されたウィンドウ上に表"
+"示されているバッファーを、@dfn{カレントバッファー(current buffer)}と呼び、そ"
+"れが編集が行われているバッファーとなります。多くのEmacsコマンドはカレントバッ"
+"ファーに暗黙に適用され、選択されてないウィンドウに表示されているテキストは参"
+"照用に使用します。もしグラフィカルなディスプレーで複数のフレームを使っている"
+"場合、特定のフレームを選択すると、そのフレームのウィンドウが選択されます。"
 
 #. type: section
-#: screen.texi.orig:62 screen.texi.orig:64 screen.texi.orig:65
+#: original_texis/screen.texi:62 original_texis/screen.texi:64
+#: original_texis/screen.texi:65
 #, no-wrap
 msgid "Point"
 msgstr "Point"
 
 #. type: menuentry
-#: screen.texi.orig:62
+#: original_texis/screen.texi:62
 msgid "The place in the text where editing commands operate."
 msgstr "テキスト内で編集コマンドが作用する場所"
 
 #. type: node
-#: screen.texi.orig:62 screen.texi.orig:97
+#: original_texis/screen.texi:62 original_texis/screen.texi:97
 #, no-wrap
 msgid "Echo Area"
 msgstr "Echo Area"
 
 #. type: menuentry
-#: screen.texi.orig:62
+#: original_texis/screen.texi:62
 msgid "Short messages appear at the bottom of the screen."
 msgstr "スクリーンのいちばん下で、短いメッセージが表示されます"
 
 #. type: node
-#: screen.texi.orig:62 screen.texi.orig:161
+#: original_texis/screen.texi:62 original_texis/screen.texi:161
 #, no-wrap
 msgid "Mode Line"
 msgstr "Mode Line"
 
 #. type: menuentry
-#: screen.texi.orig:62
+#: original_texis/screen.texi:62
 msgid "Interpreting the mode line."
 msgstr "モードを説明するライン"
 
 #. type: node
-#: screen.texi.orig:62 screen.texi.orig:280
+#: original_texis/screen.texi:62 original_texis/screen.texi:280
 #, no-wrap
 msgid "Menu Bar"
 msgstr "Menu Bar"
 
 #. type: menuentry
-#: screen.texi.orig:62
+#: original_texis/screen.texi:62
 msgid "How to use the menu bar."
 msgstr "メニューバーの使い方"
 
 #. type: cindex
-#: screen.texi.orig:66
+#: original_texis/screen.texi:66
 #, no-wrap
 msgid "point"
 msgstr "point"
 
 #. type: cindex
-#: screen.texi.orig:67
+#: original_texis/screen.texi:67
 #, no-wrap
 msgid "cursor"
 msgstr "cursor"
 
 #. type: Plain text
-#: screen.texi.orig:77
+#: original_texis/screen.texi:77
 msgid ""
 "The cursor in the selected window shows the location where most editing "
 "commands take effect, which is called @dfn{point}@footnote{The term "
@@ -173,10 +213,17 @@ msgid ""
 "editing position.}.  Many Emacs commands move point to different places in "
 "the buffer; for example, you can place point by clicking mouse button 1 "
 "(normally the left button) at the desired location."
-msgstr "カーソルは、選択されたウィンドウで多くの編集コマンドが作用する場所を示し、その場所を@dfn{ポイント(point)}@footnote{``point''という用語は、文字@samp{.}に由来します。この文字は、現在ポイントと呼んでいる値を参照するためのTECO(オリジナルのEmacsを記述していた言語)のコマンドです。}と呼びます。多くのEmacsコマンドはポイントをテキスト中で移動し、テキスト中のさまざまな箇所で編集できるようにします。マウスのボタン1(通常は左ボタン)をクリックしても、ポイントを移動できます。"
+msgstr ""
+"カーソルは、選択されたウィンドウで多くの編集コマンドが作用する場所を示し、そ"
+"の場所を@dfn{ポイント(point)}@footnote{``point''という用語は、文字@samp{.}に"
+"由来します。この文字は、現在ポイントと呼んでいる値を参照するためのTECO(オリジ"
+"ナルのEmacsを記述していた言語)のコマンドです。}と呼びます。多くのEmacsコマン"
+"ドはポイントをテキスト中で移動し、テキスト中のさまざまな箇所で編集できるよう"
+"にします。マウスのボタン1(通常は左ボタン)をクリックしても、ポイントを移動でき"
+"ます。"
 
 #. type: Plain text
-#: screen.texi.orig:87
+#: original_texis/screen.texi:87
 msgid ""
 "By default, the cursor in the selected window is drawn as a solid block and "
 "appears to be @emph{on} a character, but you should think of point as "
@@ -186,52 +233,61 @@ msgid ""
 "@samp{b}.  If you insert the character @samp{!} at that position, the result "
 "is @samp{fro!b}, with point between the @samp{!} and the @samp{b}.  Thus, "
 "the cursor remains over the @samp{b}, as before."
-msgstr "デフォルトでは、選択されたウィンドウ上にある、塗りつぶされたボックスのカーソルは文字の@emph{上}に表示されますが、ポイントは2つの文字の@emph{間}にあると考える必要があります。つまりポイントは、カーソルが重なっている文字の@emph{前}にあります。たとえば、@samp{frob}というテキストで、@samp{b}にカーソルがある場合、ポイントは@samp{o}と@samp{b}の間にあります。その位置に@samp{!}という文字を挿入すると、@samp{fro!b}という結果になり、ポイントは@samp{!}と@samp{b}の間にあります。つまりカーソルは@samp{b}の上にあり、実行前と同じです。 \n"
+msgstr "デフォルトでは、選択されたウィンドウ上にある、塗りつぶされたボックスのカーソルは文字の@emph{上}に表示されますが、ポイントは2つの文字の@emph{間}にあると考える必要があります。つまりポイントは、カーソルが重なっている文字の@emph{前}にあります。たとえば、@samp{frob}というテキストで、@samp{b}にカーソルがある場合、ポイントは@samp{o}と@samp{b}の間にあります。その位置に@samp{!}という文字を挿入すると、@samp{fro!b}という結果になり、ポイントは@samp{!}と@samp{b}の間にあります。つまりカーソルは@samp{b}の上にあり、実行前と同じです。 "
 
 #. type: Plain text
-#: screen.texi.orig:93
+#: original_texis/screen.texi:93
 msgid ""
 "If you are editing several files in Emacs, each in its own buffer, each "
 "buffer has its own value of point.  A buffer that is not currently displayed "
 "remembers its value of point if you later display it again.  Furthermore, if "
 "a buffer is displayed in multiple windows, each of those windows has its own "
 "value of point."
-msgstr "Emacsでいくつかのファイルを編集して、各ファイルがそれぞれ専用のバッファーにある場合、各バッファには独自のポイント位置があります。バッファーが表示されていなくても、後で表示されるときに備えて、ポイント位置を記録しています。1つのフレームに複数のウィンドウがある場合、各ウィンドウには独自のポイント位置があります。"
+msgstr ""
+"Emacsでいくつかのファイルを編集して、各ファイルがそれぞれ専用のバッファーにあ"
+"る場合、各バッファには独自のポイント位置があります。バッファーが表示されてい"
+"なくても、後で表示されるときに備えて、ポイント位置を記録しています。1つのフ"
+"レームに複数のウィンドウがある場合、各ウィンドウには独自のポイント位置があり"
+"ます。"
 
 #. type: Plain text
-#: screen.texi.orig:96
+#: original_texis/screen.texi:96
 msgid ""
 "@xref{Cursor Display}, for options that control how Emacs displays the "
 "cursor."
-msgstr "Emacsがカーソルをどのように表示するか制御する方法については、@ref{Cursor Display}を参照してください。"
+msgstr ""
+"Emacsがカーソルをどのように表示するか制御する方法については、@ref{Cursor "
+"Display}を参照してください。"
 
 #. type: section
-#: screen.texi.orig:98
+#: original_texis/screen.texi:98
 #, no-wrap
 msgid "The Echo Area"
 msgstr "The Echo Area"
 
 #. type: cindex
-#: screen.texi.orig:99
+#: original_texis/screen.texi:99
 #, no-wrap
 msgid "echo area"
 msgstr "echo area"
 
 #. type: Plain text
-#: screen.texi.orig:103
+#: original_texis/screen.texi:103
 msgid ""
 "The line at the very bottom of the frame is the @dfn{echo area}.  It is used "
 "to display small amounts of text for various purposes."
-msgstr "フレームの1番下の行は、@dfn{エコーエリア(echo area)}です。ここは、いろいろな目的向けの短いテキスト表示に使われます。"
+msgstr ""
+"フレームの1番下の行は、@dfn{エコーエリア(echo area)}です。ここは、いろいろな"
+"目的向けの短いテキスト表示に使われます。"
 
 #. type: cindex
-#: screen.texi.orig:104
+#: original_texis/screen.texi:104
 #, no-wrap
 msgid "echoing"
 msgstr "echoing"
 
 #. type: Plain text
-#: screen.texi.orig:115
+#: original_texis/screen.texi:115
 msgid ""
 "The echo area is so-named because one of the things it is used for is "
 "@dfn{echoing}, which means displaying the characters of a multi-character "
@@ -242,30 +298,41 @@ msgid ""
 "the rest of the command echoes immediately as you type it.  This behavior is "
 "designed to give confident users fast response, while giving hesitant users "
 "maximum feedback."
-msgstr "エコーエリアという名前は、あなたが打った文字が@dfn{エコーされる}ことが由来で、これは複数の文字からなるコマンドが表示されることを意味します。1文字のコマンドをエコーすることはありません。複数の文字からなるコマンド(@ref{Keys}を参照してください)の途中で、入力中に1秒以上間を置くとエコーされます。Emacsはそれまでに入力されたコマンドの文字を表示し、ユーザーに残りの文字の入力を促します。いったんエコーが始まると、コマンドの残りは、打つと同時にただちにエコーされます。これは、タイプに自信のあるユーザーには速い応答を提供する一方で、自信のないユーザーには最大限のフィードバックを与えるための機能です。"
+msgstr ""
+"エコーエリアという名前は、あなたが打った文字が@dfn{エコーされる}ことが由来"
+"で、これは複数の文字からなるコマンドが表示されることを意味します。1文字のコマ"
+"ンドをエコーすることはありません。複数の文字からなるコマンド(@ref{Keys}を参照"
+"してください)の途中で、入力中に1秒以上間を置くとエコーされます。Emacsはそれま"
+"でに入力されたコマンドの文字を表示し、ユーザーに残りの文字の入力を促します。"
+"いったんエコーが始まると、コマンドの残りは、打つと同時にただちにエコーされま"
+"す。これは、タイプに自信のあるユーザーには速い応答を提供する一方で、自信のな"
+"いユーザーには最大限のフィードバックを与えるための機能です。"
 
 #. type: cindex
-#: screen.texi.orig:116
+#: original_texis/screen.texi:116
 #, no-wrap
 msgid "error message"
 msgstr "error message"
 
 #. type: cindex
-#: screen.texi.orig:117
+#: original_texis/screen.texi:117
 #, no-wrap
 msgid "echo area message"
 msgstr "echo area message"
 
 #. type: Plain text
-#: screen.texi.orig:121
+#: original_texis/screen.texi:121
 msgid ""
 "The echo area is also used to display an @dfn{error message} when a command "
 "cannot do its job.  Error messages may be accompanied by beeping or by "
 "flashing the screen."
-msgstr "エコーエリアは、コマンドを実行できなかったときに、@dfn{エラーメッセージ(error message)}を表示するためにも使用されます。エラーメッセージと共に、ビープ音が鳴ったり、画面が点滅する場合もあります。"
+msgstr ""
+"エコーエリアは、コマンドを実行できなかったときに、@dfn{エラーメッセージ"
+"(error message)}を表示するためにも使用されます。エラーメッセージと共に、ビー"
+"プ音が鳴ったり、画面が点滅する場合もあります。"
 
 #. type: Plain text
-#: screen.texi.orig:133
+#: original_texis/screen.texi:133
 msgid ""
 "Some commands display informative messages in the echo area to tell you what "
 "the command has done, or to provide you with some specific information.  "
@@ -277,34 +344,42 @@ msgid ""
 "messages ending in @samp{...} while they are working (sometimes also "
 "indicating how much progress has been made, as a percentage), and add "
 "@samp{done} when they are finished."
-msgstr "エコーエリアに有用なメッセージを表示するコマンドもあります。これらの@dfn{有用}なメッセージは、エラーメッセージによく似ていますが、ビープ音を伴わず点滅もしません。たとえば、コマンド@kbd{C-x =}(@key{Ctrl}を押したまま@kbd{x}をタイプし、@key{Ctrl}を離してから@kbd{=}をタイプします)は、テキスト中のポイントの文字位置と、ウィンドウの現在の列位置を示すメッセージを表示します。処理に時間のかかるコマンドでは、実行中に@samp{...}(どの程度進行したかをパーセント表示で示す場合もあります)で終わるメッセージをエコーエリアに表示し、完了時には@samp{done}を最後に付け加えることがよくあります。"
+msgstr ""
+"エコーエリアに有用なメッセージを表示するコマンドもあります。これらの@dfn{有"
+"用}なメッセージは、エラーメッセージによく似ていますが、ビープ音を伴わず点滅も"
+"しません。たとえば、コマンド@kbd{C-x =}(@key{Ctrl}を押したまま@kbd{x}をタイプ"
+"し、@key{Ctrl}を離してから@kbd{=}をタイプします)は、テキスト中のポイントの文"
+"字位置と、ウィンドウの現在の列位置を示すメッセージを表示します。処理に時間の"
+"かかるコマンドでは、実行中に@samp{...}(どの程度進行したかをパーセント表示で示"
+"す場合もあります)で終わるメッセージをエコーエリアに表示し、完了時には"
+"@samp{done}を最後に付け加えることがよくあります。"
 
 #. type: cindex
-#: screen.texi.orig:134
+#: original_texis/screen.texi:134
 #, no-wrap
 msgid "@file{*Messages*} buffer"
 msgstr "@file{*Messages*} buffer"
 
 #. type: cindex
-#: screen.texi.orig:135
+#: original_texis/screen.texi:135
 #, no-wrap
 msgid "saved echo area messages"
 msgstr "saved echo area messages"
 
 #. type: cindex
-#: screen.texi.orig:136
+#: original_texis/screen.texi:136
 #, no-wrap
 msgid "messages saved from echo area"
 msgstr "messages saved from echo area"
 
 #. type: vindex
-#: screen.texi.orig:137
+#: original_texis/screen.texi:137
 #, no-wrap
 msgid "message-log-max"
 msgstr "message-log-max"
 
 #. type: Plain text
-#: screen.texi.orig:148
+#: original_texis/screen.texi:148
 msgid ""
 "Informative echo area messages are saved in a special buffer named "
 "@file{*Messages*}.  (We have not explained buffers yet; see @ref{Buffers}, "
@@ -315,22 +390,32 @@ msgid ""
 "explained variables either; see @ref{Variables}, for more information about "
 "them.)  Beyond this limit, one line is deleted from the beginning whenever a "
 "new message line is added at the end."
-msgstr "エコーエリアに表示される有益なメッセージは、@file{*Messages*}と呼ばれる特別なバッファーに保存されます(まだバッファーについては説明していませんが、詳細は@ref{Buffers}を参照してください)。画面上に短時間しか表示されないメッセージを見逃してしまった場合には、@file{*Messages*}バッファーに切り替えて、もう一度そのメッセージを見ることができます。@file{*Messages*}のサイズは、ある行数に制限されています。変数@code{message-log-max}は、その行数を指定します(まだ変数については説明していませんが、詳細は@ref{Variables}を参照してください)。いったんバッファーがこの行数を超えると、最後に1行加わるごとに先頭の1行を削除します。"
+msgstr ""
+"エコーエリアに表示される有益なメッセージは、@file{*Messages*}と呼ばれる特別な"
+"バッファーに保存されます(まだバッファーについては説明していませんが、詳細は"
+"@ref{Buffers}を参照してください)。画面上に短時間しか表示されないメッセージを"
+"見逃してしまった場合には、@file{*Messages*}バッファーに切り替えて、もう一度そ"
+"のメッセージを見ることができます。@file{*Messages*}のサイズは、ある行数に制限"
+"されています。変数@code{message-log-max}は、その行数を指定します(まだ変数につ"
+"いては説明していませんが、詳細は@ref{Variables}を参照してください)。いったん"
+"バッファーがこの行数を超えると、最後に1行加わるごとに先頭の1行を削除します。"
 
 #. type: Plain text
-#: screen.texi.orig:151
+#: original_texis/screen.texi:151
 msgid ""
 "@xref{Display Custom}, for options that control how Emacs uses the echo area."
-msgstr "Emacsがエコーエリアをどのように使用するか制御するオプションについては、@ref{Display Custom}を参照してください。"
+msgstr ""
+"Emacsがエコーエリアをどのように使用するか制御するオプションについては、"
+"@ref{Display Custom}を参照してください。"
 
 #. type: cindex
-#: screen.texi.orig:152
+#: original_texis/screen.texi:152
 #, no-wrap
 msgid "minibuffer"
 msgstr "minibuffer"
 
 #. type: Plain text
-#: screen.texi.orig:160
+#: original_texis/screen.texi:160
 msgid ""
 "The echo area is also used to display the @dfn{minibuffer}, a special window "
 "where you can input arguments to commands, such as the name of a file to be "
@@ -338,28 +423,34 @@ msgid ""
 "begins with a @dfn{prompt string}, and the active cursor appears within the "
 "minibuffer, which is temporarily considered the selected window.  You can "
 "always get out of the minibuffer by typing @kbd{C-g}.  @xref{Minibuffer}."
-msgstr "エコーエリアは@dfn{ミニバッファー(minibuffer)}の表示にも使われます。これは、編集しようとするファイル名のような、コマンドへの引数を読むのに使われるウィンドウです。ミニバッファーが使用されているとき、エコーエリアには@dfn{プロンプト文字列(prompt string)}で始まるテキストが表示され、エコーエリアが一時的に選択されたウィンドウとなり、カーソルもその行に表示されます。@kbd{C-g}を打つと、いつでもミニバッファーから抜けられます。@ref{Minibuffer}を参照してください。"
+msgstr ""
+"エコーエリアは@dfn{ミニバッファー(minibuffer)}の表示にも使われます。これは、"
+"編集しようとするファイル名のような、コマンドへの引数を読むのに使われるウィン"
+"ドウです。ミニバッファーが使用されているとき、エコーエリアには@dfn{プロンプト"
+"文字列(prompt string)}で始まるテキストが表示され、エコーエリアが一時的に選択"
+"されたウィンドウとなり、カーソルもその行に表示されます。@kbd{C-g}を打つと、い"
+"つでもミニバッファーから抜けられます。@ref{Minibuffer}を参照してください。"
 
 #. type: section
-#: screen.texi.orig:162
+#: original_texis/screen.texi:162
 #, no-wrap
 msgid "The Mode Line"
 msgstr "The Mode Line"
 
 #. type: cindex
-#: screen.texi.orig:163
+#: original_texis/screen.texi:163
 #, no-wrap
 msgid "mode line"
 msgstr "mode line"
 
 #. type: cindex
-#: screen.texi.orig:164
+#: original_texis/screen.texi:164
 #, no-wrap
 msgid "top level"
 msgstr "top level"
 
 #. type: Plain text
-#: screen.texi.orig:173
+#: original_texis/screen.texi:173
 msgid ""
 "At the bottom of each window is a @dfn{mode line}, which describes what is "
 "going on in the current buffer.  When there is only one window, the mode "
@@ -368,38 +459,49 @@ msgid ""
 "appearance.  Emacs also usually draws the mode line of the selected window "
 "with a different color than that of unselected windows, in order to make it "
 "stand out."
-msgstr "ウィンドウの最後の行は@dfn{モードライン(mode line)}で、そのウィンドウで何が進行しているか表示します。ウィンドウが1つしかない場合、モードラインはエコーエリアのすぐ上に表示されます。フレームでは最後から2番目の行になります。グラフィカルなディスプレーでは、モードラインは立体的に描画されます。通常、Emacsは目立つように選択されたウィンドウのモードラインを、選択されていないウィンドウと異なるカラーで描画します。"
+msgstr ""
+"ウィンドウの最後の行は@dfn{モードライン(mode line)}で、そのウィンドウで何が進"
+"行しているか表示します。ウィンドウが1つしかない場合、モードラインはエコーエリ"
+"アのすぐ上に表示されます。フレームでは最後から2番目の行になります。グラフィカ"
+"ルなディスプレーでは、モードラインは立体的に描画されます。通常、Emacsは目立つ"
+"ように選択されたウィンドウのモードラインを、選択されていないウィンドウと異な"
+"るカラーで描画します。"
 
 #. type: Plain text
-#: screen.texi.orig:175
+#: original_texis/screen.texi:175
 msgid "The text displayed in the mode line has the following format:"
 msgstr "モードラインに表示されるテキストは以下の書式です:"
 
 #. type: example
-#: screen.texi.orig:178
+#: original_texis/screen.texi:178
 #, no-wrap
 msgid " @var{cs}:@var{ch}-@var{fr}  @var{buf}      @var{pos} @var{line}   (@var{major} @var{minor})\n"
 msgstr " @var{cs}:@var{ch}-@var{fr}  @var{buf}      @var{pos} @var{line}   (@var{major} @var{minor})\n"
 
 #. type: Plain text
-#: screen.texi.orig:184
+#: original_texis/screen.texi:184
 msgid ""
 "On a text terminal, this text is followed by a series of dashes extending to "
 "the right edge of the window.  These dashes are omitted on a graphical "
 "display."
-msgstr "テキスト端末では、上記テキストの後ろからウィンドウの右端まで一連のダッシュ表示されます。これらのダッシュはグラフィカルなディスプレーでは省略されます。"
+msgstr ""
+"テキスト端末では、上記テキストの後ろからウィンドウの右端まで一連のダッシュ表"
+"示されます。これらのダッシュはグラフィカルなディスプレーでは省略されます。"
 
 #. type: Plain text
-#: screen.texi.orig:189
+#: original_texis/screen.texi:189
 msgid ""
 "The @var{cs} string and the colon character after it describe the character "
 "set and newline convention used for the current buffer.  Normally, Emacs "
 "automatically handles these settings for you, but it is sometimes useful to "
 "have this information."
-msgstr "@var{cs}とその後ろのコロンは、カレントバッファーのキャラクターセットと改行の規則を説明しています。通常Emacsはこれらの設定を自動的に処理しますが、このメッセージが便利なときもあります。"
+msgstr ""
+"@var{cs}とその後ろのコロンは、カレントバッファーのキャラクターセットと改行の"
+"規則を説明しています。通常Emacsはこれらの設定を自動的に処理しますが、このメッ"
+"セージが便利なときもあります。"
 
 #. type: Plain text
-#: screen.texi.orig:197
+#: original_texis/screen.texi:197
 msgid ""
 "@var{cs} describes the character set of the text in the buffer "
 "(@pxref{Coding Systems}).  If it is a dash (@samp{-}), that indicates no "
@@ -408,25 +510,36 @@ msgid ""
 "whatsoever, and is usually used for files containing non-textual data.  "
 "Other characters represent various @dfn{coding systems}---for example, "
 "@samp{1} represents ISO Latin-1."
-msgstr "@var{cs}はバッファーのキャラクターセットを説明します(@ref{Coding Systems}を参照してください)。もしこれがダッシュ(@samp{-})の場合、特定のキャラクターセットの処理が行われていないことを意味します(例外として、以降で説明する行末規則があります)。@samp{=}の場合は、変換が行われていないことを意味し、通常はテキストに非テキストデータが含まれているときに使用されます。他の文字はさまざまな@dfn{コーディングシステム(coding systems)} --- たとえば@samp{1}はISO Latin-1を表します。"
+msgstr ""
+"@var{cs}はバッファーのキャラクターセットを説明します(@ref{Coding Systems}を参"
+"照してください)。もしこれがダッシュ(@samp{-})の場合、特定のキャラクターセット"
+"の処理が行われていないことを意味します(例外として、以降で説明する行末規則があ"
+"ります)。@samp{=}の場合は、変換が行われていないことを意味し、通常はテキストに"
+"非テキストデータが含まれているときに使用されます。他の文字はさまざまな"
+"@dfn{コーディングシステム(coding systems)} --- たとえば@samp{1}はISO Latin-1"
+"を表します。"
 
 #. type: Plain text
-#: screen.texi.orig:203
+#: original_texis/screen.texi:203
 msgid ""
 "On a text terminal, @var{cs} is preceded by two additional characters that "
 "describe the coding systems for keyboard input and terminal output.  "
 "Furthermore, if you are using an input method, @var{cs} is preceded by a "
 "string that identifies the input method (@pxref{Input Methods})."
-msgstr "テキスト端末では@var{cs}の前に追加で2つの文字が表示され、それによりキーボード入力と端末出力のコーディングシステムが示されます。さらに何らかの入力メソッドを使用している場合は、@var{cs}の前に入力メソッドを識別する文字列が表示されます(@ref{Input Methods}を参照してください)。"
+msgstr ""
+"テキスト端末では@var{cs}の前に追加で2つの文字が表示され、それによりキーボード"
+"入力と端末出力のコーディングシステムが示されます。さらに何らかの入力メソッド"
+"を使用している場合は、@var{cs}の前に入力メソッドを識別する文字列が表示されま"
+"す(@ref{Input Methods}を参照してください)。"
 
 #. type: cindex
-#: screen.texi.orig:204
+#: original_texis/screen.texi:204
 #, no-wrap
 msgid "end-of-line convention, mode-line indication"
 msgstr "end-of-line convention, mode-line indication"
 
 #. type: Plain text
-#: screen.texi.orig:218
+#: original_texis/screen.texi:218
 msgid ""
 "The character after @var{cs} is usually a colon.  If a different string is "
 "displayed, that indicates a nontrivial end-of-line convention for encoding a "
@@ -440,10 +553,21 @@ msgid ""
 "forward slash (@samp{/}) or @samp{(Mac)}.  On some systems, Emacs displays "
 "@samp{(Unix)} instead of the colon for files that use newline as the line "
 "separator."
-msgstr "@var{cs}の後ろの文字は、通常コロンです。もし違う文字が表示されている場合、それはファイルのエンコーディングに特別な行末規則が使われていることを意味します。通常ファイル内のテキストの各行は@dfn{改行文字(newline characters)}で区切られていますが、他の2つの規則が使われる場合もあります。MS-DOSのファイルを編集する場合には``キャリッジリターン(carriage-return)''と``ラインフィード(linefeed)''が使われ、コロンではなくバックスラッシュ(@samp{\\})または@samp{(DOS)}(オペレーティングシステムに依存する)が表示されます。古いマッキントッシュシステムのファイルでは、改行文字の代わりに``キャリッジリターン(carriage-return)''が使われ、そのような場合コロンではなくスラッシュ(@samp{/})または@samp{(Mac)}が表示されます。いくつかのシステムでは行の区切りとして改行文字を使う場合、コロンではなく@samp{(Unix)}と表示されます。"
+msgstr ""
+"@var{cs}の後ろの文字は、通常コロンです。もし違う文字が表示されている場合、そ"
+"れはファイルのエンコーディングに特別な行末規則が使われていることを意味しま"
+"す。通常ファイル内のテキストの各行は@dfn{改行文字(newline characters)}で区切"
+"られていますが、他の2つの規則が使われる場合もあります。MS-DOSのファイルを編集"
+"する場合には``キャリッジリターン(carriage-return)''と``ラインフィード"
+"(linefeed)''が使われ、コロンではなくバックスラッシュ(@samp{\\})または"
+"@samp{(DOS)}(オペレーティングシステムに依存する)が表示されます。古いマッキン"
+"トッシュシステムのファイルでは、改行文字の代わりに``キャリッジリターン"
+"(carriage-return)''が使われ、そのような場合コロンではなくスラッシュ(@samp{/})"
+"または@samp{(Mac)}が表示されます。いくつかのシステムでは行の区切りとして改行"
+"文字を使う場合、コロンではなく@samp{(Unix)}と表示されます。"
 
 #. type: Plain text
-#: screen.texi.orig:225
+#: original_texis/screen.texi:225
 msgid ""
 "The next element on the mode line is the string indicated by @var{ch}.  This "
 "shows two dashes (@samp{--}) if the buffer displayed in the window has the "
@@ -451,32 +575,46 @@ msgid ""
 "``unmodified''.  If the buffer is modified, it shows two stars (@samp{**}).  "
 "For a read-only buffer, it shows @samp{%*} if the buffer is modified, and "
 "@samp{%%} otherwise."
-msgstr "モードラインの次の要素は@var{ch}で示される文字列です。2つのダッシュ(@samp{--})が表示されている場合、ウィンドウに表示されているバッファーとディスク上のファイルの内容が同じことを意味し、たとえばバッファーが``未変更(unmodified)''の場合です。バッファーが変更されている場合には2つの星印(@samp{**})が表示されます。読み出し専用のバッファーの場合には、バッファーが編集されている場合には@samp{%*}になり、バッファーが編集されていない場合には@samp{%%}となります。"
+msgstr ""
+"モードラインの次の要素は@var{ch}で示される文字列です。2つのダッシュ"
+"(@samp{--})が表示されている場合、ウィンドウに表示されているバッファーとディス"
+"ク上のファイルの内容が同じことを意味し、たとえばバッファーが``未変更"
+"(unmodified)''の場合です。バッファーが変更されている場合には2つの星印"
+"(@samp{**})が表示されます。読み出し専用のバッファーの場合には、バッファーが編"
+"集されている場合には@samp{%*}になり、バッファーが編集されていない場合には"
+"@samp{%%}となります。"
 
 #. type: Plain text
-#: screen.texi.orig:229
+#: original_texis/screen.texi:229
 msgid ""
 "The character after @var{ch} is normally a dash (@samp{-}).  However, if the "
 "default-directory for the current buffer is on a remote machine, @samp{@@} "
 "is displayed instead (@pxref{File Names})."
-msgstr "通常、@var{ch}の後ろの文字はダッシュ(@samp{-})です。しかしカレントバッファーのデフォルトディレクトリーがリモートマシン上にある場合、かわりに@samp{@@}が表示されます(@ref{File Names}を参照してください)。"
+msgstr ""
+"通常、@var{ch}の後ろの文字はダッシュ(@samp{-})です。しかしカレントバッファー"
+"のデフォルトディレクトリーがリモートマシン上にある場合、かわりに@samp{@@}が表"
+"示されます(@ref{File Names}を参照してください)。"
 
 #. type: Plain text
-#: screen.texi.orig:232
+#: original_texis/screen.texi:232
 msgid ""
 "@var{fr} gives the selected frame name (@pxref{Frames}).  It appears only on "
 "text terminals.  The initial frame's name is @samp{F1}."
-msgstr "@var{fr}は選択されているフレームの名前です(@ref{Frames}を参照してください)。これはテキスト端末でだけ表示されます。フレーム名の初期値は@samp{F1}です。"
+msgstr ""
+"@var{fr}は選択されているフレームの名前です(@ref{Frames}を参照してください)。"
+"これはテキスト端末でだけ表示されます。フレーム名の初期値は@samp{F1}です。"
 
 #. type: Plain text
-#: screen.texi.orig:236
+#: original_texis/screen.texi:236
 msgid ""
 "@var{buf} is the name of the buffer displayed in the window.  Usually, this "
 "is the same as the name of a file you are editing.  @xref{Buffers}."
-msgstr "@var{buf}は、ウィンドウに表示されているバッファーの名前です。通常は編集中のファイル名と同じです。@ref{Buffers}を参照してください。"
+msgstr ""
+"@var{buf}は、ウィンドウに表示されているバッファーの名前です。通常は編集中の"
+"ファイル名と同じです。@ref{Buffers}を参照してください。"
 
 #. type: Plain text
-#: screen.texi.orig:245
+#: original_texis/screen.texi:245
 msgid ""
 "@var{pos} tells you whether there is additional text above the top of the "
 "window, or below the bottom.  If your buffer is small and all of it is "
@@ -486,46 +624,70 @@ msgid ""
 "percentage of the buffer above the top of the window.  With Size Indication "
 "mode, you can display the size of the buffer as well.  @xref{Optional Mode "
 "Line}."
-msgstr "@var{pos}はウィンドウの上またはウィンドウの下に、まだテキストがあるかを知らせます。もしバッファーが小さくてウィンドウに全体が表示されている場合、@var{pos}には@samp{All}が表示されます。そうではなくバッファーの一部が表示されているときには、バッファーの先頭が表示されている場合には@samp{Top}、バッファーの最後が表示されている場合には@samp{Bot}、@samp{@var{nn}%}と表示されている場合、@var{nn}はウィンドウの上部がバッファーのどこかをパーセント表示したものです。Size Indication(サイズ表示)モードでは、バッファー全体のサイズを表示できます。"
+msgstr ""
+"@var{pos}はウィンドウの上またはウィンドウの下に、まだテキストがあるかを知らせ"
+"ます。もしバッファーが小さくてウィンドウに全体が表示されている場合、@var{pos}"
+"には@samp{All}が表示されます。そうではなくバッファーの一部が表示されていると"
+"きには、バッファーの先頭が表示されている場合には@samp{Top}、バッファーの最後"
+"が表示されている場合には@samp{Bot}、@samp{@var{nn}%}と表示されている場合、"
+"@var{nn}はウィンドウの上部がバッファーのどこかをパーセント表示したものです。"
+"Size Indication(サイズ表示)モードでは、バッファー全体のサイズを表示できます。"
 
 #. type: Plain text
-#: screen.texi.orig:249
+#: original_texis/screen.texi:249
 msgid ""
 "@var{line} is the character @samp{L} followed by the line number at point.  "
 "(You can display the current column number too, by turning on Column Number "
 "mode.  @xref{Optional Mode Line}.)"
-msgstr "@var{line}は、@samp{L}のあとに現在ポイントがある行の番号が続いたものです(Column Number(列番号)モードをオンにすると、現在の列番号も表示できます。@ref{Optional Mode Line}を参照してください)。"
+msgstr ""
+"@var{line}は、@samp{L}のあとに現在ポイントがある行の番号が続いたものです"
+"(Column Number(列番号)モードをオンにすると、現在の列番号も表示できます。"
+"@ref{Optional Mode Line}を参照してください)。"
 
 #. type: Plain text
-#: screen.texi.orig:256
+#: original_texis/screen.texi:256
 msgid ""
 "@var{major} is the name of the @dfn{major mode} used in the buffer.  A major "
 "mode is a principal editing mode for the buffer, such as Text mode, Lisp "
 "mode, C mode, and so forth.  @xref{Major Modes}.  Some major modes display "
 "additional information after the major mode name.  For example, Compilation "
 "buffers and Shell buffers display the status of the subprocess."
-msgstr "majorは、そのバッファの@dfn{メジャーモード(major mode)}の名前です。メジャーモードはバッファーを編集する際の主要なモードで、Textモード、Lispモード、Cモードなどがあります。@ref{Major Modes}を参照してください。メジャーモード名の後ろに追加の情報を表示するメジャーモードもあります。たとえばCompilation buffer(コンパイルバッファー)やShell buffer(Shellバッファー)などは、サブプロセスの状態を表示します。"
+msgstr ""
+"majorは、そのバッファの@dfn{メジャーモード(major mode)}の名前です。メジャー"
+"モードはバッファーを編集する際の主要なモードで、Textモード、Lispモード、Cモー"
+"ドなどがあります。@ref{Major Modes}を参照してください。メジャーモード名の後ろ"
+"に追加の情報を表示するメジャーモードもあります。たとえばCompilation buffer(コ"
+"ンパイルバッファー)やShell buffer(Shellバッファー)などは、サブプロセスの状態"
+"を表示します。"
 
 #. type: Plain text
-#: screen.texi.orig:260
+#: original_texis/screen.texi:260
 msgid ""
 "@var{minor} is a list of some of the enabled @dfn{minor modes}, which are "
 "optional editing modes that provide additional features on top of the major "
 "mode.  @xref{Minor Modes}."
-msgstr "@var{minor}は有効になっている@dfn{マイナーモード(minor modes)}の一覧で、上位のメジャーモードに追加の機能を提供するための編集モードです。@ref{Minor Modes}を参照してください。"
+msgstr ""
+"@var{minor}は有効になっている@dfn{マイナーモード(minor modes)}の一覧で、上位"
+"のメジャーモードに追加の機能を提供するための編集モードです。@ref{Minor Modes}"
+"を参照してください。"
 
 #. type: Plain text
-#: screen.texi.orig:267
+#: original_texis/screen.texi:267
 msgid ""
 "Some features are listed together with the minor modes whenever they are "
 "turned on, even though they are not really minor modes.  @samp{Narrow} means "
 "that the buffer being displayed has editing restricted to only a portion of "
 "its text (@pxref{Narrowing}).  @samp{Def} means that a keyboard macro is "
 "currently being defined (@pxref{Keyboard Macros})."
-msgstr "いくつかの機能は、それらが本当はマイナーモードではなくても、有効になっていればマイナーモードの一覧とともに表示されます。@samp{Narrow}は、表示中のバッファーが、そのテキストの一部のみを編集するように制限されていることを示します(@ref{Narrowing}を参照してください)。@samp{Def}は、キーボードマクロを定義中であることを示します(@ref{Keyboard Macros}を参照してください)。"
+msgstr ""
+"いくつかの機能は、それらが本当はマイナーモードではなくても、有効になっていれ"
+"ばマイナーモードの一覧とともに表示されます。@samp{Narrow}は、表示中のバッ"
+"ファーが、そのテキストの一部のみを編集するように制限されていることを示します"
+"(@ref{Narrowing}を参照してください)。@samp{Def}は、キーボードマクロを定義中で"
+"あることを示します(@ref{Keyboard Macros}を参照してください)。"
 
 #. type: Plain text
-#: screen.texi.orig:274
+#: original_texis/screen.texi:274
 msgid ""
 "In addition, if Emacs is inside a recursive editing level, square brackets "
 "(@samp{[@dots{}]}) appear around the parentheses that surround the modes.  "
@@ -533,105 +695,133 @@ msgid ""
 "brackets appear, and so on.  Since recursive editing levels affect Emacs "
 "globally, such square brackets appear in the mode line of every window.  "
 "@xref{Recursive Edit}."
-msgstr "さらにEmacsがリカーシブエディットにあるときには、モードを囲んでいるカッコの周りに角カッコ(@samp{[@dots{}]})が現れます。リカーシブエディット中も別のリカーシブエディットに入ると、角カッコは2重になります。リカーシブエディットは、特定のバッファにだけ関係するものではなく、Emacs全体に影響するので、角カッコはすべてのウィンドウのモード行に表示されるか、まったく表示されないのどちらかです。@ref{Recursive Edit}を参照してください。"
+msgstr ""
+"さらにEmacsがリカーシブエディットにあるときには、モードを囲んでいるカッコの周"
+"りに角カッコ(@samp{[@dots{}]})が現れます。リカーシブエディット中も別のリカー"
+"シブエディットに入ると、角カッコは2重になります。リカーシブエディットは、特定"
+"のバッファにだけ関係するものではなく、Emacs全体に影響するので、角カッコはすべ"
+"てのウィンドウのモード行に表示されるか、まったく表示されないのどちらかです。"
+"@ref{Recursive Edit}を参照してください。"
 
 #. type: Plain text
-#: screen.texi.orig:279
+#: original_texis/screen.texi:279
 msgid ""
 "You can change the appearance of the mode line as well as the format of its "
 "contents.  @xref{Optional Mode Line}.  In addition, the mode line is mouse-"
 "sensitive; clicking on different parts of the mode line performs various "
 "commands.  @xref{Mode Line Mouse}."
-msgstr "モードラインの外観は、その内容の書式と同様、変更できます。@ref{Optional Mode Line}を参照してください。さらにモードラインはマウスに反応します。モードラインの違う部分をクリックすることでさまざまなコマンドを実行できます。@ref{Mode Line Mouse}を参照してください。"
+msgstr ""
+"モードラインの外観は、その内容の書式と同様、変更できます。@ref{Optional Mode "
+"Line}を参照してください。さらにモードラインはマウスに反応します。モードライン"
+"の違う部分をクリックすることでさまざまなコマンドを実行できます。@ref{Mode "
+"Line Mouse}を参照してください。"
 
 #. type: section
-#: screen.texi.orig:281
+#: original_texis/screen.texi:281
 #, no-wrap
 msgid "The Menu Bar"
 msgstr "The Menu Bar"
 
 #. type: cindex
-#: screen.texi.orig:282
+#: original_texis/screen.texi:282
 #, no-wrap
 msgid "menu bar"
 msgstr "menu bar"
 
 #. type: Plain text
-#: screen.texi.orig:287
+#: original_texis/screen.texi:287
 msgid ""
 "Each Emacs frame normally has a @dfn{menu bar} at the top which you can use "
 "to perform common operations.  There's no need to list them here, as you can "
 "more easily see them yourself."
-msgstr "各Emacsフレームには通常、最上部に@dfn{メニューバー(menu bar)}があり、よく使われる操作を実行するために使用できます。これはあなた自身で簡単に確かめられますから、ここではそれらを列挙する必要はないでしょう。"
+msgstr ""
+"各Emacsフレームには通常、最上部に@dfn{メニューバー(menu bar)}があり、よく使わ"
+"れる操作を実行するために使用できます。これはあなた自身で簡単に確かめられます"
+"から、ここではそれらを列挙する必要はないでしょう。"
 
 #. type: Plain text
-#: screen.texi.orig:293
+#: original_texis/screen.texi:293
 msgid ""
 "On a display that supports a mouse, you can use the mouse to choose a "
 "command from the menu bar.  An arrow on the right edge of a menu item means "
 "it leads to a subsidiary menu, or @dfn{submenu}.  A @samp{...} at the end of "
 "a menu item means that the command will prompt you for further input before "
 "it actually does anything."
-msgstr "マウスをサポートするディスプレー上では、マウスを使ってメニューバーからコマンドを選ぶことができます。メニューアイテムの後にある右矢印は、そのアイテムにサブメニューがあることを示します。アイテムの最後に@samp{...}がある場合は、コマンドを実際に実行する前に、そのコマンドがキーボードから引数を読み取ることを意味します。"
+msgstr ""
+"マウスをサポートするディスプレー上では、マウスを使ってメニューバーからコマン"
+"ドを選ぶことができます。メニューアイテムの後にある右矢印は、そのアイテムにサ"
+"ブメニューがあることを示します。アイテムの最後に@samp{...}がある場合は、コマ"
+"ンドを実際に実行する前に、そのコマンドがキーボードから引数を読み取ることを意"
+"味します。"
 
 #. type: Plain text
-#: screen.texi.orig:299
+#: original_texis/screen.texi:299
 msgid ""
 "Some of the commands in the menu bar have ordinary key bindings as well; if "
 "so, a key binding is shown in parentheses after the item itself.  To view "
 "the full command name and documentation for a menu item, type @kbd{C-h k}, "
 "and then select the menu bar with the mouse in the usual way (@pxref{Key "
 "Help})."
-msgstr "メニューのコマンドの中には、他のコマンドと同様、キーが割り当てられているものもあります。そのような場合、メニューのアイテムの後ろのカッコ内にキーバインディングが表示されます。メニューアイテムの完全なコマンド名や説明文を見るには、@kbd{C-h k}とタイプしてから、通常どおりにマウスでメニューバーを選択してください(@ref{Key Help}を参照してください)。"
+msgstr ""
+"メニューのコマンドの中には、他のコマンドと同様、キーが割り当てられているもの"
+"もあります。そのような場合、メニューのアイテムの後ろのカッコ内にキーバイン"
+"ディングが表示されます。メニューアイテムの完全なコマンド名や説明文を見るに"
+"は、@kbd{C-h k}とタイプしてから、通常どおりにマウスでメニューバーを選択してく"
+"ださい(@ref{Key Help}を参照してください)。"
 
 #. type: kindex
-#: screen.texi.orig:300
+#: original_texis/screen.texi:300
 #, no-wrap
 msgid "F10"
 msgstr "F10"
 
 #. type: findex
-#: screen.texi.orig:301
+#: original_texis/screen.texi:301
 #, no-wrap
 msgid "menu-bar-open"
 msgstr "menu-bar-open"
 
 #. type: cindex
-#: screen.texi.orig:302
+#: original_texis/screen.texi:302
 #, no-wrap
 msgid "menu bar access using keyboard"
 msgstr "menu bar access using keyboard"
 
 #. type: Plain text
-#: screen.texi.orig:308
+#: original_texis/screen.texi:308
 msgid ""
 "Instead of using the mouse, you can also invoke the first menu bar item by "
 "pressing @key{F10} (to run the command @code{menu-bar-open}).  You can then "
 "navigate the menus with the arrow keys.  To activate a selected menu item, "
 "press @key{RET}; to cancel menu navigation, press @kbd{C-g} or "
 "@kbd{@key{ESC} @key{ESC} @key{ESC}}."
-msgstr "マウスを使う代わりに@key{F10}(コマンド@code{menu-bar-open}を実行します)を押せば、メニューバーの最初のアイテムを呼び出すことができます。その後は矢印キーでメニュー操作できます。選択されたメニューアイテムを起動するときは@key{RET}、メニュー操作をキャンセルするときは@kbd{C-g}か@kbd{@key{ESC} @key{ESC} @key{ESC}}を押します。"
+msgstr ""
+"マウスを使う代わりに@key{F10}(コマンド@code{menu-bar-open}を実行します)を押せ"
+"ば、メニューバーの最初のアイテムを呼び出すことができます。その後は矢印キーで"
+"メニュー操作できます。選択されたメニューアイテムを起動するときは@key{RET}、メ"
+"ニュー操作をキャンセルするときは@kbd{C-g}か@kbd{@key{ESC} @key{ESC} "
+"@key{ESC}}を押します。"
 
 #. type: kindex
-#: screen.texi.orig:309
+#: original_texis/screen.texi:309
 #, no-wrap
 msgid "M-`"
 msgstr "M-`"
 
 #. type: findex
-#: screen.texi.orig:310
+#: original_texis/screen.texi:310
 #, no-wrap
 msgid "tmm-menubar"
 msgstr "tmm-menubar"
 
 #. type: vindex
-#: screen.texi.orig:311
+#: original_texis/screen.texi:311
 #, no-wrap
 msgid "tty-menu-open-use-tmm"
 msgstr "tty-menu-open-use-tmm"
 
 #. type: Plain text
-#: screen.texi.orig:324
+#: original_texis/screen.texi:324
 msgid ""
 "On a text terminal, you can optionally access the menu-bar menus in the echo "
 "area.  To this end, customize the variable @code{tty-menu-open-use-tmm} to a "
@@ -645,4 +835,15 @@ msgid ""
 "of some word in the item's name).  This letter or digit is separated from "
 "the item name by @samp{==>}.  You can type the item's letter or digit to "
 "select the item."
-msgstr "テキスト端末では、エコーエリアからメニューバーのメニューにアクセスすることもできます。これを行うには、変数@code{tty-menu-open-use-tmm}をカスタマイズして、非@code{nil}値にします。その後は@key{F10}をタイプするとメニューをドロップダウンせずに、コマンド@code{tmm-menubar}が実行されます(@kbd{M-`}は常に@code{tmm-menubar}を呼び出します)。@code{tmm-menubar}では、キーボードでメニューアイテムを選択できます。暫定的な候補がエコーエリアに表示されるので、上矢印か下矢印でメニューの異なるアイテムを表示し、@key{RET}を押せばアイテムを選択できます。各メニューアイテムを文字か数字で指定することもできます(通常メニューアイテム名のイニシャル)。この文字または数字とアイテム名は@samp{==>}で区切られています。アイテムの文字または数字を押せばアイテムを選択することができます。"
+msgstr ""
+"テキスト端末では、エコーエリアからメニューバーのメニューにアクセスすることも"
+"できます。これを行うには、変数@code{tty-menu-open-use-tmm}をカスタマイズし"
+"て、非@code{nil}値にします。その後は@key{F10}をタイプするとメニューをドロップ"
+"ダウンせずに、コマンド@code{tmm-menubar}が実行されます(@kbd{M-`}は常に"
+"@code{tmm-menubar}を呼び出します)。@code{tmm-menubar}では、キーボードでメ"
+"ニューアイテムを選択できます。暫定的な候補がエコーエリアに表示されるので、上"
+"矢印か下矢印でメニューの異なるアイテムを表示し、@key{RET}を押せばアイテムを選"
+"択できます。各メニューアイテムを文字か数字で指定することもできます(通常メ"
+"ニューアイテム名のイニシャル)。この文字または数字とアイテム名は@samp{==>}で区"
+"切られています。アイテムの文字または数字を押せばアイテムを選択することができ"
+"ます。"
