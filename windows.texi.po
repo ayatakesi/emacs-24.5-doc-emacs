@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:32+0900\n"
+"PO-Revision-Date: 2016-10-02 00:30+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Windows"
 #: original_texis/windows.texi:6
 #, no-wrap
 msgid "Multiple Windows"
-msgstr "Multiple Windows"
+msgstr "複数ウィンドウ"
 
 #. type: cindex
 #: original_texis/windows.texi:7
@@ -133,7 +133,7 @@ msgstr "ウィンドウ処理の便利な機能。"
 #: original_texis/windows.texi:27
 #, no-wrap
 msgid "Concepts of Emacs Windows"
-msgstr "Concepts of Emacs Windows"
+msgstr "Emacsウィンドウの概念"
 
 #. type: Plain text
 #: original_texis/windows.texi:34
@@ -224,7 +224,7 @@ msgstr ""
 #: original_texis/windows.texi:65
 #, no-wrap
 msgid "Splitting Windows"
-msgstr "Splitting Windows"
+msgstr "ウィンドウの分割"
 
 #. type: kindex
 #: original_texis/windows.texi:68 original_texis/windows.texi:78
@@ -438,7 +438,7 @@ msgstr ""
 #: original_texis/windows.texi:150
 #, no-wrap
 msgid "Using Other Windows"
-msgstr "Using Other Windows"
+msgstr "他のウィンドウの使用"
 
 #. type: kindex
 #: original_texis/windows.texi:153 original_texis/windows.texi:163
@@ -556,7 +556,7 @@ msgstr ""
 #: original_texis/windows.texi:194
 #, no-wrap
 msgid "Displaying in Another Window"
-msgstr "Displaying in Another Window"
+msgstr "他のウィンドウでの表示"
 
 #. type: cindex
 #: original_texis/windows.texi:196
@@ -738,7 +738,7 @@ msgstr ""
 #: original_texis/windows.texi:241
 #, no-wrap
 msgid "Deleting and Rearranging Windows"
-msgstr "Deleting and Rearranging Windows"
+msgstr "ウィンドウの削除と再配置"
 
 #. type: kindex
 #: original_texis/windows.texi:244 original_texis/windows.texi:266
@@ -1016,7 +1016,7 @@ msgstr ""
 #: original_texis/windows.texi:329
 #, no-wrap
 msgid "Displaying a Buffer in a Window"
-msgstr "Displaying a Buffer in a Window"
+msgstr "ウィンドウでのバッファーの表示"
 
 #. type: Plain text
 #: original_texis/windows.texi:334
@@ -1113,13 +1113,13 @@ msgstr "Window Choice"
 #. type: menuentry
 #: original_texis/windows.texi:370
 msgid "How @code{display-buffer} works."
-msgstr "@code{display-buffer}が機能する方法。"
+msgstr "@code{display-buffer}が機能する方法について。"
 
 #. type: subsection
 #: original_texis/windows.texi:373
 #, no-wrap
 msgid "How @code{display-buffer} works"
-msgstr "How @code{display-buffer} works"
+msgstr "@code{display-buffer}が機能する方法"
 
 #. type: Plain text
 #: original_texis/windows.texi:381
@@ -1258,7 +1258,7 @@ msgstr ""
 #: original_texis/windows.texi:432
 #, no-wrap
 msgid "Convenience Features for Window Handling"
-msgstr "Convenience Features for Window Handling"
+msgstr "ウィンドウ処理のための便利な機能"
 
 #. type: findex
 #: original_texis/windows.texi:434
