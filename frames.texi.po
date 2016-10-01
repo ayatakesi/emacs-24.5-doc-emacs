@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 00:44+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Frames"
 #: original_texis/frames.texi:6
 #, no-wrap
 msgid "Frames and Graphical Displays"
-msgstr "Frames and Graphical Displays"
+msgstr "フレームとグラフィカルなディスプレー"
 
 #. type: cindex
 #: original_texis/frames.texi:7
@@ -349,7 +349,7 @@ msgstr "テキスト端末でのマウスの使用。"
 #: original_texis/frames.texi:68
 #, no-wrap
 msgid "Mouse Commands for Editing"
-msgstr "Mouse Commands for Editing"
+msgstr "編集のためのマウスコマンド"
 
 #. type: cindex
 #: original_texis/frames.texi:69
@@ -751,7 +751,7 @@ msgstr ""
 #: original_texis/frames.texi:209
 #, no-wrap
 msgid "Mouse Commands for Words and Lines"
-msgstr "Mouse Commands for Words and Lines"
+msgstr "単語と行にたいするマウスコマンド"
 
 #. type: Plain text
 #: original_texis/frames.texi:214
@@ -831,7 +831,7 @@ msgstr "行全体の形式で、ドラッグした箇所のテキストを選択
 #: original_texis/frames.texi:239
 #, no-wrap
 msgid "Following References with the Mouse"
-msgstr "Following References with the Mouse"
+msgstr "マウスで参照をフォローする"
 
 #. type: kindex
 #: original_texis/frames.texi:240
@@ -975,7 +975,7 @@ msgstr ""
 #: original_texis/frames.texi:291
 #, no-wrap
 msgid "Mouse Clicks for Menus"
-msgstr "Mouse Clicks for Menus"
+msgstr "メニューにたいするマウスクリック"
 
 #. type: Plain text
 #: original_texis/frames.texi:295
@@ -1087,7 +1087,7 @@ msgstr "(global-set-key [mouse-3] 'mouse-popup-menubar-stuff)\n"
 #: original_texis/frames.texi:336
 #, no-wrap
 msgid "Mode Line Mouse Commands"
-msgstr "Mode Line Mouse Commands"
+msgstr "モードラインのマウスコマンド"
 
 #. type: cindex
 #: original_texis/frames.texi:337
@@ -2315,7 +2315,7 @@ msgstr ""
 #: original_texis/frames.texi:792
 #, no-wrap
 msgid "Speedbar Frames"
-msgstr "Speedbar Frames"
+msgstr "スピードバーフレーム"
 
 #. type: cindex
 #: original_texis/frames.texi:793
@@ -2983,7 +2983,7 @@ msgstr ""
 #: original_texis/frames.texi:1048
 #, no-wrap
 msgid "Using Dialog Boxes"
-msgstr "Using Dialog Boxes"
+msgstr "ダイアログボックスの使用"
 
 #. type: cindex
 #: original_texis/frames.texi:1049
@@ -3408,7 +3408,7 @@ msgstr ""
 #: original_texis/frames.texi:1191
 #, no-wrap
 msgid "Using a Mouse in Text Terminals"
-msgstr "Using a Mouse in Text Terminals"
+msgstr "テキスト端末でのマウスの使用"
 
 #. type: cindex
 #: original_texis/frames.texi:1192
