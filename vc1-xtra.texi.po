@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:32+0900\n"
+"PO-Revision-Date: 2016-10-02 02:18+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Miscellaneous VC"
 #: original_texis/vc1-xtra.texi:9
 #, no-wrap
 msgid "Miscellaneous Commands and Features of VC"
-msgstr "Miscellaneous Commands and Features of VC"
+msgstr "VCのその他のコマンドと機能"
 
 #. type: Plain text
 #: original_texis/vc1-xtra.texi:12
@@ -249,7 +249,7 @@ msgstr ""
 #: original_texis/vc1-xtra.texi:107
 #, no-wrap
 msgid "Deleting and Renaming Version-Controlled Files"
-msgstr "Deleting and Renaming Version-Controlled Files"
+msgstr "バージョンコントロールされたファイルの削除とリネーム"
 
 #. type: cindex
 #: original_texis/vc1-xtra.texi:108
@@ -567,7 +567,7 @@ msgstr ""
 #: original_texis/vc1-xtra.texi:226
 #, no-wrap
 msgid "Inserting Version Control Headers"
-msgstr "Inserting Version Control Headers"
+msgstr "バージョンコントロールヘッダーの挿入"
 
 #. type: Plain text
 #: original_texis/vc1-xtra.texi:233
@@ -757,7 +757,7 @@ msgstr "CVSにたいするオプションについて"
 #: original_texis/vc1-xtra.texi:293
 #, no-wrap
 msgid "General Options"
-msgstr "General Options"
+msgstr "一般的なオプション"
 
 #. type: vindex
 #: original_texis/vc1-xtra.texi:295
@@ -849,7 +849,7 @@ msgstr ""
 #: original_texis/vc1-xtra.texi:324
 #, no-wrap
 msgid "Options for RCS and SCCS"
-msgstr "Options for RCS and SCCS"
+msgstr "RCSとSCCSにたいするオプション"
 
 #. type: cindex
 #: original_texis/vc1-xtra.texi:326
@@ -959,7 +959,7 @@ msgstr ""
 #: original_texis/vc1-xtra.texi:368
 #, no-wrap
 msgid "Options specific for CVS"
-msgstr "Options specific for CVS"
+msgstr "CVSに特有のオプション"
 
 #. type: vindex
 #: original_texis/vc1-xtra.texi:370
