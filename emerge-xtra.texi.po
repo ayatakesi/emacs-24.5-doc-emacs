@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 02:24+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Emerge"
 #: original_texis/emerge-xtra.texi:8
 #, no-wrap
 msgid "Merging Files with Emerge"
-msgstr "Merging Files with Emerge"
+msgstr "Emergeでのファイルのマージ"
 
 #. type: cindex
 #: original_texis/emerge-xtra.texi:10
@@ -475,7 +475,7 @@ msgstr ""
 #: original_texis/emerge-xtra.texi:167
 #, no-wrap
 msgid "State of a Difference"
-msgstr "State of a Difference"
+msgstr "相違の状態"
 
 #. type: Plain text
 #: original_texis/emerge-xtra.texi:171
@@ -1057,7 +1057,7 @@ msgstr ""
 #: original_texis/emerge-xtra.texi:356
 #, no-wrap
 msgid "Combining the Two Versions"
-msgstr "Combining the Two Versions"
+msgstr "2つのバージョンの合成"
 
 #. type: Plain text
 #: original_texis/emerge-xtra.texi:361
