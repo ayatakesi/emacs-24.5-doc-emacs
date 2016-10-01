@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 03:30+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Calendar/Diary"
 #: original_texis/calendar.texi:6
 #, no-wrap
 msgid "The Calendar and the Diary"
-msgstr "The Calendar and the Diary"
+msgstr "カレンダーとダイアリー"
 
 #. type: findex
 #: original_texis/calendar.texi:7 original_texis/calendar.texi:8
@@ -252,7 +252,7 @@ msgstr ""
 #: original_texis/calendar.texi:54
 #, no-wrap
 msgid "Movement in the Calendar"
-msgstr "Movement in the Calendar"
+msgstr "カレンダーでの移動"
 
 #. type: cindex
 #: original_texis/calendar.texi:56
@@ -316,7 +316,7 @@ msgstr "今日の日付や、特定の日付への移動。"
 #: original_texis/calendar.texi:73
 #, no-wrap
 msgid "Motion by Standard Lengths of Time"
-msgstr "Motion by Standard Lengths of Time"
+msgstr "標準的な時間間隔での移動"
 
 #. type: Plain text
 #: original_texis/calendar.texi:78
@@ -574,7 +574,7 @@ msgstr ""
 #: original_texis/calendar.texi:142
 #, no-wrap
 msgid "Beginning or End of Week, Month or Year"
-msgstr "Beginning or End of Week, Month or Year"
+msgstr "週、月、年の開始と終了"
 
 #. type: Plain text
 #: original_texis/calendar.texi:147
@@ -933,7 +933,7 @@ msgstr ""
 #: original_texis/calendar.texi:232
 #, no-wrap
 msgid "Scrolling in the Calendar"
-msgstr "Scrolling in the Calendar"
+msgstr "カレンダーでのスクロール"
 
 #. type: cindex
 #: original_texis/calendar.texi:234
@@ -1150,7 +1150,7 @@ msgstr ""
 #: original_texis/calendar.texi:297
 #, no-wrap
 msgid "Miscellaneous Calendar Commands"
-msgstr "Miscellaneous Calendar Commands"
+msgstr "その他のカレンダーコマンド"
 
 #. type: item
 #: original_texis/calendar.texi:300
@@ -1949,7 +1949,7 @@ msgstr ""
 #: original_texis/calendar.texi:541
 #, no-wrap
 msgid "Times of Sunrise and Sunset"
-msgstr "Times of Sunrise and Sunset"
+msgstr "日の出と日の入りの時刻"
 
 #. type: cindex
 #: original_texis/calendar.texi:542
@@ -2200,7 +2200,7 @@ msgstr ""
 #: original_texis/calendar.texi:625
 #, no-wrap
 msgid "Phases of the Moon"
-msgstr "Phases of the Moon"
+msgstr "月の位相"
 
 #. type: cindex
 #: original_texis/calendar.texi:626
@@ -2309,7 +2309,7 @@ msgstr ""
 #: original_texis/calendar.texi:661
 #, no-wrap
 msgid "Conversion To and From Other Calendars"
-msgstr "Conversion To and From Other Calendars"
+msgstr "他のカレンダーとの間の変換"
 
 #. type: cindex
 #: original_texis/calendar.texi:663
@@ -2383,7 +2383,7 @@ msgstr "他のカレンダーで指定された日付に移動する。"
 #: original_texis/calendar.texi:687
 #, no-wrap
 msgid "Supported Calendar Systems"
-msgstr "Supported Calendar Systems"
+msgstr "サポートされるカレンダーシステム"
 
 #. type: cindex
 #: original_texis/calendar.texi:689
@@ -2618,7 +2618,7 @@ msgstr ""
 #: original_texis/calendar.texi:769
 #, no-wrap
 msgid "Converting To Other Calendars"
-msgstr "Converting To Other Calendars"
+msgstr "他のカレンダーへの変換"
 
 #. type: Plain text
 #: original_texis/calendar.texi:773
@@ -2929,7 +2929,7 @@ msgstr ""
 #: original_texis/calendar.texi:839
 #, no-wrap
 msgid "Converting From Other Calendars"
-msgstr "Converting From Other Calendars"
+msgstr "他のカレンダーからの変換"
 
 #. type: Plain text
 #: original_texis/calendar.texi:844
@@ -3237,7 +3237,7 @@ msgstr ""
 #: original_texis/calendar.texi:917
 #, no-wrap
 msgid "The Diary"
-msgstr "The Diary"
+msgstr "ダイアリー"
 
 #. type: findex
 #: original_texis/calendar.texi:918 original_texis/calendar.texi:1040
@@ -3675,7 +3675,7 @@ msgstr ""
 #: original_texis/calendar.texi:1065
 #, no-wrap
 msgid "The Diary File"
-msgstr "The Diary File"
+msgstr "ダイアリーファイル"
 
 #. type: cindex
 #: original_texis/calendar.texi:1066
@@ -3937,7 +3937,7 @@ msgstr ""
 #: original_texis/calendar.texi:1183
 #, no-wrap
 msgid "Commands to Add to the Diary"
-msgstr "Commands to Add to the Diary"
+msgstr "ダイアリーに追加するコマンド"
 
 #. type: Plain text
 #: original_texis/calendar.texi:1189
@@ -4687,7 +4687,7 @@ msgstr ""
 #: original_texis/calendar.texi:1448
 #, no-wrap
 msgid "Importing and Exporting Diary Entries"
-msgstr "Importing and Exporting Diary Entries"
+msgstr "ダイアリーエントリーのインポートとエクスポート"
 
 #. type: Plain text
 #: original_texis/calendar.texi:1452
@@ -4834,7 +4834,7 @@ msgstr ""
 #: original_texis/calendar.texi:1511
 #, no-wrap
 msgid "Daylight Saving Time"
-msgstr "Daylight Saving Time"
+msgstr "サマータイム"
 
 #. type: cindex
 #: original_texis/calendar.texi:1512
@@ -4996,7 +4996,7 @@ msgstr ""
 #: original_texis/calendar.texi:1579
 #, no-wrap
 msgid "Summing Time Intervals"
-msgstr "Summing Time Intervals"
+msgstr "時間間隔の加算"
 
 #. type: cindex
 #: original_texis/calendar.texi:1580
