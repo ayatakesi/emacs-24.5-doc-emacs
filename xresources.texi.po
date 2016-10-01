@@ -1,7 +1,7 @@
-# SOME DESCRIPTIVE TITLE
-# Copyright (C) YEAR Free Software Foundation, Inc.
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Japanese translation of Emacs-24.5 editor manual
+# Copyright (C) 2015-2016 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Emacs package.
+# Ayanokoji Takesi <ayanokoji.takesi@gmail.com>.
 #
 msgid ""
 msgstr ""
