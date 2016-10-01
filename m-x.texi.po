@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-01 23:04+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "M-x"
 #: original_texis/m-x.texi:6
 #, no-wrap
 msgid "Running Commands by Name"
-msgstr "Running Commands by Name"
+msgstr "名前を指定してコマンドを実行する"
 
 #. type: Plain text
 #: original_texis/m-x.texi:13
