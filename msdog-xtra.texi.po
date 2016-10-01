@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 08:33+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "MS-DOS"
 #: original_texis/msdog-xtra.texi:8
 #, no-wrap
 msgid "Emacs and MS-DOS"
-msgstr "Emacs and MS-DOS"
+msgstr "EmacsとMS-DOS"
 
 #. type: cindex
 #: original_texis/msdog-xtra.texi:9
@@ -182,7 +182,7 @@ msgstr "MS-DOS Keyboard"
 #: original_texis/msdog-xtra.texi:49
 #, no-wrap
 msgid "Keyboard Usage on MS-DOS"
-msgstr "Keyboard Usage on MS-DOS"
+msgstr "MS-DOSでのキーボードの使用方法"
 
 #. type: kindex
 #: original_texis/msdog-xtra.texi:51
@@ -373,7 +373,7 @@ msgstr "MS-DOS Mouse"
 #: original_texis/msdog-xtra.texi:113
 #, no-wrap
 msgid "Mouse Usage on MS-DOS"
-msgstr "Mouse Usage on MS-DOS"
+msgstr "MS-DOSでびマウスの使用方法"
 
 #. type: cindex
 #: original_texis/msdog-xtra.texi:115
@@ -578,7 +578,7 @@ msgstr "MS-DOS Display"
 #: original_texis/msdog-xtra.texi:191
 #, no-wrap
 msgid "Display on MS-DOS"
-msgstr "Display on MS-DOS"
+msgstr "MS-DOSでの表示"
 
 #. type: cindex
 #: original_texis/msdog-xtra.texi:192
@@ -866,7 +866,7 @@ msgstr "MS-DOS File Names"
 #: original_texis/msdog-xtra.texi:307
 #, no-wrap
 msgid "File Names on MS-DOS"
-msgstr "File Names on MS-DOS"
+msgstr "MS-DOSでのファイル名"
 
 #. type: cindex
 #: original_texis/msdog-xtra.texi:308
@@ -1045,7 +1045,7 @@ msgstr "MS-DOS Printing"
 #: original_texis/msdog-xtra.texi:373
 #, no-wrap
 msgid "Printing and MS-DOS"
-msgstr "Printing and MS-DOS"
+msgstr "印刷とMS-DOS"
 
 #. type: Plain text
 #: original_texis/msdog-xtra.texi:376 original_texis/msdog-xtra.texi:584
@@ -1158,7 +1158,7 @@ msgstr "MS-DOS and MULE"
 #: original_texis/msdog-xtra.texi:415
 #, no-wrap
 msgid "International Support on MS-DOS"
-msgstr "International Support on MS-DOS"
+msgstr "MS-DOSでの国際化サポート"
 
 #. type: cindex
 #: original_texis/msdog-xtra.texi:416
@@ -1476,7 +1476,7 @@ msgstr "MS-DOS Processes"
 #: original_texis/msdog-xtra.texi:545
 #, no-wrap
 msgid "Subprocesses on MS-DOS"
-msgstr "Subprocesses on MS-DOS"
+msgstr "MS-DOSでのサブプロセス"
 
 #. type: cindex
 #: original_texis/msdog-xtra.texi:547
