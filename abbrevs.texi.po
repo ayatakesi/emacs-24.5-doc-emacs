@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:34+0900\n"
+"PO-Revision-Date: 2016-10-02 03:12+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -459,7 +459,7 @@ msgstr ""
 #: original_texis/abbrevs.texi:140
 #, no-wrap
 msgid "Controlling Abbrev Expansion"
-msgstr "Controlling Abbrev Expansion"
+msgstr "abbrev展開の制御"
 
 #. type: Plain text
 #: original_texis/abbrevs.texi:149
@@ -664,7 +664,7 @@ msgstr ""
 #: original_texis/abbrevs.texi:216
 #, no-wrap
 msgid "Examining and Editing Abbrevs"
-msgstr "Examining and Editing Abbrevs"
+msgstr "abbrevのテストと編集"
 
 #. type: item
 #: original_texis/abbrevs.texi:219
@@ -982,7 +982,7 @@ msgstr ""
 #: original_texis/abbrevs.texi:329
 #, no-wrap
 msgid "Dynamic Abbrev Expansion"
-msgstr "Dynamic Abbrev Expansion"
+msgstr "動的abbrev展開"
 
 #. type: Plain text
 #: original_texis/abbrevs.texi:336
@@ -1161,7 +1161,7 @@ msgstr ""
 #: original_texis/abbrevs.texi:398
 #, no-wrap
 msgid "Customizing Dynamic Abbreviation"
-msgstr "Customizing Dynamic Abbreviation"
+msgstr "動的abbrevのカスタマイズ"
 
 #. type: Plain text
 #: original_texis/abbrevs.texi:403
