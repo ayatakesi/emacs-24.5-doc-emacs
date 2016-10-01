@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-01 23:28+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -217,7 +217,7 @@ msgstr "レジスターと似ているが永続性があるブックマーク。
 #: original_texis/regs.texi:58
 #, no-wrap
 msgid "Saving Positions in Registers"
-msgstr "Saving Positions in Registers"
+msgstr "レジスターに位置を保存する"
 
 #. type: cindex
 #: original_texis/regs.texi:59
@@ -320,7 +320,7 @@ msgstr ""
 #: original_texis/regs.texi:90
 #, no-wrap
 msgid "Saving Text in Registers"
-msgstr "Saving Text in Registers"
+msgstr "レジスターにテキストを保存する"
 
 #. type: cindex
 #: original_texis/regs.texi:91
@@ -525,7 +525,7 @@ msgstr ""
 #: original_texis/regs.texi:157
 #, no-wrap
 msgid "Saving Rectangles in Registers"
-msgstr "Saving Rectangles in Registers"
+msgstr "レジスターに矩形領域を保存する"
 
 #. type: cindex
 #: original_texis/regs.texi:158
@@ -594,7 +594,7 @@ msgstr ""
 #: original_texis/regs.texi:181
 #, no-wrap
 msgid "Saving Window Configurations in Registers"
-msgstr "Saving Window Configurations in Registers"
+msgstr "レジスターにウィンドウ設定を保存する"
 
 #. type: cindex
 #: original_texis/regs.texi:182
@@ -686,7 +686,7 @@ msgstr ""
 #: original_texis/regs.texi:209
 #, no-wrap
 msgid "Keeping Numbers in Registers"
-msgstr "Keeping Numbers in Registers"
+msgstr "レジスターに数字を保存する"
 
 #. type: cindex
 #: original_texis/regs.texi:210
@@ -774,7 +774,7 @@ msgstr ""
 #: original_texis/regs.texi:238
 #, no-wrap
 msgid "Keeping File Names in Registers"
-msgstr "Keeping File Names in Registers"
+msgstr "レジスターにファイル名を保存する"
 
 #. type: cindex
 #: original_texis/regs.texi:239
