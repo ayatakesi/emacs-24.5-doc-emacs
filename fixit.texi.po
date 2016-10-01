@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-01 23:49+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Fixit"
 #: original_texis/fixit.texi:6
 #, no-wrap
 msgid "Commands for Fixing Typos"
-msgstr "Commands for Fixing Typos"
+msgstr "タイプミスを訂正するコマンド"
 
 #. type: cindex
 #: original_texis/fixit.texi:7
@@ -381,7 +381,7 @@ msgstr ""
 #: original_texis/fixit.texi:137
 #, no-wrap
 msgid "Transposing Text"
-msgstr "Transposing Text"
+msgstr "テキストの入れ替え"
 
 #. type: kindex
 #: original_texis/fixit.texi:140 original_texis/fixit.texi:150
@@ -538,7 +538,7 @@ msgstr ""
 #: original_texis/fixit.texi:201
 #, no-wrap
 msgid "Case Conversion"
-msgstr "Case Conversion"
+msgstr "大文字小文字の変換"
 
 #. type: item
 #: original_texis/fixit.texi:204
@@ -612,7 +612,7 @@ msgstr ""
 #: original_texis/fixit.texi:222
 #, no-wrap
 msgid "Checking and Correcting Spelling"
-msgstr "Checking and Correcting Spelling"
+msgstr "スペルのチェックと訂正"
 
 #. type: cindex
 #: original_texis/fixit.texi:223
