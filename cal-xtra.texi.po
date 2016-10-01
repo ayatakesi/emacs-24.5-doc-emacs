@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 03:35+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Advanced Calendar/Diary Usage"
 #: original_texis/cal-xtra.texi:10
 #, no-wrap
 msgid "More advanced features of the Calendar and Diary"
-msgstr "More advanced features of the Calendar and Diary"
+msgstr "カレンダーとダイアリーの上級な機能"
 
 #. type: Plain text
 #: original_texis/cal-xtra.texi:16
@@ -152,7 +152,7 @@ msgstr "より柔軟なダイアリーエントリー。"
 #: original_texis/cal-xtra.texi:31
 #, no-wrap
 msgid "Customizing the Calendar"
-msgstr "Customizing the Calendar"
+msgstr "カレンダーのカスタマイズ"
 
 #. type: vindex
 #: original_texis/cal-xtra.texi:33
@@ -364,7 +364,7 @@ msgstr ""
 #: original_texis/cal-xtra.texi:99
 #, no-wrap
 msgid "Customizing the Holidays"
-msgstr "Customizing the Holidays"
+msgstr "休日のカスタマイズ"
 
 #. type: vindex
 #: original_texis/cal-xtra.texi:101
@@ -813,7 +813,7 @@ msgstr "(((6 4 2012) \"Lunar Eclipse\") ((11 13 2012) \"Solar Eclipse\") ... )\n
 #: original_texis/cal-xtra.texi:268
 #, no-wrap
 msgid "Converting from the Mayan Calendar"
-msgstr "Converting from the Mayan Calendar"
+msgstr "マヤ暦からの変換"
 
 #. type: cindex
 #: original_texis/cal-xtra.texi:269
@@ -1236,7 +1236,7 @@ msgstr ""
 #: original_texis/cal-xtra.texi:429
 #, no-wrap
 msgid "Customizing the Diary"
-msgstr "Customizing the Diary"
+msgstr "ダイアリーのカスタマイズ"
 
 #. type: vindex
 #: original_texis/cal-xtra.texi:431
@@ -1434,7 +1434,7 @@ msgstr ""
 #: original_texis/cal-xtra.texi:517
 #, no-wrap
 msgid "Diary Entries Using non-Gregorian Calendars"
-msgstr "Diary Entries Using non-Gregorian Calendars"
+msgstr "非グレゴリオ暦を使用するカレンダーエントリー"
 
 #. type: Plain text
 #: original_texis/cal-xtra.texi:525
@@ -2103,7 +2103,7 @@ msgstr ""
 #: original_texis/cal-xtra.texi:766
 #, no-wrap
 msgid "Sexp Entries and the Fancy Diary Display"
-msgstr "Sexp Entries and the Fancy Diary Display"
+msgstr "sexpエントリーとFancy Diary表示"
 
 #. type: cindex
 #: original_texis/cal-xtra.texi:767
