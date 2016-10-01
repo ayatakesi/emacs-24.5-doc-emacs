@@ -16,7 +16,7 @@
 ### Makefile
 翻訳前のtexiと翻訳済みpoから、翻訳済み各種ドキュメントをコンパイルするためのGNUmakeファイルです。
 
-### *.texi
+### original_texis/*.texi
 GNU Emacsに元から含まれる英語のtexiファイルです。
 
 ### *.po
