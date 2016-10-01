@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 00:51+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "International"
 #: original_texis/mule.texi:5
 #, no-wrap
 msgid "International Character Set Support"
-msgstr "International Character Set Support"
+msgstr "国際化文字セットのサポート"
 
 #. type: cindex
 #: original_texis/mule.texi:8
@@ -482,7 +482,7 @@ msgstr "右から左に記述する言語のサポート。"
 #: original_texis/mule.texi:109
 #, no-wrap
 msgid "Introduction to International Character Sets"
-msgstr "Introduction to International Character Sets"
+msgstr "国際化文字セットのイントロダクション"
 
 #. type: Plain text
 #: original_texis/mule.texi:116
@@ -1751,7 +1751,7 @@ msgstr ""
 #: original_texis/mule.texi:555
 #, no-wrap
 msgid "Selecting an Input Method"
-msgstr "Selecting an Input Method"
+msgstr "インプットメソッドの選択"
 
 #. type: kindex
 #: original_texis/mule.texi:558 original_texis/mule.texi:588
@@ -2439,7 +2439,7 @@ msgstr ""
 #: original_texis/mule.texi:802
 #, no-wrap
 msgid "Recognizing Coding Systems"
-msgstr "Recognizing Coding Systems"
+msgstr "コーディングシステムの認識"
 
 #. type: Plain text
 #: original_texis/mule.texi:809
@@ -2716,7 +2716,7 @@ msgstr ""
 #: original_texis/mule.texi:922
 #, no-wrap
 msgid "Specifying a File's Coding System"
-msgstr "Specifying a File's Coding System"
+msgstr "ファイルのコーディングシステムの指定"
 
 #. type: Plain text
 #: original_texis/mule.texi:931
@@ -2770,7 +2770,7 @@ msgstr ""
 #: original_texis/mule.texi:945
 #, no-wrap
 msgid "Choosing Coding Systems for Output"
-msgstr "Choosing Coding Systems for Output"
+msgstr "出力のためのコーディングシステムの選択"
 
 #. type: vindex
 #: original_texis/mule.texi:947
@@ -2885,7 +2885,7 @@ msgstr ""
 #: original_texis/mule.texi:1001
 #, no-wrap
 msgid "Specifying a Coding System for File Text"
-msgstr "Specifying a Coding System for File Text"
+msgstr "ファイルのテキストにたいするコーディングシステムの指定"
 
 #. type: Plain text
 #: original_texis/mule.texi:1006
@@ -3151,7 +3151,7 @@ msgstr ""
 #: original_texis/mule.texi:1096
 #, no-wrap
 msgid "Coding Systems for Interprocess Communication"
-msgstr "Coding Systems for Interprocess Communication"
+msgstr "プロセス間通信にたいするコーディングシステム"
 
 #. type: Plain text
 #: original_texis/mule.texi:1100
@@ -3374,7 +3374,7 @@ msgstr ""
 #: original_texis/mule.texi:1174
 #, no-wrap
 msgid "Coding Systems for File Names"
-msgstr "Coding Systems for File Names"
+msgstr "ファイル名にたいするコーディングシステム"
 
 #. type: item
 #: original_texis/mule.texi:1177
@@ -3540,7 +3540,7 @@ msgstr ""
 #: original_texis/mule.texi:1237
 #, no-wrap
 msgid "Coding Systems for Terminal I/O"
-msgstr "Coding Systems for Terminal I/O"
+msgstr "端末入出力にたいするコーディングシステム"
 
 #. type: item
 #: original_texis/mule.texi:1240
@@ -3841,7 +3841,7 @@ msgstr ""
 #: original_texis/mule.texi:1371
 #, no-wrap
 msgid "Defining fontsets"
-msgstr "Defining fontsets"
+msgstr "フォントセットの定義"
 
 #. type: vindex
 #: original_texis/mule.texi:1373
@@ -4319,7 +4319,7 @@ msgstr ""
 #: original_texis/mule.texi:1585
 #, no-wrap
 msgid "Unibyte Editing Mode"
-msgstr "Unibyte Editing Mode"
+msgstr "Unibyte編集モード"
 
 #. type: cindex
 #: original_texis/mule.texi:1587
