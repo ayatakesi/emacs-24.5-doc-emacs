@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:32+0900\n"
+"PO-Revision-Date: 2016-10-01 23:46+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Search"
 #: original_texis/search.texi:6
 #, no-wrap
 msgid "Searching and Replacement"
-msgstr "Searching and Replacement"
+msgstr "検索と置換"
 
 #. type: cindex
 #: original_texis/search.texi:7
@@ -326,7 +326,7 @@ msgstr "ミニバッファーヒストリーのインクリメンタル検索。
 #: original_texis/search.texi:66
 #, no-wrap
 msgid "Basics of Incremental Search"
-msgstr "Basics of Incremental Search"
+msgstr "インクリメンタル検索の基本"
 
 #. type: table
 #: original_texis/search.texi:71
@@ -474,7 +474,7 @@ msgstr ""
 #: original_texis/search.texi:126
 #, no-wrap
 msgid "Repeating Incremental Search"
-msgstr "Repeating Incremental Search"
+msgstr "インクリメンタル検索の繰り返し"
 
 #. type: Plain text
 #: original_texis/search.texi:135
@@ -623,7 +623,7 @@ msgstr ""
 #: original_texis/search.texi:183
 #, no-wrap
 msgid "Errors in Incremental Search"
-msgstr "Errors in Incremental Search"
+msgstr "インクリメンタル検索でのエラー"
 
 #. type: Plain text
 #: original_texis/search.texi:192
@@ -699,7 +699,7 @@ msgstr ""
 #: original_texis/search.texi:217
 #, no-wrap
 msgid "Special Input for Incremental Search"
-msgstr "Special Input for Incremental Search"
+msgstr "インクリメンタル検索の特別な入力"
 
 #. type: Plain text
 #: original_texis/search.texi:221
@@ -969,7 +969,7 @@ msgstr ""
 #: original_texis/search.texi:318
 #, no-wrap
 msgid "Isearch Yanking"
-msgstr "Isearch Yanking"
+msgstr "インクリメンタル検索でのyank"
 
 #. type: kindex
 #: original_texis/search.texi:320
@@ -1115,7 +1115,7 @@ msgstr ""
 #: original_texis/search.texi:361
 #, no-wrap
 msgid "Not Exiting Incremental Search"
-msgstr "Not Exiting Incremental Search"
+msgstr "インクリメンタル検索を終了させない"
 
 #. type: Plain text
 #: original_texis/search.texi:366
@@ -1255,7 +1255,7 @@ msgstr ""
 #: original_texis/search.texi:416
 #, no-wrap
 msgid "Searching the Minibuffer"
-msgstr "Searching the Minibuffer"
+msgstr "ミニバッファーの検索"
 
 #. type: cindex
 #: original_texis/search.texi:417
@@ -1645,7 +1645,7 @@ msgstr ""
 #: original_texis/search.texi:565
 #, no-wrap
 msgid "Regular Expression Search"
-msgstr "Regular Expression Search"
+msgstr "正規表現検索"
 
 #. type: cindex
 #: original_texis/search.texi:566
@@ -1839,7 +1839,7 @@ msgstr ""
 #: original_texis/search.texi:640
 #, no-wrap
 msgid "Syntax of Regular Expressions"
-msgstr "Syntax of Regular Expressions"
+msgstr "正規表現の構文"
 
 #. type: cindex
 #: original_texis/search.texi:641
@@ -2381,7 +2381,7 @@ msgstr ""
 #: original_texis/search.texi:850
 #, no-wrap
 msgid "Backslash in Regular Expressions"
-msgstr "Backslash in Regular Expressions"
+msgstr "正規表現でのバックスラッシュ"
 
 #. type: Plain text
 #: original_texis/search.texi:857
@@ -2861,7 +2861,7 @@ msgstr ""
 #: original_texis/search.texi:1016
 #, no-wrap
 msgid "Regular Expression Example"
-msgstr "Regular Expression Example"
+msgstr "正規表現の例"
 
 #. type: Plain text
 #: original_texis/search.texi:1021
@@ -2895,7 +2895,7 @@ msgstr ""
 #: original_texis/search.texi:1034
 #, no-wrap
 msgid "Searching and Case"
-msgstr "Searching and Case"
+msgstr "検索と大文字小文字"
 
 #. type: Plain text
 #: original_texis/search.texi:1042
@@ -2982,7 +2982,7 @@ msgstr ""
 #: original_texis/search.texi:1072
 #, no-wrap
 msgid "Replacement Commands"
-msgstr "Replacement Commands"
+msgstr "置換コマンド"
 
 #. type: cindex
 #: original_texis/search.texi:1073
@@ -3107,7 +3107,7 @@ msgstr "問い合わせの使い方。"
 #: original_texis/search.texi:1105
 #, no-wrap
 msgid "Unconditional Replacement"
-msgstr "Unconditional Replacement"
+msgstr "無条件の置換"
 
 #. type: findex
 #: original_texis/search.texi:1106
@@ -3178,7 +3178,7 @@ msgstr ""
 #: original_texis/search.texi:1135
 #, no-wrap
 msgid "Regexp Replacement"
-msgstr "Regexp Replacement"
+msgstr "正規表現の置換"
 
 #. type: findex
 #: original_texis/search.texi:1136
@@ -3372,7 +3372,7 @@ msgstr ""
 #: original_texis/search.texi:1222
 #, no-wrap
 msgid "Replace Commands and Case"
-msgstr "Replace Commands and Case"
+msgstr "置換コマンドと大文字小文字"
 
 #. type: Plain text
 #: original_texis/search.texi:1229
@@ -3909,7 +3909,7 @@ msgstr ""
 #: original_texis/search.texi:1410
 #, no-wrap
 msgid "Other Search-and-Loop Commands"
-msgstr "Other Search-and-Loop Commands"
+msgstr "その他の検索およびループコマンド"
 
 #. type: Plain text
 #: original_texis/search.texi:1417
