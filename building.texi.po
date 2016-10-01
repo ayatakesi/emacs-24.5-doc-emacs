@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 01:49+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Building"
 #: original_texis/building.texi:6
 #, no-wrap
 msgid "Compiling and Testing Programs"
-msgstr "Compiling and Testing Programs"
+msgstr "プログラムのコンパイルとテスト"
 
 #. type: cindex
 #: original_texis/building.texi:7
@@ -183,7 +183,7 @@ msgstr "Emacsを通じて別のLispと通信する。"
 #: original_texis/building.texi:34
 #, no-wrap
 msgid "Running Compilations under Emacs"
-msgstr "Running Compilations under Emacs"
+msgstr "Emacs下でのコンパイルの実行"
 
 #. type: cindex
 #: original_texis/building.texi:35
@@ -901,7 +901,7 @@ msgstr ""
 #: original_texis/building.texi:276
 #, no-wrap
 msgid "Subshells for Compilation"
-msgstr "Subshells for Compilation"
+msgstr "コンパイルのためのサブシェル"
 
 #. type: Plain text
 #: original_texis/building.texi:288
@@ -1012,7 +1012,7 @@ msgstr ""
 #: original_texis/building.texi:332
 #, no-wrap
 msgid "Searching with Grep under Emacs"
-msgstr "Searching with Grep under Emacs"
+msgstr "Emacs下でのGrepによる検索"
 
 #. type: Plain text
 #: original_texis/building.texi:340
@@ -1266,7 +1266,7 @@ msgstr ""
 #: original_texis/building.texi:417
 #, no-wrap
 msgid "Finding Syntax Errors On The Fly"
-msgstr "Finding Syntax Errors On The Fly"
+msgstr "オンザフライで構文エラーを見つける"
 
 #. type: cindex
 #: original_texis/building.texi:418
@@ -1335,7 +1335,7 @@ msgstr "Emacsとともに配布されているFlymake Info manualを参照して
 #: original_texis/building.texi:447
 #, no-wrap
 msgid "Running Debuggers Under Emacs"
-msgstr "Running Debuggers Under Emacs"
+msgstr "Emacs下でのデバッガーの実行"
 
 #. type: cindex
 #: original_texis/building.texi:448
@@ -3884,7 +3884,7 @@ msgstr ""
 #: original_texis/building.texi:1290
 #, no-wrap
 msgid "Executing Lisp Expressions"
-msgstr "Executing Lisp Expressions"
+msgstr "Lisp式の実行"
 
 #. type: Plain text
 #: original_texis/building.texi:1296
@@ -4000,7 +4000,7 @@ msgstr "Lisp Libraries"
 #: original_texis/building.texi:1327
 #, no-wrap
 msgid "Libraries of Lisp Code for Emacs"
-msgstr "Libraries of Lisp Code for Emacs"
+msgstr "EmacsのためのLispコードによるライブラリー"
 
 #. type: cindex
 #: original_texis/building.texi:1328
@@ -4272,7 +4272,7 @@ msgstr "Lisp Eval"
 #: original_texis/building.texi:1426
 #, no-wrap
 msgid "Evaluating Emacs Lisp Expressions"
-msgstr "Evaluating Emacs Lisp Expressions"
+msgstr "Emacs Lisp式の評価"
 
 #. type: cindex
 #: original_texis/building.texi:1428
@@ -4571,7 +4571,7 @@ msgstr "Lisp Interaction"
 #: original_texis/building.texi:1530
 #, no-wrap
 msgid "Lisp Interaction Buffers"
-msgstr "Lisp Interaction Buffers"
+msgstr "Lisp Interactionバッファー"
 
 #. type: findex
 #: original_texis/building.texi:1532
@@ -4665,7 +4665,7 @@ msgstr ""
 #: original_texis/building.texi:1564
 #, no-wrap
 msgid "Running an External Lisp"
-msgstr "Running an External Lisp"
+msgstr "外部Lispの実行"
 
 #. type: cindex
 #: original_texis/building.texi:1566
