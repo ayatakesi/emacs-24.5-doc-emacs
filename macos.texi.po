@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 08:23+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Mac OS / GNUstep"
 #: original_texis/macos.texi:5
 #, no-wrap
 msgid "Emacs and Mac OS / GNUstep"
-msgstr "Emacs and Mac OS / GNUstep"
+msgstr "EmacsとMac OS / GNUstep"
 
 #. type: cindex
 #: original_texis/macos.texi:6
@@ -135,7 +135,7 @@ msgstr "GNUstepサポート状態の詳細。"
 #: original_texis/macos.texi:35
 #, no-wrap
 msgid "Basic Emacs usage under Mac OS and GNUstep"
-msgstr "Basic Emacs usage under Mac OS and GNUstep"
+msgstr "Mac OSおよびGNUstepでのEmacsの基本的な使い方"
 
 #. type: Plain text
 #: original_texis/macos.texi:42
@@ -230,7 +230,7 @@ msgstr ""
 #: original_texis/macos.texi:74
 #, no-wrap
 msgid "Grabbing environment variables"
-msgstr "Grabbing environment variables"
+msgstr "環境変数の取得"
 
 #. type: Plain text
 #: original_texis/macos.texi:85
@@ -278,7 +278,7 @@ msgstr ""
 #: original_texis/macos.texi:98
 #, no-wrap
 msgid "Font and Color Panels"
-msgstr "Font and Color Panels"
+msgstr "フォントパネルとカラーパネル"
 
 #. type: Plain text
 #: original_texis/macos.texi:104
@@ -344,7 +344,7 @@ msgstr "% defaults write org.gnu.Emacs FontBackend ns\n"
 #: original_texis/macos.texi:131
 #, no-wrap
 msgid "Windowing System Events under Mac OS / GNUstep"
-msgstr "Windowing System Events under Mac OS / GNUstep"
+msgstr "Mac OSおよびGNUstepでのウィンドウシステムイベント"
 
 #. type: Plain text
 #: original_texis/macos.texi:138
