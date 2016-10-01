@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 07:46+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Picture Mode"
 #: original_texis/picture-xtra.texi:8
 #, no-wrap
 msgid "Editing Pictures"
-msgstr "Editing Pictures"
+msgstr "ピクチャーの編集"
 
 #. type: cindex
 #: original_texis/picture-xtra.texi:9
@@ -192,7 +192,7 @@ msgstr "矩形領域のクリアーと重ね合わせ。"
 #: original_texis/picture-xtra.texi:62
 #, no-wrap
 msgid "Basic Editing in Picture Mode"
-msgstr "Basic Editing in Picture Mode"
+msgstr "Pictureモードでの基本的な編集"
 
 #. type: findex
 #: original_texis/picture-xtra.texi:64
@@ -373,7 +373,7 @@ msgstr ""
 #: original_texis/picture-xtra.texi:128
 #, no-wrap
 msgid "Controlling Motion after Insert"
-msgstr "Controlling Motion after Insert"
+msgstr "挿入後の移動の制御"
 
 #. type: findex
 #: original_texis/picture-xtra.texi:130
@@ -670,7 +670,7 @@ msgstr ""
 #: original_texis/picture-xtra.texi:192
 #, no-wrap
 msgid "Picture Mode Tabs"
-msgstr "Picture Mode Tabs"
+msgstr "Pictureモードでのタブ"
 
 #. type: kindex
 #: original_texis/picture-xtra.texi:194
@@ -782,7 +782,7 @@ msgstr ""
 #: original_texis/picture-xtra.texi:232
 #, no-wrap
 msgid "Picture Mode Rectangle Commands"
-msgstr "Picture Mode Rectangle Commands"
+msgstr "Pictureモードの矩形領域コマンド"
 
 #. type: cindex
 #: original_texis/picture-xtra.texi:233
