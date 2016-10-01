@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 03:20+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Dired"
 #: original_texis/dired.texi:6
 #, no-wrap
 msgid "Dired, the Directory Editor"
-msgstr "Dired, the Directory Editor"
+msgstr "Dired (ディレクトリーエディター)"
 
 #. type: cindex
 #: original_texis/dired.texi:10
@@ -295,7 +295,7 @@ msgstr "Dired Enter"
 #: original_texis/dired.texi:58
 #, no-wrap
 msgid "Entering Dired"
-msgstr "Entering Dired"
+msgstr "Diredの起動"
 
 #. type: findex
 #: original_texis/dired.texi:60
@@ -474,7 +474,7 @@ msgstr "Dired Navigation"
 #: original_texis/dired.texi:117
 #, no-wrap
 msgid "Navigation in the Dired Buffer"
-msgstr "Navigation in the Dired Buffer"
+msgstr "Diredバッファーでの移動"
 
 #. type: kindex
 #: original_texis/dired.texi:119
@@ -618,7 +618,7 @@ msgstr "Dired Deletion"
 #: original_texis/dired.texi:161
 #, no-wrap
 msgid "Deleting Files with Dired"
-msgstr "Deleting Files with Dired"
+msgstr "Diredでのファイルの削除について"
 
 #. type: cindex
 #: original_texis/dired.texi:162
@@ -855,7 +855,7 @@ msgstr ""
 #: original_texis/dired.texi:235
 #, no-wrap
 msgid "Flagging Many Files at Once"
-msgstr "Flagging Many Files at Once"
+msgstr "大量のファイルに一度にフラグをつける"
 
 #. type: cindex
 #: original_texis/dired.texi:236
@@ -1124,7 +1124,7 @@ msgstr "Dired Visiting"
 #: original_texis/dired.texi:314
 #, no-wrap
 msgid "Visiting Files in Dired"
-msgstr "Visiting Files in Dired"
+msgstr "Diredのファイルをvisitする"
 
 #. type: Plain text
 #: original_texis/dired.texi:320
@@ -1363,7 +1363,7 @@ msgstr ""
 #: original_texis/dired.texi:379
 #, no-wrap
 msgid "Dired Marks vs. Flags"
-msgstr "Dired Marks vs. Flags"
+msgstr "Diredでのマークとフラグ"
 
 #. type: cindex
 #: original_texis/dired.texi:381
@@ -3099,7 +3099,7 @@ msgstr ""
 #: original_texis/dired.texi:871
 #, no-wrap
 msgid "Transforming File Names in Dired"
-msgstr "Transforming File Names in Dired"
+msgstr "Diredでのファイル名の変更"
 
 #. type: Plain text
 #: original_texis/dired.texi:876
@@ -3368,7 +3368,7 @@ msgstr ""
 #: original_texis/dired.texi:957
 #, no-wrap
 msgid "File Comparison with Dired"
-msgstr "File Comparison with Dired"
+msgstr "Diredでのファイル比較"
 
 #. type: cindex
 #: original_texis/dired.texi:958
@@ -3564,7 +3564,7 @@ msgstr "dired-xtra.texi"
 #: original_texis/dired.texi:1028
 #, no-wrap
 msgid "Moving Over Subdirectories"
-msgstr "Moving Over Subdirectories"
+msgstr "サブディレクトリー間の移動"
 
 #. type: Plain text
 #: original_texis/dired.texi:1033
@@ -3877,7 +3877,7 @@ msgstr "Dired Updating"
 #: original_texis/dired.texi:1115
 #, no-wrap
 msgid "Updating the Dired Buffer"
-msgstr "Updating the Dired Buffer"
+msgstr "Diredバッファーの更新"
 
 #. type: cindex
 #: original_texis/dired.texi:1116
@@ -4168,7 +4168,7 @@ msgstr "Dired and Find"
 #: original_texis/dired.texi:1204
 #, no-wrap
 msgid "Dired and @code{find}"
-msgstr "Dired and @code{find}"
+msgstr "Diredと@code{find}"
 
 #. type: cindex
 #: original_texis/dired.texi:1205
@@ -4337,7 +4337,7 @@ msgstr ""
 #: original_texis/dired.texi:1259
 #, no-wrap
 msgid "Editing the Dired Buffer"
-msgstr "Editing the Dired Buffer"
+msgstr "Diredバッファーの編集"
 
 #. type: cindex
 #: original_texis/dired.texi:1261
@@ -4422,7 +4422,7 @@ msgstr ""
 #: original_texis/dired.texi:1292
 #, no-wrap
 msgid "Viewing Image Thumbnails in Dired"
-msgstr "Viewing Image Thumbnails in Dired"
+msgstr "Diredでのイメージとサムネイルの閲覧"
 
 #. type: cindex
 #: original_texis/dired.texi:1293
@@ -4618,7 +4618,7 @@ msgstr "Misc Dired Features"
 #: original_texis/dired.texi:1364
 #, no-wrap
 msgid "Other Dired Features"
-msgstr "Other Dired Features"
+msgstr "その他のDiredの機能"
 
 #. type: kindex
 #: original_texis/dired.texi:1366
