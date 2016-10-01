@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-07-15 12:28+0900\n"
+"PO-Revision-Date: 2016-10-02 07:49+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Packages"
 #: original_texis/package.texi:6
 #, no-wrap
 msgid "Emacs Lisp Packages"
-msgstr "Emacs Lisp Packages"
+msgstr "Emacs Lispパッケージ"
 
 #. type: cindex
 #: original_texis/package.texi:7
@@ -159,7 +159,7 @@ msgstr "パッケージがインストールされる場所。"
 #: original_texis/package.texi:44
 #, no-wrap
 msgid "The Package Menu Buffer"
-msgstr "The Package Menu Buffer"
+msgstr "Package Menuバッファー"
 
 #. type: cindex
 #: original_texis/package.texi:45
@@ -734,7 +734,7 @@ msgstr ""
 #: original_texis/package.texi:264
 #, no-wrap
 msgid "Package Files and Directory Layout"
-msgstr "Package Files and Directory Layout"
+msgstr "パッケージのファイルとディレクトリー"
 
 #. type: cindex
 #: original_texis/package.texi:265
