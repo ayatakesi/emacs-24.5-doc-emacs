@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Emacs-24.5\n"
 "POT-Creation-Date: 2016-10-01 19:52+0900\n"
-"PO-Revision-Date: 2016-06-20 23:33+0900\n"
+"PO-Revision-Date: 2016-10-02 01:25+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Programs"
 #: original_texis/programs.texi:7
 #, no-wrap
 msgid "Editing Programs"
-msgstr "Editing Programs"
+msgstr "プログラムの編集"
 
 #. type: cindex
 #: original_texis/programs.texi:8
@@ -237,7 +237,7 @@ msgstr "* Fortran:: Fortranモードと特別な機能。"
 #: original_texis/programs.texi:51
 #, no-wrap
 msgid "Major Modes for Programming Languages"
-msgstr "Major Modes for Programming Languages"
+msgstr "プログラミング言語のためのメジャーモード"
 
 #. type: cindex
 #: original_texis/programs.texi:52
@@ -545,7 +545,7 @@ msgstr ""
 #: original_texis/programs.texi:136
 #, no-wrap
 msgid "Top-Level Definitions, or Defuns"
-msgstr "Top-Level Definitions, or Defuns"
+msgstr "トップレベルの定義、またはdefun"
 
 #. type: Plain text
 #: original_texis/programs.texi:141
@@ -611,7 +611,7 @@ msgstr "Which Functionモードはどの関数にいるか表示します。"
 #: original_texis/programs.texi:151
 #, no-wrap
 msgid "Left Margin Convention"
-msgstr "Left Margin Convention"
+msgstr "左端の慣習"
 
 #. type: cindex
 #: original_texis/programs.texi:153
@@ -1045,7 +1045,7 @@ msgstr "Speedbarもこれを使用します(@ref{Speedbar}を参照してくだ�
 #: original_texis/programs.texi:320
 #, no-wrap
 msgid "Which Function Mode"
-msgstr "Which Function Mode"
+msgstr "Which Functionモード"
 
 #. type: cindex
 #: original_texis/programs.texi:321
@@ -1099,7 +1099,7 @@ msgstr ""
 #: original_texis/programs.texi:339
 #, no-wrap
 msgid "Indentation for Programs"
-msgstr "Indentation for Programs"
+msgstr "プログラムのインデント"
 
 #. type: cindex
 #: original_texis/programs.texi:340
@@ -1204,7 +1204,7 @@ msgstr ""
 #: original_texis/programs.texi:364
 #, no-wrap
 msgid "Basic Program Indentation Commands"
-msgstr "Basic Program Indentation Commands"
+msgstr "プログラムの基本的なインデントコマンド"
 
 #. type: key{#1}
 #: original_texis/programs.texi:367 original_texis/programs.texi:512
@@ -1315,7 +1315,7 @@ msgstr ""
 #: original_texis/programs.texi:404
 #, no-wrap
 msgid "Indenting Several Lines"
-msgstr "Indenting Several Lines"
+msgstr "複数行のインデント"
 
 #. type: Plain text
 #: original_texis/programs.texi:412
@@ -1459,7 +1459,7 @@ msgstr ""
 #: original_texis/programs.texi:459
 #, no-wrap
 msgid "Customizing Lisp Indentation"
-msgstr "Customizing Lisp Indentation"
+msgstr "Lispのインデントのカスタマイズ"
 
 #. type: cindex
 #: original_texis/programs.texi:460
@@ -1553,7 +1553,7 @@ msgstr ""
 #: original_texis/programs.texi:494
 #, no-wrap
 msgid "Commands for C Indentation"
-msgstr "Commands for C Indentation"
+msgstr "Cのインデントのためのコマンド"
 
 #. type: Plain text
 #: original_texis/programs.texi:497
@@ -1679,7 +1679,7 @@ msgstr ""
 #: original_texis/programs.texi:538
 #, no-wrap
 msgid "Customizing C Indentation"
-msgstr "Customizing C Indentation"
+msgstr "Cのインデントのカスタマイズ"
 
 #. type: cindex
 #: original_texis/programs.texi:539
@@ -1871,7 +1871,7 @@ msgstr ""
 #: original_texis/programs.texi:614
 #, no-wrap
 msgid "Commands for Editing with Parentheses"
-msgstr "Commands for Editing with Parentheses"
+msgstr "カッコに付随する編集のためのコマンド"
 
 #. type: findex
 #: original_texis/programs.texi:616
@@ -1958,7 +1958,7 @@ msgstr "終了区切りの挿入による、マッチする開始区切りのフ
 #: original_texis/programs.texi:640
 #, no-wrap
 msgid "Expressions with Balanced Parentheses"
-msgstr "Expressions with Balanced Parentheses"
+msgstr "対応が取れたカッコの式"
 
 #. type: cindex
 #: original_texis/programs.texi:642
@@ -2218,7 +2218,7 @@ msgstr ""
 #: original_texis/programs.texi:734
 #, no-wrap
 msgid "Moving in the Parenthesis Structure"
-msgstr "Moving in the Parenthesis Structure"
+msgstr "カッコ構造の移動"
 
 #. type: cindex
 #: original_texis/programs.texi:736
@@ -2396,7 +2396,7 @@ msgstr ""
 #: original_texis/programs.texi:791
 #, no-wrap
 msgid "Matching Parentheses"
-msgstr "Matching Parentheses"
+msgstr "マッチするカッコ"
 
 #. type: cindex
 #: original_texis/programs.texi:792
@@ -2613,7 +2613,7 @@ msgstr ""
 #: original_texis/programs.texi:876
 #, no-wrap
 msgid "Manipulating Comments"
-msgstr "Manipulating Comments"
+msgstr "コメントの操作"
 
 #. type: cindex
 #: original_texis/programs.texi:877
@@ -2955,7 +2955,7 @@ msgstr ""
 #: original_texis/programs.texi:1003
 #, no-wrap
 msgid "Multiple Lines of Comments"
-msgstr "Multiple Lines of Comments"
+msgstr "複数行のコメント"
 
 #. type: cindex
 #: original_texis/programs.texi:1007
@@ -3055,7 +3055,7 @@ msgstr "Options for Comments"
 #: original_texis/programs.texi:1041
 #, no-wrap
 msgid "Options Controlling Comments"
-msgstr "Options Controlling Comments"
+msgstr "コメントを制御するオプション"
 
 #. type: vindex
 #: original_texis/programs.texi:1043
@@ -3213,7 +3213,7 @@ msgstr ""
 #: original_texis/programs.texi:1103
 #, no-wrap
 msgid "Documentation Lookup"
-msgstr "Documentation Lookup"
+msgstr "ドキュメントの照会"
 
 #. type: Plain text
 #: original_texis/programs.texi:1108
@@ -3261,7 +3261,7 @@ msgstr "Emacs関数を探す、その他。"
 #: original_texis/programs.texi:1116
 #, no-wrap
 msgid "Info Documentation Lookup"
-msgstr "Info Documentation Lookup"
+msgstr "Infoドキュメントの照会"
 
 #. type: findex
 #: original_texis/programs.texi:1118
@@ -3325,7 +3325,7 @@ msgstr ""
 #: original_texis/programs.texi:1140
 #, no-wrap
 msgid "Man Page Lookup"
-msgstr "Man Page Lookup"
+msgstr "man-pageの照会"
 
 #. type: cindex
 #: original_texis/programs.texi:1142
@@ -3516,7 +3516,7 @@ msgstr "Emacsとともに配布されているWoMan Infoマニュアルを参照
 #: original_texis/programs.texi:1212
 #, no-wrap
 msgid "Emacs Lisp Documentation Lookup"
-msgstr "Emacs Lisp Documentation Lookup"
+msgstr "Emacs Lispドキュメントの照会"
 
 #. type: Plain text
 #: original_texis/programs.texi:1218
@@ -3565,7 +3565,7 @@ msgstr ""
 #: original_texis/programs.texi:1230
 #, no-wrap
 msgid "Hideshow minor mode"
-msgstr "Hideshow minor mode"
+msgstr "Hideshowマイナーモード"
 
 #. type: cindex
 #: original_texis/programs.texi:1231
@@ -3794,7 +3794,7 @@ msgstr ""
 #: original_texis/programs.texi:1301
 #, no-wrap
 msgid "Completion for Symbol Names"
-msgstr "Completion for Symbol Names"
+msgstr "シンボル名の補完"
 
 #. type: cindex
 #: original_texis/programs.texi:1302
@@ -4160,7 +4160,7 @@ msgstr "詳細は、@ref{Top, Semantic,, semantic, Semantic}を参照してく�
 #: original_texis/programs.texi:1437
 #, no-wrap
 msgid "Other Features Useful for Editing Programs"
-msgstr "Other Features Useful for Editing Programs"
+msgstr "プログラムを編集するための他の便利な機能"
 
 #. type: Plain text
 #: original_texis/programs.texi:1441
@@ -4300,7 +4300,7 @@ msgstr ""
 #: original_texis/programs.texi:1495
 #, no-wrap
 msgid "C and Related Modes"
-msgstr "C and Related Modes"
+msgstr "Cおよび関連するモード"
 
 #. type: cindex
 #: original_texis/programs.texi:1496
@@ -4464,7 +4464,7 @@ msgstr "コメントのフィル、マクロ展開の閲覧、その他のクー
 #: original_texis/programs.texi:1532
 #, no-wrap
 msgid "C Mode Motion Commands"
-msgstr "C Mode Motion Commands"
+msgstr "Cモードの移動コマンド"
 
 #. type: Plain text
 #: original_texis/programs.texi:1536
@@ -4673,7 +4673,7 @@ msgstr ""
 #: original_texis/programs.texi:1596
 #, no-wrap
 msgid "Electric C Characters"
-msgstr "Electric C Characters"
+msgstr "エレクトリックC文字"
 
 #. type: Plain text
 #: original_texis/programs.texi:1604
@@ -4791,7 +4791,7 @@ msgstr ""
 #: original_texis/programs.texi:1639
 #, no-wrap
 msgid "Hungry Delete Feature in C"
-msgstr "Hungry Delete Feature in C"
+msgstr "Cの欲張りな削除機能"
 
 #. type: cindex
 #: original_texis/programs.texi:1640
@@ -4959,7 +4959,7 @@ msgstr ""
 #: original_texis/programs.texi:1686
 #, no-wrap
 msgid "Other Commands for C Mode"
-msgstr "Other Commands for C Mode"
+msgstr "Cモードのその他のコマンド"
 
 #. type: item
 #: original_texis/programs.texi:1689
