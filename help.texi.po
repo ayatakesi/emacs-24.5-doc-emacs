@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-10-03 23:21+0900\n"
-"PO-Revision-Date: 2016-07-15 12:27+0900\n"
+"POT-Creation-Date: 2016-10-01 19:52+0900\n"
+"PO-Revision-Date: 2016-10-01 20:47+0900\n"
 "Last-Translator: Takeshi Ayanokoji <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: Japanese <h1r0p@outlook.jp>\n"
 "Language: ja\n"
@@ -16,55 +16,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: kindex
-#: help.texi.orig:5 help.texi.orig:6 help.texi.orig:7
+#: original_texis/help.texi:5 original_texis/help.texi:6
+#: original_texis/help.texi:7
 #, no-wrap
 msgid "Help"
 msgstr "Help"
 
 #. type: cindex
-#: help.texi.orig:8
+#: original_texis/help.texi:8
 #, no-wrap
 msgid "help"
 msgstr "help"
 
 #. type: cindex
-#: help.texi.orig:9
+#: original_texis/help.texi:9
 #, no-wrap
 msgid "self-documentation"
 msgstr "self-documentation"
 
 #. type: findex
-#: help.texi.orig:10
+#: original_texis/help.texi:10
 #, no-wrap
 msgid "help-command"
 msgstr "help-command"
 
 #. type: kindex
-#: help.texi.orig:11
+#: original_texis/help.texi:11
 #, no-wrap
 msgid "C-h"
 msgstr "C-h"
 
 #. type: kindex
-#: help.texi.orig:12
+#: original_texis/help.texi:12
 #, no-wrap
 msgid "F1"
 msgstr "F1"
 
 #. type: kindex
-#: help.texi.orig:14
+#: original_texis/help.texi:14
 #, no-wrap
 msgid "C-h C-h"
 msgstr "C-h C-h"
 
 #. type: findex
-#: help.texi.orig:15
+#: original_texis/help.texi:15
 #, no-wrap
 msgid "help-for-help"
 msgstr "help-for-help"
 
 #. type: Plain text
-#: help.texi.orig:23
+#: original_texis/help.texi:23
 msgid ""
 "Emacs provides a wide variety of help commands, all accessible through the "
 "prefix key @kbd{C-h} (or, equivalently, the function key @key{F1}).  These "
@@ -72,706 +73,808 @@ msgid ""
 "@kbd{C-h C-h} to view a list of help commands (@code{help-for-help}).  You "
 "can scroll the list with @key{SPC} and @key{DEL}, then type the help command "
 "you want.  To cancel, type @kbd{C-g}."
-msgstr "Emacsはバラエティに富んだヘルプコマンドを提供しており、それらにはプレフィクスキー@kbd{C-h}(ファンクションキー@key{F1}でも可)からアクセスできます。以下のセクションではこれらのコマンドについて説明します。@kbd{C-h C-h} (@code{help-for-help})と入力すれば、ヘルプコマンドの一覧を見ることもできます。この一覧は@key{SPC}と@key{DEL}でスクロールでき、それから見たいヘルプコマンドを入力するか、@kbd{C-g}でキャンセルできます。"
+msgstr ""
+"Emacsはバラエティに富んだヘルプコマンドを提供しており、それらにはプレフィクス"
+"キー@kbd{C-h}(ファンクションキー@key{F1}でも可)からアクセスできます。以下のセ"
+"クションではこれらのコマンドについて説明します。@kbd{C-h C-h} (@code{help-"
+"for-help})と入力すれば、ヘルプコマンドの一覧を見ることもできます。この一覧は"
+"@key{SPC}と@key{DEL}でスクロールでき、それから見たいヘルプコマンドを入力する"
+"か、@kbd{C-g}でキャンセルできます。"
 
 #. type: Plain text
-#: help.texi.orig:27
+#: original_texis/help.texi:27
 msgid ""
 "Many help commands display their information in a special @dfn{help "
 "buffer}.  In this buffer, you can type @key{SPC} and @key{DEL} to scroll and "
 "type @key{RET} to follow hyperlinks.  @xref{Help Mode}."
-msgstr "多くのヘルプコマンドは、@dfn{ヘルプバッファー(help buffer)}という特別なバッファーに情報を表示します。このバッファーでは@key{SPC}と@key{DEL}によりスクロールし、@key{RET}でハイパーリンクをフォローすることができます。@ref{Help Mode}を参照してください。"
+msgstr ""
+"多くのヘルプコマンドは、@dfn{ヘルプバッファー(help buffer)}という特別なバッ"
+"ファーに情報を表示します。このバッファーでは@key{SPC}と@key{DEL}によりスク"
+"ロールし、@key{RET}でハイパーリンクをフォローすることができます。@ref{Help "
+"Mode}を参照してください。"
 
 #. type: cindex
-#: help.texi.orig:28
+#: original_texis/help.texi:28
 #, no-wrap
 msgid "searching documentation efficiently"
 msgstr "searching documentation efficiently"
 
 #. type: cindex
-#: help.texi.orig:29
+#: original_texis/help.texi:29
 #, no-wrap
 msgid "looking for a subject in documentation"
 msgstr "looking for a subject in documentation"
 
 #. type: Plain text
-#: help.texi.orig:34
+#: original_texis/help.texi:34
 msgid ""
 "If you are looking for a certain feature, but don't know what it is called "
 "or where to look, we recommend three methods.  First, try an apropos "
 "command, then try searching the manual index, then look in the FAQ and the "
 "package keywords."
-msgstr "特定の機能を探しているが、それが何と呼ばれているかわからない、どこを見ればよいのかわからないときには、次の3つの方法を推奨します。まず最初にaproposコマンドを試してください。次にマニュアルのインデックスを探してください。そしてFAQとパッケージのキーワードを探してください。"
+msgstr ""
+"特定の機能を探しているが、それが何と呼ばれているかわからない、どこを見ればよ"
+"いのかわからないときには、次の3つの方法を推奨します。まず最初にaproposコマン"
+"ドを試してください。次にマニュアルのインデックスを探してください。そしてFAQと"
+"パッケージのキーワードを探してください。"
 
 #. type: item
-#: help.texi.orig:36 help.texi.orig:91
+#: original_texis/help.texi:36 original_texis/help.texi:91
 #, no-wrap
 msgid "C-h a @var{topics} @key{RET}"
 msgstr "C-h a @var{topics} @key{RET}"
 
 #. type: table
-#: help.texi.orig:40
+#: original_texis/help.texi:40
 msgid ""
 "This searches for commands whose names match the argument @var{topics}.  The "
 "argument can be a keyword, a list of keywords, or a regular expression "
 "(@pxref{Regexps}).  @xref{Apropos}."
-msgstr "引数@var{topics}と名前が一致するコマンドを検索します。引数にはキーワード、キーワードのリスト、正規表現(@ref{Regexps}を参照してください)を指定できます。@ref{Apropos}を参照してください。"
+msgstr ""
+"引数@var{topics}と名前が一致するコマンドを検索します。引数にはキーワード、"
+"キーワードのリスト、正規表現(@ref{Regexps}を参照してください)を指定できます。"
+"@ref{Apropos}を参照してください。"
 
 #. type: item
-#: help.texi.orig:41
+#: original_texis/help.texi:41
 #, no-wrap
 msgid "C-h i d m emacs @key{RET} i @var{topic} @key{RET}"
 msgstr "C-h i d m emacs @key{RET} i @var{topic} @key{RET}"
 
 #. type: table
-#: help.texi.orig:45
+#: original_texis/help.texi:45
 msgid ""
 "This searches for @var{topic} in the indices of the Emacs Info manual, "
 "displaying the first match found.  Press @kbd{,} to see subsequent matches.  "
 "You can use a regular expression as @var{topic}."
-msgstr "Emacsのinfoマニュアルのインデックスから、@var{topic}を検索して最初にマッチしたものを表示します。@kbd{,}を押すと次にマッチしたものを表示します。@var{topic}には正規表現を指定できます。"
+msgstr ""
+"Emacsのinfoマニュアルのインデックスから、@var{topic}を検索して最初にマッチし"
+"たものを表示します。@kbd{,}を押すと次にマッチしたものを表示します。"
+"@var{topic}には正規表現を指定できます。"
 
 #. type: item
-#: help.texi.orig:46
+#: original_texis/help.texi:46
 #, no-wrap
 msgid "C-h i d m emacs @key{RET} s @var{topic} @key{RET}"
 msgstr "C-h i d m emacs @key{RET} s @var{topic} @key{RET}"
 
 #. type: table
-#: help.texi.orig:49
+#: original_texis/help.texi:49
 msgid ""
 "Similar, but searches the @emph{text} of the manual rather than the indices."
-msgstr "同様ですが、インデックスではなくマニュアル本文の@emph{テキスト}を検索します。"
+msgstr ""
+"同様ですが、インデックスではなくマニュアル本文の@emph{テキスト}を検索します。"
 
 #. type: item
-#: help.texi.orig:50 help.texi.orig:578 help.texi.orig:604
+#: original_texis/help.texi:50 original_texis/help.texi:578
+#: original_texis/help.texi:604
 #, no-wrap
 msgid "C-h C-f"
 msgstr "C-h C-f"
 
 #. type: table
-#: help.texi.orig:52
+#: original_texis/help.texi:52
 msgid "This displays the Emacs FAQ, using Info."
 msgstr "Infoを使ってEmacs FAQを表示します。"
 
 #. type: kindex
-#: help.texi.orig:53 help.texi.orig:128 help.texi.orig:447
+#: original_texis/help.texi:53 original_texis/help.texi:128
+#: original_texis/help.texi:447
 #, no-wrap
 msgid "C-h p"
 msgstr "C-h p"
 
 #. type: table
-#: help.texi.orig:56
+#: original_texis/help.texi:56
 msgid ""
 "This displays the available Emacs packages based on keywords.  @xref{Package "
 "Keywords}."
-msgstr "キーワードに基づいて、利用可能なEmacsパッケージを表示します。@ref{Package Keywords}を参照してください。"
+msgstr ""
+"キーワードに基づいて、利用可能なEmacsパッケージを表示します。@ref{Package "
+"Keywords}を参照してください。"
 
 #. type: Plain text
-#: help.texi.orig:64
+#: original_texis/help.texi:64
 msgid ""
 "@kbd{C-h} or @key{F1} mean ``help'' in various other contexts as well.  For "
 "instance, you can type them after a prefix key to view a list of the keys "
 "that can follow the prefix key.  (You can also use @kbd{?} in this context.  "
 "A few prefix keys don't support @kbd{C-h} or @kbd{?} in this way, because "
 "they define other meanings for those inputs, but they all support @key{F1}.)"
-msgstr "他のさまざまなコンテキストでも、@kbd{C-h}や@key{F1}は``ヘルプ''を意味します。たとえばプレフィクスキーの後にこれらのキーを入力すると、プレフィクスキーに続けて入力できるキーの一覧を表示することができます(このコンテキストでは@kbd{?}も使用できます。いくつかのプレフィクスキーは@kbd{C-h}や@kbd{?}に別の意味を持たせているものがあるので使えませんが、それらのものでも@key{F1}はサポートされています)。"
+msgstr ""
+"他のさまざまなコンテキストでも、@kbd{C-h}や@key{F1}は``ヘルプ''を意味します。"
+"たとえばプレフィクスキーの後にこれらのキーを入力すると、プレフィクスキーに続"
+"けて入力できるキーの一覧を表示することができます(このコンテキストでは@kbd{?}"
+"も使用できます。いくつかのプレフィクスキーは@kbd{C-h}や@kbd{?}に別の意味を持"
+"たせているものがあるので使えませんが、それらのものでも@key{F1}はサポートされ"
+"ています)。"
 
 #. type: section
-#: help.texi.orig:76 help.texi.orig:79 help.texi.orig:82 help.texi.orig:83
+#: original_texis/help.texi:76 original_texis/help.texi:79
+#: original_texis/help.texi:82 original_texis/help.texi:83
 #, no-wrap
 msgid "Help Summary"
 msgstr "Help Summary"
 
 #. type: menuentry
-#: help.texi.orig:76
+#: original_texis/help.texi:76
 msgid "Brief list of all Help commands."
 msgstr "すべてのヘルプコマンドの要約リスト。"
 
 #. type: node
-#: help.texi.orig:76 help.texi.orig:175
+#: original_texis/help.texi:76 original_texis/help.texi:175
 #, no-wrap
 msgid "Key Help"
 msgstr "Key Help"
 
 #. type: menuentry
-#: help.texi.orig:76
+#: original_texis/help.texi:76
 msgid "Asking what a key does in Emacs."
 msgstr "Emacsでキーが何を行うか尋ねる。"
 
 #. type: node
-#: help.texi.orig:76 help.texi.orig:212
+#: original_texis/help.texi:76 original_texis/help.texi:212
 #, no-wrap
 msgid "Name Help"
 msgstr "Name Help"
 
 #. type: menuentry
-#: help.texi.orig:76
+#: original_texis/help.texi:76
 msgid "Asking about a command, variable or function name."
 msgstr "コマンド、変数、関数名を尋ねる。"
 
 #. type: section
-#: help.texi.orig:76 help.texi.orig:274 help.texi.orig:275
+#: original_texis/help.texi:76 original_texis/help.texi:274
+#: original_texis/help.texi:275
 #, no-wrap
 msgid "Apropos"
 msgstr "Apropos"
 
 #. type: menuentry
-#: help.texi.orig:76
+#: original_texis/help.texi:76
 msgid "Asking what pertains to a given topic."
 msgstr "与えられたトピックに関係があるものを尋ねる。"
 
 #. type: node
-#: help.texi.orig:76 help.texi.orig:376
+#: original_texis/help.texi:76 original_texis/help.texi:376
 #, no-wrap
 msgid "Help Mode"
 msgstr "Help Mode"
 
 #. type: menuentry
-#: help.texi.orig:76
+#: original_texis/help.texi:76
 msgid "Special features of Help mode and Help buffers."
 msgstr "へルポモードとヘルプバッファーの特別な機能。"
 
 #. type: node
-#: help.texi.orig:76 help.texi.orig:439
+#: original_texis/help.texi:76 original_texis/help.texi:439
 #, no-wrap
 msgid "Package Keywords"
 msgstr "Package Keywords"
 
 #. type: menuentry
-#: help.texi.orig:76
+#: original_texis/help.texi:76
 msgid "Finding Lisp libraries by keywords (topics)."
 msgstr "キーワード(トピック)でLispライブラリーを探す。"
 
 #. type: node
-#: help.texi.orig:76 help.texi.orig:465
+#: original_texis/help.texi:76 original_texis/help.texi:465
 #, no-wrap
 msgid "Language Help"
 msgstr "Language Help"
 
 #. type: menuentry
-#: help.texi.orig:76
+#: original_texis/help.texi:76
 msgid "Help relating to international language support."
 msgstr "国際的な言語サポートに関するヘルプ。"
 
 #. type: node
-#: help.texi.orig:76 help.texi.orig:487
+#: original_texis/help.texi:76 original_texis/help.texi:487
 #, no-wrap
 msgid "Misc Help"
 msgstr "Misc Help"
 
 #. type: menuentry
-#: help.texi.orig:76
+#: original_texis/help.texi:76
 msgid "Other help commands."
 msgstr "その他のヘルプコマンドについて。"
 
 #. type: section
-#: help.texi.orig:76 help.texi.orig:563 help.texi.orig:564
+#: original_texis/help.texi:76 original_texis/help.texi:563
+#: original_texis/help.texi:564
 #, no-wrap
 msgid "Help Files"
 msgstr "Help Files"
 
 #. type: menuentry
-#: help.texi.orig:76
+#: original_texis/help.texi:76
 msgid "Commands to display auxiliary help files."
 msgstr "追加のヘルプファイルを表示するコマンド。"
 
 #. type: node
-#: help.texi.orig:76 help.texi.orig:627
+#: original_texis/help.texi:76 original_texis/help.texi:627
 #, no-wrap
 msgid "Help Echo"
 msgstr "Help Echo"
 
 #. type: menuentry
-#: help.texi.orig:76
+#: original_texis/help.texi:76
 msgid "Help on active text and tooltips (\"balloon help\")."
 msgstr "アクティブなテキストのヘルプとツールチップ(\"バルーンヘルプ\")。"
 
 #. type: Plain text
-#: help.texi.orig:89
+#: original_texis/help.texi:89
 msgid ""
 "Here is a summary of help commands for accessing the built-in "
 "documentation.  Most of these are described in more detail in the following "
 "sections."
-msgstr "ここではビルトインのドキュメントにアクセスする、ヘルプコマンドの要約を記します。これらの大部分については、以下のセクションで詳細を説明します。"
+msgstr ""
+"ここではビルトインのドキュメントにアクセスする、ヘルプコマンドの要約を記しま"
+"す。これらの大部分については、以下のセクションで詳細を説明します。"
 
 #. type: table
-#: help.texi.orig:94
+#: original_texis/help.texi:94
 msgid ""
 "Display a list of commands whose names match @var{topics} (@code{apropos-"
 "command})."
-msgstr "名前が@var{topics}にマッチするコマンドの一覧を表示します(@code{apropos-command})。"
+msgstr ""
+"名前が@var{topics}にマッチするコマンドの一覧を表示します(@code{apropos-"
+"command})。"
 
 #. type: kindex
-#: help.texi.orig:94 help.texi.orig:539
+#: original_texis/help.texi:94 original_texis/help.texi:539
 #, no-wrap
 msgid "C-h b"
 msgstr "C-h b"
 
 #. type: table
-#: help.texi.orig:97
+#: original_texis/help.texi:97
 msgid ""
 "Display all active key bindings; minor mode bindings first, then those of "
 "the major mode, then global bindings (@code{describe-bindings})."
-msgstr "有効なキーバインディングをすべて表示します。最初はマイナーモード、次にメジャーモード、それからグローバルのバインディングを表示します(@code{describe-bindings})。"
+msgstr ""
+"有効なキーバインディングをすべて表示します。最初はマイナーモード、次にメ"
+"ジャーモード、それからグローバルのバインディングを表示します(@code{describe-"
+"bindings})。"
 
 #. type: item
-#: help.texi.orig:97
+#: original_texis/help.texi:97
 #, no-wrap
 msgid "C-h c @var{key}"
 msgstr "C-h c @var{key}"
 
 #. type: table
-#: help.texi.orig:102
+#: original_texis/help.texi:102
 msgid ""
 "Show the name of the command that the key sequence @var{key} is bound to "
 "(@code{describe-key-briefly}).  Here @kbd{c} stands for ``character''.  For "
 "more extensive information on @var{key}, use @kbd{C-h k}."
-msgstr "キーシーケンス@var{key}がバインドされているコマンドの名前を表示します(@code{describe-key-briefly})。@kbd{c}は``character''からきています。@var{key}についてさらに詳しい情報を得るには、@kbd{C-h k}を使います。"
+msgstr ""
+"キーシーケンス@var{key}がバインドされているコマンドの名前を表示します"
+"(@code{describe-key-briefly})。@kbd{c}は``character''からきています。"
+"@var{key}についてさらに詳しい情報を得るには、@kbd{C-h k}を使います。"
 
 #. type: item
-#: help.texi.orig:102
+#: original_texis/help.texi:102
 #, no-wrap
 msgid "C-h d @var{topics} @key{RET}"
 msgstr "C-h d @var{topics} @key{RET}"
 
 #. type: table
-#: help.texi.orig:105
+#: original_texis/help.texi:105
 msgid ""
 "Display the commands and variables whose documentation matches @var{topics} "
 "(@code{apropos-documentation})."
-msgstr "@var{topics}にマッチするドキュメントをもつ、コマンドまたは変数を表示します(@code{apropos-documentation})。"
+msgstr ""
+"@var{topics}にマッチするドキュメントをもつ、コマンドまたは変数を表示します"
+"(@code{apropos-documentation})。"
 
 #. type: kindex
-#: help.texi.orig:105 help.texi.orig:526
+#: original_texis/help.texi:105 original_texis/help.texi:526
 #, no-wrap
 msgid "C-h e"
 msgstr "C-h e"
 
 #. type: table
-#: help.texi.orig:108
+#: original_texis/help.texi:108
 msgid "Display the @file{*Messages*} buffer (@code{view-echo-area-messages})."
-msgstr "バッファー@file{*Messages*}を表示します(@code{view-echo-area-messages})。"
+msgstr ""
+"バッファー@file{*Messages*}を表示します(@code{view-echo-area-messages})。"
 
 #. type: item
-#: help.texi.orig:108
+#: original_texis/help.texi:108
 #, no-wrap
 msgid "C-h f @var{function} @key{RET}"
 msgstr "C-h f @var{function} @key{RET}"
 
 #. type: table
-#: help.texi.orig:112
+#: original_texis/help.texi:112
 msgid ""
 "Display documentation on the Lisp function named @var{function} "
 "(@code{describe-function}).  Since commands are Lisp functions, this works "
 "for commands too."
-msgstr "@var{function}という名前の、Lisp関数のドキュメントを表示します(@code{describe-function})。コマンドもLisp関数なので、これはコマンドにも使用できます。"
+msgstr ""
+"@var{function}という名前の、Lisp関数のドキュメントを表示します"
+"(@code{describe-function})。コマンドもLisp関数なので、これはコマンドにも使用"
+"できます。"
 
 #. type: item
-#: help.texi.orig:112
+#: original_texis/help.texi:112
 #, no-wrap
 msgid "C-h h"
 msgstr "C-h h"
 
 #. type: table
-#: help.texi.orig:115
+#: original_texis/help.texi:115
 msgid ""
 "Display the @file{HELLO} file, which shows examples of various character "
 "sets."
-msgstr "ファイル@file{HELLO}を表示します。このファイルは様々な文字セットの例です。"
+msgstr ""
+"ファイル@file{HELLO}を表示します。このファイルは様々な文字セットの例です。"
 
 #. type: kindex
-#: help.texi.orig:115 help.texi.orig:490
+#: original_texis/help.texi:115 original_texis/help.texi:490
 #, no-wrap
 msgid "C-h i"
 msgstr "C-h i"
 
 #. type: table
-#: help.texi.orig:118
+#: original_texis/help.texi:118
 msgid ""
 "Run Info, the GNU documentation browser (@code{info}).  The Emacs manual is "
 "available in Info."
-msgstr "GNUドキュメントブラウザー(@code{info})を実行します。Emacsのマニュアルはinfoで利用できます。"
+msgstr ""
+"GNUドキュメントブラウザー(@code{info})を実行します。Emacsのマニュアルはinfoで"
+"利用できます。"
 
 #. type: item
-#: help.texi.orig:118
+#: original_texis/help.texi:118
 #, no-wrap
 msgid "C-h k @var{key}"
 msgstr "C-h k @var{key}"
 
 #. type: table
-#: help.texi.orig:121
+#: original_texis/help.texi:121
 msgid ""
 "Display the name and documentation of the command that @var{key} runs "
 "(@code{describe-key})."
-msgstr "@var{key}で実行されるコマンドの名前と、ドキュメントを表示します(@code{describe-key})。"
+msgstr ""
+"@var{key}で実行されるコマンドの名前と、ドキュメントを表示します"
+"(@code{describe-key})。"
 
 #. type: kindex
-#: help.texi.orig:121 help.texi.orig:519
+#: original_texis/help.texi:121 original_texis/help.texi:519
 #, no-wrap
 msgid "C-h l"
 msgstr "C-h l"
 
 #. type: table
-#: help.texi.orig:124
+#: original_texis/help.texi:124
 msgid ""
 "Display a description of your last 300 keystrokes (@code{view-lossage})."
 msgstr "最近のキーストローク300回分の説明を表示します(@code{view-lossage})。"
 
 #. type: kindex
-#: help.texi.orig:124 help.texi.orig:532
+#: original_texis/help.texi:124 original_texis/help.texi:532
 #, no-wrap
 msgid "C-h m"
 msgstr "C-h m"
 
 #. type: table
-#: help.texi.orig:126
+#: original_texis/help.texi:126
 msgid "Display documentation of the current major mode (@code{describe-mode})."
 msgstr "現在のメジャーモードのドキュメントを表示します(@code{describe-mode})。"
 
 #. type: item
-#: help.texi.orig:126
+#: original_texis/help.texi:126
 #, no-wrap
 msgid "C-h n"
 msgstr "C-h n"
 
 #. type: table
-#: help.texi.orig:128
+#: original_texis/help.texi:128
 msgid "Display news of recent Emacs changes (@code{view-emacs-news})."
-msgstr "最近のEmacsの変更に関するニュースを表示します(@code{view-emacs-news})。"
+msgstr ""
+"最近のEmacsの変更に関するニュースを表示します(@code{view-emacs-news})。"
 
 #. type: table
-#: help.texi.orig:131
+#: original_texis/help.texi:131
 msgid ""
 "Find packages by topic keyword (@code{finder-by-keyword}).  This lists "
 "packages using a package menu buffer.  @xref{Packages}."
-msgstr "トピックのキーワードでパッケージを見つけます(@code{finder-by-keyword})。これはパッケージメニューバッファーを使ってパッケージを一覧します。@ref{Packages}を参照してください。"
+msgstr ""
+"トピックのキーワードでパッケージを見つけます(@code{finder-by-keyword})。これ"
+"はパッケージメニューバッファーを使ってパッケージを一覧します。@ref{Packages}"
+"を参照してください。"
 
 #. type: item
-#: help.texi.orig:131
+#: original_texis/help.texi:131
 #, no-wrap
 msgid "C-h P @var{package} @key{RET}"
 msgstr "C-h P @var{package} @key{RET}"
 
 #. type: table
-#: help.texi.orig:134
+#: original_texis/help.texi:134
 msgid ""
 "Display documentation about the specified package (@code{describe-package})."
-msgstr "指定したパッケージのドキュメントを表示します(@code{describe-package})。"
+msgstr ""
+"指定したパッケージのドキュメントを表示します(@code{describe-package})。"
 
 #. type: item
-#: help.texi.orig:134
+#: original_texis/help.texi:134
 #, no-wrap
 msgid "C-h r"
 msgstr "C-h r"
 
 #. type: table
-#: help.texi.orig:136
+#: original_texis/help.texi:136
 msgid "Display the Emacs manual in Info (@code{info-emacs-manual})."
 msgstr "Emacsのマニュアルをinfoで表示します(@code{info-emacs-manual})。"
 
 #. type: kindex
-#: help.texi.orig:136 help.texi.orig:541
+#: original_texis/help.texi:136 original_texis/help.texi:541
 #, no-wrap
 msgid "C-h s"
 msgstr "C-h s"
 
 #. type: table
-#: help.texi.orig:142
+#: original_texis/help.texi:142
 msgid ""
 "Display the contents of the current @dfn{syntax table} (@code{describe-"
 "syntax}).  The syntax table says which characters are opening delimiters, "
 "which are parts of words, and so on.  @xref{Syntax Tables,, Syntax Tables, "
 "elisp, The Emacs Lisp Reference Manual}, for details."
-msgstr "現在の@dfn{構文テーブル(syntax table)}を表示します(@code{describe-syntax})。構文テーブルは、どの文字が開始デリミッターで、その文字が単語の一部なのかを定義します。詳細については、@ref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}を参照してください。"
+msgstr ""
+"現在の@dfn{構文テーブル(syntax table)}を表示します(@code{describe-syntax})。"
+"構文テーブルは、どの文字が開始デリミッターで、その文字が単語の一部なのかを定"
+"義します。詳細については、@ref{Syntax Tables,, Syntax Tables, elisp, The "
+"Emacs Lisp Reference Manual}を参照してください。"
 
 #. type: item
-#: help.texi.orig:142
+#: original_texis/help.texi:142
 #, no-wrap
 msgid "C-h t"
 msgstr "C-h t"
 
 #. type: table
-#: help.texi.orig:144
+#: original_texis/help.texi:144
 msgid "Enter the Emacs interactive tutorial (@code{help-with-tutorial})."
 msgstr "Emacsの対話的なチュートリアルを開始します(@code{help-with-tutorial})。"
 
 #. type: item
-#: help.texi.orig:144
+#: original_texis/help.texi:144
 #, no-wrap
 msgid "C-h v @var{var} @key{RET}"
 msgstr "C-h v @var{var} @key{RET}"
 
 #. type: table
-#: help.texi.orig:147
+#: original_texis/help.texi:147
 msgid ""
 "Display the documentation of the Lisp variable @var{var} (@code{describe-"
 "variable})."
-msgstr "Lisp変数@var{var}のドキュメントを表示します(@code{describe-variable})。"
+msgstr ""
+"Lisp変数@var{var}のドキュメントを表示します(@code{describe-variable})。"
 
 #. type: item
-#: help.texi.orig:147
+#: original_texis/help.texi:147
 #, no-wrap
 msgid "C-h w @var{command} @key{RET}"
 msgstr "C-h w @var{command} @key{RET}"
 
 #. type: table
-#: help.texi.orig:149
+#: original_texis/help.texi:149
 msgid "Show which keys run the command named @var{command} (@code{where-is})."
-msgstr "@var{command}という名前のコマンドを実行するキーを表示します(@code{where-is})。"
+msgstr ""
+"@var{command}という名前のコマンドを実行するキーを表示します(@code{where-"
+"is})。"
 
 #. type: item
-#: help.texi.orig:149
+#: original_texis/help.texi:149
 #, no-wrap
 msgid "C-h C @var{coding} @key{RET}"
 msgstr "C-h C @var{coding} @key{RET}"
 
 #. type: table
-#: help.texi.orig:152
+#: original_texis/help.texi:152
 msgid ""
 "Describe the coding system @var{coding} (@code{describe-coding-system})."
-msgstr "コーディングシステム@var{coding}を説明します(@code{describe-coding-system})。"
+msgstr ""
+"コーディングシステム@var{coding}を説明します(@code{describe-coding-system})。"
 
 #. type: item
-#: help.texi.orig:152
+#: original_texis/help.texi:152
 #, no-wrap
 msgid "C-h C @key{RET}"
 msgstr "C-h C @key{RET}"
 
 #. type: table
-#: help.texi.orig:154
+#: original_texis/help.texi:154
 msgid "Describe the coding systems currently in use."
 msgstr "現在使用されているコーディングシステムを説明します。"
 
 #. type: item
-#: help.texi.orig:154
+#: original_texis/help.texi:154
 #, no-wrap
 msgid "C-h F @var{command} @key{RET}"
 msgstr "C-h F @var{command} @key{RET}"
 
 #. type: table
-#: help.texi.orig:157
+#: original_texis/help.texi:157
 msgid ""
 "Enter Info and go to the node that documents the Emacs command @var{command} "
 "(@code{Info-goto-emacs-command-node})."
-msgstr "infoを開始して、Emacsコマンド@var{command}のドキュメントのノードに移動します(@code{Info-goto-emacs-command-node})。"
+msgstr ""
+"infoを開始して、Emacsコマンド@var{command}のドキュメントのノードに移動します"
+"(@code{Info-goto-emacs-command-node})。"
 
 #. type: item
-#: help.texi.orig:157
+#: original_texis/help.texi:157
 #, no-wrap
 msgid "C-h I @var{method} @key{RET}"
 msgstr "C-h I @var{method} @key{RET}"
 
 #. type: table
-#: help.texi.orig:159
+#: original_texis/help.texi:159
 msgid "Describe the input method @var{method} (@code{describe-input-method})."
-msgstr "インプットメソッド@var{method}を説明します(@code{describe-input-method})。"
+msgstr ""
+"インプットメソッド@var{method}を説明します(@code{describe-input-method})。"
 
 #. type: item
-#: help.texi.orig:159
+#: original_texis/help.texi:159
 #, no-wrap
 msgid "C-h K @var{key}"
 msgstr "C-h K @var{key}"
 
 #. type: table
-#: help.texi.orig:162
+#: original_texis/help.texi:162
 msgid ""
 "Enter Info and go to the node that documents the key sequence @var{key} "
 "(@code{Info-goto-emacs-key-command-node})."
-msgstr "infoを開始して、キーシーケンス@var{key}のドキュメントのノードに移動します(@code{Info-goto-emacs-key-command-node})。"
+msgstr ""
+"infoを開始して、キーシーケンス@var{key}のドキュメントのノードに移動します"
+"(@code{Info-goto-emacs-key-command-node})。"
 
 #. type: item
-#: help.texi.orig:162
+#: original_texis/help.texi:162
 #, no-wrap
 msgid "C-h L @var{language-env} @key{RET}"
 msgstr "C-h L @var{language-env} @key{RET}"
 
 #. type: table
-#: help.texi.orig:166
+#: original_texis/help.texi:166
 msgid ""
 "Display information on the character sets, coding systems, and input methods "
 "used in language environment @var{language-env} (@code{describe-language-"
 "environment})."
-msgstr "言語環境(language environment)@var{language-env}で使用される文字セット、コーディングシステム、インプットメソッドに関する情報を表示します。"
+msgstr ""
+"言語環境(language environment)@var{language-env}で使用される文字セット、コー"
+"ディングシステム、インプットメソッドに関する情報を表示します。"
 
 #. type: item
-#: help.texi.orig:166
+#: original_texis/help.texi:166
 #, no-wrap
 msgid "C-h S @var{symbol} @key{RET}"
 msgstr "C-h S @var{symbol} @key{RET}"
 
 #. type: table
-#: help.texi.orig:169
+#: original_texis/help.texi:169
 msgid ""
 "Display the Info documentation on symbol @var{symbol} according to the "
 "programming language you are editing (@code{info-lookup-symbol})."
-msgstr "編集中のプログラム言語に基づいて、シンボル@var{symbol}のinfoドキュメントを表示します(@code{info-lookup-symbol})。\n"
+msgstr "編集中のプログラム言語に基づいて、シンボル@var{symbol}のinfoドキュメントを表示します(@code{info-lookup-symbol})。"
 
 #. type: kindex
-#: help.texi.orig:169 help.texi.orig:640
+#: original_texis/help.texi:169 original_texis/help.texi:640
 #, no-wrap
 msgid "C-h ."
 msgstr "C-h ."
 
 #. type: table
-#: help.texi.orig:173
+#: original_texis/help.texi:173
 msgid ""
 "Display the help message for a special text area, if point is in one "
 "(@code{display-local-help}).  (These include, for example, links in "
 "@file{*Help*} buffers.)"
-msgstr "ポイントが特別なテキスト領域のとき(これには、たとえば@file{*Help*}のリンクなどが含まれます)、ヘルプメッセージを表示します(@code{display-local-help})。"
+msgstr ""
+"ポイントが特別なテキスト領域のとき(これには、たとえば@file{*Help*}のリンクな"
+"どが含まれます)、ヘルプメッセージを表示します(@code{display-local-help})。"
 
 #. type: section
-#: help.texi.orig:176
+#: original_texis/help.texi:176
 #, no-wrap
 msgid "Documentation for a Key"
 msgstr "Documentation for a Key"
 
 #. type: findex
-#: help.texi.orig:178
+#: original_texis/help.texi:178
 #, no-wrap
 msgid "describe-key-briefly"
 msgstr "describe-key-briefly"
 
 #. type: findex
-#: help.texi.orig:179
+#: original_texis/help.texi:179
 #, no-wrap
 msgid "describe-key"
 msgstr "describe-key"
 
 #. type: Plain text
-#: help.texi.orig:183
+#: original_texis/help.texi:183
 msgid ""
 "The help commands to get information about a key sequence are @kbd{C-h c} "
 "(@code{describe-key-briefly}) and @kbd{C-h k} (@code{describe-key})."
-msgstr "キーシーケンスに関する情報を得るためのヘルプコマンドは、@kbd{C-h c} (@code{describe-key-briefly})と@kbd{C-h k} (@code{describe-key})です。"
+msgstr ""
+"キーシーケンスに関する情報を得るためのヘルプコマンドは、@kbd{C-h c} "
+"(@code{describe-key-briefly})と@kbd{C-h k} (@code{describe-key})です。"
 
 #. type: kindex
-#: help.texi.orig:184
+#: original_texis/help.texi:184
 #, no-wrap
 msgid "C-h c"
 msgstr "C-h c"
 
 #. type: Plain text
-#: help.texi.orig:188
+#: original_texis/help.texi:188
 msgid ""
 "@kbd{C-h c @var{key}} displays in the echo area the name of the command that "
 "@var{key} is bound to.  For example, @kbd{C-h c C-f} displays @samp{forward-"
 "char}."
-msgstr "@kbd{C-h c @var{key}}は、@var{key}にバインドされているコマンドの名前を、エコーエリアに表示します。たとえば@kbd{C-h c C-f}は、@samp{forward-char}と表示します。"
+msgstr ""
+"@kbd{C-h c @var{key}}は、@var{key}にバインドされているコマンドの名前を、エ"
+"コーエリアに表示します。たとえば@kbd{C-h c C-f}は、@samp{forward-char}と表示"
+"します。"
 
 #. type: cindex
-#: help.texi.orig:189
+#: original_texis/help.texi:189
 #, no-wrap
 msgid "documentation string"
 msgstr "documentation string"
 
 #. type: kindex
-#: help.texi.orig:190
+#: original_texis/help.texi:190
 #, no-wrap
 msgid "C-h k"
 msgstr "C-h k"
 
 #. type: Plain text
-#: help.texi.orig:194
+#: original_texis/help.texi:194
 msgid ""
 "@kbd{C-h k @var{key}} is similar but gives more information: it displays a "
 "help buffer containing the command's @dfn{documentation string}, which "
 "describes exactly what the command does."
-msgstr "@kbd{C-h k @var{key}}も同様ですが、さらに多くの情報が得られます。これはコマンドが何をするかが正確に説明する、@dfn{ドキュメント文字列(documentation string)}を含むヘルプバッファーを表示します。"
+msgstr ""
+"@kbd{C-h k @var{key}}も同様ですが、さらに多くの情報が得られます。これはコマン"
+"ドが何をするかが正確に説明する、@dfn{ドキュメント文字列(documentation "
+"string)}を含むヘルプバッファーを表示します。"
 
 #. type: kindex
-#: help.texi.orig:195
+#: original_texis/help.texi:195
 #, no-wrap
 msgid "C-h K"
 msgstr "C-h K"
 
 #. type: findex
-#: help.texi.orig:196
+#: original_texis/help.texi:196
 #, no-wrap
 msgid "Info-goto-emacs-key-command-node"
 msgstr "Info-goto-emacs-key-command-node"
 
 #. type: Plain text
-#: help.texi.orig:199
+#: original_texis/help.texi:199
 msgid ""
 "@kbd{C-h K @var{key}} displays the section of the Emacs manual that "
 "describes the command corresponding to @var{key}."
-msgstr "@kbd{C-h K @var{key}}は、@var{key}に対応するコマンドが説明されている、Emacsマニュアルのセクションを表示します。"
+msgstr ""
+"@kbd{C-h K @var{key}}は、@var{key}に対応するコマンドが説明されている、Emacsマ"
+"ニュアルのセクションを表示します。"
 
 #. type: Plain text
-#: help.texi.orig:204
+#: original_texis/help.texi:204
 msgid ""
 "@kbd{C-h c}, @kbd{C-h k} and @kbd{C-h K} work for any sort of key sequences, "
 "including function keys, menus, and mouse events.  For instance, after "
 "@kbd{C-h k} you can select a menu item from the menu bar, to view the "
 "documentation string of the command it runs."
-msgstr "@kbd{C-h c}、@kbd{C-h k}、@kbd{C-h K}はファンクションキー、メニュー、マウスイベントを含む、任意のキーシーケンスにたいして動作します。たとえば@kbd{C-h k}の後で、メニューバーからメニューアイテムを選択すれば、それにより実行されるコマンドのドキュメントが表示されます。"
+msgstr ""
+"@kbd{C-h c}、@kbd{C-h k}、@kbd{C-h K}はファンクションキー、メニュー、マウスイ"
+"ベントを含む、任意のキーシーケンスにたいして動作します。たとえば@kbd{C-h k}の"
+"後で、メニューバーからメニューアイテムを選択すれば、それにより実行されるコマ"
+"ンドのドキュメントが表示されます。"
 
 #. type: kindex
-#: help.texi.orig:205
+#: original_texis/help.texi:205
 #, no-wrap
 msgid "C-h w"
 msgstr "C-h w"
 
 #. type: findex
-#: help.texi.orig:206
+#: original_texis/help.texi:206
 #, no-wrap
 msgid "where-is"
 msgstr "where-is"
 
 #. type: Plain text
-#: help.texi.orig:211
+#: original_texis/help.texi:211
 msgid ""
 "@kbd{C-h w @var{command} @key{RET}} lists the keys that are bound to "
 "@var{command}.  It displays the list in the echo area.  If it says the "
 "command is not on any key, that means you must use @kbd{M-x} to run it.  "
 "@kbd{C-h w} runs the command @code{where-is}."
-msgstr "@kbd{C-h w @var{command} @key{RET}}は、@var{command}がバインドされているキーをリストします。リストはエコーエリアに表示されます。コマンドがキーにバインドされていないとき、それは@kbd{M-x}を使って実行しなければならないことを意味します。@kbd{C-h w}はコマンド@code{where-is}を実行します。"
+msgstr ""
+"@kbd{C-h w @var{command} @key{RET}}は、@var{command}がバインドされているキー"
+"をリストします。リストはエコーエリアに表示されます。コマンドがキーにバインド"
+"されていないとき、それは@kbd{M-x}を使って実行しなければならないことを意味しま"
+"す。@kbd{C-h w}はコマンド@code{where-is}を実行します。"
 
 #. type: section
-#: help.texi.orig:213
+#: original_texis/help.texi:213
 #, no-wrap
 msgid "Help by Command or Variable Name"
 msgstr "Help by Command or Variable Name"
 
 #. type: kindex
-#: help.texi.orig:215
+#: original_texis/help.texi:215
 #, no-wrap
 msgid "C-h f"
 msgstr "C-h f"
 
 #. type: findex
-#: help.texi.orig:216
+#: original_texis/help.texi:216
 #, no-wrap
 msgid "describe-function"
 msgstr "describe-function"
 
 #. type: Plain text
-#: help.texi.orig:222
+#: original_texis/help.texi:222
 msgid ""
 "@kbd{C-h f @var{function} @key{RET}} (@code{describe-function})  displays "
 "the documentation of Lisp function @var{function}, in a window.  Since "
 "commands are Lisp functions, you can use this method to view the "
 "documentation of any command whose name you know.  For example,"
-msgstr "@kbd{C-h f @var{function} @key{RET}} (@code{describe-function})は、Lisp関数@var{function}のドキュメントをウィンドウに表示します。コマンドもLisp関数なので、この方法を使えば、名前を知っている任意のコマンドのドキュメントを閲覧できます。たとえば"
+msgstr ""
+"@kbd{C-h f @var{function} @key{RET}} (@code{describe-function})は、Lisp関数"
+"@var{function}のドキュメントをウィンドウに表示します。コマンドもLisp関数なの"
+"で、この方法を使えば、名前を知っている任意のコマンドのドキュメントを閲覧でき"
+"ます。たとえば"
 
 #. type: example
-#: help.texi.orig:225
+#: original_texis/help.texi:225
 #, no-wrap
 msgid "C-h f auto-fill-mode @key{RET}\n"
 msgstr "C-h f auto-fill-mode @key{RET}\n"
 
 #. type: Plain text
-#: help.texi.orig:231
+#: original_texis/help.texi:231
 msgid ""
 "displays the documentation of @code{auto-fill-mode}.  This is the only way "
 "to get the documentation of a command that is not bound to any key (one "
 "which you would normally run using @kbd{M-x})."
-msgstr "は@code{auto-fill-mode}のドキュメントを表示します。これはキーにバインドされていないコマンド(通常@kbd{M-x}で実行する)のドキュメントを閲覧する、唯一の方法です。"
+msgstr ""
+"は@code{auto-fill-mode}のドキュメントを表示します。これはキーにバインドされて"
+"いないコマンド(通常@kbd{M-x}で実行する)のドキュメントを閲覧する、唯一の方法で"
+"す。"
 
 #. type: Plain text
-#: help.texi.orig:240
+#: original_texis/help.texi:240
 msgid ""
 "@kbd{C-h f} is also useful for Lisp functions that you use in a Lisp "
 "program.  For example, if you have just written the expression @code{(make-"
@@ -781,10 +884,17 @@ msgid ""
 "your favorite completion abbreviations that work in @kbd{M-x} don't work in "
 "@kbd{C-h f}.  An abbreviation that is unique among command names may not be "
 "unique among all function names."
-msgstr "@kbd{C-h f}は、LispプログラムからLisp関数を使うときも便利です。たとえば式@code{(make-vector len)}を書いたとしましょう。正しく@code{(make-vector len)}を使っているかチェックしたいときは、@kbd{C-h f make-vector @key{RET}}と入力します。@kbd{C-h f}はコマンド名だけでなくすべての関数名を許容するので、@kbd{M-x}では機能するいつもの補完による短縮形が、@kbd{C-h f}では機能しないと気付くかもしれません。コマンド名では省略形が一意であっても、すべての関数名を含めたら一意ではないかもしれないからです。"
+msgstr ""
+"@kbd{C-h f}は、LispプログラムからLisp関数を使うときも便利です。たとえば式"
+"@code{(make-vector len)}を書いたとしましょう。正しく@code{(make-vector len)}"
+"を使っているかチェックしたいときは、@kbd{C-h f make-vector @key{RET}}と入力し"
+"ます。@kbd{C-h f}はコマンド名だけでなくすべての関数名を許容するので、@kbd{M-"
+"x}では機能するいつもの補完による短縮形が、@kbd{C-h f}では機能しないと気付くか"
+"もしれません。コマンド名では省略形が一意であっても、すべての関数名を含めたら"
+"一意ではないかもしれないからです。"
 
 #. type: Plain text
-#: help.texi.orig:249
+#: original_texis/help.texi:249
 msgid ""
 "If you type @kbd{C-h f @key{RET}}, it describes the function called by the "
 "innermost Lisp expression in the buffer around point, @emph{provided} that "
@@ -793,201 +903,241 @@ msgid ""
 "following the text @samp{(make-vector (car x)}, the innermost list "
 "containing point is the one that starts with @samp{(make-vector}, so @kbd{C-"
 "h f @key{RET}} describes the function @code{make-vector}."
-msgstr "@kbd{C-h f @key{RET}}を入力すると、バッファーのポイントがある位置の、一番内側のLisp式で呼び出されている関数の名前が有効で、Lisp関数として定義されていれば、その関数の説明が表示されます(引数を入力するときデフォルトとして関数名が表示されます)。たとえばポイントが@samp{(make-vector (car x)}の後ろにあるとき、ポイントを含む一番内側のリストは@samp{(make-vector}で始まっているので、@kbd{C-h f @key{RET}}により関数@code{make-vector}の説明が表示されます。"
+msgstr ""
+"@kbd{C-h f @key{RET}}を入力すると、バッファーのポイントがある位置の、一番内側"
+"のLisp式で呼び出されている関数の名前が有効で、Lisp関数として定義されていれ"
+"ば、その関数の説明が表示されます(引数を入力するときデフォルトとして関数名が表"
+"示されます)。たとえばポイントが@samp{(make-vector (car x)}の後ろにあるとき、"
+"ポイントを含む一番内側のリストは@samp{(make-vector}で始まっているので、"
+"@kbd{C-h f @key{RET}}により関数@code{make-vector}の説明が表示されます。"
 
 #. type: Plain text
-#: help.texi.orig:256
+#: original_texis/help.texi:256
 msgid ""
 "@kbd{C-h f} is also useful just to verify that you spelled a function name "
 "correctly.  If the minibuffer prompt for @kbd{C-h f} shows the function name "
 "from the buffer as the default, it means that name is defined as a Lisp "
 "function.  Type @kbd{C-g} to cancel the @kbd{C-h f} command if you don't "
 "really want to view the documentation."
-msgstr "@kbd{C-h f}は、関数名を正しく記述しているか確かめたいときも便利です。@kbd{C-h f}のミニバッファーのプロンプトで、編集中のバッファーの関数名がデフォルトとして表示されるなら、それは定義されたLisp関数であることを意味します。本当にドキュメントを見たい訳でなければ、@kbd{C-g}を押してコマンド@kbd{C-h f}をキャンセルできます。"
+msgstr ""
+"@kbd{C-h f}は、関数名を正しく記述しているか確かめたいときも便利です。@kbd{C-"
+"h f}のミニバッファーのプロンプトで、編集中のバッファーの関数名がデフォルトと"
+"して表示されるなら、それは定義されたLisp関数であることを意味します。本当にド"
+"キュメントを見たい訳でなければ、@kbd{C-g}を押してコマンド@kbd{C-h f}をキャン"
+"セルできます。"
 
 #. type: kindex
-#: help.texi.orig:257
+#: original_texis/help.texi:257
 #, no-wrap
 msgid "C-h v"
 msgstr "C-h v"
 
 #. type: findex
-#: help.texi.orig:258
+#: original_texis/help.texi:258
 #, no-wrap
 msgid "describe-variable"
 msgstr "describe-variable"
 
 #. type: Plain text
-#: help.texi.orig:263
+#: original_texis/help.texi:263
 msgid ""
 "@kbd{C-h v} (@code{describe-variable}) is like @kbd{C-h f} but describes "
 "Lisp variables instead of Lisp functions.  Its default is the Lisp symbol "
 "around or before point, if that is the name of a defined Lisp variable.  "
 "@xref{Variables}."
-msgstr "@kbd{C-h v} (@code{describe-variable})は、@kbd{C-h f}と似ていますがLisp関数ではなく、Lisp関数の説明を表示します。ポイントの周囲または前にあるLispシンボルが、定義されたLisp変数名のときはそれがデフォルトとなります。@ref{Variables}を参照してください。"
+msgstr ""
+"@kbd{C-h v} (@code{describe-variable})は、@kbd{C-h f}と似ていますがLisp関数で"
+"はなく、Lisp関数の説明を表示します。ポイントの周囲または前にあるLispシンボル"
+"が、定義されたLisp変数名のときはそれがデフォルトとなります。@ref{Variables}を"
+"参照してください。"
 
 #. type: Plain text
-#: help.texi.orig:267
+#: original_texis/help.texi:267
 msgid ""
 "Help buffers that describe Emacs variables and functions normally have "
 "hyperlinks to the corresponding source code, if you have the source files "
 "installed (@pxref{Hyperlinking})."
-msgstr "通常Emacsの変数または関数を説明するヘルプバッファーには、ソースファイルがインストールされていれば、対応するソースコードへのハイパーリンクが含まれています(@ref{Hyperlinking}を参照してください)。"
+msgstr ""
+"通常Emacsの変数または関数を説明するヘルプバッファーには、ソースファイルがイン"
+"ストールされていれば、対応するソースコードへのハイパーリンクが含まれています"
+"(@ref{Hyperlinking}を参照してください)。"
 
 #. type: kindex
-#: help.texi.orig:268
+#: original_texis/help.texi:268
 #, no-wrap
 msgid "C-h F"
 msgstr "C-h F"
 
 #. type: findex
-#: help.texi.orig:269
+#: original_texis/help.texi:269
 #, no-wrap
 msgid "Info-goto-emacs-command-node"
 msgstr "Info-goto-emacs-command-node"
 
 #. type: Plain text
-#: help.texi.orig:273
+#: original_texis/help.texi:273
 msgid ""
 "To find a command's documentation in a manual, use @kbd{C-h F} (@code{Info-"
 "goto-emacs-command-node}).  This knows about various manuals, not just the "
 "Emacs manual, and finds the right one."
-msgstr "マニュアルからコマンドのドキュメントを探すには、@kbd{C-h F} (@code{Info-goto-emacs-command-node})を使います。これはEmacsのマニュアルだけでなく、さまざまなマニュアルを認識するので、正しいものを見つけられるでしょう。"
+msgstr ""
+"マニュアルからコマンドのドキュメントを探すには、@kbd{C-h F} (@code{Info-goto-"
+"emacs-command-node})を使います。これはEmacsのマニュアルだけでなく、さまざまな"
+"マニュアルを認識するので、正しいものを見つけられるでしょう。"
 
 #. type: findex
-#: help.texi.orig:276 help.texi.orig:295
+#: original_texis/help.texi:276 original_texis/help.texi:295
 #, no-wrap
 msgid "apropos"
 msgstr "apropos"
 
 #. type: Plain text
-#: help.texi.orig:282
+#: original_texis/help.texi:282
 msgid ""
 "The @dfn{apropos} commands answer questions like, ``What are the commands "
 "for working with files?'' More precisely, you specify an @dfn{apropos "
 "pattern}, which means either a word, a list of words, or a regular "
 "expression."
-msgstr "@dfn{apropos(折よい、適切な)}コマンドは、``What are the commands for working with files?(ファイルを処理するコマンドは?)''のような質問に答えるものです。より正確に言うと単語、単語のリスト、正規表現によって、@dfn{aproposパターン}を指定します。"
+msgstr ""
+"@dfn{apropos(折よい、適切な)}コマンドは、``What are the commands for working "
+"with files?(ファイルを処理するコマンドは?)''のような質問に答えるものです。よ"
+"り正確に言うと単語、単語のリスト、正規表現によって、@dfn{aproposパターン}を指"
+"定します。"
 
 #. type: Plain text
-#: help.texi.orig:286
+#: original_texis/help.texi:286
 msgid ""
 "Each of the following apropos commands reads an apropos pattern in the "
 "minibuffer, searches for items that match the pattern, and displays the "
 "results in a different window."
-msgstr "以下の各aproposコマンドは、ミニバッファーでaproposパターンを読み取り、パターンにマッチするアイテムを検索して、結果を別のウィンドウに表示します。"
+msgstr ""
+"以下の各aproposコマンドは、ミニバッファーでaproposパターンを読み取り、パター"
+"ンにマッチするアイテムを検索して、結果を別のウィンドウに表示します。"
 
 #. type: kindex
-#: help.texi.orig:288 help.texi.orig:289
+#: original_texis/help.texi:288 original_texis/help.texi:289
 #, no-wrap
 msgid "C-h a"
 msgstr "C-h a"
 
 #. type: findex
-#: help.texi.orig:290
+#: original_texis/help.texi:290
 #, no-wrap
 msgid "apropos-command"
 msgstr "apropos-command"
 
 #. type: table
-#: help.texi.orig:293
+#: original_texis/help.texi:293
 msgid ""
 "Search for commands (@code{apropos-command}).  With a prefix argument, "
 "search for noninteractive functions too."
-msgstr "コマンドを検索します(@code{apropos-command})。プレフィクス引数を指定すると、非インタラクティブな関数も検索します。"
+msgstr ""
+"コマンドを検索します(@code{apropos-command})。プレフィクス引数を指定すると、"
+"非インタラクティブな関数も検索します。"
 
 #. type: item
-#: help.texi.orig:294
+#: original_texis/help.texi:294
 #, no-wrap
 msgid "M-x apropos"
 msgstr "M-x apropos"
 
 #. type: table
-#: help.texi.orig:298
+#: original_texis/help.texi:298
 msgid ""
 "Search for functions and variables.  Both interactive functions (commands) "
 "and noninteractive functions can be found by this."
-msgstr "関数と変数を検索します。これを使えばインタラクティブな関数(コマンド)と非インタラクティブな関数の両方を検索できます。"
+msgstr ""
+"関数と変数を検索します。これを使えばインタラクティブな関数(コマンド)と非イン"
+"タラクティブな関数の両方を検索できます。"
 
 #. type: item
-#: help.texi.orig:299
+#: original_texis/help.texi:299
 #, no-wrap
 msgid "M-x apropos-user-option"
 msgstr "M-x apropos-user-option"
 
 #. type: findex
-#: help.texi.orig:300
+#: original_texis/help.texi:300
 #, no-wrap
 msgid "apropos-user-option"
 msgstr "apropos-user-option"
 
 #. type: table
-#: help.texi.orig:303
+#: original_texis/help.texi:303
 msgid ""
 "Search for user-customizable variables.  With a prefix argument, search for "
 "non-customizable variables too."
-msgstr "ユーザーがカスタマイズできる関数を検索します。プレフィクス引数を指定すると、カスタマイズできない変数も検索します。"
+msgstr ""
+"ユーザーがカスタマイズできる関数を検索します。プレフィクス引数を指定すると、"
+"カスタマイズできない変数も検索します。"
 
 #. type: item
-#: help.texi.orig:304
+#: original_texis/help.texi:304
 #, no-wrap
 msgid "M-x apropos-variable"
 msgstr "M-x apropos-variable"
 
 #. type: findex
-#: help.texi.orig:305
+#: original_texis/help.texi:305
 #, no-wrap
 msgid "apropos-variable"
 msgstr "apropos-variable"
 
 #. type: table
-#: help.texi.orig:308
+#: original_texis/help.texi:308
 msgid ""
 "Search for variables.  With a prefix argument, search for customizable "
 "variables only."
-msgstr "変数を検索します。プレフィクス引数を指定すると、カスタマイズできる変数だけを検索します。"
+msgstr ""
+"変数を検索します。プレフィクス引数を指定すると、カスタマイズできる変数だけを"
+"検索します。"
 
 #. type: item
-#: help.texi.orig:309
+#: original_texis/help.texi:309
 #, no-wrap
 msgid "M-x apropos-value"
 msgstr "M-x apropos-value"
 
 #. type: findex
-#: help.texi.orig:310
+#: original_texis/help.texi:310
 #, no-wrap
 msgid "apropos-value"
 msgstr "apropos-value"
 
 #. type: table
-#: help.texi.orig:314
+#: original_texis/help.texi:314
 msgid ""
 "Search for variables whose values match the specified pattern.  With a "
 "prefix argument, search also for functions with definitions matching the "
 "pattern, and Lisp symbols with properties matching the pattern."
-msgstr "指定したパターンにマッチする値の変数を検索します。プレフィクス引数を指定すると、定義がパターンにマッチする関数と、プロパティーリストがパターンにマッチする、Lispシンボルも検索します。"
+msgstr ""
+"指定したパターンにマッチする値の変数を検索します。プレフィクス引数を指定する"
+"と、定義がパターンにマッチする関数と、プロパティーリストがパターンにマッチす"
+"る、Lispシンボルも検索します。"
 
 #. type: kindex
-#: help.texi.orig:315 help.texi.orig:316
+#: original_texis/help.texi:315 original_texis/help.texi:316
 #, no-wrap
 msgid "C-h d"
 msgstr "C-h d"
 
 #. type: findex
-#: help.texi.orig:317
+#: original_texis/help.texi:317
 #, no-wrap
 msgid "apropos-documentation"
 msgstr "apropos-documentation"
 
 #. type: table
-#: help.texi.orig:320
+#: original_texis/help.texi:320
 msgid ""
 "Search for functions and variables whose documentation strings match the "
 "specified pattern (@code{apropos-documentation})."
-msgstr "指定されたパターンにマッチするドキュメント文字列の関数、または変数を検索します(@code{apropos-documentation})。"
+msgstr ""
+"指定されたパターンにマッチするドキュメント文字列の関数、または変数を検索しま"
+"す(@code{apropos-documentation})。"
 
 #. type: Plain text
-#: help.texi.orig:330
+#: original_texis/help.texi:330
 msgid ""
 "The simplest kind of apropos pattern is one word.  Anything containing that "
 "word matches the pattern.  Thus, to find commands that work on files, type "
@@ -996,18 +1146,27 @@ msgid ""
 "on.  Each command name comes with a brief description and a list of keys you "
 "can currently invoke it with.  In our example, it would say that you can "
 "invoke @code{find-file} by typing @kbd{C-x C-f}."
-msgstr "最も簡単な種類のaproposパターンは単語です。その単語が含まれていれば、パターンにマッチします。ファイルを処理するコマンドを探すには、@kbd{C-h a file @key{RET}}と入力します。これは@code{copy-file}、@code{find-file}などの、名前に@samp{file}を含むすべてのコマンドの一覧を表示します。各コマンド名には簡単な説明と、それを呼び出すためのキーの一覧が一緒に表示されます。この例だと、@code{find-file}は@kbd{C-x C-f}で呼び出せることがわかります。"
+msgstr ""
+"最も簡単な種類のaproposパターンは単語です。その単語が含まれていれば、パターン"
+"にマッチします。ファイルを処理するコマンドを探すには、@kbd{C-h a file "
+"@key{RET}}と入力します。これは@code{copy-file}、@code{find-file}などの、名前"
+"に@samp{file}を含むすべてのコマンドの一覧を表示します。各コマンド名には簡単な"
+"説明と、それを呼び出すためのキーの一覧が一緒に表示されます。この例だと、"
+"@code{find-file}は@kbd{C-x C-f}で呼び出せることがわかります。"
 
 #. type: Plain text
-#: help.texi.orig:334
+#: original_texis/help.texi:334
 msgid ""
 "For more information about a function definition, variable or symbol "
 "property listed in an apropos buffer, you can click on it with @kbd{Mouse-1} "
 "or @kbd{Mouse-2}, or move there and type @key{RET}."
-msgstr "aproposバッファーの関数定義、変数、シンボルの属性についてもっと情報が欲しいときは、@kbd{Mouse-1}または@kbd{Mouse-2}でクリックするか、そこに移動して@key{RET}を押してください。"
+msgstr ""
+"aproposバッファーの関数定義、変数、シンボルの属性についてもっと情報が欲しいと"
+"きは、@kbd{Mouse-1}または@kbd{Mouse-2}でクリックするか、そこに移動して"
+"@key{RET}を押してください。"
 
 #. type: Plain text
-#: help.texi.orig:342
+#: original_texis/help.texi:342
 msgid ""
 "When you specify more than one word in the apropos pattern, a name must "
 "contain at least two of the words in order to match.  Thus, if you are "
@@ -1016,68 +1175,87 @@ msgid ""
 "name @code{kill-backward} will match that; if there were a command "
 "@code{kill-text-before}, it would also match, since it contains two of the "
 "specified words."
-msgstr "2つ以上の単語をaproposパターンに指定したときは、マッチするために少なくとも名前に2つの単語が含まれていなければなりません。たとえばポイントの前のテキストをkillするコマンドを探すときは、@kbd{C-h a kill back backward behind before @key{RET}}などと試みることができます。これは実際のコマンド名@code{kill-backward}にマッチするでしょう。もし@code{kill-text-before}というコマンドがあったなら、これも指定した単語を2つ含んでいるのでマッチします。"
+msgstr ""
+"2つ以上の単語をaproposパターンに指定したときは、マッチするために少なくとも名"
+"前に2つの単語が含まれていなければなりません。たとえばポイントの前のテキストを"
+"killするコマンドを探すときは、@kbd{C-h a kill back backward behind before "
+"@key{RET}}などと試みることができます。これは実際のコマンド名@code{kill-"
+"backward}にマッチするでしょう。もし@code{kill-text-before}というコマンドが"
+"あったなら、これも指定した単語を2つ含んでいるのでマッチします。"
 
 #. type: Plain text
-#: help.texi.orig:347
+#: original_texis/help.texi:347
 msgid ""
 "For even greater flexibility, you can specify a regular expression "
 "(@pxref{Regexps}).  An apropos pattern is interpreted as a regular "
 "expression if it contains any of the regular expression special characters, "
 "@samp{^$*+?.\\[}."
-msgstr "より一層フレキシビリティを高めるために、正規表現(@pxref{Regexps})を指定できます。aproposパターンに正規表現の特殊文字@samp{^$*+?.\\[}が含まれていると、それは正規表現として扱われます。"
+msgstr ""
+"より一層フレキシビリティを高めるために、正規表現(@pxref{Regexps})を指定できま"
+"す。aproposパターンに正規表現の特殊文字@samp{^$*+?.\\[}が含まれていると、それ"
+"は正規表現として扱われます。"
 
 #. type: Plain text
-#: help.texi.orig:351
+#: original_texis/help.texi:351
 msgid ""
 "Following the conventions for naming Emacs commands, here are some words "
 "that you'll find useful in apropos patterns.  By using them in @kbd{C-h a}, "
 "you will also get a feel for the naming conventions."
-msgstr "Emacsコマンド命名の慣習に従うと、aproposパターンとして便利な単語がいくつかあります。これらを@kbd{C-h a}で使うことにより、命名の慣習の必要性を感じることができるでしょう。"
+msgstr ""
+"Emacsコマンド命名の慣習に従うと、aproposパターンとして便利な単語がいくつかあ"
+"ります。これらを@kbd{C-h a}で使うことにより、命名の慣習の必要性を感じることが"
+"できるでしょう。"
 
 #. type: quotation
-#: help.texi.orig:358
+#: original_texis/help.texi:358
 msgid ""
 "char, line, word, sentence, paragraph, region, page, sexp, list, defun, "
 "rect, buffer, frame, window, face, file, dir, register, mode, beginning, "
 "end, forward, backward, next, previous, up, down, search, goto, kill, "
 "delete, mark, insert, yank, fill, indent, case, change, set, what, list, "
 "find, view, describe, default."
-msgstr "char、line、word、sentence、paragraph、region、page、sexp、list、defun、rect、buffer、frame、window、face、file、dir、register、mode、beginning、end、forward、backward、next、previous、up、down、search、goto、kill、delete、mark、insert、yank、fill、indent、case、change、set、what、list、find、view、describe、default"
+msgstr ""
+"char、line、word、sentence、paragraph、region、page、sexp、list、defun、"
+"rect、buffer、frame、window、face、file、dir、register、mode、beginning、"
+"end、forward、backward、next、previous、up、down、search、goto、kill、"
+"delete、mark、insert、yank、fill、indent、case、change、set、what、list、"
+"find、view、describe、default"
 
 #. type: vindex
-#: help.texi.orig:360
+#: original_texis/help.texi:360
 #, no-wrap
 msgid "apropos-do-all"
 msgstr "apropos-do-all"
 
 #. type: Plain text
-#: help.texi.orig:363
+#: original_texis/help.texi:363
 msgid ""
 "If the variable @code{apropos-do-all} is non-@code{nil}, the apropos "
 "commands always behave as if they had been given a prefix argument."
-msgstr "変数@code{apropos-do-all}が非@code{nil}の場合、aproposコマンドは常にプレフィクス引数が指定されたものとして振る舞います。"
+msgstr ""
+"変数@code{apropos-do-all}が非@code{nil}の場合、aproposコマンドは常にプレフィ"
+"クス引数が指定されたものとして振る舞います。"
 
 #. type: vindex
-#: help.texi.orig:364
+#: original_texis/help.texi:364
 #, no-wrap
 msgid "apropos-sort-by-scores"
 msgstr "apropos-sort-by-scores"
 
 #. type: cindex
-#: help.texi.orig:365
+#: original_texis/help.texi:365
 #, no-wrap
 msgid "apropos search results, order by score"
 msgstr "apropos search results, order by score"
 
 #. type: vindex
-#: help.texi.orig:366
+#: original_texis/help.texi:366
 #, no-wrap
 msgid "apropos-documentation-sort-by-scores"
 msgstr "apropos-documentation-sort-by-scores"
 
 #. type: Plain text
-#: help.texi.orig:375
+#: original_texis/help.texi:375
 msgid ""
 "By default, all apropos commands except @code{apropos-documentation} list "
 "their results in alphabetical order.  If the variable @code{apropos-sort-by-"
@@ -1086,127 +1264,139 @@ msgid ""
 "documentation} command lists its results in order of relevance by default; "
 "to list them in alphabetical order, change the variable @code{apropos-"
 "documentation-sort-by-scores} to @code{nil}."
-msgstr "デフォルトでは、@code{apropos-documentation}を除くすべてのaproposコマンドは、結果をアルファベット順に一覧します。変数@code{apropos-sort-by-scores}が非@code{nil}のときは、かわりに結果の関連度を推測して、一番関連度が高いと思われるものを最初に表示します。@code{apropos-documentation}コマンドは、デフォルトで結果を関連度順で一覧します。これをアルファベット順にするには、変数@code{apropos-documentation-sort-by-scores}を@code{nil}に変更してください。"
+msgstr ""
+"デフォルトでは、@code{apropos-documentation}を除くすべてのaproposコマンドは、"
+"結果をアルファベット順に一覧します。変数@code{apropos-sort-by-scores}が非"
+"@code{nil}のときは、かわりに結果の関連度を推測して、一番関連度が高いと思われ"
+"るものを最初に表示します。@code{apropos-documentation}コマンドは、デフォルト"
+"で結果を関連度順で一覧します。これをアルファベット順にするには、変数"
+"@code{apropos-documentation-sort-by-scores}を@code{nil}に変更してください。"
 
 #. type: section
-#: help.texi.orig:377
+#: original_texis/help.texi:377
 #, no-wrap
 msgid "Help Mode Commands"
 msgstr "Help Mode Commands"
 
 #. type: Plain text
-#: help.texi.orig:383
+#: original_texis/help.texi:383
 msgid ""
 "Help buffers provide the same commands as View mode (@pxref{View Mode}); for "
 "instance, @key{SPC} scrolls forward, and @key{DEL} or @kbd{S-@key{SPC}} "
 "scrolls backward.  A few special commands are also provided:"
-msgstr "ヘルプバッファーはViewモード(@ref{View Mode}を参照してください)と同じコマンドを提供します。たとえば前方へのスクロールは@key{SPC}、後方へのスクロールは@key{DEL}か@kbd{S-@key{SPC}}です。他にも特別なコマンドをいくつか提供します:"
+msgstr ""
+"ヘルプバッファーはViewモード(@ref{View Mode}を参照してください)と同じコマンド"
+"を提供します。たとえば前方へのスクロールは@key{SPC}、後方へのスクロールは"
+"@key{DEL}か@kbd{S-@key{SPC}}です。他にも特別なコマンドをいくつか提供します:"
 
 #. type: key{#1}
-#: help.texi.orig:385
+#: original_texis/help.texi:385
 #, no-wrap
 msgid "RET"
 msgstr "RET"
 
 #. type: table
-#: help.texi.orig:387
+#: original_texis/help.texi:387
 msgid "Follow a cross reference at point (@code{help-follow})."
-msgstr "ポイント位置のクロスリファレンス先をフォローします(@code{help-follow})。"
+msgstr ""
+"ポイント位置のクロスリファレンス先をフォローします(@code{help-follow})。"
 
 #. type: key{#1}
-#: help.texi.orig:387
+#: original_texis/help.texi:387
 #, no-wrap
 msgid "TAB"
 msgstr "TAB"
 
 #. type: table
-#: help.texi.orig:389
+#: original_texis/help.texi:389
 msgid "Move point forward to the next hyperlink (@code{forward-button})."
 msgstr "ポイントを次のハイパーリンクへ進めます(@code{forward-button})。"
 
 #. type: item
-#: help.texi.orig:389
+#: original_texis/help.texi:389
 #, no-wrap
 msgid "S-@key{TAB}"
 msgstr "S-@key{TAB}"
 
 #. type: table
-#: help.texi.orig:391
+#: original_texis/help.texi:391
 msgid "Move point back to the previous hyperlink (@code{backward-button})."
 msgstr "ポイントを前のハイパーリンクへ戻します(@code{backward-button})。"
 
 #. type: item
-#: help.texi.orig:391
+#: original_texis/help.texi:391
 #, no-wrap
 msgid "Mouse-1"
 msgstr "Mouse-1"
 
 #. type: itemx
-#: help.texi.orig:392
+#: original_texis/help.texi:392
 #, no-wrap
 msgid "Mouse-2"
 msgstr "Mouse-2"
 
 #. type: table
-#: help.texi.orig:394
+#: original_texis/help.texi:394
 msgid "Follow a hyperlink that you click on."
 msgstr "クリックしたハイパーリンク先をフォローします。"
 
 #. type: item
-#: help.texi.orig:394
+#: original_texis/help.texi:394
 #, no-wrap
 msgid "C-c C-c"
 msgstr "C-c C-c"
 
 #. type: table
-#: help.texi.orig:397
+#: original_texis/help.texi:397
 msgid ""
 "Show all documentation about the symbol at point (@code{help-follow-symbol})."
-msgstr "ポイント位置のシンボルに関する、すべてのドキュメントを表示します(@code{help-follow-symbol})。"
+msgstr ""
+"ポイント位置のシンボルに関する、すべてのドキュメントを表示します(@code{help-"
+"follow-symbol})。"
 
 #. type: item
-#: help.texi.orig:397
+#: original_texis/help.texi:397
 #, no-wrap
 msgid "C-c C-b"
 msgstr "C-c C-b"
 
 #. type: table
-#: help.texi.orig:399
+#: original_texis/help.texi:399
 msgid "Go back to the previous help topic (@code{help-go-back})."
 msgstr "前のヘルプトピックに戻ります(@code{help-go-back})。"
 
 #. type: cindex
-#: help.texi.orig:401
+#: original_texis/help.texi:401
 #, no-wrap
 msgid "hyperlink"
 msgstr "hyperlink"
 
 #. type: findex
-#: help.texi.orig:402
+#: original_texis/help.texi:402
 #, no-wrap
 msgid "help-follow"
 msgstr "help-follow"
 
 #. type: findex
-#: help.texi.orig:403
+#: original_texis/help.texi:403
 #, no-wrap
 msgid "help-go-back"
 msgstr "help-go-back"
 
 #. type: kindex
-#: help.texi.orig:404
+#: original_texis/help.texi:404
 #, no-wrap
 msgid "RET @r{(Help mode)}"
 msgstr "RET @r{(Help mode)}"
 
 #. type: kindex
-#: help.texi.orig:405
+#: original_texis/help.texi:405
 #, no-wrap
 msgid "C-c C-b @r{(Help mode)}"
 msgstr "C-c C-b @r{(Help mode)}"
 
 #. type: Plain text
-#: help.texi.orig:413
+#: original_texis/help.texi:413
 msgid ""
 "When a function name, variable name, or face name (@pxref{Faces})  appears "
 "in the documentation in the help buffer, it is normally an underlined "
@@ -1214,118 +1404,140 @@ msgid ""
 "type @key{RET} (@code{help-follow}), or click on the hyperlink with "
 "@kbd{Mouse-1} or @kbd{Mouse-2}.  Doing so replaces the contents of the help "
 "buffer; to retrace your steps, type @kbd{C-c C-b} (@code{help-go-back})."
-msgstr "もし関数名、変数名、フェイス名(@ref{Faces}を参照してください)がヘルプバッファーのドキュメントにあると、通常はアンダーラインされた@dfn{ハイパーリンク(hyperlink)}として表示されます。関連するドキュメントを閲覧するには、ポイントをそこに移動して@key{RET} (@code{help-follow})をタイプするか、ハイパーリンクを@kbd{Mouse-1}または@kbd{Mouse-2}でクリックします。するとヘルプバッファーの内容が入れ替わりますが、@kbd{C-c C-b} (@code{help-go-back})で元に戻すことができます。"
+msgstr ""
+"もし関数名、変数名、フェイス名(@ref{Faces}を参照してください)がヘルプバッ"
+"ファーのドキュメントにあると、通常はアンダーラインされた@dfn{ハイパーリンク"
+"(hyperlink)}として表示されます。関連するドキュメントを閲覧するには、ポイント"
+"をそこに移動して@key{RET} (@code{help-follow})をタイプするか、ハイパーリンク"
+"を@kbd{Mouse-1}または@kbd{Mouse-2}でクリックします。するとヘルプバッファーの"
+"内容が入れ替わりますが、@kbd{C-c C-b} (@code{help-go-back})で元に戻すことがで"
+"きます。"
 
 #. type: cindex
-#: help.texi.orig:414
+#: original_texis/help.texi:414
 #, no-wrap
 msgid "URL, viewing in help"
 msgstr "URL, viewing in help"
 
 #. type: cindex
-#: help.texi.orig:415
+#: original_texis/help.texi:415
 #, no-wrap
 msgid "help, viewing web pages"
 msgstr "help, viewing web pages"
 
 #. type: cindex
-#: help.texi.orig:416
+#: original_texis/help.texi:416
 #, no-wrap
 msgid "viewing web pages in help"
 msgstr "viewing web pages in help"
 
 #. type: cindex
-#: help.texi.orig:417
+#: original_texis/help.texi:417
 #, no-wrap
 msgid "web pages, viewing in help"
 msgstr "web pages, viewing in help"
 
 #. type: findex
-#: help.texi.orig:418
+#: original_texis/help.texi:418
 #, no-wrap
 msgid "browse-url"
 msgstr "browse-url"
 
 #. type: Plain text
-#: help.texi.orig:423
+#: original_texis/help.texi:423
 msgid ""
 "A help buffer can also contain hyperlinks to Info manuals, source code "
 "definitions, and URLs (web pages).  The first two are opened in Emacs, and "
 "the third using a web browser via the @code{browse-url} command "
 "(@pxref{Browse-URL})."
-msgstr "ヘルプバッファーには、infoマニュアル、ソースコード定義、URL(ウェブページ)へのハイパーリンクを含むこともできます。最初の2つはEmacs上で表示され、3番目のURLはコマンド@code{browse-url}により、ウェブブラウザーを使って表示されます。"
+msgstr ""
+"ヘルプバッファーには、infoマニュアル、ソースコード定義、URL(ウェブページ)への"
+"ハイパーリンクを含むこともできます。最初の2つはEmacs上で表示され、3番目のURL"
+"はコマンド@code{browse-url}により、ウェブブラウザーを使って表示されます。"
 
 #. type: kindex
-#: help.texi.orig:424
+#: original_texis/help.texi:424
 #, no-wrap
 msgid "TAB @r{(Help mode)}"
 msgstr "TAB @r{(Help mode)}"
 
 #. type: findex
-#: help.texi.orig:425
+#: original_texis/help.texi:425
 #, no-wrap
 msgid "forward-button"
 msgstr "forward-button"
 
 #. type: kindex
-#: help.texi.orig:426
+#: original_texis/help.texi:426
 #, no-wrap
 msgid "S-TAB @r{(Help mode)}"
 msgstr "S-TAB @r{(Help mode)}"
 
 #. type: findex
-#: help.texi.orig:427
+#: original_texis/help.texi:427
 #, no-wrap
 msgid "backward-button"
 msgstr "backward-button"
 
 #. type: Plain text
-#: help.texi.orig:433
+#: original_texis/help.texi:433
 msgid ""
 "In a help buffer, @key{TAB} (@code{forward-button}) moves point forward to "
 "the next hyperlink, while @kbd{S-@key{TAB}} (@code{backward-button}) point "
 "back to the previous hyperlink.  These commands act cyclically; for "
 "instance, typing @key{TAB} at the last hyperlink moves back to the first "
 "hyperlink."
-msgstr "ヘルプバッファーでは、@key{TAB} (@code{forward-button})はポイントを次のハイパーリンクへ進め、@kbd{S-@key{TAB}} (@code{backward-button})は前のハイパーリンクへ戻します。これらのコマンドは循環的です。たとえば最後のハイパーリンクで@key{TAB}をタイプすると、最初のハイパーリンクに戻ります。"
+msgstr ""
+"ヘルプバッファーでは、@key{TAB} (@code{forward-button})はポイントを次のハイ"
+"パーリンクへ進め、@kbd{S-@key{TAB}} (@code{backward-button})は前のハイパーリ"
+"ンクへ戻します。これらのコマンドは循環的です。たとえば最後のハイパーリンクで"
+"@key{TAB}をタイプすると、最初のハイパーリンクに戻ります。"
 
 #. type: Plain text
-#: help.texi.orig:438
+#: original_texis/help.texi:438
 msgid ""
 "To view all documentation about any symbol in the text, move point to there "
 "and type @kbd{C-c C-c} (@code{help-follow-symbol}).  This shows all "
 "available documentation about the symbol---as a variable, function and/or "
 "face."
-msgstr "テキスト中のシンボルに関するすべてのドキュメントを閲覧するには、ポイントをそこに移動して@kbd{C-c C-c} (@code{help-follow-symbol})とタイプします。これはシンボル(変数、関数、フェイス)に関する、すべての利用可能なドキュメントを表示します。"
+msgstr ""
+"テキスト中のシンボルに関するすべてのドキュメントを閲覧するには、ポイントをそ"
+"こに移動して@kbd{C-c C-c} (@code{help-follow-symbol})とタイプします。これはシ"
+"ンボル(変数、関数、フェイス)に関する、すべての利用可能なドキュメントを表示し"
+"ます。"
 
 #. type: section
-#: help.texi.orig:440
+#: original_texis/help.texi:440
 #, no-wrap
 msgid "Keyword Search for Packages"
 msgstr "Keyword Search for Packages"
 
 #. type: cindex
-#: help.texi.orig:441
+#: original_texis/help.texi:441
 #, no-wrap
 msgid "finder"
 msgstr "finder"
 
 #. type: Plain text
-#: help.texi.orig:446
+#: original_texis/help.texi:446
 msgid ""
 "Most optional features in Emacs are grouped into @dfn{packages}.  Emacs "
 "contains several hundred built-in packages, and more can be installed over "
 "the network (@pxref{Packages})."
-msgstr "Emacsのたいていのオプション機能は、@dfn{パッケージ(packages)}にグループ化されています。Emacsには数百のビルトインパッケージが含まれており、ネットワークを通じて他のパッケージのインストールもできます(@ref{Packages}を参照してください)。"
+msgstr ""
+"Emacsのたいていのオプション機能は、@dfn{パッケージ(packages)}にグループ化され"
+"ています。Emacsには数百のビルトインパッケージが含まれており、ネットワークを通"
+"じて他のパッケージのインストールもできます(@ref{Packages}を参照してくださ"
+"い)。"
 
 #. type: findex
-#: help.texi.orig:448
+#: original_texis/help.texi:448
 #, no-wrap
 msgid "finder-by-keyword"
 msgstr "finder-by-keyword"
 
 #. type: Plain text
-#: help.texi.orig:456
+#: original_texis/help.texi:456
 msgid ""
 "To make it easier to find packages related to a topic, most packages are "
 "associated with one or more @dfn{keywords} based on what they do.  Type "
@@ -1334,38 +1546,49 @@ msgid ""
 "list of packages for a given keyword, type @key{RET} on that line; this "
 "displays the list of packages in a Package Menu buffer (@pxref{Package "
 "Menu})."
-msgstr "あるトピックに関連するパッケージを探すのを簡単にするため、ほとんどのパッケージは、それが何をするかにもとづき、1つ以上の@dfn{キーワード(keywords)}に関連付けられています。@kbd{C-h p} (@code{finder-by-keyword})とタイプすると、パッケージキーワードとキーワードの意味を説明するリストが表示されます。キーワードに属するパッケージのリストを表示するには、そのキーワードの行で@key{RET}をタイプします。これによりパッケージメニューバッファー(@ref{Package Menu}を参照してください)で、パッケージの一覧が表示されます。"
+msgstr ""
+"あるトピックに関連するパッケージを探すのを簡単にするため、ほとんどのパッケー"
+"ジは、それが何をするかにもとづき、1つ以上の@dfn{キーワード(keywords)}に関連付"
+"けられています。@kbd{C-h p} (@code{finder-by-keyword})とタイプすると、パッ"
+"ケージキーワードとキーワードの意味を説明するリストが表示されます。キーワード"
+"に属するパッケージのリストを表示するには、そのキーワードの行で@key{RET}をタイ"
+"プします。これによりパッケージメニューバッファー(@ref{Package Menu}を参照して"
+"ください)で、パッケージの一覧が表示されます。"
 
 #. type: findex
-#: help.texi.orig:457
+#: original_texis/help.texi:457
 #, no-wrap
 msgid "describe-package"
 msgstr "describe-package"
 
 #. type: kindex
-#: help.texi.orig:458
+#: original_texis/help.texi:458
 #, no-wrap
 msgid "C-h P"
 msgstr "C-h P"
 
 #. type: Plain text
-#: help.texi.orig:464
+#: original_texis/help.texi:464
 msgid ""
 "@kbd{C-h P} (@code{describe-package}) prompts for the name of a package, and "
 "displays a help buffer describing the attributes of the package and the "
 "features that it implements.  The buffer lists the keywords that relate to "
 "the package in the form of buttons.  Click on a button to see other packages "
 "related to that keyword."
-msgstr "@kbd{C-h P} (@code{describe-package})はパッケージ名の入力を求めて、パッケージの属性と、それが実装する機能をヘルプバッファーで表示します。このバッファーは、ボタン形式で関連するパッケージのキーワードを一覧します。ボタンをクリックすると、そのキーワードに関連する他のパッケージを見ることができます。"
+msgstr ""
+"@kbd{C-h P} (@code{describe-package})はパッケージ名の入力を求めて、パッケージ"
+"の属性と、それが実装する機能をヘルプバッファーで表示します。このバッファー"
+"は、ボタン形式で関連するパッケージのキーワードを一覧します。ボタンをクリック"
+"すると、そのキーワードに関連する他のパッケージを見ることができます。"
 
 #. type: section
-#: help.texi.orig:466
+#: original_texis/help.texi:466
 #, no-wrap
 msgid "Help for International Language Support"
 msgstr "Help for International Language Support"
 
 #. type: Plain text
-#: help.texi.orig:474
+#: original_texis/help.texi:474
 msgid ""
 "For information on a specific language environment (@pxref{Language "
 "Environments}), type @kbd{C-h L} (@code{describe-language-environment}).  "
@@ -1373,168 +1596,209 @@ msgid ""
 "language environment, and listing the associated character sets, coding "
 "systems, and input methods, as well as some sample text for that language "
 "environment."
-msgstr "特定の言語環境(language environment: @ref{Language Environments}を参照してください)の情報を得るには、@kbd{C-h L}とタイプします。これはヘルプバッファーを開いて、言語環境でサポートされる言語の説明と、関連する文字セット、コーディングシステム、インプットメソッド、およびその言語環境のサンプルテキストを表示します。"
+msgstr ""
+"特定の言語環境(language environment: @ref{Language Environments}を参照してく"
+"ださい)の情報を得るには、@kbd{C-h L}とタイプします。これはヘルプバッファーを"
+"開いて、言語環境でサポートされる言語の説明と、関連する文字セット、コーディン"
+"グシステム、インプットメソッド、およびその言語環境のサンプルテキストを表示し"
+"ます。"
 
 #. type: Plain text
-#: help.texi.orig:478
+#: original_texis/help.texi:478
 msgid ""
 "The command @kbd{C-h h} (@code{view-hello-file}) displays the file @file{etc/"
 "HELLO}, which demonstrates various character sets by showing how to say "
 "``hello'' in many languages."
-msgstr "コマンド@kbd{C-h h} (@code{view-hello-file})は、ファイル@file{etc/HELLO}を表示します。このファイルはさまざまな言語で``hello''をどのように言うのかを、いろいろな文字セットで表示するデモンストレーションです。"
+msgstr ""
+"コマンド@kbd{C-h h} (@code{view-hello-file})は、ファイル@file{etc/HELLO}を表"
+"示します。このファイルはさまざまな言語で``hello''をどのように言うのかを、いろ"
+"いろな文字セットで表示するデモンストレーションです。"
 
 #. type: Plain text
-#: help.texi.orig:482
+#: original_texis/help.texi:482
 msgid ""
 "The command @kbd{C-h I} (@code{describe-input-method}) describes an input "
 "method---either a specified input method, or by default the input method "
 "currently in use.  @xref{Input Methods}."
-msgstr "コマンド@kbd{C-h I} (@code{describe-input-method})は、指定されたインプットメソッド、または現在使われているインプットメソッド(デフォルト)の説明します。@ref{Input Methods}を参照してください。"
+msgstr ""
+"コマンド@kbd{C-h I} (@code{describe-input-method})は、指定されたインプットメ"
+"ソッド、または現在使われているインプットメソッド(デフォルト)の説明します。"
+"@ref{Input Methods}を参照してください。"
 
 #. type: Plain text
-#: help.texi.orig:486
+#: original_texis/help.texi:486
 msgid ""
 "The command @kbd{C-h C} (@code{describe-coding-system}) describes coding "
 "systems---either a specified coding system, or the ones currently in use.  "
 "@xref{Coding Systems}."
-msgstr "コマンド@kbd{C-h C} (@code{describe-coding-system})は、指定されたコーディングシステム、または現在使われているものを説明します。@ref{Coding Systems}を参照してください。"
+msgstr ""
+"コマンド@kbd{C-h C} (@code{describe-coding-system})は、指定されたコーディング"
+"システム、または現在使われているものを説明します。@ref{Coding Systems}を参照"
+"してください。"
 
 #. type: section
-#: help.texi.orig:488
+#: original_texis/help.texi:488
 #, no-wrap
 msgid "Other Help Commands"
 msgstr "Other Help Commands"
 
 #. type: findex
-#: help.texi.orig:491
+#: original_texis/help.texi:491
 #, no-wrap
 msgid "info"
 msgstr "info"
 
 #. type: cindex
-#: help.texi.orig:492
+#: original_texis/help.texi:492
 #, no-wrap
 msgid "Info"
 msgstr "Info"
 
 #. type: cindex
-#: help.texi.orig:493
+#: original_texis/help.texi:493
 #, no-wrap
 msgid "manuals, included"
 msgstr "manuals, included"
 
 #. type: Plain text
-#: help.texi.orig:498
+#: original_texis/help.texi:498
 msgid ""
 "@kbd{C-h i} (@code{info}) runs the Info program, which browses structured "
 "documentation files.  The entire Emacs manual is available within Info, "
 "along with many other manuals for the GNU system.  Type @kbd{h} after "
 "entering Info to run a tutorial on using Info."
-msgstr "@kbd{C-h i} (@code{info})は、infoプログラムを実行します。infoは構造化されたドキュメントファイルを閲覧するものです。Emacsマニュアル全体は、GNUシステムのための他のマニュアルとともに、infoで利用可能です。infoを開始した後、@kbd{h}をタイプすると、infoの使い方のチュートリアルが実行されます。"
+msgstr ""
+"@kbd{C-h i} (@code{info})は、infoプログラムを実行します。infoは構造化されたド"
+"キュメントファイルを閲覧するものです。Emacsマニュアル全体は、GNUシステムのた"
+"めの他のマニュアルとともに、infoで利用可能です。infoを開始した後、@kbd{h}をタ"
+"イプすると、infoの使い方のチュートリアルが実行されます。"
 
 #. type: cindex
-#: help.texi.orig:499
+#: original_texis/help.texi:499
 #, no-wrap
 msgid "find Info manual by its file name"
 msgstr "find Info manual by its file name"
 
 #. type: Plain text
-#: help.texi.orig:506
+#: original_texis/help.texi:506
 msgid ""
 "With a numeric argument @var{n}, @kbd{C-h i} selects the Info buffer "
 "@samp{*info*<@var{n}>}.  This is useful if you want to browse multiple Info "
 "manuals simultaneously.  If you specify just @kbd{C-u} as the prefix "
 "argument, @kbd{C-h i} prompts for the name of a documentation file, so you "
 "can browse a file which doesn't have an entry in the top-level Info menu."
-msgstr "数引数@var{n}を指定すると、@kbd{C-h i}はinfoバッファー@samp{*info*<@var{n}>}を選択します。これは同時に複数のinfoマニュアルを閲覧するとき便利です。プレフィクス引数@kbd{C-u}だけを指定した場合、@kbd{C-h i}はドキュメントのファイル名を尋ねるので、infoメニューのトップレベルにエントリーがないファイルでも閲覧できます。"
+msgstr ""
+"数引数@var{n}を指定すると、@kbd{C-h i}はinfoバッファー@samp{*info*<@var{n}>}"
+"を選択します。これは同時に複数のinfoマニュアルを閲覧するとき便利です。プレ"
+"フィクス引数@kbd{C-u}だけを指定した場合、@kbd{C-h i}はドキュメントのファイル"
+"名を尋ねるので、infoメニューのトップレベルにエントリーがないファイルでも閲覧"
+"できます。"
 
 #. type: Plain text
-#: help.texi.orig:510
+#: original_texis/help.texi:510
 msgid ""
 "The help commands @kbd{C-h F @var{function} @key{RET}} and @kbd{C-h K "
 "@var{key}}, described above, enter Info and go straight to the documentation "
 "of @var{function} or @var{key}."
-msgstr "上記で説明しているヘルプコマンド@kbd{C-h F @var{function} @key{RET}}と@kbd{C-h K @var{key}}は、infoを実行して@var{関数(function)}または@var{キー(key)}に関するドキュメントを直接開きます。"
+msgstr ""
+"上記で説明しているヘルプコマンド@kbd{C-h F @var{function} @key{RET}}と@kbd{C-"
+"h K @var{key}}は、infoを実行して@var{関数(function)}または@var{キー(key)}に関"
+"するドキュメントを直接開きます。"
 
 #. type: kindex
-#: help.texi.orig:511
+#: original_texis/help.texi:511
 #, no-wrap
 msgid "C-h S"
 msgstr "C-h S"
 
 #. type: findex
-#: help.texi.orig:512
+#: original_texis/help.texi:512
 #, no-wrap
 msgid "info-lookup-symbol"
 msgstr "info-lookup-symbol"
 
 #. type: Plain text
-#: help.texi.orig:518
+#: original_texis/help.texi:518
 msgid ""
 "When editing a program, if you have an Info version of the manual for the "
 "programming language, you can use @kbd{C-h S} (@code{info-lookup-symbol}) to "
 "find an entry for a symbol (keyword, function or variable) in the proper "
 "manual.  The details of how this command works depend on the major mode."
-msgstr "プログラムを編集しているとき、そのプログラム言語のinfo版のマニュアルを持っていれば、@kbd{C-h S} (@code{info-lookup-symbol})を使ってシンボル(キーワード、関数、変数)のエントリーを、適切なマニュアルから探すことができます。コマンドがどのように動作するかの詳細は、メジャーモードに依存します。"
+msgstr ""
+"プログラムを編集しているとき、そのプログラム言語のinfo版のマニュアルを持って"
+"いれば、@kbd{C-h S} (@code{info-lookup-symbol})を使ってシンボル(キーワード、"
+"関数、変数)のエントリーを、適切なマニュアルから探すことができます。コマンドが"
+"どのように動作するかの詳細は、メジャーモードに依存します。"
 
 #. type: findex
-#: help.texi.orig:520
+#: original_texis/help.texi:520
 #, no-wrap
 msgid "view-lossage"
 msgstr "view-lossage"
 
 #. type: Plain text
-#: help.texi.orig:525
+#: original_texis/help.texi:525
 msgid ""
 "If something surprising happens, and you are not sure what you typed, use "
 "@kbd{C-h l} (@code{view-lossage}).  @kbd{C-h l} displays your last 300 input "
 "keystrokes.  If you see commands that you don't know, you can use @kbd{C-h "
 "c} to find out what they do."
-msgstr "何か予期しないことが起こって、何をタイプしたかわからなくなったときは、@kbd{C-h l} (@code{view-lossage})を使います。@kbd{C-h l}は最近の300回分のキーストロークを表示します。身に覚えのないキー入力を見つけたら、@kbd{C-h c}を使えばそのキーが何を行うか調べることができます。"
+msgstr ""
+"何か予期しないことが起こって、何をタイプしたかわからなくなったときは、@kbd{C-"
+"h l} (@code{view-lossage})を使います。@kbd{C-h l}は最近の300回分のキースト"
+"ロークを表示します。身に覚えのないキー入力を見つけたら、@kbd{C-h c}を使えばそ"
+"のキーが何を行うか調べることができます。"
 
 #. type: findex
-#: help.texi.orig:527
+#: original_texis/help.texi:527
 #, no-wrap
 msgid "view-echo-area-messages"
 msgstr "view-echo-area-messages"
 
 #. type: Plain text
-#: help.texi.orig:531
+#: original_texis/help.texi:531
 msgid ""
 "To review recent echo area messages, use @kbd{C-h e} (@code{view-echo-area-"
 "messages}).  This displays the buffer @file{*Messages*}, where those "
 "messages are kept."
-msgstr "最近のエコーエリアのメッセージを調べるには、@kbd{C-h e} (@code{view-echo-area-messages})を使います。これはそれらのメッセージを保持するバッファー、@file{*Messages*}を表示します。"
+msgstr ""
+"最近のエコーエリアのメッセージを調べるには、@kbd{C-h e} (@code{view-echo-"
+"area-messages})を使います。これはそれらのメッセージを保持するバッファー、"
+"@file{*Messages*}を表示します。"
 
 #. type: findex
-#: help.texi.orig:533
+#: original_texis/help.texi:533
 #, no-wrap
 msgid "describe-mode"
 msgstr "describe-mode"
 
 #. type: Plain text
-#: help.texi.orig:538
+#: original_texis/help.texi:538
 msgid ""
 "Each Emacs major mode typically redefines a few keys and makes other changes "
 "in how editing works.  @kbd{C-h m} (@code{describe-mode})  displays "
 "documentation on the current major mode, which normally describes the "
 "commands and features that are changed in this mode."
-msgstr "Emacsの各メジャーモードでは、一般的にいくつかのキーが再定義されていて、編集動作も異なります。@kbd{C-h m} (@code{describe-mode})は、現在のメジャーモードのドキュメントを表示します。これには通常このモードで変更されているコマンドや、機能が説明されています。"
+msgstr ""
+"Emacsの各メジャーモードでは、一般的にいくつかのキーが再定義されていて、編集動"
+"作も異なります。@kbd{C-h m} (@code{describe-mode})は、現在のメジャーモードの"
+"ドキュメントを表示します。これには通常このモードで変更されているコマンドや、"
+"機能が説明されています。"
 
 #. type: findex
-#: help.texi.orig:540
+#: original_texis/help.texi:540
 #, no-wrap
 msgid "describe-bindings"
 msgstr "describe-bindings"
 
 #. type: findex
-#: help.texi.orig:542
+#: original_texis/help.texi:542
 #, no-wrap
 msgid "describe-syntax"
 msgstr "describe-syntax"
 
 #. type: Plain text
-#: help.texi.orig:552
+#: original_texis/help.texi:552
 msgid ""
 "@kbd{C-h b} (@code{describe-bindings}) and @kbd{C-h s} (@code{describe-"
 "syntax}) show other information about the current environment within Emacs.  "
@@ -1544,16 +1808,23 @@ msgid ""
 "Bindings}).  @kbd{C-h s} displays the contents of the syntax table, with "
 "explanations of each character's syntax (@pxref{Syntax Tables,, Syntax "
 "Tables, elisp, The Emacs Lisp Reference Manual})."
-msgstr "@kbd{C-h b} (@code{describe-bindings})と@kbd{C-h s} (@code{describe-syntax})は、現在のEmacs環境に関する、それ以外の情報を表示します。最初は現在のマイナーモードのローカルバインディング、次に現在のメジャーモードで定義されているローカルバインディング、最後にグローバルバインディングが表示されます。@kbd{C-h s}は各文字の構文の説明とともに、構文テーブルの内容を表示します(@ref{Syntax Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}を参照してください)。"
+msgstr ""
+"@kbd{C-h b} (@code{describe-bindings})と@kbd{C-h s} (@code{describe-syntax})"
+"は、現在のEmacs環境に関する、それ以外の情報を表示します。最初は現在のマイナー"
+"モードのローカルバインディング、次に現在のメジャーモードで定義されているロー"
+"カルバインディング、最後にグローバルバインディングが表示されます。@kbd{C-h s}"
+"は各文字の構文の説明とともに、構文テーブルの内容を表示します(@ref{Syntax "
+"Tables,, Syntax Tables, elisp, The Emacs Lisp Reference Manual}を参照してくだ"
+"さい)。"
 
 #. type: findex
-#: help.texi.orig:553
+#: original_texis/help.texi:553
 #, no-wrap
 msgid "describe-prefix-bindings"
 msgstr "describe-prefix-bindings"
 
 #. type: Plain text
-#: help.texi.orig:562
+#: original_texis/help.texi:562
 msgid ""
 "You can get a list of subcommands for a particular prefix key by typing "
 "@kbd{C-h}, @kbd{?}, or @key{F1} (@code{describe-prefix-bindings}) after the "
@@ -1562,235 +1833,263 @@ msgid ""
 "prefix keys is @key{ESC}, because @kbd{@key{ESC} C-h} is actually @kbd{C-M-"
 "h}, which marks a defun.  However, @kbd{@key{ESC} @key{F1}} and "
 "@kbd{@key{ESC} ?} work fine.)"
-msgstr "プレフィクスキーの後に@kbd{C-h}、@kbd{?}、@key{F1}をタイプすることにより、特定のプレフィクスキーにたいする、サブコマンドのリストを得ることができます(この方法が機能しないプレフィクスキーもあります。たとえば@key{ESC}です。@kbd{@key{ESC} C-h}は実際には@kbd{C-M-h}と解釈され、これはdefunをマークするコマンドです。このような場合でも@kbd{@key{ESC} @key{F1}}や@kbd{@key{ESC} ?}はうまく機能します)。"
+msgstr ""
+"プレフィクスキーの後に@kbd{C-h}、@kbd{?}、@key{F1}をタイプすることにより、特"
+"定のプレフィクスキーにたいする、サブコマンドのリストを得ることができます(この"
+"方法が機能しないプレフィクスキーもあります。たとえば@key{ESC}です。"
+"@kbd{@key{ESC} C-h}は実際には@kbd{C-M-h}と解釈され、これはdefunをマークするコ"
+"マンドです。このような場合でも@kbd{@key{ESC} @key{F1}}や@kbd{@key{ESC} ?}はう"
+"まく機能します)。"
 
 #. type: Plain text
-#: help.texi.orig:571
+#: original_texis/help.texi:571
 msgid ""
 "Apart from the built-in documentation and manuals, Emacs contains several "
 "other files describing topics like copying conditions, release notes, "
 "instructions for debugging and reporting bugs, and so forth.  You can use "
 "the following commands to view these files.  Apart from @kbd{C-h g}, they "
 "all have the form @kbd{C-h C-@var{char}}."
-msgstr "ビルトインのドキュメントとマニュアル以外にも、Emacsにはコピー条件(copying conditions)、リリースノート(release notes)、デバッグ説明書(instructions for debugging)、バグ報告(reporting bugs)などのトピックを説明する、いくつかのファイルが含まれています。これらのファイルは、以下のコマンドで閲覧することができます。@kbd{C-h g}をのぞき、これらはすべて、@kbd{C-h C-@var{char}}という形式になっています。"
+msgstr ""
+"ビルトインのドキュメントとマニュアル以外にも、Emacsにはコピー条件(copying "
+"conditions)、リリースノート(release notes)、デバッグ説明書(instructions for "
+"debugging)、バグ報告(reporting bugs)などのトピックを説明する、いくつかのファ"
+"イルが含まれています。これらのファイルは、以下のコマンドで閲覧することができ"
+"ます。@kbd{C-h g}をのぞき、これらはすべて、@kbd{C-h C-@var{char}}という形式に"
+"なっています。"
 
 #. type: item
-#: help.texi.orig:572 help.texi.orig:596
+#: original_texis/help.texi:572 original_texis/help.texi:596
 #, no-wrap
 msgid "C-h C-c"
 msgstr "C-h C-c"
 
 #. type: findex
-#: help.texi.orig:573
+#: original_texis/help.texi:573
 #, no-wrap
 msgid "describe-copying"
 msgstr "describe-copying"
 
 #. type: item
-#: help.texi.orig:574 help.texi.orig:599
+#: original_texis/help.texi:574 original_texis/help.texi:599
 #, no-wrap
 msgid "C-h C-d"
 msgstr "C-h C-d"
 
 #. type: findex
-#: help.texi.orig:575
+#: original_texis/help.texi:575
 #, no-wrap
 msgid "view-emacs-debugging"
 msgstr "view-emacs-debugging"
 
 #. type: item
-#: help.texi.orig:576 help.texi.orig:601
+#: original_texis/help.texi:576 original_texis/help.texi:601
 #, no-wrap
 msgid "C-h C-e"
 msgstr "C-h C-e"
 
 #. type: findex
-#: help.texi.orig:577
+#: original_texis/help.texi:577
 #, no-wrap
 msgid "view-external-packages"
 msgstr "view-external-packages"
 
 #. type: findex
-#: help.texi.orig:579
+#: original_texis/help.texi:579
 #, no-wrap
 msgid "view-emacs-FAQ"
 msgstr "view-emacs-FAQ"
 
 #. type: item
-#: help.texi.orig:580 help.texi.orig:606
+#: original_texis/help.texi:580 original_texis/help.texi:606
 #, no-wrap
 msgid "C-h g"
 msgstr "C-h g"
 
 #. type: findex
-#: help.texi.orig:581
+#: original_texis/help.texi:581
 #, no-wrap
 msgid "describe-gnu-project"
 msgstr "describe-gnu-project"
 
 #. type: item
-#: help.texi.orig:582 help.texi.orig:608
+#: original_texis/help.texi:582 original_texis/help.texi:608
 #, no-wrap
 msgid "C-h C-m"
 msgstr "C-h C-m"
 
 #. type: findex
-#: help.texi.orig:583
+#: original_texis/help.texi:583
 #, no-wrap
 msgid "view-order-manuals"
 msgstr "view-order-manuals"
 
 #. type: item
-#: help.texi.orig:584 help.texi.orig:611
+#: original_texis/help.texi:584 original_texis/help.texi:611
 #, no-wrap
 msgid "C-h C-n"
 msgstr "C-h C-n"
 
 #. type: findex
-#: help.texi.orig:585
+#: original_texis/help.texi:585
 #, no-wrap
 msgid "view-emacs-news"
 msgstr "view-emacs-news"
 
 #. type: item
-#: help.texi.orig:586 help.texi.orig:614
+#: original_texis/help.texi:586 original_texis/help.texi:614
 #, no-wrap
 msgid "C-h C-o"
 msgstr "C-h C-o"
 
 #. type: findex
-#: help.texi.orig:587
+#: original_texis/help.texi:587
 #, no-wrap
 msgid "describe-distribution"
 msgstr "describe-distribution"
 
 #. type: item
-#: help.texi.orig:588 help.texi.orig:617
+#: original_texis/help.texi:588 original_texis/help.texi:617
 #, no-wrap
 msgid "C-h C-p"
 msgstr "C-h C-p"
 
 #. type: findex
-#: help.texi.orig:589
+#: original_texis/help.texi:589
 #, no-wrap
 msgid "view-emacs-problems"
 msgstr "view-emacs-problems"
 
 #. type: item
-#: help.texi.orig:590 help.texi.orig:620
+#: original_texis/help.texi:590 original_texis/help.texi:620
 #, no-wrap
 msgid "C-h C-t"
 msgstr "C-h C-t"
 
 #. type: findex
-#: help.texi.orig:591
+#: original_texis/help.texi:591
 #, no-wrap
 msgid "view-emacs-todo"
 msgstr "view-emacs-todo"
 
 #. type: item
-#: help.texi.orig:592 help.texi.orig:622
+#: original_texis/help.texi:592 original_texis/help.texi:622
 #, no-wrap
 msgid "C-h C-w"
 msgstr "C-h C-w"
 
 #. type: findex
-#: help.texi.orig:593
+#: original_texis/help.texi:593
 #, no-wrap
 msgid "describe-no-warranty"
 msgstr "describe-no-warranty"
 
 #. type: table
-#: help.texi.orig:599
+#: original_texis/help.texi:599
 msgid ""
 "Display the rules under which you can copy and redistribute Emacs "
 "(@code{describe-copying})."
-msgstr "Emacsをコピー、再頒布する場合の規則を表示します(@code{describe-copying})。"
+msgstr ""
+"Emacsをコピー、再頒布する場合の規則を表示します(@code{describe-copying})。"
 
 #. type: table
-#: help.texi.orig:601
+#: original_texis/help.texi:601
 msgid "Display help for debugging Emacs (@code{view-emacs-debugging})."
-msgstr "Emacsをデバッグするためのヘルプを表示します(@code{view-emacs-debugging})。"
+msgstr ""
+"Emacsをデバッグするためのヘルプを表示します(@code{view-emacs-debugging})。"
 
 #. type: table
-#: help.texi.orig:604
+#: original_texis/help.texi:604
 msgid ""
 "Display information about where to get external packages (@code{view-"
 "external-packages})."
-msgstr "外部のパッケージをどこで入手するかについての情報を表示します(@code{view-external-packages})。"
+msgstr ""
+"外部のパッケージをどこで入手するかについての情報を表示します(@code{view-"
+"external-packages})。"
 
 #. type: table
-#: help.texi.orig:606
+#: original_texis/help.texi:606
 msgid ""
 "Display the Emacs frequently-answered-questions list (@code{view-emacs-FAQ})."
-msgstr "EmacsのFAQ(frequently-answered-questions: 頻繁に答えられる質問)のリストを表示します(@code{view-emacs-FAQ})。"
+msgstr ""
+"EmacsのFAQ(frequently-answered-questions: 頻繁に答えられる質問)のリストを表示"
+"します(@code{view-emacs-FAQ})。"
 
 #. type: table
-#: help.texi.orig:608
+#: original_texis/help.texi:608
 msgid ""
 "Display information about the GNU Project (@code{describe-gnu-project})."
 msgstr "GNUプロジェクトに関する情報を表示します(@code{describe-gnu-project})。"
 
 #. type: table
-#: help.texi.orig:611
+#: original_texis/help.texi:611
 msgid ""
 "Display information about ordering printed copies of Emacs manuals "
 "(@code{view-order-manuals})."
-msgstr "Emacsマニュアルの印刷されたコピーの注文に関する情報を表示します(@code{view-order-manuals})。"
+msgstr ""
+"Emacsマニュアルの印刷されたコピーの注文に関する情報を表示します(@code{view-"
+"order-manuals})。"
 
 #. type: table
-#: help.texi.orig:614
+#: original_texis/help.texi:614
 msgid ""
 "Display the ``news'' file, which lists the new features in this version of "
 "Emacs (@code{view-emacs-news})."
-msgstr "このバージョンの新しい機能の一覧が含まれる``news''ファイルを表示します(@code{view-emacs-news})。"
+msgstr ""
+"このバージョンの新しい機能の一覧が含まれる``news''ファイルを表示します"
+"(@code{view-emacs-news})。"
 
 #. type: table
-#: help.texi.orig:617
+#: original_texis/help.texi:617
 msgid ""
 "Display how to order or download the latest version of Emacs and other GNU "
 "software (@code{describe-distribution})."
-msgstr "Emacsおよび他のGNUソフトウェアーの最新バージョンを、注文またはダウンロードする方法を表示します(@code{describe-distribution})。"
+msgstr ""
+"Emacsおよび他のGNUソフトウェアーの最新バージョンを、注文またはダウンロードす"
+"る方法を表示します(@code{describe-distribution})。"
 
 #. type: table
-#: help.texi.orig:620
+#: original_texis/help.texi:620
 msgid ""
 "Display the list of known Emacs problems, sometimes with suggested "
 "workarounds (@code{view-emacs-problems})."
-msgstr "Emacsの既知の問題(それにどう対処するかの提案がある場合もあります)を表示します(@code{view-emacs-problems})。"
+msgstr ""
+"Emacsの既知の問題(それにどう対処するかの提案がある場合もあります)を表示します"
+"(@code{view-emacs-problems})。"
 
 #. type: table
-#: help.texi.orig:622
+#: original_texis/help.texi:622
 msgid "Display the Emacs to-do list (@code{view-emacs-todo})."
 msgstr "EmacsのTODOリストを表示します(@code{view-emacs-todo})。"
 
 #. type: table
-#: help.texi.orig:625
+#: original_texis/help.texi:625
 msgid ""
 "Display the full details on the complete absence of warranty for GNU Emacs "
 "(@code{describe-no-warranty})."
-msgstr "GNU Emacsが完全に無保証なことにたいする、すべての詳細を表示します(@code{describe-no-warranty})。"
+msgstr ""
+"GNU Emacsが完全に無保証なことにたいする、すべての詳細を表示します"
+"(@code{describe-no-warranty})。"
 
 #. type: section
-#: help.texi.orig:628
+#: original_texis/help.texi:628
 #, no-wrap
 msgid "Help on Active Text and Tooltips"
 msgstr "Help on Active Text and Tooltips"
 
 #. type: cindex
-#: help.texi.orig:630
+#: original_texis/help.texi:630
 #, no-wrap
 msgid "tooltips"
 msgstr "tooltips"
 
 #. type: cindex
-#: help.texi.orig:631
+#: original_texis/help.texi:631
 #, no-wrap
 msgid "balloon help"
 msgstr "balloon help"
 
 #. type: Plain text
-#: help.texi.orig:639
+#: original_texis/help.texi:639
 msgid ""
 "In Emacs, stretches of ``active text'' (text that does something special in "
 "response to mouse clicks or @key{RET}) often have associated help text.  "
@@ -1798,26 +2097,38 @@ msgid ""
 "line.  On graphical displays, as well as some text terminals which support "
 "mouse tracking, moving the mouse over the active text displays the help text "
 "as a @dfn{tooltip}.  @xref{Tooltips}."
-msgstr "Emacsでは拡大解釈される``アクティブテキスト(active text: マウスのクリックや@key{RET}に特別な反応をするテキスト)''は、しばしばヘルプテキストに関連付けられています。これにはEmacsのバッファーのハイパーリンク、同様にモードラインの一部が含まれます。グラフィカルなディスプレー、同様にいくつかのテキスト端末は、マウストラッキングをサポートしており、アクティブテキストの上をマウスが通過することにより、ヘルプテキストを@dfn{ツールチップ(tooltip)}で表示します。@ref{Tooltips}を参照してください。"
+msgstr ""
+"Emacsでは拡大解釈される``アクティブテキスト(active text: マウスのクリックや"
+"@key{RET}に特別な反応をするテキスト)''は、しばしばヘルプテキストに関連付けら"
+"れています。これにはEmacsのバッファーのハイパーリンク、同様にモードラインの一"
+"部が含まれます。グラフィカルなディスプレー、同様にいくつかのテキスト端末は、"
+"マウストラッキングをサポートしており、アクティブテキストの上をマウスが通過す"
+"ることにより、ヘルプテキストを@dfn{ツールチップ(tooltip)}で表示します。"
+"@ref{Tooltips}を参照してください。"
 
 #. type: findex
-#: help.texi.orig:641
+#: original_texis/help.texi:641
 #, no-wrap
 msgid "display-local-help"
 msgstr "display-local-help"
 
 #. type: vindex
-#: help.texi.orig:642
+#: original_texis/help.texi:642
 #, no-wrap
 msgid "help-at-pt-display-when-idle"
 msgstr "help-at-pt-display-when-idle"
 
 #. type: Plain text
-#: help.texi.orig:648
+#: original_texis/help.texi:648
 msgid ""
 "On terminals that don't support mouse-tracking, you can display the help "
 "text for active buffer text at point by typing @kbd{C-h .} (@code{display-"
 "local-help}).  This shows the help text in the echo area.  To display help "
 "text automatically whenever it is available at point, set the variable "
 "@code{help-at-pt-display-when-idle} to @code{t}."
-msgstr "マウストラッキングをサポートしない端末では、バッファーのアクティブテキストにポイントを移動して、@kbd{C-h .} (@code{display-local-help})をタイプすれば、ヘルプテキストを表示できます。これはヘルプテキストをエコーエリアに表示します。ポイントがある場所のヘルプテキストが利用可能な場合に、常に表示させるには、変数@code{help-at-pt-display-when-idle}に@code{t}をセットしてください。"
+msgstr ""
+"マウストラッキングをサポートしない端末では、バッファーのアクティブテキストに"
+"ポイントを移動して、@kbd{C-h .} (@code{display-local-help})をタイプすれば、ヘ"
+"ルプテキストを表示できます。これはヘルプテキストをエコーエリアに表示します。"
+"ポイントがある場所のヘルプテキストが利用可能な場合に、常に表示させるには、変"
+"数@code{help-at-pt-display-when-idle}に@code{t}をセットしてください。"
